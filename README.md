@@ -4,8 +4,8 @@
 
 **项目方案：** [设计思路、架构、重点技术、预期效果与时间规划](PROJECT_PROPOSAL.md)
 
-**当前进度：** 已完成 Hy3/Tavily 异步适配、统一配置和基础测试；端到端 Agent、应用入口及
-离线评测 Runner 尚待按后续里程碑实现。
+**当前进度：** 已完成 Hy3/Tavily 异步适配、统一配置、冻结轨迹评分内核和基础测试；端到端
+Agent、应用入口及“任务集 → 实时生成 → 冻结轨迹”的批量生成阶段仍待实现。
 
 面向知识型短视频创作者的实时调研与口播文案生成 Agent。系统从当前公开热榜发现候选选题，
 使用 Hy3 生成检索计划，通过 Tavily 执行多轮实时搜索、整理可追溯证据，并生成可直接口播的
@@ -97,3 +97,35 @@ uv run --no-sync python examples/02_search_call.py
 ```
 
 这些命令会产生真实 API 调用和额度消耗；单元测试不会访问网络。
+
+## 离线评分
+
+评分器只读取已经冻结的生成轨迹，不调用搜索服务，也不会修改轨迹。先用仓库中的脱敏示例
+运行确定性规则：
+
+```bash
+uv run --no-sync python scripts/run_evaluation.py score \
+  --trace eval/traces/example_trace.json \
+  --evaluators rules \
+  --output-dir /tmp/hyscript-eval
+```
+
+需要八维 Hy3 Judge 时显式增加 `judge`：
+
+```bash
+uv run --no-sync python scripts/run_evaluation.py score \
+  --trace-dir eval/traces/runs/<batch-id> \
+  --evaluators rules,judge \
+  --output-dir eval/results/runs/<evaluation-id> \
+  --concurrency 2
+```
+
+规则评分不读取 `.env`，Hy3 Judge 会产生真实 API 调用和费用。每条结果分别写入
+`rules.json`、`hy3_judge.json` 和 `combined.json`，并通过 `run_id` 与轨迹 SHA-256 关联。
+`rules.json` 只保存长度、引用覆盖率和确定性门控，不生成八维分数；八维 0～4 分保存在
+`hy3_judge.json`。`combined.json` 汇总两类结果，触发重大事实错误、伪造引用、严重合规或
+reward hacking 门控后仍保留诊断分，但 `final_score` 会置空。
+
+重复执行时，只有轨迹集合和完整评测指纹都一致才会跳过。指纹包含 Rubric、规则阈值、Judge
+模型与提示词版本、推理和上下文参数、采样参数及聚合器版本；不一致时返回
+`resume_conflict`，需更换输出目录或显式传入 `--overwrite`。

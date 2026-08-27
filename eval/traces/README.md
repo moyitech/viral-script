@@ -11,3 +11,15 @@ stored under `eval/results/runs/` and reference it by `run_id`, so generation
 and scoring can be resumed or replayed independently. Generated runs belong in
 `eval/traces/runs/` and are ignored by Git; commit only small, redacted examples
 when needed for documentation.
+
+Evaluation-ready traces currently use schema version `1.0`. Evidence and claim
+lists may be empty. When present, their ids must be unique and claims must mark
+at least one core claim. Stable fields are:
+
+- `task.topic`, with optional `target_length` and `forbidden_phrases`;
+- `script_artifact.script_text`;
+- `selected_evidence[*].evidence_id` when evidence is present;
+- `claims[*].claim_id`, `is_core`, and `evidence_ids` when claims are present.
+
+`example_trace.json` is a small schema demonstration. Its example.com source is
+not research evidence and must not be included in formal experiments.

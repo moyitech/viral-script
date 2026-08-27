@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "run_id": "example-sleep-001",
+  "created_at": "2026-08-27T00:00:00Z",
+  "task": {
+    "topic": "为什么白天晒太阳可能有助于晚上睡眠",
+    "target_length": 90,
+    "audience": "希望改善作息的普通成年人",
+    "platform": "短视频",
+    "style": "简明、克制",
+    "forbidden_phrases": [
+      "保证治愈",
+      "百分之百有效"
+    ]
+  },
+  "config": {
+    "example": true
+  },
+  "query_plan": {
+    "goal": "了解日间光照与睡眠节律的关系"
+  },
+  "queries": [
+    "daytime light exposure sleep circadian rhythm"
+  ],
+  "search_results": [
+    {
+      "rank": 1,
+      "title": "Example source for schema demonstration",
+      "url": "https://example.com/sleep-light",
+      "snippet": "Daytime light exposure is associated with circadian timing.",
+      "score": 0.9,
+      "published_at": null,
+      "content_hash": "example-only"
+    }
+  ],
+  "selected_evidence": [
+    {
+      "evidence_id": "evidence-001",
+      "url": "https://example.com/sleep-light",
+      "title": "Example source for schema demonstration",
+      "snippet": "日间光照与昼夜节律的时间调节有关。"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "claim-001",
+      "text": "白天接触自然光可能帮助稳定昼夜节律",
+      "is_core": true,
+      "evidence_ids": [
+        "evidence-001"
+      ],
+      "support_status": "supported"
+    }
+  ],
+  "script_artifact": {
+    "script_text": "晚上睡不好，不一定只是睡前出了问题。白天接触自然光，会给身体的昼夜节律提供时间信号。尤其是早晨到户外活动一会儿，可能帮助身体分清什么时候该清醒、什么时候该准备休息。当然，光照不是失眠的万能解法，但它可以成为调整作息的一项基础习惯。"
+  },
+  "errors": [],
+  "latency": {},
+  "token_usage": {},
+  "lineage": {}
+}

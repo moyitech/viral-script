@@ -10,3 +10,32 @@ separable phases:
 
 Command-line wrappers belong in `scripts/`. The Web and API applications must
 not import or invoke these runners.
+
+The scoring phase is implemented. Run deterministic rules without loading
+`.env` or calling an external service:
+
+```bash
+uv run --no-sync python scripts/run_evaluation.py score \
+  --trace eval/traces/example_trace.json \
+  --evaluators rules \
+  --output-dir /tmp/hyscript-eval
+```
+
+Add the Hy3 Judge explicitly when API-backed evaluation is intended:
+
+```bash
+uv run --no-sync python scripts/run_evaluation.py score \
+  --trace-dir eval/traces/runs/<batch-id> \
+  --evaluators rules,judge \
+  --output-dir eval/results/runs/<evaluation-id> \
+  --concurrency 2
+```
+
+Judge requests consume API quota. The dataset-to-generation phase is not yet
+implemented because the shared existing-topic Agent workflow is still under
+development.
+
+Results resume only under the same input hashes and full evaluation
+fingerprint. Rule-only runs never load `.env`; selecting `judge` loads Hy3
+settings, records every format-repair attempt and accumulates usage across all
+requests.
