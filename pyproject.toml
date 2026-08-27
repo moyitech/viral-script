@@ -1,0 +1,19 @@
+[project]
+name = "viral-script"
+version = "0.1.0"
+description = "A traceable research and oral-script generation agent powered by Hy3"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=1.68.0",
+    "python-dotenv>=1.1.1",
+    "tavily-python>=0.8.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.8.4,<0.9.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "hyscript"
+module-root = "src"
