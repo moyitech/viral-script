@@ -18,6 +18,7 @@ class TraceSearchResult:
     title: str
     url: str
     snippet: str
+    raw_content: str | None = None
     score: float | None = None
     published_at: str | None = None
     content_hash: str | None = None

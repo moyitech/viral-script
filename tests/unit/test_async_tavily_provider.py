@@ -37,6 +37,7 @@ class AsyncTavilySearchProviderTests(unittest.IsolatedAsyncioTestCase):
                     "title": " Async result ",
                     "url": "https://example.com/async",
                     "content": "Async evidence",
+                    "raw_content": "Full async article evidence",
                     "score": 0.95,
                 }
             ],
@@ -52,10 +53,16 @@ class AsyncTavilySearchProviderTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(response.query, "async query")
         self.assertEqual(response.request_id, "async-request-123")
         self.assertEqual(response.results[0].title, "Async result")
+        self.assertEqual(response.results[0].snippet, "Async evidence")
+        self.assertEqual(
+            response.results[0].raw_content,
+            "Full async article evidence",
+        )
         query, kwargs = sdk_client.calls[0]
         self.assertEqual(query, "async query")
         self.assertEqual(kwargs["max_results"], 1)
         self.assertTrue(kwargs["include_usage"])
+        self.assertEqual(kwargs["include_raw_content"], "text")
 
     async def test_sdk_error_does_not_expose_secret(self) -> None:
         sdk_client = FakeAsyncTavilyClient(

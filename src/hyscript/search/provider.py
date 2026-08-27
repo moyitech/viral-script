@@ -79,7 +79,7 @@ class TavilySearchProvider:
                 topic=self.settings.topic,
                 max_results=effective_limit,
                 include_answer=False,
-                include_raw_content=False,
+                include_raw_content="text",
                 include_images=False,
                 include_usage=True,
                 timeout=self.settings.timeout_seconds,
@@ -153,12 +153,17 @@ class TavilySearchProvider:
         title = cls._optional_text(item.get("title")) or "Untitled"
         url = cls._optional_text(item.get("url")) or ""
         snippet = cls._optional_text(item.get("content")) or ""
-        content_hash = sha256(snippet.encode("utf-8")).hexdigest() if snippet else None
+        raw_content = cls._optional_text(item.get("raw_content"))
+        hash_source = raw_content or snippet
+        content_hash = (
+            sha256(hash_source.encode("utf-8")).hexdigest() if hash_source else None
+        )
         return SearchResult(
             rank=rank,
             title=title,
             url=url,
             snippet=snippet,
+            raw_content=raw_content,
             score=cls._optional_float(item.get("score")),
             published_at=cls._optional_text(
                 item.get("published_date") or item.get("published_at")
@@ -223,7 +228,7 @@ class AsyncTavilySearchProvider:
                 topic=self.settings.topic,
                 max_results=effective_limit,
                 include_answer=False,
-                include_raw_content=False,
+                include_raw_content="text",
                 include_images=False,
                 include_usage=True,
                 timeout=self.settings.timeout_seconds,

@@ -40,6 +40,7 @@ class TavilySearchProviderTests(unittest.TestCase):
                     "title": " Example title ",
                     "url": "https://example.com/article",
                     "content": "Evidence snippet",
+                    "raw_content": "Full article evidence",
                     "score": 0.91,
                     "published_date": "2026-08-26",
                 }
@@ -58,10 +59,12 @@ class TavilySearchProviderTests(unittest.TestCase):
         result = response.results[0]
         self.assertEqual(result.rank, 1)
         self.assertEqual(result.title, "Example title")
+        self.assertEqual(result.snippet, "Evidence snippet")
+        self.assertEqual(result.raw_content, "Full article evidence")
         self.assertEqual(result.score, 0.91)
         self.assertEqual(
             result.content_hash,
-            sha256(b"Evidence snippet").hexdigest(),
+            sha256(b"Full article evidence").hexdigest(),
         )
 
         query, kwargs = client.calls[0]
@@ -69,7 +72,7 @@ class TavilySearchProviderTests(unittest.TestCase):
         self.assertEqual(kwargs["search_depth"], "basic")
         self.assertEqual(kwargs["max_results"], 20)
         self.assertTrue(kwargs["include_usage"])
-        self.assertFalse(kwargs["include_raw_content"])
+        self.assertEqual(kwargs["include_raw_content"], "text")
 
     def test_search_caps_limit_at_configured_maximum(self) -> None:
         settings = TavilyConfig(api_key="test-key", max_results=5)
