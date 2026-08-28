@@ -121,6 +121,7 @@ _EVIDENCE_FIELDS = (
     "evidence_id",
     "title",
     "url",
+    "excerpt",
     "snippet",
     "content",
     "raw_content",

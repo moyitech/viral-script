@@ -9,6 +9,10 @@ from .base import (
     ChatResponse,
     EmbeddingProviderError,
     LLMProviderError,
+    LLMCallUsage,
+    TokenUsageSummary,
+    llm_call_usage,
+    summarize_token_usage,
 )
 
 __all__ = [
@@ -20,4 +24,8 @@ __all__ = [
     "EmbeddingProviderError",
     "Hy3Config",
     "LLMProviderError",
+    "LLMCallUsage",
+    "TokenUsageSummary",
+    "llm_call_usage",
+    "summarize_token_usage",
 ]

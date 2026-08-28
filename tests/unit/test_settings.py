@@ -43,6 +43,13 @@ class SettingsTests(unittest.TestCase):
         )
         self.assertEqual(loaded.topic_recommendation.similarity_threshold, 0.72)
         self.assertEqual(loaded.topic_recommendation.max_generation_concurrency, 4)
+        self.assertEqual(loaded.research.initial_query_count, 3)
+        self.assertEqual(loaded.research.max_search_requests, 5)
+        self.assertEqual(loaded.research.results_per_query, 5)
+        self.assertEqual(loaded.research.max_search_concurrency, 3)
+        self.assertEqual(loaded.research.max_content_chars_per_result, 4000)
+        self.assertEqual(loaded.script_generation.length_tolerance_ratio, 0.10)
+        self.assertEqual(loaded.script_generation.max_generation_attempts, 2)
         self.assertEqual(loaded.tavily.base_url, "https://api.tavily.com")
         self.assertEqual(loaded.tavily.max_results, 20)
         self.assertEqual(loaded.newsnow.base_url, "https://newsnow.busiyi.world")
@@ -106,6 +113,13 @@ class SettingsTests(unittest.TestCase):
             "TOPIC_EMBEDDING_MODEL": "",
             "TOPIC_SIMILARITY_THRESHOLD": "1.01",
             "TOPIC_MAX_GENERATION_CONCURRENCY": "0",
+            "RESEARCH_INITIAL_QUERY_COUNT": "0",
+            "RESEARCH_MAX_SEARCH_REQUESTS": "2",
+            "RESEARCH_RESULTS_PER_QUERY": "0",
+            "RESEARCH_MAX_SEARCH_CONCURRENCY": "11",
+            "RESEARCH_MAX_CONTENT_CHARS_PER_RESULT": "499",
+            "SCRIPT_LENGTH_TOLERANCE_RATIO": "0.51",
+            "SCRIPT_MAX_GENERATION_ATTEMPTS": "4",
             "HYSCRIPT_RUN_LIVE_TESTS": "sometimes",
         }
         for name, value in invalid_values.items():
@@ -185,6 +199,28 @@ class SettingsTests(unittest.TestCase):
         self.assertEqual(loaded.topic_recommendation.similarity_threshold, 0.68)
         self.assertEqual(loaded.topic_recommendation.max_generation_concurrency, 3)
 
+    def test_research_and_script_settings_are_normalized(self) -> None:
+        loaded = load_settings(
+            env_file=None,
+            environ=valid_environment(
+                RESEARCH_INITIAL_QUERY_COUNT="2",
+                RESEARCH_MAX_SEARCH_REQUESTS="4",
+                RESEARCH_RESULTS_PER_QUERY="3",
+                RESEARCH_MAX_SEARCH_CONCURRENCY="2",
+                RESEARCH_MAX_CONTENT_CHARS_PER_RESULT="2500",
+                SCRIPT_LENGTH_TOLERANCE_RATIO="0.15",
+                SCRIPT_MAX_GENERATION_ATTEMPTS="3",
+            ),
+        )
+
+        self.assertEqual(loaded.research.initial_query_count, 2)
+        self.assertEqual(loaded.research.max_search_requests, 4)
+        self.assertEqual(loaded.research.results_per_query, 3)
+        self.assertEqual(loaded.research.max_search_concurrency, 2)
+        self.assertEqual(loaded.research.max_content_chars_per_result, 2500)
+        self.assertEqual(loaded.script_generation.length_tolerance_ratio, 0.15)
+        self.assertEqual(loaded.script_generation.max_generation_attempts, 3)
+
     def test_cached_settings_can_be_reset(self) -> None:
         first = load_settings(env_file=None, environ=valid_environment(HY3_MODEL="first"))
         second = load_settings(env_file=None, environ=valid_environment(HY3_MODEL="second"))
@@ -212,6 +248,8 @@ class SettingsTests(unittest.TestCase):
                 settings.topic_recommendation,
                 loaded.topic_recommendation,
             )
+            self.assertIs(settings.research, loaded.research)
+            self.assertIs(settings.script_generation, loaded.script_generation)
 
 
 if __name__ == "__main__":

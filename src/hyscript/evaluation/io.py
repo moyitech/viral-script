@@ -17,7 +17,13 @@ SUPPORTED_TRACE_SCHEMA_VERSION = "1.0"
 _SAFE_RUN_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$")
 _SAFE_ARTIFACT_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$")
 _HEX_DIGEST = re.compile(r"^[0-9a-f]{64}$")
-_SUPPORT_STATUSES = {"supported", "unsupported", "contradicted", "uncertain"}
+_SUPPORT_STATUSES = {
+    "supported",
+    "unsupported",
+    "contradicted",
+    "conflicting",
+    "uncertain",
+}
 
 
 class TraceInputError(ValueError):
@@ -100,7 +106,7 @@ def _validate_evidence(payload: dict[str, Any], index: int) -> dict[str, Any]:
         raise TraceInputError(
             f"{context}.evidence_id contains unsupported characters or is too long."
         )
-    for key in ("url", "title", "snippet", "raw_content", "content"):
+    for key in ("url", "title", "excerpt", "snippet", "raw_content", "content"):
         if key in evidence and (
             not isinstance(evidence[key], str) or not evidence[key].strip()
         ):

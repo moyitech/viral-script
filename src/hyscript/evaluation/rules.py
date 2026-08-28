@@ -167,6 +167,7 @@ def _claim_evidence_metrics(
         explicitly_unsupported = isinstance(support_status, str) and support_status in {
             "unsupported",
             "contradicted",
+            "conflicting",
         }
         if is_core and valid_references and not explicitly_unsupported:
             supported_core_claims += 1

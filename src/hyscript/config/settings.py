@@ -90,6 +90,25 @@ class TopicRecommendationConfig:
 
 
 @dataclass(frozen=True, slots=True)
+class ResearchConfig:
+    """Budgets and context limits for live topic research."""
+
+    initial_query_count: int = 3
+    max_search_requests: int = 5
+    results_per_query: int = 5
+    max_search_concurrency: int = 3
+    max_content_chars_per_result: int = 4000
+
+
+@dataclass(frozen=True, slots=True)
+class ScriptGenerationConfig:
+    """Deterministic validation limits for oral-script generation."""
+
+    length_tolerance_ratio: float = 0.10
+    max_generation_attempts: int = 2
+
+
+@dataclass(frozen=True, slots=True)
 class TavilyConfig:
     """Tavily credentials and request defaults."""
 
@@ -149,6 +168,8 @@ class Settings:
 
     hy3: Hy3Config
     topic_recommendation: TopicRecommendationConfig
+    research: ResearchConfig
+    script_generation: ScriptGenerationConfig
     tavily: TavilyConfig
     newsnow: NewsNowConfig
     runtime: RuntimeConfig
@@ -314,6 +335,67 @@ def load_settings(
             "TOPIC_MAX_GENERATION_CONCURRENCY must be between 1 and 10."
         )
 
+    research_initial_query_count = _integer(
+        values,
+        "RESEARCH_INITIAL_QUERY_COUNT",
+        "3",
+    )
+    research_max_search_requests = _integer(
+        values,
+        "RESEARCH_MAX_SEARCH_REQUESTS",
+        "5",
+    )
+    research_results_per_query = _integer(
+        values,
+        "RESEARCH_RESULTS_PER_QUERY",
+        "5",
+    )
+    research_max_search_concurrency = _integer(
+        values,
+        "RESEARCH_MAX_SEARCH_CONCURRENCY",
+        "3",
+    )
+    research_max_content_chars = _integer(
+        values,
+        "RESEARCH_MAX_CONTENT_CHARS_PER_RESULT",
+        "4000",
+    )
+    if not 1 <= research_initial_query_count <= 5:
+        raise SettingsError("RESEARCH_INITIAL_QUERY_COUNT must be between 1 and 5.")
+    if not research_initial_query_count <= research_max_search_requests <= 10:
+        raise SettingsError(
+            "RESEARCH_MAX_SEARCH_REQUESTS must be between the initial query count and 10."
+        )
+    if not 1 <= research_results_per_query <= 20:
+        raise SettingsError("RESEARCH_RESULTS_PER_QUERY must be between 1 and 20.")
+    if not 1 <= research_max_search_concurrency <= 10:
+        raise SettingsError(
+            "RESEARCH_MAX_SEARCH_CONCURRENCY must be between 1 and 10."
+        )
+    if not 500 <= research_max_content_chars <= 20000:
+        raise SettingsError(
+            "RESEARCH_MAX_CONTENT_CHARS_PER_RESULT must be between 500 and 20000."
+        )
+
+    script_length_tolerance = _float(
+        values,
+        "SCRIPT_LENGTH_TOLERANCE_RATIO",
+        "0.10",
+    )
+    script_max_generation_attempts = _integer(
+        values,
+        "SCRIPT_MAX_GENERATION_ATTEMPTS",
+        "2",
+    )
+    if not 0 <= script_length_tolerance <= 0.5:
+        raise SettingsError(
+            "SCRIPT_LENGTH_TOLERANCE_RATIO must be between 0 and 0.5."
+        )
+    if not 1 <= script_max_generation_attempts <= 3:
+        raise SettingsError(
+            "SCRIPT_MAX_GENERATION_ATTEMPTS must be between 1 and 3."
+        )
+
     search_depth = _text(values, "TAVILY_SEARCH_DEPTH", "basic")
     if search_depth not in {"basic", "advanced", "fast", "ultra-fast"}:
         raise SettingsError("TAVILY_SEARCH_DEPTH is unsupported.")
@@ -365,6 +447,17 @@ def load_settings(
             embedding_model=topic_embedding_model,
             similarity_threshold=topic_similarity_threshold,
             max_generation_concurrency=topic_max_generation_concurrency,
+        ),
+        research=ResearchConfig(
+            initial_query_count=research_initial_query_count,
+            max_search_requests=research_max_search_requests,
+            results_per_query=research_results_per_query,
+            max_search_concurrency=research_max_search_concurrency,
+            max_content_chars_per_result=research_max_content_chars,
+        ),
+        script_generation=ScriptGenerationConfig(
+            length_tolerance_ratio=script_length_tolerance,
+            max_generation_attempts=script_max_generation_attempts,
         ),
         tavily=TavilyConfig(
             api_key=_text(values, "TAVILY_API_KEY"),
@@ -433,6 +526,14 @@ class _LazySettings:
     @property
     def topic_recommendation(self) -> TopicRecommendationConfig:
         return get_settings().topic_recommendation
+
+    @property
+    def research(self) -> ResearchConfig:
+        return get_settings().research
+
+    @property
+    def script_generation(self) -> ScriptGenerationConfig:
+        return get_settings().script_generation
 
     @property
     def tavily(self) -> TavilyConfig:

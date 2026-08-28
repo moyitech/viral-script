@@ -10,8 +10,11 @@ from hyscript.config import Hy3Config
 from hyscript.llm import (
     AsyncHy3Client,
     ChatMessage,
+    ChatResponse,
     EmbeddingProviderError,
     LLMProviderError,
+    llm_call_usage,
+    summarize_token_usage,
 )
 
 
@@ -107,6 +110,7 @@ class AsyncHy3ClientTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(response.content, "OK")
         self.assertEqual(response.request_id, "chatcmpl-async-test")
         self.assertEqual(response.reasoning_content, "brief reasoning")
+        self.assertEqual(response.usage, {"prompt_tokens": 3, "completion_tokens": 1})
         request = completions.calls[0]
         self.assertEqual(request["model"], "hy3")
         self.assertEqual(request["max_tokens"], 16)
@@ -125,6 +129,44 @@ class AsyncHy3ClientTests(unittest.IsolatedAsyncioTestCase):
         content = await client.chat([ChatMessage(role="user", content="hello")])
         self.assertEqual(content, "OK")
         self.assertNotIn("max_tokens", completions.calls[0])
+
+    def test_normalizes_and_aggregates_provider_reported_token_usage(self) -> None:
+        first = llm_call_usage(
+            ChatResponse(
+                content="first",
+                model="hy3",
+                request_id="request-1",
+                usage={
+                    "prompt_tokens": 100,
+                    "completion_tokens": 25,
+                    "total_tokens": 125,
+                    "prompt_tokens_details": {"cached_tokens": 20},
+                    "completion_tokens_details": {"reasoning_tokens": 8},
+                },
+            ),
+            stage="research.query_plan",
+            attempt=1,
+        )
+        second = llm_call_usage(
+            ChatResponse(
+                content="second",
+                usage={"input_tokens": 50, "output_tokens": 10},
+            ),
+            stage="script.generation",
+            attempt=1,
+        )
+
+        summary = summarize_token_usage((first, second))
+
+        self.assertEqual(first.cached_input_tokens, 20)
+        self.assertEqual(first.reasoning_tokens, 8)
+        self.assertEqual(second.total_tokens, 60)
+        self.assertEqual(summary.reported_call_count, 2)
+        self.assertEqual(summary.input_tokens, 150)
+        self.assertEqual(summary.output_tokens, 35)
+        self.assertEqual(summary.total_tokens, 185)
+        self.assertEqual(summary.reasoning_tokens, 8)
+        self.assertEqual(summary.cached_input_tokens, 20)
 
     async def test_embed_uses_float_format_and_restores_input_order(self) -> None:
         embeddings = RecordingEmbeddings(
