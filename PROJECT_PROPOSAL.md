@@ -77,7 +77,7 @@ flowchart TB
 
 | 模块 | 作用 |
 |---|---|
-| `TopicAgent` | 根据当前热榜和检索结果推荐选题 |
+| `TopicAgent` | 对当前热榜标题做 embedding 事件聚类，再由 Hy3 并发生成待核验选题 |
 | `ResearchAgent` | 规划和改写查询，筛选证据并处理信息冲突 |
 | `ScriptAgent` | 根据任务要求和证据生成口播文案 |
 | `WorkflowOrchestrator` | 管理流程状态、搜索预算、重试和中间产物 |

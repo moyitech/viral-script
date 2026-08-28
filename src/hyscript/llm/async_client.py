@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import math
 from typing import Any, Protocol, Sequence
 
 from openai import AsyncOpenAI
@@ -10,6 +11,7 @@ from ..config import Hy3Config, Settings, get_settings
 from .base import (
     ChatMessage,
     ChatResponse,
+    EmbeddingProviderError,
     LLMProviderError,
     _chat_response_from_payload,
 )
@@ -26,10 +28,18 @@ class AsyncChatResourceLike(Protocol):
     completions: AsyncChatCompletionsLike
 
 
+class AsyncEmbeddingsLike(Protocol):
+    """Subset of the OpenAI embeddings resource used by this adapter."""
+
+    async def create(self, **kwargs: Any) -> Any:
+        """Create one embeddings response."""
+
+
 class AsyncOpenAIClientLike(Protocol):
     """Injectable OpenAI client boundary for offline tests."""
 
     chat: AsyncChatResourceLike
+    embeddings: AsyncEmbeddingsLike
 
     async def close(self) -> None:
         """Close owned HTTP resources."""
@@ -92,27 +102,29 @@ class AsyncHy3Client:
         if reasoning_effort not in {"no_think", "low", "high"}:
             raise ValueError("reasoning_effort must be no_think, low, or high.")
 
-        resolved_max_tokens = max_tokens or self.settings.max_tokens
-        if resolved_max_tokens < 1:
+        if max_tokens is not None and max_tokens < 1:
             raise ValueError("max_tokens must be greater than zero.")
 
+        request: dict[str, Any] = {
+            "model": self.settings.model,
+            "messages": [
+                {"role": message.role, "content": message.content}
+                for message in messages
+            ],
+            "temperature": self.settings.temperature,
+            "top_p": self.settings.top_p,
+            "stream": False,
+            "extra_body": {
+                "chat_template_kwargs": {
+                    "reasoning_effort": reasoning_effort,
+                }
+            },
+        }
+        if max_tokens is not None:
+            request["max_tokens"] = max_tokens
+
         try:
-            completion = await self._client.chat.completions.create(
-                model=self.settings.model,
-                messages=[
-                    {"role": message.role, "content": message.content}
-                    for message in messages
-                ],
-                temperature=self.settings.temperature,
-                top_p=self.settings.top_p,
-                max_tokens=resolved_max_tokens,
-                stream=False,
-                extra_body={
-                    "chat_template_kwargs": {
-                        "reasoning_effort": reasoning_effort,
-                    }
-                },
-            )
+            completion = await self._client.chat.completions.create(**request)
         except Exception:
             # SDK exceptions may contain request details. Keep provider errors
             # stable and safe for logs and user-facing traces.
@@ -123,6 +135,70 @@ class AsyncHy3Client:
         except Exception:
             raise LLMProviderError("Hy3 returned an invalid response payload.") from None
         return _chat_response_from_payload(payload)
+
+    async def embed(
+        self,
+        texts: Sequence[str],
+        *,
+        model: str,
+    ) -> tuple[tuple[float, ...], ...]:
+        """Embed text through TokenHub while preserving input order."""
+
+        normalized_texts = tuple(text.strip() for text in texts)
+        if not normalized_texts:
+            raise ValueError("At least one text is required.")
+        if any(not text for text in normalized_texts):
+            raise ValueError("Embedding texts must not be empty.")
+        if not model.strip():
+            raise ValueError("Embedding model must not be empty.")
+
+        try:
+            response = await self._client.embeddings.create(
+                model=model.strip(),
+                input=list(normalized_texts),
+                encoding_format="float",
+            )
+        except Exception:
+            raise EmbeddingProviderError("Embedding request failed.") from None
+
+        try:
+            payload = response.model_dump()
+            raw_data = payload["data"]
+            if not isinstance(raw_data, list) or len(raw_data) != len(normalized_texts):
+                raise TypeError
+
+            indexed_vectors: dict[int, tuple[float, ...]] = {}
+            dimension: int | None = None
+            for item in raw_data:
+                if not isinstance(item, dict):
+                    raise TypeError
+                index = item.get("index")
+                raw_vector = item.get("embedding")
+                if (
+                    not isinstance(index, int)
+                    or isinstance(index, bool)
+                    or index in indexed_vectors
+                    or not isinstance(raw_vector, list)
+                    or not raw_vector
+                ):
+                    raise TypeError
+                vector = tuple(float(value) for value in raw_vector)
+                if any(not math.isfinite(value) for value in vector):
+                    raise TypeError
+                if dimension is None:
+                    dimension = len(vector)
+                elif len(vector) != dimension:
+                    raise TypeError
+                indexed_vectors[index] = vector
+
+            expected_indices = set(range(len(normalized_texts)))
+            if set(indexed_vectors) != expected_indices:
+                raise TypeError
+            return tuple(indexed_vectors[index] for index in range(len(normalized_texts)))
+        except Exception:
+            raise EmbeddingProviderError(
+                "Embedding endpoint returned an invalid response payload."
+            ) from None
 
     async def aclose(self) -> None:
         """Close the internally-created OpenAI client."""

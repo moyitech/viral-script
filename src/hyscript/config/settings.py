@@ -12,6 +12,7 @@ from dataclasses import dataclass, field
 from functools import lru_cache
 import os
 from pathlib import Path
+import re
 from typing import Final, Literal, Mapping, cast
 from urllib.parse import urlparse
 
@@ -20,6 +21,22 @@ from dotenv import dotenv_values
 SearchDepth = Literal["basic", "advanced", "fast", "ultra-fast"]
 SearchTopic = Literal["general", "news", "finance"]
 SearchProviderName = Literal["tavily"]
+HotlistProviderName = Literal["newsnow"]
+
+DEFAULT_NEWSNOW_SOURCE_IDS: Final[tuple[str, ...]] = (
+    "weibo",
+    "baidu",
+    "zhihu",
+    "douyin",
+    "bilibili-hot-search",
+    "toutiao",
+    "thepaper",
+)
+DEFAULT_NEWSNOW_USER_AGENT: Final[str] = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 Chrome/140.0.0.0 Safari/537.36"
+)
+_SOURCE_ID_PATTERN: Final[re.Pattern[str]] = re.compile(r"^[a-z0-9][a-z0-9-]{0,63}$")
 
 
 class SettingsError(RuntimeError):
@@ -47,10 +64,9 @@ class Hy3Config:
     base_url: str
     api_key: str = field(repr=False)
     model: str = "hy3"
-    timeout_seconds: float = 60.0
+    timeout_seconds: float = 180.0
     temperature: float = 0.9
     top_p: float = 1.0
-    max_tokens: int = 4096
 
     @property
     def openai_base_url(self) -> str:
@@ -62,6 +78,16 @@ class Hy3Config:
         if normalized.endswith("/v1"):
             return normalized
         return f"{normalized}/v1"
+
+
+@dataclass(frozen=True, slots=True)
+class TopicRecommendationConfig:
+    """Embedding deduplication and parallel topic-generation settings."""
+
+    embedding_model: str = "kinfra-text-embedding-4b"
+    similarity_threshold: float = 0.72
+    max_generation_concurrency: int = 4
+
 
 @dataclass(frozen=True, slots=True)
 class TavilyConfig:
@@ -91,6 +117,24 @@ class TavilyConfig:
 
 
 @dataclass(frozen=True, slots=True)
+class NewsNowConfig:
+    """NewsNow endpoint and bounded hot-list request defaults."""
+
+    base_url: str = "https://newsnow.busiyi.world"
+    source_ids: tuple[str, ...] = DEFAULT_NEWSNOW_SOURCE_IDS
+    max_items_per_source: int = 20
+    max_concurrency: int = 4
+    timeout_seconds: float = 20.0
+    user_agent: str = DEFAULT_NEWSNOW_USER_AGENT
+
+    @property
+    def api_url(self) -> str:
+        """Return the source-list API endpoint."""
+
+        return f"{self.base_url.rstrip('/')}/api/s"
+
+
+@dataclass(frozen=True, slots=True)
 class RuntimeConfig:
     """Provider-independent runtime settings."""
 
@@ -104,9 +148,12 @@ class Settings:
     """Validated configuration snapshot used by the whole application."""
 
     hy3: Hy3Config
+    topic_recommendation: TopicRecommendationConfig
     tavily: TavilyConfig
+    newsnow: NewsNowConfig
     runtime: RuntimeConfig
     search_provider: SearchProviderName = "tavily"
+    hotlist_provider: HotlistProviderName = "newsnow"
     project_root: Path = PROJECT_ROOT
     env_file: Path | None = None
 
@@ -145,6 +192,22 @@ def _boolean(values: Mapping[str, str], name: str, default: str) -> bool:
     raise SettingsError(
         f"{name} must be one of: 1, 0, true, false, yes, no, on, off."
     )
+
+
+def _source_ids(values: Mapping[str, str]) -> tuple[str, ...]:
+    raw_value = _text(
+        values,
+        "NEWSNOW_SOURCE_IDS",
+        ",".join(DEFAULT_NEWSNOW_SOURCE_IDS),
+    )
+    source_ids = tuple(dict.fromkeys(part.strip() for part in raw_value.split(",")))
+    if not source_ids or any(not source_id for source_id in source_ids):
+        raise SettingsError("NEWSNOW_SOURCE_IDS must contain at least one source ID.")
+    if len(source_ids) > 50:
+        raise SettingsError("NEWSNOW_SOURCE_IDS must contain at most 50 source IDs.")
+    if any(not _SOURCE_ID_PATTERN.fullmatch(source_id) for source_id in source_ids):
+        raise SettingsError("NEWSNOW_SOURCE_IDS contains an invalid source ID.")
+    return source_ids
 
 
 def _http_url(values: Mapping[str, str], name: str, default: str = "") -> str:
@@ -211,19 +274,45 @@ def load_settings(
     search_provider = _text(values, "SEARCH_PROVIDER", "tavily").lower()
     if search_provider != "tavily":
         raise SettingsError("SEARCH_PROVIDER must be 'tavily'.")
+    hotlist_provider = _text(values, "HOTLIST_PROVIDER", "newsnow").lower()
+    if hotlist_provider != "newsnow":
+        raise SettingsError("HOTLIST_PROVIDER must be 'newsnow'.")
 
-    hy3_timeout = _float(values, "HY3_TIMEOUT_SECONDS", "60")
+    hy3_timeout = _float(values, "HY3_TIMEOUT_SECONDS", "180")
     hy3_temperature = _float(values, "HY3_TEMPERATURE", "0.9")
     hy3_top_p = _float(values, "HY3_TOP_P", "1.0")
-    hy3_max_tokens = _integer(values, "HY3_MAX_TOKENS", "4096")
     if hy3_timeout <= 0:
         raise SettingsError("HY3_TIMEOUT_SECONDS must be greater than zero.")
     if not 0 <= hy3_temperature <= 2:
         raise SettingsError("HY3_TEMPERATURE must be between 0 and 2.")
     if not 0 < hy3_top_p <= 1:
         raise SettingsError("HY3_TOP_P must be greater than 0 and at most 1.")
-    if hy3_max_tokens < 1:
-        raise SettingsError("HY3_MAX_TOKENS must be greater than zero.")
+
+    topic_embedding_model = _text(
+        values,
+        "TOPIC_EMBEDDING_MODEL",
+        "kinfra-text-embedding-4b",
+    )
+    topic_similarity_threshold = _float(
+        values,
+        "TOPIC_SIMILARITY_THRESHOLD",
+        "0.72",
+    )
+    topic_max_generation_concurrency = _integer(
+        values,
+        "TOPIC_MAX_GENERATION_CONCURRENCY",
+        "4",
+    )
+    if not topic_embedding_model:
+        raise SettingsError("TOPIC_EMBEDDING_MODEL must not be empty.")
+    if not 0 < topic_similarity_threshold <= 1:
+        raise SettingsError(
+            "TOPIC_SIMILARITY_THRESHOLD must be greater than 0 and at most 1."
+        )
+    if not 1 <= topic_max_generation_concurrency <= 10:
+        raise SettingsError(
+            "TOPIC_MAX_GENERATION_CONCURRENCY must be between 1 and 10."
+        )
 
     search_depth = _text(values, "TAVILY_SEARCH_DEPTH", "basic")
     if search_depth not in {"basic", "advanced", "fast", "ultra-fast"}:
@@ -237,6 +326,24 @@ def load_settings(
         raise SettingsError("TAVILY_MAX_RESULTS must be between 1 and 20.")
     if tavily_timeout <= 0:
         raise SettingsError("TAVILY_TIMEOUT_SECONDS must be greater than zero.")
+
+    newsnow_source_ids = _source_ids(values)
+    newsnow_max_items = _integer(values, "NEWSNOW_MAX_ITEMS_PER_SOURCE", "20")
+    newsnow_max_concurrency = _integer(values, "NEWSNOW_MAX_CONCURRENCY", "4")
+    newsnow_timeout = _float(values, "NEWSNOW_TIMEOUT_SECONDS", "20")
+    newsnow_user_agent = _text(
+        values,
+        "NEWSNOW_USER_AGENT",
+        DEFAULT_NEWSNOW_USER_AGENT,
+    )
+    if not 1 <= newsnow_max_items <= 100:
+        raise SettingsError("NEWSNOW_MAX_ITEMS_PER_SOURCE must be between 1 and 100.")
+    if not 1 <= newsnow_max_concurrency <= 10:
+        raise SettingsError("NEWSNOW_MAX_CONCURRENCY must be between 1 and 10.")
+    if newsnow_timeout <= 0:
+        raise SettingsError("NEWSNOW_TIMEOUT_SECONDS must be greater than zero.")
+    if not newsnow_user_agent:
+        raise SettingsError("NEWSNOW_USER_AGENT must not be empty.")
 
     log_level = _text(values, "HYSCRIPT_LOG_LEVEL", "INFO").upper()
     if log_level not in {"CRITICAL", "ERROR", "WARNING", "INFO", "DEBUG", "NOTSET"}:
@@ -253,7 +360,11 @@ def load_settings(
             timeout_seconds=hy3_timeout,
             temperature=hy3_temperature,
             top_p=hy3_top_p,
-            max_tokens=hy3_max_tokens,
+        ),
+        topic_recommendation=TopicRecommendationConfig(
+            embedding_model=topic_embedding_model,
+            similarity_threshold=topic_similarity_threshold,
+            max_generation_concurrency=topic_max_generation_concurrency,
         ),
         tavily=TavilyConfig(
             api_key=_text(values, "TAVILY_API_KEY"),
@@ -267,12 +378,25 @@ def load_settings(
             max_results=tavily_max_results,
             timeout_seconds=tavily_timeout,
         ),
+        newsnow=NewsNowConfig(
+            base_url=_http_url(
+                values,
+                "NEWSNOW_BASE_URL",
+                "https://newsnow.busiyi.world",
+            ),
+            source_ids=newsnow_source_ids,
+            max_items_per_source=newsnow_max_items,
+            max_concurrency=newsnow_max_concurrency,
+            timeout_seconds=newsnow_timeout,
+            user_agent=newsnow_user_agent,
+        ),
         runtime=RuntimeConfig(
             log_level=log_level,
             runs_dir=runs_dir.resolve(),
             run_live_tests=_boolean(values, "HYSCRIPT_RUN_LIVE_TESTS", "0"),
         ),
         search_provider=cast(SearchProviderName, search_provider),
+        hotlist_provider=cast(HotlistProviderName, hotlist_provider),
         env_file=resolved_env_file,
     )
 
@@ -307,8 +431,16 @@ class _LazySettings:
         return get_settings().hy3
 
     @property
+    def topic_recommendation(self) -> TopicRecommendationConfig:
+        return get_settings().topic_recommendation
+
+    @property
     def tavily(self) -> TavilyConfig:
         return get_settings().tavily
+
+    @property
+    def newsnow(self) -> NewsNowConfig:
+        return get_settings().newsnow
 
     @property
     def runtime(self) -> RuntimeConfig:
@@ -317,6 +449,10 @@ class _LazySettings:
     @property
     def search_provider(self) -> SearchProviderName:
         return get_settings().search_provider
+
+    @property
+    def hotlist_provider(self) -> HotlistProviderName:
+        return get_settings().hotlist_provider
 
     @property
     def project_root(self) -> Path:

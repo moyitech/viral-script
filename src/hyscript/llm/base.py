@@ -30,6 +30,10 @@ class LLMProviderError(RuntimeError):
     """Raised when the Hy3 endpoint fails or returns an invalid payload."""
 
 
+class EmbeddingProviderError(RuntimeError):
+    """Raised when an embedding endpoint fails or returns invalid vectors."""
+
+
 class AsyncLLMClient(Protocol):
     """Asynchronous interface consumed by agents and Web/API entrypoints."""
 
@@ -41,6 +45,18 @@ class AsyncLLMClient(Protocol):
         max_tokens: int | None = None,
     ) -> str:
         """Return the assistant text without blocking the event loop."""
+
+
+class AsyncEmbeddingClient(Protocol):
+    """Asynchronous embedding interface consumed by semantic clustering."""
+
+    async def embed(
+        self,
+        texts: Sequence[str],
+        *,
+        model: str,
+    ) -> tuple[tuple[float, ...], ...]:
+        """Return one dense vector per input text, preserving input order."""
 
 
 def _chat_response_from_payload(payload: Any) -> ChatResponse:

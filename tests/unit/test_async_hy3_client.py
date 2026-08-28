@@ -7,7 +7,12 @@ import unittest
 from unittest.mock import patch
 
 from hyscript.config import Hy3Config
-from hyscript.llm import AsyncHy3Client, ChatMessage, LLMProviderError
+from hyscript.llm import (
+    AsyncHy3Client,
+    ChatMessage,
+    EmbeddingProviderError,
+    LLMProviderError,
+)
 
 
 class FakeCompletion:
@@ -45,9 +50,33 @@ class RecordingCompletions:
         return FakeCompletion(self.payload)
 
 
+class RecordingEmbeddings:
+    def __init__(self, payload: dict | None = None, error: Exception | None = None):
+        self.payload = payload or {
+            "object": "list",
+            "model": "kinfra-text-embedding-4b",
+            "data": [
+                {"object": "embedding", "index": 0, "embedding": [1.0, 0.0]},
+            ],
+        }
+        self.error = error
+        self.calls: list[dict] = []
+
+    async def create(self, **kwargs):
+        self.calls.append(kwargs)
+        if self.error is not None:
+            raise self.error
+        return FakeCompletion(self.payload)
+
+
 class FakeAsyncOpenAI:
-    def __init__(self, completions: RecordingCompletions | None = None):
+    def __init__(
+        self,
+        completions: RecordingCompletions | None = None,
+        embeddings: RecordingEmbeddings | None = None,
+    ):
         self.completions = completions or RecordingCompletions()
+        self.embeddings = embeddings or RecordingEmbeddings()
         self.chat = SimpleNamespace(completions=self.completions)
         self.closed = False
 
@@ -60,7 +89,6 @@ class AsyncHy3ClientTests(unittest.IsolatedAsyncioTestCase):
         self.settings = Hy3Config(
             base_url="https://example.com/v1/chat/completions",
             api_key="test-secret",
-            max_tokens=128,
         )
 
     async def test_complete_uses_openai_shape_and_normalizes_metadata(self) -> None:
@@ -89,9 +117,95 @@ class AsyncHy3ClientTests(unittest.IsolatedAsyncioTestCase):
         )
 
     async def test_chat_returns_only_content(self) -> None:
-        client = AsyncHy3Client(self.settings, client=FakeAsyncOpenAI())
+        completions = RecordingCompletions()
+        client = AsyncHy3Client(
+            self.settings,
+            client=FakeAsyncOpenAI(completions),
+        )
         content = await client.chat([ChatMessage(role="user", content="hello")])
         self.assertEqual(content, "OK")
+        self.assertNotIn("max_tokens", completions.calls[0])
+
+    async def test_embed_uses_float_format_and_restores_input_order(self) -> None:
+        embeddings = RecordingEmbeddings(
+            {
+                "object": "list",
+                "model": "kinfra-text-embedding-4b",
+                "data": [
+                    {"index": 1, "embedding": [0.0, 1.0]},
+                    {"index": 0, "embedding": [1.0, 0.0]},
+                ],
+            }
+        )
+        client = AsyncHy3Client(
+            self.settings,
+            client=FakeAsyncOpenAI(embeddings=embeddings),
+        )
+
+        vectors = await client.embed(
+            ["第一个热点", "第二个热点"],
+            model="kinfra-text-embedding-4b",
+        )
+
+        self.assertEqual(vectors, ((1.0, 0.0), (0.0, 1.0)))
+        self.assertEqual(
+            embeddings.calls,
+            [
+                {
+                    "model": "kinfra-text-embedding-4b",
+                    "input": ["第一个热点", "第二个热点"],
+                    "encoding_format": "float",
+                }
+            ],
+        )
+
+    async def test_embed_rejects_invalid_count_indices_and_dimensions(self) -> None:
+        invalid_payloads = {
+            "count": {"data": [{"index": 0, "embedding": [1.0, 0.0]}]},
+            "indices": {
+                "data": [
+                    {"index": 0, "embedding": [1.0, 0.0]},
+                    {"index": 2, "embedding": [0.0, 1.0]},
+                ]
+            },
+            "dimensions": {
+                "data": [
+                    {"index": 0, "embedding": [1.0, 0.0]},
+                    {"index": 1, "embedding": [0.0, 1.0, 0.0]},
+                ]
+            },
+        }
+        for name, payload in invalid_payloads.items():
+            with self.subTest(name=name):
+                client = AsyncHy3Client(
+                    self.settings,
+                    client=FakeAsyncOpenAI(
+                        embeddings=RecordingEmbeddings(payload),
+                    ),
+                )
+                with self.assertRaisesRegex(
+                    EmbeddingProviderError,
+                    "invalid response",
+                ):
+                    await client.embed(
+                        ["第一个热点", "第二个热点"],
+                        model="kinfra-text-embedding-4b",
+                    )
+
+    async def test_embedding_sdk_error_does_not_expose_secret(self) -> None:
+        embeddings = RecordingEmbeddings(
+            error=RuntimeError("request contained test-secret")
+        )
+        client = AsyncHy3Client(
+            self.settings,
+            client=FakeAsyncOpenAI(embeddings=embeddings),
+        )
+
+        with self.assertRaises(EmbeddingProviderError) as caught:
+            await client.embed(["热点"], model="kinfra-text-embedding-4b")
+
+        self.assertEqual(str(caught.exception), "Embedding request failed.")
+        self.assertNotIn("test-secret", str(caught.exception))
 
     async def test_sdk_error_does_not_expose_secret(self) -> None:
         completions = RecordingCompletions(
@@ -120,7 +234,7 @@ class AsyncHy3ClientTests(unittest.IsolatedAsyncioTestCase):
         client_class.assert_called_once_with(
             api_key="test-secret",
             base_url="https://example.com/v1",
-            timeout=60.0,
+            timeout=180.0,
             max_retries=0,
         )
         self.assertTrue(sdk_client.closed)

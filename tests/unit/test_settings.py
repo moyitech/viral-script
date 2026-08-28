@@ -37,8 +37,17 @@ class SettingsTests(unittest.TestCase):
 
         self.assertEqual(loaded.hy3.openai_base_url, "https://hy3.example/v1")
         self.assertEqual(loaded.hy3.model, "hy3")
+        self.assertEqual(
+            loaded.topic_recommendation.embedding_model,
+            "kinfra-text-embedding-4b",
+        )
+        self.assertEqual(loaded.topic_recommendation.similarity_threshold, 0.72)
+        self.assertEqual(loaded.topic_recommendation.max_generation_concurrency, 4)
         self.assertEqual(loaded.tavily.base_url, "https://api.tavily.com")
         self.assertEqual(loaded.tavily.max_results, 20)
+        self.assertEqual(loaded.newsnow.base_url, "https://newsnow.busiyi.world")
+        self.assertEqual(loaded.newsnow.source_ids[0], "weibo")
+        self.assertEqual(loaded.hotlist_provider, "newsnow")
         self.assertEqual(loaded.runtime.log_level, "INFO")
         self.assertFalse(loaded.runtime.run_live_tests)
         self.assertNotIn("hy3-test-secret", repr(loaded))
@@ -91,6 +100,12 @@ class SettingsTests(unittest.TestCase):
             "HY3_TEMPERATURE": "2.1",
             "TAVILY_MAX_RESULTS": "21",
             "SEARCH_PROVIDER": "unsupported",
+            "HOTLIST_PROVIDER": "unsupported",
+            "NEWSNOW_SOURCE_IDS": "bad/source",
+            "NEWSNOW_MAX_CONCURRENCY": "11",
+            "TOPIC_EMBEDDING_MODEL": "",
+            "TOPIC_SIMILARITY_THRESHOLD": "1.01",
+            "TOPIC_MAX_GENERATION_CONCURRENCY": "0",
             "HYSCRIPT_RUN_LIVE_TESTS": "sometimes",
         }
         for name, value in invalid_values.items():
@@ -137,6 +152,39 @@ class SettingsTests(unittest.TestCase):
             "https://tavily.sharyuke.com/api/proxy/search",
         )
 
+    def test_newsnow_settings_are_normalized(self) -> None:
+        loaded = load_settings(
+            env_file=None,
+            environ=valid_environment(
+                NEWSNOW_BASE_URL="https://newsnow.example/",
+                NEWSNOW_SOURCE_IDS="weibo,baidu,weibo",
+                NEWSNOW_MAX_ITEMS_PER_SOURCE="12",
+                NEWSNOW_MAX_CONCURRENCY="2",
+            ),
+        )
+
+        self.assertEqual(loaded.newsnow.api_url, "https://newsnow.example/api/s")
+        self.assertEqual(loaded.newsnow.source_ids, ("weibo", "baidu"))
+        self.assertEqual(loaded.newsnow.max_items_per_source, 12)
+        self.assertEqual(loaded.newsnow.max_concurrency, 2)
+
+    def test_topic_recommendation_settings_are_normalized(self) -> None:
+        loaded = load_settings(
+            env_file=None,
+            environ=valid_environment(
+                TOPIC_EMBEDDING_MODEL="custom-embedding",
+                TOPIC_SIMILARITY_THRESHOLD="0.68",
+                TOPIC_MAX_GENERATION_CONCURRENCY="3",
+            ),
+        )
+
+        self.assertEqual(
+            loaded.topic_recommendation.embedding_model,
+            "custom-embedding",
+        )
+        self.assertEqual(loaded.topic_recommendation.similarity_threshold, 0.68)
+        self.assertEqual(loaded.topic_recommendation.max_generation_concurrency, 3)
+
     def test_cached_settings_can_be_reset(self) -> None:
         first = load_settings(env_file=None, environ=valid_environment(HY3_MODEL="first"))
         second = load_settings(env_file=None, environ=valid_environment(HY3_MODEL="second"))
@@ -156,6 +204,14 @@ class SettingsTests(unittest.TestCase):
         with patch.object(SETTINGS_MODULE, "get_settings") as loader:
             self.assertEqual(repr(settings), "<lazy hyscript settings>")
             loader.assert_not_called()
+
+    def test_lazy_proxy_exposes_topic_recommendation_settings(self) -> None:
+        loaded = load_settings(env_file=None, environ=valid_environment())
+        with patch.object(SETTINGS_MODULE, "get_settings", return_value=loaded):
+            self.assertIs(
+                settings.topic_recommendation,
+                loaded.topic_recommendation,
+            )
 
 
 if __name__ == "__main__":

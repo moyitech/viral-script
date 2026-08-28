@@ -4,8 +4,9 @@
 
 **项目方案：** [设计思路、架构、重点技术、预期效果与时间规划](PROJECT_PROPOSAL.md)
 
-**当前进度：** 已完成 Hy3/Tavily 异步适配、统一配置、冻结轨迹评分内核和基础测试；端到端
-Agent、应用入口及“任务集 → 实时生成 → 冻结轨迹”的批量生成阶段仍待实现。
+**当前进度：** 已完成 NewsNow 热榜获取、20 条选题推荐、Hy3/Tavily 异步适配、统一配置、
+冻结轨迹评分内核和基础测试；深入调研、文案生成、应用入口及“任务集 → 实时生成 → 冻结
+轨迹”的批量生成阶段仍待实现。
 
 面向知识型短视频创作者的实时调研与口播文案生成 Agent。系统从当前公开热榜发现候选选题，
 使用 Hy3 生成检索计划，通过 Tavily 执行多轮实时搜索、整理可追溯证据，并生成可直接口播的
@@ -13,7 +14,9 @@ Agent、应用入口及“任务集 → 实时生成 → 冻结轨迹”的批�
 
 ## 核心流程
 
-- 选题发现：实时热榜 → 热点聚合与检索核验 → 选题推荐 → 深入调研 → 生成口播文案。
+- 选题发现：NewsNow 实时热榜 → `kinfra-text-embedding-4b`（阈值 `0.72`）事件级去重 →
+  选取最多 40 个事件 → 4 个 Hy3 `high` 批次并发生成（每批 5 条）→ 20 个选题 →
+  用户选择 → 深入调研 → 生成口播文案。
 - 已有选题：用户输入选题 → 深入调研 → 生成口播文案。
 
 两种流程都会保留 Agent 动态生成的搜索词、检索证据和论断—来源映射。在线应用在文案生成后
@@ -51,7 +54,8 @@ uv sync
 `hyscript.config.settings` 是唯一读取环境配置的模块。它会从
 `pyproject.toml` 向上定位项目根目录并自动读取根目录 `.env`；同名的进程环境变量优先，
 因此部署配置可以安全覆盖本地文件。其他模块只接收经过校验的 `settings.hy3`、
-`settings.tavily` 或 `settings.runtime`，不自行读取 `.env`。
+`settings.topic_recommendation`、`settings.tavily`、`settings.newsnow` 或
+`settings.runtime`，不自行读取 `.env`。
 
 调用示例：
 
@@ -94,9 +98,14 @@ TAVILY_BASE_URL=https://your-compatible-tavily-host.example.com/search
 ```bash
 uv run --no-sync python examples/01_llm_call.py
 uv run --no-sync python examples/02_search_call.py
+uv run --no-sync python examples/03_topic_recommendations.py
 ```
 
-这些命令会产生真实 API 调用和额度消耗；单元测试不会访问网络。
+这些命令会产生真实网络或 Hy3/Tavily API 调用；单元测试不会访问网络。一次默认选题推荐
+包含 1 次 4B embedding 请求、本地余弦连通分量去重和 4 次并发的 Hy3 高推理生成请求；生成
+请求不设置 `max_tokens`。选题推荐阶段只把热榜作为当前关注信号；页面统一提示“选中后需
+检索核验”，不在每条推荐中重复保存固定状态字段。用户选中选题后的深入调研阶段再执行搜索
+和证据核验。
 
 ## 离线评分
 

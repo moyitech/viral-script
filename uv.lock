@@ -657,6 +657,7 @@ name = "viral-script"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "httpx" },
     { name = "openai" },
     { name = "python-dotenv" },
     { name = "tavily-python" },
@@ -664,6 +665,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "httpx", specifier = ">=0.28.1" },
     { name = "openai", specifier = ">=1.68.0" },
     { name = "python-dotenv", specifier = ">=1.1.1" },
     { name = "tavily-python", specifier = ">=0.8.0" },
