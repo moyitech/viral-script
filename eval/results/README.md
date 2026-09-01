@@ -20,12 +20,26 @@ Each scoring invocation writes:
   items/<run_id>/combined.json
 ```
 
-`rules.json` contains deterministic metrics and gates, not the eight quality
-scores. `hy3_judge.json` contains the eight 0-4 scores. `combined.json` keeps
-those diagnostic scores but sets `final_score` to null whenever a
-non-compensable gate fires or a complete Judge score is unavailable.
+The default v1 Rubric sends the original seven 1-3 dimensions to Judge. Length
+is scored independently by rules, added to the seven Judge scores, and then
+normalized by the combined maximum.
+`selected_evidence` is interpreted as citation/background metadata; citations
+do not need to appear in the spoken body and no claim-level or grounding-review
+gate is added. References only help Judge assess fabrication and argument quality
+inside `theme_information`; they are not an eighth score. `combined.json` sets
+`final_score` to null when the complete seven-dimension-plus-length score is unavailable.
+
+The v2 Rubric and its deterministic length/evidence gates remain available only
+for reproducing the historical evidence-chain experiments.
 
 Resume requires the same input trace set and the same full evaluation
 fingerprint: Rubric, rule thresholds, Judge model and prompt, request/context
 limits, sampling parameters, and aggregator version. Use a new output
 directory or explicit `--overwrite` when any of them changes.
+
+In `summary.json`, `counts_scope` is `current_invocation`: `completed`,
+`skipped`, and `failed` describe only what that command invocation did. On a
+resume, an already valid result is `skipped`, so `completed` is not cumulative.
+Use `record_coverage.combined_record_count` and `record_coverage.complete` to
+interpret the final stored result coverage, and use `aggregate.record_count`
+for the number of combined records included in aggregate metrics.
