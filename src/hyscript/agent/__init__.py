@@ -8,7 +8,9 @@ from .contracts import (
     QueryPlan,
     ResearchOutcome,
     ScriptArtifact,
+    ScriptCandidate,
     ScriptTask,
+    TitleChainPart,
 )
 from .research_agent import ResearchAgent, ResearchGenerationError
 from .script_agent import ScriptAgent, ScriptGenerationError
@@ -30,9 +32,11 @@ __all__ = [
     "ResearchGenerationError",
     "ResearchOutcome",
     "ScriptArtifact",
+    "ScriptCandidate",
     "ScriptAgent",
     "ScriptGenerationError",
     "ScriptTask",
+    "TitleChainPart",
     "TopicAgent",
     "TopicGenerationError",
     "TopicRecommendation",

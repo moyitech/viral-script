@@ -75,16 +75,44 @@ def build_generation_trace(
     tavily_failure_count = research.search_request_count - tavily_success_count
     llm_usages = (*research.llm_usages, *script.llm_usages)
     token_summary = summarize_token_usage(llm_usages)
+    script_generation_calls = script.generation_attempt_count
+    script_review_calls = script.grounding_review_attempt_count
+    script_editor_calls = script.editor_attempt_count
+    script_candidate_calls = (
+        script_generation_calls - script_editor_calls
+        if script.generation_mode == "editorial_candidates"
+        else 0
+    )
+    script_calls = script_generation_calls + script_review_calls
     trace_config["request_counts"] = {
         "research_llm": research.llm_request_count,
         "search": research.search_request_count,
-        "script_llm": script.generation_attempt_count,
-        "hy3_total": research.llm_request_count + script.generation_attempt_count,
+        "script_llm": script_calls,
+        "script_generation_llm": script_generation_calls,
+        "script_grounding_review_llm": script_review_calls,
+        "hy3_total": research.llm_request_count + script_calls,
         "tavily_attempted": research.search_request_count,
         "tavily_succeeded": tavily_success_count,
         "tavily_failed": tavily_failure_count,
     }
+    if script.generation_mode == "editorial_candidates":
+        trace_config["request_counts"].update(
+            {
+                "script_candidate_llm": script_candidate_calls,
+                "script_editor_llm": script_editor_calls,
+            }
+        )
     executed_queries = research.executed_queries or _known_queries(research)
+    retained_reference_ids = set(script.reference_ids)
+    retained_evidence = (
+        tuple(
+            item
+            for item in research.evidence
+            if item.evidence_id in retained_reference_ids
+        )
+        if retained_reference_ids
+        else research.evidence
+    )
     first_search_index_by_url: dict[str, int] = {}
     for index, result in enumerate(search_results):
         first_search_index_by_url.setdefault(result.url, index)
@@ -96,7 +124,7 @@ def build_generation_trace(
         query_plan=asdict(research.query_plan),
         queries=[item.query for item in executed_queries],
         search_results=search_results,
-        selected_evidence=[asdict(item) for item in research.evidence],
+        selected_evidence=[asdict(item) for item in retained_evidence],
         claims=[asdict(item) for item in research.claims],
         script_artifact=asdict(script),
         errors=[
@@ -117,6 +145,19 @@ def build_generation_trace(
                 "research_query_plan": research.query_plan_prompt_version,
                 "research_evidence": research.evidence_prompt_version,
                 "script_generation": script.prompt_version,
+                "script_grounding_review": (
+                    script.grounding_review_prompt_version
+                ),
+                **(
+                    {
+                        "script_candidate": (
+                            script.generation_candidates[0].prompt_version
+                        ),
+                        "script_editor": script.editor_prompt_version,
+                    }
+                    if script.generation_candidates
+                    else {}
+                ),
             },
             "search_responses": search_lineage,
             "llm_calls": [asdict(item) for item in llm_usages],
@@ -133,6 +174,28 @@ def build_generation_trace(
             "claim_to_script_quote": {
                 item.claim_id: item.script_quote for item in script.claim_usages
             },
+            "script_reference_ids": list(script.reference_ids),
+            "script_generation_mode": script.generation_mode,
+            "script_selected_candidate_ids": list(script.selected_candidate_ids),
+            "script_candidates": [
+                {
+                    "candidate_id": item.candidate_id,
+                    "strategy": item.strategy,
+                    "prompt_version": item.prompt_version,
+                    "reference_ids": list(item.reference_ids),
+                    "character_count": item.character_count,
+                }
+                for item in script.generation_candidates
+            ],
+            "research_title_chain": [
+                {
+                    "component": item.component,
+                    "status": item.status,
+                    "claim_ids": list(item.claim_ids),
+                    "reason": item.reason,
+                }
+                for item in research.title_chain
+            ],
         },
     )
 

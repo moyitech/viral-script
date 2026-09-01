@@ -25,9 +25,6 @@ class Hy3LiveTests(unittest.IsolatedAsyncioTestCase):
             response = await client.complete(
                 [ChatMessage(role="user", content="只回复两个大写字母：OK")],
                 reasoning_effort="no_think",
-                # The endpoint may account for a small number of internal reasoning
-                # tokens even in no_think mode, so 16 can end before final content.
-                max_tokens=128,
             )
 
         self.assertTrue(response.content)

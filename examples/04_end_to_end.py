@@ -43,7 +43,7 @@ def configure_progress_logging() -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Research one selected topic and generate an evidence-backed oral script.",
+        description="Collect live background for one topic and generate an oral script.",
     )
     parser.add_argument(
         "topic",
@@ -128,7 +128,7 @@ async def run(args: argparse.Namespace) -> None:
             llm,
             search,
             config=settings.research,
-        ).research(task)
+        ).collect_background(task)
         if research.status != "ready":
             usage = usage_statistics(research)
             log_usage_statistics(usage)

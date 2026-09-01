@@ -70,7 +70,6 @@ class AsyncLLMClient(Protocol):
         messages: Sequence[ChatMessage],
         *,
         reasoning_effort: str = "no_think",
-        max_tokens: int | None = None,
     ) -> str:
         """Return the assistant text without blocking the event loop."""
 
@@ -79,7 +78,6 @@ class AsyncLLMClient(Protocol):
         messages: Sequence[ChatMessage],
         *,
         reasoning_effort: str = "no_think",
-        max_tokens: int | None = None,
     ) -> ChatResponse:
         """Return assistant text plus provider metadata and token usage."""
 

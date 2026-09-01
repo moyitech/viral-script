@@ -50,6 +50,7 @@ class SettingsTests(unittest.TestCase):
         self.assertEqual(loaded.research.max_content_chars_per_result, 4000)
         self.assertEqual(loaded.script_generation.length_tolerance_ratio, 0.10)
         self.assertEqual(loaded.script_generation.max_generation_attempts, 2)
+        self.assertFalse(loaded.script_generation.grounding_review_enabled)
         self.assertEqual(loaded.tavily.base_url, "https://api.tavily.com")
         self.assertEqual(loaded.tavily.max_results, 20)
         self.assertEqual(loaded.newsnow.base_url, "https://newsnow.busiyi.world")
@@ -210,6 +211,7 @@ class SettingsTests(unittest.TestCase):
                 RESEARCH_MAX_CONTENT_CHARS_PER_RESULT="2500",
                 SCRIPT_LENGTH_TOLERANCE_RATIO="0.15",
                 SCRIPT_MAX_GENERATION_ATTEMPTS="3",
+                SCRIPT_GROUNDING_REVIEW_ENABLED="1",
             ),
         )
 
@@ -220,6 +222,7 @@ class SettingsTests(unittest.TestCase):
         self.assertEqual(loaded.research.max_content_chars_per_result, 2500)
         self.assertEqual(loaded.script_generation.length_tolerance_ratio, 0.15)
         self.assertEqual(loaded.script_generation.max_generation_attempts, 3)
+        self.assertTrue(loaded.script_generation.grounding_review_enabled)
 
     def test_cached_settings_can_be_reset(self) -> None:
         first = load_settings(env_file=None, environ=valid_environment(HY3_MODEL="first"))

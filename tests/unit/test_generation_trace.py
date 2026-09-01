@@ -15,6 +15,7 @@ from hyscript.agent import (
     ResearchOutcome,
     ScriptArtifact,
     ScriptTask,
+    TitleChainPart,
 )
 from hyscript.artifacts import build_generation_trace
 from hyscript.evaluation.io import load_frozen_trace
@@ -23,6 +24,59 @@ from hyscript.search import SearchResponse, SearchResult
 
 
 class GenerationTraceTests(unittest.TestCase):
+    def test_background_trace_keeps_only_writer_selected_references(self) -> None:
+        task = ScriptTask(topic="背景生成测试", target_length=50)
+        research = ResearchOutcome(
+            status="ready",
+            query_plan=QueryPlan(
+                goal="补充写作背景",
+                must_verify=("当前背景",),
+                queries=(PlannedQuery(query="背景查询", purpose="补充背景"),),
+            ),
+            search_responses=(),
+            evidence=(
+                Evidence(
+                    evidence_id="E001",
+                    result_ref="R001",
+                    title="未采用背景",
+                    url="https://example.com/unused",
+                    excerpt="这条背景没有被成稿采用。",
+                    source_query="背景查询",
+                ),
+                Evidence(
+                    evidence_id="E002",
+                    result_ref="R002",
+                    title="实际采用背景",
+                    url="https://example.com/used",
+                    excerpt="这条背景实际帮助了成稿。",
+                    source_query="背景查询",
+                ),
+            ),
+            claims=(),
+            errors=(),
+            query_plan_prompt_version="query-v1",
+            evidence_prompt_version="search-background-1.0.0",
+            llm_request_count=1,
+            search_request_count=1,
+        )
+        script = ScriptArtifact(
+            outline=("提出问题", "给出解释"),
+            script_text="一个看似简单的问题，背后往往藏着更值得注意的变化和选择。",
+            claim_usages=(),
+            character_count=31,
+            prompt_version="script-generation-background-1.0.0",
+            generation_attempt_count=1,
+            reference_ids=("E002",),
+        )
+
+        trace = build_generation_trace(task, research, script)
+
+        self.assertEqual(
+            [item["evidence_id"] for item in trace.selected_evidence],
+            ["E002"],
+        )
+        self.assertEqual(trace.lineage["script_reference_ids"], ["E002"])
+
     def test_preserves_generation_data_and_is_accepted_by_offline_loader(self) -> None:
         task = ScriptTask(topic="已选中的热点", target_length=50)
         search_response = SearchResponse(
@@ -129,6 +183,26 @@ class GenerationTraceTests(unittest.TestCase):
                     raw_usage={"prompt_tokens": 200, "completion_tokens": 40},
                 ),
             ),
+            title_chain=(
+                TitleChainPart(
+                    component="subject_scope",
+                    status="covered",
+                    claim_ids=("C001",),
+                    reason="核心论断覆盖标题主体和适用范围。",
+                ),
+                TitleChainPart(
+                    component="stated_context",
+                    status="covered",
+                    claim_ids=("C001",),
+                    reason="核心论断覆盖题设中的变化情境。",
+                ),
+                TitleChainPart(
+                    component="question_predicate",
+                    status="covered",
+                    claim_ids=("C001",),
+                    reason="核心论断直接覆盖标题谓词。",
+                ),
+            ),
         )
         script = ScriptArtifact(
             outline=("说明变化", "解释边界"),
@@ -180,6 +254,8 @@ class GenerationTraceTests(unittest.TestCase):
                 "research_llm": 2,
                 "search": 2,
                 "script_llm": 1,
+                "script_generation_llm": 1,
+                "script_grounding_review_llm": 0,
                 "hy3_total": 3,
                 "tavily_attempted": 2,
                 "tavily_succeeded": 1,
@@ -203,7 +279,31 @@ class GenerationTraceTests(unittest.TestCase):
                 "research_query_plan": "research-query-plan-1.1.0",
                 "research_evidence": "research-evidence-2.1.0",
                 "script_generation": "script-generation-1.0.0",
+                "script_grounding_review": None,
             },
+        )
+        self.assertEqual(
+            trace.lineage["research_title_chain"],
+            [
+                {
+                    "component": "subject_scope",
+                    "status": "covered",
+                    "claim_ids": ["C001"],
+                    "reason": "核心论断覆盖标题主体和适用范围。",
+                },
+                {
+                    "component": "stated_context",
+                    "status": "covered",
+                    "claim_ids": ["C001"],
+                    "reason": "核心论断覆盖题设中的变化情境。",
+                },
+                {
+                    "component": "question_predicate",
+                    "status": "covered",
+                    "claim_ids": ["C001"],
+                    "reason": "核心论断直接覆盖标题谓词。",
+                }
+            ],
         )
         self.assertEqual(
             trace.lineage["search_responses"][0]["search_result_indices"],

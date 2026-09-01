@@ -53,6 +53,20 @@ class RecordingCompletions:
         return FakeCompletion(self.payload)
 
 
+class RateLimitedCompletions(RecordingCompletions):
+    def __init__(self, failures: int):
+        super().__init__()
+        self.failures = failures
+
+    async def create(self, **kwargs):
+        self.calls.append(kwargs)
+        if len(self.calls) <= self.failures:
+            error = RuntimeError("provider throttled the request")
+            error.status_code = 429
+            raise error
+        return FakeCompletion(self.payload)
+
+
 class RecordingEmbeddings:
     def __init__(self, payload: dict | None = None, error: Exception | None = None):
         self.payload = payload or {
@@ -104,7 +118,6 @@ class AsyncHy3ClientTests(unittest.IsolatedAsyncioTestCase):
         response = await client.complete(
             [ChatMessage(role="user", content="只回复 OK")],
             reasoning_effort="no_think",
-            max_tokens=16,
         )
 
         self.assertEqual(response.content, "OK")
@@ -113,7 +126,7 @@ class AsyncHy3ClientTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(response.usage, {"prompt_tokens": 3, "completion_tokens": 1})
         request = completions.calls[0]
         self.assertEqual(request["model"], "hy3")
-        self.assertEqual(request["max_tokens"], 16)
+        self.assertNotIn("max_tokens", request)
         self.assertFalse(request["stream"])
         self.assertEqual(
             request["extra_body"],
@@ -264,6 +277,25 @@ class AsyncHy3ClientTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(str(caught.exception), "Hy3 request failed.")
         self.assertNotIn("test-secret", str(caught.exception))
 
+    async def test_rate_limit_retries_until_the_same_coroutine_succeeds(self) -> None:
+        completions = RateLimitedCompletions(failures=3)
+        client = AsyncHy3Client(
+            self.settings,
+            client=FakeAsyncOpenAI(completions),
+        )
+
+        with patch("hyscript.llm.async_client.asyncio.sleep") as sleep:
+            response = await client.complete(
+                [ChatMessage(role="user", content="hello")]
+            )
+
+        self.assertEqual(response.content, "OK")
+        self.assertEqual(len(completions.calls), 4)
+        self.assertEqual(
+            [call.args[0] for call in sleep.await_args_list],
+            [0.5, 1.0, 2.0],
+        )
+
     async def test_owned_openai_client_uses_normalized_base_and_closes(self) -> None:
         sdk_client = FakeAsyncOpenAI()
         with patch(
@@ -276,7 +308,7 @@ class AsyncHy3ClientTests(unittest.IsolatedAsyncioTestCase):
         client_class.assert_called_once_with(
             api_key="test-secret",
             base_url="https://example.com/v1",
-            timeout=180.0,
+            timeout=None,
             max_retries=0,
         )
         self.assertTrue(sdk_client.closed)

@@ -22,6 +22,7 @@ SearchDepth = Literal["basic", "advanced", "fast", "ultra-fast"]
 SearchTopic = Literal["general", "news", "finance"]
 SearchProviderName = Literal["tavily"]
 HotlistProviderName = Literal["newsnow"]
+ScriptGenerationMode = Literal["single", "editorial_candidates"]
 
 DEFAULT_NEWSNOW_SOURCE_IDS: Final[tuple[str, ...]] = (
     "weibo",
@@ -64,7 +65,6 @@ class Hy3Config:
     base_url: str
     api_key: str = field(repr=False)
     model: str = "hy3"
-    timeout_seconds: float = 180.0
     temperature: float = 0.9
     top_p: float = 1.0
 
@@ -106,6 +106,8 @@ class ScriptGenerationConfig:
 
     length_tolerance_ratio: float = 0.10
     max_generation_attempts: int = 2
+    grounding_review_enabled: bool = False
+    generation_mode: ScriptGenerationMode = "single"
 
 
 @dataclass(frozen=True, slots=True)
@@ -299,11 +301,8 @@ def load_settings(
     if hotlist_provider != "newsnow":
         raise SettingsError("HOTLIST_PROVIDER must be 'newsnow'.")
 
-    hy3_timeout = _float(values, "HY3_TIMEOUT_SECONDS", "180")
     hy3_temperature = _float(values, "HY3_TEMPERATURE", "0.9")
     hy3_top_p = _float(values, "HY3_TOP_P", "1.0")
-    if hy3_timeout <= 0:
-        raise SettingsError("HY3_TIMEOUT_SECONDS must be greater than zero.")
     if not 0 <= hy3_temperature <= 2:
         raise SettingsError("HY3_TEMPERATURE must be between 0 and 2.")
     if not 0 < hy3_top_p <= 1:
@@ -387,6 +386,16 @@ def load_settings(
         "SCRIPT_MAX_GENERATION_ATTEMPTS",
         "2",
     )
+    script_grounding_review_enabled = _boolean(
+        values,
+        "SCRIPT_GROUNDING_REVIEW_ENABLED",
+        "0",
+    )
+    script_generation_mode = _text(
+        values,
+        "SCRIPT_GENERATION_MODE",
+        "single",
+    ).lower()
     if not 0 <= script_length_tolerance <= 0.5:
         raise SettingsError(
             "SCRIPT_LENGTH_TOLERANCE_RATIO must be between 0 and 0.5."
@@ -394,6 +403,10 @@ def load_settings(
     if not 1 <= script_max_generation_attempts <= 3:
         raise SettingsError(
             "SCRIPT_MAX_GENERATION_ATTEMPTS must be between 1 and 3."
+        )
+    if script_generation_mode not in {"single", "editorial_candidates"}:
+        raise SettingsError(
+            "SCRIPT_GENERATION_MODE must be 'single' or 'editorial_candidates'."
         )
 
     search_depth = _text(values, "TAVILY_SEARCH_DEPTH", "basic")
@@ -439,7 +452,6 @@ def load_settings(
             base_url=_http_url(values, "HY3_BASE_URL"),
             api_key=_text(values, "HY3_API_KEY"),
             model=_text(values, "HY3_MODEL", "hy3") or "hy3",
-            timeout_seconds=hy3_timeout,
             temperature=hy3_temperature,
             top_p=hy3_top_p,
         ),
@@ -458,6 +470,8 @@ def load_settings(
         script_generation=ScriptGenerationConfig(
             length_tolerance_ratio=script_length_tolerance,
             max_generation_attempts=script_max_generation_attempts,
+            grounding_review_enabled=script_grounding_review_enabled,
+            generation_mode=cast(ScriptGenerationMode, script_generation_mode),
         ),
         tavily=TavilyConfig(
             api_key=_text(values, "TAVILY_API_KEY"),

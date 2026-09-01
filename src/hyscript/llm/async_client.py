@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import asyncio
 import math
 from typing import Any, Protocol, Sequence
 
@@ -59,7 +60,7 @@ class AsyncHy3Client:
         self._client = client or AsyncOpenAI(
             api_key=settings.api_key,
             base_url=settings.openai_base_url,
-            timeout=settings.timeout_seconds,
+            timeout=None,
             max_retries=0,
         )
 
@@ -77,14 +78,12 @@ class AsyncHy3Client:
         messages: Sequence[ChatMessage],
         *,
         reasoning_effort: str = "no_think",
-        max_tokens: int | None = None,
     ) -> str:
         """Return only assistant text."""
 
         response = await self.complete(
             messages,
             reasoning_effort=reasoning_effort,
-            max_tokens=max_tokens,
         )
         return response.content
 
@@ -93,7 +92,6 @@ class AsyncHy3Client:
         messages: Sequence[ChatMessage],
         *,
         reasoning_effort: str = "no_think",
-        max_tokens: int | None = None,
     ) -> ChatResponse:
         """Return normalized text and metadata without blocking the event loop."""
 
@@ -101,9 +99,6 @@ class AsyncHy3Client:
             raise ValueError("At least one chat message is required.")
         if reasoning_effort not in {"no_think", "low", "high"}:
             raise ValueError("reasoning_effort must be no_think, low, or high.")
-
-        if max_tokens is not None and max_tokens < 1:
-            raise ValueError("max_tokens must be greater than zero.")
 
         request: dict[str, Any] = {
             "model": self.settings.model,
@@ -120,15 +115,19 @@ class AsyncHy3Client:
                 }
             },
         }
-        if max_tokens is not None:
-            request["max_tokens"] = max_tokens
 
-        try:
-            completion = await self._client.chat.completions.create(**request)
-        except Exception:
-            # SDK exceptions may contain request details. Keep provider errors
-            # stable and safe for logs and user-facing traces.
-            raise LLMProviderError("Hy3 request failed.") from None
+        rate_limit_attempt = 0
+        while True:
+            try:
+                completion = await self._client.chat.completions.create(**request)
+                break
+            except Exception as exc:
+                if not _is_rate_limit_error(exc):
+                    # SDK exceptions may contain request details. Keep provider errors
+                    # stable and safe for logs and user-facing traces.
+                    raise LLMProviderError("Hy3 request failed.") from None
+                rate_limit_attempt += 1
+                await asyncio.sleep(_rate_limit_delay(exc, rate_limit_attempt))
 
         try:
             payload = completion.model_dump()
@@ -211,3 +210,25 @@ class AsyncHy3Client:
 
     async def __aexit__(self, *_: object) -> None:
         await self.aclose()
+
+
+def _is_rate_limit_error(exc: Exception) -> bool:
+    """Recognize provider throttling without persisting exception details."""
+
+    return getattr(exc, "status_code", None) == 429
+
+
+def _rate_limit_delay(exc: Exception, attempt: int) -> float:
+    """Use Retry-After when available, otherwise capped exponential backoff."""
+
+    response = getattr(exc, "response", None)
+    headers = getattr(response, "headers", None)
+    if headers is not None:
+        raw_delay = headers.get("retry-after") or headers.get("Retry-After")
+        try:
+            delay = float(raw_delay)
+        except (TypeError, ValueError):
+            delay = 0.0
+        if math.isfinite(delay) and delay > 0:
+            return min(delay, 60.0)
+    return min(0.5 * (2 ** min(attempt - 1, 6)), 30.0)
