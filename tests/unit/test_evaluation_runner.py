@@ -20,7 +20,7 @@ from hyscript.evaluation import (
 from hyscript.llm import ChatResponse
 
 
-RUBRIC = load_rubric(PROJECT_ROOT / "eval/rubrics/script_quality_v1.json")
+RUBRIC = load_rubric(PROJECT_ROOT / "eval/rubrics/script_quality_v2.json")
 
 
 def write_trace(
@@ -48,7 +48,7 @@ def judge_output(script_span: str = "这是一段") -> str:
             "script_spans": [script_span],
             "evidence_ids": [],
         }
-        for dimension in RUBRIC.dimensions
+        for dimension in RUBRIC.judge_dimensions
     }
     return json.dumps(
         {"summary": "测试评审完成。", "scores": scores, "gates": []},
@@ -57,7 +57,7 @@ def judge_output(script_span: str = "这是一段") -> str:
 
 
 class StaticJudgeClient:
-    async def complete(self, messages, *, reasoning_effort="no_think", max_tokens=None):
+    async def complete(self, messages, *, reasoning_effort="no_think"):
         return ChatResponse(
             content=judge_output(),
             model="hy3-test",
@@ -95,6 +95,17 @@ class BatchEvaluationRunnerTests(unittest.IsolatedAsyncioTestCase):
             self.assertTrue((output_dir / "items/run-1/combined.json").is_file())
             summary = json.loads((output_dir / "summary.json").read_text())
             self.assertEqual(summary["counts"]["completed"], 1)
+            self.assertEqual(summary["counts_scope"], "current_invocation")
+            self.assertEqual(
+                summary["record_coverage"],
+                {
+                    "input_trace_count": 1,
+                    "validated_trace_count": 1,
+                    "combined_record_count": 1,
+                    "unavailable_record_count": 0,
+                    "complete": True,
+                },
+            )
             manifest = json.loads((output_dir / "manifest.json").read_text())
             self.assertEqual(manifest["status"], "completed")
 
@@ -114,6 +125,13 @@ class BatchEvaluationRunnerTests(unittest.IsolatedAsyncioTestCase):
             self.assertEqual(resumed.outcomes[0].status, "skipped")
             self.assertEqual(resumed.evaluation_id, first.evaluation_id)
             self.assertEqual(rules_path.read_bytes(), original)
+            summary = json.loads((output_dir / "summary.json").read_text())
+            self.assertEqual(
+                summary["counts"],
+                {"input": 1, "completed": 0, "skipped": 1, "failed": 0},
+            )
+            self.assertEqual(summary["record_coverage"]["combined_record_count"], 1)
+            self.assertTrue(summary["record_coverage"]["complete"])
 
     async def test_invalid_trace_does_not_stop_valid_trace(self) -> None:
         with TemporaryDirectory() as directory:
@@ -133,6 +151,17 @@ class BatchEvaluationRunnerTests(unittest.IsolatedAsyncioTestCase):
             self.assertTrue((output_dir / "items/run-valid/combined.json").is_file())
             failures = json.loads((output_dir / "failures.json").read_text())
             self.assertEqual(failures["items"][0]["error_code"], "invalid_trace")
+            summary = json.loads((output_dir / "summary.json").read_text())
+            self.assertEqual(
+                summary["record_coverage"],
+                {
+                    "input_trace_count": 2,
+                    "validated_trace_count": 1,
+                    "combined_record_count": 1,
+                    "unavailable_record_count": 1,
+                    "complete": False,
+                },
+            )
 
     async def test_trace_change_requires_explicit_overwrite(self) -> None:
         with TemporaryDirectory() as directory:
@@ -233,12 +262,12 @@ class BatchEvaluationRunnerTests(unittest.IsolatedAsyncioTestCase):
             await BatchEvaluationRunner(
                 RUBRIC,
                 judge_config,
-                judge_evaluator=judge(JudgeConfig(max_tokens=1024)),
+                judge_evaluator=judge(JudgeConfig(reasoning_effort="low")),
             ).run([trace_path])
             changed_judge = await BatchEvaluationRunner(
                 RUBRIC,
                 judge_config,
-                judge_evaluator=judge(JudgeConfig(max_tokens=2048)),
+                judge_evaluator=judge(JudgeConfig(reasoning_effort="high")),
             ).run([trace_path])
             self.assertEqual(
                 changed_judge.outcomes[0].error_code,

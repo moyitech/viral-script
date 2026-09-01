@@ -21,7 +21,8 @@ from hyscript.evaluation.rubric import load_rubric
 from hyscript.evaluation.rules import RuleEvaluator
 
 
-RUBRIC_PATH = PROJECT_ROOT / "eval/rubrics/script_quality_v1.json"
+RUBRIC_PATH = PROJECT_ROOT / "eval/rubrics/script_quality_v2.json"
+INITIAL_RUBRIC_PATH = PROJECT_ROOT / "eval/rubrics/script_quality_v1.json"
 
 
 def trace_payload(
@@ -78,6 +79,102 @@ class FrozenTraceIoTests(unittest.TestCase):
         self.assertEqual(trace.run_id, "run-001")
         self.assertEqual(trace.trace_sha256, hashlib.sha256(content).hexdigest())
         self.assertEqual(trace.script_text[:4], "真正影响")
+
+    def test_loads_grounding_review_and_complete_research_title_chain(self) -> None:
+        payload = trace_payload()
+        payload["script_artifact"].update(
+            {
+                "grounding_review_status": "rejected",
+                "grounding_review_issues": [
+                    "unsupported_claim: 标题答案缺少直接证据。"
+                ],
+            }
+        )
+        payload["lineage"] = {
+            "research_title_chain": [
+                {
+                    "component": component,
+                    "status": "covered",
+                    "claim_ids": ["claim-1"],
+                    "reason": f"claim-1 覆盖 {component}。",
+                }
+                for component in (
+                    "subject_scope",
+                    "stated_context",
+                    "question_predicate",
+                )
+            ]
+        }
+
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / "trace.json"
+            write_trace(path, payload)
+            trace = load_frozen_trace(path)
+
+        self.assertEqual(trace.grounding_review_status, "rejected")
+        self.assertEqual(
+            trace.grounding_review_issues,
+            ("unsupported_claim: 标题答案缺少直接证据。",),
+        )
+        self.assertEqual(
+            tuple(part["component"] for part in trace.research_title_chain),
+            ("subject_scope", "stated_context", "question_predicate"),
+        )
+
+    def test_rejects_invalid_grounding_review_and_title_chain(self) -> None:
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / "trace.json"
+            no_rejection_issues = trace_payload()
+            no_rejection_issues["script_artifact"]["grounding_review_status"] = (
+                "rejected"
+            )
+            write_trace(path, no_rejection_issues)
+            with self.assertRaisesRegex(
+                TraceInputError,
+                "Rejected grounding review requires issues",
+            ):
+                load_frozen_trace(path)
+
+            missing_component = trace_payload()
+            missing_component["lineage"] = {
+                "research_title_chain": [
+                    {
+                        "component": "question_predicate",
+                        "status": "covered",
+                        "claim_ids": ["claim-1"],
+                        "reason": "只保存了一段。",
+                    }
+                ]
+            }
+            write_trace(path, missing_component)
+            with self.assertRaisesRegex(
+                TraceInputError,
+                "all three components",
+            ):
+                load_frozen_trace(path)
+
+            unknown_claim = trace_payload()
+            unknown_claim["lineage"] = {
+                "research_title_chain": [
+                    {
+                        "component": component,
+                        "status": "covered",
+                        "claim_ids": ["unknown-claim"],
+                        "reason": "引用不存在的 claim。",
+                    }
+                    for component in (
+                        "subject_scope",
+                        "stated_context",
+                        "question_predicate",
+                    )
+                ]
+            }
+            write_trace(path, unknown_claim)
+            with self.assertRaisesRegex(
+                TraceInputError,
+                "references invalid core claims",
+            ):
+                load_frozen_trace(path)
 
     def test_rejects_unsafe_run_id_and_missing_script_contract(self) -> None:
         with TemporaryDirectory() as directory:
@@ -161,11 +258,75 @@ class RuleEvaluatorTests(unittest.TestCase):
     def setUp(self) -> None:
         self.rubric = load_rubric(RUBRIC_PATH)
 
-    def _evaluate(self, payload: dict):
+    def _evaluate(self, payload: dict, *, rubric=None):
         with TemporaryDirectory() as directory:
             path = Path(directory) / "trace.json"
             write_trace(path, payload)
-            return RuleEvaluator().evaluate(load_frozen_trace(path), self.rubric)
+            return RuleEvaluator().evaluate(
+                load_frozen_trace(path),
+                rubric or self.rubric,
+            )
+
+    def test_initial_rubric_ignores_historical_grounding_and_legal_chain_gates(
+        self,
+    ) -> None:
+        payload = trace_payload(
+            script_text="发布前给当事人面部打码，就能避免隐私侵权。"
+        )
+        payload["script_artifact"].update(
+            {
+                "grounding_review_status": "rejected",
+                "grounding_review_issues": [
+                    "unsupported_claim: 标题答案缺少直接证据。"
+                ],
+            }
+        )
+
+        initial_record = self._evaluate(
+            payload,
+            rubric=load_rubric(INITIAL_RUBRIC_PATH),
+        )
+        historical_record = self._evaluate(payload)
+        initial_gate_codes = {
+            finding.code
+            for finding in initial_record.findings
+            if finding.severity == "gate"
+        }
+        historical_gate_codes = {
+            finding.code
+            for finding in historical_record.findings
+            if finding.severity == "gate"
+        }
+
+        self.assertNotIn("grounding_review_rejected", initial_gate_codes)
+        self.assertNotIn("unsupported_legal_guarantee", initial_gate_codes)
+        self.assertIn("grounding_review_rejected", historical_gate_codes)
+        self.assertIn("unsupported_legal_guarantee", historical_gate_codes)
+
+    def test_initial_rubric_does_not_require_claim_mapping(self) -> None:
+        payload = trace_payload()
+        payload["claims"] = []
+
+        record = self._evaluate(
+            payload,
+            rubric=load_rubric(INITIAL_RUBRIC_PATH),
+        )
+
+        self.assertNotIn(
+            "claim_mapping_missing",
+            {finding.code for finding in record.findings},
+        )
+
+    def test_initial_rubric_scores_length_on_one_to_three_scale(self) -> None:
+        rubric = load_rubric(INITIAL_RUBRIC_PATH)
+        for actual, expected in ((100, 3), (80, 2), (60, 1)):
+            with self.subTest(actual=actual):
+                record = self._evaluate(
+                    trace_payload(script_text="字" * actual, target_length=100),
+                    rubric=rubric,
+                )
+                self.assertEqual(record.metrics["length_score"], expected)
+                self.assertEqual(record.dimension_scores[0].score, expected)
 
     def test_reports_length_and_complete_claim_coverage(self) -> None:
         payload = trace_payload(target_length=31)
@@ -174,6 +335,12 @@ class RuleEvaluatorTests(unittest.TestCase):
         self.assertEqual(record.metrics["claim_citation_coverage"], 1.0)
         self.assertEqual(record.metrics["core_claim_support_rate"], 1.0)
         self.assertIsInstance(record.metrics["length_deviation_ratio"], float)
+        length = next(
+            score
+            for score in record.dimension_scores
+            if score.dimension_id == "length_compliance"
+        )
+        self.assertEqual(length.score, 4)
         self.assertFalse(record.gate_failed)
 
     def test_fabricated_and_unsupported_core_citation_are_gates(self) -> None:
@@ -207,6 +374,58 @@ class RuleEvaluatorTests(unittest.TestCase):
         self.assertIn("repetition_padding", codes)
         self.assertIn("forbidden_phrase", codes)
 
+    def test_gates_a_privacy_measure_written_as_legal_safe_harbor(self) -> None:
+        scripts = (
+            "发布前务必给当事人面部打码，才能避开隐私侵权的麻烦。",
+            (
+                "个人信息保护法列有公共利益例外，"
+                "这给路人拍下冲突上传、促成讨论留出了合法空间。"
+            ),
+        )
+        for script_text in scripts:
+            with self.subTest(script_text=script_text):
+                record = self._evaluate(trace_payload(script_text=script_text))
+
+                self.assertIn(
+                    "unsupported_legal_guarantee",
+                    {
+                        finding.code
+                        for finding in record.findings
+                        if finding.severity == "gate"
+                    },
+                )
+
+    def test_grounding_review_rejection_and_fallback_are_gates(self) -> None:
+        cases = (
+            (
+                "rejected",
+                ["unsupported_claim: 标题答案缺少直接证据。"],
+                "grounding_review_rejected",
+            ),
+            ("fallback", [], "grounding_review_inconclusive"),
+        )
+        for status, issues, expected_code in cases:
+            with self.subTest(status=status):
+                payload = trace_payload()
+                payload["script_artifact"].update(
+                    {
+                        "grounding_review_status": status,
+                        "grounding_review_issues": issues,
+                    }
+                )
+
+                record = self._evaluate(payload)
+
+                self.assertTrue(record.gate_failed)
+                self.assertIn(
+                    expected_code,
+                    {
+                        finding.code
+                        for finding in record.findings
+                        if finding.severity == "gate"
+                    },
+                )
+
     def test_missing_target_length_is_not_guessed(self) -> None:
         payload = trace_payload()
         payload["task"].pop("target_length")
@@ -214,9 +433,19 @@ class RuleEvaluatorTests(unittest.TestCase):
         record = self._evaluate(payload)
 
         self.assertIsNone(record.metrics["length_deviation_ratio"])
+        self.assertIsNone(record.dimension_scores[0].score)
         self.assertIn(
             "target_length_missing", {finding.code for finding in record.findings}
         )
+
+    def test_length_dimension_uses_deterministic_deviation_bands(self) -> None:
+        for actual, expected in ((100, 4), (85, 3), (75, 2), (60, 1), (40, 0)):
+            with self.subTest(actual=actual):
+                record = self._evaluate(
+                    trace_payload(script_text="字" * actual, target_length=100)
+                )
+                self.assertEqual(record.metrics["length_score"], expected)
+                self.assertEqual(record.dimension_scores[0].score, expected)
 
     def test_normal_discussion_of_scoring_or_writing_is_not_meta_output(self) -> None:
         payload = trace_payload(

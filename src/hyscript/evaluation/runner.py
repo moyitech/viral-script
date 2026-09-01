@@ -220,8 +220,11 @@ class BatchEvaluationRunner:
     async def _judge(self, trace: FrozenTrace) -> EvaluationRecord:
         if self.judge_evaluator is None:  # pragma: no cover - constructor guards it
             raise RuntimeError("Judge evaluator is unavailable.")
-        async with self._judge_semaphore:
-            return await self.judge_evaluator.evaluate(trace, self.rubric)
+        return await self.judge_evaluator.evaluate(
+            trace,
+            self.rubric,
+            request_semaphore=self._judge_semaphore,
+        )
 
     async def _score_trace(
         self,
@@ -507,11 +510,20 @@ class BatchEvaluationRunner:
             "schema_version": "1.0",
             "evaluation_id": evaluation_id,
             "completed_at": utc_now_iso(),
+            "counts_scope": "current_invocation",
             "counts": {
                 "input": len(trace_paths),
                 "completed": sum(outcome.status == "completed" for outcome in outcomes),
                 "skipped": sum(outcome.status == "skipped" for outcome in outcomes),
                 "failed": sum(outcome.status == "failed" for outcome in outcomes),
+            },
+            "record_coverage": {
+                "input_trace_count": len(trace_paths),
+                "validated_trace_count": len(loaded),
+                "combined_record_count": len(combined_records),
+                "unavailable_record_count": len(trace_paths)
+                - len(combined_records),
+                "complete": len(combined_records) == len(trace_paths),
             },
             "aggregate": summarize_batch(combined_records),
         }

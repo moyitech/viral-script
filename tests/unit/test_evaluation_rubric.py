@@ -20,26 +20,48 @@ from hyscript.evaluation.rubric import RubricError, load_rubric
 
 
 RUBRIC_PATH = PROJECT_ROOT / "eval/rubrics/script_quality_v1.json"
+CURRENT_RUBRIC_PATH = PROJECT_ROOT / "eval/rubrics/script_quality_v2.json"
 HEX_DIGEST = "a" * 64
 
 
 class RubricTests(unittest.TestCase):
-    def test_default_rubric_has_eight_complete_dimensions(self) -> None:
+    def test_default_rubric_has_seven_judge_dimensions_plus_length(self) -> None:
         rubric = load_rubric(RUBRIC_PATH)
 
         self.assertEqual(rubric.rubric_id, "script_quality")
-        self.assertEqual(rubric.version, "1.0.0")
+        self.assertEqual(rubric.version, "1.1.0")
+        self.assertEqual((rubric.score_min, rubric.score_max), (1, 3))
         self.assertEqual(len(rubric.dimensions), 8)
         self.assertEqual(len(set(rubric.dimension_ids)), 8)
+        self.assertEqual(len(rubric.judge_dimensions), 7)
+        self.assertEqual(len(rubric.rule_dimensions), 1)
         self.assertTrue(
-            all(len(dimension.anchors) == 5 for dimension in rubric.dimensions)
+            all(len(dimension.anchors) == 3 for dimension in rubric.dimensions)
         )
-        self.assertIn("factual_accuracy", rubric.dimension_ids)
-        self.assertIn("evidence_traceability", rubric.dimension_ids)
+        self.assertEqual(
+            rubric.rule_dimensions[0].dimension_id,
+            "length_compliance",
+        )
+        self.assertIn("theme_information", rubric.judge_dimension_ids)
+        self.assertIn("rhetoric_memorability", rubric.judge_dimension_ids)
+        self.assertNotIn("factual_reference_consistency", rubric.dimension_ids)
+
+    def test_current_rubric_adds_rule_scored_length_dimension(self) -> None:
+        rubric = load_rubric(CURRENT_RUBRIC_PATH)
+
+        self.assertEqual(rubric.version, "2.3.0")
+        self.assertEqual(len(rubric.dimensions), 9)
+        self.assertEqual(len(rubric.judge_dimensions), 8)
+        self.assertEqual(len(rubric.rule_dimensions), 1)
+        length = rubric.rule_dimensions[0]
+        self.assertEqual(length.dimension_id, "length_compliance")
+        self.assertEqual(length.weight, 1.0)
+        self.assertIn("unsupported_core_claim", rubric.judge_gate_codes)
+        self.assertIn("evidence_traceability_incomplete", rubric.judge_gate_codes)
 
     def test_rejects_missing_anchor_and_duplicate_dimension(self) -> None:
         payload = json.loads(RUBRIC_PATH.read_text(encoding="utf-8"))
-        payload["dimensions"][0]["anchors"].pop("4")
+        payload["dimensions"][0]["anchors"].pop("3")
         payload["dimensions"].append(payload["dimensions"][1])
         with TemporaryDirectory() as directory:
             path = Path(directory) / "bad.json"

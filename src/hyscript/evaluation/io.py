@@ -24,6 +24,12 @@ _SUPPORT_STATUSES = {
     "conflicting",
     "uncertain",
 }
+_GROUNDING_REVIEW_STATUSES = {"disabled", "accepted", "rejected", "fallback"}
+_TITLE_CHAIN_COMPONENTS = (
+    "subject_scope",
+    "stated_context",
+    "question_predicate",
+)
 
 
 class TraceInputError(ValueError):
@@ -47,6 +53,9 @@ class FrozenTrace:
     search_result_count: int
     trace_sha256: str
     source_path: Path
+    grounding_review_status: str | None = None
+    grounding_review_issues: tuple[str, ...] = ()
+    research_title_chain: tuple[dict[str, Any], ...] = ()
     schema_version: str = SUPPORTED_TRACE_SCHEMA_VERSION
 
 
@@ -179,6 +188,98 @@ def _validate_unique_ids(
         seen.add(identifier)
 
 
+def _validate_grounding_review(
+    artifact: dict[str, Any],
+) -> tuple[str | None, tuple[str, ...]]:
+    status = artifact.get("grounding_review_status")
+    if status is not None and (
+        not isinstance(status, str) or status not in _GROUNDING_REVIEW_STATUSES
+    ):
+        raise TraceInputError("trace.script_artifact.grounding_review_status is invalid.")
+    raw_issues = artifact.get("grounding_review_issues", [])
+    if not isinstance(raw_issues, list) or any(
+        not isinstance(issue, str) or not issue.strip() for issue in raw_issues
+    ):
+        raise TraceInputError(
+            "trace.script_artifact.grounding_review_issues must be a list of strings."
+        )
+    issues = tuple(issue.strip() for issue in raw_issues)
+    if status == "accepted" and issues:
+        raise TraceInputError("Accepted grounding review cannot contain issues.")
+    if status == "rejected" and not issues:
+        raise TraceInputError("Rejected grounding review requires issues.")
+    return status, issues
+
+
+def _validate_research_title_chain(
+    payload: dict[str, Any],
+    claims: list[dict[str, Any]],
+) -> tuple[dict[str, Any], ...]:
+    lineage = payload.get("lineage", {})
+    if not isinstance(lineage, dict):
+        raise TraceInputError("trace.lineage must be an object.")
+    raw_chain = lineage.get("research_title_chain", [])
+    if not isinstance(raw_chain, list) or any(
+        not isinstance(item, dict) for item in raw_chain
+    ):
+        raise TraceInputError("trace.lineage.research_title_chain must be a list of objects.")
+    if not raw_chain:
+        return ()
+    if len(raw_chain) != len(_TITLE_CHAIN_COMPONENTS):
+        raise TraceInputError(
+            "trace.lineage.research_title_chain must contain all three components."
+        )
+    core_supported_ids = {
+        claim["claim_id"]
+        for claim in claims
+        if claim.get("is_core") is True
+        and claim.get("support_status", "supported") == "supported"
+    }
+    validated: list[dict[str, Any]] = []
+    for index, (raw_item, expected_component) in enumerate(
+        zip(raw_chain, _TITLE_CHAIN_COMPONENTS, strict=True)
+    ):
+        if set(raw_item) != {"component", "status", "claim_ids", "reason"}:
+            raise TraceInputError(
+                f"trace.lineage.research_title_chain[{index}] fields are invalid."
+            )
+        if raw_item.get("component") != expected_component:
+            raise TraceInputError(
+                "trace.lineage.research_title_chain components are missing or out of order."
+            )
+        if raw_item.get("status") != "covered":
+            raise TraceInputError(
+                "A generated trace requires every research title-chain component covered."
+            )
+        raw_claim_ids = raw_item.get("claim_ids")
+        if (
+            not isinstance(raw_claim_ids, list)
+            or not raw_claim_ids
+            or any(
+                not isinstance(claim_id, str) or claim_id not in core_supported_ids
+                for claim_id in raw_claim_ids
+            )
+            or len(set(raw_claim_ids)) != len(raw_claim_ids)
+        ):
+            raise TraceInputError(
+                "trace.lineage.research_title_chain references invalid core claims."
+            )
+        reason = raw_item.get("reason")
+        if not isinstance(reason, str) or not reason.strip() or len(reason) > 300:
+            raise TraceInputError(
+                "trace.lineage.research_title_chain reason is invalid."
+            )
+        validated.append(
+            {
+                "component": expected_component,
+                "status": "covered",
+                "claim_ids": list(raw_claim_ids),
+                "reason": reason.strip(),
+            }
+        )
+    return tuple(validated)
+
+
 def frozen_trace_from_payload(
     payload: Any,
     *,
@@ -213,6 +314,9 @@ def frozen_trace_from_payload(
     script_text = artifact.get("script_text")
     if not isinstance(script_text, str):
         raise TraceInputError("trace.script_artifact.script_text must be a string.")
+    grounding_review_status, grounding_review_issues = _validate_grounding_review(
+        artifact
+    )
 
     queries_payload = payload.get("queries", [])
     if not isinstance(queries_payload, list):
@@ -244,6 +348,7 @@ def frozen_trace_from_payload(
         raise TraceInputError(
             "trace.claims must mark at least one claim as core when claims are present."
         )
+    research_title_chain = _validate_research_title_chain(payload, claims)
 
     return FrozenTrace(
         run_id=run_id,
@@ -255,6 +360,9 @@ def frozen_trace_from_payload(
         search_result_count=len(search_results),
         trace_sha256=trace_sha256,
         source_path=source_path,
+        grounding_review_status=grounding_review_status,
+        grounding_review_issues=grounding_review_issues,
+        research_title_chain=research_title_chain,
     )
 
 

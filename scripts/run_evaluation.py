@@ -52,7 +52,11 @@ def build_parser() -> argparse.ArgumentParser:
     source.add_argument(
         "--trace-dir",
         type=Path,
-        help="Directory recursively containing frozen trace JSON files.",
+        action="append",
+        help=(
+            "Directory recursively containing frozen trace JSON files; repeat "
+            "to combine a primary batch with retry traces."
+        ),
     )
     score.add_argument(
         "--rubric",
@@ -71,9 +75,9 @@ def build_parser() -> argparse.ArgumentParser:
     score.add_argument(
         "--reasoning-effort",
         choices=("no_think", "low", "high"),
-        default="low",
+        default="high",
+        help="Hy3 Judge reasoning effort. Default: high.",
     )
-    score.add_argument("--judge-max-tokens", type=int, default=4096)
     return parser
 
 
@@ -94,18 +98,31 @@ def _is_trace_candidate(path: Path) -> bool:
 def _trace_paths(args: argparse.Namespace, *, output_dir: Path) -> list[Path]:
     if args.trace is not None:
         return [args.trace]
-    if not args.trace_dir.is_dir():
-        raise ValueError(f"Trace directory does not exist: {args.trace_dir}")
+    raw_directories = args.trace_dir
+    directories = (
+        [raw_directories]
+        if isinstance(raw_directories, Path)
+        else list(raw_directories or [])
+    )
+    if not directories:
+        raise ValueError("At least one trace directory is required.")
+    for directory in directories:
+        if not directory.is_dir():
+            raise ValueError(f"Trace directory does not exist: {directory}")
     output_root = output_dir.resolve()
     paths = sorted(
         path
-        for path in args.trace_dir.rglob("*.json")
+        for directory in directories
+        for path in directory.rglob("*.json")
         if path.is_file()
         and not path.resolve().is_relative_to(output_root)
         and _is_trace_candidate(path)
     )
     if not paths:
-        raise ValueError(f"Trace directory contains no JSON files: {args.trace_dir}")
+        raise ValueError("Trace directories contain no JSON files.")
+    resolved = [path.resolve() for path in paths]
+    if len(set(resolved)) != len(resolved):
+        raise ValueError("Trace directories contain duplicate trace paths.")
     return paths
 
 
@@ -131,7 +148,6 @@ async def _run(args: argparse.Namespace) -> int:
                 model_name=hy3.model,
                 config=JudgeConfig(
                     reasoning_effort=args.reasoning_effort,
-                    max_tokens=args.judge_max_tokens,
                 ),
                 sampling_parameters={
                     "temperature": hy3.temperature,

@@ -10,6 +10,7 @@ from typing import Any
 
 from .io import FrozenTrace
 from .models import (
+    DimensionScore,
     EvaluationRecord,
     EvaluatorInfo,
     Finding,
@@ -19,7 +20,7 @@ from .models import (
 )
 from .rubric import Rubric
 
-RULE_EVALUATOR_VERSION = "1.1.0"
+RULE_EVALUATOR_VERSION = "1.5.0"
 RULE_EVALUATOR_NAME = "deterministic-script-rules"
 
 
@@ -64,6 +65,17 @@ _META_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
 _BODY_URL = re.compile(r"https?://\S+", re.IGNORECASE)
 _INLINE_CITATION = re.compile(r"(?:\[\d+\]|【\d+】)")
 _MARKDOWN_HEADING = re.compile(r"(?m)^\s{0,3}#{1,6}\s+\S+")
+_LEGAL_GUARANTEE = re.compile(
+    r"(?:"
+    r"(?:打码|马赛克).{0,40}?(?:即可|就能|便能|才能).{0,24}?"
+    r"(?:避开|避免|不构成|不会构成).{0,16}?(?:侵权|违法|法律责任)"
+    r"|"
+    r"(?:个人信息保护法|公共利益|新闻报道|舆论监督|不需取得个人同意)"
+    r"[\s\S]{0,140}?(?:给|为)(?:路人|普通人|个人|用户|公众)"
+    r"[\s\S]{0,60}?(?:留出|提供)[\s\S]{0,12}?"
+    r"(?:合法|合规)(?:空间|依据|保障)"
+    r")"
+)
 _SENTENCE_SPLIT = re.compile(r"[。！？!?；;\n]+")
 
 
@@ -93,6 +105,34 @@ def _target_length(task: dict[str, Any]) -> int | None:
     return value
 
 
+def _length_dimension_score(
+    deviation_ratio: float,
+    *,
+    score_min: int = 0,
+    score_max: int = 4,
+) -> int:
+    """Map exact length deviation to a rubric's deterministic score scale."""
+
+    if (score_min, score_max) == (1, 3):
+        if deviation_ratio <= 0.10:
+            return 3
+        if deviation_ratio <= 0.30:
+            return 2
+        return 1
+    if (score_min, score_max) != (0, 4):
+        raise ValueError("Unsupported score range for length_compliance.")
+
+    if deviation_ratio <= 0.10:
+        return 4
+    if deviation_ratio <= 0.20:
+        return 3
+    if deviation_ratio <= 0.30:
+        return 2
+    if deviation_ratio <= 0.50:
+        return 1
+    return 0
+
+
 def _forbidden_phrases(task: dict[str, Any]) -> tuple[str, ...]:
     value = task.get("forbidden_phrases", [])
     if not isinstance(value, list):
@@ -104,6 +144,8 @@ def _forbidden_phrases(task: dict[str, Any]) -> tuple[str, ...]:
 
 def _claim_evidence_metrics(
     trace: FrozenTrace,
+    *,
+    advanced_evidence_gates: bool,
 ) -> tuple[dict[str, Any], list[Finding]]:
     findings: list[Finding] = []
     evidence_ids: list[str] = []
@@ -183,7 +225,7 @@ def _claim_evidence_metrics(
                 details={"claims": invalid_references},
             )
         )
-    if unsupported_core_ids:
+    if advanced_evidence_gates and unsupported_core_ids:
         findings.append(
             Finding(
                 code="unsupported_core_claim",
@@ -192,7 +234,7 @@ def _claim_evidence_metrics(
                 details={"claim_ids": unsupported_core_ids},
             )
         )
-    if trace.claims and core_claims == 0:
+    if advanced_evidence_gates and trace.claims and core_claims == 0:
         findings.append(
             Finding(
                 code="core_claim_mapping_missing",
@@ -200,7 +242,7 @@ def _claim_evidence_metrics(
                 message="Claims are present but none is marked as a core claim.",
             )
         )
-    if not trace.claims:
+    if advanced_evidence_gates and not trace.claims:
         findings.append(
             Finding(
                 code="claim_mapping_missing",
@@ -233,10 +275,14 @@ class RuleEvaluator:
     def evaluate(self, trace: FrozenTrace, rubric: Rubric) -> EvaluationRecord:
         text = trace.script_text
         findings: list[Finding] = []
+        advanced_evidence_gates = (
+            "unsupported_core_claim" in rubric.judge_gate_codes
+        )
         char_count = count_script_characters(text)
         target_length = _target_length(trace.task)
         length_deviation_ratio: float | None = None
         length_within_tolerance: bool | None = None
+        length_score: int | None = None
 
         if not text.strip():
             findings.append(
@@ -244,6 +290,27 @@ class RuleEvaluator:
                     code="empty_script",
                     severity="gate",
                     message="The generated script body is empty.",
+                )
+            )
+        if advanced_evidence_gates and trace.grounding_review_status == "rejected":
+            findings.append(
+                Finding(
+                    code="grounding_review_rejected",
+                    severity="gate",
+                    message=(
+                        "The formal grounding review rejected this frozen draft."
+                    ),
+                    details={"issues": list(trace.grounding_review_issues)},
+                )
+            )
+        elif advanced_evidence_gates and trace.grounding_review_status == "fallback":
+            findings.append(
+                Finding(
+                    code="grounding_review_inconclusive",
+                    severity="gate",
+                    message=(
+                        "The grounding review did not produce a valid accepted decision."
+                    ),
                 )
             )
         if target_length is None:
@@ -256,6 +323,11 @@ class RuleEvaluator:
             )
         else:
             length_deviation_ratio = abs(char_count - target_length) / target_length
+            length_score = _length_dimension_score(
+                length_deviation_ratio,
+                score_min=rubric.score_min,
+                score_max=rubric.score_max,
+            )
             length_within_tolerance = (
                 length_deviation_ratio <= self.config.length_tolerance_ratio
             )
@@ -341,6 +413,16 @@ class RuleEvaluator:
                 )
             )
 
+        legal_guarantee_match = _LEGAL_GUARANTEE.search(text)
+        if advanced_evidence_gates and legal_guarantee_match:
+            findings.append(
+                _finding_for_match(
+                    "unsupported_legal_guarantee",
+                    "The script presents one privacy measure as a legal safe harbor.",
+                    legal_guarantee_match,
+                )
+            )
+
         forbidden_hits = [
             phrase for phrase in _forbidden_phrases(trace.task) if phrase in text
         ]
@@ -354,13 +436,39 @@ class RuleEvaluator:
                 )
             )
 
-        claim_metrics, claim_findings = _claim_evidence_metrics(trace)
+        claim_metrics, claim_findings = _claim_evidence_metrics(
+            trace,
+            advanced_evidence_gates=advanced_evidence_gates,
+        )
         findings.extend(claim_findings)
+        dimension_scores: list[DimensionScore] = []
+        for dimension in rubric.rule_dimensions:
+            if dimension.dimension_id != "length_compliance":
+                raise ValueError(
+                    f"Unsupported deterministic rubric dimension: {dimension.dimension_id}."
+                )
+            reason = (
+                "缺少有效的目标字数，无法计算字数符合度。"
+                if target_length is None
+                else (
+                    f"实际非空白字符数为 {char_count}，目标为 {target_length}，"
+                    f"偏差率为 {length_deviation_ratio:.2%}。"
+                )
+            )
+            dimension_scores.append(
+                DimensionScore(
+                    dimension_id=dimension.dimension_id,
+                    name=dimension.name,
+                    score=length_score,
+                    reason=reason,
+                )
+            )
         metrics: dict[str, Any] = {
             "script_character_count": char_count,
             "target_length": target_length,
             "length_deviation_ratio": length_deviation_ratio,
             "length_within_tolerance": length_within_tolerance,
+            "length_score": length_score,
             "query_count": len(trace.queries),
             "search_result_count": trace.search_result_count,
             **claim_metrics,
@@ -386,6 +494,7 @@ class RuleEvaluator:
                 if any(finding.severity == "gate" for finding in findings)
                 else "Deterministic checks completed."
             ),
+            dimension_scores=tuple(dimension_scores),
             metrics=metrics,
             findings=tuple(findings),
             metadata={

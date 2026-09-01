@@ -18,7 +18,10 @@ from hyscript.evaluation.models import (
 from hyscript.evaluation.rubric import load_rubric
 
 
-RUBRIC = load_rubric(PROJECT_ROOT / "eval/rubrics/script_quality_v1.json")
+RUBRIC = load_rubric(PROJECT_ROOT / "eval/rubrics/script_quality_v2.json")
+INITIAL_RUBRIC = load_rubric(
+    PROJECT_ROOT / "eval/rubrics/script_quality_v1.json"
+)
 TRACE = frozen_trace_from_payload(
     {
         "schema_version": "1.0",
@@ -49,16 +52,16 @@ def source_record(kind: str, *, gate: bool = False) -> EvaluationRecord:
             sha256=RUBRIC.sha256,
         ),
         status="completed",
-        dimension_scores=(
+        dimension_scores=tuple(
             DimensionScore(
-                dimension_id="topic_alignment",
-                name="选题与要求契合度",
+                dimension_id=dimension.dimension_id,
+                name=dimension.name,
                 score=4,
                 reason="测试分数。",
-            ),
-        )
-        if is_judge
-        else (),
+            )
+            for dimension in RUBRIC.dimensions
+            if dimension.evaluator == kind
+        ),
         metrics={"weighted_average": 4.0, "normalized_score": 1.0} if is_judge else {},
         findings=(
             Finding(code="major_factual_error", severity="gate", message="测试门控。"),
@@ -69,6 +72,44 @@ def source_record(kind: str, *, gate: bool = False) -> EvaluationRecord:
 
 
 class AggregateTests(unittest.TestCase):
+    def test_initial_length_reward_is_added_to_seven_judge_scores(self) -> None:
+        rubric_ref = RubricRef(
+            INITIAL_RUBRIC.rubric_id,
+            INITIAL_RUBRIC.version,
+            INITIAL_RUBRIC.sha256,
+        )
+        judge = EvaluationRecord(
+            evaluation_id="judge-v1",
+            run_id=TRACE.run_id,
+            trace_sha256=TRACE.trace_sha256,
+            created_at="2026-08-27T00:00:00Z",
+            evaluator=EvaluatorInfo("judge", "judge", "1.0.0"),
+            rubric=rubric_ref,
+            status="completed",
+            dimension_scores=tuple(
+                DimensionScore(d.dimension_id, d.name, 2, "测试分数。")
+                for d in INITIAL_RUBRIC.judge_dimensions
+            ),
+            metrics={"weighted_average": 2.0, "normalized_score": 2 / 3},
+        )
+        rules = EvaluationRecord(
+            evaluation_id="rules-v1",
+            run_id=TRACE.run_id,
+            trace_sha256=TRACE.trace_sha256,
+            created_at="2026-08-27T00:00:00Z",
+            evaluator=EvaluatorInfo("rules", "rules", "1.0.0"),
+            rubric=rubric_ref,
+            status="completed",
+            dimension_scores=(
+                DimensionScore("length_compliance", "字数符合度", 3, "测试分数。"),
+            ),
+        )
+
+        combined = combine_evaluations(TRACE, INITIAL_RUBRIC, [judge, rules])
+
+        self.assertEqual(combined.metrics["weighted_total"], 17.0)
+        self.assertAlmostEqual(combined.metrics["final_score"], 17 / 24)
+
     def test_gate_preserves_diagnostic_score_but_removes_final_score(self) -> None:
         combined = combine_evaluations(
             TRACE,
@@ -82,13 +123,27 @@ class AggregateTests(unittest.TestCase):
         self.assertIsNone(combined.metrics["final_score"])
 
     def test_ungated_judge_score_is_eligible_and_summarized(self) -> None:
-        combined = combine_evaluations(TRACE, RUBRIC, [source_record("judge")])
+        combined = combine_evaluations(
+            TRACE,
+            RUBRIC,
+            [source_record("rules"), source_record("judge")],
+        )
         summary = summarize_batch([combined])
 
         self.assertTrue(combined.metrics["eligible"])
         self.assertEqual(combined.metrics["final_score"], 1.0)
+        self.assertEqual(combined.metrics["normalized_score"], 1.0)
+        self.assertEqual(len(combined.dimension_scores), 9)
         self.assertEqual(summary["eligible_count"], 1)
         self.assertEqual(summary["final_score_mean"], 1.0)
+
+    def test_missing_rule_dimension_prevents_final_score(self) -> None:
+        combined = combine_evaluations(TRACE, RUBRIC, [source_record("judge")])
+
+        self.assertFalse(combined.metrics["eligible"])
+        self.assertIsNone(combined.metrics["normalized_score"])
+        self.assertIsNone(combined.metrics["final_score"])
+        self.assertEqual(combined.metrics["score_coverage"], 8 / 9)
 
     def test_rejects_ambiguous_duplicate_evaluator_kinds(self) -> None:
         with self.assertRaisesRegex(ValueError, "one source record"):
