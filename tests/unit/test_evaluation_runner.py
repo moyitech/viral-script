@@ -93,7 +93,9 @@ class BatchEvaluationRunnerTests(unittest.IsolatedAsyncioTestCase):
             self.assertEqual(result.outcomes[0].status, "completed")
             self.assertTrue((output_dir / "items/run-1/rules.json").is_file())
             self.assertTrue((output_dir / "items/run-1/combined.json").is_file())
-            summary = json.loads((output_dir / "summary.json").read_text())
+            summary = json.loads(
+                (output_dir / "summary.json").read_text(encoding="utf-8")
+            )
             self.assertEqual(summary["counts"]["completed"], 1)
             self.assertEqual(summary["counts_scope"], "current_invocation")
             self.assertEqual(
@@ -106,7 +108,9 @@ class BatchEvaluationRunnerTests(unittest.IsolatedAsyncioTestCase):
                     "complete": True,
                 },
             )
-            manifest = json.loads((output_dir / "manifest.json").read_text())
+            manifest = json.loads(
+                (output_dir / "manifest.json").read_text(encoding="utf-8")
+            )
             self.assertEqual(manifest["status"], "completed")
 
     async def test_second_run_resumes_without_rewriting_evaluator_result(self) -> None:
@@ -125,7 +129,9 @@ class BatchEvaluationRunnerTests(unittest.IsolatedAsyncioTestCase):
             self.assertEqual(resumed.outcomes[0].status, "skipped")
             self.assertEqual(resumed.evaluation_id, first.evaluation_id)
             self.assertEqual(rules_path.read_bytes(), original)
-            summary = json.loads((output_dir / "summary.json").read_text())
+            summary = json.loads(
+                (output_dir / "summary.json").read_text(encoding="utf-8")
+            )
             self.assertEqual(
                 summary["counts"],
                 {"input": 1, "completed": 0, "skipped": 1, "failed": 0},
@@ -149,9 +155,13 @@ class BatchEvaluationRunnerTests(unittest.IsolatedAsyncioTestCase):
 
             self.assertEqual(result.failed_count, 1)
             self.assertTrue((output_dir / "items/run-valid/combined.json").is_file())
-            failures = json.loads((output_dir / "failures.json").read_text())
+            failures = json.loads(
+                (output_dir / "failures.json").read_text(encoding="utf-8")
+            )
             self.assertEqual(failures["items"][0]["error_code"], "invalid_trace")
-            summary = json.loads((output_dir / "summary.json").read_text())
+            summary = json.loads(
+                (output_dir / "summary.json").read_text(encoding="utf-8")
+            )
             self.assertEqual(
                 summary["record_coverage"],
                 {
@@ -221,12 +231,16 @@ class BatchEvaluationRunnerTests(unittest.IsolatedAsyncioTestCase):
                 ),
             ).run([trace_path])
             combined = json.loads(
-                (output_dir / "items/run-set/combined.json").read_text()
+                (output_dir / "items/run-set/combined.json").read_text(
+                    encoding="utf-8"
+                )
             )
             source_kinds = [
                 source["kind"] for source in combined["metadata"]["source_evaluations"]
             ]
-            manifest = json.loads((output_dir / "manifest.json").read_text())
+            manifest = json.loads(
+                (output_dir / "manifest.json").read_text(encoding="utf-8")
+            )
 
             self.assertEqual(overwritten.evaluation_id, first.evaluation_id)
             self.assertEqual(source_kinds, ["rules"])
@@ -285,15 +299,17 @@ class BatchEvaluationRunnerTests(unittest.IsolatedAsyncioTestCase):
             config = BatchEvaluationConfig(output_dir=output_dir)
             await BatchEvaluationRunner(RUBRIC, config).run([trace_path])
             rules = json.loads(
-                (output_dir / "items/run-derived/rules.json").read_text()
+                (output_dir / "items/run-derived/rules.json").read_text(
+                    encoding="utf-8"
+                )
             )
             combined_path = output_dir / "items/run-derived/combined.json"
-            combined = json.loads(combined_path.read_text())
+            combined = json.loads(combined_path.read_text(encoding="utf-8"))
             combined["metadata"]["source_evaluations"][0]["evaluation_id"] = "stale"
             combined_path.write_text(json.dumps(combined), encoding="utf-8")
 
             resumed = await BatchEvaluationRunner(RUBRIC, config).run([trace_path])
-            rebuilt = json.loads(combined_path.read_text())
+            rebuilt = json.loads(combined_path.read_text(encoding="utf-8"))
 
             self.assertEqual(resumed.outcomes[0].status, "skipped")
             self.assertEqual(

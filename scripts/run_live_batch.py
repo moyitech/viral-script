@@ -11,6 +11,7 @@ import json
 import os
 from pathlib import Path
 import re
+import sys
 import tempfile
 from typing import Any
 
@@ -43,6 +44,15 @@ from hyscript.search import AsyncTavilySearchProvider
 
 _TASK_ID_PATTERN = re.compile(r"[A-Za-z0-9][A-Za-z0-9_-]{0,63}")
 _TASK_SPEC_FIELDS = {"task_id", "dataset_index", "target_length"}
+
+
+def _print_console(message: str) -> None:
+    """Print Unicode safely even when Windows exposes a legacy code page."""
+
+    encoding = getattr(sys.stdout, "encoding", None)
+    if encoding:
+        message = message.encode(encoding, errors="backslashreplace").decode(encoding)
+    print(message, flush=True)
 
 
 @dataclass(frozen=True, slots=True)
@@ -480,10 +490,9 @@ async def _run(args: argparse.Namespace) -> int:
                 record["status"] = "running"
                 await checkpoint(position, record)
                 display_position = position + 1
-                print(
+                _print_console(
                     f"[{display_position}/{len(tasks)}] START {batch_task.task_id} "
-                    f"length={task.target_length} {task.topic}",
-                    flush=True,
+                    f"length={task.target_length} {task.topic}"
                 )
 
                 research: ResearchOutcome | None = None
@@ -510,19 +519,17 @@ async def _run(args: argparse.Namespace) -> int:
                     await checkpoint(position, record)
                     if research.status != "ready":
                         record["status"] = "insufficient_evidence"
-                        print(
+                        _print_console(
                             f"[{display_position}/{len(tasks)}] STOP "
-                            f"{batch_task.task_id} insufficient_evidence",
-                            flush=True,
+                            f"{batch_task.task_id} insufficient_evidence"
                         )
                         return
 
                     if research_only:
                         record["status"] = "completed"
-                        print(
+                        _print_console(
                             f"[{display_position}/{len(tasks)}] DONE "
-                            f"{batch_task.task_id} background-only",
-                            flush=True,
+                            f"{batch_task.task_id} background-only"
                         )
                         return
 
@@ -579,11 +586,10 @@ async def _run(args: argparse.Namespace) -> int:
                             "usage": _usage_payload(research, script),
                         }
                     )
-                    print(
+                    _print_console(
                         f"[{display_position}/{len(tasks)}] DONE "
                         f"{batch_task.task_id} chars={script.character_count} "
-                        f"attempts={script.generation_attempt_count}",
-                        flush=True,
+                        f"attempts={script.generation_attempt_count}"
                     )
                 except Exception as exc:
                     safe_message = _safe_error_message(exc)
@@ -616,11 +622,10 @@ async def _run(args: argparse.Namespace) -> int:
                                     ),
                                 }
                             )
-                    print(
+                    _print_console(
                         f"[{display_position}/{len(tasks)}] FAIL "
                         f"{batch_task.task_id} {type(exc).__name__}: "
-                        f"{safe_message}",
-                        flush=True,
+                        f"{safe_message}"
                     )
                 finally:
                     await checkpoint(position, record)
@@ -636,12 +641,11 @@ async def _run(args: argparse.Namespace) -> int:
             input_count=len(tasks),
         )
         _write_json(manifest_path, manifest, replace=True)
-    print(
+    _print_console(
         json.dumps(
             {"manifest": str(manifest_path), "counts": manifest["counts"]},
             ensure_ascii=False,
-        ),
-        flush=True,
+        )
     )
     return 0 if all(item["status"] == "completed" for item in manifest["tasks"]) else 1
 

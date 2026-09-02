@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 from pathlib import Path
 import stat
 from tempfile import TemporaryDirectory
@@ -201,7 +202,8 @@ class FrozenTraceIoTests(unittest.TestCase):
             write_evaluation_record(result_path, result)
 
             self.assertEqual(trace_path.read_bytes(), original)
-            self.assertEqual(stat.S_IMODE(result_path.stat().st_mode), 0o600)
+            if os.name != "nt":
+                self.assertEqual(stat.S_IMODE(result_path.stat().st_mode), 0o600)
             with self.assertRaises(ResultWriteError):
                 write_evaluation_record(result_path, result)
 
@@ -251,7 +253,8 @@ class FrozenTraceIoTests(unittest.TestCase):
             with self.assertRaises(FileExistsError):
                 trace.write_json(path)
             self.assertEqual(path.read_bytes(), original)
-            self.assertEqual(stat.S_IMODE(path.stat().st_mode), 0o600)
+            if os.name != "nt":
+                self.assertEqual(stat.S_IMODE(path.stat().st_mode), 0o600)
 
 
 class RuleEvaluatorTests(unittest.TestCase):

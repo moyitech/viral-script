@@ -95,6 +95,15 @@ class TopicGenerationError(RuntimeError):
     """Raised when deduplication or generation cannot produce a valid set."""
 
 
+def _print_console(message: str) -> None:
+    """Print Unicode safely even when Windows exposes a legacy code page."""
+
+    encoding = getattr(sys.stdout, "encoding", None)
+    if encoding:
+        message = message.encode(encoding, errors="backslashreplace").decode(encoding)
+    print(message)
+
+
 class TopicAgent:
     """Semantically deduplicate hot lists, then generate topics in parallel."""
 
@@ -577,7 +586,7 @@ class TopicAgent:
 
 def _parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="从 NewsNow 当前热榜生成 20 个选题推荐。",
+        description="Generate 20 topic recommendations from current NewsNow hot lists.",
     )
     return parser.parse_args(argv)
 
@@ -606,7 +615,7 @@ async def _main() -> None:
         "hotlist_failures": [asdict(item) for item in hotlist_batch.failures],
         "result": asdict(recommendations),
     }
-    print(json.dumps(output, ensure_ascii=False, indent=2))
+    _print_console(json.dumps(output, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":
