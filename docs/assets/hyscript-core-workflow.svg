@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1180" viewBox="0 0 2500 1180" role="img" aria-labelledby="title desc">
+  <title id="title">HyScript 核心流程</title>
+  <desc id="desc">推荐选题与已有选题汇入实时调研和口播文案生成，正文外元数据冻结后进入独立离线评测。</desc>
+
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+      .title { font-size: 58px; font-weight: 700; fill: #0b2d5c; }
+      .section { font-size: 34px; font-weight: 700; fill: #0b2d5c; }
+      .lane-no { font-size: 40px; font-weight: 700; fill: #0b2d5c; }
+      .lane-name { font-size: 30px; font-weight: 700; fill: #ffffff; }
+      .node { font-size: 25px; font-weight: 600; fill: #102a56; }
+      .node-compact { font-size: 22px; font-weight: 600; fill: #102a56; }
+      .node-small { font-size: 21px; font-weight: 500; fill: #102a56; }
+      .note { font-size: 22px; font-weight: 500; fill: #475569; }
+      .constraint { font-size: 19px; font-weight: 600; fill: #0b6b68; }
+      .teal-text { fill: #0b6b68; }
+      .gray-text { fill: #3d4b5f; }
+      .amber-text { fill: #bd6500; }
+      .box-navy { fill: #f8fafc; stroke: #0b2d5c; stroke-width: 3; }
+      .box-teal { fill: #f6fbfa; stroke: #0f766e; stroke-width: 3; }
+      .box-gray { fill: #f8fafc; stroke: #475569; stroke-width: 3; }
+      .arrow-navy { fill: none; stroke: #0b2d5c; stroke-width: 3.5; marker-end: url(#arrow-navy); }
+      .arrow-teal { fill: none; stroke: #0f766e; stroke-width: 3.5; marker-end: url(#arrow-teal); }
+      .arrow-gray { fill: none; stroke: #475569; stroke-width: 3.5; marker-end: url(#arrow-gray); }
+    </style>
+    <marker id="arrow-navy" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#0b2d5c"/>
+    </marker>
+    <marker id="arrow-teal" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#0f766e"/>
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="2500" height="1180" fill="#ffffff"/>
+
+  <!-- 标题与在线流程分区 -->
+  <text x="1250" y="72" class="title" text-anchor="middle">HyScript 核心流程</text>
+  <line x1="24" y1="126" x2="1050" y2="126" stroke="#0b2d5c" stroke-width="3"/>
+  <text x="1250" y="138" class="section" text-anchor="middle">在线创作流程</text>
+  <line x1="1450" y1="126" x2="2476" y2="126" stroke="#0b2d5c" stroke-width="3"/>
+
+  <!-- 泳道 1：推荐选题 -->
+  <rect x="24" y="175" width="145" height="155" rx="10" fill="#0b3b75"/>
+  <circle cx="96.5" cy="220" r="28" fill="#ffffff"/>
+  <text x="96.5" y="234" class="lane-no" text-anchor="middle">1</text>
+  <text x="96.5" y="286" class="lane-name" text-anchor="middle">推荐选题</text>
+
+  <rect x="210" y="198" width="150" height="110" rx="11" class="box-navy"/>
+  <text x="285" y="244" class="node" text-anchor="middle">NewsNow</text>
+  <text x="285" y="278" class="node" text-anchor="middle">实时热榜</text>
+
+  <rect x="410" y="175" width="310" height="155" rx="11" class="box-navy"/>
+  <text x="565" y="214" class="node" text-anchor="middle">事件级去重</text>
+  <text x="565" y="251" class="node-small" text-anchor="middle">Embedding:</text>
+  <text x="565" y="281" class="node-small" text-anchor="middle">kinfra-text-embedding-4b</text>
+  <text x="565" y="312" class="node-small" text-anchor="middle">阈值: 0.72</text>
+
+  <rect x="770" y="198" width="180" height="110" rx="11" class="box-navy"/>
+  <text x="860" y="261" class="node" text-anchor="middle">最多 40 个事件</text>
+
+  <rect x="1000" y="175" width="280" height="155" rx="11" class="box-navy"/>
+  <text x="1140" y="218" class="node-compact" text-anchor="middle">4 个 Hy3 high 批次</text>
+  <text x="1140" y="255" class="node-compact" text-anchor="middle">并发</text>
+  <text x="1140" y="292" class="node-compact" text-anchor="middle">每批生成 5 条</text>
+
+  <rect x="1330" y="198" width="160" height="110" rx="11" class="box-navy"/>
+  <text x="1410" y="261" class="node-compact" text-anchor="middle">20 个候选选题</text>
+
+  <polygon points="1640,175 1720,252.5 1640,330 1560,252.5" fill="#fffaf2" stroke="#c66a00" stroke-width="3"/>
+  <text x="1640" y="261" class="node amber-text" text-anchor="middle">用户选择</text>
+
+  <path d="M 360 253 H 410" class="arrow-navy"/>
+  <path d="M 720 253 H 770" class="arrow-navy"/>
+  <path d="M 950 253 H 1000" class="arrow-navy"/>
+  <path d="M 1280 253 H 1330" class="arrow-navy"/>
+  <path d="M 1490 253 H 1560" class="arrow-navy"/>
+
+  <!-- 泳道 2：已有选题 -->
+  <rect x="24" y="390" width="145" height="155" rx="10" fill="#0d7773"/>
+  <circle cx="96.5" cy="435" r="28" fill="#ffffff"/>
+  <text x="96.5" y="449" class="lane-no" text-anchor="middle">2</text>
+  <text x="96.5" y="501" class="lane-name" text-anchor="middle">已有选题</text>
+
+  <rect x="210" y="425" width="190" height="85" rx="11" class="box-teal"/>
+  <text x="305" y="477" class="node teal-text" text-anchor="middle">用户输入选题</text>
+
+  <!-- 两条输入路径汇入共享调研与写作阶段 -->
+  <rect x="1720" y="390" width="300" height="155" rx="11" class="box-teal"/>
+  <text x="1870" y="433" class="node teal-text" text-anchor="middle">实时深入调研</text>
+  <text x="1870" y="475" class="node teal-text" text-anchor="middle">3 个并发初始查询</text>
+  <text x="1870" y="517" class="node teal-text" text-anchor="middle">总计最多 5 次搜索</text>
+
+  <rect x="2070" y="413" width="190" height="110" rx="11" class="box-teal"/>
+  <text x="2165" y="476" class="node-compact teal-text" text-anchor="middle">整理写作背景</text>
+
+  <rect x="2310" y="413" width="170" height="110" rx="11" class="box-teal"/>
+  <text x="2395" y="476" class="node-compact teal-text" text-anchor="middle">生成口播文案</text>
+
+  <path d="M 1640 330 V 370 H 1680 V 468" fill="none" stroke="#0b2d5c" stroke-width="3.5"/>
+  <path d="M 400 468 H 1680" fill="none" stroke="#0f766e" stroke-width="3.5"/>
+  <circle cx="1680" cy="468" r="6" fill="#0f766e"/>
+  <path d="M 1680 468 H 1720" class="arrow-teal"/>
+  <path d="M 2020 468 H 2070" class="arrow-teal"/>
+  <path d="M 2260 468 H 2310" class="arrow-teal"/>
+
+  <rect x="2175" y="568" width="210" height="48" rx="9" fill="#ffffff" stroke="#0f766e" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="2280" y="599" class="constraint" text-anchor="middle">引用不进入口播正文</text>
+
+  <!-- 正文外元数据 -->
+  <path d="M 1870 545 V 665" class="arrow-teal"/>
+  <path d="M 2165 523 V 665" class="arrow-teal"/>
+  <path d="M 2395 523 V 665" class="arrow-teal"/>
+  <rect x="830" y="665" width="1650" height="120" rx="12" fill="#fbfefd" stroke="#0f766e" stroke-width="3" stroke-dasharray="12 9"/>
+  <text x="870" y="735" class="node teal-text">正文外元数据</text>
+
+  <rect x="1130" y="692" width="285" height="66" rx="10" class="box-teal"/>
+  <text x="1272.5" y="734" class="node teal-text" text-anchor="middle">Agent 动态搜索词</text>
+  <circle cx="1455" cy="725" r="5" fill="#0f766e"/>
+  <rect x="1495" y="692" width="230" height="66" rx="10" class="box-teal"/>
+  <text x="1610" y="734" class="node teal-text" text-anchor="middle">搜索结果</text>
+  <circle cx="1765" cy="725" r="5" fill="#0f766e"/>
+  <rect x="1805" y="692" width="625" height="66" rx="10" class="box-teal"/>
+  <text x="2117.5" y="734" class="node teal-text" text-anchor="middle">实际选用的引用 ID</text>
+
+  <!-- 冻结轨迹 -->
+  <path d="M 1517.5 785 V 830" class="arrow-teal"/>
+  <path d="M 1495 830 H 1540 L 1570 860 V 915 H 1495 Z" fill="#ffffff" stroke="#0f766e" stroke-width="3"/>
+  <path d="M 1540 830 V 860 H 1570" fill="none" stroke="#0f766e" stroke-width="3"/>
+  <line x1="1515" y1="875" x2="1552" y2="875" stroke="#0f766e" stroke-width="3"/>
+  <line x1="1515" y1="892" x2="1552" y2="892" stroke="#0f766e" stroke-width="3"/>
+  <text x="1600" y="886" class="section teal-text">冻结轨迹</text>
+
+  <!-- 泳道 3：离线质量评测 -->
+  <rect x="24" y="955" width="2456" height="195" rx="10" fill="#fcfcfd" stroke="#475569" stroke-width="3" stroke-dasharray="13 10"/>
+  <rect x="50" y="988" width="220" height="130" rx="10" fill="#52637a"/>
+  <circle cx="160" cy="1025" r="27" fill="#ffffff"/>
+  <text x="160" y="1039" class="lane-no gray-text" text-anchor="middle">3</text>
+  <text x="160" y="1087" class="lane-name" text-anchor="middle">离线质量评测</text>
+
+  <text x="570" y="1062" class="note" text-anchor="middle">不进入创作者生成流程</text>
+
+  <rect x="1375" y="987" width="300" height="105" rx="11" class="box-gray"/>
+  <text x="1525" y="1050" class="node gray-text" text-anchor="middle">读取冻结轨迹</text>
+  <rect x="1795" y="987" width="300" height="105" rx="11" class="box-gray"/>
+  <text x="1945" y="1050" class="node gray-text" text-anchor="middle">独立离线评分</text>
+  <rect x="2215" y="987" width="220" height="105" rx="11" class="box-gray"/>
+  <text x="2325" y="1050" class="node gray-text" text-anchor="middle">评分结果</text>
+
+  <path d="M 1525 915 V 987" class="arrow-gray"/>
+  <path d="M 1675 1039.5 H 1795" class="arrow-gray"/>
+  <path d="M 2095 1039.5 H 2215" class="arrow-gray"/>
+</svg>
