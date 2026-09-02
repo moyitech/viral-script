@@ -50,9 +50,19 @@ EMBEDDING_MODEL=kinfra-text-embedding-4b
 uv run --no-sync python -m app.desktop
 ```
 
+## 离线评分
+
+```bash
+uv run --no-sync python scripts/run_evaluation.py score \
+  --trace-dir eval/traces/runs/<batch-id> \
+  --evaluators rules,judge \
+  --output-dir eval/results/runs/<evaluation-id> \
+  --concurrency 2
+```
+
 ## 二次开发及调试
 
-#### 调用示例
+### 调用示例
 
 ```python
 import asyncio
@@ -77,7 +87,9 @@ asyncio.run(main())
 客户端，Tavily 使用已安装 SDK 的 `AsyncTavilyClient`。Hy3 和 embedding 可以来自完全不同的服务商；Agent、API 和示例统一使用异步接口，并在上下文管理器退出时关闭连接池。
 
 
-#### 运行最小示例
+
+
+### 运行最小示例
 
 ```bash
 # 调用 Hy3，验证最基础的 LLM 对话能力
@@ -92,14 +104,4 @@ uv run --no-sync python examples/03_topic_recommendations.py
 # 围绕指定话题完成实时调研并生成约 450 字的口播稿
 uv run --no-sync python examples/04_end_to_end.py \
   "行业自律能终结新能源车恶性竞争吗？" --target-length 450
-```
-
-## 离线评分
-
-```bash
-uv run --no-sync python scripts/run_evaluation.py score \
-  --trace-dir eval/traces/runs/<batch-id> \
-  --evaluators rules,judge \
-  --output-dir eval/results/runs/<evaluation-id> \
-  --concurrency 2
 ```
