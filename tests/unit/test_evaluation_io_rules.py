@@ -359,7 +359,7 @@ class RuleEvaluatorTests(unittest.TestCase):
         payload = trace_payload(
             script_text=(
                 "<think>内部推理</think>关键点剖析：这篇文案完全符合评分标准。"
-                "哈哈哈哈哈哈哈哈哈哈。包治百病。"
+                "结尾记忆点：哈哈哈哈哈哈哈哈哈哈。包治百病。"
             )
         )
 
@@ -371,6 +371,7 @@ class RuleEvaluatorTests(unittest.TestCase):
         self.assertIn("reasoning_leakage", codes)
         self.assertIn("non_script_analysis", codes)
         self.assertIn("meta_evaluation", codes)
+        self.assertIn("outline_label", codes)
         self.assertIn("repetition_padding", codes)
         self.assertIn("forbidden_phrase", codes)
 
@@ -457,6 +458,15 @@ class RuleEvaluatorTests(unittest.TestCase):
 
         self.assertNotIn("non_script_analysis", codes)
         self.assertNotIn("meta_evaluation", codes)
+        self.assertNotIn("outline_label", codes)
+
+        literal_layer = self._evaluate(
+            trace_payload(script_text="商场第一层的消防机制坏了，物业正在组织检修。")
+        )
+        self.assertNotIn(
+            "outline_label",
+            {finding.code for finding in literal_layer.findings},
+        )
 
 
 if __name__ == "__main__":

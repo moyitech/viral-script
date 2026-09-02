@@ -20,6 +20,7 @@ from hyscript.agent import (
 )
 from hyscript.config import ScriptGenerationConfig
 from hyscript.llm import ChatResponse, LLMProviderError
+from hyscript.script_style import OUTLINE_LABEL_PATTERN
 
 
 VALID_SCRIPT = (
@@ -165,6 +166,17 @@ def background_output_payload(script_text: str = VALID_SCRIPT) -> str:
     )
 
 
+def final_rewrite_payload(
+    script_text: str = VALID_SCRIPT,
+    *,
+    claim_usages: list[dict[str, str]] | None = None,
+) -> str:
+    payload: dict[str, object] = {"script_text": script_text}
+    if claim_usages is not None:
+        payload["claim_usages"] = claim_usages
+    return json.dumps(payload, ensure_ascii=False)
+
+
 def editorial_candidate_payload(
     script_text: str = VALID_SCRIPT,
     *,
@@ -283,12 +295,14 @@ class ScriptAgentTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(artifact.grounding_review_attempt_count, 0)
         self.assertEqual(
             artifact.prompt_version,
-            "script-generation-background-1.0.0",
+            "script-generation-background-1.1.0",
         )
         self.assertEqual(len(llm.calls), 1)
         system_message, user_message = llm.calls[0][0]
         self.assertIn("不是要求逐句绑定的论证链", system_message.content)
         self.assertIn("正文之外的引用元数据", system_message.content)
+        self.assertIn("结尾记忆点", system_message.content)
+        self.assertIn("承接句或问句", system_message.content)
         self.assertIn('"background_references"', user_message.content)
         self.assertNotIn("E001", artifact.script_text)
 
@@ -458,7 +472,7 @@ class ScriptAgentTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(artifact.script_text, VALID_SCRIPT)
         self.assertEqual(artifact.character_count, count_characters(VALID_SCRIPT))
         self.assertEqual(artifact.claim_usages[0].claim_id, "C001")
-        self.assertEqual(artifact.prompt_version, "script-generation-1.7.6")
+        self.assertEqual(artifact.prompt_version, "script-generation-1.7.7")
         self.assertEqual(artifact.generation_attempt_count, 1)
         self.assertEqual(len(artifact.llm_usages), 1)
         self.assertEqual(artifact.llm_usages[0].input_tokens, 80)
@@ -741,7 +755,7 @@ class ScriptAgentTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(artifact.grounding_review_status, "accepted")
         self.assertEqual(
             artifact.grounding_review_prompt_version,
-            "script-grounding-review-2.5.5",
+            "script-grounding-review-2.5.6",
         )
         self.assertEqual(artifact.grounding_review_draft_text, VALID_SCRIPT)
         self.assertEqual(
@@ -1172,6 +1186,10 @@ class ScriptAgentTests(unittest.IsolatedAsyncioTestCase):
         cases = (
             (f"这句话声称绝对安全。{VALID_SCRIPT}", ("绝对安全",)),
             (f"正文：{VALID_SCRIPT}", ()),
+            (f"结尾记忆点：{VALID_SCRIPT}", ()),
+            (f"先拆第一层因果。{VALID_SCRIPT}", ()),
+            (f"第二层看单方压制的利弊。{VALID_SCRIPT}", ()),
+            (f"第三层给权衡框架。{VALID_SCRIPT}", ()),
             (f"详情见https://example.com。{VALID_SCRIPT}", ()),
             (f"公开材料已经确认核心变化【1】。{VALID_SCRIPT}", ()),
             (f"# 说明\n{VALID_SCRIPT}", ()),
@@ -1192,6 +1210,129 @@ class ScriptAgentTests(unittest.IsolatedAsyncioTestCase):
                 llm = FakeLLM([response, response])
                 with self.assertRaises(ScriptGenerationError):
                     await ScriptAgent(llm).generate(task, ready_research())
+
+    async def test_background_generation_repairs_outline_label_leakage(self) -> None:
+        research = replace(ready_research(), claims=(), title_chain=())
+        polluted = f"结尾记忆点：{VALID_SCRIPT}"
+        llm = FakeLLM(
+            [background_output_payload(polluted), background_output_payload()]
+        )
+
+        artifact = await ScriptAgent(llm).generate(
+            ScriptTask(
+                topic="结构标签自动修复",
+                target_length=count_characters(VALID_SCRIPT),
+            ),
+            research,
+        )
+
+        self.assertEqual(artifact.script_text, VALID_SCRIPT)
+        self.assertEqual(artifact.generation_attempt_count, 2)
+        repair_instruction = llm.calls[1][0][-1].content
+        self.assertIn("outline label", repair_instruction)
+        self.assertIn("natural spoken transition", repair_instruction)
+        self.assertIn("完整 script_text 当作草稿做一次语义 rewrite", repair_instruction)
+        self.assertIn("不是机械删除标签", repair_instruction)
+        self.assertIn("不新增事实", repair_instruction)
+
+    async def test_final_hy3_rewrite_runs_even_when_background_draft_is_clean(
+        self,
+    ) -> None:
+        research = replace(ready_research(), claims=(), title_chain=())
+        llm = FakeLLM(
+            [background_output_payload(), final_rewrite_payload()]
+        )
+
+        artifact = await ScriptAgent(
+            llm,
+            config=ScriptGenerationConfig(final_rewrite_enabled=True),
+        ).generate(
+            ScriptTask(
+                topic="每次交付前清洗",
+                target_length=count_characters(VALID_SCRIPT),
+            ),
+            research,
+        )
+
+        self.assertEqual(len(llm.calls), 2)
+        self.assertEqual(artifact.script_text, VALID_SCRIPT)
+        self.assertEqual(artifact.final_rewrite_attempt_count, 1)
+        self.assertEqual(
+            artifact.final_rewrite_prompt_version,
+            "script-final-rewrite-1.0.0",
+        )
+        self.assertEqual(artifact.final_rewrite_draft_text, VALID_SCRIPT)
+        self.assertEqual(
+            [item.stage for item in artifact.llm_usages],
+            ["script.generation", "script.final_rewrite"],
+        )
+        system_message, user_message = llm.calls[1][0]
+        self.assertIn("终稿清洗编辑", system_message.content)
+        self.assertIn("不是机械删除几个词", system_message.content)
+        self.assertIn("即使草稿已经干净", user_message.content)
+
+    async def test_final_hy3_rewrite_cleans_outline_labels_before_delivery(
+        self,
+    ) -> None:
+        research = replace(ready_research(), claims=(), title_chain=())
+        polluted = f"结尾记忆点：{VALID_SCRIPT}"
+        llm = FakeLLM(
+            [background_output_payload(polluted), final_rewrite_payload()]
+        )
+
+        artifact = await ScriptAgent(
+            llm,
+            config=ScriptGenerationConfig(final_rewrite_enabled=True),
+        ).generate(
+            ScriptTask(
+                topic="清除提纲标签",
+                target_length=count_characters(VALID_SCRIPT),
+            ),
+            research,
+        )
+
+        self.assertEqual(len(llm.calls), 2)
+        self.assertEqual(artifact.final_rewrite_draft_text, polluted)
+        self.assertEqual(artifact.script_text, VALID_SCRIPT)
+        self.assertIsNone(OUTLINE_LABEL_PATTERN.search(artifact.script_text))
+
+    async def test_invalid_final_hy3_rewrite_is_never_delivered(self) -> None:
+        research = replace(ready_research(), claims=(), title_chain=())
+        llm = FakeLLM(
+            [
+                background_output_payload(),
+                final_rewrite_payload(f"结尾记忆点：{VALID_SCRIPT}"),
+            ]
+        )
+
+        with self.assertRaisesRegex(ScriptGenerationError, "was not frozen") as caught:
+            await ScriptAgent(
+                llm,
+                config=ScriptGenerationConfig(final_rewrite_enabled=True),
+            ).generate(
+                ScriptTask(
+                    topic="终稿清洗失败",
+                    target_length=count_characters(VALID_SCRIPT),
+                ),
+                research,
+            )
+
+        self.assertEqual(
+            [item.stage for item in caught.exception.llm_usages],
+            ["script.generation", "script.final_rewrite"],
+        )
+
+    def test_literal_physical_layers_are_not_outline_labels(self) -> None:
+        bodies = (
+            "商场第一层的消防机制坏了，物业正在组织检修。",
+            "皮肤的第一层结构很薄，这里说的是具体组织，不是文章提纲。",
+        )
+        for body in bodies:
+            with self.subTest(body=body):
+                ScriptAgent._validate_body(
+                    body,
+                    ScriptTask(topic="真实层级", target_length=50),
+                )
 
     async def test_legal_risk_language_is_left_to_the_scoring_rubric(self) -> None:
         body = (
@@ -1302,9 +1443,9 @@ class ScriptAgentTests(unittest.IsolatedAsyncioTestCase):
             (280, "短稿只保留一个核心判断"),
             (360, "中篇按“问题判断—关键机制或取舍—普通人影响”展开"),
             (450, "中篇按“问题判断—关键机制或取舍—普通人影响”展开"),
-            (700, "长稿按三个层次推进因果或利弊"),
-            (1000, "长稿按三个层次推进因果或利弊"),
-            (5000, "长稿按三个层次推进因果或利弊"),
+            (700, "长稿让因果、取舍和现实影响形成三次自然推进"),
+            (1000, "长稿让因果、取舍和现实影响形成三次自然推进"),
+            (5000, "长稿让因果、取舍和现实影响形成三次自然推进"),
         )
         for target_length, expected in cases:
             with self.subTest(target_length=target_length):
@@ -1314,6 +1455,8 @@ class ScriptAgentTests(unittest.IsolatedAsyncioTestCase):
                     supported_claims,
                 )
                 self.assertIn(expected, messages[-1].content)
+                if target_length > 550:
+                    self.assertIn("不能复述‘第一层、第二层、第三层’", messages[-1].content)
 
     async def test_duplicate_research_claim_ids_prevent_generation(self) -> None:
         llm = FakeLLM([])
@@ -1339,6 +1482,7 @@ class ScriptAgentTests(unittest.IsolatedAsyncioTestCase):
             ScriptGenerationConfig(max_generation_attempts=0),
             ScriptGenerationConfig(max_generation_attempts=4),
             ScriptGenerationConfig(grounding_review_enabled=1),
+            ScriptGenerationConfig(final_rewrite_enabled=1),
         )
         for config in configs:
             with self.subTest(config=config):

@@ -77,19 +77,23 @@ def build_generation_trace(
     token_summary = summarize_token_usage(llm_usages)
     script_generation_calls = script.generation_attempt_count
     script_review_calls = script.grounding_review_attempt_count
+    script_final_rewrite_calls = script.final_rewrite_attempt_count
     script_editor_calls = script.editor_attempt_count
     script_candidate_calls = (
         script_generation_calls - script_editor_calls
         if script.generation_mode == "editorial_candidates"
         else 0
     )
-    script_calls = script_generation_calls + script_review_calls
+    script_calls = (
+        script_generation_calls + script_review_calls + script_final_rewrite_calls
+    )
     trace_config["request_counts"] = {
         "research_llm": research.llm_request_count,
         "search": research.search_request_count,
         "script_llm": script_calls,
         "script_generation_llm": script_generation_calls,
         "script_grounding_review_llm": script_review_calls,
+        "script_final_rewrite_llm": script_final_rewrite_calls,
         "hy3_total": research.llm_request_count + script_calls,
         "tavily_attempted": research.search_request_count,
         "tavily_succeeded": tavily_success_count,
@@ -148,6 +152,7 @@ def build_generation_trace(
                 "script_grounding_review": (
                     script.grounding_review_prompt_version
                 ),
+                "script_final_rewrite": script.final_rewrite_prompt_version,
                 **(
                     {
                         "script_candidate": (

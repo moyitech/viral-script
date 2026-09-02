@@ -256,6 +256,7 @@ class GenerationTraceTests(unittest.TestCase):
                 "script_llm": 1,
                 "script_generation_llm": 1,
                 "script_grounding_review_llm": 0,
+                "script_final_rewrite_llm": 0,
                 "hy3_total": 3,
                 "tavily_attempted": 2,
                 "tavily_succeeded": 1,
@@ -280,6 +281,7 @@ class GenerationTraceTests(unittest.TestCase):
                 "research_evidence": "research-evidence-2.1.0",
                 "script_generation": "script-generation-1.0.0",
                 "script_grounding_review": None,
+                "script_final_rewrite": None,
             },
         )
         self.assertEqual(

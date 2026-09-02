@@ -334,3 +334,7 @@ class ScriptArtifact:
     editor_attempt_count: int = 0
     length_within_tolerance: bool = True
     length_repair_attempted: bool = False
+    final_rewrite_attempt_count: int = 0
+    final_rewrite_prompt_version: str | None = None
+    final_rewrite_draft_text: str | None = None
+    final_rewrite_draft_character_count: int | None = None

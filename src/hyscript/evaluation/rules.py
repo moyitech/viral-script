@@ -8,6 +8,8 @@ import math
 import re
 from typing import Any
 
+from hyscript.script_style import OUTLINE_LABEL_PATTERN
+
 from .io import FrozenTrace
 from .models import (
     DimensionScore,
@@ -20,7 +22,7 @@ from .models import (
 )
 from .rubric import Rubric
 
-RULE_EVALUATOR_VERSION = "1.5.0"
+RULE_EVALUATOR_VERSION = "1.6.0"
 RULE_EVALUATOR_NAME = "deterministic-script-rules"
 
 
@@ -61,6 +63,7 @@ _META_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
             r"(?:这|本)(?:篇|段)?(?:文案|口播).{0,18}(?:符合|满足|达到).{0,12}(?:要求|标准|高分|满分)"
         ),
     ),
+    ("outline_label", OUTLINE_LABEL_PATTERN),
 )
 _BODY_URL = re.compile(r"https?://\S+", re.IGNORECASE)
 _INLINE_CITATION = re.compile(r"(?:\[\d+\]|【\d+】)")

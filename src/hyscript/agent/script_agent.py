@@ -29,9 +29,12 @@ from hyscript.llm.prompts import (
     RESEARCH_EVIDENCE_PROMPT_VERSION,
     SCRIPT_GENERATION_PROMPT_VERSION,
     SCRIPT_GENERATION_SYSTEM_PROMPT,
+    SCRIPT_FINAL_REWRITE_PROMPT_VERSION,
+    SCRIPT_FINAL_REWRITE_SYSTEM_PROMPT,
     SCRIPT_GROUNDING_REVIEW_PROMPT_VERSION,
     SCRIPT_GROUNDING_REVIEW_SYSTEM_PROMPT,
 )
+from hyscript.script_style import OUTLINE_LABEL_PATTERN
 
 from ._structured import (
     StructuredOutputError,
@@ -157,8 +160,10 @@ class ScriptAgent:
             )
         if not research.claims:
             if self._config.generation_mode == "editorial_candidates":
-                return await self._generate_from_background_editorial(task, research)
-            return await self._generate_from_background(task, research)
+                draft = await self._generate_from_background_editorial(task, research)
+            else:
+                draft = await self._generate_from_background(task, research)
+            return await self._final_rewrite(task, research, draft)
         evidence_ids = tuple(item.evidence_id for item in research.evidence)
         claim_ids = tuple(item.claim_id for item in research.claims)
         if len(set(evidence_ids)) != len(evidence_ids):
@@ -262,6 +267,7 @@ class ScriptAgent:
                     request_count,
                     exc,
                 )
+                rewrite_instruction = self._outline_rewrite_instruction(exc)
                 current_messages = (
                     *messages,
                     ChatMessage(role="assistant", content=response_content),
@@ -269,6 +275,7 @@ class ScriptAgent:
                         role="user",
                         content=(
                             f"上一次输出未通过校验：{exc} "
+                            f"{rewrite_instruction}"
                             f"正文目标仍为 {task.target_length} 个非空白字符；"
                             f"允许区间是 {minimum_length} 至 {maximum_length}。"
                             "请修复后重新输出完整 JSON，不要解释。"
@@ -282,15 +289,15 @@ class ScriptAgent:
                 artifact.character_count,
                 len(artifact.claim_usages),
             )
-            if not self._config.grounding_review_enabled:
-                return artifact
-            return await self._review_artifact(
-                task,
-                research,
-                generation_claims,
-                artifact,
-                usages,
-            )
+            if self._config.grounding_review_enabled:
+                artifact = await self._review_artifact(
+                    task,
+                    research,
+                    generation_claims,
+                    artifact,
+                    usages,
+                )
+            return await self._final_rewrite(task, research, artifact)
 
         raise ScriptGenerationError(
             f"Script generation failed after {request_count} request(s); "
@@ -468,6 +475,7 @@ class ScriptAgent:
                     ),
                 )
             except StructuredOutputError as exc:
+                rewrite_instruction = self._outline_rewrite_instruction(exc)
                 current_messages = (
                     *editor_messages,
                     ChatMessage(role="assistant", content=response.content),
@@ -475,6 +483,7 @@ class ScriptAgent:
                         role="user",
                         content=(
                             f"上一次JSON或正文格式未通过校验：{exc} "
+                            f"{rewrite_instruction}"
                             "请修复完整JSON。不得解释，不得改变字段；reference_ids和"
                             "selected_candidate_ids只能使用输入中存在的ID。"
                         ),
@@ -595,6 +604,7 @@ class ScriptAgent:
                     known_reference_ids=known_reference_ids,
                 )
             except StructuredOutputError as exc:
+                rewrite_instruction = self._outline_rewrite_instruction(exc)
                 current_messages = (
                     *messages,
                     ChatMessage(role="assistant", content=response.content),
@@ -602,6 +612,7 @@ class ScriptAgent:
                         role="user",
                         content=(
                             f"上一次JSON或正文格式未通过校验：{exc} "
+                            f"{rewrite_instruction}"
                             "请修复完整JSON，不要解释。reference_ids只能使用输入中存在的ID。"
                             "候选稿字数不触发重写；不要因为字数自行增加或删除信息。"
                         ),
@@ -732,7 +743,11 @@ class ScriptAgent:
             "script_text",
             max_length=self._MAX_SCRIPT_LENGTH,
         )
-        self._validate_body(script_text, task)
+        self._validate_body(
+            script_text,
+            task,
+            allow_outline_labels=self._config.final_rewrite_enabled,
+        )
         reference_ids = self._parse_reference_ids(
             payload.get("reference_ids"),
             known_reference_ids=known_reference_ids,
@@ -778,7 +793,11 @@ class ScriptAgent:
             "script_text",
             max_length=self._MAX_SCRIPT_LENGTH,
         )
-        self._validate_body(script_text, task)
+        self._validate_body(
+            script_text,
+            task,
+            allow_outline_labels=self._config.final_rewrite_enabled,
+        )
         reference_ids = self._parse_reference_ids(
             payload.get("reference_ids"),
             known_reference_ids=known_reference_ids,
@@ -891,6 +910,7 @@ class ScriptAgent:
                 )
             except StructuredOutputError as exc:
                 last_failure = self._failure_reason("structured_output_error", exc)
+                rewrite_instruction = self._outline_rewrite_instruction(exc)
                 current_messages = (
                     *messages,
                     ChatMessage(role="assistant", content=response.content),
@@ -898,6 +918,7 @@ class ScriptAgent:
                         role="user",
                         content=(
                             f"上一次输出未通过校验：{exc} "
+                            f"{rewrite_instruction}"
                             f"正文目标仍为 {task.target_length} 个非空白字符；"
                             f"允许区间是 {minimum_length} 至 {maximum_length}。"
                             "请修复完整 JSON。reference_ids 只保留输入中存在的来源 ID，"
@@ -992,7 +1013,11 @@ class ScriptAgent:
                 "script_text is outside the configured target-length tolerance: "
                 f"actual={character_count}, allowed={minimum_length}..{maximum_length}."
             )
-        self._validate_body(script_text, task)
+        self._validate_body(
+            script_text,
+            task,
+            allow_outline_labels=self._config.final_rewrite_enabled,
+        )
         raw_reference_ids = payload.get("reference_ids")
         if (
             not isinstance(raw_reference_ids, list)
@@ -1022,6 +1047,164 @@ class ScriptAgent:
             llm_usages=tuple(llm_usages),
             reference_ids=tuple(normalized_reference_ids),
         )
+
+    async def _final_rewrite(
+        self,
+        task: ScriptTask,
+        research: ResearchOutcome,
+        draft: ScriptArtifact,
+    ) -> ScriptArtifact:
+        """Run one mandatory Hy3 cleanup pass immediately before delivery."""
+
+        if not self._config.final_rewrite_enabled:
+            return draft
+
+        grounded = bool(research.claims)
+        schema: dict[str, object] = {
+            "script_text": "最终可直接朗读的纯口播正文",
+        }
+        if grounded:
+            schema["claim_usages"] = [
+                {
+                    "claim_id": "与草稿完全相同的 claim_id",
+                    "script_quote": "改写后 script_text 中逐字出现的短句",
+                }
+            ]
+        minimum_length, maximum_length = self._length_bounds(task)
+        payload = {
+            "task": asdict(task),
+            "allowed_character_count": {
+                "minimum": minimum_length,
+                "target": task.target_length,
+                "maximum": maximum_length,
+            },
+            "draft": {
+                "script_text": draft.script_text,
+                "character_count": draft.character_count,
+                "claim_usages": [asdict(item) for item in draft.claim_usages],
+                "reference_ids": list(draft.reference_ids),
+            },
+        }
+        messages = (
+            ChatMessage(role="system", content=SCRIPT_FINAL_REWRITE_SYSTEM_PROMPT),
+            ChatMessage(
+                role="user",
+                content=(
+                    "请对下面的完整草稿执行一次最终语义 rewrite。即使草稿已经干净，也要完整"
+                    "默读并返回终稿；禁止只对标签做字符串删除。reference_ids 是只读元数据，"
+                    "不得写入正文。"
+                    + (
+                        "claim_usages 的 claim_id 集合必须与草稿完全一致，并按终稿更新逐字引用。"
+                        if grounded
+                        else "输出中不要添加 claim_usages 或其他字段。"
+                    )
+                    + "\n输出结构："
+                    + json.dumps(schema, ensure_ascii=False)
+                    + "\n待清洗数据：\n"
+                    + json.dumps(payload, ensure_ascii=False)
+                ),
+            ),
+        )
+        logger.info("正在使用 Hy3 进行最终口播 rewrite")
+        try:
+            response = await self._complete(messages)
+        except LLMProviderError:
+            raise ScriptGenerationError(
+                "Final Hy3 rewrite request failed; generation trace was not frozen.",
+                generation_attempt_count=draft.generation_attempt_count,
+                grounding_review_attempt_count=(
+                    draft.grounding_review_attempt_count
+                ),
+                llm_usages=draft.llm_usages,
+            ) from None
+
+        usage = llm_call_usage(
+            response,
+            stage="script.final_rewrite",
+            attempt=1,
+        )
+        usages = (*draft.llm_usages, usage)
+        self._log_token_usage(usage)
+        try:
+            script_text, claim_usages = self._parse_final_rewrite_response(
+                response.content,
+                task=task,
+                research=research,
+                draft=draft,
+            )
+        except StructuredOutputError as exc:
+            raise ScriptGenerationError(
+                "Final Hy3 rewrite failed local validation; generation trace was not "
+                f"frozen. Last failure: {self._failure_reason('structured_output_error', exc)}",
+                generation_attempt_count=draft.generation_attempt_count,
+                grounding_review_attempt_count=(
+                    draft.grounding_review_attempt_count
+                ),
+                llm_usages=usages,
+            ) from None
+
+        character_count = self._count_characters(script_text)
+        logger.info("Hy3 最终口播 rewrite 完成：%d 个非空白字符", character_count)
+        return replace(
+            draft,
+            script_text=script_text,
+            claim_usages=claim_usages,
+            character_count=character_count,
+            llm_usages=usages,
+            final_rewrite_attempt_count=1,
+            final_rewrite_prompt_version=SCRIPT_FINAL_REWRITE_PROMPT_VERSION,
+            final_rewrite_draft_text=draft.script_text,
+            final_rewrite_draft_character_count=draft.character_count,
+        )
+
+    def _parse_final_rewrite_response(
+        self,
+        response: str,
+        *,
+        task: ScriptTask,
+        research: ResearchOutcome,
+        draft: ScriptArtifact,
+    ) -> tuple[str, tuple[ClaimUsage, ...]]:
+        payload = json_object(response)
+        grounded = bool(research.claims)
+        expected_fields = (
+            {"script_text", "claim_usages"} if grounded else {"script_text"}
+        )
+        if set(payload) != expected_fields:
+            raise StructuredOutputError(
+                "Final rewrite response contains unexpected or missing fields."
+            )
+        script_text = required_text(
+            payload,
+            "script_text",
+            max_length=self._MAX_SCRIPT_LENGTH,
+        )
+        character_count = self._count_characters(script_text)
+        minimum_length, maximum_length = self._length_bounds(task)
+        if not minimum_length <= character_count <= maximum_length:
+            raise StructuredOutputError(
+                "final script_text is outside the configured target-length tolerance: "
+                f"actual={character_count}, allowed={minimum_length}..{maximum_length}."
+            )
+        self._validate_body(script_text, task)
+        if not grounded:
+            return script_text, ()
+
+        supported_claims = tuple(
+            claim for claim in research.claims if claim.support_status == "supported"
+        )
+        claim_usages = self._parse_claim_usages(
+            payload,
+            script_text=script_text,
+            supported_claims=supported_claims,
+        )
+        if {item.claim_id for item in claim_usages} != {
+            item.claim_id for item in draft.claim_usages
+        }:
+            raise StructuredOutputError(
+                "Final rewrite must preserve the draft claim_id set exactly."
+            )
+        return script_text, claim_usages
 
     async def _review_artifact(
         self,
@@ -1187,6 +1370,19 @@ class ScriptAgent:
     def _failure_reason(kind: str, exc: Exception) -> str:
         detail = " ".join(str(exc).split()) or "no detail"
         return f"{kind}: {detail}"[:300]
+
+    @staticmethod
+    def _outline_rewrite_instruction(exc: StructuredOutputError) -> str:
+        """Turn an outline-label validation hit into an explicit Hy3 rewrite."""
+
+        if "outline label" not in str(exc):
+            return ""
+        logger.info("检测到提纲标签，正在请求 Hy3 进行最终口播 rewrite")
+        return (
+            "请把上一版完整 script_text 当作草稿做一次语义 rewrite，而不是机械删除标签；"
+            "把标签和受它影响的句子一起改成真人会说的自然承接或问句。保留原有观点、"
+            "事实边界和信息顺序，不新增事实，并同步更新所有受影响的正文元数据。"
+        )
 
     def _messages(
         self,
@@ -1584,8 +1780,10 @@ class ScriptAgent:
             )
         non_core_limit = 3 if target_length <= 900 else 4
         return (
-            "长稿按三个层次推进因果或利弊，每层提供不同信息；主动解释反例与不确定性，但同一"
-            f"边界只说一次，核心论断之外最多使用{non_core_limit}条非核心事实，不用重复结论填字数。"
+            "长稿让因果、取舍和现实影响形成三次自然推进，每次都增加不同信息；转场要写成"
+            "真人会说的承接句或问句，不能复述‘第一层、第二层、第三层’等提纲标签。主动解释"
+            f"反例与不确定性，但同一边界只说一次，核心论断之外最多使用{non_core_limit}条"
+            "非核心事实，不用重复结论填字数。"
         )
 
     def _parse_artifact(
@@ -1620,7 +1818,11 @@ class ScriptAgent:
                 "script_text is outside the configured target-length tolerance: "
                 f"actual={character_count}, allowed={minimum_length}..{maximum_length}."
             )
-        self._validate_body(script_text, task)
+        self._validate_body(
+            script_text,
+            task,
+            allow_outline_labels=self._config.final_rewrite_enabled,
+        )
         claim_usages = self._parse_claim_usages(
             payload,
             script_text=script_text,
@@ -1710,13 +1912,23 @@ class ScriptAgent:
         return tuple(usages)
 
     @staticmethod
-    def _validate_body(script_text: str, task: ScriptTask) -> None:
+    def _validate_body(
+        script_text: str,
+        task: ScriptTask,
+        *,
+        allow_outline_labels: bool = False,
+    ) -> None:
         if _URL_PATTERN.search(script_text):
             raise StructuredOutputError("script_text contains a URL.")
         if _CITATION_PATTERN.search(script_text):
             raise StructuredOutputError("script_text contains an inline citation label.")
         if _MARKDOWN_PATTERN.search(script_text):
             raise StructuredOutputError("script_text contains Markdown formatting.")
+        if not allow_outline_labels and OUTLINE_LABEL_PATTERN.search(script_text):
+            raise StructuredOutputError(
+                "script_text contains an outline label such as 结尾记忆点 or "
+                "第X层; replace it with a natural spoken transition."
+            )
         if _META_PATTERN.search(script_text):
             raise StructuredOutputError("script_text contains writing instructions or meta text.")
         if any(phrase in script_text for phrase in task.forbidden_phrases):
@@ -1741,6 +1953,8 @@ class ScriptAgent:
             raise ValueError("max_generation_attempts must be between 1 and 3.")
         if not isinstance(config.grounding_review_enabled, bool):
             raise ValueError("grounding_review_enabled must be a boolean.")
+        if not isinstance(config.final_rewrite_enabled, bool):
+            raise ValueError("final_rewrite_enabled must be a boolean.")
         if config.generation_mode not in {"single", "editorial_candidates"}:
             raise ValueError(
                 "generation_mode must be single or editorial_candidates."
