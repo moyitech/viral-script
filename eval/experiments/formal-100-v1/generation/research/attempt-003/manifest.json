@@ -1,0 +1,146 @@
+{
+  "experiment_id": "formal-100-v1",
+  "phase": "research-attempt-003",
+  "mode": "live_search_background_collection",
+  "started_at": "2026-09-02T14:09:03.581729+00:00",
+  "completed_at": "2026-09-02T14:09:35.970887+00:00",
+  "dataset": "/Users/moyi/workspace/viral-script/eval/datasets/eval_topics_synthetic_v1.json",
+  "dataset_sha256": "698fb36b13c1911f1d5b4756579850bc94439389dc33a07b3bbcc4e32016c852",
+  "task_spec": "/Users/moyi/workspace/viral-script/eval/experiments/formal-100-v1/generation/specs/research-attempt-003.json",
+  "task_spec_sha256": "6058ae11c6e7bbd0f676bf2a2ffa6b80011166ebf059e29daaf54744449ada3e",
+  "execution": {
+    "task_concurrency": 32,
+    "hy3_concurrency": 64,
+    "search_concurrency": 8,
+    "grounding_review_enabled": false
+  },
+  "request_concurrency": 64,
+  "research_only": true,
+  "prompt_versions": {
+    "research_query_plan": "research-query-plan-1.4.0",
+    "background_selection": "search-background-1.0.0",
+    "script_generation": null,
+    "script_candidate": null,
+    "script_editor": null,
+    "script_grounding_review": null
+  },
+  "system_prompt_sha256": {
+    "research_query_plan": "12276a51d5d22c5d028dabcdf350b5596917cc48563521ac7722badc2d56e39f",
+    "background_selection": null,
+    "script_generation": null,
+    "script_candidate": null,
+    "script_editor": null,
+    "script_grounding_review": null
+  },
+  "hy3": {
+    "model": "hy3",
+    "temperature": 0.9,
+    "top_p": 1.0
+  },
+  "research_config": {
+    "initial_query_count": 3,
+    "max_search_requests": 5,
+    "results_per_query": 5,
+    "max_search_concurrency": 3,
+    "max_content_chars_per_result": 4000
+  },
+  "script_generation_config": {
+    "length_tolerance_ratio": 0.1,
+    "max_generation_attempts": 2,
+    "grounding_review_enabled": false,
+    "generation_mode": "single",
+    "final_rewrite_enabled": false
+  },
+  "tasks": [
+    {
+      "task_id": "T093",
+      "dataset_index": 92,
+      "topic": "跨境电商规则趋严，小商家出海会更难吗？",
+      "target_length": 450,
+      "status": "completed",
+      "research_status": "ready",
+      "research_snapshot": "/Users/moyi/workspace/viral-script/eval/experiments/formal-100-v1/generation/research/attempt-003/research/T093.json",
+      "trace": null,
+      "error_type": null,
+      "error": null,
+      "research_errors": [],
+      "usage": {
+        "hy3_attempted_calls": 1,
+        "research_hy3_attempted_calls": 1,
+        "script_generation_attempted_calls": 0,
+        "script_grounding_review_attempted_calls": 0,
+        "hy3_reported_calls": 1,
+        "hy3_input_tokens": 725,
+        "hy3_output_tokens": 2593,
+        "hy3_total_tokens": 3318,
+        "hy3_reasoning_tokens": 2177,
+        "hy3_cached_input_tokens": 640,
+        "tavily_attempted_calls": 3,
+        "tavily_succeeded_calls": 3
+      }
+    },
+    {
+      "task_id": "T098",
+      "dataset_index": 97,
+      "topic": "老旧小区加装电梯，便利多数人就能让少数人让步吗？",
+      "target_length": 450,
+      "status": "completed",
+      "research_status": "ready",
+      "research_snapshot": "/Users/moyi/workspace/viral-script/eval/experiments/formal-100-v1/generation/research/attempt-003/research/T098.json",
+      "trace": null,
+      "error_type": null,
+      "error": null,
+      "research_errors": [],
+      "usage": {
+        "hy3_attempted_calls": 1,
+        "research_hy3_attempted_calls": 1,
+        "script_generation_attempted_calls": 0,
+        "script_grounding_review_attempted_calls": 0,
+        "hy3_reported_calls": 1,
+        "hy3_input_tokens": 726,
+        "hy3_output_tokens": 2763,
+        "hy3_total_tokens": 3489,
+        "hy3_reasoning_tokens": 2416,
+        "hy3_cached_input_tokens": 576,
+        "tavily_attempted_calls": 3,
+        "tavily_succeeded_calls": 3
+      }
+    },
+    {
+      "task_id": "T100",
+      "dataset_index": 99,
+      "topic": "绿色转型持续提速，传统行业员工如何避免被落下？",
+      "target_length": 450,
+      "status": "completed",
+      "research_status": "ready",
+      "research_snapshot": "/Users/moyi/workspace/viral-script/eval/experiments/formal-100-v1/generation/research/attempt-003/research/T100.json",
+      "trace": null,
+      "error_type": null,
+      "error": null,
+      "research_errors": [],
+      "usage": {
+        "hy3_attempted_calls": 1,
+        "research_hy3_attempted_calls": 1,
+        "script_generation_attempted_calls": 0,
+        "script_grounding_review_attempted_calls": 0,
+        "hy3_reported_calls": 1,
+        "hy3_input_tokens": 726,
+        "hy3_output_tokens": 1767,
+        "hy3_total_tokens": 2493,
+        "hy3_reasoning_tokens": 1382,
+        "hy3_cached_input_tokens": 640,
+        "tavily_attempted_calls": 3,
+        "tavily_succeeded_calls": 3
+      }
+    }
+  ],
+  "counts": {
+    "input": 3,
+    "accounted": 3,
+    "pending": 0,
+    "completed": 3,
+    "insufficient_evidence": 0,
+    "failed": 0,
+    "running": 0
+  }
+}

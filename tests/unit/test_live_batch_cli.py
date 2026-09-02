@@ -103,7 +103,7 @@ class FakeAsyncClient:
 
 
 class LiveBatchCliTests(unittest.TestCase):
-    def test_concurrency_defaults_to_one_and_is_limited_to_one_through_four(
+    def test_concurrency_defaults_to_one_and_supports_formal_high_concurrency(
         self,
     ) -> None:
         module = load_module()
@@ -125,18 +125,18 @@ class LiveBatchCliTests(unittest.TestCase):
         self.assertEqual(defaults.concurrency, 1)
         self.assertFalse(hasattr(defaults, "require_grounding_review_accepted"))
         self.assertEqual(
-            parser.parse_args([*required, "--concurrency", "4"]).concurrency,
-            4,
+            parser.parse_args([*required, "--task-concurrency", "64"]).task_concurrency,
+            64,
         )
         with patch("sys.stderr"), self.assertRaises(SystemExit):
             parser.parse_args([*required, "--require-grounding-review-accepted"])
-        for invalid in ("0", "5"):
+        for invalid in ("0", "65"):
             with self.subTest(invalid=invalid), patch("sys.stderr"):
                 with self.assertRaises(SystemExit):
                     parser.parse_args([*required, "--concurrency", invalid])
-        for invalid in (False, 0, 5, 1.5, "2"):
+        for invalid in (False, 0, 65, 1.5, "2"):
             with self.subTest(runtime_invalid=invalid):
-                with self.assertRaisesRegex(ValueError, "between 1 and 4"):
+                with self.assertRaisesRegex(ValueError, "between 1 and 64"):
                     module._validate_task_concurrency(invalid)
 
     def test_loads_list_dataset_and_arbitrary_valid_lengths(self) -> None:
@@ -310,6 +310,8 @@ class LiveBatchCliTests(unittest.TestCase):
             manifest["execution"],
             {
                 "task_concurrency": 1,
+                "hy3_concurrency": 16,
+                "search_concurrency": 8,
                 "grounding_review_enabled": False,
             },
         )
@@ -433,6 +435,8 @@ class LiveBatchCliTests(unittest.TestCase):
             manifest["execution"],
             {
                 "task_concurrency": 2,
+                "hy3_concurrency": 16,
+                "search_concurrency": 8,
                 "grounding_review_enabled": False,
             },
         )

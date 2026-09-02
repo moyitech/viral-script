@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "formal-100-v1",
+  "dataset": "../../datasets/eval_topics_synthetic_v1.json",
+  "dataset_sha256": "698fb36b13c1911f1d5b4756579850bc94439389dc33a07b3bbcc4e32016c852",
+  "rubric": "../../rubrics/script_quality_v1.json",
+  "rubric_sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab",
+  "topic_count": 100,
+  "canonical_research_target_length": 450,
+  "target_lengths": [
+    280,
+    450,
+    700
+  ],
+  "expected_trace_count": 300,
+  "generation_mode": "editorial_candidates",
+  "grounding_review_enabled": false,
+  "judge_reasoning_effort": "high",
+  "judge_sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "validation": {
+    "discrimination_topic_count": 20,
+    "attack_false_pass_threshold": 0.75,
+    "human_review_count": 50,
+    "human_reviewers": 2
+  },
+  "concurrency": {
+    "tasks": 32,
+    "hy3": 64,
+    "search": 8,
+    "judge": 64
+  },
+  "seed": 20260902,
+  "prompt_versions": {
+    "research_query_plan": "research-query-plan-1.4.0",
+    "script_generation": "script-generation-background-editorial-2.2.0"
+  }
+}

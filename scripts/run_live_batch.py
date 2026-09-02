@@ -90,18 +90,41 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--experiment-id", required=True)
     parser.add_argument("--phase", required=True)
     parser.add_argument(
+        "--task-concurrency",
+        type=int,
+        choices=range(1, 65),
+        default=None,
+        metavar="1-64",
+        help="Maximum number of complete task pipelines in flight (default: 1).",
+    )
+    parser.add_argument(
         "--concurrency",
         type=int,
-        choices=range(1, 5),
+        choices=range(1, 65),
         default=1,
-        metavar="1-4",
-        help="Maximum number of complete task pipelines in flight (default: 1).",
+        metavar="1-64",
+        help="Deprecated alias for --task-concurrency.",
+    )
+    parser.add_argument(
+        "--hy3-concurrency",
+        type=int,
+        choices=range(1, 65),
+        default=None,
+        help="Maximum Hy3 requests in flight across research and generation.",
     )
     parser.add_argument(
         "--request-concurrency",
         type=int,
+        choices=range(1, 65),
         default=16,
-        help="Maximum Hy3 script requests in flight across all tasks.",
+        help="Deprecated alias for --hy3-concurrency.",
+    )
+    parser.add_argument(
+        "--search-concurrency",
+        type=int,
+        choices=range(1, 65),
+        default=8,
+        help="Maximum Tavily requests in flight across all tasks (default: 8).",
     )
     parser.add_argument(
         "--generation-mode",
@@ -199,9 +222,25 @@ def _validate_label(value: str, *, name: str) -> str:
 
 
 def _validate_task_concurrency(value: Any) -> int:
-    if isinstance(value, bool) or not isinstance(value, int) or not 1 <= value <= 4:
-        raise ValueError("concurrency must be between 1 and 4.")
+    if isinstance(value, bool) or not isinstance(value, int) or not 1 <= value <= 64:
+        raise ValueError("task-concurrency must be between 1 and 64.")
     return value
+
+
+def _resolve_concurrency(
+    preferred: Any,
+    legacy: Any,
+    *,
+    preferred_name: str,
+    legacy_name: str,
+    default: int,
+) -> int:
+    if preferred is not None:
+        return preferred
+    if legacy is not None and legacy != default:
+        _print_console(f"warning: --{legacy_name} is deprecated; use --{preferred_name}")
+    value = preferred if preferred is not None else legacy
+    return default if value is None else value
 
 
 def _prepare_output_dir(path: Path) -> None:
@@ -338,10 +377,27 @@ def _counts(
 
 
 async def _run(args: argparse.Namespace) -> int:
-    task_concurrency = _validate_task_concurrency(getattr(args, "concurrency", 1))
-    request_concurrency = getattr(args, "request_concurrency", 16)
+    task_concurrency = _validate_task_concurrency(
+        _resolve_concurrency(
+            getattr(args, "task_concurrency", None),
+            getattr(args, "concurrency", None),
+            preferred_name="task-concurrency",
+            legacy_name="concurrency",
+            default=1,
+        )
+    )
+    request_concurrency = _resolve_concurrency(
+        getattr(args, "hy3_concurrency", None),
+        getattr(args, "request_concurrency", None),
+        preferred_name="hy3-concurrency",
+        legacy_name="request-concurrency",
+        default=16,
+    )
+    search_concurrency = getattr(args, "search_concurrency", 8)
     if not 1 <= request_concurrency <= 64:
-        raise ValueError("request-concurrency must be between 1 and 64.")
+        raise ValueError("hy3-concurrency must be between 1 and 64.")
+    if not 1 <= search_concurrency <= 64:
+        raise ValueError("search-concurrency must be between 1 and 64.")
     research_only = bool(getattr(args, "research_only", False))
     dataset_path = args.dataset.resolve()
     task_spec_path = args.task_spec.resolve()
@@ -402,6 +458,8 @@ async def _run(args: argparse.Namespace) -> int:
         "task_spec_sha256": task_spec_sha256,
         "execution": {
             "task_concurrency": task_concurrency,
+            "hy3_concurrency": request_concurrency,
+            "search_concurrency": search_concurrency,
             "grounding_review_enabled": False,
         },
         "request_concurrency": request_concurrency,
@@ -462,6 +520,7 @@ async def _run(args: argparse.Namespace) -> int:
     manifest_lock = asyncio.Lock()
     task_semaphore = asyncio.Semaphore(task_concurrency)
     request_semaphore = asyncio.Semaphore(request_concurrency)
+    search_semaphore = asyncio.Semaphore(search_concurrency)
 
     async def checkpoint(position: int, record: dict[str, Any]) -> None:
         """Replace one ordered task record and atomically persist the manifest."""
@@ -479,6 +538,10 @@ async def _run(args: argparse.Namespace) -> int:
         AsyncTavilySearchProvider(settings.tavily) as search,
     ):
         research_agent = ResearchAgent(llm, search, config=settings.research)
+        if hasattr(research_agent, "_request_semaphore"):
+            research_agent._request_semaphore = request_semaphore
+        if hasattr(research_agent, "_search_semaphore"):
+            research_agent._search_semaphore = search_semaphore
         script_agent = ScriptAgent(llm, config=script_config)
         if hasattr(script_agent, "_request_semaphore"):
             script_agent._request_semaphore = request_semaphore

@@ -10,7 +10,9 @@ Treat a completed generation artifact as immutable. Evaluation outputs are
 stored under `eval/results/runs/` and reference it by `run_id`, so generation
 and scoring can be resumed or replayed independently. Generated runs belong in
 `eval/traces/runs/` and are ignored by Git; commit only small, redacted examples
-when needed for documentation.
+when needed for documentation. The exception is the versioned submission experiment
+under `eval/experiments/formal-100-v1/`: its complete raw artifacts are intentionally
+tracked with Git LFS so the published experiment remains auditable.
 
 Evaluation-ready traces currently use schema version `1.0`. Evidence and claim
 lists may be empty. When present, their ids must be unique and claims must mark

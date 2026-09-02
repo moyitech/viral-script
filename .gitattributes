@@ -1,0 +1,8 @@
+# Full formal-experiment evidence and item-level records remain auditable via Git LFS.
+eval/experiments/formal-100-v1/generation/research/attempt-*/research/*.json filter=lfs diff=lfs merge=lfs -text
+eval/experiments/formal-100-v1/generation/traces/attempt-*/traces/*.json filter=lfs diff=lfs merge=lfs -text
+eval/experiments/formal-100-v1/results/items/*/*.json filter=lfs diff=lfs merge=lfs -text
+eval/experiments/formal-100-v1/validation/discrimination/traces/*.json filter=lfs diff=lfs merge=lfs -text
+eval/experiments/formal-100-v1/validation/discrimination/results/items/*/*.json filter=lfs diff=lfs merge=lfs -text
+eval/experiments/formal-100-v1/validation/stability/repeat-*/results/items/*/*.json filter=lfs diff=lfs merge=lfs -text
+eval/experiments/formal-100-v1/validation/human/results/items/*/*.json filter=lfs diff=lfs merge=lfs -text

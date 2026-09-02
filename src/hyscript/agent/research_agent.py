@@ -740,11 +740,15 @@ class ResearchAgent:
         search: AsyncSearchProvider,
         *,
         config: ResearchConfig = ResearchConfig(),
+        request_semaphore: asyncio.Semaphore | None = None,
+        search_semaphore: asyncio.Semaphore | None = None,
     ) -> None:
         self._validate_config(config)
         self._llm = llm
         self._search = search
         self._config = config
+        self._request_semaphore = request_semaphore
+        self._search_semaphore = search_semaphore
 
     async def research(
         self,
@@ -1166,10 +1170,17 @@ class ResearchAgent:
                     _log_text(item.query),
                 )
                 try:
-                    response = await self._search.search(
-                        item.query,
-                        limit=self._config.results_per_query,
-                    )
+                    if self._search_semaphore is None:
+                        response = await self._search.search(
+                            item.query,
+                            limit=self._config.results_per_query,
+                        )
+                    else:
+                        async with self._search_semaphore:
+                            response = await self._search.search(
+                                item.query,
+                                limit=self._config.results_per_query,
+                            )
                 except SearchProviderError:
                     logger.warning(
                         "搜索 %d/%d 失败：%s",
@@ -1865,10 +1876,17 @@ class ResearchAgent:
             request_count += 1
             response_content: str | None = None
             try:
-                response = await self._llm.complete(
-                    current_messages,
-                    reasoning_effort="high",
-                )
+                if self._request_semaphore is None:
+                    response = await self._llm.complete(
+                        current_messages,
+                        reasoning_effort="high",
+                    )
+                else:
+                    async with self._request_semaphore:
+                        response = await self._llm.complete(
+                            current_messages,
+                            reasoning_effort="high",
+                        )
                 consecutive_provider_failures = 0
                 response_content = response.content
                 structured_response_count += 1

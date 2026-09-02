@@ -31,9 +31,14 @@ uv run --no-sync python scripts/run_evaluation.py score \
   --concurrency 2
 ```
 
-Judge requests consume API quota. The dataset-to-generation phase is not yet
-implemented because the shared existing-topic Agent workflow is still under
-development.
+Judge requests consume API quota. The shared existing-topic generation workflow
+is available through `run_live_batch.py`; the formal runner composes its
+research-only mode with frozen-background length replay.
+
+For the fixed 100-topic, 300-output submission experiment, use
+`scripts/run_formal_experiment.py`. It creates immutable attempt directories,
+selects one successful artifact per task into exact manifests, and keeps research,
+generation, scoring, and reporting independently resumable.
 
 Results resume only under the same input hashes and full evaluation
 fingerprint. Rule-only runs never load `.env`; selecting `judge` loads Hy3

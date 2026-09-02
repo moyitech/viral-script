@@ -7,6 +7,9 @@ trace.
 
 Generated results belong in `eval/results/runs/` and are ignored by Git. Commit
 only small, redacted examples when they are required to explain the method.
+The versioned formal submission experiment instead stores complete item records under
+`eval/experiments/formal-100-v1/`, with item JSON in Git LFS and summaries/tables in
+ordinary Git.
 
 Each scoring invocation writes:
 

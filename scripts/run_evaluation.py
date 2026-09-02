@@ -58,6 +58,14 @@ def build_parser() -> argparse.ArgumentParser:
             "to combine a primary batch with retry traces."
         ),
     )
+    source.add_argument(
+        "--trace-manifest",
+        type=Path,
+        help=(
+            "JSON manifest whose completed tasks name exact trace paths. "
+            "Use this for immutable formal-experiment selections."
+        ),
+    )
     score.add_argument(
         "--rubric",
         type=Path,
@@ -70,7 +78,7 @@ def build_parser() -> argparse.ArgumentParser:
         help="Comma-separated evaluators. Default: rules. Judge calls consume API quota.",
     )
     score.add_argument("--output-dir", type=Path, default=None)
-    score.add_argument("--concurrency", type=int, default=2)
+    score.add_argument("--concurrency", type=int, choices=range(1, 65), default=2)
     score.add_argument("--overwrite", action="store_true")
     score.add_argument(
         "--reasoning-effort",
@@ -98,6 +106,33 @@ def _is_trace_candidate(path: Path) -> bool:
 def _trace_paths(args: argparse.Namespace, *, output_dir: Path) -> list[Path]:
     if args.trace is not None:
         return [args.trace]
+    trace_manifest = getattr(args, "trace_manifest", None)
+    if trace_manifest is not None:
+        try:
+            payload = json.loads(trace_manifest.read_text(encoding="utf-8"))
+        except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+            raise ValueError(f"Could not load trace manifest: {trace_manifest}") from exc
+        tasks = payload.get("tasks") if isinstance(payload, dict) else None
+        if not isinstance(tasks, list) or not tasks:
+            raise ValueError("Trace manifest must contain a non-empty tasks list.")
+        paths: list[Path] = []
+        for index, task in enumerate(tasks):
+            if not isinstance(task, dict) or task.get("status") != "completed":
+                raise ValueError(
+                    f"Trace manifest task {index} must be a completed object."
+                )
+            raw_path = task.get("trace")
+            if not isinstance(raw_path, str) or not raw_path:
+                raise ValueError(f"Trace manifest task {index} has no trace path.")
+            path = Path(raw_path)
+            if not path.is_absolute():
+                path = trace_manifest.parent / path
+            if not path.is_file():
+                raise ValueError(f"Trace manifest path does not exist: {path}")
+            paths.append(path.resolve())
+        if len(set(paths)) != len(paths):
+            raise ValueError("Trace manifest contains duplicate trace paths.")
+        return paths
     raw_directories = args.trace_dir
     directories = (
         [raw_directories]

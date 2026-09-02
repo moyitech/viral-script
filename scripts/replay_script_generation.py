@@ -51,6 +51,15 @@ def build_parser() -> argparse.ArgumentParser:
         default=[],
         help="Replay only this task id; repeat for multiple tasks.",
     )
+    parser.add_argument(
+        "--output-task-id",
+        action="append",
+        default=[],
+        help=(
+            "After target-length expansion, generate only this exact output task id; "
+            "repeat for resume-safe partial attempts."
+        ),
+    )
     parser.add_argument("--concurrency", type=int, default=1)
     parser.add_argument(
         "--request-concurrency",
@@ -277,8 +286,8 @@ def _script_usage(script: Any) -> dict[str, int]:
 
 
 async def _run(args: argparse.Namespace) -> int:
-    if not 1 <= args.concurrency <= 32:
-        raise ValueError("concurrency must be between 1 and 32.")
+    if not 1 <= args.concurrency <= 64:
+        raise ValueError("concurrency must be between 1 and 64.")
     request_concurrency = getattr(args, "request_concurrency", 16)
     if not 1 <= request_concurrency <= 64:
         raise ValueError("request-concurrency must be between 1 and 64.")
@@ -289,6 +298,15 @@ async def _run(args: argparse.Namespace) -> int:
         source_tasks,
         getattr(args, "target_length", ()),
     )
+    requested_output_ids = set(getattr(args, "output_task_id", ()))
+    if requested_output_ids:
+        known_output_ids = {task["task_id"] for task in tasks}
+        unknown_output_ids = sorted(requested_output_ids - known_output_ids)
+        if unknown_output_ids:
+            raise ValueError(
+                "Unknown output task ids: " + ", ".join(unknown_output_ids)
+            )
+        tasks = [task for task in tasks if task["task_id"] in requested_output_ids]
     candidate_source_manifest_arg = getattr(
         args,
         "reuse_candidates_from_manifest",
@@ -414,6 +432,10 @@ async def _run(args: argparse.Namespace) -> int:
             "top_p": settings.hy3.top_p,
         },
         "script_generation_config": asdict(script_config),
+        "execution": {
+            "task_concurrency": args.concurrency,
+            "hy3_concurrency": request_concurrency,
+        },
         "request_concurrency": request_concurrency,
         "tasks": [],
     }
@@ -442,7 +464,10 @@ async def _run(args: argparse.Namespace) -> int:
                 target_length = result["target_length"]
                 if not isinstance(topic, str) or not isinstance(target_length, int):
                     raise ValueError(f"Task {task_id} has invalid topic or target length.")
-                research_path = Path(raw_task["research_snapshot"]).resolve()
+                research_path = Path(raw_task["research_snapshot"])
+                if not research_path.is_absolute():
+                    research_path = source_manifest_path.parent / research_path
+                research_path = research_path.resolve()
                 research = load_research_outcome(research_path)
                 if research.status != "ready":
                     raise ValueError(f"Task {task_id} research snapshot is not ready.")

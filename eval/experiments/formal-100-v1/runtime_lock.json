@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "hy3": {
+    "model": "hy3",
+    "endpoint_sha256": "2226bbd5fbd2dcdb264389aed040c211322a1f1dbb8ea60d395cd01a3b73a68d",
+    "temperature": 0.9,
+    "top_p": 1.0
+  },
+  "tavily": {
+    "endpoint_sha256": "088debf43e9156779928af390825f9e74a539b024e331eebe3b957dd4399067f",
+    "search_depth": "basic",
+    "topic": "general",
+    "max_results": 20
+  },
+  "research_config": {
+    "initial_query_count": 3,
+    "max_search_requests": 5,
+    "results_per_query": 5,
+    "max_search_concurrency": 3,
+    "max_content_chars_per_result": 4000
+  },
+  "script_generation_config": {
+    "length_tolerance_ratio": 0.1,
+    "max_generation_attempts": 2,
+    "grounding_review_enabled": false,
+    "generation_mode": "editorial_candidates",
+    "final_rewrite_enabled": false
+  },
+  "prompt_versions": {
+    "research_query_plan": "research-query-plan-1.4.0",
+    "script_generation": "script-generation-background-editorial-2.2.0"
+  }
+}

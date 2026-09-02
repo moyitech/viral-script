@@ -1,0 +1,48 @@
+# formal-100-v1 正式实验报告
+
+## 完整性
+
+- 实时调研：100/100
+- 冻结文案：300/300
+- 完成评分：300/300
+- 门控失败：0
+- 平均最终分：0.9969444444444444
+
+## Judge 内部一致性
+
+- 重复评价轨迹：300
+- 逐维完全一致率：0.9905
+- 七维全部一致率：0.9367
+- 首轮/复评平均分：0.998095 / 0.997143
+- 归一化总分 MAE：0.003175
+- 归一化总分 Spearman：0.27343751729640137
+
+## 判别力与对抗性
+
+{"expected_case_count": 80, "scored_case_count": 80, "strict_triplet_evaluable": 20, "strict_triplet_accuracy": 1.0, "pairwise_evaluable": 60, "pairwise_accuracy": 1.0, "attack_count": 20, "attack_false_pass_threshold": 0.75, "attack_false_pass_count": 15, "attack_false_pass_rate": 0.75}
+
+## 人工一致性
+
+null
+
+## 典型案例（待人工归因）
+
+### 低分
+
+- `T048-L280`：公共充电设备暗藏窃密风险，出门充电该注意什么？；final_score=0.9166666666666666；gate_failed=False。归因：待人工复核。
+- `T095-L700`：宠物进入商场，友好空间是否也该照顾怕动物的人？；final_score=0.9166666666666666；gate_failed=False。归因：待人工复核。
+- `T007-L700`：红利资产交易拥挤，稳健投资会不会变成高位接盘？；final_score=0.9583333333333334；gate_failed=False。归因：待人工复核。
+
+### 高分
+
+- `T001-L280`：存款利率继续走低，提前还贷还是留现金？；final_score=1.0；gate_failed=False。归因：待人工复核。
+- `T001-L450`：存款利率继续走低，提前还贷还是留现金？；final_score=1.0；gate_failed=False。归因：待人工复核。
+- `T001-L700`：存款利率继续走低，提前还贷还是留现金？；final_score=1.0；gate_failed=False。归因：待人工复核。
+
+### 门控失败
+
+暂无可用案例。
+
+### Judge—人工分歧
+
+尚未导入人工盲评。

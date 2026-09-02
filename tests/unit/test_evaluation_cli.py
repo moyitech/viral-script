@@ -90,6 +90,36 @@ class EvaluationCliTests(unittest.TestCase):
 
             self.assertEqual(paths, [first, second])
 
+    def test_trace_manifest_selects_exact_completed_paths(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            traces = root / "traces"
+            traces.mkdir()
+            first = traces / "first.json"
+            second = traces / "second.json"
+            first.write_text("{}", encoding="utf-8")
+            second.write_text("{}", encoding="utf-8")
+            manifest = root / "manifest.json"
+            manifest.write_text(
+                json.dumps(
+                    {
+                        "tasks": [
+                            {"status": "completed", "trace": "traces/second.json"},
+                            {"status": "completed", "trace": "traces/first.json"},
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            args = build_parser().parse_args(
+                ["score", "--trace-manifest", str(manifest)]
+            )
+
+            self.assertEqual(
+                _trace_paths(args, output_dir=root / "output"),
+                [second.resolve(), first.resolve()],
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
