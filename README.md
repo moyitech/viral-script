@@ -5,8 +5,8 @@
 **项目方案：** [设计思路、架构、重点技术、预期效果与时间规划](PROJECT_PROPOSAL.md)
 
 **当前进度：** 已完成 NewsNow 热榜获取、20 条选题推荐、Hy3/Tavily 异步适配、选中选题后的
-实时背景检索、口播文案生成、冻结轨迹适配、批量生成脚本和离线评分内核；Web/API
-应用入口仍待实现。
+实时背景检索、口播文案生成、冻结轨迹适配、批量生成脚本、离线评分内核，以及可在
+Windows、macOS、Linux 源码运行的 pywebview 桌面 GUI；Web/API 入口仍待实现。
 
 面向知识型短视频创作者的实时调研与口播文案生成 Agent。系统从当前公开热榜发现候选选题，
 使用 Hy3 生成检索计划，通过 Tavily 执行实时搜索，将结果作为写作背景生成可直接口播的短视频文案。
@@ -50,6 +50,29 @@ uv sync
 ```
 
 禁止将 API Key、Cookie 或其他密钥提交到仓库。
+
+### 跨平台桌面 GUI
+
+完成 `.env` 配置和 `uv sync` 后，在 Windows、macOS 或带图形会话的 Linux 桌面运行：
+
+```bash
+uv run --no-sync python -m app.desktop
+```
+
+应用启动后会在“今天想讲什么”页面后台静默获取 20 条推荐选题，也可以直接输入自定义
+选题；点击“选题推荐”后才显示准备日志或推荐列表。字数滑杆支持 100～1000 字自由选择，
+并在 280、450、700 字设置磁吸档位。生成、成稿和评分分别使用独立界面，原生窗口会随
+阶段调整尺寸。生成期间会实时显示 HyScript 日志并允许取消；成稿会先冻结到
+`HYSCRIPT_RUNS_DIR`，随后才可由用户主动运行正式评分。评分结果默认保存在
+`HYSCRIPT_EVALUATION_DIR`，相同 trace 和评测配置会复用已有结果，不重复调用 Judge。
+
+- Windows 使用系统 WebView2；若系统未预装，请安装 Microsoft Edge WebView2 Runtime。
+- macOS 使用系统 WKWebView。
+- Linux 通过 `pywebview[qt]` 使用 Qt backend，并要求 `DISPLAY` 或 `WAYLAND_DISPLAY`
+  图形会话。项目依赖使用平台 marker，不会在 Windows/macOS 安装 Linux Qt extra。
+
+推荐、检索、生成和首次 Judge 评分都会访问真实服务并消耗 API 配额。默认单元测试仍全部
+使用 mock/fake，不访问网络。
 
 `hyscript.config.settings` 是唯一读取环境配置的模块。它会从
 `pyproject.toml` 向上定位项目根目录并自动读取根目录 `.env`；同名的进程环境变量优先，

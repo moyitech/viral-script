@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HyScript · 口播文案工作台</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">H</div>
+          <div><p class="eyebrow">HY3 CREATOR STUDIO</p><h1>HyScript</h1></div>
+        </div>
+        <div class="runtime-chip" id="runtime-chip">正在连接桌面引擎…</div>
+      </header>
+
+      <div class="notice hidden" id="error-notice" role="alert"></div>
+
+      <main>
+        <section class="view" id="compose-view" data-view="compose">
+          <article class="panel composer-panel">
+            <div class="section-heading">
+              <div><p class="step-label">01 · DEFINE</p><h2>今天想讲什么？</h2></div>
+              <span class="section-index">选题</span>
+            </div>
+            <label class="field-label" for="topic-input">输入你的选题</label>
+            <textarea id="topic-input" maxlength="200" rows="4" placeholder="比如：年轻人为什么开始重新喜欢逛菜市场？"></textarea>
+            <div class="selected-angle hidden" id="selected-angle"></div>
+
+            <div class="length-block">
+              <div class="length-head">
+                <div><span class="field-label">目标字数</span><p>按非空白中文字符计算</p></div>
+                <output id="length-output" for="length-slider">450 字</output>
+              </div>
+              <input id="length-slider" type="range" min="100" max="1000" value="450" step="1" aria-label="目标字数">
+              <div class="snap-track" id="snap-track" aria-label="常用字数档位"></div>
+            </div>
+
+            <div class="compose-actions">
+              <button class="secondary-button recommendation-button" id="recommendation-button" type="button">
+                <span class="recommendation-dot" id="recommendation-dot"></span>
+                <span id="recommendation-button-text">选题推荐 · 准备中</span>
+              </button>
+              <button class="primary-button" id="generate-button" type="button"><span>开始生成</span><span aria-hidden="true">↗</span></button>
+            </div>
+            <p class="cost-note">推荐正在后台静默准备；生成会执行实时搜索并调用 Hy3。</p>
+          </article>
+        </section>
+
+        <section class="view hidden" id="progress-view" data-view="progress" aria-live="polite">
+          <article class="panel progress-panel">
+            <div class="progress-header">
+              <div><p class="step-label" id="progress-step">WORKING</p><h2 id="progress-title">正在执行任务</h2><p id="progress-subtitle">请保持窗口开启</p></div>
+              <div class="progress-actions">
+                <button class="secondary-button hidden" id="progress-back-button" type="button">返回填写</button>
+                <button class="danger-button" id="cancel-button" type="button">取消任务</button>
+              </div>
+            </div>
+            <div class="activity-line" id="activity-line"><span></span></div>
+            <div class="log-console" id="log-console" aria-label="实时进度日志"></div>
+            <div class="progress-footer">
+              <p id="progress-note">已发出的远端请求在取消后仍可能产生费用。</p>
+              <button class="secondary-button hidden" id="progress-retry-button" type="button">重新尝试</button>
+            </div>
+          </article>
+        </section>
+
+        <section class="view hidden" id="recommendation-picker-view" data-view="recommendation_picker">
+          <article class="panel picker-panel">
+            <div class="section-heading picker-heading">
+              <div><p class="step-label">LIVE SIGNALS</p><h2>推荐选题</h2><p>基于当前公开热榜生成，选中后仍会重新搜索背景资料。</p></div>
+              <button class="secondary-button" id="picker-back-button" type="button">返回填写</button>
+            </div>
+            <div class="recommendation-list" id="recommendation-list"></div>
+          </article>
+        </section>
+
+        <section class="view hidden" id="result-view" data-view="result">
+          <article class="panel script-panel">
+            <div class="section-heading">
+              <div><p class="step-label">02 · DRAFT</p><h2>生成文案</h2></div>
+              <div class="result-actions"><button class="secondary-button" id="copy-button" type="button">复制</button><button class="secondary-button" id="new-script-button" type="button">新建</button></div>
+            </div>
+            <div class="script-meta" id="script-meta"></div>
+            <div class="script-body" id="script-body"></div>
+            <div class="result-footer">
+              <p>评分会调用 Hy3；相同稿件和评测配置会复用缓存。</p>
+              <button class="primary-button evaluate-button" id="evaluate-button" type="button"><span>开始质量评分</span><span aria-hidden="true">◎</span></button>
+            </div>
+          </article>
+        </section>
+
+        <section class="view hidden" id="report-view" data-view="report">
+          <div class="report-toolbar"><button class="secondary-button" id="report-back-button" type="button">← 返回成稿</button><button class="secondary-button" id="report-new-button" type="button">新建文案</button></div>
+          <div class="report-hero panel">
+            <div class="score-ring"><strong id="overall-score">—</strong><span>/ 100</span></div>
+            <div class="report-summary"><p class="step-label">QUALITY REPORT</p><h2>文案质量评估</h2><p id="report-summary-text"></p><div class="report-tags" id="report-tags"></div></div>
+          </div>
+          <div class="dimension-grid" id="dimension-grid"></div>
+          <div class="report-detail-grid">
+            <article class="panel detail-panel hidden" id="oral-panel"><p class="step-label">ORAL AUDIT</p><h3>口播专项细分</h3><div id="oral-subscores"></div></article>
+            <article class="panel detail-panel hidden" id="group-panel"><p class="step-label">JUDGE GROUPS</p><h3>分组审计摘要</h3><div id="judge-groups"></div></article>
+          </div>
+          <article class="panel findings-panel hidden" id="findings-panel"><p class="step-label">FINDINGS</p><h3>规则与风险提示</h3><div id="findings-list"></div></article>
+        </section>
+      </main>
+
+      <footer><span>HyScript</span><span>Research-backed script generation</span></footer>
+    </div>
+    <div class="toast hidden" id="toast" role="status"></div>
+    <script src="slider.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

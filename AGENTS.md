@@ -13,7 +13,7 @@
 
 - Keep reusable implementation in `src/hyscript/`. Examples and application entrypoints should call that implementation instead of duplicating provider logic.
 - Use native async interfaces for LLM and search I/O. Do not add synchronous network calls to Agent, API, or evaluation workflows.
-- Keep offline evaluation separate from the online application. Application code must not invoke scoring as part of the creator-facing generation flow.
+- Keep formal evaluation separate from generation. Application code must never score automatically, but may run the formal evaluators after an explicit creator action and only against an already-frozen trace.
 - Freeze generation traces before scoring. Evaluation results must be stored separately and linked by `run_id` and trace hash; evaluators must not rewrite generation artifacts.
 - In formal end-to-end evaluation, the Agent must generate search queries and perform live retrieval. Static search fixtures are only for unit tests and component diagnostics.
 - Topic recommendations should come from current public hot lists. Do not introduce creator profiles or persistent user profiling unless the project scope is explicitly changed.

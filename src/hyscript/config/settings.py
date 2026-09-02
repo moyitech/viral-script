@@ -108,6 +108,7 @@ class ScriptGenerationConfig:
     max_generation_attempts: int = 2
     grounding_review_enabled: bool = False
     generation_mode: ScriptGenerationMode = "single"
+    final_rewrite_enabled: bool = False
 
 
 @dataclass(frozen=True, slots=True)
@@ -161,6 +162,7 @@ class RuntimeConfig:
 
     log_level: str = "INFO"
     runs_dir: Path = PROJECT_ROOT / "eval/traces/runs"
+    evaluation_dir: Path = PROJECT_ROOT / "eval/results/gui"
     run_live_tests: bool = False
 
 
@@ -446,6 +448,11 @@ def load_settings(
     runs_dir = Path(_text(values, "HYSCRIPT_RUNS_DIR", "eval/traces/runs")).expanduser()
     if not runs_dir.is_absolute():
         runs_dir = PROJECT_ROOT / runs_dir
+    evaluation_dir = Path(
+        _text(values, "HYSCRIPT_EVALUATION_DIR", "eval/results/gui")
+    ).expanduser()
+    if not evaluation_dir.is_absolute():
+        evaluation_dir = PROJECT_ROOT / evaluation_dir
 
     return Settings(
         hy3=Hy3Config(
@@ -500,6 +507,7 @@ def load_settings(
         runtime=RuntimeConfig(
             log_level=log_level,
             runs_dir=runs_dir.resolve(),
+            evaluation_dir=evaluation_dir.resolve(),
             run_live_tests=_boolean(values, "HYSCRIPT_RUN_LIVE_TESTS", "0"),
         ),
         search_provider=cast(SearchProviderName, search_provider),

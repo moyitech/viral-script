@@ -51,12 +51,17 @@ class SettingsTests(unittest.TestCase):
         self.assertEqual(loaded.script_generation.length_tolerance_ratio, 0.10)
         self.assertEqual(loaded.script_generation.max_generation_attempts, 2)
         self.assertFalse(loaded.script_generation.grounding_review_enabled)
+        self.assertFalse(loaded.script_generation.final_rewrite_enabled)
         self.assertEqual(loaded.tavily.base_url, "https://api.tavily.com")
         self.assertEqual(loaded.tavily.max_results, 20)
         self.assertEqual(loaded.newsnow.base_url, "https://newsnow.busiyi.world")
         self.assertEqual(loaded.newsnow.source_ids[0], "weibo")
         self.assertEqual(loaded.hotlist_provider, "newsnow")
         self.assertEqual(loaded.runtime.log_level, "INFO")
+        self.assertEqual(
+            loaded.runtime.evaluation_dir,
+            (PROJECT_ROOT / "eval/results/gui").resolve(),
+        )
         self.assertFalse(loaded.runtime.run_live_tests)
         self.assertNotIn("hy3-test-secret", repr(loaded))
         self.assertNotIn("tavily-test-secret", repr(loaded))
@@ -137,6 +142,7 @@ class SettingsTests(unittest.TestCase):
             environ=valid_environment(
                 HYSCRIPT_LOG_LEVEL="debug",
                 HYSCRIPT_RUNS_DIR="eval/custom-runs",
+                HYSCRIPT_EVALUATION_DIR="eval/custom-evaluations",
                 HYSCRIPT_RUN_LIVE_TESTS="yes",
             ),
         )
@@ -145,6 +151,10 @@ class SettingsTests(unittest.TestCase):
         self.assertEqual(
             loaded.runtime.runs_dir,
             (PROJECT_ROOT / "eval/custom-runs").resolve(),
+        )
+        self.assertEqual(
+            loaded.runtime.evaluation_dir,
+            (PROJECT_ROOT / "eval/custom-evaluations").resolve(),
         )
         self.assertTrue(loaded.runtime.run_live_tests)
 

@@ -1,0 +1,27 @@
+name: desktop-unit
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  unit:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - name: Install locked dependencies
+        run: uv sync --locked
+      - name: Import desktop and workflow modules
+        run: uv run --no-sync python -c "import app.desktop; import hyscript.workflows"
+      - name: Test magnetic slider behavior
+        run: node --test tests/ui/test_slider.js tests/ui/test_layout_contract.js
+      - name: Run offline unit suite
+        run: uv run --no-sync python -m unittest discover -s tests/unit -p "test_*.py" -v
