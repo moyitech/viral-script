@@ -3,6 +3,7 @@
 from .settings import (
     DEFAULT_ENV_FILE,
     DEFAULT_NEWSNOW_SOURCE_IDS,
+    EmbeddingConfig,
     PROJECT_ROOT,
     HotlistProviderName,
     Hy3Config,
@@ -27,6 +28,7 @@ from .settings import (
 __all__ = [
     "DEFAULT_ENV_FILE",
     "DEFAULT_NEWSNOW_SOURCE_IDS",
+    "EmbeddingConfig",
     "PROJECT_ROOT",
     "HotlistProviderName",
     "Hy3Config",

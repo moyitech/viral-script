@@ -18,7 +18,7 @@ from hyscript.agent import (
 )
 from hyscript.artifacts import RunTrace, build_generation_trace
 from hyscript.config import Settings
-from hyscript.llm import AsyncHy3Client
+from hyscript.llm import AsyncHy3Client, AsyncOpenAIEmbeddingClient
 from hyscript.search import AsyncTavilySearchProvider
 from hyscript.trends import AsyncNewsNowHotlistProvider
 
@@ -51,11 +51,13 @@ class CreatorWorkflow:
         *,
         hotlist_factory: AsyncContextFactory = AsyncNewsNowHotlistProvider,
         llm_factory: AsyncContextFactory = AsyncHy3Client,
+        embedding_factory: AsyncContextFactory = AsyncOpenAIEmbeddingClient,
         search_factory: AsyncContextFactory = AsyncTavilySearchProvider,
     ) -> None:
         self.settings = settings
         self._hotlist_factory = hotlist_factory
         self._llm_factory = llm_factory
+        self._embedding_factory = embedding_factory
         self._search_factory = search_factory
 
     async def recommend_topics(self, *, count: int = 20) -> TopicRecommendationBatch:
@@ -65,6 +67,7 @@ class CreatorWorkflow:
         async with (
             self._hotlist_factory(self.settings.newsnow) as hotlists,
             self._llm_factory(self.settings.hy3) as llm,
+            self._embedding_factory(self.settings.embedding) as embeddings,
         ):
             hotlist_batch = await hotlists.fetch_many()
             if hotlist_batch.failures:
@@ -78,7 +81,7 @@ class CreatorWorkflow:
             )
             result = await TopicAgent(
                 llm,
-                embeddings=llm,
+                embeddings=embeddings,
                 config=self.settings.topic_recommendation,
             ).recommend(hotlist_batch.snapshots, count=count)
         logger.info("推荐选题生成完成：%d 条", len(result.recommendations))

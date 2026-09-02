@@ -25,6 +25,8 @@ def valid_environment(**overrides: str) -> dict[str, str]:
     values = {
         "HY3_BASE_URL": "https://hy3.example/v1",
         "HY3_API_KEY": "hy3-test-secret",
+        "EMBEDDING_BASE_URL": "https://embedding.example/v1/embeddings",
+        "EMBEDDING_API_KEY": "embedding-test-secret",
         "TAVILY_API_KEY": "tavily-test-secret",
     }
     values.update(overrides)
@@ -37,6 +39,11 @@ class SettingsTests(unittest.TestCase):
 
         self.assertEqual(loaded.hy3.openai_base_url, "https://hy3.example/v1")
         self.assertEqual(loaded.hy3.model, "hy3")
+        self.assertEqual(
+            loaded.embedding.openai_base_url,
+            "https://embedding.example/v1",
+        )
+        self.assertEqual(loaded.embedding.model, "kinfra-text-embedding-4b")
         self.assertEqual(
             loaded.topic_recommendation.embedding_model,
             "kinfra-text-embedding-4b",
@@ -64,6 +71,7 @@ class SettingsTests(unittest.TestCase):
         )
         self.assertFalse(loaded.runtime.run_live_tests)
         self.assertNotIn("hy3-test-secret", repr(loaded))
+        self.assertNotIn("embedding-test-secret", repr(loaded))
         self.assertNotIn("tavily-test-secret", repr(loaded))
 
     def test_process_mapping_overrides_dotenv_file(self) -> None:
@@ -75,6 +83,8 @@ class SettingsTests(unittest.TestCase):
                         "HY3_BASE_URL=https://file.example/v1",
                         "HY3_API_KEY=file-hy3-key",
                         "HY3_MODEL=file-model",
+                        "EMBEDDING_BASE_URL=https://embedding.example/v1",
+                        "EMBEDDING_API_KEY=file-embedding-key",
                         "TAVILY_API_KEY=file-tavily-key",
                         "TAVILY_MAX_RESULTS=20",
                     )
@@ -104,7 +114,8 @@ class SettingsTests(unittest.TestCase):
     def test_missing_required_values_raise_settings_error(self) -> None:
         with self.assertRaisesRegex(
             SettingsError,
-            "HY3_BASE_URL, HY3_API_KEY, TAVILY_API_KEY",
+            "HY3_BASE_URL, HY3_API_KEY, EMBEDDING_BASE_URL, "
+            "EMBEDDING_API_KEY, TAVILY_API_KEY",
         ):
             load_settings(env_file=None, environ={})
 
@@ -116,7 +127,7 @@ class SettingsTests(unittest.TestCase):
             "HOTLIST_PROVIDER": "unsupported",
             "NEWSNOW_SOURCE_IDS": "bad/source",
             "NEWSNOW_MAX_CONCURRENCY": "11",
-            "TOPIC_EMBEDDING_MODEL": "",
+            "EMBEDDING_MODEL": "",
             "TOPIC_SIMILARITY_THRESHOLD": "1.01",
             "TOPIC_MAX_GENERATION_CONCURRENCY": "0",
             "RESEARCH_INITIAL_QUERY_COUNT": "0",
@@ -197,7 +208,7 @@ class SettingsTests(unittest.TestCase):
         loaded = load_settings(
             env_file=None,
             environ=valid_environment(
-                TOPIC_EMBEDDING_MODEL="custom-embedding",
+                EMBEDDING_MODEL="custom-embedding",
                 TOPIC_SIMILARITY_THRESHOLD="0.68",
                 TOPIC_MAX_GENERATION_CONCURRENCY="3",
             ),
@@ -207,6 +218,7 @@ class SettingsTests(unittest.TestCase):
             loaded.topic_recommendation.embedding_model,
             "custom-embedding",
         )
+        self.assertEqual(loaded.embedding.model, "custom-embedding")
         self.assertEqual(loaded.topic_recommendation.similarity_threshold, 0.68)
         self.assertEqual(loaded.topic_recommendation.max_generation_concurrency, 3)
 
@@ -257,6 +269,7 @@ class SettingsTests(unittest.TestCase):
     def test_lazy_proxy_exposes_topic_recommendation_settings(self) -> None:
         loaded = load_settings(env_file=None, environ=valid_environment())
         with patch.object(SETTINGS_MODULE, "get_settings", return_value=loaded):
+            self.assertIs(settings.embedding, loaded.embedding)
             self.assertIs(
                 settings.topic_recommendation,
                 loaded.topic_recommendation,

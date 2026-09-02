@@ -110,6 +110,8 @@ def _settings(directory: Path):
         environ={
             "HY3_BASE_URL": "https://hy3.example/v1",
             "HY3_API_KEY": "test-key",
+            "EMBEDDING_BASE_URL": "https://embedding.example/v1",
+            "EMBEDDING_API_KEY": "test-embedding-key",
             "TAVILY_API_KEY": "test-search-key",
         },
     )

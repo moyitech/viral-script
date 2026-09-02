@@ -8,6 +8,7 @@ const path = require("node:path");
 const root = path.resolve(__dirname, "../..");
 const css = fs.readFileSync(path.join(root, "app/desktop/assets/styles.css"), "utf8");
 const javascript = fs.readFileSync(path.join(root, "app/desktop/assets/app.js"), "utf8");
+const html = fs.readFileSync(path.join(root, "app/desktop/assets/index.html"), "utf8");
 
 test("the document viewport is fixed and cannot become the scroll container", () => {
   assert.match(css, /html, body\s*\{[^}]*height:\s*100%[^}]*overflow:\s*hidden/s);
@@ -31,4 +32,21 @@ test("long stage content scrolls only inside its dedicated region", () => {
 test("the initial compose card never becomes an internal scroll container", () => {
   assert.match(css, /\.composer-panel\s*\{[^}]*overflow:\s*hidden/s);
   assert.doesNotMatch(css, /\.composer-panel\s*\{[^}]*overflow-y:\s*auto/s);
+});
+
+test("topic recommendation is a plain button without readiness decoration", () => {
+  assert.match(
+    html,
+    /<button class="secondary-button" id="recommendation-button" type="button">选题推荐<\/button>/,
+  );
+  assert.doesNotMatch(html, /推荐\s*·\s*(?:准备中|已就绪|点击重试)/);
+  assert.doesNotMatch(html, /recommendation-dot|recommendation-button-text/);
+  assert.doesNotMatch(javascript, /updateRecommendationIndicator|recommendationDot/);
+});
+
+test("the displayed offline example is also the empty-input generation default", () => {
+  assert.match(html, /<script src="topic_defaults\.js"><\/script>/);
+  assert.match(javascript, /defaultTopic:\s*HyTopicDefaults\.choose\(\)/);
+  assert.match(javascript, /placeholder\s*=\s*`比如：\$\{state\.defaultTopic\}`/);
+  assert.match(javascript, /HyTopicDefaults\.resolve\(typedTopic, state\.defaultTopic\)/);
 });

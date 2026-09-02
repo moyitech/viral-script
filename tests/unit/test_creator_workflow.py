@@ -28,6 +28,8 @@ def _settings(directory: str):
         environ={
             "HY3_BASE_URL": "https://hy3.example/v1",
             "HY3_API_KEY": "test-key",
+            "EMBEDDING_BASE_URL": "https://embedding.example/v1",
+            "EMBEDDING_API_KEY": "test-embedding-key",
             "TAVILY_API_KEY": "test-search-key",
         },
     )
@@ -88,6 +90,9 @@ def _script() -> ScriptArtifact:
 
 class CreatorWorkflowTests(unittest.IsolatedAsyncioTestCase):
     async def test_recommends_twenty_topics_through_existing_agent(self) -> None:
+        seen_embedding_configs = []
+        seen_embedding_clients = []
+        embedding_client = object()
         expected = TopicRecommendationBatch(
             recommendations=(
                 TopicRecommendation(
@@ -110,7 +115,7 @@ class CreatorWorkflowTests(unittest.IsolatedAsyncioTestCase):
 
         class FakeTopicAgent:
             def __init__(self, *args, **kwargs) -> None:
-                pass
+                seen_embedding_clients.append(kwargs["embeddings"])
 
             async def recommend(self, snapshots, *, count: int):
                 self.test_count = count
@@ -124,10 +129,20 @@ class CreatorWorkflowTests(unittest.IsolatedAsyncioTestCase):
                 _settings(directory),
                 hotlist_factory=lambda config: _AsyncContext(_Hotlists()),
                 llm_factory=lambda config: _AsyncContext(object()),
+                embedding_factory=lambda config: (
+                    seen_embedding_configs.append(config)
+                    or _AsyncContext(embedding_client)
+                ),
             )
             result = await workflow.recommend_topics(count=20)
 
         self.assertIs(result, expected)
+        self.assertEqual(len(seen_embedding_configs), 1)
+        self.assertEqual(seen_embedding_clients, [embedding_client])
+        self.assertEqual(
+            seen_embedding_configs[0].openai_base_url,
+            "https://embedding.example/v1",
+        )
 
     async def test_generation_freezes_trace_before_returning(self) -> None:
         research = _ready_research()

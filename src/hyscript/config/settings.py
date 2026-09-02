@@ -81,6 +81,26 @@ class Hy3Config:
 
 
 @dataclass(frozen=True, slots=True)
+class EmbeddingConfig:
+    """Independent OpenAI-compatible embedding endpoint and credentials."""
+
+    base_url: str
+    api_key: str = field(repr=False)
+    model: str = "kinfra-text-embedding-4b"
+
+    @property
+    def openai_base_url(self) -> str:
+        """Return the API base expected by the OpenAI client."""
+
+        normalized = self.base_url.rstrip("/")
+        if normalized.endswith("/embeddings"):
+            normalized = normalized.removesuffix("/embeddings")
+        if normalized.endswith("/v1"):
+            return normalized
+        return f"{normalized}/v1"
+
+
+@dataclass(frozen=True, slots=True)
 class TopicRecommendationConfig:
     """Embedding deduplication and parallel topic-generation settings."""
 
@@ -171,6 +191,7 @@ class Settings:
     """Validated configuration snapshot used by the whole application."""
 
     hy3: Hy3Config
+    embedding: EmbeddingConfig
     topic_recommendation: TopicRecommendationConfig
     research: ResearchConfig
     script_generation: ScriptGenerationConfig
@@ -294,7 +315,14 @@ def load_settings(
         os.environ if environ is None else environ,
     )
 
-    _required(values, "HY3_BASE_URL", "HY3_API_KEY", "TAVILY_API_KEY")
+    _required(
+        values,
+        "HY3_BASE_URL",
+        "HY3_API_KEY",
+        "EMBEDDING_BASE_URL",
+        "EMBEDDING_API_KEY",
+        "TAVILY_API_KEY",
+    )
 
     search_provider = _text(values, "SEARCH_PROVIDER", "tavily").lower()
     if search_provider != "tavily":
@@ -310,9 +338,14 @@ def load_settings(
     if not 0 < hy3_top_p <= 1:
         raise SettingsError("HY3_TOP_P must be greater than 0 and at most 1.")
 
+    embedding_model_name = (
+        "EMBEDDING_MODEL"
+        if "EMBEDDING_MODEL" in values
+        else "TOPIC_EMBEDDING_MODEL"
+    )
     topic_embedding_model = _text(
         values,
-        "TOPIC_EMBEDDING_MODEL",
+        embedding_model_name,
         "kinfra-text-embedding-4b",
     )
     topic_similarity_threshold = _float(
@@ -326,7 +359,7 @@ def load_settings(
         "4",
     )
     if not topic_embedding_model:
-        raise SettingsError("TOPIC_EMBEDDING_MODEL must not be empty.")
+        raise SettingsError("EMBEDDING_MODEL must not be empty.")
     if not 0 < topic_similarity_threshold <= 1:
         raise SettingsError(
             "TOPIC_SIMILARITY_THRESHOLD must be greater than 0 and at most 1."
@@ -462,6 +495,11 @@ def load_settings(
             temperature=hy3_temperature,
             top_p=hy3_top_p,
         ),
+        embedding=EmbeddingConfig(
+            base_url=_http_url(values, "EMBEDDING_BASE_URL"),
+            api_key=_text(values, "EMBEDDING_API_KEY"),
+            model=topic_embedding_model,
+        ),
         topic_recommendation=TopicRecommendationConfig(
             embedding_model=topic_embedding_model,
             similarity_threshold=topic_similarity_threshold,
@@ -544,6 +582,10 @@ class _LazySettings:
     @property
     def hy3(self) -> Hy3Config:
         return get_settings().hy3
+
+    @property
+    def embedding(self) -> EmbeddingConfig:
+        return get_settings().embedding
 
     @property
     def topic_recommendation(self) -> TopicRecommendationConfig:

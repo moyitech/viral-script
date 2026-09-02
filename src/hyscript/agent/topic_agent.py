@@ -584,17 +584,18 @@ def _parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
 
 async def _main() -> None:
     from hyscript.config import settings
-    from hyscript.llm import AsyncHy3Client
+    from hyscript.llm import AsyncHy3Client, AsyncOpenAIEmbeddingClient
     from hyscript.trends import AsyncNewsNowHotlistProvider
 
     async with (
         AsyncNewsNowHotlistProvider(settings.newsnow) as hotlists,
         AsyncHy3Client(settings.hy3) as llm,
+        AsyncOpenAIEmbeddingClient(settings.embedding) as embeddings,
     ):
         hotlist_batch = await hotlists.fetch_many()
         recommendations = await TopicAgent(
             llm,
-            embeddings=llm,
+            embeddings=embeddings,
             config=settings.topic_recommendation,
         ).recommend(
             hotlist_batch.snapshots,

@@ -1,7 +1,8 @@
-"""Hy3 client boundary."""
+"""Asynchronous LLM and embedding client boundaries."""
 
-from ..config import Hy3Config
+from ..config import EmbeddingConfig, Hy3Config
 from .async_client import AsyncHy3Client
+from .async_embedding_client import AsyncOpenAIEmbeddingClient
 from .base import (
     AsyncEmbeddingClient,
     AsyncLLMClient,
@@ -17,11 +18,13 @@ from .base import (
 
 __all__ = [
     "AsyncHy3Client",
+    "AsyncOpenAIEmbeddingClient",
     "AsyncEmbeddingClient",
     "AsyncLLMClient",
     "ChatMessage",
     "ChatResponse",
     "EmbeddingProviderError",
+    "EmbeddingConfig",
     "Hy3Config",
     "LLMProviderError",
     "LLMCallUsage",

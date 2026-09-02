@@ -58,9 +58,7 @@ input[type="range"].magnetized::-moz-range-thumb { transform: scale(1.24); box-s
 .secondary-button, .danger-button { padding: 10px 13px; border: 1px solid var(--line); border-radius: 10px; color: var(--ink); background: rgba(255,255,255,.64); font-size: 11px; font-weight: 700; }
 .danger-button { color: var(--red); border-color: rgba(166,61,53,.24); background: #f8e8e5; }
 .primary-button:hover, .secondary-button:hover, .danger-button:hover { transform: translateY(-1px); } button:disabled { cursor: not-allowed; opacity: .46; transform: none !important; }
-.recommendation-button { display: flex; align-items: center; justify-content: center; gap: 8px; }
-.recommendation-dot { width: 7px; height: 7px; border-radius: 50%; background: #d59b66; } .recommendation-dot.running { animation: dot-pulse 1.1s infinite; } .recommendation-dot.ready { background: #4c9d69; box-shadow: 0 0 0 4px rgba(76,157,105,.12); } .recommendation-dot.failed { background: var(--red); }
-@keyframes dot-pulse { 50% { opacity: .35; transform: scale(.75); } } .cost-note { margin: 9px 0 0; text-align: center; line-height: 1.45; }
+.cost-note { margin: 9px 0 0; text-align: center; line-height: 1.45; }
 .progress-panel { display: flex; flex-direction: column; width: 100%; height: 100%; max-width: 760px; max-height: 450px; margin: 0 auto; overflow: hidden; } .progress-header { flex: 0 0 auto; justify-content: space-between; gap: 18px; } .progress-header h2 { margin-bottom: 6px; } .progress-actions { display: flex; gap: 7px; }
 .activity-line { height: 3px; margin: 19px 0 15px; overflow: hidden; border-radius: 999px; background: #dde0dc; } .activity-line span { display: block; width: 36%; height: 100%; border-radius: inherit; background: var(--green); animation: activity 1.45s infinite ease-in-out; } .activity-line.stopped span { display: none; }
 @keyframes activity { from { transform: translateX(-105%); } to { transform: translateX(380%); } }

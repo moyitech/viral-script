@@ -42,11 +42,24 @@ Windows、macOS、Linux 源码运行的 pywebview 桌面 GUI；Web/API 入口仍
 ## 快速开始
 
 运行环境要求 Python 3.12+ 和 [uv](https://docs.astral.sh/uv/)。复制配置模板并填写
-`HY3_API_KEY`、`TAVILY_API_KEY` 等必要配置：
+`HY3_API_KEY`、`EMBEDDING_API_KEY`、`TAVILY_API_KEY` 等必要配置。Hy3 与
+embedding 分别使用自己的 `BASE_URL` 和 `API_KEY`：
 
 ```bash
 cp .env.example .env
 uv sync
+```
+
+至少需要分别填写以下两套模型服务配置：
+
+```dotenv
+HY3_BASE_URL=https://your-hy3-service.example.com/v1/chat/completions
+HY3_API_KEY=your-hy3-key
+HY3_MODEL=hy3
+
+EMBEDDING_BASE_URL=https://your-embedding-service.example.com/v1/embeddings
+EMBEDDING_API_KEY=your-embedding-key
+EMBEDDING_MODEL=kinfra-text-embedding-4b
 ```
 
 禁止将 API Key、Cookie 或其他密钥提交到仓库。
@@ -77,7 +90,7 @@ uv run --no-sync python -m app.desktop
 `hyscript.config.settings` 是唯一读取环境配置的模块。它会从
 `pyproject.toml` 向上定位项目根目录并自动读取根目录 `.env`；同名的进程环境变量优先，
 因此部署配置可以安全覆盖本地文件。其他模块只接收经过校验的 `settings.hy3`、
-`settings.topic_recommendation`、`settings.research`、`settings.script_generation`、
+`settings.embedding`、`settings.topic_recommendation`、`settings.research`、`settings.script_generation`、
 `settings.tavily`、`settings.newsnow` 或 `settings.runtime`，不自行读取 `.env`。
 
 调用示例：
@@ -101,9 +114,9 @@ async def main() -> None:
 asyncio.run(main())
 ```
 
-项目采用原生异步 I/O：Hy3 使用 OpenAI 兼容 SDK 的 `AsyncOpenAI`，Tavily 使用已安装
-SDK 的 `AsyncTavilyClient`。项目不维护自定义 Hy3 HTTP 传输；Agent、API 和示例统一使用
-异步接口，并在上下文管理器退出时关闭连接池。
+项目采用原生异步 I/O：Hy3 与 embedding 分别使用独立的 OpenAI 兼容 `AsyncOpenAI`
+客户端，Tavily 使用已安装 SDK 的 `AsyncTavilyClient`。Hy3 和 embedding 可以来自完全不同的
+服务商；Agent、API 和示例统一使用异步接口，并在上下文管理器退出时关闭连接池。
 
 Tavily 默认使用官方端点。若要改用兼容的第三方 Hub，可以在 `.env` 中设置完整搜索地址：
 
@@ -126,8 +139,8 @@ uv run --no-sync python examples/04_end_to_end.py \
   "行业自律能终结新能源车恶性竞争吗？" --target-length 450
 ```
 
-这些命令会产生真实网络或 Hy3/Tavily API 调用；单元测试不会访问网络。一次默认选题推荐
-包含 1 次 4B embedding 请求、本地余弦连通分量去重和 4 次并发的 Hy3 高推理生成请求；生成
+这些命令会产生真实的 Hy3、embedding 或 Tavily API 调用；单元测试不会访问网络。一次默认选题推荐
+包含 1 次独立 embedding 服务请求、本地余弦连通分量去重和 4 次并发的 Hy3 高推理生成请求；生成
 请求禁用客户端超时且不设置 `max_tokens`。选题推荐阶段只把热榜作为当前关注信号；页面统一提示“选中后需
 补充背景”，不在每条推荐中重复保存固定状态字段。用户选中后，`ResearchAgent` 生成查询并
 实时搜索；搜索结果以背景材料提供给 `ScriptAgent`，不再经过 claim、标题链或 Grounding 复核。

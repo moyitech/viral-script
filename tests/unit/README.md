@@ -11,6 +11,10 @@ using API credits.
 endpoint normalization, SDK arguments, response metadata, client cleanup, and
 secret-safe failures without maintaining a custom HTTP transport.
 
+`test_async_embedding_client.py` verifies that topic embeddings use their own
+OpenAI-compatible endpoint and key, restore vector order, close owned clients,
+and keep provider errors secret-safe.
+
 `test_async_tavily_provider.py` exercises the installed asynchronous Tavily SDK
 boundary, including normalization of the optional third-party Hub envelope.
 

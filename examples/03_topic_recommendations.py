@@ -6,7 +6,7 @@ import json
 
 from hyscript.agent import TopicAgent
 from hyscript.config import settings
-from hyscript.llm import AsyncHy3Client
+from hyscript.llm import AsyncHy3Client, AsyncOpenAIEmbeddingClient
 from hyscript.trends import AsyncNewsNowHotlistProvider
 
 
@@ -14,11 +14,12 @@ async def main() -> None:
     async with (
         AsyncNewsNowHotlistProvider(settings.newsnow) as hotlists,
         AsyncHy3Client(settings.hy3) as llm,
+        AsyncOpenAIEmbeddingClient(settings.embedding) as embeddings,
     ):
         hotlist_batch = await hotlists.fetch_many()
         recommendations = await TopicAgent(
             llm,
-            embeddings=llm,
+            embeddings=embeddings,
             config=settings.topic_recommendation,
         ).recommend(
             hotlist_batch.snapshots,

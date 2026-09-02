@@ -6,7 +6,6 @@ const elements = {
   topicInput: $("topic-input"), selectedAngle: $("selected-angle"),
   lengthSlider: $("length-slider"), lengthOutput: $("length-output"), snapTrack: $("snap-track"),
   generateButton: $("generate-button"), recommendationButton: $("recommendation-button"),
-  recommendationDot: $("recommendation-dot"), recommendationButtonText: $("recommendation-button-text"),
   progressStep: $("progress-step"), progressTitle: $("progress-title"), progressSubtitle: $("progress-subtitle"),
   progressBackButton: $("progress-back-button"), cancelButton: $("cancel-button"),
   activityLine: $("activity-line"), logConsole: $("log-console"),
@@ -30,11 +29,14 @@ const views = {
 
 const state = {
   ready: false, currentStage: "compose", selectedRecommendation: null,
+  defaultTopic: HyTopicDefaults.choose(),
   currentRunId: null, currentScript: "", currentReport: null,
   recommendation: { jobId: null, status: "idle", lastSeq: 0, events: [], result: null, error: null, pollTimer: null },
   foreground: { jobId: null, kind: null, lastSeq: 0, pollTimer: null },
   slider: { snapPoints: [280, 450, 700], enterPixels: 14, releasePixels: 24, pointerId: null, attachedPoint: null },
 };
+
+elements.topicInput.placeholder = `比如：${state.defaultTopic}`;
 
 const progressLabels = {
   recommendation_progress: ["LIVE SIGNALS", "正在准备推荐选题", "读取公开热榜并生成 20 条创作方向"],
@@ -77,21 +79,6 @@ function updateComposeControls() {
   elements.recommendationButton.disabled = !state.ready;
   elements.topicInput.disabled = Boolean(state.foreground.jobId);
   elements.lengthSlider.disabled = Boolean(state.foreground.jobId);
-}
-
-function updateRecommendationIndicator() {
-  const status = state.recommendation.status;
-  elements.recommendationDot.className = "recommendation-dot";
-  if (["queued", "running", "cancelling"].includes(status)) {
-    elements.recommendationDot.classList.add("running");
-    elements.recommendationButtonText.textContent = "选题推荐 · 准备中";
-  } else if (status === "succeeded") {
-    elements.recommendationDot.classList.add("ready");
-    elements.recommendationButtonText.textContent = "选题推荐 · 已就绪";
-  } else if (["failed", "cancelled"].includes(status)) {
-    elements.recommendationDot.classList.add("failed");
-    elements.recommendationButtonText.textContent = "选题推荐 · 点击重试";
-  } else elements.recommendationButtonText.textContent = "选题推荐";
 }
 
 function updateRange() {
@@ -194,20 +181,28 @@ function terminalRecommendation(message, retry) {
   if (retry) show(elements.progressRetryButton);
 }
 
+function failRecommendation(message) {
+  state.recommendation.status = "failed";
+  state.recommendation.error = message;
+  if (state.currentStage === "recommendation_progress") {
+    terminalRecommendation(message, true);
+  }
+}
+
 async function startRecommendations() {
-  state.recommendation.status = "queued"; state.recommendation.error = null; updateRecommendationIndicator();
+  state.recommendation.status = "queued"; state.recommendation.error = null;
   let response;
   try { response = await window.pywebview.api.start_recommendations(); }
-  catch (_) { state.recommendation.status = "failed"; state.recommendation.error = "无法启动推荐任务。"; updateRecommendationIndicator(); return false; }
+  catch (_) { failRecommendation("无法启动推荐任务。"); return false; }
   if (!response.ok) {
-    state.recommendation.status = "failed"; state.recommendation.error = response.error || "无法启动推荐任务。";
-    updateRecommendationIndicator(); return false;
+    failRecommendation(response.error || "无法启动推荐任务。");
+    return false;
   }
   if (state.recommendation.jobId !== response.job_id) {
     state.recommendation.jobId = response.job_id; state.recommendation.lastSeq = 0;
     state.recommendation.events = []; state.recommendation.result = null;
   }
-  state.recommendation.status = response.status || "queued"; updateRecommendationIndicator();
+  state.recommendation.status = response.status || "queued";
   scheduleRecommendationPoll(50); return true;
 }
 
@@ -222,13 +217,13 @@ async function pollRecommendation() {
   let response;
   try { response = await window.pywebview.api.poll_job(rec.jobId, rec.lastSeq); }
   catch (_) { scheduleRecommendationPoll(700); return; }
-  if (!response.ok) { rec.status = "failed"; rec.error = response.error; updateRecommendationIndicator(); return; }
+  if (!response.ok) { failRecommendation(response.error || "推荐任务状态不可用。"); return; }
   const events = response.events || [];
   if (events.length) {
     rec.lastSeq = events[events.length - 1].seq; rec.events.push(...events);
     if (state.currentStage === "recommendation_progress") appendEvents(events);
   }
-  rec.status = response.status; rec.error = response.error; updateRecommendationIndicator();
+  rec.status = response.status; rec.error = response.error;
   if (["queued", "running", "cancelling"].includes(response.status)) { scheduleRecommendationPoll(); return; }
   if (response.status === "succeeded") {
     rec.result = response.result; renderRecommendations(response.result.recommendations);
@@ -305,8 +300,13 @@ function finishForeground(status, result, error) {
 }
 
 async function startGeneration() {
-  const topic = elements.topicInput.value.trim();
-  if (!topic) { showError("请先输入选题，或选择一条推荐。"); elements.topicInput.focus(); return; }
+  const typedTopic = elements.topicInput.value.trim();
+  const topic = HyTopicDefaults.resolve(typedTopic, state.defaultTopic);
+  if (!typedTopic) {
+    elements.topicInput.value = topic;
+    state.selectedRecommendation = null;
+    hide(elements.selectedAngle);
+  }
   const angle = state.selectedRecommendation ? state.selectedRecommendation.angle : "";
   await startForeground("generation", () => window.pywebview.api.start_generation({ topic, angle, target_length: Number(elements.lengthSlider.value) }));
 }

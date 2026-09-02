@@ -44,7 +44,8 @@
   包含 18 条标题。转换为成对标签后，共有 190 个“同一事件”正例对。
 - 候选 A：`kinfra-text-embedding-0.6b`，向量维度 1,024。
 - 候选 B：`kinfra-text-embedding-4b`，向量维度 2,560。
-- embedding 请求与 Hy3 复用 `hyscript.config.settings` 中的 TokenHub 地址和密钥。
+- 本次历史实验采集时，embedding 请求与 Hy3 使用了同一 TokenHub 地址和密钥；当前应用已支持
+  为两者配置不同服务。
 - TokenHub 请求显式使用 `encoding_format="float"`；省略该参数会返回 HTTP 400。
 - 每个模型只请求一次 140 条标题的 embedding。向量按响应 `index` 恢复输入顺序并检查数量、
   索引集合和维度一致性。
@@ -122,13 +123,14 @@ NewsNow 最多 140 条标题
 
 实现约束如下：
 
-- embedding 和 Hy3 chat 复用同一个异步 `AsyncHy3Client` 与连接池；
+- embedding 和 Hy3 chat 使用独立的异步客户端、endpoint 与 API key；
 - 本地 O(n²d) 聚类通过 `asyncio.to_thread` 执行，不阻塞 API 的事件循环；
 - 每个连通分量保留全部原标题、平台、排名、条目 ID 和 URL，不让向量去重破坏 lineage；
 - 生成请求继续使用 Hy3 `high`，不设置 `max_tokens`；
 - 默认并发为 4，每个失败批次最多单独重试一次；
 - 输出分别记录 embedding 请求数、Hy3 chat 请求数、模型名和阈值；
-- 配置入口为 `TOPIC_EMBEDDING_MODEL`、`TOPIC_SIMILARITY_THRESHOLD` 和
+- embedding 配置入口为 `EMBEDDING_BASE_URL`、`EMBEDDING_API_KEY` 和
+  `EMBEDDING_MODEL`；聚类配置入口为 `TOPIC_SIMILARITY_THRESHOLD` 和
   `TOPIC_MAX_GENERATION_CONCURRENCY`。
 
 成功且无需重试的默认运行包含 1 次 embedding 和 4 次 Hy3 chat，共 5 次远端请求。SDK 的

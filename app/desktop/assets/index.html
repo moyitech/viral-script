@@ -41,13 +41,10 @@
             </div>
 
             <div class="compose-actions">
-              <button class="secondary-button recommendation-button" id="recommendation-button" type="button">
-                <span class="recommendation-dot" id="recommendation-dot"></span>
-                <span id="recommendation-button-text">选题推荐 · 准备中</span>
-              </button>
+              <button class="secondary-button" id="recommendation-button" type="button">选题推荐</button>
               <button class="primary-button" id="generate-button" type="button"><span>开始生成</span><span aria-hidden="true">↗</span></button>
             </div>
-            <p class="cost-note">推荐正在后台静默准备；生成会执行实时搜索并调用 Hy3。</p>
+            <p class="cost-note">留空会使用上方示例；生成会执行实时搜索并调用 Hy3。</p>
           </article>
         </section>
 
@@ -113,6 +110,7 @@
     </div>
     <div class="toast hidden" id="toast" role="status"></div>
     <script src="slider.js"></script>
+    <script src="topic_defaults.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
