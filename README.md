@@ -50,7 +50,7 @@ EMBEDDING_MODEL=kinfra-text-embedding-4b
 uv run --no-sync python -m app.desktop
 ```
 
-### 二次开发及调试
+## 二次开发及调试
 
 #### 调用示例
 
