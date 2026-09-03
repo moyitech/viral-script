@@ -1,6 +1,14 @@
 """Offline-only scoring, Judge, and aggregation components."""
 
 from .aggregate import combine_evaluations, summarize_batch
+from .citation_verification import (
+    CitationVerificationConfig,
+    CitationVerificationConflictError,
+    CitationVerificationError,
+    CitationVerifier,
+    run_citation_verification_formal_validation,
+    run_citation_verification_validation,
+)
 from .io import FrozenTrace, TraceInputError, load_frozen_trace
 from .judge import (
     Hy3JudgeEvaluator,
@@ -22,6 +30,7 @@ from .reward_hacking import (
     RewardHackingConflictError,
     RewardHackingDetector,
     RewardHackingEvaluationError,
+    run_reward_hacking_formal_validation,
     run_reward_hacking_validation,
 )
 from .runner import (
@@ -36,6 +45,10 @@ __all__ = [
     "BatchEvaluationConfig",
     "BatchEvaluationResult",
     "BatchEvaluationRunner",
+    "CitationVerificationConfig",
+    "CitationVerificationConflictError",
+    "CitationVerificationError",
+    "CitationVerifier",
     "DimensionScore",
     "EvaluationConflictError",
     "EvaluationFingerprint",
@@ -61,5 +74,8 @@ __all__ = [
     "load_frozen_trace",
     "load_rubric",
     "run_reward_hacking_validation",
+    "run_reward_hacking_formal_validation",
+    "run_citation_verification_formal_validation",
+    "run_citation_verification_validation",
     "summarize_batch",
 ]

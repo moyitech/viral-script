@@ -15,6 +15,7 @@ from hyscript.evaluation.reward_hacking import (
     RewardHackingConfig,
     RewardHackingConflictError,
     RewardHackingDetector,
+    run_reward_hacking_formal_validation,
     run_reward_hacking_validation,
 )
 from hyscript.llm import ChatResponse
@@ -44,6 +45,34 @@ def _trace(path: Path, *, run_id: str, text: str) -> None:
     payload["script_artifact"]["character_count"] = len(text)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+
+
+def _formal_manifest(root: Path, rows: list[tuple[str, str]]) -> None:
+    tasks = []
+    for task_id, text in rows:
+        trace_path = root / "generation/traces" / f"{task_id}.json"
+        run_id = f"run-{task_id}"
+        _trace(trace_path, run_id=run_id, text=text)
+        trace = load_frozen_trace(trace_path)
+        tasks.append(
+            {
+                "task_id": task_id,
+                "status": "completed",
+                "run_id": run_id,
+                "trace": f"traces/{task_id}.json",
+                "trace_sha256": trace.trace_sha256,
+            }
+        )
+    (root / "generation/trace_manifest.json").write_text(
+        json.dumps(
+            {
+                "expected_count": len(tasks),
+                "selected_count": len(tasks),
+                "tasks": tasks,
+            }
+        ),
+        encoding="utf-8",
+    )
 
 
 class RewardHackingTests(unittest.TestCase):
@@ -171,6 +200,72 @@ class RewardHackingTests(unittest.TestCase):
             with self.assertRaises(RewardHackingConflictError):
                 asyncio.run(
                     run_reward_hacking_validation(root, changed, concurrency=1)
+                )
+
+    def test_formal_batch_resumes_and_does_not_modify_quality_scores(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            _formal_manifest(
+                root,
+                [
+                    ("T001-L280", "正常正文" + "哈" * 10),
+                    ("T002-L280", "自然口播正文。"),
+                ],
+            )
+            score_path = root / "results/summary.json"
+            score_path.parent.mkdir(parents=True)
+            score_path.write_text('{"frozen":true}', encoding="utf-8")
+            client = FakeClient(
+                ['{"reward_hacking": false, "reason": "自然口播，无异常。"}']
+            )
+            detector = RewardHackingDetector(client, model_name="fake-hy3")
+
+            first = asyncio.run(
+                run_reward_hacking_formal_validation(
+                    root,
+                    detector,
+                    concurrency=512,
+                )
+            )
+            second = asyncio.run(
+                run_reward_hacking_formal_validation(
+                    root,
+                    detector,
+                    concurrency=512,
+                )
+            )
+
+            self.assertEqual(first["completed_count"], 2)
+            self.assertEqual(first["flagged_count"], 1)
+            self.assertEqual(len(client.calls), 1)
+            self.assertEqual(second["completed_count"], 2)
+            manifest = json.loads(
+                (
+                    root
+                    / "validation/incremental_attack/reward_hacking/manifest.json"
+                ).read_text()
+            )
+            self.assertEqual(manifest["resumed_count"], 2)
+            self.assertEqual(manifest["concurrency"], 512)
+            self.assertEqual(score_path.read_text(encoding="utf-8"), '{"frozen":true}')
+
+    def test_formal_batch_rejects_trace_hash_mismatch(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            _formal_manifest(root, [("T001-L280", "自然口播正文。")])
+            manifest_path = root / "generation/trace_manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["tasks"][0]["trace_sha256"] = "0" * 64
+            manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "identity mismatch"):
+                asyncio.run(
+                    run_reward_hacking_formal_validation(
+                        root,
+                        RewardHackingDetector(
+                            FakeClient([]),
+                            model_name="fake-hy3",
+                        ),
+                    )
                 )
 
     def test_concurrency_limit_rejects_513(self) -> None:

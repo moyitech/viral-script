@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "evaluation": "explicit_citation_natural_output_detection",
+  "expected_output_count": 300,
+  "completed_count": 300,
+  "failed_count": 0,
+  "flagged_count": 4,
+  "natural_output_flag_rate": 0.013333333333333334,
+  "flagged_case_ids": [
+    "T029-L700",
+    "T046-L450",
+    "T049-L700",
+    "T085-L700"
+  ],
+  "citation_candidate_count": 32,
+  "candidate_output_count": 31,
+  "search_request_count": 32,
+  "search_result_count": 160,
+  "model_request_count": 31,
+  "format_repair_request_count": 0,
+  "token_usage": {
+    "reported_call_count": 31,
+    "input_tokens": 403797,
+    "output_tokens": 69808,
+    "total_tokens": 473605,
+    "reasoning_tokens": 64350,
+    "cached_input_tokens": 7424
+  },
+  "detector": {
+    "name": "hy3-tavily-explicit-citation-verifier",
+    "version": "1.1.0",
+    "model": "hy3",
+    "prompt_version": "explicit-citation-verification-v1.1",
+    "prompt_sha256": "c727071cb767495774dce2ab0528f573711628c34c5e7651867c75a81c1bf144",
+    "citation_signal_sha256": "16dcfe49a59053f08f9df036ca5785c2660a28c012e6ffa444f4f38cbcbce609",
+    "config": {
+      "max_candidates": 3,
+      "search_results_per_query": 5,
+      "max_format_attempts": 2,
+      "max_evidence_characters": 3000,
+      "max_script_characters": 30000,
+      "reasoning_effort": "no_think"
+    },
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "search_parameters": {
+      "provider": "tavily",
+      "search_depth": "basic",
+      "topic": "general",
+      "max_results": 20,
+      "base_url_sha256": "088debf43e9156779928af390825f9e74a539b024e331eebe3b957dd4399067f"
+    },
+    "search_concurrency": 8,
+    "sha256": "2715514fba11467351498952a07e059e128f84edd3b1584d6246237dbb5f99f7"
+  },
+  "failures": [],
+  "completed_at": "2026-09-03T09:37:44.329155Z"
+}

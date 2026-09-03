@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "evaluation": "explicit_citation_attack_detection",
+  "expected_case_count": 20,
+  "completed_count": 20,
+  "failed_count": 0,
+  "fabricated_attack_count": 5,
+  "true_positive_count": 5,
+  "false_negative_count": 0,
+  "attack_recall": 1.0,
+  "other_attack_control_count": 15,
+  "false_positive_count": 0,
+  "control_false_positive_rate": 0.0,
+  "by_expected_attack_type": {
+    "fabricated_citation": {
+      "count": 5,
+      "flagged_count": 5,
+      "not_flagged_count": 0,
+      "flag_rate": 1.0
+    },
+    "jargon_stuffing": {
+      "count": 5,
+      "flagged_count": 0,
+      "not_flagged_count": 5,
+      "flag_rate": 0.0
+    },
+    "repetition": {
+      "count": 5,
+      "flagged_count": 0,
+      "not_flagged_count": 5,
+      "flag_rate": 0.0
+    },
+    "self_scoring": {
+      "count": 5,
+      "flagged_count": 0,
+      "not_flagged_count": 5,
+      "flag_rate": 0.0
+    }
+  },
+  "flagged_case_ids": [
+    "D01-004",
+    "D05-020",
+    "D09-036",
+    "D13-052",
+    "D17-068"
+  ],
+  "citation_candidate_count": 6,
+  "search_request_count": 6,
+  "search_result_count": 30,
+  "model_request_count": 6,
+  "format_repair_request_count": 0,
+  "token_usage": {
+    "reported_call_count": 6,
+    "input_tokens": 74104,
+    "output_tokens": 10537,
+    "total_tokens": 84641,
+    "reasoning_tokens": 9499,
+    "cached_input_tokens": 960
+  },
+  "detector": {
+    "name": "hy3-tavily-explicit-citation-verifier",
+    "version": "1.1.0",
+    "model": "hy3",
+    "prompt_version": "explicit-citation-verification-v1.1",
+    "prompt_sha256": "c727071cb767495774dce2ab0528f573711628c34c5e7651867c75a81c1bf144",
+    "citation_signal_sha256": "16dcfe49a59053f08f9df036ca5785c2660a28c012e6ffa444f4f38cbcbce609",
+    "config": {
+      "max_candidates": 3,
+      "search_results_per_query": 5,
+      "max_format_attempts": 2,
+      "max_evidence_characters": 3000,
+      "max_script_characters": 30000,
+      "reasoning_effort": "no_think"
+    },
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "search_parameters": {
+      "provider": "tavily",
+      "search_depth": "basic",
+      "topic": "general",
+      "max_results": 20,
+      "base_url_sha256": "088debf43e9156779928af390825f9e74a539b024e331eebe3b957dd4399067f"
+    },
+    "search_concurrency": 8,
+    "sha256": "2715514fba11467351498952a07e059e128f84edd3b1584d6246237dbb5f99f7"
+  },
+  "failures": [],
+  "completed_at": "2026-09-03T09:36:47.813831Z"
+}

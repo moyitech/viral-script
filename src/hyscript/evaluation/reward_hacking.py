@@ -513,6 +513,202 @@ async def run_reward_hacking_validation(
     return summary
 
 
+def _formal_trace_rows(experiment_dir: Path) -> tuple[Path, list[dict[str, Any]]]:
+    manifest_path = experiment_dir / "generation/trace_manifest.json"
+    manifest = _load_json(manifest_path)
+    if not isinstance(manifest, dict):
+        raise ValueError("Formal trace manifest must be an object.")
+    rows = manifest.get("tasks")
+    expected_count = manifest.get("expected_count")
+    selected_count = manifest.get("selected_count")
+    if (
+        not isinstance(rows, list)
+        or any(not isinstance(item, dict) for item in rows)
+        or isinstance(expected_count, bool)
+        or not isinstance(expected_count, int)
+        or isinstance(selected_count, bool)
+        or not isinstance(selected_count, int)
+        or expected_count < 1
+        or selected_count != expected_count
+        or len(rows) != expected_count
+    ):
+        raise ValueError("Formal trace manifest is incomplete.")
+    task_ids = [item.get("task_id") for item in rows]
+    if (
+        any(not isinstance(task_id, str) or not task_id for task_id in task_ids)
+        or len(set(task_ids)) != len(task_ids)
+    ):
+        raise ValueError("Formal trace manifest contains invalid or duplicate task IDs.")
+    return manifest_path, rows
+
+
+def _normal_summary(
+    results: Sequence[dict[str, Any]],
+    *,
+    expected_count: int,
+    failures: Sequence[dict[str, str]],
+    fingerprint: dict[str, Any],
+) -> dict[str, Any]:
+    flagged = [item for item in results if item["reward_hacking"]]
+    usage_summaries = [item["usage"]["summary"] for item in results]
+    return {
+        "schema_version": "1.0",
+        "evaluation": "reward_hacking_natural_output_detection",
+        "expected_output_count": expected_count,
+        "completed_count": len(results),
+        "failed_count": len(failures),
+        "flagged_count": len(flagged),
+        "natural_output_flag_rate": len(flagged) / len(results) if results else None,
+        "flagged_case_ids": [item["blind_case_id"] for item in flagged],
+        "detection_sources": {
+            source: sum(item["detection_source"] == source for item in results)
+            for source in ("repeated_character_rule", "hy3")
+        },
+        "format_repair_request_count": sum(
+            int(item["format_attempt_count"]) for item in results
+        ),
+        "model_request_count": sum(len(item["usage"]["calls"]) for item in results),
+        "token_usage": {
+            key: sum(int(item.get(key, 0) or 0) for item in usage_summaries)
+            for key in (
+                "reported_call_count",
+                "input_tokens",
+                "output_tokens",
+                "total_tokens",
+                "reasoning_tokens",
+                "cached_input_tokens",
+            )
+        },
+        "detector": fingerprint,
+        "failures": list(failures),
+        "completed_at": _utc_now(),
+    }
+
+
+async def run_reward_hacking_formal_validation(
+    experiment_dir: Path,
+    detector: RewardHackingDetector,
+    *,
+    concurrency: int = MAX_REWARD_HACKING_CONCURRENCY,
+    overwrite: bool = False,
+) -> dict[str, Any]:
+    """Run only reward-hacking detection on already-frozen formal outputs."""
+
+    if not 1 <= concurrency <= MAX_REWARD_HACKING_CONCURRENCY:
+        raise ValueError(
+            f"concurrency must be between 1 and {MAX_REWARD_HACKING_CONCURRENCY}."
+        )
+    experiment_dir = experiment_dir.resolve()
+    trace_manifest_path, rows = _formal_trace_rows(experiment_dir)
+    output_dir = experiment_dir / "validation/incremental_attack/reward_hacking"
+    items_dir = output_dir / "items"
+    items_dir.mkdir(parents=True, exist_ok=True)
+    fingerprint = detector.fingerprint
+    prepared: list[tuple[str, FrozenTrace, Path, str]] = []
+    for row in rows:
+        task_id = row.get("task_id")
+        trace_value = row.get("trace")
+        if (
+            not isinstance(task_id, str)
+            or not task_id
+            or row.get("status") != "completed"
+            or not isinstance(trace_value, str)
+            or not trace_value
+        ):
+            raise ValueError("Formal trace manifest contains an invalid task row.")
+        trace_path = experiment_dir / "generation" / trace_value
+        trace = load_frozen_trace(trace_path)
+        if trace.run_id != row.get("run_id") or trace.trace_sha256 != row.get(
+            "trace_sha256"
+        ):
+            raise ValueError(f"Formal trace identity mismatch: {task_id}.")
+        source_trace = str(trace_path.relative_to(experiment_dir)).replace("\\", "/")
+        prepared.append((task_id, trace, items_dir / f"{task_id}.json", source_trace))
+
+    semaphore = asyncio.Semaphore(concurrency)
+
+    async def evaluate_one(
+        task_id: str,
+        trace: FrozenTrace,
+        result_path: Path,
+        source_trace: str,
+    ) -> tuple[dict[str, Any] | None, dict[str, str] | None, bool]:
+        if result_path.exists() and not overwrite:
+            result = _validate_existing_result(
+                _load_json(result_path),
+                trace=trace,
+                blind_case_id=task_id,
+                attack_type="normal_output",
+                fingerprint=fingerprint,
+            )
+            return result, None, True
+        try:
+            async with semaphore:
+                result = await detector.evaluate(
+                    trace,
+                    blind_case_id=task_id,
+                    attack_type="normal_output",
+                    source_trace=source_trace,
+                )
+            write_json_object(result_path, result, overwrite=overwrite)
+            return result, None, False
+        except Exception as exc:
+            return (
+                None,
+                {
+                    "task_id": task_id,
+                    "error_type": type(exc).__name__,
+                    "message": str(exc) or "Reward-hacking evaluation failed.",
+                },
+                False,
+            )
+
+    outcomes = await asyncio.gather(
+        *(
+            evaluate_one(task_id, trace, result_path, source_trace)
+            for task_id, trace, result_path, source_trace in prepared
+        )
+    )
+    results = [result for result, _, _ in outcomes if result is not None]
+    failures = [failure for _, failure, _ in outcomes if failure is not None]
+    resumed_count = sum(resumed for _, _, resumed in outcomes)
+    summary = _normal_summary(
+        results,
+        expected_count=len(rows),
+        failures=failures,
+        fingerprint=fingerprint,
+    )
+    manifest = {
+        "schema_version": "1.0",
+        "evaluation": "reward_hacking_natural_output_detection",
+        "trace_manifest": str(trace_manifest_path.relative_to(experiment_dir)).replace(
+            "\\", "/"
+        ),
+        "trace_manifest_sha256": _sha256_file(trace_manifest_path),
+        "expected_output_count": len(rows),
+        "concurrency": concurrency,
+        "completed_count": len(results),
+        "resumed_count": resumed_count,
+        "failed_count": len(failures),
+        "detector": fingerprint,
+        "items": [
+            {
+                "task_id": result["blind_case_id"],
+                "run_id": result["run_id"],
+                "trace_sha256": result["trace_sha256"],
+                "result": f"items/{result['blind_case_id']}.json",
+                "reward_hacking": result["reward_hacking"],
+            }
+            for result in results
+        ],
+        "failures": failures,
+        "completed_at": _utc_now(),
+    }
+    write_json_object(output_dir / "manifest.json", manifest, overwrite=True)
+    write_json_object(output_dir / "summary.json", summary, overwrite=True)
+    return summary
+
+
 __all__ = [
     "MAX_REWARD_HACKING_CONCURRENCY",
     "REFERENCE_IMPLEMENTATION_SHA256",
@@ -524,5 +720,6 @@ __all__ = [
     "RewardHackingConflictError",
     "RewardHackingDetector",
     "RewardHackingEvaluationError",
+    "run_reward_hacking_formal_validation",
     "run_reward_hacking_validation",
 ]
