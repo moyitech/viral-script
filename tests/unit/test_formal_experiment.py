@@ -8,10 +8,12 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from hyscript.agent import PlannedQuery, ResearchAgent
 from hyscript.config import PROJECT_ROOT, ResearchConfig
 from hyscript.evaluation.formal import (
+    _relative,
     build_discrimination_traces,
     export_report,
     prepare_experiment,
@@ -55,6 +57,16 @@ class ConcurrencySearch:
 
 
 class FormalExperimentTests(unittest.TestCase):
+    def test_relative_path_falls_back_to_absolute_across_windows_drives(self) -> None:
+        path = Path("dataset.json").resolve()
+        with patch(
+            "hyscript.evaluation.formal.os.path.relpath",
+            side_effect=ValueError("path is on a different drive"),
+        ):
+            value = _relative(path, Path("experiment"))
+
+        self.assertEqual(value, str(path))
+
     def test_prepare_builds_stable_100_by_three_matrix(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

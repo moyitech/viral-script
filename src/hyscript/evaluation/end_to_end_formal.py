@@ -94,7 +94,12 @@ def _text_sha256(value: str) -> str:
 
 
 def _relative(path: Path, base: Path) -> str:
-    return os.path.relpath(path.resolve(), base.resolve())
+    resolved_path = path.resolve()
+    try:
+        return os.path.relpath(resolved_path, base.resolve())
+    except ValueError:
+        # Windows cannot express a relative path between different drives.
+        return str(resolved_path)
 
 
 def _write_stable_json(path: Path, payload: Any) -> None:

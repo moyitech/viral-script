@@ -1,3 +1,6 @@
+# Hash-locked evaluation JSON must have byte-identical line endings on every OS.
+eval/**/*.json text eol=lf
+
 # Full formal-experiment evidence and item-level records remain auditable via Git LFS.
 eval/experiments/formal-100-v1/generation/research/attempt-*/research/*.json filter=lfs diff=lfs merge=lfs -text
 eval/experiments/formal-100-v1/generation/traces/attempt-*/traces/*.json filter=lfs diff=lfs merge=lfs -text

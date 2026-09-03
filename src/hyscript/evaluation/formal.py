@@ -66,7 +66,12 @@ def atomic_write_text(path: Path, content: str, *, replace: bool = True) -> None
     temporary_path: Path | None = None
     try:
         with tempfile.NamedTemporaryFile(
-            mode="w", encoding="utf-8", dir=path.parent, prefix=f".{path.name}.", delete=False
+            mode="w",
+            encoding="utf-8",
+            newline="\n",
+            dir=path.parent,
+            prefix=f".{path.name}.",
+            delete=False,
         ) as handle:
             handle.write(content)
             handle.flush()
@@ -106,7 +111,12 @@ def _classify(topic: str) -> tuple[str, list[str]]:
 
 
 def _relative(path: Path, base: Path) -> str:
-    return os.path.relpath(path.resolve(), base.resolve())
+    resolved_path = path.resolve()
+    try:
+        return os.path.relpath(resolved_path, base.resolve())
+    except ValueError:
+        # Windows cannot express a relative path between different drives.
+        return str(resolved_path)
 
 
 def prepare_experiment(

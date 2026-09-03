@@ -8,18 +8,185 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from hyscript.config import PROJECT_ROOT
 from hyscript.evaluation import end_to_end_formal as e2e
 
 
-BASELINE = PROJECT_ROOT / "eval/experiments/formal-100-v1"
+def _build_baseline_fixture(root: Path) -> Path:
+    baseline = root / "formal-100-v1"
+    dataset = baseline / "dataset.json"
+    rubric = baseline / "rubric.json"
+    topics = [f"选题{index}" for index in range(1, 101)]
+    e2e.write_json(dataset, topics)
+    e2e.write_json(rubric, {"schema_version": "test"})
+
+    matrix: list[dict] = []
+    catalog: list[dict] = []
+    for index, topic in enumerate(topics):
+        topic_id = f"T{index + 1:03d}"
+        catalog.append(
+            {
+                "topic_id": topic_id,
+                "dataset_index": index,
+                "topic": topic,
+                "domain": "test",
+                "challenge_tags": ["test"],
+            }
+        )
+        for length in e2e.TARGET_LENGTHS:
+            matrix.append(
+                {
+                    "task_id": f"{topic_id}-L{length}",
+                    "source_task_id": topic_id,
+                    "dataset_index": index,
+                    "target_length": length,
+                    "topic": topic,
+                    "domain": "test",
+                    "challenge_tags": ["test"],
+                }
+            )
+
+    versions = e2e._prompt_versions()
+    hashes = e2e._prompt_hashes()
+    e2e.write_json(
+        baseline / "experiment.json",
+        {
+            "dataset": "dataset.json",
+            "dataset_sha256": e2e.sha256_file(dataset),
+            "rubric": "rubric.json",
+            "rubric_sha256": e2e.sha256_file(rubric),
+            "prompt_versions": {
+                "research_query_plan": versions["research_query_plan"],
+            },
+        },
+    )
+    e2e.write_json(baseline / "topics.json", catalog)
+    e2e.write_json(baseline / "task_matrix.json", matrix)
+    e2e.lock_runtime(baseline)
+    e2e.write_json(
+        baseline / "generation/research/attempt-001/manifest.json",
+        {
+            "system_prompt_sha256": {
+                "research_query_plan": hashes["research_query_plan"],
+            }
+        },
+    )
+
+    research_tasks: list[dict] = []
+    for index, topic in enumerate(topics, start=1):
+        task_id = f"T{index:03d}"
+        snapshot = (
+            baseline
+            / "generation/research/attempt-001/research"
+            / f"{task_id}.json"
+        )
+        e2e.write_json(snapshot, {"task_id": task_id, "status": "ready"})
+        research_tasks.append(
+            {
+                "task_id": task_id,
+                "topic": topic,
+                "target_length": 450,
+                "research_status": "ready",
+                "research_snapshot": (
+                    f"research/attempt-001/research/{task_id}.json"
+                ),
+                "research_sha256": e2e.sha256_file(snapshot),
+            }
+        )
+    e2e.write_json(
+        baseline / "generation/research_manifest.json",
+        {"selected_count": 100, "tasks": research_tasks},
+    )
+
+    trace = baseline / "generation/traces/fixture.json"
+    e2e.write_json(
+        trace,
+        {
+            "schema_version": "1.0",
+            "run_id": "baseline-fixture",
+            "task": {"topic": topics[0], "target_length": 280},
+            "queries": ["测试查询"],
+            "search_results": [{"title": "测试结果"}],
+            "selected_evidence": [
+                {
+                    "evidence_id": "evidence-001",
+                    "url": "https://example.com/source",
+                    "title": "测试来源",
+                    "snippet": "测试证据",
+                }
+            ],
+            "claims": [
+                {
+                    "claim_id": "claim-001",
+                    "text": "测试主张",
+                    "is_core": True,
+                    "evidence_ids": ["evidence-001"],
+                    "support_status": "supported",
+                }
+            ],
+            "script_artifact": {
+                "script_text": "测试正文",
+                "character_count": 302,
+            },
+            "config": {
+                "request_counts": {
+                    "script_llm": 4,
+                    "research_llm": 3,
+                    "script_candidate_llm": 3,
+                    "tavily_attempted": 3,
+                    "tavily_succeeded": 3,
+                }
+            },
+            "lineage": {
+                "prompt_versions": {
+                    "research_query_plan": versions["research_query_plan"],
+                    "research_evidence": versions["background_selection"],
+                },
+                "llm_calls": [
+                    {"stage": "research.query_plan", "total_tokens": 30}
+                ],
+            },
+            "latency": {"search_response_time_sum": 6.0},
+            "token_usage": {},
+        },
+    )
+    trace_tasks = [
+        {"task_id": item["task_id"], "trace": "traces/fixture.json"}
+        for item in matrix
+    ]
+    e2e.write_json(
+        baseline / "generation/trace_manifest.json",
+        {"tasks": trace_tasks},
+    )
+
+    score_rows = [
+        {
+            "task_id": item["task_id"],
+            "run_id": f"baseline-{item['task_id']}",
+            "topic": item["topic"],
+            "target_length": item["target_length"],
+            "domain": item["domain"],
+            "challenge_tags": "test",
+            "final_score": 1.0,
+            "gate_failed": False,
+            "hy3_total_tokens": 90,
+            **{dimension: 3 for dimension in e2e._DIMENSIONS},
+        }
+        for item in matrix
+    ]
+    e2e.atomic_write_text(
+        baseline / "results/full_results.csv",
+        e2e._csv_text(score_rows),
+    )
+    return baseline
 
 
 class EndToEndFormalTests(unittest.TestCase):
     def test_prepare_clones_the_300_task_matrix_and_locks_512(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
-            root = Path(directory) / "formal-100-e2e-test"
-            config = e2e.prepare_e2e_experiment(root, baseline_dir=BASELINE)
+            temporary_root = Path(directory)
+            baseline = _build_baseline_fixture(temporary_root)
+            root = temporary_root / "formal-100-e2e-test"
+            config = e2e.prepare_e2e_experiment(root, baseline_dir=baseline)
             specs = json.loads((root / "task_specs.json").read_text(encoding="utf-8"))
 
         self.assertEqual(config["expected_trace_count"], 300)
@@ -41,11 +208,13 @@ class EndToEndFormalTests(unittest.TestCase):
 
     def test_generate_writes_only_missing_tasks_with_512_hy3_limit(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
-            root = Path(directory) / "formal-100-e2e-test"
-            e2e.prepare_e2e_experiment(root, baseline_dir=BASELINE)
+            temporary_root = Path(directory)
+            baseline = _build_baseline_fixture(temporary_root)
+            root = temporary_root / "formal-100-e2e-test"
+            e2e.prepare_e2e_experiment(root, baseline_dir=baseline)
             with patch.object(e2e, "_run_command", return_value=1) as run:
                 with self.assertRaisesRegex(RuntimeError, "incomplete"):
-                    e2e.generate_e2e_experiment(root, baseline_dir=BASELINE)
+                    e2e.generate_e2e_experiment(root, baseline_dir=baseline)
 
             specs = json.loads(
                 (root / "generation/specs/attempt-001.json").read_text(
@@ -66,15 +235,17 @@ class EndToEndFormalTests(unittest.TestCase):
 
     def test_selects_a_valid_single_shot_trace_and_records_source_snapshot(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
-            root = Path(directory) / "formal-100-e2e-test"
-            config = e2e.prepare_e2e_experiment(root, baseline_dir=BASELINE)
+            temporary_root = Path(directory)
+            baseline = _build_baseline_fixture(temporary_root)
+            root = temporary_root / "formal-100-e2e-test"
+            config = e2e.prepare_e2e_experiment(root, baseline_dir=baseline)
             baseline_manifest = json.loads(
-                (BASELINE / "generation/trace_manifest.json").read_text(
+                (baseline / "generation/trace_manifest.json").read_text(
                     encoding="utf-8"
                 )
             )
             source = (
-                BASELINE
+                baseline
                 / "generation"
                 / baseline_manifest["tasks"][0]["trace"]
             )
@@ -231,23 +402,27 @@ class EndToEndFormalTests(unittest.TestCase):
             e2e._paired_rows(baseline[:-1], candidate)
 
     def test_baseline_resource_allocation_is_additive(self) -> None:
-        rows = e2e._baseline_rows(BASELINE)
-        resources = e2e._resource_summary(rows)
-        expected = json.loads(
-            (BASELINE / "report/analysis_summary.json").read_text(encoding="utf-8")
-        )
+        with tempfile.TemporaryDirectory() as directory:
+            baseline = _build_baseline_fixture(Path(directory))
+            rows = e2e._baseline_rows(baseline)
+            resources = e2e._resource_summary(rows)
 
         self.assertEqual(len(rows), 300)
-        self.assertAlmostEqual(
-            resources["hy3_total_tokens"], expected["hy3_total_tokens"]
-        )
-        self.assertAlmostEqual(
-            resources["search_attempted_calls"], expected["search_attempted_calls"]
-        )
-        self.assertAlmostEqual(
-            resources["search_latency_seconds"], expected["search_latency_seconds"]
-        )
+        self.assertAlmostEqual(resources["hy3_total_tokens"], 30_000)
+        self.assertAlmostEqual(resources["search_attempted_calls"], 300)
+        self.assertAlmostEqual(resources["search_latency_seconds"], 600)
         self.assertEqual(rows[0]["character_count"], 302)
+
+    def test_relative_path_falls_back_to_absolute_across_windows_drives(self) -> None:
+        path = Path("artifact.json").resolve()
+        with patch.object(
+            e2e.os.path,
+            "relpath",
+            side_effect=ValueError("path is on a different drive"),
+        ):
+            value = e2e._relative(path, Path("experiment"))
+
+        self.assertEqual(value, str(path))
 
     def test_evaluation_resume_summary_counts_only_last_resume_outputs(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
