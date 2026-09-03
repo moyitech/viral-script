@@ -75,6 +75,8 @@ def build_generation_trace(
     tavily_failure_count = research.search_request_count - tavily_success_count
     llm_usages = (*research.llm_usages, *script.llm_usages)
     token_summary = summarize_token_usage(llm_usages)
+    format_repair_calls = script.format_repair_attempt_count
+    content_generation_calls = script.content_generation_attempt_count
     script_generation_calls = script.generation_attempt_count
     script_review_calls = script.grounding_review_attempt_count
     script_final_rewrite_calls = script.final_rewrite_attempt_count
@@ -84,6 +86,12 @@ def build_generation_trace(
         if script.generation_mode == "editorial_candidates"
         else 0
     )
+    if not content_generation_calls:
+        content_generation_calls = (
+            script_candidate_calls
+            if script.generation_mode == "editorial_candidates"
+            else script_generation_calls
+        )
     script_calls = (
         script_generation_calls + script_review_calls + script_final_rewrite_calls
     )
@@ -104,6 +112,13 @@ def build_generation_trace(
             {
                 "script_candidate_llm": script_candidate_calls,
                 "script_editor_llm": script_editor_calls,
+            }
+        )
+    elif script.generation_mode == "single_shot":
+        trace_config["request_counts"].update(
+            {
+                "script_content_generation_llm": content_generation_calls,
+                "script_format_repair_llm": format_repair_calls,
             }
         )
     executed_queries = research.executed_queries or _known_queries(research)
@@ -153,6 +168,15 @@ def build_generation_trace(
                     script.grounding_review_prompt_version
                 ),
                 "script_final_rewrite": script.final_rewrite_prompt_version,
+                **(
+                    {
+                        "script_format_repair": (
+                            script.format_repair_prompt_version
+                        )
+                    }
+                    if script.generation_mode == "single_shot"
+                    else {}
+                ),
                 **(
                     {
                         "script_candidate": (

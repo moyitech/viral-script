@@ -37,7 +37,7 @@ ClaimKind = Literal[
     "descriptive_context",
     "uncertainty_boundary",
 ]
-ScriptGenerationMode = Literal["single", "editorial_candidates"]
+ScriptGenerationMode = Literal["single", "single_shot", "editorial_candidates"]
 CORE_SOURCE_TYPES_BY_CLAIM_KIND: dict[
     ClaimKind,
     frozenset[EvidenceSourceType],
@@ -338,3 +338,9 @@ class ScriptArtifact:
     final_rewrite_prompt_version: str | None = None
     final_rewrite_draft_text: str | None = None
     final_rewrite_draft_character_count: int | None = None
+    content_generation_attempt_count: int = 0
+    format_repair_attempt_count: int = 0
+    format_repair_prompt_version: str | None = None
+    initial_script_text_sha256: str | None = None
+    format_repair_content_preserved: bool | None = None
+    local_format_repair_applied: bool = False

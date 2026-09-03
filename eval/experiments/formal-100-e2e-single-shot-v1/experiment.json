@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "formal-100-e2e-single-shot-v1",
+  "design": "frozen_baseline_research_single_shot_end_to_end",
+  "baseline_experiment": "../formal-100-v1",
+  "baseline_experiment_sha256": "2174ab0cb00602a984adb56934e8d6df011144c4a9a0db44b32b24c759b00f8f",
+  "baseline_trace_manifest_sha256": "849fa28d48207b2e12fbcfaf2921b025d5ed8c22015b33eb1af2cf7c1dfc6ccb",
+  "source_research_manifest": "../formal-100-v1/generation/research_manifest.json",
+  "source_research_manifest_sha256": "e16bbf5df8456266d20283716eda38dcf95fef5afff8a1705c4ef5ff46eaed3a",
+  "dataset": "../../datasets/eval_topics_synthetic_v1.json",
+  "dataset_sha256": "698fb36b13c1911f1d5b4756579850bc94439389dc33a07b3bbcc4e32016c852",
+  "rubric": "../../rubrics/script_quality_v1.json",
+  "rubric_sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab",
+  "topic_count": 100,
+  "target_lengths": [
+    280,
+    450,
+    700
+  ],
+  "expected_trace_count": 300,
+  "source_research_target_length": 450,
+  "source_tavily_concurrency": 8,
+  "new_query_planning_request_count": 0,
+  "new_tavily_request_count": 0,
+  "generation_mode": "single_shot",
+  "grounding_review_enabled": false,
+  "judge_reasoning_effort": "high",
+  "judge_sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "concurrency": {
+    "tasks": 300,
+    "hy3": 512,
+    "source_search": 8,
+    "new_search": 0,
+    "judge": 512
+  },
+  "prompt_versions": {
+    "research_query_plan": "research-query-plan-1.4.0",
+    "background_selection": "search-background-1.0.0",
+    "script_generation": "script-generation-background-1.1.0",
+    "script_format_repair": "script-generation-background-format-repair-1.0.0"
+  },
+  "prompt_sha256": {
+    "research_query_plan": "12276a51d5d22c5d028dabcdf350b5596917cc48563521ac7722badc2d56e39f",
+    "script_generation": "3892aaffabcde622f5e628737c0aa39333cad9a6904a32a72f8bbd3579d5823c",
+    "script_format_repair": "b7c77eab5cfc329bca8fcd44b28be2f50a654388aaa107593c6167d3cddec30a"
+  }
+}

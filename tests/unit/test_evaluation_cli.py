@@ -22,6 +22,16 @@ class EvaluationCliTests(unittest.TestCase):
         )
         self.assertEqual(args.reasoning_effort, "high")
 
+    def test_judge_concurrency_accepts_512_and_rejects_513(self) -> None:
+        accepted = build_parser().parse_args(
+            ["score", "--trace", "trace.json", "--concurrency", "512"]
+        )
+        self.assertEqual(accepted.concurrency, 512)
+        with self.assertRaises(SystemExit):
+            build_parser().parse_args(
+                ["score", "--trace", "trace.json", "--concurrency", "513"]
+            )
+
     def test_trace_directory_skips_results_configs_and_output_tree(self) -> None:
         with TemporaryDirectory() as directory:
             root = Path(directory)

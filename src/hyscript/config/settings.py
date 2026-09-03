@@ -22,7 +22,7 @@ SearchDepth = Literal["basic", "advanced", "fast", "ultra-fast"]
 SearchTopic = Literal["general", "news", "finance"]
 SearchProviderName = Literal["tavily"]
 HotlistProviderName = Literal["newsnow"]
-ScriptGenerationMode = Literal["single", "editorial_candidates"]
+ScriptGenerationMode = Literal["single", "single_shot", "editorial_candidates"]
 
 DEFAULT_NEWSNOW_SOURCE_IDS: Final[tuple[str, ...]] = (
     "weibo",
@@ -439,9 +439,14 @@ def load_settings(
         raise SettingsError(
             "SCRIPT_MAX_GENERATION_ATTEMPTS must be between 1 and 3."
         )
-    if script_generation_mode not in {"single", "editorial_candidates"}:
+    if script_generation_mode not in {
+        "single",
+        "single_shot",
+        "editorial_candidates",
+    }:
         raise SettingsError(
-            "SCRIPT_GENERATION_MODE must be 'single' or 'editorial_candidates'."
+            "SCRIPT_GENERATION_MODE must be 'single', 'single_shot', or "
+            "'editorial_candidates'."
         )
 
     search_depth = _text(values, "TAVILY_SEARCH_DEPTH", "basic")

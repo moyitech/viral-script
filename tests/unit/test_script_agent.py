@@ -306,6 +306,203 @@ class ScriptAgentTests(unittest.IsolatedAsyncioTestCase):
         self.assertIn('"background_references"', user_message.content)
         self.assertNotIn("E001", artifact.script_text)
 
+    async def test_single_shot_accepts_length_and_body_quality_violations(self) -> None:
+        research = replace(ready_research(), claims=(), title_chain=())
+        text = "第一层：这篇文案符合全部要求。"
+        llm = FakeLLM([background_output_payload(text)])
+
+        artifact = await ScriptAgent(
+            llm,
+            config=ScriptGenerationConfig(
+                generation_mode="single_shot",
+                grounding_review_enabled=True,
+                final_rewrite_enabled=True,
+            ),
+        ).generate(ScriptTask(topic="单次直出", target_length=700), research)
+
+        self.assertEqual(artifact.script_text, text)
+        self.assertEqual(artifact.generation_mode, "single_shot")
+        self.assertEqual(artifact.content_generation_attempt_count, 1)
+        self.assertEqual(artifact.format_repair_attempt_count, 0)
+        self.assertEqual(artifact.generation_attempt_count, 1)
+        self.assertFalse(artifact.length_within_tolerance)
+        self.assertFalse(artifact.length_repair_attempted)
+        self.assertEqual(artifact.grounding_review_attempt_count, 0)
+        self.assertEqual(artifact.final_rewrite_attempt_count, 0)
+        self.assertEqual(len(llm.calls), 1)
+        self.assertEqual(
+            tuple(item.stage for item in artifact.llm_usages),
+            ("script.generation",),
+        )
+
+    async def test_single_shot_preserves_every_valid_json_content_value(self) -> None:
+        research = replace(ready_research(), claims=(), title_chain=())
+        script_text = f"  {VALID_SCRIPT}\n"
+        payload = json.dumps(
+            {
+                "outline": ["  建立冲突", "  建立冲突"],
+                "script_text": script_text,
+                "reference_ids": ["E002", "E001"],
+            },
+            ensure_ascii=False,
+        )
+        llm = FakeLLM([payload])
+
+        artifact = await ScriptAgent(
+            llm,
+            config=ScriptGenerationConfig(generation_mode="single_shot"),
+        ).generate(ScriptTask(topic="内容值原样冻结", target_length=280), research)
+
+        self.assertEqual(artifact.outline, ("  建立冲突", "  建立冲突"))
+        self.assertEqual(artifact.script_text, script_text)
+        self.assertEqual(artifact.reference_ids, ("E002", "E001"))
+        self.assertEqual(len(llm.calls), 1)
+
+    async def test_single_shot_rejects_extra_semantic_fields(self) -> None:
+        research = replace(ready_research(), claims=(), title_chain=())
+        payload = json.loads(background_output_payload())
+        payload["extra_content"] = "不能在规范化时删除"
+        llm = FakeLLM([json.dumps(payload, ensure_ascii=False)])
+
+        with self.assertRaisesRegex(
+            ScriptGenerationError,
+            "non-format structural error",
+        ):
+            await ScriptAgent(
+                llm,
+                config=ScriptGenerationConfig(generation_mode="single_shot"),
+            ).generate(ScriptTask(topic="额外内容字段", target_length=280), research)
+
+        self.assertEqual(len(llm.calls), 1)
+
+    async def test_single_shot_format_repairs_are_unbounded_and_preserve_content(
+        self,
+    ) -> None:
+        research = replace(ready_research(), claims=(), title_chain=())
+        initial = (
+            'reference_ids: ["E002", "E001"]\n'
+            f'script_text: "{VALID_SCRIPT}"\n'
+            'outline: ["建立冲突", "留下判断"]'
+        )
+        changed = json.dumps(
+            {
+                "outline": ["建立冲突", "留下判断"],
+                "script_text": VALID_SCRIPT + "不能新增。",
+                "reference_ids": ["E002", "E001"],
+            },
+            ensure_ascii=False,
+        )
+        changed_outline = json.dumps(
+            {
+                "outline": ["建立冲突", "擅自修改判断"],
+                "script_text": VALID_SCRIPT,
+                "reference_ids": ["E002", "E001"],
+            },
+            ensure_ascii=False,
+        )
+        changed_references = json.dumps(
+            {
+                "outline": ["建立冲突", "留下判断"],
+                "script_text": VALID_SCRIPT,
+                "reference_ids": ["E001", "E002"],
+            },
+            ensure_ascii=False,
+        )
+        repaired = json.dumps(
+            {
+                "outline": ["建立冲突", "留下判断"],
+                "script_text": VALID_SCRIPT,
+                "reference_ids": ["E002", "E001"],
+            },
+            ensure_ascii=False,
+        )
+        llm = FakeLLM(
+            [
+                initial,
+                "仍然不是JSON",
+                changed,
+                changed_outline,
+                changed_references,
+                repaired,
+            ]
+        )
+
+        artifact = await ScriptAgent(
+            llm,
+            config=ScriptGenerationConfig(generation_mode="single_shot"),
+        ).generate(
+            ScriptTask(
+                topic="格式修复不能改稿",
+                target_length=count_characters(VALID_SCRIPT),
+            ),
+            research,
+        )
+
+        self.assertEqual(artifact.script_text, VALID_SCRIPT)
+        self.assertEqual(artifact.reference_ids, ("E002", "E001"))
+        self.assertEqual(artifact.content_generation_attempt_count, 1)
+        self.assertEqual(artifact.format_repair_attempt_count, 5)
+        self.assertEqual(artifact.generation_attempt_count, 6)
+        self.assertTrue(artifact.format_repair_content_preserved)
+        self.assertEqual(
+            tuple(item.stage for item in artifact.llm_usages),
+            (
+                "script.generation",
+                "script.format_repair",
+                "script.format_repair",
+                "script.format_repair",
+                "script.format_repair",
+                "script.format_repair",
+            ),
+        )
+        self.assertTrue(
+            all(
+                call[0][0].content == llm.calls[1][0][0].content
+                for call in llm.calls[1:]
+            )
+        )
+
+    async def test_single_shot_missing_content_fails_without_repair(self) -> None:
+        research = replace(ready_research(), claims=(), title_chain=())
+        llm = FakeLLM(
+            [json.dumps({"outline": ["只有提纲"], "reference_ids": ["E001"]})]
+        )
+
+        with self.assertRaisesRegex(
+            ScriptGenerationError,
+            "non-format structural error",
+        ) as raised:
+            await ScriptAgent(
+                llm,
+                config=ScriptGenerationConfig(generation_mode="single_shot"),
+            ).generate(ScriptTask(topic="缺少正文", target_length=280), research)
+
+        self.assertEqual(len(llm.calls), 1)
+        self.assertEqual(raised.exception.content_generation_attempt_count, 1)
+        self.assertEqual(raised.exception.format_repair_attempt_count, 0)
+
+    async def test_single_shot_local_json_normalization_needs_no_hy3_repair(self) -> None:
+        research = replace(ready_research(), claims=(), title_chain=())
+        payload = background_output_payload(VALID_SCRIPT)
+        malformed = "说明文字\n" + payload[:-1] + ",}\n结束"
+        llm = FakeLLM([malformed])
+
+        artifact = await ScriptAgent(
+            llm,
+            config=ScriptGenerationConfig(generation_mode="single_shot"),
+        ).generate(
+            ScriptTask(
+                topic="本地格式规范化",
+                target_length=count_characters(VALID_SCRIPT),
+            ),
+            research,
+        )
+
+        self.assertEqual(artifact.script_text, VALID_SCRIPT)
+        self.assertTrue(artifact.local_format_repair_applied)
+        self.assertEqual(artifact.format_repair_attempt_count, 0)
+        self.assertEqual(len(llm.calls), 1)
+
     async def test_editorial_generation_runs_three_candidates_then_editor(self) -> None:
         research = replace(ready_research(), claims=(), title_chain=())
         llm = FakeLLM(

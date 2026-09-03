@@ -125,18 +125,22 @@ class LiveBatchCliTests(unittest.TestCase):
         self.assertEqual(defaults.concurrency, 1)
         self.assertFalse(hasattr(defaults, "require_grounding_review_accepted"))
         self.assertEqual(
-            parser.parse_args([*required, "--task-concurrency", "64"]).task_concurrency,
-            64,
+            parser.parse_args([*required, "--task-concurrency", "512"]).task_concurrency,
+            512,
+        )
+        self.assertEqual(
+            parser.parse_args([*required, "--hy3-concurrency", "512"]).hy3_concurrency,
+            512,
         )
         with patch("sys.stderr"), self.assertRaises(SystemExit):
             parser.parse_args([*required, "--require-grounding-review-accepted"])
-        for invalid in ("0", "65"):
+        for invalid in ("0", "513"):
             with self.subTest(invalid=invalid), patch("sys.stderr"):
                 with self.assertRaises(SystemExit):
                     parser.parse_args([*required, "--concurrency", invalid])
-        for invalid in (False, 0, 65, 1.5, "2"):
+        for invalid in (False, 0, 513, 1.5, "2"):
             with self.subTest(runtime_invalid=invalid):
-                with self.assertRaisesRegex(ValueError, "between 1 and 64"):
+                with self.assertRaisesRegex(ValueError, "between 1 and 512"):
                     module._validate_task_concurrency(invalid)
 
     def test_loads_list_dataset_and_arbitrary_valid_lengths(self) -> None:
@@ -164,7 +168,6 @@ class LiveBatchCliTests(unittest.TestCase):
             [50, 321, 5000],
         )
         self.assertEqual([item.dataset_index for item in tasks], [0, 1, 0])
-
     def test_failed_script_attempts_remain_in_usage_accounting(self) -> None:
         module = load_module()
         research = ready_research("选题")
@@ -460,6 +463,84 @@ class LiveBatchCliTests(unittest.TestCase):
                 snapshot["counts"]["accounted"],
                 len(statuses) - statuses.count("pending"),
             )
+
+    def test_research_and_generation_share_the_global_hy3_semaphore(self) -> None:
+        module = load_module()
+        active = 0
+        peak = 0
+        release = asyncio.Event()
+
+        async def bounded_call(owner, result):
+            nonlocal active, peak
+            async with owner._request_semaphore:
+                active += 1
+                peak = max(peak, active)
+                if peak == 2:
+                    release.set()
+                await release.wait()
+                await asyncio.sleep(0)
+                active -= 1
+                return result
+
+        class BoundedResearchAgent:
+            def __init__(self, llm, search, *, config) -> None:
+                self._request_semaphore = None
+
+            async def research(self, task):
+                return await bounded_call(self, ready_research(task.topic))
+
+        class BoundedScriptAgent:
+            def __init__(self, llm, *, config) -> None:
+                self._request_semaphore = None
+
+            async def generate(self, task, research):
+                return await bounded_call(self, generated_script(task.topic))
+
+        fake_settings = SimpleNamespace(
+            hy3=SimpleNamespace(model="fake-hy3", temperature=0.0, top_p=1.0),
+            tavily=SimpleNamespace(),
+            research=ResearchConfig(),
+            script_generation=ScriptGenerationConfig(),
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            dataset_path = root / "dataset.json"
+            task_spec_path = root / "tasks.json"
+            output_dir = root / "output"
+            write_json(dataset_path, ["选题甲", "选题乙", "选题丙"])
+            write_json(
+                task_spec_path,
+                [
+                    {
+                        "task_id": f"T0{index}",
+                        "dataset_index": index - 1,
+                        "target_length": 450,
+                    }
+                    for index in range(1, 4)
+                ],
+            )
+            args = argparse.Namespace(
+                dataset=dataset_path,
+                task_spec=task_spec_path,
+                output_dir=output_dir,
+                experiment_id="offline-shared-hy3-limit",
+                phase="unit",
+                task_concurrency=3,
+                hy3_concurrency=2,
+                search_concurrency=8,
+            )
+            with (
+                patch.object(module, "settings", fake_settings),
+                patch.object(module, "AsyncHy3Client", FakeAsyncClient),
+                patch.object(module, "AsyncTavilySearchProvider", FakeAsyncClient),
+                patch.object(module, "ResearchAgent", BoundedResearchAgent),
+                patch.object(module, "ScriptAgent", BoundedScriptAgent),
+            ):
+                result = asyncio.run(module._run(args))
+
+        self.assertEqual(result, 0)
+        self.assertEqual(active, 0)
+        self.assertEqual(peak, 2)
 
     def test_manifest_does_not_persist_unexpected_exception_details(self) -> None:
         module = load_module()

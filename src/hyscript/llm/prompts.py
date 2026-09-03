@@ -14,6 +14,9 @@ SCRIPT_GROUNDING_REVIEW_PROMPT_VERSION = "script-grounding-review-2.5.6"
 SCRIPT_FINAL_REWRITE_PROMPT_VERSION = "script-final-rewrite-1.0.0"
 BACKGROUND_SELECTION_VERSION = "search-background-1.0.0"
 BACKGROUND_SCRIPT_GENERATION_PROMPT_VERSION = "script-generation-background-1.1.0"
+BACKGROUND_SCRIPT_FORMAT_REPAIR_PROMPT_VERSION = (
+    "script-generation-background-format-repair-1.0.0"
+)
 BACKGROUND_SCRIPT_CANDIDATE_PROMPT_VERSION = (
     "script-generation-background-candidate-2.1.0"
 )
@@ -104,6 +107,17 @@ BACKGROUND_SCRIPT_GENERATION_SYSTEM_PROMPT = """你是知识型短视频口播�
 输出的 reference_ids 是正文之外的引用元数据，只列出实际帮助你形成正文的输入来源 ID。
 它不要求正文逐项引用，也不要求每个句子绑定来源；不得编造输入中不存在的 ID。
 只输出用户指定结构的 JSON，不要输出 Markdown 或解释。"""
+
+BACKGROUND_SCRIPT_FORMAT_REPAIR_SYSTEM_PROMPT = """你是 JSON 格式修复器，不是文案编辑。
+输入包含首次生成响应和程序已经逐字符冻结的三个字段。你的唯一任务是把冻结字段放进合法 JSON。
+
+必须遵守：
+1. outline 的项目、顺序和每个字符必须与 frozen_values 完全相同；
+2. script_text 的每个字符必须与 frozen_values 完全相同，不得润色、删减、补充、纠错或调整空白；
+3. reference_ids 的项目、顺序和每个字符必须与 frozen_values 完全相同；
+4. 只允许修复 JSON 的引号、转义、逗号、括号、字段包装和布局；
+5. 只输出包含 outline、script_text、reference_ids 三个字段的 JSON 对象，不要代码围栏、解释或其他字段。
+"""
 
 BACKGROUND_SCRIPT_CANDIDATE_SYSTEM_PROMPT = """你是知识型短视频口播文案作者。你要根据用户指定的
 写作策略，独立完成一篇能够直接朗读的候选稿。搜索资料只用于理解选题、补充背景和选择讲述角度，

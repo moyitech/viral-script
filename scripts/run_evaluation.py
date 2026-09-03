@@ -22,6 +22,9 @@ from hyscript.evaluation import (
 from hyscript.llm import AsyncHy3Client
 
 
+MAX_JUDGE_CONCURRENCY = 512
+
+
 def _evaluator_names(value: str) -> tuple[str, ...]:
     names = tuple(name.strip().lower() for name in value.split(",") if name.strip())
     if not names or any(name not in {"rules", "judge"} for name in names):
@@ -78,7 +81,13 @@ def build_parser() -> argparse.ArgumentParser:
         help="Comma-separated evaluators. Default: rules. Judge calls consume API quota.",
     )
     score.add_argument("--output-dir", type=Path, default=None)
-    score.add_argument("--concurrency", type=int, choices=range(1, 65), default=2)
+    score.add_argument(
+        "--concurrency",
+        type=int,
+        choices=range(1, MAX_JUDGE_CONCURRENCY + 1),
+        default=2,
+        metavar=f"1-{MAX_JUDGE_CONCURRENCY}",
+    )
     score.add_argument("--overwrite", action="store_true")
     score.add_argument(
         "--reasoning-effort",

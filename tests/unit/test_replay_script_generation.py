@@ -42,6 +42,11 @@ class ReplayScriptGenerationTests(unittest.TestCase):
             ).require_grounding_review_accepted
         )
 
+        accepted = parser.parse_args([*required, "--request-concurrency", "512"])
+        self.assertEqual(accepted.request_concurrency, 512)
+        with self.assertRaises(SystemExit):
+            parser.parse_args([*required, "--request-concurrency", "513"])
+
     def test_selects_replayable_research_and_supports_explicit_ids(self) -> None:
         module = load_module()
         manifest = {
@@ -98,7 +103,10 @@ class ReplayScriptGenerationTests(unittest.TestCase):
         module = load_module()
         script = SimpleNamespace(
             generation_attempt_count=1,
+            content_generation_attempt_count=1,
+            format_repair_attempt_count=0,
             grounding_review_attempt_count=1,
+            final_rewrite_attempt_count=0,
             llm_usages=(
                 LLMCallUsage(
                     stage="script.generation",
@@ -120,7 +128,10 @@ class ReplayScriptGenerationTests(unittest.TestCase):
             {
                 "attempted_calls": 2,
                 "generation_attempted_calls": 1,
+                "content_generation_attempted_calls": 1,
+                "format_repair_attempted_calls": 0,
                 "grounding_review_attempted_calls": 1,
+                "final_rewrite_attempted_calls": 0,
                 "reported_calls": 1,
                 "input_tokens": 100,
                 "output_tokens": 50,

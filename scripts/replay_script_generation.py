@@ -29,6 +29,8 @@ from hyscript.llm.prompts import (
     BACKGROUND_SCRIPT_EDITOR_SYSTEM_PROMPT,
     BACKGROUND_SCRIPT_GENERATION_PROMPT_VERSION,
     BACKGROUND_SCRIPT_GENERATION_SYSTEM_PROMPT,
+    BACKGROUND_SCRIPT_FORMAT_REPAIR_PROMPT_VERSION,
+    BACKGROUND_SCRIPT_FORMAT_REPAIR_SYSTEM_PROMPT,
     BACKGROUND_SCRIPT_PIPELINE_VERSION,
     SCRIPT_GROUNDING_REVIEW_PROMPT_VERSION,
     SCRIPT_GROUNDING_REVIEW_SYSTEM_PROMPT,
@@ -46,6 +48,11 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--phase", required=True)
     parser.add_argument(
+        "--experiment-id",
+        default=None,
+        help="Experiment id written to replay manifests and frozen traces.",
+    )
+    parser.add_argument(
         "--task-id",
         action="append",
         default=[],
@@ -60,16 +67,24 @@ def build_parser() -> argparse.ArgumentParser:
             "repeat for resume-safe partial attempts."
         ),
     )
-    parser.add_argument("--concurrency", type=int, default=1)
+    parser.add_argument(
+        "--concurrency",
+        type=int,
+        choices=range(1, 513),
+        default=1,
+        metavar="1-512",
+    )
     parser.add_argument(
         "--request-concurrency",
         type=int,
+        choices=range(1, 513),
         default=16,
+        metavar="1-512",
         help="Maximum Hy3 script requests in flight across all tasks.",
     )
     parser.add_argument(
         "--generation-mode",
-        choices=("single", "editorial_candidates"),
+        choices=("single", "single_shot", "editorial_candidates"),
         default=None,
         help="Override the configured background-script generation mode.",
     )
@@ -271,11 +286,23 @@ def _load_frozen_candidates(path: Path) -> tuple[ScriptCandidate, ...]:
 def _script_usage(script: Any) -> dict[str, int]:
     summary = summarize_token_usage(script.llm_usages)
     generation_attempts = script.generation_attempt_count
+    content_generation_attempts = getattr(
+        script,
+        "content_generation_attempt_count",
+        generation_attempts,
+    )
+    format_repair_attempts = getattr(script, "format_repair_attempt_count", 0)
     review_attempts = getattr(script, "grounding_review_attempt_count", 0)
+    final_rewrite_attempts = getattr(script, "final_rewrite_attempt_count", 0)
     return {
-        "attempted_calls": generation_attempts + review_attempts,
+        "attempted_calls": (
+            generation_attempts + review_attempts + final_rewrite_attempts
+        ),
         "generation_attempted_calls": generation_attempts,
+        "content_generation_attempted_calls": content_generation_attempts,
+        "format_repair_attempted_calls": format_repair_attempts,
         "grounding_review_attempted_calls": review_attempts,
+        "final_rewrite_attempted_calls": final_rewrite_attempts,
         "reported_calls": summary.reported_call_count,
         "input_tokens": summary.input_tokens,
         "output_tokens": summary.output_tokens,
@@ -285,12 +312,79 @@ def _script_usage(script: Any) -> dict[str, int]:
     }
 
 
+def _mark_frozen_research_replay(trace: Any, research: Any, script: Any) -> None:
+    """Keep frozen research in the trace while counting only calls made by replay."""
+
+    request_counts = trace.config.get("request_counts", {})
+    source_counts = {
+        "research_llm": research.llm_request_count,
+        "tavily_attempted": research.search_request_count,
+        "tavily_succeeded": len(research.search_responses),
+        "tavily_failed": research.search_request_count
+        - len(research.search_responses),
+    }
+    trace.config["source_research_request_counts"] = source_counts
+    script_calls = (
+        script.generation_attempt_count
+        + script.grounding_review_attempt_count
+        + script.final_rewrite_attempt_count
+    )
+    request_counts.update(
+        {
+            "research_llm": 0,
+            "search": 0,
+            "hy3_total": script_calls,
+            "tavily_attempted": 0,
+            "tavily_succeeded": 0,
+            "tavily_failed": 0,
+        }
+    )
+    trace.config["request_counts"] = request_counts
+
+    source_usage = summarize_token_usage(research.llm_usages)
+    trace.config["source_research_token_usage"] = {
+        "hy3_reported_call_count": source_usage.reported_call_count,
+        "hy3_input_tokens": source_usage.input_tokens,
+        "hy3_output_tokens": source_usage.output_tokens,
+        "hy3_total_tokens": source_usage.total_tokens,
+        "hy3_reasoning_tokens": source_usage.reasoning_tokens,
+        "hy3_cached_input_tokens": source_usage.cached_input_tokens,
+    }
+    script_usage = summarize_token_usage(script.llm_usages)
+    trace.token_usage = {
+        "hy3_reported_call_count": script_usage.reported_call_count,
+        "hy3_input_tokens": script_usage.input_tokens,
+        "hy3_output_tokens": script_usage.output_tokens,
+        "hy3_total_tokens": script_usage.total_tokens,
+        "hy3_reasoning_tokens": script_usage.reasoning_tokens,
+        "hy3_cached_input_tokens": script_usage.cached_input_tokens,
+    }
+    source_latency = trace.latency.get("search_response_time_sum", 0)
+    trace.latency["source_search_response_time_sum"] = source_latency
+    trace.latency["search_response_time_sum"] = 0
+    all_calls = trace.lineage.get("llm_calls", [])
+    trace.lineage["source_research_llm_calls"] = [
+        item
+        for item in all_calls
+        if isinstance(item, dict)
+        and str(item.get("stage", "")).startswith("research.")
+    ]
+    trace.lineage["llm_calls"] = [
+        item
+        for item in all_calls
+        if not (
+            isinstance(item, dict)
+            and str(item.get("stage", "")).startswith("research.")
+        )
+    ]
+
+
 async def _run(args: argparse.Namespace) -> int:
-    if not 1 <= args.concurrency <= 64:
-        raise ValueError("concurrency must be between 1 and 64.")
+    if not 1 <= args.concurrency <= 512:
+        raise ValueError("concurrency must be between 1 and 512.")
     request_concurrency = getattr(args, "request_concurrency", 16)
-    if not 1 <= request_concurrency <= 64:
-        raise ValueError("request-concurrency must be between 1 and 64.")
+    if not 1 <= request_concurrency <= 512:
+        raise ValueError("request-concurrency must be between 1 and 512.")
     source_manifest_path = args.source_manifest.resolve()
     source_manifest = _load_manifest(source_manifest_path)
     source_tasks = _source_tasks(source_manifest, args.task_id)
@@ -332,16 +426,27 @@ async def _run(args: argparse.Namespace) -> int:
     require_review_accepted = bool(
         getattr(args, "require_grounding_review_accepted", False)
     )
+    generation_mode = (
+        getattr(args, "generation_mode", None)
+        or settings.script_generation.generation_mode
+    )
+    single_shot_mode = generation_mode == "single_shot"
     script_config = replace(
         settings.script_generation,
         grounding_review_enabled=(
-            settings.script_generation.grounding_review_enabled
-            or args.grounding_review
-            or require_review_accepted
+            False
+            if single_shot_mode
+            else (
+                settings.script_generation.grounding_review_enabled
+                or args.grounding_review
+                or require_review_accepted
+            )
         ),
-        generation_mode=(
-            getattr(args, "generation_mode", None)
-            or settings.script_generation.generation_mode
+        generation_mode=generation_mode,
+        final_rewrite_enabled=(
+            False
+            if single_shot_mode
+            else settings.script_generation.final_rewrite_enabled
         ),
     )
     if candidate_trace_by_task and script_config.generation_mode != "editorial_candidates":
@@ -365,13 +470,20 @@ async def _run(args: argparse.Namespace) -> int:
     if manifest_path.exists():
         raise ValueError(f"Output manifest already exists: {manifest_path}")
 
+    experiment_id = getattr(args, "experiment_id", None) or source_manifest.get(
+        "experiment_id"
+    )
     manifest: dict[str, Any] = {
-        "experiment_id": source_manifest.get("experiment_id"),
+        "experiment_id": experiment_id,
         "phase": args.phase,
         "mode": (
             "frozen_research_candidate_editor_replay"
             if candidate_trace_by_task
-            else "frozen_research_script_replay"
+            else (
+                "frozen_research_single_shot_replay"
+                if single_shot_mode
+                else "frozen_research_script_replay"
+            )
         ),
         "started_at": datetime.now(timezone.utc).isoformat(),
         "completed_at": None,
@@ -388,12 +500,26 @@ async def _run(args: argparse.Namespace) -> int:
             else None
         ),
         "search_request_count": 0,
+        "new_tavily_request_count": 0,
+        "source_tavily_concurrency": 8,
         "require_grounding_review_accepted": require_review_accepted,
         "test_target_lengths": list(getattr(args, "target_length", ())),
         "script_prompt_version": script_prompt_version,
         "script_system_prompt_sha256": hashlib.sha256(
             script_prompt_text.encode("utf-8")
         ).hexdigest(),
+        "script_format_repair_prompt_version": (
+            BACKGROUND_SCRIPT_FORMAT_REPAIR_PROMPT_VERSION
+            if single_shot_mode
+            else None
+        ),
+        "script_format_repair_prompt_sha256": (
+            hashlib.sha256(
+                BACKGROUND_SCRIPT_FORMAT_REPAIR_SYSTEM_PROMPT.encode("utf-8")
+            ).hexdigest()
+            if single_shot_mode
+            else None
+        ),
         "script_candidate_prompt_version": (
             BACKGROUND_SCRIPT_CANDIDATE_PROMPT_VERSION if editorial_mode else None
         ),
@@ -495,7 +621,7 @@ async def _run(args: argparse.Namespace) -> int:
                         "research": source_manifest.get("research_config", {}),
                         "script_generation": asdict(script_config),
                         "experiment": {
-                            "experiment_id": source_manifest.get("experiment_id"),
+                            "experiment_id": experiment_id,
                             "phase": args.phase,
                             "mode": manifest["mode"],
                             "task_id": task_id,
@@ -515,6 +641,8 @@ async def _run(args: argparse.Namespace) -> int:
                                 else None
                             ),
                             "search_requests_in_replay": 0,
+                            "new_tavily_request_count": 0,
+                            "source_tavily_concurrency": 8,
                             "script_system_prompt_sha256": manifest[
                                 "script_system_prompt_sha256"
                             ],
@@ -527,12 +655,16 @@ async def _run(args: argparse.Namespace) -> int:
                             "script_grounding_review_prompt_sha256": manifest[
                                 "script_grounding_review_prompt_sha256"
                             ],
+                            "script_format_repair_prompt_sha256": manifest[
+                                "script_format_repair_prompt_sha256"
+                            ],
                             "hy3_model": settings.hy3.model,
                             "hy3_temperature": settings.hy3.temperature,
                             "hy3_top_p": settings.hy3.top_p,
                         },
                     },
                 )
+                _mark_frozen_research_replay(trace, research, script)
                 trace_path = output_dir / "traces" / f"{task_id}-{trace.run_id}.json"
                 trace.write_json(trace_path)
                 review_gate_failed = (
@@ -546,6 +678,12 @@ async def _run(args: argparse.Namespace) -> int:
                         "run_id": trace.run_id,
                         "character_count": script.character_count,
                         "generation_attempt_count": script.generation_attempt_count,
+                        "content_generation_attempt_count": (
+                            script.content_generation_attempt_count
+                        ),
+                        "format_repair_attempt_count": (
+                            script.format_repair_attempt_count
+                        ),
                         "generation_mode": script.generation_mode,
                         "candidate_count": len(script.generation_candidates),
                         "editor_attempt_count": script.editor_attempt_count,
@@ -598,6 +736,12 @@ async def _run(args: argparse.Namespace) -> int:
                         {
                             "generation_attempt_count": (
                                 exc.generation_attempt_count
+                            ),
+                            "content_generation_attempt_count": (
+                                exc.content_generation_attempt_count
+                            ),
+                            "format_repair_attempt_count": (
+                                exc.format_repair_attempt_count
                             ),
                             "grounding_review_attempt_count": (
                                 exc.grounding_review_attempt_count

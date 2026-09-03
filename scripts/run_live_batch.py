@@ -44,6 +44,9 @@ from hyscript.search import AsyncTavilySearchProvider
 
 _TASK_ID_PATTERN = re.compile(r"[A-Za-z0-9][A-Za-z0-9_-]{0,63}")
 _TASK_SPEC_FIELDS = {"task_id", "dataset_index", "target_length"}
+_MAX_TASK_CONCURRENCY = 512
+_MAX_HY3_CONCURRENCY = 512
+_MAX_SEARCH_CONCURRENCY = 64
 
 
 def _print_console(message: str) -> None:
@@ -92,38 +95,41 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--task-concurrency",
         type=int,
-        choices=range(1, 65),
+        choices=range(1, _MAX_TASK_CONCURRENCY + 1),
         default=None,
-        metavar="1-64",
+        metavar=f"1-{_MAX_TASK_CONCURRENCY}",
         help="Maximum number of complete task pipelines in flight (default: 1).",
     )
     parser.add_argument(
         "--concurrency",
         type=int,
-        choices=range(1, 65),
+        choices=range(1, _MAX_TASK_CONCURRENCY + 1),
         default=1,
-        metavar="1-64",
+        metavar=f"1-{_MAX_TASK_CONCURRENCY}",
         help="Deprecated alias for --task-concurrency.",
     )
     parser.add_argument(
         "--hy3-concurrency",
         type=int,
-        choices=range(1, 65),
+        choices=range(1, _MAX_HY3_CONCURRENCY + 1),
         default=None,
+        metavar=f"1-{_MAX_HY3_CONCURRENCY}",
         help="Maximum Hy3 requests in flight across research and generation.",
     )
     parser.add_argument(
         "--request-concurrency",
         type=int,
-        choices=range(1, 65),
+        choices=range(1, _MAX_HY3_CONCURRENCY + 1),
         default=16,
+        metavar=f"1-{_MAX_HY3_CONCURRENCY}",
         help="Deprecated alias for --hy3-concurrency.",
     )
     parser.add_argument(
         "--search-concurrency",
         type=int,
-        choices=range(1, 65),
+        choices=range(1, _MAX_SEARCH_CONCURRENCY + 1),
         default=8,
+        metavar=f"1-{_MAX_SEARCH_CONCURRENCY}",
         help="Maximum Tavily requests in flight across all tasks (default: 8).",
     )
     parser.add_argument(
@@ -222,8 +228,14 @@ def _validate_label(value: str, *, name: str) -> str:
 
 
 def _validate_task_concurrency(value: Any) -> int:
-    if isinstance(value, bool) or not isinstance(value, int) or not 1 <= value <= 64:
-        raise ValueError("task-concurrency must be between 1 and 64.")
+    if (
+        isinstance(value, bool)
+        or not isinstance(value, int)
+        or not 1 <= value <= _MAX_TASK_CONCURRENCY
+    ):
+        raise ValueError(
+            f"task-concurrency must be between 1 and {_MAX_TASK_CONCURRENCY}."
+        )
     return value
 
 
@@ -394,10 +406,14 @@ async def _run(args: argparse.Namespace) -> int:
         default=16,
     )
     search_concurrency = getattr(args, "search_concurrency", 8)
-    if not 1 <= request_concurrency <= 64:
-        raise ValueError("hy3-concurrency must be between 1 and 64.")
-    if not 1 <= search_concurrency <= 64:
-        raise ValueError("search-concurrency must be between 1 and 64.")
+    if not 1 <= request_concurrency <= _MAX_HY3_CONCURRENCY:
+        raise ValueError(
+            f"hy3-concurrency must be between 1 and {_MAX_HY3_CONCURRENCY}."
+        )
+    if not 1 <= search_concurrency <= _MAX_SEARCH_CONCURRENCY:
+        raise ValueError(
+            f"search-concurrency must be between 1 and {_MAX_SEARCH_CONCURRENCY}."
+        )
     research_only = bool(getattr(args, "research_only", False))
     dataset_path = args.dataset.resolve()
     task_spec_path = args.task_spec.resolve()

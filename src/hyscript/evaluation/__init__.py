@@ -17,6 +17,13 @@ from .models import (
 )
 from .rubric import Rubric, RubricError, load_rubric
 from .rules import RuleConfig, RuleEvaluator
+from .reward_hacking import (
+    RewardHackingConfig,
+    RewardHackingConflictError,
+    RewardHackingDetector,
+    RewardHackingEvaluationError,
+    run_reward_hacking_validation,
+)
 from .runner import (
     BatchEvaluationConfig,
     BatchEvaluationResult,
@@ -44,10 +51,15 @@ __all__ = [
     "RubricError",
     "RuleConfig",
     "RuleEvaluator",
+    "RewardHackingConfig",
+    "RewardHackingConflictError",
+    "RewardHackingDetector",
+    "RewardHackingEvaluationError",
     "TraceInputError",
     "TraceOutcome",
     "combine_evaluations",
     "load_frozen_trace",
     "load_rubric",
+    "run_reward_hacking_validation",
     "summarize_batch",
 ]
