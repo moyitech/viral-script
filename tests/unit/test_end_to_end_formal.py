@@ -11,6 +11,9 @@ from unittest.mock import patch
 from hyscript.evaluation import end_to_end_formal as e2e
 
 
+TEST_RUNTIME_LOCK = {"schema_version": "test-runtime"}
+
+
 def _build_baseline_fixture(root: Path) -> Path:
     baseline = root / "formal-100-v1"
     dataset = baseline / "dataset.json"
@@ -61,7 +64,7 @@ def _build_baseline_fixture(root: Path) -> Path:
     )
     e2e.write_json(baseline / "topics.json", catalog)
     e2e.write_json(baseline / "task_matrix.json", matrix)
-    e2e.lock_runtime(baseline)
+    e2e.write_json(baseline / "runtime_lock.json", TEST_RUNTIME_LOCK)
     e2e.write_json(
         baseline / "generation/research/attempt-001/manifest.json",
         {
@@ -181,6 +184,15 @@ def _build_baseline_fixture(root: Path) -> Path:
 
 
 class EndToEndFormalTests(unittest.TestCase):
+    def setUp(self) -> None:
+        self.runtime_patch = patch.object(
+            e2e,
+            "lock_runtime",
+            return_value=TEST_RUNTIME_LOCK,
+        )
+        self.runtime_patch.start()
+        self.addCleanup(self.runtime_patch.stop)
+
     def test_prepare_clones_the_300_task_matrix_and_locks_512(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             temporary_root = Path(directory)

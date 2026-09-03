@@ -113,10 +113,11 @@ def _classify(topic: str) -> tuple[str, list[str]]:
 def _relative(path: Path, base: Path) -> str:
     resolved_path = path.resolve()
     try:
-        return os.path.relpath(resolved_path, base.resolve())
+        value = os.path.relpath(resolved_path, base.resolve())
     except ValueError:
         # Windows cannot express a relative path between different drives.
-        return str(resolved_path)
+        value = str(resolved_path)
+    return value.replace(os.sep, "/")
 
 
 def prepare_experiment(
