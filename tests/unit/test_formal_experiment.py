@@ -65,7 +65,7 @@ class FormalExperimentTests(unittest.TestCase):
         ):
             value = _relative(path, Path("experiment"))
 
-        self.assertEqual(value, str(path))
+        self.assertEqual(value, path.as_posix())
 
     def test_prepare_builds_stable_100_by_three_matrix(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

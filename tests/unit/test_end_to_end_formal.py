@@ -434,7 +434,7 @@ class EndToEndFormalTests(unittest.TestCase):
         ):
             value = e2e._relative(path, Path("experiment"))
 
-        self.assertEqual(value, str(path))
+        self.assertEqual(value, path.as_posix())
 
     def test_evaluation_resume_summary_counts_only_last_resume_outputs(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
