@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-d2231f9632d94dc389f6ae5914d116b4",
+  "run_id": "run-20260903T051618Z-11ec252de832",
+  "trace_sha256": "e3239c179a785ccf2a5853d9308fb7a4746b54e228af3ac88285e11f771c0ad7",
+  "created_at": "2026-09-03T11:58:15.180915Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从囤药浪费、处置难题到适量备药，正面覆盖安全感、浪费与风险两端，核心观众也能得到具体建议。",
+      "script_spans": [
+        "安全感就会拐个弯，变成实打实的浪费和隐患",
+        "高血压糖尿病这些长期药必须留足，退烧止痛备一小盒应急即可"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 732，目标为 700，偏差率为 4.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕浪费与风险持续推进，补充保质期、转卖限制、回收、分类、储存和过期风险，信息单元充足。",
+      "script_spans": [
+        "药品天生带保质期，可生病这事儿没准点。",
+        "剩余药想转卖给药店或邻居，个人根本没有药品经营许可，真倒手了反而涉嫌违法。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用退烧药被丢弃制造冲突，中段持续推进，结尾以自查药箱自然收束并留下行动感。",
+      "script_spans": [
+        "成盒没拆封的退烧药直接被丢进垃圾桶",
+        "下次促销又想成组搬时，先拉开自家药箱看一眼吧"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答推进和清楚停顿，但多处搭配偏书面，朗读时仍需临时换词。",
+      "script_spans": [
+        "为什么囤着囤着就糟蹋了？",
+        "等放到过期",
+        "取舍的学问在分类"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“护身符变成累赘”和“安全感拐弯”形成自然反差，结尾重新定义踏实，观点清楚且容易复述。",
+      "script_spans": [
+        "这些药就从护身符变成了累赘",
+        "安全感就会拐个弯，变成实打实的浪费和隐患",
+        "真正踏实的感觉，不是抽屉被药盒塞满"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头引题，随后按成因、处置、分类储存、反驳和结论递进；但‘两年未用’的规则缺少充分论证，范围偏大。",
+      "script_spans": [
+        "那是不是只买一盒感冒药就够？取舍的学问在分类。",
+        "真正踏实的感觉，不是抽屉被药盒塞满，而是你清楚每盒药什么时候开的、哪天该扔。",
+        "药箱里任何药如果两年内你都没碰过，它大概率是囤多了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制且有风险意识，但“任何药两年未用就该舍弃”等一刀切建议，可能误导慢病及低频应急用药管理。",
+      "script_spans": [
+        "当然，凡事不能走极端，家里完全空白也不行",
+        "所以一条朴素边界：药箱里任何药如果两年内你都没碰过，它大概率是囤多了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4109f9df4ef5404a827deb69d5ac9ce1",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d5d29b297257457a875700d35f3c7b49",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

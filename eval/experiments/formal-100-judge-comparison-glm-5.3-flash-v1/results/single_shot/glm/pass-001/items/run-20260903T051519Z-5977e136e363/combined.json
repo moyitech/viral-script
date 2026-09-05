@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-cba1e49596b74a1799d134ea780ad474",
+  "run_id": "run-20260903T051519Z-5977e136e363",
+  "trace_sha256": "5000ac33da30322add050db502d87b8065ff8477897f8334faa3361fa82f4c40",
+  "created_at": "2026-09-03T14:18:55.879913Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问即入题，判断句直接回应潜力之问，结尾对求职者与用人方双侧收束，全程不跑题。",
+      "script_spans": [
+        "我的判断很直接：算法能帮企业快速筛掉明显不匹配的简历和人，但远读不懂一个人真正的潜力",
+        "对找工作的人，把经历讲成有逻辑的故事，比练微笑更靠谱；对用人方，别让算法当终审"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 762，目标为 700，偏差率为 8.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从筛选效率、模板偏见、审计反例到政策与结构化面谈依据，单元各司其职，判断方法可带走。",
+      "script_spans": [
+        "算法常从过去高绩效员工里提炼特征当模板",
+        "只有经过独立效度检验、能解释评分逻辑的算法，才配谈公平"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以第二人称场景快速抛出算法打分的反差，中段转折密集，结尾余味由正文自然收出。",
+      "script_spans": [
+        "以为打分的会是后面坐着的人。其实，算法已经把你的停顿、笑容和用词频率转成了分数。",
+        "它该是辅助的筛子，不是潜力的裁判。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾顺口有重音，但中段书面讲解偏多，结构化面谈才更预测绩效、既加速又模糊等处拗口需换词。",
+      "script_spans": [
+        "把经历讲成有逻辑的故事，比练微笑更靠谱",
+        "问同样问题、提前定标准的结构化面谈才更预测绩效",
+        "求职者面对的是一套既加速又模糊的评估"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“放大镜换成滤镜”“筛子不是裁判”离开上下文仍可复述，修辞点到为止，无炫技堆叠。",
+      "script_spans": [
+        "AI面试官不是读心术，它只是把放大镜换成了滤镜。",
+        "因为他对不上历史数据的胃口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "让步—反例—边界层层推进，因果桥明示，结尾以读心术与筛子裁判自然回扣开头的提问。",
+      "script_spans": [
+        "标准化程序确实压低了面试官的个人偏好，这是实在进步。可反例摆在那",
+        "所以，AI面试官不是读心术，它只是把放大镜换成了滤镜"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "判断多用可能、部分、或许限定，正反并陈并主动划定效度检验边界，无夸大、煽动或误导。",
+      "script_spans": [
+        "所以我们守一条边界——只有经过独立效度检验、能解释评分逻辑的算法，才配谈公平",
+        "独立审计发现，部分招聘AI对特定群体产生不利差异"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-0db8ef1e9e674ba28a2382bf7426e3b2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-523df0f7a02543c89d67cf18ad9467a6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

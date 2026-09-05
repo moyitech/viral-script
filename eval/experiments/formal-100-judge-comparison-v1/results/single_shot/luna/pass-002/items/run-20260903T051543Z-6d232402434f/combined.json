@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-4b98ee00cc5a4d63afaa799b797f56d5",
+  "run_id": "run-20260903T051543Z-6d232402434f",
+  "trace_sha256": "adc4ecf3d87e6936307ab16c3fca16290413ee3e7205cc82d4e50388767d7d0a",
+  "created_at": "2026-09-03T12:32:27.336232Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面覆盖公共充电窃密风险与出门应对，既讲风险边界，也给出可执行的避险方案。",
+      "script_spans": [
+        "真要靠公共口救急，花十几块买根只通电、砍掉数据针脚的充电专线，物理阻断握手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，原理和避险方案具体；但把电气安全标准推成数据安全保障，且“零案发”表述过满。",
+      "script_spans": [
+        "USB接口天生电力数据同线传输，四根引脚里两根供电、两根通信用。",
+        "国内充电桩国标也在紧抓过流保护和防火，没给数据乱跑留方便。",
+        "自相关概念提出以来野外零案发。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用3%电量和陌生人递线制造即时风险，中段有反转、原理与应对，结尾收得有余味。",
+      "script_spans": [
+        "你手机只剩3%电量，高铁站墙上的公共USB口闪着绿灯。",
+        "为什么原理吓人却难到手？",
+        "出门可以借电，别借出数据通道，这几克重量的线就是你的边界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头提问、结尾提醒有对话感，整体可读；但中段两处语序生硬，技术表达也让气口不够顺。",
+      "script_spans": [
+        "陌生人递来根线说免费充，你敢插吗？",
+        "可作为反差，有安全媒体梳理过，自相关概念提出以来野外零案发。",
+        "国内充电桩国标也在紧抓过流保护和防火，没给数据乱跑留方便。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "场景化开头降低理解门槛，“别借出数据通道”把安全边界说得具体，记忆点自然且不过度堆砌。",
+      "script_spans": [
+        "陌生人递来根线说免费充，你敢插吗？",
+        "电从自己兜里出。",
+        "出门可以借电，别借出数据通道，这几克重量的线就是你的边界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，先设问再讲机制、风险边界，最后落到操作建议；但“必弹”与国标推导让关键因果不够严密。",
+      "script_spans": [
+        "为什么原理吓人却难到手？",
+        "普通人没必要赌概率。最稳的是自带充电宝，电从自己兜里出。",
+        "但现代手机连未知设备必弹“信任此电脑”，不点就隔离；",
+        "国内充电桩国标也在紧抓过流保护和防火，没给数据乱跑留方便。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提供了自带充电宝和数据阻断线等稳妥建议，但“必弹”“野外零案发”等绝对表述可能造成误导。",
+      "script_spans": [
+        "最稳的是自带充电宝，电从自己兜里出。",
+        "现代手机连未知设备必弹“信任此电脑”，不点就隔离"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0461d9fc64824ceda324398612f1f671",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

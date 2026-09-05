@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-7e95d08b4ddd448fab5af3f2f3dfb193",
+  "run_id": "run-20260903T051536Z-38f723940985",
+  "trace_sha256": "ce3ea9822466da5ba9bf1b782b225337152fad96b231ad2595cb7e7424d708ab",
+  "created_at": "2026-09-03T12:31:51.603858Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即回答能否锁定长期回报，明确区分合同确定利益与分红预期，并落到普通人的购买决策。",
+      "script_spans": [
+        "保险收益预期下行时，想靠保单锁长期回报，只该信合同里固定的那串数字"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中在确定利益与分红预期的取舍，兼有实现率、现金价值表和退保流动性等具体信息，增量充分。",
+      "script_spans": [
+        "公开数据显示前阵行业平均分红实现率大约只有55%",
+        "普通人最实在的做法，是买前翻合同末尾的现金价值表"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“高利率锁进保险箱”的反差设问抓人，中段层层给出数据、取舍和行动建议，结尾也留下判断余味。",
+      "script_spans": [
+        "你以为现在抢一份年金险，就把未来几十年的高利率锁进了保险箱？",
+        "普通人最实在的做法，是买前翻合同末尾的现金价值表，那列逐年数目才是真到手的钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和对话式承接不少，但“容忍受实现率”卡嘴，“逐年数目”也不顺，整体只是可读。",
+      "script_spans": [
+        "接下来的取舍很现实。",
+        "选分红，就得容忍受实现率低迷拖累。",
+        "那列逐年数目才是真到手的钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻集中在“锁”“大饼”等核心意象上，帮助区分确定利益与演示收益；“没有两头甜的锁”简短好记，整体未喧宾夺主。",
+      "script_spans": [
+        "那些分红演示的漂亮数字，真实兑现可能连一半都够不着。",
+        "没有两头甜的锁。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "固定利益与分红取舍、购买建议衔接清楚，但把合同确定性概括成‘不亏底线’，与早期退保可能吃亏的提醒不完全一致。",
+      "script_spans": [
+        "你选固定利益，等于放弃上行可能，换一个写死的数",
+        "锁定回报不是锁住财富增值，而是锁住一条不亏的底线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提示查现金价值表并警示早期退保，方向稳妥；但把预定利率等同确定回报，且将分红风险和公司动机说得过满，易误导。",
+      "script_spans": [
+        "普通人最实在的做法，是买前翻合同末尾的现金价值表",
+        "真实兑现可能连一半都够不着",
+        "更乐意推分红险把投资波动转嫁给你",
+        "锁住一条不亏的底线"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-291e6198cf82428fb11330fe543e6eaf",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-5c1fa1b3c96e44efbd9e2f1dd4cfafff",
+  "run_id": "run-20260902T143445Z-e760c914562d",
+  "trace_sha256": "39bdb2aa799bbf7d8f2b5a908329d894bdccc0a2417ed2113097795c55d50f19",
+  "created_at": "2026-09-03T13:48:19.867733Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "喂饭冲突开场直指谁说了算，正文分清父母拍板与老人分寸两侧，结尾回扣题设，全程正答。",
+      "script_spans": [
+        "姥姥追着喂饭，娃妈偏让娃自己吃，这日常谁说了算？",
+        "法律给的底线挺清楚：孩子日常教育的决定权，主要在父母手里，但老人受托照料也有自己的分寸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 755，目标为 700，偏差率为 7.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法条依据、委托照料与监护之别、可定与不可定清单、反例层层推进，信息扎实，观众能带走判断标准。",
+      "script_spans": [
+        "你请老人帮忙带，是委托照料，不是过户监护权。",
+        "接送上学、三餐作息、陪玩哄睡，这些眼前琐事他们自然能定。",
+        "责任在纸面上，生活在手脚上，两边错位就吵起来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即现喂饭冲突，中段用“能拍板啥”持续兑现钩子，结尾问句由正文长出，互动不生硬。",
+      "script_spans": [
+        "姥姥追着喂饭，娃妈偏让娃自己吃，这日常谁说了算？",
+        "那爷爷奶奶手里能拍板啥？接送上学、三餐作息、陪玩哄睡",
+        "先停一秒问自己：这决定到底该谁拍板？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、类比好读，但“责任主体”两句连用显冗，法条句直读偏拗，需小改才顺。",
+      "script_spans": [
+        "平时老人冲在带娃一线，父母却住外头不常来，责任在纸面上，生活在手脚上，两边错位就吵起来",
+        "调解不是争输赢，是把抚养和教育拧成一股绳",
+        "它不是抹掉老人功劳，而是让责任主体清晰可查。国家给指导支持，但不替父母做主，责任主体还是清晰",
+        "父母或其他监护人负责实施家庭教育"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“过户监护权”“请人看店不能改招牌”类比贴切助解，“参谋与舵手”离开全文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "你请老人帮忙带，是委托照料，不是过户监护权",
+        "就像请人看店不能改招牌",
+        "把老人经验当参谋，父母做最终舵手"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段段设问承接推进，委托照料与监护概念分得清，指导令归位解释到位，结尾停一秒问拍板自然回扣开头。",
+      "script_spans": [
+        "为啥责任落在父母肩头？",
+        "真闹僵了咋收场？",
+        "下次你家为怎么教娃吵起来，先停一秒问自己：这决定到底该谁拍板？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "权责划分客观，对老人态度平衡，无煽动夸大；唯“不打不成材”仅以父母点头为限，未限定体罚打骂本身违法，需补边界更稳妥。",
+      "script_spans": [
+        "老人带娃是情分也是劳碌，但情分改不了法律上的主次",
+        "调解不是争输赢，是把抚养和教育拧成一股绳",
+        "或者用“不打不成材”的老法子管教，就得父母点头"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-83b1f23911364a67a7613e971d386b04",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-23cf5657e33f46528ef6fcf042d2fde9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

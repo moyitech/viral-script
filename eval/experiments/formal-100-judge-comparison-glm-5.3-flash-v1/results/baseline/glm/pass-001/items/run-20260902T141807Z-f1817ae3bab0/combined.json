@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-0034545a0b5540f5b939a70accdeb3b7",
+  "run_id": "run-20260902T141807Z-f1817ae3bab0",
+  "trace_sha256": "81962fa3dbd6f959a303e80bb7a6cbc9ecc93de4747e2eeb0f8b0fcf5473cc93",
+  "created_at": "2026-09-03T13:48:12.240585Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头亮出筛得掉、读不透两面，结尾落到人拍板，全程正面回答题设，求职人群对位。",
+      "script_spans": [
+        "你简历没到人手，算法先判你潜力。它能帮着先筛掉不合适的，却读不透你真正的后劲。",
+        "这只是辅助工具。真潜力，留给人来拍板才稳妥。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 266，目标为 280，偏差率为 5.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机制、利、弊、局限层层推进，镜头前与工位上的对照给出可带走的判断，论证扎实无编造。",
+      "script_spans": [
+        "算法拿一套同样问题问所有人，录下回答，用程序扫表情和语调，把说话快慢变成分数。",
+        "机器猜的多是镜头前的你，不是工位上的你"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即立反差冲突，中段机制与转折持续兑现钩子，结尾提问由打分话题自然长出，不生硬。",
+      "script_spans": [
+        "你简历没到人手，算法先判你潜力。",
+        "可它另一边，常盯你的微表情、声线",
+        "机器给你打分时，你敢把前途交它手里吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "对话感和短句是亮点，但定语堆叠与“可处理”等书面腔需临时换词重断，封顶2分。",
+      "script_spans": [
+        "真潜力，留给人来拍板才稳妥",
+        "常盯你的微表情、声线这些往往和干活好坏没必然联系的特征，去猜你行不行",
+        "这法子让海量申请变得可处理"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'镜头前的你，不是工位上的你'对比准确、离开正文仍可复述；'把说话快慢变成分数'具象不炫技。",
+      "script_spans": [
+        "把说话快慢变成分数",
+        "机器猜的多是镜头前的你，不是工位上的你"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "利转弊用可它另一边承接自然，特征无关与镜头局限构成因果桥，结尾反问回扣开头判词。",
+      "script_spans": [
+        "可它另一边，常盯你的微表情、声线这些往往和干活好坏没必然联系的特征",
+        "潜力藏在深层经历和应变里，机器猜的多是镜头前的你，不是工位上的你，预测的把握本身就有限。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "利弊两面都讲，'往往''把握本身就有限'限定到位，定位辅助工具不夸大，结尾反问属正常悬念，无违规误导。",
+      "script_spans": [
+        "常盯你的微表情、声线这些往往和干活好坏没必然联系的特征",
+        "预测的把握本身就有限",
+        "这只是辅助工具。真潜力，留给人来拍板才稳妥"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4e642bc55f9d49e286d5fcca439ac030",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-4be1eac6cad34a4baf73f6d45d80ee46",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

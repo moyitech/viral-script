@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-73ef050910a444cf87ae23acfbf4b720",
+  "run_id": "run-20260902T144827Z-6427006d7c16",
+  "trace_sha256": "e700976e1e8d1abfed8f5087c9a89ef523d00a05f44775e0d36e5c4e5b170abe",
+  "created_at": "2026-09-03T14:27:20.641929Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 2,
+      "reason": "正面回答'为何成筹码'，电地两侧与落地建议都在；但题设'多国'，正文只落在中国一线、双碳与用地红线，对象覆盖不全。",
+      "script_spans": [
+        "算力扩张卡在物理资源，电力和土地成了准入筹码",
+        "一线接电更久。能耗审批叠双碳限值，变电站增容慢，电网排队成常态"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题全程聚焦电与地，机制、事实与结论相互支撑，还给出核项目清单；关键说法与检索背景一致，未见编造。",
+      "script_spans": [
+        "核心枢纽的能耗指标高度集中，高等级机房供不应求",
+        "先问当地电网容量、变电站审批节奏和用地红线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头20字内即抛出“电和地比芯片贵”反差钩子，中段以电、地两线递进兑现，结尾余味与提问由正文自然生长，无突兀喊话。",
+      "script_spans": [
+        "多国抢建数据中心，电和地比芯片贵。你说怪不怪？",
+        "社区嫌占农田，多地直接暂停审批，真金白银打水漂。",
+        "算力地图怕是要按电厂和农田重写了。下一步，建在哪？你说呢？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句利落，有真金白银打水漂等口语亮点；但能耗审批叠双碳限值、受功率密度和延迟限制两处需换词重断，封顶2分。",
+      "script_spans": [
+        "社区嫌占农田，多地直接暂停审批，真金白银打水漂",
+        "没电和地，芯片跑不起来",
+        "能耗审批叠双碳限值",
+        "受功率密度和延迟限制"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞点到为止且服务理解，“电和地比芯片贵”“算力地图按电厂农田重写”离开上下文仍可复述，无堆砌炫技或喧宾夺主。",
+      "script_spans": [
+        "多国抢建数据中心，电和地比芯片贵。",
+        "真金白银打水漂",
+        "算力地图怕是要按电厂和农田重写了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "'先说电''再看地'分层清楚，结尾回扣筹码；但农田审批混入电段，'比芯片贵'没被兑现成价格论证。",
+      "script_spans": [
+        "这股风潮里，当电和地变成谈判筹码，算力地图怕是要按电厂和农田重写了",
+        "社区嫌占农田，多地直接暂停审批，真金白银打水漂"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无违规且表述克制，但“电和地比芯片贵”属绝对化断言，“多地暂停审批”“打水漂”未加边界，宜改写。",
+      "script_spans": [
+        "先问当地电网容量、变电站审批节奏和用地红线",
+        "当电和地变成谈判筹码，算力地图怕是要按电厂和农田重写了。",
+        "多国抢建数据中心，电和地比芯片贵。",
+        "社区嫌占农田，多地直接暂停审批，真金白银打水漂。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9388a7a62afd4e4baa31fff230bc6117",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

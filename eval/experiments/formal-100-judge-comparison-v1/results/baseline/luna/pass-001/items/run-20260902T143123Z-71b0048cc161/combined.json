@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-39721439c7c7415cbc34fecd349484c4",
+  "run_id": "run-20260902T143123Z-71b0048cc161",
+  "trace_sha256": "84f67522ec965dea2c5dce2eccc698e2fe972ad6a2c09fec22273d8d181a52c3",
+  "created_at": "2026-09-03T11:44:34.983081Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "紧扣应届生考证焦虑，区分准入与水平评价，正面回答证书能否换来工作机会。",
+      "script_spans": [
+        "应届生扎堆考证，先得看清类别。",
+        "准入类必须考，水平评价类看企业认不认。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 457，目标为 450，偏差率为 1.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦证书的求职价值，既解释政策变化，也给出查岗位、辨广告和控制投入的具体方法。",
+      "script_spans": [
+        "证书含金量从国家背书变成市场参考",
+        "真招聘时岗位要求写清楚，你看准了再花时间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用求职焦虑设问，中段不断补充分类与避坑信息，结尾用自然反问留下判断余味。",
+      "script_spans": [
+        "你熬夜刷课考下的证，招聘官会多看一眼吗？",
+        "下次报名前，问自己：这证是饭碗的钥匙，还是墙上的奖状？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和劝诫段有对话感，但类别解释多处书面、拗口，气口和词序仍需改写。",
+      "script_spans": [
+        "那普通人怎么避坑？",
+        "别信广告说包过，那只是培训课。",
+        "能换工作的证主要是一类硬门槛，另一类可能只是墙上的奖状。",
+        "真招聘时岗位要求写清楚，你看准了再花时间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“墙上的奖状”“饭碗的钥匙”“踏板”形成清晰对照，帮助理解证书价值，也留下了可复述的判断句。",
+      "script_spans": [
+        "另一类可能只是墙上的奖状。",
+        "这证是饭碗的钥匙，还是墙上的奖状？",
+        "考对了是踏板，考错了只是经历。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "提问引入后按分类、改革原因、求职建议递进，末尾回扣“钥匙还是奖状”，整体承接自然。",
+      "script_spans": [
+        "为什么这么改？准入类关系公共安全，必须卡死；水平评价类偏通用技术，退出是为让企业自己挑人，活化就业。",
+        "下次报名前，问自己：这证是饭碗的钥匙，还是墙上的奖状？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未作就业承诺，能区分准入与评价类；但“研究也发现”无来源且泛化，相关表述宜限定范围。",
+      "script_spans": [
+        "准入类像焊工、消防，法律强制，没证不能上岗，这是真门槛。",
+        "研究也发现，学历和实习实操比一堆纸证更影响录用。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ee70dcc81486430eb90a39833388bc0c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-882aa4ac365c498a833871154ef1bf34",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

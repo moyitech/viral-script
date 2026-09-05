@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-5b178e7614a549b4ac1982394f0ade44",
+  "run_id": "run-20260902T142644Z-1cff99b1f5be",
+  "trace_sha256": "a4dfa1422cd455a80fb5c543aa4ceb4361c5eb17a88bae56971081fe25f793c2",
+  "created_at": "2026-09-03T13:46:29.604234Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给两处放答案，中段释因、尾段落地，题设两侧与家庭人群全覆盖。",
+      "script_spans": [
+        "家庭闲钱该分两处放：急用的留现金类，剩下的配国债",
+        "普通人怎么落手？手边要用的钱，留点现金类更健康"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 429，目标为 450，偏差率为 4.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "监管、利率、取舍、算账层层推进，数据与公告相符，无编造，增量具体。",
+      "script_spans": [
+        "监管规则早定了，现金管理类只能投货币市场工具，投资范围卡死，久期也受限",
+        "三年期储蓄国债利率百分之一点六三，五年期到百分之一点七",
+        "你算算，同样十万块，放活期年息几百，买三年国债年多拿千把块"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头腰斩与卡壳的困境够具体，中段以规则、利率、取舍和算账持续兑现，结尾提问由分两处放自然生长。",
+      "script_spans": [
+        "活钱理财收益腰斩，取出来买国债又怕用钱时卡壳",
+        "不过收益淡了产品更稳，急用钱不慌",
+        "你算算，同样十万块，放活期年息几百，买三年国债年多拿千把块",
+        "钱怎么分份，可能比盯着那点收益更值得琢磨。你家闲钱，打算怎么分两处放？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇短气口为主，“你算算”“得掂量”等口语承接自然，重音停顿清楚，朗读无需临时改词。",
+      "script_spans": [
+        "买之前得掂量，这钱几年真用不上再下手。",
+        "你算算，同样十万块，放活期年息几百，买三年国债年多拿千把块。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "腰斩、卡死、掂量等口语比喻皆服务理解，分两处放口诀与钱怎么分份一句离开正文仍可复述，克制不炫技。",
+      "script_spans": [
+        "投资范围卡死，久期也受限，不能拉长久期搏收益",
+        "急用的留现金类，剩下的配国债",
+        "钱怎么分份，可能比盯着那点收益更值得琢磨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "因果桥清楚，腾挪空间小推收益下行可循；结尾分两处放回扣开头，结构闭环。",
+      "script_spans": [
+        "机构腾挪空间小了，产品收益就跟着往下走",
+        "买之前得掂量，这钱几年真用不上再下手",
+        "你家闲钱，打算怎么分两处放？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "取舍披露清楚，但开场“收益腰斩”未加限定，绝对化表述可能误导观众，需补边界才稳妥。",
+      "script_spans": [
+        "买之前得掂量，这钱几年真用不上再下手",
+        "提前兑取会损利息，流动不如活期理财，这是明显的取舍",
+        "活钱理财收益腰斩"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-fef3d452e59147de835a90a65be54057",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f9a94b88564b4f7982ae5fb0818c1040",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

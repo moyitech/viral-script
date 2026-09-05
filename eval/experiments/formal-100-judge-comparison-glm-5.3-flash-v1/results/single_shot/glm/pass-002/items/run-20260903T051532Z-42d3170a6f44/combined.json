@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-8af18864d9c244de8486abc73d758e10",
+  "run_id": "run-20260903T051532Z-42d3170a6f44",
+  "trace_sha256": "d72c9a290046f5bd5de8caaf0859aa76dee056ea255b82e8f9310ad6c7736d12",
+  "created_at": "2026-09-03T15:31:03.546547Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直认岗位缩减，中段给出操作员、运维员等新工种，结尾落到厂里人的出路，两侧与人群都扣住。",
+      "script_spans": [
+        "流水线上的普工岗位就明显缩减",
+        "工业机器人操作员和系统运维员已是正式工种",
+        "如果还想在厂里干"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "新工种、官方清单、调研结论、转型建议各占一层，事实与结论互相支撑，无同义注水。",
+      "script_spans": [
+        "工业机器人操作员和系统运维员已是正式工种",
+        "智能技术同时产生替代和创造效应"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字内立住减岗冲突，中段以新工种与调研结果持续兑现，结尾“被甩下”的余味自然生长，三段各自成立。",
+      "script_spans": [
+        "智能工厂一上线，流水线上的普工岗位就明显缩减，但制造业升级真正带来的不是失业潮，而是工作重心的转移",
+        "如果还想在厂里干，别只拼肌肉记忆下的手速，趁早摸熟设备运维和基础分析工具，才不容易被甩下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主能读通，“新差事”“趁早摸熟”有口语感；但“没无影无踪”“替代和创造效应”两处卡嘴拗口，压至两分。",
+      "script_spans": [
+        "做看护、调参数、读数据",
+        "岗位没无影无踪",
+        "智能技术同时产生替代和创造效应"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制而贴切，“台前退到设备身后”“长出的新差事”服务理解，“肌肉记忆下的手速”离文可复述，无堆砌炫技。",
+      "script_spans": [
+        "人从台前操作退到设备身后，做看护、调参数、读数据",
+        "这都是智能工厂里长出的新差事",
+        "别只拼肌肉记忆下的手速"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立冲突再转折定论，职业清单与调研双证承接，结尾建议回扣岗位缩减的担忧，链条完整。",
+      "script_spans": [
+        "但制造业升级真正带来的不是失业潮，而是工作重心的转移",
+        "趁早摸熟设备运维和基础分析工具，才不容易被甩下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述平衡，承认普工岗位缩减也指出技术岗上升，建议带不易被甩下等限定，无夸大承诺或煽动风险。",
+      "script_spans": [
+        "智能技术同时产生替代和创造效应，一线体力岗减了，技术类岗位需求在稳步爬升",
+        "趁早摸熟设备运维和基础分析工具，才不容易被甩下"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-dd9227e509a5474fb92b1380c2845949",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-bf6cceebf83c4190a612db68969e362d",
+  "run_id": "run-20260902T144936Z-54b837d7e15f",
+  "trace_sha256": "8765562c00a2ec59045ade21db79290ff8832fd5c0ee3788524a573f44cec2b4",
+  "created_at": "2026-09-03T12:28:13.333451Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否照顾怕动物者，并同时处理宠物经营、导盲犬权益与普通消费者的两侧诉求。",
+      "script_spans": [
+        "友好空间得留怕动物者的位置，但视障朋友带导盲犬，商场依法必须放行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "信息覆盖法律例外、商场收紧原因和双向建议，但“遛狗不拴绳可拘留”省略适用条件，事实严谨性不足。",
+      "script_spans": [
+        "地方法规本就禁犬进公共场，只给导盲犬开例外。",
+        "新治安法明年元旦起，遛狗不拴绳可拘留，把意外风险往下压。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用反差和追问抓人，中段持续补充法规、商场取舍与行动建议，结尾互动也由主题自然生长。",
+      "script_spans": [
+        "挂着宠物友好的商场，反而让怕动物的人最心慌。",
+        "这取舍不完美，但把怕的人放进考量了。",
+        "下次看见商场门口的牌子，你会先读一遍吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数句子短促，问答承接自然；但“养宠物的他”“这空间该谁让步”两处需要改写。",
+      "script_spans": [
+        "你看，上海好几家大商场今年悄悄撤了宠物友好牌。为啥？",
+        "养宠物的他",
+        "这空间该谁让步"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“信任门票”和“白纸黑字的规则”简洁好记，修辞服务于责任与共处，没有连续堆砌或喧宾夺主。",
+      "script_spans": [
+        "牵绳戴套本是基本功，现在成了信任门票。",
+        "白纸黑字的规则，比暖心标语更让人踏实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头立场、案例、建议和结尾基本成链，但治安法转入养宠社交略跳，分区时段的追问也没有落到明确方案。",
+      "script_spans": [
+        "出门前，手机搜下商场最新公告再动身。",
+        "真有严重犬恐惧的，靠分区时段才管用？这空间该谁让步。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导兼顾双方且不煽动，但“商场依法必须放行”和“遛狗不拴绳可拘留”缺少适用条件，易造成法律误读。",
+      "script_spans": [
+        "不是说宠物友好错，是两边都得活。",
+        "商场依法必须放行",
+        "遛狗不拴绳可拘留"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1477ee12e3b54a639758758b914e725d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

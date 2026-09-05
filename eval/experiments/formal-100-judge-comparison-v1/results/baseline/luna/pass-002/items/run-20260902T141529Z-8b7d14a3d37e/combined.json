@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-6823ad36c53d43e8aeeb00d7580606c9",
+  "run_id": "run-20260902T141529Z-8b7d14a3d37e",
+  "trace_sha256": "bf4f88e29b9e75a9f6af2c1b2bfd8bc2c2d72ed945fe674765468950a5545716",
+  "created_at": "2026-09-03T12:15:50.196705Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应长期占座与公平维护，覆盖文化部门、图书馆和普通读者；但责任落点仍较原则化。",
+      "script_spans": [
+        "这公平得靠文化部门定规矩，也靠图书馆日常劝。",
+        "那对普通读者意味什么？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "围绕公平展开，提供法律分工、执行困境和读者处境等信息；但治理结论停在劝导体谅，缺少可执行抓手。",
+      "script_spans": [
+        "公共图书馆法写明了，县级以上文化部门统管本地馆。",
+        "有人干脆坐地上，也有人默默站旁边。",
+        "或许答案不在某方狠管，而在馆方可以劝、读者愿让，让座位慢慢流转起来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“书包赶不走”制造具体冲突，中段补出权责困局，结尾由公平自然落到“空座被冻住”的余味。",
+      "script_spans": [
+        "占座的书包赶不走，馆员恐怕没处罚权。",
+        "馆方想严管缺依据，读者想投诉也难找抓手。",
+        "要是谁都不退，空座也像被冻住了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读通，停顿也有层次，但长句和“书本占整天”等表达会打断语速。",
+      "script_spans": [
+        "馆员只能过去劝，没法罚钱，也难动手清走。",
+        "大伙以为馆员能直接赶人，可法里没细说座位怎么分，也没提占座算违规。",
+        "真碰上有人书本占整天，馆员弯下腰说两句，对方瞥一眼不动，就僵住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“空着的椅子反而成了摆设”“规则写着公平，落下来却靠彼此体谅”形象、克制，观点也便于复述。",
+      "script_spans": [
+        "空着的椅子反而成了摆设。",
+        "规则写着公平，落下来却靠彼此体谅。",
+        "要是谁都不退，空座也像被冻住了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "法律分工、现场困境到读者影响的顺序清楚，转折基本可跟；但非执法机构不能直接推出难以清场，结尾方案也缺因果支撑。",
+      "script_spans": [
+        "真碰上有人书本占整天，馆员弯下腰说两句，对方瞥一眼不动，就僵住。",
+        "因为图书馆是服务地方，不是执法机构。",
+        "或许答案不在某方狠管，而在馆方可以劝、读者愿让，让座位慢慢流转起来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动，结尾用“或许”留有余地；但把馆员权限说成“没法罚钱、难动手清走”，法律边界不足，易被听成确定结论。",
+      "script_spans": [
+        "或许答案不在某方狠管",
+        "馆员只能过去劝，没法罚钱，也难动手清走。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-41233cd1fee8493cad146c85c42388cb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-eec3331423744b13859c8aabb0b88612",
+  "run_id": "run-20260903T051519Z-4198a42385a9",
+  "trace_sha256": "a1e02df47f1f2b57468f027a4c81454cc4c8880c4bfa2f5a7d8b96c9005188ce",
+  "created_at": "2026-09-03T14:08:17.355574Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问、中段双面论证、结尾建议均紧扣“是否更安全”，兼顾普通人的风险与对策。",
+      "script_spans": [
+        "无密码登录确实堵住了密码泄露和钓鱼冒充的大漏洞，但风险被推到了设备本身和登录之后的环节"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 417，目标为 450，偏差率为 7.33%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，机制、取舍、残余风险逐层推进，无编造，观众可带走具体判断与做法。",
+      "script_spans": [
+        "证明身份的私钥始终锁在你的手机或电脑中，远程只认公钥，钓鱼网站根本骗不走它"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字反问直击认知反差；中段以“但取舍摆在这里”“更隐蔽的是”层层兑现钩子；结尾余味由正文自然生长。",
+      "script_spans": [
+        "你以为换了无密码登录，黑客就彻底没辙了？",
+        "更隐蔽的是，即便登录瞬间固若金汤，登录后的会话凭证若遭窃取，攻击依然可能发生。",
+        "护好那块屏幕，它才真正替你守住房门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏与收尾比喻见功力，但'若遭窃取''并非凭空而生'等书面句需临时换词，拗口超两处，定2分。",
+      "script_spans": [
+        "库一被拖走就集体暴露，重复撞库更是灾难。",
+        "无密码不是把门拆了，而是把钥匙焊在了你日常用的设备里。",
+        "跨设备同步的密钥同样能达到正规的安全级别",
+        "登录后的会话凭证若遭窃取，攻击依然可能发生。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "战场转移、钥匙焊进设备等比喻均服务理解，“把钥匙焊在了你日常用的设备里”离开上下文仍可复述，克制不炫技。",
+      "script_spans": [
+        "账户安全的战场只是转移了，不是终结",
+        "无密码不是把门拆了，而是把钥匙焊在了你日常用的设备里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线与结尾回扣成立，但“达到安全级别”推出“已是主流选择”属结论扩大，经不起追问。",
+      "script_spans": [
+        "无密码不是把门拆了，而是把钥匙焊在了你日常用的设备里",
+        "官方指南也确认，跨设备同步的密钥同样能达到正规的安全级别，这说明它已是主流选择"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "判断留有余地，“确实…但”结构清晰；恢复风险用“往往”限定，建议务实不夸大，无违规或误导表述。",
+      "script_spans": [
+        "无密码登录确实堵住了密码泄露和钓鱼冒充的大漏洞，但风险被推到了设备本身和登录之后的环节",
+        "一旦所有个人设备尽失，找回账户往往还是绕回邮箱验证的老路",
+        "管好主设备的锁屏、生物识别和绑定的云端账号，比死记硬背复杂密码更紧要"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4c9fb68442f246c98c8ae42d50164530",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-461beec3b9bc47189f836aeb4bfa2189",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-8413dcb60f244fc184220f3adcf1ad2d",
+  "run_id": "run-20260902T144242Z-d148f9940b35",
+  "trace_sha256": "f5d2934a02dcb13a5ca9400ab252cf7f6d93db0d87b65f2ebca4d8e86a76445a",
+  "created_at": "2026-09-03T12:16:22.840248Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答不会用手机的患者如何取报告，兼顾电子、纸质与人工渠道，并覆盖老人独自就诊和家属协助场景。",
+      "script_spans": [
+        "他们能去人工窗口拿打印，或刷身份证查结果，两条路都合规。",
+        "那独自去的老人咋办？直接找导诊说清情况，报上姓名，报告立刻就能印"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕老人取报告这一核心困境，依次给出障碍解释、政策依据、操作路径和电话确认建议，信息集中且有实际增量。",
+      "script_spans": [
+        "医院推电子本意提速，省了打印钱，可老人记不住账号，戳不准触屏，像看天书。",
+        "各院执行有粗有细，去前打总机问一句更稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“反能取纸质”制造反差，中段接连给出合规路径和办理动作，结尾由便民原则自然收束。",
+      "script_spans": [
+        "不会用手机的人反能取纸质",
+        "直接找导诊说清情况，报上姓名，报告立刻就能印"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体信息清楚、对话感尚可，但多处压缩搭配不自然，部分句子像口号或说明，朗读需临时补词。",
+      "script_spans": [
+        "窗口排着队，护士说报告全上网，大爷没手机咋看？",
+        "不会用手机的人反能取纸质",
+        "他们能去人工窗口拿打印"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“像看天书”形象准确，“推行电子是趋势，留纸质是底线”简洁有力，既帮助理解又便于复述。",
+      "script_spans": [
+        "像看天书",
+        "推行电子是趋势，留纸质是底线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "问题、政策、操作和结论层次清楚；但“纸质出口不能关”推导偏绝对，“各院执行有粗有细”也略显拗口。",
+      "script_spans": [
+        "那独自去的老人咋办？直接找导诊说清情况，报上姓名，报告立刻就能印",
+        "另外，家属拿自己手机绑老人就诊卡，查完顺手打印也行。",
+        "医院上电子报告，纸质出口不能关，这是硬要求。",
+        "各院执行有粗有细，去前打总机问一句更稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体旨在保障老年人就医便利，但把并行服务政策绝对化为医院必须提供纸质报告，且“立刻”表述过满。",
+      "script_spans": [
+        "各院执行有粗有细，去前打总机问一句更稳。",
+        "纸质出口不能关，这是硬要求。",
+        "报上姓名，报告立刻就能印"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0c0baa9c10714fa4bd44aa797a3ddece",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

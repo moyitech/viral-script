@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-79e09f197a0f4cce81db1015ed14857a",
+  "run_id": "run-20260902T144125Z-823efee9c4e0",
+  "trace_sha256": "3ba99e7b5c4c1b7cada6ea7125468dde147c1ab4fcb279a5a897d8a107e6eb61",
+  "created_at": "2026-09-03T13:48:58.790822Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点出便捷与误诊两端，规则与个人场景都服务题设，结尾落到普通人自查，覆盖完整。",
+      "script_spans": [
+        "互联网问诊一键开药，方便是真，误诊风险也是真。一边省了出门，一边丢了当面查体，这得两头看。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 473，目标为 450，偏差率为 5.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从续方定位、监管红线到误诊情形层层推进，无同义重复，监管细则与医生观点均有据可依。",
+      "script_spans": [
+        "规则早划线：只接复诊，严禁先药后方。患者得先交明确诊断病历，医师判断合规才能开",
+        "要是突然头晕手麻，你当普通不适在线开药，远端医生瞧不见你神情，可能漏掉急症信号。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即立方便与误诊的反差钩子，中段从监管规则推进到个人场景层层兑现，结尾自问由正文自然长出。",
+      "script_spans": [
+        "你点一下手机就拿到药，可这药可能治错病",
+        "要是突然头晕手麻，你当普通不适在线开药，远端医生瞧不见你神情，可能漏掉急症信号",
+        "所以点药前，先问自己：这毛病以前确诊过吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口清晰、对话感强，但“说成老病延”与“面诊缺失”等两处需临时改词重断，定2分。",
+      "script_spans": [
+        "屏那头没摸脉没听肺，文字代替不了望闻问切，这是硬伤。",
+        "把新病说成老病延",
+        "便捷能解慢病复诊的远水，却解不了首诊的面诊缺失。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞点到为止且服务理解，屏那头没摸脉没听肺与别给模糊症状一键下单都可脱离上下文复述，无堆砌炫技。",
+      "script_spans": [
+        "屏那头没摸脉没听肺，文字代替不了望闻问切，这是硬伤",
+        "一边省了出门，一边丢了当面查体",
+        "医生凭你打字猜症，方子就歪"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段落功能分明，凭打字猜症则方子歪的因果直接，结尾回扣开头的一键下单，闭环自然。",
+      "script_spans": [
+        "医生凭你打字猜症，方子就歪。",
+        "所以点药前，先问自己：这毛病以前确诊过吗？别给模糊症状一键下单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "立场公允不煽动，风险提示有监管与医生观点支撑，结尾建议边界清楚，无夸大与误导承诺。",
+      "script_spans": [
+        "一边省了出门，一边丢了当面查体，这得两头看。",
+        "规则早划线：只接复诊，严禁先药后方。",
+        "所以点药前，先问自己：这毛病以前确诊过吗？别给模糊症状一键下单。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-915ec0050b4d4f279e67334891b901ae",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-da15c19621e342d49bc493208bbfd4bb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

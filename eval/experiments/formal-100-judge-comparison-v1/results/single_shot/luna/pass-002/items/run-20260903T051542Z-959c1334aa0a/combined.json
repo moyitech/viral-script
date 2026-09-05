@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-cfa7962da5204030af3e04235a8e7654",
+  "run_id": "run-20260903T051542Z-959c1334aa0a",
+  "trace_sha256": "6d94f9ab1f7a3758fc26e38d0711456e502b754324f00ff5a22271551d72e028",
+  "created_at": "2026-09-03T12:32:45.409546Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "始终围绕普通家庭的体感落差，分别解释CPI、收入分布和住房支出，完整回应了为何物价温和却仍觉得钱紧。",
+      "script_spans": [
+        "这不是你一个人的错觉，而是指标和体感在算两本完全不同的账。",
+        "所以别只盯着那个温和的百分比，翻开你账本里删不掉的那几行，才是你个人的真实物价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，给出指数篮子、收入分布和住房现金流三组解释；但统计推断越过数据边界，部分结论缺少精确支撑。",
+      "script_spans": [
+        "居民消费价格指数像个统一配好的菜篮子，把吃喝穿戴服务全掺在一起算平均。",
+        "理清哪是需要刚性出的、哪是能缓一缓的，比争论指数准不准更让自己踏实。",
+        "也就是说，一半左右的家庭进账更谨慎。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段有指标、收入和房贷的递进，结尾也能收束；但前20字先铺官方口径，核心冲突来得偏晚。",
+      "script_spans": [
+        "这不是你一个人的错觉，而是指标和体感在算两本完全不同的账。",
+        "官方口径里物价只是温和往上挪了挪，新闻里也常说通胀不高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答感和比喻，读起来基本顺，但“钱进口的袋”“物价刺感”等搭配明显卡嘴，需改词。",
+      "script_spans": [
+        "那既然收入数字也在往上走，为什么还是兜不住底？",
+        "钱进口的袋，先去填房贷、老人、娃的刚需",
+        "会让人暂时忘了物价刺感"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“两本完全不同的账”和“自己的算盘声”都能独立复述，且服务于指标与体感的落差，修辞克制有效。",
+      "script_spans": [
+        "指标和体感在算两本完全不同的账。",
+        "宏观和微观之间，留着你自己的算盘声。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整、主线清楚，但把中位数增速直接推成半数家庭更谨慎，且房贷、租金与CPI关系混杂，关键因果未讲透。",
+      "script_spans": [
+        "那既然收入数字也在往上走，为什么还是兜不住底？",
+        "还有一笔更隐蔽的账，藏在价格指数门外。",
+        "也就是说，一半左右的家庭进账更谨慎。",
+        "房子买卖本身不计入CPI，可每月的月供或租金，却是很多家庭最大的现金出口。它不影响大数，却决定你敢不敢买杯奶茶。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "生活建议克制；但把中位数增速低于平均数推成一半家庭更谨慎，统计含义被过度延伸，易误导。",
+      "script_spans": [
+        "理清哪是需要刚性出的、哪是能缓一缓的",
+        "也就是说，一半左右的家庭进账更谨慎"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 16.0,
+    "partial_weighted_average": 2.2857142857142856,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-495603ad1a9d4b3496dc252372436370",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

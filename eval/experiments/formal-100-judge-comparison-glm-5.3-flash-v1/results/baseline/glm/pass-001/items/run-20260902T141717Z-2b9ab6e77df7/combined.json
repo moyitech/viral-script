@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-291779d85292484eba67dd104e0a6a9a",
+  "run_id": "run-20260902T141717Z-2b9ab6e77df7",
+  "trace_sha256": "378c588f0e7ea8449863ad979a66be9c0566f2a60f5b4a637598912ee99e9925",
+  "created_at": "2026-09-03T13:45:40.169577Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即命中老客比新号贵十块的现象，机制解释与合规视角两侧都答到，切角贴近高频打车人群。",
+      "script_spans": [
+        "发现老账号比朋友新号贵十块",
+        "常按算法给你的依赖度收费，常客反被标高价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 271，目标为 280，偏差率为 3.21%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移，依赖度定价、合规边界与比价对策层层推进，观众能带走判断和实用方法。",
+      "script_spans": [
+        "它默默记下来，算准你图方便肯掏钱，价就悄悄往上抬",
+        "运价本是市场调节，平台在合规内有空间做差异定价",
+        "下单前不妨退出用另个手机号比一比价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字直抛老号比新号贵十块的反差，中段机制、案例、比价技巧层层兑现，结尾之问自然生长。",
+      "script_spans": [
+        "发现老账号比朋友新号贵十块",
+        "当系统比你自己更清楚腰包深浅，老用户的实惠去哪了？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句承接自然，“说白了”“冤大头”等口语贯穿全篇，节奏有起伏，可照读成稿。",
+      "script_spans": [
+        "算准你图方便肯掏钱，价就悄悄往上抬",
+        "你叫得越勤，它越敢标高价，老客变冤大头"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "拟人贴切服务理解，修辞克制不堆叠，“系统比你更清楚腰包深浅”“老客变冤大头”离文可复述。",
+      "script_spans": [
+        "它默默记下来，算准你图方便肯掏钱，价就悄悄往上抬",
+        "老客变冤大头",
+        "当系统比你自己更清楚腰包深浅"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "场景引入、机制拆解、合规说明与对策环环相扣，结尾一问自然回扣开头差价悬念。",
+      "script_spans": [
+        "新人没数据，平台常给低价拉客，你老客反成高价目标",
+        "当系统比你自己更清楚腰包深浅，老用户的实惠去哪了？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有\"市场调节、不算乱来\"等边界表述，建议也有限定；但\"越敢标高价、老客变冤大头\"属标签化煽动归因，宜软化措辞。",
+      "script_spans": [
+        "运价本是市场调节，平台在合规内有空间做差异定价，不算乱来。",
+        "有时能省一顿早饭钱",
+        "你叫得越勤，它越敢标高价，老客变冤大头。",
+        "算准你图方便肯掏钱，价就悄悄往上抬。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2ca80a54f63a4e8e8597b730710d2418",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-723db882fa9847d696f8e18c129a16ca",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

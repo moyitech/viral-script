@@ -1,0 +1,143 @@
+{
+  "evaluation_id": "combined-3bbf481aeddd443180465f26e726dc54",
+  "run_id": "run-20260902T144521Z-e06bffa73c9c",
+  "trace_sha256": "746d0d0db34fcf62e302eca28b88d2d1ef1814332e6d889bdc552d39a9708c30",
+  "created_at": "2026-09-03T12:16:01.698569Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答资源分配，既讲急症优先，也给非急症转诊路径，面向普通患者落地。",
+      "script_spans": [
+        "先判轻重，急的先救，不急的劝去别处。",
+        "平常感冒拉伤，去社区诊所反而省心省钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，依次交代分诊、绿色通道、费用激励和社区转诊，信息单元有推进。",
+      "script_spans": [
+        "进门先预检分诊，护士看症状定紧急级别。",
+        "最急的走绿色通道推去抢救，慢的领号坐边上看。",
+        "有些地方动收费，非紧急自己付更多，再配退款机制，转去诊所也不亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出救命床冲突，中段不断补充分诊与收费机制，结尾追问也由风险自然生长。",
+      "script_spans": [
+        "你发烧去急诊，可能抢走心梗老人救命床。",
+        "医院咋拦人？进门先预检分诊，护士看症状定紧急级别。",
+        "下次小病又想奔急诊，先问：这床该不该留给身后救护车的人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和反问增强了对话感，但多处搭配压缩生硬，朗读时需要临时换词，整体只能算顺畅可读。",
+      "script_spans": [
+        "资源该这么分：先判轻重，急的先救，不急的劝去别处",
+        "这对咱们日常有啥影响？",
+        "问两句血压呼吸",
+        "身后救护车的人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“抢走救命床”“把好钢用在刀刃”“给自家留后路”形象易记，修辞服务观点，没有堆砌感。",
+      "script_spans": [
+        "可能抢走心梗老人救命床",
+        "分诊不是拒人，是把好钢用在刀刃。",
+        "把急诊让给真急的，等于给自家留后路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线由拥挤原因转到分诊、收费和日常选择，整体可跟；但轻症定义绝对化，且由人数下降跳到床全留的结论过满。",
+      "script_spans": [
+        "医院咋拦人？进门先预检分诊，护士看症状定紧急级别。",
+        "若真碰上危急，分诊后医生来得快，比瞎排队强。",
+        "不凶的病指啥？头疼脑热不喘不晕的。",
+        "结果那类人少两成，床全留危急的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "说明了预检分诊和社区就诊的基本思路，但将发烧、头疼等笼统归为非急症，并称“床全留危急的”，可能误导就医判断。",
+      "script_spans": [
+        "分诊不是拒人，是把好钢用在刀刃。",
+        "不凶的病指啥？头疼脑热不喘不晕的。",
+        "结果那类人少两成，床全留危急的。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1fed214c84b140258459e92a6b10a6e1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

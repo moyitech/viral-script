@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-030bc2071a6344bf8ebffd53806a0e5b",
+  "run_id": "run-20260903T051638Z-cc0ecb16b0c4",
+  "trace_sha256": "de2d2bb0d7ce6fe1f1520025bcdc0ab618dc4e386cd04ec3101823646807ce23",
+  "created_at": "2026-09-03T15:27:07.743272Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直陈二元之问，正文两侧兼顾并落到普通求职者，全程正面回应题设。",
+      "script_spans": [
+        "是真讲究效率，还是变相压价？我的判断很直接：缩短招聘流程，主因是空岗成本太高",
+        "对普通人来说，极速流程既是机会也是陷阱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "成因、机制、代价、建议层层推进，空岗成本与议价流失各有论据，无同义空转。",
+      "script_spans": [
+        "每个空缺岗位摆着，项目放缓、团队超载，企业天天在流钱",
+        "流程省下的每一天，可能就是谈判桌前失去的那几小时"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以一轮面试甩offer的反差直接立住悬念，中段判断与转折层层兑现，结尾落点自然带余味。",
+      "script_spans": [
+        "现在有些公司面试才一轮就甩来offer，快得叫人心里打鼓",
+        "流程省下的每一天，可能就是谈判桌前失去的那几小时",
+        "签字前多问一句，效率红利才真正轮得到你"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有节奏、能读通，但“预设区间闪电锁定”“对价博弈”等处拗口，朗读需临时换词重断。",
+      "script_spans": [
+        "流程省下的每一天，可能就是谈判桌前失去的那几小时。",
+        "薪资常按预设区间闪电锁定",
+        "候选人少了对价博弈的空间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻服务论点不抢戏，快船自带船票、每天换几小时都贴切好记，快不等于公平可独立复述。",
+      "script_spans": [
+        "你没必要拒了快船，但得自带船票",
+        "别把光速offer当恩赐",
+        "效率归企业，议价权悄然易主"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "问、答、转折、建议环环相扣，省下每一天与失去几小时构成因果桥，结尾回扣开篇。",
+      "script_spans": [
+        "但取舍明显：决策聚到少数人手里，薪资常按预设区间闪电锁定",
+        "签字前多问一句，效率红利才真正轮得到你"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点明示为个人判断且兼顾企业与求职者双侧，建议落到可执行动作并附核实提醒，无煽动夸大或绝对承诺。",
+      "script_spans": [
+        "我的判断很直接：缩短招聘流程，主因是空岗成本太高，不是成心克扣工资",
+        "企业求快是生存所迫，你没必要拒了快船，但得自带船票",
+        "主动问清薪资结构、考核标准与成长路径。流程越快，越要慢一步核实背景"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e622d573b4ad4cdd811228fb13ac2f78",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

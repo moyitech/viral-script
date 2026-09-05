@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-03b9f1b6ae1e44c1998402e73be17edf",
+  "run_id": "run-20260903T051623Z-ecb57f958726",
+  "trace_sha256": "0ee6e4ec31c8ad6f8afed448886cfc8ffcb1c9b7eeff6243e756dfa2f0b6d118",
+  "created_at": "2026-09-03T15:26:54.003920Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即锁定默认设置隐患，明答厂商该担责，再以用户义务补全另一侧，痛点契合普通家庭。",
+      "script_spans": [
+        "默认设置引发的大规模入侵，厂商必须背起主要担子。",
+        "但把所有板子都打在厂商身上，真的公平吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从预埋口令机制、法律过错区分到行业规范走向层层推进，结尾给出可操作清单，无重复注水。",
+      "script_spans": [
+        "很多厂家为了安装便捷和售后调试，在产品里预埋了统一口令，还把控制端口直接暴露在公网。",
+        "你拿到智能设备，先进后台关掉远程访问权限，设独立强密码"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字反问即点破反差，中段以机制揭秘与责任反转持续兑现钩子，结尾余味由正文自然生长。",
+      "script_spans": [
+        "你以为智能摄像头装好就安心了？",
+        "黑客用扫描工具就能轻松闯进你家客厅，盯着孩子睡觉",
+        "但把所有板子都打在厂商身上，真的公平吗？",
+        "你先把自己那扇没锁的门关上，比投诉更管用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数段落短句顺口，但“以已告知改密来抗辩”等书面表达需临时换词重说，只能评2。",
+      "script_spans": [
+        "黑客用扫描工具就能轻松闯进你家客厅，盯着孩子睡觉",
+        "这种方便厂家的设计，等于把家门钥匙藏在脚垫下",
+        "厂商常以已告知改密来抗辩，但出厂即留后门显然违背合理期待"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "钥匙藏脚垫下、先关没锁的门等比喻贴切克制，服务理解与情绪，记忆点离开原文仍可复述。",
+      "script_spans": [
+        "这种方便厂家的设计，等于把家门钥匙藏在脚垫下。",
+        "行业重心正从“能不能连上”转向“能不能安全可靠地用”",
+        "记住，厂商该负责，但别干等它负责"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问转折承上启下，法律结论有前文因果铺垫，结尾门锁意象回扣开头与题设，段段功能清晰。",
+      "script_spans": [
+        "但把所有板子都打在厂商身上，真的公平吗？",
+        "记住，厂商该负责，但别干等它负责——你先把自己那扇没锁的门关上，比投诉更管用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "立场均先标注再展开，法律结论以“得看具体过错”留余地，厂商与用户责任双向限定，无煽动夸大，防护建议安全可行。",
+      "script_spans": [
+        "现实里，不少设备出厂带着通用弱密码，甚至默认开启远程访问",
+        "得说清楚，一部分入侵确实因为买回家的人从没改过密码",
+        "法律上厂商是否全赔，得看具体过错"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-eadfebf1ffde44aebfdd60ba07b06f72",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

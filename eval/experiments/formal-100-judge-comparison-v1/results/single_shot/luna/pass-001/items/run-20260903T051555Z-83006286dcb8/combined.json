@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-1c24de88e0e24f438aea10570286ddfa",
+  "run_id": "run-20260903T051555Z-83006286dcb8",
+  "trace_sha256": "a2f09cfae1dfd1b90e8c140b9a7725522a3800514d920d18611b4d3d3fbd4e17",
+  "created_at": "2026-09-03T11:57:18.683823Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答攒金是投资还是追涨，覆盖年轻人与工薪族，并给出清晰分界。",
+      "script_spans": [
+        "年轻人攒金真不算追涨，选定期定额把黄金当长期抗波动的仓位，本质就是保守投资。",
+        "这跟听见暴涨消息冲进去一把梭哈完全两码事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 299，目标为 280，偏差率为 6.79%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，既解释定投如何摊平成本，也补充风险门槛、宏观背景和执行提醒，信息增量充分。",
+      "script_spans": [
+        "系统按每个交易日报价自动分批买入，金价昂头时少攒几克、回落时多攒几克",
+        "先弄清自己的风险等级再开户，每月只扔闲钱进定投"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用反差制造冲突，中段递进解释定投与风险，结尾回到克制提醒，收束自然。",
+      "script_spans": [
+        "年轻人攒金真不算追涨",
+        "涨得再红火也别临时大额追进去"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有对比、有提醒，局部句子像口头表达；但中段连续堆叠流程、条件和术语，气口明显过长。",
+      "script_spans": [
+        "涨得再红火也别临时大额追进去",
+        "你签好定期积存协议，系统按每个交易日报价自动分批买入，金价昂头时少攒几克、回落时多攒几克"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "定投机制被说得直观，“一把梭哈”形成鲜明对照，语言有画面且不过度堆砌。",
+      "script_spans": [
+        "金价昂头时少攒几克、回落时多攒几克",
+        "听见暴涨消息冲进去一把梭哈"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "定投机制与实操提醒衔接清楚，但把定投直接等同保守投资，央行买入也不足以推出个人收益安全，论证有所扩大。",
+      "script_spans": [
+        "金价昂头时少攒几克、回落时多攒几克，不必自己费脑择时",
+        "这跟听见暴涨消息冲进去一把梭哈完全两码事。",
+        "本质就是保守投资。",
+        "全球央行近几年始终保持净买入，给黄金长期需求托了底。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "“每月只扔闲钱”有风险边界，但把黄金直接定性为保守投资，并承诺成本被削平，仍可能误导。",
+      "script_spans": [
+        "每月只扔闲钱进定投，涨得再红火也别临时大额追进去",
+        "年轻人攒金真不算追涨，选定期定额把黄金当长期抗波动的仓位，本质就是保守投资。",
+        "半年一年摊下来成本被削平"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d63dc76b29f2453d9b7b4f86379d4d6b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-056bbfa50a614804ab37202095929876",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

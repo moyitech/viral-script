@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-7d1a7302a4c74e528a619a9a3b02ef1c",
+  "run_id": "run-20260902T142534Z-5b67a37b0318",
+  "trace_sha256": "fba81753e8a50acbc2d0b72457a59c7c9317bbca60b896f6d0de2cd666c984e4",
+  "created_at": "2026-09-03T13:47:28.942293Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直答该不该上报，结尾回扣递路子还是亮底牌，关心与冒犯两侧都落到普通职场观众。",
+      "script_spans": [
+        "看到同事家庭难处，该不该上报。我的答案：平常困境别报，真有伤人危险才依法报。",
+        "关心和冒犯，差在守没守边界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 486，目标为 450，偏差率为 8.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "判断规则、保密援助渠道、法律最小必要依次推进，观众能带走可执行做法，无空话堆砌。",
+      "script_spans": [
+        "个人信息保护法讲最小必要，收集要限于必要范围，家里事不算工作必知。",
+        "不少企业有保密员工援助服务，是企业出钱员工自己找，名字不报主管，可推荐他自用，不张扬。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出好心办坏事的反差；中段以法规边界、保密渠道与取舍反转持续兑现钩子；结尾二选一提问由正文自然长出。",
+      "script_spans": [
+        "帮同事上报家困，反让他被约谈冒犯？",
+        "话说回来，关心不是替他决策",
+        "下次见同事愁，你是先递路子还是先亮底牌？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有对话感，读来顺口；但'工作必知''觉被职场排斥'等压缩表达需临时补字换词，只能封顶2分。",
+      "script_spans": [
+        "咱们平常看见同事恍神，别秒变侦探",
+        "家里事不算工作必知",
+        "同事容易觉被职场排斥"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务观点，“差在守没守边界”“别秒变侦探”“先递路子还是先亮底牌”离开正文仍可复述，无堆砌感。",
+      "script_spans": [
+        "关心和冒犯，差在守没守边界",
+        "咱们平常看见同事恍神，别秒变侦探",
+        "你递个求助资源，他反而愿意开口"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立规则再给替代与法律依据，话说回来转折自然，结尾亮底牌回扣开头之问，段段有功能。",
+      "script_spans": [
+        "先想这事儿归不归公司管。",
+        "话说回来，关心不是替他决策。",
+        "下次见同事愁，你是先递路子还是先亮底牌？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "主动划定伤人危险才上报的例外，法条转述准确克制，无煽动夸大或误导承诺，价值导向安全。",
+      "script_spans": [
+        "平常困境别报，真有伤人危险才依法报",
+        "单位没授权不能收，更不能随便报，除非有自残或伤人这类法定危险"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-dd9e125850f949e9992a4e41da39e967",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f5deb2dc6aa34d5499b0dcc4cb961531",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

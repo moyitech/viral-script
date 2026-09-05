@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-176c2253cb234588abbd1cf958cacd72",
+  "run_id": "run-20260902T144516Z-498d1341355f",
+  "trace_sha256": "1a4f8cd078548103b281650e704f23126ea90620e4cacc8eaa8d0e69356ad4a8",
+  "created_at": "2026-09-03T11:46:25.551580Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应替代加速与企业不敢换的矛盾，覆盖停产风险、政策节奏和企业决策。",
+      "script_spans": [
+        "政策推替代，企业怕停产，两边都是真问题。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 695，目标为 700，偏差率为 0.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕换系统风险持续推进，具体讲清数据与经验迁移、兼容调试、停产损失及渐进替代。",
+      "script_spans": [
+        "老系统不是普通软件，里面压着十几年图纸和工艺参数。",
+        "有的厂老系统保底并行跑，先迁不重要模块，稳妥但两班人马成本翻倍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用替代压力与停线损失制造冲突，中段不断补充风险和解法，结尾追问自然留下余味。",
+      "script_spans": [
+        "国产软件替代快，可换系统怕停线亏百万，企业为啥不敢动？",
+        "政策推替代，企业怕停产，两边都是真问题。",
+        "可翻开之后，工厂真接得住吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感，短句和具体场景好读；但“先试点后年全面适配”“企业挑不忙车间”等处需要重断句或补词。",
+      "script_spans": [
+        "老师傅退了，参数在老系统活着，新系统不认就抓瞎。",
+        "先试点后年全面适配",
+        "企业挑不忙车间",
+        "核心盲目硬换卡住"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“怕换不是保守，是算过账”把顾虑说透；“工业知识不可压缩”也形成清晰、可复述的核心记忆点。",
+      "script_spans": [
+        "工业知识不可压缩，通用智能看不懂工程图。",
+        "所以怕换不是保守，是算过账：产线经得起停才敢动。",
+        "损失不止钱，产线信任一旦破，恢复更难。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按风险来源、政策缓冲、案例反思到结论递进，但“后年全面适配”等表述含混，个别判断跳步。",
+      "script_spans": [
+        "这事儿有两头，不能只说国产好，也得看厂里怕什么。",
+        "文件说先试点后年全面适配，留缓冲给企业。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体呈现替代与风险两面，且承认样本有限；但“百分百替完”和“模型连二维三维都分不清”等表述过于绝对，易误导。",
+      "script_spans": [
+        "不能只说国产好，也得看厂里怕什么。",
+        "智能模型连二维三维都分不清，怎敢托付核心工艺。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-dc5540635de1448dace868e0c8f0e3e1",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f2fc4608e1f541bf827639deb8ef929e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

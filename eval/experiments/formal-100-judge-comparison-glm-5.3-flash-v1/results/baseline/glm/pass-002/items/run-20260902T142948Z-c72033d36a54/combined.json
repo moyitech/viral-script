@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-3571c45d6e0a4441ad3d321ee4a1b264",
+  "run_id": "run-20260902T142948Z-c72033d36a54",
+  "trace_sha256": "ac711242eb5bee71c0e64f82a56fbbd885476d95478a5262dd4c7b5f58f0827a",
+  "created_at": "2026-09-03T14:25:10.543410Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即入题，正面回答'交得起吗'，减负路径与零工人群痛点精准对位。",
+      "script_spans": [
+        "收入不稳的人交得起吗？能交，但得用新政策减负，硬交立马断粮。",
+        "月入三千的零工，刨去房租吃饭，要硬拿八百交社保"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "半基数、补贴扩围、缴费周期各成信息单元并推进论证，与引用背景相符，无编造。",
+      "script_spans": [
+        "多地允许低收入者，按一半基数交养老保险。待遇不打折，每月能省下将近两成钱",
+        "补贴也扩到新业态，像骑手快递这类，最高能补八成费用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字摆出三千收入硬交八百的具体冲突，中段减负、补贴等新信息持续兑现，结尾叮嘱由正文自然长出。",
+      "script_spans": [
+        "月入三千的零工，刨去房租吃饭，要硬拿八百交社保，今天活下去和明天养老直接打架",
+        "多地允许低收入者，按一半基数交养老保险。待遇不打折，每月能省下将近两成钱，紧日子能喘口气",
+        "交不起时先别硬撑，看清当地门槛再保年限，老来的底才能留牢"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，停顿重音清楚，紧日子能喘口气、少跑腿等表达自然，朗读无需临时改词。",
+      "script_spans": [
+        "今天活下去和明天养老直接打架",
+        "紧日子能喘口气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“活下去和养老直接打架”形象准确，“紧日子能喘口气”贴身可感，“老来的底留牢”可独立复述，无堆砌。",
+      "script_spans": [
+        "今天活下去和明天养老直接打架",
+        "硬交立马断粮",
+        "老来的底才能留牢"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "困境、机制、解法层层递进，结尾回扣开头'活下去与养老'冲突，逻辑闭合自然。",
+      "script_spans": [
+        "今天活下去和明天养老直接打架",
+        "所以交不起时先别硬撑，看清当地门槛再保年限，老来的底才能留牢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "用“多地”“最高”“将近”限定政策与数字，结尾提醒看清当地门槛，与资料口径一致，无夸大承诺或煽动，边界清楚。",
+      "script_spans": [
+        "多地允许低收入者，按一半基数交养老保险。待遇不打折，每月能省下将近两成钱",
+        "补贴也扩到新业态，像骑手快递这类，最高能补八成费用",
+        "交不起时先别硬撑，看清当地门槛再保年限"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4e165dca29a24cd2ad03b1cba992fd94",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

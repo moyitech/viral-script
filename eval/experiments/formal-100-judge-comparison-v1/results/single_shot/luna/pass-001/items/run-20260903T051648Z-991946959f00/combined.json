@@ -1,0 +1,165 @@
+{
+  "evaluation_id": "combined-39de23ebc1fd4be6b2cb742162f01d79",
+  "run_id": "run-20260903T051648Z-991946959f00",
+  "trace_sha256": "4151cedb1e92504081d3fe629004fd0e5d1612ca9456bdf1503d5953683ec14a",
+  "created_at": "2026-09-03T11:57:25.693192Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解各自管理何时体现独立、何时变成隔阂，并落到大事协商，完整回应题设。",
+      "script_spans": [
+        "婚后收入各自管理，既不是疏远的铁证，也不是尊重的独立勋章",
+        "先问清楚“大事怎么商量”，比争论钱放谁卡里更重要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 799，目标为 700，偏差率为 14.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“独立还是疏远”持续推进，兼有成因、风险、权衡、研究与法律信息，增量充足。",
+      "script_spans": [
+        "选择各自管账，你拿到的是买件外套、发个红包不必打报告的自由",
+        "民法典里真正分别财产制要书面约定"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用夫妻对话制造冲突，中段补充反例、边界和法律信息，结尾落到大事协商，推进自然。",
+      "script_spans": [
+        "老公随口说“你防谁呢”，她回“我防的是丢了自己的底气”",
+        "钱分开了，心就一定会远吗？未必。",
+        "先问清楚“大事怎么商量”，比争论钱放谁卡里更重要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和反问有对话感，能顺读；但中段长句、抽象并列与法律研究表达叠加，气口不够轻。",
+      "script_spans": [
+        "老公随口说“你防谁呢”",
+        "钱分开了，心就一定会远吗？未必。",
+        "一些婚姻满意度长期跟踪发现",
+        "让出的是夫妻间钱混一处自然长出的互助惯性和那种不需言说的依靠"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照不过量，“丢了自己的底气”“不是独立，是隔阂”等句子具体有力，便于复述。",
+      "script_spans": [
+        "它只是一面镜子，照出两个人怎么定义“我们”",
+        "形式骗不了人",
+        "连给长辈治病的大额开销都瞒着对方，那便不是独立，是隔阂。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "设问、拆解、补充研究法律再收束，结构完整；但满意度与财务安排、家务协作之间的因果桥仍偏跳跃。",
+      "script_spans": [
+        "这一切有前提：愿意坐下来谈。",
+        "说明财务安排不是幸福唯一抓手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体讨论克制且有边界，但“那便不是独立，是隔阂”把复杂情境定性过满，易造成误导。",
+      "script_spans": [
+        "既不是疏远的铁证，也不是尊重的独立勋章",
+        "那便不是独立，是隔阂"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 799,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.14142857142857143
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-fb3f7bd3936443f0a7d5887f625ea1b9",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a5a22dac75b14bc8984e49f55a6a3c60",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

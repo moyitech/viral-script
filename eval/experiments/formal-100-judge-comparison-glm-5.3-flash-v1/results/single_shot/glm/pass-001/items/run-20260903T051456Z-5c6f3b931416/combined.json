@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-3da4ed004cf34ba184c08c8b23ede465",
+  "run_id": "run-20260903T051456Z-5c6f3b931416",
+  "trace_sha256": "56f4c08eb02a1eb6106d4a58f9874d29897f7907d23e9527cb7132b77b7c7ea9",
+  "created_at": "2026-09-03T14:19:22.854940Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即双向作答：总支出未必变多、单笔买贵概率升，结尾回扣题设，直击普通消费者怕买贵痛点。",
+      "script_spans": [
+        "普通消费者未必每个月总支出变多，但缺少公开比价锚点后，单笔订单买贵的概率明显抬升",
+        "没最低价承诺不等于更贵，但你的比价动作不能省"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 280，目标为 280，偏差率为 0.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "规则、行为、平台暗招、比价方法环环推进，与“锚点缺失”主线互相支撑，观众能带走判断和操作方法。",
+      "script_spans": [
+        "很多平台虽然嘴上不提最低价，却通过流量管控和后台协议悄悄要求商家维持低价",
+        "直播间实时互动和主播魅力容易唤起冲动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段“悄悄要求低价”的揭秘与行动式结尾能留人；但开场是新闻式陈述加模糊限定，反差偏弱，讲解段推进略平。",
+      "script_spans": [
+        "却通过流量管控和后台协议悄悄要求商家维持低价",
+        "下次在直播间心动，先截屏退出搜同款平常价，给自己三分钟冷静，别让氛围替你做决定",
+        "直播间低价承诺退潮，普通消费者未必每个月总支出变多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "结尾建议顺口有记忆点，但“暗中限定更低价”“唤起冲动”等处叠词拗口偏书面，朗读需临时换词重断句。",
+      "script_spans": [
+        "先截屏退出搜同款平常价，给自己三分钟冷静，别让氛围替你做决定",
+        "禁止强制全网最低价和暗中限定更低价后",
+        "直播间实时互动和主播魅力容易唤起冲动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“别让氛围替你做决定”与结尾对句离开上下文仍可复述，“兜底”“锚点”形象助解，全篇克制无堆砌。",
+      "script_spans": [
+        "过去有低价兜底，现在缺了锚点",
+        "别让氛围替你做决定",
+        "没最低价承诺不等于更贵，但你的比价动作不能省"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "“低价兜底—缺锚点”因果桥清楚，规则与行为双线递进，结尾自然回扣开头设问，结构闭合。",
+      "script_spans": [
+        "过去有低价兜底，现在缺了锚点，观众更难冷静比价",
+        "下次在直播间心动，先截屏退出搜同款平常价，给自己三分钟冷静，别让氛围替你做决定"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "有“未必变多”“不等于更贵”等限定，无绝对化承诺或引战表述，建议安全可行，导向稳妥。",
+      "script_spans": [
+        "普通消费者未必每个月总支出变多",
+        "给自己三分钟冷静，别让氛围替你做决定",
+        "记住，没最低价承诺不等于更贵，但你的比价动作不能省"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-634bf3e1360c4cde925d12f7f498bfd9",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a1b6866ea7d24b69891e608769414f1e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

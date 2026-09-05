@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-c5336e5598254daa90fc6dabf4dab089",
+  "run_id": "run-20260902T144024Z-2ef12c254876",
+  "trace_sha256": "8ad869937ab0d8ef4e1cfa2e5d8f00683b5bcb2d6b1f528879f8c8cdd20cf286",
+  "created_at": "2026-09-03T14:25:42.360609Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直接作答“撬得动今天花钱，难补明天底气”，正反两侧都回应，结尾反问回扣题设，痛点对准普通观众。",
+      "script_spans": [
+        "它撬得动你今天花钱，难补上你明天的底气",
+        "等这波补贴停了，你敢不敢照常进超市买菜？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "乘数、受益人群、资金流向三层论据层层推进，补贴扩围信息具体，并给出防冲动消费的判断方法，增量扎实。",
+      "script_spans": [
+        "政府每贴一块钱，短期能带出三块四的消费",
+        "花得最猛的那拨人，本来账户里就有钱，买不买都打算花",
+        "别为了凑那点补贴，搬回家用不上的电器，反倒压了现金流"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛出敢花与不敢信的反差，中段用三块四数据再加反转兑现钩子，结尾提问由底气主题自然生长，全程留人。",
+      "script_spans": [
+        "补贴加码让你敢花，却未必敢信明天。",
+        "花得最猛的那拨人，本来账户里就有钱，买不买都打算花。",
+        "等这波补贴停了，你敢不敢照常进超市买菜？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，'听着挺猛''那拨人''日子长着呢'等口语贯穿核心展开，节奏与重音清楚，朗读无需临时改词。",
+      "script_spans": [
+        "听着挺猛，可他们发现，花得最猛的那拨人，本来账户里就有钱，买不买都打算花。",
+        "别为了凑那点补贴，搬回家用不上的电器，反倒压了现金流。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "撬动、涌进收银台等表达贴切克制且服务理解，信心靠活儿稳收入涨一句离开原文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "它撬得动你今天花钱，难补上你明天的底气",
+        "信心不是靠补贴养出来的，是靠活儿稳、收入涨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "“听着挺猛，可”转折自然，判断句直接补上因果桥，结尾反问回扣开头“敢花与底气”，段落功能清晰递进。",
+      "script_spans": [
+        "听着挺猛，可他们发现",
+        "信心不是靠补贴养出来的，是靠活儿稳、收入涨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "研究引用带'短期'限定，数据与来源相符；消费提醒有前提，不夸大不煽动，导向安全。",
+      "script_spans": [
+        "政府每贴一块钱，短期能带出三块四的消费",
+        "别为了凑那点补贴，搬回家用不上的电器，反倒压了现金流"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-501b7e5ef3ca4ec9a3f09e5a4e523db4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

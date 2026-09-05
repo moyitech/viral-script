@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-21291b43cd88471db4e24727e9fe2f22",
+  "run_id": "run-20260902T142205Z-a22930c7d55b",
+  "trace_sha256": "211a46ded163fae410c06a0d0e2f8a1b65f2857b030f367de0d7603155c874c3",
+  "created_at": "2026-09-03T11:45:18.632412Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应收益会否被汇率吞噬，兼顾汇率方向、换汇价差与普通人应对，命中题设。",
+      "script_spans": [
+        "答案不单边。可能吞，也可能吐出来。",
+        "所以挑跨境理财，别只盯境外年化。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 438，目标为 450，偏差率为 2.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕汇率损益，既解释升值如何压缩回报，也给出核算点差、控制额度等可执行方法，信息推进充分。",
+      "script_spans": [
+        "同样美元结汇成人民币就变少，利息可能被吃光。",
+        "买之前拿本币终值量一量，先问银行现汇买卖价多少，减掉点差才是真钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“喂了汇率”制造反差，中段持续补充风险与应对，结尾也留下了自然追问。",
+      "script_spans": [
+        "你拿人民币买境外理财的利息，可能喂了汇率。",
+        "先琢磨钱回来那天汇率给不给面子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和转折节奏尚可，但“那个瞬间的人民币行情”“本币终值量一量”均卡嘴，需改词。",
+      "script_spans": [
+        "可能吞，也可能吐出来。",
+        "关键在你买汇和卖汇那个瞬间的人民币行情。",
+        "买之前拿本币终值量一量，先问银行现汇买卖价多少"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“喂了汇率”“给不给面子”把抽象风险说得具体，表达克制，也留下了可复述的记忆点。",
+      "script_spans": [
+        "可能喂了汇率。",
+        "先琢磨钱回来那天汇率给不给面子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有提问、解释、案例和建议的递进；但只展开人民币走强导致收益受损，开头所称“吐出来”没有机制承接，结尾表述也偏跳。",
+      "script_spans": [
+        "买之前拿本币终值量一量，先问银行现汇买卖价多少，减掉点差才是真钱。",
+        "可如果持有期人民币继续走强，同样美元结汇成人民币就变少，利息可能被吃光。",
+        "那点利差，经不起来回换洗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "整体以风险提示为主，明确强调汇率、点差与不保证稳赚，未作收益承诺或煽动投资。",
+      "script_spans": [
+        "答案不单边。可能吞，也可能吐出来。",
+        "市场波动没人保你稳赚。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-652e34bb59c241899e479f86813ba5cb",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-fa2685623cfe4536ae16d7616215edab",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

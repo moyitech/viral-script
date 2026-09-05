@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-04eb0e2eb56d478aa291519a2cbbe13e",
+  "run_id": "run-20260902T141445Z-e44ceddc577e",
+  "trace_sha256": "845d5298e4c43444b5355c2d266b19df335a19ff64bdc9cd0745ab3757c6989b",
+  "created_at": "2026-09-03T14:25:09.034222Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即抛二元问题，正文用定投与追涨对照作答，结尾回扣门槛与规则，年轻人痛点贯穿。",
+      "script_spans": [
+        "银行把攒金门槛抬到C3级，你工资刚够买金却被拦门外，这算投资还是追涨？",
+        "走定期定额慢慢存，是投资；盯着金价疯涨去追，可能成了接盘。",
+        "先问自己：是想慢慢存底仓，还是怕错过行情。答案不同，走的门就不是一道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机制、银行收紧、央行购金、无息属性各成单元层层推进，无编造，结尾给出判断方法。",
+      "script_spans": [
+        "金价高时这笔钱买得少，低时就买得多。时间拉长，你的成本价就被摊平了。",
+        "近几年环球央行连年净购黄金，给长期价值默默托了个底。",
+        "金子本身不付红不生利，它只是资产拼图一块，不是短线暴富工具。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直抛门槛冲突与提问，中段接连转折兑现钩子，结尾自问与金句自然收束留余味。",
+      "script_spans": [
+        "银行把攒金门槛抬到C3级，你工资刚够买金却被拦门外，这算投资还是追涨？",
+        "可银行为啥突然卡这道槛？",
+        "金子不会变，人心容易慌。别等被门槛拦下才看懂规则。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，问句与排比让重音停顿清楚，'匀着买''干瞪眼'接地气，照读即可开录，无需临时改词。",
+      "script_spans": [
+        "可银行为啥突然卡这道槛？因为金价一路走强，上头怕大家昏头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻贴切且服务理解，“把时间拉成朋友”“金子不会变，人心容易慌”离开上下文仍可复述，全程克制不炫技。",
+      "script_spans": [
+        "它把时间拉成朋友，而不是赌单边上涨。",
+        "金子不会变，人心容易慌。",
+        "黄金在组合里是分散风险的防守员"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承接自然，机制铺垫支撑追涨反例，因果桥清楚，结尾回扣开头的门槛。",
+      "script_spans": [
+        "可银行为啥突然卡这道槛？因为金价一路走强，上头怕大家昏头。",
+        "但要是你偏不按定期来，专挑大涨新闻满天飞时主动加金，平摊优势瞬间没了。",
+        "答案不同，走的门就不是一道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "风险提示与成本边界较足，但\"给长期价值默默托了个底\"是未限定的方向性判断，改写加\"或\"类措辞才稳妥。",
+      "script_spans": [
+        "盲目追涨容易被套牢",
+        "不是短线暴富工具",
+        "近几年环球央行连年净购黄金，给长期价值默默托了个底"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8fbbfa33f47043218e21d9c6f3dd1f54",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

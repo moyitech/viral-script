@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-37a89ac7aa9a4e458488f01c161d31a1",
+  "run_id": "run-20260902T142220Z-61ebf4344b43",
+  "trace_sha256": "e3cd917132196fd40399b05b0ae4d226ab75525ac5e09ec5e4e9e49e1f7716ef",
+  "created_at": "2026-09-03T14:26:43.902963Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即给双向答案，涨跌两态与普通人试水场景全覆盖，落点始终扣题。",
+      "script_spans": [
+        "汇率能吞掉你的利息，也能反过来送你汇兑盈利，全看你进场价格和拿多久",
+        "普通人想在额度内试水跨境理财，得把购汇结汇的隐形损耗算进总账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "点差、息差、汇率三笔账层层递进，反例与行情有据可依，能带走可用的判断方法。",
+      "script_spans": [
+        "假如产品年化给得不高，持有几个月，赚的那点息可能刚好填了点差",
+        "你先问自己，预期息差减掉点差还剩多少；再问，如果本币升值三五个点，利润还在不在"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直抛换汇亏损反差，中段以点差、两道坎、反例持续兑现钩子，结尾提问由总账论证自然长出，余味足。",
+      "script_spans": [
+        "换美元买理财，收益常不抵汇率波动损失。",
+        "所以购汇投外币，头一道坎是换汇差价，第二道坎是持有期汇率走向。",
+        "当你盯着年化数字时，有没有想过，那道换汇差价才是你真正的起跑线？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、第二人称贯穿，多数可照读；但“波动说来越快”与“企业做跨境资金也怕敞口”两处需临时换词重断，只能评2分。",
+      "script_spans": [
+        "两个价中间有差额，这就是点差。你一进一出，先被扣掉一层成本。",
+        "汇率弹性这些年明显变大，波动说来越快。",
+        "企业做跨境资金也怕敞口，会用工具对冲，咱们个人手段少得多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "吞掉利息、两道坎等比喻服务理解，利息减点差减汇率剩零与起跑线之说离开正文仍可复述，克制不炫技。",
+      "script_spans": [
+        "汇率能吞掉你的利息，也能反过来送你汇兑盈利",
+        "先算总账：利息减点差减汇率可能剩零",
+        "那道换汇差价才是你真正的起跑线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "两道坎框架清晰、结尾回扣有力，但“波动说来越快”表意含混，该处过渡经不起追问。",
+      "script_spans": [
+        "所以购汇投外币，头一道坎是换汇差价，第二道坎是持有期汇率走向",
+        "汇率弹性这些年明显变大，波动说来越快"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "开篇即声明'不绝对'并举反例，提示年度限额与小比例配置，多用'可能''容易'限定，无诱导或确定性承诺。",
+      "script_spans": [
+        "这事儿不绝对，汇率能吞掉你的利息，也能反过来送你汇兑盈利",
+        "个人购汇有年度限额，小比例配置不影响生活就行"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-154c9c7312e84f1383deaf4c89642b3f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

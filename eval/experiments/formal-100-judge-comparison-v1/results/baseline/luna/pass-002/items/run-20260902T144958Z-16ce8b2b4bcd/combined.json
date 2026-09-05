@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-d05d5d5d0b5c4833b7e3c087225847b8",
+  "run_id": "run-20260902T144958Z-16ce8b2b4bcd",
+  "trace_sha256": "996670ce87547fd34429cd6ceddd3d29322d1ce26e828cb189ebe09e3bb00ca1",
+  "created_at": "2026-09-03T12:16:17.297998Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头明确摆出宠物客与怕动物者的冲突，后文用分流和规范回应双方，结尾也回扣题目。",
+      "script_spans": [
+        "商场想做动物友好，也该给怕动物的人留份安全感，两边都不能丢。",
+        "带狗逛东侧，怕狗走西侧，设计分流比撤牌省心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，案例、法规、消费动机和研究都提供了增量；但多处只报结论，法律与研究未充分解释。",
+      "script_spans": [
+        "前两年宠物经济火，商家把友好牌当引流法宝。",
+        "敏感者走无宠通道，狗主牵绳戴嘴套。",
+        "商场不是训练场，拴绳难避意外。",
+        "恐惧真反应，个别人躲宠物少数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“越开越多”对撞“不敢进门”，中段持续补充冲突、规则与分流方案，结尾追问自然。",
+      "script_spans": [
+        "宠物友好商场越开越多，怕狗的人却不敢进门。",
+        "下次你看见宠物友好标，会问一句：怕动物的人去哪？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句较多、观点易跟，但法律表述和研究段落压缩过猛，朗读时需要重断句或改词。",
+      "script_spans": [
+        "那以后宠物全禁了事？",
+        "盲人导盲犬依法能进公共区，因残疾歧视条例。",
+        "恐惧真反应，个别人躲宠物少数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“商场不是训练场”“通道不是歧视，是选择权”把抽象冲突说具体，记忆点自然且服务观点。",
+      "script_spans": [
+        "商场不是训练场，拴绳难避意外。",
+        "通道不是歧视，是选择权。",
+        "设计分流比撤牌省心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按冲突、规则、方案、回扣推进，主线可跟；但法规段和研究段衔接突兀，个别表述让因果需观众补齐。",
+      "script_spans": [
+        "一边消费，一边安心权，牺牲一方更对立。",
+        "带狗逛东侧，怕狗走西侧，设计分流比撤牌省心。",
+        "盲人导盲犬依法能进公共区，因残疾歧视条例。",
+        "国外研究说恐惧深更排斥管理，但土耳其九百样本不能套。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导分流与互相体谅，风险较低；但导盲犬准入和治安处罚表述未限定适用地区及违法条件，容易造成法律误解。",
+      "script_spans": [
+        "通道不是歧视，是选择权。",
+        "普通养宠人带狗需求明摆着，新治安法要求拴绳，违者可能罚千元以下，重了拘留。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-23709e8ed48e464da79831d3bf2a584a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

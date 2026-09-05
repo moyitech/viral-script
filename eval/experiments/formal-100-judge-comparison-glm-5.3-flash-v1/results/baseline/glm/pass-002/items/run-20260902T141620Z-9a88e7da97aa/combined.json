@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-a06776e6364043c6b84a16cc68948b38",
+  "run_id": "run-20260902T141620Z-9a88e7da97aa",
+  "trace_sha256": "4e50aa9b81ef593bccc6a35b2d08a105ba7fc8781e32e29402dcb0abbd91198e",
+  "created_at": "2026-09-03T14:24:16.921312Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问、结尾回扣二元题，便利与负债两侧均有正面作答，'当试用权别当信用额'直指普通用户痛点。",
+      "script_spans": [
+        "若只买能立马掏腰包的东西，便利就还是便利。",
+        "工具不背锅，用的人得设界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从起源本土化到行为机制再到风险与规模，各信息单元独立推进，关键事实有据可依，无同义注水。",
+      "script_spans": [
+        "国外拿它补消费能力，这边转去降决策门槛。",
+        "学术上有分析，平时看重未来安排的人，违约可能更小"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即立0元便利与多花钱的反差，中段以机制、数据、反转持续推进，结尾之问由正文自然生长。",
+      "script_spans": [
+        "说是0元便利，却常让人多花冤枉钱",
+        "话虽如此，漏洞也长在舒服处",
+        "究竟在试用商品，还是被试出了消费欲？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口与场景讲述是优点，但“是未来某天事”“最好当试用权”等过度压缩省字，朗读需临时补词改口。",
+      "script_spans": [
+        "你逛店看中衫，怕错版不敢买，现在先试后付不用先掏钱，犹豫就下单。",
+        "有人本来只想买支笔，顺手三件衣全先付，收快递才傻眼。",
+        "钱不是手上出，是未来某天事。",
+        "普通人最好当试用权，别当信用额。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻贴切克制，小便利变大包袱助解；结尾之问离开原文仍可复述，工具不背锅一句也易传。",
+      "script_spans": [
+        "小便利变大包袱",
+        "工具不背锅，用的人得设界",
+        "究竟在试用商品，还是被试出了消费欲？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "'试错成本一归零，比较心就冒头'等因果桥清楚，段落功能分明，结尾自然回扣开头与题设。",
+      "script_spans": [
+        "试错成本一归零，比较心就冒头。",
+        "可正因门槛低，才容易不知不觉攒账单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "两面呈现且关键判断均有“或许”“机构估”“商家反馈”等限定，无绝对化承诺，关闭建议克制可行。",
+      "script_spans": [
+        "但别急说它就是诱导负债。边界在这：它核心是解决不敢买，不是让你透支未来。",
+        "机构估二〇二五年，这类缓付贷款近万亿",
+        "你在设置里能关掉，或下单看清是不是先付。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-65cb42928bd34bb5a7eeab98c9c77fcf",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-d2a0d5742dfd43f393a24d581f9a39c1",
+  "run_id": "run-20260902T142142Z-842d63ad498f",
+  "trace_sha256": "8d5d03d2213ce558ed47fc466e70fd9a30b2776b9d7d02ee09ca4e8d5199019f",
+  "created_at": "2026-09-03T11:44:50.038428Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应因材施教与学习差距两面，覆盖学校、AI助教和教师监管，切口贴近普通观众。",
+      "script_spans": [
+        "它既能因材施教，也可能放大学习差距。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 296，目标为 280，偏差率为 5.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "以具体学习场景说明个性化优势，再以算法偏向和教师介入推进风险判断，信息集中且有明确 takeaway。",
+      "script_spans": [
+        "今早系统就推三道类似题让他练熟，一步一步带。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“开小灶还是拉大差距”制造冲突，中段反转推进，结尾从机器落到人的委屈，余味自然。",
+      "script_spans": [
+        "AI助教进课堂，是开小灶还是拉大差距？",
+        "但换个情形，算法若总盯着尖子生，一个劲喂拓展题，后排弱生连练手机会常被挤掉。",
+        "机器分得清错题，却分不清孩子的委屈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句清楚、停顿明白，朗读基本顺；但“连练手机会”和“补句鼓励”两处需临场补词，未达3分。",
+      "script_spans": [
+        "你想想，孩子昨晚卡在一道数学题，急得抓头发。",
+        "连练手机会",
+        "补句鼓励"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“资源偏向一头，另一头慢慢更荒”把差距说具体；“机器分得清错题，却分不清委屈”兼具画面与余味，修辞不过量。",
+      "script_spans": [
+        "好比资源就这么多，偏向一头，另一头慢慢更荒。",
+        "机器分得清错题，却分不清孩子的委屈。",
+        "冷屏给不了那句辛苦了，暖意还得人来给。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，随后先正面举例、再转入风险，最后落到教师把关和情感支持，层层回扣题设。",
+      "script_spans": [
+        "但换个情形，算法若总盯着尖子生，一个劲喂拓展题"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以假设语气讨论公平风险，避免绝对承诺，也没有煽动对立或危险建议。",
+      "script_spans": [
+        "它既能因材施教，也可能放大学习差距。",
+        "别把教学全托付给屏幕。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5e80862854e24c0eafc5d301c885dd94",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-456dc7901dfd489b82dbca79c67f2ef4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

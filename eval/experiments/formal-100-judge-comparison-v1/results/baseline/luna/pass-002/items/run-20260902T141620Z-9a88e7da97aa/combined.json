@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-31b82e3eccd64abbbbc630fd6e4e8949",
+  "run_id": "run-20260902T141620Z-9a88e7da97aa",
+  "trace_sha256": "4e50aa9b81ef593bccc6a35b2d08a105ba7fc8781e32e29402dcb0abbd91198e",
+  "created_at": "2026-09-03T12:15:19.709982Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应便利与负债两面，既解释消费机制，也给普通用户具体防范办法。",
+      "script_spans": [
+        "方便真方便，坑也真坑。",
+        "每次划到支付页，停两秒看是否先付模式。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕便利如何转成过度消费展开，场景、机制、数据、风险与自救建议层层增加信息量。",
+      "script_spans": [
+        "试错成本一归零，比较心就冒头。",
+        "小额累积成山才醒悟晚。",
+        "机构估二〇二五年，这类缓付贷款近万亿，用的人确实广。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“0元便利”对撞“多花冤枉钱”，中段持续补充机制、风险与建议，结尾追问自然回扣主题。",
+      "script_spans": [
+        "平台推先用后付，说是0元便利，却常让人多花冤枉钱。",
+        "这模式真只会挖坑吗？它可没那么单薄。",
+        "当0元成了购物车标配，我们是不是该想：究竟在试用商品，还是被试出了消费欲？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感和画面感，但多处词序、搭配不顺，朗读时需要临时重断句或换词。",
+      "script_spans": [
+        "你正刷购物页，跳出0元下单，点先买后付，货先送上门。",
+        "方便真方便，坑也真坑。",
+        "划着划着少层肉痛",
+        "普通人最好当试用权，别当信用额。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“比较心就冒头”和“被试出了消费欲”形成反差，短句有画面，也能独立复述，未见修辞堆砌。",
+      "script_spans": [
+        "试错成本一归零，比较心就冒头。",
+        "方便真方便，坑也真坑。",
+        "当0元成了购物车标配，我们是不是该想：究竟在试用商品，还是被试出了消费欲？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、机制、风险、建议和结尾回扣完整，但“默认开通”等表述含混，个别因果与边界论断不够严密。",
+      "script_spans": [
+        "话虽如此，漏洞也长在舒服处。",
+        "它核心是解决不敢买，不是让你透支未来。",
+        "它不像信用卡查收入，默认开通你或许没点同意。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提醒理性消费，未见煽动或承诺；但“默认开通你或许没点同意”等说法笼统，易把部分产品机制说成普遍现象，需限定场景。",
+      "script_spans": [
+        "你在设置里能关掉，或下单看清是不是先付。",
+        "它不像信用卡查收入，默认开通你或许没点同意。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4b2ea75c9de7406d9e63dbef56f765f2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

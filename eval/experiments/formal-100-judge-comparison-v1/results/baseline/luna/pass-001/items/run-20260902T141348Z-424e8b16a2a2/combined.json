@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-7d6e97e29b204d43bdcd6a96bd71eb26",
+  "run_id": "run-20260902T141348Z-424e8b16a2a2",
+  "trace_sha256": "d303f63f8feee447b605858f2515b339c7131e1bf6bdfe6b7b5e09d3231758e4",
+  "created_at": "2026-09-03T11:43:57.343810Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从高位接盘疑问切入，解释红利资产与拥挤交易的关系，并给普通投资者可执行的避险建议。",
+      "script_spans": [
+        "稳健变接盘会不会？会，但也看你怎么买。",
+        "你买前多问一句，这资产为啥涨？是人多还是业绩实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 276，目标为 280，偏差率为 1.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦拥挤交易风险，兼顾成因、缓冲因素、识别信号与分散进场方法，信息推进较完整。",
+      "script_spans": [
+        "大家都挤同一条船。像窄桥塞满人，前头一退后面踩踏。",
+        "别在热闹顶点把闲钱全砸，先小笔试水温，分几笔留现金更踏实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“稳健变接盘”的反差抓人，中段连续推进风险，结尾追问也自然收束。",
+      "script_spans": [
+        "红利越买越稳？拥挤反而高危。",
+        "你买前多问一句，这资产为啥涨？是人多还是业绩实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和比喻让信息易听懂，但多处省略过度、抽象压缩，朗读时仍需补停顿。",
+      "script_spans": [
+        "会，但也看你怎么买。",
+        "分几笔留现金更踏实。",
+        "拥挤让稳健变接盘风险变大",
+        "是人多还是业绩实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“窄桥塞满人”让拥挤风险具象化，“是人多还是业绩实”形成可复述的判断句，整体不油。",
+      "script_spans": [
+        "像窄桥塞满人，前头一退后面踩踏。",
+        "是人多还是业绩实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、机制解释和行动建议完整，但把放量直接等同于拥挤，关键判断桥梁不足。",
+      "script_spans": [
+        "所以核心判断：拥挤让稳健变接盘风险变大，但不是必死局。",
+        "看成交是不是突然放巨量，那就是人在挤门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能提示拥挤风险并倡导分散、留现金，但“每年有分红”“放量就是人在挤门”等表述过于确定，可能误导投资判断。",
+      "script_spans": [
+        "拥挤让稳健变接盘风险变大，但不是必死局。",
+        "别在热闹顶点把闲钱全砸，先小笔试水温，分几笔留现金更踏实。",
+        "红利每年有分红托着，业绩实打实。",
+        "看成交是不是突然放巨量，那就是人在挤门。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f933143620634cdeb549bd60d321560a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-23431879f6cb40bc95c84d843924283f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

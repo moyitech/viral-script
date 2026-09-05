@@ -1,0 +1,166 @@
+{
+  "evaluation_id": "combined-b18583db04ff465d9b9499fc3a4a0390",
+  "run_id": "run-20260903T051551Z-9854658bda3d",
+  "trace_sha256": "227521d7ddeb150d965e6eeedf3dd596de06de023cdd92236f56c05fac040aa3",
+  "created_at": "2026-09-03T11:58:24.788351Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设置高层与低层冲突，结尾明确回答不能以多数便利强迫少数，并给出补偿路径。",
+      "script_spans": [
+        "便利多数，从来不是让少数无偿让步的合法借口。",
+        "所以老楼加梯，多数人的便利是买来的，不是表决来的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 808，目标为 700，偏差率为 15.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "以票数边界、损失类型、司法案例和补偿议价逐层推进，信息具体且能形成判断框架。",
+      "script_spans": [
+        "多数决能决定公共事务怎么走，却无权让某一户单独吞下所有损失。",
+        "这说明加装可以推进，但得用钱换理解，不是比谁声音大。",
+        "没有统一赔偿公式，只能邻里反复磨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛出政策与现实冲突，中段不断补充法律、案例和补偿难题，结尾观点鲜明且有余味。",
+      "script_spans": [
+        "可到了单元楼门口，加装电梯还是能吵到动手",
+        "那如果高层铁了心要装，低层除了拦还有别的路吗？",
+        "指望用票数压人，最后大概率两头空"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感、收束利落，但中段规则与案例信息挤在一起，个别表述朗读不够顺。",
+      "script_spans": [
+        "咱们占多数，你少数就该识大体？",
+        "有些地方规定双三分之二参与表决通过就能申请规划许可",
+        "耐力赛也能拖垮整栋楼的愿望"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照都服务于观点，多个句子具备复述性，但没有堆砌辞藻或遮蔽事实分析。",
+      "script_spans": [
+        "批文不是民事侵权的免责金牌",
+        "得用钱换理解，不是比谁声音大",
+        "多数人的便利是买来的，不是表决来的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先以冲突场景提出问题，再解释票数为何不够，接着落到案例、补偿和现实僵局，结尾回扣主旨。",
+      "script_spans": [
+        "为什么不能靠票数硬推？",
+        "这说明加装可以推进，但得用钱换理解，不是比谁声音大。",
+        "所以老楼加梯，多数人的便利是买来的，不是表决来的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体兼顾高低层权益，但“才推得动”等绝对化结论缺少地域和个案边界，易让观众误解法律后果。",
+      "script_spans": [
+        "这说明加装可以推进，但得用钱换理解，不是比谁声音大。",
+        "愿意掏钱补差价，电梯才推得动；"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 808,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.15428571428571428
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8f0c5a77bc60482987365beb773a7d0d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-49fa0fd675924fd8800f90ff8198e2b0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

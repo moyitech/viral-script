@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-768a8acea4294be5b5fca2de55332a67",
+  "run_id": "run-20260903T051603Z-16c255894182",
+  "trace_sha256": "a6e4543fa012aa2e5ac894c28d3a677649d42a063ddf832864dcfabce1dc9e52",
+  "created_at": "2026-09-03T11:57:18.827119Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答效率与真实反馈的关系，既写机器提效，也写人工把关、学生体验和学校规则。",
+      "script_spans": [
+        "效率提升本身不削弱真实反馈，前提是人工把关不掉线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 259，目标为 280，偏差率为 7.50%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕人机分工持续推进，涵盖教师复核、学生修改和制度边界，信息具体且结论有依据。",
+      "script_spans": [
+        "机器先筛掉错别字和格式问题，自己再把省下的精力放在内容逻辑和思维深度上",
+        "目前很多学校对这类工具态度开放，但明确管理规则还没跟上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用效率与真实反馈的反差抓人，中段递进到分工、协同和管理，结尾留下清晰余味。",
+      "script_spans": [
+        "AI批改作文跑得更快，不等于给学生的真实反馈就变虚了。",
+        "技术省掉的是重复劳动，省不掉的那部分，才是写作里真实生长的地方。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和收束有对话感，但中段句子偏长，‘自主改对’等搭配拗口，朗读需要重断句。",
+      "script_spans": [
+        "人工把关不掉线",
+        "不少老师实际是机器先筛掉错别字和格式问题，自己再把省下的精力放在内容逻辑和思维深度上",
+        "学生在智能反馈基础上改作文，往往更愿意动手调整句子，但自主改对的概率不如顺着机器指出的问题改"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“人工把关不掉线”和结尾的对照表达简洁有力，修辞克制，能帮助观众记住核心判断。",
+      "script_spans": [
+        "前提是人工把关不掉线。",
+        "技术省掉的是重复劳动，省不掉的那部分，才是写作里真实生长的地方。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提观点，再用教师分工和学生修改展开，随后补上学校治理与使用边界，结尾自然回扣人工作用。",
+      "script_spans": [
+        "不少老师实际是机器先筛掉错别字和格式问题，自己再把省下的精力放在内容逻辑和思维深度上",
+        "技术省掉的是重复劳动，省不掉的那部分，才是写作里真实生长的地方。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制并强调人工把关，但“才好用”将有限研究结论泛化为普遍判断，补充适用边界更稳妥。",
+      "script_spans": [
+        "前提是人工把关不掉线",
+        "说明人机衔接才好用"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-087e679029ea40bc87250c09eedd91e6",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b334a5803463438ea541104d6797c8f1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,163 @@
+{
+  "evaluation_id": "combined-ee55c9cb92b84000ac84d7194ed498f2",
+  "run_id": "run-20260903T051628Z-43f48ed99a11",
+  "trace_sha256": "7a5625de62bd2f3261efbe6a6f4fc1f67c6836e736a494b769f7deaf3b43d9aa",
+  "created_at": "2026-09-03T14:08:27.001139Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛题设疑问，正文给出“能减负但非人人坐等”的正面回答，受益条件与限制边界两侧均覆盖，紧扣存量房贷人群。",
+      "script_spans": [
+        "已购房家庭确实能减负，但绝不是人人坐等收钱。真正受益的前提，是你的贷款踩中了重定价和加点调整的规则节点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 784，目标为 700，偏差率为 12.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "定价公式、重定价日、批量调整、协商机制、边界与骗局提醒层层推进，信息单元密集且互为支撑，无同义注水。",
+      "script_spans": [
+        "房贷利率是“LPR加上加点”。新贷的人签合同就能用当下低LPR，老贷的人却卡在合同里的重定价日，没到那天，LPR降了也跟你无关"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇20字内抛出认知反差，中段以条件、机制、取舍、边界层层兑现钩子，结尾查询行动与防骗提醒由正文自然长出。",
+      "script_spans": [
+        "你以为房贷利率降了，月供就会自动变少？",
+        "可这是一次性选择，未来若反弹，短周期反而更快吃亏",
+        "打开手机银行，查查合同里的重定价日和加点数，不符合条件就去问协商通道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句对话感是亮点，但中段两处定语堆叠需临时换词重断，按规则最高只能2分。",
+      "script_spans": [
+        "没到那天，LPR降了也跟你无关",
+        "如果当初选固定利率，得先主动申请转成浮动，否则降价雨淋不到你",
+        "那些高加点、且重定价日已过或主动协商成功的人",
+        "多家银行对符合条件的浮动利率存量贷做过一轮批量调整"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "玻璃、雨、门三处比喻服务理解且克制，规则打开门但不是自动门与防骗句均可脱离上下文复述，无炫技堆砌。",
+      "script_spans": [
+        "可老贷款人的实惠却像隔着一层玻璃",
+        "规则打开门，但不是自动门",
+        "主动一次可能比被动等一年省心"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "按现象、判断、因果、取舍、边界、行动递进，过渡句自然，关键因果有桥梁，结尾回扣开头与题设并落到可操作建议。",
+      "script_spans": [
+        "所以别光看新闻标题激动。打开手机银行，查查合同里的重定价日和加点数，不符合条件就去问协商通道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "明示非人人受益、政策下限与逾期前置条件，并主动警示代办降息骗局，价值导向安全。",
+      "script_spans": [
+        "已购房家庭确实能减负，但绝不是人人坐等收钱",
+        "北上深二套房贷有各自政策下限，不是想降多少降多少",
+        "但凡说花钱代办降息的，全是骗局，那才真亏"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 784,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.12
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f11052a019bf4c0ebb872ec3e3d4edef",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9be9eeb4e0484dec9330c5627cb2410b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

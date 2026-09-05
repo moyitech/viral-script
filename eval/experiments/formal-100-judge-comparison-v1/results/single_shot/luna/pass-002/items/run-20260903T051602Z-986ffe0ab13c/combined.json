@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-663e4f7afe614f30b284493f3d02dcc4",
+  "run_id": "run-20260903T051602Z-986ffe0ab13c",
+  "trace_sha256": "ef7d373bde2770a4a2894a87a230b0c477352ed01eb0a9d43feaeaa898bf2f57",
+  "created_at": "2026-09-03T12:32:19.960164Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直接回答问题，并围绕学生焦虑、排名政策、家庭因素和应对建议展开，核心人群与两侧均有覆盖。",
+      "script_spans": [
+        "不公开成绩排名，并不能真正缓解学生的焦虑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "信息单元较充足，既有政策、调查数据和成因提示；但调查未比较排名公开与否，结论还把“缓解”扩大成“消灭”。",
+      "script_spans": [
+        "第二个关键依据，同一调查也指出考前焦虑受父母文化程度和性别等因素影响",
+        "可见不公开并未消灭紧张。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接给出反常结论，中段用政策、调查和成因递进，结尾落到可执行提醒，推进完整。",
+      "script_spans": [
+        "不公开成绩排名，并不能真正缓解学生的焦虑。",
+        "表格消失不代表压力消失。",
+        "那是政策够不着的缓冲带。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能顺读，开头和提醒有口播感；但中段连续出现抽象长句，需重断句，节奏不够自然。",
+      "script_spans": [
+        "表格消失不代表压力消失",
+        "隐藏排名只是移开了横向比较的标尺，但焦虑的根还扎在学业不确定性和家庭期待里",
+        "同一调查也指出考前焦虑受父母文化程度和性别等因素影响，单单遮蔽排名根本碰不到这些源头"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“表格消失不代表压力消失”简洁有记忆点，标尺、根、缓冲带等比喻服务于解释，未压过观点。",
+      "script_spans": [
+        "隐藏排名只是移开了横向比较的标尺",
+        "焦虑的根还扎在学业不确定性和家庭期待里",
+        "表格消失不代表压力消失"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "分层列出两个依据，结尾也有行动建议；但政策规定、焦虑调查与排名效果之间缺少对照，“可见”后的因果跳跃明显。",
+      "script_spans": [
+        "第一个关键依据，义务教育学校管理标准明确规定考试成绩不得公开排名。",
+        "比平时翻倍都不止，可见不公开并未消灭紧张。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有提醒边界和非煽动表达，但用考前焦虑调查直接否定排名不公开的缓解作用，因果结论过满。",
+      "script_spans": [
+        "家长和孩子不如一起建立日常的学习掌控感",
+        "可见不公开并未消灭紧张"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-693eceaef1d04cb8ab5073c364e1a834",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

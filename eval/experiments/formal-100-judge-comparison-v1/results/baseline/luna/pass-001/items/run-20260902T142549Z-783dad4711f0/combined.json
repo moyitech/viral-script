@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-f48b0480c1f94dd1acb68cf9f95bb78c",
+  "run_id": "run-20260902T142549Z-783dad4711f0",
+  "trace_sha256": "6294185093e4ef293fcb28bf8fc198a0834b728363356e2fc0da709dca1771d1",
+  "created_at": "2026-09-03T11:44:11.150538Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否更安全，同时讲清密码优势、同步与令牌风险，并落到普通用户的防护动作。",
+      "script_spans": [
+        "无密码登录加速普及，账户却未必更安全。",
+        "所以对普通人，开了passkey别躺平。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 447，目标为 450，偏差率为 0.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息密度较高，密钥机制、云同步恢复、会话令牌和应对动作分别推进更安全但非绝对的判断。",
+      "script_spans": [
+        "passkey是密钥对，网站只存公钥，私钥锁在你设备里。",
+        "令牌是进门后的通行证，passkey只管开门，不管进门后。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头先抛出“未必更安全”的反差，中段连续转折，结尾由设备全丢的追问自然收住。",
+      "script_spans": [
+        "无密码登录加速普及，账户却未必更安全。",
+        "但转折来了。",
+        "当无密码成默认，我们该想：设备全丢时，谁来证明你是你？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、比喻和对比让信息易听，但“铺开背后留了缝”“那就是瞧谁拿令牌溜进你账户”等表述生硬，口播需改写。",
+      "script_spans": [
+        "你想啊，这就像家门换指纹锁",
+        "铺开背后留了缝。",
+        "那就是瞧谁拿令牌溜进你账户。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“开门—进门后的通行证”和指纹锁类比都贴合解释，既帮助理解，也留下了可复述的记忆点。",
+      "script_spans": [
+        "令牌是进门后的通行证，passkey只管开门，不管进门后。",
+        "这就像家门换指纹锁，进门难了，可备用钥匙丢哪还得自己操心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，优势、风险、建议衔接清楚；但“只能走邮箱验证”推得过满，且令牌盗窃与中间人的关系交代不严密。",
+      "script_spans": [
+        "无密码掐断了密码钓鱼，却掐不住会话令牌被盗。",
+        "可你若手机电脑一齐丢，找回只能走邮箱验证。",
+        "中间人坐在你和真服务间，偷到令牌就能蹭进会话。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动，能提醒分层防护；但“只能走邮箱验证”“那就是”把恢复和令牌识别说得过满，易造成误判。",
+      "script_spans": [
+        "安全得层层设防，不是换把锁就高枕无忧。",
+        "可你若手机电脑一齐丢，找回只能走邮箱验证。",
+        "那就是瞧谁拿令牌溜进你账户。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-a3c629148d484d4999e2c311c81274e8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ec441cbc28bb45f59472b10e47bef2d9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

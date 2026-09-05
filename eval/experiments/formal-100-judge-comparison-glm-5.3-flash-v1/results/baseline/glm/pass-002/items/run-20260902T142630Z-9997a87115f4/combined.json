@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-f76f3e6d125a478890fd6edd4ff90eb3",
+  "run_id": "run-20260902T142630Z-9997a87115f4",
+  "trace_sha256": "a058b3dbcc8b824bd8fe0bf210c444754e97f0fac562dc92918605ee1176220c",
+  "created_at": "2026-09-03T14:23:46.036985Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛题设冲突，明确厂商担出厂责、用户别全甩手，两侧均答且直指普通家庭。",
+      "script_spans": [
+        "厂商得担出厂安全责，用户也不能全甩手",
+        "许多普通家庭用的智能设备"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "默认弱密码、远程开关、规范征求意见层层推进，规范说法有依据，观众能带走具体操作建议。",
+      "script_spans": [
+        "出厂就写好统一弱密码，很多智能家居产品的远程访问开关默认处于打开状态",
+        "眼下强制安全规范已经在征求意见"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即有偷拍与甩锅冲突，中段以默认弱密码、新规征求意见持续递进，结尾二选一提问由正文自然生长。",
+      "script_spans": [
+        "智能摄像头被黑拍下你在家走动甚至私密画面",
+        "黑客拿简单工具扫一段就能闯进你家网络，像进自己家一样容易",
+        "当自家客厅变成公开直播现场的时候，我们到底该选省事还是选安心？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句可读、有画面感，但“默认处于打开状态”“担出厂安全责”需临时换词，拗口两处封顶2分。",
+      "script_spans": [
+        "黑客拿简单工具扫一段就能闯进你家网络，像进自己家一样容易",
+        "很多智能家居产品的远程访问开关默认处于打开状态",
+        "厂商得担出厂安全责"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "像进自己家一样容易贴切形象，客厅变直播现场与省事安心之问均可独立复述，修辞克制无堆砌。",
+      "script_spans": [
+        "黑客拿简单工具扫一段就能闯进你家网络，像进自己家一样容易",
+        "当自家客厅变成公开直播现场的时候，我们到底该选省事还是选安心？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "隐患—根因—规范—对策递进清晰，结尾以省事还是安心回扣开头，因果桥自然。",
+      "script_spans": [
+        "这隐患的根子就在出厂初始设置不合理，厂商把责任全推给普通顾客并不公平",
+        "当自家客厅变成公开直播现场的时候，我们到底该选省事还是选安心"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "责任划分兼顾厂商与用户，不单方归因；建议具体安全可行，规范仅称征求意见，未夸大未误导。",
+      "script_spans": [
+        "厂商得担出厂安全责，用户也不能全甩手",
+        "先改掉初始密码，顺便在设置里关掉外部远程访问权限",
+        "眼下强制安全规范已经在征求意见"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-858ec98bc3db460b94355f652ec23ec3",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-edbc99d1b7f740c88727a40dedfd13b8",
+  "run_id": "run-20260903T051503Z-00b2f27479d0",
+  "trace_sha256": "2b314d7c812b0aa1788e65e8d6711f647d8a4095605029d79088d099c828a9d6",
+  "created_at": "2026-09-03T12:33:01.477168Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "紧扣融资变便宜却难转化为经营改善，覆盖需求、成本与就业消费传导，正面回答题设。",
+      "script_spans": [
+        "融资便宜 ≠ 生意好做。",
+        "单靠降息填不上缺口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，需求、成本、贷款期限和宏观传导形成多层信息，结论有明确落点。",
+      "script_spans": [
+        "超过九成企业把销售下滑列为主要压力，订单薄了，产能转不动。",
+        "不少企业营收勉强稳住，利润却被原材料和费用上涨吃掉，出现增收不增利。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用融资变便宜却仍皱眉制造反差，中段层层推进到需求、成本和就业，结尾比喻自然收束并留下消费联想。",
+      "script_spans": [
+        "贷款利息降了，政策也在送钱，可街边厂子和店面的老板还是皱着眉。",
+        "政策能帮企业续上水管，但水池里的水，得靠大家敢花钱去填满。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有清楚的问答承接和形象收束，但“成本刚性”“腾挪时间短”等表达拗口，核心段落仍偏书面。",
+      "script_spans": [
+        "为什么？先看需求端。",
+        "融资负担确实在减轻，但经营压力是被需求冷淡和成本刚性两头夹击",
+        "加上很多小微贷款仍是短期周转，腾挪时间短"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“融资便宜 ≠ 生意好做”高度概括主旨，水管与水池的比喻把融资和需求讲得形象，表达克制且便于复述。",
+      "script_spans": [
+        "融资便宜 ≠ 生意好做。",
+        "政策能帮企业续上水管，但水池里的水，得靠大家敢花钱去填满。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出反差，中段按需求、成本和贷款期限展开，结尾回扣客流，因果链条完整。",
+      "script_spans": [
+        "为什么？先看需求端。",
+        "所以别只看利率降没降。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，论点较克制；但“政策也在送钱”和“真正决定”略显绝对，可能简化政策与经营的复杂因果。",
+      "script_spans": [
+        "单靠降息填不上缺口",
+        "政策也在送钱",
+        "真正决定小生意存活的，是街角有没有客人走进来"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ed36f9946d2544cd8da4dfcd52f5960e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

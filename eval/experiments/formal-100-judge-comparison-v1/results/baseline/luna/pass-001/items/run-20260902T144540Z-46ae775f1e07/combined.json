@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-8369dae4569e48babbab04143473ea9e",
+  "run_id": "run-20260902T144540Z-46ae775f1e07",
+  "trace_sha256": "66549e4891d20a13bf7d33e1dd227992d22a59ff80f02862f83d317ac259e986",
+  "created_at": "2026-09-03T11:44:45.480593Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕翻新热的环保价值与质量风险双线展开，覆盖行业、商家和普通买家，结论正面回应题设。",
+      "script_spans": [
+        "不是二选一，它两头都占着。",
+        "若只谈环保不谈质量，循环就转成糊涂账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 733，目标为 700，偏差率为 4.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策机制、环保收益、造假风险、市场规模和购买方法分别推进，既有具体案例，也给出可执行判断。",
+      "script_spans": [
+        "它要求建回收点、中转站、分拣中心，让旧机有去处。",
+        "小作坊换块屏冒充原厂，电池暗病测不出。",
+        "没报告，再便宜也犯不上赌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用黑屏与二选一制造冲突，中段从政策、收益推进到风险，结尾自然留下判断问题。",
+      "script_spans": [
+        "你刚买的翻新机突然黑屏，它算循环经济还是质量盲区？",
+        "若只谈环保不谈质量，循环就转成糊涂账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、节奏明快，也有对话感；但“质量和安全环保性能”等硬表述与“挑选胆量”让朗读需要重断句或换词。",
+      "script_spans": [
+        "为啥这么火？",
+        "你以为捡漏，其实踩坑。",
+        "再制造产品，质量和安全环保性能不能低于原型新品。",
+        "还有你我的挑选胆量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“你以为捡漏，其实踩坑”和“循环就转成糊涂账”简洁有画面，准确压住全文矛盾。",
+      "script_spans": [
+        "你以为捡漏，其实踩坑。",
+        "若只谈环保不谈质量，循环就转成糊涂账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由二元设问切入，依次解释原因、收益、风险、市场盲区和应对方式，结尾回扣核心矛盾，衔接自然。",
+      "script_spans": [
+        "可小卖家一混进来，监管就费劲。但问题来了，不是所有摊子都守规矩。",
+        "所以挑机器不能光看颜值。那咱们普通人咋办？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见明显违规，且能平衡环保与质量；但“花半价拿到更高配”“没统一检测标准”过于绝对，易造成误导。",
+      "script_spans": [
+        "不是二选一，它两头都占着。",
+        "买家花半价，拿到更高配的功能。",
+        "没统一检测标准，质量盲区就不是吓唬。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ff488a4a1e314e5cad3baee78dd4f697",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-31877a094b634edf844e8dbce06d3623",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

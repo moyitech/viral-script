@@ -115,8 +115,10 @@ class CitationVerificationConfig:
             value = getattr(self, name)
             if isinstance(value, bool) or not isinstance(value, int) or value < 1:
                 raise ValueError(f"{name} must be a positive integer.")
-        if self.reasoning_effort not in {"no_think", "low", "high"}:
-            raise ValueError("reasoning_effort must be no_think, low, or high.")
+        if self.reasoning_effort not in {"no_think", "low", "high", "xhigh"}:
+            raise ValueError(
+                "reasoning_effort must be no_think, low, high, or xhigh."
+            )
 
 
 def _canonical_json_sha256(payload: Any) -> str:

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-ef95b55b7d08426f8ecb273687e9d827",
+  "run_id": "run-20260902T143428Z-e157c0abd779",
+  "trace_sha256": "a6859dd731ad8459741c056962ff44b02722f47f4693d0d9ba13ec7afbb8863d",
+  "created_at": "2026-09-03T12:15:22.714104Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答谁拍板，覆盖父母与祖父母的责任边界，也给出冲突场景和协商落点，切角贴近目标观众。",
+      "script_spans": [
+        "日常教育的决定权，法律答得直白：父母是主体。",
+        "所以家里带娃到底谁拍板？看谁是孩子法定监护人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，给出责任主体、法定监护例外和求助路径；但把监护责任直接扩展为所有事项均须父母签字，关键信息过度绝对。",
+      "script_spans": [
+        "真谈不拢，社区或妇联能过来调解，帮着捋顺两家分歧。",
+        "疫苗转学兴趣班，得父母签字才行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用追喂与自主进食的冲突设问，中段持续补充规则与例外，结尾回到餐桌，互动自然。",
+      "script_spans": [
+        "奶奶端碗在后面追着喂，妈妈摆手让孩子自己抓。",
+        "小到穿衣吃饭，大到规矩择校，父母来定。",
+        "所以家里带娃到底谁拍板？看谁是孩子法定监护人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头问答和“搭把手不是掌舵人”好读，但法条术语、压缩并列较多，至少两处需要换词重断句。",
+      "script_spans": [
+        "这场景你家里天天有吗？听谁的？",
+        "是搭把手不是掌舵人。",
+        "小到穿衣吃饭，大到规矩择校，父母来定。",
+        "不在法定监护人列，除非通过法律成了监护人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“搭把手不是掌舵人”形象区分权责，“不是比谁嗓门大”也形成了自然、易复述的收束。",
+      "script_spans": [
+        "搭把手不是掌舵人",
+        "带娃看责任在谁肩上，不是比谁嗓门大。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "场景、原则、例外和协商路径层层推进，主线清楚；但把“负责任”直接推成“父母签字”，责任与决定权的桥梁不足。",
+      "script_spans": [
+        "那长辈积累的经验就全都没用？当然不是。",
+        "真谈不拢，社区或妇联能过来调解，帮着捋顺两家分歧。",
+        "疫苗转学兴趣班，得父母签字才行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主体责任判断基本清楚，也提示监护例外；但“父母来定”“父母签字”等说法过于绝对，易造成法律程序误解。",
+      "script_spans": [
+        "父母或其他监护人，要负起实施家庭教育的责任",
+        "疫苗转学兴趣班，得父母签字才行"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d43d8758205a4b559bd407dd09020e1b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

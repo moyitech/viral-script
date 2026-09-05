@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-a1c95a0949b14fc48df2aa9eedfc4f5f",
+  "run_id": "run-20260903T051531Z-736b08c3bdd7",
+  "trace_sha256": "eeb679d1a07948dc1f51254653b05e9a85b5d28e82c0c829a23da95cce9d7605",
+  "created_at": "2026-09-03T12:42:17.567811Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答已购房家庭能否受益，覆盖商贷、公积金、受益条件和具体行动，切角贴合普通观众。",
+      "script_spans": [
+        "好处绝不是自动均摊，真正落袋多少，全看你重定价日和加点幅度谈得动否"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕存量房贷受益条件展开，机制、差异、风险与操作建议均有具体推进。",
+      "script_spans": [
+        "房贷利率就是“LPR加加点”两个拼图。",
+        "重定价周期改短，下行期能更快蹭低息，可万一利率反弹就反噬，而且这选择通常只能定一次。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用新旧利率反差抓人，中段连续补充规则与风险，结尾落到可执行提醒，推进完整。",
+      "script_spans": [
+        "新闻里新发放首套商贷利率已经探到3%出头，可你那笔背了几年的老房贷，月供数字纹丝不动",
+        "重定价周期改短，下行期能更快蹭低息，可万一利率反弹就反噬",
+        "别光看新闻就急着提前还贷。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有“别光盯着”等对话感，但“谈得动否”“申下调”等表达卡顿，长句也多，整体仍需重断句。",
+      "script_spans": [
+        "别光盯着眼前的招牌利率",
+        "重定价日和加点幅度谈得动否",
+        "高位接盘的商贷用户去手机银行申下调"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“两个拼图”把公式说得直观，“招牌利率”强化新旧房贷反差，记忆点清楚且不油。",
+      "script_spans": [
+        "房贷利率就是“LPR加加点”两个拼图。",
+        "别光盯着眼前的招牌利率。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，先讲定价机制再给行动建议；但“全看”把商贷逻辑泛化到公积金，结尾分类回扣不足。",
+      "script_spans": [
+        "LPR那块只能等合同重定价日重算，大多数人一年才轮一回。",
+        "真正落袋多少，全看你重定价日和加点幅度谈得动否"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "机制解释较克制，也提醒先看合同；但公积金自动调整和手机银行申降息说得过于普遍，“全是坑”也偏绝对，需补充适用条件。",
+      "script_spans": [
+        "LPR那块只能等合同重定价日重算，大多数人一年才轮一回。",
+        "公积金贷款按规则在次年元旦自动跳价，根本不用跑腿。",
+        "但凡短信说花钱代办降息的全是坑。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7c5fb6f61d494899b9ded9c60216eb3f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

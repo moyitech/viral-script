@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-ee84dcfdf0c84900ac14231427cc6c73",
+  "run_id": "run-20260902T144413Z-6454fda4fe8c",
+  "trace_sha256": "a631ae52d0be6364fdf3452faa405ad339725620bdc73edc7b6867d61d24a5ac",
+  "created_at": "2026-09-03T12:16:00.024011Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面覆盖岗位新增、旧岗减少和转型门槛，且把回答落到一线工人的选择上。",
+      "script_spans": [
+        "智能工厂砍一线岗不假，但制造业升级真生出不少新工作。",
+        "老师傅想转过去，得学读数据控屏，不是人人马上能上手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数字、职业实例、岗位机制、人才缺口和培训措施层层补充，信息增量较充分。",
+      "script_spans": [
+        "工业机器人操作员、运维员都收编进去了。",
+        "报警要人跑现场，良率要人调模型。",
+        "国家联手工信部搞培训，年育约八万数字技师，颁十来个新标准"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用流水线与监控室反差抓人，中段递出数据和“缺人又裁员”的矛盾，结尾追问自然。",
+      "script_spans": [
+        "厂里静了流水线，监控室却冒出新手艺。",
+        "一边缺人一边裁员，这就是升级实情。",
+        "下一次招工启事写谁的名字？是运维员还是被落下的老师傅？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有问答和具体场景，整体能听懂；但多处压缩过狠，部分句子朗读时需要临时换词或重断句。",
+      "script_spans": [
+        "这活咋干？不是拧螺丝，是盯屏幕调参数防停机",
+        "厂里静了流水线，监控室却冒出新手艺。",
+        "替代创造两头扯。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“机器吃电也吃人脑”把技术与人的新分工说得形象，“人从跑腿变动脑”也便于复述，修辞没有喧宾夺主。",
+      "script_spans": [
+        "机器吃电也吃人脑。",
+        "人从跑腿变动脑。",
+        "少岗多岗原是一件事，换身本事接着干。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，替代、培训、转岗的递进可跟随，但局部因果链过满，个别转折略跳。",
+      "script_spans": [
+        "企业省了人力成本，却得掏钱培训新人。",
+        "这调查只在广东做，别处产业链不同或有差。",
+        "厂子上智能系统为效率，但缺会弄系统的人，于是新岗空缺招不到，老岗人浮于事被减员。",
+        "国家认了这些岗，学校才敢开培训班，慢慢培出数字技术员补足缺口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，也有地域限定；但“这就是升级实情”“才敢开培训班”把局部现象和因果说得过满，易误导。",
+      "script_spans": [
+        "这调查只在广东做，别处产业链不同或有差。",
+        "一边缺人一边裁员，这就是升级实情。",
+        "国家认了这些岗，学校才敢开培训班"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0f1a03754ebd4eea86edef27ef5aa2ff",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

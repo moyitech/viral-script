@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-813bb9ac688044a1876e7614e7978021",
+  "run_id": "run-20260902T141708Z-74ad3c650eb9",
+  "trace_sha256": "cbdb61fab85bf2db74c28d3c187943199a7b93414574ec3abb167f17dbf36193",
+  "created_at": "2026-09-03T13:49:18.190632Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头摆明接与不接两难，全文紧扣是否被绑作答，结尾直问小店老板，两侧与人群全覆盖。",
+      "script_spans": [
+        "接超级应用的流量就得让出利润，不接就可能没客人",
+        "当工具用，小店多接几个入口就好"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 283，目标为 280，偏差率为 1.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "市场动因、攒客方法、让利润是学费各单元层层推进，末句给出判断标准，无编造，增量足。",
+      "script_spans": [
+        "小店借这些入口攒老客，不必只靠一家推荐",
+        "把招牌交给别人喂流量，那才真被绑住了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛让利润与没客人的两难，中段以反转、提醒层层推进，结尾提问由正文自然生长，钩子有兑现。",
+      "script_spans": [
+        "接超级应用的流量就得让出利润，不接就可能没客人",
+        "开头说的让利润，其实是学费。",
+        "小店老板不妨想想，客人到底奔谁而来？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句、对话感强，但中段一句压缩过度：'还给扶持让曝光'连读歧义，'当工具用'缺宾语，两处需重断或补词。",
+      "script_spans": [
+        "小店突然成了香饽饽，能免费用上曝光入口，不用费劲拍视频做网红",
+        "还给扶持让曝光多了条活路，多了个找客渠道",
+        "当工具用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "香饽饽、卡脖子、喂流量都贴题不炫技，把招牌交给别人喂流量一句离开上下文也能复述，比喻服务观点。",
+      "script_spans": [
+        "把招牌交给别人喂流量，那才真被绑住了。",
+        "别把全部客流押在一个平台，免得被人卡脖子。",
+        "小店突然成了香饽饽，能免费用上曝光入口"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "为什么这么说架起观点到论据的桥，开头说的让利润回扣设问，收尾回扣题设，链路完整。",
+      "script_spans": [
+        "为什么这么说？咱先瞅瞅",
+        "开头说的让利润，其实是学费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "用'未必'留余地，明示让利与卡脖子风险，建议克制有边界，无煽动夸大，不构成误导或违规。",
+      "script_spans": [
+        "街边小店眼下未必会被流量绑死",
+        "别把全部客流押在一个平台，免得被人卡脖子"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-edf8a3b17424491eb3dc1cad9a92c45b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-3f2ce90d47a94302a777267f7a118dbf",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

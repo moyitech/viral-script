@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-309566a48df6404e8e4eb7b38e936f58",
+  "run_id": "run-20260903T051549Z-c8072e7cce0e",
+  "trace_sha256": "7bb9f3bacf9e3682e3ddb1b3dfb1ea0d30b2276d56efd3868b76ab5cf12c017b",
+  "created_at": "2026-09-03T12:06:32.873070Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“是否更安全”，兼顾安全收益与残余风险，并给出普通用户可执行的恢复建议。",
+      "script_spans": [
+        "无密码登录确实让普通账户更安全了，但别以为从此万事大吉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 278，目标为 280，偏差率为 0.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕安全边界推进，私钥、钓鱼、会话令牌和恢复风险形成了有效的信息递进。",
+      "script_spans": [
+        "基于密码钥匙的登录大幅降低了钓鱼和泄露风险",
+        "现在攻击者正更多转向窃取登录后的会话令牌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“更安全”与“万事大吉”的反差设问，中段连续推进风险边界，结尾以恢复建议自然收束。",
+      "script_spans": [
+        "无密码登录确实让普通账户更安全了，但别以为从此万事大吉。",
+        "不过要注意，现在攻击者正更多转向窃取登录后的会话令牌",
+        "提前绑定备用设备、牢记恢复码才是真安心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体推进清楚，问句和转折有节奏；但多处长句叠加术语，末段也有明显卡顿。",
+      "script_spans": [
+        "凭什么说更安全？",
+        "不过要注意",
+        "基于密码钥匙的登录大幅降低了钓鱼和泄露风险，但它只堵住了最普遍的攻击入口，并没消灭所有潜在威胁。",
+        "万一手机电脑全丢又没设备用恢复方式，账户可能锁死或回退到弱验证。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“堵住攻击入口”“偷不到也猜不着”等表达帮助理解，“才是真安心”也形成了自然可复述的收尾。",
+      "script_spans": [
+        "只堵住了最普遍的攻击入口，并没消灭所有潜在威胁。",
+        "远程攻击者既偷不到也猜不着",
+        "提前绑定备用设备、牢记恢复码才是真安心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线和转折清楚，先讲收益再落到风险；但“私钥只留设备”与“同步型钥匙”之间存在概念冲突。",
+      "script_spans": [
+        "不过要注意，现在攻击者正更多转向窃取登录后的会话令牌，这不在密码钥匙防护内。",
+        "密码钥匙的私钥始终只留在你个人设备里",
+        "现行认证标准已明确允许同步型钥匙达到较高安全等级"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有风险边界和恢复提醒，但私钥与攻击结果的绝对化表述可能造成过度安全感。",
+      "script_spans": [
+        "但它只堵住了最普遍的攻击入口，并没消灭所有潜在威胁。",
+        "私钥始终只留在你个人设备里，远程攻击者既偷不到也猜不着",
+        "传统密码那种撞库和服务器泄露问题彻底失效"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-0b5681edcade4bb2b8c60d3182d30f5b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-515804fbf78440a4871015b1c6a3e6f5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

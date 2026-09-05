@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-72fa7bcd27714830bf6f5236a963c43c",
+  "run_id": "run-20260902T141730Z-5f43e0c39245",
+  "trace_sha256": "d0283124a16dec01b66d1dc0aa26b43283afb66e75278ca1f620c752683806f6",
+  "created_at": "2026-09-03T14:25:00.318245Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇点题并亮明立场，兼顾停车难与休闲流失两侧，紧扣普通居民日常。",
+      "script_spans": [
+        "休闲该给停车让路吗？我看不该直接让，但车难停也得解。",
+        "一边是回家没处停的焦虑，一边是楼下没处坐的冷清。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，从成因、决策机制到兼顾方案层层推进，引用背景可佐证，无编造痕迹。",
+      "script_spans": [
+        "改作车位这种大事，依法通常要业主共同决策，不是物业单方面能定。",
+        "比如错时停车，或像国外有些停车楼那样叠进活动空间，一层停汽车上层架花园"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇凉亭变车位画面感强，中段机制与方案层层兑现，结尾一问由正文自然长出。",
+      "script_spans": [
+        "你妈常坐的凉亭被画成车位，她只能端碗站路边吃面",
+        "一边是回家没处停的焦虑，一边是楼下没处坐的冷清",
+        "下次见画位，你轻声问：我的休闲角留了吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句好读、有对话感，但“和真实需求脱节的情况”“下次见画位”等处拗口，需换词重断，止步良好。",
+      "script_spans": [
+        "这规则不是为难谁，是把车和休闲摆上桌谈",
+        "车要停，人也要喘气，这得琢磨",
+        "模板化、和真实需求脱节的情况",
+        "下次见画位，你轻声问"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“划线吃掉”“车要停，人也要喘气”等表达克制又好记，修辞服务理解，无堆砌炫技。",
+      "script_spans": [
+        "原本的健身角、棋桌被划线吃掉",
+        "车要停，人也要喘气，这得琢磨",
+        "社区是活的，线画了也能留口气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "成因、机制、影响逐段递进，因果桥清晰，结尾回扣开头画线场景。",
+      "script_spans": [
+        "问题出在改造常脱离居民实际需要。",
+        "社区是活的，线画了也能留口气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法律表述留有「通常」等余地，观点兼顾停车与休闲双方，无煽动夸大，导向克制安全。",
+      "script_spans": [
+        "依法通常要业主共同决策，不是物业单方面能定",
+        "我看不该直接让，但车难停也得解"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f04fb533d82842f699b5fc8c64cf0c05",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

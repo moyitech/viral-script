@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-8a438dc0425545ba96fe4760fd666b2e",
+  "run_id": "run-20260902T141723Z-98be77766a57",
+  "trace_sha256": "1ba864b76fe6c0d66499b32ab82fcefbdbf4a86ea07d6a798dd4ffc39b2136a2",
+  "created_at": "2026-09-03T12:15:43.849437Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“信心还是托市”，同时解释两种用途，并给散户可执行的识别方法。",
+      "script_spans": [
+        "这波回购潮，既是信心信号，也是短期托市。",
+        "先翻明细，看它是不是注销式回购。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据、机制、用途差异和核查步骤层层推进，既有事实增量，也提供了可复用的判断线索。",
+      "script_spans": [
+        "今年超800家上市公司披露回购方案，数目创近年新高，连国企也进场了",
+        "直接注销，股本少了，等于把股票烧掉，市场上筹码变少。",
+        "要是拿去发激励，更像给市场打麻醉剂"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用反差设问抓人，中段不断给出判断标准，结尾从核查动作自然推到价值追问，互动不突兀。",
+      "script_spans": [
+        "回购越多股价越跌？你以为的利好或许是托市陷阱。",
+        "看股份去向。直接注销，股本少了，等于把股票烧掉，市场上筹码变少。",
+        "当回购变成例行公事，你看股份消失，还是只看热闹？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、比喻和查明细的提醒增强对话感，但多处搭配不顺，朗读时仍需换词或重断句。",
+      "script_spans": [
+        "好比蛋糕不变，分的人少了，你那块就大。",
+        "研究也发现，口碑好的企业回购更被信为真，公告本身传递内部看好信号。",
+        "把股票送高管，过阵子还可能抛出来，短期撑住盘但钱未必进你口袋。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻集中但都服务于区分回购用途，“回购像创可贴，止血但治不了内伤”准确形象，容易被复述。",
+      "script_spans": [
+        "回购像创可贴，止血但治不了内伤。",
+        "好比蛋糕不变，分的人少了，你那块就大。",
+        "要是拿去发激励，更像给市场打麻醉剂"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，先分辨动因再给核查方法，但将注销后的每股利润改善直接当成信心，论证略跳跃。",
+      "script_spans": [
+        "看股份去向。直接注销，股本少了，等于把股票烧掉，市场上筹码变少。",
+        "每股利润自然厚了，这是实打实信心。",
+        "真注销，才可能是公司钱袋子的底气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有风险提示且无明显违规，但把注销回购与信心强绑定，并将激励回购概括为托市，仍可能误导。",
+      "script_spans": [
+        "咱们散户看到公告，别急着开心跟车。",
+        "先翻明细，看它是不是注销式回购。",
+        "每股利润自然厚了，这是实打实信心。",
+        "真注销，才可能是公司钱袋子的底气。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-dc586aff10824a628e46c7a0b0d9d87b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-115b403677a94b4b8b3d398f5d301a21",
+  "run_id": "run-20260902T143157Z-f2936ae53fb5",
+  "trace_sha256": "8e99f377a5208902d8d765fc4aed4007cc82ca6eeb96ffd6da5c5586883d92c1",
+  "created_at": "2026-09-03T13:46:22.621550Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给结论，升温冲击与价格两侧都覆盖，例外情形和买菜建议落点明确，答得完整。",
+      "script_spans": [
+        "我直接说：眼下餐桌上海鲜不会更贵",
+        "热浪频发让鱼虾死亡、赤潮暴发，养殖户确实受冲击"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 291，目标为 280，偏差率为 3.93%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "升温、产量、价格、例外、建议层层推进，数据与引用相符，无编造，观众能带走判断方法。",
+      "script_spans": [
+        "海水养殖产量涨了约百分之五，市场上海水产品的均价反而跌了约百分之四",
+        "买时瞅瞅产地，选深远海或冷冻品更稳当"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛升温冲击与海鲜不涨价的反差，中段数据加“反而”转折持续推进，结尾建议加余味自然收束。",
+      "script_spans": [
+        "海水升温把近海养殖场折腾得够呛，可你菜场买的海鲜没涨价，去年还便宜些",
+        "另一边看去年全国统计，海水养殖产量涨了约百分之五，市场上海水产品的均价反而跌了约百分之四",
+        "提醒你：买时瞅瞅产地，选深远海或冷冻品更稳当"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口清楚，多用折腾、瞅瞅、翻肚皮等口语词，数据句也按口语读法写，朗读基本不用改词。",
+      "script_spans": [
+        "你逛市场时老板没喊涨价吧，整体供给大盘稳住了，价格就被压着",
+        "提醒你：买时瞅瞅产地，选深远海或冷冻品更稳当"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“鱼翻肚皮”“价格就被压着”等形象表达服务理解，结尾金句离开正文仍可复述，克制不喧宾夺主。",
+      "script_spans": [
+        "局部网箱鱼翻肚皮，本地活鲜可能短暂跳价",
+        "海悄悄变暖，咱们碗里的海鲜靠全国调度兜着"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "供给压价的因果桥清楚，岔题主动收束，结尾回扣升温与大盘供给，结构自然闭环。",
+      "script_spans": [
+        "整体供给大盘稳住了，价格就被压着",
+        "海悄悄变暖，咱们碗里的海鲜靠全国调度兜着"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "判断加眼下限定，极端年与淡水价另作边界，建议温和不夸大，数据有据，无违规风险。",
+      "script_spans": [
+        "眼下餐桌上海鲜不会更贵",
+        "本地活鲜可能短暂跳价",
+        "选深远海或冷冻品更稳当"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8e0c64ebfb9440ad8c50558efa1312e3",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6fc0f2b162874885b949a4882a58a5e2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

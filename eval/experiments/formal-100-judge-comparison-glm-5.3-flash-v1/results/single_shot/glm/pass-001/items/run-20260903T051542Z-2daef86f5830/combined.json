@@ -1,0 +1,164 @@
+{
+  "evaluation_id": "combined-502e5f8ed577485087ca9aa267aff52e",
+  "run_id": "run-20260903T051542Z-2daef86f5830",
+  "trace_sha256": "6981f82cb35704e2323c70ae18057d8cd5194bc83b2dd4e85780e078edfb8b4e",
+  "created_at": "2026-09-03T14:19:30.361224Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直指为何走样，家校两侧与评价机制层层作答，结尾回扣比拼现象，回答完整。",
+      "script_spans": [
+        "根子不在孩子懒，而是家校两边的责任被悄悄调了包"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 771，目标为 700，偏差率为 10.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "责任转嫁、政策漏洞、倒U边界、评价缺陷逐层推进，关键事实均有据，无编造痕迹。",
+      "script_spans": [
+        "政策其实早有说法，严禁给家长布置或批改作业",
+        "小学生阶段家长适度搭把手，比如问问进度、鼓励表达，和孩子成绩之间有正向关联"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛出比爸妈PPT的反差，中段政策、研究、评价层层转折，结尾“谁的功课”余味自然。",
+      "script_spans": [
+        "班里微信群里比的是谁的爸妈PPT更炫",
+        "那是不是家长彻底别管就对了？也不一定",
+        "不妨想想，这到底是谁的功课。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏与比喻底子好，但各段收尾总落回书面总结腔，几处抽象并列连读拗口。",
+      "script_spans": [
+        "可有些老师图省事，也怕家长抱怨难度低，就把设计、打印、甚至批改的活儿直接塞给家长。",
+        "这里的边界只有一条：家长可以当脚手架，不能当施工队。",
+        "教师转嫁了准备成本，家长替代了学习主体，同伴合作退化为家庭资源秀",
+        "这种现实影响很沉默，却实实在在改写了合作学习的味道，也让家校协作变了质。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“当脚手架，不能当施工队”贴切易复述，比喻服务观点且分布克制，无堆砌喧宾。",
+      "script_spans": [
+        "家长可以当脚手架，不能当施工队",
+        "合作学习不是家长朋友圈的军备竞赛"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "因果桥明确，设问转段自然，脚手架之喻承上启下，结尾追问谁的功课回扣开篇。",
+      "script_spans": [
+        "这一层因果很清楚：教师转嫁了准备成本，家长替代了学习主体，同伴合作退化为家庭资源秀",
+        "下次看到家长在群里发精修手册，不妨想想，这到底是谁的功课"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "批评教师用'有些老师'限定，又承认家长适度参与有益，观点平衡；政策与研究表述均有出处，不煽动、不夸大。",
+      "script_spans": [
+        "政策其实早有说法，严禁给家长布置或批改作业",
+        "家长可以当脚手架，不能当施工队",
+        "小学生阶段家长适度搭把手，比如问问进度、鼓励表达，和孩子成绩之间有正向关联"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 771,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.10142857142857142
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-7c3f657e0f494e29b230cc0444a113ff",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-2ee2ea99c7de49c4b2f2d52c3b6f4f3a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

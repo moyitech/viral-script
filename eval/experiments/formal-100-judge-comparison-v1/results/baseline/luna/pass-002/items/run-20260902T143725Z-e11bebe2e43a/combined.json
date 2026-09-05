@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-42cf61d5f37347d9b2ac9f509fd74aba",
+  "run_id": "run-20260902T143725Z-e11bebe2e43a",
+  "trace_sha256": "3ab963bb8fe36e952076b17ac7f4724935db4fa2c21ca25d28cfd9f17a474f18",
+  "created_at": "2026-09-03T12:15:38.870184Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答会员费与低价的矛盾，并分别给出山姆、开市客和家庭消费的判断入口。",
+      "script_spans": [
+        "便宜是真便宜，可进店先交费就是道硬门槛。",
+        "卡费不是小钱，得算自家人均消耗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕会费、囤货、会员规则、履约与扩张连续推进，信息单元多且共同落到隐性成本。",
+      "script_spans": [
+        "卓越会员有返利金，山姆把接近一半会费返给老客。",
+        "低价承诺遇上履约断层。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用费用与低价的冲突抓人，中段持续加入返利、规则和履约风险，结尾追问自然承接。",
+      "script_spans": [
+        "交260元才能买山姆低价货，这门槛值吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答和短句节奏，但“返回去”“下单显示”等多处搭配生硬，拖低整体流畅度。",
+      "script_spans": [
+        "那办卡费怎么回本？山姆普通卡二百六，卓越卡六百八。",
+        "真金白银返回去。",
+        "有会员遇到下单显示极速达，结算变全城配。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“消费门票”和“围墙里头”把会员门槛转成具体画面，结尾有记忆点，修辞没有压过信息。",
+      "script_spans": [
+        "进门就被收了门票，这围墙里头的东西未必都实惠。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "费用、规则、扩张三段主线清楚，但把服务跟不上直接等同于门槛抬高，因果桥不足，结论略有扩大。",
+      "script_spans": [
+        "所以卡费不是小钱，得算自家人均消耗。",
+        "可会员店正加速铺开，这事就没那么简单了。",
+        "新店越多，会员基数越大，可服务跟不上，门槛反而抬高了进入成本。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，按家庭消耗判断的提醒较稳；但将个别规则说成“都不行”“没法拒”，并作单向归因，易误导。",
+      "script_spans": [
+        "所以卡费不是小钱，得算自家人均消耗。",
+        "想带亲戚逛都不行",
+        "系统改单没法拒"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-afef14bb4ba34f18bf22a9654ccd0dc4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

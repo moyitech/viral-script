@@ -1,0 +1,143 @@
+{
+  "evaluation_id": "combined-8a242137a9fe4559bae7db5340ffcc9e",
+  "run_id": "run-20260902T143802Z-e985b61084bf",
+  "trace_sha256": "952736a539b32f6ca21fb5ef7e5124361b03b9b344b54b9998dd7fb8e02513b8",
+  "created_at": "2026-09-03T12:16:12.401423Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从低价成因、监管边界到购买搭配，正面回答省钱与品质如何兼得，且贴合普通消费者。",
+      "script_spans": [
+        "省钱和好品质能兼得，但你得懂门道。",
+        "那咱们怎么挑才稳？看包装贮运方式，分冷冻冷藏常温三类。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "低价原因、监管定义和挑选建议较具体，但成本段多次罗列近似理由，部分安全因果也未讲清。",
+      "script_spans": [
+        "为什么便宜还不加防腐剂？工厂大批量做，摊薄成本。",
+        "里头写明预制菜不添防腐剂，也不含中央厨房做的菜，不含主食净菜。",
+        "工厂控住损耗，门店人力也压下来。",
+        "常温摆久了自己看不见坏，油盐也容易超标。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“便宜却不加防腐剂”制造反差，中段连续推进成本、规则和挑选，结尾提问也从标签自然生长。",
+      "script_spans": [
+        "预制菜卖得便宜，却不准加防腐剂。",
+        "可便宜背后，边界在哪？",
+        "下次购物，你会先找哪行字？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "成本解释多用短句，建议段也有当面感；但“单份摊到的火耗人工”“配料短日期近”等搭配生硬，影响连贯口播。",
+      "script_spans": [
+        "你自己做，得买菜洗切，油盐人工都算钱",
+        "单份摊到的火耗人工就少。",
+        "买时找标识清楚的厂，配料短日期近更省心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制，“时间也是钱”和“锅气回一点”把抽象成本与搭配建议说得具体，留下了可复述的记忆点。",
+      "script_spans": [
+        "时间也是钱",
+        "锅气回一点，别光热主食。",
+        "省钱和品质的天平，其实握在你翻看标签的手里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按低价原因、定义边界、购买方法递进，但冷藏冷冻与省钱的因果不足，后段个别表述和衔接生硬。",
+      "script_spans": [
+        "为什么便宜还不加防腐剂？工厂大批量做，摊薄成本。",
+        "那咱们怎么挑才稳？",
+        "这样花钱少，也避开长期常温隐患。",
+        "保持凉拌菜搭配更均衡。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且有按说明加热的提示；但把征求意见稿说成“不准加防腐剂”，并夸大冷藏冷冻的避险作用，边界不够严谨。",
+      "script_spans": [
+        "你选冷冻冷藏的，回家按说明加热熟透。",
+        "预制菜卖得便宜，却不准加防腐剂。",
+        "这样花钱少，也避开长期常温隐患。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-385ca9cbf986433f8934a13e84a5a471",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

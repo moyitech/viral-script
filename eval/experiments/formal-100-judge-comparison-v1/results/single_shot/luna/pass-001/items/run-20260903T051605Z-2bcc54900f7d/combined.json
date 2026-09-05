@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-e8b3ba6975e844aa99a03be364af7c1b",
+  "run_id": "run-20260903T051605Z-2bcc54900f7d",
+  "trace_sha256": "072939acb4acc2afbd8de95c0900225ef57cb96e526f88234637c20b7a49d8e0",
+  "created_at": "2026-09-03T11:58:20.385655Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释互认落地慢与重复花费的关联，并给出患者可执行的应对方式，切合普通观众痛点。",
+      "script_spans": [
+        "你换医院还得掏钱重查",
+        "带齐资料主动沟通才是当下最实的办法"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 253，目标为 280，偏差率为 9.64%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕制度例外、质量差异、医生决策和费用后果层层补充，信息密度较高，且落到实际建议。",
+      "script_spans": [
+        "文件从正常生理代谢、病情发展到设备参数差异，都允许重新检查",
+        "各医院检验质量与设备精度未必对齐"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出重复花钱的冲突，中段解释政策与执行原因，结尾给出可操作建议，推进和收束完整。",
+      "script_spans": [
+        "明明互认写进了指导意见，推得慢，你换医院还得掏钱重查",
+        "跨院就诊前，把近期影像和化验报告打印好递给医生，先问一句这次能否互认"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有明确的生活化建议和收束，但前段解释连续偏抽象、长句，整体仍不像精心打磨的自然口播。",
+      "script_spans": [
+        "跨院就诊前，把近期影像和化验报告打印好递给医生，先问一句这次能否互认",
+        "根本是政策以接诊医师判断为标准，把认不认的主动权留给了医生，且例外情形宽泛。",
+        "文件从正常生理代谢、病情发展到设备参数差异，都允许重新检查，接诊医生随时能合理要求患者重做。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“互认省的是钱，但医疗安全底线不能破”形成清晰对照，兼顾提醒与记忆点，整体表达克制不油。",
+      "script_spans": [
+        "互认省的是钱，但医疗安全底线不能破"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线由政策规则推到医生保守开单再落到患者应对，整体可跟随，但把例外概括为“随时”裁量，因果略显扩大。",
+      "script_spans": [
+        "这种机制下接诊医生面对外院报告难免保守，倾向开新单",
+        "接诊医生随时能合理要求患者重做"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有安全提醒且建议克制，但“根本是”“随时能”把互认规则说成医生可任意决定，容易造成误解。",
+      "script_spans": [
+        "医疗安全底线不能破",
+        "根本是政策以接诊医师判断为标准",
+        "接诊医生随时能合理要求患者重做"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-6a0fada928114866b64a958a270bc0d9",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a48f6010cf414ebabab79f80c8d7c856",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

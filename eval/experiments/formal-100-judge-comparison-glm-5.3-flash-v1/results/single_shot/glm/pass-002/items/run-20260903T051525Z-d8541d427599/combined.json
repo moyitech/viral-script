@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-2430f89b9f234686b8b9333310faec14",
+  "run_id": "run-20260903T051525Z-d8541d427599",
+  "trace_sha256": "19a761955e3d4d99f670bcb332ab1681a8808c668bb93a1881d95124ca2781b4",
+  "created_at": "2026-09-03T15:29:29.156690Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即入题，安全与效率两侧都正面回应，结尾明确回扣“兼顾”题设，痛点贴合普通人。",
+      "script_spans": [
+        "限制骑手进小区，本质是用配送效率换居住秩序，但二者并非零和",
+        "门禁不是终点，把规则细到每栋楼，才算真正兼顾了安全和方便。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，禁令弊端、停靠区、取送分离层层推进，并给出可带走的判断方法，无编造。",
+      "script_spans": [
+        "大门外划出专属停靠区，骑手步行送进去，既控了车速又留通路。",
+        "把“让不让人进”转化成“用哪种方式进”，用空间分区消化矛盾。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇热汤面变凉加反问直接立起冲突悬念，中段以搬运工、停靠区、取送分离持续兑现，结尾余味由正文自然生长。",
+      "script_spans": [
+        "小区门禁把骑手挡在铁门外，你点的热汤面在门口晃荡着变凉",
+        "可这安全到底防住了谁？",
+        "结果骑手成了楼下扛着餐箱狂奔的搬运工"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "通读顺、短句多、有画面；但“并非零和”“帮效率回流”等表达书面，需临时改词，故2分。",
+      "script_spans": [
+        "你收餐可能多等两三分钟，但小区里少了横冲直撞的电动车，带娃遛弯更安心。",
+        "本质是用配送效率换居住秩序，但二者并非零和",
+        "如果你愿意支持社区划停车区、看清楼号指引，就是在帮效率回流"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "热汤面、狂奔搬运工的画面贴切服务理解，“让不让人进”改写为“用哪种方式进”是离开上下文仍可复述的记忆点，无堆砌。",
+      "script_spans": [
+        "你点的热汤面在门口晃荡着变凉",
+        "把“让不让人进”转化成“用哪种方式进”",
+        "门禁不是终点，把规则细到每栋楼"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段落功能清晰，由弊端诊断到机制选择再到个人影响层层递进，结尾自然回扣开头与题设。",
+      "script_spans": [
+        "结果骑手成了楼下扛着餐箱狂奔的搬运工，最后一程的配送效率掉下去，订单超时风险转嫁到平台算法和骑手身上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "兼顾住户安全与骑手效率双方立场，用『像部分小区做的』『可能』等限定措辞，不煽动对立，导向建设性，无夸大承诺。",
+      "script_spans": [
+        "真正糟糕的是“一禁了之”而不是“有序分流”",
+        "像部分小区做的，大门外划出专属停靠区，骑手步行送进去，既控了车速又留通路",
+        "你收餐可能多等两三分钟，但小区里少了横冲直撞的电动车"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f91ca5c9f5364b7fade20d631fd635a5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

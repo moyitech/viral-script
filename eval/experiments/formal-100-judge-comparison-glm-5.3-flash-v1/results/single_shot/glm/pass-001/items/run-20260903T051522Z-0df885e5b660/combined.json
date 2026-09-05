@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-f34e7792bcd44a86a016187781a35e69",
+  "run_id": "run-20260903T051522Z-0df885e5b660",
+  "trace_sha256": "c62888b2b8ae5daf705904477f7177cd04e5c97c2e2f8af658f0f6a59addac28",
+  "created_at": "2026-09-03T14:12:32.265326Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即抛出还贷与留现金的两难，利差与流动性两侧都答到，并落到普通家庭可执行的结论，人群切角均准。",
+      "script_spans": [
+        "手里攒点闲钱到底该不该提前还贷？我的判断很直接",
+        "先留够半年开销的活钱，剩下的如果没稳妥投资渠道，再考虑部分提前还贷"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 407，目标为 450，偏差率为 9.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "利差、LPR成本、还款摩擦、流动性缓冲与半年活钱规则依次推进，事实、解释与结论互证，增量具体可用。",
+      "script_spans": [
+        "房贷利率跟着LPR走，五年期以上目前在三点五附近，这是实打实的成本",
+        "更隐蔽的取舍是流动性：钱还进去容易，再掏出来难"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即见利息降月供不降的对立冲突，中段利差、条款、流动性层层加码，结尾金句由正文自然长出，无生硬喊互动。",
+      "script_spans": [
+        "存款利息一降再降，房贷月供却雷打不动，手里攒点闲钱到底该不该提前还贷",
+        "更隐蔽的取舍是流动性：钱还进去容易，再掏出来难",
+        "利率下行周期里，提前还贷是减法，不是胜利。守住现金流，才守得住选择权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口为主、口语鲜活，但“利率整体走低下的重新定位”“取舍是流动性”两处书面拗口，朗读需临时换词，封顶2分。",
+      "script_spans": [
+        "钱还进去容易，再掏出来难",
+        "别听风就是雨，把首付外的最后一块钱都填进房贷",
+        "而是利率整体走低下的重新定位",
+        "更隐蔽的取舍是流动性"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且贴切，“减法不是胜利”“房子不发救命钱”离开上下文仍可复述，无辞藻堆叠，记忆点服务观点。",
+      "script_spans": [
+        "留现金虽然收益低，却是家庭财务的缓冲带",
+        "真遇到失业或大病，房子不会给你发救命钱",
+        "提前还贷是减法，不是胜利。守住现金流，才守得住选择权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "『表面看…但关键要看』完成关键转折桥接，由账目分析落到操作建议，结尾守住现金流自然回扣开头判断。",
+      "script_spans": [
+        "表面看提前还款等于赚了利差。但关键要看你有没有其他负债和应急能力",
+        "守住现金流，才守得住选择权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "建议均带条件边界，双向呈现利弊，利率数据有据可依，无夸大与误导性承诺，价值导向安全。",
+      "script_spans": [
+        "先留够半年开销的活钱，剩下的如果没稳妥投资渠道，再考虑部分提前还贷",
+        "表面看提前还款等于赚了利差。但关键要看你有没有其他负债和应急能力"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f3cf10c2fb614f2697f9323c9b570044",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-194afa9d2cfc42c98292d27c1e91f6a0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

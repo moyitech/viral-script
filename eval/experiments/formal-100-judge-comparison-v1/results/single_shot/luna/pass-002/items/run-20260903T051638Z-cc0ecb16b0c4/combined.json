@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-ab839a47fc8e447582f1a6b6a4fe1d73",
+  "run_id": "run-20260903T051638Z-cc0ecb16b0c4",
+  "trace_sha256": "de2d2bb0d7ce6fe1f1520025bcdc0ab618dc4e386cd04ec3101823646807ce23",
+  "created_at": "2026-09-03T12:31:28.691872Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答效率与压价之争，覆盖企业动因、议价风险和普通求职者的应对。",
+      "script_spans": [
+        "我的判断很直接：缩短招聘流程，主因是空岗成本太高，不是成心克扣工资。",
+        "对普通人来说，极速流程既是机会也是陷阱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦招聘提速，既解释空岗成本和流程变化，也揭示议价权转移并给出核实清单。",
+      "script_spans": [
+        "砍掉重复面试和冗余审批，岗位填充时间骤减，企业止住流血。",
+        "决策聚到少数人手里，薪资常按预设区间闪电锁定。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用一轮面试就发offer的反差设问抓人，中段持续推进利益与议价权冲突，结尾建议也自然落地。",
+      "script_spans": [
+        "你有没有发现，现在有些公司面试才一轮就甩来offer，快得叫人心里打鼓。",
+        "效率归企业，议价权悄然易主。快不等于公平。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问句、短句和收束句有节奏，整体能顺读；但中段术语偏硬，数处搭配需要换词，未达到自然口播。",
+      "script_spans": [
+        "那快招到底怎么省成本？",
+        "快不等于公平。",
+        "预估速度和实际耗时脱节",
+        "候选人少了对价博弈的空间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“效率归企业，议价权悄然易主”凝练了核心矛盾，“得自带船票”把核实风险说得形象，记忆点自然且不过度。",
+      "script_spans": [
+        "效率归企业，议价权悄然易主。",
+        "你没必要拒了快船，但得自带船票。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出二选一，中段先讲提速机制再讲议价代价，结尾自然落到求职者核实建议。",
+      "script_spans": [
+        "是真讲究效率，还是变相压价？我的判断很直接：",
+        "但取舍明显：决策聚到少数人手里，薪资常按预设区间闪电锁定。",
+        "签字前多问一句，效率红利才真正轮得到你。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提醒候选人核实薪资，风险可控；但将提速主要归因于空岗成本、排除压价动机，因果判断过满，易误导。",
+      "script_spans": [
+        "快不等于公平。",
+        "主动问清薪资结构、考核标准与成长路径。",
+        "缩短招聘流程，主因是空岗成本太高，不是成心克扣工资。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9af5e0eb147f4a16b8007118ba469fdf",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

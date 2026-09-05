@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-a76aba6efa994e90b41122cf9cee6f90",
+  "run_id": "run-20260902T142423Z-8a884910c8e9",
+  "trace_sha256": "9007e02cdd2d47ce96ead3a56b58a8242d93d84ccfd9236e7ead4f186616db69",
+  "created_at": "2026-09-03T13:47:03.724545Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直问抢存是否划算，正文用利率、灵活度与适配人群作答，结尾回扣抢购场景，切角具体。",
+      "script_spans": [
+        "你刷手机抢大额存单告急，真比慢慢存别处划算？抢着存不一定更划算。",
+        "下次再遇抢购风，先琢磨自个这笔钱能不能踏实躺几年不动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 282，目标为 280，偏差率为 0.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "利率对比、提前支取规则、存款保险、起点变化各自推进，数据有落点，无编造，增量扎实。",
+      "script_spans": [
+        "大行五年期存单最高约1.6%。可一些小银行三年定存能到1.9%，利息反而可能更高些。",
+        "存款保险目前只对单家机构五十万以内本息全额保，钱多就得分散几家。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字点出抢购告急并抛出反差疑问，中段利率反转与流动性代价持续兑现，结尾由正文自然生长出余味。",
+      "script_spans": [
+        "你刷手机抢大额存单告急，真比慢慢存别处划算？",
+        "可一些小银行三年定存能到1.9%，利息反而可能更高些",
+        "下次再遇抢购风，先琢磨自个这笔钱能不能踏实躺几年不动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "中段“先说利息”“提醒一句”承接自然，但开头问句与“转让变现快”两处拗口，需临时重断句，整体定在二分。",
+      "script_spans": [
+        "真碰上急事用钱，利差就吃不到了",
+        "你刷手机抢大额存单告急，真比慢慢存别处划算？",
+        "存单能转让变现快"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，'利差吃不到''手慢省了心'形象自然，'躺几年不动'离开上下文仍可复述。",
+      "script_spans": [
+        "不是抢不到就亏了，手慢的人说不定省了心",
+        "真碰上急事用钱，利差就吃不到了",
+        "先琢磨自个这笔钱能不能踏实躺几年不动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先说利息、再看灵活度过渡清楚，提前支取因果链完整，结尾以能否躺几年回扣开头之问。",
+      "script_spans": [
+        "存单能转让变现快，可一旦提前支取，那部分只能按当天活期利率算。真碰上急事用钱，利差就吃不到了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "利率与规则均用“约”“可能”限定，存款保险与起点提醒准确，观点克制，无夸大承诺与误导风险。",
+      "script_spans": [
+        "抢着存不一定更划算。但求本金安全的人，能适量配一点。",
+        "存款保险目前只对单家机构五十万以内本息全额保，钱多就得分散几家。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-cb258eabff0f400780b6801c88833579",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-5c814314ed494d128d847d78da135a4b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

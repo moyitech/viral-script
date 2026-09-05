@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-0393fa15d7d44422b838c6094111051a",
+  "run_id": "run-20260902T143033Z-5544e05a8337",
+  "trace_sha256": "9335f95657407473b928f5f93805033537186e830b53b952c7aaa4c74f646fa6",
+  "created_at": "2026-09-03T12:18:05.014967Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面覆盖了公共充电的窃密风险、充电需求与规避办法，目标观众能直接照做。",
+      "script_spans": [
+        "公共充电设备确实有被窃密的可能，但咱别因噎废食，出门充电记住一招"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "风险、攻击通道、设备差异、证据强弱和替代方案层层补充，信息集中且有行动增量。",
+      "script_spans": [
+        "它靠一根USB线连着你的手机，电和数据的通道是通的",
+        "现实里公开抓到的实锤案例数量不多，但安全机构早发过明确风险提醒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用免费充电与隐私被盗的反差抓人，中段给出机制和替代方案，结尾提问也自然。",
+      "script_spans": [
+        "在商场溜达瞅见免费USB充电桩，你手机里的私房照片和短信验证码可能瞬间被人拷走",
+        "这桩子危险在哪？",
+        "你乐意每天多带点重量换份安心吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "建议具体、画面感强，能把风险和做法讲清；但中段有压缩句，部分说明话术偏硬，朗读需调整。",
+      "script_spans": [
+        "别碰那些公共USB口，更别借陌生人的线",
+        "普通充电桩虽多只供电不接数据，遇恶意改装谁也难分辨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“电和数据的通道是通的”把抽象风险讲直观，“因噎废食”和“塞个插头”也留下了可复述的记忆点。",
+      "script_spans": [
+        "电和数据的通道是通的",
+        "别因噎废食",
+        "往自己包里塞个插头比满场找免费桩更踏实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，先给建议再解释机制并回到行动；但关键机制句过长，“对方顺线摸进”也缺少必要条件，口播略拗。",
+      "script_spans": [
+        "下次出门前，往自己包里塞个插头比满场找免费桩更踏实",
+        "在商场溜达瞅见免费USB充电桩，你手机里的私房照片和短信验证码可能瞬间被人拷走，可不充的话半路关机失联急得直跳脚",
+        "它靠一根USB线连着你的手机，电和数据的通道是通的，你一充电对方就可能顺线摸进相册和通讯录"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "给出自带充电头和充电宝等稳妥建议，也承认实锤案例不多；但“瞬间被拷走”“一充电就可能摸进”易夸大实际窃密条件。",
+      "script_spans": [
+        "自带靠谱充电头只找墙壁插座，或带个充电宝",
+        "手机里的私房照片和短信验证码可能瞬间被人拷走"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6eb28ae99fa44197a6fd41f631ea0d51",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

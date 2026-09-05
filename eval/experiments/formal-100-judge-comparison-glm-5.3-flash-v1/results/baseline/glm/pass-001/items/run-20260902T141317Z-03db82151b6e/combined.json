@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-b21fd1f2bb2242019dfbd4cbba63bc26",
+  "run_id": "run-20260902T141317Z-03db82151b6e",
+  "trace_sha256": "d0ae178a5dc1cc6d7b9bb84a3bf69feeeca1b243405538316e4c2cf6aba7612a",
+  "created_at": "2026-09-03T13:45:48.713758Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直答“不会更难”，痛点与新规保障两侧都谈，建议直指普通用户申诉处境。",
+      "script_spans": [
+        "短视频全面接智能客服，你申诉不会更难治。",
+        "AI绕晕你吞申诉，九月新规却塞人工口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 264，目标为 280，偏差率为 5.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "接力免复述、安全场景优先真人、企业不得甩责，信息点层层推进，与公开报道相符。",
+      "script_spans": [
+        "不是让你把遭遇讲两遍，真人接手就懂前面事。",
+        "上半年这类智能客服投诉涨得明显，症结就是从前AI承诺难追究。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即有AI吞申诉对上新规开口的反差，中段接力、交班、担责逐层兑现，结尾行动点由正文自然生长。",
+      "script_spans": [
+        "AI绕晕你吞申诉，九月新规却塞人工口。",
+        "不是让你把遭遇讲两遍，真人接手就懂前面事。",
+        "算法能挡一时，挡不了你开口要真人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句有对话感、节奏清楚，但“塞人工口”“碰账号钱财或安全明说转人工”两处读来卡嘴，需换词重断，封顶2分。",
+      "script_spans": [
+        "复杂申诉你直接喊转人工，别在层层菜单里白绕。",
+        "九月新规却塞人工口",
+        "你碰账号钱财或安全明说转人工，系统就得优先派真人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "接力、交班、挡箭牌贴切，算法挡一时一句可复述；但塞人工口、替你吃亏压缩过度，金句略刻意。",
+      "script_spans": [
+        "智能和真人要顺畅接力",
+        "算法能挡一时，挡不了你开口要真人",
+        "九月新规却塞人工口",
+        "别让冷冰冰代码替你吃亏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先挡后保底埋下伏笔，结尾以开口要真人回扣；规则、责任、行动层层递进，因果清楚。",
+      "script_spans": [
+        "机器先挡一道关卡，但留了保底。",
+        "算法能挡一时，挡不了你开口要真人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述客观公允，转人工附条件、企业责任边界交代清楚，无夸大承诺或煽动对立，价值导向安全。",
+      "script_spans": [
+        "你碰账号钱财或安全明说转人工，系统就得优先派真人",
+        "企业那头也不能拿AI自动生成当挡箭牌，把责任推干净",
+        "复杂申诉你直接喊转人工，别在层层菜单里白绕"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5aa0f5811cb24339b1ff349925f41496",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-acc94a8d939241519971c964fca3bd35",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

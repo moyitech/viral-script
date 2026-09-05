@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-8ef796f842394ade968b01060f0d996e",
+  "run_id": "run-20260902T143313Z-b75580977412",
+  "trace_sha256": "003e762c5d63a240a955ec3fb3089549d2fb33e5d40eb9d68854501552d8e509",
+  "created_at": "2026-09-03T11:44:45.271042Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答效率与真实反馈的冲突，兼顾机器提效和教师把关，且落到家长与孩子的核心痛点。",
+      "script_spans": [
+        "人工智能批作文，效率确实高了，但真实反馈没被带走，只是换了形式。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 689，目标为 700，偏差率为 1.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "观点集中，既有调研规模、使用比例，也有偏见与修改层级的反例，信息推进充分。",
+      "script_spans": [
+        "跑了三十二个省份，收回两万六千多份问卷。",
+        "二十八个学生用智能反馈改了十周议论文，成绩明显好了。可动手多是加词换句，深层论证去改的比例不高。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以效率与温度的冲突入场，中段用数据、案例和反例持续推进，结尾把讨论落到亲子追问，互动自然。",
+      "script_spans": [
+        "省下十小时批改，却可能错过孩子需要的那句点评。",
+        "发现常态用AI帮批文的老师约两成，学生用AI写作文不到两成。",
+        "翻翻问他，这句让你想改吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏明快，问答、对照和短句都利于口播；但“批文”“深层论证去改”等局部搭配卡嘴，需换词或重断句。",
+      "script_spans": [
+        "机器查漏，人点亮",
+        "常态用AI帮批文",
+        "深层论证去改的比例不高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“机器查漏，人点亮”与“当替身、当助手”的对照短而准，帮助解释人机分工，也留下可复述记忆点。",
+      "script_spans": [
+        "机器查漏，人点亮，两边配合才像教书。",
+        "你把AI当替身，反馈虚；当助手，反馈实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线有递进，‘机器查漏，人点亮’形成清楚分工；但实验结果不足以直接推出‘深浅由人把关’，结论略跳。",
+      "script_spans": [
+        "机器查漏，人点亮，两边配合才像教书。",
+        "这说明效率起来了，反馈深浅仍由人把关。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有边界意识并强调人机协同，但“冷暖机器分不清”等绝对化表述仍可能造成过度概括，宜适当限定。",
+      "script_spans": [
+        "这说明效率起来了，反馈深浅仍由人把关。",
+        "冷暖机器分不清。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-89ae583c4e354155861671cfa6dafcbd",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ee81d3c4640f4e2a9ec1b269e030f929",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

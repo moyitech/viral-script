@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-b62a6c3b0f9a4f6581e9a20854a602e7",
+  "run_id": "run-20260902T142805Z-e84860a5bdfd",
+  "trace_sha256": "dd4f63f7ad141af5ab24f53f7ebd948e945740f0acd450b5f1a74a8f040f4182",
+  "created_at": "2026-09-03T11:44:06.502523Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答不上报边界，兼顾隐私、危险例外与实际做法，精准覆盖普通同事。",
+      "script_spans": [
+        "多数别报，关心先问愿不愿被知道。",
+        "若对方话里透出自残或伤人，保密要让给保命。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 670，目标为 700，偏差率为 4.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕未经授权的职场介入展开，隐私风险、危机例外、授权传话和援助渠道均有推进。",
+      "script_spans": [
+        "要是他主动说，帮我跟主管讲声，这种托付就不算冒犯。",
+        "把联系方式发他，不逼他马上用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“冒犯不是关心”制造反差，中段有破例转折，结尾问题自然延续讨论。",
+      "script_spans": [
+        "帮同事上报家变，常是冒犯不是关心。",
+        "那什么关口必须破例？若对方话里透出自残或伤人，保密要让给保命。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和追问有对话感，但“法律写…”与“有事言语一声”等多处表达卡顿，朗读需重断句。",
+      "script_spans": [
+        "你以为在帮人，其实先碰了线。",
+        "法律写单位连员工婚育状态，都不能无理由收集。",
+        "说句有事言语一声就够。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“关心是递选项，不是替他签单”具体有力，“递梯子不掀屋顶”也形成自然记忆点。",
+      "script_spans": [
+        "关心是递选项，不是替他签单。",
+        "你递梯子不掀屋顶，关心才不像窥探。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从默认不报推进到风险例外、征得授权和具体做法，结构完整；但个别句子断裂，部分因果说得过满。",
+      "script_spans": [
+        "没开口就代劳，是越界。开了口再传话，是帮忙。",
+        "你猜家变去报目的不明",
+        "很多单位有这渠道，员工自己约领导不知情。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导尊重隐私并保留自伤、伤人例外，但“多数别报”和“升职机会溜走”等绝对或推测性表述，需补充情境边界。",
+      "script_spans": [
+        "界限在没经同意别替他喊话。关心和冒犯的分水岭，就在他有没有交给你话语权。",
+        "多数别报，关心先问愿不愿被知道。",
+        "领导潜意识觉得他拖累团队，升职机会悄悄溜走。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-41b23c1e427c42fcb83418603790fbb5",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f418376316594952b138cbb8400eff06",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,157 @@
+{
+  "evaluation_id": "combined-cf268e69dfb9496b8532a750f8508de2",
+  "run_id": "run-20260902T144241Z-24c927ad6676",
+  "trace_sha256": "ba4975a639d6fee4aa921e6cb083948c1f25d0276bf52dbf2b32971122d86e98",
+  "created_at": "2026-09-03T11:45:06.548777Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从照护、出钱到法律和协商，正面回答了不同付出如何共同承担，核心人群与冲突两侧都覆盖。",
+      "script_spans": [
+        "姐熬夜你出钱，账不能只论长短。",
+        "每人报自己能出几小时、几多钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 709，目标为 700，偏差率为 1.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕公平分摊持续推进，兼顾照护与金钱、法律底线、协商清单和长护险，信息单元具体且有行动价值。",
+      "script_spans": [
+        "把爸换尿管次数、粥钱列明白。",
+        "家庭会不是审判，是找最大公约数。",
+        "长期护理保险正从试点推向全国铺开，已覆盖九十多城。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用具体的兄妹冲突设问，中段不断切换法律、协商和外援，结尾“有人疼”留下余味。",
+      "script_spans": [
+        "姐请了半年假守床前，你只微信转了钱，这算公平？",
+        "家里怎么破？挑个周五夜视频连通，别等火冒了。",
+        "老人不求平，求有人疼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和对话式承接有劲，但“出差塞责”“老过法子”等搭配拗口，整体仍需多处重断句。",
+      "script_spans": [
+        "妈摆手说都一样，可你俩知道不一样。",
+        "开完会吃顿面，情分不能折成零。",
+        "哥住外城多汇点，别用出差塞责。",
+        "这路数不是法，只是老过法子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“公平不是刀切两半”等可复述句，但金句与比喻密度偏高，个别表达用力过猛。",
+      "script_spans": [
+        "老人要的是身边热乎，不是账本漂亮。",
+        "老人就吊在半空风干了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "家庭协商、法律、外援三段功能清楚，但“折中”“能抵”没有换算依据，且把法官判断简化为能力和钱，关键因果仍不够稳。",
+      "script_spans": [
+        "家里怎么破？挑个周五夜视频连通，别等火冒了。",
+        "姐陪床天数多，你出钱占比大，折中。",
+        "法官不量心跳，只量能力和钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动，且提示长护险仍在铺开；但法律责任、保险服务和“出力能抵”说法过满，易造成误解。",
+      "script_spans": [
+        "公平不是刀切两半。",
+        "这险种还在铺，没全亮灯，方向对。",
+        "真要闹僵，能力大的多担是常态。",
+        "它派护工来洗头喂饭，接走脏活。",
+        "哥若真没钱，出力陪护也能抵。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3a020653cdc54c38bbf3b8ab951e0952",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-7b3aa465b89142b8b1bf15ce55e3dbf2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

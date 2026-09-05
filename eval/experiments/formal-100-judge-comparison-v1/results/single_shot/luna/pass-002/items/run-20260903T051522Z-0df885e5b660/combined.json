@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-1437c8aa3f4044ba966092a32ce52674",
+  "run_id": "run-20260903T051522Z-0df885e5b660",
+  "trace_sha256": "c62888b2b8ae5daf705904477f7177cd04e5c97c2e2f8af658f0f6a59addac28",
+  "created_at": "2026-09-03T12:32:04.682408Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直面提前还贷与留现金的取舍，并给出面向普通家庭的条件化建议。",
+      "script_spans": [
+        "先别急着冲去银行排队，绝大多数普通家庭得先算两笔账，而不是一笔。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕利差、负债、应急金和流动性层层推进，给出半年活钱与部分还贷的可执行标准。",
+      "script_spans": [
+        "对上班族来说，先留够半年开销的活钱，剩下的如果没稳妥投资渠道，再考虑部分提前还贷。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用利息下调与月供不动制造冲突，中段递进到流动性，结尾观点自然收束并留下余味。",
+      "script_spans": [
+        "存款利息一降再降，房贷月供却雷打不动",
+        "绝大多数普通家庭得先算两笔账，而不是一笔。",
+        "提前还贷是减法，不是胜利。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和重音设计不错，但中段有多处抽象、错序表达，朗读时不能一气呵成。",
+      "script_spans": [
+        "先别急着冲去银行排队",
+        "钱还进去容易，再掏出来难。",
+        "利率整体走低下的重新定位",
+        "剩下的如果没稳妥投资渠道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“减法，不是胜利”简洁有反差，准确概括核心观点，搭配“现金流”表达克制且便于复述。",
+      "script_spans": [
+        "留现金虽然收益低，却是家庭财务的缓冲带。",
+        "提前还贷是减法，不是胜利。",
+        "守住现金流，才守得住选择权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出两笔账，中段解释利差与流动性，结尾落到现金流和选择权，递进回扣完整。",
+      "script_spans": [
+        "利率下行周期里，提前还贷是减法，不是胜利。守住现金流，才守得住选择权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制且无明显违规，但“半年开销”等统一建议缺少个体边界，可能被当成普遍理财结论。",
+      "script_spans": [
+        "钱还进去容易，再掏出来难。留现金虽然收益低，却是家庭财务的缓冲带。",
+        "先留够半年开销的活钱，剩下的如果没稳妥投资渠道，再考虑部分提前还贷。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1fdf6b07019a446f901bcd44a4a412b0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

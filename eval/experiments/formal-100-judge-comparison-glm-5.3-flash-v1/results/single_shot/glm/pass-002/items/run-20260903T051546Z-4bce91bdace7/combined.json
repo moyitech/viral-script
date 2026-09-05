@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-e58b2a7bd3aa407f8ecfd1a98d16fb1b",
+  "run_id": "run-20260903T051546Z-4bce91bdace7",
+  "trace_sha256": "e90ca57de4d2787fdc2065234817b3a774f57a1769509c0f652bb9ff5ab53713",
+  "created_at": "2026-09-03T15:27:47.932219Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答该不该上报，两条分寸与结尾底线正面回应关心与冒犯之别，全程贴题。",
+      "script_spans": [
+        "我的建议很明确：在没有危险信号时，普通同事之间，别急着上报",
+        "关心同事的底线，是先守住他的隐私边界，而不是替他做主。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律依据、控制权机制、EAP替代与两条分寸各自推进，无同义复述，观众能带走判断方法。",
+      "script_spans": [
+        "家庭事务在法律上属于高度敏感的个人信息，用人单位收集都得有合法依据和最小必要原则，何况平级同事",
+        "对方没开口求你，就不主动深挖；对方流露轻生或伤人念头，那突破保密是法律例外"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛具体两难，中段用法律、研究、EAP层层兑现钩子，结尾余味由正文自然长出，无断层。",
+      "script_spans": [
+        "你偶然听到邻座同事在电话里为家里重病老人发愁，第一反应是告诉领导还是装作没听见？",
+        "那真想帮忙怎么办？很多企业其实设有员工援助计划，保密且专业",
+        "关心同事的底线，是先守住他的隐私边界，而不是替他做主。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口基本清楚，设问承接有对话感；但法律与学术讲解段书面腔重，“那突破保密是法律例外”朗读需改词重断。",
+      "script_spans": [
+        "对方没开口求你，就不主动深挖",
+        "而且组织行为研究反复提示，职场中感到被窥探、被特殊对待，会迅速转化为排斥感，让人精力内耗",
+        "对方流露轻生或伤人念头，那突破保密是法律例外"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制贴题，结尾句离开上下文仍可复述，“同事温度”自然不刻意，全程无堆砌炫技。",
+      "script_spans": [
+        "这看似热心，却可能踩中隐私和人际的双重雷区",
+        "保持平常的同事温度，就是最好的体贴",
+        "关心同事的底线，是先守住他的隐私边界，而不是替他做主。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问与转折衔接自然，越级传递导致失去信息控制权因果清楚，结尾回扣隐私边界与题设。",
+      "script_spans": [
+        "那真想帮忙怎么办？",
+        "你一旦越级传递，对方就失去了信息控制权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "边界交代完整：先限定无危险信号才劝阻上报，又补上轻生伤人时的例外，法律与保密表述克制，无煽动夸大。",
+      "script_spans": [
+        "在没有危险信号时，普通同事之间，别急着上报，更别把对方家事当任务处理",
+        "对方流露轻生或伤人念头，那突破保密是法律例外"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f8b02bb9229c4541818ea40e3bb6112a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

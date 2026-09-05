@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-7d9f0ec9747141cdbe873ab59c463f9c",
+  "run_id": "run-20260902T143816Z-4aa104bc7bd5",
+  "trace_sha256": "b39c7c245e4468cf2cb5aa28d17f6619801ace40ed8d89f61ba62cfd3d945113",
+  "created_at": "2026-09-03T13:47:38.502295Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即亮答案，成本成因与应对路径两侧齐全，末尾落到分时电价行动，普通观众全程被照顾。",
+      "script_spans": [
+        "能源转型靠多能互补和灵活电力市场来应对看天吃饭",
+        "咱们普通人记住看分时电价，高峰少开大功率电器就行"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 305，目标为 280，偏差率为 8.93%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从落差发电原理到现货菜价类比再到西南案例，层层给新信息，无编造，能带走可用的错峰方法。",
+      "script_spans": [
+        "天旱水少就转不动，出力掉得明显",
+        "现货市场像实时菜价，把贵时段标出来，大家看见贵就错峰"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差钩子直接抓人，中段设问与旱情案例持续推进，结尾回扣看天吃饭留余味。",
+      "script_spans": [
+        "干旱让水电变贵，转型却没被天气掐住。",
+        "那价格怎么稳？现货市场像实时菜价",
+        "未来看天吃饭，慢慢变成看系统怎么聪明调度了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和对话承接做得好，但开头术语堆叠与搭伙调度扛波动两处拗口需重断句换词，止步2分。",
+      "script_spans": [
+        "你想啊，水电少了，风光顶上，系统就不至于抓瞎。",
+        "能源转型靠多能互补和灵活电力市场来应对看天吃饭",
+        "说白了，多能互补让各类电源搭伙调度扛波动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "菜价类比贴切助解，没被天气掐住与看系统调度均可独立复述，修辞克制不抢戏。",
+      "script_spans": [
+        "现货市场像实时菜价，把贵时段标出来，大家看见贵就错峰",
+        "干旱让水电变贵，转型却没被天气掐住。",
+        "未来看天吃饭，慢慢变成看系统怎么聪明调度了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问过渡自然，风光顶上补齐因果桥，极端旱情让步有分寸，结尾回扣看天吃饭完成闭环。",
+      "script_spans": [
+        "你想啊，水电少了，风光顶上，系统就不至于抓瞎",
+        "那价格怎么稳？",
+        "未来看天吃饭，慢慢变成看系统怎么聪明调度了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "有明确边界与让步表述，不煽动不夸大，建议安全可行，无误导承诺与审核风险。",
+      "script_spans": [
+        "不是说水电不发了，而是多源搭把手才稳",
+        "不过极端旱情局部还是会紧"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3194f741402d4606b7b59d625c202cee",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6ad26361dc6644faa000f29197bc6cb2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-c496f782952c4126993d44bb9570e138",
+  "run_id": "run-20260903T051604Z-7f35b817db5f",
+  "trace_sha256": "53c42c92cb250c15acdefecad7cdae11f487acb04f0badc7b729f0badd66bc7e",
+  "created_at": "2026-09-03T12:32:36.435735Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解安全与效率冲突，覆盖物业、居民、骑手和平台，并给出分层通行方案。",
+      "script_spans": [
+        "居住安全和配送效率，从来不是二选一的死题；一刀切禁止骑手进小区，表面省心，实际两头不讨好",
+        "关键就在于，居民让渡一点边界感，换回整体顺畅。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕最后一百米配送难题，依次解释禁入成因、现实损耗、社区试法与平台补位，信息推进充分。",
+      "script_spans": [
+        "物业为什么趋严？陌生电动车在儿童区穿行、闲杂人员混入，居民投诉有道理。",
+        "也有街道建骑手驿站，指路牌标清楼号，还鼓励骑手帮老人捎东西，对立就软了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出门禁与安全的冲突，中段连续补充成本、案例和平台方案，结尾回到观众日常，推进完整。",
+      "script_spans": [
+        "小区门禁拦下外卖骑手，理由常常是“怕不安全”",
+        "那有没有小区试过不这么硬碰硬？",
+        "下次抱怨骑手迟到时，先看看小区门口有没有一块让他停稳的划线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问句、短句穿插，整体能读通；但“二选一的死题”和“效率损失被摊薄”偏硬，长句也拖慢节奏。",
+      "script_spans": [
+        "可你有没有想过，把人挡在铁门外",
+        "那有没有小区试过不这么硬碰硬？",
+        "居住安全和配送效率，从来不是二选一的死题",
+        "效率损失被摊薄，也不再因闯门起冲突"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“热汤面却先凉了半截”和“门禁关上的是便利，该打开的是规则”具体又易复述，修辞服务于观点。",
+      "script_spans": [
+        "你的热汤面却先凉了半截",
+        "门禁关上的是便利，该打开的是规则"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整、方案有层次，但“安全没显性提升”缺少论证，结尾“比装十道锁都管用”把局部经验夸大为绝对结论。",
+      "script_spans": [
+        "物业为什么趋严？陌生电动车在儿童区穿行、闲杂人员混入，居民投诉有道理。",
+        "这意味着系统知道哪道门难进，提前派给熟路骑手，效率损失被摊薄，也不再因闯门起冲突。",
+        "安全没显性提升，效率账却很清晰",
+        "那比装十道锁都管用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，也承认不同小区存在边界；但“安全没显性提升”“比装十道锁都管用”等夸张判断，容易误导。",
+      "script_spans": [
+        "不过这套在窄旧小区或强隐私楼盘未必行得通",
+        "安全没显性提升",
+        "那比装十道锁都管用"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2392ed130d9140df84dd494b00d3bb5a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

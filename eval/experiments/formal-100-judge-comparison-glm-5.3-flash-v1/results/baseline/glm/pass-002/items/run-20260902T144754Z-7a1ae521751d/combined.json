@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-84a43aa9d32649778c5f5275c0c125a0",
+  "run_id": "run-20260902T144754Z-7a1ae521751d",
+  "trace_sha256": "5f7b709f7daed3304162261919bc1c50bccc11cda77e5f9e84976a182c58772a",
+  "created_at": "2026-09-03T14:26:17.675681Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛留城亏赚之问，成本与机会两侧并行展开，收尾条件式作答并回扣题设。",
+      "script_spans": [
+        "房租涨得比工资快，年轻人留城是亏是赚？",
+        "留下来若工资能跳级，成本痛却值当；要是纯拼体力，房租压顶时机会可能不抵代价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "保租房价格、面议对比、隐形成本等单元层层推进，数据与引用相符，增量扎实。",
+      "script_spans": [
+        "像深圳光明区推保租房，市场价每平三十七块，保租只收二十二块，便宜近四成。",
+        "你发现没，县城招工启事薪资写死，大城市写面议。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句抛出房租与工资的冲突设问，中段以写死对面议、收支算账等新料层层兑现，结尾由门票比喻自然引出提问。",
+      "script_spans": [
+        "房租涨得比工资快，年轻人留城是亏是赚？",
+        "县城招工启事薪资写死，大城市写面议",
+        "房租是门票，不是终点。你那行离了大城市，真就转不动吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和对话问句占主体，好读；但“整体集聚惯性”“成本咬人的边界”两处拗口费气，封顶2分。",
+      "script_spans": [
+        "人为啥非往城里钻？产业、学校、医院全堆在中心点。活儿多，挣得也相对多",
+        "政策缓和局部压力，扭不动整体集聚惯性。",
+        "除租金，搬家和中介也是隐形成本，这是成本咬人的边界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "门票喻房租点到为止，两头掐、先交租进门等表达贴切好记，金句离开原文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "但机会藏在圈子与人脉里，得先交租进门",
+        "这就是大城市给年轻人的两头掐",
+        "房租是门票，不是终点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "供需错位到政策托底再到取舍分化，因果桥清楚，结尾门票之喻自然回扣开头。",
+      "script_spans": [
+        "人一密，房子不够住，房东当然往上抬价。",
+        "房租是门票，不是终点。你那行离了大城市，真就转不动吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反例兼顾，政策与研究均留限定，无绝对化承诺与煽动，表述公允安全。",
+      "script_spans": [
+        "但房源有限，申请有门槛，不敞开给个人。",
+        "研究跟了九十五座城，发现人聚得稠租金容易抬头，但样本有局限，小城不全这样。",
+        "反例也有：有人算完房租就撤，后来发现当地机会更薄。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f528b19ff1ed470ebcebcac6da35d001",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

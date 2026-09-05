@@ -97,8 +97,10 @@ class AsyncHy3Client:
 
         if not messages:
             raise ValueError("At least one chat message is required.")
-        if reasoning_effort not in {"no_think", "low", "high"}:
-            raise ValueError("reasoning_effort must be no_think, low, or high.")
+        if reasoning_effort not in {"no_think", "low", "high", "xhigh", "max"}:
+            raise ValueError(
+                "reasoning_effort must be no_think, low, high, xhigh, or max."
+            )
 
         request: dict[str, Any] = {
             "model": self.settings.model,
@@ -109,12 +111,18 @@ class AsyncHy3Client:
             "temperature": self.settings.temperature,
             "top_p": self.settings.top_p,
             "stream": False,
-            "extra_body": {
+        }
+        if reasoning_effort in {"xhigh", "max"}:
+            # Candidate Judge endpoints use the top-level Chat Completions
+            # parameter. Keep the established Hy3 chat-template shape
+            # unchanged for existing effort levels.
+            request["reasoning_effort"] = reasoning_effort
+        else:
+            request["extra_body"] = {
                 "chat_template_kwargs": {
                     "reasoning_effort": reasoning_effort,
                 }
-            },
-        }
+            }
 
         rate_limit_attempt = 0
         while True:

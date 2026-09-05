@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-a01dbbd1665b4ec5b0a3ee8ac1f62ebd",
+  "run_id": "run-20260902T142445Z-00cdddf62a2a",
+  "trace_sha256": "52af1633435bb4be8222336dc1941da085afb724e1bd50c0c64108f52a452cd9",
+  "created_at": "2026-09-03T12:16:41.150148Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正文正面拆解算力繁荣与中小企业受益不足的落差，覆盖机制、政策和普通人影响，切题完整。",
+      "script_spans": [
+        "AI芯片需求在升温，算力总规模也在扩，可中小企业很难分到这杯羹。",
+        "咱们平时用的小众工具、地方服务，智能升级自然慢半拍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦，价格、架构封闭、政策建设形成递进，既解释原因，也给出时间节点与生活后果。",
+      "script_spans": [
+        "高端GPU一块就要数千美元，大厂成堆买，小厂连试错资本都没有。",
+        "不同厂商架构封闭，模型想换平台得重写代码，成本吓人。",
+        "这体系要到2028年才基本建成，眼前覆盖还没铺开。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用大厂与小公司的反差抓人，中段连续拆解成本、架构和供给，结尾追问也自然。",
+      "script_spans": [
+        "大厂囤了几千块AI芯片，小公司却连一张卡都租不起。",
+        "芯片贵只是第一道坎。",
+        "这波芯片热若只暖了大厂，景气的底座还能稳吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、对话感足，但“从头学徒”“也试算力银行存闲卡”都需临时改词，拖累朗读。",
+      "script_spans": [
+        "为啥会这样？先看问题在哪。",
+        "这就像刚学熟一台机床，换家还得从头学徒",
+        "也试算力银行存闲卡"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“芯片贵只是第一道坎”和“像水电按表取用”准确拆解门槛，形象但不喧宾夺主。",
+      "script_spans": [
+        "芯片贵只是第一道坎。",
+        "等哪天算力真能像水电按表取用，小厂才有底气翻盘。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按“现象—原因—机制—影响—展望”推进，主线清楚；但租赁模式处因果压缩，“他”所指不明，过渡经不起追问。",
+      "script_spans": [
+        "关键机制是啥？芯片贵只是第一道坎。",
+        "这对普通人啥影响？开网店的想上AI客服，得苦等专区接通。",
+        "算力还散在各地，传统租机架模式太粗，你要按分钟计费，他给年框合同。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有违规导向，也提供了政策背景；但“囤了几千块”“连一张卡都租不起”及“得重写代码”过于绝对，易把个案说成普遍事实。",
+      "script_spans": [
+        "政策在补位，工信部发文建中小企业专属算力池，也试算力银行存闲卡。",
+        "大厂囤了几千块AI芯片，小公司却连一张卡都租不起。",
+        "不同厂商架构封闭，模型想换平台得重写代码，成本吓人。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a5c2bb6523874ace9054288fc29ae195",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

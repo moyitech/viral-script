@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-527b3beadf594e8c854054f9e4f0481d",
+  "run_id": "run-20260903T051542Z-8f9654328e9b",
+  "trace_sha256": "83e82b6a66e9a98aaea70226c59628c3b301cbce6d9a47ccbfd9383b12030e43",
+  "created_at": "2026-09-03T14:10:46.506968Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即摆出安全与超时罚钱两侧冲突，结论直接给兼顾方案，结尾回指小区住户，题设与人群全程命中。",
+      "script_spans": [
+        "居民图个安静安全怕生人乱窜，骑手愁超时罚钱白跑腿",
+        "别用一刀切禁止，用边界停靠加内部指引就能两头顾"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 253，目标为 280，偏差率为 9.64%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终扣在兼顾方案上，停靠区、指路牌、物业两难层层给出事实与解释，结尾还能带走可操作建议。",
+      "script_spans": [
+        "骑手停好车步行进楼，里面少了随意穿行风险，老人孩子散步也安心，取餐路径反而更短"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以门禁挡车直入冲突并设问反转，中段用停靠区、楼栋指引等新信息持续兑现钩子，结尾建议自然生长出余味。",
+      "script_spans": [
+        "小区门禁把骑手电动车挡在外头",
+        "这矛盾真没解？错，两套需求能兼顾。",
+        "比单纯拦人更聪明。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏总体顺口，但“先推动画好”易误听，“边界停靠”“内部指引”偏抽象，需改词重断。",
+      "script_spans": [
+        "不少小区在大门外划出专属停靠区，骑手停好车步行进楼",
+        "先推动画好外接停靠线和指路牌",
+        "边界停靠加内部指引就能两头顾"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对仗点出双方诉求，'从慌乱变有序''比拦人更聪明'离开上下文仍可复述，修辞服务理解，无堆砌炫技。",
+      "script_spans": [
+        "居民图个安静安全怕生人乱窜，骑手愁超时罚钱白跑腿",
+        "最后一百米从慌乱变有序",
+        "比单纯拦人更聪明"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整且结尾回扣拦人问题，但物业句突然冒出'流程'且未接回主线，属过渡生硬、经不起追问。",
+      "script_spans": [
+        "先推动画好外接停靠线和指路牌，比单纯拦人更聪明",
+        "一边业主嫌流程慢一边怕生人进"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "居民、骑手、物业三方立场呈现平衡，无煽动或标签化；停靠区、指路牌等建议对应真实社区做法，无夸大承诺。",
+      "script_spans": [
+        "不少小区在大门外划出专属停靠区，骑手停好车步行进楼",
+        "物业常夹在中间，一边业主嫌流程慢一边怕生人进",
+        "先推动画好外接停靠线和指路牌，比单纯拦人更聪明"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f172bf51defe4f9ba0cc897e1b8584d2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-5afa91713d454b969e10656fa456a99c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

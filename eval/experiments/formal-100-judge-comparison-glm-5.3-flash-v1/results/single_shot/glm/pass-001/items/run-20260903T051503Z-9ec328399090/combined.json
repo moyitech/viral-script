@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-776d13f770954d2e8744a901f5859e4f",
+  "run_id": "run-20260903T051503Z-9ec328399090",
+  "trace_sha256": "4c920eaa17bca0df5e86a4d737ce8678ac8719a7e535e8ea1993d5509293f966",
+  "created_at": "2026-09-03T14:08:03.759080Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直指还贷与留现金的抉择，给出利差与周转两个判断标准，结尾回扣题设，两侧均覆盖，人群精准。",
+      "script_spans": [
+        "别只看利率跌了就着急还，关键看你房贷利率和闲钱收益的利差，以及家里周转够不够",
+        "还贷是手段，保住现金流才是底线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 279，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题全程聚焦决策本身，利差标准、应急现金、合同核查层层推进，利率数据与引用相符，无编造无注水。",
+      "script_spans": [
+        "五年期以上房贷利率参考LPR大概在百分之三点五，而普通存款收益已经很难超过它",
+        "家庭必须留足三到六个月开支的应急现金。钱还进房贷，再想灵活取出来可不容易",
+        "操作前先翻贷款合同，确认提前还款有没有预约要求或违约金"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字利息变薄与月供不变构成具体反差，中段以利差判断、应急现金前提层层兑现，结尾底线句自然收束有回味。",
+      "script_spans": [
+        "存款利息眼看越来越薄，房贷月供却一分不少",
+        "还贷是手段，保住现金流才是底线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头钩子与“钱还进房贷”一段顺口自然，但LPR数据句修饰堆叠，“这意味着”“且”等书面连接词需临时换词重断。",
+      "script_spans": [
+        "存款利息眼看越来越薄，房贷月供却一分不少",
+        "钱还进房贷，再想灵活取出来可不容易",
+        "目前五年期以上房贷利率参考LPR大概在百分之三点五",
+        "这意味着，如果手里有闲置资金，且房贷利率偏高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "开篇对仗与“实打实”口语贴切，金句“还贷是手段，保住现金流才是底线”离开正文仍可复述，全篇克制无堆砌。",
+      "script_spans": [
+        "存款利息眼看越来越薄，房贷月供却一分不少",
+        "还贷是手段，保住现金流才是底线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "前提、转折、提醒逐段递进，利差推出省息有明确因果桥，结尾自然回扣开头，逻辑经得起追问。",
+      "script_spans": [
+        "这意味着，如果手里有闲置资金，且房贷利率偏高，提前还掉确实能省下实打实的利息",
+        "还贷是手段，保住现金流才是底线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "建议均附条件并留应急现金、查合同违约金，利率判断有依据，无夸大承诺，导向安全。",
+      "script_spans": [
+        "别只看利率跌了就着急还，关键看你房贷利率和闲钱收益的利差，以及家里周转够不够",
+        "但有个前提，家庭必须留足三到六个月开支的应急现金",
+        "操作前先翻贷款合同，确认提前还款有没有预约要求或违约金",
+        "低利率环境很可能长期持续，不必恐慌式操作"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-da1242bf98974b44b1331952ea872ac8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-09214c57352f467a9db1a41b1ff59ed0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

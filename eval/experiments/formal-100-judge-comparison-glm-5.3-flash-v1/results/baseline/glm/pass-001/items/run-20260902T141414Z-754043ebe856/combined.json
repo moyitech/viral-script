@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-b810c2f6b0c54abe9b5265d099e5cb14",
+  "run_id": "run-20260902T141414Z-754043ebe856",
+  "trace_sha256": "9a77c7b06d365c778734130ecd714fbfcc77c94ccc6388a5878d119e4b787a8c",
+  "created_at": "2026-09-03T13:46:11.093838Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直答“还有空间”，收紧与生存两侧都覆盖，低价档、外跳分流紧扣小开发者，结尾回扣题设。",
+      "script_spans": [
+        "抽成收紧，小开发者反倒有活路。还有空间，但别只赖在商店里。",
+        "大户被掐，小户得松。",
+        "高墙没倒，但缝里透光，小开发者活不活看会不会侧身走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 293，目标为 280，偏差率为 4.64%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题全程集中，分层规则、数字对比、外跳归零、窗口风险逐层推进，给出判断方法，无明显编造。",
+      "script_spans": [
+        "原本三十块得交九块，现在可能只交一两块",
+        "另一些地儿允许外跳支付，用户跑商店外付款，抽成可归零",
+        "可这口子像季节风，随时合上，只是临时窗口"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛反差钩子，中段算账、外跳归零、窗口将关层层递进，结尾余味自然生长不生硬。",
+      "script_spans": [
+        "抽成收紧，小开发者反倒有活路",
+        "可这口子像季节风，随时合上，只是临时窗口",
+        "高墙没倒，但缝里透光，小开发者活不活看会不会侧身走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口贯穿全文，算账与举例都是对话式表达，重音停顿清楚，通篇无需临时改词。",
+      "script_spans": [
+        "你想，原本三十块得交九块，现在可能只交一两块。",
+        "你做个小工具，塞个链接让人去网页买，平台分文不取。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且助理解，大户被掐小户得松、缝里透光均可脱离原文复述，无炫技堆砌。",
+      "script_spans": [
+        "大户被掐，小户得松。",
+        "省下的钱够小团队喝汤",
+        "高墙没倒，但缝里透光"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "背景、利好、风险、对策层层递进，“不能赌它一直开”自然引出看条款，结尾回扣开头，因果顺畅。",
+      "script_spans": [
+        "小团队年进账不到百万级，能走低价档，手续费反而轻了",
+        "普通人造个小应用，不能赌它一直开。你得常看自己区域的条款"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有边界意识，提醒口子随时合上、别违规硬闯；但平台分文不取未限定条件，属绝对化表述，需补范围。",
+      "script_spans": [
+        "可这口子像季节风，随时合上，只是临时窗口",
+        "你得常看自己区域的条款，靠例外和分流找生路",
+        "塞个链接让人去网页买，平台分文不取"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c6096f1299064851ba3c15ea5a0309dc",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e08483759c40456986a5ae5c7d16f9f6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

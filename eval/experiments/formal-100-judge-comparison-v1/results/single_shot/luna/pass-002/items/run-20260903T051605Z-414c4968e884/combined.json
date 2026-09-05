@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-8b5b2d0456a64d87badae4b311455b61",
+  "run_id": "run-20260903T051605Z-414c4968e884",
+  "trace_sha256": "5d1a42676fb8e9de6e5a547c3eafbc5e5cca204849790265763db3f5c2c65d81",
+  "created_at": "2026-09-03T12:42:26.484282Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解省成本与冷落晚归人的冲突，受影响人群和现实场景覆盖到位。",
+      "script_spans": [
+        "账上省了油费和人工，可深夜下班的保洁员、码农、服务员却被丢在空荡的站台",
+        "减频不是单纯算账，它冷落了那些没得选的晚归人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，政策逻辑、可达性影响和个人备选方案层层增加信息，结论也有情绪支撑。",
+      "script_spans": [
+        "公共公交带着公益底色，成本规制本意是让财政补上运营缺口",
+        "出行可达性也有社会维度，班次一稀，年轻人兼职晚归、错峰就医的权利就被悄悄折损。",
+        "先盯紧末班时间，留个合规网约车作备份"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出省钱与晚归人受困的冲突，中段补上公共性与可达性，结尾给出建议并留下余味。",
+      "script_spans": [
+        "夜间公交班次越拉越长，账上省了油费和人工，可深夜下班的保洁员、码农、服务员却被丢在空荡的站台。",
+        "如果你家那趟夜线已减半，别硬扛：先盯紧末班时间，留个合规网约车作备份，比寒风里苦等更体面。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和建议段较顺，但中段抽象词密集，长句与结尾比喻影响自然朗读。",
+      "script_spans": [
+        "别硬扛：先盯紧末班时间",
+        "出行可达性也有社会维度，班次一稀，年轻人兼职晚归、错峰就医的权利就被悄悄折损。",
+        "夜间公交的间隔，丈量着城市肯给熬夜者多少兜底温柔。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“丈量城市兜底温柔”与“算盘珠压灭灯”画面鲜明，修辞克制，既强化观点也留下可复述的记忆点。",
+      "script_spans": [
+        "夜间公交的间隔，丈量着城市肯给熬夜者多少兜底温柔。",
+        "别让算盘珠，压灭最后一盏等你归家的灯。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由现象到立场，再到政策解释、个人应对和价值回扣，段落功能清楚，因果链基本完整。",
+      "script_spans": [
+        "公共公交带着公益底色，成本规制本意是让财政补上运营缺口",
+        "如果你家那趟夜线已减半，别硬扛：先盯紧末班时间",
+        "别让算盘珠，压灭最后一盏等你归家的灯。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有公益关切，且给出相对稳妥的备选建议；但将减频归因于冷落，并把可达性损失表述为权利折损，边界不够充分。",
+      "script_spans": [
+        "留个合规网约车作备份，比寒风里苦等更体面。",
+        "它冷落了那些没得选的晚归人。",
+        "年轻人兼职晚归、错峰就医的权利就被悄悄折损。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3f93d8d20be44bc8937f4a6cfcc607d8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

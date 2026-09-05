@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-80d5152c0ce24a3f9d994921e2d33d15",
+  "run_id": "run-20260903T051600Z-2c8ffad36743",
+  "trace_sha256": "8285b5fce307d8b8c030d1cceca103a1778343c162e78c14a8540d7fc1c7bd63",
+  "created_at": "2026-09-03T12:32:51.017185Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答消费者是否会为兼容问题付费，覆盖碎片化、额外成本、监管过渡和购买建议，核心人群明确。",
+      "script_spans": [
+        "全球技术标准各自成阵，消费者注定要为兼容难题买单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦兼容成本，依次解释额外支出、监管统一与过渡限制，并给出可执行建议，信息推进完整。",
+      "script_spans": [
+        "不同阵营的充电与连接协议互不打通，买新设备常得另购转接头或重复配置电源",
+        "政策过渡期里旧设备不会瞬间退场"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用充电线堆制造具体痛点，中段补上法规与过渡期，结尾给出可执行提醒，推进完整。",
+      "script_spans": [
+        "许多人家里的抽屉里那堆互不通用、越积越多的充电线",
+        "政策过渡期里旧设备不会瞬间退场"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体逻辑清楚，开头画面和结尾提醒好读；但中段长句、抽象词和“钱包预算”让节奏发紧。",
+      "script_spans": [
+        "抽屉里那堆互不通用、越积越多的充电线",
+        "下次更换手机或耳机前，先确认接口规格再下单",
+        "全球技术标准各自成阵，消费者注定要为兼容难题买单，这已是实实在在的成本转嫁而非遥远模糊猜测",
+        "部分地区已通过强制法规来统一充电接口，正说明当地监管层也公开承认碎片化让普通人多花冤枉钱，但政策过渡期里旧设备不会瞬间退场"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "充电线堆和专属插头形成鲜明画面，修辞服务理解，核心判断具体，容易被观众复述。",
+      "script_spans": [
+        "许多人家里的抽屉里那堆互不通用、越积越多的充电线",
+        "一台机器各配专属插头的局面远未全球终结"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构由成本现象推进到机制、监管和建议，主线清楚；但法规与“多花冤枉钱”之间因果偏满，长句也影响口播。",
+      "script_spans": [
+        "政策过渡期里旧设备不会瞬间退场。一台机器各配专属插头的局面远未全球终结",
+        "正说明当地监管层也公开承认碎片化让普通人多花冤枉钱",
+        "许多人家里的抽屉里那堆互不通用、越积越多的充电线，其实正悄悄抬升日常看不见的开销"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有明确消费提示，但“注定”“实实在在”把趋势说成必然，并将监管归因说满，需加范围和证据边界。",
+      "script_spans": [
+        "下次更换手机或耳机前，先确认接口规格再下单",
+        "消费者注定要为兼容难题买单",
+        "监管层也公开承认碎片化让普通人多花冤枉钱"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ed3624affebb45a6805de7af44ef9377",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

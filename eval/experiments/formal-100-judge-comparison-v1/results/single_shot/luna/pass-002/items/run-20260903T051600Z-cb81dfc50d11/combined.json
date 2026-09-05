@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-02fe47f2be9c4d728a77f5a8e43a88a7",
+  "run_id": "run-20260903T051600Z-cb81dfc50d11",
+  "trace_sha256": "661fb2386f03d99b75d1ce174a8ec534ba1faafa48cb4544408d52a27f55e5d1",
+  "created_at": "2026-09-03T12:31:28.286822Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接追问收益，正文同时比较大行存单与中小银行定存，并给出普通人决策标准，命中题设。",
+      "script_spans": [
+        "算总账未必比分散存中小银行更划算。",
+        "对普通人来说，资金超五十万就得拆几家银行保底数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕稀缺成因、利率对比、提前支取、转让流动性和分散存款逐层推进，信息单元具体，结论有支撑。",
+      "script_spans": [
+        "银行限量发存单，是想把存款留在表里，不是利率要反弹。",
+        "部分农商行三年定存挂牌近1.9%，比大行同期限高出一截。",
+        "虽新规允许转让，不等于随时有人接手，流动性成本暗藏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用连续追问制造冲突，中段持续拆解利率、流动性和分散存款，结尾建议自然承接。",
+      "script_spans": [
+        "明明利率只剩一点几，银行为什么还把大额存单藏起来卖？",
+        "抢存更像帮银行锁钱，不是捡漏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句清楚、停顿自然，但“保底数”“存款保险覆盖”等表达拗口，核心讲解仍偏金融书面化。",
+      "script_spans": [
+        "抢不到没必要焦虑，先问自己：这钱三五年确定不动吗？",
+        "资金超五十万就得拆几家银行保底数。",
+        "先核对自己存款保险覆盖和用钱节奏，再决定排不排队。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“安全垫，不是摇钱树”准确概括收益边界，“不是捡漏”强化判断，修辞克制且便于复述。",
+      "script_spans": [
+        "抢存更像帮银行锁钱，不是捡漏。",
+        "大额存单是安全垫，不是摇钱树。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，随后用“先看”“再拆”分层，因果和结论回扣清楚，收尾自然落到可执行的判断。",
+      "script_spans": [
+        "先看这一单难求的本质。",
+        "再拆关键取舍。",
+        "大额存单是安全垫，不是摇钱树。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制且无明显违规，但“保本”和“就得拆几家”略显绝对，应明确保障限额按每家银行本息合计计算，拆分并非强制。",
+      "script_spans": [
+        "先核对自己存款保险覆盖和用钱节奏，再决定排不排队。",
+        "五十万内保本",
+        "资金超五十万就得拆几家银行保底数"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d16b0485503f43249ad9943fbbe90d52",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

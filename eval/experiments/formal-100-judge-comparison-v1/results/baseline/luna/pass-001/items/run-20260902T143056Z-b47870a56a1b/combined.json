@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-8533b77a3c10481aa597c91f82113c67",
+  "run_id": "run-20260902T143056Z-b47870a56a1b",
+  "trace_sha256": "1aefcbb9f68e0bb6b95e868c26ad877538406e3b0638ae8e0c4359b919f07b9a",
+  "created_at": "2026-09-03T11:48:20.552824Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释公共充电窃密风险，并针对普通人给出墙插、隔离线和仅充电等分场景做法。",
+      "script_spans": [
+        "充电线偷数据？真能，却零实锤。",
+        "那普通人注意啥？自带插头插墙电最稳当。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 699，目标为 700，偏差率为 0.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机制、风险证据、政策背景和分场景操作建议均有展开，信息单元丰富且主题集中。",
+      "script_spans": [
+        "数据线里分电力线和信号线，插上后信号线就能通信。",
+        "插上手机弹信任别点，只选仅充电模式。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“真能，却零实锤”的反差抓人，中段不断切换机制、案例和应对，结尾互动自然落地。",
+      "script_spans": [
+        "充电线偷数据？真能，却零实锤。",
+        "那为啥没听谁真丢？",
+        "下次出门，你会带插头还是赌桩干净？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、追问和转折有对话感，但多处表达压得过紧，操作建议读来卡顿。",
+      "script_spans": [
+        "你说这反差怪不怪？",
+        "那普通人注意啥？",
+        "公共充电设备有窃密技术通道，但你出门带个自家充电头，只插墙边插座，风险能压到极低。",
+        "借桩时手捂接口，防人动线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“坏人懒得摆摊，爱躺赚”把成本逻辑说活了，且有“充电不授权比换线更顶用”的可复述结论。",
+      "script_spans": [
+        "坏人懒得摆摊，爱躺赚。",
+        "充电不授权比换线更顶用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按机制、证据、政策到操作建议推进，但车桩与手机USB概念切换突兀，部分因果解释也偏跳跃。",
+      "script_spans": [
+        "那普通人注意啥？自带插头插墙电最稳当。",
+        "政策说安全便捷，但新建多为车桩，手机桩少提。",
+        "坏人算账，做这陷阱成本贵得很，不如发短信骗你点开链接。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有自带充电头、选择仅充电等避险建议，但“风险能压到极低”“没人验”过于绝对，易造成误判。",
+      "script_spans": [
+        "自带插头插墙电最稳当。",
+        "插上手机弹信任别点，只选仅充电模式。",
+        "风险能压到极低。",
+        "乱装的小作坊桩没人验，别碰。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-37f1b776aaaf45fba2416e0f082ab5b6",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-75abed90dbf6431db6c273b66fa81f10",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

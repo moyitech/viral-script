@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-6024797d1cf94e94b0703c34edd99086",
+  "run_id": "run-20260903T051537Z-1129140b80c9",
+  "trace_sha256": "c3ce59bd13463f6586cc70e0f0368e2f002947552e71b2c28007f02a6d00e286",
+  "created_at": "2026-09-03T12:31:40.469649Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应退役潮与污染担忧，并同时交代风险来源和合规解决路径，目标观众明确。",
+      "script_spans": [
+        "它们会不会变成新的污染源？我的判断是：只要规范回收跟上，光伏电依然算干净能源"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕是否产生新污染推进，覆盖标准、材料回收、违规拆解和闭环处理，信息增量充分。",
+      "script_spans": [
+        "新的废光伏设备回收污染控制技术规范已经落地，从拆卸到运输贮存都有了硬约束。",
+        "但提醒一句，如果图便宜找小作坊私自拆解，封装材料处理不当仍会漏出污染。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“悄悄老了”和污染悬念入场，中段补充规范、材料与小作坊风险，结尾自然落到回收行动。",
+      "script_spans": [
+        "屋顶上的太阳能板悄悄老了，拆下来的废板正越堆越多",
+        "它们会不会变成新的污染源？",
+        "把废板送进合规渠道，才算闭环。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚、观点也好懂，但技术规范长句和“漏出污染”造成明显卡顿。",
+      "script_spans": [
+        "屋顶上的太阳能板悄悄老了",
+        "有个事实得说清",
+        "新的废光伏设备回收污染控制技术规范已经落地",
+        "封装材料处理不当仍会漏出污染"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“绿色能源绿不绿”把生命周期问题说得简洁好记，拟人和“闭环”点到为止，没有堆砌修辞。",
+      "script_spans": [
+        "屋顶上的太阳能板悄悄老了",
+        "绿色能源绿不绿，不只看发电时零排放，更看退休后去哪儿。",
+        "把废板送进合规渠道，才算闭环。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提出污染疑问，再以规范、材料属性和违规风险解释，结尾回到全生命周期闭环，递进自然。",
+      "script_spans": [
+        "它们会不会变成新的污染源？我的判断是：只要规范回收跟上",
+        "有个事实得说清：这些退役板子含玻璃和金属，有回收价值",
+        "绿色能源绿不绿，不只看发电时零排放，更看退休后去哪儿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有回收与私拆风险提示，但“不会留下烂摊子”“光伏电依然算干净能源”仍偏绝对，需限定为规范处置下的相对判断。",
+      "script_spans": [
+        "如果图便宜找小作坊私自拆解，封装材料处理不当仍会漏出污染",
+        "不会留下烂摊子"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-04a9126e28314f09ab71585fd610f23f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

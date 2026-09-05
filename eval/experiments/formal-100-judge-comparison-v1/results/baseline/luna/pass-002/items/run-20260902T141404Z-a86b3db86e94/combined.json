@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-225987f41ebf408e97d2b418d76ea4b0",
+  "run_id": "run-20260902T141404Z-a86b3db86e94",
+  "trace_sha256": "15fb433e43ca0a4b9d64ec74cab42bfb07e7d9c64817c41b743526d371f184ec",
+  "created_at": "2026-09-03T12:15:51.106012Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正文正面回答便利与负债风险的二元问题，覆盖平台、用户和普通观众，并给出可执行提醒。",
+      "script_spans": [
+        "平台先用后付，既给便利，也藏着诱导负债的风险。",
+        "下次见0元按钮，先停一秒想，下月这笔钱从哪出？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕先用后付，便利、规模、消费冲动、预算风险和自查方法层层增加信息。",
+      "script_spans": [
+        "国际市场研究测算，2025年这类贷款规模近万亿，普及度可见一斑。",
+        "它补上线上不能试用的短板，却削弱花钱痛感。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“快感—焦虑”制造反差，中段层层推进风险，结尾的自问和钥匙比喻自然收束。",
+      "script_spans": [
+        "0元下单的快感，可能是下月还钱时的焦虑。",
+        "下次见0元按钮，先停一秒想，下月这笔钱从哪出？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "反问和生活化比喻有口播感，但中段抽象术语与长并列较多，气口不够利落。",
+      "script_spans": [
+        "那为啥容易背上债？钱不是没花，只是延后扣。",
+        "这功能在国内早从补消费力变成提消费欲，砍掉决策门槛，犹豫口红颜色都下单看实物。",
+        "本土化后，先吃后付、先借后付冒出来，点外卖扫单车都用赊账，模糊了欠钱感觉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对照和比喻都服务于风险理解，“你以为没花钱，其实债已记下”具备独立复述性，结尾意象也自然。",
+      "script_spans": [
+        "你以为没花钱，其实债已记下。",
+        "便利给了一把钥匙，但门得自己开。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线由便利转向负债再回到提醒，结构完整；但“工资一半”“多半”把风险说成普遍事实，论证桥接不足。",
+      "script_spans": [
+        "那为啥容易背上债？钱不是没花，只是延后扣。",
+        "攒多了，工资一半用来填坑。",
+        "家里堆着没拆的快递，多半是先付的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "说明了便利与风险并给出还款提醒，但“工资一半用来填坑”等泛化表述可能制造恐慌。",
+      "script_spans": [
+        "既给便利，也藏着诱导负债的风险",
+        "下次见0元按钮，先停一秒想，下月这笔钱从哪出？",
+        "工资一半用来填坑",
+        "家里堆着没拆的快递，多半是先付的"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2dbf079c3bcd4aa2b4da79a518ed7c5d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

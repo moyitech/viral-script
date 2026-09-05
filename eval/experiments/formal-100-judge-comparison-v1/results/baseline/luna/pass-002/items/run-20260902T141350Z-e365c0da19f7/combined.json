@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-55da6f47db324b279081d5375de6fb62",
+  "run_id": "run-20260902T141350Z-e365c0da19f7",
+  "trace_sha256": "816e5fb2efcdefb7af2e6460e4d451c0643640418c99bbc7fc7d4b66cfb0764e",
+  "created_at": "2026-09-03T12:15:30.741910Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答提前还贷与留现金的取舍，覆盖利率、流动性、收入稳定性和折中方案。",
+      "script_spans": [
+        "这事儿不能一刀切，得看你的房贷利率和手头备用金谁更紧迫。",
+        "若收入稳、备用金足，房贷利率又高，部分提前还挺实在。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，利率测算、合同费用、流动性风险和分层决策均提供了有效增量。",
+      "script_spans": [
+        "还十万一年少付几千利息。而钱放存款，一年息可能只有几百。",
+        "若工作收入波动大，留笔撑半年的钱比省息更要紧。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出现金收益与提前还贷的两难，中段用利率、流动性和人群分层推进，结尾问题自然承接。",
+      "script_spans": [
+        "留现金吃息越来越少，提前还贷又怕将来缺钱。",
+        "折中办法：留半年开支，余钱部分还。",
+        "当下存款率再降，你愿不愿为随时取钱，放弃那点还贷省下的利？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、对话感足，但多处词组拗口，朗读仍需临时换词，未达精心设计的自然。",
+      "script_spans": [
+        "但别急着冲去还款。",
+        "有的设违约条款，没问清就亏手续费。",
+        "不过谁也说不准下年利率怎么走，所以别全还光。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“锁死”和“弹药”把流动性风险说得形象，“一边是……一边是……”形成清楚对照，表达克制而有记忆点。",
+      "script_spans": [
+        "一边是缩水存款息，一边是欠银行的债。",
+        "钱还进去就容易锁死，房子变现慢，急用钱时贷不出来。",
+        "现金也是抓住新机会的弹药。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，先算利差再讲合同、流动性和分层建议；但以利率不确定直接推出“别全还光”，因果桥不足。",
+      "script_spans": [
+        "先算最直观的利率账。",
+        "反过来，若收入稳、备用金足，房贷利率又高，部分提前还挺实在。",
+        "不过谁也说不准下年利率怎么走，所以别全还光。",
+        "若你已临近退休，收入固定，那逻辑又不同。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有条件比较和风险提醒，整体不煽动；但利率、还款规则及“留半年、余钱还”的建议缺少适用范围，容易被当成普遍结论。",
+      "script_spans": [
+        "这事儿不能一刀切，得看你的房贷利率和手头备用金谁更紧迫。",
+        "眼下五年期以上房贷参考利率，是百分之三点五。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0b42913c72064199870739ed33966ffb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-a279b88d840d423c97893a4bad5a7223",
+  "run_id": "run-20260903T051606Z-b4203b2362da",
+  "trace_sha256": "0ba4aef3aeddc7c589e6f687226c9d8a48118085562cdf80db562ebc51893f73",
+  "created_at": "2026-09-03T12:32:26.917938Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否集体涨价，覆盖政策边界、产业链两侧、短长期价格和普通消费者，命中核心人群。",
+      "script_spans": [
+        "关键原料出口受限，不会让全球绿色产业集体涨价",
+        "普通人选购绿电设备会不会马上多掏钱？终端产品不会明天就统一调价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕管制如何传导到价格，管制边界、加工集中、库存替代和消费建议层层增加有效信息。",
+      "script_spans": [
+        "现在的出口管控大多对准战略矿产和两用物项，不是所有绿色原料都受限。",
+        "把矿石变成高纯材料的产能异常集中，少数国家握着九成以上份额。",
+        "终端产品不会明天就统一调价，因为巨头会调配库存、切换采购地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“降价”与“反着吹”制造反差，中段层层推进，结尾从能效标签落到矿源，余味和行动指向都自然。",
+      "script_spans": [
+        "买太阳能板和电动车的人盼着降价，但矿端的风向却反着吹。",
+        "别只看能效标签，看看它肚子里的矿从哪来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句和问答承接顺口，但抽象术语与两处长句拖慢节奏，尚未达到精心设计的自然口播。",
+      "script_spans": [
+        "为什么不是一刀切暴涨？看清管制的边界就知道。",
+        "价格底线已经被政策重新钉死",
+        "绿色转型的成本曲线，不再只由技术迭代决定，也开始被矿仓里的政策锁链扯动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“掐住脖子”和“肚子里的矿”把供应链风险说得具体易懂，修辞克制，也留下了可复述的判断。",
+      "script_spans": [
+        "哪怕小幅限制，也直接掐住下游电池和磁材的脖子。",
+        "别只看能效标签，看看它肚子里的矿从哪来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先界定管制范围，再解释加工集中与供给重建，最后区分短期库存和长期溢价，结尾自然回扣题设。",
+      "script_spans": [
+        "为什么不是一刀切暴涨？看清管制的边界就知道。",
+        "终端产品不会明天就统一调价，因为巨头会调配库存、切换采购地。",
+        "但长期看，含受限材料的电机、储能单元可能悄悄溢价，而回收料和本土化替代强的品类会更吃香。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "未见明显违规，且部分判断使用“可能”留有边界；但“不会”“已经被政策重新钉死”等表述过于绝对，可能误导价格预期。",
+      "script_spans": [
+        "但长期看，含受限材料的电机、储能单元可能悄悄溢价",
+        "不会让全球绿色产业集体涨价",
+        "价格底线已经被政策重新钉死"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-23885c70ff36435ea63cff68dd98508f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

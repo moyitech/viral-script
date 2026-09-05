@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-25adc904aa18440b95721d6bcca90af7",
+  "run_id": "run-20260902T144130Z-45bd1cdd1ea8",
+  "trace_sha256": "5ab9dfec5dcbbcd279fc79c6e09baf0f715951961561f1852248dfcbd22e7738",
+  "created_at": "2026-09-03T12:16:53.060574Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头先核验提速，再展开噪声、时效与公平冲突，覆盖题设两面，也落到普通居民体验。",
+      "script_spans": [
+        "先说快是不是实打实。",
+        "好处沾不上却先听响，这才是不公平处。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "提速数据、航路审批、噪声差异、密度效应和应急场景层层增加信息，结论不是简单站队。",
+      "script_spans": [
+        "飞行报批缩到一刻钟。",
+        "技术降噪被密度抵消。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用省时间对冲多噪声，中段持续补充数据、场景与公平问题，结尾把选择自然交给观众。",
+      "script_spans": [
+        "快递省下十五分钟，你却要多忍上空嗡嗡声。",
+        "若你家不在航线底，好处沾不上却先听响，这才是不公平处。",
+        "下次头顶嗡嗡响，你先查包裹到哪，还是先塞耳塞？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、反问和生活场景有口播感，但中段多处省略和硬切，朗读时仍需重断句或换词。",
+      "script_spans": [
+        "下次头顶嗡嗡响，你先查包裹到哪，还是先塞耳塞？",
+        "航路划到楼顶百台齐飞就烦",
+        "若你家不在航线底，好处沾不上却先听响，这才是不公平处。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“要时效得放飞机，要安静得收空域”对偶清晰，兼有生活化表达，观点准确且容易复述，没有修辞堆叠。",
+      "script_spans": [
+        "要时效得放飞机，要安静得收空域。",
+        "好处沾不上却先听响"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "起承转合清楚，先讲效率再转噪声，随后落到密度、公平与急救；但个别因果略跳，难称严密。",
+      "script_spans": [
+        "可快集中在试点片区，大量快递仍走地面三轮。",
+        "单台声频柔和点，航路划到楼顶百台齐飞就烦，技术降噪被密度抵消。",
+        "可飞空域多了，天上飞机就密了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体安全，但“二选一”表述简化了治理问题，噪声影响也缺少条件限定。",
+      "script_spans": [
+        "可快集中在试点片区，大量快递仍走地面三轮。",
+        "要时效得放飞机，要安静得收空域。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3bf6f1c4a3004e4ca9ef5fe0d5350195",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

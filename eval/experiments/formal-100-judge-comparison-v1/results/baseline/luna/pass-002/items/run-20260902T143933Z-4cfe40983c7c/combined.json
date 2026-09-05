@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-f36cccbb4ad54fe7b7c8a22d4a3f6a18",
+  "run_id": "run-20260902T143933Z-4cfe40983c7c",
+  "trace_sha256": "005013d0fdf58ba5f6eae9735b8b1cf95d9b4c4dca05ecc36a3e41828c544f2e",
+  "created_at": "2026-09-03T12:16:59.369212Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答如何在照护与出钱之间分担，兼顾就近照护者、远方出资者和老人利益，并给出协商办法。",
+      "script_spans": [
+        "公平不是机械平分，得按每家承受力调担子。",
+        "家里早开会，拿张纸写清周一到周日谁陪床、出多少钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕公平标准展开，法律边界、距离与经济约束、冲突后果和书面排班互相推进，信息与行动建议都具体。",
+      "script_spans": [
+        "有研究就发现，居住距离和经济状况明显拉着分工走。",
+        "住远的出钱多、陪床少，这很自然，不是谁不孝。",
+        "时日和钱互相折一折。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用具体金额制造冲突，中段给出协商办法，结尾把公平落到老人感受，推进完整。",
+      "script_spans": [
+        "大哥全天陪护，小妹只给五百，这账怎么平？",
+        "家里早开会，拿张纸写清周一到周日谁陪床、出多少钱",
+        "真公平是老人始终有人疼，不是兄弟算净账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "反问、短句和具体场景增强口播感，但“按每家承受力调担子”“时日和钱互相折一折”仍需换词。",
+      "script_spans": [
+        "大哥全天陪护，小妹只给五百，这账怎么平？",
+        "按每家承受力调担子",
+        "时日和钱互相折一折"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“机械平分”“算净账”形成清晰对照，既帮助理解，又留下可复述的公平标准，表达克制。",
+      "script_spans": [
+        "公平不是机械平分，得按每家承受力调担子。",
+        "真公平是老人始终有人疼，不是兄弟算净账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从冲突案例切入，依次说明公平原则、法律边界、现实约束、协商方案，结尾回扣公平标准，链条完整。",
+      "script_spans": [
+        "大哥全天陪护，小妹只给五百，这账怎么平？",
+        "要是硬掐表平分，就近那位反吃亏",
+        "真公平是老人始终有人疼，不是兄弟算净账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动，给出协商分担的可行建议；但“法不反对”过于绝对，易把具体法律责任说得过满。",
+      "script_spans": [
+        "家里早开会，拿张纸写清周一到周日谁陪床、出多少钱",
+        "法律写子女都有赡养义务，可没规定必须平均出力出钱。",
+        "法不反对。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3ab7b04bfa5a4cdd92d4dd88cf4a9edd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-edb33c4867604e7c993ffcac3643adf8",
+  "run_id": "run-20260903T051556Z-1f20725a1f74",
+  "trace_sha256": "0409fde9adb09971f7d4c50192a3555346b83ef6c1cb65db9db7fe505595706e",
+  "created_at": "2026-09-03T15:28:34.209012Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从开头到结尾始终正面回答资源如何分配，制度手段与个人行动两侧兼顾，结尾直指普通观众痛点。",
+      "script_spans": [
+        "所以医疗资源分配的第一原则，不是谁先到谁先看，而是谁更危急谁优先。",
+        "对咱们普通人，得看清急诊不是兜底门诊。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "现象、机制、原则、分诊、价格杠杆逐层推进，关键论据与背景资料吻合，无编造痕迹，信息增量扎实。",
+      "script_spans": [
+        "护士依据症状和体征把病人分成若干级，危重的直送抢救室，不急的排后面。",
+        "有地区对非紧急急诊收费调整后，这类患者明显回落，急症平均等候反而缩短。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句急诊与心梗对照抓人，中段原则、错配、分诊与收费层层推进，结尾共情余味自然生长，不靠喊互动。",
+      "script_spans": [
+        "感冒发烧深夜里往急诊跑，常常一坐就是几小时，而你旁边病床真正心梗的人可能正等着抢救",
+        "说不定哪天你我就是那个被让出空间的人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句可读，对比句重音清楚；但中段两处书面腔需临时改词重断，拉低流畅度。",
+      "script_spans": [
+        "不是谁先到谁先看，而是谁更危急谁优先",
+        "急诊科在建设规范里本就是接收急危重症的首诊场所",
+        "系统研究也发现，加速分诊决策类的干预能疏解拥挤"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "谁先到对谁危急的对照句离开上下文仍可复述；稀释、硬杠杠等修辞点到为止，服务理解，无堆砌炫技。",
+      "script_spans": [
+        "不是谁先到谁先看，而是谁更危急谁优先",
+        "危急者黄金时间被稀释"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "因果桥完整，预判反驳自然，结尾回扣开头心梗患者，段落功能清晰，论证经得起追问。",
+      "script_spans": [
+        "这看似不近人情，却让稀缺资源对准最要命的风险。",
+        "把不急的留给不急的渠道，既是规矩，也是给危急者留出活路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述客观克制，明确胸痛昏厥立刻就医的边界，收费与分诊说法有据，无夸大承诺或煽动对立。",
+      "script_spans": [
+        "小痛小病先找社区或家庭诊所，真有胸痛、昏厥别耽搁立刻去",
+        "有地区对非紧急急诊收费调整后，这类患者明显回落，急症平均等候反而缩短"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2f89d0411908430da73cbb00d8a4474c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

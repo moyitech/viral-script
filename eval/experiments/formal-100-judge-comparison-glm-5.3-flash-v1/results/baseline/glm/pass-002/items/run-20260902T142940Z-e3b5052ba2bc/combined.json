@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-ce30fab9c78841d29a381300ec1ee7ca",
+  "run_id": "run-20260902T142940Z-e3b5052ba2bc",
+  "trace_sha256": "a051de75b1a84ef27ea1c6795f537d6373a41fd5b66ddbaedb2b4109f2101cfa",
+  "created_at": "2026-09-03T14:30:29.185497Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给出“多数在交学费”的结论，消费侧与平台侧都覆盖，直指年轻人报名冲动，结尾回扣题设。",
+      "script_spans": [
+        "年轻人刷这些广告，多数在交学费而非真赚钱",
+        "咱先护钱包再想副业"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "投诉金额、套路拆解、平台新规、拦截数据层层推进，结尾给出“先问清贷款合同”的可带走判断法，情绪有依据。",
+      "script_spans": [
+        "技能培训投诉成了维权重灾区，平均涉诉超七千块",
+        "真要报名，先问清是不是贷款合同"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差提问即入题，中段维权细节与话术变化层层兑现钩子，结尾建议与态度自然收束有余味。",
+      "script_spans": [
+        "刷副业课想增收，却先交了学费？",
+        "广告改说分享经验，但拉你报名的心没变",
+        "真要报名，先问清是不是贷款合同。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口与对话感在线，但“保证收益话术已禁”“卖课比教赚钱还多”两处压缩拗口，朗读需临时换词重断。",
+      "script_spans": [
+        "看见晒收益就报名，最后课越上越水",
+        "保证收益话术已禁",
+        "卖课比教赚钱还多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“卖课比教赚钱还多”离开上下文仍可复述，“月入三万不敢写”具体有画面，修辞克制服务理解。",
+      "script_spans": [
+        "卖课比教赚钱还多，咱先护钱包再想副业。",
+        "连“月入三万”都不敢写",
+        "用“先学后付”当幌子，实际是贷款"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "“再看平台侧”过渡自然，套路到损失因果连贯，结尾回扣开头之问，各段功能清楚。",
+      "script_spans": [
+        "再看平台侧，规则明显收紧",
+        "广告改说分享经验，但拉你报名的心没变"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "数据有据且提示先问清贷款合同，导向安全；但“多数在交学费”“卖课比教赚钱还多”属绝对断言，宜补边界。",
+      "script_spans": [
+        "真要报名，先问清是不是贷款合同。",
+        "多数在交学费而非真赚钱",
+        "卖课比教赚钱还多"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b66ba795b57d47549c39a02bd0e661ac",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

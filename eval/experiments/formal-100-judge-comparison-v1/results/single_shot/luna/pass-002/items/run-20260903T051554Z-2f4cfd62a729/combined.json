@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-d51b1543a02847f3a841a57fd74f903e",
+  "run_id": "run-20260903T051554Z-2f4cfd62a729",
+  "trace_sha256": "e16af9698b271fbac8aa1f687fb67ade06c280a6617827e1db29b4a0e1e7e260",
+  "created_at": "2026-09-03T12:31:32.606948Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释老用户变贵的机制，并覆盖新客、平台与普通用户应对。",
+      "script_spans": [
+        "老用户因为依赖平台、比价意愿弱，自然被划进高单价区；新客看到的便宜，不过是拉新成本"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕动态会员价展开，补充定价机制、用户分层、应对办法和监管风险，信息推进充分。",
+      "script_spans": [
+        "它盯着你的打开习惯、常去地点和付款记录，悄悄算出你对涨价的忍受度",
+        "叫车前用浏览器无痕模式比个价，或者定期清除历史行程，让画像模糊一点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出反常涨价，中段用机制与应对持续推进，结尾自然落到维权行动。",
+      "script_spans": [
+        "你叫车越频繁，平台弹出的动态会员价反而越贵",
+        "那系统凭什么认定你该多付？",
+        "至少不当沉默的韭菜"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体逻辑清楚、口语钩子有效，但中段抽象术语和法律式长句偏多，朗读需重断句。",
+      "script_spans": [
+        "那系统凭什么认定你该多付？",
+        "把老用户的忠诚度直接折算成了溢价系数",
+        "说明这种动态溢价已游走在公平边缘"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“隐形标签”“沉默的韭菜”形象易复述，修辞服务解释，整体没有连续堆砌。",
+      "script_spans": [
+        "这就像给用户贴隐形标签",
+        "至少不当沉默的韭菜"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "机制解释和新老用户对照清楚，但把市场调节价直接连到溢价正当性，法律边界过渡不足。",
+      "script_spans": [
+        "那系统凭什么认定你该多付？它盯着你的打开习惯、常去地点和付款记录",
+        "暂行办法给了平台自主定价的空间，但近年来大数据杀熟的争议反复出现，说明这种动态溢价已游走在公平边缘"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有“可能踩线”、留存截图等边界和维权提示；但将用户频率、画像与高价直接绑定，并建议无痕或清历史，易把推测说成定论。",
+      "script_spans": [
+        "留好订单截图，至少不当沉默的韭菜，该问就问。",
+        "你叫车越频繁，平台弹出的动态会员价反而越贵",
+        "老用户因为依赖平台、比价意愿弱，自然被划进高单价区"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e4e4181c507246dcb522f0fbc98798ee",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

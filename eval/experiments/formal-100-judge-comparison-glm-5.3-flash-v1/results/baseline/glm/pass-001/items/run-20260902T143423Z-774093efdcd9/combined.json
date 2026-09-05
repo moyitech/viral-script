@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-c87ea17311514c279c888d56c30896db",
+  "run_id": "run-20260902T143423Z-774093efdcd9",
+  "trace_sha256": "383d54cdda9e04cbc55622f297f2f1505805e5fa25c647a41b3e6d644f024945",
+  "created_at": "2026-09-03T13:46:21.552312Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即正面回答花不花得更多，涨价与冲动消费两侧都覆盖，比价建议直击普通观众痛点。",
+      "script_spans": [
+        "主播不喊最低价，你反而花更多？其实未必，但确实可能更贵",
+        "想真不花更多，下单前退出直播间，去搜索框查查平时价，别懒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 279，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦会不会花更多，新规传导与冲动消费两个信息单元层层推进，结尾落到可执行比价法。",
+      "script_spans": [
+        "新规不让强逼标最低价，商家不用为流量硬压价，利润空间自己捞，标价一松，日常杂货慢慢回涨",
+        "冲动买的常是非必需，结果同样东西没比过去便宜，总账单却悄悄涨了一截"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句反差提问直接入题，中段从新规机制推到冲动消费，层层有新信息，结尾提问由正文自然长出。",
+      "script_spans": [
+        "滑开直播间，主播不喊最低价，你反而花更多？",
+        "你脑子一热多塞两件没用",
+        "下次心动，先问是自己需要，还是被带节奏？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇短句短气口，问答与转折承接自然，'别懒''脑子一热'等表达出口即用，朗读无需临时改词或重断句。",
+      "script_spans": [
+        "利润空间自己捞，标价一松，日常杂货慢慢回涨",
+        "这一头先搁一边。另一头呢，没了低价幌子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "表达克制贴切：利润空间自己捞、悄悄涨了一截都服务理解；被带节奏一句离开上下文仍可复述，无炫技。",
+      "script_spans": [
+        "利润空间自己捞",
+        "总账单却悄悄涨了一截",
+        "先问是自己需要，还是被带节奏？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "两侧用'这一头先搁一边''另一头呢'清楚交接，开头设问、结尾回扣，因果链完整可跟随。",
+      "script_spans": [
+        "这一头先搁一边。另一头呢",
+        "下次心动，先问是自己需要，还是被带节奏？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以'其实未必''不是明天全贵'主动设限，涨价与冲动分析不作保证；批评不点名、不煽动，比价建议务实，导向安全。",
+      "script_spans": [
+        "其实未必，但确实可能更贵",
+        "这不是说明天全贵，是定价自由回来了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-96410e83ace1455b9e1ea8e750be4a5c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-bf6375d728f349cbbd5ebc210a291046",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

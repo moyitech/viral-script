@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-c480b84f0ee6425eb53ae460ef755e05",
+  "run_id": "run-20260902T144331Z-bf2aa54a7de0",
+  "trace_sha256": "6f58f1759df9d72ca34619cc5318ba924e07bc70bf7ffab53657fce89c0ff680",
+  "created_at": "2026-09-03T13:46:33.413503Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即正面作答，怕停线与丢客户贯穿全篇，政策推进与工厂顾虑两侧兼顾，痛点对位。",
+      "script_spans": [
+        "国产工业软件加速替代，厂里却怕换系统，图啥？直接说：怕停线怕交不了货",
+        "上面定了几年内替换时间表，国产工具在追赶，工厂自己不敢轻易赌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 277，目标为 280，偏差率为 1.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "迁移机制、试错代价、手感账各单元独立推进，结尾给出试水方案，无编造且增量具体。",
+      "script_spans": [
+        "换系统不是删了重装，你要把攒了多年的图纸、参数和老操作习惯，整个搬进新房子",
+        "先挑条不忙的边缘产线试水，跑顺了再扩，留着老系统备着"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差加提问直给钩子，中段停线、违约、肌肉记忆层层加码，结尾提问由全文赌意自然长出，三段不互相代偿。",
+      "script_spans": [
+        "国产工业软件加速替代，厂里却怕换系统，图啥？",
+        "产线停一天违约单就来了，交货期拖客户就跑。",
+        "当设备能买，多年手感难复制，你敢全厂豪赌吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句与反问推进，气口重音清楚，口语贯穿中段，朗读顺畅无需临时换词。",
+      "script_spans": [
+        "产线停一天违约单就来了，交货期拖客户就跑",
+        "真要换，先挑条不忙的边缘产线试水，跑顺了再扩"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "搬家比喻贴切解释迁移难度，肌肉记忆、设备能买手感难复制均可复述，修辞点到为止，未压过真实观点。",
+      "script_spans": [
+        "换系统不是删了重装，你要把攒了多年的图纸、参数和老操作习惯，整个搬进新房子。",
+        "老系统每个按钮都是肌肉记忆，新界面一变效率掉坑里，手感丢了订单就黄。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从怕停线推到违约丢客户因果桥完整，再落到试水与留退路的结论，结尾回扣开头赌不赌。",
+      "script_spans": [
+        "稍有不慎机器不听使唤，整条线得停。这些老参数错一个，废品就堆成山",
+        "真要换，先挑条不忙的边缘产线试水，跑顺了再扩，留着老系统备着别砸锅没退路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "风险表述均有条件限定，建议稳妥并留退路，兼顾政策与国产追赶现状，不夸大不引战，导向安全。",
+      "script_spans": [
+        "先挑条不忙的边缘产线试水，跑顺了再扩，留着老系统备着别砸锅没退路",
+        "上面定了几年内替换时间表，国产工具在追赶，工厂自己不敢轻易赌",
+        "稍有不慎机器不听使唤，整条线得停"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c2af1610001a417c90b257a66ad7289f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a458cab58e184b6f98b8670b896ec44d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

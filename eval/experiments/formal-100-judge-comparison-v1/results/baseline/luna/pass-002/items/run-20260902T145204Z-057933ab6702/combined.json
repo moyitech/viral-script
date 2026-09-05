@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-c44dbdb359fe45b18114f089ab4fce72",
+  "run_id": "run-20260902T145204Z-057933ab6702",
+  "trace_sha256": "f47f9bd3cf06ae53be018ac7bba488ee4ddf26d5a8b63d9190b1afee83cad626",
+  "created_at": "2026-09-03T12:21:16.654291Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕传统行业员工展开，既交代转型压力，也给出学技能、找培训的应对路径，正面回答题设。",
+      "script_spans": [
+        "那员工咋办？政策留了学本事时间，但别干等。",
+        "你想不落下，得主动去社区职介问培训。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策范围、技能变化、企业与中小微压力和个人行动层层推进，既有具体事实，也给出可执行的判断与行动。",
+      "script_spans": [
+        "从2026年起给三年时间。钢铁、电解铝、水泥、平板玻璃、炼油、乙烯、合成氨、甲醇、煤电，这九个行业要搞节能降碳改造。",
+        "比如电工去学光伏运维。早学一天多一条路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用煤电工人和企业培训的反差抓人，中段推进到岗位风险与行动建议，结尾提问也顺势落地。",
+      "script_spans": [
+        "煤电工人没被丢下，反要企业掏钱培训他？这说法像反常识。",
+        "政策给窗台，你不动腿容易掉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能听懂，口语化承接有效，但行业罗列、压缩句和个别比喻造成明显卡顿，尚未达到顺滑口播。",
+      "script_spans": [
+        "那员工咋办？政策留了学本事时间，但别干等。",
+        "钢铁、电解铝、水泥、平板玻璃、炼油、乙烯、合成氨、甲醇、煤电，这九个行业要搞节能降碳改造。",
+        "你要么学新保碗，要么不动被换。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“反常识”和“转型像筛子”等可复述表达，但“政策给窗台、不动腿”意象混搭，结尾略显用力。",
+      "script_spans": [
+        "转型像筛子，漏掉的常是等靠要的人。",
+        "政策给窗台，你不动腿容易掉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、展开、行动建议和结尾主线清楚，但把政策改造直接推到企业培训，并将学习与留岗写成二选一，因果桥不足。",
+      "script_spans": [
+        "放到咱们身上，影响实在。厂里进新管线，会调会修的人留下还可能多赚。",
+        "企业得掏钱上设备，带老员工学新操作的可能性更大，而不是硬推走。",
+        "你要么学新保碗，要么不动被换。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有明确的培训和求职建议，但“要么学新保碗，要么被换”制造二选一压力，“等靠要”带有标签化和归责色彩，需收敛。",
+      "script_spans": [
+        "你想不落下，得主动去社区职介问培训。",
+        "你要么学新保碗，要么不动被换。",
+        "转型像筛子，漏掉的常是等靠要的人。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4132a5add1a3438d923ceb52351aa9c7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

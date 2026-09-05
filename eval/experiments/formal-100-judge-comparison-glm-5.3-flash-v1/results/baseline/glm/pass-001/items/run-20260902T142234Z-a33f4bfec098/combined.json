@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-9871af48890a4bc6810f3c0587d10de2",
+  "run_id": "run-20260902T142234Z-a33f4bfec098",
+  "trace_sha256": "53e87d7f4a3f79c3aa17f2140ac36a67bf0038c685351b4604b1dd79ca2b3214",
+  "created_at": "2026-09-03T13:44:34.965993Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答'有理也越界'，兼顾催缴正当与隐私底线，覆盖被点名者、物业与围观人群。",
+      "script_spans": [
+        "邻里群晒欠费户名，催缴有理也越界侵权。",
+        "欠费该催，但做法得讲分寸，不能拿理由当借口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 437，目标为 450，偏差率为 2.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "合法事由、定位风险、平台规则、应对步骤逐层推进，各有新信息，与引用资料相符，无编造。",
+      "script_spans": [
+        "处理别人信息得有合法事由。比如他点头同意，或者法律硬性要求你公开。",
+        "名字看着小，却能直接定位到那户人家，所以不是随便能晒的标签。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句“催缴有理也越界侵权”直接立反差，中段以“关键在哪”与平台规则层层兑现，结尾“明天会不会晒我”由正文自然长出余味。",
+      "script_spans": [
+        "邻里群晒欠费户名，催缴有理也越界侵权。",
+        "那关键在哪？处理别人信息得有合法事由。",
+        "今天晒他，明天会不会晒我？指尖一按，边界就清了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主，气口整齐，设问与泼水、贴条等说法自然，全篇无需临时改词或重断句。",
+      "script_spans": [
+        "群聊没人把关，发出去像泼出去的水，难收难控"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“免责金牌”“泼出去的水”贴题且克制，“今天晒他，明天会不会晒我”“别把方便当权利”离文可复述，无炫技堆叠。",
+      "script_spans": [
+        "国家法律守着这块隐私，催缴物业费不算免责金牌。",
+        "发出去像泼出去的水，难收难控。",
+        "今天晒他，明天会不会晒我？指尖一按，边界就清了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "'那关键在哪'承接自然，定位到户的因果清楚，结尾'今天晒他明天晒我'回扣开头与题设。",
+      "script_spans": [
+        "那关键在哪？处理别人信息得有合法事由。",
+        "咱们小区群，今天晒他，明天会不会晒我？指尖一按，边界就清了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "立场平衡，“欠费该催”与隐私边界并陈；平台与后果判断均用“可能”限定，无煽动夸大，价值导向安全。",
+      "script_spans": [
+        "欠费该催，但做法得讲分寸，不能拿理由当借口",
+        "处理别人信息得有合法事由。比如他点头同意，或者法律硬性要求你公开",
+        "你在群里挂名可能先踩了平台线"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-55d7e0355a5c4e1287c95b425e0f7d9f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c0a7dfbbd60244838bbc247e9045c83d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

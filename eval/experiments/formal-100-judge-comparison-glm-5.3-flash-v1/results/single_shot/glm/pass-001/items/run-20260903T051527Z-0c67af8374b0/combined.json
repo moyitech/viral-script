@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-8d6e0ede09d141a0a17ed365570de108",
+  "run_id": "run-20260903T051527Z-0c67af8374b0",
+  "trace_sha256": "f36a898278782426c3329562b0c273ad71306a0d94041c4b7b3a4c616b0195a1",
+  "created_at": "2026-09-03T14:10:50.684621Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即抛出托市质疑，结论以注销与否区分信心与表演，普通人的操作疑问被正面回应。",
+      "script_spans": [
+        "是不是跌怕了，出来托市？但把年内近900家回购案都看成救火，可能误读了资本市场正在发生的改变",
+        "回购潮里，托市只是表层噪音，注销才是信心的底稿"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 416，目标为 450，偏差率为 7.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "集中回答钱去了哪，注销机制、监管约束、信号理论、实操方法层层推进，增量具体可信。",
+      "script_spans": [
+        "今年明显的变化是注销式回购崛起，买回的股份直接销毁，总股本变小，每股收益就被垫高",
+        "先看清公告里是注销还是留着做激励，再看公司账面有没有持续买单的能力"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即抛出“跌怕了托市”的冲突质疑，中段用注销式回购、操作建议持续兑现，结尾“先问注销了吗”由正文自然生长。",
+      "script_spans": [
+        "看到一周内几十家公司扎堆宣布回购，很多人第一反应是：是不是跌怕了，出来托市？",
+        "今年明显的变化是注销式回购崛起，买回的股份直接销毁，总股本变小，每股收益就被垫高",
+        "下次看到回购公告，先问一句：注销了吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，设问承接自然，重音停顿清楚，通读无需临时换词或重断。",
+      "script_spans": [
+        "为什么这么说？关键看钱去了哪。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“救火”“真金白银”点到为止，'托市是噪音、注销是信心的底稿'离开上下文可复述，无炫技堆砌。",
+      "script_spans": [
+        "把年内近900家回购案都看成救火",
+        "买回的股份直接销毁，总股本变小，每股收益就被垫高，这是实打实分给全体股东的利益",
+        "回购潮里，托市只是表层噪音，注销才是信心的底稿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承接看钱去了哪，机制、监管、建议逐段递进，结尾问句自然回扣开头与题设。",
+      "script_spans": [
+        "为什么这么说？关键看钱去了哪",
+        "下次看到回购公告，先问一句：注销了吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "主动提示'回购不是上涨保证'、勿冲动买入，并援引监管边界，无夸大承诺或误导。",
+      "script_spans": [
+        "回购不是上涨保证，但注销式回购扎堆，至少说明一批公司觉得自家股票够便宜、值得买",
+        "监管也明确要求回购不能操纵股价，公司得量力而行",
+        "别只盯着“回购”两个字就冲动买入"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ff822cfc4fb54683b30b988d493a779b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-4d2d268e0c84440e98efd3b8a2c8330c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

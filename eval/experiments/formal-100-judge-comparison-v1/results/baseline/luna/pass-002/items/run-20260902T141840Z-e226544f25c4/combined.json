@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-2672372b36284ee2a039adb2363986c9",
+  "run_id": "run-20260902T141840Z-e226544f25c4",
+  "trace_sha256": "0a21b6905d3c19642273c583034d09510a9e30aafe2635a7bf00e36d533b60a8",
+  "created_at": "2026-09-03T12:15:28.754322Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应延长开放下的夜游需求，并同时覆盖照明、噪声、生态与居民休息，核心冲突没有漏答。",
+      "script_spans": [
+        "主步道留基础灯，让你我走得稳当。",
+        "演出只在周末定时办，并且摆去离住宅远的园门旁。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，既有分区照明和演出管理，也有生物节律、儿童安全等解释，信息单元能继续推进观点。",
+      "script_spans": [
+        "简单说，灯只打脚下，不朝天上乱射。",
+        "噪声也管起来，演出只在周末定时办，并且摆去离住宅远的园门旁。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用拒装路灯的反差抓人，中段持续补充人、鸟、居民三方需求，结尾把暗处落到夜间安宁。",
+      "script_spans": [
+        "晚上逛公园正舒服，管理方却拒装路灯？",
+        "这两边得掐准分寸，不能只顾一头。",
+        "下次见暗巷别嫌烦，也许正护你一夜静。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句较多，能形成对话感，但“摆去园门旁”等处卡顿，尚未达到自然顺口。",
+      "script_spans": [
+        "简单说，灯只打脚下，不朝天上乱射。",
+        "并且摆去离住宅远的园门旁"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“灯只打脚下，不朝天上乱射”形象清楚，“黑处正替城市降了温”形成可复述的观点，修辞不过量。",
+      "script_spans": [
+        "灯只打脚下，不朝天上乱射。",
+        "不用全场通明，黑处正替城市降了温。",
+        "灯收着声低着，夜公园才宜人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头立题、分区举例和结尾回扣基本成立，但“声音控制在低处”说法含混，末句从公园跳到“暗巷”，结论外扩。",
+      "script_spans": [
+        "这两边得掐准分寸，不能只顾一头。",
+        "灯只打脚下，不朝天上乱射。",
+        "声音控制在低处，不往楼里钻。",
+        "下次见暗巷别嫌烦，也许正护你一夜静。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体兼顾夜游、居民休息与生态保护，未见明显违规；但“安稳”“不往楼里钻”“更安全”等效果表述偏满，需补充条件。",
+      "script_spans": [
+        "主步道留基础灯，让你我走得稳当。",
+        "声音控制在低处，不往楼里钻。",
+        "带孩子夜跑，柔和光下不刺眼更安全。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6066b2ba2aba4cd28d307e3aa948bd97",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

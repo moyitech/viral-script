@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-24fe7e715ea4418394d9bdfab623734b",
+  "run_id": "run-20260902T144323Z-91ac800e5d87",
+  "trace_sha256": "af8ed7cb48f95f141711e5b68f90514f99d84b49a6bef26c54161e3c0aae14eb",
+  "created_at": "2026-09-03T14:25:33.859338Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直接抛出题设之问，“两头都得看”覆盖利弊两侧，“对普通人啥影响”精准锚定核心人群。",
+      "script_spans": [
+        "地方盘活闲置资产，会不会拖垮公共服务？其实两头都得看，关键在资产和钱去哪。",
+        "对普通人啥影响？你家闲置校舍变便民中心，你赢了；免费球场变收费停车，你就亏了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从闲置现状、政策机制到财政链条与个人得失逐层推进，基金与政策表述与引用相符，无编造，增量扎实。",
+      "script_spans": [
+        "政策鼓励共享调剂，优先自用挖潜保障履职。",
+        "国企闲置土地设数百亿基金做保租房，往缺口走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头老楼与诊所的具体反差直接立钩，中段机制、数据、风险转折层层兑现，结尾问句自然生长留余味。",
+      "script_spans": [
+        "你路过空置老楼，旁边诊所岂不没了？",
+        "下次见老楼挂牌，不妨问一句：这儿还留不留咱老百姓的位置？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有对话感，但机制段夹公文腔，'直接卖少公共空间'等处拗口需重断句，故2分。",
+      "script_spans": [
+        "财政有钱才能多开窗口；手头宽了路灯坏能修，保洁也请得起。",
+        "直接卖少公共空间，矛盾明显。",
+        "政策鼓励共享调剂，优先自用挖潜保障履职。",
+        "你家社区若多间闲置房活用，买菜都近点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "睡大觉、重排座位等比喻贴切克制，清仓卖破烂一句离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "盘活不是清仓卖破烂，是给城市重排座位",
+        "你家闲置校舍变便民中心，你赢了；免费球场变收费停车，你就亏了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "问题、机制、风险、影响逐段递进，“收益返财政补缺口”因果桥清晰，结尾老楼之问自然回扣开头与题设。",
+      "script_spans": [
+        "收益返财政，反而能补社区缺口。财政有钱才能多开窗口",
+        "但要是瞒着举债乱处置，服务就真悬，债主上门公园就黄。",
+        "下次见老楼挂牌，不妨问一句：这儿还留不留咱老百姓的位置？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反影响均用“要是/若”设限，无绝对承诺与煽动，风险提示贴合真实政策口径，价值导向安全。",
+      "script_spans": [
+        "其实两头都得看，关键在资产和钱去哪。",
+        "但要是瞒着举债乱处置，服务就真悬",
+        "所以盘活不是清仓卖破烂，是给城市重排座位。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b2fe727347d64851a58ca501788e42df",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-805a972ec3c24560be0951abcdf9489e",
+  "run_id": "run-20260903T051539Z-9a883db03d7a",
+  "trace_sha256": "bfa7885194f64dfc8cf6ac50de5975700b26d853a333d112765ef5fc0420d791",
+  "created_at": "2026-09-03T12:32:02.590000Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直面汇率是否侵蚀收益，覆盖普通投资者的换汇、持有与赎回决策，题设两侧均有回应。",
+      "script_spans": [
+        "单纯盯着外币计价的收益率，很容易误判。",
+        "对普通人来说，影响很直接。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕汇率侵蚀收益展开，讲清双向波动、买卖价差、币种转换和人民币落袋，信息推进充分。",
+      "script_spans": [
+        "赎回时又按银行买价换回人民币，中间本来就有点差成本。",
+        "得看人民币落袋多少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出收益被汇率吞掉的冲突，中段补足机制与风险，结尾形成自然余味。",
+      "script_spans": [
+        "你兴冲冲把人民币换成美元去买境外理财，最后算账却发现白干了——钱没亏在标的，亏在了汇率上。",
+        "关键机制在于购汇和结汇的链条。",
+        "汇率不是背景音，是主角之一。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "核心段落有清晰的因果推进；但术语和金融书面句偏密，连续朗读时气口与重音不够自然。",
+      "script_spans": [
+        "别只看境外产品挂的浮夸回报，要算“到手人民币”的账。",
+        "企业跨境融资的前车之鉴表明，币值错配会让盈利被汇兑损益反噬。",
+        "近期人民币对美元还走出了一轮偏强行情，这时候换出人民币，相当于在相对低点买了外币。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对比都服务于理解，既有“亏在汇率上”的警醒，也有“汇率是主角”的可复述收束。",
+      "script_spans": [
+        "钱没亏在标的，亏在了汇率上。",
+        "跨境理财的账，不能只算外币收益，得看人民币落袋多少。",
+        "汇率不是背景音，是主角之一。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按现象、机制、影响和建议递进，但小额点差占比更高缺少条件，与本土产品比较的结论铺垫不足。",
+      "script_spans": [
+        "你投资时把人民币按银行售价换成外币，赎回时又按银行买价换回人民币",
+        "资金量越小，换汇点差在总收益里占比越突出。",
+        "盲目跨境理财可能连本土稳健选项都不如。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体是在提示汇率风险，且多处使用条件句；但“白干了”“相对低点”等措辞偏绝对或带择时暗示，需补充限定。",
+      "script_spans": [
+        "如果承受不了汇率反向波动，盲目跨境理财可能连本土稳健选项都不如。",
+        "最后算账却发现白干了——钱没亏在标的，亏在了汇率上。",
+        "这时候换出人民币，相当于在相对低点买了外币。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4f24d02563a640b0b8e8cd759c2ab243",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

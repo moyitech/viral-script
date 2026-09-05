@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-d859d8e7dd3c4330a0e7722bdc68c68e",
+  "run_id": "run-20260903T051547Z-3867d3e803a4",
+  "trace_sha256": "4e6ac2e33cf9f0495a59c4eecac66a03064ffde0a1408609ea536a7cb8348c10",
+  "created_at": "2026-09-03T12:33:17.524117Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“谁来兜底”，同时覆盖云厂商、用户与政府，且落到普通商业服务的韧性痛点。",
+      "script_spans": [
+        "云厂商把根基扎牢是本分，用户自己留冗余是清醒，政府只守关键信息基础设施的生命线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，原因、集中化风险、赔偿边界和多云容灾层层推进，观众能获得判断框架与行动建议。",
+      "script_spans": [
+        "为什么一个小环节失灵能闹出大动静？因为现在太多服务悄悄共用同一朵云、同一个区域。",
+        "落地韧性建设，靠的是多云容灾加冷备份。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用日常故障切入，连续追问、案例和反例推进，结尾把赔偿问题转成自检，余味自然。",
+      "script_spans": [
+        "你手机刷不出地铁码、外卖下单转圈圈，很可能不是你信号差",
+        "那是不是该让云厂商赔到肉疼就完事？现实没那么简单。",
+        "别总问谁来赔，先问自己业务断半小时我还能不能活。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和收尾有对话感，但中段术语、并列和长句偏密，至少多处需要重断句，整体只能读通。",
+      "script_spans": [
+        "那是不是该让云厂商赔到肉疼就完事？现实没那么简单。",
+        "而国内数年前就推出了云计算服务安全评估，把云平台的业务连续性、数据可迁移性列为核心考察",
+        "主环境故障秒级切到备用环境，但维护多套系统要烧钱和人力，小公司得权衡"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“技术小裂缝变成行业多米诺”和“留好后路”形象且可复述，修辞服务判断，没有明显堆砌。",
+      "script_spans": [
+        "这种高度集中化，让技术小裂缝变成行业多米诺。",
+        "留好后路，比追着兜底更有用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有提问、解释、方案和回扣的骨架，但把安全评估的监管边界直接表述为政府“兜底”，概念仍未完全厘清。",
+      "script_spans": [
+        "为什么一个小环节失灵能闹出大动静？因为现在太多服务悄悄共用同一朵云、同一个区域。",
+        "政府兜底的边界始终清晰：党政机关和关键设施优先评估"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体责任边界和容灾讨论较克制，但故障影响、技术效果及未来频率的表述偏满，补充限定才稳妥。",
+      "script_spans": [
+        "但也不能说多云就绝对安全，跨云管理本身引入新复杂度。",
+        "十几个小时里从影视播放到移动支付、航空值机全数瘫痪，上千家公司被波及。",
+        "云中断未来会像城市停电一样常见"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-cd2dad800759409dbda0f1093767c7ce",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

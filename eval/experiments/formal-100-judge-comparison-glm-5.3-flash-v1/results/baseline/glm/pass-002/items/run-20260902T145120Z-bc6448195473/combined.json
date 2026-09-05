@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-70c3bc5a412548e1a564e5dcc9f9929d",
+  "run_id": "run-20260902T145120Z-bc6448195473",
+  "trace_sha256": "b27b2fbfcd4fa6f6dbb1792c309171d7237ec1a9aa22a5de73244ef0ad7e2844",
+  "created_at": "2026-09-03T14:26:44.562480Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "全文围绕普通人岗位展开，先答总量再辨错配，最后给入行建议，正反两侧与人群痛点全覆盖。",
+      "script_spans": [
+        "考了无人机证却没活干，低空百万岗归谁？",
+        "那普通人能冲吗？看区域和场景。试点效应在东部非国企更显，内陆小城别盲目考证。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策、就业研究、供需数据、区域反例层层推进，与引用背景吻合无编造，观众能带走判断方法。",
+      "script_spans": [
+        "岗位总数涨得猛，一年新发职位多了六成，平均年薪近二十九万。",
+        "重庆就是个反例：前年飞手就业率八成，现在不到四成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛考证无活与百万岗的反差悬念；中段以重庆就业率反转等持续兑现；结尾螺丝刀之喻余味自然。",
+      "script_spans": [
+        "考了无人机证却没活干，低空百万岗归谁？",
+        "重庆就是个反例：前年飞手就业率八成，现在不到四成。",
+        "普通人的饭在脚下，错风口里，证不如一把螺丝刀。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "对话式短句撑起底色，大体好读；但“东部非国企更显”与政策文件句属书面压缩，朗读需临时改词重断，止步2分。",
+      "script_spans": [
+        "天上飞机还没密，地上证先发毛了",
+        "多部门连发低空保险、基建通信文件托着底",
+        "试点效应在东部非国企更显"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻贴切且服务论点，飞机未密对证先发毛、螺丝刀之喻离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "天上飞机还没密，地上证先发毛了。",
+        "你考的证得对准田埂和电线杆，而不是写字楼演示屏。",
+        "错风口里，证不如一把螺丝刀。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "各段功能清晰，数据与案例因果有桥，结尾回扣开头之问，论证闭合，仅末尾补样本局限稍显仓促。",
+      "script_spans": [
+        "可普通人考证花钱花时间，等不了长线。",
+        "天上飞机还没密，地上证先发毛了。培训跑赢产业，供需能不歪？",
+        "低空经济不是造不出岗位，是把岗位放错了风口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "薪资数据配限定语，研究样本局限主动交代，建议均带条件，无夸大与误导。",
+      "script_spans": [
+        "但钱大多堆在研发适航岗，普通岗未必拿得到",
+        "研究样本偏上市企业，小厂带动还得睁眼瞧"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-dcd7c87b98f940d1bbec2e8280472f73",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

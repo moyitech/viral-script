@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-218aaa0c126a470baf15a4b89cfa0834",
+  "run_id": "run-20260902T141850Z-a4b3dec2b8f7",
+  "trace_sha256": "051a4789ca2170339ae128f5e8e3c6c1b7d74a13c45dab2c639f4368f575413b",
+  "created_at": "2026-09-03T12:16:54.010558Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头锁定老用户反而更贵，随后解释算法、平台动机并给出比价建议，完整回应选题。",
+      "script_spans": [
+        "老用户绑定平台更久，打车却更贵，合理吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题始终围绕老用户被个性化定价，机制、平台动机和应对都有覆盖；但多处把推测写成确定机制，同义推进也偏多。",
+      "script_spans": [
+        "你下单频次、等车急不急，都进模型。",
+        "同样路程，老手机号跳出价更高。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用老用户反而更贵制造冲突，中段持续补充机制与动机，结尾的比价提醒和反问也自然落地。",
+      "script_spans": [
+        "老用户绑定平台更久，打车却更贵，合理吗？",
+        "你下次叫车前，不妨比价再点确认。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答带出节奏，但“老用户补贴退坡，新客留券引”等多处压缩生硬，朗读需重断句。",
+      "script_spans": [
+        "那它具体怎么定价的？看行为不看脸。",
+        "老用户补贴退坡，新客留券引。",
+        "可现实里算法黑箱，你难抓它挑刺。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“看行为不看脸”“会员制外壳裹着千人千面价”兼顾解释与情绪，记忆点明确，整体没有堆砌到遮住观点。",
+      "script_spans": [
+        "看行为不看脸",
+        "会员制外壳裹着千人千面价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "有提问、机制、动机、监管到建议的顺序，但多处压缩成口号，因果桥不足，法律边界的结论也过度简化。",
+      "script_spans": [
+        "那它具体怎么定价的？看行为不看脸。",
+        "老用户补贴退坡，新客留券引。",
+        "研究也认算法有盲区，你若连退几单，标签就变。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有“并非所有老用户都更贵”的边界，但将算法画像和老客必然高价写得过于确定，容易误导，应改为可能机制并避免直接指控。",
+      "script_spans": [
+        "并非所有老用户都更贵，敏感者反得低价。",
+        "它拿人定价，你有黏性，就少优惠多收点。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-dbfed11acc634dfc8df21642eb467199",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

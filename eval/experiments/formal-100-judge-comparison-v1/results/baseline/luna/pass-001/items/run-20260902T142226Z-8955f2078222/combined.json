@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-0bf20789072946648a1bfdae62805b30",
+  "run_id": "run-20260902T142226Z-8955f2078222",
+  "trace_sha256": "6bfbc618ae9fad9ebe74eebb28a602ff9bf32d2c0a18a2ccc0a8f9730fa84926",
+  "created_at": "2026-09-03T11:44:12.783256Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从陌生人垫付失联切入，解释善意为何设防，并给出面向普通观众的核验与支付建议。",
+      "script_spans": [
+        "好心帮陌生人垫付费用，善意真的需要边界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 308，目标为 280，偏差率为 10.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕善意边界展开法律依据、诈骗机制、风险数据和防范做法，信息单元连续推进，实用增量较足。",
+      "script_spans": [
+        "骗子爱装弱求援，用互惠和紧迫感催你转账。",
+        "帮之前，先让对方自走官方支付渠道，或者你用延时转账试付留个缓冲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出垫付后失联的冲突，中段从法律转到诈骗机制再给应对，结尾金句自然收束。",
+      "script_spans": [
+        "你替陌生旅客垫了酒店费，对方领完就失联。",
+        "帮前停三秒。善良不带锁，就容易帮了恶。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头、转折和结尾有对话感，但法律判断与建议句偏长，部分术语和搭配影响朗读。",
+      "script_spans": [
+        "你想啊，这钱不是救灾，是对方自己的事。",
+        "管理人得有为避免别人损失的意思，你那笔钱难靠必要费用偿还拿回。",
+        "帮之前，先让对方自走官方支付渠道，或者你用延时转账试付留个缓冲，别怕尴尬核验真需求。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不是给骗子送钱的善良人”和“善良不带锁”形成清晰反差，修辞克制，能帮助观众记住边界。",
+      "script_spans": [
+        "民法典保的是真替人着想的管事人，不是给骗子送钱的善良人。",
+        "善良不带锁，就容易帮了恶。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "法律、风险、建议三层结构清楚，但“受骗即不构成无因管理”的因果解释不足，结论仍有跳跃。",
+      "script_spans": [
+        "先说法律",
+        "再看风险那头。",
+        "要是错信了骗子，这不构成无因管理。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体是在提醒防诈骗和核验身份，但法律结论过于绝对，且“延时转账试付”可能被误解为安全做法。",
+      "script_spans": [
+        "好心帮陌生人垫付费用，善意真的需要边界",
+        "别怕尴尬核验真需求",
+        "要是错信了骗子，这不构成无因管理",
+        "或者你用延时转账试付留个缓冲"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e84f73d2f55f4d6caadb4bb1381bb9fc",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9beda6a2a9204afd9dcc233bfe5c930c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

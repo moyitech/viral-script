@@ -1,0 +1,143 @@
+{
+  "evaluation_id": "combined-415e8f6aaacc477faa71f0672e0e8873",
+  "run_id": "run-20260902T143253Z-debb6173902a",
+  "trace_sha256": "fbd960eafb66e3f3f1bf47cad2857f3979139d56ecbc15a8a267061afa7d2e7a",
+  "created_at": "2026-09-03T12:16:39.430043Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答证书能否换来工作，覆盖准入证、普通证书与应届生的求职痛点。",
+      "script_spans": [
+        "证书真能换工作吗？能，但只限准入类职业资格。",
+        "实际看学历和实习经历往往比一叠证书管用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "政策、分类、招聘筛选和行动建议都提供了有效信息，但“证书只是小块”等核心判断主要靠断言，论据推进不足。",
+      "script_spans": [
+        "发证改由企业和社会组织按职业标准自主评价等级。",
+        "考证前问自己这岗持证是法定要求吗？",
+        "应届生扎堆考证，却大多换不来工作。",
+        "人力资本重要但证书只是小块。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出就业反差，中段层层回答证书是否有用，结尾用问题自然收住。",
+      "script_spans": [
+        "应届生扎堆考证，却大多换不来工作。",
+        "那手里这些证招聘方到底认不认？",
+        "当证书不再替你敲门，你拿什么让企业开门？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答式推进和具体建议，但政策、数据段压缩过狠，多处书面表达影响朗读。",
+      "script_spans": [
+        "这政策不是取消标准，是政府松手，让市场认才管用。",
+        "人社厅发2020年80号通知写清楚，年底前两批退出目录，第一批涉及29个职业九月底前走完。",
+        "有跟踪毕业生调查发现整体落实约八成，人力资本重要但证书只是小块。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“静躺抽屉”“纸复印件”“替你敲门”把抽象判断变成画面，记忆点自然且不过度堆砌。",
+      "script_spans": [
+        "现实是多数证静躺抽屉。",
+        "老板更看当场实操不是纸复印件",
+        "当证书不再替你敲门，你拿什么让企业开门？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "段落按政策、招聘、建议推进，主线可跟随；但准入门槛被说成“换工作”，且调查数据与证书价值之间缺少因果桥。",
+      "script_spans": [
+        "这政策不是取消标准，是政府松手，让市场认才管用。",
+        "下次刷到考证速成广告先停三秒查查目录。",
+        "证书真能换工作吗？能，但只限准入类职业资格。",
+        "整体落实约八成，人力资本重要但证书只是小块。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有目录查询和防骗提醒，但“只限准入类”及“没证连报名资格都没”过于绝对，可能误导求职者。",
+      "script_spans": [
+        "专业技术资格考试没有官方指定培训机构，别信包过营销。",
+        "能，但只限准入类职业资格。",
+        "没证连报名资格都没。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c6b3138dccd44026925e663ccb3c0bad",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

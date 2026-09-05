@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-0ae17a9b657a4c4bafc56a4fb5145b64",
+  "run_id": "run-20260903T051607Z-e5b78ef9f8e5",
+  "trace_sha256": "19f146ed9da9333289abd455f28546dd26ff6305172ae2ca36e6717d5e398943",
+  "created_at": "2026-09-03T12:31:40.104881Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从无密码登录的安全收益讲到设备、同步与恢复风险，并覆盖个人、企业和行动建议，完整回应了题目。",
+      "script_spans": [
+        "无密码登录确实掐断了最泛滥的口令泄露和钓鱼陷阱，但账户安全只是换了战场，远不是终点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦安全边界，依次解释攻击机制、技术原理、风险转移和应对方法，信息单元均有推进。",
+      "script_spans": [
+        "哪怕骗子搭个以假乱真的页面，也榨不出可复用的凭证，钓鱼链条从根上断了，撞库更无从谈起。",
+        "passkey的软肋在设备丢失后的恢复。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以刷脸登录与盗号反转抓人，中段连续转移风险，结尾提醒由前文自然落地。",
+      "script_spans": [
+        "刷脸、指纹一键登录正悄悄接管你的账号",
+        "可如果以为盗号团伙就此失业，那就太天真了。",
+        "得看看风险被挪去了哪里。",
+        "别让最弱一环退回旧漏洞。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚、具备对话感，但多处技术表达和比喻不够顺口，朗读时需要临时调整。",
+      "script_spans": [
+        "可如果以为盗号团伙就此失业，那就太天真了。",
+        "行业标准已允许密钥经同步云备份，便利背后，同步链若被攻破"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“备用钥匙藏回脚垫下”把恢复风险变成可复述画面，“没把门焊死”也准确强化了安全边界。",
+      "script_spans": [
+        "这种取舍像把家门锁换成指纹，却把备用钥匙藏回脚垫下。",
+        "它把易攻的点收窄了，却没把门焊死。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先下判断，再解释旧攻击为何失效，随后转入新风险，最后区分个人与企业并给出建议，转折和结论回扣自然。",
+      "script_spans": [
+        "不过，这套机制就毫无缝隙？得看看风险被挪去了哪里。",
+        "下次开通passkey，别忘了同步硬化设备锁和救援邮箱，别让最弱一环退回旧漏洞。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体能讲清无密码的收益与恢复、设备风险，但“从根上断了”“更无从谈起”等绝对表述夸大了安全边界，需改弱。",
+      "script_spans": [
+        "无密码是扎实进步，但只是新跑道的发令枪，后续养护才是日常。",
+        "钓鱼链条从根上断了，撞库更无从谈起。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-324f98906b1e40e7a44b66dbe06ff352",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

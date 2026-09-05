@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-244882cf6da24e128ef959322bf73126",
+  "run_id": "run-20260902T142226Z-8955f2078222",
+  "trace_sha256": "6bfbc618ae9fad9ebe74eebb28a602ff9bf32d2c0a18a2ccc0a8f9730fa84926",
+  "created_at": "2026-09-03T13:45:27.729529Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇垫付失联直扣题设，法律与风险两侧正面回答为何要边界，结尾回扣，痛点命中。",
+      "script_spans": [
+        "你替陌生旅客垫了酒店费，对方领完就失联。",
+        "善意真的需要边界。",
+        "善良不带锁，就容易帮了恶。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 308，目标为 280，偏差率为 10.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律要件、骗术机制、数据与方法各成信息单元层层推进，与引用可核，无编造。",
+      "script_spans": [
+        "管理人得有为避免别人损失的意思，你那笔钱难靠必要费用偿还拿回。",
+        "骗子爱装弱求援，用互惠和紧迫感催你转账。",
+        "2023年前三季度全国立了68.9万件电诈案"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头垫付后失联冲突抓人，法律与风险层层兑现，停三秒收尾余味自然；唯无因管理句稍显书面。",
+      "script_spans": [
+        "你替陌生旅客垫了酒店费，对方领完就失联",
+        "帮前停三秒。善良不带锁，就容易帮了恶",
+        "管理人得有为避免别人损失的意思，你那笔钱难靠必要费用偿还拿回"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "中段有真实对话感，短气口清楚；但法律与风险段术语密、句式压缩，至少两处需换词重断，按规则封顶2分。",
+      "script_spans": [
+        "你想啊，这钱不是救灾，是对方自己的事。",
+        "管理人得有为避免别人损失的意思，你那笔钱难靠必要费用偿还拿回。",
+        "先让对方自走官方支付渠道，或者你用延时转账试付留个缓冲，别怕尴尬核验真需求。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比句服务理解，'善良不带锁''帮前停三秒'离开原文仍可复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "民法典保的是真替人着想的管事人，不是给骗子送钱的善良人",
+        "善良不带锁，就容易帮了恶"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "路标'先说法律''再看风险'清晰，结尾回扣开头；但被骗为何缺管理意思未讲透，'不是救灾'衔接含糊，经不起追问。",
+      "script_spans": [
+        "再看风险那头。",
+        "帮前停三秒。善良不带锁，就容易帮了恶。",
+        "你没法定或约定义务代付，要是错信了骗子，这不构成无因管理。",
+        "你想啊，这钱不是救灾，是对方自己的事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "反诈提示与法律解释均带条件限定，“常”“难”等措辞留有余地，官方渠道、延时转账等建议稳妥可行，价值导向安全。",
+      "script_spans": [
+        "先让对方自走官方支付渠道，或者你用延时转账试付留个缓冲",
+        "民法典保的是真替人着想的管事人，不是给骗子送钱的善良人",
+        "陌生求助常是精心设的局"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ffe917cddb6d480fa1b818a210d5931e",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6460c06bb4ec4261bdd9b48b73e5b9f7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

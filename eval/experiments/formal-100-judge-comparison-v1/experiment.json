@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "formal-100-judge-comparison-v1",
+  "design": "paired_generation_workflows_cross_judge_repeatability",
+  "expected_trace_count_per_source": 300,
+  "excluded_validation_sets": [
+    "discrimination"
+  ],
+  "rubric": "../../rubrics/script_quality_v1.json",
+  "rubric_sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab",
+  "sources": {
+    "baseline": {
+      "experiment_dir": "../formal-100-v1",
+      "experiment_sha256": "2174ab0cb00602a984adb56934e8d6df011144c4a9a0db44b32b24c759b00f8f",
+      "trace_manifest": "../formal-100-v1/generation/trace_manifest.json",
+      "trace_manifest_sha256": "849fa28d48207b2e12fbcfaf2921b025d5ed8c22015b33eb1af2cf7c1dfc6ccb",
+      "trace_count": 300,
+      "hy3_first_results": "../formal-100-v1/results",
+      "hy3_first": {
+        "record_count": 300,
+        "judge_fingerprint": {
+          "kind": "judge",
+          "name": "hy3-script-quality-judge",
+          "version": "3.3.0",
+          "model": "hy3",
+          "prompt_version": "script-quality-grounded-groups-v3.3",
+          "config": {
+            "request": {
+              "reasoning_effort": "high",
+              "max_format_attempts": 2,
+              "max_script_characters": 30000,
+              "max_context_string_characters": 4000,
+              "max_context_list_items": 50,
+              "max_prompt_characters": 60000
+            },
+            "sampling_parameters": {
+              "temperature": 0.0,
+              "top_p": 1.0
+            }
+          },
+          "sha256": "781b2b335b54222a72d5c7d40dc776a8f2d76ebea76d565cd375053880a7b812"
+        },
+        "manifest_sha256": "cc67007493ac72a02f49b69d4726ff25730533f4126a55ce5d7476bbff653127",
+        "summary_sha256": "7af9b704a0ecea0d909610b9b1158135feb3fec3c7a4fd49214f5753324c5c54",
+        "judge_records_sha256": "24c7cc9e6d9921885fc46902492b1a4f648bac1a5c3dd5d995422e9cf57fb4eb",
+        "combined_records_sha256": "56b3b9ae0a97bbc3104aed18a6dc930cf4a32995acb6d0e44992b5e8bd719a6e"
+      },
+      "hy3_repeat_results": "../formal-100-v1/validation/stability/repeat-001/results",
+      "hy3_repeat": {
+        "record_count": 300,
+        "judge_fingerprint": {
+          "kind": "judge",
+          "name": "hy3-script-quality-judge",
+          "version": "3.3.0",
+          "model": "hy3",
+          "prompt_version": "script-quality-grounded-groups-v3.3",
+          "config": {
+            "request": {
+              "reasoning_effort": "high",
+              "max_format_attempts": 2,
+              "max_script_characters": 30000,
+              "max_context_string_characters": 4000,
+              "max_context_list_items": 50,
+              "max_prompt_characters": 60000
+            },
+            "sampling_parameters": {
+              "temperature": 0.0,
+              "top_p": 1.0
+            }
+          },
+          "sha256": "781b2b335b54222a72d5c7d40dc776a8f2d76ebea76d565cd375053880a7b812"
+        },
+        "manifest_sha256": "f28d741cb431181dd95013af3950fc9db6f651162b8b5eed2e720e5ebe68c818",
+        "summary_sha256": "96b1cb9d41036164fb49e5d3198f68b54dbbb1edf4a48edb94bdfd072253aef0",
+        "judge_records_sha256": "7090eda3128fe91f00f910606e6b888e8c757c57f044a2d6d18d0663febea8c1",
+        "combined_records_sha256": null
+      },
+      "hy3_stability_summary": "../formal-100-v1/validation/stability/repeat-001/summary.json",
+      "hy3_stability_summary_sha256": "ce722c9532f9bb41f5d7bf1475c9bbb7e20e06c3682ad57c06ec0ff7aebab541"
+    },
+    "single_shot": {
+      "experiment_dir": "../formal-100-e2e-single-shot-v1",
+      "experiment_sha256": "95f3e396f5fc34a6e374f2826a23b0c287f56d6f01aedd1872a2192817cc1be3",
+      "trace_manifest": "../formal-100-e2e-single-shot-v1/generation/trace_manifest.json",
+      "trace_manifest_sha256": "1d5885de283dfa98a23af02dd69700e77a28fde7709d02ec0940b13255faf979",
+      "trace_count": 300,
+      "hy3_first_results": "../formal-100-e2e-single-shot-v1/results",
+      "hy3_first": {
+        "record_count": 300,
+        "judge_fingerprint": {
+          "kind": "judge",
+          "name": "hy3-script-quality-judge",
+          "version": "3.3.0",
+          "model": "hy3",
+          "prompt_version": "script-quality-grounded-groups-v3.3",
+          "config": {
+            "request": {
+              "reasoning_effort": "high",
+              "max_format_attempts": 2,
+              "max_script_characters": 30000,
+              "max_context_string_characters": 4000,
+              "max_context_list_items": 50,
+              "max_prompt_characters": 60000
+            },
+            "sampling_parameters": {
+              "temperature": 0.0,
+              "top_p": 1.0
+            }
+          },
+          "sha256": "781b2b335b54222a72d5c7d40dc776a8f2d76ebea76d565cd375053880a7b812"
+        },
+        "manifest_sha256": "e06cc1f861725ca81b2a4b634bbe5d0a88424a55097513a2a5a8353fa01a9287",
+        "summary_sha256": "ff4e8e2322fa17292143cce6de5baa4179b8825957503f74d091405dddb7e434",
+        "judge_records_sha256": "e9956427c9a7d0a2007b2c680996cadb8d6294d89781a5144c52021f84d9e8ca",
+        "combined_records_sha256": "42ca1019b12bf37fc567e48b676a56cce74d3289a29ac57f88af706d7f36afcb"
+      },
+      "hy3_repeat_results": "../formal-100-e2e-single-shot-v1/validation/stability/repeat-001/results",
+      "hy3_repeat": {
+        "record_count": 300,
+        "judge_fingerprint": {
+          "kind": "judge",
+          "name": "hy3-script-quality-judge",
+          "version": "3.3.0",
+          "model": "hy3",
+          "prompt_version": "script-quality-grounded-groups-v3.3",
+          "config": {
+            "request": {
+              "reasoning_effort": "high",
+              "max_format_attempts": 2,
+              "max_script_characters": 30000,
+              "max_context_string_characters": 4000,
+              "max_context_list_items": 50,
+              "max_prompt_characters": 60000
+            },
+            "sampling_parameters": {
+              "temperature": 0.0,
+              "top_p": 1.0
+            }
+          },
+          "sha256": "781b2b335b54222a72d5c7d40dc776a8f2d76ebea76d565cd375053880a7b812"
+        },
+        "manifest_sha256": "aa9dcb04b53248afdaec5c07cb94689ff8704388b890ce111333725d02c3a11c",
+        "summary_sha256": "9f29e130d2721bd4d14e0a5464cbc69294f9d28e7d167d0b4441fddeff485ea5",
+        "judge_records_sha256": "98c7f17eec089d4a114c8900fd9b80555d742fff7e0a49c08dbbeb6d1f783e2f",
+        "combined_records_sha256": null
+      },
+      "hy3_stability_summary": "../formal-100-e2e-single-shot-v1/validation/stability/repeat-001/summary.json",
+      "hy3_stability_summary_sha256": "5888202a7b6b708ebf89f365083a5623b08dd89003115274aa2a4a82f549f987"
+    }
+  },
+  "judges": {
+    "hy3": {
+      "model_id": "hy3",
+      "display_name": "hy3",
+      "reasoning_effort": "high",
+      "result_source": "existing"
+    },
+    "luna": {
+      "model_id": "gpt-5.6-luna-cdx",
+      "display_name": "gpt-5.6-luna",
+      "reasoning_effort": "xhigh",
+      "result_source": "new"
+    }
+  },
+  "judge_sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "judge_passes": 2,
+  "canonical_pass": 1,
+  "concurrency": {
+    "judge": 512
+  },
+  "provider": {
+    "endpoint_sha256": "2226bbd5fbd2dcdb264389aed040c211322a1f1dbb8ea60d395cd01a3b73a68d",
+    "credential_source": "HY3_API_KEY"
+  }
+}

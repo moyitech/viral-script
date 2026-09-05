@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-6cb997f63a714c56b8b1332fbb8d4d0c",
+  "run_id": "run-20260903T051503Z-00b2f27479d0",
+  "trace_sha256": "2b314d7c812b0aa1788e65e8d6711f647d8a4095605029d79088d099c828a9d6",
+  "created_at": "2026-09-03T11:57:51.105926Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解融资改善与经营承压的错位，覆盖需求、成本、就业和消费影响，精准回应题设。",
+      "script_spans": [
+        "这说明融资便宜 ≠ 生意好做。",
+        "这和我们普通人有什么关系？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 442，目标为 450，偏差率为 1.78%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，以融资、需求、成本和期限结构逐层解释压力来源，并落到就业与消费，信息推进充分。",
+      "script_spans": [
+        "不少企业营收勉强稳住，利润却被原材料和费用上涨吃掉，出现增收不增利。",
+        "加上很多小微贷款仍是短期周转，腾挪时间短，稍有风吹草动就紧巴巴。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用利好与老板皱眉形成反差，中段从需求、成本推进到就业，结尾自然落到客流与消费。",
+      "script_spans": [
+        "贷款利息降了，政策也在送钱，可街边厂子和店面的老板还是皱着眉",
+        "真正决定小生意存活的，是街角有没有客人走进来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有清晰停顿和对话式承接，信息也能顺着听懂；但句式和指标类表述有两处明显拗口，尚未达到自然流畅。",
+      "script_spans": [
+        "订单薄了，产能转不动。",
+        "稍有风吹草动就紧巴巴。",
+        "融资负担确实在减轻，但经营压力是被需求冷淡和成本刚性两头夹击",
+        "有面向中小企业的调研发现"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“融资便宜≠生意好做”高度概括核心矛盾，“增收不增利”和水管水池比喻也便于复述，修辞克制。",
+      "script_spans": [
+        "融资便宜 ≠ 生意好做。",
+        "政策能帮企业续上水管，但水池里的水，得靠大家敢花钱去填满。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提出融资便宜不等于好做，再以需求、成本、短贷解释，最后回扣就业消费，因果链完整。",
+      "script_spans": [
+        "为什么？先看需求端。",
+        "再看成本侧",
+        "所以别只看利率降没降。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，分析方向较克制；但“政策也在送钱”“真正决定”把政策支持和经营成败说得过满，需补充限定。",
+      "script_spans": [
+        "融资便宜 ≠ 生意好做。",
+        "政策也在送钱",
+        "真正决定小生意存活的，是街角有没有客人走进来。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9f7ee5944f484f50bec427da88c2d274",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-4432f6813e254e01b1085a9e76f9172f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

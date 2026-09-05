@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-890eef8fb72b42a69f86c5d77267cb6f",
+  "run_id": "run-20260903T051551Z-65e25130f5ba",
+  "trace_sha256": "fc52821dc49fb1587302c58734ffc22953ff0a67ceb2f961c008be06fce570aa",
+  "created_at": "2026-09-03T11:57:57.788040Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从算力扩张切入，持续回答中小企业为何用不上，并给出交付层解释与服务化落点，题设两侧均覆盖。",
+      "script_spans": [
+        "大城市里的算力盛宴，为什么小公司连碗汤都喝不上？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 683，目标为 700，偏差率为 2.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕交付层拆出接口、迁移、区域错位、计费和服务商激励等信息单元，解释充分，结论也有具体落点。",
+      "script_spans": [
+        "中小企业根本不需要从头训模型，他们要的是现成接口、稳定延迟。",
+        "不同芯片生态各自为政，模型想跨平台跑，迁移成本能吓退技术菜鸟。",
+        "他们真正渴望的是按调用量计费、随用随取的弹性"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用芯片繁荣与小老板叹气形成反差，中段连续追问并补足机制，结尾比喻自然收束。",
+      "script_spans": [
+        "AI芯片订单排到明年，新建算力中心天天见报，可我身边几个做智能应用的小老板都在叹气",
+        "可要是都说总算力规模已经翻了几番，小企业怎么还是没感觉？",
+        "算力繁荣是天上的云，中小企业需要的是屋檐下的接水盆。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头问答和结尾比喻有节奏，但中段技术并列偏密，“资源就池在半空”等搭配让朗读需要停顿调整。",
+      "script_spans": [
+        "大城市里的算力盛宴，为什么小公司连碗汤都喝不上？",
+        "配套有庞大工程团队调优。",
+        "资源就池在半空，漏不到地下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“天上的云”和“屋檐下的接水盆”把规模与可用性差距说得具体，记忆点鲜明，整体不过度堆砌。",
+      "script_spans": [
+        "有芯片不代表有生产力，中间缺了翻译层。",
+        "算力繁荣是天上的云，中小企业需要的是屋檐下的接水盆。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线由算力扩张落到交付层，再解释供需两端，结构清楚；但以学术圈困境直接推出巨头与中小企业落差更大，论证跳步。",
+      "script_spans": [
+        "真相是，算力总量在膨胀，但红利卡在了“交付层”",
+        "政策方向对，但企业端也有现实取舍。",
+        "产业界巨头和草根之间的落差只会更大。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且有“效果不能打包票”的边界；但“根本不需要”和“赚快钱”等断言、动机归因欠限定，仍有误导风险。",
+      "script_spans": [
+        "效果不能打包票",
+        "中小企业根本不需要从头训模型",
+        "不少仍靠卖硬件赚快钱"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-263a83f02e8e4642b3452e9216f51e75",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-03195c6e11044ff8bd90b8ac5b64c27e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

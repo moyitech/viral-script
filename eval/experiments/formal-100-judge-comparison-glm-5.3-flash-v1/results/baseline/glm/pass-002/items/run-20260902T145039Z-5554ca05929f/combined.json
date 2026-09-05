@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-9f3e2f69737642bb87f014c8d9d1f954",
+  "run_id": "run-20260902T145039Z-5554ca05929f",
+  "trace_sha256": "4f110bd181ec9ca008c3606e5512c44a4847dcd9f154b49b246b9555ff31351f",
+  "created_at": "2026-09-03T14:28:26.273538Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直抛题设之问，高层与低层两侧利害及对应人群均覆盖，结尾反问回扣作答完整。",
+      "script_spans": [
+        "便利多数就能逼少数让步吗？真没这么简单",
+        "高层老人爬楼喘，买菜都费劲；低层没这需求，反怕挡光、通风差、噪音吵"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "武汉卡壳、上海数据、广州判例各推进一步，判例落到补偿机制并给出双方做法，信息密且可核。",
+      "script_spans": [
+        "武汉一单元十四户，十二户同意装，就因一楼两户反对卡壳",
+        "广州一楼曾某，楼梯间被电梯井引桥影响通风采光，虽拦不下加装，但判获赔三万五"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛冲突与画面，中段以案例数据层层兑现悬念，结尾换位提问自然生长，全程无平段。",
+      "script_spans": [
+        "“凭啥我为你们方便牺牲采光？”一楼大爷杵拐杖挡住电梯井",
+        "武汉一单元十四户，十二户同意装，就因一楼两户反对卡壳",
+        "你家若在一楼，肯要不补偿的电梯吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、对话感强，但“楼梯间被电梯井引桥影响通风采光”与“虽拦不下加装”两处拗口需换词，最高2分。",
+      "script_spans": [
+        "高层老人爬楼喘，买菜都费劲",
+        "你只发通知不谈心，施工队来了也得撤",
+        "楼梯间被电梯井引桥影响通风采光",
+        "虽拦不下加装，但判获赔三万五"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "画面与对仗均服务说理，“方便就成了欺负”简短有力，离开正文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "要是只凭票数硬推，方便就成了欺负",
+        "法律不阻止装电梯，但也不让谁白吃亏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以设问承上启下，从冲突引到补偿机制再落到协商做法，结论不越界，结尾自然回扣开头。",
+      "script_spans": [
+        "那机制咋兜底？法院按公平原则断过案。",
+        "要是只凭票数硬推，方便就成了欺负。你家若在一楼，肯要不补偿的电梯吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "立场公允，兼顾高层需求与低层损失，补偿边界清楚，案例数据均有依据，建议克制不煽动，导向安全。",
+      "script_spans": [
+        "法律不阻止装电梯，但也不让谁白吃亏",
+        "高层真想装，把低层请来谈好补偿再动工",
+        "不是死拦就有理"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f52b5f543903456da4a7d2344b2cc1eb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

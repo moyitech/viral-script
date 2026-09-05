@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-e898fe5fffca46de8f1d8fd68f10aa41",
+  "run_id": "run-20260902T142910Z-e0d85a4f7f32",
+  "trace_sha256": "93dabad35ef355fb0ab08342d7760c9a6bae7e314e365042514ad00815dc6f96",
+  "created_at": "2026-09-03T14:27:13.949090Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头点出增收与交学费两侧，主体覆盖广告、受害与逆袭案例，人群与痛点始终对准年轻人。",
+      "script_spans": [
+        "真有人靠副业增收，但很多年轻人净亏",
+        "那年轻人完全没机会赚到吗？也不是。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "审核规则、投诉数据、先学后付陷阱与免费练手各成信息单元，层层推进且与外部资料吻合。",
+      "script_spans": [
+        "标注只讲来源，不保结果",
+        "平均涉诉金额超七千块，特征就是先交钱后上课。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即立“月入过万对交学费”的反差，中段转折与数据持续兑现钩子，结尾提问由正文自然生长。",
+      "script_spans": [
+        "半夜刷到配音课说月入过万，你怕是去交学费。",
+        "你以为标了AI就能信？不对，标注只讲来源，不保结果。",
+        "你算过每小时学费成本吗？没算清前，先别点支付。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口与重音清楚、对话感强，但“先有执行时间，后有不盲从的清醒”和“少一步亏呀”两处拗口需改词，封顶2分。",
+      "script_spans": [
+        "你以为标了AI就能信？不对，标注只讲来源，不保结果。",
+        "课程可以买，但别指望单子自己飞进微信。",
+        "但这类人先有执行时间，后有不盲从的清醒。",
+        "慢一步，少一步亏呀。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“太阳照在别人庄稼上”等比喻贴切可复述，但结尾金句连发，略显刻意，未做到点到为止。",
+      "script_spans": [
+        "广告里的太阳照在别人庄稼上，你的地还得自己浇。",
+        "你若指望买课就躺赚，大概率是给老师凑业绩。",
+        "刷视频开心，掏钱要醒。慢一步，少一步亏呀。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进段段有功能，规则与漏洞、付费与增收对照清楚，结尾回扣开头刷到广告的场景。",
+      "script_spans": [
+        "钱交出去后发生了什么？",
+        "可规则归规则，违规素材换皮就发。",
+        "下次刷到副业课，先问自己：这钱交了，我能换来什么真本事？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以警示与风险提示为主，数据与平台规则均有依据，关键处明确边界，无夸大承诺或误导表述。",
+      "script_spans": [
+        "你以为标了AI就能信？不对，标注只讲来源，不保结果。",
+        "平均涉诉金额超七千块，特征就是先交钱后上课。",
+        "广告里保证的“必赚”已被平台禁写，本身就说明没稳赚。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-46e955cd89084e528260c84269607ce4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

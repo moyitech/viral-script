@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-76f6886964fd4fd6b0b7434aaa9e251f",
+  "run_id": "run-20260903T051541Z-9a3a885d0efe",
+  "trace_sha256": "8546732f990b869495c1754a11b36b07f60ae5ee8c651e4ee136f59eda85e2d1",
+  "created_at": "2026-09-03T12:31:25.495379Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答收益为何缩水及闲钱如何安置，覆盖普通家庭的用款节奏与低风险选择。",
+      "script_spans": [
+        "闲钱第一目标是匹配用款节奏，不是硬拔收益。",
+        "如果确认有三五年不碰的钱，可以关注财政部发行的储蓄国债"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从利率走低、监管收紧讲到期限匹配和国债选择，信息持续推进，并给出可执行的方法。",
+      "script_spans": [
+        "货币市场短端利率常年趴在低位",
+        "前几年监管把现金管理类产品的投资范围卡紧",
+        "先写下未来半年的花钱清单，再决定哪笔能沉下去"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用收益缩水制造具体损失感，中段连续解释原因并给出分层建议，结尾的清单动作也自然收住。",
+      "script_spans": [
+        "收益缩水得连瓶酱油都抠不出来",
+        "先写下未来半年的花钱清单，再决定哪笔能沉下去，哪笔必须留着透气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有画面感，整体能读通；但中段长句和抽象术语偏多，重断句后才顺。",
+      "script_spans": [
+        "点点手机赚点买菜零头",
+        "哪笔必须留着透气",
+        "低利率和强监管双压下，闲钱第一目标是匹配用款节奏",
+        "货币市场短端利率常年趴在低位，这类产品底层买的票据存款"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“酱油都抠不出来”和“留着透气”具体又克制，既帮助感受收益变化，也留下了可复述的画面。",
+      "script_spans": [
+        "收益缩水得连瓶酱油都抠不出来",
+        "哪笔必须留着透气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出疑问，随后解释收益下滑原因，再转入期限建议，结尾自然回扣用款节奏。",
+      "script_spans": [
+        "这钱到底挪去哪？我的判断很直接",
+        "再加上前几年监管把现金管理类产品的投资范围卡紧",
+        "说到底，闲钱安置没有完美角落"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "没有明显违规或诱导，但对产品底层、监管影响和通胀的判断偏绝对，容易造成金融信息误读，需加限定。",
+      "script_spans": [
+        "普通家庭别急找陌生高息渠道",
+        "过去靠弹性撑起的收益空间彻底没了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d7d9d4cf5aa64333af16a5c361b5b77d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

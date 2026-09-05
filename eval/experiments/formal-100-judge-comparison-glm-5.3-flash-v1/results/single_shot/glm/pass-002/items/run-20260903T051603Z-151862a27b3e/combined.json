@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-f98acaeef5e247099546c95ffe28d5cb",
+  "run_id": "run-20260903T051603Z-151862a27b3e",
+  "trace_sha256": "8772418aa8269fc4381f5b1b6fad76ed919739d37dfc7e286c8231e1f9a4eedd",
+  "created_at": "2026-09-03T15:29:41.884363Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛二元之问并给出筛选判断，更难与不乏机会两侧、小商家与普通观众均覆盖，全文紧扣题设。",
+      "script_spans": [
+        "小商家出海，到底是被踢出局，还是被重新发牌？我的判断很明确：规则不是要把小商家赶走，而是在做筛选。",
+        "落到普通人身上，别再迷信店群轰炸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，从风险成因、政策细节到行动建议层层推进，政策表述与海关公告相符，未见编造痕迹。",
+      "script_spans": [
+        "产品认证缺一张，货可能在海外被扣；税务没走对，收款账户说冻就冻。",
+        "2026年4月海关推跨关区退货，虽方便退货，却要求企业作业系统直连海关数据。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即见具体反差与悬念，中段以风险实例和新规要求层层兑现钩子，结尾金句余味自然生长，无断裂。",
+      "script_spans": [
+        "大平台风控精确到登录环境，海关却刚全面推广跨关区退货",
+        "靠铺货赚快钱的空间塌了，但合规能力强的微小团队反而少了乱打架的对手",
+        "所以别问出海难不难。规则拧紧的是漏洞，不是大门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，对仗与口语动词密集，节奏有起伏，几乎无需改词即可开录。",
+      "script_spans": [
+        "靠铺货赚快钱的空间塌了",
+        "税务没走对，收款账户说冻就冻"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务观点，拧漏洞对大门的比喻离开原文仍可复述，结尾墙与护栏意象贴切，无堆砌炫技。",
+      "script_spans": [
+        "规则拧紧的是漏洞，不是大门",
+        "监管收紧不是纸面文章，而是贴着血肉的红线",
+        "看不懂条款的人处处是墙，看得懂的人，每一步都踩在护栏里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "判断、举证、归因、落地各段功能清晰，过渡句自然，结尾漏洞不是大门回扣开头之问，链条完整。",
+      "script_spans": [
+        "先看为什么大家觉得难。",
+        "所以别问出海难不难。规则拧紧的是漏洞，不是大门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "风险提示留余地，关键建议有边界；观点明示为个人判断，无夸大承诺与违规风险。",
+      "script_spans": [
+        "产品认证缺一张，货可能在海外被扣",
+        "Shopee这类入门成本低的平台仍能练手，但真想长期做，得弄懂报关逻辑和税务边界"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d05c232ad4a14a65b1c2f2d2b74db63c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

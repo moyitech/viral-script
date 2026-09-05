@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-961cbf7da0c541cf95cc16373a01e9c1",
+  "run_id": "run-20260902T141409Z-63302ee1095f",
+  "trace_sha256": "1c432336ab54468b6ec3d5e26e72249c8957608e05a0f7401501525f35775c4c",
+  "created_at": "2026-09-03T12:15:56.876969Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即明确承认两种结果，随后分别解释企业减频动因与晚归人的现实代价，切中题设。",
+      "script_spans": [
+        "这事儿既在省成本，也冷落了晚归人，账得掰开看。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕成本、个体代价和补偿边界推进，既有机制解释，也有群体例证和改进方案，信息增量充足。",
+      "script_spans": [
+        "企业成本肉眼可见降了，但晚归人的时间变成等车焦灼，金钱变成打车费悄悄转嫁出去。",
+        "环卫工凌晨收工，护士半夜交班，都指望着车。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用账本与晚归人的反差制造冲突，中段持续拆账、补出反例与方案，结尾追问自然有余味。",
+      "script_spans": [
+        "夜公交班次砍了，公司账本轻了，晚归人却悬了。",
+        "省下的钱真没了吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头短句有节奏，整体能读通；但多处抽象长句和搭配生硬，朗读时至少需要两次重断句。",
+      "script_spans": [
+        "夜公交班次砍了，公司账本轻了，晚归人却悬了。",
+        "公交方便不方便，不光看地图画线，还看你能不能方便参与城市生活。",
+        "把时段客流画出来冷线缩间隔，或许更稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对仗都服务于成本转嫁的解释，“企业轻松了，个人沉重了”简洁有力，具备复述价值。",
+      "script_spans": [
+        "时间变成等车焦灼，金钱变成打车费悄悄转嫁出去。",
+        "企业轻松了，个人沉重了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "成本、影响和政策边界的展开基本顺畅，但“冷线缩间隔”含义反常，结尾方案的操作指向不够清楚。",
+      "script_spans": [
+        "按规定线网优化要听大家说，减频次要透明，补好缺口再动手。",
+        "把时段客流画出来冷线缩间隔，或许更稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，且兼顾成本与公益；但“工资加倍”等说法缺少条件，易造成法律和事实误导。",
+      "script_spans": [
+        "反例也有：若财政全额兜底，票价或税收又摊给所有人",
+        "砍班未必是唯一答案，把时段客流画出来冷线缩间隔，或许更稳。",
+        "这事儿既在省成本，也冷落了晚归人",
+        "司机大半夜熬着，工资还得加倍给",
+        "有些只能叫网约车，花掉半天工钱",
+        "按规定线网优化要听大家说，减频次要透明"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-eae0991e6fc24bf0bdbbcb37210d8e54",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

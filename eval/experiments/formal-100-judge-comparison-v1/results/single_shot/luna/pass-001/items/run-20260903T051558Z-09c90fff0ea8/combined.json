@@ -1,0 +1,166 @@
+{
+  "evaluation_id": "combined-c103d7428bc74f90a9c53dc3876e1f5a",
+  "run_id": "run-20260903T051558Z-09c90fff0ea8",
+  "trace_sha256": "24dd43c0c30d5fba8b423c6b92a113edb9dee9d7ba12cc44a040b6552ac4537c",
+  "created_at": "2026-09-03T12:07:02.271341Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应岗位减少与新增工作，既点出机器人运维等岗位，也覆盖普通工人的转岗困境。",
+      "script_spans": [
+        "黑灯工厂吞掉了大批拧螺丝、看仪表的普工，可厂门口新贴的招聘启事，写的却是工业机器人运维和数字化系统调试。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 827，目标为 700，偏差率为 18.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦岗位结构变化，解释替代机制，并补充新工种、企业成本和转岗门槛等具体信息。",
+      "script_spans": [
+        "当生产设备自己能感知、能调整，最容易被替掉的是那些标准动作；但系统越是自主，越需要有人站在背后做三件事",
+        "他们得看懂系统给出的建议，再结合现场经验做最后判断。",
+        "取舍的痛点，是旧技能折旧太快，新技能门槛又不低。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用灯熄而流水线不停的反差抓人，中段不断换问题，结尾把转型公平留下余味。",
+      "script_spans": [
+        "车间里的灯越来越多地熄了，流水线却没停下。",
+        "取舍的痛点，是旧技能折旧太快，新技能门槛又不低。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数段落有画面和对话感，但多处搭配生硬，调查与报告段偏书面，朗读时需要重断句。",
+      "script_spans": [
+        "产线异常时拍板",
+        "别把趋势当成人人自动接住",
+        "是实打实的发生",
+        "去学读数据面板",
+        "影响方向并不整齐"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“给产线当医生、当教练”和“给虚拟工厂做体检”形象准确，既说清新岗位，也留下可复述记忆点。",
+      "script_spans": [
+        "给产线当医生、当教练",
+        "给机器人当保姆、给虚拟工厂做体检"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线有提问、解释、取舍与回扣，但就业报告推到制造业旧岗消失和薪资倾斜之间，推导仍显跳跃。",
+      "script_spans": [
+        "参数错了照样出废件，所以得有懂工艺的人持续校准。",
+        "这里得说清边界：不是所有人都能平滑转岗，地区和产业基础差异很大",
+        "可见现实影响是结构换血：旧工位消失，新职业在招聘里回暖，薪资也向着会调系统的人倾斜。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，也提示转岗并非人人顺利；但个别判断缺少限定，可能造成泛化误导。",
+      "script_spans": [
+        "不是所有人都能平滑转岗，地区和产业基础差异很大",
+        "智能工厂减少一线岗位是实打实的发生",
+        "薪资也向着会调系统的人倾斜"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 827,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.18142857142857144
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-fe9a439217614b7696d51c5f4d7a8e0e",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-eec0db25944e4e1681e71e47914e9d73",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

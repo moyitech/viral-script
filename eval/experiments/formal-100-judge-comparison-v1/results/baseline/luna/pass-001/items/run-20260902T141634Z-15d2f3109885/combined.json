@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-1c52d4ab438b4b88b16542e1cfb326aa",
+  "run_id": "run-20260902T141634Z-15d2f3109885",
+  "trace_sha256": "991d28f05a2bdb930681281c86eb45da2522dfb33817f390d5490a913d4c705b",
+  "created_at": "2026-09-03T11:45:59.484475Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "紧扣“信心信号”与“短期托市”的对照，并给普通观众提供了看公告的具体切口。",
+      "script_spans": [
+        "信心信号非短期托市",
+        "回购用途是注销还是激励"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 279，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，能讲清信号、注销与EPS机制；但将回购注销等同于直接分钱，且把注销一项当成信心判据，增量的可靠性打了折扣。",
+      "script_spans": [
+        "公司发回购公告，市场常把它当管理层真看好的信号",
+        "注销后每股收益就被抬高",
+        "实打实分钱给全体股东",
+        "第一眼找注销二字才不容易踩坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用追问和反差抓人，中段层层解释注销逻辑，结尾以识别风险自然收束。",
+      "script_spans": [
+        "回购增多你敢跟吗？多是信心信号非短期托市。",
+        "你再看到回购新闻，第一眼找注销二字才不容易踩坑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读通，也有直接提醒，但“态度的表达”和末句连读生硬，仍需重断句、换措辞。",
+      "script_spans": [
+        "你翻公告别光兴奋，先弄清回购用途是注销还是激励。",
+        "毕竟他们比外界更懂账面，敢买回就是态度的表达。",
+        "市场越热越要冷别把托市误会成信心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“信任投票”和“比喊口号更有分量”既形象又服务解释，形成了清晰、可复述的记忆点。",
+      "script_spans": [
+        "这是实打实分钱给全体股东，比喊口号更有分量。",
+        "如今低估值时，注销回购才更像咱老百姓说的信任投票。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "有开头、机制解释和行动结论，主线可跟随；但把每股收益抬高直接等同于分钱，并以注销一项概括信心，因果桥不足。",
+      "script_spans": [
+        "先弄清回购用途是注销还是激励",
+        "这是实打实分钱给全体股东，比喊口号更有分量。",
+        "第一眼找注销二字才不容易踩坑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题明确，也提示核对回购用途；但“敢跟”“多是信心信号”等表述过度概括，容易误导投资判断。",
+      "script_spans": [
+        "你翻公告别光兴奋，先弄清回购用途是注销还是激励。",
+        "回购增多你敢跟吗？多是信心信号非短期托市。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-325c935618f7416c8b39212515cd6881",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c3559f3e286e47e7bc5735356331b71d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

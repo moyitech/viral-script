@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-a9b7698e3d854150bbbd837e42e180e5",
+  "run_id": "run-20260903T051611Z-e1071a0432fa",
+  "trace_sha256": "a1d3504bf18ad2c63339e869fae3de1ca6eb15a77f6cd9c25736511ce562b6b6",
+  "created_at": "2026-09-03T15:28:37.479304Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即问即答，机制与限制两线并进，落点育儿补贴贴近普通人，切角具体。",
+      "script_spans": [
+        "钱更多花在民生上，老百姓就敢大胆消费了？这种好事没那么简单。",
+        "留意你身边的育儿补贴、免费学前教育是否真落地"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "研究结论、消费分层、落地核查三类信息层层推进，观众能带走具体判断方法。",
+      "script_spans": [
+        "教育、社保就业见效快，但医疗卫生支出减贫效果并不显著",
+        "看政策别只数总规模，多比对地方账本"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字即抛出反差疑问，中段以研究反例和分层消费持续兑现钩子，结尾落地提示由正文自然生长。",
+      "script_spans": [
+        "钱更多花在民生上，老百姓就敢大胆消费了？这种好事没那么简单。",
+        "教育、社保就业见效快，但医疗卫生支出减贫效果并不显著。",
+        "留意你身边的育儿补贴、免费学前教育是否真落地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "钩子与金句顺口有节奏，但研究转述段术语密集拗口，需临时改词重断句",
+      "script_spans": [
+        "民生是地基，消费是楼阁，地基牢了楼不会一夜起",
+        "教育、社保就业见效快，但医疗卫生支出减贫效果并不显著"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "地基楼阁之喻贴切收束全篇，泥瓦刀一句离开正文仍可复述，通篇修辞点到为止、不喧宾夺主。",
+      "script_spans": [
+        "民生是地基，消费是楼阁，地基牢了楼不会一夜起，信心才是那把泥瓦刀。",
+        "兜底网织密了，不等于大家立刻想掏钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "各段功能清晰，'兜底网织密了'承接研究证据，结尾比喻自然回扣开头'没那么简单'。",
+      "script_spans": [
+        "兜底网织密了，不等于大家立刻想掏钱",
+        "民生是地基，消费是楼阁，地基牢了楼不会一夜起"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "研究结论有出处限定，判断留有余地，末尾建议克制，无夸大误导或煽动风险。",
+      "script_spans": [
+        "有研究跟踪民生支出发现，它能通过增收、助学降低居民主观贫困感",
+        "财政越侧重民生，居民消费意愿不会简单同步拉升",
+        "兜底网织密了，不等于大家立刻想掏钱"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0e4505f833814653b89c9e81bcb33b06",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

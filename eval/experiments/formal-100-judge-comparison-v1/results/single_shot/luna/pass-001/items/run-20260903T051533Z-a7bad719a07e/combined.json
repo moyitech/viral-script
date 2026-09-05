@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-c3125c599a9a42d69703fa1259c20986",
+  "run_id": "run-20260903T051533Z-a7bad719a07e",
+  "trace_sha256": "a2828c10157c347d60e5740acc02c8cb6623546544b400bcdc9ba5f7be6f414a",
+  "created_at": "2026-09-03T11:57:41.145088Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面覆盖上报与关心边界，也给出私下询问和安全例外，核心人群与痛点命中。",
+      "script_spans": [
+        "我的判断很明确：除非涉及人身伤害风险，否则别把同事的家庭困境当成汇报材料",
+        "真想关心，不妨私下问一句：需不需要我帮你联系公司保密资源？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 283，目标为 280，偏差率为 1.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中且有隐私原则、援助资源和行动话术，但法律分类与上报例外说得过满，削弱信息严谨度。",
+      "script_spans": [
+        "很多企业设有员工援助计划，由第三方保密提供，既能帮同事又不泄露隐私",
+        "家庭信息在法律上属于敏感个人范畴",
+        "只有法定例外，比如自残或伤害他人倾向，才必须上报。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出上报还是关心的冲突，中段依次给出边界、资源和例外，结尾用安全底线收住，推进完整。",
+      "script_spans": [
+        "看到同事家里出了变故，你纠结该不该上报领导？",
+        "上报的尺子不在你手里，在法律和对方的安全底线里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "判断清楚、建议可执行，但中段法律术语密集，连续长句影响气口与听感。",
+      "script_spans": [
+        "关心不等于举报。",
+        "处理必须合法、正当、必要，且限于最小范围",
+        "很多企业设有员工援助计划，由第三方保密提供"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“关心不等于举报”和“上报的尺子”都短促好记，既形成反差又服务判断，没有连续堆砌辞藻。",
+      "script_spans": [
+        "关心不等于举报。",
+        "上报的尺子不在你手里，在法律和对方的安全底线里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，先定边界再给资源和话术；但从隐私原则直接推到必须上报，缺少场景与责任主体限定，结论偏绝对。",
+      "script_spans": [
+        "把主动权交还对方，才是关心而不是冒犯。",
+        "只有法定例外，比如自残或伤害他人倾向，才必须上报。",
+        "上报的尺子不在你手里，在法律和对方的安全底线里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调隐私、同意与安全边界，但将家庭信息一概归为敏感信息，并把上报例外说成唯一且必然，法律表述过满。",
+      "script_spans": [
+        "把主动权交还对方",
+        "家庭信息在法律上属于敏感个人范畴",
+        "只有法定例外，比如自残或伤害他人倾向，才必须上报。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-00c3f095a4a649fcbaef9962d4618c0f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-96495dceb8e34af1a2c7ef762555f850",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-6d54ee4b869f4233904ac5ab731a62ba",
+  "run_id": "run-20260902T144945Z-b0fb079603e4",
+  "trace_sha256": "55d59df86ed1b85201a224857f971eea699d0ef3da2d17cc442bd1267f351c97",
+  "created_at": "2026-09-03T12:17:16.829928Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 2,
+      "reason": "直面低空产业与普通就业者的关系，也提到飞手、物流和农业，但始终没有回答“能创多少”这一核心承诺。",
+      "script_spans": [
+        "如今低空产业正加速落地，到底能给普通干活的人创多少岗？",
+        "能创一些，但没传说中那么香"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕岗位增长与供需错配展开，既有研究时点、区域差异和飞手缺口，也给出本地场景核验与理性入行方法。",
+      "script_spans": [
+        "有研究跟了试点政策几年，看上市公司数据，招人第三年才明显变多。",
+        "像农用植保巡检真缺熟手，但乱考证未必能接得到单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字直接抛出就业率骤降的冲突，中段连续补充供需错配和入行风险，结尾建议自然收住。",
+      "script_spans": [
+        "你正想考无人机证赚钱，可重庆飞手就业率掉四成。",
+        "一边喊缺人一边有人没活干。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、追问和行动建议较顺，但中段有多处词序生硬，朗读时需要重断句。",
+      "script_spans": [
+        "能创一些，但没传说中那么香，一边喊缺人一边有人没活干。",
+        "可一线操控员岗位，全国说缺口上百万。",
+        "就像重庆局部却已经挤爆了，持证的人比单子多不少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一边喊缺人一边有人没活干”把供需错配说得直观，“别急着砸钱交学费”也形成可复述的收束。",
+      "script_spans": [
+        "一边喊缺人一边有人没活干。",
+        "别急着砸钱交学费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、研究、错配和建议顺序清楚，但从培训班增多直接推到盲目入行，且结尾仍未回扣岗位规模，论证有跳步。",
+      "script_spans": [
+        "一边喊缺人一边有人没活干。",
+        "这两年考执照的培训班遍地开花，可见盲目入行的人真多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动或承诺，但“遍地开花”直接推断“盲目入行”偏绝对，就业率表述也需限定口径。",
+      "script_spans": [
+        "找熟识老师傅聊比看广告强，别急着砸钱交学费。",
+        "这两年考执照的培训班遍地开花，可见盲目入行的人真多。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-979023d75db04995b06a506a9d016a4b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-9d297736ae2a440486501192ab6c5a97",
+  "run_id": "run-20260902T142801Z-f25e407b41a9",
+  "trace_sha256": "8e54a0a7da8a6738556a6e5cd9d05631fb7c116e966b82457999176c54938974",
+  "created_at": "2026-09-03T11:45:06.760284Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答厂商是否担责，同时覆盖用户自护、法律边界与普通用户的实际痛点。",
+      "script_spans": [
+        "这事儿不能全怪你，也不能放跑厂家。",
+        "当强制标准落地前，家门钥匙其实攥在厂家和您自己手里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 745，目标为 700，偏差率为 6.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕默认密码责任持续展开，补足入侵机制、法律边界、用户义务与可执行建议，信息增量充分。",
+      "script_spans": [
+        "为什么厂商爱留统一初始码？因为他们想让你拆箱就联网，省客服麻烦。",
+        "法律追责的绳子还没编紧，你不能指望法院一告一个准。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出隐私入侵与责任冲突，中段推进到法律和用户责任，结尾用改密选择自然收问。",
+      "script_spans": [
+        "你家摄像头被陌生人看光，厂商却说密码没改？",
+        "法律追责的绳子还没编紧，你不能指望法院一告一个准。",
+        "您今晚是等厂商良心发现，还是拆包先改掉那个原始密码？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有短句和互动问句，但“掉链子的责”“当强制标准落地前”等处拗口，朗读需临时修正。",
+      "script_spans": [
+        "真要打官司，法官也得看产品有没有明显隐患，不能光凭心情判。",
+        "该负掉链子的责",
+        "当强制标准落地前"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“起点，不是终点”与“公开直播间”形成清晰画面，修辞克制，也让责任分担更容易复述。",
+      "script_spans": [
+        "黑客拿名单挨个试，你家就成了公开直播间。",
+        "厂家的默认设置是起点，不是终点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "分段顺序清楚，先讲责任机制，再讲法律和用户，但标准状态被直接推成自觉，法院责任判断也概括过度。",
+      "script_spans": [
+        "那法律能叫厂商赔吗？现实有点暧昧。",
+        "把镜头转回来，聊聊咱们自己。",
+        "这说明眼下买设备，出厂设什么密码主要靠厂商自觉。",
+        "若出厂留固定密码又不让改，法院多认设计缺陷。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见违法、危险或煽动内容，但将厂商动机、用户责任和法院认定说得过满，易造成法律与因果误导。",
+      "script_spans": [
+        "不能全怪你，也不能放跑厂家",
+        "厂商爱留统一初始码？因为他们想让你拆箱就联网，省客服麻烦。",
+        "若出厂留固定密码又不让改，法院多认设计缺陷。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e81d154bfbb74ace80900576bd153cf6",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-4cf411a175c74194b10a84fca6c2ae8e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

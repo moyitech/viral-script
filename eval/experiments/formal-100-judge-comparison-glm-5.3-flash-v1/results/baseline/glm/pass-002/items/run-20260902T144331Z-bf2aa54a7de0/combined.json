@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-3f2b83fa55674db1a47c0826f2323120",
+  "run_id": "run-20260902T144331Z-bf2aa54a7de0",
+  "trace_sha256": "6f58f1759df9d72ca34619cc5318ba924e07bc70bf7ffab53657fce89c0ff680",
+  "created_at": "2026-09-03T14:27:18.460133Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即问即答“怕停线怕交不了货”，替代加速与工厂顾虑两侧齐覆盖，切口落在普通观众能懂的工厂视角。",
+      "script_spans": [
+        "厂里却怕换系统，图啥？直接说：怕停线怕交不了货",
+        "上面定了几年内替换时间表，国产工具在追赶，工厂自己不敢轻易赌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从迁移难度、参数风险、试错代价到试水对策层层递进，信息单元各自推进，结尾还给出可带走的操作方法，无编造痕迹。",
+      "script_spans": [
+        "换系统不是删了重装，你要把攒了多年的图纸、参数和老操作习惯，整个搬进新房子",
+        "先挑条不忙的边缘产线试水，跑顺了再扩，留着老系统备着别砸锅没退路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差加疑问直接入题，中段停线、违约、手感层层出新，结尾提问承接不敢赌与手感线，三段不代偿。",
+      "script_spans": [
+        "国产工业软件加速替代，厂里却怕换系统，图啥？",
+        "产线停一天违约单就来了，交货期拖客户就跑",
+        "当设备能买，多年手感难复制，你敢全厂豪赌吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口清楚，口语化扎实，但“别砸锅没退路”“当设备能买”两处需换词重断，封顶2分。",
+      "script_spans": [
+        "可工厂最怕试错，产线停一天违约单就来了，交货期拖客户就跑",
+        "留着老系统备着别砸锅没退路",
+        "当设备能买，多年手感难复制"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "搬家喻系统迁移贴切助解，按钮即肌肉记忆具体可复述，收尾对照成金句，修辞密度适度不抢戏。",
+      "script_spans": [
+        "换系统不是删了重装，你要把攒了多年的图纸、参数和老操作习惯，整个搬进新房子",
+        "老系统每个按钮都是肌肉记忆"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "问—答—因—策—反问环环相扣，“可”“真要换”承接自然，违约单、客户跑的因果链完整，结尾豪赌之问回扣开头的怕。",
+      "script_spans": [
+        "可工厂最怕试错，产线停一天违约单就来了，交货期拖客户就跑",
+        "当设备能买，多年手感难复制，你敢全厂豪赌吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "风险均为条件式描述且建议留退路有边界，无绝对化承诺、煽动或误导销售。",
+      "script_spans": [
+        "真要换，先挑条不忙的边缘产线试水，跑顺了再扩",
+        "国产工具在追赶，工厂自己不敢轻易赌"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8c8396eb9a184bf9be2c10d596ee025f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

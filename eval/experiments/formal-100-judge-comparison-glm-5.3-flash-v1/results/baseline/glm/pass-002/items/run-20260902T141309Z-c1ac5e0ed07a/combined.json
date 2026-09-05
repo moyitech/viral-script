@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-49484d8ac02441fda905bc169b12d3f8",
+  "run_id": "run-20260902T141309Z-c1ac5e0ed07a",
+  "trace_sha256": "1ae6ac8e24abc530189f447e09ed9a61c7309793095c55ada2ad7044cbfaf34d",
+  "created_at": "2026-09-03T14:24:57.447036Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头0元下单即入题，正反两侧均展开，“不是单方好事”直接作答，结尾回扣题设，人群痛点契合。",
+      "script_spans": [
+        "先用后付既方便试错，也悄悄抬升负债可能，不是单方好事。",
+        "下次划到0元下单，你先停两秒？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "降门槛初衷、试衣间类比、无感累积机制、场景扩张、关闭方法各成单元，层层推进，增量具体扎实。",
+      "script_spans": [
+        "就像店里试衣间但不押钱，先试再定，不合身退掉不花",
+        "本来一件顺手拿三件，留下的变多，账单就厚了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头0元下单与“真方便？”直造反差，中段机制、蔓延层层兑现，结尾“停两秒”由正文自然长出。",
+      "script_spans": [
+        "你点0元下单，多拿三件衣服试尺码，真方便？可收货后得付没计划的钱",
+        "方便是真方便，可无感消费常是负债起点。下次划到0元下单，你先停两秒？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、结构清楚，但“溜走没觉”“攒起容易成负担”等倒装压缩需临时换词重断，超两处拗口，只能停在此档。",
+      "script_spans": [
+        "本来一件顺手拿三件，留下的变多，账单就厚了",
+        "先用后付既方便试错，也悄悄抬升负债可能",
+        "钱从指缝溜走没觉",
+        "小额几块无感累积，攒起容易成负担"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“试衣间但不押钱”类比准确好懂，“无感消费常是负债起点”离文可复述，修辞克制无堆砌。",
+      "script_spans": [
+        "就像店里试衣间但不押钱",
+        "钱从指缝溜走没觉",
+        "无感消费常是负债起点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "两面立论后以“正因买时没付钱”转折析因，因果桥清晰，末段对策与结论回扣开头，全程无跳跃。",
+      "script_spans": [
+        "但正因买时没付钱，手感轻了，钱从指缝溜走没觉",
+        "你想可控，就打开支付设置关掉这功能，少点冲动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反并举，风险均以“可能”“容易”“常”限定，建议具体可行，无夸大、无攻击性表述，价值导向稳妥。",
+      "script_spans": [
+        "先用后付既方便试错，也悄悄抬升负债可能，不是单方好事",
+        "小额几块无感累积，攒起容易成负担",
+        "无感消费常是负债起点"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f0c5261cbb60491083ceb928b52fc189",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

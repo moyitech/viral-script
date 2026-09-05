@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-07e31daa16d2402d9ec0431290770776",
+  "run_id": "run-20260902T142510Z-1e5b852ccee3",
+  "trace_sha256": "e104be14343aadf3525fe5117483ef00b0afe7a08cc2ea75954418577a990a34",
+  "created_at": "2026-09-03T11:44:08.926947Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应收益下滑与家庭闲钱分层，给出现金和储蓄国债两条路径，贴合普通家庭需求。",
+      "script_spans": [
+        "面对缩水，家庭闲钱别全堆活钱，分两路走：日常要用的留现金类，半年不用的试储蓄国债。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 285，目标为 280，偏差率为 1.79%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息集中，既解释现金收益下行原因，也交代国债利率、流动性限制和购买前的资金规划，增量充分。",
+      "script_spans": [
+        "眼下银行体系流动性宽裕，短端利率在百分之一点三附近，现金产品底层赚钱少，给到你的收益还会被压低",
+        "三年期储蓄国债利率约一点六三，票息写进合同，国家信用撑着比浮动收益更稳",
+        "买前拿纸笔圈出半年不动的钱，算好用钱日程。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“怕急用”与“亏利息”制造两难，中段给出分流和利率依据，结尾的利差提醒自然收住。",
+      "script_spans": [
+        "钱挪走怕急用抓瞎，留着又亏利息",
+        "面对缩水，家庭闲钱别全堆活钱，分两路走",
+        "别小看这点利差，积少成多也是钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "分路建议清楚，整体能读通；但中段金融术语和并列解释偏密，部分表达朗读时不够顺。",
+      "script_spans": [
+        "为啥这么分？先看大环境：",
+        "买前拿纸笔圈出半年不动的钱，算好用钱日程。",
+        "日常要用的留现金类，半年不用的试储蓄国债。",
+        "国家信用撑着比浮动收益更稳，虽不能每天赎回，但锁点时间换稍高利息。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“钱挪走怕急用抓瞎，留着又亏利息”对比鲜明，“锁点时间换稍高利息”也便于复述，修辞克制不抢观点。",
+      "script_spans": [
+        "钱挪走怕急用抓瞎，留着又亏利息",
+        "锁点时间换稍高利息"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线按收益下滑、分层配置、产品约束推进，基本清楚；但产品指代不明，半年资金与三年期限的匹配解释不足。",
+      "script_spans": [
+        "面对缩水，家庭闲钱别全堆活钱，分两路走",
+        "但要注意，国债提前兑取会扣利息，只适合真闲钱",
+        "这类产品受规则约束，高收益资产难配了。",
+        "三年期储蓄国债利率约一点六三，票息写进合同，国家信用撑着比浮动收益更稳，虽不能每天赎回，但锁点时间换稍高利息。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提示留出日常现金并说明提前兑取扣息，风险意识较好；但收益下行、购买力流失等判断偏确定，配置建议也缺少适用边界。",
+      "script_spans": [
+        "只适合真闲钱，买前拿纸笔圈出半年不动的钱，算好用钱日程。",
+        "给到你的收益还会被压低，活钱购买力悄悄流失。",
+        "家庭闲钱别全堆活钱，分两路走：日常要用的留现金类，半年不用的试储蓄国债。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2ea655c54eff41eeb531c05193d7c969",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-82caf7c8fee04053a4ccd65a8282227e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

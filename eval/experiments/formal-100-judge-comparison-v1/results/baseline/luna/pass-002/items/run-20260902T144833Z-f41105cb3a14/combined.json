@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-4bda70f27ee14e1da1d472e3019636d7",
+  "run_id": "run-20260902T144833Z-f41105cb3a14",
+  "trace_sha256": "31bf706c2bb5986b62c9732df4955e0d324b0d901eb8d85f87ac1ae0b6d31421",
+  "created_at": "2026-09-03T12:16:17.393664Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答安全感如何转化为浪费与风险，覆盖囤积、误服、储存、处置及适量备药。",
+      "script_spans": [
+        "你囤的常用药，正变成浪费和误服风险。",
+        "咱们理性点，只备该备的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕囤药风险展开，既有过期浪费、误服和储存机制，也给出清理、回收与备药建议，信息增量充分。",
+      "script_spans": [
+        "有白皮书算过，全国一年过期药约一点五万吨。",
+        "写张清单贴门后，哪种药啥时用写清。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出浪费与误服的冲突，中段不断切换风险、违法、储存和处置，结尾追问也自然。",
+      "script_spans": [
+        "你囤的常用药，正变成浪费和误服风险。",
+        "当药箱成了心理安慰，你敢不敢只留必需的？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏明快、对话感足，但多处成分压缩和搭配生硬，朗读时需要临时重断句。",
+      "script_spans": [
+        "囤药求安心没错，但过了量安心就成包袱。",
+        "整盒没拆封退烧药直接丢垃圾桶。",
+        "退烧止痛止泻，每样一小盒顶够。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“药不是护身符，堆得多反而遮了眼光”形象准确，“药是救急不是存钱”短促好记，修辞克制。",
+      "script_spans": [
+        "药不是护身符，堆得多反而遮了眼光。",
+        "说到底，药是救急不是存钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头—风险—处置—建议—回扣完整，转折基本清楚；但将全国过期药总量直接归因于囤药，且备药天数一刀切，论证过满。",
+      "script_spans": [
+        "那怎么办？药毕竟特殊，算有害生活垃圾，随便丢会污染水土。",
+        "这海量浪费，就是囤药安全感的直接代价。",
+        "一家三口常用药备三五天量就成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提醒囤药、储存和回收风险较稳妥，但部分用药建议过于绝对，可能误导不同人群的实际用药。",
+      "script_spans": [
+        "长期慢性病药严格按医生吩咐来。",
+        "温度一高药效说不定打对折。",
+        "一家三口常用药备三五天量就成。",
+        "快过期先吃完别补货。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-71b3dce004b94cbcb7e0c0fbed2d1d6a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

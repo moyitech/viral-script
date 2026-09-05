@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-2fcd1bdaa711492b9de1616909d204d1",
+  "run_id": "run-20260903T051605Z-2bcc54900f7d",
+  "trace_sha256": "072939acb4acc2afbd8de95c0900225ef57cb96e526f88234637c20b7a49d8e0",
+  "created_at": "2026-09-03T15:29:41.871515Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛推得慢与重复掏钱两问，中段归因医生裁量，结尾落到患者做法，两侧全覆盖。",
+      "script_spans": [
+        "明明互认写进了指导意见，推得慢，你换医院还得掏钱重查",
+        "跨院就诊前，把近期影像和化验报告打印好递给医生，先问一句这次能否互认"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "裁量标准、例外清单、三成费用、实操建议逐层推进，无复述空转，信息密度高。",
+      "script_spans": [
+        "根本是政策以接诊医师判断为标准，把认不认的主动权留给了医生，且例外情形宽泛",
+        "这类检查费往往占看病开销三成上下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头掏钱重查的冲突直给，中段用根因与三成开销的信息推进；结尾偏总结式收束，无余味或互动点，难引发讨论。",
+      "script_spans": [
+        "明明互认写进了指导意见，推得慢，你换医院还得掏钱重查",
+        "这类检查费往往占看病开销三成上下",
+        "互认省的是钱，但医疗安全底线不能破，带齐资料主动沟通才是当下最实的办法"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读通，建议段顺口；但中段解释多处抽象书面句式，朗读需临时换词重断，决定性拉低流畅度。",
+      "script_spans": [
+        "把近期影像和化验报告打印好递给医生，先问一句这次能否互认",
+        "文件从正常生理代谢、病情发展到设备参数差异，都允许重新检查",
+        "这种机制下接诊医生面对外院报告难免保守，倾向开新单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“主动权留给医生”这类贴切表达，但全篇以说明句为主，缺画面感与可复述金句，整体偏干。",
+      "script_spans": [
+        "把认不认的主动权留给了医生",
+        "根本是政策以接诊医师判断为标准",
+        "且例外情形宽泛"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由政策裁量推到医生保守再落到患者对策，层层递进，结尾以安全底线回扣题设。",
+      "script_spans": [
+        "各医院检验质量与设备精度未必对齐，这种机制下接诊医生面对外院报告难免保守，倾向开新单",
+        "互认省的是钱，但医疗安全底线不能破，带齐资料主动沟通才是当下最实的办法"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "结尾点明医疗安全底线，占比'三成上下'留有余地；但'根本是'单一归因于医师裁量，'随时'偏绝对，宜补边界。",
+      "script_spans": [
+        "互认省的是钱，但医疗安全底线不能破",
+        "根本是政策以接诊医师判断为标准，把认不认的主动权留给了医生",
+        "接诊医生随时能合理要求患者重做"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-16acfde8427d48f8b0b61bdbf6720c37",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

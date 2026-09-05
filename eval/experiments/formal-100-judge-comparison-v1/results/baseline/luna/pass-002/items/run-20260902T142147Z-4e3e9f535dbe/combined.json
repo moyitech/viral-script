@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-8ca9dbf6c88546f5ba4ef7ee82f3e241",
+  "run_id": "run-20260902T142147Z-4e3e9f535dbe",
+  "trace_sha256": "4025da66f0717c61bfe048d2f6b29f5e1cb630dfa115453f64c7d5c2aa33a99b",
+  "created_at": "2026-09-03T12:15:16.136555Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直面“公共监督”与“二次伤害”的两面，后文围绕普通人的拍摄、上传和取舍完整展开。",
+      "script_spans": [
+        "街头纠纷视频上网，既是公共监督，也可能是二次伤害，不能只认一头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从肖像权底线、营利目的变化讲到打码策略，多个信息单元层层推进，观众能带走明确的风险判断方法。",
+      "script_spans": [
+        "早先侵权得证明营利目的，现在不用了。",
+        "普通人取舍就两条路：打码保事实，露脸扛风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出正义与赔钱的冲突，中段层层推进风险与取舍，结尾追问自然留下余味。",
+      "script_spans": [
+        "你拍下邻居吵架发上网，可能帮了正义，也赔了钱。",
+        "普通人取舍就两条路：打码保事实，露脸扛风险。",
+        "下次举手机前，先问自己：要的是公道，还是流量？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、节奏清楚，但“制作公开人家肖像”“监督分量压过脸面”等表述卡顿，临场朗读需改词。",
+      "script_spans": [
+        "很多人以为发网上就算监督，其实差得远。",
+        "没经肖像权人同意，制作公开人家肖像是侵权。",
+        "拍公权力不当行为，监督分量压过脸面。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“打码保事实，露脸扛风险”和“镜头不判案，只放大后果”凝练准确，修辞克制，能独立复述并服务判断。",
+      "script_spans": [
+        "打码保事实，露脸扛风险。",
+        "镜头不判案，只放大后果。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "按底线、风险、场景和提醒递进，主线清楚；但“边界不在你举不举手机”与“赔偿跑不掉”都把复杂判断说得过满。",
+      "script_spans": [
+        "普通人取舍就两条路：打码保事实，露脸扛风险。",
+        "边界不在你举不举手机，在发出去那下伤没伤到具体人。",
+        "传票不是吓唬，真追起来赔偿跑不掉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导打码和克制，方向安全；但“赔偿跑不掉”“监督分量压过脸面”等把复杂法律判断说成必然结论，易误导。",
+      "script_spans": [
+        "拍下欺压路人，打完码上网，恶行曝了，底线也留了。",
+        "真追起来赔偿跑不掉。",
+        "拍公权力不当行为，监督分量压过脸面。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ec1e54863a424cd69842b87c87f6a0bb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

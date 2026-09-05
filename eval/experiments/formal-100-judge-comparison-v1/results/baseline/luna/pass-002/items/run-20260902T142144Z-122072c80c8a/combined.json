@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-b13ae5e069724ad99f6340abf110f0b2",
+  "run_id": "run-20260902T142144Z-122072c80c8a",
+  "trace_sha256": "6b3df161ef3446810b94993a195f15f6739ab9ea6ec4b167b3ff2b29d6b67521",
+  "created_at": "2026-09-03T12:15:12.215717Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答能否受益，并围绕合同、利率机制和办理动作覆盖普通已购房家庭的核心疑问。",
+      "script_spans": [
+        "答案很直接：能受益，但得看合同和你的动作。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕受益条件拆解浮动与固定、加点、重定价日及办理动作，规则、判断和结果均有具体推进。",
+      "script_spans": [
+        "机制上卡在两点，一个是加点，一个是重定价日。",
+        "算笔账，百万贷三十年月省好几百。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用月供未降制造冲突，中段持续拆解合同、重定价日和操作路径，结尾比喻自然收束。",
+      "script_spans": [
+        "利率降了，你的月供却没降，已购房家庭真吃亏？",
+        "机制上卡在两点，一个是加点，一个是重定价日。",
+        "房贷降息像给老客户开扇窗，但窗户得自己伸手推。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答开头和行动号召有节奏，整体能读通；但中段术语密集，且“百万贷三十年月省好几百”明显卡嘴。",
+      "script_spans": [
+        "答案很直接：能受益，但得看合同和你的动作。",
+        "加点高过新发平均三十个基点才能申请下调，银行批量动的是加点下限，不是拉平到新发水平。",
+        "百万贷三十年月省好几百。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "开头用月供反差抓人，结尾“推窗”比喻具体，既帮助理解又留下可复述的记忆点。",
+      "script_spans": [
+        "利率降了，你的月供却没降，已购房家庭真吃亏？",
+        "房贷降息像给老客户开扇窗，但窗户得自己伸手推。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，中段按合同规则、重定价机制和个人行动递进，结尾用比喻自然回扣受益条件，主线清楚。",
+      "script_spans": [
+        "重定价日没到，就算LPR降了，你的利息暂不跟着动",
+        "房贷降息像给老客户开扇窗，但窗户得自己伸手推。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有合同和重定价边界，但将转浮动、申请条件等说得过于绝对，缺少利率上行与个体合同差异提示。",
+      "script_spans": [
+        "能受益，但得看合同和你的动作",
+        "固定利率得先去银行转成浮动，否则碰不到新息",
+        "加点高过新发平均三十个基点才能申请下调"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7c2fe81936a54d4ca237dd1994cc0a1d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

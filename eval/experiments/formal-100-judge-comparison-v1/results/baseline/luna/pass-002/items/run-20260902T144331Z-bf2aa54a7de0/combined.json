@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-84b6984408cc4705a222dbe2436cf424",
+  "run_id": "run-20260902T144331Z-bf2aa54a7de0",
+  "trace_sha256": "6f58f1759df9d72ca34619cc5318ba924e07bc70bf7ffab53657fce89c0ff680",
+  "created_at": "2026-09-03T12:18:06.617241Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直击企业怕换系统的核心疑问，既解释替代阻力，也给出分步切换方案，完整回应题设。",
+      "script_spans": [
+        "国产工业软件加速替代，厂里却怕换系统，图啥？",
+        "真要换，先挑条不忙的边缘产线试水，跑顺了再扩"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕迁移风险、停线代价、操作惯性和试点策略层层推进，信息具体，观众能带走可执行判断。",
+      "script_spans": [
+        "你要把攒了多年的图纸、参数和老操作习惯，整个搬进新房子。",
+        "产线停一天违约单就来了，交货期拖客户就跑。",
+        "先挑条不忙的边缘产线试水，跑顺了再扩"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用风险冲突抓人，中段层层补充换系统的代价，结尾以试水方案和反问自然收住。",
+      "script_spans": [
+        "国产工业软件加速替代，厂里却怕换系统，图啥？",
+        "老软件贵但工人闭眼能操作。",
+        "真要换，先挑条不忙的边缘产线试水"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏明快、口语感较强，但多处句子压缩过猛，朗读时需要补停顿或调整词序。",
+      "script_spans": [
+        "国产工业软件加速替代，厂里却怕换系统，图啥？直接说：怕停线怕交不了货。",
+        "真要换，先挑条不忙的边缘产线试水，跑顺了再扩，留着老系统备着别砸锅没退路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“搬进新房子”“肌肉记忆”把迁移难点和操作惯性说具体，表达形象且没有连续堆砌。",
+      "script_spans": [
+        "整个搬进新房子。",
+        "老系统每个按钮都是肌肉记忆",
+        "手感丢了订单就黄。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构紧凑，先回答怕什么，再解释数据与操作风险，最后给出试点和保留旧系统的路径，回扣设问自然。",
+      "script_spans": [
+        "直接说：怕停线怕交不了货。",
+        "老软件贵但工人闭眼能操作。",
+        "留着老系统备着别砸锅没退路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "没有明显违规，且给出试点和保留旧系统的缓冲思路；但把停产、违约、丢单说成必然结果，略显夸大。",
+      "script_spans": [
+        "先挑条不忙的边缘产线试水，跑顺了再扩",
+        "产线停一天违约单就来了，交货期拖客户就跑",
+        "手感丢了订单就黄"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-44e7778a646d4d0f95bf63db245ab4c0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

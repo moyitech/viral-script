@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-baa5a6dd63244bf8813b06504f814d47",
+  "run_id": "run-20260902T144323Z-91ac800e5d87",
+  "trace_sha256": "af8ed7cb48f95f141711e5b68f90514f99d84b49a6bef26c54161e3c0aae14eb",
+  "created_at": "2026-09-03T11:47:17.920648Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答盘活是否损害公共服务，并同时展开增益与风险，最后落到普通居民的具体得失。",
+      "script_spans": [
+        "其实两头都得看，关键在资产和钱去哪。",
+        "你家闲置校舍变便民中心，你赢了；免费球场变收费停车，你就亏了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 445，目标为 450，偏差率为 1.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕资产盘活与服务得失，机制、案例和居民体验层层补充，能留下判断标准。",
+      "script_spans": [
+        "政策鼓励共享调剂，优先自用挖潜保障履职。",
+        "比如空楼改社区养老或托育出租，收益返财政，反而能补社区缺口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用诊所消失制造冲突，中段持续补充利弊与案例，结尾追问自然回扣公共空间。",
+      "script_spans": [
+        "你路过空置老楼，旁边诊所岂不没了？",
+        "下次见老楼挂牌，不妨问一句：这儿还留不留咱老百姓的位置？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数句子短促利落，但政策术语连续堆叠，几个句段不像自然气口。",
+      "script_spans": [
+        "免费球场变收费停车，你就亏了",
+        "优先自用挖潜保障履职",
+        "国企闲置土地设数百亿基金做保租房，往缺口走"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“重排座位”把盘活与公共利益的取舍说得具体，“公园就黄”等画面形成记忆点，修辞克制。",
+      "script_spans": [
+        "所以盘活不是清仓卖破烂，是给城市重排座位。",
+        "债主上门公园就黄。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从机制到居民影响再到结论，基本可跟随；但收益返财政到服务改善的因果过快，部分段落像口号罗列。",
+      "script_spans": [
+        "对普通人啥影响？你家闲置校舍变便民中心，你赢了；免费球场变收费停车，你就亏了。",
+        "政策鼓励共享调剂，优先自用挖潜保障履职。",
+        "财政有钱才能多开窗口；手头宽了路灯坏能修，保洁也请得起。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有正反权衡和风险提醒，但“财政有钱才能多开窗口”因果过满，“不足一成”“数百亿基金做保租房”需补限定。",
+      "script_spans": [
+        "其实两头都得看，关键在资产和钱去哪",
+        "财政有钱才能多开窗口",
+        "低效用地开发不足一成",
+        "国企闲置土地设数百亿基金做保租房"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-26dcb5379deb4fbdbefc42e1047f64b2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-27824347a28f49cb943d3a8dfd80678d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-22b2fd544c4a48008ecb6580def61109",
+  "run_id": "run-20260902T143936Z-dc8d3cc0abf7",
+  "trace_sha256": "4a55fd78f27b898c58f81e73d38dd7e9e588a0a40330bbb1f0e54a02ac1c521a",
+  "created_at": "2026-09-03T12:16:33.347389Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直面“减负还是换收费”，并覆盖平台套餐、房东直租与不同租客的选择。",
+      "script_spans": [
+        "免押金却多收服务费，这是减负还是换收费？",
+        "有人图省事当买管家，工作稳就选省心；有人计较就找个人房东，手头紧算细账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策背景、套餐费率、直租风险和全年核算建议层层补充，信息单元具体且有实用判断。",
+      "script_spans": [
+        "像北京要求住房租赁企业收的押金走第三方托管账户，上限一般一个月租金",
+        "房租比个人房贵十五到二十，还要收服务费，整租八个点合租十个点。",
+        "你签合同前翻翻细则，把租金和服务费加一块"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出收费反差，中段用政策、案例和直租对照持续推进，结尾追问也从前文自然生长。",
+      "script_spans": [
+        "免押金却多收服务费，这是减负还是换收费？",
+        "那去找房东直租试下？",
+        "下次见零押金广告，你先盯住哪行收费字？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问句和短句有口播感，但政策、费用与比较句压得太满，个别措辞还会造成明显卡顿。",
+      "script_spans": [
+        "为啥平台拼命推免押？因为押金被政策管严了。",
+        "房租比个人房贵十五到二十，还要收服务费，整租八个点合租十个点",
+        "可澡堂漏水退租验房得自个儿跑腿，省下明面费用搭进精力"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“钱从左手兜绕到右裤袋”把隐性涨价说得直观，“救急不救穷”也短促好记，修辞没有压过信息。",
+      "script_spans": [
+        "钱从左手兜绕到右裤袋，得盯紧这笔移动。",
+        "所以免押确实救急不救穷。",
+        "免押不是白给午餐，只是成本换了个口袋。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线由政策、套餐、直租到建议，推进清楚；但把政策收紧直接推成平台推免押，因果桥不足，成本结论也有扩大。",
+      "script_spans": [
+        "那去找房东直租试下？",
+        "账得按整年算才清楚，别看眼前省了那笔。",
+        "为啥平台拼命推免押？因为押金被政策管严了。",
+        "若比原押金加租还高，只是把债挪了位置。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提醒核对总成本的建议较稳，但“因为”与“碰不到”等绝对化、泛化表述缺少限定，可能造成误导。",
+      "script_spans": [
+        "你签合同前翻翻细则，把租金和服务费加一块",
+        "因为押金被政策管严了",
+        "钱进专管户，企业碰不到"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-328e2c17b6794698ae425efa36698975",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

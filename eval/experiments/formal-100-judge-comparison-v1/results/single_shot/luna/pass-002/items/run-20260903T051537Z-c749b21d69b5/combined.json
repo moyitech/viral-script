@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-74cc652472df44db9d0afea8f065c85f",
+  "run_id": "run-20260903T051537Z-c749b21d69b5",
+  "trace_sha256": "55aae8e835c1bcfd63bdef6d3adc4df67aa25e24f3f205d78138f2d6a63a8890",
+  "created_at": "2026-09-03T12:32:05.314097Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答了“不等量是否公平”，并同时覆盖陪护、出资与家庭协商，核心人群和冲突场景都命中。",
+      "script_spans": [
+        "真正的公平是责任共担、长短互补，而不是拿日历数天数搞平均主义"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕如何分担才公平，原因、协商步骤、补贴留底和制度补位形成连续的信息推进。",
+      "script_spans": [
+        "收入、距离、健康差异让分担本来就不匀",
+        "列清谁管医疗开销、谁负责日常陪护、多出力的一方应获适当经济贴补，口头约定不如留底"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头用付出差异切入，中段有法律、分工和解决方案推进，但结尾停在信息收束，缺少余味或自然互动。",
+      "script_spans": [
+        "有人陪床多有人出钱多",
+        "兄弟姐妹开次正式家庭会，列清谁管医疗开销、谁负责日常陪护",
+        "能缓解全家硬扛的难题。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "具体分工案例有对话感，但抽象研究表述与长串并列拖慢节奏，整体尚未达到自然顺口。",
+      "script_spans": [
+        "有人陪床多有人出钱多",
+        "多项实证研究显示，代际互动里居住远近和性别角色天然造成照护倾斜",
+        "列清谁管医疗开销、谁负责日常陪护、多出力的一方应获适当经济贴补"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“责任共担、长短互补”与“拿日历数天数搞平均主义”形成鲜明对照，准确克制，便于观众复述。",
+      "script_spans": [
+        "责任共担、长短互补，而不是拿日历数天数搞平均主义",
+        "口头约定不如留底"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线基本清楚，但法律段与公平标准衔接偏弱，末尾转向长护险较突然，也缺少一句回扣题目的收束。",
+      "script_spans": [
+        "趁父母还能表达，兄弟姐妹开次正式家庭会",
+        "我国老年人权益保障法只写子女应当赡养，没写必须轮班一样久",
+        "当前长期护理保险正从多年试点推向全国，专业机构分担失能照料，能缓解全家硬扛的难题"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体是家庭协商和照护分担建议，风险较低；但“法律只写”表述过于绝对，需限定具体条文和适用范围。",
+      "script_spans": [
+        "真正的公平是责任共担、长短互补",
+        "多出力的一方应获适当经济贴补",
+        "我国老年人权益保障法只写子女应当赡养，没写必须轮班一样久"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-08716bd2393e4dc48a1d3ded88e343ec",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

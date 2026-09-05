@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-065692fa6d1f4fbc8858f1dd6388c1ae",
+  "run_id": "run-20260902T143758Z-4ab87c04468c",
+  "trace_sha256": "75f1253725a584e70d8391908e140fdcb46990765a7e90277291c93956648822",
+  "created_at": "2026-09-03T11:50:39.353384Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解实时定位为何制造压力，覆盖家人与成年子女两侧，并给出时段协商、临时报备等边界方案。",
+      "script_spans": [
+        "关心变压力，就在那个“实时”上。",
+        "要是事先商量好时段，出差报个备只是挂念。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 763，目标为 700，偏差率为 9.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "既有权限设置的具体信息，也有实时带来查岗感、持续共享引发怨气的机制解释，并落到协商时段的做法。",
+      "script_spans": [
+        "微信里位置权限不默认开，得你点同意。",
+        "临时开位置找走丢娃有用，长期绑着反倒生怨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“想逃”制造亲情与压迫的冲突，中段持续推进，结尾反问和留白自然生长。",
+      "script_spans": [
+        "妈要我实时共享定位说怕出事，我却想逃。",
+        "你怕我出事，还是受不了不知我在哪？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、反问和具体场景让整体好读，但“偶有关定位”“模具松开”等表述明显拗口。",
+      "script_spans": [
+        "你越躲，他越追，成了怪圈。",
+        "你偶有关定位，家人马上电话来。",
+        "把模具松开，人才能走近。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务观点，“不是导航，是拴绳”和“信任靠聊出来”具备自然的复述价值。",
+      "script_spans": [
+        "这不是导航，是拴绳。",
+        "信任本来靠聊出来，不靠地图点出来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从实时触发压力推进到边界协商，开头和结尾有回扣；但研究到结论的因果桥不足，模具收束也显突兀。",
+      "script_spans": [
+        "下次家人要你常开，也许该问一句：你怕我出事，还是受不了不知我在哪？",
+        "有研究说家人紧密关心让人安稳，可位置全透明拿走了自在。",
+        "要是连喘口气都要报备，那不是爱，是模具。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见明确违规，且区分临时使用与长期监控；但“拴绳”“不是爱”等定性偏满，易将复杂亲情一概标签化。",
+      "script_spans": [
+        "临时开位置找走丢娃有用，长期绑着反倒生怨。",
+        "要是事先商量好时段，出差报个备只是挂念。",
+        "这不是导航，是拴绳。",
+        "要是连喘口气都要报备，那不是爱，是模具。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-a443ec2f899d4863802fd4e9373d327f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1cd306aa11fe475d97b1081e20b58ee5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

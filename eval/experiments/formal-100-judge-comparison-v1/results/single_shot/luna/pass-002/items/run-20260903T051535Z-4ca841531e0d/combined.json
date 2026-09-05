@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-b4e67c02c68c49cd83ea8cc53317c808",
+  "run_id": "run-20260903T051535Z-4ca841531e0d",
+  "trace_sha256": "65783f84c4dd75688f3c4e819b3bff34cdfe875018f7b6bd91fb86117d89ae61",
+  "created_at": "2026-09-03T12:32:13.756853Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否花得更多，兼顾平台低价退潮与消费者冲动消费两面，目标人群和应对重点明确。",
+      "script_spans": [
+        "强制低价消失，不会直接让你的总支出抬升，但消费环境变得更考眼力。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕价格、商品质量、维权和冲动消费层层推进，既给出判断，也提供了普通人的消费应对方法。",
+      "script_spans": [
+        "平台被禁止强制要求商家降价或承诺全网最低，连借流量惩罚高价的隐性手段也要纠偏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用最低价退潮制造利益焦虑，中段持续补充监管、质量与冲动消费，结尾回到理性自守，推进和余味都成立。",
+      "script_spans": [
+        "直播间“全网最低价”的招牌正在撤下",
+        "低价承诺走了，购物车里的理性得留下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有“少踩坑”“不听话就限流”等对话感，整体能读通；但新规长句和“更即时情绪化”等表达拗口，未达到精心设计的自然口播。",
+      "script_spans": [
+        "那为什么少了低价承诺，反而可能少踩坑？",
+        "此前不少平台把低价要求藏进推荐算法，不听话就限流。",
+        "近期新规施行，平台被禁止强制要求商家降价或承诺全网最低，连借流量惩罚高价的隐性手段也要纠偏。",
+        "研究显示直播情境让决策更即时情绪化。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“低价成了劣质的遮羞布”和“购物车里的理性得留下”形象且可复述，修辞服务观点，没有明显堆砌。",
+      "script_spans": [
+        "低价成了劣质的遮羞布",
+        "低价承诺走了，购物车里的理性得留下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整且转折清楚，但从禁强制低价跳到少踩坑，质量因果与维权结论之间缺少充分桥接。",
+      "script_spans": [
+        "落到普通人身上，好处是比价焦虑能松口气，不必为了凑最低价囤一堆用不上的货；坏处是得自己把关需求。",
+        "因为过去的最低价大战，常逼着商家在用料和售后上偷工减料，低价成了劣质的遮羞布。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，也提示了冲动消费风险；但总支出和维权效果的判断偏满，需补充适用边界，避免误导消费预期。",
+      "script_spans": [
+        "坏处是得自己把关需求。",
+        "不会直接让你的总支出抬升",
+        "买贵了至少有处说理"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-250535ed9a074762b4c11cb2a33ff9eb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

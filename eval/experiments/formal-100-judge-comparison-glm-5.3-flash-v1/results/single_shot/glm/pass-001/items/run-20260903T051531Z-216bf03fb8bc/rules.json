@@ -1,0 +1,81 @@
+{
+  "evaluation_id": "rules-d89273f8e4064f159f4be845702a1486",
+  "run_id": "run-20260903T051531Z-216bf03fb8bc",
+  "trace_sha256": "489750eb158cd7e6e8739214efcc6964bf19bb64c3c9e146b793286e38e3f7dc",
+  "created_at": "2026-09-03T14:06:11.694324Z",
+  "evaluator": {
+    "kind": "rules",
+    "name": "deterministic-script-rules",
+    "version": "1.6.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Deterministic checks completed.",
+  "dimension_scores": [
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 543，目标为 450，偏差率为 20.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "script_character_count": 543,
+    "target_length": 450,
+    "length_deviation_ratio": 0.20666666666666667,
+    "length_within_tolerance": false,
+    "length_score": 2,
+    "query_count": 3,
+    "search_result_count": 15,
+    "evidence_count": 4,
+    "claim_count": 0,
+    "core_claim_count": 0,
+    "cited_claim_count": 0,
+    "claim_citation_coverage": null,
+    "supported_core_claim_count": 0,
+    "core_claim_support_rate": null
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 543,
+        "target": 450,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.20666666666666667
+      }
+    }
+  ],
+  "metadata": {
+    "config": {
+      "length_tolerance_ratio": 0.1,
+      "repeated_character_threshold": 10,
+      "repeated_sentence_threshold": 3
+    },
+    "evaluator_fingerprint": {
+      "kind": "rules",
+      "name": "deterministic-script-rules",
+      "version": "1.6.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {
+        "length_tolerance_ratio": 0.1,
+        "repeated_character_threshold": 10,
+        "repeated_sentence_threshold": 3
+      },
+      "sha256": "1b1ce33da1d42ad106dba6cb54307c58e2801dbb8776a0d997ff8a5a466d2c95"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

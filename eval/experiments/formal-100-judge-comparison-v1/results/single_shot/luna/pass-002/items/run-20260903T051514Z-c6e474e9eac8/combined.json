@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-9ef8824bc48e41ac91f93060b39d7655",
+  "run_id": "run-20260903T051514Z-c6e474e9eac8",
+  "trace_sha256": "2f6776020bf20ded0af0fa66eda389e553b4bb0a5c64185e5b2f3c5123ce332c",
+  "created_at": "2026-09-03T12:32:17.962500Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面比较人口流入城市的机会与房租成本，覆盖年轻人和冲突两侧，结论直接回答谁更高。",
+      "script_spans": [
+        "人口流入城市的机会收益依然压过房租成本"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中且有保障房折价、算净账等信息；但机会收益的核心判断主要靠概括，缺少足够证据和具体推进。",
+      "script_spans": [
+        "不少城市新批的保障房，租金大概只有周边市价六成，实际负担被明显摊薄",
+        "人口向城市集聚，本身就在催生大量岗位和上升通道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“冤大头”制造利益冲突，中段切换机会与成本，结尾用可回味判断自然收住。",
+      "script_spans": [
+        "大城市房租一直涨，年轻人是不是成了纯买单的冤大头？",
+        "房租是成本，更不是终点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有钩子、有收束，短句停顿也清楚；但中段抽象概念和生硬搭配偏多，整体还不够顺口。",
+      "script_spans": [
+        "大城市房租一直涨，年轻人是不是成了纯买单的冤大头？",
+        "人口流入城市的机会收益依然压过房租成本",
+        "择业安家时算净账，用工资涨幅减掉租金再看余数"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“进场门票”和“房租是成本，更不是终点”都具体、可复述，修辞克制，没有压过核心观点。",
+      "script_spans": [
+        "房租更像是进场门票，不是纯粹烧钱。",
+        "房租是成本，更不是终点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "机会—成本—建议的结构清楚，但“工资涨幅减掉租金”把收入增量与租金总额相减，比较口径不一致，削弱了结论。",
+      "script_spans": [
+        "先看机会侧。",
+        "再看成本侧。",
+        "用工资涨幅减掉租金再看余数"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且有成本权衡；但“房租一直涨”“多数年轻人机会收益压过成本”等泛化判断缺少限定，易误导。",
+      "script_spans": [
+        "房租是成本，更不是终点。",
+        "大城市房租一直涨",
+        "对多数愿意闯的年轻人，人口流入城市的机会收益依然压过房租成本"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c78ed5a49a3d4556ad959b42761ca5ce",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

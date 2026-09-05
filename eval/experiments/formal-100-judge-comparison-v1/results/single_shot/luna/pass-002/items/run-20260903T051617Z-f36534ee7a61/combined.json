@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-4001616379ba4514ad1dd192cc3b171f",
+  "run_id": "run-20260903T051617Z-f36534ee7a61",
+  "trace_sha256": "20d2e3e403ae2521626a07bb79d81d6a21ef99e1e236ee98e57d684e7d583ec9",
+  "created_at": "2026-09-03T12:32:17.391725Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解粮价与餐桌支出的差异，覆盖加工链、外食选择和普通家庭的应对方式，切题完整。",
+      "script_spans": [
+        "粮食价格平稳和家庭餐桌支出其实是两本账。",
+        "所以对普通人来说，盯住米价没意义，该盯的是自己的碗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕价格统计与实际餐饮支出的落差，给出原粮、加工链、外食溢价和数据支撑，信息推进充分。",
+      "script_spans": [
+        "原粮出门后，要经过加工、运输、菜场和餐馆，每一环都附上新成本",
+        "外出就餐同类食物溢价能达到两到十三倍，蔬菜最夸张。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用粮价不涨、餐桌支出却涨的反差抓人，中段层层拆账，结尾建议也由主题自然落地。",
+      "script_spans": [
+        "超市里米面油价格几乎没动，可一家子每月吃喝花销却悄悄涨了",
+        "粮食价格平稳和家庭餐桌支出其实是两本账",
+        "与其抱怨粮价，不如重新审视购物清单和就餐方式"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和收束有对话感，但统计术语、长串并列和个别搭配拖慢节奏，整体尚未达到顺滑口播。",
+      "script_spans": [
+        "你发现没，超市里米面油价格几乎没动",
+        "食品烟酒及在外餐饮类",
+        "高价溢价菜品，支出立马能见好"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“两本账”和“盯住自己的碗”把统计口径与生活感受说清楚，形象但不油腻，容易复述。",
+      "script_spans": [
+        "粮食价格平稳和家庭餐桌支出其实是两本账",
+        "盯住米价没意义，该盯的是自己的碗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、分层解释和因果推进基本清楚，但把外食数据直接推到个体支出，并以“愿不愿意”收束，结论偏扩大。",
+      "script_spans": [
+        "粮食价格平稳和家庭餐桌支出其实是两本账。",
+        "餐桌支出控不控得住，终究看你愿不愿意把厨房用起来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，账目区分清楚；但“根本在”和“立马能见好”将复杂原因与节支效果说得过满，需加限定。",
+      "script_spans": [
+        "粮食价格平稳和家庭餐桌支出其实是两本账。",
+        "多在家做饭，少点高价溢价菜品，支出立马能见好。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2c2d173ca8984489b4d0ad7f20a2d7eb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

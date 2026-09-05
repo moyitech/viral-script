@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-46382c22d6e64e6d8be9138f12b4e969",
+  "run_id": "run-20260902T142205Z-a22930c7d55b",
+  "trace_sha256": "211a46ded163fae410c06a0d0e2f8a1b65f2857b030f367de0d7603155c874c3",
+  "created_at": "2026-09-03T14:25:12.237610Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇设问即答吞与吐两侧，切角落在买卖汇时点，普通人视角与结尾回扣均到位。",
+      "script_spans": [
+        "汇率波动到底吞不吞收益？答案不单边。可能吞，也可能吐出来。",
+        "落到普通人身上就直白"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "价差成本、汇率机制、盯盘难题层层推进，6.7480与引用相符，并给出算账方法。",
+      "script_spans": [
+        "可如果持有期人民币继续走强，同样美元结汇成人民币就变少，利息可能被吃光",
+        "先问银行现汇买卖价多少，减掉点差才是真钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句20字内抛出利息喂汇率的具体冲突，中段以汇率数据、价差新冲突和这是个转折持续兑现，结尾余味由正文自然生长。",
+      "script_spans": [
+        "你拿人民币买境外理财的利息，可能喂了汇率。",
+        "可如果持有期人民币继续走强，同样美元结汇成人民币就变少，利息可能被吃光。",
+        "先琢磨钱回来那天汇率给不给面子。那点利差，经不起来回换洗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有对话感、节奏立得住，但“本币终值”“来回换洗”两处拗口费解，朗读需临时换词重断句。",
+      "script_spans": [
+        "普通人哪能天天盯盘踩点，市场波动没人保你稳赚",
+        "买之前拿本币终值量一量",
+        "那点利差，经不起来回换洗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "吞吐、削毛、给面子等比喻服务理解且点到即止；利息喂了汇率、利差经不起换洗离文可复述，无炫技堆叠。",
+      "script_spans": [
+        "可能吞，也可能吐出来。",
+        "银行换汇买入价卖出价有距离，这头先削掉一层毛。",
+        "那点利差，经不起来回换洗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "买汇划算到结汇变少的因果桥完整，段落功能清晰，结尾以'所以'自然回扣开头。",
+      "script_spans": [
+        "关键在你买汇和卖汇那个瞬间的人民币行情",
+        "所以挑跨境理财，别只盯境外年化。先琢磨钱回来那天汇率给不给面子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "双向提示到位，明言无人保稳赚，建议闲钱小额试水，数据与背景一致，无夸大承诺。",
+      "script_spans": [
+        "市场波动没人保你稳赚",
+        "用闲钱小额度试水更稳"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-af55f6068c9c49c79cd343f4a15fa6bb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

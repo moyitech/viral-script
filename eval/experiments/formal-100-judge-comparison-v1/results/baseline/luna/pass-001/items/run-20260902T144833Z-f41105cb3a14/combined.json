@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-4f034880954a4bc4b7dc21f43937f3ab",
+  "run_id": "run-20260902T144833Z-f41105cb3a14",
+  "trace_sha256": "31bf706c2bb5986b62c9732df4955e0d324b0d901eb8d85f87ac1ae0b6d31421",
+  "created_at": "2026-09-03T11:47:50.390779Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应囤药的安全感与浪费、误服风险，并给出普通家庭的备药和清理建议。",
+      "script_spans": [
+        "囤药求安心没错，但过了量安心就成包袱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 680，目标为 700，偏差率为 2.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕囤药风险持续推进，涵盖浪费、转卖、储存、误服与处置，并给出可执行建议，信息增量充分。",
+      "script_spans": [
+        "你也许盘算，剩药卖药店回点血？这念头得掐了，个人卖药真的违法。",
+        "每隔半年清一次，临期优先用掉它。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出浪费与误服风险，中段依次推进囤积、转卖、储存和处理，结尾自问收束自然。",
+      "script_spans": [
+        "你囤的常用药，正变成浪费和误服风险。",
+        "当药箱成了心理安慰，你敢不敢只留必需的？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句密集、对话感较强，但“经营许可资质”和“每样一小盒顶够”会让朗读需要临时换词。",
+      "script_spans": [
+        "想想上次感冒，你是不是顺手多买几盒？",
+        "经营许可资质",
+        "每样一小盒顶够"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照都服务于观点，表达克制，既有画面感，也留下了便于复述的核心句。",
+      "script_spans": [
+        "药不是护身符，堆得多反而遮了眼光。",
+        "说到底，药是救急不是存钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，风险、原因、处置和备药建议层层展开；但部分因果归因过满，个别建议和药效判断缺少条件限定。",
+      "script_spans": [
+        "那怎么办？药毕竟特殊，算有害生活垃圾，随便丢会污染水土。",
+        "这海量浪费，就是囤药安全感的直接代价。",
+        "一家三口常用药备三五天量就成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提醒囤药、转卖和回收，整体方向稳妥；但“个人卖药真的违法”“药效打对折”过于绝对，备药量建议也缺少边界。",
+      "script_spans": [
+        "有些城市小区放了专用回收箱，集中交上去比乱丢强。",
+        "个人卖药真的违法",
+        "温度一高药效说不定打对折",
+        "一家三口常用药备三五天量就成"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-535b6aa31a4d4220ac8a046e6f854462",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-fe5036924c1e4c7eb365bc8f2301d39c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

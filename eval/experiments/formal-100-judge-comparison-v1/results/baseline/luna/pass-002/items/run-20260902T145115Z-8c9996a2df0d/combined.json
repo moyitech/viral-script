@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-2585e68a1a7d490a9fcb0b17f0faa28d",
+  "run_id": "run-20260902T145115Z-8c9996a2df0d",
+  "trace_sha256": "be362b5ff322e2109565d95b45185366dc3cb5501bd11a1025560c5af3a3549f",
+  "created_at": "2026-09-03T12:17:42.071155Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答消费者是否买单，并覆盖欧盟政策、充电与无线标准的两面，切口贴近普通用户。",
+      "script_spans": [
+        "答案是你会为部分兼容缺口买单，但政策在局部把账顶了。",
+        "这规矩只框住充电口，管不到耳机鼠标各自的通信协议。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中且案例具体，能讲清标准碎片化的代价；但把接口与充电器混用，政策成本传导也说得偏满。",
+      "script_spans": [
+        "你省下一根线，却可能在智能家居里撞见设备互相听不懂。",
+        "你买新手机得另付钱买线，可欧盟正让厂家白送接口。",
+        "可厂家又把接口成本悄悄揉进整机价，你其实换种方式付了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用买线与欧盟白送形成冲突，中段不断补充成本与政策边界，结尾追问自然延伸。",
+      "script_spans": [
+        "你买新手机得另付钱买线，可欧盟正让厂家白送接口。",
+        "你省下一根线，却可能在智能家居里撞见设备互相听不懂。",
+        "当接口慢慢归一，我们是否还愿为那些互不说话的设备多掏一份钱？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感和生活化例子，但多处搭配生硬，朗读时需要临时换词。",
+      "script_spans": [
+        "看看你抽屉就明白。",
+        "买转接脑袋",
+        "买灯泡和音箱若不同系"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“这利息日常看不见，却月月扣”把兼容成本说得具体，“标准墙付租”也留下记忆点，修辞总体服务理解。",
+      "script_spans": [
+        "这利息日常看不见，却月月扣。",
+        "你若图省事，只能挑同一生态，那就变相为标准墙付租。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线有序推进，但“白送接口”后转为“不拿充电头”，概念偷换，成本转嫁的因果也未充分展开。",
+      "script_spans": [
+        "这规矩只框住充电口，管不到耳机鼠标各自的通信协议。",
+        "你买新手机得另付钱买线，可欧盟正让厂家白送接口。",
+        "店里能把机身和充电器分开摆，你买裸机可以不拿充电头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，但“白送接口”及成本传导等表述过于确定，可能误导观众对政策效果和实际支出的判断。",
+      "script_spans": [
+        "这规矩只框住充电口，管不到耳机鼠标各自的通信协议。",
+        "可厂家又把接口成本悄悄揉进整机价，你其实换种方式付了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-dbf23155e041411b9ce8dcbd933de27f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

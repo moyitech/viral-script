@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-d59f2e0bcb9947408ea2d877a7af29c3",
+  "run_id": "run-20260902T143404Z-3f6b8786f797",
+  "trace_sha256": "4dd1faf7e6200ed84c24079fea2ef075cd6bc42f2452a5350081e7b41f4148a9",
+  "created_at": "2026-09-03T12:16:00.620594Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答延时营业能否带来真实增长，覆盖成本、客流转化、特殊赛事与经营核算。",
+      "script_spans": [
+        "延时营业的热闹，能带真实增长吗？未必。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕成本、客流、赛事特例和净收益连续推进，既有判断也给出月底核账的具体标准。",
+      "script_spans": [
+        "多开几点钟，灯得亮空调不能关，值守店员保安都得算加班钱，实打实净流出。",
+        "你月底翻账本，别光数人头，得看延时那小时净赚回多少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用人流旺了、纯利变薄制造反差，中段拆解成本与转化，结尾用钱袋与负担自然收束。",
+      "script_spans": [
+        "商场再多开两小时，人流旺了，纯利却可能变薄。",
+        "如果只填满场地不填满钱袋，这份热闹终归是负担。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和转折让整体可读，但“多开几点钟”等处存在明显压句，口语化表达也不够稳定。",
+      "script_spans": [
+        "延时不是白给的，每多一刻都计费。",
+        "多开几点钟，灯得亮空调不能关",
+        "像世界杯那样特定赛事",
+        "平日没赛事，晚八点后客流就稀，硬撑开店夜班人力电费涨",
+        "得看延时那小时净赚回多少"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制，“特例当常态”与“填满场地不填满钱袋”都准确提炼了判断，便于复述。",
+      "script_spans": [
+        "你不能拿特例当常态。",
+        "如果只填满场地不填满钱袋，这份热闹终归是负担。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由提问引入，按成本、客流、特例和核算递进，结尾回扣热闹与负担，结构闭合。",
+      "script_spans": [
+        "先说钱这块。",
+        "再看客流。",
+        "所以你月底翻账本，别光数人头，得看延时那小时净赚回多少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体安全稳妥，但“就不算”“就稀”“终归是负担”等绝对表述缺少限定，可能造成误导。",
+      "script_spans": [
+        "延时营业的热闹，能带真实增长吗？未必。",
+        "客流变不成交易笔数就不算真增量。",
+        "平日没赛事，晚八点后客流就稀，硬撑开店夜班人力电费涨。",
+        "如果只填满场地不填满钱袋，这份热闹终归是负担。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-daff3369161f47be818d10dbc3af09a2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

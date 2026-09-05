@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-2387b9cf719e483eb72889d39366aa0d",
+  "run_id": "run-20260902T144155Z-d9656a0a4df8",
+  "trace_sha256": "f58935fdb864d7ae5f050e6480a61e6f538cb9fe2e4156fce6b8d396834f884f",
+  "created_at": "2026-09-03T11:44:58.079302Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直答不会用手机者可走人工、取纸质，并给出陪同和询问建议，完整覆盖题设冲突双方。",
+      "script_spans": [
+        "医院搞电子化，不会用手机患者能找人工窗口拿纸质。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 254，目标为 280，偏差率为 9.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，政策依据、人工窗口和提前询问构成信息推进；但纸质报告结论反复出现，政策适用范围也说得过满。",
+      "script_spans": [
+        "国家发文说过，智能服务和老人熟悉的办法要一块走，不能光给屏幕看。",
+        "政策写明了，传统服务方式必须保留，这是底线，也是给老人的后路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直击老人取报告的冲突，中段补充政策与操作路径，结尾以陪伴提醒自然收束并引发互动。",
+      "script_spans": [
+        "医院全推电子报告，没手机老人咋取单？",
+        "提醒一句，挂号时直接跟护士说要纸质报告，省得后面跑空。",
+        "下次陪老人去，先问一句有纸质吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和建议句有对话感，但“不会用手机患者”“拿到纸质”等压缩表达，让朗读需要临时补词。",
+      "script_spans": [
+        "你想啊，医院不能因为上了电子系统，就把不看屏幕的人推开。",
+        "不会用手机患者能找人工窗口拿纸质",
+        "他就能帮打印",
+        "通常能拿到纸质"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "表达克制易懂，“给老人的后路”和“别让屏幕隔开两代人”形成自然、可复述的记忆点。",
+      "script_spans": [
+        "这是底线，也是给老人的后路。",
+        "别让屏幕隔开两代人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、依据、操作建议和结尾顺序清楚；但从传统服务方式直接推到所有医院都能打印纸质报告，因果与边界不足。",
+      "script_spans": [
+        "提醒一句，挂号时直接跟护士说要纸质报告，省得后面跑空。",
+        "政策写明了，传统服务方式必须保留，这是底线，也是给老人的后路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见明确违规，且关注老人就医权益；但将政策要求直接推导为各院必有人工打印、必能拿纸质，容易造成误解。",
+      "script_spans": [
+        "智能服务和老人熟悉的办法要一块走，不能光给屏幕看。",
+        "像门诊大厅还留着导诊员，你报个名字，他就能帮打印。",
+        "你开口找人工窗口，通常能拿到纸质。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-58545eba36904c3bbc4effe87bb22d25",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f2e7be96166e491faf70e2f0e173452f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-47349a8bd4774781b049d75e65a5e915",
+  "run_id": "run-20260902T143343Z-015bf008bf9f",
+  "trace_sha256": "25230292eb608bc86cfa290cafe704d42d3762ba0d96bb49e56262d8fc1374d8",
+  "created_at": "2026-09-03T14:44:04.890913Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答夜间加剧，机制与绿带对策全程扣题，覆盖失眠者与购房人群。",
+      "script_spans": [
+        "其实它们真在加热你的夜。摩天楼确实加剧夜间热岛效应。",
+        "规划时多留绿带和风口，别全砌成墙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "蓄热、挡风、空调排热与城市基线温差层层推进，结论有据，观众带走机制与选房判断。",
+      "script_spans": [
+        "混凝土和玻璃墙面像海绵吸饱了白天太阳热。天黑后慢慢吐出来",
+        "城市本就比外围天然热几度，楼群又添一把火。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "失眠之问在前20字内立起悬念，中段以挡风、空调排热等新信息持续兑现，结尾买房之问自然生长。",
+      "script_spans": [
+        "晚上热得睡不着，怪摩天楼吗？",
+        "不只自家凉，却把热吐给街坊",
+        "这闷热账，咱买房时算楼一笔？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与比喻读来顺耳，但结尾两处语序别扭需临场换词重断，决定性拉低一档，只能停在此分。",
+      "script_spans": [
+        "晚风被楼群挡成死胡同，热气散不脱。楼越高，阴影里风越弱，凉意进不来。",
+        "咱选房低层或许躲开闷罐？",
+        "这闷热账，咱买房时算楼一笔？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "海绵吸热、死胡同挡风等比喻贴切助解，'楼是巨热水袋'离开语境仍可复述，点到为止未喧宾夺主。",
+      "script_spans": [
+        "混凝土和玻璃墙面像海绵吸饱了白天太阳热",
+        "晚风被楼群挡成死胡同",
+        "一片楼就是个巨热水袋"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "蓄热因果链清楚，主线可跟随；但阴影与风弱的因果未搭桥，规划到选房跳转也显生硬。",
+      "script_spans": [
+        "晚风被楼群挡成死胡同，热气散不脱。",
+        "楼越高，阴影里风越弱，凉意进不来。",
+        "咱选房低层或许躲开闷罐？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "论断与引用背景一致，量级表述有据；购房建议用'或许'加问句设限，无绝对化承诺或煽动，审核安全。",
+      "script_spans": [
+        "咱选房低层或许躲开闷罐？",
+        "城市本就比外围天然热几度"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-18bd9c0003f44c33a75c15d9a874a586",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

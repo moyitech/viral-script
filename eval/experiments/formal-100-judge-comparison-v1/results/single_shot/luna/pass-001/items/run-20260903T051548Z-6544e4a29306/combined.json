@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-72ae2cb027494d318770a4bf57e3d732",
+  "run_id": "run-20260903T051548Z-6544e4a29306",
+  "trace_sha256": "f7d40ff90ae560912e532091685219a688b78c12648521c4aa1cf9810b5f545f",
+  "created_at": "2026-09-03T12:01:07.157576Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "始终围绕项目扩张是否让安全标准失速展开，兼顾监管、投资人与居民，正面回应题目。",
+      "script_spans": [
+        "一边狂奔，一边冒烟，电池安全的规矩真能同步吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 747，目标为 700，偏差率为 6.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "增长、事故机理、监管补课、执行短板和现实应对形成连续信息链，既有数据也有判断与行动提示。",
+      "script_spans": [
+        "为什么风险陡增？因为电化学储能里锂离子电池占绝大多数",
+        "标准主要管建设工程质量，运行期的变量它覆盖有限"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以装机暴增对撞火灾频发，后文持续推进监管缺口与现实影响，结尾“敬畏心不能抢跑”自然收束。",
+      "script_spans": [
+        "今年新型储能电站像被按了快进键",
+        "一边狂奔，一边冒烟"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答和停顿设计有效，但多处信息塞进长句，技术名词连排，朗读时仍需主动拆分气口。",
+      "script_spans": [
+        "先把因果理一理。为什么风险陡增？",
+        "加上独立储能项目比去年同期暴增两倍多，新电站从批复到带电运行可能就几个月，而标准从发文到企业贯标、人员培训需要周期。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“一边狂奔，一边冒烟”“敬畏心不能抢跑”有复述价值，但“快进键”“算盘”“门票”“免死金牌”等意象连用，略显拥挤。",
+      "script_spans": [
+        "敬畏心不能抢跑",
+        "投资人别幻想标准到了就高枕无忧，安全投入是门票"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有设问、因果、转折和回扣，但个别表达生硬，且由单一案例推导多因素成因，口播需重断句。",
+      "script_spans": [
+        "先把因果理一理。为什么风险陡增？",
+        "所以，别只盯装机数字狂欢，要问安全冗余留够没。",
+        "德国一座合规的集装箱储能照样烧了，说明事故是设备、环境、运维多因素搅在一起",
+        "而标准从发文到企业贯标、人员培训需要周期"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体以风险提示和克制劝导为主，但“监管有算盘”带有揣测，“标准主要管建设质量”也可能造成范围误解，需限定表述。",
+      "script_spans": [
+        "咱们居民也无需恐慌，但得明白没有百分百免灾的集装箱",
+        "他们手里也有自己的算盘",
+        "标准主要管建设工程质量，运行期的变量它覆盖有限"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-6d466ecd80af4cacbe39e1b39d603e04",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ba8c183d39c44315a4b2da310d05dd99",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-62d97e7760744ecc8db93b788b82acd4",
+  "run_id": "run-20260902T143936Z-dc8d3cc0abf7",
+  "trace_sha256": "4a55fd78f27b898c58f81e73d38dd7e9e588a0a40330bbb1f0e54a02ac1c521a",
+  "created_at": "2026-09-03T14:26:05.918444Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直抛二元之问，减负与收费两面均有实据，结尾正面作答，毕业生与手头紧租客均被覆盖。",
+      "script_spans": [
+        "免押金却多收服务费，这是减负还是换收费？",
+        "租房这事有两面：信用好的人真少交押金，可更多租客被服务费悄悄顶上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策托管、海燕计划溢价、直租利弊层层推进，末段给出比价方法，事实与解释咬合，无编造。",
+      "script_spans": [
+        "早几年信用免押只限公寓房源，真在乎押金的低端客反而难沾光。",
+        "你签合同前翻翻细则，把租金和服务费加一块，若比原押金加租还高，只是把债挪了位置。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直抛反差疑问当钩子，中段以政策原因、具体报价、直租试错层层兑现，结尾提问由正文核对建议自然长出，三段无代偿。",
+      "script_spans": [
+        "免押金却多收服务费，这是减负还是换收费？",
+        "房租比个人房贵十五到二十，还要收服务费，整租八个点合租十个点",
+        "下次见零押金广告，你先盯住哪行收费字？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、问答推进有节奏，但“这笔移动”“当买管家”等处拗口，需临时换词重断，明显问题不止一处。",
+      "script_spans": [
+        "为啥平台拼命推免押？因为押金被政策管严了。",
+        "你和房东当面签，押金免不免全看对方肯不肯。",
+        "钱从左手兜绕到右裤袋，得盯紧这笔移动。",
+        "有人图省事当买管家，工作稳就选省心"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "左手兜到右裤袋、白给午餐换口袋都贴题助解，救急不救穷和把债挪了位置离开语境仍可复述，修辞克制未抢观点。",
+      "script_spans": [
+        "免押不是白给午餐，只是成本换了个口袋",
+        "免押确实救急不救穷",
+        "只是把债挪了位置"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从押金被管严到企业找补有因果桥，各段功能清晰，结尾追问自然回扣开头的减负之问。",
+      "script_spans": [
+        "这规定本为防资金风险，但没了押金沉淀，企业可能想从别处找补。",
+        "下次见零押金广告，你先盯住哪行收费字？是服务费还是溢价租？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "两面陈述且结论多用条件限定，费用与政策说法有据，不煽动不作承诺，边界清楚，整体安全公允。",
+      "script_spans": [
+        "信用好的人真少交押金，可更多租客被服务费悄悄顶上",
+        "把租金和服务费加一块，若比原押金加租还高，只是把债挪了位置",
+        "有人图省事当买管家，工作稳就选省心；有人计较就找个人房东，手头紧算细账"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5ecf9a5048974d8e81a46a6363ff1ac2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

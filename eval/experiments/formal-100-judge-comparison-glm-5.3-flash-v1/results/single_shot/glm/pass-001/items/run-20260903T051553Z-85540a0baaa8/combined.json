@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-012461e1cd8b44b69cb7410eea8364a9",
+  "run_id": "run-20260903T051553Z-85540a0baaa8",
+  "trace_sha256": "cc42ef3b48eeb2958ec34b54b95a4911cea8cfdaa7d598584d08b712896c1924",
+  "created_at": "2026-09-03T14:11:50.183829Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即正面作答，点出核心不是多装机而是系统灵活，旱情成因与应对两侧齐备，分时电价建议贴合普通观众。",
+      "script_spans": [
+        "核心不是多装机，而是把电源、储能和负荷连成灵活可调的系统",
+        "普通家庭盯紧分时电价，把充电、洗衣挪到便宜时段"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 278，目标为 280，偏差率为 0.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "坝前水位、火电冷却、现货市场层层推进，信息单元互不重复，结尾落到家庭可执行动作，增量明确。",
+      "script_spans": [
+        "水电靠坝前水位和流量转化，干旱季河沟断流，出力掉得狠",
+        "别忘了火电冷却也大量吃水，干旱同样勒它脖子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即点出干旱推高成本的具体冲突，中段由断流、账单到解法、火电反差层层兑现，结尾回味自然不硬凹互动。",
+      "script_spans": [
+        "干旱推高水电成本",
+        "别忘了火电冷却也大量吃水，干旱同样勒它脖子",
+        "别奢望风调雨顺，系统弹性越强，电费才越不被老天爷情绪左右，韧性是熬出来的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句有比喻、整体可读；但“用户侧响应实时匹配”等名词堆叠处需临时换词重断句，拉低流畅度。",
+      "script_spans": [
+        "别忘了火电冷却也大量吃水，干旱同样勒它脖子",
+        "电力现货和虚拟电厂让风光、火电、用户侧响应实时匹配"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "勒脖子、老天爷情绪等比喻贴题服务理解，“韧性是熬出来的”离开正文仍可复述，修辞适度无堆砌。",
+      "script_spans": [
+        "干旱同样勒它脖子",
+        "电费才越不被老天爷情绪左右，韧性是熬出来的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "出力掉、高价补、账单的因果链完整，结论回扣看天吃饭与开头论点，段间承接自然。",
+      "script_spans": [
+        "出力掉得狠，缺口被迫用高价电补，成本直接传导到账单",
+        "系统弹性越强，电费才越不被老天爷情绪左右"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无违规煽动，家庭节电建议务实安全；但'单一能源路线都怕没水'一刀切归因，风光水对水依赖差异未限定，补边界更稳。",
+      "script_spans": [
+        "普通家庭盯紧分时电价，把充电、洗衣挪到便宜时段，既减支出也帮电网削峰",
+        "单一能源路线都怕没水"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d5f1400335204e97863a56d29d325c60",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ec40da98ae484e55942271f2cab148ce",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

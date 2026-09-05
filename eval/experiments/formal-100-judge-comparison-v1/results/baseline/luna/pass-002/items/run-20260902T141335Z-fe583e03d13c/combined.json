@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-b35b0d34d1a54d608af3d79233314fbb",
+  "run_id": "run-20260902T141335Z-fe583e03d13c",
+  "trace_sha256": "d76124588072e6946f5cc5d102c4f8e4986ae692a42dcc8bf5039c4a85072429",
+  "created_at": "2026-09-03T12:22:01.261259Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面呈现成本节省与晚归需求的冲突，覆盖加班族、夜班人群，结尾也回扣夜间出行。",
+      "script_spans": [
+        "省成本是实情，冷落晚归人也是实情。",
+        "先吃亏的是加班族、夜班师傅。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，公益属性、时间可达性和受影响人群都带来信息增量；但关键判断偏绝对，兜底方案也较单薄。",
+      "script_spans": [
+        "夜间客流本来就稀，但稀不等于不该被接住。",
+        "等待变长，安全感和时间成本都往上蹿。",
+        "车少了，夜归等待直接翻倍拉长。",
+        "出门前看清末班时间，或备好替代出行，别赌运气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用末班车错过制造具体冲突，中段补足成本与可达性，结尾从账面落到夜归者，追问自然。",
+      "script_spans": [
+        "你刚下夜班拖着累身到站台，末班车却半小时前开走了。",
+        "账面好看了，末班后的空白谁填？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏有对话感，短句和反问有效；但“拖着累身”“翻倍拉长”等处卡嘴，影响连续朗读。",
+      "script_spans": [
+        "你得多等半小时，公司却省了油钱。",
+        "账面好看了，末班后的空白谁填？",
+        "拖着累身",
+        "夜归等待直接翻倍拉长"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“稀不等于不该被接住”把客流与公共责任区分开，结尾追问具体有余味，修辞克制不油腻。",
+      "script_spans": [
+        "夜间客流本来就稀，但稀不等于不该被接住。",
+        "账面好看了，末班后的空白谁填？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "场景、冲突、分析和结尾回扣基本完整，但成本规制到“不是冷落”的推导不足，“翻倍拉长”也缺少前提。",
+      "script_spans": [
+        "这取舍不能只盯一边：省成本是实情，冷落晚归人也是实情。",
+        "你看，这说明减班省力，不是把人推开不管。",
+        "车少了，夜归等待直接翻倍拉长。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见煽动或危险承诺，且给出备选出行建议；但“等待直接翻倍拉长”等把个案推成普遍结论，需加限定。",
+      "script_spans": [
+        "出门前看清末班时间，或备好替代出行，别赌运气。",
+        "车少了，夜归等待直接翻倍拉长。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-631ab560db664a3f8561060a09804bbd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

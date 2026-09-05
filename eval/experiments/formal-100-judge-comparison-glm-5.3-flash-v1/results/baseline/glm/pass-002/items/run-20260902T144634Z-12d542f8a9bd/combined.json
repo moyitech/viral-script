@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-0ff11d810ef5420ab15f5463bc11e712",
+  "run_id": "run-20260902T144634Z-12d542f8a9bd",
+  "trace_sha256": "31c9ebb7ee7b14c5956be578ebbb7265d2db35f0e32e50e94efc57f76e648b95",
+  "created_at": "2026-09-03T14:28:02.932072Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头复现换院重拍场景，随后直答为何重复花钱，政策与医生两侧成因都覆盖，落点回到患者。",
+      "script_spans": [
+        "根子在接诊医生握着认不认的决定权，文件也留了重查口子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策口子、医生顾虑、费用占比层层推进，近三成说法有据，还给出可执行建议，增量具体。",
+      "script_spans": [
+        "文件允许病情发展、设备参数不同就重查，正常代谢有快有慢，旧结果可能不准。",
+        "检查费常占看病花销近三成，白花真心疼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字直给重拍冲突，中段按「口子—大夫」两线持续兑现疑问，结尾「啥时能直」由正文自然生长。",
+      "script_spans": [
+        "你刚拍的胸片换家医院大夫说不行，得重掏钱",
+        "这是为保安全，却常变成重查理由",
+        "本该省下的钱卡在别人笔尖，这弯绕得人晕，啥时能直？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有对话感，朗读大体能顺下来；但有两处压缩句需临时换词重断句，最高只能给2分。",
+      "script_spans": [
+        "你没法较真，常常再掏腰包。",
+        "同一检查不同机器的图细微差别可能影响判断"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "「钱卡在别人笔尖」「弯绕得人晕」形象贴题，离开原文仍可复述，修辞克制不抢观点。",
+      "script_spans": [
+        "本该省下的钱卡在别人笔尖",
+        "这弯绕得人晕，啥时能直？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先总起两条根因，再以先看、再说分段展开，结尾卡在别人笔尖回扣开单与开头，闭环完整。",
+      "script_spans": [
+        "这是为保安全，却常变成重查理由。",
+        "本该省下的钱卡在别人笔尖，这弯绕得人晕，啥时能直？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制，认可安全边界并给可行建议；但“根子在接诊医生”“他怕担责”等归因缺乏限定，可能误导观众归咎医生。",
+      "script_spans": [
+        "这是为保安全，却常变成重查理由",
+        "正常代谢有快有慢，旧结果可能不准",
+        "根子在接诊医生握着认不认的决定权",
+        "他怕担责，也习惯看熟机器出的图"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-15d4322bc2fe4944b2c3a8a5e3aeb404",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

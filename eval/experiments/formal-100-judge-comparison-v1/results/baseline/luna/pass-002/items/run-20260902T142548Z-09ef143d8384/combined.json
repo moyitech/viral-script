@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-c726878ba5844c5ca88045e03171c3c4",
+  "run_id": "run-20260902T142548Z-09ef143d8384",
+  "trace_sha256": "08ceb7585095f6b61adcc8394152bf17dbb46df63673c3f763c9f44d415aeaab",
+  "created_at": "2026-09-03T12:15:58.424343Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从垫付风险切入，覆盖法律、诈骗机制、支付保护和自保建议，正面回应了善意为何需要边界。",
+      "script_spans": [
+        "善意当然该有，但替陌生人垫费这事，得先画条线。",
+        "善意本身从不是错，错的是把信任整筐交出去的那瞬。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕善意需设防连续推进法律风险、骗术机制、平台缓冲和操作建议，信息增量充足。",
+      "script_spans": [
+        "有访谈近三十名受骗者的研究，样本不大，但发现容易顺手答应钱请求的多是高信任倾向的人",
+        "延时到账只在特定转账生效。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开场立刻抛出陌生人失联的具体冲突，中段从法律、骗术到平台措施层层推进，结尾互动自然。",
+      "script_spans": [
+        "你替排队的陌生人输了停车码，钱刚扣完，人扭头钻进车流不见了。",
+        "下回有人凑来让垫钱，你肯先问他是谁吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头有场景和对话感，但法律、研究与平台说明多处书面拗口，朗读需要重断句，整体顺滑度受影响。",
+      "script_spans": [
+        "你愣在原地，手机还亮着扣款通知。",
+        "法律上说，没义务管别人事，但垫付必要花费能请求偿还，甚至管理人因事务受损还能适当补偿。",
+        "有访谈近三十名受骗者的研究，样本不大，但发现容易顺手答应钱请求的多是高信任倾向的人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“边界长在你确认键上”“善意的自保”把抽象边界落到动作和情绪，短而可复述，修辞没有压过信息。",
+      "script_spans": [
+        "边界长在你确认键上",
+        "那份犹豫不是冷漠，是善意的自保。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "分为法律风险、骗术机制和支付保护三层，主线可跟随；但“第一层因果”“反例”等说法不准，法律判断与案例之间的桥梁也偏弱。",
+      "script_spans": [
+        "现实影响很直白：边界长在你确认键上，小额救急莫犹豫，大额陌生请缓行。",
+        "边界的第一层因果就在这",
+        "反例是，有人觉得帮就该全盘信"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导核验身份、保留记录，基调克制；但法律求偿和警方止付条件说得过满，易造成确定性保障误解。",
+      "script_spans": [
+        "延时到账只在特定转账生效。",
+        "先核身份留记录。",
+        "法律上说，没义务管别人事，但垫付必要花费能请求偿还，甚至管理人因事务受损还能适当补偿。",
+        "钱没到位前警方止付能拦下"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5c223728c60848c7abfda4628682afa2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

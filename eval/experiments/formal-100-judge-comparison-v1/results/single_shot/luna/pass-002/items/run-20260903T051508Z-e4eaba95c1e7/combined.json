@@ -1,0 +1,133 @@
+{
+  "evaluation_id": "combined-444b572b5093446ab05657c30f8f851c",
+  "run_id": "run-20260903T051508Z-e4eaba95c1e7",
+  "trace_sha256": "16f2fd7b18d2df680b671b70cf3da50c90e252181a295c62087d47838d08c0c7",
+  "created_at": "2026-09-03T12:31:37.974979Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答算法能否识别潜力，同时覆盖招聘效率、技术局限、偏见风险与求职者处境。",
+      "script_spans": [
+        "算法能帮企业快速筛掉明显不合适的人，却还读不懂潜力这件事的全貌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕算法筛选、特征识别、效率收益、偏差风险和应用扩展层层推进，信息增量具体。",
+      "script_spans": [
+        "它靠语音语义和微表情特征自动打分，确实比随性的闲聊更标准，也给HR省下大量初筛时间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“AI能否看穿潜力”制造具体悬念，中段依次推进效率、偏差与趋势，结尾用反差金句留下余味。",
+      "script_spans": [
+        "如今招聘现场架起摄像头，AI面试官照着脚本追问，它真能一眼看穿你的潜力吗？",
+        "工具能算出门面规矩，算不出人往上走的后劲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感和清晰停顿，但技术术语堆叠、政策腔转折造成两处明显拗口。",
+      "script_spans": [
+        "你真去面对机器时，就把它当第一道关卡",
+        "它靠语音语义和微表情特征自动打分",
+        "眼下智慧面试正从企业内推往公共就业服务延伸，技术落地明显提速"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“第一道关卡”和“算不出人往上走的后劲”把抽象风险说具体，收束克制，留下了自然可复述的反差句。",
+      "script_spans": [
+        "你真去面对机器时，就把它当第一道关卡",
+        "工具能算出门面规矩，算不出人往上走的后劲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，随后先讲效率再转向偏差风险，最后落到求职建议与潜力判断，回扣自然。",
+      "script_spans": [
+        "但风险也在这，某些声线或长相特征跟干活能力根本无关，模型却可能顺着这些偏差悄悄带偏录用结果。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "使用“可能”等限定提示算法偏差，未作绝对承诺、煽动对立或危险建议，整体表达客观稳妥。",
+      "script_spans": [
+        "模型却可能顺着这些偏差悄悄带偏录用结果",
+        "别让一串算法分数否定自己的真实可能"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9e471127ad60476b82ed57be52eb5dd4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

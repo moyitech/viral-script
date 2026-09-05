@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-8e430f97359b4b7ea848b862feac6168",
+  "run_id": "run-20260902T144516Z-498d1341355f",
+  "trace_sha256": "1a4f8cd078548103b281650e704f23126ea90620e4cacc8eaa8d0e69356ad4a8",
+  "created_at": "2026-09-03T12:21:45.681880Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从政策替代压力到企业停线风险，覆盖冲突两侧并正面回答了为何不敢换。",
+      "script_spans": [
+        "政策推替代，企业怕停产，两边都是真问题。",
+        "这事儿有两头，不能只说国产好，也得看厂里怕什么。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕换系统风险推进，数据沉淀、兼容性、试点节奏和并行迁移均提供了有效增量。",
+      "script_spans": [
+        "老系统不是普通软件，里面压着十几年图纸和工艺参数。",
+        "有的厂老系统保底并行跑，先迁不重要模块，稳妥但两班人马成本翻倍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“停线亏百万”制造硬冲突，中段不断补充迁移风险与缓冲方案，结尾追问自然留下悬念。",
+      "script_spans": [
+        "国产软件替代快，可换系统怕停线亏百万，企业为啥不敢动？",
+        "上面明白硬转危险，让小范围先踩坑别全瘫。",
+        "期限敲门时，那些藏起来的图纸终究要翻开，可翻开之后，工厂真接得住吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏明快、口语感足，但多处搭配和词序不顺，朗读时仍需临时修整。",
+      "script_spans": [
+        "企业为啥不敢动？",
+        "跑顺再挪核心，不一刀切。",
+        "废品就冒出。",
+        "文件说先试点后年全面适配，留缓冲给企业。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“参数在老系统活着，新系统不认就抓瞎”把迁移难题说活了，“工业知识不可压缩”也形成清晰记忆点。",
+      "script_spans": [
+        "参数在老系统活着，新系统不认就抓瞎。",
+        "工业知识不可压缩，通用智能看不懂工程图。",
+        "产线信任一旦破，恢复更难。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有冲突、风险、缓冲到结论的链条，但个案推断突兀，智能模型段落与换系统主线衔接不足。",
+      "script_spans": [
+        "这事儿有两头，不能只说国产好，也得看厂里怕什么。",
+        "所以怕换不是保守，是算过账：产线经得起停才敢动。",
+        "那厂活儿简单才敢试水。",
+        "可另一头现实：工业知识不可压缩，通用智能看不懂工程图。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动或危险建议，但“百分百替完”“怎敢托付核心工艺”等绝对化表述，可能把复杂政策和技术能力说得过满。",
+      "script_spans": [
+        "政策推替代，企业怕停产，两边都是真问题。",
+        "一边要求央国企2027年前后百分百替完，一边车间停不起。",
+        "智能模型连二维三维都分不清，怎敢托付核心工艺。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c4a4696ee61945168ef771f613ac004c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

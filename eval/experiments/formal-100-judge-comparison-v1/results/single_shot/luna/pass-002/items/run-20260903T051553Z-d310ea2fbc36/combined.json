@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-95792ab963f74c06bae737edc9fd8905",
+  "run_id": "run-20260903T051553Z-d310ea2fbc36",
+  "trace_sha256": "c8453ea5fc9de1783bfa71c6febfe73feb970d4021dc3f304e1a7f0a22e0252e",
+  "created_at": "2026-09-03T12:31:50.975897Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从欠费催缴与隐私边界切入，既回应催缴正当性，也覆盖被点名者和催款者的处置路径。",
+      "script_spans": [
+        "核心判断很清晰：催缴理由再正当，也不是把别人姓名丢进群里公开晾晒的正当借口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕公开欠费姓名的边界，讲清个人信息、合法事由、平台责任和双方做法，信息层层推进。",
+      "script_spans": [
+        "姓名和具体的欠费事实绑在一起，就构成了可识别的特定个人状况",
+        "正确路子是交物业转达、走业主表决，或者真到了份上找法院"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出群内点名催款的冲突，中段给出判断和处理路径，结尾用反差句留下余味。",
+      "script_spans": [
+        "物业费拖着没交，有邻居在业主群里直接甩出你的全名催款",
+        "邻里群是方便说话的，不是方便审判的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和收束有对话感，整体可读；但法律解释段连续出现长句和抽象表达，朗读需重断句。",
+      "script_spans": [
+        "千万别以为欠费理亏，对方就能随便拿走你的脸面去公示。",
+        "姓名和具体的欠费事实绑在一起，就构成了可识别的特定个人状况，想去触碰和处理它，必须踩在合法事由的框架里。",
+        "另外，像微信这样的日常通讯平台，协议里早把账号发布行为的责任明确压给了使用者本人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“方便说话”与“方便审判”的反差简洁有力，既解释边界，也留下了可单独复述的记忆点。",
+      "script_spans": [
+        "群聊当公示板",
+        "邻里群是方便说话的，不是方便审判的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，但“姓名+欠费事实”到“不得公开”的推导略跳，“踩在合法事由框架里”也偏书面拗口。",
+      "script_spans": [
+        "催缴欠款只是民事主张，它并没有开着“公开隐私”的后门。",
+        "姓名和具体的欠费事实绑在一起，就构成了可识别的特定个人状况，想去触碰和处理它，必须踩在合法事由的框架里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "反对群内公开欠费姓名的方向稳妥，但对个人信息认定和维权路径表述偏绝对，缺少必要的情境边界。",
+      "script_spans": [
+        "催缴理由再正当，也不是把别人姓名丢进群里公开晾晒的正当借口。",
+        "姓名和具体的欠费事实绑在一起，就构成了可识别的特定个人状况",
+        "正确路子是交物业转达、走业主表决，或者真到了份上找法院"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d05e6e151e3d405da462d0f666c13c5d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

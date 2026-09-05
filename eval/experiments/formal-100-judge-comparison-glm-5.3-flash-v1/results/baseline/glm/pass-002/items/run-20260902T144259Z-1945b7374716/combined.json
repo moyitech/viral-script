@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-3e97539b6a3f42f6b2c545813c7ac10b",
+  "run_id": "run-20260902T144259Z-1945b7374716",
+  "trace_sha256": "f78f59b6be84a8bb0a793a19d5c6a5a30b3d2b8b57de7c357728a8b3598232a0",
+  "created_at": "2026-09-03T14:25:25.663563Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即抛题设之问，先讲订单回暖一侧，再从成本与退路解释不敢招人，落到普通人求职痛点，两侧与人群全覆盖。",
+      "script_spans": [
+        "制造业订单回暖，为啥不敢大招人？",
+        "真要大规模招人，得等订单连热几个月。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "PMI数据、用工成本账、稳岗补贴机制、订单分化逐层推进，与公开数据一致，无编造无注水，观众能带走具体判断依据。",
+      "script_spans": [
+        "招正式工像签长约，工资月月发，社保月月交，万一订单掉头，辞人得给补偿。",
+        "但这钱是补保费，不是替你养新人。老板留熟手拿补贴，比招生人划算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即立住反差钩子，中段数据、算账、行业分化层层推进，结尾疑问由“等信号”自然长出，三段无代偿。",
+      "script_spans": [
+        "单子回来了，厂里招工栏却空着。",
+        "活多了，人没多，老板先让老班底加班顶着。",
+        "产线转起来了，人却没补上。这波回暖，你敢信它多久？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音停顿清楚，对仗句式好读，全篇无两处明显拗口，照读即可上口。",
+      "script_spans": [
+        "招正式工像签长约，工资月月发，社保月月交，万一订单掉头，辞人得给补偿",
+        "你想进厂，会发现招工启事稀，加班通知多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“签长约”“春汛”“等信号”类比贴切省力，“招工启事稀，加班通知多”离开原文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "招正式工像签长约，工资月月发，社保月月交",
+        "怕是春汛退得比来得快",
+        "招工启事稀，加班通知多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "数据立疑、机制释因、落到个人影响，段段功能清晰，因果有桥，结尾自然回扣开头之问，主线经得起追问。",
+      "script_spans": [
+        "那老板图啥？关键在成本和退路。",
+        "产线转起来了，人却没补上。这波回暖，你敢信它多久？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "PMI与补贴数据同资料一致，补贴用途附有限定说明，结论以条件句和提问收束，无绝对化预测、无煽动误导。",
+      "script_spans": [
+        "中小微能返上年失业险的六成，大厂大概三成。但这钱是补保费，不是替你养新人。",
+        "真要大规模招人，得等订单连热几个月。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-fb4a175a67bd4947acf1b9e34c008b1e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

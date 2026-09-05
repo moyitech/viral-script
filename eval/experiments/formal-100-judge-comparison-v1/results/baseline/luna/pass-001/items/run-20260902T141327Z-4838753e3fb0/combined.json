@@ -1,0 +1,148 @@
+{
+  "evaluation_id": "combined-088853986af9487499466ad6470e119c",
+  "run_id": "run-20260902T141327Z-4838753e3fb0",
+  "trace_sha256": "f8ae470130b8cda41836788f3f03ffb3a2061a39fb09c12c59970f66d1189e34",
+  "created_at": "2026-09-03T11:44:40.230636Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应线上预约的双面影响，并覆盖年轻人、老年人及解决方案。",
+      "script_spans": [
+        "政务服务只接受线上预约，既是便利升级，也是新门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 269，目标为 280，偏差率为 3.93%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕预约便利与数字门槛展开，场景、影响和人工帮约建议形成有效推进。",
+      "script_spans": [
+        "以前得请假抽空去窗口，排长队一上午。现在睡前点几下就约好时间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出办不成事的冲突，中段用两类人对照推进，结尾追问也自然落到公共服务公平上。",
+      "script_spans": [
+        "老人不会手机预约，当场办不成事。",
+        "这对年轻人，是真便利升级。",
+        "便利只对手机族有效，门照开，不爱用手机的人却进不来？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和对话感较好，但“老人不会手机预约”“多绕一圈冤枉路”两处搭配生硬，朗读需微调。",
+      "script_spans": [
+        "到点直接办，不用坐冷板凳",
+        "老人不会手机预约",
+        "多绕一圈冤枉路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“便利升级”和“新门槛”形成清晰对照，“门照开，却进不来”具体有力，容易被观众复述。",
+      "script_spans": [
+        "既是便利升级，也是新门槛。",
+        "不然便利只对手机族有效，门照开，不爱用手机的人却进不来？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先总述双面性，再分写便利与门槛，最后落到人工通道，转折和结论回扣自然。",
+      "script_spans": [
+        "可我姨奶奶那辈人，手机只用来接电话，没装政务软件。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "正反两面交代清楚，但“当场办不成事”等表述偏绝对，缺少服务类型和地区边界，容易造成泛化。",
+      "script_spans": [
+        "既是便利升级，也是新门槛。",
+        "老人不会手机预约，当场办不成事。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-7d736460ec1d4c3bbb22fc5328855461",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-000b079e9d464085a4ab15800be01bb0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

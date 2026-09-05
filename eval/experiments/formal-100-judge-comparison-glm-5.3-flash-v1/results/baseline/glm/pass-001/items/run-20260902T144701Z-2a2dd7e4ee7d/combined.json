@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-c42043abafaa4badbe56b7154d4a720c",
+  "run_id": "run-20260902T144701Z-2a2dd7e4ee7d",
+  "trace_sha256": "7640e6efb60e4a2cdea76602c72bed3dba1134e964cdc92c7c5c260f767a552c",
+  "created_at": "2026-09-03T13:49:38.432580Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头到结论都直答会不会提升，先给会涨再给条件，正反两侧与养娃家庭痛点均覆盖。",
+      "script_spans": [
+        "财政更侧民生，消费意愿会跟涨，但只看钱落哪，不是所有民生都灵。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 261，目标为 280，偏差率为 6.79%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策背景、补贴减负、研究证据与医疗偏弱的分层效果层层推进，给了可带走的判断方法。",
+      "script_spans": [
+        "二是有研究跟过，教育社保类支出帮家庭卸了贫困焦虑，大人敢添衣小孩敢报班；医疗卫生那块效果还偏弱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头“工资没涨却敢进母婴店”是具体反差；中段两大机制加医疗偏弱持续兑现；结尾“谁替你扛风险”由正文生长留余味。",
+      "script_spans": [
+        "工资没涨，你咋敢去母婴店了？",
+        "别以为基建转民生就立刻旺消费",
+        "下次听见民生投入，先想谁替你扛风险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "通篇短气口、停顿重音清楚，'咋敢''卸''兜住'等口语具体词贯穿，模拟朗读无需临时换词。",
+      "script_spans": [
+        "工资没涨，你咋敢去母婴店了？",
+        "原本愁学费，现在敢买肉蛋奶，肩头轻一分手头活一分"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“进你家账本”“钱没花到痛处”贴切且不堆砌，“肩头轻一分手头活一分”轻巧上口；结尾一句离开上下文仍可复述，无炫技。",
+      "script_spans": [
+        "不是搞大项目，是进你家账本",
+        "肩头轻一分手头活一分",
+        "钱没花到痛处"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线可跟随、结尾能回扣，但免费学前减家务开销概念错位，追问即断，需听众自行修正。",
+      "script_spans": [
+        "原本愁学费，现在敢买肉蛋奶，肩头轻一分手头活一分",
+        "免费学前直接减你家务开销"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论均有对冲限定，研究结论转述克制，主动提示落地时滞，不作确定性承诺，无煽动夸大风险。",
+      "script_spans": [
+        "消费意愿会跟涨，但只看钱落哪，不是所有民生都灵",
+        "有研究跟过，教育社保类支出帮家庭卸了贫困焦虑，大人敢添衣小孩敢报班",
+        "别以为基建转民生就立刻旺消费。政策方向对，落地慢半拍"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-1c4cf05a047040a1903e36718e5004db",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-78c048c4f3a649bd931dac62d74c0b38",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

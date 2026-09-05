@@ -1,0 +1,134 @@
+{
+  "evaluation_id": "combined-51163a8c3a24447086764d612fab625c",
+  "run_id": "run-20260903T051630Z-241e03ab9d2e",
+  "trace_sha256": "044d350f6b3529826d47c10f316843537420a32d018e3048e1b74dea803c5532",
+  "created_at": "2026-09-03T15:28:57.572678Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答更快与更吵两侧，居民痛点与治理建议落到普通观众，切角具体不偏题。",
+      "script_spans": [
+        "快递确实会比地面更快，但城市不一定变得更吵"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "省时机制、降噪依据、空域政策、治理建议四层推进，无同义复述与编造，信息密度高。",
+      "script_spans": [
+        "无人机走直线、不绕路，避开了红绿灯和小区出入口的拥堵，尤其早晚高峰，短途急送能省下大把时间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字内直答“更快但未必更吵”构成反差钩子，中段以省时、降噪、空域、公示逐层兑现，结尾余味自然，无硬喊互动。",
+      "script_spans": [
+        "快递确实会比地面更快，但城市不一定变得更吵",
+        "不过得提醒一句：居民区试飞前，应该有噪声公示和简便的反馈渠道，比如社区群报备",
+        "飞得低本身不是问题，听不见、不心烦才是真进步。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音停顿清楚，“不能先飞再治”“走直线、不绕路”对话感足，无需改词即可录音。",
+      "script_spans": [
+        "无人机走直线、不绕路，避开了红绿灯和小区出入口的拥堵",
+        "飞得低本身不是问题，听不见、不心烦才是真进步。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制、服务理解，“不能先飞再治”凝练有态度，结尾金句离开正文仍可复述，且无连续炫技喧宾夺主。",
+      "script_spans": [
+        "不能先飞再治",
+        "飞得低本身不是问题，听不见、不心烦才是真进步。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "论点先行，两翼论据、政策与提醒层层递进，结尾回扣开头前提，因果桥完整。",
+      "script_spans": [
+        "前提是降噪能力和试点节奏得同步跟上，不能先飞再治",
+        "飞得低本身不是问题，听不见、不心烦才是真进步"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "主动设定'不能先飞再治'前提，并建议居民区试飞前做噪声公示与反馈渠道，表述有边界、不夸大，价值导向安全。",
+      "script_spans": [
+        "但城市不一定变得更吵，前提是降噪能力和试点节奏得同步跟上，不能先飞再治",
+        "不过得提醒一句：居民区试飞前，应该有噪声公示和简便的反馈渠道，比如社区群报备"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4c3e38a2a07e42f39dbda1d06a68cc51",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

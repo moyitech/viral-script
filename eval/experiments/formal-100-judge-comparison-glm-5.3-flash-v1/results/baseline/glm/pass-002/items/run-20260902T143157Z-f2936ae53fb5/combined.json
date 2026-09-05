@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-65911c9479784d3e8eccba2999fae57f",
+  "run_id": "run-20260902T143157Z-f2936ae53fb5",
+  "trace_sha256": "8e99f377a5208902d8d765fc4aed4007cc82ca6eeb96ffd6da5c5586883d92c1",
+  "created_at": "2026-09-03T14:24:25.030949Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛价格之问，冲击与价格两侧齐备，选购建议贴合买菜人群。",
+      "script_spans": [
+        "可你菜场买的海鲜没涨价，去年还便宜些",
+        "我直接说：眼下餐桌上海鲜不会更贵"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "升温、产量、均价数据与引用相符，供给压价因果讲清，边界与例外补充到位。",
+      "script_spans": [
+        "1960到2022年东中国海升温超1度，热浪频发让鱼虾死亡、赤潮暴发",
+        "海水养殖产量涨了约百分之五，市场上海水产品的均价反而跌了约百分之四",
+        "整体供给大盘稳住了，价格就被压着"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句升温冲击与海鲜没涨价构成具体反差，中段数据、机制、例外层层兑现，结尾余味自然，无硬喊互动。",
+      "script_spans": [
+        "海水升温把近海养殖场折腾得够呛，可你菜场买的海鲜没涨价，去年还便宜些",
+        "另一边看去年全国统计，海水养殖产量涨了约百分之五，市场上海水产品的均价反而跌了约百分之四",
+        "那要是碰上极端热浪年，局部网箱鱼翻肚皮，本地活鲜可能短暂跳价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，'折腾得够呛''翻肚皮''跳价'等口语词上口，核心展开像当面说话，全篇无需临时改词。",
+      "script_spans": [
+        "海水升温把近海养殖场折腾得够呛，可你菜场买的海鲜没涨价",
+        "那要是碰上极端热浪年，局部网箱鱼翻肚皮，本地活鲜可能短暂跳价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，“折腾得够呛”“鱼翻肚皮”形象贴切，结尾一句离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "局部网箱鱼翻肚皮，本地活鲜可能短暂跳价",
+        "海悄悄变暖，咱们碗里的海鲜靠全国调度兜着"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "论点—论据—例外—建议层层递进，概念边界自清，结尾回扣题设自然。",
+      "script_spans": [
+        "不过你问的海鲜多指海产，不影响判断",
+        "那要是碰上极端热浪年，局部网箱鱼翻肚皮，本地活鲜可能短暂跳价",
+        "海悄悄变暖，咱们碗里的海鲜靠全国调度兜着"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论以数据支撑并用“眼下”限定，极端热浪年例外已交代，选购建议措辞稳妥，无夸大或误导。",
+      "script_spans": [
+        "我直接说：眼下餐桌上海鲜不会更贵。",
+        "那要是碰上极端热浪年，局部网箱鱼翻肚皮，本地活鲜可能短暂跳价。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a79cd77240be409cae5d8028aa1b2385",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,163 @@
+{
+  "evaluation_id": "combined-aae2835fd1f24586bf0aa8b036edbc58",
+  "run_id": "run-20260903T051542Z-2daef86f5830",
+  "trace_sha256": "6981f82cb35704e2323c70ae18057d8cd5194bc83b2dd4e85780e078edfb8b4e",
+  "created_at": "2026-09-03T12:11:36.844393Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从家长比拼的现象切入，解释学校转嫁、家长代做和评价偏差，完整回应合作学习走样的原因与纠偏方向。",
+      "script_spans": [
+        "明明叫合作学习，展示的却是家长职场技能。",
+        "把小组作业交还给孩子吧。让他们自己吵、自己分活、自己承担粗糙的后果"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 771，目标为 700，偏差率为 10.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦，责任错位、参与边界、评价机制和现实后果层层推进，既有解释也有可执行判断。",
+      "script_spans": [
+        "教师转嫁了准备成本，家长替代了学习主体，同伴合作退化为家庭资源秀。",
+        "家长可以当脚手架，不能当施工队。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用家长比拼制造强反差，中段连续补出责任错位、参与边界和评价偏差，结尾追问自然留出余味。",
+      "script_spans": [
+        "谁的爸妈PPT更炫，谁家打印了铜版纸手册",
+        "这到底是谁的功课。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口和对话式追问撑住了可听性，但中段术语密集、比喻拗口，仍需少量重断句或换词。",
+      "script_spans": [
+        "小组作业本来是让孩子学着一起做事，现在倒好",
+        "参与太密反而像倒U的顶端往下溜，过多无益",
+        "这一层因果很清楚：教师转嫁了准备成本，家长替代了学习主体，同伴合作退化为家庭资源秀"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“脚手架”与“施工队”的对照准确好记，“军备竞赛”强化讽刺，且都服务于观点，没有连续炫技。",
+      "script_spans": [
+        "家长可以当脚手架，不能当施工队",
+        "合作学习不是家长朋友圈的军备竞赛"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由现象提出责任错位，再解释执行机制、参与边界与评价偏差，结尾提出回收主体，递进完整且能回扣题设。",
+      "script_spans": [
+        "这一层因果很清楚：教师转嫁了准备成本，家长替代了学习主体，同伴合作退化为家庭资源秀。",
+        "可现实为什么还拼命跑偏？因为作业评价常常只看成品漂不漂亮，不看过程怎么吵过来的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题批评指向家长代做，边界建议也较清楚；但把教师动机、普遍后果和资源竞争说得过满，存在误导风险。",
+      "script_spans": [
+        "家长可以当脚手架，不能当施工队",
+        "可有些老师图省事，也怕家长抱怨难度低",
+        "学生没学会怎么和同伴磨合，倒先学会了比拼父母实力"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 771,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.10142857142857142
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d1256439d0fc4bb88ceca54a2726720b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1ffd891f493d4e34b992b5e3f8cf548d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

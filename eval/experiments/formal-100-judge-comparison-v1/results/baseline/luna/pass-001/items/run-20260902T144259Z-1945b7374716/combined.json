@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-316c3c5ad73046e2a18a88f9ea51fade",
+  "run_id": "run-20260902T144259Z-1945b7374716",
+  "trace_sha256": "f78f59b6be84a8bb0a793a19d5c6a5a30b3d2b8b57de7c357728a8b3598232a0",
+  "created_at": "2026-09-03T11:44:50.937704Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从数据反差切入，围绕成本、订单稳定性和普通人求职影响展开，正面回答了为何不敢大规模招人。",
+      "script_spans": [
+        "制造业订单回暖，为啥不敢大招人？",
+        "对咱们普通人，影响很直接。",
+        "真要大规模招人，得等订单连热几个月。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 478，目标为 450，偏差率为 6.22%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据、成本、行业分化和求职影响彼此推进，既有事实指标，也有原因解释与判断方法，信息增量充分。",
+      "script_spans": [
+        "新订单指数冲到50.6%，生产也过了50%，机器确实转快了。",
+        "但这钱是补保费，不是替你养新人。",
+        "再说订单本身也不太实，像电气机械厂单子饱满，可不少传统厂还冷着"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用订单回暖与招工空缺制造反差，中段数据和成本转折持续推进，结尾追问自然留下余味。",
+      "script_spans": [
+        "单子回来了，厂里招工栏却空着。",
+        "产线转起来了，人却没补上。这波回暖，你敢信它多久？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏利落、对话感强，但“招生人”和“春汛”两处让朗读明显卡住。",
+      "script_spans": [
+        "单子回来了，厂里招工栏却空着。",
+        "比招生人划算。",
+        "怕是春汛退得比来得快"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“活多了，人没多”和“产线转起来了，人却没补上”简洁有力，准确概括供需错位，便于观众复述。",
+      "script_spans": [
+        "活多了，人没多，老板先让老班底加班顶着。",
+        "产线转起来了，人却没补上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按数据反差、成本退路、求职影响推进，但把从业人员指数直接推成正式岗位少，指标与结论并不完全等同。",
+      "script_spans": [
+        "那老板图啥？关键在成本和退路。",
+        "小厂PMI只有47.9%，景气更冷，正式岗位反而比之前少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "数据指标引用总体客观，但补贴比例省略上限和条件，还把行业数据推成普遍招工行为及确定性时间判断，存在误导风险。",
+      "script_spans": [
+        "新订单指数冲到50.6%，生产也过了50%",
+        "中小微能返上年失业险的六成，大厂大概三成",
+        "真要大规模招人，得等订单连热几个月。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b19601a06b8149d7a418e9749459234c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a8c3c084f7f749b5a4f7884b2489796b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-9173a914414946859a855b56bde20f6e",
+  "run_id": "run-20260902T141552Z-9edc62dadc89",
+  "trace_sha256": "186d83e0c2de94dc01c8a621174482f0523cdbc8e8b8da7d4699952da643fb05",
+  "created_at": "2026-09-03T11:56:27.485148Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇明确回答“既省钱又制造出行缺口”，并分别展开企业账本与晚归人处境。",
+      "script_spans": [
+        "这事儿不选边，既是公司算账后的节省，也是部分人回家路的空缺。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 448，目标为 450，偏差率为 0.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从公益属性、低客流与运营成本，推进到补贴边界、可达性和安全代价，信息单元层层增加。",
+      "script_spans": [
+        "夜里人少，空车跑一圈电费人工照掏，坐的人没几个，跑一趟可能就亏一趟。",
+        "对没车家庭，公交停了就真没辙，便宜出行是刚需。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用省钱与晚归受困的反差入题，中段补足机制和代价，结尾追问也由前文自然推出。",
+      "script_spans": [
+        "夜公交减班，省了钱，却把晚归人留在风里。",
+        "不少地方拉大间隔，有的线路更早收车。",
+        "当省下的公家钱变成个人的贵票价，这城市的温度该怎么补？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句为主、停顿清楚，但“空驰”“撤密了网眼”等搭配卡嘴，朗读需临时重组。",
+      "script_spans": [
+        "可夜班客流薄，保服务就亏钱，矛盾就摆这儿。",
+        "白天票款贴不了深夜空驰",
+        "夜线像托底安全网，撤密了网眼漏人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“夜线像托底安全网，撤密了网眼漏人”把服务缺口具象化，“省下的成本真实，冷落的人也真实”克制有力。",
+      "script_spans": [
+        "夜线像托底安全网，撤密了网眼漏人。",
+        "省下的成本真实，冷落的人也真实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提出双重判断，再解释亏损与补贴边界，随后落到晚归群体，结尾回扣成本与公平冲突。",
+      "script_spans": [
+        "可企业也得活，白天票款贴不了深夜空驰。政府补也不是无底线，得看财政和企业挖潜空间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制且兼顾成本与民生，但“只能”与“贵一倍”偏绝对，易造成未经限定的事实暗示。",
+      "script_spans": [
+        "这事儿不选边，既是公司算账后的节省，也是部分人回家路的空缺。",
+        "只能掏钱打网约车，或搭不正规便车，安全没底。",
+        "要是错过末班，硬走夜路或叫车贵一倍。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-6c2adc06e28648f4b7ffab098faae559",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f9c04b5b6d234d4d9e9de744569e416f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

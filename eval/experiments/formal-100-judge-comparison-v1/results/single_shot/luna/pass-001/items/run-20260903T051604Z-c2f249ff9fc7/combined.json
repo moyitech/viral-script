@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-e8f7a61256a24990b1609b156d2efc31",
+  "run_id": "run-20260903T051604Z-c2f249ff9fc7",
+  "trace_sha256": "7fcabdce6660b46fc34a1cac18bc9daca9148ec0b9b14421767c4c3080dae993",
+  "created_at": "2026-09-03T12:04:11.063359Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解融资与经营两端落差，覆盖小微企业痛点，并给出经营者可执行的判断重点。",
+      "script_spans": [
+        "融资负担确实在减轻，但经营压力没跟着松，根子不在借钱贵，而在赚钱难"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 254，目标为 280，偏差率为 9.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "融资政策、需求下滑、成本刚性、利润挤压与现金流建议层层推进，信息具体且有判断增量。",
+      "script_spans": [
+        "调查显示超九成企业受销售下滑影响，国内需求不足是跨行业共性难题",
+        "重点核查真实订单和现金流能撑几个月，先保周转安全再谋发展"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“借钱贵”与“赚钱难”的反差立题，中段不断补充经营困境，结尾落到订单和现金流，推进完整且有余味。",
+      "script_spans": [
+        "融资负担确实在减轻，但经营压力没跟着松",
+        "先保周转安全再谋发展"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "观点对照清楚、开头结尾较利落，但中段政策术语和抽象并列较多，整体仍像压缩版说明稿。",
+      "script_spans": [
+        "融资负担确实在减轻，但经营压力没跟着松",
+        "稳投放、优结构，落实续贷与首贷支持，叠加财税贴息",
+        "同时成本支出刚性，利润被双向挤压"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“借钱贵”与“赚钱难”形成清晰反差，“经营端才是硬仗”也便于复述，修辞克制且服务观点。",
+      "script_spans": [
+        "根子不在借钱贵，而在赚钱难",
+        "经营端才是硬仗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提出融资与经营错位，再分述资金面和经营端，最后落到现金流决策，回扣自然。",
+      "script_spans": [
+        "但经营端才是硬仗。",
+        "所以经营者别被低利率误导，重点核查真实订单和现金流能撑几个月"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无违规、煽动或承诺，提醒关注订单和现金流较稳妥；但“根子不在”把复杂原因说成单一结论，易造成过度概括。",
+      "script_spans": [
+        "重点核查真实订单和现金流能撑几个月",
+        "先保周转安全再谋发展",
+        "根子不在借钱贵，而在赚钱难"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-01b74d08623e4bfba906be82580c11f1",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9bfb7c84472a4320b2dffe8908919fbb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

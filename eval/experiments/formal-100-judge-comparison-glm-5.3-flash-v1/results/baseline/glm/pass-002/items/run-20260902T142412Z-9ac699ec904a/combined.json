@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-961691bfcad84303815097f070a355ed",
+  "run_id": "run-20260902T142412Z-9ac699ec904a",
+  "trace_sha256": "bf27e12702c45d09fe7989f48a23a802dd5e5f733b708bfd31c54a9db0bf1fb9",
+  "created_at": "2026-09-03T14:34:10.747372Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点出反差，正文两侧机制与风险并陈，结尾直答取决于托底，全程扣题。",
+      "script_spans": [
+        "你发现没，班里装了AI助教，尖子生更尖，差生更慌，这反差就摆在眼前。",
+        "所以因材施教或放大差，不比模型多聪明，比咱们托底网密不密"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从调难度、追错点到设备与题库偏差，信息单元层层推进，均有依据无编造。",
+      "script_spans": [
+        "AI记你每道题的耗时与错点，自动调低或调高下一个题目难度",
+        "他碰系统的次数太少，进度悄咪咪差出半学期，这缝隙就放大了差距"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头20字即抛出反差钩子，中段连设'学校为啥还用'等新问题与转折，结尾'备梯子'之问由正文台阶意象自然长出，有余味。",
+      "script_spans": [
+        "你发现没，班里装了AI助教，尖子生更尖，差生更慌",
+        "那学校为啥还愿意用？",
+        "你怪他不开窍，还是怪没递那块垫脚石？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数段落短句顺口、对话感足，但“放大差”“更厚待优等生”等生造缩略需改词，政策段书面腔拖累整体。",
+      "script_spans": [
+        "系统收你作业，发现哪闷了，就变着法给例题",
+        "所以因材施教或放大差，不比模型多聪明",
+        "模型拿历史高分样本练，推荐更厚待优等生",
+        "讲育人为本、公平普惠，要规模教育和个性培养统一"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "台阶、乡下刚领钥匙等比喻均服务理解且贴切，'备没备梯子''托底网密不密'离开上下文仍可复述，修辞密度适中不炫技。",
+      "script_spans": [
+        "好比给每人发不同台阶，像有个不厌烦的陪练",
+        "城里的校早跑通了，乡下刚领钥匙",
+        "下次见娃发呆，先想咱备没备梯子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、结尾回扣台阶与梯子比喻，但优等生与“他偷懒”指代跳脱，因果需观众自补。",
+      "script_spans": [
+        "所以因材施教或放大差，不比模型多聪明，比咱们托底网密不密",
+        "模型拿历史高分样本练，推荐更厚待优等生。机器误以为他偷懒，继续塞同款刁钻题"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体两面并陈、归因有出处，价值导向安全；但「差生」属标签化称呼，「推荐更厚待优等生」断言缺限定，宜改写更稳妥。",
+      "script_spans": [
+        "其实两边都在发生，全看它怎么落进真实教室。",
+        "有研究综述点出，平台常卡在公平可及上。",
+        "尖子生更尖，差生更慌",
+        "模型拿历史高分样本练，推荐更厚待优等生。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ba52c304387947aea2f8205297094315",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

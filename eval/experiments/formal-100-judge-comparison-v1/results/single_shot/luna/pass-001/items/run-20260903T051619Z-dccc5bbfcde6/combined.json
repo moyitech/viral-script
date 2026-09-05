@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-eb31ed94bf074ca9bbde4737d6b8d6cc",
+  "run_id": "run-20260903T051619Z-dccc5bbfcde6",
+  "trace_sha256": "501a44d831ece25adc1d2baa795ea688b6c37f730947e37024c84762cd5c8579",
+  "created_at": "2026-09-03T12:02:00.035001Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面覆盖公共USB窃密的可能性、现实概率与出门充电办法，既回应风险也给出可执行选择。",
+      "script_spans": [
+        "我的判断很直白：这种充电口窃密在技术上有通道，但落到现实里，它更像个低概率的暗雷，绝不是满地都是的陷阱。",
+        "真到万不得已要借公共USB口，手机跳出“是否信任此设备”时，果断点不信任，只留充电选项。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 659，目标为 700，偏差率为 5.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕风险判断与防护展开，机制、概率排序和多类应对均有推进，观众能带走具体做法。",
+      "script_spans": [
+        "改造设备要本钱，蹲点等边角料信息收益还不稳。",
+        "最稳的是自己带充电头，找墙插输自己的电，这时候线只通电流不跑数据。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出低电量与隐私两难，中段不断追问和解释，结尾用可执行建议自然收束。",
+      "script_spans": [
+        "你手机只剩一成电，火车站里孤零零摆着个公共USB充电口。",
+        "那为什么传了十来年，真被坐实了的案例却少得可怜？",
+        "下次出门前，往包里塞个充电头，比对着充电桩胡思乱想要实在得多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感，短句和比喻好读，但技术说明偏书面，个别语序发卡，朗读时需要重断句。",
+      "script_spans": [
+        "充电宝也是好搭档，它跟手机之间只谈电不谈隐私。",
+        "国内这两年推充电基础设施体系，文件里也把信息安全列进安全要求",
+        "手机默认连上常会弹信任框"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“把家门钥匙递给生人”和“数据接口的钥匙”形成统一意象，既好懂又有自然的记忆点。",
+      "script_spans": [
+        "手机连上去就像把家门钥匙递给生人",
+        "电可以借，但数据接口的钥匙别随手交。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、原理、概率、应对的链路完整，结尾也能回扣；但由文件列安全要求直接推到优先级不高，中间缺少依据。",
+      "script_spans": [
+        "所以出门怎么充电才不闹心？最稳的是自己带充电头，找墙插输自己的电",
+        "国内这两年推充电基础设施体系，文件里也把信息安全列进安全要求，说明顶层并非没看见这块隐患，只是它优先级没那么高。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "给出自带充电头、拒绝信任设备等稳妥建议，但“只谈电不谈隐私”“只留充电选项”等表述过于绝对，存在误导风险。",
+      "script_spans": [
+        "最稳的是自己带充电头，找墙插输自己的电",
+        "手机跳出“是否信任此设备”时，果断点不信任",
+        "它跟手机之间只谈电不谈隐私",
+        "只留充电选项"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-540c3e4101bc4e9b9b24a41055e7b815",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6ed466073ea343549afbeae63f2db6d9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

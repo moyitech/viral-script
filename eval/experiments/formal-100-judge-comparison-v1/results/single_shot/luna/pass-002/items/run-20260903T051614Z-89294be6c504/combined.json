@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-c8da9fc21a0341acb6dab0bcb2568ec8",
+  "run_id": "run-20260903T051614Z-89294be6c504",
+  "trace_sha256": "7c57a1cc7332e0fcf5d16b0c40cdc833ca2bd52e4e2dba02d88439dcc6b664c3",
+  "created_at": "2026-09-03T12:42:14.061909Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正文同时回应退役规模与污染风险，并落到普通人的正规回收选择，完整命中题设。",
+      "script_spans": [
+        "国内预计到2030年，累计退役组件大约45.7万吨",
+        "但说绿色能源这就埋下新污染，结论下得有点早。",
+        "认准有资质的回收点，就是帮绿色能源闭环。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕退役规模、规范处理、非正规处置风险和回收行动提供了多组有效信息，结论有支撑。",
+      "script_spans": [
+        "国内预计到2030年，累计退役组件大约45.7万吨",
+        "难点是小散乱收荒匠可能图省事直接烧或埋，那样才会有渗重金属的风险。",
+        "绿色电是干净的，但干净不等于自动干净，废板子的归宿得有人管到底。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“没人要的废玻璃”制造反差，中段持续推进污染风险与回收难点，结尾余味自然。",
+      "script_spans": [
+        "早晚会变成一块没人要的废玻璃",
+        "关键在末端怎么处理",
+        "干净不等于自动干净，废板子的归宿得有人管到底"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答短句带来一定节奏感，但“绿色能源这就埋下新污染”等处拗口，核心段仍需重断句。",
+      "script_spans": [
+        "先看潮是不是真来了。",
+        "那污染会不会跟着来？关键在末端怎么处理。",
+        "但说绿色能源这就埋下新污染",
+        "那样才会有渗重金属的风险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“环境欠账”和“干净不等于自动干净”形象且易复述，修辞服务观点，没有连续堆砌。",
+      "script_spans": [
+        "它未必成为环境欠账",
+        "绿色电是干净的，但干净不等于自动干净"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、末端回扣和行动建议构成完整主线，但以政策目标直接推断正规能力，论证桥略显不足。",
+      "script_spans": [
+        "那污染会不会跟着来？关键在末端怎么处理。",
+        "政策目标里，到2027年组件综合利用量要累计到25万吨，说明正规能力在长起来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动，回收建议也较稳妥；但“钉死了”“被管住”等表述过满，容易把规范要求说成实际效果。",
+      "script_spans": [
+        "结论下得有点早",
+        "认准有资质的回收点",
+        "把拆卸、运输、贮存到处理的污染控制钉死了",
+        "说明正规能力在长起来"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-fecd95479ee145abaead734216e05906",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

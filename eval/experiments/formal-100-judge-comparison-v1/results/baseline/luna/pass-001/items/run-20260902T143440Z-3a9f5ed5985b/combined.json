@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-d4353d5e047b4be6832ec5440f92a31f",
+  "run_id": "run-20260902T143440Z-3a9f5ed5985b",
+  "trace_sha256": "0d56f96733bb9ed2ace063cc443bced1329e1fab2689cc817bdf8fd7f0d593b3",
+  "created_at": "2026-09-03T11:48:41.169189Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答降薪转行的得失，覆盖中年人的风险、家庭与技能复利，判断标准具体。",
+      "script_spans": [
+        "值不值，得看你要什么。",
+        "要是真打算动，先想清楚降薪幅度。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 684，目标为 700，偏差率为 2.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，数据、风险解释和决策清单层层推进，既有趋势判断，也有可执行的筛选标准。",
+      "script_spans": [
+        "旧行业吸力弱了，新技能有溢价。",
+        "如果转去的有技术复利，本事越用越值钱，那少赚的算买保险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用降薪四千制造选择冲突，中段不断补充数据和风险，结尾把判断落到个人恐惧，推进完整。",
+      "script_spans": [
+        "每月少赚四千块，中年转行你肯吗？",
+        "所以别问值不值，先问自己旧本事还能吃几年。赌不赌，看你怕什么。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感，短句和停顿设计不错；但多处数据表达与搭配发涩，朗读时仍需重断句或换词。",
+      "script_spans": [
+        "值不值，得看你要什么。单为眼前工资，这买卖吃亏。",
+        "三十一岁朝上的成熟人才，在流动大盘里占了一半还多。",
+        "国家年培训超千万人次，可学完能否赚回差价各人账本不同。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且贴合判断，把抽象取舍说具体，结尾也有可复述的落点，没有连续堆砌辞藻。",
+      "script_spans": [
+        "用钱换敲门砖，算的是长远账。",
+        "培训补贴像扶手，但路得自己走。",
+        "所以别问值不值，先问自己旧本事还能吃几年。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，能从趋势、动因落到决策；但用流动占比和总体失业率推断多人主动找退路，关键因果证据不足。",
+      "script_spans": [
+        "不过降薪转行后，长远日子好否，真没准。",
+        "所以别问值不值，先问自己旧本事还能吃几年。",
+        "三十一岁朝上的成熟人才，在流动大盘里占了一半还多。是实实在在的换手。",
+        "多数人不是被老板踢走，是自己在变天前找退路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提醒较克制，但“多数人”精打细算等因果判断过于笼统，补充限定后更稳妥。",
+      "script_spans": [
+        "长期跟踪的研究不多，难把收入和满意度因果说清。",
+        "这账多数人闷头算过，不是冲动是精打细算后的挪窝。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9a384a300ef643d3a6b547b2e1f09747",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1f54bf2fe58b4a459d175db80de7e9da",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

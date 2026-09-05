@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-fd0ba774244f44f48def01ef60570880",
+  "run_id": "run-20260902T142907Z-3166f8e9d6e3",
+  "trace_sha256": "05c398db95c57d6fd23ad7d6be1c2713304c89e09088e2539d046ff4e09c4c88",
+  "created_at": "2026-09-03T11:44:33.205557Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答反感成因，兼顾求职者损耗、企业动机与合理例外，并给出投递前的具体应对。",
+      "script_spans": [
+        "求职者怕的不是谈薪，是连谈的基准都被人攥着。",
+        "销售或高阶职位薪资本来就看业绩和资源，写死反而僵，面议能谈出合理价。",
+        "下次看到面议，先抛个区间问题，再决定要不要花半天跑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 690，目标为 700，偏差率为 1.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦薪资透明，时间成本、议价锚点、公平感、市场预期、监管和行动建议层层增加信息。",
+      "script_spans": [
+        "员工想跳个槽涨百分之十五，企业往往只给一小部分。",
+        "五部门要求招聘平台明示信息。",
+        "岗位写面议，你根本算不出值不值得去聊去跑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“坑了时间”制造利益冲突，中段补充原因、边界和监管，结尾追问与行动建议也由正文自然长出。",
+      "script_spans": [
+        "薪资面议坑了求职者时间，企业躲开比价还省事？",
+        "薪资区间能给个准数吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和反问带来节奏，但中段有长串并列及抽象表达，朗读仍需重断句。",
+      "script_spans": [
+        "你精心改简历，跑完两轮面试，临了才问薪酬范围。",
+        "销售或高阶职位薪资本来就看业绩和资源，写死反而僵，面议能谈出合理价。",
+        "规则在倒逼透明，可落地慢，当求职者集体嫌弃模糊标价，企业也该算算流失成本。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“盲盒游戏”和“面议成了低薪岗位的掩护”具体好复述，修辞有效强化了模糊标价带来的不公平感。",
+      "script_spans": [
+        "当招聘页只写面议，等于先邀请你玩一场盲盒游戏。",
+        "面议成了低薪岗位的掩护，好公司却敢直接标出范围。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、展开、例外与建议均有位置，主线可跟随；但把集体反感直接推成岗位无人问津，结论扩大。",
+      "script_spans": [
+        "求职者怕的不是谈薪，是连谈的基准都被人攥着。",
+        "当然，反例有一说一：销售或高阶职位薪资本来就看业绩和资源，写死反而僵，面议能谈出合理价。",
+        "总让人反感，岗位最后无人问津。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "没有明确违规，但将部分企业动机概括为压价，且断言岗位最终无人问津，容易造成泛化误导。",
+      "script_spans": [
+        "销售或高阶职位薪资本来就看业绩和资源，写死反而僵，面议能谈出合理价。",
+        "下次看到面议，先抛个区间问题，再决定要不要花半天跑。",
+        "多数普通招聘挂面议，可能只想把人钓来再压价。",
+        "总让人反感，岗位最后无人问津。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ea515842b68b42579c6edeaaca46a62a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-4b7558992ca949a18e8ae32c241304fc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

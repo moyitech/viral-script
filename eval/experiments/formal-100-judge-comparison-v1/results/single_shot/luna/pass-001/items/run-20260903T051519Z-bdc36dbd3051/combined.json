@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-d4325c931fac454ea51cdd50b596d3fb",
+  "run_id": "run-20260903T051519Z-bdc36dbd3051",
+  "trace_sha256": "fa174712a44507aabc91e201ca00a867eb922007bff86311287b6d229086bc1e",
+  "created_at": "2026-09-03T12:02:17.014392Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应传统行业员工如何应对，既交代转型压力，也给出培训和技能提升路径，受众与行动建议匹配。",
+      "script_spans": [
+        "传统行业员工不想被甩下，答案很直接：别等岗位自然淘汰，得主动把绿色技能炼成自己的防身术。",
+        "先抓企业内部的节能降碳实操课，哪怕从读熟一张能耗表开始，也比干瞪眼强。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 281，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策范围、培训方向和实操建议层层推进，信息具体，观众能获得明确的绿色技能应对路径。",
+      "script_spans": [
+        "钢铁、电解铝、水泥、平板玻璃、炼油、煤电等九大重点行业已经铺开三年节能降碳改造",
+        "像汽车维修加电动车技能，建筑工种学节能材料"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出岗位被淘汰的危机，中段补充政策与培训路径，结尾落到具体行动，推进自然。",
+      "script_spans": [
+        "传统行业员工不想被甩下，答案很直接",
+        "具体提醒一句：先抓企业内部的节能降碳实操课"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有明确的口语提醒，但政策和培训段落压缩过度，朗读时仍有卡顿。",
+      "script_spans": [
+        "具体提醒一句：先抓企业内部的节能降碳实操课",
+        "企业能效碳效必须提",
+        "像汽车维修加电动车技能，建筑工种学节能材料"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“绿色技能炼成防身术”形象易记，“读熟一张能耗表”又把抽象转型落到了具体动作。",
+      "script_spans": [
+        "把绿色技能炼成自己的防身术",
+        "哪怕从读熟一张能耗表开始，也比干瞪眼强"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构有“政策压力—培训路径—行动建议”的递进，但把行业改造直接推到工人被挤到边角，因果桥不足。",
+      "script_spans": [
+        "再看培训供给，职业教育正把绿色内容塞进课程",
+        "具体提醒一句：先抓企业内部的节能降碳实操课",
+        "企业能效碳效必须提，旧操作习惯不管用了，不懂节能优化的工人会先被挤到边角。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无敏感、违法或危险建议，但把个体岗位受挤压说得过于确定，存在误导风险。",
+      "script_spans": [
+        "先抓企业内部的节能降碳实操课",
+        "不懂节能优化的工人会先被挤到边角"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-7a98b2b13a7a4bf2859ab758472e9b7a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-30fcd495a9474505b31e94a9ad3796eb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

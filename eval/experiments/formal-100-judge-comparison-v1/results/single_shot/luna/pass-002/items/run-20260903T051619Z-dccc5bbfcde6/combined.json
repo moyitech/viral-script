@@ -1,0 +1,143 @@
+{
+  "evaluation_id": "combined-272139f1fa5f481982bc55de8f29a4a4",
+  "run_id": "run-20260903T051619Z-dccc5bbfcde6",
+  "trace_sha256": "501a44d831ece25adc1d2baa795ea688b6c37f730947e37024c84762cd5c8579",
+  "created_at": "2026-09-03T12:32:44.973831Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应公共充电窃密的真实风险，并给出从自带充电头到拒绝信任的分层建议，覆盖判断与行动。",
+      "script_spans": [
+        "这种充电口窃密在技术上有通道，但落到现实里，它更像个低概率的暗雷",
+        "最稳的是自己带充电头，找墙插输自己的电"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕风险机制、现实概率和应对方法推进，既解释了为什么能窃密，也给出可执行的避险路径。",
+      "script_spans": [
+        "普通USB线本来就是电力和数据同路走。",
+        "改造设备要本钱，蹲点等边角料信息收益还不稳。",
+        "果断点不信任，只留充电选项。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用低电量与陌生接口制造两难，中段持续补充机制、概率和应对，结尾建议自然落地。",
+      "script_spans": [
+        "插上吧，怕相册聊天记录被摸走；不插吧，怕错过接站的人。",
+        "那为什么传了十来年，真被坐实了的案例却少得可怜？",
+        "下次出门前，往包里塞个充电头，比对着充电桩胡思乱想要实在得多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头有场景感，结尾建议也清楚；但中段出现“公共口同源”等生硬表达，整体还不够自然。",
+      "script_spans": [
+        "插上吧，怕相册聊天记录被摸走；不插吧，怕错过接站的人。",
+        "所以出门怎么充电才不闹心？",
+        "这种充电口窃密在技术上有通道",
+        "找墙插输自己的电",
+        "实际发生的窃密事件几乎查无实证"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和拟人都服务于风险解释，钥匙、只谈电不谈隐私等表达自然且便于复述。",
+      "script_spans": [
+        "手机连上去就像把家门钥匙递给生人",
+        "充电宝也是好搭档，它跟手机之间只谈电不谈隐私。",
+        "电可以借，但数据接口的钥匙别随手交。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "场景、机制、概率与建议层层推进，转折明确，结尾回扣“钥匙”比喻，整体论证形成闭环。",
+      "script_spans": [
+        "那为什么传了十来年，真被坐实了的案例却少得可怜？",
+        "所以出门怎么充电才不闹心？",
+        "电可以借，但数据接口的钥匙别随手交。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能主动校准为低概率风险并给出替代方案，但信任弹窗、文件读取和恶意程序能力的表述缺少系统边界，可能误导。",
+      "script_spans": [
+        "它更像个低概率的暗雷，绝不是满地都是的陷阱。",
+        "手机默认连上常会弹信任框，不少人不看就点允许，那就真把门打开了。",
+        "对方能翻文件，也能塞进恶意程序。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-88142a0e1e9c4fa898e79e41c9e262b2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

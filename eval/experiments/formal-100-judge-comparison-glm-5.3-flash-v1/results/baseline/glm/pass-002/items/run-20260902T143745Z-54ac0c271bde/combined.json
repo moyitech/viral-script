@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-9c2f3903f85e4d74a3cd872b46f5d882",
+  "run_id": "run-20260902T143745Z-54ac0c271bde",
+  "trace_sha256": "a212a159ac2304ececce12d0f5c0cd49474876db58e10202dc72c4faa8e2d8e6",
+  "created_at": "2026-09-03T14:26:21.110752Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答两侧，例证与签前算账法直指租客决策，人群与题设高度契合。",
+      "script_spans": [
+        "它既是真减负，也是换法收费，你别单看押金"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "贵出一成多与服务费机制有增量，但免押好处两处同义复述，结论重复，增量被稀释。",
+      "script_spans": [
+        "但月租比直租贵出一成多",
+        "有的房子免了押金，你不用压那笔钱，手头宽裕"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即摆出少交与补回的反差，中段连给贵一成多、按月服务费等新信息，结尾提问由正文自然长出。",
+      "script_spans": [
+        "免押金少交一月钱，可房租服务费常补回。",
+        "免押不是免费，你愿用每月多交换押金吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "全文短气口、口语词扎实，但并列名词堆叠与过度省略需现场换词，“每月多交换押金”明显卡壳，定2分。",
+      "script_spans": [
+        "这头少压钱那头多流水，只是时间错开",
+        "先把押金月租服务费加总比一比",
+        "你愿用每月多交换押金吗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "这头那头的对照服务理解，免押不是免费、别被零押金晃眼离开原文仍可复述，全篇克制不炫技。",
+      "script_spans": [
+        "这头少压钱那头多流水，只是时间错开。",
+        "别被零押金晃眼"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、结尾回扣开头，但服务费段后转月付压力缺桥，概念轻微跳换。",
+      "script_spans": [
+        "这头少压钱那头多流水，只是时间错开",
+        "还有的按月收服务费，从租金外划走一点像管理费。月付压力是小了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "两面呈现真减负与换法收费，劝签前算总账而非替观众下结论；量化说法限定于'有的'情形且与背景资料相符，无夸大误导。",
+      "script_spans": [
+        "它既是真减负，也是换法收费，你别单看押金",
+        "你签之前，先把押金月租服务费加总比一比，别被零押金晃眼",
+        "免押不是免费"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-cb2810896d354412a6262a25eb596e06",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

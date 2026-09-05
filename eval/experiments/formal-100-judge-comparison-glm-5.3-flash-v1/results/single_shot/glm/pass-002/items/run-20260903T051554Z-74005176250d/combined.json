@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-ec28e055a36244feabc96b70ffa21f54",
+  "run_id": "run-20260903T051554Z-74005176250d",
+  "trace_sha256": "c7b6ad27c5460a391e5c2d7ae0e3ff75f8da43ffd0132c09e8f951a089087218",
+  "created_at": "2026-09-03T15:27:50.164432Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直指还贷纠结的痛点，两侧利弊与普通房贷家庭全覆盖，并给出明确边界条件回应题设。",
+      "script_spans": [
+        "你是不是也动了提前还贷的念头？先别急着转钱。",
+        "若房贷利率明显高于稳健理财，且闲钱远超半年开支，还部分降月供合理"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "LPR数据、流动性代价、操作规则、反例与防骗提示等单元层层推进，有资料支撑，无注水编造。",
+      "script_spans": [
+        "五年期以上LPR已经落在百分之三点五附近，存量房贷跟着下行，可存款收益滑得更快",
+        "留一笔随时能取的线，不是保守，是给选择权定价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即立利息薄对月供刚的反差并直接发问；中段以数据、反例、边界连续推进；结尾两笔账自然收束留余味。",
+      "script_spans": [
+        "存款利息越来越薄，房贷月供却雷打不动，你是不是也动了提前还贷的念头？",
+        "表面看，省下三点多利息比拿一点几存款强。但因果没这么短",
+        "两笔账清了，还得不还你比谁都明白"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数段落有对话感、动词具体，但“还部分降月供合理”“忽略操作和不确定”等压缩句需重读改词，属两处明显拗口，最高2分。",
+      "script_spans": [
+        "有人嫌存款利息少，把所有闲钱砸进高收益理财，波动一来低位割肉，比少赚利息更惨",
+        "边界我只说一次——若房贷利率明显高于稳健理财，且闲钱远超半年开支，还部分降月供合理。",
+        "很多人只盯利率差，忽略操作和不确定。",
+        "失去的是漫长周期里的灵活调度权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "「给选择权定价」「别用旧习惯算新账」准确克制，离开上下文仍可复述；缓冲垫等比喻服务理解，无堆砌炫技。",
+      "script_spans": [
+        "留一笔随时能取的线，不是保守，是给选择权定价",
+        "别用旧习惯算新账",
+        "提前还贷消灭的是成本明确的负债，留现金保住的是失业或生病的缓冲垫"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "连环设问推进，各段功能单一清晰，边界条件与结尾两笔账回扣开头，因果桥梁完整经得起追问。",
+      "script_spans": [
+        "提前还贷消灭的是成本明确的负债，留现金保住的是失业或生病的缓冲垫",
+        "先算月供占收入比，再看手边随时用的钱，两笔账清了，还得不还你比谁都明白"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "还贷建议附带明确前提条件，并明示无法预测利率走势，主动警示高收益骗局，无绝对化承诺，导向稳健安全。",
+      "script_spans": [
+        "若房贷利率明显高于稳健理财，且闲钱远超半年开支，还部分降月供合理",
+        "我们没法预测明年利率继续降还是反弹",
+        "低利率时代，各类骗局也变多，乱投比少赚利息危险得多"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ee6b98e9226142b49d47eaf0432fb904",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

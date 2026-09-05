@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-26d2a3d89da740cea436545344c5f87b",
+  "run_id": "run-20260903T051555Z-7bb947bcf9a7",
+  "trace_sha256": "7caa90a076cfe60f05ad3fdb12ad98cc07532ca238fb6aa0bb307b2e6361f118",
+  "created_at": "2026-09-03T14:09:33.693340Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答'绝不能忽视'，纪律边界与个性权利两侧并重，结尾落到家长沟通，人群与痛点精准。",
+      "script_spans": [
+        "纪律教育绝不能忽视个性表达",
+        "家长应依规范底线提出沟通"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 255，目标为 280，偏差率为 8.93%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "规范底线、权利归属、类比反驳、救济建议层层给料，各单元独立推进，与背景资料吻合无编造。",
+      "script_spans": [
+        "军人强制源于法律授权的公共任务，校园细则是教育导向而非普遍强制",
+        "实属变相停课且缺法定程序"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头点出冲突却随即下结论，缺悬念；中段有按头剪发、变相停课等新信息但偏论断，推进趋平；结尾自然收束。",
+      "script_spans": [
+        "先前网络流传的强行按头剪发视频，就暴露出粗放执行易滑向侵权",
+        "纪律教育绝不能忽视个性表达，这种一刀切要求不仅压抑少年心性，更越过合理边界"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句可断句读通，'说事站不住脚'有口语感；但'归属范畴''相适'等书面词密集，多处需换词改口。",
+      "script_spans": [
+        "借部队管理说事站不住脚",
+        "发型打理归属人格尊严与身体自主权范畴，学校惩戒须与过错相适",
+        "家长应依规范底线提出沟通"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“纪律外衣”比喻服务观点、可复述但句式套版略刻意；“人格尊严与身体自主权范畴”等名词堆叠偏干，缺第二记忆点。",
+      "script_spans": [
+        "别让纪律外衣掩盖合法权益",
+        "发型打理归属人格尊严与身体自主权范畴，学校惩戒须与过错相适"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从无国家硬标准到权利边界再到家长救济，功能句环环相接，结尾回扣开头立场，无断裂跳跃。",
+      "script_spans": [
+        "借部队管理说事站不住脚",
+        "别让纪律外衣掩盖合法权益"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以教育部规范与法律边界立论，关键处均有“网络流传”“若”等限定，建议依法沟通而非对抗，无煽动夸大或无依据承诺。",
+      "script_spans": [
+        "先前网络流传的强行按头剪发视频，就暴露出粗放执行易滑向侵权",
+        "家长应依规范底线提出沟通，别让纪律外衣掩盖合法权益"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-409158af3d37468a824998a7af7054f8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-410470939ea040b8bea867a0e5616f58",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

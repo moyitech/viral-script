@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-49e6adf462924c53b3022c7ab357aaee",
+  "run_id": "run-20260902T142940Z-e3b5052ba2bc",
+  "trace_sha256": "a051de75b1a84ef27ea1c6795f537d6373a41fd5b66ddbaedb2b4109f2101cfa",
+  "created_at": "2026-09-03T12:15:29.059489Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直答增收还是交学费，覆盖年轻人、副业培训广告和防坑建议，切题明确。",
+      "script_spans": [
+        "刷副业课想增收，却先交了学费？",
+        "真要报名，先问清是不是贷款合同。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "投诉金额、贷款诱导和核验建议具体有效；但平台数据与副业培训关联不明，“多数”结论也缺少支撑。",
+      "script_spans": [
+        "平均涉诉超七千块。",
+        "实际是贷款，课程缩水，退费遭拒。",
+        "去年平台拦违规素材超百亿条，关停账户超四百万个，培训类不少。",
+        "多数在交学费而非真赚钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“先交了学费”制造反差，中段不断补充风险与规则，结尾落到护钱包，余味自然。",
+      "script_spans": [
+        "刷副业课想增收，却先交了学费？",
+        "真要报名，先问清是不是贷款合同。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚、口语底子不错，但“广告改说分享经验”等处少词且信息压缩，朗读时需临时调整。",
+      "script_spans": [
+        "你攒点钱不易，看见晒收益就报名，最后课越上越水。",
+        "去年平台拦违规素材超百亿条，关停账户超四百万个，培训类不少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“交学费”和“卖课比教赚钱还多”形成自然反差，既好记，也没有堆砌辞藻。",
+      "script_spans": [
+        "刷副业课想增收，却先交了学费？",
+        "卖课比教赚钱还多，咱先护钱包再想副业。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "风险案例到报名核验的主线清楚，但禁用收益话术并不能推出增收困难，结尾泛化判断也缺少论据。",
+      "script_spans": [
+        "有些课借AI名义虚假宣传，用“先学后付”当幌子，实际是贷款，课程缩水，退费遭拒。",
+        "真要报名，先问清是不是贷款合同。",
+        "保证收益话术已禁，连“月入三万”都不敢写，普通人想稳增收有多难？",
+        "卖课比教赚钱还多，咱先护钱包再想副业。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "部分风险描述有“有些”限定，且提醒核实贷款合同较稳妥；但将多数年轻人概括为交学费，并推断广告动机，表述偏满，易以偏概全。",
+      "script_spans": [
+        "有些课借AI名义虚假宣传，用“先学后付”当幌子，实际是贷款",
+        "真要报名，先问清是不是贷款合同。",
+        "年轻人刷这些广告，多数在交学费而非真赚钱。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0837a6bac2b343fd8379be025306c0bb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

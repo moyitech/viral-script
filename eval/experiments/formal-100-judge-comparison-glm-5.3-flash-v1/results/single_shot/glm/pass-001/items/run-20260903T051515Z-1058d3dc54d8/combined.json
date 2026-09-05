@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-73b64478e3214a87ae7a85e86ef45b1f",
+  "run_id": "run-20260903T051515Z-1058d3dc54d8",
+  "trace_sha256": "7a2dc2ba9630bb8e2c82060435ae1300469ee8320d2c047c473be430fc602b6c",
+  "created_at": "2026-09-03T14:08:55.295372Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直问直答，市值法与利率、信用双驱动完整解释为何亏，结尾回扣低风险标签，人群对位。",
+      "script_spans": [
+        "你以为名字带“低风险”的债基就不会亏？实际上它照样能让你的账户浮亏",
+        "别光盯着“低风险”标签就冲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 278，目标为 280，偏差率为 0.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "估值机制、R2分级、利率久期、信用风险依次推进，还能带走买前检查方法，无编造。",
+      "script_spans": [
+        "它的净值按市值法跟着债券市价走，债市下跌时它就可能浮亏",
+        "市场利率往上翘，存量债券价格就往下掉，而且基金久期越长，这种波动越凶猛",
+        "发债企业财务恶化或违约预期升温，债券价格立马跳水，再分散持仓也挡不住局部冲击"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句反问直击认知冲突；中段市值法、R2、利率、信用层层兑现；结尾落到可执行提醒，余味自然生长。",
+      "script_spans": [
+        "你以为名字带“低风险”的债基就不会亏？",
+        "第一个关键驱动是利率，市场利率往上翘，存量债券价格就往下掉",
+        "别光盯着“低风险”标签就冲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主且有\"立马跳水\"等口语表达，但\"违约预期升温\"与\"看久期长和信用等级下沉没有\"两处拗口需改词，封顶2分。",
+      "script_spans": [
+        "市场利率往上翘，存量债券价格就往下掉",
+        "发债企业财务恶化或违约预期升温",
+        "看久期长和信用等级下沉没有"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“往上翘、往下掉”对仗助解，“立马跳水”“就冲”鲜活不油腻，“低风险绝对不等于没风险”可独立复述。",
+      "script_spans": [
+        "市场利率往上翘，存量债券价格就往下掉",
+        "低风险绝对不等于没风险",
+        "债券价格立马跳水"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "钩子、机制、成因、建议层层递进，利率与信用因果桥清楚，结尾自然回扣开头之问。",
+      "script_spans": [
+        "第一个关键驱动是利率，市场利率往上翘，存量债券价格就往下掉",
+        "具体买之前，你得翻开基金持仓"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "主动提示浮亏且明确不保本、非存款替代品，无收益承诺与夸大，边界清楚，符合金融内容审核要求。",
+      "script_spans": [
+        "根本不是稳赚不赔的存款替代品",
+        "债基通常划为中低风险R2，本来就不是保本保收益品种",
+        "看久期长和信用等级下沉没有，别光盯着“低风险”标签就冲"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d777b9412e184fb7b792cb6717c4d43d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e616962a37154557bde6be9c34667aa6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

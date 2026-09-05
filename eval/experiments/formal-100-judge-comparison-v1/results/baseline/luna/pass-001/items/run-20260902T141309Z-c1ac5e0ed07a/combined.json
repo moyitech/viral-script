@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-a03c50745ca74b65b2908bfba69b60a9",
+  "run_id": "run-20260902T141309Z-c1ac5e0ed07a",
+  "trace_sha256": "1ae6ac8e24abc530189f447e09ed9a61c7309793095c55ada2ad7044cbfaf34d",
+  "created_at": "2026-09-03T11:44:17.596627Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应便利与负债两面，覆盖先用后付及普通用户处境，结尾还给出可执行的控制建议。",
+      "script_spans": [
+        "先用后付既方便试错，也悄悄抬升负债可能，不是单方好事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 256，目标为 280，偏差率为 8.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，既解释降低决策门槛和无感消费的机制，也补充使用场景、风险累积与关闭方法。",
+      "script_spans": [
+        "本来一件顺手拿三件，留下的变多，账单就厚了。",
+        "你想可控，就打开支付设置关掉这功能，少点冲动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用0元下单和多买试尺码制造冲突，中段解释便利与负债，结尾“先停两秒”互动自然。",
+      "script_spans": [
+        "你点0元下单，多拿三件衣服试尺码，真方便？",
+        "下次划到0元下单，你先停两秒？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾有对话感，但中段多处搭配生硬，朗读时需要临时换词或重断句。",
+      "script_spans": [
+        "下次划到0元下单，你先停两秒？",
+        "先用后付既方便试错，也悄悄抬升负债可能"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“像试衣间但不押钱”把机制讲明白，“无感消费常是负债起点”有复述价值，整体形象克制。",
+      "script_spans": [
+        "就像店里试衣间但不押钱，先试再定",
+        "方便是真方便，可无感消费常是负债起点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按便利机制、风险形成到自我控制推进，但“没计划的钱”表意拗口，结尾又把可能风险泛化为负债起点。",
+      "script_spans": [
+        "但正因买时没付钱，手感轻了，钱从指缝溜走没觉，本来一件顺手拿三件，留下的变多，账单就厚了。",
+        "可收货后得付没计划的钱。",
+        "方便是真方便，可无感消费常是负债起点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体是在提示后付风险，语气较克制；但“退掉不花”未交代退货条件，容易让观众误解实际规则。",
+      "script_spans": [
+        "既方便试错，也悄悄抬升负债可能，不是单方好事",
+        "不合身退掉不花"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3a7f4718780245baba93444d18b00c82",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-bc2186c80cff4d3e8e1187e9721a5b3e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

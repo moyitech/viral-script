@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-14677e0d6d9348078c087e2907a5dcaf",
+  "run_id": "run-20260902T144906Z-3dcb03bae976",
+  "trace_sha256": "26d93ff744c8d020fd39c6b2197c56cc32f4218bc30cd1ad5e60724eb8bbdb9f",
+  "created_at": "2026-09-03T11:45:51.050489Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面覆盖电力、土地与普通人影响，回答了为何成为筹码；中美案例也让“多国”背景不至于悬空。",
+      "script_spans": [
+        "多国争建算力中心，电力与土地为啥成新筹码？",
+        "这对咱们生活有啥影响？家门口空地变机房，电费单可能悄悄涨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 449，目标为 450，偏差率为 0.22%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕电力与土地持续推进，接入、指标、厂商分化和社区影响形成多层信息，具体增量较足。",
+      "script_spans": [
+        "硬件能买，电和地却卡在容量与审批里。",
+        "资源集中让中小厂商拿不到好地块，大厂被迫转向远方圈地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头把项目暂停与电费风险直接相连，中段层层转向电和地，结尾追问也由影响自然生长。",
+      "script_spans": [
+        "美国超1300亿数据中心项目暂停，你家电费可能悄悄替它涨。",
+        "硬件能买，电和地却卡在容量与审批里。",
+        "下一个被改变的生活角落，会是你家旁边的田地吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "句子多为短句，问题线索清楚；但“北京上海广州”“高度绑死”等处需重断句或换词，整体还不够顺口。",
+      "script_spans": [
+        "硬件能买，电和地却卡在容量与审批里。",
+        "北京上海广州盖机房，楼体一年半能封顶，可电网接入要排更长的队。",
+        "八大算力枢纽和一线城群，电力容量、能耗指标、核心区位土地高度绑死。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“变电站和农田”把抽象资源竞争具体化，“真实电力账单和地主收租”留下可复述的生活化画面，表达未过度堆砌。",
+      "script_spans": [
+        "这场仗打到今天，拼的是变电站和农田。",
+        "你刷的每帧画面，背后是真实电力账单和地主收租。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "电与地分段清楚，转入生活影响也自然；但“要么…要么…”过度二选一，电费上涨缺少中间因果桥。",
+      "script_spans": [
+        "咱们先说电这一侧。",
+        "再看土地这一侧。",
+        "企业现在两难：要么自己盖电厂脱离电网，要么去远方圈地。",
+        "家门口空地变机房，电费单可能悄悄涨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见煽动、歧视或危险建议，但将数据中心项目与居民电费直接相连，因果边界不够清楚，容易造成误导。",
+      "script_spans": [
+        "社区反对声变多，有的地方暂停新建保农田",
+        "你家电费可能悄悄替它涨",
+        "家门口空地变机房，电费单可能悄悄涨"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-469b931a8f1d4664acd043c0b8ab403d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e637e44912084bdbbc56585d2e9c8f57",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

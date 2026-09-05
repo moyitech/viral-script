@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-dcd612f790ce4b49bc065b817aba519b",
+  "run_id": "run-20260902T142801Z-df4f141958f5",
+  "trace_sha256": "d9bf73cf2ec9e9e81397ce6a6da74a4ec34a356af0e2a10e1f7035c262e9169e",
+  "created_at": "2026-09-03T13:47:01.555469Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即站在求职者立场，正文效率与压价两侧都正面作答，切角落在薪资谈判被挤压，人群痛点贴合。",
+      "script_spans": [
+        "你三天拿到offer，可能少挣两千块薪水。",
+        "企业缩短招聘流程，既提效率，也常变相压价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 292，目标为 280，偏差率为 4.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "长短流程对比讲清压价机制，调研数据支撑现状，收尾给出问底薪社保的清单，信息层层推进。",
+      "script_spans": [
+        "流程拉长时你等得起，多家录用摆着敢慢比薪资；流程极短，昨儿面完今儿逼你签，你怕错失没空还价，公司单方按最低预算就定了",
+        "行业调研说过，不少企业核心岗原本要招45天甚至更久，中高级更长的也有。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头抛出'少挣两千'的反差，中段效率与压价两面推进，结尾余味自然生长。",
+      "script_spans": [
+        "你三天拿到offer，可能少挣两千块薪水",
+        "可薪资不透明时，快常常成了企业捡便宜的机会"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句密、有对话感，整体上口；但“多家录用摆着敢慢比薪资”等处过度压缩，朗读需换词重断，故止步2分。",
+      "script_spans": [
+        "流程极短，昨儿面完今儿逼你签",
+        "多家录用摆着敢慢比薪资",
+        "你怕错失没空还价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'填坑''捡便宜'等口语喻体贴切且服务理解，'快成了捡便宜的机会'可脱离上下文复述；全篇点到为止，无堆砌炫技。",
+      "script_spans": [
+        "快常常成了企业捡便宜的机会",
+        "流程极短，昨儿面完今儿逼你签，你怕错失没空还价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "砍环节到没法还价因果连贯，结尾限定“薪资不透明时”不扩大，并回扣开头少挣薪水的钩子。",
+      "script_spans": [
+        "但流程一砍，薪资面谈和对比环节常被省掉。",
+        "流程快慢本无错。可薪资不透明时，快常常成了企业捡便宜的机会。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "效率与压价两面并陈，'可能''常'等限定词到位，结论附条件边界，建议具体务实，无夸大煽动风险。",
+      "script_spans": [
+        "既提效率，也常变相压价",
+        "流程快慢本无错。可薪资不透明时，快常常成了企业捡便宜的机会",
+        "先问清底薪、绩效和奖金怎么算，社保怎么交"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4f46a4b3cde7436ca0a57a5d46ac555c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6b0f94fab025456993e5fa21682a7a4a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

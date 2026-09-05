@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-5aa283aa07ac42ab86e3c52be5724716",
+  "run_id": "run-20260902T143453Z-8029c4545b8f",
+  "trace_sha256": "1a73b1ff7464c20054d0e348c24fb39e2d2c40dab1442e4e99a445d05aca474c",
+  "created_at": "2026-09-03T12:18:49.845337Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头以进店门槛切入，同时覆盖扩张、低价、年费和普通消费者的办卡判断，正面回应题设。",
+      "script_spans": [
+        "会员店这两年加速扩张，里头大包装确实单价低，看起来比普通超市划算不少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "年费、退卡限制、扩张数据和采购建议提供了增量；但年费判断多有重复，且没有把低价折扣与回本标准算清。",
+      "script_spans": [
+        "有的店写了规矩，退了会员费半年内不让你再办",
+        "先算清每周采购量",
+        "想进门先交两三百块年费。",
+        "两三百块说多不多说少不少。",
+        "全家一周只买百来块东西，那卡就别办，不然反而亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“被拦下”制造即时冲突，中段连续补充年费、退卡和扩张信息，结尾落到算账决策，推进完整。",
+      "script_spans": [
+        "你拎着购物车到店门口，却被拦下：先付年费才能进。",
+        "你要是只图偶尔去捡漏，卡费可能比省下的多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "句子短，停顿和重音明确，年费、退卡、扩张、购买量层层推进，适合真人口播。",
+      "script_spans": [
+        "先付年费才能进。",
+        "那卡就别办，不然反而亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“通行证”把会员费的门槛说得形象，“卡费可能比省下的多”形成简洁警示，修辞克制。",
+      "script_spans": [
+        "这笔钱不算货款，只是通行证，不是逛了就能省。",
+        "卡费可能比省下的多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "用“先说、再说”分段推进，年费、退卡和扩张主线清楚；但以每周采购额直接推出亏损，缺少折扣率与回本计算。",
+      "script_spans": [
+        "先说这笔年费。",
+        "再说退卡。",
+        "全家一周只买百来块东西，那卡就别办，不然反而亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题提醒清楚，但把不同会员店的入场、退卡规则笼统归并，且“卡就别办”略显绝对，需补充适用范围。",
+      "script_spans": [
+        "先算清每周采购量",
+        "先付年费才能进",
+        "那卡就别办，不然反而亏"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-770df829e5c049c7ac8098d673360644",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

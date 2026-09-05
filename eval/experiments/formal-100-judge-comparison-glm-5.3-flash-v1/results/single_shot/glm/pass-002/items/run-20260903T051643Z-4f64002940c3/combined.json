@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-0713132bfffe47b192eeada70ae485b7",
+  "run_id": "run-20260903T051643Z-4f64002940c3",
+  "trace_sha256": "ae461c7e6834f6505fcbb29e63f4d8dac8a77ae0a03e13da524d83ee2ba483da",
+  "created_at": "2026-09-03T15:26:21.904599Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头摆出停车与休闲两侧，核心人群与冲突全覆盖，结论直接回答该不该让。",
+      "script_spans": [
+        "一边是刚需停车，一边是日常休闲，这地到底该给谁？",
+        "我的看法是，休闲需求不该默认让步，但也不是死守空间不变。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "表决程序、面子工程教训、停车楼案例、错时共享各自推进论证，信息扎实有增量。",
+      "script_spans": [
+        "有研究就指出过，一些地方出现了和内容脱节的面子工程，居民真正想要的休闲角落没保住",
+        "物理上分层，功能上叠用，说明二者未必是零和"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛车位与花园的现实冲突，中段以程序、案例、替代方案层层推进，结尾余味自然生长。",
+      "script_spans": [
+        "晚上回家绕三圈找不到车位，可楼下的小花园却是老人孩子唯一的落脚地",
+        "二者之间缺的往往不是空间，是商量"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句为主、节奏清楚，能顺读；但中段多处书面压缩语需临时换词重断，明显拗口点超过两处，决定上限为2分。",
+      "script_spans": [
+        "一边是刚需停车，一边是日常休闲，这地到底该给谁？",
+        "一些地方出现了和内容脱节的面子工程",
+        "错时共享周边机构车位"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "防火墙、吃掉等比喻克制且助解，缺的不是空间是商量离开正文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "防止少数人的便利吃掉多数人的休憩",
+        "该让步的是粗放改建的念头，而不是居民休闲本身"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由权限转到方案有'需求撞车'承接，结尾回扣开头与题设，因果桥完整。",
+      "script_spans": [
+        "可即便走了程序，需求撞车还是实实在在",
+        "车要停，人也要喘气，二者之间缺的往往不是空间，是商量"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "双方需求并陈，法律表述有'通常''依法'限定，替代方案以'也许'兜底，无煽动夸大或无依据承诺。",
+      "script_spans": [
+        "休闲需求不该默认让步，但也不是死守空间不变",
+        "不是物业或居委会单方面能定的，依法得业主共同表决",
+        "这种设计成本不低，但思路可以下沉"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5629f9c8c74843b7ae91c26427d452f1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

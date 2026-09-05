@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-c499ee7fec8c4172b859aa09042cbd2c",
+  "run_id": "run-20260903T051607Z-0587e490c112",
+  "trace_sha256": "4efb4a29123fe40776871e63da29b25f10785cfa53e5edd944f643e1da0e4230",
+  "created_at": "2026-09-03T12:32:52.374997Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从订单回暖、企业顾虑到求职建议，正面回答为何不敢扩招，也覆盖了普通人的关切。",
+      "script_spans": [
+        "这轮回暖还撑不起一张正式工的录用通知书。",
+        "对普通人来说，信号很直接"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据、结构、用工成本和求职建议层层推进，主题集中，观众能获得判断订单回暖与稳定就业差异的方法。",
+      "script_spans": [
+        "八月份制造业新订单指数重新站上扩张线，但从业人员指数反而往下掉。",
+        "招一名正式工，意味着社保、培训加上未来可能的解雇补偿，都是刚性支出。",
+        "订单风向变热，不等于饭碗自动变稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用订单回暖与不招人的反差设钩，中段逐层解释，结尾落到求职行动并留下余味。",
+      "script_spans": [
+        "订单明明在好转，工厂车间灯亮了，人事部门的门却关着",
+        "真要行动，不如先攒一门能跨行业用的技能"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和对话承接不错，但两处比喻搭配生硬，影响自然朗读和口语质感。",
+      "script_spans": [
+        "订单明明在好转，工厂车间灯亮了，人事部门的门却关着。",
+        "不是终端需求真正大火",
+        "但正式录用通知薄了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“灯亮门关”制造鲜明画面，结尾对照准确易复述，修辞克制，没有堆砌金句。",
+      "script_spans": [
+        "工厂车间灯亮了，人事部门的门却关着",
+        "订单风向变热，不等于饭碗自动变稳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、数据、原因和建议形成主线，但“库存回补”“派遣岗”等判断证据不足，结尾又把阶段性信号扩大为普遍结论。",
+      "script_spans": [
+        "看结构就明白。订单回升主要集中在装备和高技术行业，多数传统工厂还没缓过劲。",
+        "这种回暖多半是库存回补和政策拉动，不是终端需求真正大火。",
+        "想进制造业拿稳定合同，眼下还不是时候。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "数据对比和判断较清晰，但对派遣岗位、企业用工选择及求职时机概括过满，容易误导观众。",
+      "script_spans": [
+        "八月份制造业新订单指数重新站上扩张线",
+        "别看有些工厂招工海报贴满墙，那多是派遣岗"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1abcfc501d1e452daf1be677c42af9a1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

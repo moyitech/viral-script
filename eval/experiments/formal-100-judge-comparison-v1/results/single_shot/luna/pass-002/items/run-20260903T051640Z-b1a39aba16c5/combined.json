@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-5126d754815f4296822a858652385587",
+  "run_id": "run-20260903T051640Z-b1a39aba16c5",
+  "trace_sha256": "0b23e22d465ea1cfa80b07f8ab17d697f7a610d174360e9e32b44835c16f74c1",
+  "created_at": "2026-09-03T12:31:45.514048Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "明确回答“慰藉还是越界”，覆盖告知、商业化、心理风险与滥用边界，核心人群契合。",
+      "script_spans": [
+        "真正越界的是掩盖它是合成的事实，以及把这份思念悄悄拿去变现。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕伦理边界持续展开，监管规则、哀伤心理、商业化和身份冒用等信息各有推进。",
+      "script_spans": [
+        "声音直接钻进耳朵，最容易让人产生“人还在”的错觉。",
+        "要是有人拿复原的声音去冒用身份办业务，或者编出逝者从没说过的遗言搅动家庭争端，伤的是生者之间的信任。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用母亲叫小名制造强情绪反差，中段连续推进到标识、商业化与冒用风险，结尾也留下边界余味。",
+      "script_spans": [
+        "你戴上耳机，听见去世母亲在叫你小名",
+        "留住声音可以是一种温柔，但别让那份温柔，变成一场没有尽头的扮演。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头设问和结尾收束有对话感，但中段研究、监管表述偏长偏抽象，真人口播仍需重断句。",
+      "script_spans": [
+        "你该觉得被温柔拥抱，还是该突然后背发凉？",
+        "监管已经要求服务提供者在声音起始或末尾加上明显提示",
+        "接受度本身就是复杂变量"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“你可以思念，但不能让活人误以为死者真的在开口”把边界说透，“没有尽头的扮演”留下清晰余味，修辞克制。",
+      "script_spans": [
+        "你可以思念，但不能让活人误以为死者真的在开口。",
+        "留住声音可以是一种温柔，但别让那份温柔，变成一场没有尽头的扮演。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由情境设问引出立场，再转入规则、心理和滥用风险，层层递进，结尾自然回扣核心判断。",
+      "script_spans": [
+        "所以针对人工智能生成的音频，监管已经要求服务提供者在声音起始或末尾加上明显提示，告诉听者这是机器合成。",
+        "再往下想，当合成越来越逼真，边界就更依赖使用的人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制且能区分慰藉与滥用风险，但对监管适用条件概括过宽，容易造成普遍性法律断言。",
+      "script_spans": [
+        "用AI复原逝者声音本身不是伦理越界；真正越界的是掩盖它是合成的事实，以及把这份思念悄悄拿去变现。",
+        "所以针对人工智能生成的音频，监管已经要求服务提供者在声音起始或末尾加上明显提示"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b505d55941ab4d13bdfc40db960470fa",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

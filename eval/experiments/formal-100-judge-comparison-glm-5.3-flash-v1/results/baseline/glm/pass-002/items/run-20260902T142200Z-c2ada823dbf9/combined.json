@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-342b457b38db40d3b2eb5d15f4a5d8c9",
+  "run_id": "run-20260902T142200Z-c2ada823dbf9",
+  "trace_sha256": "71c3b296fa2dfc45cc636e358474ce3ca7ff152a62b44aa228b71c9456bca62d",
+  "created_at": "2026-09-03T14:23:17.966144Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即设问分清真伪，结尾回扣判断责任，标注与未标注两侧及中老年、年轻观众全覆盖。",
+      "script_spans": [
+        "能不能分清？标了AI你能认出，没标时你只能猜。",
+        "选真人还是合成，从来不是你单方面的判断题。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从新规、商家动机到仿冒老专家案例层层推进，信息具体可信，与公开报道相互印证。",
+      "script_spans": [
+        "拿数字人仿真人面孔和声音，假借老专家卖保健品。中老年一信，钱包就空了。",
+        "他们不怕累，不请假，话术统一"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句'代码念稿'反转即抓人，中段新规、骗局、标注漏洞层层出新，结尾'盯小字'之问由正文自然长出。",
+      "script_spans": [
+        "你以为真人主播半夜喊家人们，其实是一串代码在念稿",
+        "可偏有人动歪脑筋，拿数字人仿真人面孔和声音，假借老专家卖保健品",
+        "所以下次指尖划过笑脸主播，你会先盯那行小字吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有对话感，但'还想你当真人信赖''字小如一闪过'两处需临场改词，书面句夹杂，定2分。",
+      "script_spans": [
+        "你冲信任下单，回头发现根本没人真用过那产品",
+        "商家省了轮班钱还想你当真人信赖",
+        "有的标在角落，字小如一闪过"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "卡顿与不喘气、温情被模拟等表达贴切可复述，修辞服务理解，无堆叠炫技。",
+      "script_spans": [
+        "你喊一句，真人会卡顿，合成不喘气",
+        "标签才是救命绳",
+        "那不是笨，是温情被模拟"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问逐段推进，段落功能清晰，因果有桥梁，结尾自然回扣开头与题设。",
+      "script_spans": [
+        "那标了就万事稳？平台要求标识醒目且持续提示，可有的标在角落",
+        "若算法不向真人表达倾斜，我们看走眼的机会只多不少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "消费警示有据，对中老年不贴标签，归因与结论均留余地，无违规夸大。",
+      "script_spans": [
+        "有些是合成人，有些是真人轮班",
+        "那不是笨，是温情被模拟",
+        "纯AI驱动直接禁播，但界定模糊常有拉锯"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0336043a9b1942de9146e424e21ae3fb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-19a1442169bd48faa1d814a51a57e38b",
+  "run_id": "run-20260902T143056Z-b47870a56a1b",
+  "trace_sha256": "1aefcbb9f68e0bb6b95e868c26ad877538406e3b0638ae8e0c4359b919f07b9a",
+  "created_at": "2026-09-03T13:47:37.115676Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛风险反差，结尾回扣出门选择，风险机制与防范对策两侧齐答，直指普通人充电场景。",
+      "script_spans": [
+        "出门带个自家充电头，只插墙边插座，风险能压到极低",
+        "下次出门，你会带插头还是赌桩干净？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 699，目标为 700，偏差率为 0.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移：机制、零实锤归因、政策现状、分级对策层层推进，且有官方提醒与政策文本佐证。",
+      "script_spans": [
+        "数据线里分电力线和信号线，插上后信号线就能通信",
+        "可十多年学术追踪，真实案例零实锤",
+        "自带插头插墙电最稳当"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字抛出反差悬念，中段连环设问层层兑现，结尾提问由建议自然长出。",
+      "script_spans": [
+        "充电线偷数据？真能，却零实锤。你说这反差怪不怪？",
+        "那为啥没听谁真丢？",
+        "下次出门，你会带插头还是赌桩干净？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句短气口、对话感足，但'重网络布局和服务''跳窗'两处需临时换词，卡在2分。",
+      "script_spans": [
+        "坏人懒得摆摊，爱躺赚。",
+        "可实际建设重网络布局和服务，风险防范落在运营规范。",
+        "系统看到USB插进，会跳窗问传文件还是仅充电。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，“爱躺赚”“最治本”可离文复述，无堆砌炫技。",
+      "script_spans": [
+        "坏人懒得摆摊，爱躺赚。",
+        "技术口子没关死，但怕它不如怕陌生WiFi。",
+        "出门前充好电，最治本。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设疑、解释、归因、对策逐段递进，过渡设问清晰，关键因果有桥梁，结尾自然回扣开头。",
+      "script_spans": [
+        "那为啥没听谁真丢？",
+        "坏人算账，做这陷阱成本贵得很，不如发短信骗你点开链接",
+        "要是只能借公共USB，后面说咋办。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述客观公允，明确“风险不是零，但概率极低”的边界，无确定性承诺或夸大，安全建议可行，提及官方提醒与政策均有据。",
+      "script_spans": [
+        "充电线偷数据？真能，却零实锤。",
+        "风险不是零，但概率极低。",
+        "插上手机弹信任别点，只选仅充电模式。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-03eb96f55a484749b86188fab9003d20",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9830fdbd7f9c49e3890d94ca86bad2fa",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

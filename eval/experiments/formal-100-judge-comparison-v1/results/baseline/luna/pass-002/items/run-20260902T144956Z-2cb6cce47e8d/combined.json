@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-0bb2e24e7a6e46ae8ff8ba91e054bf2b",
+  "run_id": "run-20260902T144956Z-2cb6cce47e8d",
+  "trace_sha256": "3e25a1f4c2f24d829ace3dbfba343e3a711590c5fbd52a46c79b377cb5a86e6b",
+  "created_at": "2026-09-03T12:18:02.826126Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答“会”，并覆盖扩张、规则竞争与用户风险，切角具体且面向普通观众。",
+      "script_spans": [
+        "卫星互联网狂飙，太空轨道会成新争端吗？会，但抢的是轨道频率，不是开火。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕轨道拥挤、规则机制和断供风险递进，数据、制度解释与现实后果相互支撑，信息增量充足。",
+      "script_spans": [
+        "中国去年底向国际电联申请了超二十万颗卫星，把天塞得满满当当。",
+        "规则奖励早部署持续扩，先抢先得，后来者发射还得躲着走。",
+        "你我用卫星上网，如果依赖外国星座网络，对方一旦断供，偏远教学医疗信号全掉线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用抢车位制造冲突，中段持续补充规则与断供风险，结尾追问也由正文自然生长。",
+      "script_spans": [
+        "低轨车位快被中美卫星抢光，你家网速卡别人坑里。",
+        "下次连网时，头顶正有看不见的谈判，占满轨道的人，是不是捏住了咱们的命门？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有比喻、反问和短句，整体能读通；但“清频道”“捏在别人让不让的规矩里”等多处生硬，需重写。",
+      "script_spans": [
+        "早动手的吃肉，晚来的找缝钻",
+        "你想清频道？得坐下来谈，耗的是年头。",
+        "所以满格信号背后，其实捏在别人让不让的规矩里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“低轨车位”和“早动手的吃肉，晚来的找缝钻”直观好懂，既辅助解释，也留下可复述的记忆点。",
+      "script_spans": [
+        "你看低轨像小区热门车位，先到先停，先占的吃香。",
+        "早动手的吃肉，晚来的找缝钻"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线顺序清楚，但把轨道、频率与无线电干扰混为一谈，削弱了“如何形成争端”的因果桥。",
+      "script_spans": [
+        "所以满格信号背后，其实捏在别人让不让的规矩里。",
+        "下次连网时，头顶正有看不见的谈判，占满轨道的人，是不是捏住了咱们的命门？",
+        "管这事的是国际电信联盟，它只协调无线电干扰，不发给任何国家专属轨道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能区分轨道频率竞争与武装冲突，但“抢光”“先抢先得”“捏住命门”等绝对化和煽情归因易误导，需补治理边界。",
+      "script_spans": [
+        "会，但抢的是轨道频率，不是开火。",
+        "低轨车位快被中美卫星抢光",
+        "捏住了咱们的命门"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d9be664b95e44f36973aa71a9f6a1b13",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

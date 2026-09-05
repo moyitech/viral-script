@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-083fc0307edc41d4bde2d7df4d625362",
+  "run_id": "run-20260902T141416Z-cafa14b141a3",
+  "trace_sha256": "e28e4f5145bf1195b2f04896fbf9cd8ac24d135375eab2d6716c0c6be55ecbbf",
+  "created_at": "2026-09-03T14:25:31.124169Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答低成本不等于低风险，省费与亏损两面对照，结尾回扣题设并直指买基金的普通观众。",
+      "script_spans": [
+        "你少交了申购费，可市场跌了照样亏",
+        "买基金前多问一句误差有多大，才不会被低费率迷了眼"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "新规事实、双风险来源、跟踪误差成因与查招募书方法层层推进，观众能带走可操作的判断方法。",
+      "script_spans": [
+        "风险其实来自两个地方。一是标的指数本身会涨会跌",
+        "跟踪误差就是基金和指数步子没踩齐",
+        "买前看清招募书里的跟踪误差要求，别只盯着费率便宜就下手"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头费率降与低风险的反差直接立钩，中段用两个风险来源和跟踪误差持续兑现，结尾填坑一句自然生长出余味。",
+      "script_spans": [
+        "指数基金费率又降了，但低成本不等于低风险",
+        "风险其实来自两个地方",
+        "省下的手续费填不平大跌的坑，买基金前多问一句误差有多大"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音停顿清楚，“照样亏”“迷了眼”等表达自然上口，整体可直接录音。",
+      "script_spans": [
+        "你少交了申购费，可市场跌了照样亏。",
+        "省下的手续费填不平大跌的坑，买基金前多问一句误差有多大，才不会被低费率迷了眼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "步子没踩齐把跟踪误差讲得明白好记，手续费填不平大跌的坑可脱离上下文复述，修辞点到为止不堆叠。",
+      "script_spans": [
+        "跟踪误差就是基金和指数步子没踩齐",
+        "风险可不是费率能买走的",
+        "省下的手续费填不平大跌的坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "「风险其实来自两个地方」承接机制解释自然，两条来源各有因果，结尾金句回扣开头论点。",
+      "script_spans": [
+        "二是基金可能没完全跟上指数，它拿着现金或调仓慢了就有偏差",
+        "省下的手续费填不平大跌的坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全篇是风险提示而非收益承诺，明确低成本不等于低风险，提醒看清跟踪误差，与监管口径一致，稳妥。",
+      "script_spans": [
+        "省下的手续费填不平大跌的坑，买基金前多问一句误差有多大，才不会被低费率迷了眼",
+        "买前看清招募书里的跟踪误差要求，别只盯着费率便宜就下手"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e80eaa12dc6e43a1ba383cfaf15eca6c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

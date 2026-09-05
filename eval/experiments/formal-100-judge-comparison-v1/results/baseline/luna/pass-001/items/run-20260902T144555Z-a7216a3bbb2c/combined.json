@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-a64b0a79de3147a2b6e54128cdd8cb98",
+  "run_id": "run-20260902T144555Z-a7216a3bbb2c",
+  "trace_sha256": "7c8ef6bee094a5bd8a0c9b813a4b9b9870609628a1e365aa95db1c1f3c0f7011",
+  "created_at": "2026-09-03T11:44:36.535219Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答标准是否跟得上，既写装机扩张，也写规则、事故与运维缺口，普通观众能获得明确判断。",
+      "script_spans": [
+        "储能狂建，电池安全标准跟上了框架，没跟上风险。",
+        "可上半年装机同比涨超六成，房子盖得比验房员跑得快多了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 285，目标为 280，偏差率为 1.79%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息单元较密：新规内容、装机增速、火灾扩散与后评价都在推进主旨，结尾还给出具体追问。",
+      "script_spans": [
+        "管电池怎么摆、线路怎么连、防火间距，也管施工验收谁签字。",
+        "标准写的是单台电池，真出事常是整箱连环烧。",
+        "别光数新增吉瓦，多问：转起来后谁定期揭盖体检？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“没跟上风险”形成反差，中段持续补出监管、扩张与连环烧的落差，结尾追问自然落到后期体检。",
+      "script_spans": [
+        "储能狂建，电池安全标准跟上了框架，没跟上风险。",
+        "标准写的是单台电池，真出事常是整箱连环烧。",
+        "别光数新增吉瓦，多问：转起来后谁定期揭盖体检？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和对话感较明确，但开头与后段比喻多处卡嘴，仍需改词才能达到自然口播。",
+      "script_spans": [
+        "你买充电宝看认证，大电站更盯紧。",
+        "储能狂建，电池安全标准跟上了框架，没跟上风险。",
+        "电站安静都好看，发烧连锁蹦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“纸面标准像新锁，钥匙没配齐”形象且可复述；但“发烧连锁蹦”过于跳脱，叠加多处比喻后略显刻意。",
+      "script_spans": [
+        "纸面标准像新锁，钥匙没配齐。",
+        "电站安静都好看，发烧连锁蹦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构有明确的“新规—扩张—事故—运维”递进，开头结论也能回扣；但部分判断缺少解释，末段比喻略跳。",
+      "script_spans": [
+        "纸面规则在补，但追得吃力。",
+        "老办法盯新玩意难免漏风。",
+        "电站安静都好看，发烧连锁蹦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体聚焦安全议题且无明显违规，但“后期检查没人抢”等绝对化归因易造成泛化误导，需限定范围。",
+      "script_spans": [
+        "多国储能火灾也冒了头",
+        "大家抢并网赚钱，后期检查没人抢。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d9a0baebe73546f987177a5a3c816fa3",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ee87ebfd7fec451aabd97aa4923ce89b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

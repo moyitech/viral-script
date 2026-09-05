@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-978fa2150fad443da461b8f773ce6cde",
+  "run_id": "run-20260902T143911Z-11a8785c0305",
+  "trace_sha256": "51e160c00beb6eb38abc22538db58258f6636c34d338cd3abe5972d82a1ed442",
+  "created_at": "2026-09-03T14:26:20.091311Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头女婿拒付直接立题，该给与不该给两侧理由齐全，始终扣住回报是否明确来谈，结尾回扣题设。",
+      "script_spans": [
+        "要我说该给，但不是雇保姆那样结账。",
+        "那不该给的理由呢？账算太清就伤亲情。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从本分情分之争到调查数据与健康研究，再到医保零钱等具体做法，信息单元层层推进，观众可带走判断方法。",
+      "script_spans": [
+        "有调查提过，超半数老年人在帮子女带娃。",
+        "你替他交个医保，或塞个随便花的零钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即现三年无酬与女婿拒付的冲突；中段以数据、反方账理与暗补方案持续转折兑现；结尾提问由认情主题自然长出，余味足。",
+      "script_spans": [
+        "带外孙三年没拿报酬，女婿说天经地义不该给。要我说该给，但不是雇保姆那样结账。",
+        "那不该给的理由呢？账算太清就伤亲情。直接发工资像雇人，一家人面子挂不住。",
+        "或许该想的不是给不给钱，而是怎么认这份情。你家长辈带娃，开口要过回报没？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "主体短句口语顺溜，但“说法不一”“学马虎”两处拗口需换词重断，封顶2分。",
+      "script_spans": [
+        "清晨送幼儿园，中午赶回做饭，晚上哄睡才歇",
+        "学者整理发现，带娃对祖辈健康影响说法不一",
+        "孩子看长辈默默干活没人认，可能学马虎"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "本分情分对比点题，比喻贴切不堆叠；'明给不如暗里分担''情分经不住透支'离开上下文仍可复述，未喧宾夺主。",
+      "script_spans": [
+        "他当是本分，老人当是情分，这就拧了。",
+        "明给不如暗里分担。亮出心意比亮出钞票更管用。",
+        "家庭不是公司，可情分也经不住老这么透支。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问串联各段，从冲突到证据到取舍层层递进，关键转折有承接，结尾问句自然回扣开头的女婿之问。",
+      "script_spans": [
+        "你可能会问，为啥他觉着不该给？",
+        "所以取舍在哪儿？明给不如暗里分担。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "两面观点均有呈现，健康影响等表述留足余地，无煽动对立、绝对化或不当承诺，审核风险低。",
+      "script_spans": [
+        "学者整理发现，带娃对祖辈健康影响说法不一。有的老人带得更充实，有的确实累出毛病",
+        "那不该给的理由呢？账算太清就伤亲情。直接发工资像雇人，一家人面子挂不住",
+        "家庭不是公司，可情分也经不住老这么透支"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4f98f99b29d24b38a36be94e1734637c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

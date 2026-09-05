@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-471526e3c7dd40fa80fa5a59da9acef0",
+  "run_id": "run-20260903T051600Z-cb81dfc50d11",
+  "trace_sha256": "661fb2386f03d99b75d1ce174a8ec534ba1faafa48cb4544408d52a27f55e5d1",
+  "created_at": "2026-09-03T14:07:50.716596Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛题、结尾回扣，正面回答是否更划算，兼顾稀缺现象与普通人存钱安排，人群与题设高度契合。",
+      "script_spans": [
+        "我的判断是，抢大额存单更多是被稀缺感带着走，它安全但绝不便宜，算总账未必比分散存中小银行更划算。",
+        "对普通人来说，资金超五十万就得拆几家银行保底数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 406，目标为 450，偏差率为 9.78%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中于抢存是否划算，利率对比、保本规则、流动性成本各自推进，数据与引用背景相符，无明显编造。",
+      "script_spans": [
+        "四大行五年期大额存单最高定价约百分之一点六，而约十家民营银行却在密集下架三年期、五年期定存。",
+        "存单属一般性存款，五十万内保本，但起购二十万，提前支取按活期算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛利率低却限售的反差，中段用锁钱本质与转让流动性难题逐层兑现钩子，结尾以排不排队之问自然收束。",
+      "script_spans": [
+        "明明利率只剩一点几，银行为什么还把大额存单藏起来卖？",
+        "抢存更像帮银行锁钱，不是捡漏",
+        "大额存单是安全垫，不是摇钱树"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和自问自答有对话感，但“流动性成本暗藏”“存款保险覆盖”等书面堆叠需临场换词，两处拗口封顶2分。",
+      "script_spans": [
+        "抢不到没必要焦虑，先问自己：这钱三五年确定不动吗？",
+        "虽新规允许转让，不等于随时有人接手，流动性成本暗藏。",
+        "先核对自己存款保险覆盖和用钱节奏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "帮银行锁钱、安全垫非摇钱树两处比喻贴切克制，离开正文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "抢存更像帮银行锁钱，不是捡漏",
+        "大额存单是安全垫，不是摇钱树"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先本质、再取舍、后建议，因果桥梁清楚，结尾安全垫不是摇钱树自然回扣开头判断，结构完整递进。",
+      "script_spans": [
+        "大额存单是安全垫，不是摇钱树。额度紧的时候，先核对自己存款保险覆盖和用钱节奏，再决定排不排队。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点用'未必''更像'限定，明示五十万保障与提前支取按活期边界，无承诺无夸大，提示到位。",
+      "script_spans": [
+        "算总账未必比分散存中小银行更划算",
+        "存单属一般性存款，五十万内保本，但起购二十万，提前支取按活期算",
+        "先核对自己存款保险覆盖和用钱节奏，再决定排不排队"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f68be168c710481b96b324395b2f6837",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-227c267500ee4f0385f2868c86e99d3c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

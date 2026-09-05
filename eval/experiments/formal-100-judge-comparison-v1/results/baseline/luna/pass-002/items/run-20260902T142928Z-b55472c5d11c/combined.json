@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-822cc73182d8412288dbbb921f8c6643",
+  "run_id": "run-20260902T142928Z-b55472c5d11c",
+  "trace_sha256": "43388645fad850cbfba498c53d9db57f2b2cd77f6fbf514bdcf0bd26f9eb279d",
+  "created_at": "2026-09-03T12:16:03.998973Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "覆盖扩围利好、个人负担与收入不稳痛点，并给出是否参保的判断方法。",
+      "script_spans": [
+        "回答你：扩围是好事，外地人也能就地参保了。",
+        "你不妨先算笔小账，看自己最淡的月份，能不能挤出这笔。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "政策、补贴、缴费方式和算账均有增量，但断保年限等关键说法过满，削弱信息可信度。",
+      "script_spans": [
+        "低收入者还能按一半基数交，养老金算法不打折。",
+        "另有补贴，最高报八成费，像美团试点给部分骑手补一半养老费。",
+        "断保过后年限重算，老了少份依靠。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出扩围与负担的冲突，中段持续给出减负、补贴和断保风险，结尾追问也由前文自然生长。",
+      "script_spans": [
+        "社保扩围放开户政，收入不稳者缴费仍吃力。",
+        "好在新规给了缓冲。",
+        "政策把门槛砍低了，可这每月续上的钱，你手头能稳住吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话式承接和具体例子，但错词、硬切和个别不顺表达拉低了朗读完成度。",
+      "script_spans": [
+        "好在新规给了缓冲。",
+        "社保扩围放开户政，收入不稳者缴费仍吃力。",
+        "调查显示，过半干灵活活儿的觉得费高、难连续交。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "有“今天买菜钱都得算计”的现实反差，也有“社保像存水”的行动比喻，记忆点自然。",
+      "script_spans": [
+        "他们不是不愁养老，是今天买菜钱都得算计。",
+        "社保像存水，别等漏光才补。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "痛点—政策—算账—建议的推进清楚，但“断保过后年限重算”因果失真，开头用词也有明显病句。",
+      "script_spans": [
+        "好在新规给了缓冲。",
+        "你不妨先算笔小账，看自己最淡的月份，能不能挤出这笔。",
+        "断保过后年限重算，老了少份依靠。",
+        "社保扩围放开户政，收入不稳者缴费仍吃力。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 1,
+      "reason": "将断缴说成“年限重算”，并暗示必须连续缴满十五年，容易误导观众作出错误参保判断。",
+      "script_spans": [
+        "断保过后年限重算，老了少份依靠。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 16.0,
+    "partial_weighted_average": 2.2857142857142856,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-22f81caa60534648babd4adf32b9afa0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

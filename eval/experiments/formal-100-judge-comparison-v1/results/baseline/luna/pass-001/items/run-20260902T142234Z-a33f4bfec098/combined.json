@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-d0dc0a9dec4c472091aade3135650eaa",
+  "run_id": "run-20260902T142234Z-a33f4bfec098",
+  "trace_sha256": "53e87d7f4a3f79c3aa17f2140ac36a67bf0038c685351b4604b1dd79ca2b3214",
+  "created_at": "2026-09-03T11:44:24.126603Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答公开姓名与催缴权利的冲突，覆盖欠费住户、物业和群成员，并给出处理建议。",
+      "script_spans": [
+        "邻里群晒欠费户名，催缴有理也越界侵权。",
+        "催缴可以上门贴条提醒，但群里广播又是另一回事"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 437，目标为 450，偏差率为 2.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕隐私边界展开，交代个人信息属性、合法事由、群聊风险和投诉留证路径，信息增量充足。",
+      "script_spans": [
+        "公开姓名本身就是处理个人信息。",
+        "处理别人信息得有合法事由。",
+        "群聊没人把关，发出去像泼出去的水，难收难控。",
+        "截好图留底，先找物业私下聊清楚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出侵权冲突，中段连续推进法律边界与应对路径，结尾由晒他推到晒我，互动自然。",
+      "script_spans": [
+        "邻里群晒欠费户名，催缴有理也越界侵权。",
+        "咱们小区群，今天晒他，明天会不会晒我？指尖一按，边界就清了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、问句和比喻让整体好读，但“群里挂名”和“走正规催缴函”两处搭配会卡。",
+      "script_spans": [
+        "你被点名，面子挂不住，对方就站得住吗？",
+        "你在群里挂名可能先踩了平台线。",
+        "物业自身该走正规催缴函"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“免责金牌”“泼出去的水”具体形象，结尾“指尖一按，边界就清了”有余味，修辞克制且便于复述。",
+      "script_spans": [
+        "催缴物业费不算免责金牌。",
+        "群聊没人把关，发出去像泼出去的水，难收难控。",
+        "咱们小区群，今天晒他，明天会不会晒我？指尖一按，边界就清了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，展开顺序清楚；但“危害公共安全”与隐私公开的因果未讲透，“两头都不靠”又把结论说得过满。",
+      "script_spans": [
+        "那关键在哪？处理别人信息得有合法事由。",
+        "催缴可以上门贴条提醒，但群里广播又是另一回事",
+        "民事欠费是钱的事，没到危害公共安全的地步，这算一条边界。",
+        "邻里群发名单，两头都不靠，理由再硬也白搭。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题明确、提醒克制，但把合法事由缩成同意或法律强制公开，并称“白搭”，法律表述过于绝对。",
+      "script_spans": [
+        "欠费该催，但做法得讲分寸，不能拿理由当借口。",
+        "邻里群发名单，两头都不靠，理由再硬也白搭。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b741981a309f4dcc87845b0db9ed44ec",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-2b774ce8ab8646b0b431f0e1c22d2924",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

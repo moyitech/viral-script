@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-aa8f71ac117e452f93ea107b662f8d00",
+  "run_id": "run-20260903T051535Z-74bf9eaef227",
+  "trace_sha256": "38790c6275bcbde16c96904eedfe89ff1bec6b8d02de10e90d4de4bb03cc93af",
+  "created_at": "2026-09-03T11:57:11.019308Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答小开发者能否生存，覆盖优惠档、美国外链与欧盟费用等关键路径。",
+      "script_spans": [
+        "核心判断很明确：小团队只要踩对门槛，生存空间就没消失，只是红利转移了阵地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 412，目标为 450，偏差率为 8.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦抽成变化与小开发者策略，优惠、区域差异和用户后果形成有效信息推进。",
+      "script_spans": [
+        "最强的保护是平台保留了小开发者优惠档，年流水不大的独立作者仍适用低佣金。",
+        "另一条路径里，美国因诉讼出现了外链零抽成的窗口，但悬而未决；欧盟则换上多层级费用，增长快的未必轻松。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反常识冲突明确，中段持续补充区域与费率差异，结尾用规则复杂度留下余味。",
+      "script_spans": [
+        "平台喊着收紧抽成，小开发者反而有了活路。",
+        "当你在欧盟看到更繁琐的跳转，或在美国碰到站外付费，那都是生存博弈的痕迹。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头短句有重音，整体能读通；但“扣点、分层、例外”等并列和长句，容易读得发紧。",
+      "script_spans": [
+        "平台喊着收紧抽成，小开发者反而有了活路。",
+        "过去那种统一按比例扣点的透明规则已经打破，如今抽成拆成了分层和例外。",
+        "另一条路径里，美国因诉讼出现了外链零抽成的窗口，但悬而未决；欧盟则换上多层级费用，增长快的未必轻松。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "反差、拟人和“吃掉红利”等表达克制有效，既帮助理解规则变化，也留下了可复述的判断。",
+      "script_spans": [
+        "小开发者反而有了活路。",
+        "规则复杂度本身就会吃掉部分红利。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、分区举例到结论主线清楚，但规则表述拗口，区域选择与红利损耗的因果桥仍偏弱。",
+      "script_spans": [
+        "所以小开发者还有空间，但只留给愿意研究规则的人。",
+        "过去那种统一按比例扣点的透明规则已经打破，如今抽成拆成了分层和例外。",
+        "要么守住小众赛道，要么赌区域漏洞，盲目扩张反而可能撞上高费率。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有“不确定性”提示，但“只留给”和“区域漏洞”带有绝对化、误导性归因，需收敛措辞。",
+      "script_spans": [
+        "但悬而未决",
+        "所以小开发者还有空间，但只留给愿意研究规则的人。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-7807790fe38745dda8f942bc1700a7ac",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d511f237ace3438bb933b7f61d58131c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

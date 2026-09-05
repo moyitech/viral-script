@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-8ed60715de454e9bac69e0b1c6957b2a",
+  "run_id": "run-20260903T051547Z-ff872623ba3e",
+  "trace_sha256": "7c445413c7299029851068cf5553f664d2d234887d0ecf877ec931c29b5f08cb",
+  "created_at": "2026-09-03T15:27:47.530437Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答设问，以补不补停放点为轴，正反案例覆盖秩序与出行两侧，骑行人群痛点准。",
+      "script_spans": [
+        "禁停范围扩大会不会伤及出行？关键看有没有同步留停放点",
+        "但有的地方热门地段只扩禁停不补车位，骑十分钟还车半小时"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "正反例、让步与实操建议层层推进，细节有据无编造，骑十分钟还车半小时扎实质感强。",
+      "script_spans": [
+        "有些城市试点在禁停区旁划就近还车区，用电子围栏技术引导车辆入栏结算",
+        "骑十分钟还车半小时，被迫缴高价调度费，这就实实在在伤了日常出行体验"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头问句直击出行利益点；中段正例转反例，以“骑十分钟还车半小时”兑现钩子；结尾金句由正文自然生长，有回味。",
+      "script_spans": [
+        "禁停范围扩大会不会伤及出行？",
+        "但有的地方热门地段只扩禁停不补车位，骑十分钟还车半小时",
+        "禁停不是目的，让车有处可去才是平衡之道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，问句开场、口语承接自然，骑十分钟还车半小时一句生动好念，无拗口断句。",
+      "script_spans": [
+        "骑十分钟还车半小时，被迫缴高价调度费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，“骑十分钟还车半小时”与结尾句自然贴切、可脱离语境复述，无炫技堆叠。",
+      "script_spans": [
+        "骑十分钟还车半小时",
+        "禁停不是目的，让车有处可去才是平衡之道。",
+        "只画禁区不补车位，那才真添乱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立判断标准再正反展开，让步后接建议不突兀，结尾回扣设问，因果桥完整可追问。",
+      "script_spans": [
+        "乱停乱放曾经堵住人行道是事实，整治有必要",
+        "禁停不是目的，让车有处可去才是平衡之道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反两面均交代，批评限定于“有的地方”且有据，建议具体实用，不夸大不煽动，导向安全。",
+      "script_spans": [
+        "乱停乱放曾经堵住人行道是事实，整治有必要",
+        "有的地方热门地段只扩禁停不补车位，骑十分钟还车半小时"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-31002a2f49744e6d8553891c4513cd44",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

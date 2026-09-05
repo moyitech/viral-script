@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-44ca6ac59470482c8ff328eb235fd377",
+  "run_id": "run-20260902T142747Z-6a2eb099835d",
+  "trace_sha256": "cb4675d2964c4af1e1e4c98d79a216327461dd949380648938bd7cf2e7c348c7",
+  "created_at": "2026-09-03T12:21:47.851268Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“提高效率还是变相压价”，同时覆盖企业动因、薪资风险与普通求职者的应对。",
+      "script_spans": [
+        "缩短招聘流程，既可能提效，也可能变相压价。",
+        "下次听到流程缩短，先问薪水怎么定，自己摸清市场价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "空岗成本、招聘周期、流程差异、薪资机制和应对建议逐层推进，信息具体且有可执行增量。",
+      "script_spans": [
+        "岗位空着，项目进度放缓，同事得顶班，天天都在烧钱。",
+        "原本能拉扯几轮的薪资，现在一锤定音。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻制造薪资反差，中段拆出两种“快”，结尾追问也由论述自然生长。",
+      "script_spans": [
+        "简历秒过却薪资被砍，企业说是效率",
+        "流程短了，钱谁说了算？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感、重音也清楚，但“自救提效”“薪酬商量”等搭配不够顺，朗读需临时调整。",
+      "script_spans": [
+        "关键在怎么砍。少安排几轮面试，你省奔波，这是真效率。",
+        "想缩短首先是为了自救提效，把耗掉的时间抢回来。",
+        "但另一种快，是把薪酬商量也压缩了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“简历秒过却薪资被砍”与“省下的天数”形成清晰记忆点，修辞克制且服务论证。",
+      "script_spans": [
+        "简历秒过却薪资被砍",
+        "省下的天数，就可能成了企业的压价空间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头定调，随后解释提效动因、拆分两种“快”，再给出应对，转折和结尾回扣自然。",
+      "script_spans": [
+        "关键在怎么砍。少安排几轮面试，你省奔波，这是真效率。",
+        "可到了谈钱，你少了缓冲，容易被一锤定音。",
+        "流程短了，钱谁说了算？你得多留个心眼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有敏感、歧视或危险内容，也保留了两种可能；但把流程变短直接串联到经理压低报价，推断较满。",
+      "script_spans": [
+        "缩短招聘流程，既可能提效，也可能变相压价。",
+        "审批链一短，用人经理随手写个低价，你还没讨价还价，录用通知就发了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a19475a0853c48b29c0f95d7666bec3d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

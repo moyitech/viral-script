@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-8ffd53f6d0de428bb2f82663e9460397",
+  "run_id": "run-20260902T142554Z-e66e54b63595",
+  "trace_sha256": "170c308b9c8caa965258f5f76cb826d571f0a1375f3b8aeb31c48d78ecd1003c",
+  "created_at": "2026-09-03T13:45:11.241669Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答价码藏起、跑腿吃亏，企业与求职者两侧动机都讲到，结尾回扣明示，切角贴求职痛点。",
+      "script_spans": [
+        "招聘写面议，求职者反感，因价码藏起，企业留余地，先跑腿的人吃亏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 465，目标为 450，偏差率为 3.33%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "研究、监管、时间账三路信息扎实有据；但赌一次、盲盒、路费三处同义复述，增量被摊薄。",
+      "script_spans": [
+        "有研究指出，薪酬过程不透明，比给钱少更伤公平感",
+        "面试像开盲盒，多跑几趟路费比工资差还亏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字即给出具体损失场景，中段从动机、研究、监管、机会成本多线推进，结尾提问由正文自然长出。",
+      "script_spans": [
+        "你点开薪资面议的岗位，聊完才发现月薪少两千，路费全白花",
+        "你刷十分钟能筛十个明薪岗，何必盯一个面议岗耗神？",
+        "下次见面议，你敢信他给得起价，还是先问清区间再动身？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "‘开盲盒’‘赌一次’等短句顺口有劲，但‘因价码藏起’‘抹平增益’电报式压缩，多处需换词重断。",
+      "script_spans": [
+        "你不是怕谈钱，是怕没底地谈，每面一家就赌一次。",
+        "面试像开盲盒，多跑几趟路费比工资差还亏。",
+        "因价码藏起，企业留余地",
+        "面试花销抹平了录用通知带来的增益"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "黑箱、盲盒类比贴切且助解，金句可脱离上下文复述，密度偏高但未压过真实观点。",
+      "script_spans": [
+        "面议像黑箱，你不知按啥定薪，自然觉得会被拿捏",
+        "面试像开盲盒，多跑几趟路费比工资差还亏",
+        "信任得靠明示补，不能靠腿磨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清晰，结尾回扣有力；但面试花销抹平录用增益因果夸大，系统定薪一词缺铺垫。",
+      "script_spans": [
+        "信任得靠明示补，不能靠腿磨",
+        "月底算账，面试花销抹平了录用通知带来的增益"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "引用研究用'有研究指出'限定，批评监管也留'不少岗位'余地，兼顾企业与求职者立场，无煽动夸大，审核安全。",
+      "script_spans": [
+        "有研究指出，薪酬过程不透明，比给钱少更伤公平感",
+        "企业想留砍价空间，怕亮底牌被同行比价，这没错，可求职者怕踩坑",
+        "监管部门曾要求平台信息明示到位，可不少岗位依旧写面议"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-12c81acef4db4e2895471030e7f072e0",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-32f84c003b744173adf8f110ca001c3f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

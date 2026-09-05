@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-6ffa86d6310c4f38a8969488c30a2bdc",
+  "run_id": "run-20260902T144346Z-2abc61ffd4fd",
+  "trace_sha256": "578c43f398b35077bcf42b245b0d0727c8fe7158a7bb762521c98dc6aa7fd919",
+  "created_at": "2026-09-03T14:27:17.688973Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答怎么办，医院效率与老人困境两侧兼顾，方法落到具体人群，切角准。",
+      "script_spans": [
+        "那老人咋拿报告？本人拿身份证，在院里自助机边刷一下，机器吐张纸出来。",
+        "下次陪爸妈去，你会先问护士有纸吗？还是默默递过自己手机？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题不散，政策依据、取报告路径、反例对策与取舍逐层推进，信息具体扎实。",
+      "script_spans": [
+        "国家发文要求传统服务与智能创新并行，不能把电子渠道当唯一通道。",
+        "万一身份证没带，报号人工核也行。",
+        "地方试刷脸关联报告，老人怕隐私漏不敢用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即立起老人漏看病情的冲突，中段政策、方法、反例层层推进，结尾两问由陪爸妈情节自然长出。",
+      "script_spans": [
+        "医院全面推行电子报告，不会用手机的老人直接漏看病情。",
+        "早些年取报告要排队盖章，现在手机秒收。可老人被卡在秒收外头。",
+        "下次陪爸妈去，你会先问护士有纸吗？还是默默递过自己手机？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音停顿清楚，对话式表达贯穿；仅政策转述句稍书面，朗读无需临时改词。",
+      "script_spans": [
+        "医生电脑里直接出单，不用跑打印房。",
+        "别怕开口，护士该帮。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "迷宫、留口子等比喻服务理解，电子是加法、也得留那张纸两处离文仍可复述，克制不炫技。",
+      "script_spans": [
+        "好多老人进医院像进迷宫。",
+        "医院再智能，也得留那张纸。",
+        "电子是加法，不是减法。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段段有功能，'但现实有反例''再看取舍'承接清楚，结尾回扣题设，因果完整。",
+      "script_spans": [
+        "但现实有反例。",
+        "所以说全面推行不等于全扔纸。电子是加法，不是减法。老人要的只是拿到自己那张。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以国家硬性要求为依据，多处用'有的''一般'限定范围，批评执行走样而非煽动对立，无夸大承诺与导向风险。",
+      "script_spans": [
+        "国家发文要求传统服务与智能创新并行，不能把电子渠道当唯一通道",
+        "这和保留传统方式的要求有出入，只是执行走了样",
+        "刷证机器一般在一楼大厅，找标识就行"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-01e553e4467041bcb372050636ed11ec",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-92e775ea661744d787385a2975ce02df",
+  "run_id": "run-20260902T144932Z-1a018d9287f8",
+  "trace_sha256": "991a3e5b10525ff3953153d9695582f69c76959812a3bcdfa070d710fa80edb6",
+  "created_at": "2026-09-03T14:28:18.371604Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答兼顾之问，安全与效率两侧、住户骑手双群均有落点，结尾回扣题设。",
+      "script_spans": [
+        "安全和效率真不是二选一",
+        "咱们点外卖图方便，物业管门为平安"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦门禁之争，丽园案例与平台算法逐层推进，并如实交代老社区短板，论据与引用相符。",
+      "script_spans": [
+        "像香港丽园，业主投票不让骑车进内。大门外专划停车处",
+        "美团建了进入难识别，覆盖四十万小区通行类型"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛'禁行却没更慢'的反差，中段根子、案例、平台措施层层兑现，结尾之问由正文自然生长。",
+      "script_spans": [
+        "小区不让骑手骑车进，送餐却没更慢。",
+        "下次见骑手在门禁外擦汗，咱们该想：门是挡麻烦，还是挡邻居？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句有对话感，但“进入难识别”“慢慢走合规”等压缩处需临时改口，止步2分。",
+      "script_spans": [
+        "但划块临时停靠区，他停好车走过来，饭送到也不迟。",
+        "老社区楼号乱，系统也懵，还得物业领一趟。",
+        "美团建了进入难识别，覆盖四十万小区通行类型。",
+        "骑手见门禁不慌，慢慢走合规。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'禁的是轮子和喧哗，不是送货人本身'贴切且离开上下文可复述，修辞点到为止，无堆砌炫技。",
+      "script_spans": [
+        "禁的是轮子和喧哗，不是送货人本身",
+        "门禁和热饭非得打架吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "段落功能与过渡清楚，根因到方案递进顺；但开头称没更慢，后文却晚两分钟、多等一分钟，口径打架，经不起追问。",
+      "script_spans": [
+        "先看矛盾根子",
+        "禁的是轮子和喧哗，不是送货人本身",
+        "送餐却没更慢",
+        "拿餐晚两分钟",
+        "说到底多等一分钟"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "立场平衡，禁的是轮子不是送货人边界清楚，不煽动不夸大，无误导风险。",
+      "script_spans": [
+        "咱们点外卖图方便，物业管门为平安，两头愿都不坏",
+        "禁的是轮子和喧哗，不是送货人本身",
+        "系统知哪难进，不硬扣超时钱"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4f227f8849f340288028f6d9a3782587",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

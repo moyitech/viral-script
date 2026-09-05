@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-8639567a2ce9472195ed1e25032f2af6",
+  "run_id": "run-20260903T051602Z-b6674e25b540",
+  "trace_sha256": "539d1954588b331e2074d6b96f3e367728cbf05526dd83c5a7726bfdfb2d3e58",
+  "created_at": "2026-09-03T11:58:09.637172Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答公共充电的风险边界与应对方式，覆盖普通用户、攻击原理和具体避险动作。",
+      "script_spans": [
+        "公共充电设备暗藏窃密风险，这话不假，但对你我普通用户来说",
+        "最稳的是用自己的充电头插墙插，千万别把陌生数据线接进公共USB口就行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 254，目标为 280，偏差率为 9.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕公共USB窃密风险，依次推进风险边界、攻击原理、案例稀缺性与避险建议，信息增量充足。",
+      "script_spans": [
+        "它基本停留在理论警告阶段，远不是出门随随便便就被偷数据的常态化威胁",
+        "USB线同时走电和信号，恶意充电口能伪装成可信外设",
+        "最稳的是用自己的充电头插墙插"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出窃密风险，中段用“零记录”反转，结尾落到具体防护，推进完整且不煽情。",
+      "script_spans": [
+        "公共充电设备暗藏窃密风险，这话不假",
+        "真正在野外发生的窃密实例至今保持零记录，无一例外",
+        "最稳的是用自己的充电头插墙插"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 1,
+      "reason": "多处长句、书面搭配和缺词造成卡嘴，整体需要重写，难称自然口播。",
+      "script_spans": [
+        "它基本停留在理论警告阶段，远不是出门随随便便就被偷数据的常态化威胁",
+        "真正在野外发生的窃密实例至今保持零记录，无一例外",
+        "真要到手机没电又没带宝"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“果汁劫持”和“自动扒通讯录照片”兼具辨识度与画面感，风险与现实边界也表达得克制清楚。",
+      "script_spans": [
+        "不少国家的执法和消费者保护机构都提醒过果汁劫持",
+        "趁手机连接自动扒通讯录照片",
+        "真正在野外发生的窃密实例至今保持零记录，无一例外"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "风险判断、原理解释和应对建议主线清楚，但长句密集，“这种提醒标牌”突然插入，结尾“没带宝”也显得卡顿。",
+      "script_spans": [
+        "原理不复杂：USB线同时走电和信号，恶意充电口能伪装成可信外设",
+        "这种提醒标牌常贴在机场候车区墙上。",
+        "真要到手机没电又没带宝"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体表述克制，也给出更安全的替代方案；但“零记录、无一例外”过于绝对，容易造成误导。",
+      "script_spans": [
+        "不必过度恐慌",
+        "最稳的是用自己的充电头插墙插",
+        "真正在野外发生的窃密实例至今保持零记录，无一例外"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ed857684a816486aa26a58d050951c7d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ed37cde29eb3489f80158325504cf713",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

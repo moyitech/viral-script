@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-53fc873a04374ba88874dfc324aba693",
+  "run_id": "run-20260903T051612Z-e20d166f7a22",
+  "trace_sha256": "085e21982f6765d59956053a8d9a30d39c65368b81b793e368b3f8dca08bf48c",
+  "created_at": "2026-09-03T14:08:06.543532Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即给出“能省但非一键到账”的双面回答，全程锁定已购房人群，商贷与公积金两侧均覆盖。",
+      "script_spans": [
+        "已购房家庭确实能省钱，但降息不是一键到账的福利"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 253，目标为 280，偏差率为 9.64%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "重定价规则、协商加点、自动调整与防骗提示各自推进，信息密度高且与事实相符，仅开头略复述。",
+      "script_spans": [
+        "商贷若浮动利率，利息按合同重定价日重算LPR",
+        "凡要钱代办降息的全是骗术，固定利率得先转浮动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头省钱加反转，二十字内有钩子；中段信息兑现尚可；但结尾连堆操作提醒后戛然而止，无余味无互动。",
+      "script_spans": [
+        "已购房家庭确实能省钱，但降息不是一键到账的福利",
+        "凡要钱代办降息的全是骗术，固定利率得先转浮动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与“月供直接少了”“全是骗术”见口语功底；但“商贷若浮动利率”“此前新老房贷利差扩大”如新闻稿，需换词才顺。",
+      "script_spans": [
+        "月供直接少了",
+        "调整不收费，公积金自动降，商贷手机银行就能申请，凡要钱代办降息的全是骗术",
+        "商贷若浮动利率，利息按合同重定价日重算LPR",
+        "此前新老房贷利差扩大，提前还贷曾明显增多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "一键到账、老房奴等表达贴切克制，服务理解；代办骗术一句离开正文仍可复述，记忆点自然不炫技。",
+      "script_spans": [
+        "降息不是一键到账的福利",
+        "凡要钱代办降息的全是骗术"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清晰可跟随，但提前还贷一句缺过渡嵌入，结尾多要点并置，固定利率转换收得突兀。",
+      "script_spans": [
+        "公积金贷款和重定价日在年初的商贷，2026年1月已自动调低",
+        "此前新老房贷利差扩大，提前还贷曾明显增多",
+        "凡要钱代办降息的全是骗术，固定利率得先转浮动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述客观、受益条件交代清楚，‘不是一键到账’'固定利率需转浮动’等边界明确，反诈提醒具有保护性，无夸大承诺或误导风险。",
+      "script_spans": [
+        "已购房家庭确实能省钱，但降息不是一键到账的福利",
+        "凡要钱代办降息的全是骗术，固定利率得先转浮动"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d21b48c776dd4201965ede97d6def2d2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-3683b83d75da4211bd48e7ddc3accd5c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-d2ea7afd61b34a0db5d0bd6d43c58e67",
+  "run_id": "run-20260903T051641Z-8df4f24ed20a",
+  "trace_sha256": "a881a24eb131fa03303a0822a0ddb93302f5fd3582b04aa177ee0851a96a82be",
+  "created_at": "2026-09-03T15:28:33.982106Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即追问录用通知，正文区分两类证书并回应持证优先现象，始终正面回答题设，人群痛点准。",
+      "script_spans": [
+        "这股全员考证热，真能兑换成录用通知吗？",
+        "先查查它属于哪一类，再想想你的目标岗位招聘简章里写没写必须持证"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策变动、准入与水平评价分类、人力资本研究层层推进，结尾落到可操作核查方法，信息增量足。",
+      "script_spans": [
+        "水平评价类技能人员职业资格已经分批退出国家目录，发证主体从政府转成了用人单位或社会机构",
+        "花几个月刷题，不如去攒一段对口实习，后者在面试里能聊的故事比证书厚得多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字以半夜打印与HR跳过证书形成反差，中段政策、分类、招聘逻辑层层推进，结尾建议加余味自然收束。",
+      "script_spans": [
+        "教室里的打印机半夜还在吐考证资料，可隔壁HR朋友跟我说",
+        "那是不是所有证都不用考了？当然不能一刀切",
+        "把时间花在错的地方，比没证更可惜"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句问答推进顺口，但“企业可认可不认”绕口、“人力资本”等书面词需临时换说法，止步2分。",
+      "script_spans": [
+        "这时候花几个月刷题，不如去攒一段对口实习",
+        "企业可认可不认"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "花纹与门、辅助装备与通关文牒等比喻服务论点且点到为止，敲门砖上的花纹离开原文仍可复述，无堆砌。",
+      "script_spans": [
+        "它最多算敲门砖上的花纹，不是门本身",
+        "证是辅助装备，不是通关文牒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以设问承接转折，两类证书概念前后一致，持证优先反例被正面化解，结尾回扣开篇之问。",
+      "script_spans": [
+        "那是不是所有证都不用考了？当然不能一刀切。",
+        "证书在个别岗位是加分项，但绝不是普遍门槛"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "区分准入类与水平评价类，提醒先查目录和招聘简章，边界清楚；无夸大承诺或煽动，导向安全。",
+      "script_spans": [
+        "那是不是所有证都不用考了？当然不能一刀切。",
+        "先查查它属于哪一类，再想想你的目标岗位招聘简章里写没写必须持证",
+        "证书在个别岗位是加分项，但绝不是普遍门槛"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8909a94181134063bd371aa629416bdb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

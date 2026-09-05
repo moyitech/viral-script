@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-c9a977738c8c4ed9bbe4c1988a8ef756",
+  "run_id": "run-20260902T144553Z-d895cc6def27",
+  "trace_sha256": "10c42a6aabce583f54899151b6c71e589841bc0302e770c36d8b40cf7a4691be",
+  "created_at": "2026-09-03T14:26:41.799431Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答'政策留例外、医生握否决权'，政策与执行两侧并重，患者视角贯穿，切角具体。",
+      "script_spans": [
+        "互认推得慢，咱们换院照样重复掏钱，为啥？政策留了例外，医生手握否决权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "案例、时间线、政策条文与归因层层推进，无注水重复，关键细节与公开报道吻合，观众能带走成因判断。",
+      "script_spans": [
+        "一周内同个肺部CT做两遍，影像几乎没差，钱却实打实付了两次",
+        "2024年七部门发文，说市域内互认项目要超200项，可文件也留了口子：病情变了、设备参数不同，就可以重查"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即立痛点冲突，中段案例与政策反转持续供新信息，结尾提问由跨院场景自然长出，三段各自成立。",
+      "script_spans": [
+        "换医院就得重做检查，刚花的钱又打水漂。",
+        "医生二话不说，又开单子做CT和血常规",
+        "下次跨院前，你会先把之前的片子打印好带着吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音停顿清楚，中段说理即对话式口语，照读即可成稿，无两处明显拗口。",
+      "script_spans": [
+        "医生二话不说，又开单子做CT和血常规。",
+        "所以互认清单列得再长，不如医生那支笔肯认旧结果。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "打水漂、留口子等口语比喻贴切，清单再长不如一支笔肯认可脱离上下文复述，修辞克制不喧宾。",
+      "script_spans": [
+        "互认清单列得再长，不如医生那支笔肯认旧结果",
+        "多请半天假，多受一份辐射，换回一模一样的结论",
+        "政策留了例外，医生手握否决权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进、案例佐证、机制拆解环环相扣，结尾'那支笔'回扣开篇否决权，因果桥完整。",
+      "script_spans": [
+        "为什么清单写了互认，却拦不住重做？",
+        "互认清单列得再长，不如医生那支笔肯认旧结果"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "案例与政策细节有据，无硬违规；但将医生动机概括为嫌麻烦、手握否决权，易加深医患对立，需补边界。",
+      "script_spans": [
+        "病情变了、设备参数不同，就可以重查",
+        "2024年七部门发文，说市域内互认项目要超200项",
+        "医生手握否决权",
+        "医生嫌调阅旧数据麻烦，顺手就开新检查"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-07a8266e3db44c83af8fe97301efe191",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

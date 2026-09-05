@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-b6125b136b1a48faa6cd0d79af72b966",
+  "run_id": "run-20260903T051600Z-98a8f16c3987",
+  "trace_sha256": "de8d15e905a65d95444c2f9f9b5cd656daf6d63dce24346c5852493fb114fb3c",
+  "created_at": "2026-09-03T12:32:42.075530Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否应统一，覆盖平台责任、用户举证与普通人应对，切角紧扣提醒后难索赔。",
+      "script_spans": [
+        "普通人要的不是一个全国统一定价，而是一条能证明自己吃亏的明路。",
+        "平台发提醒不是责任的终点，而是你留证据的起点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕提醒与赔偿落差，区分行政处罚和民事索赔，并提供截图留证等可执行信息。",
+      "script_spans": [
+        "行政罚归罚，民事赔偿是另一回事。",
+        "截图留证，盯住平台是否给了具体风险描述和补救建议。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“读过就算完”制造追问，中段推进到举证困境，结尾把提醒转成留证行动，余味自然。",
+      "script_spans": [
+        "你收到平台“数据泄露提醒”短信，读过就算完？",
+        "统一标准远水救不了近火，先把举证习惯养起来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头设问和结尾收束有口语感，但中段法律术语、被动句和信息堆叠较多，朗读不够利落。",
+      "script_spans": [
+        "真要索赔却连门都摸不着",
+        "现实里，泄露后平台被通报罚款常有，但直接赔用户无几。",
+        "个保法把用户和平台当作不平等主体来调整，平台本就该负更高安全保障义务。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“明路”“挡箭牌”“远水救不了近火”等表达服务论证，“提醒不是终点，而是证据起点”简洁好记。",
+      "script_spans": [
+        "而是一条能证明自己吃亏的明路。",
+        "统一标准远水救不了近火，先把举证习惯养起来。",
+        "平台发提醒不是责任的终点，而是你留证据的起点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，能从案例转到举证困境；但把“统一标准”直接缩成“统一赔额”，未说明应统一哪些规则，结论偏窄。",
+      "script_spans": [
+        "这说明行政罚归罚，民事赔偿是另一回事。",
+        "如果强行全国统一赔额，小泄露可能夸大、大泄露反而封顶，对真正被诈骗的人并不公平。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见明显违规，留证建议较稳；但将平台义务和索赔举证说得过于绝对，可能误导观众理解法律责任。",
+      "script_spans": [
+        "截图留证，盯住平台是否给了具体风险描述和补救建议。",
+        "平台本就该负更高安全保障义务",
+        "拿得出证据才有谈赔偿的资格"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-46a1f588466c4554b1c3b7ba121b7ae1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

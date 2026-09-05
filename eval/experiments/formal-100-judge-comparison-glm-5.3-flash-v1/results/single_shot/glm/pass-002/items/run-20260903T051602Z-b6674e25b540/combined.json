@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-ed01c4d47ebe48c6a2e9968303bd7239",
+  "run_id": "run-20260903T051602Z-b6674e25b540",
+  "trace_sha256": "539d1954588b331e2074d6b96f3e367728cbf05526dd83c5a7726bfdfb2d3e58",
+  "created_at": "2026-09-03T15:27:53.971727Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直答风险真伪并锁定普通用户，结尾落到自带充电头插墙插的具体做法，题设两侧均覆盖。",
+      "script_spans": [
+        "但对你我普通用户来说，它基本停留在理论警告阶段",
+        "真要到手机没电又没带宝，最稳的是用自己的充电头插墙插，千万别把陌生数据线接进公共USB口就行"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机构提醒、作案原理、零案例证据与实操建议层层推进，与引用相符，无编造且主题集中。",
+      "script_spans": [
+        "USB线同时走电和信号，恶意充电口能伪装成可信外设，趁手机连接自动扒通讯录照片",
+        "翻遍公开安全报告，真正在野外发生的窃密实例至今保持零记录"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字先认可再反转，钩子利落；“零记录”转折兑现悬念，结尾自然收在实用建议；仅标牌一句推进趋平。",
+      "script_spans": [
+        "公共充电设备暗藏窃密风险，这话不假，但对你我普通用户来说",
+        "真正在野外发生的窃密实例至今保持零记录，无一例外",
+        "千万别把陌生数据线接进公共USB口就行",
+        "这种提醒标牌常贴在机场候车区墙上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "结尾建议顺口有对话感，但“野外实例”“提醒标牌”两处需换词重断句，书面感压住朗读节奏。",
+      "script_spans": [
+        "真要到手机没电又没带宝，最稳的是用自己的充电头插墙插",
+        "真正在野外发生的窃密实例至今保持零记录，无一例外",
+        "这种提醒标牌常贴在机场候车区墙上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "原理讲得形象贴切，“扒”字生动；“零记录”反差与结尾叮嘱均可复述，克制不堆砌、不炫技。",
+      "script_spans": [
+        "USB线同时走电和信号，恶意充电口能伪装成可信外设，趁手机连接自动扒通讯录照片",
+        "千万别把陌生数据线接进公共USB口就行"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "从权威提醒到零案例的转折推进清楚，结尾可落地；但“这种提醒标牌”指代突兀，插在零案例之后衔接生硬。",
+      "script_spans": [
+        "不过从这类概念提出到现在十多年，翻遍公开安全报告，真正在野外发生的窃密实例至今保持零记录",
+        "这种提醒标牌常贴在机场候车区墙上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "风险表述带'基本''不必恐慌'等边界限定，建议稳妥务实，无煽动夸大与无依据承诺，导向安全。",
+      "script_spans": [
+        "它基本停留在理论警告阶段，远不是出门随随便便就被偷数据的常态化威胁，不必过度恐慌",
+        "最稳的是用自己的充电头插墙插，千万别把陌生数据线接进公共USB口就行"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2c057e6d1928400a81daee52b5c9c92f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

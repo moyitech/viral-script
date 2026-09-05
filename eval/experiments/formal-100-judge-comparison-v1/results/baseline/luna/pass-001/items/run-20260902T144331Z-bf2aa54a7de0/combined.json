@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-98f6d6fc8c4849509ccfc4cb2e0ac57c",
+  "run_id": "run-20260902T144331Z-bf2aa54a7de0",
+  "trace_sha256": "6f58f1759df9d72ca34619cc5318ba924e07bc70bf7ffab53657fce89c0ff680",
+  "created_at": "2026-09-03T11:44:50.108402Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答企业为何怕换系统，并覆盖迁移、停产、交付和试点应对。",
+      "script_spans": [
+        "国产工业软件加速替代，厂里却怕换系统，图啥？",
+        "真要换，先挑条不忙的边缘产线试水，跑顺了再扩"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 277，目标为 280，偏差率为 1.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕换系统风险展开，原因具体，且给出分阶段试点与留后路的办法。",
+      "script_spans": [
+        "换系统不是删了重装，你要把攒了多年的图纸、参数和老操作习惯，整个搬进新房子。",
+        "老软件贵但工人闭眼能操作。",
+        "真要换，先挑条不忙的边缘产线试水，跑顺了再扩，留着老系统备着别砸锅没退路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头冲突明确，中段不断补上停线、交付和试错代价，结尾追问也由正文自然生长。",
+      "script_spans": [
+        "国产工业软件加速替代，厂里却怕换系统，图啥？",
+        "真要换，先挑条不忙的边缘产线试水，跑顺了再扩"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句、画面感和对话感不错，但两处压缩搭配拗口，气口仍需人工重断，未达精心设计的自然。",
+      "script_spans": [
+        "直接说：怕停线怕交不了货。",
+        "新界面一变效率掉坑里，手感丢了订单就黄。",
+        "留着老系统备着别砸锅没退路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“搬进新房子”“肌肉记忆”把迁移难点说具体，表达有画面，也没有堆砌辞藻。",
+      "script_spans": [
+        "整个搬进新房子",
+        "老系统每个按钮都是肌肉记忆"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头先给结论，再递进说明迁移、停线和习惯成本，结尾的试点建议自然回扣全厂豪赌。",
+      "script_spans": [
+        "直接说：怕停线怕交不了货。",
+        "可工厂最怕试错，产线停一天违约单就来了，交货期拖客户就跑。",
+        "真要换，先挑条不忙的边缘产线试水，跑顺了再扩，留着老系统备着别砸锅没退路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，试点和保留旧系统的建议较稳妥；但部分后果表述过于绝对，容易放大替换风险。",
+      "script_spans": [
+        "先挑条不忙的边缘产线试水，跑顺了再扩",
+        "这些老参数错一个，废品就堆成山"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b52bccc10e3d425d99f1d9e8789ed022",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-8926220fa1bc493dbff56a867f52bf19",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

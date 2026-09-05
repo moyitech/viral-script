@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-040828f3b5b846938518b3149252aa46",
+  "run_id": "run-20260903T051602Z-f7a8fe205648",
+  "trace_sha256": "c81482f55d82e7ad6f0c6713f2c61a0c70dcec11153c354539984d07961b2aea",
+  "created_at": "2026-09-03T11:57:28.418136Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答隐藏与公开两侧，并落到家长、学生和教师的真实焦虑机制。",
+      "script_spans": [
+        "隐藏成绩排名更像一层创可贴，不是手术。",
+        "那反过来，把排名摊开就好吗？绝对不是。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 646，目标为 700，偏差率为 7.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕排名能否缓解焦虑层层推进，补出政策、比较转移、帮扶成本与人群差异。",
+      "script_spans": [
+        "排名只是焦虑的一个出口。",
+        "这类调查大多只能看出关联，证明不了隐藏排名直接让人放松"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“藏起来却更急着打听”制造反差，中段连续追问和转折，结尾落到具体孩子，推进完整。",
+      "script_spans": [
+        "学校把排名藏起来，家长却更急着打听名次",
+        "那反过来，把排名摊开就好吗？绝对不是。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体逻辑清楚、局部有对话感，但长串解释与“密不密封名次”拖慢节奏，尚未达到顺口自然。",
+      "script_spans": [
+        "为什么这么讲？排名只是焦虑的一个出口。",
+        "走廊里低声问“你考多少”成了新状态，比较从台面转到地下，压力没蒸发，只是换了容器。",
+        "大人若只盯着密不密封名次"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻集中但不过量，“创可贴”“换了容器”把缓解与转移说得具体，结尾也留下可复述的判断。",
+      "script_spans": [
+        "隐藏成绩排名更像一层创可贴，不是手术。",
+        "压力没蒸发，只是换了容器。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出判断，中段用反向追问和风险权衡展开，末尾回扣焦虑根源，衔接完整。",
+      "script_spans": [
+        "为什么这么讲？排名只是焦虑的一个出口。",
+        "所以别把隐藏排名当成焦虑的开关。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动、不作医疗或效果承诺，且主动区分相关与因果；但部分影响判断和责任归因过于绝对，需补充限定。",
+      "script_spans": [
+        "这类调查大多只能看出关联，证明不了隐藏排名直接让人放松",
+        "公开排队会让靠后的学生被直接钉上“差生”标签",
+        "想精准帮薄弱学生，只能靠平时作业和印象"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-468a9de3cdfe4b62bfd1ac7a21260160",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a95ce31dc9c247cab885ad7734706b5f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-c1c469409b1c45f382b7529e4ff36e59",
+  "run_id": "run-20260903T051531Z-216bf03fb8bc",
+  "trace_sha256": "489750eb158cd7e6e8739214efcc6964bf19bb64c3c9e146b793286e38e3f7dc",
+  "created_at": "2026-09-03T12:32:02.998423Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕视频通话能否证明身份展开，覆盖家庭群骗局、信任漏洞与核验方案，直接回应目标观众。",
+      "script_spans": [
+        "在深度伪造诈骗瞄准家庭群的当下，视频通话本身已经不能作为身份证明。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，伪造机制、检测局限和带外核验层层推进，既有解释也给出可执行的防范动作。",
+      "script_spans": [
+        "骗子用几秒录音就能克隆声音，AI换脸直播也能实时伪装",
+        "部分进阶检测会分析皮肤颜色因血流产生的微小变化",
+        "或挂断后用另一个渠道回拨核实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出亲属视频催转账的高风险场景；中段连续解释为何失效，结尾用暗号方案自然收束。",
+      "script_spans": [
+        "家庭群里突然弹出亲属视频通话，屏幕里是儿女慌张喊你转账救急，这画面还能信吗？",
+        "为什么视频通话防不住？",
+        "下次家庭群聊不妨先设个暗号，比盯着屏幕分辨真假脸更管用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和收束有对话感，但中段技术句偏长，‘带外确认方式’等书面表达影响连续朗读。",
+      "script_spans": [
+        "视频可以演，暗号不对就别转账。",
+        "多数通话软件没有内置活体血流检测，而平台侧的深伪检测工具多用在开户注册环节，实时聊天里很难拦截。",
+        "最实在的做法，是家庭和亲友提前约好一个带外确认方式，比如只有彼此知道的暗号，或挂断后用另一个渠道回拨核实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“靠眼睛把关比赌运气还差”和“视频可以演，暗号不对就别转账”形象、准确，既强化风险也方便复述。",
+      "script_spans": [
+        "靠眼睛把关比赌运气还差",
+        "视频可以演，暗号不对就别转账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问、机制解释、风险原因和应对方案依次展开，结尾回扣核心判断，整体结构完整顺畅。",
+      "script_spans": [
+        "为什么视频通话防不住？",
+        "普通人怎么办？别把通话画面当保险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "防诈方向稳妥，建议回拨核实并设置暗号；但“不能”“最容易”“才能挡住”等表述过于绝对，补充边界后更严谨。",
+      "script_spans": [
+        "挂断后用另一个渠道回拨核实",
+        "暗号尽量避开生日或常用数字",
+        "反而成了最容易被冒用入口",
+        "才能挡住冒用"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-895d9c8021584845b4b80d28da68a970",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

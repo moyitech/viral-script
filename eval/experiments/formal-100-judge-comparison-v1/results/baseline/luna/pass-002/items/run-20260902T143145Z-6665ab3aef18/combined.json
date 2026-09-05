@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-3d35744b7b9c45c8814d9b79917b8059",
+  "run_id": "run-20260902T143145Z-6665ab3aef18",
+  "trace_sha256": "1c5aacc344cd4b792ff2ceac8d2e50c811a543aa77cdd027800a333949d7c2e2",
+  "created_at": "2026-09-03T12:15:30.253108Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕中年人降薪转行，既讲转行动因，也交代收入压力和准备成本，正面回应值不值。",
+      "script_spans": [
+        "降薪转行值不值？中年未必亏但别冲。",
+        "所以动手前，先留足半年开销再迈步，别光看新行当新鲜就上头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，涵盖流动趋势、就业稳定、降薪压力和储备建议；但“值不值”缺少具体判断标准，个别推断也过度。",
+      "script_spans": [
+        "三十一岁以上熟手占流动大盘一半还多，三十岁出头到四十五岁是换岗主力",
+        "所以动手前，先留足半年开销再迈步",
+        "说明老本行其实挺稳，饭碗端得牢，很多人转行是求变不是逃命。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用降薪与中年风险制造悬念，中段以数据和现实成本推进，结尾提问也由前文自然生长。",
+      "script_spans": [
+        "降薪转行值不值？中年未必亏但别冲。",
+        "你说，用眼前工资换往后踏实，到底值不值？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数句子短促好读，停顿也清楚；但“流动大盘”和“去年就业盘点，你发现”读起来别扭，需重断句或改词。",
+      "script_spans": [
+        "新活儿若没干熟，收入断档，就得天天算着钱花",
+        "三十一岁以上熟手占流动大盘一半还多",
+        "去年就业盘点，你发现"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“饭碗端得牢”和“用眼前工资换往后踏实”具体形象，修辞克制，也留下了可复述的判断句。",
+      "script_spans": [
+        "饭碗端得牢",
+        "用眼前工资换往后踏实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "设问、数据、风险与结尾回扣完整；但低失业率推导本行稳定和主动转行，因果桥不足，结论也未给判断条件。",
+      "script_spans": [
+        "但降薪后手头立马变紧，新活儿若没干熟，收入断档，就得天天算着钱花。",
+        "说明老本行其实挺稳，饭碗端得牢，很多人转行是求变不是逃命。",
+        "你说，用眼前工资换往后踏实，到底值不值？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，且提示预留半年开销；但用低失业率推断转行动机与“转行潮升温”，范围和因果表述偏满。",
+      "script_spans": [
+        "所以动手前，先留足半年开销再迈步",
+        "转行潮真在升温",
+        "说明老本行其实挺稳，饭碗端得牢，很多人转行是求变不是逃命"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f5fec0417fdc46b4a06e08820de5268f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

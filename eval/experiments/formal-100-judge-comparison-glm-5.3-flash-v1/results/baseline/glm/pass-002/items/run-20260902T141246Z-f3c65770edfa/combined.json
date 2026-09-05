@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-5c956813693b40c78283807ed025d645",
+  "run_id": "run-20260902T141246Z-f3c65770edfa",
+  "trace_sha256": "45cb4775fa3650d51a3d57dc08f652ccfb1921cd70b15badc270ea52772d6f79",
+  "created_at": "2026-09-03T14:25:05.630003Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即给投资与追涨的判别标准，两侧都答，年轻人提问与工薪族方案对位，结尾回扣题设。",
+      "script_spans": [
+        "攒金这动作，平时是投资，金疯涨时你跟风买，就成了追涨",
+        "年轻人问，到底算投资还是追涨？先看你的攒法",
+        "你若是工薪族，想对抗通胀，设个定期计划就稳妥"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "攒法定性、平摊机制、工行提门槛、低点不停扣各成信息单元，层层推进，无复述注水。",
+      "script_spans": [
+        "金价高时少买克数，低时多买克数。长期这么摊，成本就平滑了",
+        "但今年1月，工行把新开户风险评级提到C3平衡型，得先测过风险承受力才让买"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛出攒金变追涨接盘的反差；中段以两条攒法兑现钩子，工行提门槛与央行买入接连给新信息；结尾提问由正文自然生长。",
+      "script_spans": [
+        "金价猛涨你月月攒金，可能正把投资做成追涨接盘。",
+        "但今年1月，工行把新开户风险评级提到C3平衡型，得先测过风险承受力才让买。",
+        "你攒它是为十年后心里有底，还是为今天怕错过热闹？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口与对话式表达突出，但“看涨得猛了”“金涨视频”两处需临时换词重断，最高只能评2分。",
+      "script_spans": [
+        "签好协议自动扣款，不用你天天盯盘",
+        "看涨得猛了手动申购",
+        "若刷到金涨视频才心动手痒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制服务理解，「金子不会问你理由」离开上下文仍可复述，对比具体不炫技。",
+      "script_spans": [
+        "金子还是那块金子，你的买入价却差出好几个点。金子不会问你理由。",
+        "金价高时少买克数，低时多买克数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "机制解释因果完整，停买失去平摊意义的桥接自洽，结尾以动机之问自然回扣开头与题设。",
+      "script_spans": [
+        "低点也别停，停了就失去平摊意义",
+        "你攒它是为十年后心里有底，还是为今天怕错过热闹？这答案比预测金价更管用",
+        "金子还是那块金子，你的买入价却差出好几个点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "多处留有'可能''若'等限定，主动提示风险评级与追涨风险，未作确定性收益承诺，边界清楚。",
+      "script_spans": [
+        "可能正把投资做成追涨接盘",
+        "得先测过风险承受力才让买",
+        "但咱们普通人别只盯着红柱看"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0ada9a763b5c44e0839a3a0b2c2d18df",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

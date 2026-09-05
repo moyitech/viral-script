@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-dbc6b8190bab491f88a088e86d0638ad",
+  "run_id": "run-20260903T051615Z-fa67905ccea5",
+  "trace_sha256": "d6c832ff38e69f724a3deadb468d3c2de01d92fbe76ee45f3ef58ecb9737285d",
+  "created_at": "2026-09-03T15:27:09.428428Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇设问、结尾直接作答，读者与创作者两侧及平台争议均覆盖，切角落在内容与流量之分，具体不泛化。",
+      "script_spans": [
+        "我的判断是：生成式搜索确实无偿用了全网文字，但说整站被搬走不准确",
+        "文字没被搬家，注意力却被虹吸"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机制、出版商观察与学术测算层层推进，引用可核验无编造，结尾落到可操作建议，信息增量扎实。",
+      "script_spans": [
+        "AI摘要会把多个页面的信息揉成一段，用户还没点链接就满足了",
+        "有出版商观察到某些查询的来访断崖式减少，学术测算也显示百科类页面被摘取后访问明显变薄"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段判断层层递进、结尾行动点自然；但前二十字只铺陈场景，'白嫖'这一冲突出现偏晚，即时钩子偏弱。",
+      "script_spans": [
+        "它更像在路口截流，而不是把店铺连根拔走",
+        "想不被淹没，就得让自家内容成为AI愿意引用的那一句",
+        "你搜完问题，答案直接显示在搜索框下面，那些辛苦写文章的网站"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句为主、比喻顺口，但“访问明显变薄”“小站生存更逼仄”等书面词朗读需临时换词，两处明显拗口封顶此档。",
+      "script_spans": [
+        "它更像在路口截流，而不是把店铺连根拔走",
+        "学术测算也显示百科类页面被摘取后访问明显变薄",
+        "小站生存更逼仄"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'路口截流'与'连根拔走'类比准确、助解不炫技；'文字没被搬家，注意力却被虹吸'离开上下文仍可复述。",
+      "script_spans": [
+        "它更像在路口截流，而不是把店铺连根拔走",
+        "文字没被搬家，注意力却被虹吸"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从“揉成一段”到点击被吃因果衔接清楚，结尾“文字没被搬家”回扣开篇之问，段段有功能，层层递进。",
+      "script_spans": [
+        "以为看了答案，其实只是看了拼接，原作语境被削平。这导致传统搜索结果的点击被大量吃掉",
+        "所以，文字没被搬家，注意力却被虹吸"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体立场平衡，主动纠偏夸大说法并呈现双方争议；但“确实无偿用了全网文字”把仍有法律争议的定性说得过满，宜加限定措辞。",
+      "script_spans": [
+        "说整站被搬走不准确，内容和流量其实是两件事",
+        "平台保留了出处链接，声称两者互补，争议就卡在这里",
+        "生成式搜索确实无偿用了全网文字"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-aaf052538903432b91485b00f37c32f2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

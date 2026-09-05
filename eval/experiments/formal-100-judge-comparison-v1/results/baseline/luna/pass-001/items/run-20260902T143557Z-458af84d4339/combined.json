@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-d3809d6f8d794a868203771378bf8467",
+  "run_id": "run-20260902T143557Z-458af84d4339",
+  "trace_sha256": "4a4f0b4e99759ca59e7dd15fc34fe67c17e4494a7990268a2c0925ed4ac3891b",
+  "created_at": "2026-09-03T11:49:47.593066Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答低价与会员费、囤货、退出规则的冲突，并落到普通消费者的判断上。",
+      "script_spans": [
+        "如果你一周只逛一次，省下的差价可能填不满会员费，反而贴钱。",
+        "所以别看排队进店热闹，先想自己消费频率。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 412，目标为 450，偏差率为 8.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“低价并非无门槛”持续推进，费用、退费限制、返利、大包装与信任风险信息层层增加。",
+      "script_spans": [
+        "山姆普通卡260，Costco年费299，这笔钱不买东西也得付，像买张门票。",
+        "大包装看着划算，可你得有地方囤，不然烂在角落更亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“260元办卡”对撞“未必便宜”，中段连续补充规则、返利和风险，结尾提问也由判断自然引出。",
+      "script_spans": [
+        "花260元办卡才能进山姆，可你买的东西未必真便宜。",
+        "你愿意为了账面低价，先交一笔不确定回本的钱吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感、短句也多，但中段把多条事实压在一起，朗读时需额外断句。",
+      "script_spans": [
+        "低价不是白给，先交钱再谈省，想随时走没那么自由。",
+        "山姆近六年门店翻倍到67家，刚因食品安全被约谈，极速达首日还有人吐槽配送慢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“像买张门票”“先交钱再谈省”等比喻和对照贴合主题，既帮助理解会员门槛，也留下了可复述的判断。",
+      "script_spans": [
+        "像买张门票",
+        "低价不是白给，先交钱再谈省"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构有钩子、机制和结论回扣，但“一周只逛一次”与结尾“一年逛不了几回”标准不一，后段信息转折也偏硬。",
+      "script_spans": [
+        "那商家为什么敢这么玩？他们用规则把你轻轻绑住。",
+        "如果你一周只逛一次，省下的差价可能填不满会员费，反而贴钱。",
+        "再说山姆近六年门店翻倍到67家，刚因食品安全被约谈，极速达首日还有人吐槽配送慢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明确违规，但“逼你再来”和“工薪族算不清”有绝对化、标签化风险，建议加限定。",
+      "script_spans": [
+        "省下的差价可能填不满会员费，反而贴钱。",
+        "钱回账户逼你再来",
+        "咱们工薪族算不清，容易被大包装忽悠"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-7ec0c2fed7654ec3b557593a748b89e4",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ab4488de6dba495ab276dd118306c7d1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

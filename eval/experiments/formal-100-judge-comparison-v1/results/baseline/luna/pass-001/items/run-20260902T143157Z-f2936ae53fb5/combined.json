@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-7afd21c1ead44126a2b8bbb44a97969f",
+  "run_id": "run-20260902T143157Z-f2936ae53fb5",
+  "trace_sha256": "8e99f377a5208902d8d765fc4aed4007cc82ca6eeb96ffd6da5c5586883d92c1",
+  "created_at": "2026-09-03T11:45:10.939985Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答海水升温与海鲜价格关系，既讲全国价格，也补充极端热浪下的局部涨价。",
+      "script_spans": [
+        "海水升温把近海养殖场折腾得够呛，可你菜场买的海鲜没涨价，去年还便宜些。",
+        "那要是碰上极端热浪年，局部网箱鱼翻肚皮，本地活鲜可能短暂跳价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 291，目标为 280，偏差率为 3.93%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "升温影响、产量与价格数据、全国与局部差异和购买建议层层补充，信息增量具体。",
+      "script_spans": [
+        "1960到2022年东中国海升温超1度，热浪频发让鱼虾死亡、赤潮暴发",
+        "海水养殖产量涨了约百分之五，市场上海水产品的均价反而跌了约百分之四。",
+        "买时瞅瞅产地，选深远海或冷冻品更稳当。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用海水升温与海鲜未涨价的反差抓人，中段靠数据、例外情境和建议推进，结尾余味自然。",
+      "script_spans": [
+        "海水升温把近海养殖场折腾得够呛，可你菜场买的海鲜没涨价",
+        "那要是碰上极端热浪年，局部网箱鱼翻肚皮，本地活鲜可能短暂跳价",
+        "海悄悄变暖，咱们碗里的海鲜靠全国调度兜着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "“老板没喊涨价吧”等句子有对话感，整体能读通；但两处统计解释信息密集，朗读时需重断句。",
+      "script_spans": [
+        "你逛市场时老板没喊涨价吧",
+        "一边是研究回头看，1960到2022年东中国海升温超1度，热浪频发让鱼虾死亡、赤潮暴发，养殖户确实受冲击。",
+        "另一边看去年全国统计，海水养殖产量涨了约百分之五，市场上海水产品的均价反而跌了约百分之四。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“悄悄变暖”“翻肚皮”“兜着”把抽象供需讲得有画面，末句有自然、可复述的记忆点。",
+      "script_spans": [
+        "局部网箱鱼翻肚皮，本地活鲜可能短暂跳价",
+        "海悄悄变暖，咱们碗里的海鲜靠全国调度兜着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "两组数据让主线清楚，但“供给稳住所以价格被压着”因果过简，难完全推出全国餐桌结论。",
+      "script_spans": [
+        "一边是研究回头看，1960到2022年东中国海升温超1度",
+        "整体供给大盘稳住了，价格就被压着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无明显违规，且提示了极端热浪的局部涨价；但“不会更贵”和“全国调度兜着”过度确定，易造成价格预期误导。",
+      "script_spans": [
+        "那要是碰上极端热浪年，局部网箱鱼翻肚皮，本地活鲜可能短暂跳价。",
+        "我直接说：眼下餐桌上海鲜不会更贵。",
+        "海悄悄变暖，咱们碗里的海鲜靠全国调度兜着。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2b7b9d50b78840a8b14a47c99463092f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-5980c60844bd4b8998cf6e50e1a1a650",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

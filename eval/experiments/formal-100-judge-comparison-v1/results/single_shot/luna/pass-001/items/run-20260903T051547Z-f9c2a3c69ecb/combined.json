@@ -1,0 +1,166 @@
+{
+  "evaluation_id": "combined-bb3ffd2045c0472696e7545695ca74e2",
+  "run_id": "run-20260903T051547Z-f9c2a3c69ecb",
+  "trace_sha256": "a3163fd37a0d5596aaaf3eb44f847a5301398ff724b00632fe4e83479324e152",
+  "created_at": "2026-09-03T11:58:43.558330Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答增收与交学费之问，覆盖广告套路、年轻人风险与应对方法，切入具体。",
+      "script_spans": [
+        "我的判断很直接：对绝大多数点开支付按钮的人，这第一笔账不是增收，是实打实交了学费。",
+        "别先算多久回本，先看对方敢不敢把课时周期、退费比例白纸黑字写进合同。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 786，目标为 700，偏差率为 12.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "信息单元丰富且有实操判断，但用投诉数据推断“绝大多数”先交学费，样本与结论范围不匹配。",
+      "script_spans": [
+        "别先算多久回本，先看对方敢不敢把课时周期、退费比例白纸黑字写进合同。",
+        "敢给真实试听、敢答细节的，才值得你用业余时间试探",
+        "对绝大多数点开支付按钮的人，这第一笔账不是增收，是实打实交了学费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“轻松变现”对撞退费困境，中段持续补充数据、机制与反例，结尾的边界提醒也自然落地。",
+      "script_spans": [
+        "刷到那些“下班后两小时，靠剪辑轻松变现”的短视频，你可能忍不住多看了几秒",
+        "规则在收，擦边的话术也在进化。",
+        "记住一条边界：凡是不能先让你低成本试错、不敢明示总成本的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，信息推进清楚；但中段长句、术语和不自然搭配较多，朗读需要重断句。",
+      "script_spans": [
+        "你可能忍不住多看了几秒，甚至已经开始幻想月底账户多一笔进账。",
+        "那如果你真的不想只当韭菜，取舍该怎么拿？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对照、比喻和反转都紧扣风险判断，付款截图、焦虑解决方案等表达具体，留下了可复述的警示句。",
+      "script_spans": [
+        "广告里的岁月静好，和投诉里的焦头烂额，中间只隔一张付款截图。",
+        "你以为在买机会，其实在买别人设计好的焦虑解决方案。",
+        "你交的那笔，就是它的利润，不是你的投资。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "段落层次清楚，转折与建议顺畅；但投诉风险不能直接推出“绝大多数”结论，结尾“凡是”也把风险判断写成绝对结论。",
+      "script_spans": [
+        "为什么敢这么说？看看最近的维权盘面。",
+        "那如果你真的不想只当韭菜，取舍该怎么拿？",
+        "凡是不能先让你低成本试错、不敢明示总成本的，别管海报写得多诱人，你交的那笔，就是它的利润，不是你的投资。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能提醒核验合同、警惕分期和拒绝承诺，但“绝大多数”“就能避开审核”等绝对化归因易误导。",
+      "script_spans": [
+        "当然，别一概而论说所有课都是骗局。",
+        "对绝大多数点开支付按钮的人，这第一笔账不是增收，是实打实交了学费。",
+        "加上AI生成标识，就能避开机器审核。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.7916666666666666,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.375,
+    "weighted_average": 2.375,
+    "normalized_score": 0.7916666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 786,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.12285714285714286
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-80cd153c43704142acdac92ca179d0a9",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-5cf3179f80e04715bf01ee3e1abd8f20",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

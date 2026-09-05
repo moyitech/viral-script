@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-2ebc31a761b844dd837abaa491460fb8",
+  "run_id": "run-20260902T145122Z-d39fc9acbdbb",
+  "trace_sha256": "463fb8c842b92d019db2771112ae9a6a85b3a240f8677f53b2cfa97a1015fccc",
+  "created_at": "2026-09-03T12:16:18.358692Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答多数与少数的冲突，兼顾高层需求和低层损失，直达普通住户痛点。",
+      "script_spans": [
+        "多数人的便利能硬挤他们让步吗？答案是否定的。",
+        "所以老楼加电梯算平衡账，不是票数账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕公平加梯持续推进，写出高层刚需、低层采光噪音贬值、补偿协商等多个有效信息单元。",
+      "script_spans": [
+        "没电梯真把行动不便老人困家里，装梯是实需。",
+        "低层屋里变暗，白天也得开灯，还有嗡嗡声。",
+        "先签白纸黑字补偿协议再开工最稳当。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出低层损失与多数压迫的冲突，中段层层补充影响、判例和协商路径，结尾用反差收住。",
+      "script_spans": [
+        "低层住户因装电梯房子贬值、采光变差、还怕噪音，多数人的便利能硬挤他们让步吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏利落、对话感较强，但“实需”“判获”等搭配生硬，仍有两处需要临时换词。",
+      "script_spans": [
+        "得面对面聊，给受影响邻居合理赔偿，矛盾才化得开",
+        "装梯是实需",
+        "判获数万元补偿",
+        "表决规则虽认可加装"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“平衡账，不是票数账”把核心矛盾说透，“电梯通了邻里情也断了”也形成自然余味，记忆点明确。",
+      "script_spans": [
+        "所以老楼加电梯算平衡账，不是票数账。",
+        "只讲便利不讲公道，电梯通了邻里情也断了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整、主线清楚，但把个案补偿概括成普遍规则，表决与法律边界也未交代，结论略有扩大。",
+      "script_spans": [
+        "答案是否定的。法律不讲谁人多谁有理。",
+        "所以老楼加电梯算平衡账，不是票数账。",
+        "等卖房时一楼二楼市价常掉一截，不好出手。法院审理时依公平原则，认低层受损，判获数万元补偿。",
+        "表决规则虽认可加装，但不能拿多数同意硬压少数户。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体导向克制且强调补偿，但“法律不讲谁人多谁有理”“不能拿多数同意硬压”表述过于绝对，可能误导具体法律适用。",
+      "script_spans": [
+        "得面对面聊，给受影响邻居合理赔偿",
+        "法律不讲谁人多谁有理",
+        "不能拿多数同意硬压少数户"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c17179b769564ddf99c2398fc97bf9cb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-044e8852320d4cfb8c973484859b7cc9",
+  "run_id": "run-20260902T144435Z-c30a80bfd481",
+  "trace_sha256": "132a322ddc97d90a51efca229b4d24d53329e08324512eaf11b164cf42a68ada",
+  "created_at": "2026-09-03T14:28:52.786656Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即亮出“短期更狠、长期未必”的双面判断，全文紧扣题设，尾段落到普通人捡漏与小店承压，人群命中精准。",
+      "script_spans": [
+        "我的判断：短期可能更狠，长期未必",
+        "对普通人影响直接。近期同款商品更便宜，你能捡漏省钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "退税机制、调研证据、渠道成本与消费提醒层层推进，信息单元少重复，观众能带走判断方法与实用提示。",
+      "script_spans": [
+        "财新调研过，这轮转内销撞上低需求加高竞争",
+        "研究出口退税发现，往年退税鼓励出海，厂子懒做内销"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头抛冲突并亮出预判，中段以证据与机制转折接力推进，结尾疑问由正文自然长出，三段皆不弱。",
+      "script_spans": [
+        "外贸转内销，低价混战会更狠还是更弱？我的判断：短期可能更狠，长期未必。",
+        "但咱们超大规模市场能吞吐，厂子慢慢建渠道就会错开价位。",
+        "到时你买东西，选便宜还是选合适，反倒费神。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口清楚、整体能读通，但挑物、打价两处需临场换词，决定顺滑度止步良好。",
+      "script_spans": [
+        "现在单子黄了，货堆在库里。海外客不要，只能国内找补，价能低就低。",
+        "挑物别光看便宜",
+        "为啥不能说永远打价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且贴题，喂饱生产线、甩货回血既助解又好记，结尾句离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "生产线总得喂饱",
+        "供给一下涌进，先甩货回血",
+        "选便宜还是选合适，反倒费神。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "四段功能分明，“先降价甩”与“慢慢错开价位”靠时间词化解张力，因果桥齐全，结尾以选择难题回扣开头。",
+      "script_spans": [
+        "你想，为啥不能说永远打价？关键在机制。",
+        "但咱们超大规模市场能吞吐，厂子慢慢建渠道就会错开价位"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点留有余地，如长期未必；消费提示附风险提醒，利弊两面兼顾，无夸大承诺与煽动，审核风险低。",
+      "script_spans": [
+        "我的判断：短期可能更狠，长期未必。",
+        "外贸尾单尺寸标准未必合国内习惯，挑物别光看便宜。",
+        "可小商家利润更薄，街边店更难熬"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7ba0dadc5a3f45d4aa5257dd8d67cfd7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

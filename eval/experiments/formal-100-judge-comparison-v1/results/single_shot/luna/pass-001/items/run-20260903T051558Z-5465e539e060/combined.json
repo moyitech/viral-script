@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-69e84f5a229c4269bbe333c1e0252bea",
+  "run_id": "run-20260903T051558Z-5465e539e060",
+  "trace_sha256": "d96c915aaaaeb1edf5c92465d446c11189acfef68d5980121d6da7dd3bbbe918",
+  "created_at": "2026-09-03T11:57:38.589447Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直指垫付边界，兼顾善意、受助者与诈骗风险，并给出核实和延迟转账的针对性做法。",
+      "script_spans": [
+        "别让好心垫付变成无形陷阱，帮陌生人出钱前必须先划清边界。",
+        "动手前先多途径核实对方与账单，启用可中断的延迟转账，让善意停在安全区。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 255，目标为 280，偏差率为 8.93%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中，法律责任、诈骗心理、线上风险和操作建议层层补充，既解释原因也提供可执行判断。",
+      "script_spans": [
+        "民法里的无因管理赋予垫付人必要费用与适当损失补偿请求权",
+        "诈骗者擅长用紧迫感突破心理防线",
+        "这类接触越来越多发生在脱离实名场景的线上空间，辨识难度加倍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出善意与陷阱的冲突，中段递进到法律、诈骗和线上场景，结尾给出可执行的安全动作。",
+      "script_spans": [
+        "别让好心垫付变成无形陷阱",
+        "动手前先多途径核实对方与账单，启用可中断的延迟转账，让善意停在安全区。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 1,
+      "reason": "核心法律与研究表述过密，长句连续堆叠，口播需频繁重断句，整体不像自然转述。",
+      "script_spans": [
+        "民法里的无因管理赋予垫付人必要费用与适当损失补偿请求权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“明确边界不是冷漠”和“让善意停在安全区”形成清晰、可复述的价值判断，修辞克制且服务主题。",
+      "script_spans": [
+        "明确边界不是冷漠，是让帮助可持续。",
+        "让善意停在安全区。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线由风险、法律、诈骗机制推进到建议，整体可跟随；但法律段压缩过度，‘受益人随时可抗辩’与‘事由虚假’的关系未讲清。",
+      "script_spans": [
+        "善意无错，但缺边界的垫付往往钱去难回还助长骗局。",
+        "动手前先多途径核实对方与账单，启用可中断的延迟转账，让善意停在安全区。",
+        "但需证明为避免他人损失的管理意思，受益人随时可抗辩，若事由虚假，出资恐自担。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提醒核实与延迟转账较稳妥，但“受益人随时可抗辩”“高信任者最容易”表述偏绝对，易造成法律与群体误解。",
+      "script_spans": [
+        "动手前先多途径核实对方与账单，启用可中断的延迟转账",
+        "受益人随时可抗辩",
+        "高信任者接到陌生人代缴请求时最容易掉进预设的坑"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-740f896d77ed44f6971170da44b3f0d4",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f616542c69234c3ca409d52cfee6009d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

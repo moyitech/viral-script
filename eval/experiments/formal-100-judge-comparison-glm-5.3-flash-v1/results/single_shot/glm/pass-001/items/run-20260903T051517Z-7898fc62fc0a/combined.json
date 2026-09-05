@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-1b963d6a89dd4c7c93e5a549f4b5091a",
+  "run_id": "run-20260903T051517Z-7898fc62fc0a",
+  "trace_sha256": "e7197d776a92899b35c7d1d7f258067015c2b8a33727f676908fd818c8a8e206",
+  "created_at": "2026-09-03T14:09:33.268536Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即亮判断，值与不值两侧各有落点，'落到普通人身上'锁定核心人群，全程紧扣题设。",
+      "script_spans": [
+        "中年重入行值不值，别盯着眼下降薪多少，要看你那身旧本事在新地里能不能继续生利息",
+        "落到普通人身上，行动前先画一张技能交集图"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 471，目标为 450，偏差率为 4.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "始终围绕'能力能否复利'，从现象、机制到交集图方法层层推进，数据有招聘报告佐证，无编造。",
+      "script_spans": [
+        "真正该问的是，你原来积累的行业认知、人脉和解决问题的手感，在新行当里算不算资产",
+        "行动前先画一张技能交集图。你现在的本事和目标岗位要求重叠如果过半，降薪入场值得赌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛共识与数据反差，中段以账面落差、复利机制、交集图层层推进，结尾金句自然收束，全程有追看动力。",
+      "script_spans": [
+        "大家觉得中年降薪换行是赔本买卖，可招聘数据里，三十多岁的职场人反而是跨岗流动最猛的群体",
+        "为什么有人降薪后两三年反而收入超车？关键在技能叠加的复利",
+        "原赛道真垮了，早点转比死扛便宜"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏和对话感不错，但“重叠如果过半”要重断句，“方法论”“长期满意度”抽象词连用拗口，最高只能2分。",
+      "script_spans": [
+        "如果这些清零，那确实亏；如果能平移，降薪只是过渡。",
+        "你现在的本事和目标岗位要求重叠如果过半"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "利息、复利等财务比喻一以贯之且服务理解，金句“转行不是薪水减法，是能力复利算法”脱离原文仍可复述，修辞克制不堆砌。",
+      "script_spans": [
+        "你那身旧本事在新地里能不能继续生利息",
+        "转行不是薪水减法，是能力复利算法"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问引出复利机制，因果桥清楚，取舍条件与结论边界一致，结尾减法换算法回扣开头。",
+      "script_spans": [
+        "为什么有人降薪后两三年反而收入超车？关键在技能叠加的复利。",
+        "转行不是薪水减法，是能力复利算法。原赛道真垮了，早点转比死扛便宜；只是厌烦了就降薪重来，大概率两头空"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反条件与止损提示齐备，明确劝阻冲动转行，未见绝对化承诺、标签化或煽动表述，导向安全。",
+      "script_spans": [
+        "如果这些清零，那确实亏；如果能平移，降薪只是过渡",
+        "你现在的本事和目标岗位要求重叠如果过半，降薪入场值得赌；要是几乎不沾边，不如在原行业侧翼学新东西",
+        "只是厌烦了就降薪重来，大概率两头空"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-a79c5a5f7a22420b9f4261246ee997f8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1d5dce4c94ec4b779a61a97d2ae02c2e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

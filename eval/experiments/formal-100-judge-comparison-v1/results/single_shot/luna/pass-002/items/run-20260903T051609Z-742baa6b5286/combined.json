@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-5c25d26266844905b83eb44a7629220b",
+  "run_id": "run-20260903T051609Z-742baa6b5286",
+  "trace_sha256": "f0c617279ec6a2b8d7537ea66d669a16e6b8769da41c556fd14250e9050c10df",
+  "created_at": "2026-09-03T12:32:17.580361Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面覆盖效率与隐私两端，并落到企业机制和普通员工应对，切角明确。",
+      "script_spans": [
+        "效率提升不必然等于隐私归零，关键在机制。",
+        "真正该防的，是那种不告知、拿全量私邮喂模型的企业。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，也提供微调隐私、脱敏和最小必要等信息，但训练研究与邮件筛查的适用边界未交代，关键结论仍有跳跃。",
+      "script_spans": [
+        "企业在邮件进模型前先跑脱敏，把姓名电话替换成占位符，AI依旧能抓违规投递。",
+        "有实证研究跟踪大模型微调，发现轻量省算力的训练方式，反而和专门加噪防记忆的方法一样能压低隐私泄露。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头“看不见的模型秒读”制造隐私悬念，中段给出机制与防线，结尾落到员工提问，推进完整。",
+      "script_spans": [
+        "你发出的每封邮件，可能正被一个看不见的模型秒读",
+        "效率红利和隐私保护并非跷跷板两头，而是可共生的选择"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和落点有对话感，主线也清楚；但技术解释连续堆叠抽象术语，部分句子朗读需重断。",
+      "script_spans": [
+        "但坦白讲，用大模型筛邮件，效率提升不必然等于隐私归零，关键在机制。",
+        "轻量省算力的训练方式，反而和专门加噪防记忆的方法一样能压低隐私泄露。",
+        "按合规惯例，处理员工数据本就该最小必要，这恰好和新技术对上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“交出家底”和“跷跷板两头”把抽象隐私权衡说具体，形象但未堆砌，具备复述价值。",
+      "script_spans": [
+        "别默认AI上岗就得交出家底",
+        "效率红利和隐私保护并非跷跷板两头，而是可共生的选择"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "有开头、技术展开和员工落地，主线可跟随；但脱敏、训练与筛查被串在一起，‘不会变成训练标本’的因果桥不足。",
+      "script_spans": [
+        "真正该防的，是那种不告知、拿全量私邮喂模型的企业。",
+        "你有权留意内部政策，主动问一句我的邮件怎么被用。",
+        "若公司只让模型看工作流并先脱敏，你吐槽老板的私信不会变成训练标本。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能指出脱敏、告知等风险边界，但“不会变成训练标本”和“快百倍”过于确定，仍有误导风险。",
+      "script_spans": [
+        "效率提升不必然等于隐私归零，关键在机制。",
+        "你吐槽老板的私信不会变成训练标本。",
+        "它比人工翻快百倍"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0c01a12927cc43c596c4f9a63b9fcbea",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

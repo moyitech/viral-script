@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-61458dc2c4b84912a8445fb46215177f",
+  "run_id": "run-20260903T051545Z-824fb54e1f76",
+  "trace_sha256": "5343bf6f9994882a35eae844a8f596a5d1ca7c202a342c8826f3b37523faa820",
+  "created_at": "2026-09-03T12:31:43.869082Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应普通人最关心的汇率侵蚀收益问题，覆盖换汇点差、币值方向和到手核算。",
+      "script_spans": [
+        "跨境理财这两年持续升温",
+        "自己按购汇价和可能结汇价算遍到手人民币"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "点差、人民币升值、跟风风险与到手收益核算形成有效推进，信息具体且结论可执行。",
+      "script_spans": [
+        "真实回报第一道坎就是银行换汇买卖点差",
+        "自己按购汇价和可能结汇价算遍到手人民币"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "主题进入很快，中段有两次风险推进，结尾有余味；但前20字仍先铺垫行情，钩子力度未达满分。",
+      "script_spans": [
+        "真实回报第一道坎就是银行换汇买卖点差，不是中间价",
+        "跨境理财这两年持续升温，但说句掏心窝的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，但两处长句叠加金融术语，朗读时需要重断句，整体未达自然顺滑。",
+      "script_spans": [
+        "但说句掏心窝的，汇率波动极可能把你辛苦赚的外币收益原封不动吞回去",
+        "你拿人民币购汇投境外产品，真实回报第一道坎就是银行换汇买卖点差，不是中间价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“给银行点差打工”形象、准确且便于复述，少量口语化比喻服务于风险提醒，没有堆砌。",
+      "script_spans": [
+        "不然给银行点差打工"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整且能回扣核算，但“渠道比过去多”过渡突兀，“决策链得自己理”表达生硬。",
+      "script_spans": [
+        "升值周期里汇兑损益直接抵消利息",
+        "现在个人跨境配置渠道比过去多，容易冲动跟风。",
+        "真实回报决策链得自己理"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能提醒换汇成本和汇兑风险，但“原封不动吞回去”等表述过度绝对，且市场判断缺少时间边界，容易造成误导。",
+      "script_spans": [
+        "自己按购汇价和可能结汇价算遍到手人民币",
+        "汇率波动极可能把你辛苦赚的外币收益原封不动吞回去",
+        "更关键的是近期人民币明显走强"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1c60a21ae3984bddbd7f09384015079e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

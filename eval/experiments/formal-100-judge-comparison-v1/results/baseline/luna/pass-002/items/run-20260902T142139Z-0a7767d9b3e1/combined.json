@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-c377f4d9971d4619bdbf52750c2697cd",
+  "run_id": "run-20260902T142139Z-0a7767d9b3e1",
+  "trace_sha256": "c19f9c1f734a54ad9238e4f99e4ee1b6a4210398213cdf0b0057c9c8db7a6e35",
+  "created_at": "2026-09-03T12:15:14.066872Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接命中消费者识别难题，覆盖数字人全天带货与真假辨别，并给出查看标识的具体行动。",
+      "script_spans": [
+        "想分清真假不能只靠脸，得看画面有没有挂AI标。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，既讲全天候优势与冒充风险，也给出持续标注和下单前核验，信息有明确增量。",
+      "script_spans": [
+        "标识要醒目持续提示，不能一闪而过。",
+        "记得瞄一眼角落里“AI生成”的小字"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用半夜秒杀却未必是真人制造悬念，中段给出辨别路径，结尾从风险自然落到提问。",
+      "script_spans": [
+        "半夜刷到主播喊秒杀，你猜他是真人吗？",
+        "想分清真假不能只靠脸，得看画面有没有挂AI标。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏利落、对话感足，但“醒目持续提示”“拿代码仿真人面孔”两处明显卡嘴，仍需改写。",
+      "script_spans": [
+        "想分清真假不能只靠脸，得看画面有没有挂AI标。",
+        "标识要醒目持续提示，不能一闪而过",
+        "有些商家拿代码仿真人面孔"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“永不打烊”“比真人能熬”具体易懂，“技术能仿人，透明得靠规矩”也形成了可复述的收束。",
+      "script_spans": [
+        "现在数字人全天带货，永不打烊直播间",
+        "数字人能二十四小时不停播，比真人能熬，确实像真人。",
+        "技术能仿人，透明得靠规矩。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "起承转合完整，识别方法能落到标识；但“拿代码仿真人面孔”拗口，“比真人能熬，确实像真人”因果跳跃，结尾因此不够严密。",
+      "script_spans": [
+        "但你下单前，别急着付款，记得瞄一眼角落里“AI生成”的小字",
+        "不标，有些商家拿代码仿真人面孔，忽悠你分不出",
+        "数字人能二十四小时不停播，比真人能熬，确实像真人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有明确的消费者提示和合规导向，但“标了你一眼认出”“只能凭标注”等表述过满，可能造成误判。",
+      "script_spans": [
+        "下单前，别急着付款，记得瞄一眼角落里“AI生成”的小字",
+        "标了，你一眼认出合成",
+        "只能凭标注避坑"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-144b13b11ea34d73be84c979ea16c653",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

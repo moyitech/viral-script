@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-7e1ed90b55c34b4ab602e3576784459a",
+  "run_id": "run-20260903T051537Z-1129140b80c9",
+  "trace_sha256": "c3ce59bd13463f6586cc70e0f0368e2f002947552e71b2c28007f02a6d00e286",
+  "created_at": "2026-09-03T14:09:56.346427Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛出污染疑问并给出明确判断，风险与规范两侧均覆盖，结尾回扣题设。",
+      "script_spans": [
+        "它们会不会变成新的污染源？我的判断是：只要规范回收跟上，光伏电依然算干净能源，不会留下烂摊子",
+        "如果图便宜找小作坊私自拆解，封装材料处理不当仍会漏出污染"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 262，目标为 280，偏差率为 6.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移，标准落地、回收价值、小作坊风险层层推进，与引用背景吻合，无编造。",
+      "script_spans": [
+        "新的废光伏设备回收污染控制技术规范已经落地，从拆卸到运输贮存都有了硬约束",
+        "这些退役板子含玻璃和金属，有回收价值，不是纯粹有害废物"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句'悄悄老了'即立反差与悬念，中段以规范落地、回收价值、小作坊风险层层兑现，结尾余味由正文长出。",
+      "script_spans": [
+        "屋顶上的太阳能板悄悄老了，拆下来的废板正越堆越多，处理不当就是隐患。",
+        "但提醒一句，如果图便宜找小作坊私自拆解，封装材料处理不当仍会漏出污染。",
+        "绿色能源绿不绿，不只看发电时零排放，更看退休后去哪儿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数短句上口，金句收束有力；但规范名一串名词难读，'不让其'需临时换词，两处拗口封顶2分。",
+      "script_spans": [
+        "绿色能源绿不绿，不只看发电时零排放，更看退休后去哪儿",
+        "有个事实得说清：这些退役板子含玻璃和金属，有回收价值",
+        "新的废光伏设备回收污染控制技术规范已经落地",
+        "回收方向明确要求留住玻璃、铝等大宗材料，不让其变成废渣"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "拟人'老了''退休'贯穿且服务理解，'绿不绿…退休后去哪儿'离开上下文仍可复述，全篇克制无堆砌。",
+      "script_spans": [
+        "屋顶上的太阳能板悄悄老了",
+        "绿色能源绿不绿，不只看发电时零排放，更看退休后去哪儿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立判断再摆依据，转折承接自然，结尾回扣开头与题设，各段功能清晰、闭环完整。",
+      "script_spans": [
+        "有个事实得说清：这些退役板子含玻璃和金属，有回收价值，不是纯粹有害废物。但提醒一句",
+        "绿色能源绿不绿，不只看发电时零排放，更看退休后去哪儿。把废板送进合规渠道，才算闭环"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论以“我的判断”和“只要规范回收跟上”限定，回收价值与污染风险两面并陈，无夸大承诺。",
+      "script_spans": [
+        "我的判断是：只要规范回收跟上，光伏电依然算干净能源",
+        "如果图便宜找小作坊私自拆解，封装材料处理不当仍会漏出污染"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d2cbc62d88ec4ed48c33a0899905ace3",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6a78404fefea40a6acef8df3dd8619e0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

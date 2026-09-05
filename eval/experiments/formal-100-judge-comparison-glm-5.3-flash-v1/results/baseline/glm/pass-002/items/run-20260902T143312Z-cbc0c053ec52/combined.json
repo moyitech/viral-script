@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-8f1c111d37714ff899586a8e12a638ae",
+  "run_id": "run-20260902T143312Z-cbc0c053ec52",
+  "trace_sha256": "db3e8aea77fa90cf6b312d4b92587a620c161315dc6088d13cf4171ac5555e15",
+  "created_at": "2026-09-03T14:25:59.280743Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛题设之问，正文直答法定归属，小事商量与大事拍板兼顾冲突两侧，人群定位准。",
+      "script_spans": [
+        "答案其实很直接：法定在父母，不在带人多的老人手里",
+        "报班选校这类大事得由爹妈拍板"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，法条依据、角色界定、大小事划分与收尾建议层层推进，信息增量具体扎实。",
+      "script_spans": [
+        "父母或者其他监护人是家庭教育责任主体",
+        "平时穿衣吃饭这些小事可商量，但报班选校这类大事得由爹妈拍板"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句点出'带娃却说了不算'的冲突，中段法条、边界、场景层层兑现，结尾建议自然生长有回味。",
+      "script_spans": [
+        "爷爷奶奶带娃却说了不算，孩子日常教育的这个决定权到底在谁手上？",
+        "平时穿衣吃饭这些小事可商量，但报班选校这类大事得由爹妈拍板",
+        "下次老人想改作业习惯，先问爸妈一句好，比闷头硬教更顺心"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句气口清楚、对话感强，但“带人多的老人”“先问爸妈一句好”两处需临时换词重断，故评2。",
+      "script_spans": [
+        "平时穿衣吃饭这些小事可商量，但报班选校这类大事得由爹妈拍板",
+        "不在带人多的老人手里",
+        "先问爸妈一句好"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'搭手帮忙不等于能替娃定方向'与'小事可商量、大事拍板'可复述，修辞克制且服务理解。",
+      "script_spans": [
+        "老人受委托照料孩子，只是搭个手帮个忙",
+        "但搭手帮忙不等于能替娃定方向",
+        "别为面子硬顶牛，最后乱的是娃的学习节奏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先问后答再落地，因果桥与转折到位，结尾以改作业场景回扣决定权归属，闭环完整。",
+      "script_spans": [
+        "所以两边观念杠上的时候，平时穿衣吃饭这些小事可商量",
+        "下次老人想改作业习惯，先问爸妈一句好，比闷头硬教更顺心"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "内容与家庭教育促进法相符，小事商量、大事父母定的边界清楚，结尾劝和不起冲突，无夸大或误导承诺。",
+      "script_spans": [
+        "平时穿衣吃饭这些小事可商量，但报班选校这类大事得由爹妈拍板",
+        "下次老人想改作业习惯，先问爸妈一句好，比闷头硬教更顺心"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-92585e1039824186950ac54d296b7222",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

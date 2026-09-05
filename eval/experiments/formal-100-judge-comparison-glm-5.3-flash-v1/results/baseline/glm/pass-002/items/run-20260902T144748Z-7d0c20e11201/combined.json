@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-ffe0232ff80f4c2e87a0acbe89dca2e5",
+  "run_id": "run-20260902T144748Z-7d0c20e11201",
+  "trace_sha256": "9063bf32509e457f8da577f68143b0de2f997a569d595f7dc90f848ee3b0e7e2",
+  "created_at": "2026-09-03T14:28:18.828579Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即直答不集体涨价，涨跌两侧展开，落到买车装屋顶的普通人，结尾回扣题设。",
+      "script_spans": [
+        "全球绿色产业不会集体涨价，光伏在跌，电池在涨，旱涝不均。",
+        "普通人买电动车，发现优惠少了成本硬挺。光伏板那边相反，多晶硅产能放出来，组件竞争狠，老百姓装屋顶反而省。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "管制边界、成本传导、加工格局、投资空档层层推进，各有实据支撑，比喻助解，无明显编造。",
+      "script_spans": [
+        "商务部公告写明白，主要管战略矿产两用物项，像部分稀土、石墨相关",
+        "成本像水管，源头紧下游涩，从矿场传到电池包。",
+        "矿石变材料像小麦磨粉做面包，精炼才能进工厂。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差钩子直给，中段电池涨光伏跌等转折持续兑现，结尾账单提问由正文自然长出，三段无短板。",
+      "script_spans": [
+        "出口卡了，绿色产品没集体涨价，有的真贵了。",
+        "但电池这条线又是另一番景象。",
+        "你买带电池的重一点，插电的轻一点，对吧？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与比喻节奏设计好，但“战略矿产两用物项”“联合采购储备”堆叠拗口，朗读需临时改词断句。",
+      "script_spans": [
+        "出口卡了，绿色产品没集体涨价，有的真贵了。",
+        "主要管战略矿产两用物项",
+        "G7想联合采购储备"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "水管与磨粉两个类比贴切助解，政策卡战略物项、市场分日常开销一句离开正文仍可复述，克制不油。",
+      "script_spans": [
+        "成本像水管，源头紧下游涩，从矿场传到电池包。",
+        "矿石变材料像小麦磨粉做面包，精炼才能进工厂。",
+        "政策卡的是战略物项，市场分的是日常开销。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "总起分述再收束，段段功能清楚，转折过渡明确，关键因果有桥梁，结尾自然回扣开头。",
+      "script_spans": [
+        "但电池这条线又是另一番景象。",
+        "这不是所有绿色产品都贵，而是关键材料紧平衡拖着部分价格走。你装太阳能划算，换储能电池得掂量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全篇限定到位：明说不是所有矿禁运、不是所有绿色产品都贵；购机建议也配了掂量的提醒，无煽动、夸大或误导承诺。",
+      "script_spans": [
+        "咱们不是所有矿都禁运",
+        "这不是所有绿色产品都贵，而是关键材料紧平衡拖着部分价格走",
+        "你装太阳能划算，换储能电池得掂量"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8a709c3250ba4b82b11ca0cb33152ff1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-d5edd031bb1240959d462489e62348e2",
+  "run_id": "run-20260902T141837Z-6acf29b9e170",
+  "trace_sha256": "3c5fba9e45e8582395c9c518863e6229c6b3dee494b15d5817e7645b7c8ad39c",
+  "created_at": "2026-09-03T14:25:14.873566Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直问为何亏钱并作答，中段拆解成因，结尾回扣低风险标签，题设两侧与普通观众均覆盖。",
+      "script_spans": [
+        "明明标着低风险，债基却亏了本金，为啥？低风险只是相对标签，不保本也不保收益。",
+        "下次见飘绿，先琢磨利率动没动，还是发债方出了篓子？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "市值法、利率与信用风险等单元层层推进，类比有增量；但结尾连发同义句并重复建议，信息被摊薄。",
+      "script_spans": [
+        "市场利率一抬头，旧债利息就显得少。就像旧手机遇新款降价，大家抛老债去买高息的，旧债价格掉，你份额净值缩水。",
+        "低风险字样是提醒稳，不是保票。低风险是监管边界，不是保险箱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句以低风险却亏本的反差设钩，中段用利率、信用、久期等新信息持续兑现，结尾提问由正文自然长出，三段均立住。",
+      "script_spans": [
+        "明明标着低风险，债基却亏了本金，为啥？",
+        "那绿了的净值到底怎么算出来的？",
+        "下次见飘绿，先琢磨利率动没动，还是发债方出了篓子？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口利落、手机比喻生动，但'遇利率涨浮亏''提醒稳'等压缩表达需临场换词，未达满分。",
+      "script_spans": [
+        "就像旧手机遇新款降价，大家抛老债去买高息的，旧债价格掉，你份额净值缩水。",
+        "若刚买就遇利率涨浮亏",
+        "低风险字样是提醒稳，不是保票"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "旧手机降价类比准确，把利率风险讲成了生活常识；监管边界不是保险箱、净值曲线会说话均可离开上下文复述，修辞克制不喧宾。",
+      "script_spans": [
+        "就像旧手机遇新款降价，大家抛老债去买高息的，旧债价格掉，你份额净值缩水。",
+        "低风险是监管边界，不是保险箱。",
+        "别看广告写稳健，净值曲线会说话。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "旧手机降价类比搭起利率与债价的因果桥，三段各司其职，结尾见飘绿自然回扣开头绿净值。",
+      "script_spans": [
+        "那绿了的净值到底怎么算出来的？",
+        "就像旧手机遇新款降价，大家抛老债去买高息的，旧债价格掉，你份额净值缩水。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体公允，明示不保本不保收益；但劝拿住等息补回的建议未排除信用违约情形，需补边界才稳妥。",
+      "script_spans": [
+        "低风险只是相对标签，不保本也不保收益",
+        "先别慌卖，拿一阵等息补回或许就平了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-828d574ce6de4e33b18434ac7c9d2188",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

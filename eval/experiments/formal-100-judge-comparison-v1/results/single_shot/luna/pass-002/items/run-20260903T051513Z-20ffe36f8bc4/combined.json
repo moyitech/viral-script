@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-50a254909bdc445f9651a285a0cc72e7",
+  "run_id": "run-20260903T051513Z-20ffe36f8bc4",
+  "trace_sha256": "fa51f2134193f6e2c7c26c90fd9932ea1104ea6efb65a5d7d5636bc6f18b9f21",
+  "created_at": "2026-09-03T12:32:48.406787Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答二选一命题，同时覆盖资源循环、质量风险和普通买家决策。",
+      "script_spans": [
+        "它确实是资源循环的真实路径，但盲区得靠规则而非侥幸来避开。",
+        "所以渠道就是防线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策底线、作坊风险、市场规模与购买建议层层补充，观众能获得可执行判断。",
+      "script_spans": [
+        "国家正在完善二手商品交易制度，明确再制造产品的性能与安全环保指标不得低于新品。",
+        "电池健康度自己能查，主板暗伤却难防，所以渠道就是防线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用价格、成色和主板风险制造反差，中段逐层推进，结尾从透明度自然收束并留下余味。",
+      "script_spans": [
+        "你花一半价钱拿到的“95新”手机，可能藏着拼装主板，也可能真让矿山少挖一层。",
+        "循环账里省下的钱和少掉的垃圾都是真的，只是这条链子，得亮出来才作数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏可读，开头和结尾有口播感，但中段多处政策术语与抽象判断，朗读需重断句。",
+      "script_spans": [
+        "买家图便宜，地球想减负",
+        "明确再制造产品的性能与安全环保指标不得低于新品",
+        "环保收益在，信息不对称也在，官方翻新和街边翻新的鸿沟就此拉开"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“循环账”和“链子得亮出来”把省钱、减废与信息透明串起，形象准确，克制且有复述价值。",
+      "script_spans": [
+        "循环账里省下的钱和少掉的垃圾都是真的，只是这条链子，得亮出来才作数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从政策到落地风险再到购买建议基本顺畅；但“再制造”与“翻新”边界未交代，质量结论略有跳跃。",
+      "script_spans": [
+        "这是硬底线。但落地时，许多小作坊只做外壳抛光、贴膜伪装，电池衰减和维修记录全无披露。",
+        "所以渠道就是防线。",
+        "明确再制造产品的性能与安全环保指标不得低于新品。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "整体表述克制，使用“可能”等限定，消费建议未作收益或安全承诺，平台与伦理风险较低。",
+      "script_spans": [
+        "盲区得靠规则而非侥幸来避开",
+        "尽量走品牌官翻或带质检的平台，别碰无凭证小店"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-40d50fcfefa849eaafdae2ebe958aafb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

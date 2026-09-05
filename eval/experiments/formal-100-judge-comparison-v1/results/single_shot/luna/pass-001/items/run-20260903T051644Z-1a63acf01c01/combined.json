@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-ddda4ef3b2bd4827abcc40ab970ad2b0",
+  "run_id": "run-20260903T051644Z-1a63acf01c01",
+  "trace_sha256": "f305ea3ddf6468c1556524ba17e8ffc0395478565b619899dc86d8296dc45ea8",
+  "created_at": "2026-09-03T11:58:25.598186Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应延长开放与夜游需求，兼顾照明、噪声、居民安全和生态保护，提出分时分区方案。",
+      "script_spans": [
+        "真正的平衡，是一地一策的“分时分区”",
+        "人走得到的核心步道和出入口保障安全照明和低噪活动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 721，目标为 700，偏差率为 3.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，依次提供需求动因、健康与生态影响、深圳案例及调光降噪建议，信息单元层层推进。",
+      "script_spans": [
+        "国内研究多盯着居民昼夜节律和睡眠质量，说明光和声不是小事",
+        "这种“该亮的地方亮，该暗的地方暗”，就是把生态边界和人的安全分开摆"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出亮暗冲突，中段持续推进取舍，结尾金句自然收束并留下余味。",
+      "script_spans": [
+        "灯太亮晃得邻近住户睡不着，灯太暗又怕踩空摔倒",
+        "一些公园在延长时段里加入活动，人气有了，周边的抱怨也跟着涨",
+        "公园的夜，留一盏懂分寸的灯，比留一片通明的亮更难得。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏有问答和转折，句子大多能顺读；但“触发影响”“临时聚焦照明”等搭配生硬，需换词并重断句。",
+      "script_spans": [
+        "这不是偷懒，恰恰是更费心思的管理。",
+        "具体多大强度会触发影响",
+        "临时聚焦照明和引导，平日傍晚则尽早调暗，给自然和居民退场"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照都服务于分区治理，既有“刻度得自己量”的判断，也有可复述的收尾金句。",
+      "script_spans": [
+        "因果链清楚，但刻度得自己量。",
+        "该亮的地方亮，该暗的地方暗",
+        "公园的夜，留一盏懂分寸的灯，比留一片通明的亮更难得。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头呈现冲突，随后解释难点、分析案例并落到管理措施，结尾以“分寸”自然回扣核心观点。",
+      "script_spans": [
+        "先看为什么这事棘手。",
+        "那管理上怎么取舍？",
+        "公园的夜，留一盏懂分寸的灯，比留一片通明的亮更难得。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "整体客观克制，主动说明影响阈值不能全国套用，未见煽动、歧视、危险建议或确定性承诺。",
+      "script_spans": [
+        "具体多大强度会触发影响，各家公园生境不同，还不能拿一个数值套遍全国。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-752b5a62ed544908a0c646478ca669e3",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-5df3b9ae3f8144c389abb5f4f1f46936",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

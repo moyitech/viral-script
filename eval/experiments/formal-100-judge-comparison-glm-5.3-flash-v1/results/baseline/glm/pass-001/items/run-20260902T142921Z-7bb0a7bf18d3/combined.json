@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-8e538826ba7846088ca0dc59041cf0a4",
+  "run_id": "run-20260902T142921Z-7bb0a7bf18d3",
+  "trace_sha256": "abecbfead23df37369368db2f8fa22672e0d00527e9617a33b8cdc38a6c0c119",
+  "created_at": "2026-09-03T13:45:38.488959Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直抛增收与交学费之问，正文给出明确判断并覆盖两侧，结尾避坑建议回扣年轻人痛点。",
+      "script_spans": [
+        "我直说：不少年轻人在交学费，少数肯实操的才真增收",
+        "你刷到副业课说下班挣外快，真增收还是交学费？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 457，目标为 450，偏差率为 1.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "平台新规、商业模式、消协数据、避坑方法层层推进，信息单元多且互证，无可辨编造。",
+      "script_spans": [
+        "数字技能培训借AI短视频带货虚假宣传，以先学后付分期缴费实质贷款诱导报名",
+        "真想增收，先用免费教程练半月，别信晒单截图，那能造假"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字抛出增收与交学费的反差追问；中段以审核收紧、先学后付变贷款、七千元涉诉层层递进；结尾余味由正文自然长出。",
+      "script_spans": [
+        "你刷到副业课说下班挣外快，真增收还是交学费？",
+        "广告越猛，越算账：学费交了，时间没了，剩啥？时间比学费贵，你细品。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾对话感足，但“数字技能培训借AI短视频带货虚假宣传”等通稿句拗口，朗读需临时改词重断句。",
+      "script_spans": [
+        "卖课的人主要靠课费赚钱，接单与否他未必上心。",
+        "你学不会，他换下一批。",
+        "数字技能培训借AI短视频带货虚假宣传，以先学后付分期缴费实质贷款诱导报名。",
+        "平台罚单虽多，难全覆盖，广告主投流往往为赚课费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“时间比学费贵”离开正文仍可复述；“话术更野”“他换下一批”等短句服务理解，修辞克制，无堆砌炫技。",
+      "script_spans": [
+        "时间比学费贵，你细品",
+        "你学不会，他换下一批"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问过渡、转折推进、数据佐证，结尾以时间账回扣交学费主题，四段功能清晰，因果链完整。",
+      "script_spans": [
+        "为啥广告满天飞却难回本？",
+        "时间比学费贵，你细品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以'不少''少数''往往'限定判断，建议均附条件，无夸大承诺与误导，引中消协报告佐证，导向安全。",
+      "script_spans": [
+        "我直说：不少年轻人在交学费，少数肯实操的才真增收。",
+        "对方避谈交付，别签字。",
+        "平台罚单虽多，难全覆盖，广告主投流往往为赚课费。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-94bdf578d8774674bd2ba0f147ee6a3b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ea95915e85e44452a4b6b899f3984ae8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

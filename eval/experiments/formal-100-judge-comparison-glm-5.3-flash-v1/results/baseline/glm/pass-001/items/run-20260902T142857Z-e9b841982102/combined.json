@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-357446a045a24c358a39c8553f29e696",
+  "run_id": "run-20260902T142857Z-e9b841982102",
+  "trace_sha256": "0b009a5ff3f32d1e3dbfab7267c33542680a9f49f64765ad21bcaf56c7358b14",
+  "created_at": "2026-09-03T13:44:54.900387Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即回答能否证明身份，家庭群冒充威胁与验证对策两侧全覆盖，人群精准。",
+      "script_spans": [
+        "单靠视频通话画面，已经证明不了身份，但加一步约定就能兜住",
+        "家庭群里喊妈要钱可能是AI换的脸"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 450，目标为 450，偏差率为 0.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从几秒仿声、血流检测到人眼判断近随机层层推进，落到暗语与回拨，无编造。",
+      "script_spans": [
+        "骗子拿几秒录音就能仿声换脸做段视频并不难",
+        "平台检测会盯皮肤血流微变，拆每帧找肤色抖动",
+        "人眼辨高仿视频的准头，研究说接近随机"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字即有反差与利益点，中段以“软件不查细节”“人眼近随机”持续转折，结尾问题从密语自然长出。",
+      "script_spans": [
+        "视频通话见脸≠真人，家庭群里喊妈要钱可能是AI换的脸",
+        "但咱日常通话软件自己不查这细节，只管传画面",
+        "你先想的是那张脸，还是只有你们懂的那句话？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏整体在线，但“实戚”系笔误、“≠”无法直读，“皮肤血流微变”堆叠拗口，两处以上需换词重断。",
+      "script_spans": [
+        "真急用钱先对暗号再动钱，钱出去前多停三秒",
+        "骗子专挑家庭群冒充实戚",
+        "平台检测会盯皮肤血流微变"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“视频通话只是管道”与“脸能复制，话只有你们知”皆可离文复述，修辞服务理解、点到为止，仅“实戚”系笔误。",
+      "script_spans": [
+        "视频通话只是管道，不验证那头是谁",
+        "假脸常静静的没这动静",
+        "脸能复制，话只有你们知"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以设问推进原因解释，因果桥完整，结论靠程序验证，结尾回扣开头与题设。",
+      "script_spans": [
+        "为啥眼见不再为实？",
+        "所以身份验证得靠程序控制，不能只靠眼睛",
+        "脸能复制，话只有你们知"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "反诈导向清晰，警示有度不渲染恐慌；对暗号、回拨存号等建议安全可行，'研究说''常'等限定词到位，审核与伦理均无风险。",
+      "script_spans": [
+        "单靠视频通话画面，已经证明不了身份，但加一步约定就能兜住",
+        "真急用钱先对暗号再动钱，钱出去前多停三秒"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-cddf5fd5a4a042a5a5fe431b0b347e30",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-7743e39eff374e1f880383dff495975f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

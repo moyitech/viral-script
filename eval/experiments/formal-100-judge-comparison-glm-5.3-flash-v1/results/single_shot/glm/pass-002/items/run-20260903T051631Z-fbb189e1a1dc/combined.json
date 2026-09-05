@@ -1,0 +1,143 @@
+{
+  "evaluation_id": "combined-3480519ed41b4bc0b139508110387503",
+  "run_id": "run-20260903T051631Z-fbb189e1a1dc",
+  "trace_sha256": "214c452ace3344b60369db91557a413fbaca4d79fbb7b7b315788697dc9bc8fd",
+  "created_at": "2026-09-03T15:32:44.096625Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即锁定35岁降薪人群，坑与风口两侧都答，结尾算术题自然回扣题设，切角具体。",
+      "script_spans": [
+        "值不值不看降了多少薪，只看你拿薪水换了什么",
+        "只有当旧技能被趋势吃掉，才是换道的好时机"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策培训、双路径、边界条件与心理账层层推进，数据有出处，观众能带走判断标准。",
+      "script_spans": [
+        "像去年补贴性职业技能培训就超千万人次",
+        "有人换的是AI叠加的新岗，薪资杠杆后面能翻倍数",
+        "31岁及以上成熟人才流动占比已经过半"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头降薪当实习生反差抓人，中段连环设问与数据转折持续兑现钩子，结尾算术题收束自然留余味。",
+      "script_spans": [
+        "你身边是不是也有35岁以上的朋友，突然舍得降薪去当实习生？",
+        "那降薪跳船，到底跳的是坑还是风口？",
+        "所以中年转行不是励志故事，是一道算术题"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "对话式短句撑起底子，但引用政策与研究数据处报告腔明显，需改写才上口。",
+      "script_spans": [
+        "薪水少一块，就得在别处找补回来。",
+        "可话说回来，真转了的人，现在日子过得咋样？",
+        "补贴性职业技能培训就超千万人次，说明国家也知道结构阵痛真实存在",
+        "组织行为学里长期追踪研究能看因果，但样本常常偏白领，不能推导所有中年人都适用同一条公式。",
+        "31岁及以上成熟人才流动占比已经过半"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "推到墙角、降薪跳船等比喻贴切不堆砌，算术题一句离开上下文仍可复述，无炫技感。",
+      "script_spans": [
+        "把只懂一条线的中年人推到墙角",
+        "中年转行不是励志故事，是一道算术题",
+        "人脉和资历清零，前两年大概率要低头做人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线可跟随、结尾回扣有力；但“反例”一段指代生硬，由流动占比直推护城河，桥接不足。",
+      "script_spans": [
+        "薪水少一块，就得在别处找补回来",
+        "所以中年转行不是励志故事，是一道算术题",
+        "这里有个反例要提醒：组织行为学里长期追踪研究能看因果",
+        "这说明现实里真有一批人靠技能叠加重塑了护城河"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "无违规表述，主动设边界：批驳降薪必逆袭、提示培训不等于保送与样本局限，不夸大不承诺。",
+      "script_spans": [
+        "但培训不等于保送，很多人还是主动选了降薪跳船。",
+        "所以别听人说什么“降薪必逆袭”。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c47de5341c3545b18c3ee5e1868e276d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

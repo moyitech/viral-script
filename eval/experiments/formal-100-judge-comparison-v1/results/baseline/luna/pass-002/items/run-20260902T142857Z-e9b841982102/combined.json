@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-269ddbe4d6da44b5957e6d88d278fd77",
+  "run_id": "run-20260902T142857Z-e9b841982102",
+  "trace_sha256": "0b009a5ff3f32d1e3dbfab7267c33542680a9f49f64765ad21bcaf56c7358b14",
+  "created_at": "2026-09-03T12:21:30.839655Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答视频通话能否证明身份，并覆盖家庭群风险与替代核验方案。",
+      "script_spans": [
+        "单靠视频通话画面，已经证明不了身份，但加一步约定就能兜住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "风险机制、检测局限、人工误判和家庭核验建议均有展开，信息推进具体。",
+      "script_spans": [
+        "人眼辨高仿视频的准头，研究说接近随机。",
+        "暗语别用生日这种易被挖到的，挑个怪一点的词。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“见脸≠真人”制造反差，中段持续解释风险并给出应对，结尾追问自然。",
+      "script_spans": [
+        "视频通话见脸≠真人，家庭群里喊妈要钱可能是AI换的脸。",
+        "真急用钱先对暗号再动钱，钱出去前多停三秒。",
+        "下次群里有视频晃过来，你先想的是那张脸，还是只有你们懂的那句话？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句较多，建议和反问有对话感；但中段两处句式打结，朗读时需要重断句，未达精心设计。",
+      "script_spans": [
+        "真急用钱先对暗号再动钱，钱出去前多停三秒",
+        "骗子拿几秒录音就能仿声换脸做段视频并不难",
+        "人眼辨高仿视频的准头，研究说接近随机"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“视频通话只是管道”和“脸能复制，话只有你们知”具体、好记，修辞服务防骗。",
+      "script_spans": [
+        "视频通话只是管道，不验证那头是谁。",
+        "脸能复制，话只有你们知。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体形成风险、原理、应对、回扣的链条，但检测原理重复，且“程序控制”与后文约定衔接略跳。",
+      "script_spans": [
+        "你家不妨定个口头密语，或挂掉用存过的号打回去。",
+        "你想想，系统能把视频一帧帧拆开找血流带来的微变，咱们盯着屏幕却根本分不出。",
+        "所以身份验证得靠程序控制，不能只靠眼睛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体反诈导向安全，回拨和暗号建议可操作；但“就能兜住”过于绝对，检测机制也应限定为部分工具。",
+      "script_spans": [
+        "挂掉用存过的号打回去",
+        "真急用钱先对暗号再动钱",
+        "加一步约定就能兜住",
+        "平台检测会盯皮肤血流微变"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f71b263892cf49b1952cb2142074f040",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

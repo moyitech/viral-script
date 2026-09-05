@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-eb7b898b5c874947ad241b05da93007b",
+  "run_id": "run-20260902T141323Z-35785d801e2b",
+  "trace_sha256": "24c3474f34c64faba654b1eb5f8eb78e793276d940c54d569477e26022118130",
+  "created_at": "2026-09-03T14:35:35.790037Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即对摆便利与门槛两侧，结尾正面回答题设，“我们享受指尖快”把普通观众纳入冲突。",
+      "script_spans": [
+        "这对熟手机的人是少跑腿，对另一群人成了新门槛",
+        "我们享受指尖快，是不是该留个人工窗口给慢半拍的人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "个案、政策依据、走偏原因、触网数据、落地漏洞依次推进，信息单元多且互证，无编造痕迹。",
+      "script_spans": [
+        "国家其实有要求，线下的门不能关，除特殊情形外事项应进政务中心办",
+        "上亿老人还没触网，农村更明显，独居的找谁代点？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即具体冲突，中段连环设问持续兑现新信息，结尾问句由门槛主题自然生长，余味足。",
+      "script_spans": [
+        "不会用智能手机的老人，跑大厅办社保却被拒，只因没线上约",
+        "你三秒提交，他连门朝哪开都不知道",
+        "当便利变成唯一选项，它就成了门槛"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，设问承接与“你三秒提交”式对比自然，轻重分明，全程朗读无需临时换词。",
+      "script_spans": [
+        "你三秒提交，他连门朝哪开都不知道。",
+        "一边省力一边设卡，现状就这么拧巴。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比与形象表达服务理解和情绪，结尾金句离开上下文仍可复述，修辞克制不堆砌。",
+      "script_spans": [
+        "你三秒提交，他连门朝哪开都不知道",
+        "当便利变成唯一选项，它就成了门槛"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "问答式推进顺畅、结尾回扣开头；但政务APP规范与号源只留线上之间缺因果桥，经不起追问。",
+      "script_spans": [
+        "大厅排队是少了，可办事的人没消失，只是被挡在屏幕外",
+        "规范政务APP本为防形式主义、给基层减负，初衷好，执行却变单通道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "引政策带'除特殊情形外'限定，归因用'有些地方'留余地，批评建设性，不煽动不夸大，审核风险低。",
+      "script_spans": [
+        "国家其实有要求，线下的门不能关，除特殊情形外事项应进政务中心办",
+        "有些地方图省事，把号源全推网上"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c05f37ba402f4e80a7528a5851b79de1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-37f51c4331bd477ca1ceaa82885adaa2",
+  "run_id": "run-20260903T051545Z-824fb54e1f76",
+  "trace_sha256": "5343bf6f9994882a35eae844a8f596a5d1ca7c202a342c8826f3b37523faa820",
+  "created_at": "2026-09-03T15:27:32.267929Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即正面回答“会不会吞”，点差与结汇两侧机制齐全，直指普通购汇人群痛点。",
+      "script_spans": [
+        "汇率波动极可能把你辛苦赚的外币收益原封不动吞回去，普通人别盲目乐观"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "点差成本、升值缩水、自算到手三单元递进，升值判断有外汇行情资料支撑，无编造。",
+      "script_spans": [
+        "真实回报第一道坎就是银行换汇买卖点差，不是中间价",
+        "自己按购汇价和可能结汇价算遍到手人民币"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛出汇率吞收益的冲突，中段以点差、结汇两道坎连续兑现，结尾'给银行点差打工'自然收出余味。",
+      "script_spans": [
+        "汇率波动极可能把你辛苦赚的外币收益原封不动吞回去",
+        "真实回报第一道坎就是银行换汇买卖点差，不是中间价",
+        "真实回报决策链得自己理，不然给银行点差打工"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有掏心窝、给点差打工等好口语，但刚性损耗、汇兑损益等术语连串，朗读需临时换词重断。",
+      "script_spans": [
+        "说句掏心窝的",
+        "不然给银行点差打工",
+        "一进一出刚性损耗掉一块皮",
+        "升值周期里汇兑损益直接抵消利息"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'吞回去''掉一块皮'把抽象汇兑成本具象化，点到为止；'给银行点差打工'离开正文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "一进一出刚性损耗掉一块皮",
+        "真实回报决策链得自己理，不然给银行点差打工"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "“更关键的是”递进清晰，结尾“给银行点差打工”回扣开头与点差论据，全篇闭合。",
+      "script_spans": [
+        "更关键的是近期人民币明显走强，等理财到期结汇时，外币变人民币往往缩水",
+        "真实回报决策链得自己理，不然给银行点差打工"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体是风险提醒，无诱导或承诺；但“极可能原封不动吞回去”“直接抵消利息”过于绝对，补边界限定后才稳妥。",
+      "script_spans": [
+        "别光看宣传的外币收益率，自己按购汇价和可能结汇价算遍到手人民币",
+        "汇率波动极可能把你辛苦赚的外币收益原封不动吞回去",
+        "升值周期里汇兑损益直接抵消利息"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e590442b76a94251bf9b95f1f025d315",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

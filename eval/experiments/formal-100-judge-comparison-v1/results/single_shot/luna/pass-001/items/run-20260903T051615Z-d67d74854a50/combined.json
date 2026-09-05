@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-c5086ca989c54a6db4672b3aa3719dde",
+  "run_id": "run-20260903T051615Z-d67d74854a50",
+  "trace_sha256": "21fcbb472c29100443aa0157a8cebc1494695ae971b2529d25d82bf60a7eccc5",
+  "created_at": "2026-09-03T12:03:47.895857Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从标准滞后到事故风险和监管改进，正面覆盖项目扩张、安全标准与普通人影响。",
+      "script_spans": [
+        "标准真兜得住吗？我的判断：框架刚搭起来，监管落地却慢了半拍。",
+        "这对普通人什么影响？火灾早不限偏远电站，户用、物流仓储都出过事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 418，目标为 450，偏差率为 7.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "事故、装机、标准性质和后评价导则等信息相互推进，既有数据也有判断，信息增量充足。",
+      "script_spans": [
+        "一季度新型储能装机同比就涨了76%，独立储能更是翻了两倍以上。",
+        "政策要求投运后做安全后评价，但评价导则仍在编制。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段的数据与标准分析推进扎实，结尾有余味；但前20字只有扩张比喻，安全反差到其后才出现，即时钩子略慢。",
+      "script_spans": [
+        "可今年全球已公开十多起电池起火爆炸。标准真兜得住吗？",
+        "为什么补不齐？标准从纸面到全链条管住，重心还在建设端。",
+        "储能电站像超大充电宝一样在身边遍地开花"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "设问和短句带来节奏，但中段有两处搭配生硬，朗读时仍需重断句或换词。",
+      "script_spans": [
+        "标准真兜得住吗？",
+        "标准从纸面到全链条管住，重心还在建设端。",
+        "安全冗余直接关系社区。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“超大充电宝”直观易懂，“监管落地却慢了半拍”“家门口的未知数”兼顾情绪与判断，修辞克制不堆砌。",
+      "script_spans": [
+        "像超大充电宝一样",
+        "监管落地却慢了半拍",
+        "风险不是远方新闻，而是家门口的未知数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问立判断，中段按成因与影响展开，结尾回扣安全标准，因果和转折基本顺畅。",
+      "script_spans": [
+        "为什么补不齐？标准从纸面到全链条管住，重心还在建设端。",
+        "风险不是远方新闻，而是家门口的未知数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无煽动、危险建议或确定性承诺，但“遍地开花”“慢了半拍”等泛化和“家门口的未知数”偏煽情，建议补充范围与依据。",
+      "script_spans": [
+        "标准不是护身符。",
+        "盲目上马不如稳妥迭代",
+        "监管落地却慢了半拍。",
+        "风险不是远方新闻，而是家门口的未知数。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2064abf9776c44f4a102486c7df778f2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e89b2ebc4e414de0913585f8f1fad335",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

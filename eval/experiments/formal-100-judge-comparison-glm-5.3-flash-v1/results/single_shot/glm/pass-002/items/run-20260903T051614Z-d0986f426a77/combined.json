@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-d07398c7cc8447539139709cdd181a65",
+  "run_id": "run-20260903T051614Z-d0986f426a77",
+  "trace_sha256": "b1ef9b84d316806fc8a9f0a24ef4040db0e367f3284ecf75e08fb84da9dd5179",
+  "created_at": "2026-09-03T15:31:10.342137Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答'怕是很难'，短期刺激与长久信心两侧兼顾，'手头紧别借钱'的建议贴合普通观众痛点。",
+      "script_spans": [
+        "确实能让你我当下多掏钱买买买，但想靠它长出长久信心，怕是很难",
+        "如果手头紧，千万别借钱凑热闹"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "撬动倍数、人群拆解、透支隐忧、扩围新品层层推进，与引用研究相符，无编造迹象，增量具体。",
+      "script_spans": [
+        "每发1元数字消费券，能撬动3块多消费，可那些花得最猛的，往往是本来就要买、补贴等同现金的人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "补贴让你我多掏钱，却难长出信心，开篇反差立住；中段撬动倍数、透支刚需连续转折；结尾金句自然收束。",
+      "script_spans": [
+        "消费补贴频频加码，确实能让你我当下多掏钱买买买，但想靠它长出长久信心，怕是很难。",
+        "可那些花得最猛的，往往是本来就要买、补贴等同现金的人，并非真对未来松了绑。",
+        "记住，短期烟火气不等于长期底气，补贴退场后，稳定的收入和预期才是信心真正的底。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，自问自答与“所以啊”等承接自然，停顿重音清楚，通篇无需临时改词。",
+      "script_spans": [
+        "热闹归热闹，补贴停了会不会接着花，得看钱包鼓不鼓"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“短期烟火气不等于长期底气”离开上下文仍可复述；“透支刚需”“钱包鼓不鼓”形象克制，服务观点不炫技。",
+      "script_spans": [
+        "短期烟火气不等于长期底气",
+        "补贴停了会不会接着花，得看钱包鼓不鼓",
+        "却也可能透支后面月份的刚需"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问引出算账，'另一面'转折补充，'所以啊'收束建议，结尾回扣开头与题设，关键因果桥完整。",
+      "script_spans": [
+        "这账其实不难算。为什么这么说？",
+        "短期烟火气不等于长期底气，补贴退场后，稳定的收入和预期才是信心真正的底"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论留余地，判断均有出处；建议附不借钱、不硬挤支出的边界，无夸大诱导或煽动风险。",
+      "script_spans": [
+        "趁补贴换掉老旧家电是实在优惠，但别为了凑单硬挤支出",
+        "如果手头紧，千万别借钱凑热闹",
+        "却也可能透支后面月份的刚需"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a97f2848b30c43a8bd779644fff655b9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-2548b1bbfa4e43039ed03c0783185118",
+  "run_id": "run-20260902T141440Z-f6d43e768d2a",
+  "trace_sha256": "35e9a00818510dedbc3be0e813686246e452baecc566db30fbb96e2b1d8b42de",
+  "created_at": "2026-09-03T11:44:48.054101Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直面“会不会接盘”，同时解释拥挤风险、红利底层收益和普通人的规避方法，题设两侧均有回应。",
+      "script_spans": [
+        "这事儿真可能，但拥挤不代表必亏，看你怎么买。",
+        "普通人怎么避坑？别看朋友圈全晒红利就跟着梭。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 439，目标为 450，偏差率为 2.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "定义、机制、监管边界和操作建议层层推进，既解释风险为何发生，也给出分散、分批买入等可执行判断。",
+      "script_spans": [
+        "等风向一变，所有人想卖，市场接不住这么密的抛压。",
+        "把钱分几份，慢慢买。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出高位接盘冲突，中段用机制和取舍持续推进，结尾由风险判断自然落到耐心追问。",
+      "script_spans": [
+        "你买红利求稳，却高位接盘了？",
+        "大资金同向扎堆，买入时不费力。等风向一变，所有人想卖，市场接不住这么密的抛压。",
+        "当大家都挤进来躲风险，躲风险的地方反而最危险。你拿分红的耐心够吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、设问和比喻有助于起势，但“同向挤进高股息”等句子朗读时仍需重断句。",
+      "script_spans": [
+        "关键机制在哪？想象一座窄桥，上千人同时往前涌。",
+        "红利交易拥挤，指太多钱同向挤进高股息。",
+        "这种拥挤内生风险，不靠业绩爆雷也会发作。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "窄桥和安全垫比喻帮助解释拥挤风险，“赚股息不是赚差价”准确好记，整体克制不油腻。",
+      "script_spans": [
+        "其实人挤人时，安全垫也被踩薄了。",
+        "想象一座窄桥，上千人同时往前涌。",
+        "你赚的是每年那点股息，不是拥挤里的差价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按定义、机制、辨析、建议推进，但监管段转入突兀，“拿不住才真亏”把持有与不亏混为一谈。",
+      "script_spans": [
+        "关键机制在哪？想象一座窄桥，上千人同时往前涌。",
+        "那监管没看见吗？最近新规管住过度抱团，基金讲清风格偏离。",
+        "拿不住才真亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明确违规，且承认拥挤不必然亏；但分红补损和持有逻辑表述过满，弱化了本金风险。",
+      "script_spans": [
+        "拥挤不代表必亏，看你怎么买",
+        "底下有真金白银分红打底",
+        "分红能补点本。拿不住才真亏"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b4d48abeed984669bb079918e7e6551e",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-33dfdf2aa0e74875abf8ed939c45ee52",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

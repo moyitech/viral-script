@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-6d2fc4e6beae4ebbb3de4bf1d93dd193",
+  "run_id": "run-20260902T143107Z-cfecc227a0fe",
+  "trace_sha256": "12224ec194975d483319d0175b7741ce5d457526fdf7bd1fd41ffc12b9e3dc0f",
+  "created_at": "2026-09-03T12:15:44.020272Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直指收入不稳者的缴费困境，后文同时展开扩围政策、缴费负担与断保风险，回答完整。",
+      "script_spans": [
+        "缴社保还是留饭钱？收入不稳的人卡在这了。能交，但真交不起的也一大把。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“政策能否转化为可负担”层层给出成本、降费、补贴、断保与手续信息，结论有增量。",
+      "script_spans": [
+        "养老费率从两成往下调，广东原二十现十八，有的地方阶段降到十六。",
+        "但门虽开，认资格跑手续得用心，补贴先缴后返，手头现金得先垫上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“缴社保还是留饭钱”直击冲突，中段层层推进，结尾追问也从现实困境自然长出。",
+      "script_spans": [
+        "缴社保还是留饭钱？收入不稳的人卡在这了。",
+        "当饭碗本身晃着，社保这道网，该先织给谁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感、短句和明确停顿，但中段信息压缩偏狠，个别句子需要重断句或换词。",
+      "script_spans": [
+        "那为啥还有人断断续续？收入像潮水，这月有余下月空。",
+        "职业伤害险更是平台掏钱，从二二年试出资十五亿，六百万骑手已盖上。",
+        "政策白纸黑字，落到街道才有细则，你不问缝就关着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“独木桥上挑两筐”“收入像潮水”把负担与波动说具体，结尾“社保这道网”留下了可复述的意象。",
+      "script_spans": [
+        "送餐网约车个体户都算灵活就业，可没雇主分担，就像独木桥上挑两筐。",
+        "收入像潮水，这月有余下月空。",
+        "当饭碗本身晃着，社保这道网，该先织给谁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线按“困境—新政—障碍—结论”推进，转折清楚；但“银行不再代扣”未限定地区，政策边界不够严密。",
+      "script_spans": [
+        "那为啥还有人断断续续？收入像潮水，这月有余下月空。",
+        "新规让按月季年灵活交，但银行不再代扣，得自个记着缴。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，但将部分地区或附条件政策概括为全国统一，易让观众误解适用范围。",
+      "script_spans": [
+        "但门虽开，认资格跑手续得用心，补贴先缴后返，手头现金得先垫上。",
+        "2026年扩围新政，几道门同时松了。人社部和财政部联合发文，全国落地。",
+        "低收入能申五成基数，待遇不打折。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f350021049bd4a7e8c55bd69bd82c218",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-587effa5558b45d4987bb3b27cda5bb8",
+  "run_id": "run-20260902T143729Z-47b7f3216042",
+  "trace_sha256": "d0c1eaa8f9518c3df0ddccdd53d3bac90c56cb4f516c07a09c473051916e0de4",
+  "created_at": "2026-09-03T11:44:29.680341Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释实时定位为何造成压力，同时覆盖家人关心、个人边界与缓和方案，受众和场景都很准。",
+      "script_spans": [
+        "这压力来自关心越了界。",
+        "改发定时位置早中晚报平安就够。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 274，目标为 280，偏差率为 2.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中在边界、隐私与信任错位，依次给出压力机制、关系判断和可执行替代，信息推进完整。",
+      "script_spans": [
+        "可家人觉得不开就是疏远信任就此错位。",
+        "改发定时位置早中晚报平安就够。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以共享定位与“枷锁”形成冲突，中段递进到盯梢、失去空间和信任错位，结尾给出替代方案并留下反思。",
+      "script_spans": [
+        "你刚出门妈要共享定位，关心变枷锁？",
+        "当爱要靠坐标证明家倒成了考场。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 1,
+      "reason": "全文大量省略停顿与句子成分，连续出现电报式短句，朗读和转述都需要系统重写。",
+      "script_spans": [
+        "你走在路上手机那头有人盯着红点独处空间没了。",
+        "平日里家庭互动方式本就影响心情非监控能替。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“拴了根透明线”和“家倒成了考场”形象且可复述，修辞不算堆叠，能把隐私压力具体化。",
+      "script_spans": [
+        "总被精确定位像被拴了根透明线心头发紧。",
+        "当爱要靠坐标证明家倒成了考场。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "一方面、另一方面和结尾回扣让主线可跟，但多处省略连接成分，个别句式拗口，口播需重断句。",
+      "script_spans": [
+        "一方面人都需要些不被看见的空隙这是基本自主。",
+        "另一方面软件本来允许随时关掉位置权限。",
+        "明明低头不见抬头见偏偏要去看地图。",
+        "平日里家庭互动方式本就影响心情非监控能替。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调隐私边界且未煽动对立；但把关闭实时定位、改为定时报平安说成“就够”，未提示出行安全和具体情境边界，略有误导。",
+      "script_spans": [
+        "一方面人都需要些不被看见的空隙这是基本自主。",
+        "改发定时位置早中晚报平安就够。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9c467398a28548c8a715b83e9ae8c0fb",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f11720cb7cb1426b8fc9194ffae837ff",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

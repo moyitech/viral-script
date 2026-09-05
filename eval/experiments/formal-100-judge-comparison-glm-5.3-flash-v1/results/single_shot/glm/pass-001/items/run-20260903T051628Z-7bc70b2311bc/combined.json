@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-6f706cb7517947f092527f31bb02b80b",
+  "run_id": "run-20260903T051628Z-7bc70b2311bc",
+  "trace_sha256": "9563a97aec2a539ee3309de23d6ad3c0674a4ab8f21bf6fd8923fd34d2ffc393",
+  "created_at": "2026-09-03T14:19:53.079092Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即亮判断，拥挤与接盘两侧都答，结尾落到普通人操作，全程扣题。",
+      "script_spans": [
+        "红利交易确实拥挤了，但把它等同于高位接盘太草率，关键看你买的是现金流还是价差游戏",
+        "用三年不用的闲钱做底仓，分红再投能烫平短期回撤，这才是稳健"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 749，目标为 700，偏差率为 7.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从拥挤成因、降温变量到决策清单，信息单元各有推进，论证扎实无编造。",
+      "script_spans": [
+        "风险不是哪家公司财报爆雷，而是持仓太相似，真要集体离场，下方的流动性池子根本接不住",
+        "一旦股息率被炒到贴近国债，安全垫就薄如纸"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛“躲波动却桥上全是人”的反差，中段连环设问持续兑现新信息，结尾“接的是什么盘”从正文自然长出余味。",
+      "script_spans": [
+        "你以为躲进红利资产就能避开波动，结果一抬头，发现桥上全是为求稳而来的人。",
+        "那是不是现在持有红利，就注定给别人站岗？倒也不必恐慌。",
+        "记住，稳健从来不是资产名字好听，而是你清楚自己接的是什么盘。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "窄天桥比喻、隔壁大爷等片段好读上口，但风格库硬约束、堆叠头寸等书面压缩句需临时改词才能播。",
+      "script_spans": [
+        "这像一座窄天桥，少数人走没事，千万人同时调头，桥面瞬间垮塌。",
+        "公募新规要求基金风格库硬约束，机构不能无底线堆叠同方向头寸",
+        "这种认知错位本身就在积累脆弱性"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "窄天桥之喻直观服务理解，“现金流还是价差游戏”与结尾金句离开正文仍可复述，修辞适度未压观点。",
+      "script_spans": [
+        "这像一座窄天桥，少数人走没事，千万人同时调头，桥面瞬间垮塌。",
+        "关键看你买的是现金流还是价差游戏",
+        "稳健从来不是资产名字好听，而是你清楚自己接的是什么盘。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承接段落，正反推进后给出边界与操作，结尾回扣接盘题眼，层层递进。",
+      "script_spans": [
+        "那是不是现在持有红利，就注定给别人站岗？倒也不必恐慌",
+        "稳健从来不是资产名字好听，而是你清楚自己接的是什么盘"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体公允，警示杠杆追高并给出股息率边界；但“分红再投能烫平短期回撤”“利差够厚才动手”属未限定建议，需补风险提示。",
+      "script_spans": [
+        "一旦股息率被炒到贴近国债，安全垫就薄如纸",
+        "要是看隔壁大爷赚钱就满仓追，还加杠杆，那是披着红利皮的投机",
+        "分红再投能烫平短期回撤",
+        "利差够厚才动手"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c91db02d578f4b40a5487f4924c9d4c7",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-0dac8e397c0942dfbcd5e8b14abb361b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

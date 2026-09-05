@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-2cd574e7bdd042708f5cb6a0e6b40a56",
+  "run_id": "run-20260902T142252Z-1ce7d98b57a0",
+  "trace_sha256": "b7f085ffa8a9653b0ae24aac5cc7bcba11ef8b745c2026528136e4329d2229dd",
+  "created_at": "2026-09-03T12:17:04.499558Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "始终围绕普通投资者避开AI伪风口，既讲财报与虚假信息，也给出查资质、看处罚和防转账的具体办法。",
+      "script_spans": [
+        "咱们普通投资者避开伪风口，得翻财报看真收入。",
+        "那怎么动手查？买前去官网查机构资质，先搜名字看处罚记录，别扫私人码转钱就当投资。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，财报核验、虚假订单处罚、AI量化荐股和资质核查彼此推进，观众能带走明确的识别与止损动作。",
+      "script_spans": [
+        "还有人用AI量化选股当名头，卖高价软件收服务费。",
+        "他们没投顾资质，你碰到这种先查他持牌没。",
+        "买前去官网查机构资质，先搜名字看处罚记录，别扫私人码转钱就当投资。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以本金骤亏制造即时风险，中段连续换出假订单、伪量化和查资质，结尾互动也由风险提醒自然落地。",
+      "script_spans": [
+        "你刚追进AI概念股，本金可能就亏掉一大截。",
+        "还有人用AI量化选股当名头，卖高价软件收服务费。",
+        "下次你看到AI爆款文，愿先缓三秒保本金吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和追问有口播感，但多处词序压缩、结尾缺词，朗读时仍需临时调整。",
+      "script_spans": [
+        "钱进没进账一看便知",
+        "有人编假AI订单文章乱传",
+        "下次你看到AI爆款文，愿先缓三秒保本金吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比、比喻和短句都服务于判断，“热闹是别人的，本金是你的”收束有力，具备自然复述性。",
+      "script_spans": [
+        "标签谁都能贴，钱进没进账一看便知。",
+        "你以为捡便宜，其实接了烫手山芋。",
+        "热闹是别人的，本金是你的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "案例到方法再到行动，主线清楚；但把财报收入等同于到账一眼可见，又将无资质直接推成地下生意，因果略跳。",
+      "script_spans": [
+        "那怎么动手查？买前去官网查机构资质，先搜名字看处罚记录，别扫私人码转钱就当投资。",
+        "钱进没进账一看便知。",
+        "没资质很可能是地下生意，出事难维权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体是风险提示且无收益承诺；但“没资质很可能是地下生意”泛化定性，易误导，应改为核验具体机构资质。",
+      "script_spans": [
+        "先搜名字看处罚记录，别扫私人码转钱就当投资",
+        "没资质很可能是地下生意"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-178e9c8f79564c3593da020caa5a647f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

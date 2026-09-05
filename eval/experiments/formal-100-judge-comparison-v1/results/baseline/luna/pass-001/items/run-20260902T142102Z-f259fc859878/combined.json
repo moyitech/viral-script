@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-922c9ac68f3c4549bd99ed818fc071e2",
+  "run_id": "run-20260902T142102Z-f259fc859878",
+  "trace_sha256": "233701c4b77e54eaf7522e2100b246cd021b933b8b63512b9c999b0dc4258df3",
+  "created_at": "2026-09-03T11:44:37.137933Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面比较固收增额寿与分红险，并给出期限和风险承受条件，完整回应长期回报是否值得锁定。",
+      "script_spans": [
+        "能接受低息但确定，就挑写进合同的；想要高点预期，得看清分红实现率波动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 457，目标为 450，偏差率为 1.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕确定性、分红波动、利率机会成本和流动性展开，多个信息单元相互推进，也给出可执行的判断方法。",
+      "script_spans": [
+        "为什么这么分裂？你想，保险公司利润过去主要靠利差，低利率下投资端承压。",
+        "所以别问锁不锁长期回报，先问这笔钱能否十年不动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出确定性与落空的冲突，中段连续补充机制、数据和选择代价，结尾用反转问题自然收束。",
+      "script_spans": [
+        "固收确定但收益砍半，分红却可能落空",
+        "所以别问锁不锁长期回报，先问这笔钱能否十年不动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有问答式承接，整体能读通；但术语、数字和并列判断偏密，“任市场降息”还需改词。",
+      "script_spans": [
+        "所以别问锁不锁长期回报，先问这笔钱能否十年不动。",
+        "再看普通型预定利率研究值止跌回升到1.93%，说明如今锁的利率不高，未来若反弹，早锁死反成机会成本。",
+        "但任市场降息合同数字不变，睡得着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“收益砍半”“看天吃饭”把风险说得直观，结尾“选错账户才是坑”形成自然、可复述的反转。",
+      "script_spans": [
+        "实现率看天吃饭",
+        "锁定本身不是陷阱，选错账户才是坑吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头分类、结尾决策条件清楚，但中段引入公司财务数据后，未说明其如何影响消费者对保单确定性的判断。",
+      "script_spans": [
+        "所以别问锁不锁长期回报，先问这笔钱能否十年不动。",
+        "有个细节，2022年样本公司保单价值释放曾为负，险企运转成本也不低。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有资金期限和分红波动提示，但“百分百确定”、回本年限及收益差额缺少产品与情境限定，容易造成泛化误导。",
+      "script_spans": [
+        "钱短期要用的，硬锁反吃亏",
+        "现金价值百分百确定",
+        "比三年前3.5%产品少拿几十万",
+        "趸交最快四年才回本"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-34c5baed78044e74b91de4e51f3dba32",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-5da72e14358643cc8d266865414cc650",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

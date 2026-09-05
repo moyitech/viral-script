@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-ac021d0dfd16489bbd47ecc2a13ae347",
+  "run_id": "run-20260903T051518Z-176004b39959",
+  "trace_sha256": "fcb107656a0d00f7ed18d771b57f4e968d515b8f4b4d5c4e633cceb1d0e38330",
+  "created_at": "2026-09-03T14:08:38.237808Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即亮明对二元问题的判断，教师与普通家庭两端人群各给对策，从提问到结论全程正面扣题。",
+      "script_spans": [
+        "效率飞升，真实的反馈到底被吃掉了没有？我的判断是，效率提升本身不背削弱真实反馈的锅",
+        "对普通家庭，别把AI批改当终点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 474，目标为 450，偏差率为 5.33%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "调研比例、实验分层与操作建议层层推进，有引用佐证无编造，观众能带走具体判断方法。",
+      "script_spans": [
+        "全国性调研里多数语文老师采取的是“AI初筛、教师复核”，机器先扫错别字和格式，老师再抓重点。",
+        "多是增删词句这类低阶动作，少有重构论证的高阶改动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头十几分钟对秒批成反差并抛出悬念，中段调研与实验持续给新信息，结尾一问由正文自然生长。",
+      "script_spans": [
+        "一方面老师改一篇作文得花十几分钟，全班堆起来几天都改不完",
+        "效率飞升，真实的反馈到底被吃掉了没有？",
+        "机器擅长标出病句，却很难说出“你这个论点凭什么成立”。",
+        "下次见AI评语，先琢磨：这说的是“我”吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句好读、金句有劲，但“低阶/高阶改动”“常态化”等书面词与“真不真实”需临时改词才顺。",
+      "script_spans": [
+        "机器擅长标出病句，却很难说出“你这个论点凭什么成立”",
+        "下次见AI评语，先琢磨：这说的是“我”吗？",
+        "多是增删词句这类低阶动作，少有重构论证的高阶改动",
+        "但另一头，常态化用AI辅助的老师只有约两成"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不背锅”“交给快捷键”等表达服务观点不炫技，“工具快不是原罪”离开上下文仍可复述，克制且好记。",
+      "script_spans": [
+        "效率提升本身不背削弱真实反馈的锅",
+        "反而把人从重复劳动里拽出来",
+        "工具快不是原罪，把判断权交给快捷键才是。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "各段功能清晰，人在闭环的前提贯通论据与对策，结尾回扣开头之问，因果桥完整。",
+      "script_spans": [
+        "真正决定反馈真不真实的，是人有没有留在闭环里",
+        "若老师用省下的时间开一场写作小会，反馈就从纠错变成对话",
+        "下次见AI评语，先琢磨：这说的是“我”吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "判断以'我的判断是'自限，调研数据与实验结论转述克制，建议留有边界，无夸大承诺或对立煽动。",
+      "script_spans": [
+        "我的判断是，效率提升本身不背削弱真实反馈的锅",
+        "对教师，用工具可以，但务必亲手补一句针对个人的话"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b3190a00e6f848c2b15956263ff1db09",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-bfba945c87064133abb0675f46e54db9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

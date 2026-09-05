@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-d9548d8701754cf2b812f3616f4b9bf8",
+  "run_id": "run-20260902T144907Z-77e1a0bf8454",
+  "trace_sha256": "f576f566a555af972ff1c7d4d61269c9a8e8dc195209925aa3114a123e47a76e",
+  "created_at": "2026-09-03T14:27:02.141990Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "设问开篇、答题收尾，松紧两侧与小商家痛点全覆盖，“看你站哪边”正面回应题设。",
+      "script_spans": [
+        "说直白点，严是真严，但难不难看你站哪边。",
+        "小商家现实影响分两路，有人借势活，有人被洗走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "退货新政、合规风险、孵化扶持层层推进，关键事实与公开政策相符，观众能带走判断方法。",
+      "script_spans": [
+        "海关今年推了跨关区退货，这政策只管9610模式。",
+        "因为单子小、抗风险弱，一旦认证不全，货被扣甚至销毁，小本生意就垮。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差提问抓人，中段松紧两路与新转折持续兑现钩子，结尾选择题由正文自然长出，三段都立得住。",
+      "script_spans": [
+        "小商家出海真被严规逼垮了？有人反倒借势活了。",
+        "那紧的那边锁在哪？做小额B2C的卖家，恰是风险高发区。",
+        "你愿花半月对接系统，还是赌运气被封号？这道选择题，现在就得做。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句好读，说冻就冻、赌运气封号等表达自然；但得系统对接海关、换IP太频需临时换词重断，止步2分。",
+      "script_spans": [
+        "税务不合规，收款账户说冻就冻。平台也较真，账号环境乱就封。",
+        "企业得系统对接海关，还得有独立作业区",
+        "你若换IP太频，多店同环境就封号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，“能力不是规模”“赚洋钱先过合规坎”离开上下文仍可复述，无炫技堆砌。",
+      "script_spans": [
+        "规则挑的也许是能力不是规模",
+        "你想赚洋钱，先得过合规这道坎。",
+        "有人借势活，有人被洗走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "松、紧、现实三段过渡清晰，因果有桥，结尾回扣开头设问，主线完整可跟随。",
+      "script_spans": [
+        "那紧的那边锁在哪？",
+        "反过来，把数据接好、认证补齐，退货新政反成你的缓冲。",
+        "所以规则挑的也许是能力不是规模。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "风险警示均附条件前提，政策解读用“看起来”“有些地方”留余地，无夸大误导与煽动，导向安全。",
+      "script_spans": [
+        "一旦认证不全，货被扣甚至销毁",
+        "这政策看起来是想帮正规军降损耗",
+        "规则挑的也许是能力不是规模"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-32ba06ab0af0458f821326e07aea02db",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

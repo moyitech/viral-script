@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-51dc1b4881fa4fc08961135e53f7da66",
+  "run_id": "run-20260903T051524Z-11b2f1ddc77b",
+  "trace_sha256": "ab7d55194ebc57054de38962fadc46e18d532c1404446f478605738b6bc81c1c",
+  "created_at": "2026-09-03T12:32:07.320064Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接回答决定权归属，并同时覆盖祖辈照护、父母责任与冲突处理。",
+      "script_spans": [
+        "隔代育儿吵起来，到底谁有孩子日常教育的决定权？答案很直接：法定决定权在父母手里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕决定权持续推进，法律依据、祖辈权限边界和父母责任均有具体交代。",
+      "script_spans": [
+        "根据家庭教育促进法，未成年人的父母或其他监护人负责实施家庭教育，这是主体责任。",
+        "所以老人可提建议，但最后拍板的是父母；父母也得真正担起责任，别把教育全推给上一代。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出家庭冲突，中段连续推进责任与后果，结尾用双方责任收束，余味自然。",
+      "script_spans": [
+        "隔代育儿吵起来，到底谁有孩子日常教育的决定权？",
+        "那冲突了怎么办？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚，问答和收束自然，但法律术语与解释句偏密，口播略显生硬。",
+      "script_spans": [
+        "那冲突了怎么办？",
+        "别把教育全推给上一代。",
+        "权限只是生活照护和配合执行",
+        "司法机关可以发家庭教育指导令来纠正"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“甩手掌柜”和“最后拍板”都贴近日常表达，既帮助理解权责，也留下了可复述的结论。",
+      "script_spans": [
+        "父母不能当甩手掌柜",
+        "老人可提建议，但最后拍板的是父母"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出争议，随后给出法条依据、权限边界和冲突处置，结尾回扣父母责任，递进完整。",
+      "script_spans": [
+        "答案很直接：法定决定权在父母手里，不是天天带的爷爷奶奶。",
+        "那冲突了怎么办？父母不能当甩手掌柜"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "准确指出父母承担家庭教育主体责任，但将决定权、祖辈权限和指导令适用说得过于绝对，存在法律误导风险。",
+      "script_spans": [
+        "根据家庭教育促进法，未成年人的父母或其他监护人负责实施家庭教育，这是主体责任。",
+        "答案很直接：法定决定权在父母手里，不是天天带的爷爷奶奶。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-51e9e2987cd5407088982f1284c45c2f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

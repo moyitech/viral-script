@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-1950616a058b488391f9df71a4d685d8",
+  "run_id": "run-20260903T051529Z-90d667863460",
+  "trace_sha256": "ad78567d84cd48e40303488c85437fb5f2ab4affad8aa138bb8af4e9184eceb9",
+  "created_at": "2026-09-03T12:32:31.155068Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回应“信心信号”与“短期托市”的二选一，也给出识别预案落地的实用抓手。",
+      "script_spans": [
+        "我的判断很明确，当下回购增多主要是信心信号，不是短期托市。",
+        "但提醒一句，预案不等于落地"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中并有依据和识别提醒；但把信号理论、合规要求与注销效果合并，未充分排除短期托市。",
+      "script_spans": [
+        "只看董事会一纸计划就冲进去，容易踩到假动作。",
+        "现行规则严禁借回购操纵市场，且越来越多回购选择注销股份，直接让每股收益变厚"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "设问直接抛出护盘与信号的冲突，依据、预案提醒和注销标准层层推进，结尾有余味而非硬喊互动。",
+      "script_spans": [
+        "看到满屏公司回购自家股票，你第一反应是护盘救价？",
+        "但提醒一句，预案不等于落地",
+        "所以回购是一面镜子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体可读，开头和风险提醒有对话感；但中段并列论据偏挤，结尾“钱真正注销到账了”明显卡顿。",
+      "script_spans": [
+        "看到满屏公司回购自家股票，你第一反应是护盘救价？",
+        "只看董事会一纸计划就冲进去，容易踩到假动作。",
+        "二是现行规则严禁借回购操纵市场，且越来越多回购选择注销股份，直接让每股收益变厚，这分明是给长期股东送实惠。",
+        "钱真正注销到账了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“预案不等于落地”好记，也有“真金白银表态”的画面感；但“钱真正注销到账”搭配失准，削弱结尾金句。",
+      "script_spans": [
+        "预案不等于落地",
+        "用真金白银表态",
+        "钱真正注销到账了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线是判断、依据、风险提示到结论，衔接清楚；但禁止操纵不能推出排除托市，结尾还有概念混用。",
+      "script_spans": [
+        "依据有两点。",
+        "但提醒一句，预案不等于落地",
+        "现行规则严禁借回购操纵市场，且越来越多回购选择注销股份，直接让每股收益变厚，这分明是给长期股东送实惠。",
+        "钱真正注销到账了，才算公司对自己投了信任票。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有提示预案与落地差异，整体无明显违规；但将回购主因定性为信心、把注销直接等同股东获益，边界不够稳妥。",
+      "script_spans": [
+        "但提醒一句，预案不等于落地",
+        "当下回购增多主要是信心信号，不是短期托市。",
+        "这分明是给长期股东送实惠。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 16.0,
+    "partial_weighted_average": 2.2857142857142856,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b31212cbd0dd44ffbce9e76cb1099228",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

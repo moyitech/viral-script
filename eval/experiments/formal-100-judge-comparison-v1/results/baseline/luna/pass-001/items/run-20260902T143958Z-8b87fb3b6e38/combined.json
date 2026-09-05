@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-c33003ee052447cea1442a6ac216fc3e",
+  "run_id": "run-20260902T143958Z-8b87fb3b6e38",
+  "trace_sha256": "acccfd24be3aceee1ce03cb0f0dea4555d95eef792275e14a341bb3baf863356",
+  "created_at": "2026-09-03T11:45:00.824779Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“真减排还是数字游戏”，覆盖企业动因、额外性判断与消费者关联，核心人群明确。",
+      "script_spans": [
+        "它既是企业补漏减排的真拼图，也藏着数字冲账的空隙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 472，目标为 450，偏差率为 4.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息始终围绕真假减排推进，交代强制市场、额外性、监管和消费影响，既有解释也给出判断方法。",
+      "script_spans": [
+        "国家把发电、钢铁、水泥、铝冶炼这些排量大户拉进强制碳市场",
+        "简单说，一个减排项目没这笔钱就干不成，减的碳才叫额外。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头把企业购碳与消费者花钱绑定，中段用“额外性”推进，结尾追问自然回扣主题。",
+      "script_spans": [
+        "企业争购碳信用，你多花的钱可能只是账本游戏",
+        "那数字游戏哪来的？关键看“额外性”。",
+        "企业口号再响，你不妨问一句：它买的信用，够额外吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、反问和类比有节奏，但“标准方正查”等搭配拗口，长句与术语让核心展开不够顺滑。",
+      "script_spans": [
+        "买碳不是错，乱买才是坑。",
+        "国家把发电、钢铁、水泥、铝冶炼这些排量大户拉进强制碳市场，配额不够就得掏钱买信用填坑。",
+        "标准方正查项目根底"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“数字化妆”和“买碳不是错，乱买才是坑”都易复述，且比喻服务于区分真实减排与冲账。",
+      "script_spans": [
+        "可能只是数字化妆",
+        "买碳不是错，乱买才是坑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、再讲动因和额外性、最后落到消费者，主线清楚；但配额与信用混用，购买直接推出总排放下降，因果边界不足。",
+      "script_spans": [
+        "企业抢买首先因硬指标压身。",
+        "那数字游戏哪来的？关键看“额外性”。",
+        "配额不够就得掏钱买信用填坑。",
+        "自己减不动时，买信用是凑齐功课，总账上碳确实少了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有额外性提醒且不煽动，但把买信用直接等同于总排放下降，且混用配额与信用概念，易造成环境效果误导。",
+      "script_spans": [
+        "关键看“额外性”",
+        "买碳不是错，乱买才是坑。",
+        "总账上碳确实少了。这是实打实把总排放往下压，不是虚的。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f42d399c966b4821b2f2a52d36be83af",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-2afccec8afcc437999ac1ab483ea453b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

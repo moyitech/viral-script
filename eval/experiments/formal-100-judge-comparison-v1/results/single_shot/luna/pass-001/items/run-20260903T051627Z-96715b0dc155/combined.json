@@ -1,0 +1,168 @@
+{
+  "evaluation_id": "combined-ae25a621a55d481194a959a4af8607c5",
+  "run_id": "run-20260903T051627Z-96715b0dc155",
+  "trace_sha256": "7ec7bb9c21d43fb5badca255e3b960b89da7063d6c5a5b391517b35091e8a021",
+  "created_at": "2026-09-03T11:58:11.678820Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答全面接入后申诉是否更难，兼顾技术效率与人工保障，并给出普通用户可执行的申诉建议。",
+      "script_spans": [
+        "智能客服全面化不必然让申诉更难",
+        "但自己也截图留证，别空口争辩。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 829，目标为 700，偏差率为 18.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中且信息单元较丰富，但把标准效力和平台动机说得过满，削弱了论据的严谨度与结论可信度。",
+      "script_spans": [
+        "遇到误封、盗号这类复杂申诉，机器只会套固定模板",
+        "用户明确要人工，系统必须优先派真人。",
+        "这标准不是建议，是强制协同要求。",
+        "是产品设计故意制造摩擦，用机器消耗你的耐心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出限流、冻结与申诉死循环，中段有标准落地和现实博弈，结尾用“漏斗”和“墙”形成余味。",
+      "script_spans": [
+        "你刷短视频突然账号被限流，或者带货佣金被冻结，急着申诉却卡在AI客服的死循环里。",
+        "智能客服该是筛掉垃圾咨询的漏斗，不是堵死真人申诉的墙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和收束有对话感，但中段多处长句、抽象术语连排，朗读时需要重断句。",
+      "script_spans": [
+        "打字数它回“已读”，点按钮跳回首页",
+        "国家层面的人工智能与智能客服协同标准落地，填了协同空白，这标准不是建议，是强制协同要求。",
+        "效率与公平在客服端从来不对等。看看其他行业的大模型客服，响应能从数分钟压到秒级，转化数字很漂亮；可申诉是带证据、带情绪的对抗沟通，机器套话应付不了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“机器消耗你的耐心”和“漏斗不是墙”把抽象的客服边界说得具体，修辞克制且便于复述。",
+      "script_spans": [
+        "用机器消耗你的耐心",
+        "智能客服该是筛掉垃圾咨询的漏斗，不是堵死真人申诉的墙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按用户痛点、规则变化、现实博弈和应对建议递进，但将标准直接等同强制义务，部分因果桥接仍显不足。",
+      "script_spans": [
+        "那是不是全面接智能就没救了？恰恰相反，近期有个关键进展改变天平。",
+        "但白纸黑字和指尖体验中间，还隔着现实博弈。",
+        "这标准不是建议，是强制协同要求。",
+        "新规正逼它留好出口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动或危险建议，也提醒用户留证；但将平台归因于故意设障，并把标准效力说成强制，可能误导申诉预期。",
+      "script_spans": [
+        "智能客服全面化不必然让申诉更难",
+        "但自己也截图留证，别空口争辩。",
+        "这背后不是技术做不到，是产品设计故意制造摩擦",
+        "这标准不是建议，是强制协同要求"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.7916666666666666,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.375,
+    "weighted_average": 2.375,
+    "normalized_score": 0.7916666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 829,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.18428571428571427
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-27d81022c77b480c8585ad9b18b66650",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a054e626a25c409c9c39a22faa18b041",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

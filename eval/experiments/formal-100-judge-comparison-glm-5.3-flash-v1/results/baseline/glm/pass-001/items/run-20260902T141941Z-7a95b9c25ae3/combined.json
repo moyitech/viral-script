@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-11fbe2bc90b04d238e6dd2bb22a82121",
+  "run_id": "run-20260902T141941Z-7a95b9c25ae3",
+  "trace_sha256": "d6fb2e5b161526ea9f0aaa0bbdee8d98d992f10d93940e4fa3deb0e023610564",
+  "created_at": "2026-09-03T13:44:59.611049Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给结论，正面回答搬走与否，兼顾流量代价两侧，结尾回扣小站痛点，切角具体。",
+      "script_spans": [
+        "网站内容不会被免费搬走，但原站流量正被入口吃掉"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 290，目标为 280，偏差率为 3.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "搬走与截流的区分贯穿全文，机制、数据、对策各有增量，数据与引用研究一致，无编造。",
+      "script_spans": [
+        "你说白嫖吗？不算搬走，算截流",
+        "有研究看到百科页点击降约一成多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即立'没搬走却截胡'的反差，中段机制与数据层层兑现，结尾反问由正文自然生长。",
+      "script_spans": [
+        "内容没被搬走，访客却先截胡",
+        "把几页内容揉一块，问题立刻被接住",
+        "有研究看到百科页点击降约一成多",
+        "当答案替你读完网页，谁还愿做那个翻原稿的人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，问答与对照句停顿重音清楚，通篇照读即可上口。",
+      "script_spans": [
+        "他搜完，页面顶部直接给段总结，把几页内容揉一块",
+        "不是全没，是变少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "截胡、截流、退到后台皆助理解；'内容没消失，只是退到后台'离文可复述，密度克制不炫技。",
+      "script_spans": [
+        "不算搬走，算截流",
+        "内容没消失，只是退到后台",
+        "别死磕旧排名，学着想被AI引一句"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "定性、机制、边界、对策逐段递进，因果桥清楚，结尾设问自然回扣开头与题设。",
+      "script_spans": [
+        "省下的步骤，就是原站丢掉的脚步",
+        "当答案替你读完网页，谁还愿做那个翻原稿的人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "先抛争议再自答，“不算搬走，算截流”界定明确；数据以“有研究…降约一成多”弱化归因，无煽动夸大，无承诺",
+      "script_spans": [
+        "你说白嫖吗？不算搬走，算截流。",
+        "有研究看到百科页点击降约一成多。不是全没，是变少。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-764b3dd0818f47fdb46b1a2d7fc61abc",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-2bcc56f777c241f6a13ffdb77f95a9ba",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

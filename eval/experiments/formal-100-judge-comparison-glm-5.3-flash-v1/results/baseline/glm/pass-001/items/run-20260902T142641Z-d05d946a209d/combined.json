@@ -1,0 +1,158 @@
+{
+  "evaluation_id": "combined-88e5f459d31a4552a8cf04e7bb2adf07",
+  "run_id": "run-20260902T142641Z-d05d946a209d",
+  "trace_sha256": "9f38b5cf090486584630ecf5421cc5d09b2b51f13013a35a01c21c7b22362460",
+  "created_at": "2026-09-03T13:45:44.953613Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直点两难，拆两半正面给出去处，国债与活钱比例建议都落在家庭急用场景上。",
+      "script_spans": [
+        "闲钱放现金类收益掉到1字头，挪走怕锁死，不动又亏息。其实啊，这题不是二选一，而是把闲钱拆两半",
+        "那闲钱去哪锁？普通人家能碰的，主要是储蓄国债",
+        "家里有娃上学或看病急用，那活钱比例还得调高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 653，目标为 700，偏差率为 6.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "归因、利率与限购数据扎实，国债利弊讲清，拆两半加比例法是可带走的判断抓手。",
+      "script_spans": [
+        "为啥收益缩水？你看央行二季度的报告，里面说货币市场隔夜利率均值只有1.31%",
+        "现金管理产品主要买这些短债，底层资产不赚钱，它给投资者的收益只能往下挪",
+        "今年发行的三年期利率1.63%，五年期1.70%，比活钱那1字头高出一截"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛收益缩水与挪与不挪的两难冲突；中段以设问层层推进并兑现数据与转折；结尾权衡之问由正文自然生长，留有余味。",
+      "script_spans": [
+        "闲钱放现金类收益掉到1字头，挪走怕锁死，不动又亏息",
+        "为啥收益缩水？你看央行二季度的报告",
+        "当活钱利息薄得像层窗纸，你是要伸手就破的方便，还是肯站几年等那点利差？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，一问一答像当面聊天，'溜下坡''傻眼'等表达顺口接地气，朗读无需改词。",
+      "script_spans": [
+        "一半接着放活钱，保你随时用；另一半挪去锁点利，抵消通胀。",
+        "收益跟着短端利率溜下坡。两层夹击，你看到的收益栏就绿了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "窗纸喻薄息贴切可复述，'收益栏就绿了'形象，'两边分开，心就不慌'好记；唯'水涨船高'用于利率下行略失准。",
+      "script_spans": [
+        "当活钱利息薄得像层窗纸，你是要伸手就破的方便，还是肯站几年等那点利差？",
+        "两层夹击，你看到的收益栏就绿了",
+        "两边分开，心就不慌",
+        "水涨船高，现金管理产品主要买这些短债"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "为啥、去哪锁、落到实际三段承接清楚，利弊因果闭合，结尾问句回扣开头两难。",
+      "script_spans": [
+        "其实啊，这题不是二选一，而是把闲钱拆两半。一半接着放活钱，保你随时用；另一半挪去锁点利",
+        "落到实际，你先算家里几个月开销，比如三四个月工资留活钱应急。剩下的真闲钱，去网点或手机银行抢国债，抢不到就分批买",
+        "别看差零点几，十万块一年能多几百块利息，可要是全锁死，生病救急就傻眼"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "已提示不保本金、提前支取扣息、额度有限等边界，但'保你随时用''抵消通胀'属未经限定的绝对化说法，易误导，需补限定。",
+      "script_spans": [
+        "净值每天变，不保本金，也算折中",
+        "提前取要扣利息，流动性差",
+        "利率跟着大环境也可能再降",
+        "一半接着放活钱，保你随时用",
+        "另一半挪去锁点利，抵消通胀"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c821a6def4524bc5a4a8355050e4dd40",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-dad901e2ccd4456faa5213c5f6e1eb19",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

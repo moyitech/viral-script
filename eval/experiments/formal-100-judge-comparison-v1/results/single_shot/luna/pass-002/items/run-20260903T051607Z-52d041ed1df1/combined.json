@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-63958597367c474bb48f599491f6c501",
+  "run_id": "run-20260903T051607Z-52d041ed1df1",
+  "trace_sha256": "18bf75d20f3ef261094caf207d1dc0e386146af4b227d9833123550e44ea0cb0",
+  "created_at": "2026-09-03T12:32:43.894205Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“监督还是伤害”，既讲普通纠纷的伤害风险，也保留不法行为取证的监督例外。",
+      "script_spans": [
+        "那要是拍到有人行凶施暴，也不能留证吗？当然可以。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕肖像权、公共利益、传播后果和拍摄决策递进展开，信息点具体，结论有依据。",
+      "script_spans": [
+        "法律给正当监督留了缝隙，像曝光正在进行的不法行为、保护公共利益，在必要限度内用肖像，可能不被追责。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以街头冲突和“监督反成伤害”立钩，中段不断补充法律边界与传播后果，结尾追问自然落地。",
+      "script_spans": [
+        "你正逛街，旁边突然爆发激烈争吵",
+        "但有没有一种可能，你这一发，反而把对方推入了更无奈的境地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感，但法律表达偏密，几处句子朗读不够顺。",
+      "script_spans": [
+        "那要是拍到有人行凶施暴，也不能留证吗？当然可以。",
+        "现在只要没经同意，把能识别身份的影像公开，比如清晰的侧脸、背影，只要网友能指认，就构成侵权风险。",
+        "法律给正当监督留了缝隙，像曝光正在进行的不法行为、保护公共利益，在必要限度内用肖像，可能不被追责。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“镜头该对准事件，不是瞄准具体的人”准确收束主题，兼有反差和警句感，修辞没有压过观点。",
+      "script_spans": [
+        "网络痕迹也洗不干净",
+        "镜头该对准事件，不是瞄准具体的人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以判断开题，按法律依据、例外边界、传播后果和行动建议递进，结尾自然回扣题设。",
+      "script_spans": [
+        "先讲因果。很多人还停留在老观念，觉得用别人肖像得营利用才违法。",
+        "不过，视频一旦传出去，事态就脱离了拍摄者掌控。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能区分普通纠纷与公共利益，也提醒打码、避免引战；但个别法律表述和传播后果描述偏绝对，容易误导观众。",
+      "script_spans": [
+        "在必要限度内用肖像，可能不被追责",
+        "有没有打码保护无关者，标题是不是在引战嘲讽",
+        "现在只要没经同意，把能识别身份的影像公开，比如清晰的侧脸、背影，只要网友能指认，就构成侵权风险。",
+        "即便双方当场和好，网络痕迹也洗不干净。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7430caa18acd46d186865542d753c02f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

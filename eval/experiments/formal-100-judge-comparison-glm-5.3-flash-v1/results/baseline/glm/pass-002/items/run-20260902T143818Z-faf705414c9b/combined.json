@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-eeb364c3b29044d9941b2318d0c77c7d",
+  "run_id": "run-20260902T143818Z-faf705414c9b",
+  "trace_sha256": "5e73aecaacc1f5c74ddfea06506840a93ef6c22311f6568dcd6f654164f34388",
+  "created_at": "2026-09-03T14:25:20.273106Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即摆出守约与取消两难，用户骑手两侧并重，结尾给出弹性承诺的直接回答，全程扣题。",
+      "script_spans": [
+        "这天死守准时承诺，对用户骑手都不公道。但也不能取消承诺",
+        "所以下回气象台发蓝警，那个准时的小红点该换成延后免责的提醒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，清华数据、哈佛研究与北京新政逐层推进，并主动交代暴雨实证缺口，增量扎实。",
+      "script_spans": [
+        "清华团队分析过百城数据，气温三十五度，单量比二十度时涨约百分之七",
+        "北京试了红灯停表，等红灯时间不计入考核，碰上恶劣路况天气还加配送时长",
+        "不过这类研究多盯高温，暴雨大风下的实证还少，这点得说实话"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即见反差冲突，中段数据、险境、政策转折层层兑现钩子，结尾余味由正文自然生长。",
+      "script_spans": [
+        "暴雨天你饿慌，骑手迟到反被罚哭",
+        "天气一坏，想点外卖的人反而多",
+        "我们点的不是秒数，是有人平安递来的热饭"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口密，重音落在拧到底、白干等实处，全篇朗读无需临时改词。",
+      "script_spans": [
+        "那硬卡那几分钟会怎样？骑手手机响不停，系统播报下一单超时，他只能把车把拧到底",
+        "你在家刷新地图，小蓝点挪不动，焦虑往上冒，骑手在雨里眯眼找楼号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "绳子勒两边的类比贴切助解，热饭一句离开上下文仍可复述，通篇无炫技堆叠、不喧宾夺主。",
+      "script_spans": [
+        "这时候承诺像绳子，勒住两边",
+        "我们点的不是秒数，是有人平安递来的热饭"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进层层递进，反驳双方观点均先承接再回击，结尾热饭回扣开头痛点，结构闭合。",
+      "script_spans": [
+        "那硬卡那几分钟会怎样？",
+        "也有人咬定承诺不能松，怕平台偷懒，这担心不无道理，但暴雨里物理极限摆在那",
+        "我们点的不是秒数，是有人平安递来的热饭"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "数据与政策表述有据可依并主动标注边界，正反观点并陈不引战，无夸大承诺或危险倡导。",
+      "script_spans": [
+        "当然这还只是部分城市尝试，没全覆盖，许多小城骑手仍在淋着赚那几块",
+        "也有人咬定承诺不能松，怕平台偷懒，这担心不无道理",
+        "不过这类研究多盯高温，暴雨大风下的实证还少，这点得说实话"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7c529a12b7974b339f687b9358a09550",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

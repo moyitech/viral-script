@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-4d6016b0f3e24f04916607c100ceaded",
+  "run_id": "run-20260902T142147Z-4e3e9f535dbe",
+  "trace_sha256": "4025da66f0717c61bfe048d2f6b29f5e1cb630dfa115453f64c7d5c2aa33a99b",
+  "created_at": "2026-09-03T11:44:24.900780Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解公共监督与二次伤害的两面风险，始终围绕普通人上传纠纷视频的取舍展开。",
+      "script_spans": [
+        "街头纠纷视频上网，既是公共监督，也可能是二次伤害，不能只认一头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 493，目标为 450，偏差率为 9.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕肖像权底线、公共利益例外、可识别风险和打码策略推进，信息密度足，判断抓手明确。",
+      "script_spans": [
+        "民法典说了，没经肖像权人同意，制作公开人家肖像是侵权。",
+        "普通人取舍就两条路：打码保事实，露脸扛风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“帮了正义，也赔了钱”制造两难，中段不断推进到法律边界和现实后果，结尾追问自然收束。",
+      "script_spans": [
+        "你拍下邻居吵架发上网，可能帮了正义，也赔了钱。",
+        "下次举手机前，先问自己：要的是公道，还是流量？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、反问和具体动词带来一定节奏，整体能读通；但多处搭配生硬，需重断句或换词。",
+      "script_spans": [
+        "先看底线在哪。",
+        "要的是公道，还是流量？",
+        "制作公开人家肖像",
+        "你今早传段未打码冲突"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“打码保事实，露脸扛风险”和“镜头不判案，只放大后果”准确凝练，既便于理解，也留下了可复述的记忆点。",
+      "script_spans": [
+        "打码保事实，露脸扛风险。",
+        "镜头不判案，只放大后果。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，能从法律底线落到上传选择；但复杂判断被压成单一路径，关键因果和结论都偏满。",
+      "script_spans": [
+        "先看底线在哪。很多人以为发网上就算监督，其实差得远。",
+        "普通人取舍就两条路：打码保事实，露脸扛风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调打码和公共利益，方向稳妥；但“只要脸能认出”和“赔偿跑不掉”表述过于绝对，可能造成法律误导。",
+      "script_spans": [
+        "打码保事实，露脸扛风险",
+        "街头纠纷视频上网，既是公共监督，也可能是二次伤害，不能只认一头",
+        "你随手拍随手传，只要脸能认出，对方就能依法维权",
+        "传票不是吓唬，真追起来赔偿跑不掉"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8d24c589f3ff46629da655eeb1ecc5b5",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-3ca2eb63193744d4bcb7790a96ac91af",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

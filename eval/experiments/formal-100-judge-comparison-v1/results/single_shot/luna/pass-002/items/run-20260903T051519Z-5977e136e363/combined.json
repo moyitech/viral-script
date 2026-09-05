@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-ed512e94a252464aa05b1e4561a8e7e1",
+  "run_id": "run-20260903T051519Z-5977e136e363",
+  "trace_sha256": "5000ac33da30322add050db502d87b8065ff8477897f8334faa3361fa82f4c40",
+  "created_at": "2026-09-03T12:31:32.692518Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答算法能否读懂潜力，同时覆盖求职者与用人方，核心冲突和行动建议齐全。",
+      "script_spans": [
+        "我的判断很直接：算法能帮企业快速筛掉明显不匹配的简历和人，但远读不懂一个人真正的潜力。",
+        "对找工作的人，把经历讲成有逻辑的故事，比练微笑更靠谱；对用人方，别让算法当终审"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕潜力识别展开，效率、公平、验证和使用边界层层推进，信息单元充足且有具体落点。",
+      "script_spans": [
+        "有研究指出，这缩短了雇人周期，也省了钱。",
+        "只有经过独立效度检验、能解释评分逻辑的算法，才配谈公平。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段连续推进，结尾有自然判断；但前20字仍是场景铺垫，反差出现稍晚，削弱即时留存力。",
+      "script_spans": [
+        "你可能因回答结构清晰被加分，也可能因镜头前紧张被误读。",
+        "你刚结束一场视频面试，对着镜头讲完项目经历"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，但中段多处长句与抽象术语叠加，朗读需要重断句。",
+      "script_spans": [
+        "你刚结束一场视频面试，对着镜头讲完项目经历",
+        "自动视频面试系统在提交简历后就能直接介入，帮人力资源在零沟通下缩小候选人池"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“放大镜换成滤镜”具体呈现算法的误读风险，“辅助的筛子”也形成清晰、可复述的判断。",
+      "script_spans": [
+        "它只是把放大镜换成了滤镜。",
+        "它该是辅助的筛子，不是潜力的裁判。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，中段按效率、偏差、验证与政策推进，结尾回扣读心术，因果和转折基本闭合。",
+      "script_spans": [
+        "那标榜客观，是不是就能放心？这里有个取舍。",
+        "所以，AI面试官不是读心术，它只是把放大镜换成了滤镜。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规和煽动，且多处使用“可能”等限定；但将算法普遍描述为已把表情、停顿转成分数，易造成过度概括。",
+      "script_spans": [
+        "不确定性在于，很多工具的长期预测效度还没公开验证。",
+        "其实，算法已经把你的停顿、笑容和用词频率转成了分数。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7896872f3b4e4201890034fde379122c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

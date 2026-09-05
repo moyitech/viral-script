@@ -1,0 +1,159 @@
+{
+  "evaluation_id": "combined-900904c6682248d8adee7235e01a7b0a",
+  "run_id": "run-20260902T142526Z-2c040d06ec4f",
+  "trace_sha256": "e430896fc12fa5381bc6bac5b187ea4f605b27cc76192ef44760cb64c0dd8902",
+  "created_at": "2026-09-03T11:44:41.228585Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接提出安慰与侵权冲突，中段覆盖标识、同意两道伦理坎，结尾给出转发提醒，完整回应题设。",
+      "script_spans": [
+        "用AI复原逝者声音",
+        "它确实能陪你聊两句解思念",
+        "却可能侵权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 274，目标为 280，偏差率为 2.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕慰藉与越界，依次给出标识、同意和转发提醒，信息具体，既有规则说明也有可执行的判断方法。",
+      "script_spans": [
+        "按规定，这类AI合成的音频必须在开头或结尾加清晰语音提示",
+        "可如果亲人从没同意留声样，你私下拿旧录音去训练模型复原",
+        "想转发先说清这是AI声，别让对方误以为人回来了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“求安慰却可能侵权”制造冲突，中段递进两道坎，结尾追问由伦理讨论自然生长。",
+      "script_spans": [
+        "用AI复原逝者声音，你花几百块求安慰却可能侵权。",
+        "咱们得看清两道坎。",
+        "我是在纪念回忆，还是在假装他还在人世呢？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有短句和设问带节奏，但“解思念”“同意留声样”等搭配生硬，部分说明句朗读需重断。",
+      "script_spans": [
+        "咱们得看清两道坎",
+        "先停三秒问自己",
+        "两句解思念",
+        "亲人从没同意留声样"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“两道坎”让结构清楚，“那不是真人回来”和结尾追问形成克制、准确且便于复述的记忆点。",
+      "script_spans": [
+        "咱们得看清两道坎。",
+        "那不是真人回来。",
+        "我是在纪念回忆，还是在假装他还在人世呢？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "“两道坎”使展开清楚，结尾也回扣题设；但规定句和同意句过长，“一听知”等措辞略拗口，且侵权判断缺少过渡。",
+      "script_spans": [
+        "咱们得看清两道坎。",
+        "下次点开那样的声音前，先停三秒问自己：",
+        "没标清就容易踩过那条伦理边界线。",
+        "让人一听知是机器造的，别把合成声当遗言信了",
+        "那份声音一旦公开传播，就变成对他声音权益的冒犯"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有标识、同意和转发提醒，风险意识明确；但法律适用范围和侵权后果表述偏绝对。",
+      "script_spans": [
+        "想转发先说清这是AI声，别让对方误以为人回来了",
+        "按规定，这类AI合成的音频必须在开头或结尾加清晰语音提示",
+        "那份声音一旦公开传播，就变成对他声音权益的冒犯"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-800565772884477883fd34e7762ce2f5",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-269cbda27825414da3859538bac15f8b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

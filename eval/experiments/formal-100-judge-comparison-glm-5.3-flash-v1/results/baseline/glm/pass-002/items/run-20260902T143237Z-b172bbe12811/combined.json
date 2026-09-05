@@ -1,0 +1,143 @@
+{
+  "evaluation_id": "combined-886364039f6742029097453da3218696",
+  "run_id": "run-20260902T143237Z-b172bbe12811",
+  "trace_sha256": "45731369860e108bb1b0309922c052d18bb837812c11af7db971627d96b335d4",
+  "created_at": "2026-09-03T14:25:30.381809Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛出损失谁担之问，结尾以留退路作答，故障牵连与兜底两侧及普通用户全覆盖。",
+      "script_spans": [
+        "千行百业悬一根云线，谁为停顿买单？",
+        "自己留条退路比等兜底实在"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "规模数据、赔付规则、个人风险层层推进，事实与引用背景相符，观众能带走可操作判断。",
+      "script_spans": [
+        "去年十大云厂崩了327次，中断两千八百小时，波及四十三亿人次",
+        "政府评估不管普通商业软件，空白得自己补"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字内直抛损失归属的反常识冲突；中段靠数据和股价逆势涨持续兑现；结尾余味由正文自然长出，三段无需代偿。",
+      "script_spans": [
+        "云一断，停工损失咋就用户吞了？这反常识吧。",
+        "之前亚马逊云断网，股价当天还逆势涨。",
+        "当云成了空气，停风时呛到的总是普通人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚，“扫码点餐”段顺口；但“业务连续”“连坐瘫痪”等书面压缩处拗口，朗读需临时改词。",
+      "script_spans": [
+        "扫码点餐挂号存照片，全挂同一朵云。你用的健康码、打车软件都连着云。",
+        "你可能会问，厂商那么富，不该全赔吗？",
+        "只盯政务和关键设施的业务连续",
+        "想韧性强就得做多云容灾",
+        "单靠厂商自营保障根本撑不住，连坐瘫痪谁也没法独善其身。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "悬一根云线、同一朵云、同命等比喻贴题不堆砌；留退路比等兜底一句离开上下文仍可复述，克制有味。",
+      "script_spans": [
+        "千行百业悬一根云线",
+        "别以为备份在云就安全，其实和源数据同命。",
+        "自己留条退路比等兜底实在。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清晰且结尾回扣，但“备份同命”与“选跨区备份”之间缺桥，概念范围有松动。",
+      "script_spans": [
+        "说到底，政府管关键设施，厂商练容灾，用户自留后路",
+        "别以为备份在云就安全，其实和源数据同命",
+        "选服务看跨区备份"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "责任划分公允、建议务实，无违规煽动；但'同命''只盯业务连续'属绝对化与法规简化，易误导，需补边界。",
+      "script_spans": [
+        "政府管关键设施，厂商练容灾，用户自留后路",
+        "重要资料本地存一份，选服务看跨区备份",
+        "别以为备份在云就安全，其实和源数据同命",
+        "可国家云计算安全评估办法，只盯政务和关键设施的业务连续"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-adf6e7b357164c4f91180946f3894f5b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

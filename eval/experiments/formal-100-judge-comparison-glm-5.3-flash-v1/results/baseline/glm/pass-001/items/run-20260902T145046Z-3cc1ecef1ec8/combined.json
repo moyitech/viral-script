@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-f25ad68a41dd4f4690e6a6a7bc2aae72",
+  "run_id": "run-20260902T145046Z-3cc1ecef1ec8",
+  "trace_sha256": "e5feb375847e8f67ffdbe14d86533d28e0466e9ef7f5fe730faa809e652decaf",
+  "created_at": "2026-09-03T13:49:06.141612Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答'两边都不矛盾'，统计、加工、就餐方式三层成因正对题设两侧，直指家庭买菜与外食人群。",
+      "script_spans": [
+        "粮价平稳是实情，餐桌支出增加也是实情，两边都不矛盾",
+        "家庭账单涨，不是粮食耍花样，是整条链子在推"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 707，目标为 700，偏差率为 1.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦粮价与餐桌支出的背离，权重差异、外食溢价、就餐转变层层推进，论据有出处、增量具体。",
+      "script_spans": [
+        "同样一盘菜，家里做和外头吃，差价能拉到两三倍甚至十三倍",
+        "买一斤米省的几分钱，抵不过一把青菜多的几毛钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头具体反差立钩，中段以统计、加工、外食层层兑现，结尾提问从账本线索自然长出，互动不生硬。",
+      "script_spans": [
+        "粮食价格没动，你家每月买菜钱却多出一百？",
+        "研究里提到，同样一盘菜，家里做和外头吃，差价能拉到两三倍甚至十三倍。",
+        "你家的账本，是不是也悄悄多了这几笔？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句多、对话感强，整体立得住；但零点零几个点、调查覆盖照不到的缝等处需换词重断，卡在免改稿门槛之下。",
+      "script_spans": [
+        "买一斤米省的几分钱，抵不过一把青菜多的几毛钱。你回头翻翻小票，米面那点钱占多大头？",
+        "有的月份粮食还微微降了一点，对总指数拉动不到零点零几个点",
+        "不过调查覆盖总有照不到的缝，但方向没错"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，米钱青菜对比、别人厨房等表达离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "买一斤米省的几分钱，抵不过一把青菜多的几毛钱。",
+        "周末家庭餐去饭店，平日午饭点外卖，钱花在别人厨房里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "三段各司其职，'整条链子在推'收束前文，'账本多了这几笔'回扣开头百元之问，因果桥齐、无跳段。",
+      "script_spans": [
+        "原粮平稳只是第一环，后面加工、流通、就餐方式全在加价",
+        "你家的账本，是不是也悄悄多了这几笔？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "无敏感违规或夸大承诺，关键数据以“研究里提到”作限定，还补上“调查覆盖总有照不到的缝”的边界，导向安全。",
+      "script_spans": [
+        "研究里提到，同样一盘菜，家里做和外头吃，差价能拉到两三倍甚至十三倍",
+        "不过调查覆盖总有照不到的缝，但方向没错，外食占比提高是看得见的趋势"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d48bce9fa6f14fc88eb112510d0cd58f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-094690a6a55e4351b0d90a00ef17af69",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

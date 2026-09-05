@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-7f0463696f50425b961275867e2431ab",
+  "run_id": "run-20260903T051602Z-a235ea37d494",
+  "trace_sha256": "2f1bcba772830286659b39a68c5b9ffa936237cab3c26a29e2085a35b9218218",
+  "created_at": "2026-09-03T14:08:20.948029Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头场景即点题，明确回答视频只能算线索，两端覆盖家庭群受骗风险与验证方法，直指有长辈的家庭人群。",
+      "script_spans": [
+        "视频通话里的“亲眼所见”只能算线索，不能算身份证据",
+        "为什么家庭群成了重灾区？因为长辈最吃“眼见为凭”这套"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 665，目标为 700，偏差率为 5.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题全程集中，从克隆门槛、辨别率接近乱猜到暗号回拨，各信息单元递进支撑结论，无编造、无同义空转。",
+      "script_spans": [
+        "几秒音频就能克隆声音，实时视频也能造假",
+        "提前和亲人约个暗号，比如只有你们知道的一句废话，或者挂掉后用电信号码回拨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇二十字内已见具体场景与悬念，中段以数据、反问持续推进，结尾余味由正文自然长出。",
+      "script_spans": [
+        "你姑姑晚上发来视频通话，背后是医院走廊，声音带着哭腔说表弟车祸要押金",
+        "那你可能会问，平台不是有检测工具吗，怎么不拦住？",
+        "脸可以造假，流程不能省"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与问答承接有对话感，但研究数据句与“在接检测”等处需临时换词，未到无需改稿",
+      "script_spans": [
+        "提前和亲人约个暗号，比如只有你们知道的一句废话，或者挂掉后用电信号码回拨",
+        "研究显示，人类辨别高精度深伪视频和音频的准确率，有时候接近乱猜",
+        "平台确实在接深度伪造检测"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对仗与比喻点到为止且服务理解，“脸可以造假，流程不能省”脱离上下文仍可复述，无堆砌。",
+      "script_spans": [
+        "脸是她的脸，声是她的声",
+        "家庭群里的信任链，恰恰是最容易被AI撬开的缝",
+        "视频通话的价值，是提醒你“可能有事”，而不是“此人无疑”"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进段落功能清晰，对声音像、表情自然两处反例均有回应，结尾挂断对暗号回扣开篇场景，因果桥完整。",
+      "script_spans": [
+        "下次镜头里亲人急用钱，先挂断，用另一渠道对暗号",
+        "脸可以造假，流程不能省"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "多处主动设界，如'不是所有视频都是假的'，防骗建议具体可行，无夸大承诺或煽动误导。",
+      "script_spans": [
+        "不是所有视频都是假的，但伪造门槛已低到吓人。",
+        "视频通话的价值，是提醒你“可能有事”，而不是“此人无疑”。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8001a959c4e34dc98c8f09f74ac735bd",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-0d66566f995d4db59644c49a89a19f3d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

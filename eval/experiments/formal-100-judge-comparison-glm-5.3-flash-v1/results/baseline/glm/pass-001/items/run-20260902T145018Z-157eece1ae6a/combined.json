@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-f37f212ab86b4e05a30b5559765d8bc9",
+  "run_id": "run-20260902T145018Z-157eece1ae6a",
+  "trace_sha256": "72d26adf4b4e7dc1ae7d09c9f1447c6b305a77aee07b771e5a04a3dab0dc6cf7",
+  "created_at": "2026-09-03T13:49:52.684578Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即对准钢厂师傅丢岗痛点，正文给出补技能、盯培训、问转岗等对策，结尾回应被落下，全程扣题。",
+      "script_spans": [
+        "想不被落下，现在国家三年行动政策窗口开着，就得主动把绿色技能补上",
+        "你现在就该找车间主任问清单位有没有转岗培训计划，先摸底再报名"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 287，目标为 280，偏差率为 2.50%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从三年行动、九行业改造到课程更新、摸底报名，信息单元层层推进，有出处支撑，无口号空转。",
+      "script_spans": [
+        "国家正在钢铁、水泥、电解铝等九个高耗能行业推三年节能降碳改造",
+        "已经把电动汽车维修、节能材料这些新课加进来，学会就有机会往绿色岗位转"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接点出降薪丢岗的具体利害，中段政策、培训、行动层层给新信息，结尾反转留余味，三段各自立住。",
+      "script_spans": [
+        "钢厂师傅三年里可能因不会节能新设备降薪或丢岗了",
+        "你现在就该找车间主任问清单位有没有转岗培训计划，先摸底再报名",
+        "早补技能的人反而更吃香"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、有节奏，'先摸底再报名'很顺；但开头因果压得太紧，'能效应该提'需临时补词，两处拗口只能2分。",
+      "script_spans": [
+        "先摸底再报名，别等红头文件下来了才着急",
+        "机器一升级，老操作法往往跟不上",
+        "钢厂师傅三年里可能因不会节能新设备降薪或丢岗了",
+        "改造完能效应该提"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，红头文件、手艺换代等表达自然，绿色转型不是甩掉老师傅而是逼着手艺换代，离开原文仍可复述。",
+      "script_spans": [
+        "不是甩掉老师傅，经验仍值钱，而是逼着手艺换代",
+        "别等红头文件下来了才着急"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "机器升级到老操作法跟不上搭起关键因果桥，结尾回扣开头，各段功能清晰，递进自然。",
+      "script_spans": [
+        "机器一升级，老操作法往往跟不上",
+        "绿色转型其实不是甩掉老师傅，经验仍值钱，而是逼着手艺换代"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键判断均带限定，如可能降薪或丢岗、有机会转岗，不作确定性承诺；结尾主动化解老师傅与转型对立，导向安全。",
+      "script_spans": [
+        "钢厂师傅三年里可能因不会节能新设备降薪或丢岗了",
+        "学会就有机会往绿色岗位转",
+        "绿色转型其实不是甩掉老师傅，经验仍值钱"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2b06c126c0154c4f96a96463efcee870",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-5526c06d8a54412e8ac48d91e3615bb0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

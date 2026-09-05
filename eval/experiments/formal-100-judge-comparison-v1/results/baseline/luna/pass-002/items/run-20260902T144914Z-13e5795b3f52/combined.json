@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-5cfd0998c6934612bf6a743f8775a059",
+  "run_id": "run-20260902T144914Z-13e5795b3f52",
+  "trace_sha256": "cbb34ed4fe4ab5941bd77909386dde12a2f6a3c1a824ba42837061fd55f2b3f3",
+  "created_at": "2026-09-03T12:16:17.182293Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解粮价与家庭餐桌支出的差别，并落到外卖、下馆子等普通家庭场景。",
+      "script_spans": [
+        "粮价大体平稳，支出增加也是实情，两笔账不能混为一谈。",
+        "家庭点外卖、周末下馆子，或买把鲜菜，支出悄悄厚了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主线集中，解释了原粮与整桌餐费的差别，也给出外食溢价；但把肉禽等一概说成上涨，时间口径不清，削弱信息可靠性。",
+      "script_spans": [
+        "从田间到舌尖，每道环节都可能加价。",
+        "同样饭菜下馆子可能贵两三倍，蔬菜类溢价更突出。",
+        "鲜菜、肉禽、食用油，还有在外餐饮，价格都在往上走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用粮价与账单反差设问，中段不断扩展成本口径，结尾顺势落到就餐选择，推进和互动都自然。",
+      "script_spans": [
+        "粮价平稳，你家吃饭账单却悄悄涨了，钱漏在哪儿？",
+        "钱到底花哪儿了？看更宽口径的餐桌成本。",
+        "下次看到粮价平稳新闻，别急着松气。翻翻自己的外卖订单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答式停顿较多，但“食品烟酒加在外餐饮”“配件贵了”等处朗读会卡顿，需要临时换说法。",
+      "script_spans": [
+        "粮价平稳，你家吃饭账单却悄悄涨了，钱漏在哪儿？",
+        "统计数据里，食品烟酒加在外餐饮，有个月同比涨了百分之一点四。",
+        "就算天天在家煮饭，也觉菜篮变沉，因为配件贵了，像调料肉蛋。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“整张餐桌，不是只称米缸”把总账与单一粮价的区别说得形象，厨房挪到餐厅也形成了自然记忆点。",
+      "script_spans": [
+        "吃饭从厨房挪到餐厅，账单就厚了。",
+        "账单算的是整张餐桌，不是只称米缸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构有开头、拆账、举证和结论回扣，主线可跟；但“配件贵了”表述生硬，并把就餐选择直接说成主要拉动因素，因果桥不足。",
+      "script_spans": [
+        "两笔账不能混为一谈。",
+        "吃饭从厨房挪到餐厅，账单就厚了。省了做饭时间，却花了更多钞票。",
+        "因为配件贵了，像调料肉蛋。",
+        "真正拉动花费的，往往是咱们就餐的选择。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，但把多类价格概括为“都在往上走”，并将支出主因归于就餐选择，容易造成过度归因。",
+      "script_spans": [
+        "两笔账不能混为一谈",
+        "鲜菜、肉禽、食用油，还有在外餐饮，价格都在往上走。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0a5bd3ed5f7643028be867ed9c26c02c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

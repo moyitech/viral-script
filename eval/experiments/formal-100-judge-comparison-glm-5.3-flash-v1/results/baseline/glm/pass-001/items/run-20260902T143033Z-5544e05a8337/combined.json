@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-6daa1d5fc0d54520a6c46ce899fef3ee",
+  "run_id": "run-20260902T143033Z-5544e05a8337",
+  "trace_sha256": "9335f95657407473b928f5f93805033537186e830b53b952c7aaa4c74f646fa6",
+  "created_at": "2026-09-03T13:45:46.755781Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即入题设冲突，中段给出具体对策，结尾回扣出门充电场景，题设两侧与人群均覆盖。",
+      "script_spans": [
+        "公共充电设备确实有被窃密的可能，但咱别因噎废食，出门充电记住一招：自带靠谱充电头只找墙壁插座"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 287，目标为 280，偏差率为 2.50%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "风险、原理、对策、案例校准层层推进，实锤不多但有官方提醒的表述克制且扎实，增量具体。",
+      "script_spans": [
+        "它靠一根USB线连着你的手机，电和数据的通道是通的，你一充电对方就可能顺线摸进相册和通讯录",
+        "现实里公开抓到的实锤案例数量不多，但安全机构早发过明确风险提醒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句场景即抛风险钩子，中段以“危险在哪”设问推进，机制、让步、实证层层兑现，结尾提问由建议自然长出，三段均有力。",
+      "script_spans": [
+        "在商场溜达瞅见免费USB充电桩，你手机里的私房照片和短信验证码可能瞬间被人拷走",
+        "这桩子危险在哪？它靠一根USB线连着你的手机，电和数据的通道是通的",
+        "你乐意每天多带点重量换份安心吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体对话感和动词都好，但两处压缩书面句需临时换词重断，顺口度受限。",
+      "script_spans": [
+        "你一充电对方就可能顺线摸进相册和通讯录",
+        "再说普通充电桩虽多只供电不接数据，遇恶意改装谁也难分辨",
+        "现实里公开抓到的实锤案例数量不多，但安全机构早发过明确风险提醒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“顺线摸进相册”形象且准确，“塞个插头比满场找桩”离开上下文仍可复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "你一充电对方就可能顺线摸进相册和通讯录",
+        "往自己包里塞个插头比满场找免费桩更踏实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问引出原理承接自然，因果桥清晰，结尾塞插头回扣开头免费桩场景，各段功能分明。",
+      "script_spans": [
+        "这桩子危险在哪？它靠一根USB线连着你的手机",
+        "往自己包里塞个插头比满场找免费桩更踏实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "窃密风险用可能限定，且明说实锤案例不多，不作恐慌营销；建议为自带充电头等安全做法，无违规。",
+      "script_spans": [
+        "公共充电设备确实有被窃密的可能，但咱别因噎废食",
+        "现实里公开抓到的实锤案例数量不多，但安全机构早发过明确风险提醒"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-72ddc7009de64db48f6db2ffd07056dd",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f791d767564a4658bb672ad9a27f82b2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

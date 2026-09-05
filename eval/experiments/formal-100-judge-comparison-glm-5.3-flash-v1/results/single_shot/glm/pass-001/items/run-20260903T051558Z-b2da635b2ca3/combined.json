@@ -1,0 +1,157 @@
+{
+  "evaluation_id": "combined-a0f3884e256a41a1accc62e97807443b",
+  "run_id": "run-20260903T051558Z-b2da635b2ca3",
+  "trace_sha256": "4e06f8b8ddc8eecf530b9760c64ef0919805b1c5938ac7ca67391a6d97e41de5",
+  "created_at": "2026-09-03T14:12:27.164351Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即对立设问，结尾落回普通家庭应对，题设两侧与核心人群全覆盖，切角具体。",
+      "script_spans": [
+        "为什么官方口中的物价温和，落到自家餐桌上就变了味？",
+        "对普通人，别把全国CPI当自家账单。真正该盯的是工资覆盖刚性支出后的余量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 408，目标为 450，偏差率为 9.33%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "消费结构、核心CPI、收入分化的论据各有推进，但房租看病不进CPI与口径相悖，结论支撑断裂。",
+      "script_spans": [
+        "上半年居民花出去的钱，食品烟酒加上居住就占了一半还多；可同期CPI里居住类价格甚至微微走低",
+        "收入看似实际涨了百分之四，但财产性收入增速才一点多",
+        "如果房租、学费、看病这些不进CPI的权重越来越重"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "二十字内立起1%与体感反差，中段账本、篮子、收入层层兑现钩子，结尾建议自然收束有余味。",
+      "script_spans": [
+        "CPI同比才涨1%左右，房价和菜价却让人心跳。",
+        "为什么官方口中的物价温和，落到自家餐桌上就变了味？",
+        "曲线漂亮了，普通人盯着的菜价油价却被抹平。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体可读、对话感尚存；但“工资覆盖刚性支出后的余量”等处名词堆叠，朗读需换词重断，最高2分。",
+      "script_spans": [
+        "你交完房租、买完菜，看着工资卡余额，还是觉得钱像漏了底。",
+        "真正该盯的是工资覆盖刚性支出后的余量。",
+        "这些不进CPI的权重越来越重"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻贴切克制，“钱像漏了底”“同一本账”服务理解，“别把全国CPI当自家账单”离文可复述，无堆砌。",
+      "script_spans": [
+        "还是觉得钱像漏了底。",
+        "官方通胀指标和普通家庭压力，根本不是同一本账。",
+        "别把全国CPI当自家账单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清晰、结尾回扣账本对比，但房租看病不进CPI与前文居住类在CPI内自相矛盾，篮子归因缺桥。",
+      "script_spans": [
+        "问题不在你的错觉。官方通胀指标和普通家庭压力，根本不是同一本账。",
+        "对普通人，别把全国CPI当自家账单。",
+        "如果房租、学费、看病这些不进CPI的权重越来越重",
+        "数字显得平静，只因统计篮子偏重日常轻消费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体务实克制、建议有边界；但归因句确定性过强，需加限定更稳妥。",
+      "script_spans": [
+        "对普通人，别把全国CPI当自家账单。",
+        "真正该盯的是工资覆盖刚性支出后的余量。",
+        "数字显得平静，只因统计篮子偏重日常轻消费。",
+        "官方通胀指标和普通家庭压力，根本不是同一本账。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-71a6a839b2a64a14b1abe04e61f39191",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-0f96eaea359c4b02b54b225c44f9c36a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

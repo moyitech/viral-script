@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-4c08c5c9d90844b69ba9580131ded2db",
+  "run_id": "run-20260903T051626Z-3107776e56a1",
+  "trace_sha256": "e1cd4956d430f1df1b0a5bd85205588542fa6ed23137a075281e4eb8e13ac3e0",
+  "created_at": "2026-09-03T11:57:09.427640Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从街头垫付和群聊代付切入，解释善意设边界的原因，并给出核实、延时支付和留痕建议，完整回应题设。",
+      "script_spans": [
+        "帮陌生人垫付，善意必须带边界，不然容易从救助变成被利用。",
+        "垫付前多问一句官方核实，优先选用带担保或延时的支付渠道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 426，目标为 450，偏差率为 5.33%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "诈骗机制、无因管理、支付风控和具体应对各自推进主题，观众能获得风险识别与操作建议；法律术语虽密集但不改变主旨。",
+      "script_spans": [
+        "骗子常制造紧急情境突破信任。",
+        "小额救急也留好聊天记录。",
+        "若对方以虚假身份骗付，虽法律说违法背俗时受益人抗辩排除，但暗中罪犯无处追偿，钱款难回。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用紧急垫付制造冲突，中段接连转入法律、诈骗和支付工具，结尾给出边界，推进与余味都在。",
+      "script_spans": [
+        "在路边有人突然拦下你，说家人急救差几百块挂号费，手机没电求你垫付",
+        "帮人别帮成被收割的缺口，这才是善意的可持续方式。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体劝说线索清楚，开头结尾较顺，但法律段术语密集，至少两处需要重断句或换词。",
+      "script_spans": [
+        "你出于善意转了钱，可这份好心，为什么常常需要踩刹车？",
+        "在路边有人突然拦下你，说家人急救差几百块挂号费，手机没电求你垫付；或是在群聊里陌生网友说转账出错求你代付。",
+        "虽法律说违法背俗时受益人抗辩排除，但暗中罪犯无处追偿，钱款难回。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“踩刹车”“留三分清醒”把风险说具体，结尾“被收割的缺口”形成反差，留下可复述的记忆点。",
+      "script_spans": [
+        "这份好心，为什么常常需要踩刹车？",
+        "善意可以留三分清醒。",
+        "帮人别帮成被收割的缺口，这才是善意的可持续方式。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、法律解释、风险分析和行动建议顺序完整，但“违法背俗”一段因果和概念未讲清，结论需要观众自行补足。",
+      "script_spans": [
+        "我的判断很直接：帮陌生人垫付，善意必须带边界，不然容易从救助变成被利用。",
+        "虽法律说违法背俗时受益人抗辩排除，但暗中罪犯无处追偿，钱款难回。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体风险提示克制，但无因管理、追回责任和延时止付说得过于确定，需补充个案与平台规则边界。",
+      "script_spans": [
+        "善意必须带边界，不然容易从救助变成被利用",
+        "优先选用带担保或延时的支付渠道，小额救急也留好聊天记录",
+        "你的垫付必须基于真实管理意思，对方事务真实合法",
+        "发现不对能及时止付"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-1be51574595e43caa8f6bebbaebcc908",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6b5b8a07a1274cd5a7e3661f70d26922",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

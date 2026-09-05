@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-786b5a8cfbb345b58c61c5a6412717a6",
+  "run_id": "run-20260902T142252Z-1ce7d98b57a0",
+  "trace_sha256": "b7f085ffa8a9653b0ae24aac5cc7bcba11ef8b745c2026528136e4329d2229dd",
+  "created_at": "2026-09-03T11:45:13.254214Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "明确面向普通投资者，围绕AI伪风口给出查收入、查资质和查处罚的具体做法，题设回应完整。",
+      "script_spans": [
+        "咱们普通投资者避开伪风口，得翻财报看真收入。",
+        "买前去官网查机构资质，先搜名字看处罚记录"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 274，目标为 280，偏差率为 2.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，既有虚假信息和AI荐股套路，也有资质、处罚记录等核验动作，信息增量较明确。",
+      "script_spans": [
+        "有人编假AI订单文章乱传，前阵子被监管罚了款。",
+        "还有人用AI量化选股当名头，卖高价软件收服务费。",
+        "那怎么动手查？买前去官网查机构资质，先搜名字看处罚记录"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出本金风险，中段连续切换骗局并给出查法，结尾互动也从保本金自然生长。",
+      "script_spans": [
+        "你刚追进AI概念股，本金可能就亏掉一大截。",
+        "那怎么动手查？买前去官网查机构资质，先搜名字看处罚记录",
+        "下次你看到AI爆款文，愿先缓三秒保本金吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、指令清楚，但“编假”“当名头”等搭配拗口，结尾“愿先”也像漏字，朗读需微调。",
+      "script_spans": [
+        "那怎么动手查？",
+        "有人编假AI订单文章乱传",
+        "还有人用AI量化选股当名头",
+        "愿先缓三秒保本金吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且贴合风险，“热闹是别人的，本金是你的”形成清晰、可复述的收束记忆点。",
+      "script_spans": [
+        "你以为捡便宜，其实接了烫手山芋。",
+        "热闹是别人的，本金是你的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "案例、风险和核验清单顺序清楚，但从无资质直接推到地下生意，并把不同风险串成同一结论，因果仍有跳跃。",
+      "script_spans": [
+        "那怎么动手查？买前去官网查机构资质，先搜名字看处罚记录",
+        "没资质很可能是地下生意，出事难维权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体风险提示清楚，查资质和不转私人码的建议稳妥；但“没资质很可能是地下生意”属泛化标签，结尾“保本金”也有暗示性承诺。",
+      "script_spans": [
+        "买前去官网查机构资质，先搜名字看处罚记录，别扫私人码转钱就当投资。",
+        "没资质很可能是地下生意，出事难维权。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-cd100f666c694f66b897801787b7c2bc",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a806e1567c34407281f48aa2961a2796",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

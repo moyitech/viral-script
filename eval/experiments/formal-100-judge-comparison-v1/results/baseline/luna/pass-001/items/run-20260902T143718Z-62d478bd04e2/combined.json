@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-83da081a565b4edc8cbec714a9b134d1",
+  "run_id": "run-20260902T143718Z-62d478bd04e2",
+  "trace_sha256": "3608160c31c547cb7b4cdd3a55d8290f4ade2d8544eed43983ae02f32a59c7f0",
+  "created_at": "2026-09-03T11:44:59.679061Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接拆解“防骗/夺权”冲突，既讲自愿代管，也讲越权风险，精准回应题设。",
+      "script_spans": [
+        "子女没收爸妈养老金卡，是防骗还是夺权？这俩不冲突，但得看是不是老人自愿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 292，目标为 280，偏差率为 4.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕自愿、权限边界和执行办法递进，既有生活场景，也给出代管条与对账等可操作建议。",
+      "script_spans": [
+        "花多少仍由他主意，钱安全他也舒心。",
+        "坐下来写张代管条，权限写清，花销怎么批写明白，每月对次账，比硬抢长久。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出防骗与夺权的冲突，中段用两种代管情境推进，结尾给出可执行的折中办法。",
+      "script_spans": [
+        "子女没收爸妈养老金卡，是防骗还是夺权？",
+        "可你若直接藏卡改密，买棵葱都要跟你报批"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数句子短促有画面，能顺着讲清冲突；但“像请个跑腿”“花多少仍由他主意”等处搭配生硬，收尾并列也略卡。",
+      "script_spans": [
+        "这俩不冲突，但得看是不是老人自愿",
+        "花多少仍由他主意",
+        "坐下来写张代管条，权限写清，花销怎么批写明白，每月对次账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“钱笼子”把失去自主的压迫感说具体了，配合“跑腿”类比，形象但不过量，具备复述价值。",
+      "script_spans": [
+        "像请个跑腿，能护钱也能伤自尊。",
+        "把爸妈关进钱笼子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提出判断标准，再用正反场景划边界，最后落到书面约定和对账，因果与结论都能回扣。",
+      "script_spans": [
+        "老人清醒时说“你帮我管”，骗子来电你替他挂断，买药取钱你跑腿",
+        "可你若直接藏卡改密，买棵葱都要跟你报批",
+        "真怕被骗，别急收卡。坐下来写张代管条，权限写清"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "强调父母自愿、权限清楚，方向稳妥；但“法律不许”和“钱安全”表述偏满，缺少适用边界。",
+      "script_spans": [
+        "关键得父母自己点头。",
+        "法律不许子女无理拦着父母管自己的钱"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-0a69f1c7589741f894654e9b2441a541",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f8312b06c7b34e9d839cdd3fb0ae95de",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

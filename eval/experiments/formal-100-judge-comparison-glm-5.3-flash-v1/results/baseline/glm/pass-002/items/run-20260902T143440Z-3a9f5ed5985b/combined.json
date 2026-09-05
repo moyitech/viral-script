@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-ac7933e7f0654b599cb53d8862b47adc",
+  "run_id": "run-20260902T143440Z-3a9f5ed5985b",
+  "trace_sha256": "0d56f96733bb9ed2ace063cc443bced1329e1fab2689cc817bdf8fd7f0d593b3",
+  "created_at": "2026-09-03T14:25:12.982522Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即立判断框架，正反两侧与中年人群全覆盖，结尾回扣题设不跑偏。",
+      "script_spans": [
+        "值不值，得看你要什么。单为眼前工资，这买卖吃亏。为躲掉十年后的失业，可能走对。",
+        "所以别问值不值，先问自己旧本事还能吃几年。赌不赌，看你怕什么。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据、动机、风险、决策法层层推进，失业率与培训人次等口径有据，信息密度足。",
+      "script_spans": [
+        "招聘报告里，三十一岁朝上的成熟人才，在流动大盘里占了一半还多。",
+        "统计里城镇三十到五十九岁，失业率约百分之四，比平均线低。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛具体代价加追问，中段数据、反问与转折层层推进，结尾由正文自然长出余味，三段无代偿。",
+      "script_spans": [
+        "每月少赚四千块，中年转行你肯吗？",
+        "多数人不是被老板踢走，是自己在变天前找退路。",
+        "所以别问值不值，先问自己旧本事还能吃几年。赌不赌，看你怕什么。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句为主、能顺读，但“好否”“难把收入和满意度因果说清”两处需换词重断，只能封顶2分。",
+      "script_spans": [
+        "培训补贴像扶手，但路得自己走。",
+        "多数人不是被老板踢走，是自己在变天前找退路。",
+        "长远日子好否，真没准。",
+        "难把收入和满意度因果说清。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "类比贴切且克制，'买的是不被淘汰的资格''先问旧本事还能吃几年'离开原文仍可复述，无炫技堆叠。",
+      "script_spans": [
+        "他们把薪资砍一段，买的是不被淘汰的资格。",
+        "培训补贴像扶手，但路得自己走。",
+        "本事越用越值钱，那少赚的算买保险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "五段功能清晰，转折与因果均有桥，结尾先问旧本事回扣开篇设问。",
+      "script_spans": [
+        "不过降薪转行后，长远日子好否，真没准。长期跟踪的研究不多，难把收入和满意度因果说清。",
+        "所以别问值不值，先问自己旧本事还能吃几年。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "无违规表述；主动交代转行结果不确定，提醒不代表照抄就灵，不作保证性承诺，导向安全。",
+      "script_spans": [
+        "长期跟踪的研究不多，难把收入和满意度因果说清",
+        "别人转行顺了，不代表你照抄就灵",
+        "培训补贴像扶手，但路得自己走"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-03098dd30893402da8b45d246f5ebabf",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

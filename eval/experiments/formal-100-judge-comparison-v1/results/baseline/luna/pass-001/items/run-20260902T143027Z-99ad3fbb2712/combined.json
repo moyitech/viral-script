@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-14355414005d4b3fab00d457092f1440",
+  "run_id": "run-20260902T143027Z-99ad3fbb2712",
+  "trace_sha256": "8815f265ca6120fb55e13a8fcc68e5a738d1a3f676d7ec21879ba98c07fbb5d5",
+  "created_at": "2026-09-03T11:45:10.702843Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问直指证书与就业的关系，既讲能成为硬门槛的情形，也给出投递前核查建议。",
+      "script_spans": [
+        "证书换不换工作，关键看它是硬门槛还是花架子。",
+        "投简历前，先查岗位要不要准入资格，别使错劲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 275，目标为 280，偏差率为 1.79%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "分类、政策变化和求职建议都较具体，但把非准入证书概括成“装饰品”，削弱了判断的准确性。",
+      "script_spans": [
+        "现在改由用人单位自己认定，政府不再统一发证",
+        "否则只是书架上的装饰品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直击证书能否换工作的焦虑，中段持续推进分类、政策变化与求职建议，结尾收束自然有余味。",
+      "script_spans": [
+        "真能换到工作吗？",
+        "证书换不换工作，关键看它是硬门槛还是花架子。",
+        "投简历前，先查岗位要不要准入资格，别使错劲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句较多、推进清楚，且有自然承接；但两处措辞读来拗口，需要临时改词。",
+      "script_spans": [
+        "说白了，你考的证有没有用，全看招人单位认不认你。",
+        "有就业调研就提到",
+        "毕业生找工作受学历学校影响更大"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“硬钥匙”和“书架上的装饰品”形成清晰对照，帮助理解证书价值，也留下了自然可复述的判断。",
+      "script_spans": [
+        "这种证才是敲开招聘门的硬钥匙。",
+        "否则只是书架上的装饰品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "分类—政策—行动建议的主线清楚，但调研结论缺少证书价值的直接论证，结尾又出现一概而论。",
+      "script_spans": [
+        "证书换不换工作，关键看它是硬门槛还是花架子。",
+        "有就业调研就提到，毕业生找工作受学历学校影响更大，证书只是其中一小块。",
+        "当门槛的证才是真钥匙，否则只是书架上的装饰品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能区分准入类与水平评价类，也给出先查岗位的稳妥建议；但“法律根本不让”“章子不通用”“全看”过于绝对，易造成误导。",
+      "script_spans": [
+        "投简历前，先查岗位要不要准入资格，别使错劲。",
+        "没证法律根本不让你上岗",
+        "政府不再统一发证，章子不通用了",
+        "你考的证有没有用，全看招人单位认不认你。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-57ed0bba0d7d4e7382e31567e62c942a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a1e29961085849ddabdfb518e5be51c5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

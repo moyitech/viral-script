@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-85e398439a96410e9d25c0827cb621f0",
+  "run_id": "run-20260903T051626Z-fbda1a92da20",
+  "trace_sha256": "997022c5591ec8fefe33e72153e59138c3493d95a397747877eec9a5b688eb6a",
+  "created_at": "2026-09-03T15:26:26.809581Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头场景与题设对位，“单靠视频通话不够稳”正面作答，暗号与回拨建议直击家庭群人群痛点。",
+      "script_spans": [
+        "我的判断很直接：单靠视频通话确认亲人身份，已经不够稳了",
+        "那家里怎么防？提前约定个只有彼此懂的暗号，或者挂断后用原先存好的号码回拨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦深伪核身，从复刻能力、人眼极限到暗号回拨，各信息单元层层推进无注水。",
+      "script_spans": [
+        "深度伪造能把熟人的容貌和嗓音高精度复刻，连细微表情和说话停顿都能仿",
+        "面对精修的深伪视频，人眼辨别力甚至会跌到接近乱猜的水平"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句场景即抛出急催垫钱的冲突，中段以疑问、判断、风险层层兑现，结尾金句由正文自然长出余味。",
+      "script_spans": [
+        "家族群突然弹出叔叔的视频通话，屏幕里是他脸，声音也熟，开口就急吼吼让你垫钱救急",
+        "人眼辨别力甚至会跌到接近乱猜的水平",
+        "记住，眼见不一定为实，换条渠道核实才守得住钱包"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头设景与防骗建议顺口有对话感，但中段解释句仍偏书面讲解，真人录音前需改写。",
+      "script_spans": [
+        "屏幕里是他脸，声音也熟，开口就急吼吼让你垫钱救急",
+        "面对精修的深伪视频，人眼辨别力甚至会跌到接近乱猜的水平",
+        "深度伪造能把熟人的容貌和嗓音高精度复刻"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "急吼吼、跌到接近乱猜等表达形象且服务理解，无堆砌；结尾金句离开正文仍可自然复述，记忆点扎实。",
+      "script_spans": [
+        "开口就急吼吼让你垫钱救急",
+        "眼见不一定为实，换条渠道核实才守得住钱包"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问—判断—机理—对策—回扣，因果桥齐整，结尾回应开头“画面能否证明身份”，闭环自然。",
+      "script_spans": [
+        "这画面能证明真是他吗？我的判断很直接",
+        "眼见不一定为实，换条渠道核实才守得住钱包"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述克制有边界，如'眼见不一定为实'未作绝对化断言；回拨核实与暗号建议安全可操作，无夸大、煽动或误导风险。",
+      "script_spans": [
+        "单靠视频通话确认亲人身份，已经不够稳了",
+        "眼见不一定为实，换条渠道核实才守得住钱包"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-da0cc72d7bdc4691b69cf5b6f4f389d4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

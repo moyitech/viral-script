@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-8aa394b9238a4c46ad5178d94a4ddc09",
+  "run_id": "run-20260902T144224Z-f0f3a7117b1d",
+  "trace_sha256": "7ac6c7821542f5b089de48d69cd5d728827431fefe2c8480654f643d07d70710",
+  "created_at": "2026-09-03T13:47:52.808610Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛停产亏损与2027指标两侧冲突，中间拆解为何怕，结尾给出企业试水策略，正面回答题设。",
+      "script_spans": [
+        "换国产系统怕产线停一天亏百万，不换又卡2027硬指标",
+        "企业不是拒国产，是先拿边缘环节试水，核心产线慢慢挪。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 477，目标为 450，偏差率为 6.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终锁定换系统之难，参数学习期、炖汤火候、国产率数据等单元层层推进，关键事实均有出处，无编造。",
+      "script_spans": [
+        "老师傅调一次参数，够新手学半年。",
+        "就像炖汤不能跳火候，新系统得啃透老逻辑再动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇即抛停工亏损与2027期限的两难，中段问答转折持续供新信息，结尾难题由正文自然生长，留有余味。",
+      "script_spans": [
+        "换国产系统怕产线停一天亏百万，不换又卡2027硬指标",
+        "你以为把文件拷过去就完事？那是给厂子换张嘴，没换脑。",
+        "老经验怎么带着走，人和系统怎么磨合，才是真难题。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与比喻让全文好读、对话感强，但拗处一句与闪失先怕两处拗口，决定性卡住3分。",
+      "script_spans": [
+        "老师傅调一次参数，够新手学半年",
+        "可工业软件有个拗处：知识过程不可压缩",
+        "良品率闪失先怕"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "换嘴没换脑、炖汤跳不了火候两处比喻贴切克制，服务理解且可独立复述，全篇无辞藻堆叠。",
+      "script_spans": [
+        "那是给厂子换张嘴，没换脑",
+        "老图纸和工艺参数都焊在旧代码里",
+        "就像炖汤不能跳火候"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "四段各司其职，从经验难迁移到政策倒逼递进清楚，关键因果有桥梁，结尾换脑回扣开头选择题。",
+      "script_spans": [
+        "老图纸和工艺参数都焊在旧代码里，新手摸不透就出残次。",
+        "换脑痛躲不掉，可老经验怎么带着走，人和系统怎么磨合，才是真难题。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键数据有出处，风险多用“可能”“怕”限定；正反观点平衡，不煽动不夸大，无绝对化承诺。",
+      "script_spans": [
+        "强换可能直接哑火，废品堆成山",
+        "企业不是拒国产，是先拿边缘环节试水，核心产线慢慢挪",
+        "79号文说2027年前央企国企要百分百换信创国产系统"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d8d37eddac2a40ee8ba509a242344f53",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-0fb2a5ba9fd645d2a6af45de9694ba05",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

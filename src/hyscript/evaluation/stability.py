@@ -6,7 +6,7 @@ from collections import Counter
 import csv
 import io
 from pathlib import Path
-from typing import Any
+from typing import Any, Mapping
 
 from .formal import atomic_write_text, load_json, write_json
 from .human import quadratic_weighted_kappa, spearman
@@ -216,6 +216,162 @@ def compare_judge_runs(
     return summary, rows
 
 
+def combine_judge_comparisons(
+    comparisons: Mapping[
+        str, tuple[dict[str, Any], list[dict[str, Any]]]
+    ],
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    """Pool complete stability comparisons before computing aggregate metrics."""
+
+    if not comparisons:
+        raise ValueError("At least one Judge comparison is required.")
+    dimension_sets = {
+        tuple(summary.get("dimensions", {}))
+        for summary, _rows in comparisons.values()
+    }
+    if len(dimension_sets) != 1:
+        raise ValueError("Judge comparison dimensions differ between source groups.")
+    dimensions = next(iter(dimension_sets))
+    if not dimensions:
+        raise ValueError("Judge comparisons contain no scored dimensions.")
+    fingerprints = {
+        summary.get("evaluator_fingerprint_sha256")
+        for summary, _rows in comparisons.values()
+    }
+    if len(fingerprints) != 1 or None in fingerprints:
+        raise ValueError("Judge comparison fingerprints differ between source groups.")
+
+    combined_rows: list[dict[str, Any]] = []
+    baseline_requests: Counter[int] = Counter()
+    repeat_requests: Counter[int] = Counter()
+    source_evaluation_ids: dict[str, dict[str, Any]] = {}
+    for source_name, (summary, rows) in comparisons.items():
+        if summary.get("record_count") != len(rows):
+            raise ValueError(
+                f"Judge comparison row count differs for source group: {source_name}"
+            )
+        if tuple(summary.get("dimensions", {})) != dimensions:
+            raise ValueError(
+                f"Judge comparison dimension order differs for source group: {source_name}"
+            )
+        for key, value in summary.get(
+            "baseline_request_count_distribution", {}
+        ).items():
+            baseline_requests[int(key)] += int(value)
+        for key, value in summary.get(
+            "repeat_request_count_distribution", {}
+        ).items():
+            repeat_requests[int(key)] += int(value)
+        source_evaluation_ids[source_name] = {
+            "baseline": summary.get("baseline_evaluation_id"),
+            "repeat": summary.get("repeat_evaluation_id"),
+        }
+        combined_rows.extend(
+            {"source_group": source_name, **row} for row in rows
+        )
+
+    baseline_totals = [
+        float(row["baseline_normalized_score"]) for row in combined_rows
+    ]
+    repeat_totals = [
+        float(row["repeat_normalized_score"]) for row in combined_rows
+    ]
+    dimension_summary: dict[str, Any] = {}
+    for dimension in dimensions:
+        first_values = [
+            int(row[f"baseline_{dimension}"]) for row in combined_rows
+        ]
+        second_values = [
+            int(row[f"repeat_{dimension}"]) for row in combined_rows
+        ]
+        exact = sum(
+            first == second for first, second in zip(first_values, second_values)
+        )
+        difference_counts = Counter(
+            second - first for first, second in zip(first_values, second_values)
+        )
+        dimension_summary[dimension] = {
+            "count": len(combined_rows),
+            "exact_agreement_count": exact,
+            "exact_agreement_rate": exact / len(combined_rows),
+            "quadratic_weighted_kappa": quadratic_weighted_kappa(
+                first_values, second_values
+            ),
+            "mae": sum(
+                abs(first - second)
+                for first, second in zip(first_values, second_values)
+            )
+            / len(combined_rows),
+            "baseline_distribution": {
+                str(key): value
+                for key, value in sorted(Counter(first_values).items())
+            },
+            "repeat_distribution": {
+                str(key): value
+                for key, value in sorted(Counter(second_values).items())
+            },
+            "delta_distribution": {
+                str(key): value for key, value in sorted(difference_counts.items())
+            },
+        }
+
+    exact_dimensions = sum(
+        item["exact_agreement_count"] for item in dimension_summary.values()
+    )
+    all_dimensions_exact = sum(
+        int(row["changed_dimension_count"]) == 0 for row in combined_rows
+    )
+    normalized_score_exact = sum(
+        first == second for first, second in zip(baseline_totals, repeat_totals)
+    )
+    total_comparisons = len(combined_rows) * len(dimensions)
+    summary = {
+        "schema_version": "1.0",
+        "comparison": "combined_judge_repeatability",
+        "source_groups": list(comparisons),
+        "record_count": len(combined_rows),
+        "dimension_count": len(dimensions),
+        "dimensions": dimension_summary,
+        "evaluator_fingerprint_sha256": next(iter(fingerprints)),
+        "source_evaluation_ids": source_evaluation_ids,
+        "baseline_request_count_distribution": {
+            str(key): baseline_requests[key] for key in sorted(baseline_requests)
+        },
+        "repeat_request_count_distribution": {
+            str(key): repeat_requests[key] for key in sorted(repeat_requests)
+        },
+        "overall": {
+            "dimension_comparison_count": total_comparisons,
+            "dimension_exact_agreement_count": exact_dimensions,
+            "dimension_exact_agreement_rate": exact_dimensions
+            / total_comparisons,
+            "all_dimensions_exact_count": all_dimensions_exact,
+            "all_dimensions_exact_rate": all_dimensions_exact
+            / len(combined_rows),
+            "normalized_score_exact_count": normalized_score_exact,
+            "normalized_score_exact_rate": normalized_score_exact
+            / len(combined_rows),
+            "baseline_normalized_score_mean": sum(baseline_totals)
+            / len(combined_rows),
+            "repeat_normalized_score_mean": sum(repeat_totals)
+            / len(combined_rows),
+            "normalized_score_mean_delta": (
+                sum(repeat_totals) - sum(baseline_totals)
+            )
+            / len(combined_rows),
+            "normalized_score_mae": sum(
+                abs(first - second)
+                for first, second in zip(baseline_totals, repeat_totals)
+            )
+            / len(combined_rows),
+            "normalized_score_spearman": spearman(
+                baseline_totals, repeat_totals
+            ),
+        },
+    }
+    return summary, combined_rows
+
+
 def export_judge_stability(
     baseline_dir: Path,
     repeat_dir: Path,
@@ -286,4 +442,8 @@ def export_judge_stability(
     return summary
 
 
-__all__ = ["compare_judge_runs", "export_judge_stability"]
+__all__ = [
+    "combine_judge_comparisons",
+    "compare_judge_runs",
+    "export_judge_stability",
+]

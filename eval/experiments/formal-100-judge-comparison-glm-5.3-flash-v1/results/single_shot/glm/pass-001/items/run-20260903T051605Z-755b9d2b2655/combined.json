@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-0f2cfda102554907963d5dea774b4155",
+  "run_id": "run-20260903T051605Z-755b9d2b2655",
+  "trace_sha256": "0c733fc371cbfd70780b0c03caeb26b1ab7ad96424ffffa5a4472a9033bf2a38",
+  "created_at": "2026-09-03T14:11:01.439778Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即表态负主责，全文围绕默认设置展开，结尾落到普通用户行动，正面覆盖题设两侧。",
+      "script_spans": [
+        "厂商该为出厂默认设置负责吗？该负主要责任。",
+        "你新购智能设备，第一件事就是改掉默认密码，关闭用不上的远程控制功能。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 267，目标为 280，偏差率为 4.64%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从预置密码、黑客批量扫描到激活改密可行，各信息单元层层推进，无编造，增量具体。",
+      "script_spans": [
+        "出厂就预置了通用管理员密码，或者默认打开远程访问端口，这无异于把家门钥匙藏在门口地毯下",
+        "厂商在设备首次联网激活时强制用户创建独立密码并不复杂，芯片也支持随机生成"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直给入侵与归责冲突，中段以凭证泄露、批量扫描和留后门转折持续推进，结尾改密建议自然生长于正文，留有行动余味。",
+      "script_spans": [
+        "智能家居频遭远程入侵，厂商该为出厂默认设置负责吗？",
+        "却为了所谓开箱即用留了后门",
+        "你新购智能设备，第一件事就是改掉默认密码，关闭用不上的远程控制功能。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和比喻让全篇大体读得顺，但中段两处公文式堆叠需重断或换词，离脱稿即读还差一步。",
+      "script_spans": [
+        "这无异于把家门钥匙藏在门口地毯下",
+        "你新购智能设备，第一件事就是改掉默认密码",
+        "厂商在设备首次联网激活时强制用户创建独立密码并不复杂",
+        "眼下行业强制安全规范正在制定"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“家门钥匙藏门口地毯下”贴切解释默认密码风险，“埋下”“留了后门”意象一致，克制不炫技，记忆点离开上下文仍可复述。",
+      "script_spans": [
+        "这无异于把家门钥匙藏在门口地毯下",
+        "这类风险显然是厂商发货前埋下的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由前提、解释到转折再收束行动，因果桥清楚，结尾回扣默认设置主题，论证经得起追问。",
+      "script_spans": [
+        "多数消费者根本不知道这些默认凭证已在黑客社区公开流传，入侵者批量扫描就能轻松登入",
+        "眼下行业强制安全规范正在制定，但责任认定不能苦等标准生效"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "结尾改密码等建议稳妥实用，但\"显然是厂商埋下\"\"留了后门\"属绝对化归因与标签化指控，缺边界限定，软化后才稳妥。",
+      "script_spans": [
+        "你新购智能设备，第一件事就是改掉默认密码，关闭用不上的远程控制功能。",
+        "这类风险显然是厂商发货前埋下的",
+        "却为了所谓开箱即用留了后门"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8f0428e843c94e4a916c2d0ce4a0ea2d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6e8959a126414c05845609f989b34c8c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

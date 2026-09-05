@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-a6537c29ff17435dbf2bdba6f8d6f978",
+  "run_id": "run-20260902T141414Z-754043ebe856",
+  "trace_sha256": "9a77c7b06d365c778734130ecd714fbfcc77c94ccc6388a5878d119e4b787a8c",
+  "created_at": "2026-09-03T12:15:29.367144Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答“有空间”，并围绕小开发者给出低费率、外部支付和合规应对。",
+      "script_spans": [
+        "抽成收紧，小开发者反倒有活路。还有空间，但别只赖在商店里。",
+        "你得常看自己区域的条款，靠例外和分流找生路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中，低价档、外跳支付和窗口期提醒层层增加判断与行动信息。",
+      "script_spans": [
+        "可小团队年进账不到百万级，能走低价档，手续费反而轻了",
+        "可这口子像季节风，随时合上，只是临时窗口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出“反倒有活路”的反差，中段连续给出费率、外跳支付和风险，结尾用“侧身走”留下行动余味。",
+      "script_spans": [
+        "抽成收紧，小开发者反倒有活路。",
+        "另一些地儿允许外跳支付，用户跑商店外付款，抽成可归零。",
+        "高墙没倒，但缝里透光，小开发者活不活看会不会侧身走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答和比喻，能顺着读完；但“年流水规模”“例外和分流”等表述生硬，节奏被打断。",
+      "script_spans": [
+        "你想，原本三十块得交九块，现在可能只交一两块。",
+        "大商店年流水规模依旧极庞大。",
+        "你得常看自己区域的条款，靠例外和分流找生路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“大户被掐，小户得松”和“高墙没倒，但缝里透光”具体好记，修辞服务于政策窗口与生存策略，没有压过信息。",
+      "script_spans": [
+        "大户被掐，小户得松。",
+        "高墙没倒，但缝里透光"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、机制、路径、风险与结论完整，但“大商店”与小团队的对比跳跃，数字也缺少适用前提。",
+      "script_spans": [
+        "另一些地儿允许外跳支付，用户跑商店外付款，抽成可归零。",
+        "大商店年流水规模依旧极庞大。可小团队年进账不到百万级",
+        "原本三十块得交九块，现在可能只交一两块。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未煽动违规，并提醒查看区域条款；但“抽成可归零”“平台分文不取”缺少地区和条件限定，易造成误导。",
+      "script_spans": [
+        "你得常看自己区域的条款，靠例外和分流找生路。",
+        "比如把老用户引到自家站，但别违规硬闯。",
+        "抽成可归零。",
+        "平台分文不取。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e64cf27d3edb47ffbe229f525640bafc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

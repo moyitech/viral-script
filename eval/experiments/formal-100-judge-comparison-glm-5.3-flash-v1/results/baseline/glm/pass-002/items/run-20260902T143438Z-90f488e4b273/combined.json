@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-7eb07ad5ff0c4d20a604906cc521770a",
+  "run_id": "run-20260902T143438Z-90f488e4b273",
+  "trace_sha256": "b3253c0c48eaa53ee65c06c4e4adb80e91414c7d17d52dfe25e23820a88f96ce",
+  "created_at": "2026-09-03T14:35:27.388555Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即抛多花与省两侧，正文双向作答，结尾回扣题设，普通消费者痛点命中。",
+      "script_spans": [
+        "竟花更少？也可能多花。这两边摆着",
+        "对咱们普通人，下单更看主播聊得欢不欢"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "新规、限流暗压、白牌退出、冲动研究等单元层层推进，事实与建议互证，增量足。",
+      "script_spans": [
+        "之前平台明要最低价，暗用限流逼商家守低价",
+        "部分靠低价倾销白牌退出，你常逛的便宜款少了",
+        "沉住气看用料和售后，比质价比反而淘好货"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头20字内抛出'竟花更少也可能多花'的反差悬念，中段以升与降、明与暗持续兑现钩子，结尾选价权之问由正文自然生长。",
+      "script_spans": [
+        "你刚看直播主播不保最低价，竟花更少？也可能多花",
+        "之前平台明要最低价，暗用限流逼商家守低价",
+        "不喊最低价的场子，是帮你省心，还是悄悄拿了选价权？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句有底子，试穿心动段对话感强；但'靠低价倾销白牌退出''升是因'等压缩句需临时换词重断。",
+      "script_spans": [
+        "你本来只想逛逛，结果主播一试穿你就心动，口袋松了。指尖一滑，钱就出去了。",
+        "部分靠低价倾销白牌退出",
+        "升是因没了比价你懒得货比三家，降是因不用凑满减被套牢"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'绑你信任''口袋松了'等比喻具体不堆砌，'指尖一滑，钱就出去了'离开上下文仍可复述，克制且有记忆点。",
+      "script_spans": [
+        "主播没法拿低价绑你信任，只能拼讲品",
+        "你本来只想逛逛，结果主播一试穿你就心动，口袋松了。指尖一滑，钱就出去了。",
+        "直播间一句最低价，本来就是吸引你冲动的钩子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线与首尾回扣完整，但“办法和规则”指代含糊，“不用凑满减”缺因果桥，经不起追问。",
+      "script_spans": [
+        "不喊最低价的场子，是帮你省心，还是悄悄拿了选价权？",
+        "往深里看，办法和规则今年施行",
+        "降是因不用凑满减被套牢"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无违规承诺，两面摆、表述总体克制；但把行业转向说成定局，如“转质量战”“不再虚高再打折”，缺边界需改写。",
+      "script_spans": [
+        "竟花更少？也可能多花。这两边摆着",
+        "沉住气看用料和售后，比质价比反而淘好货",
+        "现在行业从价格战转质量战",
+        "商家敢标实价，不再虚高再打折"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1f41ef65a424426d8ae2080ab884b38d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-605c129fc49a4395aba797c72ac540f8",
+  "run_id": "run-20260902T145039Z-5554ca05929f",
+  "trace_sha256": "4f110bd181ec9ca008c3606e5512c44a4847dcd9f154b49b246b9555ff31351f",
+  "created_at": "2026-09-03T11:50:56.730735Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面追问多数便利与少数权益的冲突，覆盖高低层双方并给出协商补偿路径。",
+      "script_spans": [
+        "老旧小区加电梯，便利多数就能逼少数让步吗？真没这么简单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 461，目标为 450，偏差率为 2.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从需求冲突、审批案例到公平赔偿和协商建议，信息层层推进，结论有事实支撑。",
+      "script_spans": [
+        "多数业主签字只是审批第一步，不是低层必须吞下损失的理由。",
+        "这钱不是施舍，是受损该得的补偿。",
+        "高层真想装，把低层请来谈好补偿再动工。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用现场冲突抢住注意力，中段以案例、数据和判决连续推进，结尾追问也由观点自然落下。",
+      "script_spans": [
+        "“凭啥我为你们方便牺牲采光？”一楼大爷杵拐杖挡住电梯井，刚画的线被踩花。",
+        "武汉一单元十四户，十二户同意装，就因一楼两户反对卡壳",
+        "你家若在一楼，肯要不补偿的电梯吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚、气口较短，但案例句有压缩式表达，需重断句并改词。",
+      "script_spans": [
+        "高层老人爬楼喘，买菜都费劲",
+        "广州一楼曾某",
+        "但判获赔三万五"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“杵拐杖”“白吃亏”“方便就成了欺负”既有画面又能复述，修辞克制，没有遮蔽事实信息。",
+      "script_spans": [
+        "刚画的线被踩花。",
+        "法律不阻止装电梯，但也不让谁白吃亏。",
+        "要是只凭票数硬推，方便就成了欺负。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先以冲突设问，再用案例解释公平原则，最后落到双方行动建议，结尾回扣核心判断。",
+      "script_spans": [
+        "那机制咋兜底？法院按公平原则断过案。",
+        "低层合理异议要拿依据，拍照测噪音，不是死拦就有理。",
+        "要是只凭票数硬推，方便就成了欺负。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体兼顾高低层权益，但“法律不阻止”“得撤”等表述过于绝对，易造成法律判断误导。",
+      "script_spans": [
+        "低层合理异议要拿依据，拍照测噪音，不是死拦就有理。",
+        "高层真想装，把低层请来谈好补偿再动工。",
+        "法律不阻止装电梯，但也不让谁白吃亏。",
+        "你只发通知不谈心，施工队来了也得撤。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-af284f1788504ab687028e8c58163666",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-15a7f6ac83f240458c53e41442f20aae",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

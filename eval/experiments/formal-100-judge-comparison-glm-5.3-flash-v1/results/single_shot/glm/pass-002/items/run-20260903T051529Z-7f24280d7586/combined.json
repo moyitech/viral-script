@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-8529d5c64f1a4e70bb526340eb38b07b",
+  "run_id": "run-20260903T051529Z-7f24280d7586",
+  "trace_sha256": "b20f2b4087ec03861458dc05f15a1fd683f2d3cfc89d4741f9cf3743e8489619",
+  "created_at": "2026-09-03T15:27:50.506506Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即亮明“不利于成长”的判断，结尾回扣题设，兼顾家长这一核心人群，正面回答充分。",
+      "script_spans": [
+        "课间被作业挤占、要求安静不准动，其实并不利于学生成长",
+        "别让安静管理偷偷挤掉成长空间，运动和时间自由也是学习的一部分"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，健康依据、政策纠偏与行动建议层层推进，且“问户外时间”给出可带走的方法。",
+      "script_spans": [
+        "走出教室活动对防控近视和增强体质必不可少",
+        "不妨主动问问学校每天的户外时间够不够"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "结尾由正文自然生长，中段“看似多学”有转折；但开头结论先行、反差偏平，缺即时钩子。",
+      "script_spans": [
+        "用做题填满这十分钟，看似多学一点，却剥夺了大脑休息的机会",
+        "不妨主动问问学校每天的户外时间够不够",
+        "课间被作业挤占、要求安静不准动，其实并不利于学生成长，反而可能拖累长远发展"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有'一关了之''偷偷挤掉'等顺口表达，但'对防控近视和增强体质必不可少'等书面句需改口才顺，整体偏读稿。",
+      "script_spans": [
+        "不能以防安全为名一关了之，把活生生的孩子困在座位上",
+        "走出教室活动对防控近视和增强体质必不可少",
+        "而且这种简单限制出教室的做法，早已被明确纠正"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务论证，“偷偷挤掉成长空间”形象自然，“运动和时间自由也是学习的一部分”离开上下文可复述，无堆砌。",
+      "script_spans": [
+        "把活生生的孩子困在座位上",
+        "别让安静管理偷偷挤掉成长空间，运动和时间自由也是学习的一部分"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头论点到结尾回扣主线清楚，“看似多学一点”因果桥可用；但“背后是认知偏差”未说明何种偏差，论断跳跃。",
+      "script_spans": [
+        "用做题填满这十分钟，看似多学一点，却剥夺了大脑休息的机会",
+        "说明这不是个别现象，背后是认知偏差"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体贴近官方导向，'不妨问问'留有余地；但'必不可少''认知偏差'等表述偏绝对，宜加限定。",
+      "script_spans": [
+        "要保障学生课间正常活动，不能以防安全为名一关了之",
+        "不妨主动问问学校每天的户外时间够不够",
+        "走出教室活动对防控近视和增强体质必不可少",
+        "说明这不是个别现象，背后是认知偏差",
+        "把活生生的孩子困在座位上"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8da1e3d6d33d400ba0f85999157a8fb0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

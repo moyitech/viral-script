@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-5e903f50b2574f90aa8946287f645cbe",
+  "run_id": "run-20260903T051556Z-1f20725a1f74",
+  "trace_sha256": "0409fde9adb09971f7d4c50192a3555346b83ef6c1cb65db9db7fe505595706e",
+  "created_at": "2026-09-03T14:09:58.421338Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答分配之问，覆盖分级机制与个人行动，结尾落在普通人身上",
+      "script_spans": [
+        "所以医疗资源分配的第一原则，不是谁先到谁先看，而是谁更危急谁优先",
+        "对咱们普通人，得看清急诊不是兜底门诊"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 482，目标为 450，偏差率为 7.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，分诊、价格杠杆与实证层层推进，信息具体且无编造痕迹",
+      "script_spans": [
+        "护士依据症状和体征把病人分成若干级，危重的直送抢救室，不急的排后面",
+        "有地区对非紧急急诊收费调整后，这类患者明显回落，急症平均等候反而缩短"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头深夜急诊与心梗抢救反差抓人；中段以规范、错配、分诊、价格杠杆持续给新信息；结尾余味由正文自然长出。",
+      "script_spans": [
+        "感冒发烧深夜里往急诊跑，常常一坐就是几小时，而你旁边病床真正心梗的人可能正等着抢救",
+        "危重的直送抢救室，不急的排后面。这看似不近人情，却让稀缺资源对准最要命的风险",
+        "把不急的留给不急的渠道，既是规矩，也是给危急者留出活路，说不定哪天你我就是那个被让出空间的人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有节奏、对比句顺口，但“分诊决策类的干预”“非紧急急诊收费调整”两处拗口需换词重断，只能止步2分。",
+      "script_spans": [
+        "不是谁先到谁先看，而是谁更危急谁优先",
+        "危重的直送抢救室，不急的排后面",
+        "加速分诊决策类的干预能疏解拥挤",
+        "有地区对非紧急急诊收费调整后，这类患者明显回落"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“黄金时间被稀释”“硬杠杠”点到即止且服务理解；“谁更危急谁优先”与结尾留活路一句可脱稿复述，无堆砌炫技。",
+      "script_spans": [
+        "不是谁先到谁先看，而是谁更危急谁优先",
+        "急诊有限的医生和床位就被悄悄挪用，危急者黄金时间被稀释",
+        "把不急的留给不急的渠道，既是规矩，也是给危急者留出活路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "问题、原则、机制、行动四段各司其职，结尾回扣开头心梗场景，衔接顺",
+      "script_spans": [
+        "破解靠的是预检分诊硬杠杠",
+        "把不急的留给不急的渠道，既是规矩，也是给危急者留出活路，说不定哪天你我就是那个被让出空间的人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述客观公允：收费案例限定“有地区”，分级分诊承认“看似不近人情”，就医建议安全，无绝对化承诺或煽动性归因。",
+      "script_spans": [
+        "有地区对非紧急急诊收费调整后，这类患者明显回落",
+        "这看似不近人情，却让稀缺资源对准最要命的风险",
+        "真有胸痛、昏厥别耽搁立刻去"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-364e82470503446eb76a04990a2a2574",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-8f76751dd80742c0b9b28b0eb36ed179",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-ca987b1a6c584ae4a34cb50228dbf9ad",
+  "run_id": "run-20260902T142359Z-4efbb744588b",
+  "trace_sha256": "3fe32f5ac4e54c8cf65dcdbbdf049818dee2cf941871f013bac49bb07d4256ef",
+  "created_at": "2026-09-03T13:46:24.883069Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点破喊与赚的反差并给出营收验证法，伪风口与真AI两侧都答，散户视角贯穿全文。",
+      "script_spans": [
+        "普通投资者想避开伪风口，别直接划掉整个AI板块，得看它营收里AI占多少",
+        "那真AI公司没法认吗？当然不是。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 654，目标为 700，偏差率为 6.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "罚单案例、谣言链路、查附注查资质等方法各有推进，事实与引用相符，增量具体可带走。",
+      "script_spans": [
+        "北京监管局对编假芯片订单的人处25万罚款，没收违法收入",
+        "整条链：编文、转发、股价异动、散户买单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即抛出反差钩子，中段以罚单案例、骗术拆解持续兑现，结尾提问由正文自然生长，三段各有抓手。",
+      "script_spans": [
+        "越喊AI转型的公司，越可能根本没有AI收入。",
+        "北京监管局对编假芯片订单的人处25万罚款，没收违法收入，可这钱进财政国库，你账户里的亏损没人补。",
+        "下次看到AI爆款文，先停三秒，想想它靠AI赚到钱没？伪风口最怕你慢半拍，它耗不起时间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与金句节奏出色、对话感强，但中段多处无标点压缩句需临场补气口重断，决定性卡在顺口度。",
+      "script_spans": [
+        "谣言跑得比真相快，跟风容易站岗。",
+        "但这只是经营手段不意味股票必涨",
+        "真有业务财报写明白。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "类比点到即止且服务理解，合同回款、慢半拍等句自然准确，脱离上下文仍可复述，无连续炫技。",
+      "script_spans": [
+        "合同和回款比故事更真。",
+        "谣言跑得比真相快，跟风容易站岗。",
+        "伪风口最怕你慢半拍，它耗不起时间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "每段功能清晰，问句过渡顺滑，结尾看钱从哪来与停三秒自然回扣开头方法论。",
+      "script_spans": [
+        "为什么假风口能浑水摸鱼？",
+        "咱们记住：看钱从哪来，别看词多漂亮。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全文无收益承诺，明示“不意味股票必涨”，查资质等避坑指引与监管口径一致，边界清楚、导向安全。",
+      "script_spans": [
+        "有些企业用AI做风控提效率，但这只是经营手段不意味股票必涨",
+        "花钱买工具前，先查对方有没有从业资质，正规机构名单在证监会网站挂着"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-fc77161898e84bbf8f0582ce9e14e9f8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-3984c49db7fb448e8ab2ec8a16bb06ef",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

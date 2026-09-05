@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-8f6c21769d794bfbb338bc05e5577440",
+  "run_id": "run-20260903T051534Z-fda08bc4d2f7",
+  "trace_sha256": "84d9c97399c69c1ac95d99eba5864511a9ed4d7f8c71d0f37bdbb76eea2b313e",
+  "created_at": "2026-09-03T12:31:46.229814Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "紧扣家长代做与合作学习走样，覆盖学校、家庭、学生三方，并给出边界修复建议。",
+      "script_spans": [
+        "合作学习本来要教孩子团队协作，怎么最后成了家长朋友圈的军备竞赛？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中，政策边界、调查研究、现实代价和行动建议层层推进，信息增量明确。",
+      "script_spans": [
+        "有调查说超过八成家长认同家校协作，但那是参与不是代做；",
+        "家长下班接着干学校的活，隐性加班磨掉耐心；学生没学会商量分工"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用家长代做的反差立刻设问，中段逐层补足政策、数据和代价，结尾追问自然落到行动。",
+      "script_spans": [
+        "一张手抄报，比的是家长PS技术；一次小组模型，拼的是爸妈的公司资源。",
+        "先问一句：这到底要练孩子什么？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头抓人、结尾有动作建议，但中段抽象词偏密，部分句子像政策解读，口播自然度只能到2分。",
+      "script_spans": [
+        "一张手抄报，比的是家长PS技术",
+        "先问一句：这到底要练孩子什么？",
+        "很多小组作业早已越过家校边界，变成教师转嫁任务、家庭资本直接代劳的变形"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“参与不是代做”和“拼爹规则”简洁有力，类比服务观点，形成记忆点但没有明显堆砌。",
+      "script_spans": [
+        "但那是参与不是代做",
+        "反倒早早认下“拼爹”规则"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，随后解释越界机制、区分参与与代做，再落到代价和对策，收束自然。",
+      "script_spans": [
+        "单向指派悄悄取代了双向互动。",
+        "所以碰到明显超龄的小组任务，别急着全家上阵。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "政策边界引用较稳，但“很多”“天然只能”等绝对化归因偏满，容易把部分现象说成普遍事实。",
+      "script_spans": [
+        "政策其实早有定调，严禁给家长布置或变相布置作业，也不能让家长批改检查",
+        "很多小组作业早已越过家校边界，变成教师转嫁任务、家庭资本直接代劳的变形"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-99b0f220ef6b4b1e92b834f325e09a02",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-0bbbacd330934671858ff8b3559f9e71",
+  "run_id": "run-20260902T143237Z-b172bbe12811",
+  "trace_sha256": "45731369860e108bb1b0309922c052d18bb837812c11af7db971627d96b335d4",
+  "created_at": "2026-09-03T12:15:25.990822Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答谁来兜底，覆盖政府、厂商、用户三方，并落到普通人的备份建议，切题完整。",
+      "script_spans": [
+        "政府管关键设施，厂商练容灾，用户自留后路。",
+        "重要资料本地存一份，选服务看跨区备份。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "数据、责任分配和个人建议形成信息链，但法律与行业判断有明显泛化，部分关键结论只报结论、解释不足。",
+      "script_spans": [
+        "去年十大云厂崩了327次，中断两千八百小时，波及四十三亿人次。",
+        "重要资料本地存一份，选服务看跨区备份。",
+        "国家云计算安全评估办法，只盯政务和关键设施的业务连续。",
+        "合同常写不可抗力免赔，个人数据丢了自己认。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“谁来买单”的冲突抓人，中段连续追问并落到个人，结尾的比喻自然留下余味。",
+      "script_spans": [
+        "云一断，停工损失咋就用户吞了？这反常识吧。",
+        "落到你身上。扫码点餐挂号存照片，全挂同一朵云。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句居多、重音明确，但数据串联和生硬搭配造成多处重断句，朗读仍不够顺滑。",
+      "script_spans": [
+        "咱先把问题看明白。",
+        "云故障已成日常波动，最强信号是AWS断网十五小时，上千企业停摆，损失估超千亿。",
+        "政府评估不管普通商业软件，空白得自己补。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“悬一根云线”和“停风时呛到的总是普通人”形象准确，既解释依赖风险，也留下了可复述的情绪记忆点。",
+      "script_spans": [
+        "千行百业悬一根云线，谁为停顿买单？",
+        "当云成了空气，停风时呛到的总是普通人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "分段推进清楚，能从现象转到责任再到个人建议；但评估办法与赔偿责任的因果桥不足，结尾分工结论偏快。",
+      "script_spans": [
+        "钱到底谁付？",
+        "落到你身上。",
+        "政府评估不管普通商业软件，空白得自己补。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明确违规，且给出备份建议；但将责任、免责和数据损失一概而论，部分结论过度绝对，易造成法律误解。",
+      "script_spans": [
+        "重要资料本地存一份，选服务看跨区备份。",
+        "合同常写不可抗力免赔，个人数据丢了自己认。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5eedb5a3da144221815a8f19f9db3b35",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-6bc7419f39224e6ab7ffdc1102ac47ca",
+  "run_id": "run-20260903T051611Z-e1071a0432fa",
+  "trace_sha256": "a1d3504bf18ad2c63339e869fae3de1ca6eb15a77f6cd9c25736511ce562b6b6",
+  "created_at": "2026-09-03T12:02:36.585889Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回应是否提升，兼顾财政民生与居民消费两侧，并给出观察政策落地的行动建议。",
+      "script_spans": [
+        "财政越侧重民生，居民消费意愿不会简单同步拉升。",
+        "看政策别只数总规模，多比对地方账本，留意你身边的育儿补贴、免费学前教育是否真落地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 256，目标为 280，偏差率为 8.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "研究结论、消费分层、政策观察和信心判断不断增加信息，既有事实依据，也避免把民生投入直接等同于消费增长。",
+      "script_spans": [
+        "有研究跟踪民生支出发现，它能通过增收、助学降低居民主观贫困感，教育、社保就业见效快，但医疗卫生支出减贫效果并不显著。",
+        "中年重家庭教育，银发族为健康旅游买单，青年为情绪体验付费，花钱逻辑本身受预期和信心主导。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反问接反转，研究结论、消费分层和落地提醒层层推进，结尾用比喻留下余味。",
+      "script_spans": [
+        "钱更多花在民生上，老百姓就敢大胆消费了？这种好事没那么简单。",
+        "兜底网织密了，不等于大家立刻想掏钱。",
+        "民生是地基，消费是楼阁，地基牢了楼不会一夜起，信心才是那把泥瓦刀。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "句子整体较短，钩子和转折有口播感；但“跟踪民生支出发现”等语序生硬，需临时调整。",
+      "script_spans": [
+        "这种好事没那么简单。",
+        "兜底网织密了，不等于大家立刻想掏钱。",
+        "有研究跟踪民生支出发现",
+        "财政越侧重民生，居民消费意愿不会简单同步拉升"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“兜底网织密了”把保障与消费的距离说具体，结尾的地基、楼阁和泥瓦刀形成可复述的比喻。",
+      "script_spans": [
+        "兜底网织密了，不等于大家立刻想掏钱。",
+        "民生是地基，消费是楼阁，地基牢了楼不会一夜起，信心才是那把泥瓦刀。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、研究展开和政策结尾完整，主线可跟随；但从主观贫困改善跳到消费意愿，关键因果与信心机制交代不足。",
+      "script_spans": [
+        "兜底网织密了，不等于大家立刻想掏钱。",
+        "看政策别只数总规模，多比对地方账本",
+        "花钱逻辑本身受预期和信心主导。",
+        "信心才是那把泥瓦刀。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以“不会简单同步拉升”保留边界，消费分层有背景依据；未见煽动、歧视、危险建议或确定性承诺。",
+      "script_spans": [
+        "财政越侧重民生，居民消费意愿不会简单同步拉升。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-cc09a2448cee4a2f97b5ce9a9b927bb4",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-98349034d70e4a488a476adc044fb7c2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

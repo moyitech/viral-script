@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-1613b2f4ada5430ca2632247e3a7975d",
+  "run_id": "run-20260902T143134Z-86884945a6dc",
+  "trace_sha256": "f12e98bff0ef11beaa3b39b9c3f97984c261249fed8d338e4762b8443bc9edaa",
+  "created_at": "2026-09-03T14:25:15.404067Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答不全是，正反两种人机配合均覆盖，收尾回扣题设，家长人群切中。",
+      "script_spans": [
+        "效率提升本身不削弱真实反馈，关键看人机怎么配合",
+        "回家翻作业本，不妨问孩子：这句红笔是老师写的吗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题紧扣人机分工，机器初筛、段落讲评、美颜比喻层层推进，论证扎实无编造。",
+      "script_spans": [
+        "像先让机器抓错别字和格式问题，老师腾手写段落级讲评",
+        "好比用美颜磨平照片，看着光鲜，作文里薄弱点被悄悄盖住"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字直给“越写越假”冲突并急转“不全是”，中段正反两景持续兑现钩子，结尾问孩子的互动由正文自然长出。",
+      "script_spans": [
+        "人工智能批改快了，孩子作文却越写越假？不全是。",
+        "可如果学校图省事直接让机器替人批，套路化评语就会掩盖真实问题",
+        "回家翻作业本，不妨问孩子：这句红笔是老师写的吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口与比方出彩，但“有温度修改方向”缺“的”、“分清人机”搭配生硬，两处需临时补词改口。",
+      "script_spans": [
+        "技术接了脏活，人回了灵魂",
+        "学生拿到有温度修改方向",
+        "帮他分清人机才好"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "美颜类比贴切助解，“接了脏活回了灵魂”与结尾“省不掉育人眼光”离开上下文仍可复述，密度适中不炫技。",
+      "script_spans": [
+        "技术接了脏活，人回了灵魂",
+        "好比用美颜磨平照片，看着光鲜，作文里薄弱点被悄悄盖住",
+        "技术省下的只是笔墨时间，省不掉的是育人眼光"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "正反分支因果完整，可如果转折清楚，结尾金句回扣开头与题设，过渡自然。",
+      "script_spans": [
+        "可如果学校图省事直接让机器替人批，套路化评语就会掩盖真实问题",
+        "技术省下的只是笔墨时间，省不掉的是育人眼光"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "承认技术利弊并设前提，如“关键看人机怎么配合”，无绝对化承诺、煽动或误导，建议温和可行。",
+      "script_spans": [
+        "效率提升本身不削弱真实反馈，关键看人机怎么配合",
+        "可如果学校图省事直接让机器替人批，套路化评语就会掩盖真实问题"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7044ce7eaf3c4348a760bd70a4219c7b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

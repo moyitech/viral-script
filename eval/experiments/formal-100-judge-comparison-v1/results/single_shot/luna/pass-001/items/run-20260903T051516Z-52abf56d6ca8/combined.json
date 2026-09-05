@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-2cbfa26ab8e24e1d8e2d08617aa2231c",
+  "run_id": "run-20260903T051516Z-52abf56d6ca8",
+  "trace_sha256": "a7477a6a870382614334a87d22a7f26acea1b550dfdcc5e741c1950f7754d1f7",
+  "created_at": "2026-09-03T11:58:07.720097Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直面患者重复付费，解释互认推进慢的政策、技术与责任障碍，并给出跨院就诊的具体做法。",
+      "script_spans": [
+        "明明国家连文件都发了好几轮，怎么老百姓换家医院还得自己扛重复检查的费用？",
+        "下次跨院就诊，别默认乖乖去缴费重做，先把旧报告递给医生问一句：这个能认吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 680，目标为 700，偏差率为 2.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，政策例外、设备差异、医生责任压力和真实案例彼此推进，也明确区分了无效重复与安全复查。",
+      "script_spans": [
+        "政策当然给了互认的路线图，市域内该认的项目列出了不少。",
+        "不同机构采购的设备档次不同，扫描的层厚、造影剂用法可能有微小差别",
+        "但反过来说，也不是所有重复都无理，手术前重新核磁确认韧带，有时确实为安全。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用重复检查制造强冲突，中段持续补充原因与案例，结尾落到可执行追问，推进完整自然。",
+      "script_spans": [
+        "医生扫一眼说，重做吧。钱又掏了一次。",
+        "下次跨院就诊，别默认乖乖去缴费重做，先把旧报告递给医生问一句：这个能认吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和多数承接有对话感，但中段长句、书面术语和“流水线上”等表达影响顺口度。",
+      "script_spans": [
+        "钱又掏了一次。",
+        "问题在机器和读片的人。",
+        "不同机构采购的设备档次不同，扫描的层厚、造影剂用法可能有微小差别，接诊医生若没亲自看原始数据，认了外院结果出了事，追责时他解释不清。",
+        "医生每日流水线上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“宁可多开单子求个稳”和“该认的认，该查的查”短促好记，修辞克制，也准确承接了责任与边界。",
+      "script_spans": [
+        "宁可多开单子求个稳。",
+        "该认的认，该查的查"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有提问、拆因、举例和回扣，主线可跟随；但“医疗质量的底子薄”未被充分展开，“这个边界只划一次”表述含混。",
+      "script_spans": [
+        "那有人问，现在不是有影像云平台吗，片子传过去不就得了？问题在机器和读片的人。",
+        "我的判断很直接：互认推得慢，根子不在政策没写，而在医疗质量的底子薄，加上医生手里那支笔的免责本能。",
+        "这个边界只划一次：该认的认，该查的查，拿不准就医患当面掰扯。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未涉敏感违规，且承认重复检查有合理情形；但把医生动机概括为“普遍的职业防御”，带有未经限定的负面归因。",
+      "script_spans": [
+        "但反过来说，也不是所有重复都无理，手术前重新核磁确认韧带，有时确实为安全。",
+        "这不是某家医院的个别风气，是普遍的职业防御。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b008bafffa1342a6baf629560dbeaa2d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b85385e2c23a4d9b99b89d5530ffbc6a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

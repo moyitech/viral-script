@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-2c20adf7d75e45abb63cf8b31363c2c3",
+  "run_id": "run-20260903T051531Z-736b08c3bdd7",
+  "trace_sha256": "eeb679d1a07948dc1f51254653b05e9a85b5d28e82c0c829a23da95cce9d7605",
+  "created_at": "2026-09-03T14:09:25.498195Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇点出老房贷与招牌利率的落差，正面回答能否受益并覆盖正反两侧，结尾行动项回扣题设。",
+      "script_spans": [
+        "已购房家庭当然能少吃利息，但好处绝不是自动均摊，真正落袋多少，全看你重定价日和加点幅度谈得动否"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 459，目标为 450，偏差率为 2.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机制拆解、批量下调、加点协商、公积金差异与防骗提示各单元层层推进，与背景资料互证，无编造。",
+      "script_spans": [
+        "重定价周期改短，下行期能更快蹭低息，可万一利率反弹就反噬，而且这选择通常只能定一次"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇3%新利率与老房贷月供纹丝不动形成即时反差，中段机制、新政与风险层层推进，结尾行动建议自然收束留余味。",
+      "script_spans": [
+        "新闻里新发放首套商贷利率已经探到3%出头，可你那笔背了几年的老房贷，月供数字纹丝不动",
+        "重定价周期改短，下行期能更快蹭低息，可万一利率反弹就反噬",
+        "你该做的是翻出合同看清重定价日，掂量自己加点有没有谈的空间，别光看新闻就急着提前还贷"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数句子有对话感、气口清楚，但“谈得动否”“本为弥合”“申下调”几处书面压缩，朗读需临时改词。",
+      "script_spans": [
+        "LPR那块只能等合同重定价日重算，大多数人一年才轮一回",
+        "公积金贷款按规则在次年元旦自动跳价，根本不用跑腿",
+        "真正落袋多少，全看你重定价日和加点幅度谈得动否",
+        "这套机制本为弥合新老房贷利差，但落到个人账上就得细算",
+        "高位接盘的商贷用户去手机银行申下调"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "拼图比喻让LPR与加点结构一听即懂，招牌利率、全是坑等表达准确克制，离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "房贷利率就是“LPR加加点”两个拼图",
+        "但凡短信说花钱代办降息的全是坑",
+        "别光盯着眼前的招牌利率"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "三段依次承担抛问、讲机制、给对策，利差反复的因果有交代，结尾自然回扣开头的招牌利率之问。",
+      "script_spans": [
+        "你该做的是翻出合同看清重定价日，掂量自己加点有没有谈的空间，别光看新闻就急着提前还贷"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "机制解释留足边界，如'反弹就反噬''只能定一次'；警示代办降息骗局，无夸大承诺与误导风险。",
+      "script_spans": [
+        "可万一利率反弹就反噬，而且这选择通常只能定一次",
+        "但凡短信说花钱代办降息的全是坑"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-769275c61f284bfba92407b0d9c465c9",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-66a144415d4c4f7f959bd7ff9d54389f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

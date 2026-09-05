@@ -1,0 +1,162 @@
+{
+  "evaluation_id": "combined-30a786fbba604d049cee0668a39dd07b",
+  "run_id": "run-20260903T051630Z-ca191e84b04d",
+  "trace_sha256": "b8938eb3f9640806922bb4987aff180c85a02e40654b6692fe11f573b7fc2c42",
+  "created_at": "2026-09-03T11:57:15.714267Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕普通人跨境理财，既解释汇率如何吞噬收益，也回应押注人民币走弱的反面情形，正面回答题目。",
+      "script_spans": [
+        "对个人也一样，只看见贬值赚汇，忽略换汇两次摩擦，反而可能净亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 808，目标为 700，偏差率为 15.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中，点差、币值变动、波动反转和情景核算层层推进，既有机制解释，也给出可执行的判断方法。",
+      "script_spans": [
+        "跨境理财的实际回报，从来不止看产品收益率，购汇和结汇之间的点差、加上持有期币值变动，才是普通人的隐形对账本。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“飘红却可能掉皮”制造反差，中段连续追问和反转，结尾以睡得着觉自然收束。",
+      "script_spans": [
+        "你盯着手机里境外理财飘红的年化，以为稳赚，可有没有想过",
+        "那反过来，要是赌人民币走弱，换回时多赚汇差，这主意是不是就稳了？",
+        "账算不清，海外的风景再好，也不如家门口的理财睡得着觉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和追问有对话感，但中段术语与抽象句偏密，朗读需重断句。",
+      "script_spans": [
+        "为什么这么说？你投出去的是人民币，得先换成美元或港币。",
+        "跨境理财的实际回报，从来不止看产品收益率，购汇和结汇之间的点差、加上持有期币值变动，才是普通人的隐形对账本。",
+        "个人外汇业务虽便利，但前提是真实需求，不能纯为博弈汇价反复换汇，否则徒增摩擦成本。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“刮走一层皮”“剪一次羊毛”把汇率摩擦说得具体，结尾“睡得着觉”形成自然、可复述的判断。",
+      "script_spans": [
+        "汇率就可能偷偷刮走一层皮？",
+        "这相当于进场和离场各被剪一次羊毛。",
+        "海外的风景再好，也不如家门口的理财睡得着觉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，中段拆解换汇机制并处理反向押注，后段落到决策清单，转折和结论回扣自然。",
+      "script_spans": [
+        "为什么这么说？你投出去的是人民币，得先换成美元或港币。",
+        "所以跨境理财前，先拿产品收益减掉两次换汇点差"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "风险提示方向稳妥，但把个人外汇办理前提概括过满，易造成法律规则误解；收益计算也略显简化。",
+      "script_spans": [
+        "跨境理财的实际回报，从来不止看产品收益率",
+        "个人外汇业务虽便利，但前提是真实需求，不能纯为博弈汇价反复换汇"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 808,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.15428571428571428
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b0f8d99eab2045c1a5fc8af9b1891df7",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ef6651fa965b43809b0ee8f0ed287227",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

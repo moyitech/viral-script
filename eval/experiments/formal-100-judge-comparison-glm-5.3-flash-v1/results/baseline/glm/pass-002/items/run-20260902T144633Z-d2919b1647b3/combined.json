@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-3bdda8861787448291951041ae5a807a",
+  "run_id": "run-20260902T144633Z-d2919b1647b3",
+  "trace_sha256": "65fe3e9f9de99543ce46e5499e17ae4478ecded5ffd471640280cecf97432374",
+  "created_at": "2026-09-03T14:26:48.433199Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给双向答案，中段分盘面论证，结尾回扣题设，普通人影响专段覆盖核心人群。",
+      "script_spans": [
+        "我说整体不必然更烈，但有些品类会卷得更狠"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息单元密集且相互支撑，退税、渠道成本、消费分级各有推进，观众带走具体判断。",
+      "script_spans": [
+        "得重铺渠道改包装，适配搞售后，成本不低",
+        "你买东西选多了，但别指望外贸尾单全白菜价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首二十字即抛反直觉判断立住悬念；中段以“会不会真打价战？会”等让步转折持续兑现钩子；结尾之问由正文自然长出。",
+      "script_spans": [
+        "出口转内销，低价竞争不一定更凶，部分更卷。",
+        "那会不会有些地方真打惨烈价战？会。",
+        "廉价潮退后，留下更韧供给，还是空货架？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短气口好读，'企业不是傻子'等处有对话感；但'适配搞售后''渠道慢砍价清货撞塌价格墙'等多处压缩拗口，需换词重断。",
+      "script_spans": [
+        "企业不是傻子，乱卖会砸招牌。",
+        "为啥大家先怕价格崩？货多未必价跌，得看卖给谁。",
+        "如今掉头回来，得重铺渠道改包装，适配搞售后，成本不低。",
+        "贴牌厂重改花钱，不如便宜甩，渠道慢砍价清货撞塌价格墙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，“短期活命比面子重要”“谁更懂家里人喜好”离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "短期活命比面子重要",
+        "当外贸内需打通，比拼不是谁更便宜，而是谁更懂家里人喜好",
+        "企业不是傻子，乱卖会砸招牌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线可跟随、分段功能清楚，但账期与价格不乱因果桥缺失，尾段清货句费解。",
+      "script_spans": [
+        "所以大众盘可能更卷，贵价盘却淡定",
+        "外贸厂得适应先发货后回款，磨合期价格不乱",
+        "渠道慢砍价清货撞塌价格墙"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "通篇以'不一定''未必''可能'限定结论，主动呈现学术争议并给观众预期提醒，公允不夸大，无煽动与违规。",
+      "script_spans": [
+        "低价竞争不一定更凶，部分更卷",
+        "学术提醒出口内销关系有争议，互补替代都有",
+        "别指望外贸尾单全白菜价"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-906ac1cd17c941b2b9a22997ac9c360d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,145 @@
+{
+  "evaluation_id": "combined-178b8be900614ebd8f8defdff39ce207",
+  "run_id": "run-20260903T051515Z-1058d3dc54d8",
+  "trace_sha256": "7a2dc2ba9630bb8e2c82060435ae1300469ee8320d2c047c473be430fc602b6c",
+  "created_at": "2026-09-03T12:31:47.052349Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直答低风险债基为何会浮亏，覆盖市值法、利率和信用两侧，并给出买前检查建议，核心人群与题设匹配。",
+      "script_spans": [
+        "你以为名字带“低风险”的债基就不会亏？",
+        "第一个关键驱动是利率",
+        "第二个是信用",
+        "具体买之前，你得翻开基金持仓"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕低风险债基的亏损机制，市值法、利率与久期、信用风险及持仓检查逐层推进，信息增量具体。",
+      "script_spans": [
+        "债券基金被称为低风险产品，但它的净值按市值法跟着债券市价走，债市下跌时它就可能浮亏",
+        "而且基金久期越长，这种波动越凶猛。",
+        "发债企业财务恶化或违约预期升温，债券价格立马跳水"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“低风险也会亏”制造反差，中段递进拆解利率与信用，结尾落到查持仓，收束自然。",
+      "script_spans": [
+        "你以为名字带“低风险”的债基就不会亏？",
+        "第一个关键驱动是利率，市场利率往上翘，存量债券价格就往下掉",
+        "具体买之前，你得翻开基金持仓，看久期长和信用等级下沉没有"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头有对话感，信息推进也清楚，但长句、术语和几处不自然搭配叠加，朗读需要重断句。",
+      "script_spans": [
+        "你以为名字带“低风险”的债基就不会亏？",
+        "债券基金被称为低风险产品，但它的净值按市值法跟着债券市价走",
+        "看久期长和信用等级下沉没有"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“低风险绝对不等于没风险”和“往上翘、往下掉”准确好记，修辞克制，没有堆砌感。",
+      "script_spans": [
+        "低风险绝对不等于没风险",
+        "市场利率往上翘，存量债券价格就往下掉",
+        "别光盯着“低风险”标签就冲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "总述、两类风险与购买建议层次完整，因果主线清楚；但信用段气口偏长，结尾“看久期长和信用等级下沉没有”读来生硬。",
+      "script_spans": [
+        "第一个关键驱动是利率，市场利率往上翘，存量债券价格就往下掉",
+        "第二个是信用，发债企业财务恶化或违约预期升温",
+        "发债企业财务恶化或违约预期升温，债券价格立马跳水，再分散持仓也挡不住局部冲击",
+        "看久期长和信用等级下沉没有"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能明确提醒债基并非保本，但“通常是R2”“立马跳水”等表述过于笼统，需限定具体产品和情形。",
+      "script_spans": [
+        "低风险绝对不等于没风险",
+        "根本不是稳赚不赔的存款替代品",
+        "债基通常划为中低风险R2",
+        "债券价格立马跳水"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3c59a0ac040a46089dbd7084497e7a58",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

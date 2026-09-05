@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-d2488d91c34f4f998bdce6d56cf59aca",
+  "run_id": "run-20260903T051547Z-980337e64241",
+  "trace_sha256": "a54e9ca93100d646af625a515089fb4b2ce84dc291ddf00c5473a61f3ac95fb1",
+  "created_at": "2026-09-03T12:42:40.102425Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即解释物价与家庭体感为何错位，覆盖指数、刚性支出、收入和应对方法，始终对准普通家庭。",
+      "script_spans": [
+        "根本原因是官方物价指数和自家开支结构错位了",
+        "把房租、学费、医保这些固定项单独铺开"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中且有指数、支出结构、收入和自查方法等信息；但‘一半以上进账’把家庭差异说成偏强结论，论据支撑不足。",
+      "script_spans": [
+        "一方面，物价指数只统计一篮子代表商品",
+        "具体提醒：别光看菜价跌了就宽心",
+        "不少家庭一半以上的进账直接填了这两坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用体感与指数的反差设问，中段递进解释，结尾以具体盘账建议自然收束并留下余味。",
+      "script_spans": [
+        "物价只是温和回升，许多家庭却直喊钱不够花",
+        "你才发现钱早被悄悄分完了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读通，开头和结尾有对话感，但中段长句、抽象表达和搭配不顺，影响自然语速。",
+      "script_spans": [
+        "物价只是温和回升，许多家庭却直喊钱不够花",
+        "像居住、教育这些避不开的花费在里头权重有限，可它们实打实吃掉了你月薪的大块头"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“开支结构错位”和“钱早被悄悄分完了”兼具解释力与画面感，修辞适量，便于观众复述。",
+      "script_spans": [
+        "官方物价指数和自家开支结构错位了",
+        "钱早被悄悄分完了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构有主线，‘一方面—另一方面—具体提醒’推进自然；但收入、开销与物价的因果桥偏省略，个别表述扩大了范围。",
+      "script_spans": [
+        "一方面，物价指数只统计一篮子代表商品",
+        "另一方面，上半年居民实际收入增速并不突出",
+        "部分服务类开销涨势更靠前",
+        "不少家庭一半以上的进账直接填了这两坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体解释克制且无明显违规，但“根本原因”“一半以上进账”等说法过于绝对，易把消费占比误说成收入占比。",
+      "script_spans": [
+        "具体提醒：别光看菜价跌了就宽心",
+        "不少家庭一半以上的进账直接填了这两坑"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-73e5075a979a453cbb5aba2228ca1762",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

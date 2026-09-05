@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-d7c7e94898634df6a2d95c19be01fa21",
+  "run_id": "run-20260902T142928Z-b55472c5d11c",
+  "trace_sha256": "43388645fad850cbfba498c53d9db57f2b2cd77f6fbf514bdcf0bd26f9eb279d",
+  "created_at": "2026-09-03T14:25:07.046803Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答'扩围是好事、缴费吃力'两侧，算账与建议均落在收入不稳的核心人群。",
+      "script_spans": [
+        "回答你：扩围是好事，外地人也能就地参保了。可保险费得全额自己扛",
+        "假设你月挣三千块，选最低档再加补贴，也许每月掏几百能挺住"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "费率降、低基数、补贴与申领门槛环环推进，终落到'最淡月份能否挤出'的具体方法，论据可查。",
+      "script_spans": [
+        "养老缴费比例多地降到两成以下，像广东从二十降到十八",
+        "补贴要自己申领，不主动送上门。你得跑一趟，填张表，等审核",
+        "看自己最淡的月份，能不能挤出这笔。能就交，不能先缓，别硬扛"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇即见扩围利好与缴费吃力的反差；中段以补贴申领、活儿一断持续转折；结尾一问由算账正文自然长出。",
+      "script_spans": [
+        "社保扩围放开户政，收入不稳者缴费仍吃力。",
+        "但补贴要自己申领，不主动送上门。你得跑一趟，填张表，等审核。",
+        "政策把门槛砍低了，可这每月续上的钱，你手头能稳住吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有气口、能上口，但开头标题腔与“费高、难连续交”等压缩表达至少两处需换词重断，只能定2分。",
+      "script_spans": [
+        "收入时有时无，这个月赚三千，下月可能没活干。",
+        "社保扩围放开户政，收入不稳者缴费仍吃力。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'买菜钱都得算计'具体可感，'社保像存水'简短易复述；修辞点到为止、服务理解，无堆砌炫技。",
+      "script_spans": [
+        "他们不是不愁养老，是今天买菜钱都得算计。",
+        "社保像存水，别等漏光才补。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "'好在新规给了缓冲'转折清楚，断保后果推出连续缴费建议，结尾设问回扣开头的缴费吃力。",
+      "script_spans": [
+        "好在新规给了缓冲",
+        "断保过后年限重算，老了少份依靠",
+        "政策把门槛砍低了，可这每月续上的钱，你手头能稳住吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制公允留有退路；但“断保过后年限重算”与累计缴费规则不符，易误导观众，应改写。",
+      "script_spans": [
+        "能就交，不能先缓，别硬扛",
+        "养老缴费比例多地降到两成以下",
+        "断保过后年限重算，老了少份依靠",
+        "连续交满十五年才真管用"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a2d3fda889a243f4a16108030fdb0cfc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

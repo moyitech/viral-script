@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-7aca45b05ee24e6889ba2a7cfe3ece84",
+  "run_id": "run-20260903T051537Z-632b02f844c5",
+  "trace_sha256": "1943b5a161d98004f67848d0ad009ad86240bb2566a656472eff9be4714e8713",
+  "created_at": "2026-09-03T12:31:38.261134Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直接回答辨识难题，并进一步给出标签识别和下单前核验建议，覆盖消费者核心痛点。",
+      "script_spans": [
+        "普通消费者单靠眼睛，已经很难稳稳分清真人和合成主播了",
+        "划拉一下画面角落，找找“AI”小字"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕难辨、成因、标签作用与局限、消费自保推进，技术、监管、风险和建议均有有效增量。",
+      "script_spans": [
+        "生成式技术让数字人有了稳定人设和实时回弹的对话，不再像早期那样机械念稿。",
+        "曾有商家用虚拟老专家形象引流到私域推销高价品",
+        "标注只是给了你追问的权利，不是免骗金牌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以无人主播制造反差，中段连续追问并推进，结尾提醒由前文自然生长。",
+      "script_spans": [
+        "背后可能连个活人都没有。",
+        "为什么这么容易看走眼？",
+        "那标了“AI生成”，咱们就真能松口气吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚，开头和结尾好读；但中段有长句，“肉体存在感”“要长久生意”等表达拗口，需重断句改词。",
+      "script_spans": [
+        "凌晨三点，你刷进一个直播间，主播笑容甜美，话术丝滑，背后可能连个活人都没有。",
+        "下次刷到主播永远不累、永远微笑，先别急着下单。",
+        "真人的肉体存在感被稀释",
+        "要长久生意"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不是免骗金牌”准确有力，既帮助理解标注边界，也留下了自然、可复述的记忆点。",
+      "script_spans": [
+        "这种认知错位，正是合成主播能浑水摸鱼的原因。",
+        "标注只是给了你追问的权利，不是免骗金牌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以为何看走眼、为何要标识、标识是否万能、如何应对层层递进，因果解释和结尾回扣均较清楚。",
+      "script_spans": [
+        "为什么这么容易看走眼？",
+        "那标了“AI生成”，咱们就真能松口气吗？",
+        "下次刷到主播永远不累、永远微笑，先别急着下单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提醒消费者核验来源，未含危险建议或确定性承诺；但“各大平台纷纷”“大脑就自动”等泛化判断需补范围。",
+      "script_spans": [
+        "标注只是给了你追问的权利，不是免骗金牌。",
+        "各大平台纷纷要求挂上“AI”标签",
+        "大脑就自动把它归成“认识的主播”"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3e00918c1b6940598596441f88a0c77f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-552dd31962084ea2ab852fca7318f045",
+  "run_id": "run-20260902T142438Z-ba6a0638f253",
+  "trace_sha256": "82a31ca845a73664f9f77d4f08854c2f2a80eb6464d307c356478ff7971fa25e",
+  "created_at": "2026-09-03T14:25:07.903024Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "以小范围怀念与商用作分界，正面回答题设两侧，结尾回扣开头的安慰冒犯之问。",
+      "script_spans": [
+        "亲人出于怀念小范围听听，是温柔补位；拿去编遗言商用，可能踩伦理线",
+        "可拿她的声音去直播带货，可能就过界了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "原理、标识新规、丧亲研究、可用判准层层递进，事实与结论互撑，信息密度高。",
+      "script_spans": [
+        "传段录音，算法一遍遍学她怎么换气怎么停顿，再按你写的词，合成没说过的话",
+        "这类合成音频必须加显式标识，在声音开头、末尾或中间",
+        "有研究跟踪丧亲家庭，发现有人觉语调熟心里松些"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛逝者声音的伦理冲突，中段原理、红线、新规、研究层层兑现，结尾双问由主题自然生长。",
+      "script_spans": [
+        "你听见逝去妈妈的声音在笑，这到底是安慰还是冒犯？",
+        "当机器替逝者说话，我们听的到底是牵挂，还是自己的孤独？声音留住了，可那份失去的重量呢？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、有对话感，但'常不强标''觉语调熟'等压缩表达需临场换词，政策段偏讲解腔。",
+      "script_spans": [
+        "传段录音，算法一遍遍学她怎么换气怎么停顿，再按你写的词，合成没说过的话。",
+        "技术能模仿声调，模仿不了脾气。",
+        "私家人拿录音建模自己听，常不强标",
+        "发现有人觉语调熟心里松些"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "切菜伤人与商品标签两喻均服务理解，'模仿声调模仿不了脾气''你听到的只是你想要的她'可独立复述，克制不炫技。",
+      "script_spans": [
+        "技术能模仿声调，模仿不了脾气。你听到的，只是你想要的她。",
+        "技术本身中性，切菜还是伤人看人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "判准先行再给规则与例外，“标识像商品标签”补足因果，结尾回扣开头设问。",
+      "script_spans": [
+        "标识像商品标签，没标清楚，听众容易当真事传",
+        "私家人拿录音建模自己听，常不强标，规矩外留点哀悼空间",
+        "声音留住了，可那份失去的重量呢？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "商用与私用边界分明，多处以“可能”“有人”留余地；标识办法转述准确，建议强调家属同意，无夸大误导。",
+      "script_spans": [
+        "亲人出于怀念小范围听听，是温柔补位；拿去编遗言商用，可能踩伦理线。",
+        "有研究跟踪丧亲家庭，发现有人觉语调熟心里松些，也有专家担心太像会拖慢痊愈。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-517a7968e13947cc83f3150e3781f38d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

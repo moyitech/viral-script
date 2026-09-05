@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-a83e384c5c994f4c8a3e219c0fe0b2b2",
+  "run_id": "run-20260903T051525Z-9a0917066a00",
+  "trace_sha256": "1678e8179fe3e3476bd10204f3ed3c6b18340a1e943284cfb1f96b01839a196b",
+  "created_at": "2026-09-03T12:32:42.858786Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应线上便利与线下门槛的冲突，点出老年群体并给出判断，切角具体且贴合题设。",
+      "script_spans": [
+        "“只接受线上预约”表面提效，实际是把部分群众挡在门外的隐形门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕线上预约门槛，政策依据、数字鸿沟和求助渠道形成递进，提供了可执行的信息增量。",
+      "script_spans": [
+        "国务院优化政务服务的指导文件，一直要求线上线下融合发展，实体大厅除特殊情形须统一受理，不是砍掉线下窗口。",
+        "碰上只让线上约，别转身就走，主动问问有没有线下兜底、亲属代约或社区帮办渠道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用办事被拒制造冲突，中段递进到老年人困境，结尾观点和行动建议自然收束。",
+      "script_spans": [
+        "特意跑去政务服务大厅，却吃了闭门羹",
+        "可你父亲平时用的是按键老年机，压根登不进预约系统",
+        "数字化该为人减负，不能为人设障"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头案例和结尾提醒有对话感，但中段政策表述偏书面，“一刀切网约”也卡嘴，整体需微调。",
+      "script_spans": [
+        "你要办个证明，特意跑去政务服务大厅，却吃了闭门羹",
+        "碰上只让线上约，别转身就走，主动问问有没有线下兜底、亲属代约或社区帮办渠道。",
+        "国务院优化政务服务的指导文件，一直要求线上线下融合发展，实体大厅除特殊情形须统一受理，不是砍掉线下窗口。",
+        "一刀切网约会让他们办事无门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对比都服务于观点，“隐形门槛”与“为人设障”准确醒目，克制而有复述价值。",
+      "script_spans": [
+        "把部分群众挡在门外的隐形门槛",
+        "一刀切网约会让他们办事无门",
+        "数字化该为人减负，不能为人设障"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、政策说明、群体困境和行动建议衔接清楚，但把“统一受理”直接用于否定线上预约，政策含义到结论之间仍缺桥。",
+      "script_spans": [
+        "碰上只让线上约，别转身就走，主动问问有没有线下兜底、亲属代约或社区帮办渠道。",
+        "国务院优化政务服务的指导文件，一直要求线上线下融合发展，实体大厅除特殊情形须统一受理，不是砍掉线下窗口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体批评克制且建议合法可行，但“会让他们办事无门”等表述过于绝对，易造成泛化误导。",
+      "script_spans": [
+        "主动问问有没有线下兜底、亲属代约或社区帮办渠道",
+        "一刀切网约会让他们办事无门"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4b9ca76df1424c8a9c65eeb37a8ad9b7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

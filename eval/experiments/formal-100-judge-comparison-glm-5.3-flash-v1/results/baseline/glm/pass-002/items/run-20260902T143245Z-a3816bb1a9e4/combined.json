@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-74dd436556024550aa691efb269fed3c",
+  "run_id": "run-20260902T143245Z-a3816bb1a9e4",
+  "trace_sha256": "875b12e1102f9f537fcf6410bc0a8c4b467c38a2306322bb3c103bec234837e6",
+  "created_at": "2026-09-03T14:26:28.146691Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛“谁兜”之问，中段否定厂商与政府兜底，结尾给出自保答案，题设两侧与普通用户人群全覆盖。",
+      "script_spans": [
+        "损失到底谁兜？",
+        "别只盯厂商赔钱或政府接管，咱们普通用户自己得留好后路",
+        "核心业务千万别拴死一家云，平时千万存份本地冷备份才稳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "评估办法范围、事故数据、崩溃案例与备份建议层层推进，关键数据与引用背景相符，增量具体。",
+      "script_spans": [
+        "它只覆盖党政关键设施，普通小商家和民企根本不在里头，没强制保障",
+        "去年全球前十云厂事故三百多起，累计中断两千八百小时，影响几十亿人呢"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字冲突加悬念直给，中段连续纠偏、摆数据、举案例，结尾建议由正文自然长出，留得住人。",
+      "script_spans": [
+        "云一断千行停摆，你扫码点餐转圈圈，损失到底谁兜？",
+        "刷不出可不是你手机流量少，是千里外云厂商的整个宕机了",
+        "核心业务千万别拴死一家云，平时千万存份本地冷备份才稳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口贯穿，问句钩子、口语承接与重音都清楚，中段讲政策、报数据也能顺口读出，几乎无需改词。",
+      "script_spans": [
+        "我跟你讲，别只盯厂商赔钱或政府接管，咱们普通用户自己得留好后路。",
+        "上月一次国际大云崩了整整十五小时，上千企业直接停摆，连支付都废了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“转圈圈”具体可感，“拴死一家云”比喻贴切，离开正文仍可复述，全篇点到为止无堆砌炫技。",
+      "script_spans": [
+        "你扫码点餐转圈圈",
+        "核心业务千万别拴死一家云，平时千万存份本地冷备份才稳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先纠误区再立论，双论据支撑“别指望兜底”，“所以”收束回扣开头设问，因果桥完整。",
+      "script_spans": [
+        "刷不出可不是你手机流量少，是千里外云厂商的整个宕机了",
+        "所以别以为上云就稳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无明确违规，备份建议正当；但\"根本不在里头，没强制保障\"等绝对化归因缺边界，易让观众误判监管保障范围。",
+      "script_spans": [
+        "别只盯厂商赔钱或政府接管，咱们普通用户自己得留好后路",
+        "核心业务千万别拴死一家云，平时千万存份本地冷备份才稳",
+        "它只覆盖党政关键设施，普通小商家和民企根本不在里头，没强制保障",
+        "连支付都废了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-61339f97cdb8409587261e35831a7cf6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

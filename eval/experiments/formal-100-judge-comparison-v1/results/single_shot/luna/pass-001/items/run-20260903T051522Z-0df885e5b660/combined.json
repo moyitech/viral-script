@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-36a50d2c713e4922b1fe553805f9cca7",
+  "run_id": "run-20260903T051522Z-0df885e5b660",
+  "trace_sha256": "c62888b2b8ae5daf705904477f7177cd04e5c97c2e2f8af658f0f6a59addac28",
+  "created_at": "2026-09-03T11:56:59.717588Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答提前还贷与留现金的取舍，并针对普通上班族给出明确条件和建议。",
+      "script_spans": [
+        "先留够半年开销的活钱，剩下的如果没稳妥投资渠道，再考虑部分提前还贷。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 407，目标为 450，偏差率为 9.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕利差、流动性和应急金逐层推进，既有判断标准，也给出可执行的现金留存建议。",
+      "script_spans": [
+        "钱还进去容易，再掏出来难。留现金虽然收益低，却是家庭财务的缓冲带。",
+        "先留够半年开销的活钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用存款与月供反差设问，中段逐层补充判断依据，结尾由现金流自然落到选择权。",
+      "script_spans": [
+        "存款利息一降再降，房贷月供却雷打不动，手里攒点闲钱到底该不该提前还贷？",
+        "绝大多数普通家庭得先算两笔账，而不是一笔。",
+        "守住现金流，才守得住选择权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾利落，核心建议也听得懂；但中段抽象表达与长串条件句较多，朗读时仍需主动拆气口。",
+      "script_spans": [
+        "我的判断很直接：先别急着冲去银行排队",
+        "钱还进去容易，再掏出来难。",
+        "现在不是简单的贷款贵存款贱，而是利率整体走低下的重新定位。",
+        "可提前还款不是点个按钮就行，现行房贷管理办法要求银行规范操作，合同里常有预约和限制条款。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照克制有效，“钱还进去容易，再掏出来难”与“提前还贷是减法”都简洁且便于复述。",
+      "script_spans": [
+        "钱还进去容易，再掏出来难。",
+        "真遇到失业或大病，房子不会给你发救命钱。",
+        "提前还贷是减法，不是胜利。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头提出要算两笔账，后文却未明确拆解；负债、利率与提前还贷之间的因果桥仍不够完整。",
+      "script_spans": [
+        "先留够半年开销的活钱，剩下的如果没稳妥投资渠道，再考虑部分提前还贷。",
+        "绝大多数普通家庭得先算两笔账，而不是一笔。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制，强调现金流与应急储备；但把房贷利率、存款利率和半年开销说得偏泛，需补适用边界。",
+      "script_spans": [
+        "留现金虽然收益低，却是家庭财务的缓冲带。",
+        "房贷利率跟着LPR走",
+        "活期定期都不到这个数",
+        "先留够半年开销的活钱"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ce48bf7c584545af97cb9c56336aa837",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-69f65ad3b3614b80a85aa37d2fdab2b7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

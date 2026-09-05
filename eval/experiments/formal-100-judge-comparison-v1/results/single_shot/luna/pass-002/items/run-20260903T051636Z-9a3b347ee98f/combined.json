@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-b0d0f815d89747108bcfaa6ae7f96ad0",
+  "run_id": "run-20260903T051636Z-9a3b347ee98f",
+  "trace_sha256": "fa1cc8d3623d1b9e36821c1e4562f45a6580ca45e592cef76cdf0cf0c6aebb81",
+  "created_at": "2026-09-03T12:32:16.451648Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面覆盖先用后付的便利、平台动机与负债隐忧，并面向普通人给出明确可执行的使用边界。",
+      "script_spans": [
+        "对普通人，好处真实：不确定合身先买回比划，退掉不用掏钱。",
+        "下单前自问：现在立刻扣款，我还买吗？如果答案模糊，就关掉它。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，既解释平台促单机制和风险累积，也提供付款前自问的判断工具，信息增量充足。",
+      "script_spans": [
+        "因为国内消费金融早能补“没钱”的缺口，这功能根本不主打穷，而是主打“不敢买”。",
+        "你在多家平台各欠一点，待付款像隐形账单，收货时轻松，还款日撞一块才慌神。",
+        "下单前自问：现在立刻扣款，我还买吗？如果答案模糊，就关掉它。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“0元拿货”的反差抓人，中段补足平台、用户与风险链条，结尾以自问和关掉功能自然收束。",
+      "script_spans": [
+        "你收到快递，拆开竟是三件同款不同尺码的衣裳，下单时没花一分钱。",
+        "下单前自问：现在立刻扣款，我还买吗？如果答案模糊，就关掉它。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和反问句有对话感，但“把购买犹豫碾平的转换器”“先拿再决”等表达拗口，主体仍需重断句。",
+      "script_spans": [
+        "为什么平台拼命推？",
+        "现在立刻扣款，我还买吗？",
+        "把购买犹豫碾平的转换器",
+        "让你先拿再决"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“隐形账单”和“钱包开关才回自己手里”形象准确，既强化风险感，也留下了可复述的记忆点。",
+      "script_spans": [
+        "待付款像隐形账单，收货时轻松，还款日撞一块才慌神。",
+        "关掉默认开通的“0元付”，钱包开关才回自己手里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线和段落功能清楚，但“先拿再决”需改词，“购买犹豫碾平的转换器”偏抽象，口播连贯性被削弱。",
+      "script_spans": [
+        "为什么平台拼命推？因为国内消费金融早能补“没钱”的缺口，这功能根本不主打穷，而是主打“不敢买”。",
+        "让你先拿再决。",
+        "购买犹豫碾平的转换器"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能提示延迟支付、跨平台欠款等风险，整体无明显违规；但“拼命推”“风险转嫁”等绝对化归因偏重，易造成误导。",
+      "script_spans": [
+        "好处真实：不确定合身先买回比划，退掉不用掏钱",
+        "平台拼命推",
+        "负债风险悄悄转嫁到你头上"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-009b4d4271f54762924ccdc8a3e3dd31",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-7b3cd4c1ca6d4546a6abd8a95f90d46d",
+  "run_id": "run-20260903T051600Z-cb81dfc50d11",
+  "trace_sha256": "661fb2386f03d99b75d1ce174a8ec534ba1faafa48cb4544408d52a27f55e5d1",
+  "created_at": "2026-09-03T12:06:45.438763Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回应“抢着存是否划算”，并同时比较大行、小行、安全与流动性，精准落到普通储户。",
+      "script_spans": [
+        "抢到手的那点利息，真能跑赢随便一家小银行吗？",
+        "抢不到没必要焦虑，先问自己：这钱三五年确定不动吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 406，目标为 450，偏差率为 9.78%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“稀缺不等于划算”展开，既有利率、门槛和提前支取规则，也给出分散配置与期限判断。",
+      "script_spans": [
+        "四大行五年期大额存单最高定价约百分之一点六，而约十家民营银行却在密集下架三年期、五年期定存。",
+        "存单属一般性存款，五十万内保本，但起购二十万，提前支取按活期算。",
+        "先核对自己存款保险覆盖和用钱节奏，再决定排不排队。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头连续追问制造反差，中段用利率、流动性和分散存款持续推进，结尾自然落到决策提醒。",
+      "script_spans": [
+        "明明利率只剩一点几，银行为什么还把大额存单藏起来卖？",
+        "再拆关键取舍。存单属一般性存款，五十万内保本，但起购二十万，提前支取按活期算。",
+        "大额存单是安全垫，不是摇钱树。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "结构和停顿设计清楚，问答感也在；但长句、数字串与金融术语叠加，朗读略费气，仍有念稿感。",
+      "script_spans": [
+        "抢不到没必要焦虑，先问自己：这钱三五年确定不动吗？",
+        "四大行五年期大额存单最高定价约百分之一点六，而约十家民营银行却在密集下架三年期、五年期定存。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“帮银行锁钱，不是捡漏”和“安全垫，不是摇钱树”简洁有力，修辞服务判断，且具备自然复述的记忆点。",
+      "script_spans": [
+        "抢存更像帮银行锁钱，不是捡漏。",
+        "大额存单是安全垫，不是摇钱树。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出判断，随后按“本质—取舍—决策”递进，结尾回扣安全与排队，因果链基本完整。",
+      "script_spans": [
+        "先看这一单难求的本质。",
+        "再拆关键取舍。",
+        "大额存单是安全垫，不是摇钱树。额度紧的时候，先核对自己存款保险覆盖和用钱节奏，再决定排不排队。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制且提示流动性风险，但“50万内保本”“超50万就得拆行保底”表述过满，需明确存款保险限额及本息口径。",
+      "script_spans": [
+        "抢不到没必要焦虑，先问自己：这钱三五年确定不动吗？",
+        "存单属一般性存款，五十万内保本",
+        "资金超五十万就得拆几家银行保底数"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-6eefb7840b614fbb93c371c99bbf0e3f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-2de7d58be49b47cab3ffd2a72d9a0e66",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

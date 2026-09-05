@@ -1,0 +1,143 @@
+{
+  "evaluation_id": "combined-e6fc98b298fc4420a151468d9124ad20",
+  "run_id": "run-20260902T142221Z-8824ed274519",
+  "trace_sha256": "0bd6e92c0423740805f51bcc637b91c5b5c9e864b394faed5c7e02fbf61f684e",
+  "created_at": "2026-09-03T14:24:44.473803Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即作答并给出条件，固收与分红两侧都展开，结尾回扣题设，痛点贴合。",
+      "script_spans": [
+        "现在锁定长期回报靠不靠谱？靠谱，但只认合同写固收那侧。",
+        "要白纸黑字慢钱就挑固收年金。想博高收益得认波动风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "信息密度高且多与事实相符，但演示落差、监管清单等处同义复述，重复只算一次信息。",
+      "script_spans": [
+        "预定利率签完就冻在合同里。你等于把今天利率装进罐头。",
+        "有研究看了62家寿险公司，2022年保单价值释放是负数。",
+        "你要冲着漂亮演示买，得备好失望。有人以为演示即到手，结果差一截。",
+        "监管负面清单也在防销售误导",
+        "监管出清单防吹牛销售"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即点出追高预期与错过保底的反差，中段以数据与转折持续兑现，结尾提问从正文对比自然生长。",
+      "script_spans": [
+        "盯着分红险高预期的人，正错过合同里写死2%保底",
+        "你愿拿确定薄利还是等风来？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与比喻大多上口，但'回超100%''差则保底挨饿'等处朗读需临时换词重断句，卡在2分档。",
+      "script_spans": [
+        "你等于把今天利率装进罐头",
+        "演示漂亮像商场海报。实际到账像打折季实付。",
+        "后来部分新品回超100%。",
+        "行情好分得多，差则保底挨饿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "罐头、海报与打折实付等比喻准确服务理解，把利率装进罐头离开上下文仍可复述，密度适中不炫技。",
+      "script_spans": [
+        "你等于把今天利率装进罐头",
+        "演示漂亮像商场海报。实际到账像打折季实付。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、结尾回扣，但'这钱不能动'与下句相拗，个别过渡省略生硬，清单处绕回。",
+      "script_spans": [
+        "那不锁的那边啥样？看分红这头。",
+        "所以锁不锁？要白纸黑字慢钱就挑固收年金。",
+        "你若三五年内买房结婚，这钱不能动。锁了反成包袱。",
+        "这来对抗钱变薄。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "退保亏损、分红不保证、闲钱才锁等边界齐全，但'写死2%保底'把预定利率当成保证收益，易误导观众，需限定措辞。",
+      "script_spans": [
+        "急用钱会亏点本金",
+        "分红不保证，可能落空",
+        "盯着分红险高预期的人，正错过合同里写死2%保底"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d857b322c3a44cc8978219857d9d2075",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

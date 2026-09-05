@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-0e72a57b09a6457fb95b03fa111c5189",
+  "run_id": "run-20260902T142814Z-ed9ff8a620d2",
+  "trace_sha256": "9843c196a18378d68be601d85b730b0d926fbca45073159951862ffbf7dd11ca",
+  "created_at": "2026-09-03T14:25:08.657712Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头连抛题设两问并即刻作答，正文兼顾难抢成因与划算判断，始终对准抢存单的普通储户。",
+      "script_spans": [
+        "你定闹钟抢大额存单秒没，可抢到真比普通定存划算？其实不一定更划算。",
+        "先按期限算笔账，别被稀缺感带着走，踏实比跟风重要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题全程集中，利率比价、流动性、存款保险、期限倒挂层层推进，关键数据均有依据可查。",
+      "script_spans": [
+        "银行搞限额，是想用稍高利息锁住长期资金，缓解存款搬家压力，并不代表利率触底要反弹。",
+        "三年期稍高，可你跑两家城商行，普通定存能给到百分之一点八。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头抢存单秒没加反问直给悬念；中段连抛限量原因、比价反转、流动性误区；结尾自问自答自然收束，有余味。",
+      "script_spans": [
+        "你定闹钟抢大额存单秒没，可抢到真比普通定存划算？",
+        "利息反倒更多，大行存单并非最香",
+        "问自己：这钱三五年真用不到？能承受转让麻烦？",
+        "别被稀缺感带着走，踏实比跟风重要"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句问答设计好读，但“缓解存款搬家压力”“密集下架”等名词堆叠两处以上需改口重断，封顶2分。",
+      "script_spans": [
+        "抢到手先别乐，得看钱能不能锁几年、用不用灵活。",
+        "另一边小银行长期定存密集下架",
+        "缓解存款搬家压力，并不代表利率触底要反弹"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“腰斩”“排断腿”形象贴切不堆砌，“别被稀缺感带着走，踏实比跟风重要”离开上下文仍可复述。",
+      "script_spans": [
+        "你发现没，越难抢越觉得香，背后其实是资产荒",
+        "若中间用钱提前取，利息直接腰斩，跟普通定存一个样",
+        "排断腿抢来的存单，可能不如安心分散存划算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "各段各答一问、转场设问清晰，稀缺感到资产荒因果有桥，结尾自问清单回扣开头稀缺心理。",
+      "script_spans": [
+        "你发现没，越难抢越觉得香，背后其实是资产荒，钱找不到好去处。",
+        "所以抢存钱不是稳赚。问自己：这钱三五年真用不到？能承受转让麻烦？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键判断均留余地，如'不一定''未必'；明确否定稳赚并讲清五十万保险边界，无误导夸大或煽动，导向安全。",
+      "script_spans": [
+        "所以抢存钱不是稳赚",
+        "利率未必输存单",
+        "五十万内存款保险全保本，超了就得分几家银行存"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7c8be9b7f8a542beafe94e48fe9c7fb6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

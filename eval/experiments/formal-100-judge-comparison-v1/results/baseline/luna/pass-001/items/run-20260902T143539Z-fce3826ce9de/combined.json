@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-d425f009508b40e1b5eb960e1d1d6eb5",
+  "run_id": "run-20260902T143539Z-fce3826ce9de",
+  "trace_sha256": "24ca75a70377d57126ebbdca47b5d8767b4ca15c6cda9c2671d6eac6b3fffa2a",
+  "created_at": "2026-09-03T11:44:25.917554Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正文正面回答准时承诺是否合理，兼顾消费者、骑手与平台，并提出恶劣天气免罚延时。",
+      "script_spans": [
+        "你想按时吃上热饭，骑手只想平安送完这趟单。",
+        "承诺不是全删，但极端天得免罚延时，别逼活人去冒险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 290，目标为 280，偏差率为 3.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕核心争议层层补充需求变化、骑手风险、计时改革与消费者行动，信息单元具体且能推进结论。",
+      "script_spans": [
+        "有研究跟踪过，四十度那会儿，午高峰单量能多两成。",
+        "遇到恶劣天，配送考核时间会顺延，连等红灯都停表了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "暴雨催单与骑手涉险先制造冲突，随后用高温订单、规则试行和结尾追问持续推进，收束自然。",
+      "script_spans": [
+        "外面下暴雨，你催着外卖准时到，骑手却在蹚水？",
+        "好在有的城市已试水新办法，给天气留余地。",
+        "当老天不配合，死磕那几分钟到底累了谁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和反问有口播劲，但“准时承诺”“免罚延时”两处表达生硬，拉低整体朗读顺滑度。",
+      "script_spans": [
+        "你想按时吃上热饭，骑手只想平安送完这趟单。",
+        "这死卡时间的准时承诺，在极端天气里真不合理。",
+        "承诺不是全删，但极端天得免罚延时，别逼活人去冒险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“别逼活人去冒险”和“死磕那几分钟”准确凝练，既有情绪力度，也能帮助观众记住核心观点。",
+      "script_spans": [
+        "别逼活人去冒险。",
+        "极端天气更该宽限些。",
+        "当老天不配合，死磕那几分钟到底累了谁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头立场、风险展开和规则建议基本递进，但从高温订单增加跳到“路又滑”，天气因果衔接不清，论证略有断点。",
+      "script_spans": [
+        "承诺不是全删，但极端天得免罚延时，别逼活人去冒险。",
+        "好在有的城市已试水新办法，给天气留余地。",
+        "单子一多路又滑，准时就难了，人也危险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以极端天气下的配送安全为核心，数据和政策案例有边界，倡导宽限而非煽动对立，整体合规稳妥。",
+      "script_spans": [
+        "好在有的城市已试水新办法，给天气留余地。",
+        "平台也该把弹性规则讲明白，别闷声偷偷改。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8d7fa530bd9e483d80db413a5bcca03c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-3f3631130f514a14bc54a9bd377957ce",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

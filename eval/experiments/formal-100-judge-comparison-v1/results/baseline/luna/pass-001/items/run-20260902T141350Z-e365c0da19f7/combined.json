@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-93b12bb7787f43588129c636598b4b30",
+  "run_id": "run-20260902T141350Z-e365c0da19f7",
+  "trace_sha256": "816e5fb2efcdefb7af2e6460e4d451c0643640418c99bbc7fc7d4b66cfb0764e",
+  "created_at": "2026-09-03T11:44:23.401524Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕留现金与提前还贷正面展开，并按利率、备用金和收入稳定性给出折中方案，精准命中普通借款人。",
+      "script_spans": [
+        "一边是缩水存款息，一边是欠银行的债。",
+        "折中办法：留半年开支，余钱部分还。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 714，目标为 700，偏差率为 2.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦决策，利率比较、合同成本、流动性风险和备用金阈值层层增加可执行判断。",
+      "script_spans": [
+        "若工作收入波动大，留笔撑半年的钱比省息更要紧。",
+        "若收入稳、备用金足，房贷利率又高，部分提前还挺实在。",
+        "你提前还款前，最好要一份明细单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出现金与还贷的两难，中段用利率、流动性和人群差异推进，结尾问题也自然。",
+      "script_spans": [
+        "留现金吃息越来越少，提前还贷又怕将来缺钱。",
+        "若收入稳、备用金足，房贷利率又高，部分提前还挺实在。",
+        "当下存款率再降，你愿不愿为随时取钱，放弃那点还贷省下的利？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感，短句和转折清楚；但利率句与结尾搭配不顺，连续朗读时仍需重断句。",
+      "script_spans": [
+        "这账挺明白。",
+        "眼下五年期以上房贷参考利率，是百分之三点五。",
+        "当下存款率再降，你愿不愿为随时取钱，放弃那点还贷省下的利？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对照句强化了两难，“现金是弹药”形成鲜明记忆点，整体表达克制，没有修辞堆叠。",
+      "script_spans": [
+        "一边是缩水存款息，一边是欠银行的债。",
+        "现金也是抓住新机会的弹药。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线由利率账推进到现金安全垫，整体可跟随；但“全还清”后仍称“月供扛不住”逻辑冲突，退休人群也缺少解释。",
+      "script_spans": [
+        "这事儿不能一刀切，得看你的房贷利率和手头备用金谁更紧迫。",
+        "结果收入一断，没现金月供都扛不住，本金套牢。",
+        "若你已临近退休，收入固定，那逻辑又不同。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有条件地比较利率、流动性和备用金，方向稳妥；但节省金额的长期推算过于确定，容易让观众误判。",
+      "script_spans": [
+        "这事儿不能一刀切，得看你的房贷利率和手头备用金谁更紧迫。",
+        "连续省十年就两万。",
+        "所以别全还光。折中办法：留半年开支，余钱部分还。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-720a5c6272f84d6ba906f2b3162c3ba0",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ce8cfdd6cca3435192fbf0b9f57184c5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

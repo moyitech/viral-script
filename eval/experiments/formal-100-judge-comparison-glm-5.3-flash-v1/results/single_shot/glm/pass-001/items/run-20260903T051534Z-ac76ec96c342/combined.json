@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-cfc8ea2e3a404d6cb4b0f156184fcec3",
+  "run_id": "run-20260903T051534Z-ac76ec96c342",
+  "trace_sha256": "c657a0443dce770ad638097f7ca52f40257af238d0d4b2f314f312f74e476497",
+  "created_at": "2026-09-03T14:10:26.208741Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头并陈替代加速与企业顾虑，原因直指产线数据和停工痛点，正面答完题设。",
+      "script_spans": [
+        "可很多制造企业听到要更换原有系统依然心里打鼓",
+        "说白了，恐惧的不是国产软件本身，而是老系统里压着十几年产线工艺数据和操作习惯"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 281，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从经验软件化到停机损失量化再到试点方法，各段各有增量，无复述空转。",
+      "script_spans": [
+        "工业软件本质是把工厂工艺经验软件化",
+        "停机一天的损失可能比整套软件采购费还高",
+        "先选一条边缘产线做试点运行，验证了再逐步扩面"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "前20字为背景陈述，冲突钩子滞后；中段'心里打鼓''停机损失'有推进；结尾给完建议直接收束，无余味或互动。",
+      "script_spans": [
+        "可很多制造企业听到要更换原有系统依然心里打鼓",
+        "停机一天的损失可能比整套软件采购费还高",
+        "国产工业软件在近年的技术追赶中进步飞快",
+        "先选一条边缘产线做试点运行，验证了再逐步扩面"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主，气口清楚，'时间表很硬''一把推平'等表达上口，朗读基本无需临时改词或重断句。",
+      "script_spans": [
+        "迁移不等于装个新程序，等于把老师傅脑子里的经验重新梳理一遍",
+        "时间表很硬"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'焊在旧平台''老师傅经验重新梳理'贴切克制，'停机一天损失比采购费还高'可独立复述，无炫技堆砌。",
+      "script_spans": [
+        "迁移不等于装个新程序，等于把老师傅脑子里的经验重新梳理一遍",
+        "图纸、参数、排产逻辑全焊在旧平台上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "“迁移不等于装个新程序”搭好因果桥，试点扩面收尾回扣开头怕停工的顾虑。",
+      "script_spans": [
+        "迁移不等于装个新程序，等于把老师傅脑子里的经验重新梳理一遍",
+        "时间表很硬，但生产线核心系统若兼容性出纰漏",
+        "真要换，千万别全厂一把推平"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "损失判断用“可能”限定，替代建议给出试点验证路径，表述客观克制，无夸大承诺与煽动对立。",
+      "script_spans": [
+        "停机一天的损失可能比整套软件采购费还高",
+        "先选一条边缘产线做试点运行，验证了再逐步扩面"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9412bdafbd7c4de3b40634b581257db3",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c3669f3b43a74cd3a01f13db6d416b89",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

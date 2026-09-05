@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-31d18653e3b54cb7bb975fd3134f01b1",
+  "run_id": "run-20260903T051551Z-294893633d66",
+  "trace_sha256": "e2888f68ce3fcaff482dad9beaafafe411afa84df3e2d3b3f93f8ed3ead53eae",
+  "created_at": "2026-09-03T15:29:56.111161Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛账、结尾收账，正面回答谁更高；机会成本两侧与年轻租客人群全覆盖，切角具体。",
+      "script_spans": [
+        "我的判断很直接：对普通年轻人，城市里的机会收益目前还略压过房租成本，但剩下的盈余，已经薄得像层纸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "论点、机制、缓冲阀、个人账、规则层层推进；保租房六成租金、条例实名备案押金条款均有据，无漂移。",
+      "script_spans": [
+        "像深圳光明区近期配租的房源，租金大概只有同地段市场价的六成",
+        "新出台的住房租赁条例要求合同实名备案、押金不能乱扣"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛贵与挤的反差，中段以保租房六成租金等新信息持续兑现，结尾金句自然收束有回味。",
+      "script_spans": [
+        "大城租房越来越贵，可年轻人还是一波波往里挤。",
+        "机会是慢火炖汤，租金是当面收钱。",
+        "留得下，才谈得上赚得到。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口为主，比喻句重音清楚，中段口语贯穿，全篇基本可照读不卡壳。",
+      "script_spans": [
+        "机会是慢火炖汤，租金是当面收钱",
+        "你每月工资一大块交给房东，储蓄和试错空间就被吃掉"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "薄得像层纸、慢火炖汤对当面收钱，比喻贴切克制，至少两句离开原文仍可复述，无堆砌。",
+      "script_spans": [
+        "但剩下的盈余，已经薄得像层纸。",
+        "机会是慢火炖汤，租金是当面收钱。",
+        "也可能顺手关掉了职业跃升的那扇窗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线可跟随，因果桥清楚；但结论让租客“硬扛市场房价”，房租滑成房价，概念范围不一致，经不起追问。",
+      "script_spans": [
+        "人往城市涌，不是瞎凑热闹。人群聚在一起，好岗位、新行业、人脉网络才长得出來。",
+        "别拿全部收入去硬扛市场房价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "判断口吻留有余地，建议给出可操作边界；保租房六成租金与押金新规属实，无煽动、夸大或误导承诺。",
+      "script_spans": [
+        "真要算清净收益，先去查查本地保租房门槛，别拿全部收入去硬扛市场房价",
+        "新出台的住房租赁条例要求合同实名备案、押金不能乱扣，年轻人至少能用规则挡掉一些糟心事"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9bcb7508395941fe8199c1f9591ff255",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

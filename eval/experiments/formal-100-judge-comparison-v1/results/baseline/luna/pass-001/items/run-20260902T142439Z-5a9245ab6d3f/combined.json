@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-bb6a60fae593485288559c52d42a8215",
+  "run_id": "run-20260902T142439Z-5a9245ab6d3f",
+  "trace_sha256": "0dc06e4a3fb0eb3903e2af8d2c253724b3c86ab6b9f492151ee016b07fa4ef31",
+  "created_at": "2026-09-03T11:45:29.688895Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否值得抢，兼顾利率、流动性和安全边界，且明确面向普通储户给出取舍建议。",
+      "script_spans": [
+        "抢着存真更划算？未必，得看跟谁比。",
+        "对咱普通人，取舍很清楚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 487，目标为 450，偏差率为 8.22%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，比较、稀缺原因和决策建议都有信息增量；但三年期利差缺少对应存单利率，核心证据链不够扎实。",
+      "script_spans": [
+        "银行重启大额存单，多是想把手里的钱锁住，缓解存款搬家压力",
+        "如果钱长期不动，小行定存更实惠；随时可能用，存单流动性稍好但提前取亏。",
+        "五年期四大行最高也就一点六，还限量卖。可许多地方农商行三年定存能给到一点八五甚至一点九五。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用四千元差额制造冲突，中段连续补充原因与风险，结尾提问也自然。",
+      "script_spans": [
+        "你抢到的三年期大额存单，利息可能比老家农商行定存少赚四千块",
+        "下次见额度告急，你是去排队，还是先问问家门口银行的挂牌价？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答式开头有对话感，短句也多，但金融术语和两处拗口表述拖慢朗读，需改词。",
+      "script_spans": [
+        "抢着存真更划算？未必，得看跟谁比。",
+        "真急用钱就亏了。",
+        "同样存二十万本金",
+        "分散几家保存款保险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“抢到不等于赚到”高度凝练，排队与回报的反差清楚，修辞适度且便于复述。",
+      "script_spans": [
+        "存单虽保本，但抢到不等于赚到。",
+        "别看队列长，未必真划算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、原因拆解、风险提示和结尾追问完整；但三年期利差前提未交代，“分散几家保存款保险”也使建议不够严谨。",
+      "script_spans": [
+        "如果钱长期不动，小行定存更实惠；随时可能用，存单流动性稍好但提前取亏。",
+        "下次见额度告急，你是去排队，还是先问问家门口银行的挂牌价？",
+        "像中行一年期才一点一，五年期四大行最高也就一点六",
+        "超了就得分散几家保存款保险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有比价、流动性和保险提示，整体较克制；但“存单虽保本”及“小行定存更实惠”缺少范围和条件限定。",
+      "script_spans": [
+        "资金不超五十万，抢不到别焦虑",
+        "先手机比价再出门，别被排队人群带节奏",
+        "存单虽保本",
+        "小行定存更实惠"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-1077a2d8559646d7a238276f59cdafdc",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-512b73e3336a422f84909a003075c2e8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

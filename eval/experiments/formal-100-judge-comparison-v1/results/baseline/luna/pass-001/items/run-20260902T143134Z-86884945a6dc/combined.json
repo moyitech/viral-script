@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-bbfb3ffe1732442cbd9acdbff85f463f",
+  "run_id": "run-20260902T143134Z-86884945a6dc",
+  "trace_sha256": "f12e98bff0ef11beaa3b39b9c3f97984c261249fed8d338e4762b8443bc9edaa",
+  "created_at": "2026-09-03T11:47:05.029628Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答是否削弱，既讲人机协作的收益，也讲机器替人导致反馈失真，且面向家长给出判断方法。",
+      "script_spans": [
+        "效率提升本身不削弱真实反馈，关键看人机怎么配合。",
+        "可如果学校图省事直接让机器替人批，套路化评语就会掩盖真实问题"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 268，目标为 280，偏差率为 4.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕真实反馈持续推进，给出机器筛查、教师讲评与直接替代的差异，并落到家长可执行的核验动作。",
+      "script_spans": [
+        "像先让机器抓错别字和格式问题，老师腾手写段落级讲评",
+        "套路化评语就会掩盖真实问题",
+        "回家翻作业本，不妨问孩子：这句红笔是老师写的吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“越快越假”的反差立钩子，中段展开两种路径，结尾问题自然落到家庭互动。",
+      "script_spans": [
+        "人工智能批改快了，孩子作文却越写越假？",
+        "回家翻作业本，不妨问孩子：这句红笔是老师写的吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头与结尾顺口有对话感，但中段出现生硬搭配和长串并列，朗读需重断句。",
+      "script_spans": [
+        "人工智能批改快了，孩子作文却越写越假？不全是。",
+        "技术省下的只是笔墨时间，省不掉的是育人眼光。",
+        "老师腾手写段落级讲评，学生拿到有温度修改方向",
+        "可如果学校图省事直接让机器替人批，套路化评语就会掩盖真实问题，好比用美颜磨平照片，看着光鲜，作文里薄弱点被悄悄盖住，孩子只看到泛泛夸奖。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“技术接了脏活，人回了灵魂”形成清晰记忆点，美颜类比也准确，没有连续堆砌修辞。",
+      "script_spans": [
+        "技术接了脏活，人回了灵魂。",
+        "好比用美颜磨平照片"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线和正反转折完整，但“像先让”句式残缺，末尾“帮他分清人机才好”生硬，口播需重断句。",
+      "script_spans": [
+        "效率提升本身不削弱真实反馈，关键看人机怎么配合。",
+        "像先让机器抓错别字和格式问题，老师腾手写段落级讲评，学生拿到有温度修改方向，而不是冷冰冰分数",
+        "帮他分清人机才好"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有条件地讨论人机协同，不煽动也无承诺；但“只”“省不掉”等绝对化收束略显过满，需加限定。",
+      "script_spans": [
+        "效率提升本身不削弱真实反馈，关键看人机怎么配合。",
+        "技术省下的只是笔墨时间，省不掉的是育人眼光。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4e46fa1c870f4ff991cf7346120cacd2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f7c16c76e03c408a86d7a30e242aeeb4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

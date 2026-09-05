@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-6132598278544d409ee75234d2598fa9",
+  "run_id": "run-20260903T051537Z-aab1d6714804",
+  "trace_sha256": "40be985fc429ee1d90a3ccf106ccd34c9b98869c24339fd0446066814a2c827e",
+  "created_at": "2026-09-03T12:32:16.221405Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答摩天楼是否加剧热岛，并覆盖建材、空调及普通住户的实际影响。",
+      "script_spans": [
+        "我的判断很直接：高密度摩天楼确实会加剧夜间热岛，但它不是孤立凶手，而是和建材、空调绑在一起放大了升温。",
+        "对普通人来说，老城区高楼夹缝里的住户深夜更难自然降温，睡眠和体感都受影响。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕夜间热岛持续推进，涵盖蓄热、挡风、空调排热、缓解方向和居住建议，信息增量充分。",
+      "script_spans": [
+        "白天混凝土、玻璃幕墙这些低反照率表面吸足太阳热量，夜晚慢慢释放；楼群空间密度大，风穿不过去，热量散不掉。",
+        "买房租房别只看楼层高不高，看楼间距和周边绿化，更能保住夜里凉意。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用室内外闷热反差抓人，中段连续补充成因与建议，结尾判断清晰且能留下记忆。",
+      "script_spans": [
+        "半夜想开窗通风，却发现外面比屋里还闷。",
+        "摩天楼不是原罪，密度与散热设计才是夜间凉热的分界线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚，类比和建议有口播感；但“被视作缓解方向”“更助散热”都略拗口，影响顺读。",
+      "script_spans": [
+        "这种布局像给城市盖了层被子，蓄热快、散热慢",
+        "被视作缓解方向",
+        "更助散热"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“盖了层被子”把蓄热散热讲得直观，“不是原罪”也形成了自然、可复述的判断。",
+      "script_spans": [
+        "这种布局像给城市盖了层被子，蓄热快、散热慢，局部温度被持续顶高。",
+        "记住，摩天楼不是原罪，密度与散热设计才是夜间凉热的分界线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按设问、机制、影响、建议收束，主线清楚；但绿色基础设施一句突然插入，过渡略显生硬。",
+      "script_spans": [
+        "这种布局像给城市盖了层被子，蓄热快、散热慢，局部温度被持续顶高。",
+        "针对高层建筑的绿色基础设施被视作缓解方向，但成本和监管仍是落地难点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体避免把摩天楼简单定罪，但通风、散热和省电效果说得过满，缺少天气、建筑与使用条件限定，可能误导。",
+      "script_spans": [
+        "摩天楼不是原罪，密度与散热设计才是夜间凉热的分界线。",
+        "风穿不过去，热量散不掉",
+        "比单纯硬开空调更助散热，也省电"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c10989b5e3a143828090ff8125de2ab5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

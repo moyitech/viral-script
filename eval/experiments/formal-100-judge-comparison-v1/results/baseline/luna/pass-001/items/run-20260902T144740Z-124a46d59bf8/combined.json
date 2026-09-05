@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-dcafd4edb0ce49f78161a736d382e34a",
+  "run_id": "run-20260902T144740Z-124a46d59bf8",
+  "trace_sha256": "4c55371789872e80984ef3d2ee86018852ade8cecc09d8026dbb24a34944b361",
+  "created_at": "2026-09-03T11:45:20.855795Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即回答难度问题，明确区分合规与马虎者，并覆盖小商家的便利、风险和应对。",
+      "script_spans": [
+        "小商家出海没更难，但马虎合规的就危险了。",
+        "所以别被“趋严”吓退，先花三天摸清报关和税务底线再开店。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 283，目标为 280，偏差率为 1.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "退货政策、合规环节、损失示例、孵化支持和行动建议彼此推进，观众能获得具体判断与做法。",
+      "script_spans": [
+        "以前只能原关区退，现在零售能跨关区退，货就近退场，费用降了。",
+        "一次认证不全货被扣，或者税务不清账号冻住，对小商家可能是大打击。",
+        "先花三天摸清报关和税务底线再开店。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用难不难与谁被筛掉制造冲突，中段连续补充利弊，结尾行动建议自然收束并留下机会感。",
+      "script_spans": [
+        "小商家出海没更难，但马虎合规的就危险了。",
+        "可跨境卖货链条长，国内外两头管，小本买卖最容易漏环节。",
+        "别人离场，你反而能接住红利，把难字变成机会。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和对话承接让整体可读，但“原关区退”“小额单子小”等表达需要临时改词，尚未达到顺滑口播。",
+      "script_spans": [
+        "我直说：不会全面更难",
+        "以前只能原关区退",
+        "小额单子小、抗风险弱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“大卖家擦伤，小商家伤得重”对比准确好记，修辞克制，既解释风险差异，也保留了口播的力度。",
+      "script_spans": [
+        "大卖家擦伤，小商家伤得重。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "“结论—利好—风险—建议”主线清楚，但退货便利和孵化支持不足以推出“不会全面更难”，结尾略扩大。",
+      "script_spans": [
+        "可跨境卖货链条长，国内外两头管，小本买卖最容易漏环节。",
+        "所以别被“趋严”吓退，先花三天摸清报关和税务底线再开店。",
+        "别人离场，你反而能接住红利，把难字变成机会。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调合规且无明显违规，但“不会全面更难”“漏一项就出事”过度绝对，“三天摸清底线”也不够稳妥。",
+      "script_spans": [
+        "马虎合规的就危险了",
+        "不会全面更难",
+        "漏一项就出事",
+        "先花三天摸清报关和税务底线再开店"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9b1e064f1a07415d9ad0bbff8590977f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-aba0e55ee33c44edb1e38c89db1eb7a5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-ef4076679b5c42509d5e9b73923547d3",
+  "run_id": "run-20260902T144753Z-e2d91c9a0c36",
+  "trace_sha256": "8224e825b49bd39551d3db37dedc7d2845c4889599f22e1d58c55ecc3af22bc3",
+  "created_at": "2026-09-03T14:28:44.725371Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇设问即扣安全与效率两侧，方案兼顾住户与骑手，结尾再点餐凉与不安全，全程正面答题。",
+      "script_spans": [
+        "这禁入保安全还是误事？其实两头能顾",
+        "车不进就少隐患，饭也能准时到"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题不漂移，停靠区与固定接手两方案均有实践支撑，机制、实例、提醒层层递进，信息密度高。",
+      "script_spans": [
+        "一些小区已这么试，管理变顺，生人登记更清楚",
+        "复杂楼栋让固定人员集中接手"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出等餐与被拦的对立，中段用已试小区、取送分离持续兑现，结尾包容互动由正文自然生长。",
+      "script_spans": [
+        "你饿着等开门，骑手却被拦小区外，这禁入保安全还是误事？",
+        "还有招，复杂楼栋让固定人员集中接手。",
+        "下次见门口停靠点，不妨理解下，多些包容，毕竟谁都不想餐凉了还不安全。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口为主，问答推进自然，如‘把车停外头，步行提餐进’顺口有节奏，朗读无需临时改词。",
+      "script_spans": [
+        "骑手把车停外头，步行提餐进，车不进就少隐患，饭也能准时到，省得来回交涉"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，光禁不疏与餐凉了还不安全均可离文复述，迷宫般院落贴切，无堆砌炫技。",
+      "script_spans": [
+        "光禁不疏反而堆矛盾，划区加指引才管用",
+        "谁都不想餐凉了还不安全",
+        "骑手不必深入迷宫般院落"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问、释因、转折、收束齐备，为啥这样可行承上启下，结尾下次见门口停靠点自然回扣开头。",
+      "script_spans": [
+        "为啥这样可行？一些小区已这么试",
+        "光禁不疏反而堆矛盾，划区加指引才管用",
+        "下次见门口停靠点，不妨理解下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "立场平衡，主张理解包容；试点表述有'一些小区'限定，不夸大不煽动，导向安全稳妥。",
+      "script_spans": [
+        "一些小区已这么试，管理变顺",
+        "住户不见外来车穿行，餐食也没凉",
+        "不妨理解下，多些包容"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0390fc254e1647e4b366a431ca44bb11",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

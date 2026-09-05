@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-e89a7a17af944d3fa688e0b31c5944c1",
+  "run_id": "run-20260903T051615Z-d67d74854a50",
+  "trace_sha256": "21fcbb472c29100443aa0157a8cebc1494695ae971b2529d25d82bf60a7eccc5",
+  "created_at": "2026-09-03T15:28:28.047833Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问、中段判断、结尾回扣，扩张与标准两侧都答到，普通人影响段直击核心人群。",
+      "script_spans": [
+        "框架刚搭起来，监管落地却慢了半拍",
+        "风险不是远方新闻，而是家门口的未知数"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "增速数据、标准推荐性质、导则缺口层层推进，无编造，观众能带走具体事实与判断方法。",
+      "script_spans": [
+        "已发布五十多项国标多是推荐性质，对飞速扩张的独立储能，强制约束不够硬",
+        "一季度新型储能装机同比就涨了76%，独立储能更是翻了两倍以上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头充电宝与起火爆炸迅速形成反差钩子，中段以设问持续兑现新信息，结尾由正文自然生长出余味。",
+      "script_spans": [
+        "可今年全球已公开十多起电池起火爆炸。标准真兜得住吗？",
+        "这对普通人什么影响？火灾早不限偏远电站，户用、物流仓储都出过事。",
+        "盲目上马不如稳妥迭代，这才是产业该有的节奏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "设问推进、短句为主，整体可读；但文件名连读费劲，“从纸面到全链条管住”需重断句。",
+      "script_spans": [
+        "标准真兜得住吗？我的判断：框架刚搭起来，监管落地却慢了半拍",
+        "今年4月国家能源局才印发新型储能电站质量监督大纲",
+        "标准从纸面到全链条管住，重心还在建设端"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "充电宝类比贴切易懂，'标准不是护身符''家门口的未知数'离开上下文仍可复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "储能电站像超大充电宝一样在身边遍地开花",
+        "标准不是护身符。",
+        "风险不是远方新闻，而是家门口的未知数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进使段落功能清晰，前提到结论因果有桥，结尾护身符一句自然回扣开头设问。",
+      "script_spans": [
+        "为什么补不齐？",
+        "政策要求投运后做安全后评价，但评价导则仍在编制",
+        "标准不是护身符"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "事故数量、政策节点均与公开信息相符，判断明确标注为主观观点，导向克制，无煽动夸大。",
+      "script_spans": [
+        "我的判断：框架刚搭起来，监管落地却慢了半拍。",
+        "盲目上马不如稳妥迭代，这才是产业该有的节奏"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-956dfbb92e354665bda59e303670d73a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

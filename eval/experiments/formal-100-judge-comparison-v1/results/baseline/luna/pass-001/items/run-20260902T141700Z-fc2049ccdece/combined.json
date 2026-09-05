@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-526fac5fc2d04ffc868d32d9f8232873",
+  "run_id": "run-20260902T141700Z-fc2049ccdece",
+  "trace_sha256": "4e47d39d33a394d5f5d567d3066b12b6f295c85f0d9da9dda6bac23d0923d943",
+  "created_at": "2026-09-03T11:44:03.571052Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应安检加严带来的安全与通勤冲突，覆盖通勤者痛点，并提出技术化兼顾路径。",
+      "script_spans": [
+        "要兼顾安全和效率，不能只把关口加严，得让安检更聪明，用新技术把时间抢回来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 712，目标为 700，偏差率为 1.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕同一冲突推进，既有拥堵事实，也有安检员注意力机制和技术方案，信息增量充分。",
+      "script_spans": [
+        "有实证研究跟踪地铁岗，发现用透明挡板隔开路人交谈干扰，绩效会变好",
+        "运营规定里其实鼓励新设备新模式提效率，写的是质量效率并重，不是只顾严。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“多耗20分钟”撞上安全追问，中段持续转向漏洞与方案，结尾问题也由论证自然长出。",
+      "script_spans": [
+        "早高峰多耗20分钟安检，安全就真能兜住吗？",
+        "为啥越细查，危险反倒可能从指缝溜走？",
+        "下次你遇长队，该问的不是要不要防护，而是为何不能既稳当又顺畅。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和追问有节奏，但多处压缩表达卡嘴，尚未达到自然口播。",
+      "script_spans": [
+        "早高峰多耗20分钟安检，安全就真能兜住吗？",
+        "深圳全网细查，行李必过机，人还持棒扫。",
+        "一刀切式的细，反而吃掉通勤容错。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一刀切式的细，反而吃掉通勤容错”准确凝练，“机器认得包，人就不必拦所有人”也便于复述。",
+      "script_spans": [
+        "一刀切式的细，反而吃掉通勤容错。",
+        "当机器认得包，人就不必拦所有人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按现象、机制、代价到方案递进，但拥堵后果有重复，结尾句式不完整，技术方案承接略跳。",
+      "script_spans": [
+        "细查清单变长，可通道数没跟着涨。一刀切式的细，反而吃掉通勤容错。",
+        "兼顾很难是二选一，是把身份识别、智能判图悄悄嵌进人流。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，也强调安全与效率平衡；但把拥挤噪声直接推导为漏检风险上升，智能判图效果也说得过满。",
+      "script_spans": [
+        "要兼顾安全和效率，不能只把关口加严",
+        "你越想抠细，现场越噪，漏检风险反被悄悄抬高。",
+        "让绝大多数人无障碍走过，少数行李自动留疑"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ce96caf0e5e445088769e99eb6106cf8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-bfd522290c1c434d9a21aaedb9cb3df5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

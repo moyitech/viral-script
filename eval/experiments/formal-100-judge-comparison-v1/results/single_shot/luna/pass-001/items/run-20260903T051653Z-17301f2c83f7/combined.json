@@ -1,0 +1,165 @@
+{
+  "evaluation_id": "combined-f5cff06b8e394886b09d351f9935c85d",
+  "run_id": "run-20260903T051653Z-17301f2c83f7",
+  "trace_sha256": "86c114444da9f6348a70d71eafd4c6da52dfe1818a26b33180f63222bc561bea",
+  "created_at": "2026-09-03T12:01:31.262631Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从同事困境切入，明确回答非紧急情形不应代为上报，并用征询需求和安全例外区分关心与冒犯。",
+      "script_spans": [
+        "只要没涉及人身安全的紧急危险，同事的家事不该由你去上报",
+        "真正的支持是问“你需要我做什么”，而不是“我已经替你做了什么”。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 817，目标为 700，偏差率为 16.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕隐私边界，既解释上报为何有害，也给出征询、资源转介和安全例外，信息单元推进充分。",
+      "script_spans": [
+        "家庭困境属于非常私密的个人处境，不是项目排期那种可以摊开讲的阻塞点。",
+        "你只需私下说一句“公司好像有匿名帮忙的渠道，需要我发你吗”，剩下的让他自己选。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接落入同事哭泣与是否上报的两难，中段不断补充风险和替代方案，结尾收出克制而有余味的判断。",
+      "script_spans": [
+        "午休路过工位，听见同事压着嗓子在电话里哭",
+        "真正的支持是问“你需要我做什么”，而不是“我已经替你做了什么”"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和反问有对话感，核心判断也清楚；但“自选动作”等词偏抽象，朗读时仍需调整气口。",
+      "script_spans": [
+        "先别急着动微信。我的判断很直白：",
+        "关键看你是替他做主，还是让他做主。",
+        "家庭困境属于非常私密的个人处境，不是项目排期那种可以摊开讲的阻塞点。",
+        "这种克制不是疏远，而是给对方留出自选动作的空间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“替他做主，还是让他做主”与“把别人的人生还给他自己”既能概括观点，也有自然复述价值，修辞没有压过论证。",
+      "script_spans": [
+        "关键看你是替他做主，还是让他做主。",
+        "不上报不是冷漠，是把别人的人生还给他自己。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，先立判断再解释风险、回应冷漠疑问并给出替代方案；但法律口径偏绝对，个别表述如“自选动作”拗口。",
+      "script_spans": [
+        "关键看你是替他做主，还是让他做主。",
+        "更可行的路，是把资源递到他手边，而不是把事端到台上。",
+        "咱们国家法律把这类信息归入敏感范畴，处理原则是能不碰就不碰，必须碰也得本人知情同意。",
+        "这种克制不是疏远，而是给对方留出自选动作的空间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "尊重隐私、强调征得本人选择，方向稳妥；但将同意与法定干预说得过于绝对，可能造成法律误导。",
+      "script_spans": [
+        "真正的支持是问“你需要我做什么”，而不是“我已经替你做了什么”。",
+        "咱们国家法律把这类信息归入敏感范畴，处理原则是能不碰就不碰，必须碰也得本人知情同意。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 817,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.16714285714285715
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-76e61a853b2d4d88853e8a5b8b133e57",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a0d50f2d74a24a92806431ebd79e6a05",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

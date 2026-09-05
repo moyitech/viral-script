@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-0e9a2e3b11ea4fb38b7bec7ba76173b0",
+  "run_id": "run-20260902T142318Z-6d3a6356f256",
+  "trace_sha256": "c76c51b59a6426b658fd40298ed4dbece3a86958cb5d6623aad99abe22fed91d",
+  "created_at": "2026-09-03T11:53:32.814807Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接回答效率提升是否必然损害隐私，并覆盖企业、员工及两种解决路径，切题完整。",
+      "script_spans": [
+        "企业用大模型查信，效率涨不必然卖你私生活。",
+        "先给信件脱敏，把邮件里姓名电话遮住再让模型筛"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 279，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "始终围绕效率与隐私展开，研究发现、脱敏方案和最小必要原则形成有效信息递进。",
+      "script_spans": [
+        "有实验研究复盘，某些高效训练法本身压低记忆数据可能",
+        "人名地址变星号，模型照抓违规处速度也不降。",
+        "相关法规划了最小必要线，只许必要业务碰邮件"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以提速与隐私反差入题，中段用私人邮件、研究发现和脱敏方案连续推进，结尾追问也自然。",
+      "script_spans": [
+        "筛查邮件变快了员工隐私却没丢？",
+        "那平时落地咋办？先给信件脱敏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 1,
+      "reason": "口语词不少，但研究段连续堆叠抽象说法并多处语序失真，朗读中会频繁卡顿和重断句。",
+      "script_spans": [
+        "有实验研究复盘，某些高效训练法本身压低记忆数据可能",
+        "模型吃算力小记数据浅，原本为省显卡顺带少背私料"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“利益撞车”“人名地址变星号”等画面，但“模型吃算力小记数据浅”“隐私风挡住”搭配生硬，记忆点略显刻意。",
+      "script_spans": [
+        "两边利益实在撞车",
+        "人名地址变星号",
+        "模型吃算力小记数据浅",
+        "更把隐私风挡住"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "设问、冲突、方案与结尾较完整，但训练方法与邮件筛查的因果桥不足，中段表述也较拗口。",
+      "script_spans": [
+        "那平时落地咋办？先给信件脱敏，把邮件里姓名电话遮住再让模型筛",
+        "模型吃算力小记数据浅，原本为省显卡顺带少背私料，反比笨重私训法更把隐私风挡住"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提出脱敏和最小必要原则，方向较稳；但“速度也不降”等保证式表述缺少条件，可能误导。",
+      "script_spans": [
+        "先给信件脱敏，把邮件里姓名电话遮住再让模型筛",
+        "模型照抓违规处速度也不降"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.7916666666666666,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.375,
+    "weighted_average": 2.375,
+    "normalized_score": 0.7916666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-aa2fc94b6bf9437cb5560ff0baaf2268",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-cab69d8bbded4ef4bcccec3941376250",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

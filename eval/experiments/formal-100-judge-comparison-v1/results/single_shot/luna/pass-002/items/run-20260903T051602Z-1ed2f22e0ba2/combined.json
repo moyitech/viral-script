@@ -1,0 +1,134 @@
+{
+  "evaluation_id": "combined-3595780ba66f42108869ae539ec0fdaf",
+  "run_id": "run-20260903T051602Z-1ed2f22e0ba2",
+  "trace_sha256": "c58abe3cb19fd8508cfb0270c7446aa6d53c4d1818e0bf029fdd3ec66af572ee",
+  "created_at": "2026-09-03T12:32:12.283444Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答减负与收费两面，聚焦应届毕业生现金流，并给出签约前的比较方法。",
+      "script_spans": [
+        "对手里没积蓄的应届毕业生，免押确实让搬家不用四处凑钱，月初现金流松快不少，心理压力小。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "服务费比例、租金溢价、适用人群和年度比较均有交代，信息单元能持续推进结论。",
+      "script_spans": [
+        "合同里却写明收月租金百分之八到十的服务费，房源定价也比个人直租高出一截。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用免押金反而暗扣费用制造反差，中段层层算账，结尾建议自然收束并留下警醒。",
+      "script_spans": [
+        "你以为租房免押金是平台大发善心、真心给租客减负，可真有人退租算总账时才发现"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，但“重组成了”“拉通算一年”等表述拗口，长句与抽象词拖慢节奏。",
+      "script_spans": [
+        "有些纯直租平台本就不收中介费，传统押一付三反倒更省钱。",
+        "免押金在2026年从单身公寓到长租平台都在高调推",
+        "但拉通算一年，服务费累积可能远超押金被占用的机会成本。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照都服务于解释，尤其结尾准确概括了免押金只缓解现金流、不一定降低总账单。",
+      "script_spans": [
+        "把一次性的押金压力，重组成了长期的服务费或租金溢价",
+        "它免掉的是眼前凑钱焦躁，不是你住房账单的总额"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，先解释收费机制再落到人群和决策，但前文主语搭配生硬，押金规则表述也有范围泛化。",
+      "script_spans": [
+        "但拉通算一年，服务费累积可能远超押金被占用的机会成本。",
+        "免押金在2026年从单身公寓到长租平台都在高调推",
+        "过去租房押金受地方办法约束，一般不超过一个月租金且强制进托管账户，退租没损坏基本能全额拿回。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提醒租客核算总成本，建议较具体；但把地方性押金规则泛化为普遍强制要求，易造成法律认知误导。",
+      "script_spans": [
+        "签约前把服务费、租金差价和原可退还押金摆上天平比一比。",
+        "过去租房押金受地方办法约束，一般不超过一个月租金且强制进托管账户"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a4b8708f1bf4413b890b8cdb48a9f0a3",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

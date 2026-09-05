@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-79063a01a66441e0b6122bc895af06d8",
+  "run_id": "run-20260902T143314Z-1baeb2f32368",
+  "trace_sha256": "770d1ab9d4401fddd78ab3cc16a9d4353f8323b000727f946023cee3d66eea72",
+  "created_at": "2026-09-03T14:25:31.966304Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答“眼下没更贵”，兼顾养殖冲击与消费端两侧，结尾回扣提问，切中普通观众关心。",
+      "script_spans": [
+        "会更贵吗？眼下没有，反而便宜了。",
+        "餐桌上海鲜现在没更贵，是产量和出塘撑住了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "海温数据、产量价格、长期风险层层推进，各信息单元互相支撑，无重复注水。",
+      "script_spans": [
+        "东中国海升温最明显，几十年升了快一度半。",
+        "海水养殖产量还增了五个多点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛出养殖户赔钱与菜价下跌的反差，中段用数据与追问持续兑现，结尾互动从正文自然长出。",
+      "script_spans": [
+        "海水升温让近海养殖户赔钱，菜场海鲜价却跌了。",
+        "这反差怪不怪？怪在供给链兜住了。",
+        "你挑鱼时，或许得问问是哪里养的了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口干净、对话感足，但“气候因子年际变”与“若遇高温”两处需临时换词重说，封顶2分。",
+      "script_spans": [
+        "这反差怪不怪？怪在供给链兜住了。",
+        "夏天海面像熬汤。水温一高，氧气就少",
+        "气候因子年际变，今年顺明年未必。",
+        "南方虾蟹若遇高温，保险能兜底一部分，但缺口还得补。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻点到为止且服务理解，'今天便宜不代表明天稳''价格连着千里外的海'可独立复述，无堆砌。",
+      "script_spans": [
+        "夏天海面像熬汤。",
+        "今天便宜不代表明天稳。",
+        "价格连着千里外的海。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "反差设问引入，“供给链兜住”承转，先释当下再推长期，因果桥清楚，结尾回扣。",
+      "script_spans": [
+        "这反差怪不怪？怪在供给链兜住了。",
+        "那为什么我们买海鲜没觉得贵？",
+        "可长期看，升温在改海洋的牌局。今天便宜不代表明天稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "判断多带'未必''万一''或许'等限定，数据与来源吻合，无煽动、夸大或误导承诺。",
+      "script_spans": [
+        "今天便宜不代表明天稳",
+        "万一哪年热浪特别猛，局部减产会推高某些品种价",
+        "保险能兜底一部分，但缺口还得补"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ed4dc2e548e94dcba346e5123ad73a5b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

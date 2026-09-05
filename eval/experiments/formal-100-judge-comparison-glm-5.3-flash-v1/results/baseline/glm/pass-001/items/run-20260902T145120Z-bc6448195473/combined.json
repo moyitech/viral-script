@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-b884cc19920a4bf487a4eb6d69e07367",
+  "run_id": "run-20260902T145120Z-bc6448195473",
+  "trace_sha256": "b27b2fbfcd4fa6f6dbb1792c309171d7237ec1a9aa22a5de73244ef0ad7e2844",
+  "created_at": "2026-09-03T13:48:25.947012Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即问百万岗归谁，结尾回扣岗位去向；岗位在造与错配两侧都答，正中普通考证人群。",
+      "script_spans": [
+        "考了无人机证却没活干，低空百万岗归谁？",
+        "普通人想端碗饭，得看清哪些岗真招人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 765，目标为 700，偏差率为 9.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "缺口、就业率、薪资等数据相互支撑且推进论证，还主动交代样本局限，主题始终不散。",
+      "script_spans": [
+        "岗位总数涨得猛，一年新发职位多了六成，平均年薪近二十九万。但钱大多堆在研发适航岗，普通岗未必拿得到。",
+        "研究样本偏上市企业，小厂带动还得睁眼瞧。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛考证无活的冲突与百万岗悬念，中段研究、数据、反例持续兑现，结尾余味由正文自然生长。",
+      "script_spans": [
+        "考了无人机证却没活干，低空百万岗归谁？",
+        "重庆就是个反例：前年飞手就业率八成，现在不到四成。",
+        "普通人的饭在脚下，错风口里，证不如一把螺丝刀。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，问答与对仗定重音，'托着底''发毛了'接地气，朗读无需临时改词。",
+      "script_spans": [
+        "天上飞机还没密，地上证先发毛了。培训跑赢产业，供需能不歪？",
+        "村里老周去学飞手，回果园试飞却要懂农药配比，光会飞不行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对仗与比喻均服务论点，天上飞机还没密、证不如一把螺丝刀离文可复述，无堆砌炫技。",
+      "script_spans": [
+        "天上飞机还没密，地上证先发毛了",
+        "你考的证得对准田埂和电线杆，而不是写字楼演示屏",
+        "错风口里，证不如一把螺丝刀"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先承认造岗再转向错配，重庆反例引出建议段，因果桥清楚，结尾自然回扣开头之问。",
+      "script_spans": [
+        "不是天上没活，是物流飞手太挤，农林巡检反而缺人。",
+        "那普通人能冲吗？看区域和场景。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "数据留有余地并主动披露样本局限，就业建议附带区域与场景前提，无夸大承诺或误导风险。",
+      "script_spans": [
+        "普通飞手缺口说有百万，可培训学校已超一万五千家，人都涌进来了。",
+        "但钱大多堆在研发适航岗，普通岗未必拿得到。",
+        "研究样本偏上市企业，小厂带动还得睁眼瞧。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f1afe988016b4802a7fcec264280d147",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-878815d50bbf46608f0f4ff5401a6f4d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

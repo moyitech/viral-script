@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-55ec6bac970c43628b935f07f118f562",
+  "run_id": "run-20260903T051549Z-68b4b8253c79",
+  "trace_sha256": "8e13a14e049f2e30f5cd2c6126fdbdd8afe7b56d8e7d8bf82b58e269db8fd3b2",
+  "created_at": "2026-09-03T15:28:57.542460Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给出分配答案，制度、证据与就医指引层层呼应题设，非急与危重两侧及普通观众均覆盖。",
+      "script_spans": [
+        "正确做法是坚决按病情轻重缓急分配，急危重症永远优先",
+        "所以只是轻微扭伤、慢性复诊或低风险不适，务必去社区卫生服务中心或24小时普通门诊"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，分级标准、周转成效、替代去处各信息单元递进支撑，有依据无明显编造，增量具体。",
+      "script_spans": [
+        "心跳骤停、严重创伤者立刻救治，非紧急小病本就不该排进抢救序列",
+        "当伤风感冒类非紧急需求被切实引导去普通门诊，急诊抢救室周转率提升，危急病人平均等候明显缩短"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头直入资源冲突，结尾“留给生死关头的人”尚有余味；但开篇即抛最终结论消解悬念，“形势严峻”收得突兀平淡。",
+      "script_spans": [
+        "把急诊留给生死关头的人，别让小事挤占大事",
+        "正确做法是坚决按病情轻重缓急分配，急危重症永远优先",
+        "每一次资源错配都可能延误一条命，形势严峻"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "“把急诊留给生死关头的人”等句好读，但通稿式书面句多处需换词重断，整体偏像读课文。",
+      "script_spans": [
+        "把急诊留给生死关头的人，别让小事挤占大事",
+        "部分地区实践显示，当伤风感冒类非紧急需求被切实引导去普通门诊",
+        "国内急诊实行预检分诊分级标准早已落地多年"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "雪上加霜、刀刃等修辞克制并服务主题；“把急诊留给生死关头的人，别让小事挤占大事”离开原文仍可复述。",
+      "script_spans": [
+        "把急诊留给生死关头的人，别让小事挤占大事",
+        "资源真正落在刀刃"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从制度说到现实佐证再以所以收束，因果桥清晰，结尾回扣资源挤占与开头冲突，结构完整。",
+      "script_spans": [
+        "从制度上说，国内急诊实行预检分诊分级标准早已落地多年",
+        "把急诊留给生死关头的人，别让小事挤占大事"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "就诊建议明确限定于轻微低风险情形，实践效果表述留有部分地区余地，不煽动不夸大，价值导向安全。",
+      "script_spans": [
+        "只是轻微扭伤、慢性复诊或低风险不适，务必去社区卫生服务中心或24小时普通门诊",
+        "部分地区实践显示，当伤风感冒类非紧急需求被切实引导去普通门诊"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9b341c26e05645928032d126f12d5528",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

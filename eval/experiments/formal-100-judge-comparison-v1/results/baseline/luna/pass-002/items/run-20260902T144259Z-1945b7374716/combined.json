@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-21945c02a9494ec58ce23d4a69da8307",
+  "run_id": "run-20260902T144259Z-1945b7374716",
+  "trace_sha256": "f78f59b6be84a8bb0a793a19d5c6a5a30b3d2b8b57de7c357728a8b3598232a0",
+  "created_at": "2026-09-03T12:15:53.373529Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答订单回暖却不招人的原因，覆盖企业决策、行业分化和普通求职者影响，切题完整。",
+      "script_spans": [
+        "制造业订单回暖，为啥不敢大招人？",
+        "对咱们普通人，影响很直接。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据、成本、行业分化和求职影响层层推进，信息单元清楚，能解释回暖为何尚未转成招聘。",
+      "script_spans": [
+        "新订单指数冲到50.6%，生产也过了50%，机器确实转快了。",
+        "关键在成本和退路。",
+        "你投简历可能石沉大海，不是厂关门，是它在等信号。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用订单回来、招工栏却空制造反差，中段连续给出数据、成本和求职影响，结尾追问自然收住。",
+      "script_spans": [
+        "单子回来了，厂里招工栏却空着。",
+        "产线转起来了，人却没补上。这波回暖，你敢信它多久？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾节奏利落，核心推进也清楚；但“招生人”“春汛退得比来得快”等说法明显卡顿，需改词后再录。",
+      "script_spans": [
+        "单子回来了，厂里招工栏却空着。",
+        "老板留熟手拿补贴，比招生人划算。",
+        "PMI没过线，怕是春汛退得比来得快"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“招正式工像签长约”和“不是厂关门，是它在等信号”既具体又好复述，修辞服务于解释。",
+      "script_spans": [
+        "招正式工像签长约",
+        "不是厂关门，是它在等信号。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头提出矛盾，随后以数据、成本与订单分化解释，最后回到求职影响；但岗位判断和时间结论外推偏快。",
+      "script_spans": [
+        "单子回来了，厂里招工栏却空着。",
+        "产线转起来了，人却没补上。",
+        "小厂PMI只有47.9%，景气更冷，正式岗位反而比之前少。",
+        "真要大规模招人，得等订单连热几个月。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动、歧视或危险承诺，数据叙述较克制；但补贴比例和招工时点说得过满，容易被理解为普遍规则或确定判断。",
+      "script_spans": [
+        "可整个行业PMI才49.8%，还在荣枯线底下晃悠。",
+        "中小微能返上年失业险的六成，大厂大概三成。",
+        "真要大规模招人，得等订单连热几个月。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1551ad6354504239a79e7ec5f67a0281",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

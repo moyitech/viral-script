@@ -1,0 +1,162 @@
+{
+  "evaluation_id": "combined-0c72a95bf0a94fe4ba8b55780f547d30",
+  "run_id": "run-20260903T051609Z-742baa6b5286",
+  "trace_sha256": "f0c617279ec6a2b8d7537ea66d669a16e6b8769da41c556fd14250e9050c10df",
+  "created_at": "2026-09-03T11:57:24.885050Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面覆盖效率、隐私与员工处境，且给出脱敏、告知等机制和行动建议，切合普通员工关切。",
+      "script_spans": [
+        "效率提升不必然等于隐私归零，关键在机制。",
+        "真正该防的，是那种不告知、拿全量私邮喂模型的企业。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 395，目标为 450，偏差率为 12.22%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，技术机制、脱敏方案与员工应对层层补充，信息增量明显，能形成具体判断标准。",
+      "script_spans": [
+        "轻量省算力的训练方式，反而和专门加噪防记忆的方法一样能压低隐私泄露。",
+        "企业在邮件进模型前先跑脱敏，把姓名电话替换成占位符，AI依旧能抓违规投递。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直击邮件隐私，中段有技术与企业场景推进，结尾把观点落到可执行的提问。",
+      "script_spans": [
+        "你发出的每封邮件，可能正被一个看不见的模型秒读",
+        "真正该防的，是那种不告知、拿全量私邮喂模型的企业。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有鲜明钩子和对话式提醒，但中段技术句过长、术语密集，朗读时需要重断句。",
+      "script_spans": [
+        "别默认AI上岗就得交出家底",
+        "发现轻量省算力的训练方式，反而和专门加噪防记忆的方法一样能压低隐私泄露"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“训练标本”和“跷跷板两头”形象且可复述，修辞服务于隐私风险与效率平衡的解释。",
+      "script_spans": [
+        "你吐槽老板的私信不会变成训练标本。",
+        "效率红利和隐私保护并非跷跷板两头，而是可共生的选择。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、技术展开和员工建议衔接完整，但微调研究与邮件筛查场景之间，以及脱敏与不训练之间的桥梁不足。",
+      "script_spans": [
+        "用大模型筛邮件，效率提升不必然等于隐私归零，关键在机制。",
+        "有实证研究跟踪大模型微调，发现轻量省算力的训练方式，反而和专门加噪防记忆的方法一样能压低隐私泄露。",
+        "若公司只让模型看工作流并先脱敏，你吐槽老板的私信不会变成训练标本。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有“不必然”等克制表述，但“不会变成训练标本”构成未经充分限定的隐私保证，容易误导员工。",
+      "script_spans": [
+        "效率提升不必然等于隐私归零，关键在机制。",
+        "你吐槽老板的私信不会变成训练标本。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 395,
+        "target": 450,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.12222222222222222
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c052e58695274d65b75f1cf0e89101d1",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-80e637da55d04a989b314e62901ac3bc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

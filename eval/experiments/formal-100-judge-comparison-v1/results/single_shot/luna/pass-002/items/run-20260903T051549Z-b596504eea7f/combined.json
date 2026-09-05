@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-3384c008bd934692984ab1c23fb32f39",
+  "run_id": "run-20260903T051549Z-b596504eea7f",
+  "trace_sha256": "dfcaf08c32783c83cc6a76a951a6540801a387f3f59e3f82fbdfcda0d42b08d3",
+  "created_at": "2026-09-03T12:31:33.609698Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从低风险不等于保本，到利率、权益和资金期限提醒，始终正面回答债基为何会亏钱。",
+      "script_spans": [
+        "低风险只是销售适当性里的相对分级，它从不意味本金安全。",
+        "市场利率一上行，债券价格就往下走"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "估值机制、利率方向、权益仓位、久期信用与资金期限依次推进，信息密度和实用判断都足够。",
+      "script_spans": [
+        "得把“固定收益”这个词拆开听：固定的是利息派发的约定，浮动的是资产价格。",
+        "这基金久期拉得长不长，持仓信用下沉了没。",
+        "用下个月买房的首付买长债基，碰到利率陡升，浮亏就被迫兑现成实亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接呈现净值下跌冲突，中段层层补足原因，结尾用反差比喻收住，余味自然。",
+      "script_spans": [
+        "你以为低风险债券基金就该稳稳赚钱，打开账户却看到净值绿了",
+        "用下个月买房的首付买长债基，碰到利率陡升，浮亏就被迫兑现成实亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和追问有对话感，主体也能读通；但术语压缩、句式偏书面，连续出现几处需要重断句或换词的表达。",
+      "script_spans": [
+        "你以为低风险债券基金就该稳稳赚钱",
+        "那带“债”字的产品怎么就跌给你看了？",
+        "低风险只是销售适当性里的相对分级",
+        "固定的是利息派发的约定，浮动的是资产价格"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“影分身”和“把波动熨平了些”兼顾解释与记忆，整体克制，未被修辞抢走观点。",
+      "script_spans": [
+        "固定的是利息派发的约定，浮动的是资产价格。",
+        "债基不是银行储蓄的影分身，它只是把波动熨平了些。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线顺畅，能从风险定义推进到投资提醒；但“根源在净值算法”把估值呈现机制误写成价格波动根因，关键因果不够严谨。",
+      "script_spans": [
+        "市场利率一上行，债券价格就往下走；",
+        "根源在净值算法。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "未作保本或稳赚承诺，风险提示基本到位；但“固定的是利息派发”易混淆基金分红与债券利息，结尾也有羞辱式表达。",
+      "script_spans": [
+        "它从不意味本金安全",
+        "别光听销售说年化，得看底层资产怎么动。",
+        "固定的是利息派发的约定，浮动的是资产价格",
+        "你才配得上它的低风评级。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-34ef205e9ae248f5b7941b55a67aad00",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

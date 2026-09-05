@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-1228ef1b8f7b48f384f507cc4ea15721",
+  "run_id": "run-20260902T144431Z-644af2d006b2",
+  "trace_sha256": "bcd8ca6371e8c75a20a5da08d2728b0dbee579c6e1e4a56ed180ea3061e49bd8",
+  "created_at": "2026-09-03T12:15:53.433946Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇点明扩张与安全标准的张力，后文落到建设、运维和居民风险，正面回答题目。",
+      "script_spans": [
+        "标准替你兜底，但年深日久老化靠定期查，不等于零风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕扩张、标准进展、运维缺口和执行滞后层层补充，事实、解释与风险判断均有推进。",
+      "script_spans": [
+        "今年四月国家能源局发了质量监督大纲，新建站从设计到并网要过关",
+        "安全评价导则还在编写，投运后定期检查没全铺开",
+        "新技术跟进总差半拍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用扩产与火险的反差抓人，中段连续拆解标准缺口，结尾把公共安全落到身边，推进完整。",
+      "script_spans": [
+        "电池标准跟得上扩产，火险却没断过。",
+        "等标准跑赢事故，才敢把电站建到楼底下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、设问和比喻带来对话感，但中段两处省略生硬，朗读时需要重断句。",
+      "script_spans": [
+        "那标准管不管用？",
+        "可这规矩只罩住建设段。",
+        "安全后评价才刚在别的文件提",
+        "年深日久老化靠定期查"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且贴合解释，既把标准缺口讲得具体，也留下“体检手册”和“建到楼底下”等记忆点。",
+      "script_spans": [
+        "就像给电站办出生证。",
+        "像体检手册没发到手。",
+        "等标准跑赢事故，才敢把电站建到楼底下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "问句引出标准进展，后文按建设、运营、公众风险递进；但“只罩住建设段”与前述八领域框架口径冲突，概念未收紧。",
+      "script_spans": [
+        "那标准管不管用？今年四月国家能源局发了质量监督大纲",
+        "可这规矩只罩住建设段。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见明确违规，且有“不等于零风险”的边界；但“它离你车位没几米”制造普遍性恐慌，“标准替你兜底”也有保障过度之嫌。",
+      "script_spans": [
+        "不等于零风险",
+        "它离你车位没几米",
+        "标准替你兜底"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c32e9e8db90642e589f13bebb2f2f41e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

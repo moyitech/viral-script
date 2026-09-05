@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-77273bb958104c34b9dc282cd3410ac0",
+  "run_id": "run-20260903T051602Z-b3e5d68396a9",
+  "trace_sha256": "0d0c3a4ab232429eff965e9b711e4b84ce8d827e0a0085da11b0b2b11c640795",
+  "created_at": "2026-09-03T14:11:35.911191Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇判断到行动建议始终直答题设，真伪风口两侧都覆盖，查资质核业务正中普通人痛点。",
+      "script_spans": [
+        "去查它业务里AI到底占多少、推荐方有没有正规资质"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 667，目标为 700，偏差率为 4.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，罚单案例、荐股骗局、误区澄清各推进一步，事实与结论互相支撑，无编造痕迹。",
+      "script_spans": [
+        "号称自动赚钱，实则无资质、还能后台篡改回测数据伪造盈利",
+        "有人用AI批量写小作文，假称芯片订单、政策内幕，短时间里就能搅动情绪收割流量"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差提问即立钩子，中段设问层层递进、不断给新料，结尾“草屑”余味由正文自然长出，无生硬喊话。",
+      "script_spans": [
+        "你以为名字里带AI，股票就能起飞？",
+        "为什么伪风口总跟着AI跑？",
+        "别指望靠一条短视频暴富，那反而是伪风口的养料。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与设问让节奏利落、对话感足，但“劣币频出”“AI标的”两处书面硬块需临场换词，上限2分。",
+      "script_spans": [
+        "标签谁都能贴，真订单不会藏在公众号小作文里",
+        "利益驱动下自然劣币频出",
+        "可这不代表贴了AI标的的公司就有真技术"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻对仗都服务判断，“风里混着草屑”“省成本还是讲故事”离开上下文仍可复述，无堆砌炫技或喧宾夺主。",
+      "script_spans": [
+        "AI风口是真的，但风里混着草屑。",
+        "标签谁都能贴，真订单不会藏在公众号小作文里。",
+        "你得琢磨，它靠AI省了成本，还是靠AI讲了个新故事？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问过渡自然，机制解释有因果桥，误区厘清层层递进，结尾金句回扣开头与题设。",
+      "script_spans": [
+        "为什么伪风口总跟着AI跑？因为资本市场靠信息定价",
+        "AI风口是真的，但风里混着草屑。用火眼去官方渠道验实质，别用耳朵听故事下单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "不作收益承诺，反劝“别指望暴富”，并给出官网核验、查资质等具体边界，导向安全。",
+      "script_spans": [
+        "别指望靠一条短视频暴富，那反而是伪风口的养料",
+        "AI本身在财务风险识别上确有价值，可这不代表贴了AI标的的公司就有真技术",
+        "凡是要你交费进群领“AI内幕”的，直接划走"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-0057bc3eb8a141c7ba7484b9fed310ab",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-eee796fa653041cda557a2c6a3827ad0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

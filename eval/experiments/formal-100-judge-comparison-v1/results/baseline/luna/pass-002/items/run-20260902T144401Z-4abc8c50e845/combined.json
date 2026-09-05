@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-ff33cd7890504ca8a969219f1ff10a13",
+  "run_id": "run-20260902T144401Z-4abc8c50e845",
+  "trace_sha256": "dcb7d025b33c6bd5551158358c58ec57ff0ba7eabf1639aef8625f01a47dbe82",
+  "created_at": "2026-09-03T12:21:32.920015Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答低价竞争是否加剧，并同时交代整体趋势与个别品类压力，目标人群和讨论对象均匹配。",
+      "script_spans": [
+        "低价竞争未必就更激烈，但个别品类有压力"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主线集中，退税、渠道、消费分层和清库存带来有效增量；但“价格战没更凶”的核心判断仍主要靠概括性推断，论据不够扎实。",
+      "script_spans": [
+        "早些年国家有出口退税，厂子卖去国外能拿回税钱。",
+        "厂子得学开网店、搞体验，慢慢摸门道。",
+        "外贸货涌进国内，价格战却没更凶。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用反常识冲突抓人，中段解释“为何不更卷”，结尾追问也自然留下判断空间。",
+      "script_spans": [
+        "外贸货涌进国内，价格战却没更凶。",
+        "你也许纳闷，为啥不是更卷？",
+        "等外贸厂真在国内扎了根，便宜还能算唯一招牌吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏短促、口语标记足，但“内销渠道一直饿着”等多处搭配生硬，仍需重写。",
+      "script_spans": [
+        "你也许纳闷，为啥不是更卷？",
+        "厂子得学开网店、搞体验，慢慢摸门道。",
+        "觉得往外划算，懒得搭理国内柜台。",
+        "买家人分两头走",
+        "不止比谁标价低"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“内销渠道一直饿着”和“便宜还能算唯一招牌吗”形象又克制，能帮助观众记住核心判断。",
+      "script_spans": [
+        "其实内销渠道一直饿着。",
+        "是想填自家短缺的坑，不是把便宜货往死里砸。",
+        "便宜还能算唯一招牌吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头先给结论，随后解释退税与渠道，再落到品类、经营和消费建议，主线可跟随；但市场分层并不能充分推出价格战不会更激烈。",
+      "script_spans": [
+        "短期清库存，价钱可能便宜点。",
+        "咱们国内场子够大，买家人分两头走，有人图便宜有人认品质。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且用“未必”“可能”保留边界；但对价格战现状和企业动机的概括偏绝对，可能误导观众。",
+      "script_spans": [
+        "低价竞争未必就更激烈，但个别品类有压力",
+        "短期清库存，价钱可能便宜点",
+        "价格战却没更凶",
+        "不是把便宜货往死里砸"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a9d14d8d1f4c4c2ebd2c77be35c67ffc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

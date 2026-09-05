@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-ade10ac96d11485786b2a4836e86626b",
+  "run_id": "run-20260903T051603Z-16c255894182",
+  "trace_sha256": "a6e4543fa012aa2e5ac894c28d3a677649d42a063ddf832864dcfabce1dc9e52",
+  "created_at": "2026-09-03T12:31:55.049064Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直接回答“效率提升不必然削弱真实反馈”，并覆盖教师、人机协同和人工判断边界。",
+      "script_spans": [
+        "AI批改作文跑得更快，不等于给学生的真实反馈就变虚了。",
+        "千万别把整篇批改都交给模型，涉及论点展开和个人表达，一定留给人来判断。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕人机分工，涵盖教师复核、学生修改和学校治理，信息单元彼此推进，结论有依据。",
+      "script_spans": [
+        "不少老师实际是机器先筛掉错别字和格式问题，自己再把省下的精力放在内容逻辑和思维深度上",
+        "目前很多学校对这类工具态度开放，但明确管理规则还没跟上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“更快”与“变虚”制造反差，中段依次补充分工、修改效果和管理缺口，结尾以判断收出余味。",
+      "script_spans": [
+        "AI批改作文跑得更快，不等于给学生的真实反馈就变虚了。",
+        "目前很多学校对这类工具态度开放，但明确管理规则还没跟上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句清楚、信息密度合适，但中段有两处表述偏绕，朗读时需要重断句或换词，未达精心设计的自然。",
+      "script_spans": [
+        "前提是人工把关不掉线",
+        "学生在智能反馈基础上改作文",
+        "但自主改对的概率不如顺着机器指出的问题改"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“把关不掉线”把前提说得形象，结尾“省掉的是重复劳动”形成清晰记忆点，修辞克制且服务观点。",
+      "script_spans": [
+        "前提是人工把关不掉线。",
+        "技术省掉的是重复劳动，省不掉的那部分，才是写作里真实生长的地方。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按效率—分工—风险—边界推进，但由学生修改成功率跳到“人机衔接才好用”缺少关键解释。",
+      "script_spans": [
+        "效率提升本身不削弱真实反馈，前提是人工把关不掉线。",
+        "技术省掉的是重复劳动，省不掉的那部分，才是写作里真实生长的地方。",
+        "学生在智能反馈基础上改作文，往往更愿意动手调整句子，但自主改对的概率不如顺着机器指出的问题改，说明人机衔接才好用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有人工把关边界，但把特定情境下的修改效果说成普遍规律，“一定”也略显绝对，需补充适用范围。",
+      "script_spans": [
+        "前提是人工把关不掉线。",
+        "自主改对的概率不如顺着机器指出的问题改"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-08e2b046b5644435a8a48a23ed192b73",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

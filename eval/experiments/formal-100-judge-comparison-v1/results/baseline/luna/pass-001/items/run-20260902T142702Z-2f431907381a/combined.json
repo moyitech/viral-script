@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-d669d1e69fdc450b99d87c0884b67ec5",
+  "run_id": "run-20260902T142702Z-2f431907381a",
+  "trace_sha256": "55539244ffed9ed74d9441b3e6654058990be0b608e61b48cb0a5ab58aa298b8",
+  "created_at": "2026-09-03T11:44:26.091978Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "紧扣家长代劳导致小组作业异化，覆盖老师、家长和孩子三方，并以追问收束，题设回答完整。",
+      "script_spans": [
+        "小组作业成了家长微信群里的军备赛。为啥走样？",
+        "合作学习原意是练孩子表达和分工，不是考家长技能。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 287，目标为 280，偏差率为 2.50%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "场景、规则、合作学习目标、失效后果和行动建议层层补充，观众既能理解问题，也能获得可执行的判断方法。",
+      "script_spans": [
+        "规定早说了，不能给家长布置或批改作业，校内该练的大部分在校内。",
+        "你接任务前，先问老师：这活必须家长做吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“军备赛”制造反差，中段持续揭示家长代劳的后果，结尾追问也由主题自然生长。",
+      "script_spans": [
+        "小组作业成了家长微信群里的军备赛。",
+        "当作业高低看父母资源，孩子能学到什么？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和画面感让整体好读，但“作品谁精美”“当作业高低看父母资源”词序发涩，朗读时需要重断句。",
+      "script_spans": [
+        "你正熬夜剪视频，隔壁老王已打印精装册。",
+        "孩子本该自己商量分工，现在只看家长作品谁精美。",
+        "当作业高低看父母资源，孩子能学到什么？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“军备赛”和“真合作没练着”把家长攀比与教育落差说得具体，形象克制，也留下了可复述的记忆点。",
+      "script_spans": [
+        "小组作业成了家长微信群里的军备赛。",
+        "真合作没练着，家里倒先多了份下班后的工。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从现象切入，接着解释代劳机制和教育后果，结尾回到孩子能否学到东西，转折与回扣都自然。",
+      "script_spans": [
+        "为啥走样？常是老师把本该自己干的活推给家长，合作学习就容易变比拼了。",
+        "真合作没练着，家里倒先多了份下班后的工。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导家校协作且建议先沟通，但将问题常归因于老师，并把规定说得过满，易造成误读。",
+      "script_spans": [
+        "家校本来该两边一起搭手，不是光让家长扛。",
+        "常是老师把本该自己干的活推给家长，合作学习就容易变比拼了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b63ab58a172945c89b0bc9f2bdfbb626",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-eb732af2fa69467aaff81b1fdcd034ad",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

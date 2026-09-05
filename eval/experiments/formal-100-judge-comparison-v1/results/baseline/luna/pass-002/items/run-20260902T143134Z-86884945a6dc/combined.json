@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-8b7d4d82b50044b38878ebf66c0ee2b5",
+  "run_id": "run-20260902T143134Z-86884945a6dc",
+  "trace_sha256": "f12e98bff0ef11beaa3b39b9c3f97984c261249fed8d338e4762b8443bc9edaa",
+  "created_at": "2026-09-03T12:15:46.966492Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答效率与真实反馈的关系，覆盖人机协同和机器替人两种情形，并落到家长核验。",
+      "script_spans": [
+        "效率提升本身不削弱真实反馈，关键看人机怎么配合。",
+        "可如果学校图省事直接让机器替人批，套路化评语就会掩盖真实问题"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕真实反馈集中展开，既给出协同流程，也解释机器替代的风险，并提供家长可执行的核验动作。",
+      "script_spans": [
+        "像先让机器抓错别字和格式问题，老师腾手写段落级讲评",
+        "好比用美颜磨平照片，看着光鲜，作文里薄弱点被悄悄盖住",
+        "回家翻作业本，不妨问孩子：这句红笔是老师写的吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用批改更快却写得更假的冲突抓人，中段呈现人机协同与机器替代的反转，结尾追问自然。",
+      "script_spans": [
+        "人工智能批改快了，孩子作文却越写越假？不全是。",
+        "回家翻作业本，不妨问孩子：这句红笔是老师写的吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有问答、对比和收束金句，整体能读通；但“腾手写段落级讲评”“有温度修改方向”等处卡嘴，仍需重断句或补词。",
+      "script_spans": [
+        "回家翻作业本，不妨问孩子：这句红笔是老师写的吗？",
+        "技术省下的只是笔墨时间，省不掉的是育人眼光。",
+        "老师腾手写段落级讲评",
+        "学生拿到有温度修改方向"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“技术接了脏活，人回了灵魂”和“省不掉的是育人眼光”清晰好记，比喻克制且服务于人机分工。",
+      "script_spans": [
+        "技术接了脏活，人回了灵魂。",
+        "技术省下的只是笔墨时间，省不掉的是育人眼光。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，随后用正反两种人机配置推进，结尾回扣育人判断，主线清楚且转折自然。",
+      "script_spans": [
+        "人工智能批改快了，孩子作文却越写越假？不全是。",
+        "你看，老师用人工智能工具做基础筛查。",
+        "可如果学校图省事直接让机器替人批",
+        "技术省下的只是笔墨时间，省不掉的是育人眼光。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有违规，明确强调人机协同；但“学校图省事”“孩子只看到泛泛夸奖”带有动机归因和概括性后果，需加限定。",
+      "script_spans": [
+        "效率提升本身不削弱真实反馈，关键看人机怎么配合。",
+        "如果学校图省事直接让机器替人批",
+        "孩子只看到泛泛夸奖"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-aacc9fdb52b04e98856ac52e9a3d11bd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

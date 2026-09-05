@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-bc2ecfb5af7745a1982934b689c8a45a",
+  "run_id": "run-20260903T051609Z-742baa6b5286",
+  "trace_sha256": "f0c617279ec6a2b8d7537ea66d669a16e6b8769da41c556fd14250e9050c10df",
+  "created_at": "2026-09-03T15:27:22.424752Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直入筛邮件场景，明确回答不必然牺牲隐私，结尾落到普通员工该防什么，两侧与人群全覆盖。",
+      "script_spans": [
+        "用大模型筛邮件，效率提升不必然等于隐私归零，关键在机制",
+        "落到普通员工，别默认AI上岗就得交出家底"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "微调研究、脱敏机制、合规惯例三个信息单元层层推进，与引用相符无编造，观众能带走具体判断方法。",
+      "script_spans": [
+        "轻量省算力的训练方式，反而和专门加噪防记忆的方法一样能压低隐私泄露",
+        "把姓名电话替换成占位符，AI依旧能抓违规投递"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字以看不见的模型秒读邮件立悬念；中段实证反转持续兑现推进；结尾跷跷板反转留余味，三段俱完整。",
+      "script_spans": [
+        "你发出的每封邮件，可能正被一个看不见的模型秒读",
+        "有实证研究跟踪大模型微调，发现轻量省算力的训练方式，反而和专门加噪防记忆的方法一样能压低隐私泄露",
+        "效率红利和隐私保护并非跷跷板两头，而是可共生的选择"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数短句节奏清楚、顺口；但'加噪防记忆''不必然等于'两处拗口，朗读需临时换词，定档2分。",
+      "script_spans": [
+        "按老经验，效率上去，隐私就得砍",
+        "真正该防的，是那种不告知、拿全量私邮喂模型的企业",
+        "反而和专门加噪防记忆的方法一样能压低隐私泄露",
+        "效率提升不必然等于隐私归零"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务论证，“训练标本”“跷跷板”贴切形象，收尾句可脱离上下文复述成记忆点，无堆叠炫技。",
+      "script_spans": [
+        "却也说不清有没有顺带看了你的离职念头或家事吐槽",
+        "你吐槽老板的私信不会变成训练标本",
+        "效率红利和隐私保护并非跷跷板两头，而是可共生的选择"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "老经验设靶、机制拆解、员工行动三段递进，因果桥清楚，结尾回扣跷跷板比喻自然。",
+      "script_spans": [
+        "拆开技术看，这对矛盾能被软化",
+        "效率红利和隐私保护并非跷跷板两头，而是可共生的选择"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "论断多带“可能”“不必然”“若”等限定，批评指向行为而非群体，建议具体可行，无夸大承诺。",
+      "script_spans": [
+        "效率提升不必然等于隐私归零，关键在机制",
+        "你有权留意内部政策，主动问一句我的邮件怎么被用"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7d0bda5eeeed478c86b6a2cab6667b80",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

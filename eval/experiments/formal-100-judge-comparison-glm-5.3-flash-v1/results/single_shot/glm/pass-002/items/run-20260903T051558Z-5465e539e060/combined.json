@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-866a536ca4a0451385295c6339e9d365",
+  "run_id": "run-20260903T051558Z-5465e539e060",
+  "trace_sha256": "d96c915aaaaeb1edf5c92465d446c11189acfef68d5980121d6da7dd3bbbe918",
+  "created_at": "2026-09-03T15:26:50.771527Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答为何需边界，善意与风险两侧兼顾，落点紧贴陌生人垫付，建议可操作。",
+      "script_spans": [
+        "善意无错，但缺边界的垫付往往钱去难回还助长骗局",
+        "帮陌生人出钱前必须先划清边界"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，法律权责、诈骗机制、线上辨识到实操建议层层推进，有依据无编造。",
+      "script_spans": [
+        "民法里的无因管理赋予垫付人必要费用与适当损失补偿请求权",
+        "诈骗者擅长用紧迫感突破心理防线",
+        "动手前先多途径核实对方与账单，启用可中断的延迟转账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头“无形陷阱”有反差钩子，结尾收束自然；但中段法条术语密集、推进趋平，缺少追看冲动。",
+      "script_spans": [
+        "别让好心垫付变成无形陷阱",
+        "让善意停在安全区",
+        "民法里的无因管理赋予垫付人必要费用与适当损失补偿请求权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "首尾尚有对话感，但中段法律术语连串堆叠，朗读需临时改词重断，卡嘴点不止一处。",
+      "script_spans": [
+        "明确边界不是冷漠，是让帮助可持续",
+        "动手前先多途径核实对方与账单",
+        "民法里的无因管理赋予垫付人必要费用与适当损失补偿请求权",
+        "善意无错，但缺边界的垫付往往钱去难回还助长骗局"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“让善意停在安全区”可复述，但陷阱、坑等比喻常见，“钱去难回”生硬，核心解释段干瘪无修辞助力。",
+      "script_spans": [
+        "让善意停在安全区",
+        "钱去难回还助长骗局"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "观点—法律—风险—场景—行动递进清楚，结尾回扣开头的陷阱警告与题设善意。",
+      "script_spans": [
+        "明确边界不是冷漠，是让帮助可持续",
+        "高信任者接到陌生人代缴请求时最容易掉进预设的坑，事后追回极难",
+        "让善意停在安全区"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以“往往”“恐自担”等限定表述留足边界，法律与反诈提醒有依据，建议具体安全，导向稳妥。",
+      "script_spans": [
+        "缺边界的垫付往往钱去难回",
+        "若事由虚假，出资恐自担",
+        "动手前先多途径核实对方与账单，启用可中断的延迟转账"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-da8ec3b248cc41748e6fd25892fd18c4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

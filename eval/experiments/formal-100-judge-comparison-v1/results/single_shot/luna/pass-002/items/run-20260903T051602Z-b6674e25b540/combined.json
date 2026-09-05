@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-f030f65317504c6c9f66105a653536cc",
+  "run_id": "run-20260903T051602Z-b6674e25b540",
+  "trace_sha256": "539d1954588b331e2074d6b96f3e367728cbf05526dd83c5a7726bfdfb2d3e58",
+  "created_at": "2026-09-03T12:42:37.535719Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头界定风险，随后补充工作原理、现实发生率与具体规避动作，完整回应题设。",
+      "script_spans": [
+        "公共充电设备暗藏窃密风险",
+        "最稳的是用自己的充电头插墙插，千万别把陌生数据线接进公共USB口就行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "风险边界、攻击原理、实际发生率与规避办法依次推进，信息具体，能帮助观众判断是否恐慌并采取行动。",
+      "script_spans": [
+        "USB线同时走电和信号，恶意充电口能伪装成可信外设",
+        "真正在野外发生的窃密实例至今保持零记录"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "反差钩子明确，中段有原理和“零记录”的再转折，结尾给出动作闭环；“这种提醒标牌”略打断节奏。",
+      "script_spans": [
+        "公共充电设备暗藏窃密风险，这话不假",
+        "真正在野外发生的窃密实例至今保持零记录",
+        "最稳的是用自己的充电头插墙插",
+        "这种提醒标牌常贴在机场候车区墙上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "信息线索清楚，也有“真要”等承接，但长句和抽象术语集中，朗读时需多次重断句。",
+      "script_spans": [
+        "真要到手机没电又没带宝，最稳的是用自己的充电头插墙插",
+        "公共充电设备暗藏窃密风险，这话不假，但对你我普通用户来说，它基本停留在理论警告阶段，远不是出门随随便便就被偷数据的常态化威胁",
+        "不少国家的执法和消费者保护机构都提醒过果汁劫持，原理不复杂：USB线同时走电和信号，恶意充电口能伪装成可信外设"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“USB线同时走电和信号”把技术风险讲得直观，“果汁劫持”也有复述性；仅“没带宝”略显生硬。",
+      "script_spans": [
+        "USB线同时走电和信号",
+        "恶意充电口能伪装成可信外设",
+        "果汁劫持",
+        "真要到手机没电又没带宝"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "风险、机制、现实状况到建议的顺序清楚，且结尾建议具体；但长句过密，机场标牌句插入突兀，口播需多次重断句。",
+      "script_spans": [
+        "真要到手机没电又没带宝，最稳的是用自己的充电头插墙插",
+        "公共充电设备暗藏窃密风险，这话不假，但对你我普通用户来说，它基本停留在理论警告阶段，远不是出门随随便便就被偷数据的常态化威胁，不必过度恐慌。",
+        "不少国家的执法和消费者保护机构都提醒过果汁劫持，原理不复杂：USB线同时走电和信号，恶意充电口能伪装成可信外设，趁手机连接自动扒通讯录照片。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提醒克制且给出安全替代方案，但“零记录、无一例外”等绝对表述可能造成过度确定和风险低估。",
+      "script_spans": [
+        "不必过度恐慌",
+        "最稳的是用自己的充电头插墙插",
+        "真正在野外发生的窃密实例至今保持零记录，无一例外"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-749b748daca24a98b6695451c7a9005a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

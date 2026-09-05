@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-48fbcd2ad02541dc9fa03fc7420599b3",
+  "run_id": "run-20260902T144226Z-4f37e87af19d",
+  "trace_sha256": "65eac0d7c4db120fc2ff304834fc743f52ba37f60906959d257ff908e45037be",
+  "created_at": "2026-09-03T12:15:55.422804Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答短期拉动能否转成长久信心，兼顾政策设计与普通消费者的现实账本。",
+      "script_spans": [
+        "短期能拉消费，长久信心真没那么简单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据、受益人群、政策调整和个人支出形成多层信息，持续推进短期有效、长期不足的判断。",
+      "script_spans": [
+        "政府每贴1元，带出3.4元消费。",
+        "可反应最强的，是本来就要花且花超门槛的人",
+        "工资没涨，路还是自己走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“先涨后补”制造利益冲突，中段持续拆解短期与长期，结尾比喻自然回扣并留下追问。",
+      "script_spans": [
+        "你领的家电补贴，可能正被先涨后补吃掉。",
+        "你说这补贴是加油还是挖坑？",
+        "补贴像递水给跑者，前路平不平，才定他信不信能跑远。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和生活化落点好读，但中段有多处信息压缩与句式拗口，影响自然气口。",
+      "script_spans": [
+        "两边得掰开看：短期能拉消费，长久信心真没那么简单。",
+        "月底算账，券省的钱抵不过房贷利息，心照样虚。",
+        "可反应最强的，是本来就要花且花超门槛的人",
+        "全国统一定标准防先涨后补，严打骗补"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“把以后的需求提前挪过来”和“递水给跑者”形象准确，既解释机制，也留下了可复述的判断。",
+      "script_spans": [
+        "这更像把以后的需求提前挪过来。",
+        "补贴像递水给跑者，前路平不平，才定他信不信能跑远。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、段落推进清楚，但需求前移和比例补贴提效都只是断言，关键因果没有展开。",
+      "script_spans": [
+        "两边得掰开看：短期能拉消费，长久信心真没那么简单。",
+        "这更像把以后的需求提前挪过来。",
+        "按比例让贵车多拿，效率是高了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体讨论补贴效果较克制，但“大家”“就垮”等泛化和确定性后果，容易放大误导，需收窄表述。",
+      "script_spans": [
+        "短期能拉消费，长久信心真没那么简单。",
+        "可若骗补蔓延，大家觉政策虚，信任就垮。",
+        "不是靠补贴能续命。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4efd8062078845b3b8bf17c7901278bf",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

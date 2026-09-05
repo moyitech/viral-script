@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-b440416cd416495daa49ef404290cce0",
+  "run_id": "run-20260902T143343Z-015bf008bf9f",
+  "trace_sha256": "25230292eb608bc86cfa290cafe704d42d3762ba0d96bb49e56262d8fc1374d8",
+  "created_at": "2026-09-03T12:15:32.525739Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答摩天楼是否加剧夜间热岛，覆盖蓄热、挡风、空调排热及规划应对，目标观众也匹配。",
+      "script_spans": [
+        "摩天楼确实加剧夜间热岛效应。",
+        "规划时多留绿带和风口，别全砌成墙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕夜间热岛，蓄热、挡风、空调排热和规划应对形成多个信息单元，结论有明显增量。",
+      "script_spans": [
+        "混凝土和玻璃墙面像海绵吸饱了白天太阳热。天黑后慢慢吐出来。",
+        "整栋楼各家空调外机嗡嗡排热，不只自家凉，却把热吐给街坊",
+        "规划时多留绿带和风口，别全砌成墙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以失眠反问设钩，中段连续补充热墙、挡风和空调排热，结尾用“巨热水袋”自然引出买房追问。",
+      "script_spans": [
+        "晚上热得睡不着，怪摩天楼吗？",
+        "再加上整栋楼各家空调外机嗡嗡排热，不只自家凉，却把热吐给街坊，夜里更难凉。",
+        "这闷热账，咱买房时算楼一笔？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答感较强，整体能顺读；但“吸饱了白天太阳热”等多处搭配生硬，影响连贯口播。",
+      "script_spans": [
+        "你摸过楼外的墙面吗，入夜还是温的。",
+        "混凝土和玻璃墙面像海绵吸饱了白天太阳热",
+        "咱选房低层或许躲开闷罐？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一片楼就是个巨热水袋”把白天蓄热、夜间释热讲得直观，画面感集中且不显堆砌。",
+      "script_spans": [
+        "像海绵吸饱了白天太阳热。",
+        "一片楼就是个巨热水袋。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按现象、机制、影响到对策推进，但“楼越高风越弱”和“选低层”之间缺少条件与论证，结论略显扩大。",
+      "script_spans": [
+        "城市本就比外围天然热几度，楼群又添一把火。规划时多留绿带和风口，别全砌成墙。",
+        "楼越高，阴影里风越弱，凉意进不来。",
+        "咱选房低层或许躲开闷罐？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题明确，能从材料蓄热、通风和空调排热解释闷热；但“确实”“楼越高”等一概而论，低层选房建议也可能误导。",
+      "script_spans": [
+        "规划时多留绿带和风口，别全砌成墙。",
+        "摩天楼确实加剧夜间热岛效应。",
+        "楼越高，阴影里风越弱，凉意进不来。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-418d543a2b7a4e58b6f036faa3f89ff6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

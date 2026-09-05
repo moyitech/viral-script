@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-ed010438ed0d42f994b648205e77eb3b",
+  "run_id": "run-20260903T051533Z-243bcf25cdc1",
+  "trace_sha256": "42714ffad275bc3cfd9ed1701fc82023e24f4a24e65f6e91866f9d03243b2e79",
+  "created_at": "2026-09-03T11:59:02.747748Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解线上预约的效率与排斥，覆盖服务机构、年轻人和老年人，结论直接回应“便利还是门槛”。",
+      "script_spans": [
+        "年轻人手指一点就搞定，可一位赶了几十里路的老人，对着智能手机干瞪眼。",
+        "所以，评判政务服务好不好，别只盯着网办率多高，要看最慢的那个人能不能办成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 742，目标为 700，偏差率为 6.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息围绕唯一线上入口集中推进，既交代效率收益，也补充政策依据、受影响群体和评价标准，增量充足。",
+      "script_spans": [
+        "窗口人员有限，重复咨询多，把流程搬进手机确实能减轻大厅压力，还能留下可追溯的记录。",
+        "如果连办事都得靠子女远程代约，自主尊严就打了折。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出线上预约与老人受阻的冲突，中段不断补充因果和政策依据，结尾形成有力反差。",
+      "script_spans": [
+        "从下月起，所有事项只接受线上预约。年轻人手指一点就搞定，可一位赶了几十里路的老人，对着智能手机干瞪眼。",
+        "便利的生成，伴随的是排斥的生成。",
+        "留一扇能敲开的窗，比做一个完美的码，更重要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "结构清楚，问答和转折有助于推进；但抽象句式与长串并列使部分段落朗读不够顺滑。",
+      "script_spans": [
+        "为什么越来越多地方推崇纯线上？原因不复杂。",
+        "便利的生成，伴随的是排斥的生成。",
+        "选择纯线上往往是局部执行走的偏锋，并非顶层设计本意。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻集中但不喧宾夺主，“第一道墙”和“敲开的窗”把抽象门槛变得具体，结尾句也有复述价值。",
+      "script_spans": [
+        "进门的第一道墙",
+        "便利的生成，伴随的是排斥的生成。",
+        "留一扇能敲开的窗，比做一个完美的码，更重要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，能从收益转到风险再回扣标准；但仅凭指导意见和重庆案例就概括“往往是偏锋”，论据略不足。",
+      "script_spans": [
+        "所以，评判政务服务好不好，别只盯着网办率多高，要看最慢的那个人能不能办成。",
+        "这说明，选择纯线上往往是局部执行走的偏锋，并非顶层设计本意。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体聚焦服务公平，主动承认地区差异；但“门不但不能关”与“移出服务对象名单”略显绝对和夸张，可能造成政策误读。",
+      "script_spans": [
+        "不确定性在于，基层能力差异大，同一个省不同县体验可能两重天。",
+        "被悄悄移出了服务对象名单"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8336a017ad4a475da86502e3044d428d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d765d74c521a4362949ff430b3df4108",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

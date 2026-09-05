@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-444ecb388e574deaa72b53fde49a4104",
+  "run_id": "run-20260903T051608Z-e117bb0d9ec6",
+  "trace_sha256": "34a7a2697f1a82de9cb1622808ac36b14925264fac6563383539cf82f3f97d56",
+  "created_at": "2026-09-03T12:32:27.890340Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应“免费搬走”是否成立，区分内容挪用与流量截流，并给出网站侧应对，核心人群明确。",
+      "script_spans": [
+        "这是截流，不是盗窃。",
+        "让自己成为AI答案里被标注引用的信源，比死磕点击率更能守住流量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "始终围绕答案前置带来的流量变化，解释摘要如何整合信息、为何减少点击，并提出可执行的关注点。",
+      "script_spans": [
+        "生成式摘要会拆开多个网页的信息，重组成综合回答，通常仍附上来源链接",
+        "当用户查定义、比产品、看步骤时，答案已经摆在搜索框下方"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“白嫖”设问并立刻反转，中段推进到流量习惯迁移，结尾自然落到应对策略。",
+      "script_spans": [
+        "你怕生成式搜索把网站内容白嫖走？不至于，但原站的用户访问正被结果页提前截走。",
+        "所以别再只盯着传统排名，让自己成为AI答案里被标注引用的信源，比死磕点击率更能守住流量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有口语劲，但中段并列信息密集、抽象词偏多，朗读时需要多次重断句。",
+      "script_spans": [
+        "你怕生成式搜索把网站内容白嫖走？不至于",
+        "所以别再只盯着传统排名",
+        "可生成式摘要会拆开多个网页的信息，重组成综合回答，通常仍附上来源链接",
+        "让自己成为AI答案里被标注引用的信源，比死磕点击率更能守住流量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“白嫖”“截流，不是盗窃”既有辨识度又服务观点，表达克制，结尾方向明确，便于复述。",
+      "script_spans": [
+        "这是截流，不是盗窃。",
+        "答案已经摆在搜索框下方，他很可能不再点开你的页面。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头先给判断，中段解释机制与用户行为变化，结尾回到网站应对，转折和因果衔接自然。",
+      "script_spans": [
+        "真正的冲突在于：当用户查定义、比产品、看步骤时，答案已经摆在搜索框下方",
+        "所以别再只盯着传统排名"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且有来源链接等限定；但“不是盗窃”“谈不上剽窃”属于偏绝对的法律判断，末尾对守住流量也略显夸大。",
+      "script_spans": [
+        "通常仍附上来源链接",
+        "这是截流，不是盗窃"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8f67764b2d9b44b7a1c8a5a372a37296",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

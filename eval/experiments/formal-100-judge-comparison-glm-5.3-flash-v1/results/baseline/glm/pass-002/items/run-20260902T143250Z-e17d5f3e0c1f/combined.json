@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-000520d5b1a94cefb7eebfac3a293a09",
+  "run_id": "run-20260902T143250Z-e17d5f3e0c1f",
+  "trace_sha256": "9ac7194795700cd6d337eb6172faa988641fce5618ee3946b132d6817185a185",
+  "created_at": "2026-09-03T15:24:13.351203Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直答损失谁担，政府与用户两侧依次设问作答，小店外卖大厂例证贴合普通观众。",
+      "script_spans": [
+        "这锅不能只甩厂商，也不能全靠政府，用户自己得留后路",
+        "那政府来兜底吗？",
+        "那咱们怎么办？把鸡蛋分开放"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从事故频次、赔偿上限、评估范围到多云灾备，信息单元层层推进，无复述亦无明显编造。",
+      "script_spans": [
+        "出了327次严重事故。平均几乎每天都有云出问题",
+        "像电力金融核心系统会过审，普通外卖打车软件不在里面",
+        "用多云加灾备，一个云停了另一个接上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字直给扫码卡住加千亿悬念，中段连环设问持续给新信息，结尾提问由正文自然生长，三段均立得住。",
+      "script_spans": [
+        "你扫码骑车突然卡住，一次云故障卷走千亿，损失谁担？",
+        "为什么它们敢写上限？因为云市场集中，用户难换门。",
+        "当地铁般频繁的云中断来了，你的系统能自己撑几分钟吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "通篇短气口为主，问答与类比推进，重音停顿清楚，照读即可录制，无明显卡嘴片段。",
+      "script_spans": [
+        "为什么它们敢写上限？因为云市场集中，用户难换门。",
+        "多云不是完美，但少让一家咳嗽拖垮你。成本会高些，但比停摆丢订单强。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "水电类比与“立规矩不是当保险箱”贴切且可独立复述，“一家咳嗽拖垮你”形象，修辞克制未喧宾夺主。",
+      "script_spans": [
+        "云服务像水电，但水电有公共兜底，云目前是商业合同。",
+        "政府做的是立规矩，不是当保险箱。",
+        "多云不是完美，但少让一家咳嗽拖垮你。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问衔接厂商政府用户三段，关键因果有桥，结尾回扣开头地铁比喻与兜底之问。",
+      "script_spans": [
+        "为什么它们敢写上限？因为云市场集中，用户难换门",
+        "云服务像水电，但水电有公共兜底，云目前是商业合同",
+        "当地铁般频繁的云中断来了，你的系统能自己撑几分钟吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制、建议均留余地；但“卷走千亿”把专家估算当事实，“市场默许了波动”属断言式归因，宜加限定。",
+      "script_spans": [
+        "多云不是完美，但少让一家咳嗽拖垮你。",
+        "政府做的是立规矩，不是当保险箱。",
+        "一次云故障卷走千亿，损失谁担？",
+        "厂商股价没怎么崩，市场默许了波动风险。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b5d10081f71844a88ab37a743c2db655",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-c6c3905b76a143daae1319707f003ee0",
+  "run_id": "run-20260902T144224Z-f0f3a7117b1d",
+  "trace_sha256": "7ac6c7821542f5b089de48d69cd5d728827431fefe2c8480654f643d07d70710",
+  "created_at": "2026-09-03T11:47:12.338195Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答企业为何怕换系统，兼顾政策压力、产线风险、普通人影响与渐进替代路径。",
+      "script_spans": [
+        "企业不是拒国产，是先拿边缘环节试水，核心产线慢慢挪。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 477，目标为 450，偏差率为 6.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕替代风险，既讲隐性经验和国产率，也解释过程不可压缩，并落到试水策略。",
+      "script_spans": [
+        "旧系统不是冷软件，是十几年工人攒下的经验。",
+        "为啥叫过程不可压缩？就像炖汤不能跳火候，新系统得啃透老逻辑再动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用亏损与政策期限形成硬冲突，中段不断揭示换系统的隐性成本，结尾落到磨合难题，推进完整。",
+      "script_spans": [
+        "换国产系统怕产线停一天亏百万，不换又卡2027硬指标。",
+        "换系统不是删掉重装，是把厂里老经验重做一遍。",
+        "换脑痛躲不掉，可老经验怎么带着走，人和系统怎么磨合，才是真难题。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、追问和比喻让主体易读，但两处词组明显不顺，朗读时仍需临时改词。",
+      "script_spans": [
+        "为啥这么怕？换系统不是删掉重装，是把厂里老经验重做一遍。",
+        "良品率闪失先怕",
+        "用货更踏实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“换张嘴，没换脑”把经验断层说得形象，“炖汤不能跳火候”也准确易懂，记忆点自然且不妨碍信息传递。",
+      "script_spans": [
+        "那是给厂子换张嘴，没换脑。",
+        "就像炖汤不能跳火候，新系统得啃透老逻辑再动。",
+        "旧系统不是冷软件，是十几年工人攒下的经验。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按企业担忧、原因拆解、政策压力、应对路径推进，但“良品率闪失先怕”表意生硬，个别因果略跳。",
+      "script_spans": [
+        "为啥这么怕？换系统不是删掉重装，是把厂里老经验重做一遍。",
+        "老系统绑死生产线，良品率闪失先怕"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见煽动、歧视或危险操作建议，但“百分百换”“都得交卷”等绝对化表述易把政策要求说满，需补限定范围。",
+      "script_spans": [
+        "企业不是拒国产，是先拿边缘环节试水，核心产线慢慢挪。",
+        "79号文说2027年前央企国企要百分百换信创国产系统，十大行业都得交卷。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4e7c365d9d0749d2941fa24350425b6a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-649f10576d984159acc43ec9e8e0220c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

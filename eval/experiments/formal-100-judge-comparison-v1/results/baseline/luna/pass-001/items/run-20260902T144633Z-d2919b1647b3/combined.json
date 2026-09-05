@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-1787837fc7b647bd9953864b7d0f05b7",
+  "run_id": "run-20260902T144633Z-d2919b1647b3",
+  "trace_sha256": "65fe3e9f9de99543ce46e5499e17ae4478ecded5ffd471640280cecf97432374",
+  "created_at": "2026-09-03T11:44:49.893414Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接给出整体与品类差异，后文覆盖企业、市场和消费者，完整回应题设。",
+      "script_spans": [
+        "整体不必然更烈，但有些品类会卷得更狠。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 694，目标为 700，偏差率为 0.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕价格战条件展开，供给、品类、渠道和消费影响层层补充，信息增量充足。",
+      "script_spans": [
+        "货多未必价跌，得看卖给谁。",
+        "大众盘可能更卷，贵价盘却淡定。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出整体与品类的反差，中段连续推进，结尾用供给去向追问留下余味。",
+      "script_spans": [
+        "出口转内销，低价竞争不一定更凶，部分更卷。",
+        "廉价潮退后，留下更韧供给，还是空货架？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句设问带来对话感，整体可读；但术语压缩、搭配生硬和后段长串并列，使朗读常需临时重断。",
+      "script_spans": [
+        "为啥大家先怕价格崩？货多未必价跌，得看卖给谁。",
+        "如今掉头回来，得重铺渠道改包装，适配搞售后，成本不低。",
+        "贴牌厂重改花钱，不如便宜甩，渠道慢砍价清货撞塌价格墙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“货多未必价跌，得看卖给谁”准确易记，“大众盘可能更卷，贵价盘却淡定”也便于复述。",
+      "script_spans": [
+        "货多未必价跌，得看卖给谁。",
+        "大众盘可能更卷，贵价盘却淡定。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线有开头、分层和回扣，条件判断也清楚；但账期与价格、渠道打通与竞争方式之间的因果桥不足，结尾有扩大。",
+      "script_spans": [
+        "为啥大家先怕价格崩？货多未必价跌，得看卖给谁。",
+        "外需若回暖，企业又掉头出海，内销供给一缩，低价压力也散。",
+        "国内渠道账期迥异，外贸厂得适应先发货后回款，磨合期价格不乱。",
+        "当外贸内需打通，比拼不是谁更便宜，而是谁更懂家里人喜好。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体采用限定表达并区分品类，风险较低；但“出口退税”与企业内销动力的关系被说成普遍因果，主体和语气需收窄。",
+      "script_spans": [
+        "我说整体不必然更烈，但有些品类会卷得更狠。",
+        "这政策反倒懒得拓内销。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-00a7ad81f6fb44cead1c85d9fb631fee",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c48a4df36eb54e8c8ab4166da6c32570",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

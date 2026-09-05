@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-286495ee9dec4695895552ba676b3c0d",
+  "run_id": "run-20260902T144239Z-d9649af7a94e",
+  "trace_sha256": "6479025087bdddfc26df5209ee00fc624e87abf317605c049ce51740d19ce63b",
+  "created_at": "2026-09-03T14:25:46.039645Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即摆出快与吵的两难，两侧各自展开，结尾用收药与午休回扣题设，人群痛点贴合。",
+      "script_spans": [
+        "快递省下二十分钟，你却可能被头顶嗡嗡声吵得睡不着。",
+        "快和静不能全拿，看你是收药还是午休。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "空域试点、审批提速、声反射、投诉归属等单元逐层推进，事实与解释支撑结论，增量扎实。",
+      "script_spans": [
+        "民航局在搞空域分类试点，能飞的地方变多了",
+        "楼顶天天有起降，声反射把烦人感放大"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛省时与噪音的反差钩子，中段以设问持续给出新信息和转折，结尾安静税之问由权衡自然生长。",
+      "script_spans": [
+        "快递省下二十分钟，你却可能被头顶嗡嗡声吵得睡不着",
+        "当包裹从天而降，我们愿用多少安静换那十分钟？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏整体好读，但“声反射把烦人感放大”“噪声细标”等处拗口需换词，最高2分。",
+      "script_spans": [
+        "无人机走直线不堵车，地面快递常卡红绿灯",
+        "你想午休，窗外却像有蜜蜂排队过",
+        "声反射把烦人感放大",
+        "噪声细标却还没落定"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "蜜蜂排队、安静税等比喻克制且服务理解，“效率账算得清，安静账难标价”可离文复述，未见堆叠炫技。",
+      "script_spans": [
+        "你想午休，窗外却像有蜜蜂排队过",
+        "城市低头接货，抬头得付安静税"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "问句分段、主线可循，两笔账的桥接自然；但开头省二十分钟、结尾问十分钟，数字失守。",
+      "script_spans": [
+        "效率账算得清，安静账难标价。",
+        "快递省下二十分钟",
+        "我们愿用多少安静换那十分钟"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述克制公允，利弊两面均呈现，报批备案与乱飞叫停等边界清楚，无绝对化承诺或煽动误导。",
+      "script_spans": [
+        "空域放开不是野生飞，航线要报批备案",
+        "噪声该怎么管，细则还在跟上"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e4dde4a3ad6b4fde96b67d3e82a85452",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

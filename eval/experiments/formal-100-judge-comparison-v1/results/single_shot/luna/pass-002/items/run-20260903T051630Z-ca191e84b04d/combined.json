@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-c89293782cb2464da4c20c375082670d",
+  "run_id": "run-20260903T051630Z-ca191e84b04d",
+  "trace_sha256": "b8938eb3f9640806922bb4987aff180c85a02e40654b6692fe11f573b7fc2c42",
+  "created_at": "2026-09-03T12:42:14.206856Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应汇率是否侵蚀跨境理财收益，覆盖换汇成本、汇率反向波动与普通人决策痛点。",
+      "script_spans": [
+        "跨境理财的实际回报，从来不止看产品收益率，购汇和结汇之间的点差、加上持有期币值变动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕汇率侵蚀收益持续推进，既解释买卖价差和币值变化，也给出情景判断与实际决策方法。",
+      "script_spans": [
+        "银行牌价买卖有价差，购汇用卖出价，结汇用买入价",
+        "先拿产品收益减掉两次换汇点差，再问自己能不能承受币值反向移动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“飘红年化”对撞“汇率刮皮”，中段层层拆成本，结尾落到算账与选择，推进和余味都成立。",
+      "script_spans": [
+        "你盯着手机里境外理财飘红的年化，以为稳赚",
+        "那反过来，要是赌人民币走弱，换回时多赚汇差，这主意是不是就稳了？",
+        "账算不清，海外的风景再好，也不如家门口的理财睡得着觉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有“别急”“没那么简单”等自然承接，整体可读；但技术解释和长句较多，连续气口与书面表达拉低朗读流畅度。",
+      "script_spans": [
+        "为什么这么说？你投出去的是人民币，得先换成美元或港币。",
+        "等产品到期，本金收益合计还是外币，再换回人民币时，如果人民币比买入时更值钱，比如近期离岸人民币一路升破6.75，那你的美元能兑回来的本币就缩水了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“汇率刮走一层皮”“进场离场各剪一次羊毛”把抽象成本说具体，结尾“睡得着觉”也有余味。",
+      "script_spans": [
+        "汇率就可能偷偷刮走一层皮？",
+        "这相当于进场和离场各被剪一次羊毛。",
+        "账算不清，海外的风景再好，也不如家门口的理财睡得着觉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由风险引入机制解释，再回应反向押注，最后落到算账建议，转折自然且结论有效回扣主题。",
+      "script_spans": [
+        "那反过来，要是赌人民币走弱，换回时多赚汇差，这主意是不是就稳了？",
+        "没那么简单。汇率从来不是单行道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未作收益承诺，能提醒汇兑风险；但“收益减掉两次点差”算法过简，并把“本地稳健理财”作泛化比较，仍可能误导决策。",
+      "script_spans": [
+        "再问自己能不能承受币值反向移动",
+        "先拿产品收益减掉两次换汇点差"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a7941eb2675247928693f2285f43ee0c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

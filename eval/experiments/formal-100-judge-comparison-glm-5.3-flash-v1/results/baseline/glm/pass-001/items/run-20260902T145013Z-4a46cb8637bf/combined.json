@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-4b33b01690874108a78e00499bee12e1",
+  "run_id": "run-20260902T145013Z-4a46cb8637bf",
+  "trace_sha256": "221a6720eca27b0abbc1f9d60b1b2081df32035dbc00d4b9fb1002c7d4960b7f",
+  "created_at": "2026-09-03T13:48:48.789872Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点破禁入后安全与效率双输，全文以人车分离正面作答，骑手、居民、物业、平台四方均被覆盖。",
+      "script_spans": [
+        "禁骑手进小区，安全没变好，送餐更慢",
+        "真要兼顾，得把车和人分开走"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 724，目标为 700，偏差率为 3.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移，社区停靠区、开放骑行、平台底图、驿站转交层层推进，事实与解释互证，可带走具体判断方法。",
+      "script_spans": [
+        "骑手停好车走路送餐，车不进园",
+        "真坏蛋想进不因禁骑手转身，门禁加探头才是硬防护"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛出禁令反差，中段以三方处境、成都案例与两套方案持续兑现钩子，结尾先问物业是否划停靠区，由正文自然生长。",
+      "script_spans": [
+        "禁骑手进小区，安全没变好，送餐更慢",
+        "物业怕担责，居民怕生人乱窜，骑手怕超时罚自己",
+        "下次拿凉菜，别光怨骑手慢，先问物业门外划停靠区没"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、重音清楚；但“想进不因禁骑手转身”等压缩句需临时改词重断，够不到三档。",
+      "script_spans": [
+        "物业怕担责，居民怕生人乱窜，骑手怕超时罚自己",
+        "真坏蛋想进不因禁骑手转身"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“绕路等于罚自己”“信任比闸机更扛事”离开上下文仍可复述；“互相拽袖子”服务理解，金句略密但观点未被盖住。",
+      "script_spans": [
+        "时间就是薪水，绕路等于罚自己",
+        "安全感和速度在互相拽袖子",
+        "信任比闸机更扛事"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "破局设问承上启下，社区到平台递进展开，还主动交代老小区与地图偏移的局限，结尾回扣开头与题设。",
+      "script_spans": [
+        "那怎么破局？",
+        "再看平台侧，也在摸小区通行底图",
+        "切好了空间，热饭和安心能同碗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "通篇立场平衡，多处留有余地；但“门禁加探头才是硬防护”“真坏蛋想进不因禁骑手转身”为绝对化断言，宜加限定更稳妥。",
+      "script_spans": [
+        "可这法子要物业协同、骑手守规，老小区没人力抄不了作业",
+        "技术帮人少跑腿，可不是万能",
+        "真坏蛋想进不因禁骑手转身，门禁加探头才是硬防护，光禁车反倒易堵消防道"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-aa213265783a49feb2fcd13713de2f77",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-2646c785886d4f58ae7fb32e2a82fbd9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

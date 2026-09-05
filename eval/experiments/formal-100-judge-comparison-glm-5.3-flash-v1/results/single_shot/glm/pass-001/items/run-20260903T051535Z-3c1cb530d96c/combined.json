@@ -1,0 +1,165 @@
+{
+  "evaluation_id": "combined-000851aa89824dbc94234c590eb82ab7",
+  "run_id": "run-20260903T051535Z-3c1cb530d96c",
+  "trace_sha256": "62196d6489d78d4be038058169ee7c7e2580e2dc2372d156acbd7ca6753a6412",
+  "created_at": "2026-09-03T14:08:25.449935Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头至结论正面回答会不会伤及，行人与骑车人两侧兼顾，判断附条件清晰，切角具体。",
+      "script_spans": [
+        "我的判断是：只要禁停和停放点同步规划，出行不会被伤及，反而更可预期",
+        "没人愿意走在单车堆里，也没人愿骑到无处还车"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 783，目标为 700，偏差率为 11.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "投诉成因、红线反例、围栏案例层层推进，反例边界交代清楚，各信息单元均推进论证。",
+      "script_spans": [
+        "疏堵结合，意味着秩序不是靠堵出来，是靠替代空间换出来",
+        "游客骑车十分钟，还车花半小时，还碰上高价调度费",
+        "可如果只给红线不让停，附近没地方落锁，用户要么丢钱要么推车找桩"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以亲身场景提问直入冲突；中段设问加转折持续兑现钩子；结尾余味由正文自然生长，无生硬互动。",
+      "script_spans": [
+        "你有没有过这种经历：人行道本来就窄，偏被横七竖八的共享单车塞满",
+        "不过，硬件围栏挡得住日常乱停，挡不住节假日的人流洪峰"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾自然顺畅，但中后段多处书面压缩句拗口，需临时换词重断，最高只能评2分。",
+      "script_spans": [
+        "偏被横七竖八的共享单车塞满，只能侧着身子挤过去",
+        "疏堵结合，意味着秩序不是靠堵出来，是靠替代空间换出来",
+        "这暴露企业动态调度短板的反例",
+        "而是特定时空资源错配的边界，不能拿个例否定整体平衡"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞服务理解且不堆砌，主句对仗准确，离开上下文仍可复述，另有短句形象点睛。",
+      "script_spans": [
+        "秩序不是靠堵出来，是靠替代空间换出来",
+        "技术让车知进退"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问转段自然，前提、案例、反例层层递进，结尾使绊子一句回扣题设完整。",
+      "script_spans": [
+        "那怎么画红线才不误伤？看看先行试点的思路",
+        "不过，硬件围栏挡得住日常乱停，挡不住节假日的人流洪峰",
+        "整治秩序从来不是给出行使绊子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述客观公允，正反两面均有交代，判断用条件句限定，无煽动、夸大或绝对化承诺，导向安全。",
+      "script_spans": [
+        "只要禁停和停放点同步规划，出行不会被伤及，反而更可预期",
+        "这不是禁停政策方向错了，而是特定时空资源错配的边界，不能拿个例否定整体平衡"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 783,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.11857142857142858
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b4467e1e588d46ac9dce8a18d868e2e8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ec42d3d425124758848d7129cf9bfed1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

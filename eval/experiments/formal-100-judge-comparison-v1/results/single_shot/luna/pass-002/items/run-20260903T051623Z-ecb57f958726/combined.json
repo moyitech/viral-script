@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-385ef7e0afe74e05a21051efcdba9a8c",
+  "run_id": "run-20260903T051623Z-ecb57f958726",
+  "trace_sha256": "0ee6e4ec31c8ad6f8afed448886cfc8ffcb1c9b7eeff6243e756dfa2f0b6d118",
+  "created_at": "2026-09-03T12:32:07.242315Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕默认设置责任展开，既讨论厂商担责边界，也交代用户义务并给出防护建议，完整覆盖题设两侧。",
+      "script_spans": [
+        "厂商绝不能为图省事把风险转嫁给用户",
+        "用户有基本防范义务，可厂商不能借“用户没改”就完全脱身。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从默认弱密码、公网暴露讲到入侵机制，再区分法律与道义责任，最后落到操作建议，信息推进充分。",
+      "script_spans": [
+        "很多厂家为了安装便捷和售后调试，在产品里预埋了统一口令，还把控制端口直接暴露在公网。",
+        "法律上厂商是否全赔，得看具体过错；但道义上，把“出厂即危险”包装成正常现象，绝对说不过去。",
+        "先进后台关掉远程访问权限，设独立强密码"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“装好就安心了吗”的反差抓人，中段持续推进责任与公平，结尾落到建议并留下余味。",
+      "script_spans": [
+        "你以为智能摄像头装好就安心了？现实里，不少设备出厂带着通用弱密码",
+        "但把所有板子都打在厂商身上，真的公平吗？",
+        "你先把自己那扇没锁的门关上，比投诉更管用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "设问和比喻让稿子可听，但两处长句与术语堆叠拖慢节奏，未达精心设计的自然口播。",
+      "script_spans": [
+        "这种方便厂家的设计，等于把家门钥匙藏在脚垫下。",
+        "默认设置引发的大规模入侵，厂商必须背起主要担子。",
+        "这不只是丢脸，更可能引来上门作案的物理威胁，智能门锁被远程打开可比丢隐私更可怕。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“把家门钥匙藏在脚垫下”把默认风险说具体，结尾“没锁的门”形成可复述记忆点，修辞克制。",
+      "script_spans": [
+        "这种方便厂家的设计，等于把家门钥匙藏在脚垫下。",
+        "你先把自己那扇没锁的门关上，比投诉更管用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "按风险呈现、责任争议、法律边界到用户行动递进，反问承接自然，结尾也回扣厂商与用户的双重责任。",
+      "script_spans": [
+        "但把所有板子都打在厂商身上，真的公平吗？",
+        "用户有基本防范义务，可厂商不能借“用户没改”就完全脱身。",
+        "厂商该负责，但别干等它负责——你先把自己那扇没锁的门关上，比投诉更管用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "责任边界和用户防护建议较克制，但“轻松闯进”“全成了公开秘密”等绝对化、惊吓式表述，可能放大入侵风险并误导判断。",
+      "script_spans": [
+        "所以法律上厂商是否全赔，得看具体过错；但道义上，把“出厂即危险”包装成正常现象，绝对说不过去。",
+        "黑客用扫描工具就能轻松闯进你家客厅，盯着孩子睡觉",
+        "隐私画面、门锁状态全成了公开秘密"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-fe1a9a23aeae474b8f9b226865e44114",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

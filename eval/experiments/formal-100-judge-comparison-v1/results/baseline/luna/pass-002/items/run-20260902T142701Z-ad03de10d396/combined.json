@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-9caaf3178c464fa79b508e9ac2f99627",
+  "run_id": "run-20260902T142701Z-ad03de10d396",
+  "trace_sha256": "884c24d21f48778be28dc25620901083db3d7aef94894e82ec74686f74c6a912",
+  "created_at": "2026-09-03T12:15:53.855677Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从远程入侵切入，明确拆分厂商责任与用户防护，完整回应默认设置该谁负责。",
+      "script_spans": [
+        "厂商有道义责任，但现行法律还没完全卡死这些默认漏洞，两边都有份。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕默认设置责任展开，解释入侵风险、监管进度和防护动作，信息单元彼此推进。",
+      "script_spans": [
+        "可黑客用扫描器一捞就能进家门摄像头，把拍到的画面传走，隐私也漏了。",
+        "你拆新设备第一件事，先改掉默认密码、关掉用不上的远程权限。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用具体冲突抓人，中段持续补充风险、监管和自保信息，结尾问题也由前文自然推出来。",
+      "script_spans": [
+        "你下班回家灯自己亮了，厂商却说怪你没改密码？",
+        "其实改了密码也不等于进了保险箱，只是门关紧了。",
+        "当摄像头成了家里看不见的窗，我们到底该信厂家承诺，还是信自己改的那道密码？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、设问和比喻让整体可读，但“厂商标便宜省事”“进家门摄像头”等搭配卡嘴，需临时改词。",
+      "script_spans": [
+        "你下班回家灯自己亮了，厂商却说怪你没改密码？",
+        "其实改了密码也不等于进了保险箱，只是门关紧了。",
+        "厂商标便宜省事",
+        "进家门摄像头"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“改了密码也不等于进了保险箱”与“看不见的窗”形象克制，既解释风险也留下记忆点。",
+      "script_spans": [
+        "其实改了密码也不等于进了保险箱，只是门关紧了。",
+        "当摄像头成了家里看不见的窗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "有钩子、观点、风险解释和建议，主线可跟随；但法律责任与强制标准之间的因果说得过满。",
+      "script_spans": [
+        "我的看法：厂商有道义责任，但现行法律还没完全卡死这些默认漏洞，两边都有份。",
+        "其实改了密码也不等于进了保险箱，只是门关紧了。",
+        "眼下没法硬逼所有厂商必须把默认密码锁死。",
+        "厂商就得把安全做进出厂设置里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "具备基本安全提示且未见明显违规，但“厂商标便宜省事”“密码仍是最后防线”等归因和绝对表述可能误导，需加限定。",
+      "script_spans": [
+        "先改掉默认密码、关掉用不上的远程权限",
+        "密码仍是最后防线"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2806ee357f6840818980fbe2b9e0fbb6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

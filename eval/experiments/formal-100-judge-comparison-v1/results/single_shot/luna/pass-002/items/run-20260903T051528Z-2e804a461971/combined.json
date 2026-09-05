@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-6ed056eda7644d2fa0e23b392c08c172",
+  "run_id": "run-20260903T051528Z-2e804a461971",
+  "trace_sha256": "00db048cddd14da6abe6da60aa54e3cc7e30b236b317fd3559e3fde517ea4b80",
+  "created_at": "2026-09-03T12:32:29.305388Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答一键开药的误诊风险，兼顾稳定续方的便利与新症状的风险，目标人群明确。",
+      "script_spans": [
+        "对普通人来说，真正的便宜是稳定老病的续药省了请假奔波。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕误诊风险补充监管边界、屏幕局限和病情变化场景，最后给出可执行的自查问题，信息增量充分。",
+      "script_spans": [
+        "医生看不到你的面色和体征，也没有化验单实时更新，只能依赖你描述的准确性和旧资料。",
+        "规则要求此时必须终止线上并引导线下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用福利与误诊起点形成反差，中段持续补充规则和风险，结尾追问自然承接并留下判断空间。",
+      "script_spans": [
+        "你以为点几下手机就能送药上门，是互联网医疗的福利？有时候，它也可能是误诊的起点。",
+        "下次想点开药前，先问自己：这真是同一个老问题吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚，问句和短句有重音；但多处词序或用词不顺，朗读时仍需调整。",
+      "script_spans": [
+        "为什么隔着屏幕容易错？",
+        "药能快递，病不隔屏而愈。",
+        "更曾被曝光过平台先选药再配方的操作",
+        "对普通人来说，真正的便宜是稳定老病的续药省了请假奔波"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“伪装成老毛病续方”和“快捷键不是绿灯”形象准确，既解释风险又便于复述，整体没有修辞堆砌。",
+      "script_spans": [
+        "把需要当面查体的新病，伪装成了“老毛病续方”",
+        "一键开药是给已知答案的人用的快捷键，不是给未知症状开的绿灯",
+        "药能快递，病不隔屏而愈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问引出判断，随后按规则、现实漏洞、误诊机制和行动建议递进，结尾自然回扣题目。",
+      "script_spans": [
+        "一键开药最危险的地方，在于把需要当面查体的新病，伪装成了“老毛病续方”。",
+        "下次想点开药前，先问自己：这真是同一个老问题吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提醒初诊和病情变化应线下就医，但“只适合”“最危险”等表述偏绝对，需补充适用边界。",
+      "script_spans": [
+        "规则要求此时必须终止线上并引导线下",
+        "线上诊疗只适合常见病、慢性病的复诊"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e21ce9dea9954fe4a87ad85738a142b8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

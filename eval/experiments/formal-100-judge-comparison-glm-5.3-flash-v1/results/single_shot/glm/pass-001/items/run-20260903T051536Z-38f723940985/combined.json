@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-09ce33fae77b4d799092821801b15c0d",
+  "run_id": "run-20260903T051536Z-38f723940985",
+  "trace_sha256": "ce3ea9822466da5ba9bf1b782b225337152fad96b231ad2595cb7e7424d708ab",
+  "created_at": "2026-09-03T14:09:04.636420Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给判断，固定与分红两侧、普通人都覆盖，全程正面回答题设。",
+      "script_spans": [
+        "我给个直截了当的判断：保险收益预期下行时，想靠保单锁长期回报，只该信合同里固定的那串数字，把演示当保证就是赌博",
+        "普通人最实在的做法，是买前翻合同末尾的现金价值表，那列逐年数目才是真到手的钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 456，目标为 450，偏差率为 1.33%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，实现率55%、2.0%例、利差损机制与翻表方法层层推进，增量扎实。",
+      "script_spans": [
+        "公开数据显示前阵行业平均分红实现率大约只有55%，画的大饼常缩水",
+        "保险公司自己在低利率环境也怕利差损，更乐意推分红险把投资波动转嫁给你"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反问直戳错觉设下悬念，中段用实现率、预定利率与取舍持续推进，结尾底线句余味自然。",
+      "script_spans": [
+        "你以为现在抢一份年金险，就把未来几十年的高利率锁进了保险箱？别天真",
+        "锁定回报不是锁住财富增值，而是锁住一条不亏的底线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口为主、钩子金句都好读，但“容忍受”撞字与规则腔句需临时换词重断，达两处拗口，只能给2分。",
+      "script_spans": [
+        "画的大饼常缩水",
+        "这笔钱得是十年八年内用不上的闲钱，早期退保多半吃亏",
+        "就得容忍受实现率低迷拖累",
+        "普通型人身保险在签单时保费和保单利益就已经确定"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“把演示当保证就是赌博”“没有两头甜的锁”贴切且可复述，修辞服务论证，密度克制不喧宾夺主。",
+      "script_spans": [
+        "把演示当保证就是赌博",
+        "没有两头甜的锁。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "取舍两面包抄、因果桥齐全，结尾回扣底线与开头钩子，无跳跃。",
+      "script_spans": [
+        "你选固定利益，等于放弃上行可能，换一个写死的数；选分红，就得容忍受实现率低迷拖累。没有两头甜的锁。",
+        "锁定回报不是锁住财富增值，而是锁住一条不亏的底线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键判断多带“大约”“可能”“多半”限定，未作确定性收益承诺，双向取舍并提示退保损失，导向安全。",
+      "script_spans": [
+        "真实兑现可能连一半都够不着",
+        "这笔钱得是十年八年内用不上的闲钱，早期退保多半吃亏",
+        "合同外的话，全当广告听最稳当"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3b50cb82bc1e404089d82ffd52db1a0e",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-58bbc6428da747b89039e4cea0247f22",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

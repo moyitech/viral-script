@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-80e6833c6bc3445eb46bf50df870f4a6",
+  "run_id": "run-20260902T143406Z-0ec49ca31b4d",
+  "trace_sha256": "d8ec5d650f0e986c667fb3c6be4fd509a07418885d3bc42b4bf8dc5c7d34bd7b",
+  "created_at": "2026-09-03T11:47:00.224241Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕高收费、软强制与信息不透明，解释家庭为何被迫跟随，也给出家长判断建议，正面覆盖题设。",
+      "script_spans": [
+        "课堂外教育为啥成负担？卡在自愿变软强制，钱花得不明不白。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 635，目标为 700，偏差率为 9.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策边界、成本构成、群体压力、家庭账本和只旅不学依次推进，信息密度足，也对数据不确定性作了限定。",
+      "script_spans": [
+        "交通要租车，过夜要住宿，导师要薪酬，手册要印刷，每一层都加价",
+        "老师不点名，群里接龙排队，你不接就显眼。",
+        "没单独拆研学占比，咱说不准精确比重。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用报名两难抓人，中段连续追问费用、软强制和家庭负担，结尾落到可执行的家长自问。",
+      "script_spans": [
+        "报了又月月吃土",
+        "那机构凭啥敢标上万？",
+        "下次表格递来，先问娃：这趟你真想学点啥？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、反问和排比让大部分段落好读，但“研发可能熬十天”“有家庭金融调查覆盖收入消费”等处搭配生硬，朗读需换词。",
+      "script_spans": [
+        "通知单写自愿，可全班都去，娃能不去吗？",
+        "研发可能熬十天",
+        "有家庭金融调查覆盖收入消费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“月月吃土”“把好奇秤成利润”形象又克制，既点出压力，也留下可复述的记忆点。",
+      "script_spans": [
+        "报了又月月吃土",
+        "软强制叫人难躲",
+        "问题可能出在把好奇秤成利润"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "分段顺序清楚，能从收费规则讲到成本、软强制和家庭压力；但成本增加直接跳到每层加价，市场降温与负担结论的衔接偏弱。",
+      "script_spans": [
+        "政策其实划了线。",
+        "这压力比文件实在，软强制叫人难躲。",
+        "机构接手，交通要租车，过夜要住宿，导师要薪酬，手册要印刷，每一层都加价，公益二字就淡了。",
+        "可学校若只发通知单，代收费不公开明细，负担还是落肩头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "政策边界与收费压力交代清楚，但“每一层都加价”“体感不会骗人”等表述偏绝对，易把个案说成普遍事实。",
+      "script_spans": [
+        "研学要坚持公益普惠、家长自愿",
+        "每一层都加价，公益二字就淡了。",
+        "体感不会骗人。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-7f09e1d33fb0465eb9bf8d71552ac081",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-43d8a9070b894c0ea5c18779c34be121",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

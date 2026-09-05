@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-f7d52af9317c47db8f2520a28b540005",
+  "run_id": "run-20260902T143838Z-955151113293",
+  "trace_sha256": "6f1dfc5e7d321e2a066941536082db5076fc574a779e4b262f407382f3891e17",
+  "created_at": "2026-09-03T13:47:21.466259Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛出二元冲突，中段直接给出判断标准，结尾回扣题设，两侧均被覆盖。",
+      "script_spans": [
+        "我直接说，两头都沾边，关键买的项目够不够额外",
+        "别光看证书漂亮，得盯住减排真发生没"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 279，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "额外性概念、划算动机、反例与存证新规层层推进，引用可核，观众能带走判断方法。",
+      "script_spans": [
+        "碳信用本要求论证额外性，意思是没这笔买卖根本不会发生减排，就好比不给钱就不干",
+        "比如有个厂子本来就要装净化器，却拿它申信用卖给你，这减排不发生第二次"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直抛'钱白花没减排放'的冲突，中段以额外性、净化器例子和存证新规持续兑现，结尾反问由正文自然生长。",
+      "script_spans": [
+        "企业抢购碳信用，钱白花没减排放",
+        "比如有个厂子本来就要装净化器，却拿它申信用卖给你，这减排不发生第二次",
+        "当减排能花钱凑数，谁还乐意费劲改生产线呢？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，类比与对话式承接贯穿，术语随即白话拆解，朗读基本无需临时改词。",
+      "script_spans": [
+        "意思是没这笔买卖根本不会发生减排，就好比不给钱就不干",
+        "现在规则逼企业每月存证排放数据，台账摊开想糊弄也难了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'不给钱就不干'把额外性讲得通俗准确，'别光看证书漂亮'离开上下文仍可复述，修辞克制不炫技。",
+      "script_spans": [
+        "意思是没这笔买卖根本不会发生减排，就好比不给钱就不干",
+        "别光看证书漂亮，得盯住减排真发生没"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线可跟随、结尾能回扣，但存证新规防的是排放数据造假，接不住前文额外性漏洞。",
+      "script_spans": [
+        "企业自己改线花钱多，买信用抵任务便宜，所以不少去抢",
+        "现在规则逼企业每月存证排放数据，台账摊开想糊弄也难了",
+        "企业抢购碳信用，钱白花没减排放"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主体有'可能''两头都沾边'等限定，较客观；但开篇'钱白花没减排放'系绝对化断言且与后文矛盾，需补边界。",
+      "script_spans": [
+        "我直接说，两头都沾边，关键买的项目够不够额外",
+        "企业抢购碳信用，钱白花没减排放"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b56910ceefa94e22800ad130361ce19f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-49f5fd8e3d2e41ae9cbda7c58bb54312",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

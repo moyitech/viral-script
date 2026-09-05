@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-f1a6768f5d004b57b72fdf4759489989",
+  "run_id": "run-20260902T142554Z-e66e54b63595",
+  "trace_sha256": "170c308b9c8caa965258f5f76cb826d571f0a1375f3b8aeb31c48d78ecd1003c",
+  "created_at": "2026-09-03T14:24:25.600158Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头场景点题，企业留余地与求职者怕踩坑两侧齐备，结尾落到先问区间再动身，全程正面回答为何反感。",
+      "script_spans": [
+        "你不是怕谈钱，是怕没底地谈，每面一家就赌一次",
+        "企业想留砍价空间，怕亮底牌被同行比价，这没错，可求职者怕踩坑，面谈才知薪资偏低白跑一趟"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "机制、监管、筛选方法等有效信息成立，但路费白跑之意反复出现，研究比给钱少的说法改写略失真，增量被稀释。",
+      "script_spans": [
+        "监管部门曾要求平台信息明示到位，可不少岗位依旧写面议",
+        "你刷十分钟能筛十个明薪岗，何必盯一个面议岗耗神？",
+        "面试像开盲盒，多跑几趟路费比工资差还亏",
+        "月底算账，面试花销抹平了录用通知带来的增益"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛月薪少两千的实损，中段以机制、研究、监管、时间账层层兑现，结尾提问由正文自然长出。",
+      "script_spans": [
+        "你点开薪资面议的岗位，聊完才发现月薪少两千，路费全白花。",
+        "你刷十分钟能筛十个明薪岗，何必盯一个面议岗耗神？",
+        "下次见面议，你敢信他给得起价，还是先问清区间再动身？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句骨架好读也有对话感，但“因价码藏起”“抹平增益”等多处书面压缩，朗读需临时换词重断句。",
+      "script_spans": [
+        "你不是怕谈钱，是怕没底地谈，每面一家就赌一次",
+        "因价码藏起，企业留余地",
+        "面试花销抹平了录用通知带来的增益"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "黑箱、盲盒类比贴切克制，信任得靠明示补不能靠腿磨脱离上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "你不是怕谈钱，是怕没底地谈",
+        "面议像黑箱，你不知按啥定薪",
+        "信任得靠明示补，不能靠腿磨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线由机制到证据到建议，结尾回扣信任；但花销抹平录用增益因果夸大，用系统定薪引入突兀缺桥。",
+      "script_spans": [
+        "信任得靠明示补，不能靠腿磨",
+        "月底算账，面试花销抹平了录用通知带来的增益",
+        "企业用系统灵活定薪"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "两面呈现、点监管依据，整体无违规；但将研究转述为不透明比给钱少更伤公平感，超出原结论，宜加限定更稳妥。",
+      "script_spans": [
+        "企业想留砍价空间，怕亮底牌被同行比价，这没错",
+        "有研究指出，薪酬过程不透明，比给钱少更伤公平感"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7772c023c7a3411e85ab6e7f4a43bab5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-0211a65a919842419535d884303dc04d",
+  "run_id": "run-20260903T051524Z-11b2f1ddc77b",
+  "trace_sha256": "ab7d55194ebc57054de38962fadc46e18d532c1404446f478605738b6bc81c1c",
+  "created_at": "2026-09-03T14:08:36.181148Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答决定权归属，老人权限与父母责任两侧都覆盖，切角具体，命中隔代育儿人群痛点。",
+      "script_spans": [
+        "答案很直接：法定决定权在父母手里，不是天天带的爷爷奶奶",
+        "所以老人可提建议，但最后拍板的是父母；父母也得真正担起责任"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 256，目标为 280，偏差率为 8.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法条依据、权限边界、指导令后果各成信息单元，层层推进，结论有据，无明显编造。",
+      "script_spans": [
+        "老人受委托帮忙照料，权限只是生活照护和配合执行，不能单方定孩子怎么教、学什么",
+        "如果完全放手让老人全权定规矩，一旦影响孩子成长，司法机关可以发家庭教育指导令来纠正"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头冲突加提问抓人，中段靠新信息推进，但结尾仅总结收束，缺余味与互动冲动。",
+      "script_spans": [
+        "隔代育儿吵起来，到底谁有孩子日常教育的决定权？",
+        "那冲突了怎么办？",
+        "所以老人可提建议，但最后拍板的是父母；父母也得真正担起责任，别把教育全推给上一代。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "'甩手掌柜''拍板'等口语出彩，但'生活照护和配合执行''主体责任'等抽象堆叠，中段偏书面。",
+      "script_spans": [
+        "那冲突了怎么办？父母不能当甩手掌柜",
+        "权限只是生活照护和配合执行",
+        "未成年人的父母或其他监护人负责实施家庭教育，这是主体责任"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“甩手掌柜”“拍板”贴合口语场景，“老人可提建议，最后拍板的是父母”可独立复述，修辞克制不抢戏。",
+      "script_spans": [
+        "老人可提建议，但最后拍板的是父母",
+        "父母不能当甩手掌柜"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "问答开题、边界澄清、后果机制到结论回扣，因果有桥，概念前后一致，结构闭环。",
+      "script_spans": [
+        "那冲突了怎么办？父母不能当甩手掌柜",
+        "所以老人可提建议，但最后拍板的是父母"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "引用法律明确权责，指导令表述有条件限定，冲突结论兼顾双方，无煽动夸大，价值导向安全。",
+      "script_spans": [
+        "老人受委托帮忙照料，权限只是生活照护和配合执行",
+        "一旦影响孩子成长，司法机关可以发家庭教育指导令来纠正",
+        "老人可提建议，但最后拍板的是父母；父母也得真正担起责任"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-483ad26a409a4cbf99a221d1034fd8d0",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-19ced5b9b7ad4bf3a7a364c39b15e4ff",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,161 @@
+{
+  "evaluation_id": "combined-ac6f47affc434aadb8b9f11904b300a2",
+  "run_id": "run-20260902T144359Z-3b1d5d9b284c",
+  "trace_sha256": "96d8bc333073e77f70e981e0db25cb91c47de6e792110136b114399864454b5b",
+  "created_at": "2026-09-03T11:47:07.077477Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答一线岗位减少后会出现哪些新工作，也覆盖普通工人的转型难题，切角与题设高度一致。",
+      "script_spans": [
+        "一线操作岗在消失，但新工作真来了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 402，目标为 450，偏差率为 10.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕机器替代重复劳动、岗位转向调试运维推进，数据、岗位实例和技能门槛共同增加了信息量。",
+      "script_spans": [
+        "软件要升级，模型要喂数据，都得专人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“没人但活干完”制造反差，中段持续补出新岗位与门槛，结尾把问题落到“会下指令的人”。",
+      "script_spans": [
+        "你走进黑灯车间没一人，活却干完了。",
+        "厂里不缺活，缺的是会下指令的人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、问句和比喻让节奏清楚，但“退后头”“写明白”等表达略拗，朗读时需顺手修正。",
+      "script_spans": [
+        "机器人卡壳了，你得上手排故障。",
+        "人退后头管异常",
+        "招人写明白"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“拖拉机替了牛，却需要拖拉机手”把替代与新岗位讲透；“厂里不缺活，缺的是会下指令的人”也利于复述。",
+      "script_spans": [
+        "就像拖拉机替了牛，却需要拖拉机手。",
+        "厂里不缺活，缺的是会下指令的人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "从黑灯车间切入，依次解释岗位变化和转型方向，主线清楚；但转型难度被说得过满，论证存在跳步。",
+      "script_spans": [
+        "机器人卡壳了，你得上手排故障。",
+        "老师傅学一阵子就能转运维岗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无煽动、歧视或危险建议，且承认替代与创造并存；但“操作岗在消失”“肯学就能端新饭碗”过度绝对，易形成就业承诺感。",
+      "script_spans": [
+        "AI既替代人，也造出新岗",
+        "一线操作岗在消失",
+        "肯学就能端新饭碗"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 402,
+        "target": 450,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.10666666666666667
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-634264fcd4264b42a4c5dfff297dd4f1",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9781a74b869e42608ec6f7c387e91f86",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

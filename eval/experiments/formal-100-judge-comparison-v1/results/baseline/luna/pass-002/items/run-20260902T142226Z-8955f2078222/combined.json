@@ -1,0 +1,146 @@
+{
+  "evaluation_id": "combined-ea06b67099b1446eb3a55b579e89d8f0",
+  "run_id": "run-20260902T142226Z-8955f2078222",
+  "trace_sha256": "6bfbc618ae9fad9ebe74eebb28a602ff9bf32d2c0a18a2ccc0a8f9730fa84926",
+  "created_at": "2026-09-03T12:15:25.744441Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从法律、诈骗风险到核验和延时支付，完整回应陌生垫付为何设边界及如何设边界，目标受众也精准。",
+      "script_spans": [
+        "好心帮陌生人垫付费用，善意真的需要边界。",
+        "帮之前，先让对方自走官方支付渠道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，法律、诈骗机制和防范建议都有有效信息；但无因管理结论偏绝对，统计与陌生求助的关联缺少限定。",
+      "script_spans": [
+        "骗子爱装弱求援，用互惠和紧迫感催你转账。",
+        "帮前停三秒。",
+        "要是错信了骗子，这不构成无因管理。",
+        "陌生求助常是精心设的局。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出垫款失联冲突，中段从法律转到诈骗风险，结尾建议和警句都由主题自然生长。",
+      "script_spans": [
+        "你替陌生旅客垫了酒店费，对方领完就失联。",
+        "再看风险那头。骗子爱装弱求援，用互惠和紧迫感催你转账。",
+        "帮前停三秒。善良不带锁，就容易帮了恶。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和收尾利落，解释段有对话感，但法律术语和支付建议多处不顺，影响连续朗读。",
+      "script_spans": [
+        "咱们把账算清楚。",
+        "帮前停三秒。",
+        "你没法定或约定义务代付",
+        "难靠必要费用偿还拿回",
+        "先让对方自走官方支付渠道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“民法典保的是谁”和“善良不带锁”既压缩了观点，也形成自然、准确、便于复述的记忆点。",
+      "script_spans": [
+        "民法典保的是真替人着想的管事人，不是给骗子送钱的善良人。",
+        "帮前停三秒。善良不带锁，就容易帮了恶。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "法律、风险、防范三段主线清楚，但把无义务与不构成无因管理并列，且统计数据难直接推出陌生求助常是骗局，论证存在跳步。",
+      "script_spans": [
+        "先说法律",
+        "再看风险那头。",
+        "帮之前，先让对方自走官方支付渠道",
+        "你没法定或约定义务代付，要是错信了骗子，这不构成无因管理。",
+        "2023年前三季度全国立了68.9万件电诈案，陌生求助常是精心设的局。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提醒核验、规避转账，价值导向安全；但将无因管理及返还责任说得过于绝对，法律结论可能误导。",
+      "script_spans": [
+        "帮之前，先让对方自走官方支付渠道",
+        "别怕尴尬核验真需求",
+        "要是错信了骗子，这不构成无因管理。",
+        "民法典保的是真替人着想的管事人，不是给骗子送钱的善良人。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-588bd81d8772404484f79ff0c78166bf",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

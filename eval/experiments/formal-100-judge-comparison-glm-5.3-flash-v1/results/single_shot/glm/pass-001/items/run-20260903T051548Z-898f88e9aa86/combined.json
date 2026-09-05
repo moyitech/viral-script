@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-1b76be463d304da8b68bff0afd22cfec",
+  "run_id": "run-20260903T051548Z-898f88e9aa86",
+  "trace_sha256": "deb02d5b17fd6bd2f86bd2989825f0b836b7064793a4d098a8595891a8024b35",
+  "created_at": "2026-09-03T14:11:09.176469Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛卸责疑问，正文两案并陈，结尾拐杖轮椅之喻回扣题设，两侧与人群全覆盖。",
+      "script_spans": [
+        "眼下的陪诊热本质上填的是照护空档，而非制造依赖",
+        "把它当借力的拐杖，别当甩手的轮椅"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 411，目标为 450，偏差率为 8.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "聚焦陪诊不跑题，上海备案考核与市场乱象两路事实相互支撑，还给出找正规陪诊的具体方法。",
+      "script_spans": [
+        "已要求老年陪诊机构向民政备案，陪诊师得通过专项考核、挂身份牌上岗，收费明码标价",
+        "从社区养老中心或官方名单里找正规陪诊，能救急"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即具体困境抓人，中段以卸责质疑与新政转折层层推进，结尾比喻自然收束，余味足。",
+      "script_spans": [
+        "一位八十岁老人心脏复查，女儿临时出差，她在门诊大厅对着指示牌心慌无助",
+        "可也有人嘀咕：花钱买陪伴，是不是在替儿女卸责？",
+        "号贩子冒充陪诊牟利的投诉不时冒头"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，动词串与比喻收尾重音清楚，通篇朗读无需临时改词，无明显拗口段。",
+      "script_spans": [
+        "取号问诊取药一路包办",
+        "把它当借力的拐杖，别当甩手的轮椅；制度筛过的人，才托得住脆弱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "拐杖与轮椅的对比准确点题且离开上下文可复述，陪得了一程、陪不了熬药喂饭同样好记，修辞克制不炫技。",
+      "script_spans": [
+        "把它当借力的拐杖，别当甩手的轮椅；制度筛过的人，才托得住脆弱。",
+        "但陪诊师陪得了一程，陪不了常年熬药喂饭"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "场景起题、归因、立论、正反例、落到个人，因果桥清晰，结尾自然回扣开头之问。",
+      "script_spans": [
+        "这种空白才是陪诊生长的土壤",
+        "里头的取舍很清楚：准入收紧，温情才能保真"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "两面呈现且以我认为标明观点，提示找正规渠道并守住家庭关怀底线，无夸大误导。",
+      "script_spans": [
+        "真正要警惕的，是行业跑太快、规矩没跟上，让帮忙变了味",
+        "从社区养老中心或官方名单里找正规陪诊，能救急"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-756e5bd345d64690a8a8297f3c2ae56f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-76ccc1d1f3994863be68f9d6e4730b44",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

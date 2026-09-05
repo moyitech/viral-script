@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-94043f06ec7248dab950c9b19c69a4ba",
+  "run_id": "run-20260902T142037Z-2ce128ec900d",
+  "trace_sha256": "d3223e837415106f5bd73e0bc4b1554a9dda7a37640533082ff79e19196d8280",
+  "created_at": "2026-09-03T11:45:46.249070Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“能否受益”，同时解释月供不会立即下降的原因，并覆盖加点、重定价日和固定利率转换等关键条件。",
+      "script_spans": [
+        "已购房家庭能真正受益，但每个人月供不会自动大降",
+        "剩下的LPR部分，得看合同重定价日。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 274，目标为 280，偏差率为 2.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，按利率构成、调整节点、贷款类型和风险提醒层层提供可执行信息，结尾还给出查合同的判断动作。",
+      "script_spans": [
+        "咱们存量房贷利率公式，一直是LPR加上早年约定的加点。",
+        "剩下的LPR部分，得看合同重定价日。",
+        "翻开合同，看清重定价日写在哪天。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用降息却没少月供制造反差，中段拆分兑现路径，结尾落到查合同，推进和收束都自然。",
+      "script_spans": [
+        "你房贷利率降了，但银行没扣你更少月供。",
+        "翻开合同，看清重定价日写在哪天。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和提醒句有口播感，信息推进也清楚；但开头及中段多处搭配生硬，朗读需临时改词。",
+      "script_spans": [
+        "收费代办降息全是骗子，手机银行自己就能办。",
+        "但银行没扣你更少月供",
+        "大部分浮动利率银行批量调整"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“降息却没少月供”和“明天少还钱”形成清晰记忆点，修辞克制，既抓人又服务于规则解释。",
+      "script_spans": [
+        "你房贷利率降了，但银行没扣你更少月供。",
+        "所以别看新闻标题说降息，就以为明天少还钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线按利率构成、重定价和提醒推进，但两处表述拗口，削弱关键解释的清晰度。",
+      "script_spans": [
+        "剩下的LPR部分，得看合同重定价日。",
+        "所以别看新闻标题说降息，就以为明天少还钱。",
+        "但银行没扣你更少月供",
+        "大部分浮动利率银行批量调整"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提醒查合同和防代办有价值，但“全是骗子”“手机银行自己就能办”过于绝对，可能误导部分用户。",
+      "script_spans": [
+        "得看合同重定价日",
+        "收费代办降息全是骗子",
+        "手机银行自己就能办"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-84ce957b7aad49cc9c8c4a54f4004dda",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1001a01e331845ca8a758cbf7876b621",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

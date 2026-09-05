@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-4e4b7f0824f242e48b5425450c4f6d73",
+  "run_id": "run-20260902T144906Z-3dcb03bae976",
+  "trace_sha256": "26d93ff744c8d020fd39c6b2197c56cc32f4218bc30cd1ad5e60724eb8bbdb9f",
+  "created_at": "2026-09-03T13:50:31.560430Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛出核心问题并给出判断，电力土地两侧分说，结尾落到电费与农田；美中实例支撑，回答完整切角具体。",
+      "script_spans": [
+        "卡住大家的早不只是芯片，而是电够不够、地批不批",
+        "再看土地这一侧",
+        "这对咱们生活有啥影响？家门口空地变机房，电费单可能悄悄涨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 449，目标为 450，偏差率为 0.22%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "电网排队、指标绑地等事实与解释环环相扣，结论有依托；信息密度高，观众能带走具体机制认知。",
+      "script_spans": [
+        "能耗双控、PUE限值、绿电比例层层叠加，变电站和指标才是真门槛",
+        "光有地没指标，空地也建不了机房"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头1300亿暂停直接挂钩个人电费，中段电、地两线持续给新信息，结尾农田之问由正文自然生长。",
+      "script_spans": [
+        "美国超1300亿数据中心项目暂停，你家电费可能悄悄替它涨",
+        "下一个被改变的生活角落，会是你家旁边的田地吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与设问有节奏，但两处术语并列堆叠，真人朗读需临时换词重断句。",
+      "script_spans": [
+        "卡住大家的早不只是芯片，而是电够不够、地批不批。",
+        "能耗双控、PUE限值、绿电比例层层叠加，变电站和指标才是真门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "打仗、筹码的比喻服务理解，“变电站和农田”“电力账单和地主收租”离开上下文仍可复述，克制不炫技。",
+      "script_spans": [
+        "这场仗打到今天，拼的是变电站和农田",
+        "你刷的每帧画面，背后是真实电力账单和地主收租"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清晰、两侧推进有序，但美国项目暂停直接跳到“你家电费涨”因果悬空；“去远方圈地”后紧接家门口机房，过渡缺桥。",
+      "script_spans": [
+        "过去靠电网增容消化时间差，如今算力需求爆增，这缺口消化不了",
+        "下一个被改变的生活角落，会是你家旁边的田地吗？",
+        "美国超1300亿数据中心项目暂停，你家电费可能悄悄替它涨",
+        "要么去远方圈地。这对咱们生活有啥影响？家门口空地变机房"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无明确违规，多用“可能”留余地；但开头把美国项目暂停与你家电费上涨直接挂钩，归因牵强，易误导，需补边界。",
+      "script_spans": [
+        "社区反对声变多，有的地方暂停新建保农田，这筹码博弈离你我并不远。",
+        "美国超1300亿数据中心项目暂停，你家电费可能悄悄替它涨。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-a1d7d06d6287407bad7c1ca192d6acb8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1b0a1889b0eb41b3b3225bf6b1db5fd9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

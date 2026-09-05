@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-a20715b191fe4597bfa43b160f822260",
+  "run_id": "run-20260903T051555Z-ac76dd5162d5",
+  "trace_sha256": "9485850bc22fc2a81c2cc5fd83de0312558fbeb30051a66a0dd9d70fb8d1597d",
+  "created_at": "2026-09-03T15:31:27.486533Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头复现牵连场景，直答谁兜底并落到用户防线，故障侧与责任侧均覆盖，切角贴合千行百业观众。",
+      "script_spans": [
+        "这种连带损失到底该谁兜底？直接给结论：数字基础设施的韧性不能全赖云厂商，用户自己才是最后一道防线",
+        "所以关键业务系统务必提前做跨云备份和容灾切换演练，别等断网才想起没买保险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "评估办法只覆盖关基、解析出错连锁拖垮企业等论据逐一推进，事实与结论互证，观众能带走判断和做法。",
+      "script_spans": [
+        "现行安全评估办法重点关注的其实是关键信息基础设施，海量普通商户、学校并不在强制兜底的覆盖圈里",
+        "云平台底层一次基础解析出错或电力抖动，就可能在几小时内连锁拖垮上千家把业务全押在同一朵云上的企业"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头故障一分钟接三连生活场景，钩子具体；中段点破普通商户不在兜底范围，反转续推；结尾保险比喻留余味。",
+      "script_spans": [
+        "如今很多云服务哪怕只是短暂故障一分钟，外卖就下不了单，超市扫不了码，航班值不了机",
+        "直接给结论：数字基础设施的韧性不能全赖云厂商，用户自己才是最后一道防线",
+        "别等断网才想起没买保险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾上口，但“风险明显多自行承担”拗口、“容灾切换演练”术语堆叠，两处卡嘴定2分。",
+      "script_spans": [
+        "外卖就下不了单，超市扫不了码，航班值不了机",
+        "别等断网才想起没买保险",
+        "风险明显多自行承担",
+        "跨云备份和容灾切换演练"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "拔插头、押同一朵云、没买保险三喻皆服务理解且不堆叠，'别等断网才想起没买保险'可独立复述。",
+      "script_spans": [
+        "千行百业仿佛瞬间被拔了插头",
+        "把业务全押在同一朵云上",
+        "别等断网才想起没买保险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "制度不覆盖、风险自担、单一云连锁、跨云容灾层层递进，因果有桥，没买保险回扣拔了插头与题设。",
+      "script_spans": [
+        "并不在强制兜底的覆盖圈里，风险明显多自行承担",
+        "千行百业仿佛瞬间被拔了插头",
+        "别等断网才想起没买保险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键论断均有限定，如\"不能全赖\"\"可能\"\"多自行承担\"，建议属常规容灾做法，无煽动、夸大或误导性承诺。",
+      "script_spans": [
+        "数字基础设施的韧性不能全赖云厂商，用户自己才是最后一道防线",
+        "就可能在几小时内连锁拖垮上千家把业务全押在同一朵云上的企业",
+        "风险明显多自行承担"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-97d3119f8bb8462b8af5dd8ee7c7aa4a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

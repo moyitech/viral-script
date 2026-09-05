@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-1843bfc7715c41478bd027841d10a4b3",
+  "run_id": "run-20260903T051553Z-2481394df937",
+  "trace_sha256": "3ca4e839460d1b3c0effc56fc4cc323c87c2279ed197c77cfe644db4fe9611fb",
+  "created_at": "2026-09-03T12:31:29.997531Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "明确回答“不统一”，同时解释提醒与赔偿的边界，覆盖平台责任和用户维权痛点。",
+      "script_spans": [
+        "赔偿标准现在不该强行全国统一，但平台绝不能靠一纸提醒就全身而退。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律索赔难点、统一定价风险、行政与民事区分及用户判断方法均有推进，信息增量充足。",
+      "script_spans": [
+        "单纯手机号、身份证号外流，风险还在潜伏，没变成实打实的转账记录，维权常卡在“没损”上。",
+        "但这属于行政合规处罚，不代表用户拿到了民事赔偿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以短信反差设问，中段不断推进论证，结尾由责任边界自然收束，追看与评论动机都较强。",
+      "script_spans": [
+        "你收到过“系统漏洞已修复，请修改密码”的短信吗？",
+        "统一标准看似省事，却可能消解了平台加固系统的动力",
+        "提醒只是责任的起跑线，不是终点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答推进和短句重音，但法律解释与处罚段偏长偏硬，朗读时需多次重断句。",
+      "script_spans": [
+        "这合理吗？我的看法很直接",
+        "边界在于：补救和通知是底线，不是免责金牌。",
+        "根子在法律对个人信息保护虽赋予了民事权利属性",
+        "现实里我们看到，有的企业系统裸奔，目录遍历漏洞让爬虫随便爬"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“免责金牌”和“责任的起跑线”把抽象责任说具体，表达克制，形成了可单独复述的记忆点。",
+      "script_spans": [
+        "补救和通知是底线，不是免责金牌。",
+        "提醒只是责任的起跑线，不是终点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构按提问、解释、反驳、案例辨析和行动结论递进，结尾自然回扣提醒与责任边界。",
+      "script_spans": [
+        "从漏洞、泄露到通知、无赔偿，这条因果链断在损害证明那一环。",
+        "提醒只是责任的起跑线，不是终点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "讨论区分行政处罚与民事赔偿，整体克制；但“风险自担”等法律表述可能把平台责任说得过满，需加限定。",
+      "script_spans": [
+        "公私两条线并行，民事索赔仍是难点。",
+        "若平台已尽合理防护且及时告知，风险自担也公平。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-bd0a5d669528405593e3aaa444cf5681",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-cabfeb9f46834831ae11ac985d8eb812",
+  "run_id": "run-20260903T051552Z-9bcc33bce9b9",
+  "trace_sha256": "570e129fa21447d677f41e2b38f68c9c0d8adb332fc25a5188167f495ef74091",
+  "created_at": "2026-09-03T12:32:05.261959Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否该让步，覆盖停车、休闲与居民参与，也给出保留休闲空间的折中方案。",
+      "script_spans": [
+        "其实停车和休闲不一定二选一",
+        "先开个业主会摸清大家要不要车位多于凉亭，少数服从多数也别忘了留个休闲角"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，既指出脱离居民需求的改造问题，也给出公众参与、渐进更新和空间兼顾的具体路径。",
+      "script_spans": [
+        "内容与居民实际需求严重脱节，只做面子工程，盲目模板化施工",
+        "不是上面拍板就铺沥青，而是先听居民想法再动手，用小事慢慢改",
+        "少数服从多数也别忘了留个休闲角"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接呈现停车位挤占休闲空间的冲突，中段推进到兼顾方案，结尾用“吃掉”留下余味。",
+      "script_spans": [
+        "社区里本该晒太阳聊天的公共空间直接划成停车位",
+        "其实停车和休闲不一定二选一",
+        "别让休闲角落被悄无声息吃掉"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体结构清楚、语气克制，但中段长句和结尾搭配不顺，朗读时至少需要两次重断句或改词。",
+      "script_spans": [
+        "其实停车和休闲不一定二选一",
+        "不少老旧社区改造曾出现内容与居民实际需求严重脱节，只做面子工程，盲目模板化施工",
+        "先开个业主会摸清大家要不要车位多于凉亭"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比句把改造原则讲清，“悄无声息吃掉”把空间被侵占说得形象，表达克制且有复述价值。",
+      "script_spans": [
+        "不是上面拍板就铺沥青，而是先听居民想法再动手",
+        "别让休闲角落被悄无声息吃掉"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有立场、问题、方法和结论，主线可跟随；但停车楼个案直接推到社区兼顾，论证桥梁偏弱。",
+      "script_spans": [
+        "真正以公众参与为基础的微更新，不是上面拍板就铺沥青，而是先听居民想法再动手",
+        "有的停车楼也设计出活动场地，说明兼顾有空间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导兼顾停车与休闲，未见明显违规；但“不该让步”和“少数服从多数”偏绝对，缺少程序与少数权益边界。",
+      "script_spans": [
+        "其实停车和休闲不一定二选一，有的停车楼也设计出活动场地，说明兼顾有空间。",
+        "居民休闲需求不该让步。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-cd1539457f234d92ae2d37c4af04bfbe",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

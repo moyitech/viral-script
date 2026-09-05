@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-f9b729ed68f3446891093970ae36bf6a",
+  "run_id": "run-20260902T143314Z-1baeb2f32368",
+  "trace_sha256": "770d1ab9d4401fddd78ab3cc16a9d4353f8323b000727f946023cee3d66eea72",
+  "created_at": "2026-09-03T13:48:50.836249Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直答会更贵与否，结尾回扣题设，冲击与价格两侧并重，紧扣普通消费者关切。",
+      "script_spans": [
+        "会更贵吗？眼下没有，反而便宜了。但升温看来在添乱。",
+        "所以啊，餐桌上海鲜现在没更贵，是产量和出塘撑住了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 736，目标为 700，偏差率为 5.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "升温数据、致死机制与产量价格数据层层推进，均有出处支撑，增量具体，无编造复述。",
+      "script_spans": [
+        "东中国海升温最明显，几十年升了快一度半。",
+        "市场上海水产品的均价跌了快五个点。算下来一公斤四十四块多，比早先便宜。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句抛出赔钱与跌价反差，中段以“为什么没觉得贵”等追问层层推进，结尾互动由正文自然生长，留有余味。",
+      "script_spans": [
+        "海水升温让近海养殖户赔钱，菜场海鲜价却跌了。",
+        "你挑鱼时，或许得问问是哪里养的了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口与对话感整体在线，但“气候因子年际变”等处朗读需换词重录，未到三档。",
+      "script_spans": [
+        "最近十年热浪特别密，夏天海面像熬汤",
+        "气候因子年际变，今年顺明年未必"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞点到为止，“海面像熬汤”贴切易懂，“价格连着千里外的海”离开上下文仍可复述，无炫技堆叠。",
+      "script_spans": [
+        "最近十年热浪特别密，夏天海面像熬汤。",
+        "价格连着千里外的海。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "连环设问推进：反差、归因、追问远期、回扣，关键因果有桥，段段功能清晰。",
+      "script_spans": [
+        "这反差怪不怪？怪在供给链兜住了。",
+        "那为什么我们买海鲜没觉得贵？",
+        "这平稳能一直持续吗？再看远一点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "预测均用万一、或许限定，升温与价格数据标注研究及全国数据出处，无夸大承诺与煽动，导向安全。",
+      "script_spans": [
+        "万一哪年热浪特别猛，局部减产会推高某些品种价。",
+        "今天便宜不代表明天稳。",
+        "你挑鱼时，或许得问问是哪里养的了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-be7ad504bf0549268114579be8d527dd",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f38d3d83ea1d4fb6887776469abb71a6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

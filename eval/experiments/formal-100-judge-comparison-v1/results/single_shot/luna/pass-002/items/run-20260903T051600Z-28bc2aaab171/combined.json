@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-f1ffdd941c2a46eaa19f8cbf03a2791c",
+  "run_id": "run-20260903T051600Z-28bc2aaab171",
+  "trace_sha256": "045dd448d0b5909e4803a6787cfd7b16b085a2abe5bc134568f02dd642767536",
+  "created_at": "2026-09-03T12:32:38.242473Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答真减排与数字游戏之问，覆盖企业动机、技术机制和普通消费者。",
+      "script_spans": [
+        "多数采购是合规与公关驱动，并非真实减排主力。",
+        "真减排要看企业自身工艺革新与能耗下降，信用只是补丁不是盔甲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "额外性、量化核查、监管进展和消费识别层层推进，信息具体且有判断方法。",
+      "script_spans": [
+        "这概念本为防假减排而设，它要求项目没了信用收入就不减排",
+        "碳信用额度靠模型估算避免了多少排放，基准线划多高常由项目方自定",
+        "下单前多问一句：这钱到底减了哪里的烟？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头“账面减排、烟囱冒烟”立刻制造反差，中段递进拆解，结尾追问自然收住。",
+      "script_spans": [
+        "企业争购碳信用，账面上减了排，烟囱却没少冒烟。",
+        "这钱到底减了哪里的烟？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和转场有对话感，但额外性、量化核查等解释句偏密，连续长句影响气口，整体未到顺滑口播。",
+      "script_spans": [
+        "企业争购碳信用，账面上减了排，烟囱却没少冒烟。",
+        "它要求项目没了信用收入就不减排，可大量林业保护或废料利用本也会做"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“披绿衣”“补丁不是盔甲”形象而克制，把抽象的碳信用风险变成可复述的画面。",
+      "script_spans": [
+        "买来抵扣只是给既有行为披绿衣",
+        "信用只是补丁不是盔甲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问、机制拆解、监管补充与消费回扣层层衔接，段落功能清楚，结论自然回到真减排。",
+      "script_spans": [
+        "那数字游戏怎么玩起来的？核心在量化与核查脱节。",
+        "近期官方文件要求强化碳市场信用监管，从名录到核查全流程记录",
+        "真减排要看企业自身工艺革新与能耗下降，信用只是补丁不是盔甲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体批评克制且给出辨别标准，但“多数采购”等判断过于概括，容易把复杂情况说成定论。",
+      "script_spans": [
+        "真减排要看企业自身工艺革新与能耗下降，信用只是补丁不是盔甲。",
+        "我的判断很直接：多数采购是合规与公关驱动，并非真实减排主力。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d3af2729215b45e1b9d7126ded11a7fd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

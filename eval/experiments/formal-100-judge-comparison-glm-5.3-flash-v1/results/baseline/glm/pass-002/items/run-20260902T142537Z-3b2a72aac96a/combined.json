@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-3365a34b282a48b18c8c70ec1983f9b7",
+  "run_id": "run-20260902T142537Z-3b2a72aac96a",
+  "trace_sha256": "961d869dbd19dd33c89261dada3f72e1caaaeb932b8b212966b0840f3cdcbfa2",
+  "created_at": "2026-09-03T14:24:31.179952Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问即答反感根源，成本、公平心理与规范三线均对准求职者痛点，收尾回扣题设。",
+      "script_spans": [
+        "因为招聘方把本该标明的钱数捂起来了",
+        "这正说明面议把筛选成本大多推给了求职者"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，成本转嫁、公平感知、规范佐证与行动建议层层推进，观众能带走判断方法。",
+      "script_spans": [
+        "有研究就提到，薪酬过程透明更能让人觉得公平，面议恰巧少了这层，自然越看越烦",
+        "你投简历、填资料、改简历、等面试通知，前后花掉好几天宝贵精力"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头发问直击划走冲动，中段以白跑成本、公平感研究层层推进，结尾建议由正文自然长出，留有余味。",
+      "script_spans": [
+        "岗位写着薪资面议，你为啥想划走？",
+        "你投简历、填资料、改简历、等面试通知，前后花掉好几天宝贵精力。",
+        "别让没完没了的猜测耗光你找工作的力气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口清楚、有对话感，但中段“筛选成本”“明示到位”等书面句需改写才像真人说话，只能给2。",
+      "script_spans": [
+        "你投简历、填资料、改简历、等面试通知，前后花掉好几天宝贵精力",
+        "这正说明面议把筛选成本大多推给了求职者"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "被蒙着眼去谈条件的比喻准确易复述，捂字与排比动词助理解，修辞克制无堆砌，金句不压观点。",
+      "script_spans": [
+        "过程模糊，就像被蒙着眼去谈条件。",
+        "因为招聘方把本该标明的钱数捂起来了",
+        "你投简历、填资料、改简历、等面试通知"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问、再说、所以等承接自然，场景到结论因果桥清楚，结尾回扣猜测之痛形成闭环。",
+      "script_spans": [
+        "这正说明面议把筛选成本大多推给了求职者",
+        "所以见着面议，先打听清楚范围再投。别让没完没了的猜测耗光你找工作的力气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述客观克制，研究与规范引用有依据，建议留有余地，无煽动夸大或误导承诺。",
+      "script_spans": [
+        "有研究就提到，薪酬过程透明更能让人觉得公平，面议恰巧少了这层",
+        "所以见着面议，先打听清楚范围再投。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-585d7e7812cb4b3893366d850d8e4b6a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

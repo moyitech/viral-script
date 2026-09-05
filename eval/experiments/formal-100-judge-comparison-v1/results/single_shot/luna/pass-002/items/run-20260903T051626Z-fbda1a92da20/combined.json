@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-f706a4fcdd444d3f9a683b564bc87677",
+  "run_id": "run-20260903T051626Z-fbda1a92da20",
+  "trace_sha256": "997022c5591ec8fefe33e72153e59138c3493d95a397747877eec9a5b688eb6a",
+  "created_at": "2026-09-03T12:32:03.919688Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设置家庭群冒充场景，明确回答视频通话不能单独证明身份，并给出针对性核验办法。",
+      "script_spans": [
+        "单靠视频通话确认亲人身份，已经不够稳了。",
+        "挂断后用原先存好的号码回拨，别嫌麻烦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕深伪冒亲借钱持续推进，覆盖伪造能力、识别局限和跨渠道核验，信息增量充分。",
+      "script_spans": [
+        "深度伪造能把熟人的容貌和嗓音高精度复刻",
+        "人眼辨别力甚至会跌到接近乱猜的水平",
+        "提前约定个只有彼此懂的暗号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开场用家族群、急借钱和逼真截图制造身份危机，中段解释风险并给出核验办法，结尾自然收束。",
+      "script_spans": [
+        "家族群突然弹出叔叔的视频通话，屏幕里是他脸，声音也熟，开口就急吼吼让你垫钱救急",
+        "这画面能证明真是他吗？",
+        "记住，眼见不一定为实，换条渠道核实才守得住钱包"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚，问答和建议段好读，但“人眼辨别力”及“格外活跃”略拗，需重断句或换词。",
+      "script_spans": [
+        "那家里怎么防？提前约定个只有彼此懂的暗号",
+        "人眼辨别力甚至会跌到接近乱猜的水平",
+        "这类冒充亲属借钱的骗局，如今在家庭群里格外活跃"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“眼见不一定为实”简洁易复述，配合“像极了真人”等画面化表达，修辞克制并服务防骗判断。",
+      "script_spans": [
+        "像极了真人",
+        "眼见不一定为实，换条渠道核实才守得住钱包"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先以逼真来电设问，再回答并解释风险，最后落到暗号和回拨，因果与结论闭合。",
+      "script_spans": [
+        "这画面能证明真是他吗？",
+        "我的判断很直接：单靠视频通话确认亲人身份，已经不够稳了。",
+        "那家里怎么防？提前约定个只有彼此懂的暗号，或者挂断后用原先存好的号码回拨，别嫌麻烦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "未煽动对立或作收益承诺，建议通过暗号和回拨换渠道核验，整体风险边界清楚。",
+      "script_spans": [
+        "或者挂断后用原先存好的号码回拨，别嫌麻烦。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-59db497e4436473f8baed2d26ddc8951",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-1d282d3710e04805ac18bac0db49559c",
+  "run_id": "run-20260903T051457Z-b361d7d05dbc",
+  "trace_sha256": "6674f1e1197bd630ce3d6532e14651e28fa97e5056b9a4be0524c66b3d6e890a",
+  "created_at": "2026-09-03T15:27:15.831138Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出题设疑问，判断直接回答为何成负担，家长痛点与两侧冲突全程覆盖。",
+      "script_spans": [
+        "研学收费动辄几千上万，课堂外教育为啥成了家庭包袱？",
+        "核心是公益原则难落地，软强制让普通家庭被动买单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从软强制机制、政策依据到具体价格与维权方法，信息单元层层推进，数据有出处、无编造。",
+      "script_spans": [
+        "市面上半日研学近三百，长线出国可达三四万，价格直逼旅游团",
+        "务必留好通知和收据，拨打12345投诉"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出收费冲突，中段从名义自愿到变相刚需层层转折，结尾以开眼界对关门自然收束。",
+      "script_spans": [
+        "研学收费动辄几千上万，课堂外教育为啥成了家庭包袱？",
+        "它名义上自愿，实际常变味成变相刚需",
+        "课外实践本为开眼界，别让不合理收费关上了门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏和数字重音设计到位，但'变味成变相''若遇'等处拗口需临时换词，顺口度打折。",
+      "script_spans": [
+        "市面上半日研学近三百，长线出国可达三四万，价格直逼旅游团",
+        "实际常变味成变相刚需",
+        "家长若遇强制收费或只收费不服务"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "披着教育外衣、直逼旅游团等表达克制且助理解，名义自愿变相刚需一句离开全文仍可复述。",
+      "script_spans": [
+        "不少项目披着教育外衣，成本不透明",
+        "价格直逼旅游团，形式却大于内容"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "判断先行、政策对照现实、数据佐证负担，结尾自然回扣开头，关键因果有桥梁。",
+      "script_spans": [
+        "根本在于，它名义上自愿，实际常变味成变相刚需",
+        "课外实践本为开眼界，别让不合理收费关上了门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "批评带“常”“不少”等限定，政策转述与12345指引有依据，导向安全不煽动不夸大。",
+      "script_spans": [
+        "政策明确要求，研学必须自愿参与、公益普惠，不得开展营利性创收",
+        "家长若遇强制收费或只收费不服务，务必留好通知和收据，拨打12345投诉"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-90fb958d887d4b96bdff549ebe4d3081",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

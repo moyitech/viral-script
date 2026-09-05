@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-9e04a818ce664eb5a0504c9e42b1416e",
+  "run_id": "run-20260902T143314Z-1baeb2f32368",
+  "trace_sha256": "770d1ab9d4401fddd78ab3cc16a9d4353f8323b000727f946023cee3d66eea72",
+  "created_at": "2026-09-03T11:44:52.845830Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答当前是否涨价，并区分眼下与长期，兼顾养殖户损失、供给端变化和消费者关切。",
+      "script_spans": [
+        "会更贵吗？眼下没有，反而便宜了。但升温看来在添乱。",
+        "可长期看，升温在改海洋的牌局。今天便宜不代表明天稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 736，目标为 700，偏差率为 5.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从高温致损、供给托价到极端年景风险，数据、机制和判断连续推进，观众能获得明确增量。",
+      "script_spans": [
+        "水温一高，氧气就少，病菌便旺。",
+        "市场上海水产品的均价跌了快五个点。算下来一公斤四十四块多，比早先便宜。",
+        "万一哪年热浪特别猛，局部减产会推高某些品种价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句用“赔钱却跌价”制造强反差，中段连续追问、数据和风险递进，结尾追问自然落地。",
+      "script_spans": [
+        "海水升温让近海养殖户赔钱，菜场海鲜价却跌了。",
+        "这平稳能一直持续吗？再看远一点。",
+        "你挑鱼时，或许得问问是哪里养的了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、设问清楚，读感不差；但“光前十一月”“气候因子年际变”等处生硬，需临时换词。",
+      "script_spans": [
+        "不少人赔本卖，想回笼点资金。",
+        "光前十一月就超两千三百万吨，比前年多了些。",
+        "气候因子年际变，今年顺明年未必。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“夏天海面像熬汤”“改海洋的牌局”形象但不油，既帮助理解，又留下可复述的核心画面。",
+      "script_spans": [
+        "夏天海面像熬汤。",
+        "升温在改海洋的牌局。",
+        "价格连着千里外的海。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "受损机制、当前供给托价与未来风险层层递进，转折自然，结尾也回扣了开头和题设。",
+      "script_spans": [
+        "这反差怪不怪？怪在供给链兜住了。",
+        "那为什么我们买海鲜没觉得贵？",
+        "所以啊，餐桌上海鲜现在没更贵，是产量和出塘撑住了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，风险提示也较克制；但“水一坏就全完”等绝对化表述，以及部分因果关系说得过满，需加限定。",
+      "script_spans": [
+        "万一哪年热浪特别猛，局部减产会推高某些品种价。",
+        "水一坏就全完。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-bfa0e33771704fb386c183891834d381",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e2e1fd4b095749c3878fe359f291673b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-4cf21ea6b3f44feab7903bae66a5b106",
+  "run_id": "run-20260903T051631Z-fbb189e1a1dc",
+  "trace_sha256": "214c452ace3344b60369db91557a413fbaca4d79fbb7b7b315788697dc9bc8fd",
+  "created_at": "2026-09-03T14:10:17.233729Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问点题，值与不值两侧均给出明确判断条件，35岁上下转行人群的顾虑被正面回应。",
+      "script_spans": [
+        "值不值不看降了多少薪，只看你拿薪水换了什么",
+        "如果你原有行业还没崩，只是嫌涨得慢，那降薪重入行纯属透支；只有当旧技能被趋势吃掉，才是换道的好时机"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 660，目标为 700，偏差率为 5.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题全程锁定值不值，拆岗成因、薪资换什么、心理成本层层推进，判断标准具体可带走。",
+      "script_spans": [
+        "有人换的是AI叠加的新岗，薪资杠杆后面能翻倍数；有人只是逃离焦虑，进个完全陌生行业从零开始",
+        "重新入行意味着人脉和资历清零，前两年大概率要低头做人，心理账也得算进成本"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直给降薪当实习生的反差，中段以兜底、跳船、坑与风口层层推进，结尾用算术题收束，余味自然不喊话。",
+      "script_spans": [
+        "你身边是不是也有35岁以上的朋友，突然舍得降薪去当实习生？",
+        "培训不等于保送，很多人还是主动选了降薪跳船",
+        "中年转行不是励志故事，是一道算术题——用薪水买来的，必须是明天还能增值的本事，而不是一时胆量"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数段落短句好读、有对话感，但“组织行为学里长期追踪研究能看因果”“招聘侧数据看到”等处拗口，需临时换词重断。",
+      "script_spans": [
+        "薪水少一块，就得在别处找补回来。",
+        "组织行为学里长期追踪研究能看因果，但样本常常偏白领，不能推导所有中年人都适用同一条公式。",
+        "招聘侧数据看到，31岁及以上成熟人才流动占比已经过半"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，跳船问坑还是风口、转行是算术题均离开正文可复述，无堆砌炫技。",
+      "script_spans": [
+        "那降薪跳船，到底跳的是坑还是风口？",
+        "你转行后手里的本事，是不是比工资条更值钱？",
+        "中年转行不是励志故事，是一道算术题"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线可跟随、结尾回扣开头，但'反例要提醒'实为方法提醒，公式指代不清，衔接突兀。",
+      "script_spans": [
+        "那降薪跳船，到底跳的是坑还是风口？",
+        "用薪水买来的，必须是明天还能增值的本事",
+        "这里有个反例要提醒：组织行为学里长期追踪研究能看因果，但样本常常偏白领",
+        "这说明现实里真有一批人靠技能叠加重塑了护城河"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制，明确否定“降薪必逆袭”并给出条件；但“薪资杠杆后面能翻倍数”属未限定收入暗示，需加边界更稳妥。",
+      "script_spans": [
+        "但培训不等于保送，很多人还是主动选了降薪跳船",
+        "有人换的是AI叠加的新岗，薪资杠杆后面能翻倍数"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-59554b4cb7a140f184dc57beefee2e46",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d38f9d2f55bc456ea8bdf2ba6511e707",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

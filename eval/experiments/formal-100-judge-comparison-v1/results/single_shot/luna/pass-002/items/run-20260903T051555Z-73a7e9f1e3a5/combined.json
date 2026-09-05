@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-4d5174fc63ba4493b4278b12d64babe1",
+  "run_id": "run-20260903T051555Z-73a7e9f1e3a5",
+  "trace_sha256": "4dc0bda2de4781dd17ee31c005a08cac3486ac84b398467ef956dd12cbcae230",
+  "created_at": "2026-09-03T12:31:29.016808Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答善意为何要设边界，兼顾助人者风险与陌生求助情境，并落到普通观众可执行的做法。",
+      "script_spans": [
+        "陌生人垫付费用，善意本身无错，但必须框定边界"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律追偿条件、诈骗利用机制、平台缓冲和核实建议相互推进，既有解释也有具体判断方法。",
+      "script_spans": [
+        "事后能请求受益人还必要费用，若自己受损还能要适当补偿",
+        "不法分子常伪造权威或可怜身份，用互惠话术和限时紧迫感逼你转账",
+        "先核事主身份、走可拦截渠道，慢十秒不是冷漠"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用具体求助场景制造风险悬念，中段按法律、诈骗、平台递进，结尾给出可执行动作，推进和余味都成立。",
+      "script_spans": [
+        "你拎着菜正出小区，一个满头汗的姑娘拦住说手机掉沟里了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头有场景感，结尾也利落；但中段术语和长句偏多，至少两处需要重断句，口语感被削弱。",
+      "script_spans": [
+        "你没多想替她付了。",
+        "我们不妨从法律、诈骗因果和平台机制三次推进看。",
+        "现实里，垫资前多瞅眼提示，就能借通道避开大多损坑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“善意如刀，边界是鞘”形成清晰比喻，“慢十秒不是冷漠”又把边界落到行动，记忆点自然且不过量。",
+      "script_spans": [
+        "所以善意如刀，边界是鞘。",
+        "慢十秒不是冷漠，是让好心不被滥用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以案例设问起势，按法律、诈骗、平台递进，结尾回扣边界与行动建议，整体因果链清楚。",
+      "script_spans": [
+        "我们不妨从法律、诈骗因果和平台机制三次推进看",
+        "下次陌生人的垫付请求过来，先核事主身份、走可拦截渠道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "有明确边界和不确定性提示，反诈建议克制可执行，未作确定性追偿或收益承诺，也无煽动对立。",
+      "script_spans": [
+        "善意本身无错，但必须框定边界",
+        "法院未必支持追偿",
+        "不是每回求助皆陷阱",
+        "慢十秒不是冷漠，是让好心不被滥用"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-871953b041f44f2e92d6604b7415f62f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

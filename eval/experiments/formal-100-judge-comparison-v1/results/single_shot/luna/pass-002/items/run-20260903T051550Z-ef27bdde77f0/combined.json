@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-4999625fa65b479da735ae498cfa4cf4",
+  "run_id": "run-20260903T051550Z-ef27bdde77f0",
+  "trace_sha256": "41cbb036ca8ca4c9c823f5e7d5b2e05b4e2a6f8ae3007420ef75374a1fc41e5a",
+  "created_at": "2026-09-03T12:32:24.298463Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否集体涨价，同时覆盖受限原料、产业链变化、消费端影响与普通人判断。",
+      "script_spans": [
+        "关键原料出口受限，不会让全球绿色产业集体涨价，但会撕开一道价格断层"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "始终围绕价格分化展开，管制环节、供需替代、库存和回收等机制带来充分信息增量。",
+      "script_spans": [
+        "有的部件悄悄贵了，有的反而更便宜。",
+        "某些资源国对钴这类伴生矿设了出口配额，中间品价格一下被推高；但同一时间，光伏产业链因为产能过剩，多晶硅和组件价格还在往下走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用出口受限与新能源车降价的反差入题，中段持续给出分化证据，结尾判断自然回扣。",
+      "script_spans": [
+        "这边刚说某国限制稀土出口，那边新能源车降价促销却还在继续",
+        "价格断层比统一通胀更值得警惕"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和主体转折都好读，但专业名词连缀、个别搭配生硬，至少两处需重断句或换词，未达到顺滑口播。",
+      "script_spans": [
+        "这种拧巴的现象，恰恰说明问题没那么简单。",
+        "企业也在调库存，跑在前的厂商早做了备货，涨价传导慢半拍。",
+        "战略矿产两用物项的出口合规",
+        "走私规避才是打击对象"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“价格断层”和“不是整座地基”形象且准确，帮助理解供应链分化，表达克制并具备复述价值。",
+      "script_spans": [
+        "受限的是局部供应链，不是整座地基",
+        "价格断层比统一通胀更值得警惕"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由新闻反差切入，依次解释管制、价格机制和消费影响，最后以供应链判断自然回扣题设。",
+      "script_spans": [
+        "从矿产到材料还要走冶炼、提纯好几道关，卡在源头不等于终端立刻缺货。",
+        "短期看，谁握着紧缺环节，谁就有议价权，可替代路线一旦跑通，溢价就会回吐。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有风险边界意识，但“不会集体涨价”过于确定，且将管制简化为打击走私，容易造成误解。",
+      "script_spans": [
+        "不确定性在于，如果地缘冲突把更多精炼产能卷进管制，今天的缓冲层可能明天就失效。",
+        "我的判断很明确：关键原料出口受限，不会让全球绿色产业集体涨价",
+        "正规贸易凭许可仍能走，走私规避才是打击对象。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-52f64d2d469b482cae6f36f442b58e14",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

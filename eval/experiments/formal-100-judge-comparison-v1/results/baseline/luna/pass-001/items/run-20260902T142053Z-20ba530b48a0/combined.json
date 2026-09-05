@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-65cfe0b98301474eb23c39154dddeb3d",
+  "run_id": "run-20260902T142053Z-20ba530b48a0",
+  "trace_sha256": "61ab03941ff0c96a84a4387071291fcfff5a56f30f188b325ae3729fa16598d0",
+  "created_at": "2026-09-03T11:44:36.403891Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应禁停扩大的利弊，既解释秩序需求，也指出停车配套不足会伤及出行。",
+      "script_spans": [
+        "整治秩序和方便出行，两头得掰平。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 702，目标为 700，偏差率为 0.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕禁停、电子围栏、停车场和景区还车难层层补充，既有案例也有治理判断，信息增量充分。",
+      "script_spans": [
+        "说明光画圈不建场，矛盾转嫁了。",
+        "技术再牛，没物理车位也白搭。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“锁不了车还白扣钱”制造冲突，中段持续加码，结尾把判断自然落到观众身边。",
+      "script_spans": [
+        "禁停区扩大，你锁不了车还白扣钱！",
+        "光禁不疏行吗？",
+        "下次见禁停线，先瞅瞅旁边，给没给画车位？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口和追问设计有效，整体可听；但两处以上明显拗口，尤其病句和省略过度，未达可直接口播。",
+      "script_spans": [
+        "不是说不能管，是管法得留缝。",
+        "不少投诉聊还车难",
+        "一边行人能走，一边骑车多步"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“乱停是大患”等可复述句，但“掰平”“找案板”等比喻偏密，削弱了整体克制感。",
+      "script_spans": [
+        "多走几步是小事，乱停是大患。",
+        "整治秩序和方便出行，两头得掰平。",
+        "你擀面杖也得找个案板，禁停线画在空地旁才叫治理。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头提出冲突，中段先讲治理必要再讲配套不足，主线清楚；但个别句子过于压缩，影响表达准确和衔接。",
+      "script_spans": [
+        "整治秩序不是画个圈就完事，得让人有地方落锁。",
+        "不少投诉聊还车难。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "文本强调禁停必须配套停车位，治理方向基本克制；但“谁都骑不成”“才堵住源头”等绝对化表述，易夸大影响并误导判断。",
+      "script_spans": [
+        "整治秩序不是画个圈就完事，得让人有地方落锁。",
+        "要是全禁了，最后谁都骑不成。",
+        "电子围栏才堵住源头。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9b2afcba99364986b3584f7e799f9769",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6f1d71394b274677b09d9ece9a6d378f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

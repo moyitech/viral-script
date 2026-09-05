@@ -1,0 +1,69 @@
+{
+  "evaluation_id": "rules-83b1f23911364a67a7613e971d386b04",
+  "run_id": "run-20260902T143445Z-e760c914562d",
+  "trace_sha256": "39bdb2aa799bbf7d8f2b5a908329d894bdccc0a2417ed2113097795c55d50f19",
+  "created_at": "2026-09-03T13:42:30.213410Z",
+  "evaluator": {
+    "kind": "rules",
+    "name": "deterministic-script-rules",
+    "version": "1.6.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Deterministic checks completed.",
+  "dimension_scores": [
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 755，目标为 700，偏差率为 7.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "script_character_count": 755,
+    "target_length": 700,
+    "length_deviation_ratio": 0.07857142857142857,
+    "length_within_tolerance": true,
+    "length_score": 3,
+    "query_count": 3,
+    "search_result_count": 15,
+    "evidence_count": 3,
+    "claim_count": 0,
+    "core_claim_count": 0,
+    "cited_claim_count": 0,
+    "claim_citation_coverage": null,
+    "supported_core_claim_count": 0,
+    "core_claim_support_rate": null
+  },
+  "findings": [],
+  "metadata": {
+    "config": {
+      "length_tolerance_ratio": 0.1,
+      "repeated_character_threshold": 10,
+      "repeated_sentence_threshold": 3
+    },
+    "evaluator_fingerprint": {
+      "kind": "rules",
+      "name": "deterministic-script-rules",
+      "version": "1.6.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {
+        "length_tolerance_ratio": 0.1,
+        "repeated_character_threshold": 10,
+        "repeated_sentence_threshold": 3
+      },
+      "sha256": "1b1ce33da1d42ad106dba6cb54307c58e2801dbb8776a0d997ff8a5a466d2c95"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-9d865f62398345898239fe75e0901f3a",
+  "run_id": "run-20260902T143941Z-1191f383b55b",
+  "trace_sha256": "971e6c0721275e42f1784f59f6e315447b572db9319e9dd182730109b73cc922",
+  "created_at": "2026-09-03T12:15:50.592433Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解干旱、水电成本与能源转型的关系，并覆盖电网方案及普通用户影响，切题完整。",
+      "script_spans": [
+        "转型咋接这看天吃饭？",
+        "那不能全押新能源，得靠多能互补加现货市场。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕抗旱与电力系统韧性展开，机制、案例、政策工具和用户影响层层补充，信息增量充足。",
+      "script_spans": [
+        "水电本是最便宜的电，它一少，贵煤顶上补缺口，煤价高，成本悄悄摊进账单。",
+        "水枯了还有风和光顶着，电池收放帮忙。",
+        "现货市场像实时菜场：缺电时价涨，闲时便宜，逼大家省着用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用电价反降制造反差，中段层层补充机制，结尾追问自然留有余味。",
+      "script_spans": [
+        "干旱烧贵了水电，可不少地方电价反倒在降。",
+        "只是你充电那晚，老天肯否合作？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、比喻和对话感基本成立，但多处搭配生硬，源网荷储一段信息过密，朗读需重断句。",
+      "script_spans": [
+        "现货市场像实时菜场：缺电时价涨，闲时便宜，逼大家省着用。",
+        "国家推源网荷储，把发电用电储能拼一块，南方虚拟电厂聚合屋顶光伏进场调峰",
+        "电动车也能反送电力帮扛疼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“现货市场像实时菜场”易懂好记，但“保底肚量”“帮扛疼”等比喻生硬，表达略显刻意。",
+      "script_spans": [
+        "现货市场像实时菜场：缺电时价涨，闲时便宜",
+        "电动车也能反送电力帮扛疼",
+        "煤电眼下仍发过半电，是保底肚量"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线有机制、方案和落地回扣，但“帮扛疼”造成语义断裂，电费传导到居民账单的结论也缺少桥梁。",
+      "script_spans": [
+        "水电本是最便宜的电，它一少，贵煤顶上补缺口，煤价高，成本悄悄摊进账单。",
+        "电动车也能反送电力帮扛疼。",
+        "厂子电费省了，你我账单也轻。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有边界意识且未煽动，但“最便宜”及“你我账单也轻”等表述过于绝对，易把区域、用户差异说成普遍结论。",
+      "script_spans": [
+        "放到普通人身上，这法子有边界。",
+        "真旱急了西南仍会限电，空调得省着用。",
+        "水电本是最便宜的电",
+        "平时代理购电价格下行，厂子电费省了，你我账单也轻。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1c3e3b1a581c4ef0bbd3956bdb8aa420",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

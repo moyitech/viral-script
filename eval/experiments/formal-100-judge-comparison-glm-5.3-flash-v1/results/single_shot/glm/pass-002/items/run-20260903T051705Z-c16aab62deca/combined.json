@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-2e9f3b244ddd47f5b5028652f3c1278f",
+  "run_id": "run-20260903T051705Z-c16aab62deca",
+  "trace_sha256": "f52031af9fedfe11da3a6083e9d6ac8d3ea2307cf4fea706bcf1498ae413e5c5",
+  "created_at": "2026-09-03T15:28:15.671174Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即呈现轮流照护失衡冲突，结尾回扣公平定义，重担方与缺位方两侧及多子女家庭痛点全覆盖。",
+      "script_spans": [
+        "强制每人平分照料，是对公平的误解。真实公平需考量能力与距离",
+        "公平是让每分力被看见，而非每人做同样多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题紧扣公平分摊，法律缺口、实证解释、内外方案逐层推进，引用与正文判断吻合，无编造痕迹。",
+      "script_spans": [
+        "赡养里女儿和就近居住者常承担更重照料，这源于结构制约而非敷衍",
+        "长期护理保险已结束试点迈向全国，专业机构接手喂药洗澡"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛出失能与轮流照护的具体冲突，中段以法律、调查、长护险新信息推进，结尾“趁父母还在”余味自然，三段俱立。",
+      "script_spans": [
+        "老父亲中风失能，三兄妹当初拍板轮流照护，可十个月下来",
+        "家庭群弹出一句“公平呢”，瞬间冷场",
+        "趁父母还在，把分工写进温情里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句叙述顺口，有对话感；但'社会面…迈向全国''就近居住者'等书面拗口处超过两处，需临时换词。",
+      "script_spans": [
+        "老父亲中风失能，三兄妹当初拍板轮流照护，可十个月下来",
+        "社会面长期护理保险已结束试点迈向全国",
+        "赡养里女儿和就近居住者常承担更重照料，这源于结构制约而非敷衍"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“家庭本就不是流水线”类比贴切，“公平是让每分力被看见”离文可复述，修辞点到为止服务理解与情绪。",
+      "script_spans": [
+        "家庭本就不是流水线",
+        "公平是让每分力被看见，而非每人做同样多",
+        "别羞于谈钱，那是照护者的尊严"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "破局内外两手承接公平判断，家庭会建议呼应冷场开头，段落功能清晰，因果桥完整层层递进。",
+      "script_spans": [
+        "破局靠内外两手。家里先把金钱、看护、跑腿拆项算清，明确补偿陪护者",
+        "早开家庭会，亮出各自能挤出的资源，容下不对称付出"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点有限定词，赡养分工与长护险表述均有依据，不夸大不煽动，价值导向安全。",
+      "script_spans": [
+        "赡养里女儿和就近居住者常承担更重照料，这源于结构制约而非敷衍",
+        "长期护理保险已结束试点迈向全国"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8322f70158504e44bee4f6907cbfa401",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-e8e5e2888de94222bee30b88f80471e0",
+  "run_id": "run-20260902T143905Z-d3e14b7c1834",
+  "trace_sha256": "67a47e403b072d260554a29ca5020bd40e1c8ddd84f39b04ea42ab062c686c25",
+  "created_at": "2026-09-03T11:47:00.163845Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕CPI低涨与家庭刚性支出错位展开，直面普通家庭的困惑并给出核算方法。",
+      "script_spans": [
+        "物价只升1%，你家咋还紧巴巴？",
+        "下次别盯CPI，算算固定开销占收入几成，比看平均数更踏实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 280，目标为 280，偏差率为 0.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，数据与账单建议形成增量；但把房租、学费说成未纳入CPI，核心解释出现事实性偏差。",
+      "script_spans": [
+        "三月全国CPI同比才涨1.0%，其中食品只涨0.3%，非食品涨1.2%，整体挺温和，统计取全国平均。",
+        "房租权重轻，学费没进去，买房更不计入。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用反差提问抓人，中段以数据和家庭支出持续推进，结尾给出查账动作，互动与收束都自然。",
+      "script_spans": [
+        "物价只升1%，你家咋还紧巴巴？",
+        "下次别盯CPI，算算固定开销占收入几成，比看平均数更踏实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、设问和行动建议带来节奏，但多处技术词与生造搭配卡嘴，整体仍需改写后录制。",
+      "script_spans": [
+        "物价只升1%，你家咋还紧巴巴？",
+        "统计取全国平均",
+        "工资跑得慢，花项钉刚需。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“明明通胀低，钱包却瘪了”反差鲜明、容易记住；但“花项钉刚需”说法生硬，削弱了表达的准确和自然。",
+      "script_spans": [
+        "明明通胀低，钱包却瘪了。",
+        "工资跑得慢，花项钉刚需。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、数据、结论和行动建议衔接清楚；但核心因果建立在CPI未覆盖刚性支出的错误前提上，结论因此失稳。",
+      "script_spans": [
+        "今晚翻账单，圈出房租补课费，再看水电医保，那才掐住手头松紧。",
+        "钱不够花，不是手松，是指数没罩住刚性支出。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "数据引用和家庭支出建议较克制，但“学费没进去”等绝对说法易造成对CPI覆盖范围的误解，应补充限定。",
+      "script_spans": [
+        "三月全国CPI同比才涨1.0%，其中食品只涨0.3%，非食品涨1.2%",
+        "学费没进去"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.7916666666666666,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.375,
+    "weighted_average": 2.375,
+    "normalized_score": 0.7916666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-862f27d6d23d40439f60692691758449",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-94620f5bd3d24f1b9694d3c317541c67",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

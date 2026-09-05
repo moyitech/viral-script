@@ -1,0 +1,143 @@
+{
+  "evaluation_id": "combined-fdf7dc35e0ac47dfb76d494fd8c99020",
+  "run_id": "run-20260902T142549Z-783dad4711f0",
+  "trace_sha256": "6294185093e4ef293fcb28bf8fc198a0834b728363356e2fc0da709dca1771d1",
+  "created_at": "2026-09-03T12:16:10.744987Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“是否更安全”，同时覆盖密钥优势、同步找回、令牌风险和普通用户的应对。",
+      "script_spans": [
+        "无密码登录加速普及，账户却未必更安全。",
+        "所以对普通人，开了passkey别躺平。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，机制解释、风险拆解与操作建议层层增加信息，形成“更安全但非绝对安全”的判断。",
+      "script_spans": [
+        "passkey是密钥对，网站只存公钥，私钥锁在你设备里。",
+        "令牌是进门后的通行证，passkey只管开门，不管进门后。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“未必更安全”制造反差，中段连续转折到云同步和令牌，结尾追问由风险自然生长。",
+      "script_spans": [
+        "无密码登录加速普及，账户却未必更安全。",
+        "但转折来了。",
+        "当无密码成默认，我们该想：设备全丢时，谁来证明你是你？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和比喻带来清晰停顿，整体能读通；但多处技术表述搭配生硬，朗读时仍需重断句或换词。",
+      "script_spans": [
+        "你想啊，这就像家门换指纹锁",
+        "NIST允许同步密钥获中等保障级",
+        "中间人坐在你和真服务间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“开门”和“进门后”的比喻准确区分认证与会话风险，指纹锁类比也具体，留下了可复述的安全提醒。",
+      "script_spans": [
+        "令牌是进门后的通行证，passkey只管开门，不管进门后。",
+        "这就像家门换指纹锁，进门难了，可备用钥匙丢哪还得自己操心。",
+        "安全得层层设防，不是换把锁就高枕无忧。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "优势—风险—应对的顺序清楚，结论也能回扣；但个别书面表述拗口，令牌风险的因果解释略跳。",
+      "script_spans": [
+        "但转折来了。",
+        "安全得层层设防，不是换把锁就高枕无忧。",
+        "铺开背后留了缝。",
+        "NIST允许同步密钥获中等保障级。",
+        "中间人坐在你和真服务间，偷到令牌就能蹭进会话。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调分层防护，导向稳妥；但“全泄露”“摸不到私钥分毫”等绝对化表述，以及备份建议边界不足，易造成误解。",
+      "script_spans": [
+        "安全得层层设防，不是换把锁就高枕无忧。",
+        "黑客做假登录页，也摸不到私钥分毫。",
+        "网站库被拖，密码跟着全泄露。",
+        "备一台闲置手机存密钥"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b10a8baf5296412c933bc2e11867672b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

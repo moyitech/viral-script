@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-a4f40eb9b4fe4bd2b1523c7a1d26e20b",
+  "run_id": "run-20260902T142948Z-c72033d36a54",
+  "trace_sha256": "ac711242eb5bee71c0e64f82a56fbbd885476d95478a5262dd4c7b5f58f0827a",
+  "created_at": "2026-09-03T13:44:16.722430Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛收入与缴费冲突，中段给减负路径，结尾回扣交不起怎么办，两侧兼顾且直指目标人群。",
+      "script_spans": [
+        "收入不稳的人交得起吗？能交，但得用新政策减负，硬交立马断粮",
+        "交不起时先别硬撑，看清当地门槛再保年限"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 269，目标为 280，偏差率为 3.93%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不断裂，半基数、待遇不打折、按季按年、补贴八成等单元层层推进，均有可带走的增量。",
+      "script_spans": [
+        "多地允许低收入者，按一半基数交养老保险。待遇不打折",
+        "补贴也扩到新业态，像骑手快递这类，最高能补八成费用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛三千收入对八百保费的具体冲突，中段减负、补贴等新信息层层兑现，结尾建议由正文自然收束。",
+      "script_spans": [
+        "月入三千的零工，刨去房租吃饭，要硬拿八百交社保，今天活下去和明天养老直接打架",
+        "多地允许低收入者，按一半基数交养老保险。待遇不打折，每月能省下将近两成钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口为主，'挺麻烦''自己挑'等口语承接自然，重音清楚，朗读无需临时改词。",
+      "script_spans": [
+        "月入三千的零工，刨去房租吃饭，要硬拿八百交社保，今天活下去和明天养老直接打架",
+        "待遇不打折，每月能省下将近两成钱，紧日子能喘口气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "「活下去和养老打架」比喻贴切且离稿可复述，省两成、补八成表述实在，全篇修辞克制不堆砌。",
+      "script_spans": [
+        "今天活下去和明天养老直接打架",
+        "待遇不打折，每月能省下将近两成钱，紧日子能喘口气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立困境再逐条给解法，因果桥清楚，结尾自然回扣开头，观众无需自行补齐逻辑。",
+      "script_spans": [
+        "保费全得自己掏，没有单位分担，收入一断缴费就停",
+        "所以交不起时先别硬撑，看清当地门槛再保年限，老来的底才能留牢"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "政策表述有“多地”限定，结尾提醒“看清当地门槛”，无夸大承诺、无煽动或误导风险。",
+      "script_spans": [
+        "多地允许低收入者，按一半基数交养老保险",
+        "看清当地门槛再保年限"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5dff5f20141347ecba4151a175ffc35b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a45aeff85f7f418aa672cbd31d6e7ece",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-04eff57c6a3f42c9914027e373c2510c",
+  "run_id": "run-20260903T051526Z-98611b48febb",
+  "trace_sha256": "66df9c5cc2fa7f8ad53508ff4db362380f07d738d86433aef84d0054cf89e3f8",
+  "created_at": "2026-09-03T12:32:43.509588Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接判断局部降价而非全行业价格战，并分别落到消费者与本土厂，完整回应题设。",
+      "script_spans": [
+        "转内销会压低部分品类的价格，但远没到全行业价格战的地步",
+        "那对咱们普通人和本土厂意味着什么？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕局部供给增加、短期清库存、长期能力重建推进，区分库存尾单与常态价格，信息增量充分。",
+      "script_spans": [
+        "短期局部供给变多，价格自然有下探压力",
+        "所以你看到的低价，很多是库存尾单，不是常态出厂价",
+        "真正危险的是高度同质化、外贸依存度高的那小块市场，未必波及全境"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用同款进超市制造悬念，中段以供给、能力和受众影响层层推进，结尾判断有余味。",
+      "script_spans": [
+        "低价潮要来了？",
+        "但这里有个反例和不确定性：出口和内销未必是零和",
+        "出口转内销不是低价炸弹，而是一面镜子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答式开头和短句承接较顺，但中段并列信息偏密，至少两处需要重新分气，节奏不够轻巧。",
+      "script_spans": [
+        "为什么这么看？",
+        "短期清库存可能甩卖，长期想扎根就得做研发和品牌",
+        "出口和内销未必是零和，部分企业两条腿走路反而互补，且相关结论受样本局限，不能推演到所有行业。",
+        "我国社零按购买力平价远超美国，足以容纳多元供给。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“低价炸弹”和“一面镜子”构成清晰反差，结尾“别怕卷”有复述性，修辞没有压过论点。",
+      "script_spans": [
+        "出口转内销不是低价炸弹，而是一面镜子",
+        "别怕卷，怕的是只会用降价一条路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "按判断、机制、例外、影响与回扣递进，转折和因果基本闭合，结尾也自然回扣题设。",
+      "script_spans": [
+        "这种供给切换需要时间，不会瞬间击穿价格体系",
+        "所以，出口转内销不是低价炸弹，而是一面镜子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "无敏感、煽动或确定性承诺，且用反例、样本局限和时间周期限定判断，整体客观稳妥。",
+      "script_spans": [
+        "且相关结论受样本局限，不能推演到所有行业",
+        "转内销会压低部分品类的价格，但远没到全行业价格战的地步"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0aff73b5831f4d9e937e81e5b02aa5f9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

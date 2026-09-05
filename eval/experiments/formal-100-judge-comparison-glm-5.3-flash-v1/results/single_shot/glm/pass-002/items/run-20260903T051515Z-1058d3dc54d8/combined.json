@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-078877157c7c48c7a8a6256c24f42ee8",
+  "run_id": "run-20260903T051515Z-1058d3dc54d8",
+  "trace_sha256": "7a2dc2ba9630bb8e2c82060435ae1300469ee8320d2c047c473be430fc602b6c",
+  "created_at": "2026-09-03T15:28:02.559974Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问即正面回应“低风险为何也亏钱”，机制、诱因、买前建议均对准债基买家痛点，结尾回扣标签。",
+      "script_spans": [
+        "你以为名字带“低风险”的债基就不会亏？实际上它照样能让你的账户浮亏",
+        "别光盯着“低风险”标签就冲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "市值法机制、R2定位、利率与信用双驱动层层推进，结尾落到看久期和信用下沉的判断方法，信息扎实无编造。",
+      "script_spans": [
+        "它的净值按市值法跟着债券市价走，债市下跌时它就可能浮亏",
+        "市场利率往上翘，存量债券价格就往下掉，而且基金久期越长，这种波动越凶猛"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句反问即立反差钩子，中段市值法、R2与利率信用两驱动层层兑现，结尾落到查持仓的行动建议，余味自然。",
+      "script_spans": [
+        "你以为名字带“低风险”的债基就不会亏？实际上它照样能让你的账户浮亏",
+        "第二个是信用，发债企业财务恶化或违约预期升温，债券价格立马跳水",
+        "别光盯着“低风险”标签就冲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有节奏，翘、掉、跳水等表达上口；但市值法句与财务恶化句拗口费气，录音前需换词。",
+      "script_spans": [
+        "市场利率往上翘，存量债券价格就往下掉",
+        "债券价格立马跳水",
+        "但它的净值按市值法跟着债券市价走",
+        "发债企业财务恶化或违约预期升温"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“往上翘/往下掉”对仗贴切助解，“立马跳水”形象不油，结尾一句离开原文仍可复述，全篇无堆砌炫技。",
+      "script_spans": [
+        "市场利率往上翘，存量债券价格就往下掉",
+        "债券价格立马跳水，再分散持仓也挡不住局部冲击",
+        "低风险绝对不等于没风险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "“第一”“第二”枚举清楚，两种亏因与买前两查一一对应，结尾自然回扣开头设问，主线无跳跃。",
+      "script_spans": [
+        "第一个关键驱动是利率",
+        "第二个是信用",
+        "具体买之前，你得翻开基金持仓，看久期长和信用等级下沉没有，别光盯着“低风险”标签就冲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "明确否定保本预期，用'可能''通常'限定浮亏判断，结尾仅引导自查持仓，无销售误导或绝对化承诺。",
+      "script_spans": [
+        "低风险绝对不等于没风险",
+        "本来就不是保本保收益品种",
+        "别光盯着“低风险”标签就冲"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-97355fdf7c98440fa33291c831c5e497",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

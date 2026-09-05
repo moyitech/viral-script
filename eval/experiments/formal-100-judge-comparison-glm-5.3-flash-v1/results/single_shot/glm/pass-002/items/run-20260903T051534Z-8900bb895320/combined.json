@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-d8f2f9d655e44df4a032280c4f211512",
+  "run_id": "run-20260903T051534Z-8900bb895320",
+  "trace_sha256": "1948f37510c80ce427a92c9a6ae5efe5317307b40455f21764a695cde3916a2c",
+  "created_at": "2026-09-03T15:30:16.549135Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即判定'更像财务合规游戏'正面回应二元设问，结尾落到辨别真减排上，问答闭环，切角具体且贴合观众对漂绿的疑虑。",
+      "script_spans": [
+        "企业争购碳信用，眼下更像财务合规游戏，真实减排成色明显不足"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "额外性原理、监管收紧、核查方法逐层推进，判断有机制支撑，与引用背景相符，无明显编造，观众能带走具体辨别工具。",
+      "script_spans": [
+        "项目减排必须依赖出售信用获得的资金，缺了这笔钱就不会发生",
+        "务必调取第三方的额外性核查报告与公开登记状态，交叉验证项目是否真多减了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即抛出争购与合规游戏的反差，中段以额外性、监管惩戒层层兑现，结尾提醒自然落地有余味。",
+      "script_spans": [
+        "企业争购碳信用，眼下更像财务合规游戏",
+        "企业买来只是在账面抵消自家排放，地球并没少热"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "地球并没少热等句上口，但务必调取核查报告一句公文腔重，朗读需临时换词才能顺。",
+      "script_spans": [
+        "缺了这笔钱就不会发生",
+        "地球并没少热",
+        "务必调取第三方的额外性核查报告与公开登记状态",
+        "项目减排必须依赖出售信用获得的资金"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“地球并没少热”“别光比谁家吨数标价低”自然可复述，修辞服务理解，密度适度不炫技。",
+      "script_spans": [
+        "企业买来只是在账面抵消自家排放，地球并没少热",
+        "别光比谁家吨数标价低"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "判断—机制—现实—监管—建议层层递进，'恰恰因为'补足因果桥，结尾'别光比吨数标价'自然回扣开篇的游戏化判断。",
+      "script_spans": [
+        "可现实中不少森林保护或可再生能源项目本身就有其他推力",
+        "恰恰因为过去买卖双方游戏空间太大"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有边界、建议可操作，但“地球并没少热”“恰恰因为”属绝对化与定因表述，缺限定易误导观众。",
+      "script_spans": [
+        "务必调取第三方的额外性核查报告与公开登记状态，交叉验证项目是否真多减了",
+        "企业气候披露准则已经在部分市场试行",
+        "企业买来只是在账面抵消自家排放，地球并没少热",
+        "恰恰因为过去买卖双方游戏空间太大"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d37be1e8b30a477b8103ea6e04dda22c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

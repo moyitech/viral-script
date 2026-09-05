@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-80a098e8c5804cc284b192e67eed05c4",
+  "run_id": "run-20260902T144506Z-121585631f52",
+  "trace_sha256": "1f24bb3535851a1a3a69d1976b94e3148707c882a927e8dd31829aec271a8fef",
+  "created_at": "2026-09-03T14:25:56.503004Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从撕启事到结尾判断法全程回答为何不敢招人，回暖与遇冷两侧用数据摆明，企业与打工者人群均覆盖。",
+      "script_spans": [
+        "订单眼看着多了，厂长老王却把招工启事撕了。",
+        "所以别只怪厂抠门，得看单子能不能连住三个月。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据反差、分层回暖、用工成本账、补贴限制、打工者体感层层推进，数据与引用相符，无编造，增量具体。",
+      "script_spans": [
+        "企业从业人员指数四十八点七，比上月还降零点三，用工反而更冷。",
+        "这钱只能留老员工稳岗，不是奖你扩招新人。",
+        "回暖根本没淋到小厂身上，大多数老板互相瞅着不敢动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以撕招工启事立住反差钩子，中段用数据、算账、补贴限制层层兑现，结尾金句自然收束留余味。",
+      "script_spans": [
+        "订单眼看着多了，厂长老王却把招工启事撕了",
+        "回暖是信号，不是发令枪。等哪天预期真站稳，招工潮才敢来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句顺口、口语扎实，但'虽有稳岗补贴'半句悬空，'返三成上年失业险'过度压缩，朗读需临时改词。",
+      "script_spans": [
+        "临时工干完结钱走，不背长期包袱",
+        "政府虽有稳岗补贴。大型返三成上年失业险",
+        "原材料购进价格窜到五十六点六，更不肯轻易招人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且贴题，“回暖是信号，不是发令枪”“没淋到小厂身上”离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "回暖是信号，不是发令枪",
+        "回暖根本没淋到小厂身上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚、结尾自然回扣，但原材料涨价直接接不肯招人，缺成本挤压的因果桥，跳步经不起追问。",
+      "script_spans": [
+        "为啥两侧这么拧巴？咱们拆开看大环境。",
+        "所以别只怪厂抠门，得看单子能不能连住三个月。",
+        "原材料购进价格窜到五十六点六，更不肯轻易招人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "数据与来源一致，判断用怕、万一、可能等词留足余地；不煽动劳资对立，不作确定承诺，价值导向安全。",
+      "script_spans": [
+        "怕这波单子是下游暂时补库存，下个月可能掉回去。",
+        "裁人得依法给补偿，合同工不是想退就退。",
+        "回暖是信号，不是发令枪。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-dc70a07371cf4b488bc36a821e7bb641",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

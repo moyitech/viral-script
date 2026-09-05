@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-f0fd595389364d0eaa7ede2f7a53b143",
+  "run_id": "run-20260903T051617Z-a09af11f0d86",
+  "trace_sha256": "08e54ca42ea1930f11c05d51cc5575480e1bc7175b48576168a8475533853397",
+  "created_at": "2026-09-03T14:11:45.093313Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接给出判断并扣住题设两侧，中段分别拆解成本成因与转型应对，末段落到普通人账单。",
+      "script_spans": [
+        "能源转型如果只盯着装机清洁化，却不管水文波动，那“看天吃饭”迟早变成电费单上的惊吓",
+        "可真到了账单上，普通人能感到什么？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 750，目标为 700，偏差率为 7.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "火电耗水、西南限电、灵活性工具、电价两面性层层推进，事实与解释互证，无同义空转。",
+      "script_spans": [
+        "但反直觉的是，火电厂冷却也得耗大量水，干旱时不仅水电掉链子，火电效率也受限",
+        "非化石装机规模虽大，但电量平衡仍靠煤电托底",
+        "有些区域因新能源爆发电价反而下行，那是风丰水足时的另一面"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差抓人，中段火电耗水、电价下行等转折持续兑现钩子，结尾余味自然，无硬性互动。",
+      "script_spans": [
+        "河流见底的时候，最便宜的电反而可能变成最贵的。",
+        "但反直觉的是，火电厂冷却也得耗大量水，干旱时不仅水电掉链子，火电效率也受限。",
+        "才不至于某天开电表发现，天老爷悄悄收了费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与口语标记不少，但“尖峰凸起”“爆发电价”处需临时换词补气口，中段书面讲解偏多。",
+      "script_spans": [
+        "河流见底的时候，最便宜的电反而可能变成最贵的。",
+        "工厂停产、车主排队充电，只能烧更多煤顶上。",
+        "分时电价会尖峰凸起",
+        "有些区域因新能源爆发电价反而下行",
+        "空间上西边富源东边高负荷，时序错配严重"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“免费午餐”到“天老爷悄悄收了费”首尾呼应，记忆点离开上下文仍可复述；“缓冲垫”等比喻服务理解，克制不喧宾夺主。",
+      "script_spans": [
+        "水电一度被当成转型里的“免费午餐”",
+        "储能、跨区通道和灵活改造的机组，都是缓冲垫",
+        "才不至于某天开电表发现，天老爷悄悄收了费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "机制到应对再到账单层层递进，过渡明确，结尾天老爷收费回扣开头电费惊吓，闭环完整。",
+      "script_spans": [
+        "那么，转型难道就是多建煤电备着？显然走偏了",
+        "我们不是放弃水电，而是用系统灵活性消化它的丰枯波动",
+        "才不至于某天开电表发现，天老爷悄悄收了费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "通篇设限清晰，如“别误以为年年暴涨”主动纠偏，个人判断有标注，无绝对承诺、煽动或误导销售，审核安全。",
+      "script_spans": [
+        "但别误以为年年暴涨，有些区域因新能源爆发电价反而下行",
+        "我的判断很直接：能源转型如果只盯着装机清洁化，却不管水文波动"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-146cdee3ccbd47ffa0d55d600af7e5d5",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c4c662ff10164582bb0b810ef8600376",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

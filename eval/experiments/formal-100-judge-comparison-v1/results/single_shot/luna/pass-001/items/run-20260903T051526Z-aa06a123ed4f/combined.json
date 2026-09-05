@@ -1,0 +1,163 @@
+{
+  "evaluation_id": "combined-497ca28b0ef346a6afba0cbecc4203a1",
+  "run_id": "run-20260903T051526Z-aa06a123ed4f",
+  "trace_sha256": "2a37b41808c06c2a2c762fa7b4b764bfeccd709c0fbb5fd72a9ba641471d7221",
+  "created_at": "2026-09-03T11:58:06.163666Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解粮价与餐桌账单的差异，覆盖原料、非粮食材和外食成本，也给出家庭应对办法。",
+      "script_spans": [
+        "从田间到餐桌整条链上的清洗、加工、运输和餐饮服务费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 314，目标为 280，偏差率为 12.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，成本链、消费权重和外食支出有推进；但“多方调研”“翻着跟头涨”时点模糊，论据增量不足。",
+      "script_spans": [
+        "在居民消费统计里粮食占比本就不高",
+        "餐馆账单里紧紧捆着房租、人工和品牌溢价",
+        "多方调研显示近年间家庭外出吃饭的支出早已翻着跟头涨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头反差明确，中段有成本链、权重和外食三层推进；但结尾直接给建议，缺少自然追问或余味。",
+      "script_spans": [
+        "粮价明明没动，家里吃饭开销却悄悄爬升？",
+        "想给餐桌开销消肿，最实在的办法就是回归厨房自己掌勺"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头有对话感，整体能读通，但长串抽象解释、统计句和重复表达拖慢节奏，难称顺口。",
+      "script_spans": [
+        "粮价明明没动，家里吃饭开销却悄悄爬升？",
+        "你付的账覆盖的从来不止原粮，而是从田间到餐桌整条链上的清洗、加工、运输和餐饮服务费",
+        "如今很多人频繁下馆子频次越来越高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“家庭账单买的是成品”把复杂成本链压成可复述观点，修辞点到为止，整体没有炫技或堆砌。",
+      "script_spans": [
+        "家庭账单买的是成品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，开头设问能引出解释和建议；但“品类抵消”的因果不清，且把消费统计权重直接等同于家庭账单变化，论证桥梁不足。",
+      "script_spans": [
+        "根本在于你付的账覆盖的从来不止原粮",
+        "想给餐桌开销消肿，最实在的办法就是回归厨房自己掌勺",
+        "常被鲜菜、肉禽和水产这些波动大的品类抵消，才是拉高日常菜篮子的主要推力"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，也给出节省开支建议；但“根本”“早已翻着跟头涨”等绝对化、泛化表述可能误导观众。",
+      "script_spans": [
+        "错峰采购更划算",
+        "根本在于你付的账覆盖的从来不止原粮",
+        "支出早已翻着跟头涨"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.75,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.25,
+    "weighted_average": 2.25,
+    "normalized_score": 0.75,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 314,
+        "target": 280,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.12142857142857143
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4b49ca3ebf8d4034b672d258ece90f5f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c07408a12f5845b4b0f888c4c3a256ac",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

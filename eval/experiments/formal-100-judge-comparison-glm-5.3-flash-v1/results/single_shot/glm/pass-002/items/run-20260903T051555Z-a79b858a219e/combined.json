@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-eafba088b03d4f7c8377d098622086b4",
+  "run_id": "run-20260903T051555Z-a79b858a219e",
+  "trace_sha256": "a981bb1bfb52e954674252f14a728d1e3f0ca6ad784fde217d7812a4cc5cf610",
+  "created_at": "2026-09-03T15:29:43.302279Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直答根因，结尾落到患者可操作动作，全程扣住重复花钱题设，痛点与人群契合。",
+      "script_spans": [
+        "我的判断很直接：互认卡壳，根子不在没发文，而在规则把认不认的最终按钮交给了接诊医生。",
+        "先把旧报告和原片递过去，问一句“这项在互认清单吗”"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "费用占比、历史沿革、真实案例与规则原文层层推进，无编造，观众能带走判断与行动方法。",
+      "script_spans": [
+        "检查化验费能占到看病总花费的三成上下，重复做就是实打实的浪费",
+        "平台互通了二百多个地级市，但调得出的片子未必抵一句“我看不太准”"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即用二十年空转与重复拍片的反差抓人，中段数据、案例与规则层层兑现钩子，结尾问一句较真由正文自然长出。",
+      "script_spans": [
+        "政策推了快二十年，你换家医院看同样的病，医生照样开单让你重新拍片抽血",
+        "有患者一周内转院又被要求做两次肺部CT",
+        "互认是患者的权利，不是一张免检证。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音落在拍片抽血、免检证等实处，对话感贯穿中段，照稿朗读几乎无需改词。",
+      "script_spans": [
+        "你换家医院看同样的病，医生照样开单让你重新拍片抽血",
+        "有的重检真为救命，有的纯属防御性开单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "按钮比喻与片子抵不过一句我看不太准形象贴切，结尾互认是权利不是免检证离开上下文仍可复述，克制不炫技。",
+      "script_spans": [
+        "规则把认不认的最终按钮交给了接诊医生",
+        "但调得出的片子未必抵一句“我看不太准”",
+        "有的重检真为救命，有的纯属防御性开单",
+        "互认是患者的权利，不是一张免检证。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "判断、例外、责任、对策环环相扣，因果桥清楚，结尾回扣开头设问，概念前后一致。",
+      "script_spans": [
+        "可当医生扛着医疗责任，面对外院数据，宁可重检也不愿冒风险",
+        "互认是患者的权利，不是一张免检证"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键数据留有余地，既承认例外合理又区分重检性质，结尾还限定互认非免检证，无煽动夸大与不当承诺。",
+      "script_spans": [
+        "有的重检真为救命，有的纯属防御性开单",
+        "医生说病情变了或机器不一样，咱配合重做",
+        "互认是患者的权利，不是一张免检证。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2e304434f9bd4a488e48eb100f44fe95",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

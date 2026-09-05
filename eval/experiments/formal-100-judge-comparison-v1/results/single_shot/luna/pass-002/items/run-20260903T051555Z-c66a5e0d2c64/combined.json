@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-1b4f9c1a95a74c73bab04ae703064103",
+  "run_id": "run-20260903T051555Z-c66a5e0d2c64",
+  "trace_sha256": "bdbe2815957dd7648047417216de2fe3e36318b5d6e6a3db2c7dc880b4d5d62c",
+  "created_at": "2026-09-03T12:32:34.632544Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从全球算力竞赛切入，正面解释电力与土地为何成门槛，并覆盖普通人的影响，题设回应完整。",
+      "script_spans": [
+        "电和地，从后台成本项，升级为决定项目生死的审批筹码。",
+        "你所在的城镇可能突然竖起巨型机房，推高本地电费或挤占农田；"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，排队年限、接入合规、土地冲突和民生后果层层增加信息，观众能形成具体判断。",
+      "script_spans": [
+        "美国数据中心想接公共电网，平均要排五年队，加州甚至超过九年，积压项目相当于现有装机两倍。",
+        "国内一线城市叠加能耗双控与PUE合规，变电站接入周期比机房本身建设还长。",
+        "社区强烈反对工业设施侵占居住和农业用地，多个州冒出建设暂停令。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇直接抛出延期与接电冲突，中段持续补充机制和影响，结尾自然收束并留下判断。",
+      "script_spans": [
+        "各国还在拼命建数据中心，可美国四成项目已经延期，中国一线城市也为接电指标发愁。",
+        "普通人会被怎样波及？你所在的城镇可能突然竖起巨型机房，推高本地电费或挤占农田；",
+        "下一座数据中心落在哪，不看谁显卡多，而看哪里的电网与土地规划先松口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "收尾对仗利落，前后也有清晰停顿；但两处中段长句术语密集，朗读需重断句。",
+      "script_spans": [
+        "算力没有国界，但电站和地块有。",
+        "过去十年讨论的是供应链节奏，如今物理世界的容量约束才是真正的瓶颈。",
+        "国内一线城市叠加能耗双控与PUE合规，变电站接入周期比机房本身建设还长。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照都服务于观点，尤其结尾短促有力，形成了观众容易复述的核心记忆点。",
+      "script_spans": [
+        "明面上的筹码是算力，暗地里的筹码早就是电力容量与土地权限。",
+        "电和地，从后台成本项，升级为决定项目生死的审批筹码。",
+        "算力没有国界，但电站和地块有。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头提出判断，中段解释电网与土地门槛，结尾回扣自然；但资源集中直接推到厂商出局，因果桥仍不足。",
+      "script_spans": [
+        "先给判断：数据中心扩张的胜负手，已经从能否买得到先进芯片，变成了能否通得上电、拿得到合规地块。",
+        "为什么电和地成了硬门槛？根本机制在于电网扩容速度远远跟不上算力爆发。",
+        "算力没有国界，但电站和地块有。",
+        "当核心资源向少数枢纽节点集中，中小厂商出局，未来云服务与AI能力的区域落差只会更明显。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无煽动或危险建议，且用“可能”限定影响；但“只会更明显”等绝对预测，以及若干精确数据和因果判断缺少边界，易造成误导。",
+      "script_spans": [
+        "可能突然竖起巨型机房",
+        "美国四成项目已经延期",
+        "未来云服务与AI能力的区域落差只会更明显"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-38729fd26ae94d0a8d1828a1248bd958",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

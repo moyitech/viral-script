@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-a214c2441ac44ed2b0ed3973a6cf4c84",
+  "run_id": "run-20260903T051545Z-824fb54e1f76",
+  "trace_sha256": "5343bf6f9994882a35eae844a8f596a5d1ca7c202a342c8826f3b37523faa820",
+  "created_at": "2026-09-03T11:57:24.277095Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "既交代跨境理财升温背景，又正面回答汇率会否吞噬收益，锁定普通人并给出计算路径。",
+      "script_spans": [
+        "跨境理财这两年持续升温",
+        "普通人别盲目乐观",
+        "自己按购汇价和可能结汇价算遍到手人民币"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 256，目标为 280，偏差率为 8.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "点差成本、人民币升值造成的汇兑损失、跟风风险和到手收益算法层层推进，信息集中且有可执行判断方法。",
+      "script_spans": [
+        "真实回报第一道坎就是银行换汇买卖点差，不是中间价",
+        "升值周期里汇兑损益直接抵消利息",
+        "自己按购汇价和可能结汇价算遍到手人民币"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段连续拆出点差、升值和结汇风险，结尾有“给银行点差打工”的余味；但前20字仍停在铺垫，钩子稍慢。",
+      "script_spans": [
+        "汇率波动极可能把你辛苦赚的外币收益原封不动吞回去",
+        "给银行点差打工",
+        "跨境理财这两年持续升温，但说句掏心窝的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "观点和提醒都清楚，也有直接对话感；但金融术语、长串并列和“决策链”表达让朗读不够利落。",
+      "script_spans": [
+        "别光看宣传的外币收益率",
+        "真实回报第一道坎就是银行换汇买卖点差，不是中间价",
+        "真实回报决策链得自己理"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“给银行点差打工”短而有画面，“原封不动吞回去”强化损失感，修辞服务判断，未见堆砌。",
+      "script_spans": [
+        "给银行点差打工",
+        "汇率波动极可能把你辛苦赚的外币收益原封不动吞回去"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，点差、汇兑损益到计算建议顺序自然；但“渠道增多”直接跳到“跟风”，且未交代升值与一般波动的范围。",
+      "script_spans": [
+        "更关键的是近期人民币明显走强",
+        "自己按购汇价和可能结汇价算遍到手人民币",
+        "现在个人跨境配置渠道比过去多，容易冲动跟风。",
+        "汇率波动极可能把你辛苦赚的外币收益原封不动吞回去"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提醒核算汇兑成本，未作收益承诺，方向较稳；但“原封不动吞回去”“直接抵消”过度绝对，易造成误导。",
+      "script_spans": [
+        "自己按购汇价和可能结汇价算遍到手人民币",
+        "汇率波动极可能把你辛苦赚的外币收益原封不动吞回去",
+        "升值周期里汇兑损益直接抵消利息"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-7777f3b8260e44e1a0fa8cacb2ec31af",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9cf2215de4c4475dad461da5f8e4235d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

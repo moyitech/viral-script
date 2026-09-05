@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-1af332ddaf9449488209f42fff868b1f",
+  "run_id": "run-20260902T143714Z-d8c891b7b846",
+  "trace_sha256": "81a6fc0aa01d018f2bba3452f7875c32ce4936d43d45ded9bbd44c10b4b95dbb",
+  "created_at": "2026-09-03T12:15:27.622026Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应退役光伏板是否造成新污染，覆盖污染风险、回收规范和普通人的处置行动。",
+      "script_spans": [
+        "绿电末端会不会留新污染？得看板子怎么退场",
+        "你见旧板别混建筑垃圾，直接送正规回收点处理才稳妥"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，既解释乱弃的污染路径，也交代标准要求、材料回收、退役量压力和处置建议，信息推进充分。",
+      "script_spans": [
+        "这标准盯紧拆卸、收集、运输、贮存，要求厂房防渗漏，培训人员操作",
+        "不让碎玻璃金属乱跑，还能把有用东西回炉"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以污染与回收制造反差，中段持续补充风险和标准，结尾自然落到处置行动。",
+      "script_spans": [
+        "旧光伏板扔错地方，可能污染水土，但规矩回收能救回材料。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能听懂，问题集中在中段：并列术语和生硬搭配削弱自然口播感。",
+      "script_spans": [
+        "规矩回收能救回材料",
+        "正规拆运拦下大部分污染",
+        "这标准盯紧拆卸、收集、运输、贮存"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“板子怎么退场”和“干净电藏脏土”形象易懂，修辞适量，也强化了末端治理主题。",
+      "script_spans": [
+        "得看板子怎么退场",
+        "不然干净电藏脏土"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、规范拆运、风险说明和行动建议基本递进；但“正规拆运拦下大部分污染”因果桥偏弱，个别表述也不够顺口。",
+      "script_spans": [
+        "所以光伏叫绿色，也得有人善后，从生产到埋单都得管",
+        "今年刚实施回收标准，正规拆运拦下大部分污染；可乱弃野地容易出事",
+        "鱼和庄稼喝水糟了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "倡导正规回收、反对焚烧，方向安全；但“鱼和庄稼喝水糟了”等因果表述过满，易制造环境恐慌。",
+      "script_spans": [
+        "你见旧板别混建筑垃圾，直接送正规回收点处理才稳妥，别省事烧掉。",
+        "板子里面那些金属遇雨渗土里，附近水源被沾污，鱼和庄稼喝水糟了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-db56696edd404af1bd3d29a16fed3e2f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

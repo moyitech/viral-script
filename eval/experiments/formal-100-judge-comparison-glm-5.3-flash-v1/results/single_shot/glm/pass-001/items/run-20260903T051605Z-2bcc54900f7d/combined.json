@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-441c876de09e421f8d15f027aff5ca7a",
+  "run_id": "run-20260903T051605Z-2bcc54900f7d",
+  "trace_sha256": "072939acb4acc2afbd8de95c0900225ef57cb96e526f88234637c20b7a49d8e0",
+  "created_at": "2026-09-03T14:12:30.520496Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头痛点与结尾建议都对准换院患者，正面回答为何重复花钱，机制与对策两侧覆盖完整。",
+      "script_spans": [
+        "明明互认写进了指导意见，推得慢，你换医院还得掏钱重查",
+        "把近期影像和化验报告打印好递给医生，先问一句这次能否互认"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 253，目标为 280，偏差率为 9.64%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机制、例外、占比、对策层层推进，三成开销与例外清单有据可查，无编造，信息增量扎实。",
+      "script_spans": [
+        "文件从正常生理代谢、病情发展到设备参数差异，都允许重新检查",
+        "这类检查费往往占看病开销三成上下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句直陈政策已立却仍自费重查的反差，中段以机制、例外与三成占比持续兑现，结尾建议自然收束留有分寸。",
+      "script_spans": [
+        "明明互认写进了指导意见，推得慢，你换医院还得掏钱重查",
+        "这类检查费往往占看病开销三成上下",
+        "跨院就诊前，把近期影像和化验报告打印好递给医生，先问一句这次能否互认"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "建议部分顺口自然；但'且例外情形宽泛'与'都允许重新检查'一句需换词重断，中段书面讲解腔偏重。",
+      "script_spans": [
+        "跨院就诊前，把近期影像和化验报告打印好递给医生，先问一句这次能否互认",
+        "文件从正常生理代谢、病情发展到设备参数差异，都允许重新检查",
+        "且例外情形宽泛"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "表达克制不堆砌，'主动权留给医生'与'省的是钱但底线不能破'均可脱离上下文复述，无炫技。",
+      "script_spans": [
+        "把认不认的主动权留给了医生",
+        "互认省的是钱，但医疗安全底线不能破"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "论点到例外到医生行为逐段递进，因果有桥，结尾回扣开头掏钱重查的痛点与题设。",
+      "script_spans": [
+        "各医院检验质量与设备精度未必对齐，这种机制下接诊医生面对外院报告难免保守",
+        "互认省的是钱，但医疗安全底线不能破，带齐资料主动沟通才是当下最实的办法"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有'医疗安全底线不能破'等边界，不承诺省钱；但'根本是'把成因单一归为医师裁量，'随时能'略夸大，宜加限定再稳妥。",
+      "script_spans": [
+        "互认省的是钱，但医疗安全底线不能破",
+        "省不省得到看具体病情",
+        "根本是政策以接诊医师判断为标准，把认不认的主动权留给了医生",
+        "接诊医生随时能合理要求患者重做"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8a9ad48e84ea43c3be136208766da1eb",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d7c723912ade4adfb382d8b1c5486a0a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

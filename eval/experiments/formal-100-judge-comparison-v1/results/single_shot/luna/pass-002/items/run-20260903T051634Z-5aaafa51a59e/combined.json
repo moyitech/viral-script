@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-c12f79f4ea3444a7a36a0f87befb17a1",
+  "run_id": "run-20260903T051634Z-5aaafa51a59e",
+  "trace_sha256": "d4ede3cb9d78f03a0063278df5df503358d8ecabdf441221ec9e80d3e380860e",
+  "created_at": "2026-09-03T12:32:29.532209Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答电力与土地为何成为筹码，覆盖合规、接电、时延和社区等关键矛盾，并落到算力竞争。",
+      "script_spans": [
+        "电力容量与核心区土地，已经接棒硬件成为算力竞赛的新筹码"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线始终围绕电力、土地展开，分别推进合规时序、低时延、社区阻力与玩家分化，信息单元有效。",
+      "script_spans": [
+        "电的交付速度，直接决定算力上线速度。",
+        "土地不再是便宜载体，它是审批博弈标的物，也绑着时延命脉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用显卡荒反转，中段以电、地、玩家连续推进，结尾判断自然收束并留下讨论点。",
+      "script_spans": [
+        "去年还在聊显卡荒，今年画风骤变。",
+        "当电和地双双卡住，行业留下的玩家会是谁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有短句、提问和明确转折，但中段多处长串信息与硬术语叠加，朗读需重断句。",
+      "script_spans": [
+        "大家以为建数据中心就是堆服务器、抢显卡。去年还在聊显卡荒，今年画风骤变。",
+        "在像北京、上海、广州这样的一线市场，楼房一年多能封顶，可要拿到合规用电指标，过能耗双控、绿电比例几道关，周期常被拉到建楼数倍。",
+        "居民一反对工业机房占农田推高电费，地方就下了建设暂停令"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻集中在关键转折，“订单簿转向变电站与审批桌”和结尾边界意象都能独立复述。",
+      "script_spans": [
+        "约束从订单簿转向变电站与审批桌。",
+        "算力的疆域，终会刻在变电站和农田的边界上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出瓶颈，中段按电力、土地、行业分化递进，结尾回扣国家AI竞争，转折和因果链条完整。",
+      "script_spans": [
+        "电的交付速度，直接决定算力上线速度。",
+        "当电和地双双卡住，行业留下的玩家会是谁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，且提到环保与分区约束；但“真正瓶颈既不是芯片也不是钱”等判断过于绝对，部分因果归因也需加限定。",
+      "script_spans": [
+        "这法子并非万能钥匙",
+        "真正的瓶颈既不是芯片也不是钱",
+        "居民一反对工业机房占农田推高电费，地方就下了建设暂停令"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-92f600e3d197462eaa64967b72a9dffc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

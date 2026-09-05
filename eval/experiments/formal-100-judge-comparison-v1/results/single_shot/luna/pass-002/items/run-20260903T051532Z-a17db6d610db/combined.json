@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-a01c6e8b6f6e49c9a2646847fdc759f3",
+  "run_id": "run-20260903T051532Z-a17db6d610db",
+  "trace_sha256": "27abfac82bd06442f65874c5a7eb364d397f7360b4bb96d9dd66374af7030302",
+  "created_at": "2026-09-03T12:31:23.224013Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应课间被作业挤占与安静管理，兼顾安全、学生需求及家长行动，切角明确。",
+      "script_spans": [
+        "用安静和习题填满课间，不是保护，是剥夺孩子调节的机会。",
+        "学校怕磕碰可以理解，但正确取舍是科学值守排查隐患，不是一刀切禁足。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策依据、身心机制、管理替代方案和家长行动层层补充，信息具体且有效推进判断。",
+      "script_spans": [
+        "规定里还要求每节课间安排学生走出教室适量活动，每天另配三十分钟大课间体育",
+        "课间是调节情绪、放松身心、增强体质和防控近视的必要窗口。",
+        "正确取舍是科学值守排查隐患，不是一刀切禁足。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用课间反差和安全追问抓人，中段层层补充规则与健康影响，结尾收出明确余味。",
+      "script_spans": [
+        "课间十分钟，本该是走廊里追着笑、接水聊天的空档，现在不少学校却要求全员安静坐着",
+        "别让以安全为名的安静，悄悄置换掉他们长身体、练心思的呼吸口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头设问和判断句有对话感，但中段书面表达、并列抽象词较多，几处需要重断句。",
+      "script_spans": [
+        "这种管法真能帮学生提分又安全吗？",
+        "调节情绪、放松身心、增强体质和防控近视的必要窗口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“成长不是静坐耐力赛”形成自然记忆点，反差与比喻适量，既强化观点也没有压过信息表达。",
+      "script_spans": [
+        "用安静和习题填满课间，不是保护，是剥夺孩子调节的机会。",
+        "成长不是静坐耐力赛，而是动静有常的节律。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先抛出冲突并下判断，再以规则、身心影响和替代方案展开，最后落到家长行动，回扣自然。",
+      "script_spans": [
+        "这种管法真能帮学生提分又安全吗？我的判断很直接",
+        "那为什么不能省掉这点动静？",
+        "对普通家长来说，得留心孩子在校是不是被“圈”住了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动且兼顾安全，但“严查”“本身就踩线”把政策要求说得过满，健康因果也缺少边界。",
+      "script_spans": [
+        "学校怕磕碰可以理解",
+        "最近也公开表态要严查课间不准学生出教室的行为",
+        "把十分钟变成默写或小声不许动，本身就踩线"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9c1cbe6a98b34475b39e989d5cd2c1f7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

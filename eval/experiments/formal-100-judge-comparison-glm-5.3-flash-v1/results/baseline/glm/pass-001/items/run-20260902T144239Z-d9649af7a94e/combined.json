@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-8b1f2666a74e4b908d3504e55934895b",
+  "run_id": "run-20260902T144239Z-d9649af7a94e",
+  "trace_sha256": "6479025087bdddfc26df5209ee00fc624e87abf317605c049ce51740d19ce63b",
+  "created_at": "2026-09-03T13:47:49.551007Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即摆出快与吵两侧，结尾以收药还是午休直接作答，二元冲突两侧与城市居民痛点均被覆盖。",
+      "script_spans": [
+        "快递省下二十分钟，你却可能被头顶嗡嗡声吵得睡不着",
+        "快和静不能全拿，看你是收药还是午休"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 636，目标为 700，偏差率为 9.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中、事实有背景支撑，但中段连珠断言偏多，省爬楼钱、电池续航等论点一笔带过，缺少解释推进。",
+      "script_spans": [
+        "楼顶天天有起降，声反射把烦人感放大",
+        "急用药走空运，能抢出救命时间。传统跑腿人力贵，无人机省了爬楼钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛省时与被吵的反差，中段以“为啥能快、吵不吵、怎么选”层层推进，结尾提问由快静权衡自然长出，留有余味。",
+      "script_spans": [
+        "快递省下二十分钟，你却可能被头顶嗡嗡声吵得睡不着。",
+        "那吵不吵？",
+        "当包裹从天而降，我们愿用多少安静换那十分钟？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口清楚，钩子和提问像人话；但中段对仗金句连排节奏单一，“地上流”“细标”等压缩词需临时改口。",
+      "script_spans": [
+        "你想午休，窗外却像有蜜蜂排队过。",
+        "急用药走空运，能抢出救命时间。传统跑腿人力贵，无人机省了爬楼钱。但电池撑不了百里，远城还得靠车轮。",
+        "包裹小件合适，大件仍走地上流。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“安静税”“效率账算得清、安静账难标价”比喻贴切、离开上下文仍可复述，修辞服务理解，密度略高但未喧宾夺主。",
+      "script_spans": [
+        "效率账算得清，安静账难标价。",
+        "城市低头接货，抬头得付安静税。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "设问过渡清晰、结尾回扣开头，但西门子测试到公众不适间因果省略，个别并置句需观众自行补齐逻辑。",
+      "script_spans": [
+        "当包裹从天而降，我们愿用多少安静换那十分钟",
+        "西门子做降噪测试，电机尖鸣还是让公众不舒服。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反两面讲提速与噪声代价，明确报批监管边界，无夸大承诺、误导或煽动，价值导向安全。",
+      "script_spans": [
+        "空域放开不是野生飞，航线要报批备案",
+        "快和静不能全拿，看你是收药还是午休"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-48cd27d4e82448fbaa3be9b45c73ee72",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1f1254700143457e82ecac92b51773ce",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

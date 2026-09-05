@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-d278329d48994f07b755b59c75c0751a",
+  "run_id": "run-20260902T143312Z-cbc0c053ec52",
+  "trace_sha256": "db3e8aea77fa90cf6b312d4b92587a620c161315dc6088d13cf4171ac5555e15",
+  "created_at": "2026-09-03T12:15:44.502735Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直击决定权，覆盖父母与老人之争，并区分小事协商和大事拍板，完整回应题设。",
+      "script_spans": [
+        "孩子日常教育的这个决定权到底在谁手上？",
+        "平时穿衣吃饭这些小事可商量，但报班选校这类大事得由爹妈拍板。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕法定责任、委托照料、监护权边界和家庭协商展开，信息单元彼此推进，也给出具体建议。",
+      "script_spans": [
+        "父母或者其他监护人是家庭教育责任主体",
+        "老人受委托照料孩子，只是搭个手帮个忙，并没有自动接过日常教育的决定权",
+        "下次老人想改作业习惯，先问爸妈一句好"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“带娃却说了不算”制造冲突，中段给出法理并落到大小事项，结尾回到可执行的沟通建议。",
+      "script_spans": [
+        "爷爷奶奶带娃却说了不算",
+        "报班选校这类大事得由爹妈拍板",
+        "先问爸妈一句好，比闷头硬教更顺心"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "例子清楚、结论明确，也有“爹妈拍板”等口语表达；但法律术语密集，长句和个别搭配影响自然朗读。",
+      "script_spans": [
+        "平时穿衣吃饭这些小事可商量，但报班选校这类大事得由爹妈拍板。",
+        "孩子日常教育的这个决定权到底在谁手上？",
+        "下次老人想改作业习惯，先问爸妈一句好"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“搭手帮忙不等于能替娃定方向”把照料和决定权分开，具体、顺口且容易脱离上下文复述。",
+      "script_spans": [
+        "搭手帮忙不等于能替娃定方向"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先抛出答案，再解释责任主体与委托照料的区别，随后落到冲突分级和应对建议，结尾回扣自然。",
+      "script_spans": [
+        "答案其实很直接：法定在父母，不在带人多的老人手里。",
+        "所以两边观念杠上的时候，平时穿衣吃饭这些小事可商量，但报班选校这类大事得由爹妈拍板。",
+        "下次老人想改作业习惯，先问爸妈一句好，比闷头硬教更顺心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "明确父母是责任主体且不煽动；但把责任主体扩大成日常教育的排他决定权，称父母纠正有法定边界，表述过满。",
+      "script_spans": [
+        "家庭教育促进法写明白，父母或者其他监护人是家庭教育责任主体",
+        "父母有权纠正，这是法定边界"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-279a02f5afe94a9d8e61dcee0557cf61",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

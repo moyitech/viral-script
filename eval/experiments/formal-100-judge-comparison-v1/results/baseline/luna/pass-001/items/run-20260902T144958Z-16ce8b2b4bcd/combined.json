@@ -1,0 +1,166 @@
+{
+  "evaluation_id": "combined-8da811425d554ed3804d1dd51e529d3a",
+  "run_id": "run-20260902T144958Z-16ce8b2b4bcd",
+  "trace_sha256": "996670ce87547fd34429cd6ceddd3d29322d1ce26e828cb189ebe09e3bb00ca1",
+  "created_at": "2026-09-03T11:45:24.154670Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直指宠物友好与怕动物者的冲突，既覆盖双方权益，也给出分流与安全措施，回应完整。",
+      "script_spans": [
+        "宠物友好商场越开越多，怕狗的人却不敢进门。",
+        "商场想做动物友好，也该给怕动物的人留份安全感，两边都不能丢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 1,
+      "reason": "实际非空白字符数为 442，目标为 700，偏差率为 36.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕公共空间的双向包容，结合消费动机、法律边界、养犬约束和分流设计，信息推进充分。",
+      "script_spans": [
+        "盲人导盲犬依法能进公共区，因残疾歧视条例。",
+        "带狗逛东侧，怕狗走西侧，设计分流比撤牌省心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用怕狗者不敢进门制造反差，中段持续补充冲突与方案，结尾提问也自然承接主题。",
+      "script_spans": [
+        "宠物友好商场越开越多，怕狗的人却不敢进门。",
+        "下次你看见宠物友好标，会问一句：怕动物的人去哪？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、反问和分流建议有口播感，但法律与研究段落多处断裂，需重断句或换词。",
+      "script_spans": [
+        "通道不是歧视，是选择权。",
+        "下次你看见宠物友好标，会问一句：怕动物的人去哪？",
+        "因残疾歧视条例。",
+        "恐惧真反应，个别人躲宠物少数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“通道不是歧视，是选择权”简洁可复述，“像建坡道”也帮助理解分流，没有堆砌辞藻。",
+      "script_spans": [
+        "通道不是歧视，是选择权。",
+        "商场该像建坡道，把安静通道做标配。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，但法律段承接生硬，研究段语义含混，部分因果被直接跳过，结论前的论证收束不够稳。",
+      "script_spans": [
+        "敏感者走无宠通道，狗主牵绳戴嘴套。",
+        "宠物客黏性高；投诉多就得收紧。",
+        "盲人导盲犬依法能进公共区，因残疾歧视条例。",
+        "恐惧真反应，个别人躲宠物少数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "兼顾养宠者与怕动物者，立场克制；但导盲犬准入和治安处罚均未限定地区、时间及适用条件，易造成法律误解。",
+      "script_spans": [
+        "一边消费，一边安心权，牺牲一方更对立。",
+        "盲人导盲犬依法能进公共区",
+        "新治安法要求拴绳，违者可能罚千元以下，重了拘留。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.7916666666666666,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.375,
+    "weighted_average": 2.375,
+    "normalized_score": 0.7916666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 442,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.36857142857142855
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-33654ee695984b5cb8b3c4d7bc780955",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-0b2a3e6964764c28a919523cb1fdb6ed",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

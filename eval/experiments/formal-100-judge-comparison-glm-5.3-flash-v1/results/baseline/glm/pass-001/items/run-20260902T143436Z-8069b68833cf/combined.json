@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-e96b777a625a42f7916ad5efc6f58270",
+  "run_id": "run-20260902T143436Z-8069b68833cf",
+  "trace_sha256": "4a99b527d6e6b2e6dd3aede5af947dd13db6007bdd568f82ac611846ff7b1e94",
+  "created_at": "2026-09-03T13:47:26.505172Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答“加剧但非唯一元凶”，正反两侧与怕热市民痛点均覆盖，切角具体。",
+      "script_spans": [
+        "摩天楼确实加剧热岛，但低矮楼群也跑不掉",
+        "往后怪楼高时，先想想怎么让风穿堂过"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 446，目标为 450，偏差率为 0.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "蓄热、排热、拦风、辐射与数据局限层层推进，信息密实，仅蓄放热微有重复。",
+      "script_spans": [
+        "高楼密密挤成一排，混凝土和玻璃白天吃进太阳光",
+        "可不少测量盯着白天，夜里真实数据还薄",
+        "白天攒下的热，到半夜才放完"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即反转设悬，中段用主犯之问与测量短板层层推进，结尾给风留路由正文长出余味。",
+      "script_spans": [
+        "都说摩天楼烤热了夜，其实它只是帮凶。",
+        "你以为后半夜会凉？其实楼板像大电池，储的能量慢慢往外吐。",
+        "往后怪楼高时，先想想怎么让风穿堂过。楼可以高，但得给风留路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主，气口干净，重音停顿清楚，通篇朗读无需临时换词或重断句。",
+      "script_spans": [
+        "你以为后半夜会凉？其实楼板像大电池，储的能量慢慢往外吐。",
+        "空调外机整夜呼呼排热，热风扑在街角。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "电池、盖被、闷罐等比喻贴切服务理解，无堆砌炫技；楼可以高但得给风留路可独立复述。",
+      "script_spans": [
+        "其实楼板像大电池，储的能量慢慢往外吐",
+        "地面辐射散热像盖了被，热憋在街巷",
+        "楼可以高，但得给风留路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清晰、结尾回扣自然，但“咋不算主犯”后先列加剧机理再转折，因果桥偏松。",
+      "script_spans": [
+        "往后怪楼高时，先想想怎么让风穿堂过。楼可以高，但得给风留路。",
+        "那咋不算主犯？高楼挡住头顶天空，地面辐射散热像盖了被，热憋在街巷。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "归因克制并留余地，如'更容易''部分热包袱'均有限定；还自承'夜里真实数据还薄'，无煽动、夸大或误导承诺。",
+      "script_spans": [
+        "老人小孩夜里更容易不舒服",
+        "能卸掉部分热包袱",
+        "夜里真实数据还薄"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-cd97a57ddcb643f9afd572ffd01189e1",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6a21e6760c5b4b1695e0314037378d4f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

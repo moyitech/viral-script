@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-29ca74cf5f8545f4a1c7524e5e8df42e",
+  "run_id": "run-20260902T142921Z-7bb0a7bf18d3",
+  "trace_sha256": "abecbfead23df37369368db2f8fa22672e0d00527e9617a33b8cdc38a6c0c119",
+  "created_at": "2026-09-03T12:16:07.247220Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答增收与交学费的两面，覆盖广告机构、年轻人和避坑需求，切入具体。",
+      "script_spans": [
+        "真增收还是交学费？",
+        "不少年轻人在交学费，少数肯实操的才真增收。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从广告套路、机构盈利、投诉数据到识别方法层层推进，信息具体，能带走可执行的判断标准。",
+      "script_spans": [
+        "卖课的人主要靠课费赚钱，接单与否他未必上心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前句直问“增收还是交学费”，中段从套路推进到风险，结尾“剩啥”把余味和判断收住。",
+      "script_spans": [
+        "你刷到副业课说下班挣外快，真增收还是交学费？",
+        "广告越猛，越算账：学费交了，时间没了，剩啥？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和反问有重音，但中段两处信息链过密，朗读时需要明显拆句。",
+      "script_spans": [
+        "你学不会，他换下一批。",
+        "可机构绕开审核，借AI短视频带货新概念，把先学后付变贷款。",
+        "数字技能培训借AI短视频带货虚假宣传，以先学后付分期缴费实质贷款诱导报名。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“你学不会，他换下一批”短促有力，准确点出逐利套路；结尾比喻自然，便于观众复述。",
+      "script_spans": [
+        "你学不会，他换下一批。",
+        "时间比学费贵，你细品。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问并给出判断，中段解释套路与风险，后段用报告和建议收束，因果与结论衔接自然。",
+      "script_spans": [
+        "为啥广告满天飞却难回本？",
+        "普通人咋避坑？先问课教真本事还是贩卖焦虑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提醒核验交付、警惕分期和虚假宣传，方向安全；但“少数”“退费无门”等概括和归因偏绝对，易造成误导。",
+      "script_spans": [
+        "真想增收，先用免费教程练半月，别信晒单截图",
+        "少数肯实操的才真增收",
+        "课程缩水，退费无门"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-26e4306b347f40f48b42a940ddb36de8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

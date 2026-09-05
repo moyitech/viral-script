@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-2b52e095d83849ffa421de5d61f29f12",
+  "run_id": "run-20260902T142023Z-6e281122c667",
+  "trace_sha256": "8784df7d0bf633f1e2b1152ab91486c4edec4faf74bbf04a81853d1736da7f20",
+  "created_at": "2026-09-03T12:15:16.615260Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“免费搬走”的争议，解释入口变化，并覆盖普通用户与小站长的具体影响。",
+      "script_spans": [
+        "我的判断是：内容确实被拿去喂了摘要，但原站没完全消失，只是活法变了。",
+        "对普通人的影响很直接。咱平时搜东西也少了点进网页的耐心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据、机制和现实影响层层推进，九成与百分之十五形成有效对照，观众能带走判断依据。",
+      "script_spans": [
+        "有的出版商点击率掉了近九成。但一项针对维基百科的跟踪发现，曝光页面流量大约少了百分之十五。",
+        "AI答案框压在搜索结果上面，用户扫一眼往往就直接走了，不点原站。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以流量骤降制造冲突，中段补事实与机制，结尾追问自然承接，具备完整推进感。",
+      "script_spans": [
+        "网站内容被生成式搜索免费改写，原站访客却掉了快九成",
+        "AI答案框压在搜索结果上面，用户扫一眼往往就直接走了，不点原站。",
+        "你愿意只当免费素材，还是留个名？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感、节奏也快，但“推开的”“点开发源地”等词组卡嘴，顺口度被明显拉低。",
+      "script_spans": [
+        "用户扫一眼往往就直接走了，不点原站。",
+        "谷歌从24年推开的AI概览会把多个网页揉成一句话答案。",
+        "下次看见AI答案，不妨点开发源地看看。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻把抽象的流量截流讲具体，“免费素材，还是留个名”收束有记忆点且不显刻意。",
+      "script_spans": [
+        "就像超市把商品拆开摆货架，包装不见了。",
+        "你愿意只当免费素材，还是留个名？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "按事实、机制、影响、结论递进，前后回扣题目自然，核心判断也没有明显跳跃。",
+      "script_spans": [
+        "先看事实。谷歌从24年推开的AI概览会把多个网页揉成一句话答案。",
+        "所以不是简单搬走，而是把访问路径重画了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "数据区分了不同站点的影响，整体不煽动；但把流量变化、用户行为与裁员结论连接得过满，需补充限定。",
+      "script_spans": [
+        "但一项针对维基百科的跟踪发现，曝光页面流量大约少了百分之十五。",
+        "大媒体裁了人，小站长更没议价力。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9029e4195eb041a2be9625786f465f87",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

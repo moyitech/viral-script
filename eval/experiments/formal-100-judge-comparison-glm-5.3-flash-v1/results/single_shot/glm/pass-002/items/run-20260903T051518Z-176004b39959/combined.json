@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-b11e128e08464fd2ad0e614554257d72",
+  "run_id": "run-20260903T051518Z-176004b39959",
+  "trace_sha256": "fcb107656a0d00f7ed18d771b57f4e968d515b8f4b4d5c4e633cceb1d0e38330",
+  "created_at": "2026-09-03T15:27:07.337171Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即摆出题设两侧冲突，结论正面回答是否削弱，并落到家长与教师，人群命中。",
+      "script_spans": [
+        "一方面老师改一篇作文得花十几分钟，全班堆起来几天都改不完",
+        "效率飞升，真实的反馈到底被吃掉了没有？我的判断是，效率提升本身不背削弱真实反馈的锅"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "调研、实验、机器局限三组信息层层推进，末尾给出可操作判断方法，增量具体。",
+      "script_spans": [
+        "实验跟踪发现，学生根据智能反馈修改时，多是增删词句这类低阶动作，少有重构论证的高阶改动",
+        "机器擅长标出病句，却很难说出“你这个论点凭什么成立”"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即摆出师生慢改与AI秒批的反差，追问“反馈被吃掉了没有”立住悬念；中段调研与实验持续兑现，结尾提问由正文自然长出。",
+      "script_spans": [
+        "老师改一篇作文得花十几分钟，全班堆起来几天都改不完",
+        "效率飞升，真实的反馈到底被吃掉了没有？",
+        "机器擅长标出病句，却很难说出“你这个论点凭什么成立”",
+        "工具快不是原罪，把判断权交给快捷键才是。下次见AI评语，先琢磨：这说的是“我”吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句停顿清楚，“背锅”“拽出来”很上口；但“高阶改动”一句与“若”字两处需改口，只能2分。",
+      "script_spans": [
+        "机器先扫错别字和格式，老师再抓重点",
+        "效率提升本身不背削弱真实反馈的锅",
+        "多是增删词句这类低阶动作，少有重构论证的高阶改动",
+        "若老师用省下的时间开一场写作小会"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“背锅”“拽出来”等表达服务理解，“把判断权交给快捷键才是”与“纠错变成对话”可脱离上下文复述，全程无堆砌炫技。",
+      "script_spans": [
+        "反而把人从重复劳动里拽出来",
+        "反馈就从纠错变成对话",
+        "工具快不是原罪，把判断权交给快捷键才是"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "各段功能清楚，'省下时间开写作小会'因果桥完整，结尾回扣开头之问，无断链。",
+      "script_spans": [
+        "若老师用省下的时间开一场写作小会，反馈就从纠错变成对话",
+        "工具快不是原罪，把判断权交给快捷键才是"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键数据留有余地，对AI不绝对化褒贬，建议具体且无夸大承诺，立场平衡公允，审核安全。",
+      "script_spans": [
+        "常态化用AI辅助的老师只有约两成",
+        "机器擅长标出病句，却很难说出“你这个论点凭什么成立”"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-df8fb918265448acb128e9ce96c3b17b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

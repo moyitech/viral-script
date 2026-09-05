@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-fa35a0b3b8b6432bb47411a6d71bf786",
+  "run_id": "run-20260902T143958Z-8b87fb3b6e38",
+  "trace_sha256": "acccfd24be3aceee1ce03cb0f0dea4555d95eef792275e14a341bb3baf863356",
+  "created_at": "2026-09-03T13:48:10.466156Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即拆真行动与数字游戏两侧，结尾给出够额外吗的判断口，账单视角命中普通观众。",
+      "script_spans": [
+        "它既是企业补漏减排的真拼图，也藏着数字冲账的空隙",
+        "买碳不是错，乱买才是坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 472，目标为 450，偏差率为 4.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "配额、额外性、账单传导层层推进并给出判断方法；账单段尾句与前句近义略冗。",
+      "script_spans": [
+        "一个减排项目没这笔钱就干不成，减的碳才叫额外",
+        "国家把发电、钢铁、水泥、铝冶炼这些排量大户拉进强制碳市场"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句点出“多花的钱只是账本游戏”的冲突，中段两问推进，结尾反问由额外性自然长出，仅消费者段略重复。",
+      "script_spans": [
+        "企业争购碳信用，你多花的钱可能只是账本游戏。",
+        "企业口号再响，你不妨问一句：它买的信用，够额外吗？",
+        "咱们不是旁观者，账单里早就藏了这笔钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数段落短气口、类比到位，但“没帮新绿生出”“标准方如Verra”两处拗口需换词重断，封顶2分。",
+      "script_spans": [
+        "好比你本要骑车上班，却领补贴说减了碳，那不成立。",
+        "企业假若只买账面老项目，没帮新绿生出，可能只是数字化妆。",
+        "标准方如Verra在2026年推新版把关，国内CCER也要求论证额外性。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“骑车领补贴”把额外性讲得具体可感，“买碳不是错，乱买才是坑”离开上下文仍能复述，修辞克制不堆砌。",
+      "script_spans": [
+        "好比你本要骑车上班，却领补贴说减了碳，那不成立。",
+        "买碳不是错，乱买才是坑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问转折推进清楚，因果桥扎实，结尾以够额外吗回扣开头与题设，段落功能完整。",
+      "script_spans": [
+        "那数字游戏哪来的？关键看“额外性”",
+        "企业口号再响，你不妨问一句：它买的信用，够额外吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "立场平衡、价值导向安全；但断言成本必然转嫁且用'悄悄'暗示，补限定更稳妥。",
+      "script_spans": [
+        "买碳不是错，乱买才是坑。",
+        "电费物价悄悄摊了这笔开支"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-feb59cbff45d4279a2335c709c3a1dcf",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-afd14179220846e2b524eb77afb5b512",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

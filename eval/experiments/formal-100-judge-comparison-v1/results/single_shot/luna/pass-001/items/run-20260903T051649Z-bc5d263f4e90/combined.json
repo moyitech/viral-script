@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-c64c9562ff66482189c75afd6f8144a7",
+  "run_id": "run-20260903T051649Z-bc5d263f4e90",
+  "trace_sha256": "04da778efb3d3eb77192bbee93c2acf00720a97e9edcc0c98ab7da7760094e59",
+  "created_at": "2026-09-03T11:57:12.896970Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答算法能否读懂潜力，兼顾技术作用、能力边界与求职者应对。",
+      "script_spans": [
+        "当前AI面试官读不透人的潜力，它本质是个高效的初筛漏斗，不是识人伯乐。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 418，目标为 450，偏差率为 7.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕初筛机制、效率收益、能力局限和应对方法展开，信息单元彼此推进。",
+      "script_spans": [
+        "这类系统靠自然语言处理拆解语言内容，有的还会捕捉面部和声音特征来做判断。",
+        "比如少用模糊形容词，多用结果和行为描述，提前演练摄像头前的表达。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差直接入题，中段持续补充机制与建议，结尾回扣人更擅长读懂人，推进和余味都成立。",
+      "script_spans": [
+        "你刚结束一场面试，对面却没有真人。",
+        "下次面对AI考官，稳住就好。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，整体可读；但技术解释与政策表述偏长偏硬，连续朗读需多次重断句。",
+      "script_spans": [
+        "别慌，也别迷信",
+        "这类系统靠自然语言处理拆解语言内容，有的还会捕捉面部和声音特征来做判断。",
+        "但预测日后工作表现，算法关联性并不高，它只看得到你展现的碎片，读不到内在动机与长期成长力。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "初筛漏斗、不在像素里既解释边界又形成记忆点，重复回扣自然，没有堆砌修辞。",
+      "script_spans": [
+        "高效的初筛漏斗，不是识人伯乐。",
+        "因为潜力藏在经历背后，不在像素里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有现象、机制、局限、应对和回扣，但“关联性不高”缺少解释，政策转入也略显跳跃。",
+      "script_spans": [
+        "标准化提问让评估更一致，企业能省下大量初筛人力。",
+        "记住，它只是漏斗，终审权仍在人类手里。",
+        "但预测日后工作表现，算法关联性并不高",
+        "国家也在推进智慧面试场景落地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动、不夸大承诺，且给出稳妥建议；但“算法关联性并不高”“终审权仍在人类手里”缺乏限定，可能误导求职者。",
+      "script_spans": [
+        "别慌，也别迷信：",
+        "你能做的，是把经历讲具体、逻辑讲清楚",
+        "算法关联性并不高",
+        "终审权仍在人类手里。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d017da699de8412893c08b5a0b2e4f88",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a1c20d1d0a1f463fb22907fb3a6cbed0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

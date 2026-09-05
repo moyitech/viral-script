@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-294757b060694f308f9c3e19270a7738",
+  "run_id": "run-20260903T051534Z-fda08bc4d2f7",
+  "trace_sha256": "84d9c97399c69c1ac95d99eba5864511a9ed4d7f8c71d0f37bdbb76eea2b313e",
+  "created_at": "2026-09-03T14:09:13.684999Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头双例直扣家长比拼，正文给出走样成因，结尾回扣合作本义，全程正面回答题设。",
+      "script_spans": [
+        "一张手抄报，比的是家长PS技术；一次小组模型，拼的是爸妈的公司资源",
+        "很多小组作业早已越过家校边界，变成教师转嫁任务、家庭资本直接代劳的变形"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 449，目标为 450，偏差率为 0.22%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "现象、成因、政策、研究、代价逐层推进，参与与代做之辨带来判断增量，引用相符无编造。",
+      "script_spans": [
+        "有调查说超过八成家长认同家校协作，但那是参与不是代做",
+        "先问一句：这到底要练孩子什么？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以手抄报比PS技术的反差直击痛点，中段政策、调查、代价层层给新信息，结尾一问自然收束留余味。",
+      "script_spans": [
+        "一张手抄报，比的是家长PS技术；一次小组模型，拼的是爸妈的公司资源。",
+        "先问一句：这到底要练孩子什么？把属于学校的责任留回校园，才是合作该有的样子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头短句抓人、整体可读，但中段多处书面句朗读需临时换词重断，只能止于良好。",
+      "script_spans": [
+        "一张手抄报，比的是家长PS技术；一次小组模型，拼的是爸妈的公司资源",
+        "变成教师转嫁任务、家庭资本直接代劳的变形",
+        "小学生适度家长参与有助成绩"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "军备竞赛、资源接力、拼爹规则等比喻贴切且服务理解，收尾句离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "怎么最后成了家长朋友圈的军备竞赛？",
+        "学生没学会商量分工，反倒早早认下“拼爹”规则。",
+        "把属于学校的责任留回校园，才是合作该有的样子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问、中段给因、结尾回扣，'代价很具体'承上启下，各段功能清楚，因果无断档。",
+      "script_spans": [
+        "我看核心就一句话：很多小组作业早已越过家校边界，变成教师转嫁任务、家庭资本直接代劳的变形",
+        "走样的代价很具体",
+        "所以碰到明显超龄的小组任务，别急着全家上阵。先问一句：这到底要练孩子什么？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "政策引用准确，数据与结论均带“有调查说”“可能”等限定，建议以“明显超龄”设界，无煽动夸大。",
+      "script_spans": [
+        "政策其实早有定调，严禁给家长布置或变相布置作业，也不能让家长批改检查",
+        "有调查说超过八成家长认同家校协作，但那是参与不是代做",
+        "碰到明显超龄的小组任务，别急着全家上阵"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-1f66379fc3f64724941f0cbcbbabf6f5",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-46b0cdbf75134ea8ad153550b90e8bef",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

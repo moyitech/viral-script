@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-24d2209141e540fba8fa21106b768494",
+  "run_id": "run-20260903T051602Z-a235ea37d494",
+  "trace_sha256": "2f1bcba772830286659b39a68c5b9ffa936237cab3c26a29e2085a35b9218218",
+  "created_at": "2026-09-03T11:57:23.330851Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从视频通话能否验身切入，覆盖家庭群风险与核验流程，回答直接且契合普通观众。",
+      "script_spans": [
+        "视频通话里的“亲眼所见”只能算线索，不能算身份证据。",
+        "下次镜头里亲人急用钱，先挂断，用另一渠道对暗号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 665，目标为 700，偏差率为 5.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕视频不等于身份凭证持续推进，解释受骗机制、平台局限与替代流程，信息增量充分。",
+      "script_spans": [
+        "为什么家庭群成了重灾区？因为长辈最吃“眼见为凭”这套，他们默认镜头前就是真人。",
+        "所以家庭群里最管用的不是新技术，是老办法。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用亲属车祸催款制造高风险冲突，中段持续拆解误区，结尾给出暗号和回拨，推进完整。",
+      "script_spans": [
+        "你姑姑晚上发来视频通话，背后是医院走廊，声音带着哭腔说表弟车祸要押金。",
+        "下次镜头里亲人急用钱，先挂断，用另一渠道对暗号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头设问和后段行动指令有节奏，但技术解释处抽象词堆叠，多个句子仍需重断句。",
+      "script_spans": [
+        "你敢不敢直接转账？",
+        "先挂断，用另一渠道对暗号，别让脸和声音替你做决定。",
+        "研究显示，人类辨别高精度深伪视频和音频的准确率，有时候接近乱猜。",
+        "这是2026年每个家庭群该贴里的公告。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“家庭群里的信任链”和“脸可以造假，流程不能省”具体好记，既增强警示，也没有堆砌辞藻。",
+      "script_spans": [
+        "家庭群里的信任链，恰恰是最容易被AI撬开的缝。",
+        "脸可以造假，流程不能省"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以案例设问开场，依次解释风险、回应平台疑问，最后落到可执行核验流程，结论自然回扣。",
+      "script_spans": [
+        "那你可能会问，平台不是有检测工具吗，怎么不拦住？",
+        "下次镜头里亲人急用钱，先挂断，用另一渠道对暗号，别让脸和声音替你做决定。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "防诈提醒和跨渠道核验建议安全实用，但“肉眼根本分不出”等绝对化表述容易造成过度恐慌。",
+      "script_spans": [
+        "先挂断，用另一渠道对暗号，别让脸和声音替你做决定。",
+        "技术方在追生物信号，可肉眼根本分不出。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-61848b8ca3794b8ebf5f3d07b32a9557",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-60f7adfd8c4d484888e0be3cd313d33f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

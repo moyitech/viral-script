@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-831bda99db7b4a05ae16f8d39385c448",
+  "run_id": "run-20260903T051559Z-938fea9fe69d",
+  "trace_sha256": "f9e7de444941510302b71ae5be9168caef555d230a390c1efad94ff260b442b3",
+  "created_at": "2026-09-03T14:09:56.497168Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即亮判断，正面回答题设两侧，并落到普通人换新与消费决策，切角具体。",
+      "script_spans": [
+        "补贴能买来眼前的热闹，但买不到长久的信心",
+        "那对咱们普通人有什么影响？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 406，目标为 450，偏差率为 9.78%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数字券乘数、补贴规则设计、收入预期条件层层推进，事实与解释互相支撑。",
+      "script_spans": [
+        "政府每贴1块钱，短期能撬动3块4的消费，效果确实猛",
+        "如果收入和对未来的预期没跟上，补贴一停，消费习惯很可能回到原样"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用领券后敢不敢花钱设问造悬念，中段以3块4撬动、人群分化、以旧换新规则持续兑现，结尾判断由正文自然生长留余味。",
+      "script_spans": [
+        "可你刚领完券之后，真的敢放心花钱了吗？",
+        "但细看就发现，花得最猛的，往往是本来就要买、而且专挑大牌的人",
+        "所以别把国补当成信心药。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口清楚，'添把火''填腰包'接地气，朗读无需临时改词或重断句。",
+      "script_spans": [
+        "说白了，这更像给准备花钱的人添把火，而不是让没钱的人敢花钱。",
+        "该换就换，省到就是赚到"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "添把火、信心药等比喻点到为止且服务观点，热闹买不到信心一句脱离上下文仍可复述，全篇无炫技堆砌。",
+      "script_spans": [
+        "补贴能买来眼前的热闹，但买不到长久的信心",
+        "这更像给准备花钱的人添把火，而不是让没钱的人敢花钱",
+        "所以别把国补当成信心药。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进、先让步后转折，段落各司其职，结尾回扣开头之问，闭环完整。",
+      "script_spans": [
+        "说白了，这更像给准备花钱的人添把火，而不是让没钱的人敢花钱",
+        "所以别把国补当成信心药。该换就换，省到就是赚到"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点明示为个人判断，'往往''很可能'等限定清楚，先认利好再谈局限，无夸大承诺、无煽动对立，数据与政策表述有据。",
+      "script_spans": [
+        "趁着补贴把老旧空调、手机换了，确实省下一笔，这是实打实的利好",
+        "如果收入和对未来的预期没跟上，补贴一停，消费习惯很可能回到原样"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5eeec00a57e64e59b86d31430b1edbe7",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c26f542f4d054819b11f59fb4aba3e94",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

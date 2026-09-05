@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-b61b8781e6d54d90833dae2435902468",
+  "run_id": "run-20260903T051601Z-1ea5f9b961ee",
+  "trace_sha256": "e983360cfbe11a7283ba90771b87b3a6725e21abe66a867a39dd1a40610cc3c5",
+  "created_at": "2026-09-03T12:32:13.574161Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“独立还是疏远”的双重命题，覆盖法律约定、家务分工与普通夫妻的相处建议。",
+      "script_spans": [
+        "婚后收入各自管理，绝不是单纯的尊重独立，它在法律上给你加了锁，在感情上却可能开了道口子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "法律规则和对账建议提供了有效增量，但家务研究被压缩成绝对化判断，“婚姻满意度底牌”也缺少论据。",
+      "script_spans": [
+        "民法典明确，男女可以书面约定婚后收入归各自所有",
+        "每月对齐一次共同开销和攒钱目标",
+        "丈夫收入再高也难换对方让步",
+        "婚姻满意度底牌，从来是双方认不认对方的经济付出和陪伴"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以独立还是疏远设问，中段连续补充法律与家务分工反转，结尾建议自然收出余味。",
+      "script_spans": [
+        "婚后把工资卡各自藏好，不选共同账户，到底是独立女性的清醒，还是疏远关系的开始？",
+        "没写纸质协议日常各花各的只是事实行为，真闹离婚仍可能按共同财产去捋。",
+        "别让各自管理变成各自撤退，每月对齐一次共同开销和攒钱目标，比死守钱包独立更能留住亲密。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有钩子和对话感，但术语偏密，个别句子需要重断句或调整词序。",
+      "script_spans": [
+        "钱谁管着，直接改写家里谁干活。",
+        "没写纸质协议日常各花各的只是事实行为",
+        "婚姻满意度底牌，从来是双方认不认对方的经济付出和陪伴"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“钱袋一隔，彼此的依赖感也容易断”“各自管理变成各自撤退”形象克制，能把抽象关系转成可复述画面。",
+      "script_spans": [
+        "钱袋一隔，彼此的依赖感也容易断。",
+        "别让各自管理变成各自撤退"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有设问、判断、展开和收束，法律段尤其清楚；但研究转述与“依赖感容易断”之间因果桥不足。",
+      "script_spans": [
+        "民法典明确，男女可以书面约定婚后收入归各自所有，这具备强制约束力",
+        "丈夫收入再高也难换对方让步",
+        "钱袋一隔，彼此的依赖感也容易断"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "法律边界提醒较清楚，但“能避分割纠纷”“从来”等表述过满，可能误导观众对法律后果和婚姻关系的判断。",
+      "script_spans": [
+        "男女可以书面约定婚后收入归各自所有",
+        "签了字就是真独立经济体，能避分割纠纷"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f074aa8a00554d7d8e4eac5680e0c013",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-fd5b878d4ac9430fbcde9b1d6f21cb00",
+  "run_id": "run-20260902T144958Z-16ce8b2b4bcd",
+  "trace_sha256": "996670ce87547fd34429cd6ceddd3d29322d1ce26e828cb189ebe09e3bb00ca1",
+  "created_at": "2026-09-03T14:26:49.162917Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头立问、结尾回扣，正面回答'两边都要顾'，给出东西分流的具体方案，养宠人与怕动物者两侧痛点均覆盖。",
+      "script_spans": [
+        "商场想做动物友好，也该给怕动物的人留份安全感，两边都不能丢",
+        "带狗逛东侧，怕狗走西侧，设计分流比撤牌省心"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "全程聚焦友好与怕动物如何两全，撤牌事实、导盲犬法规、拴绳新规、样本局限层层推进，信息密度高且有出处支撑。",
+      "script_spans": [
+        "盲人导盲犬依法能进公共区，因残疾歧视条例",
+        "国外研究说恐惧深更排斥管理，但土耳其九百样本不能套"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字内即点出友好与怕狗的反差；中段撤牌、法规、分流层层递进；结尾提问从主题自然长出。",
+      "script_spans": [
+        "宠物友好商场越开越多，怕狗的人却不敢进门",
+        "那以后宠物全禁了事？法律留了硬边界",
+        "下次你看见宠物友好标，会问一句：怕动物的人去哪？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有节奏能读顺，但研究段等至少两处压缩语序需改词重断，只能定2分。",
+      "script_spans": [
+        "商场不是训练场，拴绳难避意外",
+        "带狗逛东侧，怕狗走西侧，设计分流比撤牌省心",
+        "国外研究说恐惧深更排斥管理，但土耳其九百样本不能套",
+        "恐惧真反应，个别人躲宠物少数"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "坡道类比贴切易懂，“通道不是歧视，是选择权”离开原文仍可复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "商场该像建坡道，把安静通道做标配",
+        "通道不是歧视，是选择权",
+        "商场不是训练场，拴绳难避意外"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清晰、结尾能回扣开头，但土耳其研究一句插入突兀，'恐惧真反应'一段压缩过密，因果桥需观众自行补齐。",
+      "script_spans": [
+        "下次你看见宠物友好标，会问一句：怕动物的人去哪？",
+        "国外研究说恐惧深更排斥管理，但土耳其九百样本不能套",
+        "恐惧真反应，个别人躲宠物少数"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "立场兼顾双方、明示通道非歧视，整体稳妥；但罚则一句漏掉伤人前提，易误读新法处罚边界，需补限定。",
+      "script_spans": [
+        "两边都不能丢",
+        "通道不是歧视，是选择权",
+        "违者可能罚千元以下，重了拘留"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5cb0e00152764ad8b075831eda8dde75",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

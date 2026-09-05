@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-7572843c8a744a39bdf1dc5d5c2673b6",
+  "run_id": "run-20260903T051528Z-cf3b6edb9116",
+  "trace_sha256": "22014584998fc5eb5aaa348c509d971d4966a1cbe5a407b0af32a667f07c9b16",
+  "created_at": "2026-09-03T15:29:36.527386Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接抛出题设矛盾并作答，回暖与不敢招人两侧兼顾，结尾以临时工补人回扣设问，全程未跑题。",
+      "script_spans": [
+        "订单回暖了，工厂为什么还是不敢大规模招人？直接说原因",
+        "真要补人，多半也是临时工先顶上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "固定成本、社保辞退、订单与景气指数分裂、从业指数下行各单元层层推进，判断与公开数据吻合，无编造。",
+      "script_spans": [
+        "正式员工身后连着社保缴纳和辞退补偿，万一订单再次掉头，裁人的代价比接单还高",
+        "制造业新订单虽回到了扩张区间，但整体景气指数依然趴在荣枯线以下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差问句直接立钩，中段以成本、社保、指数证据逐层推进并反转灯火通明的表象，结尾临时工判断自然收束留余味。",
+      "script_spans": [
+        "订单回暖了，工厂为什么还是不敢大规模招人？",
+        "万一订单再次掉头，裁人的代价比接单还高。",
+        "真要补人，多半也是临时工先顶上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏与对话感出色，但「规避刚性用工风险」「社保缴纳和辞退补偿」等书面词组拗口，需临时换词。",
+      "script_spans": [
+        "企业宁愿让现有产线加班顶着，也不轻易扩编",
+        "万一订单再次掉头，裁人的代价比接单还高",
+        "本质是在规避刚性用工风险",
+        "正式员工身后连着社保缴纳和辞退补偿"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“裁人的代价比接单还高”“灯火通明只是试探需求”准确克制、可脱离上下文复述，比喻服务理解，无堆叠炫技。",
+      "script_spans": [
+        "裁人的代价比接单还高",
+        "别看到车间灯火通明就以为景气全面反转，那可能只是老板在试探需求。",
+        "整体景气指数依然趴在荣枯线以下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由怕波动到算成本再到引数据，因果桥完整；灯火通明回扣加班与开头设问，结论收在临时工，不扩大。",
+      "script_spans": [
+        "企业宁愿让现有产线加班顶着，也不轻易扩编，本质是在规避刚性用工风险",
+        "所以别看到车间灯火通明就以为景气全面反转，那可能只是老板在试探需求"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "判断留有余地，“可能”“万一”“多半”等限定到位，景气数据与公开指标一致，无煽动夸大或误导承诺。",
+      "script_spans": [
+        "从近期信号看，制造业新订单虽回到了扩张区间，但整体景气指数依然趴在荣枯线以下，回暖根基并不扎实。",
+        "所以别看到车间灯火通明就以为景气全面反转，那可能只是老板在试探需求。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9817b731ea9046c8b3ad67ae18a88f51",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

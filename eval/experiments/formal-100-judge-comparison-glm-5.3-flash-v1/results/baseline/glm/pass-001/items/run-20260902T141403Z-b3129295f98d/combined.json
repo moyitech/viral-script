@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-885e39f1eb7c41f183b6d11f74cb89a4",
+  "run_id": "run-20260902T141403Z-b3129295f98d",
+  "trace_sha256": "c4c4fdb011ed9b3350242a50f5ad3c7aa722ba8e408f0b9c43087c3050a2588e",
+  "created_at": "2026-09-03T13:45:35.943545Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问直指“谁管”，正文答出馆方与主管部门，并落到读者行动，冲突两侧与人群均覆盖。",
+      "script_spans": [
+        "馆方和属地文化主管该出面，不能只靠读者自己忍",
+        "先把该管的人叫到位，空座才轮得到人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 276，目标为 280，偏差率为 1.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，法律依据、清退权缺口、行动建议层层推进，有法条支撑，无编造，增量具体。",
+      "script_spans": [
+        "公共图书馆法把日常管理交给了他们，也要求保障每个人基本文化权益",
+        "馆员其实没强制清退权，监督归文化主管部门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头空座摆包反差具体；中段以馆员无清退权、监督归口层层推进；结尾空包意象自然生长，留有余味。",
+      "script_spans": [
+        "你大清早带书来，累极想坐，空座却摆着包",
+        "权益明明在法律里却落了空",
+        "别让空包替人占了位"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数短句顺口有对话感，但“属地文化主管”式公文缩略与法条并列句需改词重断，拗口不止一处。",
+      "script_spans": [
+        "下次看见占位，直接去服务台反映，别自己憋着气。",
+        "馆方和属地文化主管该出面",
+        "也要求保障每个人基本文化权益，政府办的馆该免费开放并维护阅览秩序"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "书包的特权以拟人点题，修辞克制且服务理解；别让空包替人占了位离开上下文仍可复述。",
+      "script_spans": [
+        "当清场变成稀罕事，没座的人就默认了书包的特权",
+        "别让空包替人占了位"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从设问到法律依据、执行瓶颈再到建议，因果衔接顺畅，“空包占位”回扣开头，结构完整。",
+      "script_spans": [
+        "可长期占座让想看书的人干等，权益明明在法律里却落了空",
+        "维护公平不需要新条文，先把该管的人叫到位"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "建议指向服务台而非私下冲突，法律职责表述有据，无煽动夸大或承诺，导向安全。",
+      "script_spans": [
+        "下次看见占位，直接去服务台反映，别自己憋着气",
+        "维护公平不需要新条文，先把该管的人叫到位"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-78af09ef62f543f1a5db207b1218887b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-4ed65e98cc79409597b2445e5459cff0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

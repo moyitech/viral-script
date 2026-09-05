@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-ad00e5e0a9da43c4bf19a79a098ceec2",
+  "run_id": "run-20260902T143136Z-eff82b50f772",
+  "trace_sha256": "c0bd36db1d88c573b2a378e019c8c99b0830388b544c96bac9ff4184d371167d",
+  "created_at": "2026-09-03T13:47:18.419374Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出值不值之问并给出换赛道与降身段框架，覆盖两侧且直指房贷车贷中年人群。",
+      "script_spans": [
+        "中年转行潮确实在升温，但值不值，得看你是换赛道还是降身段。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 453，目标为 450，偏差率为 0.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据、算账框架与试水建议层层推进，无编造迹象，观众能带走具体判断方法。",
+      "script_spans": [
+        "换赛道是去有前景的地儿，像硬科技或AI应用，降薪但跟对风，新行业有技能复利",
+        "薪水是眼前数，本事是后面钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直给降薪与房贷双重压力，中段用数据反差和算账框架持续兑现悬念，结尾提问由三成降薪自然长出，余味足。",
+      "script_spans": [
+        "降薪三成重新入行，房贷车贷谁兜底？",
+        "你用今天少赚的三成，买的是往后十年的底气还是空欢喜？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句有气口、金句利落，但“成熟人才占流动大盘百分之五十三点九”等两处需临时重断，封顶2分。",
+      "script_spans": [
+        "你得算笔账，薪水是眼前数，本事是后面钱。",
+        "三十一岁以上成熟人才占流动大盘百分之五十三点九",
+        "早转比等到被裁再转主动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "换赛道对降身段的对照帮人秒懂分野，薪水是眼前数、本事是后面钱精炼可复述，潮水意象首尾呼应，克制不炫技。",
+      "script_spans": [
+        "薪水是眼前数，本事是后面钱",
+        "老本行没那么快吞人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "现状到算账到落地功能清晰，因果有桥，结尾以少赚三成自然回扣开头三成之问。",
+      "script_spans": [
+        "所以潮水真来了，但旧坑没全平，降薪重入行不能一刀切。",
+        "你用今天少赚的三成，买的是往后十年的底气还是空欢喜？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "建议均有前提，“若在收缩”才早转，“可能填平差价”不作确定承诺，还提醒先试水，安全无误导。",
+      "script_spans": [
+        "原行业若在收缩，早转比等到被裁再转主动。但别直接辞职降薪，先下班后接个新领域兼职试试。",
+        "试水对了再谈降薪，别一冲动就签卖身契。",
+        "所以潮水真来了，但旧坑没全平，降薪重入行不能一刀切。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-bc055fb5135d479db43870f102deb2b5",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-40aecb6f94094621950e9ed6a3efd5d2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

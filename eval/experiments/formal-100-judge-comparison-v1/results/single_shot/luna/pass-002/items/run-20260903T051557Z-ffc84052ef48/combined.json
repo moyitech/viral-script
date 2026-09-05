@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-c881f85b46e3477c981e46394f826382",
+  "run_id": "run-20260903T051557Z-ffc84052ef48",
+  "trace_sha256": "94187bd93f3cd1daf9b9a3366835420f3e0daaa018f719a26716e027718cd369",
+  "created_at": "2026-09-03T12:42:18.045049Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答盘活资产是否影响服务质量，同时覆盖改善服务与挤压设施两种结果，切入对象明确。",
+      "script_spans": [
+        "地方盘活这些资产，不等于公共服务就会变差。",
+        "如果只盯着租金收益，把本该保留的公共设施全推给纯商业，服务质量才会真正下滑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，依次提供空间再利用、财政支撑和商业化挤压风险等有效信息，结论有具体依据。",
+      "script_spans": [
+        "让沉睡资源和居民刚需对接，公共服务反而补了短板",
+        "资产盘活回笼的款项能缓解地方财政运转压力，间接支撑日常公共开支"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用闲置厂房与养老托育的反差切入，中段补充用途和资金路径，结尾以边界条件自然收束。",
+      "script_spans": [
+        "一边是老旧厂房闲置落灰，一边是社区找不到地方搞养老托育。",
+        "但要提醒一句：如果只盯着租金收益，把本该保留的公共设施全推给纯商业，服务质量才会真正下滑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾有对话感，整体可读；但中段长句与“财政运转”等抽象书面搭配，朗读需重断句。",
+      "script_spans": [
+        "一边是老旧厂房闲置落灰，一边是社区找不到地方搞养老托育。",
+        "让沉睡资源和居民刚需对接，公共服务反而补了短板，也用活了沉淀空间。",
+        "资产盘活回笼的款项能缓解地方财政运转压力，间接支撑日常公共开支"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比和判断句都服务于观点，既有画面感，又留下“盘活不是挤掉服务”的清晰记忆点。",
+      "script_spans": [
+        "一边是老旧厂房闲置落灰，一边是社区找不到地方搞养老托育。",
+        "盘活是优化手段，不是挤掉公共服务的理由。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出供需矛盾，随后解释空间与资金去向，最后补充风险边界，因果和转折衔接自然。",
+      "script_spans": [
+        "核心就看腾出的空间流向了哪里。",
+        "盘活是优化手段，不是挤掉公共服务的理由。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动且补充了公共设施边界；但财政回笼款项“往往还能反哺服务”缺少条件限定，可能造成泛化误导。",
+      "script_spans": [
+        "盘活是优化手段，不是挤掉公共服务的理由。",
+        "资产盘活回笼的款项能缓解地方财政运转压力，间接支撑日常公共开支"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b8980abef53849a6b74d4d9065c3126c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

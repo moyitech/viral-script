@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-71f012fbecfd47fb91860b2e1a02597b",
+  "run_id": "run-20260903T051546Z-65399ccbbba6",
+  "trace_sha256": "4369b3ad90384e955b80170fbe40903fb229baa089fe64d85afee8e8887199a2",
+  "created_at": "2026-09-03T12:31:37.815338Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕普通投资者识别AI伪风口展开，既讲造假荐股套路，也给出看主营、查公告的应对路径。",
+      "script_spans": [
+        "普通投资者想避开伪风口，核心就一句话：认主营收入，不认概念包装。",
+        "真要验货，直接去交易所和上市公司公告查原始披露文件"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题高度集中，拆解虚假信息、荐股骗局、监管处置和查证方法，多个信息单元均有明确增量。",
+      "script_spans": [
+        "不少账号拿AI批量编造假订单、假政策",
+        "这类编造传播虚假信息的行为，已经引来监管罚单和账号关停",
+        "真要验货，直接去交易所和上市公司公告查原始披露文件"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“牛股”可能靠假稿撑起制造反差，中段连续补充骗局与核验方法，结尾警句自然收束。",
+      "script_spans": [
+        "也许只靠一篇机器写的假稿子撑着",
+        "真要验货，直接去交易所和上市公司公告查原始披露文件"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾利落，核心观点也清楚；但中段并列信息过密，长句与查证路径的说法都不够顺口。",
+      "script_spans": [
+        "普通投资者想避开伪风口，核心就一句话：认主营收入，不认概念包装。",
+        "AI是生产力工具，不是你闭眼冲票的暗号。",
+        "股价被带起来他们早撤了；那些卖智能选股系统、保赚课件的，自己往往连最基础的证券从业资质都拿不出手",
+        "直接去交易所和上市公司公告查原始披露文件"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“认主营收入，不认概念包装”和“不是你闭眼冲票的暗号”简洁对仗，既帮助理解，也留下可复述的记忆点。",
+      "script_spans": [
+        "认主营收入，不认概念包装",
+        "AI是生产力工具，不是你闭眼冲票的暗号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头提出判断，中段补充套路，结尾落到查公告，结构可跟随；但“认主营收入”没有展开核验标准，个别因果也说得过满。",
+      "script_spans": [
+        "真要验货，直接去交易所和上市公司公告查原始披露文件",
+        "股价被带起来他们早撤了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "风险提示方向稳妥，但“他们早撤了”等对群体动机的断言过满，易造成未经核实的误导。",
+      "script_spans": [
+        "直接去交易所和上市公司公告查原始披露文件",
+        "股价被带起来他们早撤了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6dbd75a8a85d414791651754e51a0f81",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

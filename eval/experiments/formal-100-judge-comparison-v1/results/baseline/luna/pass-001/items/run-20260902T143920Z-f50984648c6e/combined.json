@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-536c2808800b4955b3eedeb7dcf5a237",
+  "run_id": "run-20260902T143920Z-f50984648c6e",
+  "trace_sha256": "0d74a0618b426dd537bfb2227e5eeae3e075047e4b25584fc8a8628b4cfa3ad7",
+  "created_at": "2026-09-03T11:44:28.578438Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答准时承诺在极端天气下是否合理，覆盖平台、骑手和消费者，也给出停表与多等方案。",
+      "script_spans": [
+        "这承诺该留，但遇极端天气得停表豁免。",
+        "你下单时勾个不怕晚，骑手就能少闯一个红灯。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 414，目标为 450，偏差率为 8.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕准时承诺与极端天气的安全代价，既有算法机制、试点做法和数据，也落到用户行动。",
+      "script_spans": [
+        "系统派单只看距离，不看积水深度，骑手怕罚钱常会猛蹬车闯红绿灯。",
+        "清华跟踪百城数据发现，40℃午高峰订单涨超两成，骑手多接单冒健康险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头同时抛出顾客、骑手与承诺的冲突，中段持续补充算法、政策和数据，结尾互动顺着议题自然落地。",
+      "script_spans": [
+        "暴雨天你饿肚子，骑手摔伤，准时承诺保谁？",
+        "平台咋改？北京推动美团等试了“红灯停表”。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和反问带来对话感，但核心段落有两处搭配、词序生硬，朗读时仍需临时重断句。",
+      "script_spans": [
+        "暴雨天你饿肚子，骑手摔伤，准时承诺保谁？",
+        "现在效率和安全取舍，该朝人倾斜",
+        "骑手多接单冒健康险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“你准时收到饭，可能是别人拿命换的”把风险转移说透，配合“别拿命填表”，有记忆点且没有过度堆砌。",
+      "script_spans": [
+        "你准时收到饭，可能是别人拿命换的。",
+        "别拿命填表。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "机制链条总体清楚，但把单地试点概括为算法改造“不难”，又把用户勾选直接等同于少闯红灯，论证略跳。",
+      "script_spans": [
+        "承诺本身没错，难在它不分天气一刀切。",
+        "平台咋改？北京推动美团等试了“红灯停表”。",
+        "说明算法能看天吃饭，不难。",
+        "你下单时勾个不怕晚，骑手就能少闯一个红灯。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导停表、兼顾安全，方向稳妥；但“常会猛蹬车闯红绿灯”“拿命换”等泛化和煽情因果，易造成误导，需加限定。",
+      "script_spans": [
+        "承诺本身没错，难在它不分天气一刀切。",
+        "骑手怕罚钱常会猛蹬车闯红绿灯",
+        "你准时收到饭，可能是别人拿命换的。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2150a24343b14c4d810bf48a657707c8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-becfc482742049a3b2ae8571a12a290e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

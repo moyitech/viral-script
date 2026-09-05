@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-2b40e951998b4cc5a0ddd3ff6005e0b6",
+  "run_id": "run-20260903T051605Z-3a285ab8bc6e",
+  "trace_sha256": "d35326ff04055d8dfca796b7a70d8fde3c01fa2afede0392efdba49368a44ec7",
+  "created_at": "2026-09-03T12:42:45.024900Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从骑手、平台到消费者三方展开，并明确提出保留承诺、增加天气弹性，精准回应题设。",
+      "script_spans": [
+        "所以准时承诺不必废除，但得装上天气开关。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "规则案例、订单数据与风险转移解释层层推进，既说明放宽时限的理由，也给出消费者可执行的判断。",
+      "script_spans": [
+        "北京近期推动主要外卖平台试行“红灯停表”",
+        "四十度极端高温的午高峰订单能涨两成以上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用倒计时与积水形成强冲突，中段以规则和数据推进，结尾自然落到少催单的行动提醒。",
+      "script_spans": [
+        "暴雨天手机倒计时还在跳，骑手却在积水里推车。",
+        "这说明行业已经意识到，把人当算法节点压缩到最后几秒，本身就不可持续。",
+        "准时承诺不必废除，但得装上天气开关。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "画面开头和多处短句很好读，但两处抽象、搭配生硬的表达会卡住口气，整体尚未达到精心设计的自然。",
+      "script_spans": [
+        "暴雨天手机倒计时还在跳，骑手却在积水里推车。",
+        "风险转移后的必然",
+        "这中间需要一点容忍度来平衡"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“和秒表赛跑”与“天气开关”都把抽象规则说具体，表达有画面且便于复述，没有明显堆砌。",
+      "script_spans": [
+        "把配送员逼成和秒表赛跑的机器",
+        "准时承诺不必废除，但得装上天气开关"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "场景钩子引出判断，随后用规则、数据和用户处境递进，结尾回扣安全与准时承诺，结构闭合。",
+      "script_spans": [
+        "暴雨天手机倒计时还在跳，骑手却在积水里推车。",
+        "所以准时承诺不必废除，但得装上天气开关。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，且保留准时承诺；但“都是双输”“必然”等绝对归因偏满，需限定适用情形。",
+      "script_spans": [
+        "准时承诺不必废除，但得装上天气开关。",
+        "硬卡时间点对骑手、平台、用户都是双输。",
+        "延时不是服务退化，而是风险转移后的必然。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-128fdd2d73b245e98be029e7cb70c9ff",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

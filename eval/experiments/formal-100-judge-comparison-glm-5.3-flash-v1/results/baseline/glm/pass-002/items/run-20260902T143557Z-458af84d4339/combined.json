@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-6a6071d798694119922dc50ad6cb57bb",
+  "run_id": "run-20260902T143557Z-458af84d4339",
+  "trace_sha256": "4a4f0b4e99759ca59e7dd15fc34fe67c17e4494a7990268a2c0925ed4ac3891b",
+  "created_at": "2026-09-03T14:34:23.226313Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即立门槛，正反两侧都答，'普通人算账'切角贴题，结尾回扣消费频率与先交费之问。",
+      "script_spans": [
+        "花260元办卡才能进山姆，可你买的东西未必真便宜。",
+        "如果你一周只逛一次，省下的差价可能填不满会员费，反而贴钱。",
+        "便宜背后，除了金钱门槛，还有信任要掂量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题紧扣门槛，会费、退卡规则、返利、囤货、信任五个单元层层推进，观众能带走算账方法。",
+      "script_spans": [
+        "退费后六个月才能再办卡，退两次就可能被拒。",
+        "山姆拿返利留客，去年光卓越卡就返了十六亿多，钱回账户逼你再来。",
+        "要是一年逛不了几回，那张卡反而是笔亏本账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头260元办卡与未必便宜的反差抓人，中段规则、返利、囤货层层兑现，结尾问题由消费频率论证自然长出，三段俱稳。",
+      "script_spans": [
+        "花260元办卡才能进山姆，可你买的东西未必真便宜",
+        "那商家为什么敢这么玩？他们用规则把你轻轻绑住",
+        "要是一年逛不了几回，那张卡反而是笔亏本账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口干净，设问与收尾有对话感，“先交钱再谈省”重音落点清楚，朗读无需临时改词。",
+      "script_spans": [
+        "低价不是白给，先交钱再谈省，想随时走没那么自由。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "门票与轻轻绑住等比喻贴切服务理解，先交钱再谈省一句可独立复述，克制不炫技。",
+      "script_spans": [
+        "这笔钱不买东西也得付，像买张门票",
+        "低价不是白给，先交钱再谈省，想随时走没那么自由",
+        "大包装看着划算，可你得有地方囤，不然烂在角落更亏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "四段功能分明，设问承上启下，'再说'补入信任线后收束回门槛，结尾自然回扣开头与题设。",
+      "script_spans": [
+        "那商家为什么敢这么玩？他们用规则把你轻轻绑住。",
+        "对咱们普通人，影响很直接。",
+        "所以别看排队进店热闹，先想自己消费频率。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "关键事实有依据且多用限定，但“钱回账户逼你再来”“容易被大包装忽悠”属夸大与标签化归因，宜软化措辞更稳妥。",
+      "script_spans": [
+        "退两次就可能被拒",
+        "省下的差价可能填不满会员费",
+        "钱回账户逼你再来",
+        "咱们工薪族算不清，容易被大包装忽悠"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5a1b8c8eb3834130ac5eb35fe52f1cc1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

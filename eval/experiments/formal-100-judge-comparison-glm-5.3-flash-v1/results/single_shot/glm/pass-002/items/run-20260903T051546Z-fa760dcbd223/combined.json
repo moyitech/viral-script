@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-3a7b873659b9457d8731aa688feb6815",
+  "run_id": "run-20260903T051546Z-fa760dcbd223",
+  "trace_sha256": "dbdb6c3a5a9eb538a3475f90756233fc16d233d8fac4d7f1d511029c046e2a48",
+  "created_at": "2026-09-03T15:26:42.398154Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出题设两问，结论点明分界条件，结尾落到求职者谈薪动作，两侧与核心人群全覆盖。",
+      "script_spans": [
+        "这到底是企业在救火提效，还是借机把你的工资偷偷往下压？",
+        "谈薪时主动问一句定价依据是什么，比纠结面试几轮更实在"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "空岗成本、定薪粗糙、雇主品牌各推进一步，附反例与可操作建议，信息递进不重复。",
+      "script_spans": [
+        "一个坑位空着，现有同事就得把缺的活全揽了，这种消耗每天都在烧钱。",
+        "把水平不同的人全塞进同一个低价区间，短期省了日历上的天数，长期却会把真正的好手吓跑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头场景带反转直指利益点，中段以成本账、反例、建议层层推进，结尾金句自然收束有余味。",
+      "script_spans": [
+        "岗位空着没人填，团队天天加班兜底干活，老板却突然把面试从五轮砍到两轮",
+        "那普通人面对极速招聘该咋办？别被“闪电入职”的话术晃花眼，谈薪时主动问一句定价依据是什么"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，设问承接自然，动词具体如烧钱、锁人，通篇节奏清楚，直接照读无需临时改词。",
+      "script_spans": [
+        "一个坑位空着，现有同事就得把缺的活全揽了，这种消耗每天都在烧钱",
+        "流程只是交通工具，公平才是不翻车的底盘"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻服务论点且克制，“薪资不能搞速食”“公平是不翻车的底盘”离开原文仍可复述，全篇无堆砌炫技。",
+      "script_spans": [
+        "招聘流水线可以踩油门，但薪资不能搞速食",
+        "企业要和岗位空缺的隐性成本赛跑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "问答式过渡环环相扣，空岗成本到压价风险的因果桥完整，结尾以底盘之喻回扣开头两问。",
+      "script_spans": [
+        "所以不少公司过去核心岗位拖一个半月都算常态，如今恨不得两周就锁人，动力就来自这套实打实的成本账",
+        "流程只是交通工具，公平才是不翻车的底盘。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "两面论证且明示模糊地带，建议限定为谈薪问价，无绝对化承诺、无煽动歧视，安全稳妥。",
+      "script_spans": [
+        "当然，不是所有快招都恶意压价，只是粗线条操作容易滑进那个坑，这中间存在不小的模糊地带。",
+        "谈薪时主动问一句定价依据是什么，比纠结面试几轮更实在"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e3d0b5466a694d179189c78e5c28cb8d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

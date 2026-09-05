@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-66f6993dadd243079420230332df15f8",
+  "run_id": "run-20260903T051623Z-83f0db1a1686",
+  "trace_sha256": "1bf162b9f002ddc197ef1dc0ba0418051b0d5b4d908ce7c34ba3c5565fda07bf",
+  "created_at": "2026-09-03T12:02:31.051755Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释海水升温对近海养殖的冲击，并回答海鲜是否普遍涨价，覆盖普通消费者关心的判断与应对。",
+      "script_spans": [
+        "海水升温真实冲击近海养殖，但餐桌海鲜短期不会普遍更贵，局部波动不代表整体涨价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 410，目标为 450，偏差率为 8.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕升温、供给、价格传导和消费建议推进，包含温度、产量、增速与价格数据，信息增量较充分。",
+      "script_spans": [
+        "中国近海观测显示，东黄海海表温度六十年升了一点四度，热浪年年来",
+        "去年全国海水养殖产出两千多万吨，增速还在百分之五以上，淡水养殖更庞大。",
+        "海水产品批发均价每斤二十二块上下，一年跌了四个多百分点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用升温、供给和价格反差设问，中段不断补数据与传导逻辑，结尾把判断落到菜场行动，推进完整。",
+      "script_spans": [
+        "海水越来越烫，近海网箱里的鱼却不一定少",
+        "一边是科学家警告海洋热浪杀死珊瑚和养殖生物，一边是统计表上水产总量连年涨",
+        "听到气候警报，先逛趟菜场再决定买啥。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头设问和菜场场景有对话感，但“热浪年年来”“本地活鲜可能短时常价”读来卡顿，需改词。",
+      "script_spans": [
+        "这矛盾到底怎么解？",
+        "先逛趟菜场再决定买啥。",
+        "热浪年年来",
+        "本地活鲜可能短时常价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“价格传导看的是总盘子”把复杂机制说得可复述，“供给拽住了”有动作感，整体比喻克制不油。",
+      "script_spans": [
+        "价格传导看的是总盘子",
+        "终端价就被供给拽住了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，但从全国总供给推到个别近海品种的价格传导解释不足，末尾建议也有结论扩展和表述含混。",
+      "script_spans": [
+        "一边是科学家警告海洋热浪杀死珊瑚和养殖生物，一边是统计表上水产总量连年涨，这矛盾到底怎么解？",
+        "可价格传导看的是总盘子。",
+        "受灾面积被对冲。",
+        "本地活鲜可能短时常价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体区分了短期与局部波动，表述较克制；但“热浪年年来”“确实让鲍鱼海带烂在海里”等确定性归因偏满，需补限定。",
+      "script_spans": [
+        "局部波动不代表整体涨价",
+        "热浪年年来",
+        "确实让鲍鱼海带烂在海里"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9a6949af55404fe7a1d04638fee0b956",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-8e4971a684844b1d9aa10577fdd63261",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

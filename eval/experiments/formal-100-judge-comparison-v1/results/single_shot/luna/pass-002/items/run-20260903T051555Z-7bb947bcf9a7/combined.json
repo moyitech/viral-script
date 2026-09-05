@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-0d1f182e899043fab4041f4a8d64e80b",
+  "run_id": "run-20260903T051555Z-7bb947bcf9a7",
+  "trace_sha256": "7caa90a076cfe60f05ad3fdb12ad98cc07532ca238fb6aa0bb307b2e6361f118",
+  "created_at": "2026-09-03T12:32:07.451362Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应统一发型与个性表达的冲突，并覆盖学校、学生和家长的处置边界。",
+      "script_spans": [
+        "学校强制统一发型，纪律教育绝不能忽视个性表达",
+        "家长应依规范底线提出沟通，别让纪律外衣掩盖合法权益"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "规范底线、权利边界、军校类比和拒绝入校后果层层推进，信息单元充足。",
+      "script_spans": [
+        "教育部的日常规范仅强调整洁朴素，明确禁止烫发染发和怪异发型",
+        "借部队管理说事站不住脚，军人强制源于法律授权的公共任务",
+        "若学生仅因发型微错被拒校门，实属变相停课且缺法定程序"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出统一发型与个性表达的冲突，中段逐层补充规范、权利和案例，结尾以“纪律外衣”留下余味。",
+      "script_spans": [
+        "学校强制统一发型，纪律教育绝不能忽视个性表达",
+        "先前网络流传的强行按头剪发视频",
+        "别让纪律外衣掩盖合法权益"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读通，开头和结尾有口语感，但中段法律化表达密集，多处需要重断句或换词。",
+      "script_spans": [
+        "借部队管理说事站不住脚",
+        "别让纪律外衣掩盖合法权益",
+        "发型打理归属人格尊严与身体自主权范畴",
+        "家长应依规范底线提出沟通"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一刀切”“按头剪发”“纪律外衣”都能压缩观点并留下画面感，修辞不算堆叠，且服务于边界与权利主题。",
+      "script_spans": [
+        "这种一刀切要求不仅压抑少年心性，更越过合理边界",
+        "先前网络流传的强行按头剪发视频",
+        "别让纪律外衣掩盖合法权益"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立场、再规范边界、后举例和处置建议，转折回扣自然，结论能落到家长行动。",
+      "script_spans": [
+        "学校强制统一发型，纪律教育绝不能忽视个性表达",
+        "先前网络流传的强行按头剪发视频，就暴露出粗放执行易滑向侵权",
+        "家长应依规范底线提出沟通，别让纪律外衣掩盖合法权益"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体反对粗暴管理、倡导沟通，导向安全；但多处直接下法律结论，缺少个案与规则边界，易造成误导。",
+      "script_spans": [
+        "家长应依规范底线提出沟通",
+        "若学生仅因发型微错被拒校门，实属变相停课且缺法定程序"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d86fbe8f9924498b9e00c26300b0bcdc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

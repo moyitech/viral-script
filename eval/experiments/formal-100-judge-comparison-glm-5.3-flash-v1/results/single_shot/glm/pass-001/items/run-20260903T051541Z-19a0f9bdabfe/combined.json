@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-b92297f02f1247ddad1f69806a3fc1b3",
+  "run_id": "run-20260903T051541Z-19a0f9bdabfe",
+  "trace_sha256": "d6de21ab348b4e0c8a1fed36558e1a4cd48050085129a53a3742ec641c744ac1",
+  "created_at": "2026-09-03T14:21:10.885277Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头点出考证悖论，'拆成两类看'正面回答题设，两侧结论兼备，结尾回扣换工作之问。",
+      "script_spans": [
+        "证书换工作行不行，得拆成两类看",
+        "考证不是没用，但别把参考性证明当通行证"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 420，目标为 450，偏差率为 6.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "分类框架、退出目录机制、研究佐证到行动清单层层推进，信息密度高，未见编造。",
+      "script_spans": [
+        "先去查目标岗位是否在准入类目录，是就必须考；不是，就优先攒实习和项目经验",
+        "坏处是证书含金量要看具体发证的行业组织认不认"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句'证书越多面试没多'直给反差，中段分类、机制到建议层层兑现，结尾门钥匙余味自然，三段各自成立。",
+      "script_spans": [
+        "手里证书越考越多，面试机会却没变多",
+        "那普通人怎么办？",
+        "先搞清你进的那扇门，到底需不需要钥匙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾对话感足，但“水平评价类技能人员资格退出”等名词串需改词重断，顺口度受限。",
+      "script_spans": [
+        "手里证书越考越多，面试机会却没变多。",
+        "先搞清你进的那扇门，到底需不需要钥匙。",
+        "机制在这：水平评价类技能人员资格退出，实质是把评价权交还市场。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'证就是门槛''单挑大梁'点到为止服务理解，'别把参考性证明当通行证'与门钥匙收尾均可复述，无炫技。",
+      "script_spans": [
+        "证就是门槛",
+        "光靠一张社会化等级证很难单挑大梁",
+        "考证不是没用，但别把参考性证明当通行证。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "钩子、框架、机制、建议层层递进，门与钥匙收束呼应证就是门槛，因果桥完整。",
+      "script_spans": [
+        "前者像特种作业、安保，依法必须持证上岗，证就是门槛",
+        "先搞清你进的那扇门，到底需不需要钥匙"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论不作绝对承诺，建议具体且留有边界，论据有据可依，无煽动夸大，价值导向与平台审核均安全。",
+      "script_spans": [
+        "先去查目标岗位是否在准入类目录，是就必须考；不是，就优先攒实习和项目经验。",
+        "考证不是没用，但别把参考性证明当通行证。",
+        "有研究提到人力资本仍影响起薪，但家庭等因素也掺在里面"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2a000618e6624fcda96eb92b6659805c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-3612618e6a884dfebc6b463bdd3d6c23",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

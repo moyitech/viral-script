@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-d26d49e1575346a5bc6368293ac6ed14",
+  "run_id": "run-20260902T143230Z-4e0f1bcc3ac1",
+  "trace_sha256": "2d165d9e75ca4b6481a807e9f6a5d11e721f2b4a17f47aff236092eafe215cf2",
+  "created_at": "2026-09-03T13:46:22.248167Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头痛点直指收费，中段析价与负担，结尾反问回扣题设，人群痛点命中。",
+      "script_spans": [
+        "家长群弹出研学通知，你心里一紧：这课外的咋比课内还烧钱？",
+        "课堂外的成长，真要靠高价门票才能换吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 443，目标为 450，偏差率为 1.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策对照、定价拆解、家庭账本层层推进，均有据可查，信息增量扎实。",
+      "script_spans": [
+        "光半日游就要三百块，长线出国三四万起步",
+        "好课得老师先踩点写手册，研发人力贵是定价大头"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头场景加反问直击烧钱痛点；中段政策承诺与高价现实落差、定价拆解层层推进；结尾之问由买份心安自然生长，余味足。",
+      "script_spans": [
+        "家长群弹出研学通知，你心里一紧：这课外的咋比课内还烧钱？",
+        "那高价到底从哪蹦出来？",
+        "课堂外的成长，真要靠高价门票才能换吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏好、对话感强，但“并收费”“软性同伴压力”“转上家长单”等数处生硬，朗读需临时换词或重断句。",
+      "script_spans": [
+        "家长群弹出研学通知，你心里一紧：这课外的咋比课内还烧钱？",
+        "别变相强制搞研学并收费",
+        "软性同伴压力常比文件提醒更管用",
+        "费用全数转上家长单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "金钱意象从烧钱、算账贯穿到买心安、门票，理解有帮助；菜钱药费里抠具体可感，结尾一问离开正文仍可复述，修辞克制。",
+      "script_spans": [
+        "这笔钱得从菜钱药费里抠",
+        "当研学变成花钱买份心安",
+        "课堂外的成长，真要靠高价门票才能换吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问引出归因，成本与转嫁链条完整，结尾自然回扣开头，环环相扣。",
+      "script_spans": [
+        "那高价到底从哪蹦出来？机构把普通景点游重包装成研学课",
+        "学校没精力自己带，干脆整包给第三方机构。费用全数转上家长单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "总体公允，兼顾成本逻辑与政策意图，多有限定词；但“光半日游就要三百块”“学校没精力自己带”等表述绝对化，缺边界，易误导。",
+      "script_spans": [
+        "好课得老师先踩点写手册，研发人力贵是定价大头",
+        "光半日游就要三百块",
+        "学校没精力自己带，干脆整包给第三方机构"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-fe4e97ef44584f1e99812961828ea09c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b6ed18ba3ff645e580422effda597619",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

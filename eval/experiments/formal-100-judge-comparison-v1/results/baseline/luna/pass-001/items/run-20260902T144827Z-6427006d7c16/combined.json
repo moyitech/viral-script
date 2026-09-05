@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-a3f3da91e42547368fba3db29131d900",
+  "run_id": "run-20260902T144827Z-6427006d7c16",
+  "trace_sha256": "e700976e1e8d1abfed8f5087c9a89ef523d00a05f44775e0d36e5c4e5b170abe",
+  "created_at": "2026-09-03T11:45:04.100894Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直接回答电力、土地为何成为算力扩张门槛，并在结尾落到项目判断，选题对象和实用关切均对齐。",
+      "script_spans": [
+        "答案：算力扩张卡在物理资源，电力和土地成了准入筹码。",
+        "所以考察项目别光看砸钱，先问当地电网容量、变电站审批节奏和用地红线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 278，目标为 280，偏差率为 0.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中在电力与土地约束，接电、审批、绿电、功率密度和延迟提供了具体信息，最后还有可执行清单。",
+      "script_spans": [
+        "能耗审批叠双碳限值，变电站增容慢，电网排队成常态。",
+        "普通郊区机房难拿绿电配套，受功率密度和延迟限制，慢慢没了竞争力",
+        "先问当地电网容量、变电站审批节奏和用地红线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“电和地比芯片贵”制造反差，中段按电、地推进，结尾自然落到地图重写和提问。",
+      "script_spans": [
+        "多国抢建数据中心，电和地比芯片贵。",
+        "算力地图怕是要按电厂和农田重写了。下一步，建在哪？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏短促、结构清楚，但“叠双碳限值”等搭配拗口，核心段仍有术语堆叠。",
+      "script_spans": [
+        "你说怪不怪？答案：算力扩张卡在物理资源",
+        "空有硬件也白搭",
+        "一线接电更久。能耗审批叠双碳限值",
+        "普通郊区机房难拿绿电配套，受功率密度和延迟限制"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“电和地比芯片贵”与“按电厂和农田重写”形成清晰画面，表达克制且便于复述。",
+      "script_spans": [
+        "电和地比芯片贵。",
+        "算力地图怕是要按电厂和农田重写了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "分电、看地、给建议的骨架清楚，但从社区反对直接跳到暂停审批，能耗指标与机房供需的关系也缺少解释桥。",
+      "script_spans": [
+        "先说电。",
+        "再看地。",
+        "所以考察项目别光看砸钱",
+        "社区嫌占农田，多地直接暂停审批，真金白银打水漂。",
+        "核心枢纽的能耗指标高度集中，高等级机房供不应求。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题聚焦资源约束，整体无明显违规；但“比芯片贵”“成常态”等概括过满，需补充范围或改为相对谨慎的表述。",
+      "script_spans": [
+        "算力扩张卡在物理资源，电力和土地成了准入筹码。",
+        "电和地比芯片贵。",
+        "电网排队成常态。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-fee43cae80484ac3ae8884400ab34d74",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e761b462844d424aa860251174db7069",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

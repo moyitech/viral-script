@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-901efe46e9864d44802c908bddeb8617",
+  "run_id": "run-20260902T143315Z-b54d7325ce30",
+  "trace_sha256": "4f1570a0bd3ed70516bae46d624b9ecfdf52cbb801258732476b8d8588fede82",
+  "created_at": "2026-09-03T12:15:32.702315Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答能否增长，既讲延时的成本风险，也交代满足深夜刚需时的例外，贴合普通顾客关心点。",
+      "script_spans": [
+        "商场延长营业时间，消费热闹大多带不来真实增长，除非抓准了人的刚需。",
+        "像世界杯深夜，球迷看完赛冲进来吃宵夜买周边，这时候延时顺着人的瘾头走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕延时是否创造增量消费展开，区分客流、转化与成本，并用深夜赛事说明例外，信息推进充分。",
+      "script_spans": [
+        "行业里看转化率，就是进门的人里真正掏钱买东西的比例",
+        "多开那几个小时，卖货的钱往往填不满这笔额外的开销。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“热闹却亏钱”制造反差，中段以转化率和世界杯场景推进，结尾追问自然。",
+      "script_spans": [
+        "商场通宵亮灯热闹，其实多半在亏钱。",
+        "像世界杯深夜，球迷看完赛冲进来吃宵夜买周边"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数句子短促好读，但抽象硬词和个别搭配拖慢节奏，整体仍需少量重断句。",
+      "script_spans": [
+        "灯亮着人走着，水电和店员工资全得照付。",
+        "这种冷清的亮堂，算是延时误区的一个缩影。",
+        "有报告提到，如今商场人力能耗压力不小，更经不起空转，传统商场成本本就扛得累。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“冷清的亮堂”和“顾客握着开关”形象克制，既帮助理解，也留下了可复述的观点。",
+      "script_spans": [
+        "这种冷清的亮堂",
+        "咱们顾客其实握着开关"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按现象、指标、成本、例外和结论推进，主线清楚；但把夜间热闹直接推成消费劲头，证据桥梁不足。",
+      "script_spans": [
+        "行业里看转化率，就是进门的人里真正掏钱买东西的比例，硬拉长时间人来了只是看",
+        "你发现家附近商场越夜越热闹，别光高兴，那说明这片圈子真有消费劲头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "没有明显违规，且承认延时有赚有亏；但“多半在亏钱”等概括缺少范围和依据，容易把个案说成普遍结论。",
+      "script_spans": [
+        "延时有赚有亏。",
+        "像世界杯深夜，球迷看完赛冲进来吃宵夜买周边，这时候延时顺着人的瘾头走。",
+        "商场通宵亮灯热闹，其实多半在亏钱。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c69bf55bdc5642b29a9f52fe909a8be1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

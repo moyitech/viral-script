@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-682d3715283e4a2f9a88ac6d9fd1928d",
+  "run_id": "run-20260902T144058Z-58248bf4fd1d",
+  "trace_sha256": "9cb3ee726631abf51247400f3e33d656c6c45a642df831a8e9249f4e20c9a8f8",
+  "created_at": "2026-09-03T14:26:55.594727Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛出担忧并反问，正文以“规范运作、选对用途”正面作答，两侧兼顾，养老托育例直指普通观众家门口的痛点。",
+      "script_spans": [
+        "有人怕盘活会减服务，但地方盘活闲置资产，只要规范运作，选对用途，一般不会拉低公共服务质量",
+        "反而能拓展服务空间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "回答、案例、资金机制、合规提醒层层推进，无编造，结尾“缺的是利用”带来认知增量，信息密度对得起时长。",
+      "script_spans": [
+        "改造成社区养老托育点，街坊走路就到，直接多出服务处，不用远跑",
+        "省下钱和力，好把力气用在公共服务上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差设问直接抓人，中段扫地刷墙的实景与转折持续兑现，结尾之问由正文长出，留有余味。",
+      "script_spans": [
+        "空置房改托育中心，公共服务反而更好？",
+        "扫扫地，刷刷墙，摆上桌椅板凳，改造成社区养老托育点，街坊走路就到",
+        "当闲房变身边服务站，我们缺的真是房子吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口密，'扫扫地，刷刷墙'等具体动词撑起节奏，通篇可照读，无拗口卡嘴。",
+      "script_spans": [
+        "扫扫地，刷刷墙，摆上桌椅板凳，改造成社区养老托育点，街坊走路就到，直接多出服务处"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“老房子干新活”与“扫扫地刷刷墙”贴切易记，修辞点到为止服务理解，离开上下文仍可复述。",
+      "script_spans": [
+        "让老房子干新活",
+        "扫扫地，刷刷墙，摆上桌椅板凳",
+        "照规划来，不然白忙活"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "主张—例证—机制—转折—收束环环相扣，“省下钱和力用在服务”补上关键因果桥，结尾回扣开头的空置房意象。",
+      "script_spans": [
+        "不过动手改时得守规矩，别乱拆有保护的旧建筑，也要留足安全通道，照规划来",
+        "当闲房变身边服务站，我们缺的真是房子吗？不如先看看家门口怎么用起来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论前用只要规范运作、一般不会限定，又主动提醒守规矩、留安全通道，表述公允，无夸大或误导风险。",
+      "script_spans": [
+        "只要规范运作，选对用途，一般不会拉低公共服务质量",
+        "不过动手改时得守规矩，别乱拆有保护的旧建筑，也要留足安全通道，照规划来"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-01fe1dfb76dd40a99536504b257becbd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

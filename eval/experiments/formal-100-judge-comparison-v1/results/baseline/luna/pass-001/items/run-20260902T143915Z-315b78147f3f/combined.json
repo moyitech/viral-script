@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-e71626dec51f4577800ef3c70b3552bd",
+  "run_id": "run-20260902T143915Z-315b78147f3f",
+  "trace_sha256": "479fda1d0da1e05c7552aa494bb150207b14a749b5099363b026b7ad6c3ca13b",
+  "created_at": "2026-09-03T11:44:23.240303Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即界定独立与疏远的条件，兼顾法律、日常相处和互助责任，始终回应婚后各自管钱的人群。",
+      "script_spans": [
+        "这事儿不是单纯尊重独立，也不是必然疏远，关键看你怎么管、有没有白纸黑字约定。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 702，目标为 700，偏差率为 0.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律边界、生活利弊、互助风险与研究材料层层推进，能带走约定和共担的具体判断，信息增量充足。",
+      "script_spans": [
+        "书面约定才作数，不然只是两人习惯。",
+        "研究没说一定坏，只提醒权力平了心要走动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出法律反差，中段不断补充边界与关系风险，结尾把判断自然落到两个人的行动上。",
+      "script_spans": [
+        "婚后各自管薪资，法律可能认定仍共有。",
+        "下次工资到账，愿意跟对方说一句怎么花吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有问句、短句和具体生活场景，整体能听懂；但“只闷头各管”等拗口句和研究术语拉低连续朗读感。",
+      "script_spans": [
+        "买件衣服不报批，请朋友吃饭自己拍板，确实自由。",
+        "只闷头各管没那张纸，在法律上仍属共同财产。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“账清情淡”和“财务独立像刀”既能概括关系风险，也便于复述，整体比喻服务观点，没有压过信息。",
+      "script_spans": [
+        "两人更像室友，账清情淡。",
+        "财务独立像刀，用得好切菜，用不好伤情。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线按法律、利弊、研究、结论展开，整体可跟；但满意度上升直接推到财务独立不伤关系，因果桥仍不足。",
+      "script_spans": [
+        "研究没说一定坏，只提醒权力平了心要走动。",
+        "夫妻满意度总体在往上走，生活变好家庭变小都在帮忙，说明财务独立不必然戳破关系。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动，能兼顾独立与互助；但法律归属和研究结论有概括过度，需补充适用边界，避免误导观众。",
+      "script_spans": [
+        "这事儿不是单纯尊重独立，也不是必然疏远，关键看你怎么管、有没有白纸黑字约定。",
+        "只闷头各管没那张纸，在法律上仍属共同财产。",
+        "说明财务独立不必然戳破关系。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4fc6537f42ba497eae7744555ca7a753",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ba7742b730dd4f9e9aaae4358f5fdfdd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

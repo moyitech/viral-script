@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-d83182ee132448429ea45963698c2717",
+  "run_id": "run-20260902T141334Z-d8045d6bc855",
+  "trace_sha256": "b254fed343fd19d8d792eeb8a946f4037b2fd84593b6fcbb2f493427a7a88e5b",
+  "created_at": "2026-09-03T11:44:43.417634Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接围绕年轻人攒金展开，用定投与冲动买入的对照回答“投资还是追涨”，切角具体。",
+      "script_spans": [
+        "年轻人攒金到底算投资还是追涨？",
+        "那不是投资是追涨投机。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 258，目标为 280，偏差率为 7.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦攒金方式的差异，定投机制、追涨识别、风险门槛和操作边界逐层补足，信息增量明确。",
+      "script_spans": [
+        "价高那天少买几毫克，价低多买几毫克",
+        "金价低迷别断供，也别一把梭哈去赌翻倍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用高位接盘和工资损失制造紧迫感，中段有投资与追涨的对照，结尾用“存钱罐还是接飞刀”自然收束。",
+      "script_spans": [
+        "金价连涨你跟着攒，小心高点接盘亏掉好几个月工资。",
+        "反过来看，你要是刷到金价破纪录，脑子一热把年终奖全换金豆",
+        "攒金不玄学，是当存钱罐还是接飞刀，看你守不守得住节奏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "句子短、对比清楚，整体能读通；但“金价连涨你跟着攒”和“系统拆成每天去买金”均需临场补停顿或换词。",
+      "script_spans": [
+        "价高那天少买几毫克，价低多买几毫克",
+        "金价连涨你跟着攒",
+        "系统拆成每天去买金"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和反差控制得当，“高点接盘”“存钱罐还是接飞刀”具体好记，且都服务于风险判断。",
+      "script_spans": [
+        "小心高点接盘亏掉好几个月工资。",
+        "脑子一热把年终奖全换金豆",
+        "是当存钱罐还是接飞刀"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，随后用定投与追涨形成对照，再补充风险提示和应对边界，结尾自然回扣核心判断。",
+      "script_spans": [
+        "反过来看，你要是刷到金价破纪录",
+        "攒金不玄学，是当存钱罐还是接飞刀，看你守不守得住节奏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有风险提示，但“金价低迷别断供”属于未经适配的定投建议，容易让观众忽视自身资金状况与市场风险。",
+      "script_spans": [
+        "别一把梭哈去赌翻倍",
+        "金价低迷别断供"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-6ddc63510cb54125ad296d065af010bf",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-fe9d5901467543639bfac36a1d3cac25",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

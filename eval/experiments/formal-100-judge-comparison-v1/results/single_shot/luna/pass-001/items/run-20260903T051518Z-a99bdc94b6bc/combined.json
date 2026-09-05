@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-5c2be5edde214ea1aea42214d796a0dd",
+  "run_id": "run-20260903T051518Z-a99bdc94b6bc",
+  "trace_sha256": "f9a1571993543d27760773100c0b70561d5fd571d938781526fa4b1c45a3e781",
+  "created_at": "2026-09-03T12:03:43.014998Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答延时营业能否带来增长，并覆盖商场账目与普通消费者的便利、付费两侧。",
+      "script_spans": [
+        "延长营业时间不是天然的增长药，它只在特定场景里把热闹变成真实销售",
+        "我们逛夜场是多了选择，深夜也能约朋友吃饭看球。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 448，目标为 450，偏差率为 0.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“热闹不等于增长”展开，指标、成本、案例和交易密度共同推进判断。",
+      "script_spans": [
+        "客流进店只是起点，零售行业衡量真增长看的是转化率和单位面积营业额。",
+        "延时营业意味着照明、空调、人手全要跟着熬黑夜。",
+        "说白了，半夜多开那几个小时，得有对应的交易密度才划算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用热闹反差追问，中段以指标和成本持续推进，结尾对照气氛与账目，余味自然。",
+      "script_spans": [
+        "老板真赚到钱了吗？",
+        "客流进店只是起点，零售行业衡量真增长看的是转化率和单位面积营业额。",
+        "分清气氛和账目，才看得清谁在真增长。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头设问和结尾收束有对话感，主体逻辑顺；但“衡量真增长看的是”等句式偏硬，个别搭配朗读会卡。",
+      "script_spans": [
+        "说白了，半夜多开那几个小时，得有对应的交易密度才划算。",
+        "零售行业衡量真增长看的是转化率和单位面积营业额。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“增长药”“账面虚火”“气氛和账目”形成连贯对照，形象但不堆砌，留下可复述的判断。",
+      "script_spans": [
+        "延长营业时间不是天然的增长药",
+        "账面流水涨了，利润反倒被吃掉一截。",
+        "别被霓虹灯下的拥挤骗了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提问再拆经营机制，随后落到消费者判断，结尾以“气氛和账目”自然回扣主题。",
+      "script_spans": [
+        "先看关键机制。",
+        "那对普通人有什么影响？",
+        "分清气氛和账目，才看得清谁在真增长。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，论述较克制；但“多数时候”“可能悄悄提高客单价或缩服务”把行业现象作宽泛推断，需补充条件。",
+      "script_spans": [
+        "延长营业时间不是天然的增长药",
+        "多数时候只是拉长了成本线，让账面虚火更旺",
+        "可能悄悄提高客单价或缩服务"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-136376f8a8e241718da14ff303250402",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-07d7acc56f4a49eca1acbb511da88f99",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

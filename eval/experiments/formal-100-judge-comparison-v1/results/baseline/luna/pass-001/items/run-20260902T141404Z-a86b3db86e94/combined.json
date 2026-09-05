@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-4701be2d0c0945f5b051db7b4d46a48d",
+  "run_id": "run-20260902T141404Z-a86b3db86e94",
+  "trace_sha256": "15fb433e43ca0a4b9d64ec74cab42bfb07e7d9c64817c41b743526d371f184ec",
+  "created_at": "2026-09-03T11:44:08.663374Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答便利与负债风险两面，既讲消费场景，也落到普通人的预算提醒，切题完整。",
+      "script_spans": [
+        "平台先用后付，既给便利，也藏着诱导负债的风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 436，目标为 450，偏差率为 3.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕支付延后如何降低决策门槛、放大消费欲展开，兼顾规模、场景、风险与自救建议，信息推进充分。",
+      "script_spans": [
+        "确认收货才划账，中间空档你容易忘掉价格。",
+        "它补上线上不能试用的短板，却削弱花钱痛感。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“0元”与还款焦虑形成反差，中段不断补充机制和后果，结尾追问自然收束。",
+      "script_spans": [
+        "0元下单的快感，可能是下月还钱时的焦虑。",
+        "你以为没花钱，其实债已记下。",
+        "下次见0元按钮，先停一秒想，下月这笔钱从哪出？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有口播感，但中段多处信息挤在长句里，抽象表达也削弱了节奏。",
+      "script_spans": [
+        "那为啥容易背上债？钱不是没花，只是延后扣。",
+        "这功能在国内早从补消费力变成提消费欲，砍掉决策门槛，犹豫口红颜色都下单看实物。",
+        "本土化后，先吃后付、先借后付冒出来，点外卖扫单车都用赊账，模糊了欠钱感觉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照不喧宾夺主，“债已记下”和“钥匙”两处既形象又能独立留下记忆。",
+      "script_spans": [
+        "你以为没花钱，其实债已记下。",
+        "便利给了一把钥匙，但门得自己开。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、展开、收束完整，便利到风险的主线可跟随；但个别案例直接跳到严重后果，因果和范围有所夸大。",
+      "script_spans": [
+        "它补上线上不能试用的短板，却削弱花钱痛感。",
+        "攒多了，工资一半用来填坑。",
+        "家里堆着没拆的快递，多半是先付的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能说明延后付款并给出预算自查提醒；但“平台靠这拉活跃”“多半是先付的”等泛化断言，容易造成过度归因和误导。",
+      "script_spans": [
+        "但0元不代表不用还，边界得看清。",
+        "平台靠这拉活跃，用户却容易越过预算。",
+        "家里堆着没拆的快递，多半是先付的。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3b9a88a5d01142249a0af34335cec9ef",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d3ea7ea854984985b4acdda83a42a1df",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

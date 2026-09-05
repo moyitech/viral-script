@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-3b28584ebe414cce88c0ab19603aea01",
+  "run_id": "run-20260902T143648Z-101ead43aedc",
+  "trace_sha256": "42bf1aa8e3e743d2fb0707c5c01c7f793d0a23b0b56fabfec6725ac441d22cf4",
+  "created_at": "2026-09-03T11:46:18.190073Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应实时定位为何施压，兼顾家人安全诉求、被定位者自主感与折中方案。",
+      "script_spans": [
+        "关心本身没错，错在实时共享把保护变成了盯着你跑。",
+        "既留了安全绳，也给自己喘口气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 468，目标为 450，偏差率为 4.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦，自主感机制、权限事实和可操作方案彼此推进，并主动限定研究样本范围。",
+      "script_spans": [
+        "关心和监控，差的就是能不能随时说不要。",
+        "只给大致位置，或者每天睡前关掉共享。",
+        "但样本多是学生，不能套所有人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“冷血”与“绑架”制造冲突，中段有生活场景和信息推进，结尾问题自然落到关系与边界。",
+      "script_spans": [
+        "关掉家人定位却被骂冷血，关心怎成了绑架？",
+        "下班想绕路逛会儿，关了共享，到家就被盘问；周末赖床，他们看你不移动，电话就催锻炼。",
+        "下次家人要你开定位，该想的不是顺不顺从，而是咱们的关系还经得起不随时盯吗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感，场景化表达顺口；但“会觉得到处被管”和“聊天发照片都不误”两处需要临时换词。",
+      "script_spans": [
+        "你想想，下班想绕路逛会儿，关了共享，到家就被盘问",
+        "被盯的人走到哪都被看见，会觉得到处被管",
+        "关掉共享后聊天发照片都不误"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“关心和监控，差的就是能不能随时说不要”把边界讲得利落，隐喻适量且有可复述的记忆点。",
+      "script_spans": [
+        "关心和监控，差的就是能不能随时说不要。",
+        "平安报信比光点更暖。",
+        "既留了安全绳，也给自己喘口气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出冲突，中段解释安全与自主的张力并给出退路，结尾自然回到关系是否经得起不盯。",
+      "script_spans": [
+        "平台其实给了退路。",
+        "下次家人要你开定位，该想的不是顺不顺从，而是咱们的关系还经得起不随时盯吗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调自愿授权并主动限定研究样本，未见明确违规；但“比真实风险还重”等比较性断言偏绝对，可能造成误导。",
+      "script_spans": [
+        "有研究提到家庭情感支持影响心理状态，但样本多是学生，不能套所有人。",
+        "那种心理负担比真实风险还重"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-0ce8473f780546e5a28268385f099a55",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-0d74287bcab840fdbd02c92c7bb9e2b1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

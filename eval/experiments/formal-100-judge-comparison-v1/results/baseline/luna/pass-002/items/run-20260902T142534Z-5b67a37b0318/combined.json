@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-5787adce2c6d4b5eb1bfb8c9a47c95fd",
+  "run_id": "run-20260902T142534Z-5b67a37b0318",
+  "trace_sha256": "fba81753e8a50acbc2d0b72457a59c7c9317bbca60b896f6d0de2cd666c984e4",
+  "created_at": "2026-09-03T12:17:10.226332Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否上报，并从普通困境、危险情形和边界意识三方面回应核心人群疑问。",
+      "script_spans": [
+        "平常困境别报，真有伤人危险才依法报",
+        "关心和冒犯，差在守没守边界"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕不上报与适度求助展开，提供隐私原则、援助渠道和具体做法，信息单元能推进判断。",
+      "script_spans": [
+        "先想这事儿归不归公司管",
+        "你悄悄问句“需不需要帮查资源”，比直接找领导管用",
+        "员工家庭信息算个人私域"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出好心上报却让同事被约谈的反转，中段持续补充边界、风险和替代方案，结尾提问自然。",
+      "script_spans": [
+        "帮同事上报家困，反让他被约谈冒犯？",
+        "你悄悄问句“需不需要帮查资源”，比直接找领导管用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数句子短促有对话感，但法律说明和研究句出现压缩、搭配不顺，整体尚未达到顺滑口播。",
+      "script_spans": [
+        "别秒变侦探。先想这事儿归不归公司管。",
+        "个人信息保护法讲最小必要，收集要限于必要范围，家里事不算工作必知。",
+        "被人越界兜底常感被冷落不愿说"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“关心不是替他决策”与“先问需不需要，别替他做主”形成清晰记忆点，画面化表达适度且服务于主题。",
+      "script_spans": [
+        "别秒变侦探",
+        "关心不是替他决策",
+        "所以关心别人，先问需不需要，别替他做主"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出冲突，中段依次说明边界、替代方案和越界后果，结尾回扣关心不替人做主。",
+      "script_spans": [
+        "话说回来，关心不是替他决策",
+        "你递个求助资源，他反而愿意开口，自己找办法",
+        "所以关心别人，先问需不需要，别替他做主"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导尊重隐私、先征得同意，但将依法上报条件压缩为自残或伤人，法律边界表述过于绝对。",
+      "script_spans": [
+        "关心和冒犯，差在守没守边界。",
+        "单位没授权不能收，更不能随便报，除非有自残或伤人这类法定危险。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b81c9cb3b3f2429eb98c375e5e24f2b4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

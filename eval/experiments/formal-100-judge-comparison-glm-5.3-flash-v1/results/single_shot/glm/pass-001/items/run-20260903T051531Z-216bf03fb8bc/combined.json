@@ -1,0 +1,164 @@
+{
+  "evaluation_id": "combined-29940825fdbe476cbf440679fc7d89c1",
+  "run_id": "run-20260903T051531Z-216bf03fb8bc",
+  "trace_sha256": "489750eb158cd7e6e8739214efcc6964bf19bb64c3c9e146b793286e38e3f7dc",
+  "created_at": "2026-09-03T14:18:59.246401Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即正面回答视频通话能否证明身份，风险成因与普通人对策两侧齐全，紧扣家庭群与家人人群。",
+      "script_spans": [
+        "我的判断很直接：在深度伪造诈骗瞄准家庭群的当下，视频通话本身已经不能作为身份证明"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 543，目标为 450，偏差率为 20.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "克隆成本、检测缺口、带外核实等信息单元层层推进，事实解释与结论互证，未见编造。",
+      "script_spans": [
+        "骗子用几秒录音就能克隆声音，AI换脸直播也能实时伪装",
+        "多数通话软件没有内置活体血流检测，而平台侧的深伪检测工具多用在开户注册环节"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字内即有亲属视频通话索款的具象冲突，中段以两个设问持续兑现新信息与反转，结尾暗号建议由正文自然生长并留有回味。",
+      "script_spans": [
+        "家庭群里突然弹出亲属视频通话，屏幕里是儿女慌张喊你转账救急，这画面还能信吗？",
+        "靠眼睛把关比赌运气还差",
+        "视频可以演，暗号不对就别转账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开篇钩子和结尾短句好读有劲；但中段'随机水平附近''帧间细微异常'等抽象密集处，朗读需临时换词重断。",
+      "script_spans": [
+        "视频可以演，暗号不对就别转账。",
+        "人对高质量深伪视频音频的辨认率已经掉到随机水平附近",
+        "部分进阶检测会分析皮肤颜色因血流产生的微小变化"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，亲情互信反成冒用入口的反差准确，靠眼睛把关比赌运气还差与暗号一句均可离开上下文复述，无炫技堆叠。",
+      "script_spans": [
+        "家庭群原本基于亲情互信，反而成了最容易被冒用入口",
+        "靠眼睛把关比赌运气还差",
+        "视频可以演，暗号不对就别转账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "三段按判断、原因、对策递进，问句过渡清楚，结尾暗号建议自然回扣家庭群场景。",
+      "script_spans": [
+        "视频通话软件设计初衷是便利沟通，并非强身份认证场景，这给了伪造空间",
+        "下次家庭群聊不妨先设个暗号，比盯着屏幕分辨真假脸更管用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "反诈导向明确，回拨核实与暗号建议边界清楚，关键论断有警方警示和检测资料支撑，无夸大或误导承诺。",
+      "script_spans": [
+        "最实在的做法，是家庭和亲友提前约好一个带外确认方式",
+        "警方重点警示过冒充亲属借钱骗案",
+        "暗号尽量避开生日或常用数字，用彼此随机约定的词组"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 543,
+        "target": 450,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.20666666666666667
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d89273f8e4064f159f4be845702a1486",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9a32f6181ae7408a84ad1c5c360dd283",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

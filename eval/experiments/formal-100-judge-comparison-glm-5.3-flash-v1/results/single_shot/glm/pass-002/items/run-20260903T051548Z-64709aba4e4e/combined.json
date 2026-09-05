@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-e3f368a293df4f5795e8139f6c7b3340",
+  "run_id": "run-20260903T051548Z-64709aba4e4e",
+  "trace_sha256": "102aa8523bf26a0ea9a8de54835817ca05654b3de278013b964e56d7d47aeb36",
+  "created_at": "2026-09-03T15:29:00.871890Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直问便宜与门槛，年费返利两侧兼顾，结尾按购物频率下判断，精准命中观望人群。",
+      "script_spans": [
+        "大宗包装看着便宜，可这便宜背后确实横着隐形门槛。",
+        "省不省钱，得看你的购物车够不够重。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "定位、年费、返利、品控各成信息单元层层推进，还给出办卡前对照购物频率的可操作方法。",
+      "script_spans": [
+        "哪怕只想去买一桶油，也得先办卡，偶尔消费摊下来反而更贵。",
+        "买不够数回不了本，更像绑住老顾客的绳。",
+        "务必拿自己半年购物频率对照，别被开业抽奖人潮忽悠着扫码付费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头一问带出便宜与门槛的反差，中段年费、返利、品控层层兑现钩子，结尾余味由正文自然生长。",
+      "script_spans": [
+        "你发现没，家门口会员制商超一家接一家开，大宗包装看着便宜，可这便宜背后确实横着隐形门槛。",
+        "记住，会员价前提是你先成了会员，省不省钱，得看你的购物车够不够重。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、画面感强，但“履约失误的投诉”“购物频率对照”两处名词堆叠，朗读需临时换词。",
+      "script_spans": [
+        "哪怕只想去买一桶油，也得先办卡，偶尔消费摊下来反而更贵",
+        "但急速铺开时品控和履约失误的投诉也没断过"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "拦在门口、买一桶油等表达具体贴切，购物车够不够重离开上下文仍可复述，全篇修辞克制不堆叠。",
+      "script_spans": [
+        "先用付费卡把人拦在门口",
+        "哪怕只想去买一桶油，也得先办卡",
+        "省不省钱，得看你的购物车够不够重"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "“最直观的门槛”“再有”“所以”承接清晰，因果有桥梁，结尾回扣开头之问，结构严密完整。",
+      "script_spans": [
+        "最直观的门槛就是年费",
+        "记住，会员价前提是你先成了会员"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键论断有'往往''偶尔'等限定，结尾以购物车轻重收束，不点名品牌、不作绝对承诺，消费提醒导向安全。",
+      "script_spans": [
+        "偶尔消费摊下来反而更贵",
+        "省不省钱，得看你的购物车够不够重"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c04b6b20ff36424dbeb657b0707cd84b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

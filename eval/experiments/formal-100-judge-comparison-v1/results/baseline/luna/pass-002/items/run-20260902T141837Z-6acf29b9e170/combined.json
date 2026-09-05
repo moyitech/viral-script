@@ -1,0 +1,144 @@
+{
+  "evaluation_id": "combined-63bd5af2662046adb7a1071c175306b5",
+  "run_id": "run-20260902T141837Z-6acf29b9e170",
+  "trace_sha256": "3c5fba9e45e8582395c9c518863e6229c6b3dee494b15d5817e7645b7c8ad39c",
+  "created_at": "2026-09-03T12:15:11.678109Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答低风险债基为何亏损，覆盖净值估值、利率与信用风险及普通投资者的应对。",
+      "script_spans": [
+        "低风险只是相对标签，不保本也不保收益。",
+        "基金每天用市值法算账，按市场交易价重新估持仓债券。",
+        "工薪攒的闲钱得弄清这层，急用钱别塞进去求稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕净值为何下跌展开，依次解释估值、利率、信用、久期和权益仓位，信息密度足，结论也有实用判断。",
+      "script_spans": [
+        "市场利率一抬头，旧债利息就显得少。",
+        "发债企业周转不灵，评级下调或还不上钱，债价提前崩，基金也亏给你看。",
+        "久期长的债对利率更敏感，摆幅更大。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“低风险却亏本金”制造冲突，中段层层解释，结尾用风险提醒和追问自然收束。",
+      "script_spans": [
+        "明明标着低风险，债基却亏了本金，为啥？",
+        "市场利率一抬头，旧债利息就显得少。",
+        "下次见飘绿，先琢磨利率动没动，还是发债方出了篓子？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和追问带出节奏，整体能读通；但“重新估持仓债券”等多处搭配生硬，尚未达到顺滑口播。",
+      "script_spans": [
+        "那绿了的净值到底怎么算出来的？",
+        "你以为闭眼拿利息，其实在扛波动。",
+        "按市场交易价重新估持仓债券",
+        "你买的是净值产品，不是存款固收。",
+        "若刚买就遇利率涨浮亏，先别慌卖，拿一阵等息补回或许就平了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“旧手机遇新款降价”把利率与债价关系讲活，“低风险是监管边界，不是保险箱”也有复述价值。",
+      "script_spans": [
+        "就像旧手机遇新款降价，大家抛老债去买高息的，旧债价格掉，你份额净值缩水。",
+        "你以为闭眼拿利息，其实在扛波动。",
+        "低风险是监管边界，不是保险箱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、机制解释、风险拆分和建议顺序清楚，但“等息补回”泛化，且“久期长和信用低”表述易被误读。",
+      "script_spans": [
+        "那绿了的净值到底怎么算出来的？",
+        "就像旧手机遇新款降价，大家抛老债去买高息的，旧债价格掉，你份额净值缩水。",
+        "买前看清久期长和信用低的品种",
+        "拿一阵等息补回或许就平了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，揭示不保本较稳妥；但“先别慌卖”等息补回的泛化建议，可能造成不当持有，应补充适配边界。",
+      "script_spans": [
+        "低风险只是相对标签，不保本也不保收益。",
+        "先别慌卖，拿一阵等息补回或许就平了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-530bb297f4754ce0ba7093f6c76e1dc7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

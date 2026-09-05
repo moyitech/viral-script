@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-c24febdc14664ef198fde7c9a16c575f",
+  "run_id": "run-20260903T051519Z-bdc36dbd3051",
+  "trace_sha256": "fa174712a44507aabc91e201ca00a867eb922007bff86311287b6d229086bc1e",
+  "created_at": "2026-09-03T14:13:05.012523Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给答案，政策压力与员工出路两侧都覆盖，末尾点名中小微工人，痛点契合。",
+      "script_spans": [
+        "别等岗位自然淘汰，得主动把绿色技能炼成自己的防身术",
+        "中小微厂子里的兄弟尤其别拖"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 281，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策、培训、动作、人群四层信息各自推进，无复述注水，观众能带走可做的第一步。",
+      "script_spans": [
+        "九大重点行业已经铺开三年节能降碳改造",
+        "哪怕从读熟一张能耗表开始，也比干瞪眼强"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即点出被甩下危机并许诺直接答案，中段政策与培训新信息层层兑现，结尾早学早主动收得自然有力。",
+      "script_spans": [
+        "传统行业员工不想被甩下，答案很直接：别等岗位自然淘汰",
+        "不懂节能优化的工人会先被挤到边角",
+        "哪怕从读熟一张能耗表开始，也比干瞪眼强。中小微厂子里的兄弟尤其别拖"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，'挤到边角''干瞪眼'等落点清楚，重音好安排，上口无需临时改词。",
+      "script_spans": [
+        "旧操作习惯不管用了，不懂节能优化的工人会先被挤到边角",
+        "哪怕从读熟一张能耗表开始，也比干瞪眼强"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "防身术比喻贴切服务理解，能耗表、干瞪眼表达具体克制，早学早主动离开上下文仍可复述，无炫技堆叠。",
+      "script_spans": [
+        "得主动把绿色技能炼成自己的防身术",
+        "哪怕从读熟一张能耗表开始，也比干瞪眼强",
+        "早学早主动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先看、再看、具体提醒三层推进，因果链完整，结尾回扣主动，结构闭合。",
+      "script_spans": [
+        "企业能效碳效必须提，旧操作习惯不管用了，不懂节能优化的工人会先被挤到边角",
+        "早学早主动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "政策与培训表述均有据，建议附有边界，无煽动、夸大或确定性承诺，价值导向安全。",
+      "script_spans": [
+        "在岗的人跟着单位培训走，比盲目转行稳得多",
+        "先抓企业内部的节能降碳实操课，哪怕从读熟一张能耗表开始，也比干瞪眼强"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3afc6641ff2b42fda4235e2aa344ecc0",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-20a1731e40984d88acddacd689364e11",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

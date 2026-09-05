@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-d2191a1f35b7498bb2486bbf924053cd",
+  "run_id": "run-20260902T143428Z-e157c0abd779",
+  "trace_sha256": "a6859dd731ad8459741c056962ff44b02722f47f4693d0d9ba13ec7afbb8863d",
+  "created_at": "2026-09-03T13:46:54.853213Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇追喂冲突直扣题设，全文正面回答决定权归属，老人与父母两侧都被回应，人群对位。",
+      "script_spans": [
+        "奶奶端碗在后面追着喂，妈妈摆手让孩子自己抓。这场景你家里天天有吗？",
+        "所以家里带娃到底谁拍板？看谁是孩子法定监护人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 454，目标为 450，偏差率为 0.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法条、施行时间、签字事项、指导令与调解层层推进，信息各异不重复，且与资料吻合。",
+      "script_spans": [
+        "小到穿衣吃饭，大到规矩择校，父母来定。疫苗转学兴趣班，得父母签字才行。",
+        "国家可能发家庭教育指导令，督促回来管孩子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字喂饭冲突直入，中段法条新信息与“经验全没用”转折持续兑现钩子，结尾抢勺一问由正文自然生长。",
+      "script_spans": [
+        "奶奶端碗在后面追着喂，妈妈摆手让孩子自己抓",
+        "那长辈积累的经验就全都没用？当然不是"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口贯穿全篇，设问与对仗落点清楚，几乎无需改词即可照读录音。",
+      "script_spans": [
+        "疫苗转学兴趣班，得父母签字才行",
+        "带娃看责任在谁肩上，不是比谁嗓门大"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“搭把手不是掌舵人”贴切且离开上下文仍可复述，家事变国事等修辞服务理解，全文点到为止无堆砌。",
+      "script_spans": [
+        "祖父母受委托来帮忙照料，是搭把手不是掌舵人",
+        "带娃看责任在谁肩上，不是比谁嗓门大"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问、法条、反转、建议、收束各段功能清晰，结尾抢勺回扣开篇，因果桥无断点。",
+      "script_spans": [
+        "那长辈积累的经验就全都没用？当然不是。",
+        "下次餐桌抢勺子，你慢慢想一想，谁在帮孩子学着独立长大？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法律要点与资料相符，'可能''除非'等限定到位；对长辈与父母双向劝导克制，不煽动对立、不夸大承诺。",
+      "script_spans": [
+        "国家可能发家庭教育指导令，督促回来管孩子",
+        "老人再疼娃，也只是受托帮忙，不在法定监护人列，除非通过法律成了监护人",
+        "带娃看责任在谁肩上，不是比谁嗓门大"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f234e359c2434e8ead2d0ac614e8ea99",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-32fddf6ceb6a4f3c93e202c6f02cffd2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

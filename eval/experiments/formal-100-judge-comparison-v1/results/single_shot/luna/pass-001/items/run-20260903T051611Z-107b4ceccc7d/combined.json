@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-e5640d61b79241beb5a9f23fad0fa1bb",
+  "run_id": "run-20260903T051611Z-107b4ceccc7d",
+  "trace_sha256": "9b8dcbf363410c69772579510ed7287f29f65146edcc749e08cae86283f49ccc",
+  "created_at": "2026-09-03T11:57:53.559063Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答不会用手机的患者怎么办，既讲医院责任，也给出现场获取纸质报告的做法。",
+      "script_spans": [
+        "这意味着医院全面推行电子报告时，必须同步保留纸质打印或人工窗口。",
+        "陪诊时直接去导诊台，要求提供纸质报告"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 442，目标为 450，偏差率为 1.78%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策依据、医院实践、现场应对与家庭准备形成信息推进，具体且不空泛。",
+      "script_spans": [
+        "明确智能化服务与传统服务并行，不得将电子凭证作为唯一方式。",
+        "像江苏部分医院已经改造机器，刷身份证就能取报告",
+        "平时也可把老人医保卡与子女账号提前绑定，减少现场焦躁。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用老人拿不到化验单制造冲突，中段给出政策和操作路径，结尾由拒绝纸质报告自然推向价值判断。",
+      "script_spans": [
+        "可对面大爷翻遍口袋只有一台按键盘的老年机，他这份血清结果，难道就永远看不见了？",
+        "陪诊时直接去导诊台，要求提供纸质报告，这是政策给患者的合理权利。",
+        "但真遇到只亮二维码，拒给纸质的，可以温和提醒：医院有保留传统服务的义务，不是求照顾。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "画面和建议都易懂，开头有对话感；但政策长句偏书面，个别搭配生硬，朗读仍需重断句。",
+      "script_spans": [
+        "陪诊时直接去导诊台，要求提供纸质报告，这是政策给患者的合理权利。",
+        "早在2020年国务院办公厅就专门发文，要求切实解决老年人运用智能技术困难，明确智能化服务与传统服务并行，不得将电子凭证作为唯一方式。",
+        "减少现场焦躁"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“报告可以存在云上，服务的温度得落在地上”形象准确，既总结观点，也留下了自然可复述的记忆点。",
+      "script_spans": [
+        "技术跑得再快，也不等于要把走得慢的人丢在半路。",
+        "报告可以存在云上，服务的温度得落在地上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以具体冲突开场，随后接政策、案例和操作建议，结尾自然回扣技术便利与服务底线。",
+      "script_spans": [
+        "化验单只发到手机里，医院走廊的打印机悄悄撤了。",
+        "但真遇到只亮二维码，拒给纸质的，可以温和提醒",
+        "报告可以存在云上，服务的温度得落在地上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体导向安全，也提供了替代路径；但把政策概括为医院必须提供纸质报告和患者既有权利，存在过度表述。",
+      "script_spans": [
+        "电子化的便利，不能变成弱势群体拿不到报告的硬借口。",
+        "这意味着医院全面推行电子报告时，必须同步保留纸质打印或人工窗口。",
+        "这是政策给患者的合理权利。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-565622c97f74430a974e02737a81f541",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6c0f86df23294a878aa1a55bd030fac1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

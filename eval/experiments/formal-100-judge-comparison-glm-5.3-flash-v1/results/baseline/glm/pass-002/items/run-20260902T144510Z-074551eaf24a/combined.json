@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-9a973918fe35424a823e195a6c2581b6",
+  "run_id": "run-20260902T144510Z-074551eaf24a",
+  "trace_sha256": "c5730afda8fa9e7a9115adcf25ba540964356f069effb3de39c2d0d51756ca67",
+  "created_at": "2026-09-03T14:28:20.628082Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答资源怎么分，急重优先与非急症出口两侧兼顾，结尾落到普通观众就医选择，全程扣题。",
+      "script_spans": [
+        "有限资源该怎么分？医生和床位先给心跳骤停、大出血的急重病人",
+        "同时非急症得有出口，疏导到社区门诊或延时诊所"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "分诊规则、倒挂成因、收费改革证据层层推进，数据与结论互证，观众能带走分级常识和就医判断。",
+      "script_spans": [
+        "像香港曾统计，九成以上急诊求诊者并非危急",
+        "香港试过公营医疗收费改革，次紧急和非紧急病人明显回流诊所，数量减约两成"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直陈生死冲突立住钩子，中段以倒挂与数据持续兑现，结尾问句由主题自然生长。",
+      "script_spans": [
+        "非急症挤占急诊，危急患者可能错失抢救时机",
+        "可现实常倒挂",
+        "下次身体闹脾气，你先想想该去哪吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句节奏成立，设问承接有对话感；但多处政策书面句需换词重断，拗口点不止两处。",
+      "script_spans": [
+        "分诊不是推走病人，是排顺序。轻病可能等几小时，但命悬一线的先上。",
+        "收费杠杆能调行为，却替代不了家门口诊所能开门。",
+        "国家规定分四级，一二类危急紧急立刻救，三四类次紧急非紧急要等。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制并服务理解，救命分钟、排顺序等句离开上下文仍可复述，无炫技堆叠。",
+      "script_spans": [
+        "你若感冒去急诊，实则挪用了别人的救命分钟",
+        "分诊不是推走病人，是排顺序"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "段落功能与转折清楚，结尾回扣到位；但“替代不了家门口诊所能开门”等处拗口费气，需换词重断才顺播。",
+      "script_spans": [
+        "可现实常倒挂",
+        "怎么破？把非急症往外围推",
+        "收费杠杆能调行为，却替代不了家门口诊所能开门",
+        "一二类危急紧急立刻救，三四类次紧急非紧急要等"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有制度依据，也顾及穷人与分流出口，但「挪用了别人的救命分钟」「只图方便」属标签化归因，需软化措辞。",
+      "script_spans": [
+        "分诊不是推走病人，是排顺序",
+        "危机重症豁免收费，才不会误伤穷人",
+        "你若感冒去急诊，实则挪用了别人的救命分钟",
+        "很多患者夜奔急诊只图方便",
+        "不该让感冒发烧者堵门"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5d76f7cc78b4497b8d1b35d60b87c55e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

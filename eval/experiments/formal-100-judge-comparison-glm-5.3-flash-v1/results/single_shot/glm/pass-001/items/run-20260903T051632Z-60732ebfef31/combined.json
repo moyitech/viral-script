@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-1b2b07c7f3b84d2eb8abedfbde6350dc",
+  "run_id": "run-20260903T051632Z-60732ebfef31",
+  "trace_sha256": "cd0ad42d872ddd622638417cb988aa59eabb5fe4f5aa6c5f1d66023f796a53fd",
+  "created_at": "2026-09-03T14:18:50.575092Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头亮出'面议成红灯'的判断直扣题设，企业与求职者两侧原因都答到，结尾回到求职者取舍，痛点契合。",
+      "script_spans": [
+        "求职者为什么越来越烦这句老话？不是单纯想窥探钱包，我的判断是，它早已从中性说明，变成了暗示信息不对称的红灯。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 661，目标为 700，偏差率为 5.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从企业动机、求职者前置算账到监管边界，信息单元层层推进不灌水，结尾还给出把面议当筛选门槛的具体方法。",
+      "script_spans": [
+        "现在年轻人算账精明，通勤成本、社保基数、涨薪预期都要前置评估。看不到数字，就等于默认你大概率开不出市价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字同屏反差即成钩子，中段以连续设问不断兑现新信息，结尾筛选建议由正文自然长出，三段各自成立。",
+      "script_spans": [
+        "你刷招聘软件，滑过十家八家写着“薪资面议”，可就在同一屏，别的岗位明晃晃标着月薪范围",
+        "但更常见的心思，是怕亮出底牌就被同行比价，或者想留着面试时看人下菜碟压价",
+        "下次刷到面议，先问一句：这公司是省事，还是防我？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "局部有对话感，但书面腔与拗口处不止两处，真人录音前需多处临时改词。",
+      "script_spans": [
+        "先问一句：这公司是省事，还是防我？",
+        "它早已从中性说明，变成了暗示信息不对称的红灯",
+        "今年监管部门要求主要招聘平台压实信息明示责任，资质和内容审核要到位"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻点到为止且贴切，红灯、看人下菜碟都服务理解；敢写清价的公司更敢负责一句离文可复述，无堆砌感。",
+      "script_spans": [
+        "面议像突然掉队的旧习惯",
+        "规则不亮，人就不会认账",
+        "敢写清价的公司，往往更敢对人负责"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问衔接各段，'情有可原但更常见'的让步转折推进观点，结尾问句回扣开头刷招聘场景，结构闭合自然。",
+      "script_spans": [
+        "下次刷到面议，先问一句：这公司是省事，还是防我？把模糊当筛选门槛，你反而能省下无效面试"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述公允有边界，既谈雇主顾虑也留例外说明，判断句多有限定词，无煽动、夸大或违规风险。",
+      "script_spans": [
+        "有的岗位浮动大、层级杂，写个范围怕筛掉人，这情有可原",
+        "当然，也不是所有面议都是坑，少数高管岗或弹性项目确实难提前定薪"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-883c9ba1b23a4a7186ae3ccb8f87bcdd",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-75eb42c573e44fe885246fabeac97704",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

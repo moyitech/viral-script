@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-cfc2eb531f4542869bdf99cbec370a9c",
+  "run_id": "run-20260902T142442Z-d276961fce8f",
+  "trace_sha256": "2bece0d36430615f47d619ebdd495595c21aa228fe664128dc78420fa5c6ce23",
+  "created_at": "2026-09-03T14:26:11.953361Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即点明慰藉与越界双侧，中段分别展开，结尾给判断框架，全程正面回应题设。",
+      "script_spans": [
+        "这事儿不是单选，慰藉是真需求，越界也是真风险。",
+        "真要复原，先问逝者愿不愿，再问自己想不想听。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从丧亲场景、同意争议到标识新规层层推进，事实与结论互证，无编造，信息密度高。",
+      "script_spans": [
+        "国家网信办等四部门发了标识办法，要求合成音频在起头、末尾或中间加语音提示",
+        "若训练数据来自公开视频，逝者从没点过同意，那复原就不是纪念，是挪用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出慰藉与伦理的对冲；中段从场景转到风险再到监管，层层给新信息；结尾问句自然生长，不硬喊互动。",
+      "script_spans": [
+        "用AI复原逝者声音，你得到宽慰，却可能踩了伦理线",
+        "更怕平台不标来源，你以为在跟逝者聊，其实在跟算法聊",
+        "思念需要出口，但出口不能开在别人的身份上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口清楚、对话感足；但“显式让你先听见提醒”需补词，“标识别省”连读歧义，两处卡嘴。",
+      "script_spans": [
+        "这事儿不是单选，慰藉是真需求，越界也是真风险",
+        "隐式标识埋进数据，显式让你先听见提醒",
+        "这层标识别省，慰藉才透明"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "拐杖比喻前后呼应且服务理解；结尾出口一句离开语境仍可复述，修辞克制无堆砌。",
+      "script_spans": [
+        "声音像根拐杖，虽假却有用",
+        "商家能卖拐杖，不能卖复活",
+        "思念需要出口，但出口不能开在别人的身份上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "慰藉转越界、引入监管均有清晰过渡，拐杖意象前后呼应，结尾自然回扣开头之问。",
+      "script_spans": [
+        "可声音从来不是路边石子。",
+        "思念需要出口，但出口不能开在别人的身份上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反两面并陈，边界清楚：风险提醒均带限定，法规表述与文件一致，观点克制不夸大，价值导向安全。",
+      "script_spans": [
+        "这事儿不是单选，慰藉是真需求，越界也是真风险。",
+        "有论文盯住癌症家属的接受度，但样本窄，别当通用答案。",
+        "办法不禁技术，只禁偷偷摸摸。标出来，听的人自己选要不要靠近。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-503d31e9f0634943a4d19207bf055f59",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

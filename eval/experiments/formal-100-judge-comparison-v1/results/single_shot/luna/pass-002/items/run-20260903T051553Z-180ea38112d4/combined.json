@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-e0a0e2b218064a9599dd03e2a1544412",
+  "run_id": "run-20260903T051553Z-180ea38112d4",
+  "trace_sha256": "01d4d132c435d171fd61fe63336b2defd00b2b54e0dbe500b24015e84dea9956",
+  "created_at": "2026-09-03T12:31:51.142062Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即锁定副业培训与年轻人，既回应增收诱因，也落到交学费风险和避坑行动。",
+      "script_spans": [
+        "多数不是在增收，而是在给套路交学费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，数据、套路与避坑建议较具体；但平台禁用保证收益并不能直接反证既往承诺不实，核心判断支撑不足。",
+      "script_spans": [
+        "平均涉诉金额超七千元；不少机构以免费试听为饵，用先学后付掩盖贷款本质",
+        "这正好反证此前满屏的赚钱承诺多不真实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "“增收”与“交学费”的反差明确，信息推进顺畅；但前20字偏铺垫，中段多为罗列，结尾缺少自然互动。",
+      "script_spans": [
+        "多数不是在增收，而是在给套路交学费",
+        "副业培训广告铺天盖地，许多年轻人满怀期待"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和收束有口语感，但中段并列信息过密，长句连续，朗读时需要主动重断句。",
+      "script_spans": [
+        "多数不是在增收，而是在给套路交学费",
+        "明文禁止“轻松月入”类保证收益话术，严禁AI伪造专家背书，要求AI素材标注",
+        "遇到宣称“包赚包过”的副业课，请先视作消费陷阱守住钱袋，签约前看清退款条款与合同主体，保留好付款凭证"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“增收”对“交学费”的反差具体好记，“以免费试听为饵”强化骗局画面，修辞克制且服务观点。",
+      "script_spans": [
+        "多数不是在增收，而是在给套路交学费",
+        "不少机构以免费试听为饵"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构有风险判断、证据展开和行动结尾，听众基本易跟随；但由平台审核规则推出既往承诺不实，因果桥明显不足。",
+      "script_spans": [
+        "签约前看清退款条款与合同主体，保留好付款凭证",
+        "这正好反证此前满屏的赚钱承诺多不真实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提供了核验合同、留存凭证等稳妥建议，但“多数”“满屏”及“正好反证”存在以偏概全和过度归因，需收窄。",
+      "script_spans": [
+        "签约前看清退款条款与合同主体，保留好付款凭证。",
+        "这正好反证此前满屏的赚钱承诺多不真实"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 16.0,
+    "partial_weighted_average": 2.2857142857142856,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b0ebeffeeb284617b369a9adb1c7798c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

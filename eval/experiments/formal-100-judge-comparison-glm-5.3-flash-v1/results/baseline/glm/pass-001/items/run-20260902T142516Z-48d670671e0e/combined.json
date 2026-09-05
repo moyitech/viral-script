@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-aee1757d5b4e40baa14a9b8bee4d6a11",
+  "run_id": "run-20260902T142516Z-48d670671e0e",
+  "trace_sha256": "cbc43fa3b12971ab627fe508416b92c7bbb6f6e808375fdb53f5c74bf42f7dd9",
+  "created_at": "2026-09-03T13:44:40.121691Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即给否定答案，兼顾安静表象与代价两面，结尾落到家长可操作做法，人群切中。",
+      "script_spans": [
+        "这种安静管理真不利于学生",
+        "回家不妨问孩子今天动没动，看看他能不能出去喘口气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 298，目标为 280，偏差率为 6.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "规定依据、健康收益、严查动态与家长做法层层递进，且有政策来源支撑，无编造。",
+      "script_spans": [
+        "按规定课间休息不能占用，学生正当游戏出教室不该被约束",
+        "其实这类占用课间行为正被严查"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头铃声与罚坐冲突直给，中段规定、后果、今昔对比层层兑现，结尾问孩子动没动自然收束留余味。",
+      "script_spans": [
+        "下课铃响了，孩子却被迫坐着写作业？",
+        "你小时候听见铃就往外冲，现在孩子连伸懒腰都怕吵秩序。",
+        "回家不妨问孩子今天动没动，看看他能不能出去喘口气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口清楚、多数顺口，但\"正当游戏出教室\"\"占用课间行为\"两处书面压缩需临时换词重断，取子分低值为2。",
+      "script_spans": [
+        "老憋着反而不清爽，坐一上午脑子本就发紧，作业一挤占娃只能憋座位上，视线发木心里烦",
+        "学生正当游戏出教室不该被约束",
+        "其实这类占用课间行为正被严查"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "视线发木、跑跳成稀罕事等表达形象贴切又可复述，修辞服务理解与情绪，全程克制不炫技。",
+      "script_spans": [
+        "视线发木心里烦",
+        "咱们当年的跑跳，不该成稀罕事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从现象到规定到建议层层递进，因果桥清楚，结尾跑跳一句自然回扣童年对照与题设。",
+      "script_spans": [
+        "坐一上午脑子本就发紧，作业一挤占娃只能憋座位上，视线发木心里烦",
+        "你小时候听见铃就往外冲，现在孩子连伸懒腰都怕吵秩序"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "课间权益与严查说法有官方依据，导向安全；但\"真不利于学生\"\"换不来更好成绩\"属绝对化与无据归因，加限定更稳妥。",
+      "script_spans": [
+        "按规定课间休息不能占用，学生正当游戏出教室不该被约束",
+        "其实这类占用课间行为正被严查",
+        "这种安静管理真不利于学生",
+        "作业一挤占娃只能憋座位上，视线发木心里烦，换不来更好成绩"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-91c684064535415bbc606b790fbcc3d8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1a8d5d3628314b7797794f013865895e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

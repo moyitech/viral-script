@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-ce8c292cf7424c348aac7cddbef3c398",
+  "run_id": "run-20260902T143051Z-adfb933936b5",
+  "trace_sha256": "3e611fb1a10c29fbc83ece46413f894043b1f745e55a681b8c713fb3316d9e3c",
+  "created_at": "2026-09-03T12:17:56.939584Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应公共充电窃密，并从风险判断、机制解释一路落到普通人的可执行避险建议。",
+      "script_spans": [
+        "出门充电该注意啥？别慌也别马虎。",
+        "花几十块买个充电宝，陌生口尽量绕开。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "风险概率、技术机制和避险方案依次推进，既有判断也有具体动作，普通观众能获得清晰而可执行的增量。",
+      "script_spans": [
+        "技术上有门路，生活里极少见。",
+        "USB线里既走电也走数据。",
+        "花几十块买个充电宝，陌生口尽量绕开。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用高风险与低概率反差抓人，中段递进解释机制和选择，结尾设问自然。",
+      "script_spans": [
+        "手机没电借公共充电口，可能被洗空银行卡，也可能虚惊。",
+        "下次电量见底，你插陌生USB还是摸包里宝？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句较多，问答和提醒有对话感，但“公共USB窃密外号果汁劫持”等多处搭配生硬，需临时重断句。",
+      "script_spans": [
+        "出门充电该注意啥？别慌也别马虎。",
+        "公共USB窃密外号果汁劫持",
+        "求安心就自带能源，物理切断数据线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“技术上有门路，生活里极少见”准确克制，“习惯比技术更护身”简洁好记，修辞服务观点。",
+      "script_spans": [
+        "技术上有门路，生活里极少见。",
+        "习惯比技术更护身。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "有明确的判断—机制—建议—回扣结构，但“国家要求”与手机USB风险衔接偏泛，“正规桩”到瞌睡充电也缺少解释。",
+      "script_spans": [
+        "核心结论很清楚：技术上有门路，生活里极少见。",
+        "那怎么选？贪方便用公共口，得赌运气；求安心就自带能源，物理切断数据线。",
+        "国家这几年也要求强化充电信息安全，说明预防不是瞎紧张。",
+        "正规桩虽归物业管，也别瞌睡时充。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能提示低概率风险并劝止恐慌，但把3C充电头说成几块钱就能挡住窃密风险，防护效果表述过满，容易误导。",
+      "script_spans": [
+        "技术上有门路，生活里极少见。",
+        "买充电头挑有3C标的，几块钱就挡住风险。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5db30307414a4ecf8f8a4fb00cb4d982",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

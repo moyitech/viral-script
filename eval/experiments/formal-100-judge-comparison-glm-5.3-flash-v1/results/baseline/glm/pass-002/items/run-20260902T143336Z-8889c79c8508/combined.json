@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-d5fb3e54b65e4c51968d7ed23e6c9411",
+  "run_id": "run-20260902T143336Z-8889c79c8508",
+  "trace_sha256": "d4ad6860c1f7c548815cb0f7422ccc913eeba313bacff6ba142acfbed00b7a0b",
+  "created_at": "2026-09-03T14:26:07.157005Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛题，结论正面作答，家长与学生的两侧焦虑都覆盖，人群与痛点契合。",
+      "script_spans": [
+        "成绩排名不公开，能缓解一部分孩子的焦虑，却难止住学生自己的慌",
+        "排名隐藏不是焦虑开关，只是把竞争从墙上挪进心里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策、两组实证数据与方法反思层层推进，数据与引用相符，观点具体不空转。",
+      "script_spans": [
+        "上海有高中测过，平时焦虑约17%，考前涨到32%，及格那群最慌占六成多",
+        "相关不等于因果，别把影子当实体"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句场景加反问设悬，中段层层转折兑现钩子，结尾问他累不累，余味由正文自然生长。",
+      "script_spans": [
+        "孩子回来说老师不念排名了，你以为他不焦虑？",
+        "父母松了手，娃却还攥着拳。",
+        "与其猜他排第几，不如问他累不累。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有节奏、设问承接自然，但及格那群最慌占六成多等两处压缩句需现场换词重断，封顶2分。",
+      "script_spans": [
+        "可你要知道，它只管校内张榜，管不住回家后爸妈的嘴。",
+        "及格那群最慌占六成多",
+        "研究发现紧张来自个人家庭学校多方"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻皆服务说理，“名次藏起来，比较没藏起来”离开上下文仍可复述；金句密度偏高但未喧宾夺主。",
+      "script_spans": [
+        "名次藏起来，比较没藏起来。",
+        "红榜没了心榜还在",
+        "排名隐藏不是焦虑开关，只是把竞争从墙上挪进心里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "问答推进、转折清楚，结尾回扣开头；但由双减调查直接推出“不公开排名护住父母平静”，因果跳步。",
+      "script_spans": [
+        "为啥说难止住？因为焦虑不全来自排名榜",
+        "可见不公开排名，护住的是许多父母的平静"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "数据表述与来源相符，主动申明研究局限，政策批评克制公允，无夸大承诺、煽动或误导性绝对化表述。",
+      "script_spans": [
+        "相关不等于因果，别把影子当实体",
+        "能缓解一部分孩子的焦虑，却难止住学生自己的慌",
+        "这取舍没人说完美，但先止血再说"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e09a0e0076184caca6965c6765cc8de1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

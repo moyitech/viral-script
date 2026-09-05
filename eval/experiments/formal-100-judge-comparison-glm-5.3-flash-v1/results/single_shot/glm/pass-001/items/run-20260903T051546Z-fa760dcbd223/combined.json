@@ -1,0 +1,157 @@
+{
+  "evaluation_id": "combined-6192517f967c40938f0337c5df772d3a",
+  "run_id": "run-20260903T051546Z-fa760dcbd223",
+  "trace_sha256": "dbdb6c3a5a9eb538a3475f90756233fc16d233d8fac4d7f1d511029c046e2a48",
+  "created_at": "2026-09-03T14:12:27.627792Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出题设两侧冲突，结论给出条件化判断，结尾落到求职者行动建议，人群与两侧均覆盖。",
+      "script_spans": [
+        "这到底是企业在救火提效，还是借机把你的工资偷偷往下压？",
+        "可一旦流程缩到不顾人才定价逻辑，那就从提效滑向了变相压价",
+        "谈薪时主动问一句定价依据是什么，比纠结面试几轮更实在"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 669，目标为 700，偏差率为 4.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "空岗成本、定价精细度、算法不透明、模糊地带层层推进，结尾给可操作谈薪方法，论证扎实无编造。",
+      "script_spans": [
+        "一个坑位空着，现有同事就得把缺的活全揽了，这种消耗每天都在烧钱",
+        "如果算法开价的过程不透明，求职者哪怕拿了钱，也觉得自己被草率打发了",
+        "谈薪时主动问一句定价依据是什么"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即摆出空岗加班与五轮砍两轮的冲突，中段以成本账、定价交换、实操建议层层兑现，结尾余味自然生长。",
+      "script_spans": [
+        "岗位空着没人填，团队天天加班兜底干活，老板却突然把面试从五轮砍到两轮",
+        "这到底是企业在救火提效，还是借机把你的工资偷偷往下压",
+        "那速度提上来，到底拿什么做的交换",
+        "流程只是交通工具，公平才是不翻车的底盘"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，砍、锁人、烧钱等实词落地，问答承接自然，节奏有起伏，通读无需改词。",
+      "script_spans": [
+        "一个坑位空着，现有同事就得把缺的活全揽了，这种消耗每天都在烧钱",
+        "要是单纯为了周期好看，把水平不同的人全塞进同一个低价区间，短期省了日历上的天数，长期却会把真正的好手吓跑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "烧钱、锁人、晃花眼等表达服务理解不喧宾夺主，结尾交通与底盘的比喻离开原文仍可复述。",
+      "script_spans": [
+        "它本质是企业要和岗位空缺的隐性成本赛跑",
+        "招聘流水线可以踩油门，但薪资不能搞速食",
+        "流程只是交通工具，公平才是不翻车的底盘",
+        "把水平不同的人全塞进同一个低价区间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "因果桥清晰，设问承上启下，先立判断再分步展开，结尾金句回扣开头之问，经得起追问。",
+      "script_spans": [
+        "先说因果。为什么老板们现在急着极速招人？",
+        "那速度提上来，到底拿什么做的交换？往往是薪资评估的精细度",
+        "说到底，招聘流水线可以踩油门，但薪资不能搞速食"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "对压价质疑设明确限定，'不是所有快招都恶意压价'划清边界，谈薪建议稳妥，无煽动、夸大或无依据承诺。",
+      "script_spans": [
+        "当然，不是所有快招都恶意压价，只是粗线条操作容易滑进那个坑，这中间存在不小的模糊地带。",
+        "可一旦流程缩到不顾人才定价逻辑，那就从提效滑向了变相压价",
+        "企业不是单纯想对人狠，是先被空岗的代价逼急了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-bebb1971068a4cdbb65ada93564b160b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d0236c90ff144870882dea547a91f627",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

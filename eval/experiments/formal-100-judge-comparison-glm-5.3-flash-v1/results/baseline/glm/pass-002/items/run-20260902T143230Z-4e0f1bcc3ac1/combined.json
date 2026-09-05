@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-2026b783e0fb43c0b0f1213b47a5a11d",
+  "run_id": "run-20260902T143230Z-4e0f1bcc3ac1",
+  "trace_sha256": "2d165d9e75ca4b6481a807e9f6a5d11e721f2b4a17f47aff236092eafe215cf2",
+  "created_at": "2026-09-03T14:25:35.821198Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直问课外烧钱，结尾回扣高价门票；定价成因与家庭负担两侧齐答，句句对着普通家长。",
+      "script_spans": [
+        "家长群弹出研学通知，你心里一紧：这课外的咋比课内还烧钱？",
+        "课堂外的成长，真要靠高价门票才能换吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策出处、真实价位、研发成本、转嫁路径层层推进，信息互不重复且能与公开报道对上，增量扎实。",
+      "script_spans": [
+        "江门刚出整治方案，白纸黑字写着：合理核算成本，不得开展营利性创收。",
+        "光半日游就要三百块，长线出国三四万起步。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字以家长群场景直击烧钱冲突，中段政策、价格、成本、压力层层推进，结尾反问由正文自然生长。",
+      "script_spans": [
+        "家长群弹出研学通知，你心里一紧：这课外的咋比课内还烧钱？",
+        "那高价到底从哪蹦出来？机构把普通景点游重包装成研学课。",
+        "课堂外的成长，真要靠高价门票才能换吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "全篇短句口语为主，读得动；但'转上家长单''软性同伴压力'等处需临场改词，流畅受限。",
+      "script_spans": [
+        "普通人家月薪就那些，这笔钱得从菜钱药费里抠",
+        "别变相强制搞研学并收费",
+        "软性同伴压力常比文件提醒更管用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "从菜钱药费里抠、花钱买份心安等表达具体准确、可复述，修辞服务信息与情绪，无炫技堆叠。",
+      "script_spans": [
+        "娃回来写不出感想，只晒旅行团合影",
+        "这笔钱得从菜钱药费里抠",
+        "当研学变成花钱买份心安"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "研发与运营成本推出破千报价，学校外包转嫁到同伴压力环环相扣，结尾自然回扣开头的烧钱之问。",
+      "script_spans": [
+        "好课得老师先踩点写手册，研发人力贵是定价大头。",
+        "开销叠起来，机构接活车票住宿门票一加，报价自然破千。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "批评有政策与行业依据，'不少''常''往往'限定到位，结尾反思不煽动对立，无违规夸大风险。",
+      "script_spans": [
+        "江门刚出整治方案，白纸黑字写着：合理核算成本，不得开展营利性创收。",
+        "软性同伴压力常比文件提醒更管用。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-36485f50ae87466ebba0d1d69356e20c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

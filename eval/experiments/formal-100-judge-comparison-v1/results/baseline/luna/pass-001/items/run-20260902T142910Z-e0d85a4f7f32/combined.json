@@ -1,0 +1,157 @@
+{
+  "evaluation_id": "combined-50a7e9f7728a4f20a82e3e3327752c37",
+  "run_id": "run-20260902T142910Z-e0d85a4f7f32",
+  "trace_sha256": "93dabad35ef355fb0ab08342d7760c9a6bae7e314e365042514ad00815dc6f96",
+  "created_at": "2026-09-03T11:52:03.618684Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头提出增收与交学费两面，后文分别落到广告套路、培训风险和真实增收条件，始终对准年轻人。",
+      "script_spans": [
+        "真有人靠副业增收，但很多年轻人净亏。",
+        "下次刷到副业课，先问自己：这钱交了，我能换来什么真本事？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 722，目标为 700，偏差率为 3.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，审核规则、投诉数据、贷款陷阱和增收前提逐层推进，既有事实，也给出可执行的避坑判断。",
+      "script_spans": [
+        "平台今年把审核卡紧了。像抖音背后的广告系统，现在要求AI做的素材得标个记号。腾讯也按拒审量罚钱。",
+        "平均涉诉金额超七千块，特征就是先交钱后上课。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用收益承诺与交学费形成冲突，中段持续补充规则、投诉和案例，结尾的自问也自然留下警醒。",
+      "script_spans": [
+        "半夜刷到配音课说月入过万，你怕是去交学费。",
+        "钱交出去后发生了什么？",
+        "那年轻人完全没机会赚到吗？也不是。",
+        "下次刷到副业课，先问自己：这钱交了，我能换来什么真本事？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏明快，问答和短句有抓力；但“数据点了重灾区”“兑现了小部分收益”等表述拗口，影响连贯朗读。",
+      "script_spans": [
+        "你以为标了AI就能信？不对，标注只讲来源，不保结果。",
+        "中消协一季度数据点了技能培训这片重灾区。",
+        "有人拿免费教程练手，接单兑现了小部分收益。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照都服务于风险解释，“别指望单子自己飞进微信”和结尾短句具备自然的复述记忆点。",
+      "script_spans": [
+        "广告里的太阳照在别人庄稼上，你的地还得自己浇。",
+        "课程可以买，但别指望单子自己飞进微信。",
+        "刷视频开心，掏钱要醒。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "两面展开和结尾建议完整，但“广告还满天飞”与“审核卡紧”衔接反向，“禁写必赚”也不能推出“没稳赚”，论证仍有跳步。",
+      "script_spans": [
+        "那年轻人完全没机会赚到吗？也不是。",
+        "下次刷到副业课，先问自己：这钱交了，我能换来什么真本事？",
+        "为啥广告还满天飞？平台今年把审核卡紧了。",
+        "广告里保证的“必赚”已被平台禁写，本身就说明没稳赚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体能提醒副业培训风险，也明确标注不等于保证结果；但个别收入类比和归因较泛化，容易造成误导，需收敛措辞。",
+      "script_spans": [
+        "标注只讲来源，不保结果。",
+        "没算清前，先别点支付。",
+        "七千块是毕业生半月工资",
+        "大概率是给老师凑业绩"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c861ef7e8f4049a2ac5d3bb0c944f1d0",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-23cd2b812d4349048fca991bc961fc82",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

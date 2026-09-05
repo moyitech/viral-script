@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-bb8430c8b5d142518284ace65756705d",
+  "run_id": "run-20260902T144701Z-2a2dd7e4ee7d",
+  "trace_sha256": "7640e6efb60e4a2cdea76602c72bed3dba1134e964cdc92c7c5c260f767a552c",
+  "created_at": "2026-09-03T12:18:05.879260Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答民生支出能否提振消费，并覆盖直接减负与风险兜底两侧。",
+      "script_spans": [
+        "财政更侧民生，消费意愿会跟涨，但只看钱落哪，不是所有民生都灵。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中，文件背景、两类作用机制、医疗例外和落地条件都带来有效增量。",
+      "script_spans": [
+        "一是育儿补贴、免费学前直接减你家务开销，不是搞大项目，是进你家账本。",
+        "医疗卫生那块效果还偏弱，钱没花到痛处。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用工资与消费的反差设问，中段连续给出分项、效果和落地条件，结尾留下可继续思考的判断。",
+      "script_spans": [
+        "工资没涨，你咋敢去母婴店了？",
+        "下次听见民生投入，先想谁替你扛风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，但中段多处压缩表达与生硬搭配，朗读时需要重断句或换词。",
+      "script_spans": [
+        "工资没涨，你咋敢去母婴店了？",
+        "肩头轻一分手头活一分",
+        "二是有研究跟过，教育社保类支出帮家庭卸了贫困焦虑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不是搞大项目，是进你家账本”把宏观支出落到家庭感受，“钱进日常缝里”也有余味，修辞克制且好复述。",
+      "script_spans": [
+        "不是搞大项目，是进你家账本",
+        "钱进日常缝里才行"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，随后按背景、作用机制、效果边界和落地条件递进，结尾回扣核心判断。",
+      "script_spans": [
+        "工资没涨，你咋敢去母婴店了？财政更侧民生，消费意愿会跟涨，但只看钱落哪，不是所有民生都灵。",
+        "政策方向对，落地慢半拍，得实打实兜住失业和养娃，钱进日常缝里才行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无违规煽动，且提示政策落地差异；但“消费意愿会跟涨”“免费学前直接减你家务开销”因果过满，未交代适用条件。",
+      "script_spans": [
+        "但只看钱落哪，不是所有民生都灵",
+        "别以为基建转民生就立刻旺消费",
+        "消费意愿会跟涨",
+        "育儿补贴、免费学前直接减你家务开销"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-de6f36db38444dadb8accd96fbb94977",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

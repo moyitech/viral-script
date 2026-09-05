@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-e822555700784a34b629f63a0323718e",
+  "run_id": "run-20260903T051605Z-2bf557db30e8",
+  "trace_sha256": "a00c46f04ddd335c76e00dcfdd25b936f86df0b58b9a70f86eb5896806fd6329",
+  "created_at": "2026-09-03T15:26:00.022736Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即正面回答「靠谱但有前提」，普通型与分红万能两侧都覆盖，结尾提醒贴合普通投保人决策场景。",
+      "script_spans": [
+        "靠谱，但前提是你只认合同里100%写死的固定利益。",
+        "签字前翻出合同附带的现金价值表，自己算清哪年回本、确定复利多少，别被计划书的高预期带节奏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "锁定机制、实现率数据、负面清单与现金价值表四层信息递进，均有引用佐证，无编造迹象，观众可带走判断方法。",
+      "script_spans": [
+        "普通型寿险或年金险的预定利率在保单签发时就由保险公司按规则定好",
+        "过往行业分红实现率曾平均只有五成多，演示里的漂亮数字常落空"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句直给收益下行与锁定的两难，中段以机制、对比、五成实现率层层兑现，结尾提醒自然生长收束。",
+      "script_spans": [
+        "保险收益预期往下掉，现在去锁长期回报还靠不靠谱？",
+        "过往行业分红实现率曾平均只有五成多，演示里的漂亮数字常落空",
+        "别被计划书的高预期带节奏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "首尾有对话感、短句为主，但中段定义句与监管句名词堆叠，朗读需换气改词。",
+      "script_spans": [
+        "后面市场利率再降也动不了它分毫",
+        "普通型寿险或年金险的预定利率在保单签发时就由保险公司按规则定好",
+        "这两年监管负面清单持续扩容，销售误导边界更清晰了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“写死”“动不了它分毫”贴切助解，“演示里的漂亮数字常落空”“别被高预期带节奏”可脱离原文复述，克制不炫技。",
+      "script_spans": [
+        "合同里100%写死的固定利益",
+        "后面市场利率再降也动不了它分毫",
+        "演示里的漂亮数字常落空"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "立论、机制解释、产品对照、行动建议层层递进，结尾回扣开头提问，关键因果有桥，无需观众自行补逻辑。",
+      "script_spans": [
+        "而分红险、万能险除了那点最低保证，剩余收益全系在险企投资表现上",
+        "这是精算和监管定价机制在托底"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论带前提，分红非保证与固定利益边界讲清，还提醒自查现金价值表，无夸大承诺。",
+      "script_spans": [
+        "靠谱，但前提是你只认合同里100%写死的固定利益",
+        "分红险、万能险除了那点最低保证，剩余收益全系在险企投资表现上",
+        "别被计划书的高预期带节奏"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e0a00cb96a4b40209cd0fe0b9be41455",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

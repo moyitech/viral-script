@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-b957d3b08d5b4f7aa1679e7ec6cba9f0",
+  "run_id": "run-20260902T143250Z-e17d5f3e0c1f",
+  "trace_sha256": "9ac7194795700cd6d337eb6172faa988641fce5618ee3946b132d6817185a185",
+  "created_at": "2026-09-03T12:15:53.930694Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "覆盖厂商、政府与用户三方责任，也给出大小企业可理解的容灾路径，正面回应谁来兜底。",
+      "script_spans": [
+        "这锅不能只甩厂商，也不能全靠政府，用户自己得留后路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "事故频率、责任边界、监管范围、多云灾备和成本分化层层推进，既有事实也给出可执行判断。",
+      "script_spans": [
+        "你看去年全球前十云厂商，出了327次严重事故。",
+        "用多云加灾备，一个云停了另一个接上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用扫码卡住和千亿损失制造冲突，中段层层追问责任与自救，结尾把问题落到系统能撑多久，推进和互动都自然。",
+      "script_spans": [
+        "你扫码骑车突然卡住，一次云故障卷走千亿，损失谁担？",
+        "把鸡蛋分开放。用多云加灾备，一个云停了另一个接上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答推进和生活化比喻较顺，但技术信息压缩较重，个别短语生硬，朗读需重断句。",
+      "script_spans": [
+        "把鸡蛋分开放。",
+        "看云商人员稳定、供应链安全、业务连续。",
+        "大公司能养专人盯云，小户没这力。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“命脉交出去，却没谈好后事”与“像水电但没有公共兜底”兼顾形象和解释，记忆点清楚不过度堆砌。",
+      "script_spans": [
+        "我们习惯把命脉交出去，却没谈好后事。",
+        "云服务像水电，但水电有公共兜底，云目前是商业合同。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "分段推进清楚，也能提出灾备方案，但赔偿上限归因市场集中，小商户困境与责任结论之间缺少调和。",
+      "script_spans": [
+        "那政府来兜底吗？国家有云计算安全评估办法。",
+        "那咱们怎么办？把鸡蛋分开放。用多云加灾备，一个云停了另一个接上。",
+        "为什么它们敢写上限？因为云市场集中，用户难换门。",
+        "小本买卖只能靠天。大公司能养专人盯云，小户没这力。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动或危险内容，但“平均几乎每天都有云出问题”“小本买卖只能靠天”等泛化、绝对化表述，仍可能放大风险认知。",
+      "script_spans": [
+        "多云不是完美，但少让一家咳嗽拖垮你。",
+        "平均几乎每天都有云出问题。",
+        "小本买卖只能靠天。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0090f09900ea4580ac3313509e132296",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-224bdc05edd54021b8618df13de869b5",
+  "run_id": "run-20260902T142358Z-d8ed43a39f0e",
+  "trace_sha256": "bbae0b16bc3d385b09048e2f3e0aeb9ddf6cc278e31bd476c8bca5de0ca2fb61",
+  "created_at": "2026-09-03T12:20:13.893937Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答陌生人垫付的风险与边界，覆盖善意、受助者、普通人和可执行的防范办法，切题完整。",
+      "script_spans": [
+        "善意得留，但没边界的帮忙容易让自己栽跟头。",
+        "真急有官方渠，引她去岗亭而非掏钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕垫付风险，法律后果、支付工具、诈骗心理和核验动作均有信息推进，观众能带走判断方法。",
+      "script_spans": [
+        "这法律上算没义务的帮忙，你垫的必要钱理论能要回。",
+        "先开延时付截屏留证"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用垫钱被骗的反差抓人，中段依次推进法律风险、工具和应对，结尾以停顿提问收束，留有行动余味。",
+      "script_spans": [
+        "好心替陌生人垫钱，对方却骗你更惨？",
+        "平台工具只是补丁，真边界在你那步停顿。",
+        "下次扫码前默数几秒，问他为何寻我？有答再付。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有“万一是真的呢”的对话感，但法律说明和建议段压缩过密，多处需要重断句或换词。",
+      "script_spans": [
+        "你一想万一是真的呢，不帮怕耽误事",
+        "碰一陌生大姐说手机没电求代付瓶水钱",
+        "人家若真实意思不需要这管理，就能抗辩不认账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“平台工具只是补丁”有记忆点，但“这法律上算没义务的帮忙”等压缩句生硬，表达未达到自然耐复述。",
+      "script_spans": [
+        "平台工具只是补丁，真边界在你那步停顿。",
+        "这法律上算没义务的帮忙",
+        "善意留着风险隔开些。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "叙事、法律、工具和行动建议顺序完整，主线易跟；但“有答再付”把回应偷换成安全依据，等待与防骗结论推得过满。",
+      "script_spans": [
+        "遇长辈私信求救，先开延时付截屏留证",
+        "边界画哪？你看支付宝有延时到账",
+        "研究指容易信人的性格更易接陌生请求，你肯等半日套路易破。",
+        "下次扫码前默数几秒，问他为何寻我？有答再付。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导核验、留证和寻求官方帮助，方向稳妥；但法律效果、止付条件和“视频核身”说法偏笼统，“小额试水”仍可能诱导转账。",
+      "script_spans": [
+        "真急有官方渠，引她去岗亭而非掏钱。",
+        "只垫小额试水。",
+        "钱没进户头前警方止付可截住"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-98dbd098473548f093149eef6e4625a5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

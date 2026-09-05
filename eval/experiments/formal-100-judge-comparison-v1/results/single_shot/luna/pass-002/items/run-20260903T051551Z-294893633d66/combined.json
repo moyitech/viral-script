@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-ce34aeeb8cf549e699638e4398556565",
+  "run_id": "run-20260903T051551Z-294893633d66",
+  "trace_sha256": "e2888f68ce3fcaff482dad9beaafafe411afa84df3e2d3b3f93f8ed3ead53eae",
+  "created_at": "2026-09-03T12:33:41.907523Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直接比较机会与房租成本，并覆盖人口流入、居住代价及普通年轻人的应对。",
+      "script_spans": [
+        "对普通年轻人，城市里的机会收益目前还略压过房租成本"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中在机会与租金权衡，也有供给、个人账本和规则信息；但核心比较缺少可检验依据，增量仍有限。",
+      "script_spans": [
+        "人群聚在一起，好岗位、新行业、人脉网络才长得出來。代价是居住需求集中爆发，租金自然被顶上去。",
+        "城市里的机会收益目前还略压过房租成本"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用机会与房租的反差设问，中段不断补充机制和对策，结尾收在现实判断上，追看动力完整。",
+      "script_spans": [
+        "大城租房越来越贵，可年轻人还是一波波往里挤。这账到底怎么算？",
+        "这里有个被忽略的缓冲阀：部分城市开建保障性租赁住房",
+        "留得下，才谈得上赚得到。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾有对话感，但中段抽象名词和政策术语偏密，朗读时需要主动拆重音。",
+      "script_spans": [
+        "这账到底怎么算？",
+        "城市里的机会收益目前还略压过房租成本",
+        "居住需求集中爆发"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“机会是慢火炖汤，租金是当面收钱”把收益与成本的时间差说活了，也有“薄得像层纸”的余味。",
+      "script_spans": [
+        "机会是慢火炖汤，租金是当面收钱。",
+        "薄得像层纸"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，能从城市机制落到个人账本，再转向行动建议；但“略压过”没有明确比较口径，结论与论据之间仍缺一座桥。",
+      "script_spans": [
+        "人群聚在一起，好岗位、新行业、人脉网络才长得出來。代价是居住需求集中爆发，租金自然被顶上去。",
+        "可一旦因为贵就退回家乡，也可能顺手关掉了职业跃升的那扇窗。",
+        "对普通年轻人，城市里的机会收益目前还略压过房租成本"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无煽动或危险承诺，但“机会收益略压过成本”过于概括，“自然被顶上去”因果绝对，保租房建议也需注明因地而异。",
+      "script_spans": [
+        "别拿全部收入去硬扛市场房价。",
+        "对普通年轻人，城市里的机会收益目前还略压过房租成本",
+        "租金自然被顶上去"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c2d486acc3fb4eac88f937c442399115",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-7bb3e06fcddf46e593e6488a78ac0a63",
+  "run_id": "run-20260903T051539Z-9a883db03d7a",
+  "trace_sha256": "bfa7885194f64dfc8cf6ac50de5975700b26d853a333d112765ef5fc0420d791",
+  "created_at": "2026-09-03T11:58:51.540534Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直指收益被汇率吞噬，后文围绕普通人的换汇、持有与赎回展开，切题且人群精准。",
+      "script_spans": [
+        "跨境理财持续升温，但汇率波动绝不是陪衬，它真能吞掉你的收益。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 421，目标为 450，偏差率为 6.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦汇率如何侵蚀跨境理财收益，覆盖汇率、点差、折算和到手账，信息能转化为判断方法。",
+      "script_spans": [
+        "关键机制在于购汇和结汇的链条。",
+        "别只看境外产品挂的浮夸回报，要算“到手人民币”的账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“白干了”的收益反差起钩，中段依次推进汇率、换汇链条和到手收益，结尾用主角比喻留下余味。",
+      "script_spans": [
+        "你兴冲冲把人民币换成美元去买境外理财，最后算账却发现白干了",
+        "汇率不是背景音，是主角之一"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，但中段抽象术语密集，个别搭配拗口，朗读需换词或重断句。",
+      "script_spans": [
+        "钱没亏在标的，亏在了汇率上",
+        "企业跨境融资的前车之鉴表明，币值错配会让盈利被汇兑损益反噬",
+        "资金量越小，换汇点差在总收益里占比越突出"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“钱没亏在标的，亏在了汇率上”形成清晰反差，“汇率不是背景音，是主角之一”也有自然的复述点，修辞服务观点。",
+      "script_spans": [
+        "钱没亏在标的，亏在了汇率上",
+        "汇率不是背景音，是主角之一"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，能从汇率背景推进到换汇机制和落袋收益；但小额点差与本土选项的比较都缺少条件，结论略有扩大。",
+      "script_spans": [
+        "先看问题本质。近几年人民币汇率弹性明显提升，双向波动成了常态。",
+        "关键机制在于购汇和结汇的链条。",
+        "资金量越小，换汇点差在总收益里占比越突出。",
+        "如果承受不了汇率反向波动，盲目跨境理财可能连本土稳健选项都不如。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体是在提示汇率风险，未作收益保证；但“白干了”“浮夸回报”等绝对化、贬义表达，且时点判断缺少限定，可能误导。",
+      "script_spans": [
+        "单纯盯着外币计价的收益率，很容易误判。",
+        "最后算账却发现白干了——钱没亏在标的，亏在了汇率上。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f2387a947ea644d2be8cf01d64e6e39d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-37ddb90db4bf4a64a0c8815cfa59af19",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

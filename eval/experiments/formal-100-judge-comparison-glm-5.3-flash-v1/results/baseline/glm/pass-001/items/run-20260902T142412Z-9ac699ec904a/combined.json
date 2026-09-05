@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-b6a9d7efc4ee493f9efa80299a6a370d",
+  "run_id": "run-20260902T142412Z-9ac699ec904a",
+  "trace_sha256": "bf27e12702c45d09fe7989f48a23a802dd5e5f733b708bfd31c54a9db0bf1fb9",
+  "created_at": "2026-09-03T13:46:08.982143Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛二元问题，因材施教与放大差距两侧机制均展开，乡村孩子、家长等核心人群被覆盖，结尾直接作答题设。",
+      "script_spans": [
+        "这东西真能因材施教？还是把学习差距放大？",
+        "所以因材施教或放大差，不比模型多聪明，比咱们托底网密不密。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 750，目标为 700，偏差率为 7.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "自适应推题、算法偏城乡、政策与现实落差层层推进，与引用背景相符，无编造痕迹，观众能带走判断方法。",
+      "script_spans": [
+        "AI记你每道题的耗时与错点，自动调低或调高下一个题目难度。",
+        "模型拿历史高分样本练，推荐更厚待优等生。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差钩子直接成立，中段连抛新问题与转折，结尾追问由台阶意象自然长出，留有余味。",
+      "script_spans": [
+        "你发现没，班里装了AI助教，尖子生更尖，差生更慌",
+        "可家里没平板的同学，学校机房一周才开一次",
+        "你怪他不开窍，还是怪没递那块垫脚石？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句密、比喻接地气，中段口语扎实；但“厚待优等生”“放大差”等处需换词重断，政策句术语连读费气。",
+      "script_spans": [
+        "它改你的默写，红笔圈出易混字，第二天专发那几个字的小测，漏掉的点追着喂。",
+        "推荐更厚待优等生",
+        "所以因材施教或放大差",
+        "讲育人为本、公平普惠，要规模教育和个性培养统一"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "台阶、托底网等比喻贴切克制，'技术不改资源底子，只是映射旧差距'离文可复述，无堆砌炫技。",
+      "script_spans": [
+        "好比给每人发不同台阶，像有个不厌烦的陪练",
+        "技术不改资源底子，只是映射旧差距",
+        "城里的校早跑通了，乡下刚领钥匙"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由个例到机制再到政策，转折承接清楚，关键因果有桥，结尾梯子比喻回扣开头同桌反差，逻辑闭合自然。",
+      "script_spans": [
+        "可家里没平板的同学，学校机房一周才开一次。他碰系统的次数太少，进度悄咪咪差出半学期",
+        "当孩子对着屏幕卡住时，你怪他不开窍，还是怪没递那块垫脚石？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "两面陈述且无硬违规；但“差生”属标签化表述，“领导乐见数据好看”系无依据归因，宜改措辞。",
+      "script_spans": [
+        "其实两边都在发生，全看它怎么落进真实教室。",
+        "尖子生更尖，差生更慌",
+        "买系统是为减负，领导也乐见数据好看。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-cb8380f3d64d443d9dc5e88eb5571c27",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-077493664cb84aefba5de02381dd8ff1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

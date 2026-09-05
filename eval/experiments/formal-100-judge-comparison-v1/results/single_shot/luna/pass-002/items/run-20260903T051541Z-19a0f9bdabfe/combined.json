@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-bc534caefb7042a299ce1314ca996505",
+  "run_id": "run-20260903T051541Z-19a0f9bdabfe",
+  "trace_sha256": "d6de21ab348b4e0c8a1fed36558e1a4cd48050085129a53a3742ec641c744ac1",
+  "created_at": "2026-09-03T12:31:44.991422Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答证书能否换工作，区分准入与评价两类，并给应届生明确行动建议。",
+      "script_spans": [
+        "证书换工作行不行，得拆成两类看。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，分类、改革机制和求职建议较充足；但将水平评价类整体概括为退出目录，关键事实范围失准。",
+      "script_spans": [
+        "先去查目标岗位是否在准入类目录，是就必须考；不是，就优先攒实习和项目经验。",
+        "后者原本政府发证，如今已分批退出目录，改由用人单位或社会机构认定"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用图书馆里的反差切题，中段不断拆分类别、解释机制并给出行动建议，结尾钥匙比喻自然收束。",
+      "script_spans": [
+        "招聘季一到，图书馆里背书考证的比看专业书的多。",
+        "明确说：证书换工作行不行，得拆成两类看。",
+        "先搞清你进的那扇门，到底需不需要钥匙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，但制度解释段抽象词偏密，部分长句朗读时需要重断句。",
+      "script_spans": [
+        "那普通人怎么办？别盲目跟风考一堆通用证。",
+        "好处是破除政府背书的惯性，坏处是证书含金量要看具体发证的行业组织认不认。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "图书馆反差、就业硬通货和门钥匙形成清晰记忆链，修辞不抢观点，观众能复述核心判断。",
+      "script_spans": [
+        "现实是很多证早就不是就业硬通货了。",
+        "考证不是没用，但别把参考性证明当通行证。",
+        "先搞清你进的那扇门，到底需不需要钥匙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，能从证书分类推进到求职建议；但制度对象存在概念偷换，研究证据到核心结论之间也缺少充分因果桥。",
+      "script_spans": [
+        "考证不是没用，但别把参考性证明当通行证。",
+        "后者原本政府发证，如今已分批退出目录，改由用人单位或社会机构认定，不再是统一背书。",
+        "有研究提到人力资本仍影响起薪，但家庭等因素也掺在里面，光靠一张社会化等级证很难单挑大梁。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动或承诺性表述，但把“水平评价类”笼统说成均退出目录，易误导；建议限定为技能人员资格。",
+      "script_spans": [
+        "考证不是没用，但别把参考性证明当通行证。",
+        "后者原本政府发证，如今已分批退出目录"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a046fa7187094bb6a23530dce4f99d71",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-4568199274aa46faa0cc004b16846231",
+  "run_id": "run-20260902T144820Z-a8d73c877d07",
+  "trace_sha256": "5dbd55ef50301a6fa769dcc395c764426e93eef098ee4fdbbea25eeec84e919b",
+  "created_at": "2026-09-03T12:27:39.717713Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答电力与土地为何成为筹码，并覆盖中美竞争、项目方与普通用户，切角具体。",
+      "script_spans": [
+        "建数据中心现在拼的不是芯片，是电和地。",
+        "落到普通人身上会怎样？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕电力与土地展开，监管、时序、区位、资本门槛和用户影响形成递进，信息增量充分。",
+      "script_spans": [
+        "以前是下订单等送货，现在是找供电部门协调工期。",
+        "算力的核心土地高度集中在少数枢纽和城区，中小玩家根本拿不到配套指标。",
+        "普通机房没这实力，慢慢被挤到边缘。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用芯片与电地的反差立钩子，中段不断换层推进，结尾追问也从前文自然落地。",
+      "script_spans": [
+        "建数据中心现在拼的不是芯片，是电和地。",
+        "以前是下订单等送货，现在是找供电部门协调工期。",
+        "下次看到算力中心，你会先问它耗了哪的电、占了哪的地吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "设问和短句带来对话感，但中段有两处句式拗口、长气口拖慢朗读。",
+      "script_spans": [
+        "可它吃电像个小城镇。",
+        "国内一线城市得闯过能耗双控、绿电比例好几道监管关。",
+        "当云服务和一块地、一座变电站紧紧绑定，我们每次刷视频的背后，常常是被人争抢的电力和农田。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“拼的不是芯片，是电和地”与“地却得落地”形成准确反差，简洁且可复述。",
+      "script_spans": [
+        "拼的不是芯片，是电和地。",
+        "电可以离网自建，地却得落地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "电、地、反差、用户影响分段推进清楚，但把美国项目暂停直接归因于排队接电，因果桥偏单一。",
+      "script_spans": [
+        "咱们先聊电这一侧。",
+        "那地呢？也不是随便租个仓库就能塞进服务器。",
+        "落到普通人身上会怎样？",
+        "你看美国多地项目直接暂停，排队接电等好几年，就是这道坎。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体聚焦行业约束，未见明显违规；但“根本”“多半”等绝对化表述可能造成过度概括，需补充范围或改写。",
+      "script_spans": [
+        "为啥电和地成了谈判桌上的硬筹码？",
+        "中小玩家根本拿不到配套指标"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a3597dddea2a45ecbe8dd58856cef148",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

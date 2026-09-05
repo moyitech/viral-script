@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-0bdcfc0d4eb347babfdf060bf59052a2",
+  "run_id": "run-20260903T051630Z-241e03ab9d2e",
+  "trace_sha256": "044d350f6b3529826d47c10f316843537420a32d018e3048e1b74dea803c5532",
+  "created_at": "2026-09-03T12:42:34.126684Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回应“更快”与“更吵”两端，后文同时给出提速原因和降噪、治理条件，命中题设。",
+      "script_spans": [
+        "快递确实会比地面更快，但城市不一定变得更吵"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕速度、噪声、空域与社区反馈逐层推进，既有机制解释，也给出可执行的治理建议，信息增量充足。",
+      "script_spans": [
+        "无人机走直线、不绕路，避开了红绿灯和小区出入口的拥堵",
+        "居民区试飞前，应该有噪声公示和简便的反馈渠道，比如社区群报备"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“更快”与“不一定更吵”制造核心冲突，中段层层补充，结尾以居民感受收束，推进和余味都成立。",
+      "script_spans": [
+        "快递确实会比地面更快，但城市不一定变得更吵"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话式承接，信息顺序也清楚；但两处书面、拗口表达拉低了连贯性，尚未达到自然口播。",
+      "script_spans": [
+        "无人机走直线、不绕路，避开了红绿灯和小区出入口的拥堵",
+        "前提是降噪能力和试点节奏得同步跟上",
+        "眼下低空空域正做细化划分，给这类配送打开了合法通道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不能先飞再治”和结尾对照句简洁好记，修辞服务观点，没有连续堆砌。",
+      "script_spans": [
+        "不能先飞再治",
+        "飞得低本身不是问题，听不见、不心烦才是真进步"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头定调，随后按提速原因、噪声条件、空域背景和居民反馈递进，转折自然，结尾回扣题设。",
+      "script_spans": [
+        "前提是降噪能力和试点节奏得同步跟上，不能先飞再治",
+        "飞得低本身不是问题，听不见、不心烦才是真进步。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有降噪、公示和反馈等边界意识，但“确实会”“合法通道”“听不见”等表述过满，需限定场景与审批条件。",
+      "script_spans": [
+        "前提是降噪能力和试点节奏得同步跟上，不能先飞再治。",
+        "居民区试飞前，应该有噪声公示和简便的反馈渠道",
+        "快递确实会比地面更快",
+        "给这类配送打开了合法通道",
+        "听不见、不心烦才是真进步"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-07e81a4a7e654499836431c82231c049",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

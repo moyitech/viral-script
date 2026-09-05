@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-53b20a374d84458d89923c65d0bfa654",
+  "run_id": "run-20260903T051640Z-b1a39aba16c5",
+  "trace_sha256": "0b23e22d465ea1cfa80b07f8ab17d697f7a610d174360e9e32b44835c16f74c1",
+  "created_at": "2026-09-03T11:57:08.407670Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即抛出慰藉与越界的冲突，结尾回到透明使用与伦理边界，完整覆盖题设两端。",
+      "script_spans": [
+        "你该觉得被温柔拥抱，还是该突然后背发凉？",
+        "用AI复原逝者声音本身不是伦理越界；真正越界的是掩盖它是合成的事实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 748，目标为 700，偏差率为 6.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主旨始终围绕复原逝者声音的伦理边界，从标识、商业化、心理风险到身份冒用持续推进，信息增量充分。",
+      "script_spans": [
+        "把这份思念悄悄拿去变现",
+        "有人反而会更困在回忆里，甚至忽略了对后代的影响",
+        "要是有人拿复原的声音去冒用身份办业务，或者编出逝者从没说过的遗言搅动家庭争端"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用亲人声音的真假反差立刻制造刺痛感，中段不断转入规则、心理和滥用风险，结尾余味自然。",
+      "script_spans": [
+        "可这声音其实是算法拿几段旧录音拼出来的。你该觉得被温柔拥抱，还是该突然后背发凉？",
+        "那除了“有没有说清楚是合成”，还有什么让这件事在情感上变得棘手？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答和对话感，但中段多处长句、抽象表达叠加，朗读时需要重断句。",
+      "script_spans": [
+        "你该觉得被温柔拥抱，还是该突然后背发凉？",
+        "也有针对丧亲家庭的研究，把重点放在人们愿不愿意接受，而不是它该不该存在，这说明接受度本身就是复杂变量。",
+        "这里有个不确定：不是所有人都适合这种告别，有人反而会更困在回忆里，甚至忽略了对后代的影响，孩子可能分不清什么是真实传承。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“声音直接钻进耳朵”和“温柔变成没有尽头的扮演”形象准确，既强化伦理风险，也留下了可复述的记忆点。",
+      "script_spans": [
+        "声音直接钻进耳朵，最容易让人产生“人还在”的错觉。",
+        "留住声音可以是一种温柔，但别让那份温柔，变成一场没有尽头的扮演。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由情境设问引出立场，再按监管、心理和滥用风险递进，结尾回扣合成提示，结构闭合且因果基本完整。",
+      "script_spans": [
+        "先看现有的规则逻辑。",
+        "那除了“有没有说清楚是合成”，还有什么让这件事在情感上变得棘手？",
+        "听到那声“合成”的提示，你才真的在和回忆相处，而不是和代码周旋。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见明确违规，能提示合成标识与滥用风险；但“成倍放大”“最容易”等表述偏绝对，需收窄限定。",
+      "script_spans": [
+        "有个不确定：不是所有人都适合这种告别",
+        "平台如果疏于审核用途，风险还会成倍放大"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-a798c6755ae1458782248e6db5ef7fd2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c84fd2c0df0140bcaa2eff1a745dc5ca",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

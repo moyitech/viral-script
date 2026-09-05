@@ -1,0 +1,169 @@
+{
+  "evaluation_id": "combined-a458b798925a428d93de888443b00b87",
+  "run_id": "run-20260903T051555Z-e05a8aafe2b6",
+  "trace_sha256": "16b38345affd3e6169eab50d8b3f0e3a1eaebfdd986eb166accb94f574fb917a",
+  "created_at": "2026-09-03T12:05:40.861019Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答低价与门槛关系，覆盖会员商店、扩张、用户取舍及普通消费者判断。",
+      "script_spans": [
+        "会员制商店的低价是真的，但便宜背后没消失门槛",
+        "它奖赏就近、高频、容错强的人；若你一年去两趟"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 836，目标为 700，偏差率为 19.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕低价机制与消费门槛推进，年费、退卡限制、履约和品控风险带来明确认知增量。",
+      "script_spans": [
+        "这笔钱既是现金流，也是筛子。",
+        "这等于用退出权置换低价。",
+        "你省了标价，可能赔上等待和品质波动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用反问制造价格反差，中段连续推进因果、取舍与扩张风险，结尾落到具体消费选择，余味自然。",
+      "script_spans": [
+        "你以为仓储会员店遍地开花，是把物价彻底打下来了？",
+        "门槛最后转成了风险成本——你省了标价，可能赔上等待和品质波动",
+        "若你一年去两趟，那张卡本身就是最贵商品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和转折有对话感，整体也能顺读；但长并列、抽象术语和多处不顺表达，拖慢了自然节奏。",
+      "script_spans": [
+        "事实相反，它先收你一张门票，再递给你省钱清单。",
+        "那用户为何甘心？因为表面算账能回本。",
+        "会员制商店的低价是真的，但便宜背后没消失门槛，只是从货架标价挪到了身份、时间和不确定性的暗处。",
+        "前端开店轰轰烈烈，后端云仓缺货就让极速达从一小时变半日达；客流暴涨，品控却频亮红灯，甚至引来监管约谈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“门票”“筛子”等比喻服务于解释，结尾“最贵商品”准确有力，能把消费门槛转成观众可复述的判断。",
+      "script_spans": [
+        "它先收你一张门票，再递给你省钱清单。",
+        "这等于用退出权置换低价。",
+        "那张卡本身就是最贵商品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构有递进和回扣，但核心解释多为书面长句，因果桥压缩，口播时需频繁重断句。",
+      "script_spans": [
+        "先看因果。普通超市靠买卖差价活，会员店把商品利润压到极薄，转头收年费。",
+        "结尾记牢：会员店加速扩张，便宜背后藏的是明码标价的消费门槛",
+        "我的判断很直白：会员制商店的低价是真的，但便宜背后没消失门槛，只是从货架标价挪到了身份、时间和不确定性的暗处。",
+        "所以低价的根源，是拿预付门槛换长期锁定，商家靠你的会员费预测需求，反向压供应链成本。",
+        "这等于用退出权置换低价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且提示了适用前提；但个别会员条款被概括得过满，可能造成规则范围上的误导。",
+      "script_spans": [
+        "低价成立的前提，是你稳定用得上服务",
+        "反复退费直接失去资格"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 836,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.19428571428571428
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d9545d329f114e17bf4100537fbdb7fd",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9e6fbde07b974768befcb26db152b854",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

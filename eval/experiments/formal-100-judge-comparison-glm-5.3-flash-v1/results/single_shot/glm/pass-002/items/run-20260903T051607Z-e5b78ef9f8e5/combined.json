@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-db73bc4008504e488a769eb9517e3349",
+  "run_id": "run-20260903T051607Z-e5b78ef9f8e5",
+  "trace_sha256": "19f146ed9da9333289abd455f28546dd26ff6305172ae2ca36e6717d5e398943",
+  "created_at": "2026-09-03T15:26:04.033759Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即锁定普及趋势，中段直接回应'是否更安全'，个人与企业两侧均有覆盖，判断与人群痛点契合。",
+      "script_spans": [
+        "无密码登录确实掐断了最泛滥的口令泄露和钓鱼陷阱，但账户安全只是换了战场，远不是终点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从攻击逻辑、机制原理到风险挪移层层推进，各信息单元分工明确且与引用背景吻合，结尾建议可操作。",
+      "script_spans": [
+        "它靠设备内私钥完成签名，服务端只认签字不碰秘密",
+        "钥匙拴在手机或电脑上，全丢了你仍得靠邮件或备用码，又回到老路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字内即有悬念，中段连设两问推进，结尾叮嘱由正文自然生长，三段均立得住。",
+      "script_spans": [
+        "刷脸、指纹一键登录正悄悄接管你的账号，各大平台恨不得把密码锁进抽屉",
+        "不过，这套机制就毫无缝隙？得看看风险被挪去了哪里。",
+        "下次开通passkey，别忘了同步硬化设备锁和救援邮箱，别让最弱一环退回旧漏洞。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "比喻生动、短句为主，但长定语句与“同步硬化”等处需换词重断，口语感被书面句拉低。",
+      "script_spans": [
+        "哪怕骗子搭个以假乱真的页面，也榨不出可复用的凭证",
+        "这种取舍像把家门锁换成指纹，却把备用钥匙藏回脚垫下",
+        "伪造登录页套取密码、再截获验证码的中间人手法，让传统双重验证也破绽百出",
+        "别忘了同步硬化设备锁和救援邮箱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻密集但各司其职，指纹锁与脚垫下钥匙的类比准确易复述，未见炫技压过观点。",
+      "script_spans": [
+        "这种取舍像把家门锁换成指纹，却把备用钥匙藏回脚垫下。",
+        "他们只是把工具箱换了个夹层",
+        "它把易攻的点收窄了，却没把门焊死"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问过渡自然，风险与结尾建议一一对应，收束回扣'换了战场'主线，前提到结论因果链完整。",
+      "script_spans": [
+        "不过，这套机制就毫无缝隙？得看看风险被挪去了哪里。",
+        "别忘了同步硬化设备锁和救援邮箱，别让最弱一环退回旧漏洞"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "明确指出安全'远不是终点'，风险与收益讲清，无夸大承诺或误导建议。",
+      "script_spans": [
+        "无密码登录确实掐断了最泛滥的口令泄露和钓鱼陷阱，但账户安全只是换了战场，远不是终点。",
+        "无密码是扎实进步，但只是新跑道的发令枪，后续养护才是日常。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b7bf23bdc95a40a990d2e33ac8ebf31f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

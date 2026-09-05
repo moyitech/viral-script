@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-6e4aebd823124e1cbc3aa7ea21682039",
+  "run_id": "run-20260902T142830Z-68e2a5f577b1",
+  "trace_sha256": "5571bdbab9f415ff68d6f387cc5e44d06b834691d803492bf1cc6aef62f617ab",
+  "created_at": "2026-09-03T13:44:35.859819Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回应该不该统一，正反两侧与普通用户、平台均覆盖，结尾提问自然回扣题设。",
+      "script_spans": [
+        "看似该统一赔，其实硬统一定死可能让你更亏",
+        "要是平台只发提醒不赔，你会自己较真还是等统一？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 279，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法条弹性、罚企现实、双向推演层层推进，信息密度高；参考印证特别法与罚企表述，无编造。",
+      "script_spans": [
+        "法院还能按损害酌情判，可见法律故意留了弹性",
+        "门槛定低了，平台拿低额赔偿顶锅，你反而难多要"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即立冲突与反转，中段用法律弹性、罚款现实、门槛两难持续兑现钩子，结尾提问由正文争议自然长出。",
+      "script_spans": [
+        "数据泄露后平台只发提醒不赔，看似该统一赔，其实硬统一定死可能让你更亏",
+        "门槛定低了，平台拿低额赔偿顶锅，你反而难多要；门槛定高了，小创业者可能赔穿",
+        "要是平台只发提醒不赔，你会自己较真还是等统一？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口清楚，顶锅、赔穿接地气；但法责段仍是法律讲解腔，作为信息处理者、可见等词需改写才像真人说话。",
+      "script_spans": [
+        "别搞一刀切定额，但得设个最低兜底",
+        "平台作为信息处理者，本就有责任采取必要措施保安全"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "一刀切、兜底、顶锅、赔穿等口语修辞服务理解，不炫技；“主动主张，比盼统一标准更实在”离开原文仍可复述。",
+      "script_spans": [
+        "平台拿低额赔偿顶锅，你反而难多要",
+        "真泄露了主动主张，比盼统一标准更实在",
+        "别搞一刀切定额，但得设个最低兜底"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清晰、'再说法律''所以'过渡明确，但开头'设最低兜底'与后文低门槛顶锅推演相抵，主张未回收。",
+      "script_spans": [
+        "再说法律，个保法算是民法典特别法",
+        "所以咱们别光等平台提醒，自己留好账号异常证据",
+        "别搞一刀切定额，但得设个最低兜底",
+        "门槛定低了，平台拿低额赔偿顶锅，你反而难多要"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "个保法与民法典关系表述有据，法院裁量、获赔现状均留余地；建议务实不夸大，无误导或煽动风险。",
+      "script_spans": [
+        "法院还能按损害酌情判，可见法律故意留了弹性",
+        "近期通报的泄露案，多是罚企业了事，极少提用户获赔"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-18e608ded2c14f2288d888e510815ab8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-41629cb7aac140359bf0cde0d1f93f19",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

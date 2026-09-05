@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-d6899fd0426d4db592de570885e6db96",
+  "run_id": "run-20260902T142801Z-f25e407b41a9",
+  "trace_sha256": "8e54a0a7da8a6738556a6e5cd9d05631fb7c116e966b82457999176c54938974",
+  "created_at": "2026-09-03T12:16:48.131246Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直面默认设置责任，兼顾厂商、用户与普通家庭处境，回答完整。",
+      "script_spans": [
+        "厂商出厂留默认口令，该负掉链子的责；但你拆盒也得动手设防。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "责任划分、监管进度、用户自防和Matter边界彼此推进，既有事实也有判断，行动落点明确。",
+      "script_spans": [
+        "那法律能叫厂商赔吗？现实有点暧昧。",
+        "Matter认证产品超七千款，侧重的是互联，不盯默认密码。",
+        "您今晚是等厂商良心发现，还是拆包先改掉那个原始密码？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出隐私冲突，中段连续切换厂商、法律与用户责任，结尾追问也自然。",
+      "script_spans": [
+        "你家摄像头被陌生人看光，厂商却说密码没改？",
+        "那法律能叫厂商赔吗？现实有点暧昧。",
+        "您今晚是等厂商良心发现，还是拆包先改掉那个原始密码？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有清晰停顿和对话感，但“掉链子的责”等压缩表达会卡顿，法律段也偏书面。",
+      "script_spans": [
+        "咱们拆开看。",
+        "该负掉链子的责",
+        "智能家居安全规范强制标准还在写"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“公开直播间”形象具体，“默认设置是起点，不是终点”清楚概括了责任边界，修辞整体克制。",
+      "script_spans": [
+        "你家就成了公开直播间。",
+        "厂家的默认设置是起点，不是终点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "段落顺序清楚，但从标准征求意见稿推到监管现状，再推到法院通常认定设计缺陷，关键因果与法律依据不足。",
+      "script_spans": [
+        "把镜头转回来，聊聊咱们自己。反过来看，用户就无辜？也不是。",
+        "这说明眼下买设备，出厂设什么密码主要靠厂商自觉。",
+        "若出厂留固定密码又不让改，法院多认设计缺陷。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调厂商与用户共同担责，且对诉讼结果有所保留；但“风险就自己扛一半”等句把责任比例说死，易造成法律误导。",
+      "script_spans": [
+        "法律追责的绳子还没编紧，你不能指望法院一告一个准。",
+        "风险就自己扛一半。",
+        "若出厂留固定密码又不让改，法院多认设计缺陷。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ab53d64a032e4f60a76afac233ec7b05",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

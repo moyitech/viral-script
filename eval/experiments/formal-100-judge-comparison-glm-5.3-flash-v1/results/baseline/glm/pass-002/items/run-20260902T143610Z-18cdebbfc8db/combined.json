@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-7e49b66d53084c98bd515e0b8cf0dbe6",
+  "run_id": "run-20260902T143610Z-18cdebbfc8db",
+  "trace_sha256": "37f431813c1f71145e063aba783c82b901ff56faceeddceb60a185785e9816e3",
+  "created_at": "2026-09-03T14:25:00.636971Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直问直答兼得之问，中段解释省钱来源与品质底线，结尾回扣会挑就行，两侧与人群全覆盖。",
+      "script_spans": [
+        "图便宜买预制菜，怕品质差咋办？能兼得，会挑就行。",
+        "看准了，省钱也能吃得踏实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "省钱归因效率、国标兜底品质、挑选加热各给一条干货，单元递进无复述，与背景资料相符无编造。",
+      "script_spans": [
+        "省了厨师站灶前，门店房租水电全砍掉，价格才比堂食低一大截。",
+        "正在征求意见的国标写清，预制菜不添防腐剂，品质有底线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字直给冲突并承诺解法，中段成本账、国标、挑选技巧层层兑现，结尾提问由看标签自然长出。",
+      "script_spans": [
+        "图便宜买预制菜，怕品质差咋办？能兼得，会挑就行。",
+        "省了厨师站灶前，门店房租水电全砍掉，价格才比堂食低一大截。",
+        "下次推车拿盒菜，你愿先看标签再省钱吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全文逗号切出短气口，'全砍掉''叮两下'等口语词贯穿中段解释，重音停顿自然，朗读无需改词。",
+      "script_spans": [
+        "省了厨师站灶前，门店房租水电全砍掉，价格才比堂食低一大截",
+        "别图快用微波炉随便叮两下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "便宜来自效率与省钱吃得踏实均可独立复述，锅气、肉疼、叮两下等表达克制不油腻，服务理解。",
+      "script_spans": [
+        "便宜来自效率，不是偷工减料",
+        "餐馆现炒有锅气，但价高得让你肉疼",
+        "看准了，省钱也能吃得踏实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "便宜归因到厨师与房租，国标分类承接'那怎么挑'，因果桥完整，结尾自然回扣开头与题设。",
+      "script_spans": [
+        "便宜来自效率，不是偷工减料。",
+        "那怎么挑？先看包装标识，买时翻到背面看贮存温度。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无违规与危险建议，安全提示与国标边界清楚；但“不是偷工减料”“全砍掉”属绝对化归因，宜加“主要”等限定更稳妥。",
+      "script_spans": [
+        "正在征求意见的国标写清，预制菜不添防腐剂，品质有底线",
+        "冷冻的得彻底热透再吃，别只用热水泡软，要煮到滚烫",
+        "便宜来自效率，不是偷工减料",
+        "省了厨师站灶前，门店房租水电全砍掉"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a41c2568287b4977a9583b82aa292890",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

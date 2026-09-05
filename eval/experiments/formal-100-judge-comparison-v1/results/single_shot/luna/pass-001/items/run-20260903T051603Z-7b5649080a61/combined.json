@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-321ebb7cae2341f79eba4eba94f3c059",
+  "run_id": "run-20260903T051603Z-7b5649080a61",
+  "trace_sha256": "7219e7db25ae4b84615f80329b2c63ef65c037cba61f9911b214556078617d22",
+  "created_at": "2026-09-03T11:57:27.572349Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "不把回报偷换成固定工资，同时回应老人负担、子女责任与家庭协作，正面回答了题设。",
+      "script_spans": [
+        "老人带娃不该被要求像育儿嫂一样拿固定薪水，但子女用真金白银或资源置换来减轻祖辈负担"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 757，目标为 700，偏差率为 8.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕回报如何适度，兼有调查数据、健康风险、共育解释和具体方案，信息推进充分。",
+      "script_spans": [
+        "调查提到，超过半数的老年人其实都在给子女做家务或者带孙辈，六十岁出头的群体参与比例更高。",
+        "帮父母把体检买了、轮流让他们周末彻底休息、或者未来养老开销多担一份，都是看得见的回馈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直击家庭敏感冲突，中段连续追问并递进给出边界，结尾从“情分”自然落到可执行的回馈。",
+      "script_spans": [
+        "你妈帮你带三年孩子，你该不该按月给她开工资？",
+        "那既然不是义务，直接谈钱是不是最公平？未必。",
+        "老人帮忙带娃，是情分不是本分，但情分最怕被无声透支。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和建议段有对话感，但中段多处书面、抽象表达，朗读需重断句。",
+      "script_spans": [
+        "你妈帮你带三年孩子，你该不该按月给她开工资？",
+        "子女用真金白银或资源置换来减轻祖辈负担",
+        "近十年生育节奏变化"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“情分不是本分”“别用雇佣保姆的尺子量父母”既有画面感又有边界，记忆点自然，不靠堆砌辞藻。",
+      "script_spans": [
+        "老人帮忙带娃，是情分不是本分，但情分最怕被无声透支。",
+        "别用雇佣保姆的尺子量父母"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构按冲突、立场、成因、反思、方案到结论递进，转折和结尾回扣自然，核心概念前后一致。",
+      "script_spans": [
+        "为什么这事成了绕不开的矛盾？因为年轻夫妻工作压力大，社会托幼服务又不完善，照料重担悄悄压在了祖辈肩上。",
+        "那现实中怎么处理才不拧巴？明确劳动回报不等于发月薪。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "整体立场平衡，区分情分、回报与雇佣关系，未作绝对承诺或煽动性归因。",
+      "script_spans": [
+        "回报可以谈，但别用公司的考勤机思维",
+        "情感确认和歇班权，有时比转账更有用"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9877c6dbcef14b0eb40defeedd969bb9",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-2fafdef2c29f4528a625520396b7247e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

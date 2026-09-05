@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-45cce25f28c14b67b010bf53b91de44b",
+  "run_id": "run-20260903T051556Z-8079a6e747bf",
+  "trace_sha256": "d55919f0e4479f4438dda77bbf9da631afa1d99a381714b992a50e5968197917",
+  "created_at": "2026-09-03T15:26:42.356626Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答“不必然牺牲”，效率与隐私两侧均覆盖，员工质疑权正中职场人群痛点，结尾回扣题设。",
+      "script_spans": [
+        "效率提升不必然牺牲员工隐私",
+        "员工若见私人邮件遭抓取，完全有权质疑其正当性"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移，论文证据、掩码机制、告知义务三个信息单元层层推进，有依据且无编造。",
+      "script_spans": [
+        "把邮件里的姓名、电话等替换成占位符，模型依旧能判出违规内容，个人身份却不被暴露",
+        "对训练数据记忆的抑制效果接近差分隐私训练，说明效率与隐私保护并非零和"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头反差立意、结尾有态度可取；但前20字似结论宣读，中段靠信息堆叠，无悬念互动牵引。",
+      "script_spans": [
+        "效率提升不必然牺牲员工隐私",
+        "用模型护流程安全，而不是拿员工隐私去换管理省事",
+        "专门研究大模型微调中隐私、效用与效率权衡的论文发现"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "结尾有对话感，但中段术语句拗口，多处需重断句，属能读通需打磨。",
+      "script_spans": [
+        "真正的平衡之道在于用模型护流程安全，而不是拿员工隐私去换管理省事",
+        "对训练数据记忆的抑制效果接近差分隐私训练",
+        "于模型调用前布置敏感实体识别与掩码"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "结尾对比句可复述、有态度；但中段术语直述连串，缺形象类比，整体表达偏干。",
+      "script_spans": [
+        "把邮件里的姓名、电话等替换成占位符",
+        "而不是拿员工隐私去换管理省事",
+        "对训练数据记忆的抑制效果接近差分隐私训练"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、结尾回扣，但“近期从技术路线看”过渡生硬，微调论文与邮件筛查场景间因果桥不足。",
+      "script_spans": [
+        "真正的平衡之道在于用模型护流程安全，而不是拿员工隐私去换管理省事",
+        "近期从技术路线看，专门研究大模型微调中隐私、效用与效率权衡的论文发现"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论用'不必然''接近'限定，主动给出告知义务与工作账户范围，并提示员工质疑权，无夸大、煽动或误导承诺。",
+      "script_spans": [
+        "效率提升不必然牺牲员工隐私",
+        "部署此类筛查的企业负有告知义务，须限定仅对工作账户与工作事务做分析",
+        "员工若见私人邮件遭抓取，完全有权质疑其正当性"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-57fe512cdd424e8d9e6eb091ff02b0b3",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

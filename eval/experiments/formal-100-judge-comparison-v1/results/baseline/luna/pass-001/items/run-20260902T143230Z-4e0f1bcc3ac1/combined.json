@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-d88f2e4e5b704d1992a1c209a74af0ba",
+  "run_id": "run-20260902T143230Z-4e0f1bcc3ac1",
+  "trace_sha256": "2d165d9e75ca4b6481a807e9f6a5d11e721f2b4a17f47aff236092eafe215cf2",
+  "created_at": "2026-09-03T11:48:15.553970Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答收费为何成为负担，覆盖家长、学校与机构三方，切入和受众都准确。",
+      "script_spans": [
+        "可如今收费不低，课堂外教育真成家庭负担。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 443，目标为 450，偏差率为 1.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕项目失真、研发成本、执行费用和同伴压力逐层展开，信息单元具体且有增量。",
+      "script_spans": [
+        "不少项目只旅不学，娃回来写不出感想，只晒旅行团合影。",
+        "好课得老师先踩点写手册，研发人力贵是定价大头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“课外比课内还烧钱”制造冲突，中段连续拆解价格与压力来源，结尾追问也自然收住。",
+      "script_spans": [
+        "家长群弹出研学通知，你心里一紧：这课外的咋比课内还烧钱？",
+        "那高价到底从哪蹦出来？",
+        "当研学变成花钱买份心安，咱们得静下想想"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、重音清楚，但两处搭配生硬，朗读时需要临时重断句或换说法。",
+      "script_spans": [
+        "那高价到底从哪蹦出来？",
+        "开销叠起来，机构接活车票住宿门票一加，报价自然破千。",
+        "费用全数转上家长单，你怕娃掉队，往往只能认。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“只旅不学”“从菜钱药费里抠”“花钱买份心安”都具体有力，修辞克制，能留下复述点。",
+      "script_spans": [
+        "不少项目只旅不学",
+        "这笔钱得从菜钱药费里抠。",
+        "当研学变成花钱买份心安"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按现象、价格成因、家庭压力到追问收束，主线清楚；但外包收费的因果略跳，‘转上家长单’也不够准确。",
+      "script_spans": [
+        "那高价到底从哪蹦出来？机构把普通景点游重包装成研学课。",
+        "学校没精力自己带，干脆整包给第三方机构。",
+        "费用全数转上家长单，你怕娃掉队，往往只能认。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有公益、自愿和反变相强制的边界，但“不让家长多掏钱”“全数转上家长单”等表述绝对化，易放大普遍性。",
+      "script_spans": [
+        "政策本意是公益自愿",
+        "别变相强制搞研学并收费",
+        "不让家长多掏钱",
+        "费用全数转上家长单，你怕娃掉队，往往只能认"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2072cbf752d5479baa1e4f37463ef2f4",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-cbee0c1f9c8a444eb7b376601e7261d6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

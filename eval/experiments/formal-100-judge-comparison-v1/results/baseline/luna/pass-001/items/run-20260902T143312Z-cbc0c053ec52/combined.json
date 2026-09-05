@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-cca0313b424d41d9bab372ace5ec7346",
+  "run_id": "run-20260902T143312Z-cbc0c053ec52",
+  "trace_sha256": "db3e8aea77fa90cf6b312d4b92587a620c161315dc6088d13cf4171ac5555e15",
+  "created_at": "2026-09-03T11:44:37.130504Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答谁有决定权，区分日常协商与重大拍板，也照顾了祖辈和父母两方处境。",
+      "script_spans": [
+        "答案其实很直接：法定在父母，不在带人多的老人手里。",
+        "平时穿衣吃饭这些小事可商量，但报班选校这类大事得由爹妈拍板。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 306，目标为 280，偏差率为 9.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中且信息单元完整，覆盖法律依据、照料边界和冲突建议；但“法定在父母”偏绝对，责任与决定权未充分区分。",
+      "script_spans": [
+        "老人受委托照料孩子，只是搭个手帮个忙，并没有自动接过日常教育的决定权，更不是接替了监护权。",
+        "下次老人想改作业习惯，先问爸妈一句好，比闷头硬教更顺心。",
+        "答案其实很直接：法定在父母，不在带人多的老人手里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出祖辈带娃却无决定权的冲突，中段用大小事区分推进，结尾落到可执行建议。",
+      "script_spans": [
+        "爷爷奶奶带娃却说了不算，孩子日常教育的这个决定权到底在谁手上？",
+        "平时穿衣吃饭这些小事可商量，但报班选校这类大事得由爹妈拍板。",
+        "下次老人想改作业习惯，先问爸妈一句好，比闷头硬教更顺心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏和对话感尚可，判断句也利落；但“日常教育的这个决定权”和“先问爸妈一句好”朗读时都需要换词。",
+      "script_spans": [
+        "平时穿衣吃饭这些小事可商量，但报班选校这类大事得由爹妈拍板",
+        "孩子日常教育的这个决定权",
+        "先问爸妈一句好"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“搭手帮忙不等于能替娃定方向”把法律边界压缩成一句好记的话，表达克制且不靠堆砌修辞。",
+      "script_spans": [
+        "老人受委托照料孩子，只是搭个手帮个忙，并没有自动接过日常教育的决定权",
+        "搭手帮忙不等于能替娃定方向"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按提问、法理、场景和建议递进，但从“责任主体”直接推出“决定权”，关键因果桥仍不足。",
+      "script_spans": [
+        "所以两边观念杠上的时候，平时穿衣吃饭这些小事可商量，但报班选校这类大事得由爹妈拍板。",
+        "家庭教育促进法写明白，父母或者其他监护人是家庭教育责任主体，也是孩子第一任老师，得对成长拿主意。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "法律责任主体的判断基本准确，但把责任主体直接说成所有日常教育事项的决定者，边界略显绝对。",
+      "script_spans": [
+        "父母或者其他监护人是家庭教育责任主体",
+        "法定在父母，不在带人多的老人手里",
+        "报班选校这类大事得由爹妈拍板"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ae27bb41cf5748ad868f7c35350f45cb",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-4e67ab0647d2470fad5b8121d1aa87b8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

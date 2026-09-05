@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-b7b33a38a133461280ebc737af3b8254",
+  "run_id": "run-20260903T051556Z-42de9273c737",
+  "trace_sha256": "bb183acb98eebffc51297bfb9dcd764d95cb46d5bf5c4ba40433fb90d68518a9",
+  "created_at": "2026-09-03T15:27:27.778115Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即扣通勤痛点，正面给出兼顾结论，冲突两侧与通勤族建议全覆盖。",
+      "script_spans": [
+        "城市安全与通勤效率能兼顾，但前提是站点管理别只发新规通知不加通道",
+        "通勤族若避不开大站，早高峰尽量错开半小时出门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "判断、事例、规范依据与实操提醒层层推进，信息具体且有出处支撑。",
+      "script_spans": [
+        "乘客多耗二十分钟，进站口挤满而车厢却还空着，这是典型流程与设施脱节",
+        "现行运营规范早就明确鼓励推广安检新技术、新产品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用提前半小时的具体利害设问抓人，中段以排队实况、新规依据、错峰提醒持续兑现，结尾余味由正文自然长出。",
+      "script_spans": [
+        "安检突然变细，是不是以后上班都得提前半小时？",
+        "进站口挤满而车厢却还空着",
+        "别让一道安检门，隔开了一座城本该顺畅的呼吸节奏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口为主，问答与转折节奏清楚，中段口语承接自然，通读无需临时改词。",
+      "script_spans": [
+        "安检突然变细，是不是以后上班都得提前半小时？倒也不用恐慌。",
+        "说白了，细查不靠堆人墙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "挤满与空着的反差服务理解，“细查不靠堆人墙”离开上下文仍可复述，结尾一处比喻点到为止，无炫技堆叠。",
+      "script_spans": [
+        "进站口挤满而车厢却还空着",
+        "细查不靠堆人墙",
+        "别让一道安检门，隔开了一座城本该顺畅的呼吸节奏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "判断—例证—依据—提醒层层衔接，短句为主因果清楚，结尾自然回扣开头之问。",
+      "script_spans": [
+        "说白了，细查不靠堆人墙",
+        "别让一道安检门，隔开了一座城本该顺畅的呼吸节奏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "批评指向流程脱节而非具体机构或群体，有事实依托；建议用「尽量」留余地，开头先抑后稳不放大恐慌，价值导向安全。",
+      "script_spans": [
+        "是不是以后上班都得提前半小时？倒也不用恐慌",
+        "通勤族若避不开大站，早高峰尽量错开半小时出门，或留意站点临时引导"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6f39fd03774f4fa08d0fa4e42b5d3265",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-52e99cc3e1674863a00804d1531ed98b",
+  "run_id": "run-20260903T051607Z-e5b78ef9f8e5",
+  "trace_sha256": "19f146ed9da9333289abd455f28546dd26ff6305172ae2ca36e6717d5e398943",
+  "created_at": "2026-09-03T12:06:27.267889Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕“更安全吗”同时解释降风险与新风险，并落到个人和企业的实际影响。",
+      "script_spans": [
+        "无密码登录确实掐断了最泛滥的口令泄露和钓鱼陷阱，但账户安全只是换了战场，远不是终点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 716，目标为 700，偏差率为 2.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从钓鱼与撞库讲到设备、同步和恢复，再落到操作建议，信息单元持续推进。",
+      "script_spans": [
+        "passkey的软肋在设备丢失后的恢复。",
+        "企业则把防线重心从堵口令，挪到看紧设备与同步服务",
+        "下次开通passkey，别忘了同步硬化设备锁和救援邮箱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用账号安全反转制造悬念，中段持续换战场，结尾落到具体防护动作，推进完整。",
+      "script_spans": [
+        "可如果以为盗号团伙就此失业，那就太天真了",
+        "这套机制就毫无缝隙？得看看风险被挪去了哪里。",
+        "下次开通passkey，别忘了同步硬化设备锁和救援邮箱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有设问推进和短句钩子，但“设备若被恶意软件潜伏”等处搭配生硬，结尾“同步硬化”也需要换词。",
+      "script_spans": [
+        "可如果以为盗号团伙就此失业，那就太天真了。",
+        "不过，这套机制就毫无缝隙？得看看风险被挪去了哪里。",
+        "设备若被恶意软件潜伏，也可能在你不觉中完成授权。",
+        "别忘了同步硬化设备锁和救援邮箱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“工具箱换了个夹层”和“备用钥匙藏回脚垫下”形象解释风险迁移，记忆点清楚，整体没有喧宾夺主。",
+      "script_spans": [
+        "他们只是把工具箱换了个夹层。",
+        "这种取舍像把家门锁换成指纹，却把备用钥匙藏回脚垫下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先给判断，再解释机制，随后转入风险迁移，最后分个人企业并回扣行动建议，链条完整。",
+      "script_spans": [
+        "不过，这套机制就毫无缝隙？得看看风险被挪去了哪里。",
+        "无密码是扎实进步，但只是新跑道的发令枪，后续养护才是日常。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体科普克制且给出风险边界，但“从根上断了”“无从谈起”等表述过于绝对，可能误导安全认知。",
+      "script_spans": [
+        "无密码登录确实掐断了最泛滥的口令泄露和钓鱼陷阱",
+        "钓鱼链条从根上断了，撞库更无从谈起"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d2598c6f9ea34f69b18526ec63443353",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-51b151b4ff6e478d976b7e37fe509ec6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-3ddb40afd8084aa28cfd4a7c9dff7277",
+  "run_id": "run-20260902T144224Z-f0f3a7117b1d",
+  "trace_sha256": "7ac6c7821542f5b089de48d69cd5d728827431fefe2c8480654f643d07d70710",
+  "created_at": "2026-09-03T12:21:42.118418Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解企业替换与不替换的双重压力，并落到分阶段迁移，覆盖企业和普通观众。",
+      "script_spans": [
+        "换国产系统怕产线停一天亏百万，不换又卡2027硬指标。",
+        "企业不是拒国产，是先拿边缘环节试水，核心产线慢慢挪。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕经验迁移、政策压力、国产率与渐进路径层层推进，信息单元充足且有解释。",
+      "script_spans": [
+        "换系统不是删掉重装，是把厂里老经验重做一遍。",
+        "为啥叫过程不可压缩？就像炖汤不能跳火候，新系统得啃透老逻辑再动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用停产与硬指标制造两难，中段不断补充隐性成本，结尾自然落到系统与经验磨合，推进完整。",
+      "script_spans": [
+        "换国产系统怕产线停一天亏百万，不换又卡2027硬指标。",
+        "为啥这么怕？换系统不是删掉重装，是把厂里老经验重做一遍。",
+        "换脑痛躲不掉，可老经验怎么带着走，人和系统怎么磨合，才是真难题。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和前段解释有对话感，但“良品率闪失先怕”“制造不被人掐脖”搭配生硬，需改词。",
+      "script_spans": [
+        "为啥这么怕？换系统不是删掉重装，是把厂里老经验重做一遍。",
+        "资料说过核心工业软件八成曾被外企占，老系统绑死生产线，良品率闪失先怕。",
+        "但挺过调试期，制造不被人掐脖，用货更踏实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“换张嘴，没换脑”把迁移难点说得形象，“过程不可压缩”也形成清晰记忆点，修辞不过量。",
+      "script_spans": [
+        "那是给厂子换张嘴，没换脑。",
+        "知识过程不可压缩。",
+        "就像炖汤不能跳火候，新系统得啃透老逻辑再动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设冲突，中段解释隐性经验与替代难点，结尾给出渐进方案，因果链基本完整。",
+      "script_spans": [
+        "旧系统不是冷软件，是十几年工人攒下的经验。",
+        "换脑痛躲不掉，可老经验怎么带着走，人和系统怎么磨合，才是真难题。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动或危险建议，但“百分百”“十大行业都得交卷”“废品堆成山”等表述偏绝对，易放大政策和切换风险。",
+      "script_spans": [
+        "企业不是拒国产，是先拿边缘环节试水，核心产线慢慢挪。",
+        "79号文说2027年前央企国企要百分百换信创国产系统，十大行业都得交卷。",
+        "强换可能直接哑火，废品堆成山。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2c6972adf179420bb856fa4cf13575f1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

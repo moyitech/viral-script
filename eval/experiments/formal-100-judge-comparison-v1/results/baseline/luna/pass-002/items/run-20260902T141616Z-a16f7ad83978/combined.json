@@ -1,0 +1,134 @@
+{
+  "evaluation_id": "combined-40b848ca8d574cb68a11bb0c07afb8e9",
+  "run_id": "run-20260902T141616Z-a16f7ad83978",
+  "trace_sha256": "b8bad4636d37b0cb0da95ada04b1ed3a4120981d0d072e4b219a1f7c1fe3f1ec",
+  "created_at": "2026-09-03T12:22:43.247463Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解线上预约的利弊，覆盖年轻人、打工族与老年人，并给出线下托底的判断。",
+      "script_spans": [
+        "这算便利升级，还是新门槛？两边都是真的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕效率、政策边界、数字鸿沟与负担转移展开，信息单元具体，能形成清晰认知增量。",
+      "script_spans": [
+        "便利没丢，只是从长辈肩上挪到你手机里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用白跑冲突立刻抓人，中段持续推进利弊与代际负担，结尾追问自然落到观众身上。",
+      "script_spans": [
+        "你拿号单去窗口，却被告知没线上预约办不了。",
+        "下次帮自己约完，不妨回头问句，家里老人够得着吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感、节奏利落，但“补线下的弱”等多处压缩失当，朗读时需要临时修正。",
+      "script_spans": [
+        "这算便利升级，还是新门槛？两边都是真的。",
+        "本就是补线下的弱。",
+        "大厅里老挤着重复跑腿"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“挪到你手机里”和“亲情也成客服”具体有力，把便利转移负担说得形象且易复述。",
+      "script_spans": [
+        "便利没丢，只是从长辈肩上挪到你手机里。",
+        "代劳次数多，亲情也成客服。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、利弊、政策边界、群体影响和结尾递进清楚；但“补线下的弱”语义残缺，部分因果桥略薄。",
+      "script_spans": [
+        "便利没丢，只是从长辈肩上挪到你手机里。",
+        "本就是补线下的弱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制且兼顾便利与弱势群体，但把政策例外和基层执行概括得过满，易造成误解。",
+      "script_spans": [
+        "两边都是真的。",
+        "线下的门得开着，事项尽量进中心，只有涉秘密等极少例外。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b35077dff3da4965a343741590bd2347",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

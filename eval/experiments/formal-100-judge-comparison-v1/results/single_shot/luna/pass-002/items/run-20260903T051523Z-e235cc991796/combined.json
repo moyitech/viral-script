@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-c93b6c85569345ee8dc7e94a4fb54698",
+  "run_id": "run-20260903T051523Z-e235cc991796",
+  "trace_sha256": "ce83c9ad6a76746441e9ea98516913afc1fa65434081ae40cc93cd58938ec04a",
+  "created_at": "2026-09-03T12:32:15.249231Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应因材施教与扩大差距两面，并落到学校、老师、家长和学生的具体处境。",
+      "script_spans": [
+        "都说AI能因材施教，可它有时候像一面放大镜，把原本就有的差距照得更清楚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕算法偏见、数据样本、教师把关和两种使用后果递进展开，信息单元充足且有具体判断。",
+      "script_spans": [
+        "弱势群体的学习轨迹样本少，系统就越容易误判他们能力不行。",
+        "如果学校把AI打分当唯一标准，家里没条件补位的孩子就会被越甩越远。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出分层推题的反差，中段追到算法偏见与把关机制，结尾落到家校行动，推进和余味都在。",
+      "script_spans": [
+        "教室后排的学生刚打开AI助教，系统却总推给他更简单的题。",
+        "核心机制在于谁来把关。",
+        "别让算法悄悄替孩子写定未来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有画面、有对话感，但中段长句与抽象术语较密，部分位置需要重断句。",
+      "script_spans": [
+        "前排的孩子却在啃拓展内容。",
+        "数据采集、模型训练里的结构性不平等给复现了",
+        "人工智能教育要坚持育人为本、规模教育与个性培养相统一"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“放大镜”和“握笔的手”两处比喻都服务观点，尤其结尾落成可复述的判断，没有堆砌。",
+      "script_spans": [
+        "它有时候像一面放大镜，把原本就有的差距照得更清楚。",
+        "它是一支笔，画圆还是画偏，握笔的手才是关键。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，能从风险过渡到治理和具体场景，但“本身不制造不公平”与后文的算法偏见、差距放大之间解释不够严密。",
+      "script_spans": [
+        "反过来，老师用AI生成练习、自己再做针对性讲解，弱势学生反而能获得过去得不到的关注。",
+        "AI助教进学校，本身不制造公平也不制造不公平，它只是把学校和家庭背后的资源差，用算法的速度重跑了一遍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，且强调教师把关；但“只是”“就会”等绝对因果表述需加条件，避免把复杂影响说成必然结果。",
+      "script_spans": [
+        "AI该用来帮老师发现盲区，而不是替代老师做最终判断",
+        "它只是把学校和家庭背后的资源差，用算法的速度重跑了一遍",
+        "家里没条件补位的孩子就会被越甩越远"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5bf07b0141e6446d8e49be857cee71cf",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

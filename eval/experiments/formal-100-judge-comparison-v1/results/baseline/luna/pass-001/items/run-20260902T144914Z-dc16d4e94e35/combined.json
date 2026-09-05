@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-9fc74e4f5af1400e832eb4ae0c8f7f0b",
+  "run_id": "run-20260902T144914Z-dc16d4e94e35",
+  "trace_sha256": "7633fcdfebdd16fb5ad7a4155a4682fb4a2bb7f0dd92ef46e65775ba53b16f9c",
+  "created_at": "2026-09-03T11:45:05.055487Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答低息为何未能化解压力，同时覆盖融资端、订单端和小厂经营者的现实选择。",
+      "script_spans": [
+        "中小企业融资负担确实在减轻，但经营压力为啥还是不小？",
+        "因为省下的息，填不上订单的坑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 660，目标为 700，偏差率为 5.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线始终围绕低息难解需求，政策、硬成本、压价、库存和扩产谨慎逐层补足经营压力的成因。",
+      "script_spans": [
+        "过去找钱要托关系，现在手机就能申请，资金成本往下走。",
+        "一份覆盖多省的调研发现，超九成企业愁卖不动货。",
+        "利息少付一块，料钱多花一大块，工钱少不掉，单子稀稀拉拉，机器空转。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用车间停摆制造反差，中段层层补充经营困境，结尾追问自然承接。",
+      "script_spans": [
+        "你刚还完利息松口气，车间却停了一半。",
+        "你身边小厂，真正卡在低息贷，还是卡在没单子？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、排比和反问撑起节奏，但“轻了快一半”等两处措辞卡顿，未达全篇顺滑。",
+      "script_spans": [
+        "你降价抢单只会更亏，不降又没活干。",
+        "机器响的时间比去年轻了快一半",
+        "像靠近市场的批发零售还显点韧劲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“降息是糖，订单是粮”把融资与需求的关系说透，类比自然且便于复述。",
+      "script_spans": [
+        "钱转不动，利息再低也是空数字。",
+        "降息是糖，订单是粮，没粮人撑不住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "融资改善到经营承压的转折清楚，但“机器响的时间比去年轻了快一半”语义失常，政策效果也被写成普遍易贷。",
+      "script_spans": [
+        "过去找钱要托关系，现在手机就能申请，资金成本往下走。",
+        "一家厂就算贷到便宜钱，货堆在仓库里也是死钱。",
+        "机器响的时间比去年轻了快一半。",
+        "首贷、信用贷多了，续贷也不用愁，拿钱比从前容易。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规或煽动内容，但“手机就能申请”“续贷也不用愁”等表述过于绝对，可能误导融资可得性，需补充条件限定。",
+      "script_spans": [
+        "这题没有标准解。",
+        "手机就能申请",
+        "续贷也不用愁"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-825c21e0a1c84c2fad40863a4effb0ee",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c9cd71d2de5242f39d1fc2df9838a764",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

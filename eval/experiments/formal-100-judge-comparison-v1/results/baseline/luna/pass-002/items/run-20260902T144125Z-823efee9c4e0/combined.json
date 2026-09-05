@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-b91d5e7c78ae4d28a671236dd781b1ef",
+  "run_id": "run-20260902T144125Z-823efee9c4e0",
+  "trace_sha256": "3ba99e7b5c4c1b7cada6ea7125468dde147c1ab4fcb279a5a897d8a107e6eb61",
+  "created_at": "2026-09-03T12:17:01.904326Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应一键开药的便利与误诊风险，并覆盖首诊、复诊、急症等核心情境。",
+      "script_spans": [
+        "便捷能解慢病复诊的远水，却解不了首诊的面诊缺失。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息从监管边界推进到误诊机制和具体场景，既有规则依据，也给出下单前的判断方法。",
+      "script_spans": [
+        "处方必须本人开，AI不能代劳。",
+        "要是突然头晕手麻，你当普通不适在线开药，远端医生瞧不见你神情，可能漏掉急症信号。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出便捷却可能治错病的冲突，中段补规则与风险场景，结尾用自检问题自然收束。",
+      "script_spans": [
+        "你点一下手机就拿到药，可这药可能治错病。",
+        "可要是嫌挂号烦，把新病说成老病延，医生凭你打字猜症，方子就歪。",
+        "所以点药前，先问自己：这毛病以前确诊过吗？别给模糊症状一键下单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、设问和转折清楚；但“慢病复诊的远水”“老病延”两处搭配拗口，朗读需改词。",
+      "script_spans": [
+        "你点一下手机就拿到药，可这药可能治错病。",
+        "慢病复诊的远水",
+        "老病延"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一边省了出门，一边丢了当面查体”等对照准确，结尾“省事反误身”有复述价值，修辞没有压过信息。",
+      "script_spans": [
+        "一边省了出门，一边丢了当面查体，这得两头看。",
+        "便捷能解慢病复诊的远水，却解不了首诊的面诊缺失。",
+        "错药不止费钱，更会盖住真疾，拖成急症才懂省事反误身。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出便利与风险的两面，随后用规则、病因和案例递进，结尾回扣并给出行动判断。",
+      "script_spans": [
+        "一边省了出门，一边丢了当面查体，这得两头看。",
+        "所以点药前，先问自己：这毛病以前确诊过吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体是在提醒首诊和急症风险，方向较安全；但“只接复诊”“老慢支续方风险小”过于绝对，需补充医生评估等边界。",
+      "script_spans": [
+        "所以点药前，先问自己：这毛病以前确诊过吗？",
+        "只接复诊",
+        "老慢支续方风险小"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4f52e124c8464913b5840282dc135892",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

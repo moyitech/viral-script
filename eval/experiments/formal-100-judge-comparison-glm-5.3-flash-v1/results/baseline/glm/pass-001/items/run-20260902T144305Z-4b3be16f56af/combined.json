@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-635c91144cd142c48fe5e353dd5a8053",
+  "run_id": "run-20260902T144305Z-4b3be16f56af",
+  "trace_sha256": "d2707e525cdf9b782a2e1da546cf2966b1d7fbf1ff3204494eb0f8d92b7be096",
+  "created_at": "2026-09-03T13:47:50.239877Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛题设两侧，正文分论补缺口与依赖风险，结尾以家人配合回扣分寸，痛点精准。",
+      "script_spans": [
+        "你妈一个人去医院迷路，花钱请人陪算补缺口还是养依赖？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 292，目标为 280，偏差率为 4.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "就医情境、服务内容、依赖机制、时薪与选购建议层层推进，时薪与公开报道一致，无编造。",
+      "script_spans": [
+        "陪诊师搀着走完流程，帮着问医生、拿药、取报告",
+        "现在陪诊时薪大概五十到一百块"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛具体冲突与两难提问；中段正反转折加时薪信息持续兑现钩子；结尾建议由依赖讨论自然长出，留有余味。",
+      "script_spans": [
+        "你妈一个人去医院迷路，花钱请人陪算补缺口还是养依赖？",
+        "但反过来看，如果子女周末明明有空，却次次点个陪诊单了事",
+        "别把看病沟通全甩给陌生人，家人该出的力还是得自己出"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口清楚，动词具体，“次次点个陪诊单了事”这类表达自然上口，通篇无需临时改词即可录制。",
+      "script_spans": [
+        "陪诊师搀着走完流程，帮着问医生、拿药、取报告，老人像有了自家人陪着，心里踏实了",
+        "如果子女周末明明有空，却次次点个陪诊单了事"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞点到为止，像有了自家人、点个陪诊单了事生动助记；结尾一句离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "老人像有了自家人陪着，心里踏实了",
+        "别把看病沟通全甩给陌生人，家人该出的力还是得自己出"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立分寸再分两侧论证，'但反过来看'转折自然，结尾回扣家人配合，因果链完整可跟随。",
+      "script_spans": [
+        "它既补了照护缺口，也藏着制造依赖的风险，分寸就在家人配不配合",
+        "但反过来看，如果子女周末明明有空，却次次点个陪诊单了事"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反两面呈现并提醒家人该出的力自己出，价格用大概留余地，客观不夸大不误导。",
+      "script_spans": [
+        "它既补了照护缺口，也藏着制造依赖的风险，分寸就在家人配不配合",
+        "现在陪诊时薪大概五十到一百块，花钱前得想清"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-fc208fe067b548968149db994226651d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b164f147957b4e95a35c52def792e4b2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

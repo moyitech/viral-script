@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-9a8320ac4d72469b964f5e39ad6472c1",
+  "run_id": "run-20260902T141800Z-b3aa0a82ee91",
+  "trace_sha256": "731281a23cafe364bec86fa35a8dc793b665fd1dab91b78062ce21ed42c0ba3e",
+  "created_at": "2026-09-03T13:50:38.860410Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点明馆方与占座者双方责任，法律、馆员、读者层层回答谁来维护，全程扣题。",
+      "script_spans": [
+        "想看书的人没座，占座的书却堆满桌。",
+        "馆方要负主责，占座的人也得收手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 644，目标为 700，偏差率为 8.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从法条空白到死循环再到执行死结，信息单元环环推进，结论有依据，增量扎实。",
+      "script_spans": [
+        "但法里没细说，留本书占一整天算什么，也没提馆员能不能收走东西。",
+        "占座的多是备考学生，自己也被占过，陷入死循环。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇二十字内用没座与堆满桌的反差加质问设钩，中段以场景、追问和执行困境层层兑现，结尾扶书互动由正文自然生长。",
+      "script_spans": [
+        "想看书的人没座，占座的书却堆满桌。这公平谁管？",
+        "有人早上放包去逛街，书在桌上午睡到傍晚。真备考的学生，只能站着借灯位抄笔记。",
+        "你若看见便随手扶正一本书，给后来者留个信，公平就从小动作活过来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "主体短句顺口、有对话感，但“收走占物”“难断微小占用”等处需临时换词重断，只能封顶两分。",
+      "script_spans": [
+        "有人早上放包去逛街，书在桌上午睡到傍晚",
+        "馆员巡一圈，转头又堆满，清了东桌西桌冒新包",
+        "直接收走占物怕引争吵，不理又对老读者不住",
+        "北京等地有自己的管理条例，同样难断微小占用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "踢球、书午睡、东桌西桌冒新包等表达贴切克制，助力理解；结尾金句离开上下文仍可复述，无炫技堆砌。",
+      "script_spans": [
+        "这球就踢给馆员了",
+        "书在桌上午睡到傍晚",
+        "公平就从小动作活过来。那时满厅书和人，各得其所才叫公共。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段段设问衔接，因果桥清楚，结尾以馆员加读者自觉回扣开头之问，层层递进。",
+      "script_spans": [
+        "你说为啥踢给馆员？原因挺实在。",
+        "法律把担子搁文化部门肩头，日常却靠馆员提醒加读者自觉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "归因双方兼顾，涉法表述与地方条例均有依据且有限定，未见煽动、夸大或误导承诺。",
+      "script_spans": [
+        "馆方要负主责，占座的人也得收手",
+        "法律把担子搁文化部门肩头，日常却靠馆员提醒加读者自觉"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-77fe1a571fb24047b2989247b652b988",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c95a4f2c433e4523a2d39a12f0147e1e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

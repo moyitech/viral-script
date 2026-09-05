@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-4f663d9cbfc443519df8a732cc139b3c",
+  "run_id": "run-20260902T142747Z-6a2eb099835d",
+  "trace_sha256": "cb4675d2964c4af1e1e4c98d79a216327461dd949380648938bd7cf2e7c348c7",
+  "created_at": "2026-09-03T13:46:39.635247Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛提效与压价两问，正文两翼展开，落点回到普通人怎么应对，全程正面回答题设。",
+      "script_spans": [
+        "缩短招聘流程，既可能提效，也可能变相压价。",
+        "下次听到流程缩短，先问薪水怎么定，自己摸清市场价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 428，目标为 450，偏差率为 4.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "空岗成本、六成七数据、审批链压价机制各推一步，事实、解释与建议环环相扣，增量实在。",
+      "script_spans": [
+        "审批链一短，用人经理随手写个低价，你还没讨价还价，录用通知就发了。",
+        "超67%的企业核心岗实际招聘超45天"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头20字内立住“秒过却砍薪”反差；中段用数据与“真效率/压价快”反转持续兑现；结尾之问由谈钱主线自然长出，余味足。",
+      "script_spans": [
+        "简历秒过却薪资被砍，企业说是效率",
+        "企业比你还怕长流程，想缩短首先是为了自救提效",
+        "流程短了，钱谁说了算？你得多留个心眼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，关键在怎么砍等承接句自然，重音停顿清楚，朗读无需临时改词。",
+      "script_spans": [
+        "关键在怎么砍。",
+        "审批链一短，用人经理随手写个低价，你还没讨价还价，录用通知就发了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“烧钱”“圈最低档”等形象说法服务理解；“流程短了，钱谁说了算”脱稿仍可复述；全篇修辞克制，无堆叠炫技。",
+      "script_spans": [
+        "同事得顶班，天天都在烧钱",
+        "就靠后台薪级表圈最低档",
+        "流程短了，钱谁说了算？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立成本前提，再以转折分流两途，因果桥完整，结尾用疑问句自然回扣开头与题设。",
+      "script_spans": [
+        "关键在怎么砍。",
+        "流程短了，钱谁说了算？你得多留个心眼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反两面并陈，结论用'可能'限定，建议具体可执行，无煽动夸大，价值导向安全。",
+      "script_spans": [
+        "这事儿两头堵：缩短招聘流程，既可能提效，也可能变相压价",
+        "少安排几轮面试，你省奔波，这是真效率",
+        "省下的天数，就可能成了企业的压价空间"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-80e60f66895449479600503789e2168b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f2d42ebaa0b443efbb8147ec68265db4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

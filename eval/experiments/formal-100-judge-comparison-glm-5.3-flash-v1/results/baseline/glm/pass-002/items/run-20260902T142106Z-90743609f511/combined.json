@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-9ef2efa24c4044c7b400b17d8b3a9ea8",
+  "run_id": "run-20260902T142106Z-90743609f511",
+  "trace_sha256": "ca0da31c33513405234c264994b30957acbbd7401bc890240e4197c125e40b5a",
+  "created_at": "2026-09-03T14:25:47.992545Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛出真人还是代码的疑问，结尾落到找标识的操作法，平台与商家两侧、老人受骗人群均覆盖，全程扣题。",
+      "script_spans": [
+        "你付钱买的“真人讲解”，可能只是段代码在念稿",
+        "先盯画面角落有没有“虚拟主播”提示"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "全天值守动机、老专家骗局、显著标识新规等单元各自推进，结尾给出可操作辨别法，信息扎实且与背景相符。",
+      "script_spans": [
+        "商家发现数字人能全天值守，成本极低",
+        "还有商家克隆老专家模样，骗老人买高价保健品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出代码念稿的反差钩子，中段以乱象、监管、避坑层层推进兑现，结尾疑问由正文自然生长，三段无代偿。",
+      "script_spans": [
+        "你付钱买的“真人讲解”，可能只是段代码在念稿",
+        "还有商家克隆老专家模样，骗老人买高价保健品",
+        "别等钱包空了才琢磨：对面到底是不是人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句上口、对话感强，但“限制过视频分发”“要求AI内容显著标识”等处是新闻式压缩，朗读需临时换词重断。",
+      "script_spans": [
+        "你以为在跟人聊天，其实后台根本没真人",
+        "平台对没标注的账号限制过视频分发",
+        "今年监管办法要求AI内容显著标识"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "代码念稿、缺人味等形象表达贴切克制，服务理解与情绪；真假分辨一句离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "真人主播偶尔口误卡壳，反而显实在；数字人永远顺溜对齐，缺那点人味",
+        "分清真假不靠肉眼较劲，看平台亮明身份"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以“为什么乱”“怎么管”两问衔接段落，因果有桥，结尾回扣开头的真假疑问，概念前后一致。",
+      "script_spans": [
+        "为什么这么乱？",
+        "那规则怎么管？",
+        "别等钱包空了才琢磨：对面到底是不是人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "指涉违规者时以“有些号”“还有商家”限定，判断依据落在“看平台亮明身份”，无夸大承诺、无煽动，警示导向安全。",
+      "script_spans": [
+        "可能只是段代码在念稿",
+        "可有些号故意不标",
+        "分清真假不靠肉眼较劲，看平台亮明身份"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f9682693656747fab848eaf031212d58",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-b188df1d717448e4b0949f0c61c59d6e",
+  "run_id": "run-20260902T142537Z-3b2a72aac96a",
+  "trace_sha256": "961d869dbd19dd33c89261dada3f72e1caaaeb932b8b212966b0840f3cdcbfa2",
+  "created_at": "2026-09-03T12:16:44.241079Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释求职者为何反感，覆盖薪资不透明、时间成本和公平感，并给出应对建议。",
+      "script_spans": [
+        "因为招聘方把本该标明的钱数捂起来了。",
+        "所以见着面议，先打听清楚范围再投。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕薪资不透明集中推进，从时间成本、筛选成本、公平感到行动建议，信息增量充分。",
+      "script_spans": [
+        "你投简历、填资料、改简历、等面试通知，前后花掉好几天宝贵精力。",
+        "这正说明面议把筛选成本大多推给了求职者。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出划走动机，中段用时间成本和筛选成本递进，结尾落到行动与余味，推进完整。",
+      "script_spans": [
+        "岗位写着薪资面议，你为啥想划走？",
+        "你投简历、填资料、改简历、等面试通知，前后花掉好几天宝贵精力。",
+        "别让没完没了的猜测耗光你找工作的力气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答、列举和收束，能读通；但“反感，就反感在”“信息该明示到位”等处拗口，节奏被书面表达拖慢。",
+      "script_spans": [
+        "你投简历、填资料、改简历、等面试通知",
+        "求职者反感，就反感在明明该公开的数字被捂住",
+        "现在相关招聘规范也强调信息该明示到位。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“把钱数捂起来”和“蒙着眼谈条件”形象准确，既强化不透明感，也留下了可复述的表达。",
+      "script_spans": [
+        "因为招聘方把本该标明的钱数捂起来了。",
+        "过程模糊，就像被蒙着眼去谈条件。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，先解释成本再谈公平并给出建议；但把薪酬过程透明直接等同于公开区间，因果桥仍偏薄。",
+      "script_spans": [
+        "这正说明面议把筛选成本大多推给了求职者。",
+        "所以见着面议，先打听清楚范围再投。",
+        "有研究就提到，薪酬过程透明更能让人觉得公平，面议恰巧少了这层，自然越看越烦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未涉及违规或危险建议，提醒先问清薪资范围较稳妥；但把面议一概说成应公开数字，并笼统援引招聘规范，可能造成规则误解。",
+      "script_spans": [
+        "所以见着面议，先打听清楚范围再投",
+        "明明该公开的数字被捂住",
+        "现在相关招聘规范也强调信息该明示到位"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3082cd3f542f40b5a79fd927f3226b36",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

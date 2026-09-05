@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-eb2c23b8ee85400d8dbfd4fa45c5fa32",
+  "run_id": "run-20260902T142220Z-61ebf4344b43",
+  "trace_sha256": "e3cd917132196fd40399b05b0ae4d226ab75525ac5e09ec5e4e9e49e1f7716ef",
+  "created_at": "2026-09-03T12:28:21.903697Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕普通人换汇买理财的收益风险展开，既讲汇率吞息，也讲汇兑增益，并给出总账算法。",
+      "script_spans": [
+        "汇率能吞掉你的利息，也能反过来送你汇兑盈利，全看你进场价格和拿多久。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中，覆盖点差、汇率方向、期限、对冲与配置边界，既解释机制，也给出可执行的判断问题。",
+      "script_spans": [
+        "先问自己，预期息差减掉点差还剩多少；再问，如果本币升值三五个点，利润还在不在。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出收益可能被汇率吃掉的冲突，中段层层算账，结尾用自问自然收束。",
+      "script_spans": [
+        "换美元买理财，收益常不抵汇率波动损失。",
+        "所以购汇投外币，头一道坎是换汇差价，第二道坎是持有期汇率走向。",
+        "当你盯着年化数字时，有没有想过，那道换汇差价才是你真正的起跑线？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答和短句承接，但两处表述读到会卡，需要改词或补足宾语，未达精心设计。",
+      "script_spans": [
+        "那利息能不能补上？",
+        "汇率弹性这些年明显变大，波动说来越快。",
+        "投资期限拉得很长，汇率有涨有跌，可能抵消部分。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“汇率能吞掉你的利息”和“先算总账”形象且好复述，修辞服务于风险解释。",
+      "script_spans": [
+        "汇率能吞掉你的利息，也能反过来送你汇兑盈利",
+        "先算总账：利息减点差减汇率可能剩零"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、展开和收束完整，但“利息减点差减汇率”把不同口径直接相减，且“波动说来越快”表述失真，削弱逻辑。",
+      "script_spans": [
+        "所以购汇投外币，头一道坎是换汇差价，第二道坎是持有期汇率走向。",
+        "利息减点差减汇率可能剩零。",
+        "汇率弹性这些年明显变大，波动说来越快。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "承认汇率有双向影响，整体克制；但“钞卖价”等表述未限定产品与渠道，近期走势和配置建议也偏笼统，仍有误导风险。",
+      "script_spans": [
+        "汇率能吞掉你的利息，也能反过来送你汇兑盈利，全看你进场价格和拿多久。",
+        "你拿人民币去银行买美元，用的是钞卖价。",
+        "近期人民币对美元就偏强，钱变得更值钱了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a2a63593ab324422a3f074e7fafe61ab",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

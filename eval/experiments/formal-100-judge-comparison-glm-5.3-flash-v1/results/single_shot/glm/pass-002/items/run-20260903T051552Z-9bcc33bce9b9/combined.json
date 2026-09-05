@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-b5ffff1829bf4acfb6af40715c18aaff",
+  "run_id": "run-20260903T051552Z-9bcc33bce9b9",
+  "trace_sha256": "570e129fa21447d677f41e2b38f68c9c0d8adb332fc25a5188167f495ef74091",
+  "created_at": "2026-09-03T15:27:41.008813Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接表态回应二元之问，结尾同时覆盖车位需求与休闲保留，核心人群与冲突两侧齐全。",
+      "script_spans": [
+        "社区里本该晒太阳聊天的公共空间直接划成停车位，居民休闲需求不该让步",
+        "摸清大家要不要车位多于凉亭，少数服从多数也别忘了留个休闲角"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "旧改教训、微更新方法、停车楼案例、业主会步骤各成一环，论证与引用背景相符，无编造痕迹。",
+      "script_spans": [
+        "反而把原本能聊天散步的角落弄得失去功能，居民反倒没处待",
+        "而是先听居民想法再动手，用小事慢慢改，才更容易保住休闲空间的日常品质"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字内晒太阳与划车位形成具体反差，中段由面子工程到二选一破题层层推进，结尾业主会建议自然收出余味。",
+      "script_spans": [
+        "本该晒太阳聊天的公共空间直接划成停车位",
+        "其实停车和休闲不一定二选一，有的停车楼也设计出活动场地",
+        "下次小区要动公共空间，先开个业主会摸清大家要不要车位多于凉亭"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有拍板铺沥青这类顺口好读的句子，但书面领起句与多处需换词的拗口点决定了只能二档。",
+      "script_spans": [
+        "不是上面拍板就铺沥青，而是先听居民想法再动手",
+        "不少老旧社区改造曾出现内容与居民实际需求严重脱节",
+        "先开个业主会摸清大家要不要车位多于凉亭"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "铺沥青、车位多于凉亭、悄无声息吃掉等表达具体克制，服务理解，记忆点离开原文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "不是上面拍板就铺沥青，而是先听居民想法再动手",
+        "别让休闲角落被悄无声息吃掉"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线可跟随、结尾有回扣，但由划车位跳到泛化旧改批评缺过渡，停车楼例子与题设场景略错位。",
+      "script_spans": [
+        "别让休闲角落被悄无声息吃掉",
+        "不少老旧社区改造曾出现内容与居民实际需求严重脱节，只做面子工程，盲目模板化施工",
+        "有的停车楼也设计出活动场地，说明兼顾有空间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "立场鲜明但不偏激，给出表决加留休闲角的折中办法，无煽动夸大或绝对化表述，导向安全。",
+      "script_spans": [
+        "其实停车和休闲不一定二选一，有的停车楼也设计出活动场地，说明兼顾有空间",
+        "先开个业主会摸清大家要不要车位多于凉亭，少数服从多数也别忘了留个休闲角"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-50fc21eaf95c4842bfd807169c41584a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

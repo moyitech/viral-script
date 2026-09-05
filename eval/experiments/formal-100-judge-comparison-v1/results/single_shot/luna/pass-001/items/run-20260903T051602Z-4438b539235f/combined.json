@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-58b4cc04106b4ce18e3763378e00c6ca",
+  "run_id": "run-20260903T051602Z-4438b539235f",
+  "trace_sha256": "921c71dc84cdf3b828efd35bea8de68b6b2d2104effc535427de6b3c1aec0eea",
+  "created_at": "2026-09-03T12:02:38.075014Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应“更快”与“更吵”的两面，并落到试点区域居民这一核心人群。",
+      "script_spans": [
+        "提速是真的，噪声争议也必然来，它不是二选一，而是同步发生。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 439，目标为 450，偏差率为 2.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕时效、噪声机理、居民影响和治理边界递进，既有数据也有具体判断。",
+      "script_spans": [
+        "最强证据是部分试点城市的末端配送时效，已经从三十到六十分钟压到了十五到二十分钟。",
+        "居住区限飞和时段管控，才是平衡快与静的真正边界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用急救药和风切声立刻制造快与吵的冲突，中段持续补充时效、噪声和管控信息，结尾完成自然回收。",
+      "script_spans": [
+        "你点的一份急救药，可能十五分钟从天而降，但伴随的是头顶持续的风切声。",
+        "这不是实验室画饼，是已经发生的运营变化。",
+        "低空物流不是消灭等待，而是用新的声音换旧的时间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有清晰的问答承接，整体能读通；但“走直线空域”和“点外卖或医药物资”会让口播卡顿。",
+      "script_spans": [
+        "那噪声怎么破？",
+        "这不是实验室画饼，是已经发生的运营变化。",
+        "无人机走直线空域",
+        "在深圳、杭州这些首批航路划设区，点外卖或医药物资确实可能更快抵家"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“用新的声音换旧的时间”把技术便利与生活代价压缩成可复述的判断，配合“硬约束”等表达，形象但不喧宾夺主。",
+      "script_spans": [
+        "降噪是硬约束，不是可选配件。",
+        "低空物流不是消灭等待，而是用新的声音换旧的时间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提冲突，再解释提速与噪声来源，最后落到管控边界，结尾自然回扣核心判断。",
+      "script_spans": [
+        "先看问题本质。传统地面配送卡在红绿灯和拥堵里，无人机走直线空域，绕过路面限制。",
+        "低空物流不是消灭等待，而是用新的声音换旧的时间，接受这点，我们才能谈便利。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体讨论较克制，但“噪声争议也必然来”和“安静十五分贝”缺少适用条件，容易把个案或测试数据说成普遍结论。",
+      "script_spans": [
+        "低空物流不是消灭等待，而是用新的声音换旧的时间",
+        "噪声争议也必然来",
+        "在五百英尺高度比直升机安静十五分贝"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5bf0911125b5489cbfc297ba9eb5c394",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-36a91d337e824835b495c73699ec85e6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

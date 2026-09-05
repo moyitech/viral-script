@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-a7ce7ecaad8d40c69a887d99f081940d",
+  "run_id": "run-20260903T051547Z-3867d3e803a4",
+  "trace_sha256": "4e6ac2e33cf9f0495a59c4eecac66a03064ffde0a1408609ea536a7cb8348c10",
+  "created_at": "2026-09-03T11:58:20.193946Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答云故障影响与兜底责任，明确区分云厂商、用户和政府边界，且对准普通用户痛点。",
+      "script_spans": [
+        "我的判断很直接，数字基础设施的账，从来没有单一兜底者。",
+        "云厂商把根基扎牢是本分，用户自己留冗余是清醒，政府只守关键信息基础设施的生命线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 679，目标为 700，偏差率为 3.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕集中化风险、合同赔偿、监管边界和多云容灾展开，案例与方法相互支撑，信息增量充足。",
+      "script_spans": [
+        "因为现在太多服务悄悄共用同一朵云、同一个区域。",
+        "云服务商和用户合同里，通常对中断赔偿设有上限，远低于企业停业真金白银的损失。",
+        "落地韧性建设，靠的是多云容灾加冷备份。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用地铁码和外卖转圈直击痛点，中段层层追问责任与方案，结尾自然落到自救。",
+      "script_spans": [
+        "你手机刷不出地铁码、外卖下单转圈圈",
+        "那是不是该让云厂商赔到肉疼就完事？现实没那么简单。",
+        "留好后路，比追着兜底更有用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头追问和结尾有对话感，但中段并列与长句偏密，技术和政策表述仍显书面，朗读需重断句。",
+      "script_spans": [
+        "那是不是该让云厂商赔到肉疼就完事？现实没那么简单。",
+        "别总问谁来赔，先问自己业务断半小时我还能不能活。",
+        "云厂商把根基扎牢是本分，用户自己留冗余是清醒，政府只守关键信息基础设施的生命线。",
+        "把核心业务全押单一云，本质是用户自己把钥匙交出去一把。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“技术小裂缝变成行业多米诺”和“留好后路”形象准确，既解释风险，也形成可复述的收束。",
+      "script_spans": [
+        "这种高度集中化，让技术小裂缝变成行业多米诺。",
+        "留好后路，比追着兜底更有用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，能从故障成因推进到责任分配和容灾；但“谁兜底”从赔偿责任滑向自保建设，概念切换未完全交代。",
+      "script_spans": [
+        "这种高度集中化，让技术小裂缝变成行业多米诺。",
+        "但维护多套系统要烧钱和人力，小公司得权衡。",
+        "别总问谁来赔，先问自己业务断半小时我还能不能活。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见明确违规，且承认多云也有复杂度；但“未来会像城市停电一样常见”等预测过于绝对，可能制造夸大印象。",
+      "script_spans": [
+        "但也不能说多云就绝对安全，跨云管理本身引入新复杂度。",
+        "云中断未来会像城市停电一样常见"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-33f9bb3633244750930cfad36aed2c5e",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-7956e82d38cd4910801fd3373abbb49f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,164 @@
+{
+  "evaluation_id": "combined-02bf2340e48643d79132052163359da3",
+  "run_id": "run-20260903T051630Z-ca191e84b04d",
+  "trace_sha256": "b8938eb3f9640806922bb4987aff180c85a02e40654b6692fe11f573b7fc2c42",
+  "created_at": "2026-09-03T14:08:36.100110Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直扣汇率吞收益之问，中段正反两面展开，结尾回扣普通人的换汇决策，切角具体。",
+      "script_spans": [
+        "钱从人民币换成外币再回来的这一来一回，汇率就可能偷偷刮走一层皮",
+        "先拿产品收益减掉两次换汇点差，再问自己能不能承受币值反向移动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 808，目标为 700，偏差率为 15.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移，点差机制、6.75情景、企业错配、合规提醒层层递进，信息密度高且相互支撑。",
+      "script_spans": [
+        "购汇用卖出价，结汇用买入价，这相当于进场和离场各被剪一次羊毛",
+        "企业跨境融资早吃过这亏，资产负债币种错配时，汇价一动盈利就晃"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头“以为稳赚”即埋反差，中段两次设问推进不停，结尾余味由“账算不清”自然长出，三段各自站得住。",
+      "script_spans": [
+        "你盯着手机里境外理财飘红的年化，以为稳赚，可有没有想过，钱从人民币换成外币再回来的这一来一回，汇率就可能偷偷刮走一层皮？",
+        "那反过来，要是赌人民币走弱，换回时多赚汇差，这主意是不是就稳了？",
+        "账算不清，海外的风景再好，也不如家门口的理财睡得着觉"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "设问承接和剪羊毛等比喻有对话感，但多处金融名词串连需换词重断，整体只能算读得通。",
+      "script_spans": [
+        "这相当于进场和离场各被剪一次羊毛",
+        "资产负债币种错配时",
+        "个人外汇业务虽便利，但前提是真实需求，不能纯为博弈汇价反复换汇，否则徒增摩擦成本"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“进场和离场各被剪一次羊毛”把点差讲得准又好记，结尾金句离开正文仍可复述，比喻密度适度不炫技。",
+      "script_spans": [
+        "购汇用卖出价，结汇用买入价，这相当于进场和离场各被剪一次羊毛",
+        "账算不清，海外的风景再好，也不如家门口的理财睡得着觉"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段落功能清晰，“为什么”“那反过来”承接转折自然，机制到结论因果完整，结尾回扣开头的刮皮之问。",
+      "script_spans": [
+        "那反过来，要是赌人民币走弱，换回时多赚汇差，这主意是不是就稳了？",
+        "账算不清，海外的风景再好，也不如家门口的理财睡得着觉"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "用“可能”“没那么简单”限定结论，提示点差与双向波动风险，换汇以真实需求为前提，无收益承诺，导向安全。",
+      "script_spans": [
+        "个人外汇业务虽便利，但前提是真实需求，不能纯为博弈汇价反复换汇，否则徒增摩擦成本。",
+        "先拿产品收益减掉两次换汇点差，再问自己能不能承受币值反向移动",
+        "产品赚的利息可能刚够填汇差，白忙活一场"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 808,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.15428571428571428
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9fc07496ae6c409daa8d3e9c3343a2b2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-570b3bab7c2d4cd3a676ae68abb526a8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

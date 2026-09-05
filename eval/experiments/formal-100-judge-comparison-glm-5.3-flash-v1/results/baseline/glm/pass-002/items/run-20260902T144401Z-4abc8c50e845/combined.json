@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-4dc147e88e954e5b840aa8c2ba7d5edf",
+  "run_id": "run-20260902T144401Z-4abc8c50e845",
+  "trace_sha256": "dcb7d025b33c6bd5551158358c58ec57ff0ba7eabf1639aef8625f01a47dbe82",
+  "created_at": "2026-09-03T14:26:05.443995Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接给出答案，两侧均覆盖：既解释为何未必更卷，也承认品类压力，建议落到普通观众。",
+      "script_spans": [
+        "出口企业转内销，低价竞争未必就更激烈，但个别品类有压力",
+        "你逛外贸专区别只盯低价，看清售后再出手"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终扣住低价竞争，退税机制、渠道缺口、消费分层层层推进，结论有增量且与资料相符。",
+      "script_spans": [
+        "早些年国家有出口退税，厂子卖去国外能拿回税钱",
+        "建渠道、做品质，花心思留住人，不止比谁标价低"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即用“涌进却没更凶”立反差，中段设问与转折层层兑现钩子，结尾一问由正文自然生长，留有余味。",
+      "script_spans": [
+        "外贸货涌进国内，价格战却没更凶。",
+        "你也许纳闷，为啥不是更卷？",
+        "等外贸厂真在国内扎了根，便宜还能算唯一招牌吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇短气口为主，'懒得搭理国内柜台''往死里砸'等表达接地气，朗读无需临时改词。",
+      "script_spans": [
+        "觉得往外划算，懒得搭理国内柜台。其实内销渠道一直饿着。",
+        "是想填自家短缺的坑，不是把便宜货往死里砸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "拟人与口语比喻均服务理解，“饿着”“往死里砸”“唯一招牌”离开上下文仍可复述，无堆砌炫技或喧宾夺主。",
+      "script_spans": [
+        "其实内销渠道一直饿着。",
+        "是想填自家短缺的坑，不是把便宜货往死里砸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承接因果清楚，填坑而非砸价点明动机，结尾反问回扣开头与题设，链条经得起追问。",
+      "script_spans": [
+        "你也许纳闷，为啥不是更卷？",
+        "是想填自家短缺的坑，不是把便宜货往死里砸",
+        "等外贸厂真在国内扎了根，便宜还能算唯一招牌吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "判断用'未必''可能'留余地，并提醒看清售后再出手，无绝对化承诺、煽动或夸大，导向安全。",
+      "script_spans": [
+        "出口企业转内销，低价竞争未必就更激烈，但个别品类有压力",
+        "短期清库存，价钱可能便宜点",
+        "你逛外贸专区别只盯低价，看清售后再出手"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4e7ed5395b4344a6a1a41fa79cb51245",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

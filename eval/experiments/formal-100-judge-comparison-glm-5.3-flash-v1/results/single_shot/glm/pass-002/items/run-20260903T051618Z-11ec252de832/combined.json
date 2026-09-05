@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-2c0fb62fd24f432bbdf9a65ff41423e1",
+  "run_id": "run-20260903T051618Z-11ec252de832",
+  "trace_sha256": "e3239c179a785ccf2a5853d9308fb7a4746b54e228af3ac88285e11f771c0ad7",
+  "created_at": "2026-09-03T15:27:56.747866Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头点明浪费与隐患两面，兼顾不能空箱的另一方；结论回扣踏实感，精准覆盖普通家庭。",
+      "script_spans": [
+        "家庭药箱一旦塞过头，安全感就会拐个弯，变成实打实的浪费和隐患",
+        "半夜孩子发烧找不到药才是真煎熬"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从过期浪费、转卖违法到受潮降解层层推进，信息单元各有增量，与科普背景相符，无编造迹象。",
+      "script_spans": [
+        "个人根本没有药品经营许可，真倒手了反而涉嫌违法",
+        "湿度一上来有效成分悄悄降解，表面没坏其实已打折"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头20字即设悬念并落到具体反差画面；中段以转卖违法、存放降解等新信息连续转折；结尾行动建议由正文自然生长。",
+      "script_spans": [
+        "成盒没拆封的退烧药直接被丢进垃圾桶",
+        "半夜孩子发烧找不到药才是真煎熬",
+        "下次促销又想成组搬时，先拉开自家药箱看一眼吧"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，设问自答与劝诫句制造自然重音停顿，全篇朗读无需临时换词断句，属录音稿级流畅。",
+      "script_spans": [
+        "这算不算浪费？算。",
+        "药品天生带保质期，可生病这事儿没准点。",
+        "别拿身体去试那点侥幸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“护身符变累赘”贴切克制，“两年没碰过就是囤多了”“别拿身体试侥幸”离开正文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "可短短几个月，这些药就从护身符变成了累赘",
+        "药箱里任何药如果两年内你都没碰过，它大概率是囤多了",
+        "湿度一上来有效成分悄悄降解，表面没坏其实已打折"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "各段以设问承接，取舍、存放、风险递进清晰，关键因果有桥，结尾促销建议自然回扣开头。",
+      "script_spans": [
+        "为什么囤着囤着就糟蹋了？药品天生带保质期，可生病这事儿没准点",
+        "下次促销又想成组搬时，先拉开自家药箱看一眼吧"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "转卖违法与有害垃圾回收表述有据可核，'涉嫌''大概率'等措辞留有余地，兼顾两端不走极端，无确定性医疗承诺，导向安全。",
+      "script_spans": [
+        "剩余药想转卖给药店或邻居，个人根本没有药品经营许可，真倒手了反而涉嫌违法",
+        "所以一条朴素边界：药箱里任何药如果两年内你都没碰过，它大概率是囤多了",
+        "当然，凡事不能走极端，家里完全空白也不行"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c724328ec6e84d67b39bf9652bd3a034",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

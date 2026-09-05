@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-4084c46704094eda80d415c09c252760",
+  "run_id": "run-20260902T142701Z-ad03de10d396",
+  "trace_sha256": "884c24d21f48778be28dc25620901083db3d7aef94894e82ec74686f74c6a912",
+  "created_at": "2026-09-03T13:45:59.408823Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出入侵事件与质疑，厂商与用户两侧都有回答，并落到普通用户的具体操作，与题设和人群均贴合。",
+      "script_spans": [
+        "我的看法：厂商有道义责任，但现行法律还没完全卡死这些默认漏洞，两边都有份。",
+        "你拆新设备第一件事，先改掉默认密码、关掉用不上的远程权限。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 459，目标为 450，偏差率为 2.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "入侵机制、标准进度、责任判断与用户动作层层推进，事实与结论相互支撑，增量具体可带走。",
+      "script_spans": [
+        "厂商标便宜省事，设备出厂留通用密码、开着远程访问，你连起来是快了。",
+        "现在工信部那份强制安全规范，还停在征求意见稿，没正式落地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即见入侵场景与责任反差，中段靠黑客手法与法规进度持续推进，结尾比喻式提问自然收束有余味。",
+      "script_spans": [
+        "你下班回家灯自己亮了，厂商却说怪你没改密码？",
+        "可黑客用扫描器一捞就能进家门摄像头，把拍到的画面传走，隐私也漏了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短气口、有对话感，但\"厂商标便宜省事\"\"做进出厂设置里\"两处需换词重断，只能评2分。",
+      "script_spans": [
+        "你下班回家灯自己亮了，厂商却说怪你没改密码？",
+        "厂商标便宜省事",
+        "厂商就得把安全做进出厂设置里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "保险箱与看不见的窗两处比喻贴切克制、离开上下文仍可复述，服务理解与情绪，无堆砌炫技。",
+      "script_spans": [
+        "其实改了密码也不等于进了保险箱，只是门关紧了",
+        "当摄像头成了家里看不见的窗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、结尾回扣到位；但先讲完初始化又问“跟你有什么关系”，设问位置错乱，过渡生硬。",
+      "script_spans": [
+        "当摄像头成了家里看不见的窗，我们到底该信厂家承诺，还是信自己改的那道密码？",
+        "初始化那步多花两分钟。那跟你有什么关系？你拆新设备第一件事"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "责任归因留有余地且不点名指责，改密码建议附边界，风险描述不作绝对承诺，无煽动夸大。",
+      "script_spans": [
+        "我的看法：厂商有道义责任，但现行法律还没完全卡死这些默认漏洞，两边都有份。",
+        "其实改了密码也不等于进了保险箱，只是门关紧了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-7e0e88a6ee354e23b1384a41439e9ae4",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-bc3d7da0301d4672bc766dedf409a4de",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-2aecfbeda792405db274453493c5f5cb",
+  "run_id": "run-20260902T142147Z-4e3e9f535dbe",
+  "trace_sha256": "4025da66f0717c61bfe048d2f6b29f5e1cb630dfa115453f64c7d5c2aa33a99b",
+  "created_at": "2026-09-03T14:24:39.178240Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即摆明两难，结尾以“公道还是流量”回扣题设，监督与伤害两侧及普通拍摄者全覆盖。",
+      "script_spans": [
+        "街头纠纷视频上网，既是公共监督，也可能是二次伤害，不能只认一头。",
+        "普通人取舍就两条路：打码保事实，露脸扛风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法条依据、营利要件取消、合理使用例外逐层推进，法理与实操互证，与引用资料一致，无编造。",
+      "script_spans": [
+        "早先侵权得证明营利目的，现在不用了。",
+        "例外也很硬：拍公权力不当行为，监督分量压过脸面。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头20字内抛出“帮正义也赔钱”反差，中段标尺之变、例外条款层层兑现钩子，结尾之问由正文自然长出。",
+      "script_spans": [
+        "你拍下邻居吵架发上网，可能帮了正义，也赔了钱。",
+        "下次举手机前，先问自己：要的是公道，还是流量？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，对仗句重音清楚，全篇朗读基本无需换词，节奏顺而有劲。",
+      "script_spans": [
+        "打码保事实，露脸扛风险",
+        "标尺一换，普通人照样中招。",
+        "镜头不判案，只放大后果。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“标尺一换”“镜头不判案”“打码保事实，露脸扛风险”均服务理解、可独立复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "标尺一换，普通人照样中招",
+        "打码保事实，露脸扛风险",
+        "镜头不判案，只放大后果"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问作桥、小节各司其职，“先看底线”到“落到普通人”层层递进，结尾回扣开头与题设自然。",
+      "script_spans": [
+        "为什么乱发容易赔钱？背后的标尺早换了。",
+        "因为视频发出去那秒，对方找回脸面的机会，就捏在陌生人指头里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法律表述有依据，明确交代合理使用例外，后果均用'可能'限定，倡导打码、反对曝光引战，价值导向安全。",
+      "script_spans": [
+        "但为公共利益做舆论监督，留了合理使用口子",
+        "明晚可能收法院传票",
+        "打码保事实，露脸扛风险"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-de6b34dd92524104ab696669c5221c7c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

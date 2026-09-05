@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-61458caa6d084d7b97180d55e725cc7c",
+  "run_id": "run-20260903T051555Z-83006286dcb8",
+  "trace_sha256": "a2f09cfae1dfd1b90e8c140b9a7725522a3800514d920d18611b4d3d3fbd4e17",
+  "created_at": "2026-09-03T12:31:48.891696Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面区分定投投资与情绪追涨，覆盖年轻工薪族并给出风险边界，切角贴题。",
+      "script_spans": [
+        "年轻人攒金真不算追涨，选定期定额把黄金当长期抗波动的仓位，本质就是保守投资。",
+        "这跟听见暴涨消息冲进去一把梭哈完全两码事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "定投机制、银行风控和操作建议提供了具体增量，但“成本被削平”及“始终净买入”表述过满，论证仍显单线。",
+      "script_spans": [
+        "金价昂头时少攒几克、回落时多攒几克",
+        "先弄清自己的风险等级再开户，每月只扔闲钱进定投",
+        "半年一年摊下来成本被削平",
+        "全球央行近几年始终保持净买入，给黄金长期需求托了底。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“攒金不是追涨”制造判断冲突，中段连续补充机制、风险与需求，结尾提醒也顺着主题收束。",
+      "script_spans": [
+        "年轻人攒金真不算追涨",
+        "这跟听见暴涨消息冲进去一把梭哈完全两码事",
+        "涨得再红火也别临时大额追进去"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "对比和提醒句有口播感，但中段技术表达偏密，长句与抽象词叠加，朗读时需要重断句。",
+      "script_spans": [
+        "这跟听见暴涨消息冲进去一把梭哈完全两码事",
+        "选定期定额把黄金当长期抗波动的仓位，本质就是保守投资"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一把梭哈”与“碎银子慢慢堆”对照鲜明，既解释定投逻辑，也留下了自然易复述的记忆点。",
+      "script_spans": [
+        "听见暴涨消息冲进去一把梭哈",
+        "让普通人用碎银子慢慢堆"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从观点、机制、风险提示推进到操作建议，但将“攒金”直接收窄为定投，并把摊薄成本推成保守投资，范围和因果略有跳跃。",
+      "script_spans": [
+        "这跟听见暴涨消息冲进去一把梭哈完全两码事。",
+        "年轻人攒金真不算追涨",
+        "本质就是保守投资。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有风险测评、闲钱投入等边界，但“保守投资”“成本被削平”“需求托底”等说法偏绝对，易造成金融误导。",
+      "script_spans": [
+        "每月只扔闲钱进定投，涨得再红火也别临时大额追进去。",
+        "年轻人攒金真不算追涨，选定期定额把黄金当长期抗波动的仓位，本质就是保守投资。",
+        "半年一年摊下来成本被削平",
+        "全球央行近几年始终保持净买入，给黄金长期需求托了底。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-12812546bf5b476492f281c6fabc348c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

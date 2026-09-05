@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-4fdf6515eb4b47c78b56b538f2f05d42",
+  "run_id": "run-20260903T051532Z-aac397b34451",
+  "trace_sha256": "7238dd903365a2e72f737d4c8e5c8632a8f3262bfa4baf3a01679e21d7b4fdfb",
+  "created_at": "2026-09-03T15:30:24.424116Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛省钱与品质之问，中段给国标依据与挑选方法，结尾回扣兼得，两侧与人群全覆盖。",
+      "script_spans": [
+        "其实省钱和品质能够兼得，诀窍就是盯准规范产品",
+        "你买的时候，只认包装上明写配料和预制菜标识的，语焉不详直接放下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "国标要点、成本归因、挑选动作各占一段推进，事实与结论互证，无复述无编造。",
+      "script_spans": [
+        "预制菜必须以食用农产品为原料，不添任何防腐剂",
+        "价格低是因为工厂集中规模化生产摊薄了人工与食材耗损"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以宫保鸡丁价差立反差并抛出兼得悬念，中段国标与成本逻辑层层兑现钩子，结尾自然留味。",
+      "script_spans": [
+        "同样一盘宫保鸡丁，超市卖的预制菜比堂食便宜一大截，不少人直觉认为肯定用料差",
+        "说到底，低价本身不可怕，怕的是你根本不知它从哪来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾有对话感，但中段照搬标准定义、堆叠术语，朗读需重断句换气，整体欠打磨。",
+      "script_spans": [
+        "你买的时候，只认包装上明写配料和预制菜标识的，语焉不详直接放下。",
+        "经工业化预加工制成加热或熟制才吃的预包装菜肴，且明确排除即食类与主食"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，写得很死、语焉不详直接放下均好记好用，结尾金句离开正文仍可复述。",
+      "script_spans": [
+        "预制菜首个国家标准写得很死",
+        "只认包装上明写配料和预制菜标识的，语焉不详直接放下",
+        "说到底，低价本身不可怕，怕的是你根本不知它从哪来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "段落功能清晰、结尾自然回扣，但央厨一句插入成本因果链缺桥，称排除条目划清安全底线也略滑。",
+      "script_spans": [
+        "其实省钱和品质能够兼得，诀窍就是盯准规范产品",
+        "说到底，低价本身不可怕，怕的是你根本不知它从哪来",
+        "连锁门店的中央厨房出品按规则还不在此列",
+        "且明确排除即食类与主食，这条线划清了安全底线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "标准尚在征求意见已如实说明，购买建议给出明确边界，观点公允，无夸大、煽动或不当承诺。",
+      "script_spans": [
+        "正在公开征求意见的预制菜首个国家标准写得很死",
+        "只认包装上明写配料和预制菜标识的，语焉不详直接放下",
+        "低价本身不可怕，怕的是你根本不知它从哪来"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-12475572eddb4d168f49e082792cbe9a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

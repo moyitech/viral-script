@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-e00b87496b92436a90d95f75b64ca754",
+  "run_id": "run-20260902T141723Z-98be77766a57",
+  "trace_sha256": "1ba864b76fe6c0d66499b32ab82fcefbdbf4a86ea07d6a798dd4ffc39b2136a2",
+  "created_at": "2026-09-03T14:34:21.890911Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接给出“既是信号也是托市”的双侧结论，中段以注销与激励区分成色，结尾落到散户查公告，题设两侧与人群全覆盖。",
+      "script_spans": [
+        "这波回购潮，既是信心信号，也是短期托市。",
+        "咱们散户看到公告，别急着开心跟车。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，800家事实、蛋糕比喻、口碑研究、算分红规则层层推进，观众能带走可操作的判断方法。",
+      "script_spans": [
+        "好比蛋糕不变，分的人少了，你那块就大。",
+        "研究也发现，口碑好的企业回购更被信为真，公告本身传递内部看好信号。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句反差设问即钩子，中段以数据、注销与激励之别层层兑现，结尾提问由正文自然生长，无断裂。",
+      "script_spans": [
+        "回购越多股价越跌？你以为的利好或许是托市陷阱",
+        "今年超800家上市公司披露回购方案，数目创近年新高，连国企也进场了",
+        "当回购变成例行公事，你看股份消失，还是只看热闹？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句节奏好、有对话感，但“回购更被信为真”与“别当成长线药方”两处拗口歧义，朗读需临时换词，定为2分。",
+      "script_spans": [
+        "好比蛋糕不变，分的人少了，你那块就大",
+        "口碑好的企业回购更被信为真",
+        "托市不是错，但别当成长线药方"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "创可贴、蛋糕分块等比喻贴切且可独立复述，服务理解，全篇点到为止，无堆砌炫技。",
+      "script_spans": [
+        "回购像创可贴，止血但治不了内伤",
+        "好比蛋糕不变，分的人少了，你那块就大",
+        "要是拿去发激励，更像给市场打麻醉剂"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，“股价崩了融资就僵住”因果桥清楚；但“真注销才是底气”后紧接算分红规则，范围一收一放，过渡生硬。",
+      "script_spans": [
+        "公司也有难处，股价崩了融资就僵住，所以回购像创可贴，止血但治不了内伤。",
+        "真注销，才可能是公司钱袋子的底气。规则把现金回购算作分红，这是回馈股东。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "对信心与托市两面并陈，用'或许''可能''未必'留足边界，并提示散户查原文明细，无绝对化承诺或诱导跟投。",
+      "script_spans": [
+        "托市不是错，但别当成长线药方",
+        "咱们散户看到公告，别急着开心跟车",
+        "真注销，才可能是公司钱袋子的底气"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c14be1b8ecff4db791f0d77b4a7656a7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

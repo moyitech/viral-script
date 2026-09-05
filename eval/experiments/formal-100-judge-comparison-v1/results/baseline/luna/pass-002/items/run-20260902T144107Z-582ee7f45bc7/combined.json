@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-1ae342a1db1c43f1880cf343899b654d",
+  "run_id": "run-20260902T144107Z-582ee7f45bc7",
+  "trace_sha256": "e367a70c61528cf21504d0675c7c2ed953f6b8c7555e51dc0ace9eb4f4809ca4",
+  "created_at": "2026-09-03T12:16:07.358402Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "同时写清一线岗位减少、技术岗位增加，并面向产线工人给出转岗方向，正面回答了题目。",
+      "script_spans": [
+        "一边减操作工，一边增技术岗，这就是升级的路。",
+        "新职业要懂网络，也得会看设备报错代码。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "岗位类型、数字职业和技能要求带来具体增量，但缺人和两个月上手等判断缺少支撑，论据推进不够扎实。",
+      "script_spans": [
+        "大典还标了近百个数字职业，能看出路子往这走。",
+        "活儿干净还缺人，招工启事贴满门口。",
+        "年轻人学俩月就能上手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“没人站产线”制造反差，中段不断补充岗位与转岗路径，结尾追问自然留下想象。",
+      "script_spans": [
+        "走进工厂没人站产线，活儿谁干？",
+        "哪天厂子关灯自己跑，你琢磨谁在云服务端握开关？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、设问和具体动词让整体好读，但两处搭配生硬，朗读时仍要临时换词。",
+      "script_spans": [
+        "老师傅转岗有机会，厂方也乐意教，年轻人学俩月就能上手。",
+        "上次修职业大典",
+        "有研究跟了制造企业"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“没人站产线”和“云服务端握开关”形成具体画面，既好记又服务于智能工厂主题，没有堆砌修辞。",
+      "script_spans": [
+        "走进工厂没人站产线，活儿谁干？",
+        "哪天厂子关灯自己跑，你琢磨谁在云服务端握开关？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "设问、举例、建议和结论主线清楚，但研究表述拗口，且从职业收录直接跳到岗位紧缺，因果桥不足。",
+      "script_spans": [
+        "走进工厂没人站产线，活儿谁干？",
+        "有空就戳戳设备监控的软件界面，肯学就能转新岗。",
+        "有研究跟了制造企业，发现机器换人后用工结构真变了。",
+        "活儿干净还缺人，招工启事贴满门口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题方向基本安全，但“学俩月就能上手”“肯学就能转新岗”等泛化承诺，可能误导求职者。",
+      "script_spans": [
+        "一边减操作工，一边增技术岗",
+        "年轻人学俩月就能上手",
+        "肯学就能转新岗"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-93faab4a1eea48f2925ac45e3e234744",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

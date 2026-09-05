@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-674c343e8b8d456db858006ba309b377",
+  "run_id": "run-20260903T051629Z-f58f25e4cfb4",
+  "trace_sha256": "41181c855f00f0060434fc62642b7931ab21dfe096e6e62f3e860a3550997435",
+  "created_at": "2026-09-03T12:32:00.270866Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应干旱冲击与能源转型应对，兼顾系统风险、普通用户影响和具体解决路径。",
+      "script_spans": [
+        "能源转型不是不要水电，而是不让系统被单一气候绑架。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕水电气候依赖展开，结合中外案例、发电原理、替代成本与市场机制，信息单元推进清楚。",
+      "script_spans": [
+        "大坝靠水流落差转化电能，没水就归零。缺口若靠煤电补，燃料与碳排成本双升。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用干旱与充电排队的反差抓人，中段不断补充案例和机制，结尾回到日常用电，收束自然。",
+      "script_spans": [
+        "很多人以为干旱只旱庄稼，其实河流见底，城市充电桩排起蜿蜒长队",
+        "干旱正在撕开能源转型的软肋"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体逻辑清楚、节奏有短句支撑，但多处术语和并列动作堆叠，朗读时仍需重断句。",
+      "script_spans": [
+        "大坝靠水流落差转化电能，没水就归零。",
+        "政策取舍已清晰：推进多能互补，把风光储与水电解绑，并借电力现货市场实时定价，引导虚拟电厂削峰填谷。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“看天吃饭”与“单一气候绑架”把系统风险说得具体，记忆点清楚，修辞没有压过解释。",
+      "script_spans": [
+        "靠天发电的水电一旦熄火",
+        "能源转型不是不要水电，而是不让系统被单一气候绑架"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、案例、机制、对策和结论层次完整，但个案被直接扩大为机制可行，用户端电价变化也缺少条件说明。",
+      "script_spans": [
+        "大坝靠水流落差转化电能，没水就归零。",
+        "山西现货市场转正式运行，证明机制可行。",
+        "现货市场让电价如机票分时浮动，顺势用谷电就是省钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，但“全社会来背”“没水就归零”“就是省钱”过于绝对，可能造成泛化或消费误导，建议补充条件。",
+      "script_spans": [
+        "转型无法消灭气候风险",
+        "额外成本终究要全社会来背",
+        "没水就归零",
+        "顺势用谷电就是省钱"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-acdc77d1ddbc4c6da06e7974adc7f933",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

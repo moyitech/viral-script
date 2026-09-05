@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-07d2a125cf2741e784959f47437e11b6",
+  "run_id": "run-20260902T143905Z-d3e14b7c1834",
+  "trace_sha256": "67a47e403b072d260554a29ca5020bd40e1c8ddd84f39b04ea42ab062c686c25",
+  "created_at": "2026-09-03T12:18:50.270144Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释低CPI与家庭体感的落差，并落到普通家庭的固定开销核算，切题且有针对性。",
+      "script_spans": [
+        "钱不够花，不是手松，是指数没罩住刚性支出。",
+        "下次别盯CPI，算算固定开销占收入几成，比看平均数更踏实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，CPI数据、消费结构和记账建议带来具体增量；但“学费没进去”等绝对表述削弱论证的扎实度。",
+      "script_spans": [
+        "三月全国CPI同比才涨1.0%，其中食品只涨0.3%，非食品涨1.2%",
+        "房租权重轻，学费没进去，买房更不计入。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“1%却紧巴”的反差抓人，中段数据不断补证，结尾落到账单行动，收束有余味。",
+      "script_spans": [
+        "物价只升1%，你家咋还紧巴巴？",
+        "钱不够花，不是手松，是指数没罩住刚性支出。",
+        "下次别盯CPI，算算固定开销占收入几成，比看平均数更踏实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、问句和“你想啊”让节奏有起伏，但“花项钉刚需”明显卡嘴，后段收束也有拗口感。",
+      "script_spans": [
+        "物价只升1%，你家咋还紧巴巴？",
+        "它测的一篮子，是平均家庭买的，房租权重轻，学费没进去，买房更不计入。",
+        "工资跑得慢，花项钉刚需。",
+        "那才掐住手头松紧。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“钱不够花，不是手松”的可复述反差，也有具体账单画面；但“花项钉刚需”生硬难懂，拉低整体精度。",
+      "script_spans": [
+        "钱不够花，不是手松，是指数没罩住刚性支出。",
+        "今晚翻账单，圈出房租补课费",
+        "花项钉刚需"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "设问、数据、解释、归因和建议基本递进；但“工资跑得慢”缺少支撑，且将未纳入与权重偏轻混为一谈。",
+      "script_spans": [
+        "今晚翻账单，圈出房租补课费，再看水电医保，那才掐住手头松紧。",
+        "工资跑得慢，花项钉刚需。",
+        "统计那篮商品，漏了你的房租和补习班。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，但把房租、补习班说成CPI遗漏项，容易造成对统计口径的误解，需改为权重或个人支出结构差异。",
+      "script_spans": [
+        "下次别盯CPI，算算固定开销占收入几成，比看平均数更踏实。",
+        "统计那篮商品，漏了你的房租和补习班。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 16.0,
+    "partial_weighted_average": 2.2857142857142856,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-798ec0e2537f40938bb540f22d30ea1c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

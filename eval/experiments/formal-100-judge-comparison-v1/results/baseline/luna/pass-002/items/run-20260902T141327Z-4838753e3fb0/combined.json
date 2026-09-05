@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-1c867f3014c94fabb280d990bca21a1c",
+  "run_id": "run-20260902T141327Z-4838753e3fb0",
+  "trace_sha256": "f8ae470130b8cda41836788f3f03ffb3a2061a39fb09c12c59970f66d1189e34",
+  "created_at": "2026-09-03T12:15:49.643184Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应“便利还是门槛”，同时覆盖上班族与老年人，并给出人工帮约的平衡方案。",
+      "script_spans": [
+        "既是便利升级，也是新门槛。",
+        "大厅该留个人工帮约通道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中，预约便利、老人受阻、数字鸿沟和人工帮约层层推进，能形成清晰的判断与行动建议。",
+      "script_spans": [
+        "现在睡前点几下就约好时间，到点直接办",
+        "得麻烦儿女远程代约，多绕一圈冤枉路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出办事冲突，中段用年轻人与老人对照推进，结尾反问自然留下公共议题余味。",
+      "script_spans": [
+        "老人不会手机预约，当场办不成事。",
+        "门照开，不爱用手机的人却进不来？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句推进利落，正反两面都用具体口语展开，整体听来顺畅自然。",
+      "script_spans": [
+        "睡前点几下就约好时间，到点直接办，不用坐冷板凳",
+        "她站那儿手足无措，不知找谁问"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“坐冷板凳”和“门照开却进不来”把等待与隐性门槛具体化，克制且便于复述。",
+      "script_spans": [
+        "不用坐冷板凳",
+        "门照开，不爱用手机的人却进不来？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先总提判断，再分写年轻人与老人，最后以人工通道收束，转折和因果自然，结尾有效回扣门槛。",
+      "script_spans": [
+        "这对年轻人，是真便利升级。",
+        "这成了老人的新门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能同时呈现便利与数字障碍，建议保留人工通道；但“只对手机族有效”等表述过于绝对，容易把个案扩展为普遍结论。",
+      "script_spans": [
+        "既是便利升级，也是新门槛。",
+        "大厅该留个人工帮约通道。",
+        "便利只对手机族有效"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-79ef884876fc42eda87ed268aaa538b8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

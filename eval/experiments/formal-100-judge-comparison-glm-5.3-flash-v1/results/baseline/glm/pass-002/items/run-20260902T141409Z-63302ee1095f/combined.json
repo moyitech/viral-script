@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-47da3639231f46a989e9a5103fb98543",
+  "run_id": "run-20260902T141409Z-63302ee1095f",
+  "trace_sha256": "1c432336ab54468b6ec3d5e26e72249c8957608e05a0f7401501525f35775c4c",
+  "created_at": "2026-09-03T14:24:24.970030Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即摆出省成本与冷落人两侧，结尾以配套补偿作答，环卫工、护士等核心人群痛点具体。",
+      "script_spans": [
+        "这事儿既在省成本，也冷落了晚归人，账得掰开看",
+        "节支不能只盯线路，得配套补偿才不算冷落人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题紧扣夜班账本：成本构成、个体转嫁、兜底反例层层推进，能带走成本挪了位置的判断方法。",
+      "script_spans": [
+        "司机大半夜熬着，工资还得加倍给，车辆老化半夜进场维修更贵",
+        "普通人看得到车少了，看不见的是成本挪了位置"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句三连对仗直指冲突，中段连环设问与转折层层兑现钩子，结尾之问由夜归场景自然生长。",
+      "script_spans": [
+        "夜公交班次砍了，公司账本轻了，晚归人却悬了。",
+        "省下的钱真没了吗？企业成本肉眼可见降了",
+        "末班车早了，夜归人脚下的路，谁再来照亮一程？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与案例好读，但“可达性”“出行链”“节支空间”等书面词需临时换词，流畅度受损。",
+      "script_spans": [
+        "夜公交班次砍了，公司账本轻了，晚归人却悬了。",
+        "这也符合成本规制里的节支空间",
+        "把时段客流画出来冷线缩间隔"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "以账字一线贯穿，三连句与成本挪了位置均可独立复述；唯可达性一处略生硬，整体克制不炫技。",
+      "script_spans": [
+        "夜公交班次砍了，公司账本轻了，晚归人却悬了。",
+        "普通人看得到车少了，看不见的是成本挪了位置，企业轻松了，个人沉重了",
+        "这感觉就像可达性变了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "设问分段、结尾回扣账本意象，主线清楚；但冷线缩间隔压缩含混，替代方案与省钱逻辑衔接生硬。",
+      "script_spans": [
+        "那这笔账落到个人头上啥样？",
+        "这账本得摊在阳光下",
+        "砍班未必是唯一答案，把时段客流画出来冷线缩间隔，或许更稳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全文克制公允，成本与民生两面对冲，'反例也有''或许更稳'留有余地，无煽动夸大或无依据承诺。",
+      "script_spans": [
+        "反例也有：若财政全额兜底，票价或税收又摊给所有人。",
+        "按规定线网优化要听大家说，减频次要透明，补好缺口再动手。",
+        "砍班未必是唯一答案，把时段客流画出来冷线缩间隔，或许更稳。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3e3a98d35d4b4c5782d8c981e944bb7d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

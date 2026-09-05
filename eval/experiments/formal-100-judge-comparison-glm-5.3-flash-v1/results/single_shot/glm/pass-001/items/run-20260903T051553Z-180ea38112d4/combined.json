@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-8caf7fe75aec4dbab436251a09a3d755",
+  "run_id": "run-20260903T051553Z-180ea38112d4",
+  "trace_sha256": "01d4d132c435d171fd61fe63336b2defd00b2b54e0dbe500b24015e84dea9956",
+  "created_at": "2026-09-03T14:08:14.745803Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接判定多数在交学费，广告承诺与现实两侧及年轻人群全覆盖，结尾建议回扣题设。",
+      "script_spans": [
+        "多数不是在增收，而是在给套路交学费",
+        "请先视作消费陷阱守住钱袋"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 285，目标为 280，偏差率为 1.79%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "涉诉金额、收费套路、平台新规各有推进，并给出反证推理与防坑清单，与引用相符无编造。",
+      "script_spans": [
+        "借AI、短视频带货等概念的技能培训已成维权重灾区，平均涉诉金额超七千元",
+        "严禁AI伪造专家背书，要求AI素材标注"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开篇反转钩子可留人，但前20字偏铺垫；中段审核新规列举趋平，结尾建议平实，互动冲动弱。",
+      "script_spans": [
+        "多数不是在增收，而是在给套路交学费",
+        "明文禁止“轻松月入”类保证收益话术，严禁AI伪造专家背书，要求AI素材标注"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾顺口，但中段并列抽象词堆叠两处，朗读需重断句，整体偏新闻播报。",
+      "script_spans": [
+        "副业培训广告铺天盖地，许多年轻人满怀期待点进去，多数不是在增收，而是在给套路交学费。",
+        "借AI、短视频带货等概念的技能培训已成维权重灾区",
+        "明文禁止“轻松月入”类保证收益话术，严禁AI伪造专家背书，要求AI素材标注"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，“给套路交学费”“别被封面骗了”离开上下文仍可复述，无炫技堆砌。",
+      "script_spans": [
+        "用先学后付掩盖贷款本质，课程注水后退费无门",
+        "那些精致名师头像可能是AI生成，别被封面骗了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "判断、数据、套路、反证、建议层层递进，反证桥接清楚，结尾守住钱袋回扣开篇判断。",
+      "script_spans": [
+        "这正好反证此前满屏的赚钱承诺多不真实",
+        "签约前看清退款条款与合同主体，保留好付款凭证"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键论断有投诉数据与平台规则支撑，多用“多数”“可能”留余地；建议均附前提且面向自保，无夸大承诺、无引战歧视。",
+      "script_spans": [
+        "遇到宣称“包赚包过”的副业课，请先视作消费陷阱守住钱袋",
+        "签约前看清退款条款与合同主体，保留好付款凭证",
+        "那些精致名师头像可能是AI生成，别被封面骗了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-26ec440638ec439e9727576374aacade",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-bbb605ffc59b45da9f240a755b96fb3a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-4c30e5477d6c432d9c44c51c913b50a4",
+  "run_id": "run-20260903T051643Z-4f64002940c3",
+  "trace_sha256": "ae461c7e6834f6505fcbb29e63f4d8dac8a77ae0a03e13da524d83ee2ba483da",
+  "created_at": "2026-09-03T11:57:06.561272Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应休闲是否让步，覆盖停车刚需与居民休闲两侧，并提出协商和替代方案。",
+      "script_spans": [
+        "休闲需求不该默认让步，但也不是死守空间不变"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 707，目标为 700，偏差率为 1.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕空间分配持续推进，涵盖共有表决、功能叠用、微更新和错时共享，信息增量充分。",
+      "script_spans": [
+        "物理上分层，功能上叠用，说明二者未必是零和"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用停车焦虑撞上休闲需求，中段推进到权限、案例和替代方案，结尾余味自然。",
+      "script_spans": [
+        "晚上回家绕三圈找不到车位，可楼下的小花园却是老人孩子唯一的落脚地。",
+        "那停车和休闲真算死账吗？国外一些项目给了另类答案。",
+        "车要停，人也要喘气，二者之间缺的往往不是空间，是商量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有反问、短句和自然转折支撑节奏，但中段抽象及制度化表达偏多，个别搭配不够顺口。",
+      "script_spans": [
+        "车没停顺心，怨气先满群",
+        "这说明，只盯车不够，人怎么生活才是核心。",
+        "承担着看护小孩、老人社交的功能",
+        "用公众参与把零星边角利用起来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照都服务观点，“便利吃掉休憩”与“缺的不是空间，是商量”自然且易复述。",
+      "script_spans": [
+        "防止少数人的便利吃掉多数人的休憩。",
+        "物理上分层，功能上叠用，说明二者未必是零和。",
+        "车要停，人也要喘气，二者之间缺的往往不是空间，是商量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从冲突提出到权限判断，再到需求分析和替代方案，层层推进，结尾自然回扣核心立场。",
+      "script_spans": [
+        "所以，别急着问休闲该不该让，先问这决定是谁做的、有没有替所有人想过另一条路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体立场克制、未煽动对立；但“依法得业主共同表决”缺少适用条件，容易被当成一概而论的法律结论。",
+      "script_spans": [
+        "休闲需求不该默认让步，但也不是死守空间不变",
+        "依法得业主共同表决"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-cbc2c3392b204994a269f4ae60612c66",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c07b2a63b3e1478e86fc2ca62a1cb64f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

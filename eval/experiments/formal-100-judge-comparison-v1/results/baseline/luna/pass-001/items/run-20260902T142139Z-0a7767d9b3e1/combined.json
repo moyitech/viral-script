@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-db28b3ddc24d47a2bcc64f30baba0ce4",
+  "run_id": "run-20260902T142139Z-0a7767d9b3e1",
+  "trace_sha256": "c19f9c1f734a54ad9238e4f99e4ee1b6a4210398213cdf0b0057c9c8db7a6e35",
+  "created_at": "2026-09-03T11:44:03.333078Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应全天带货与真假辨识，覆盖数字人、消费者判断和下单避坑。",
+      "script_spans": [
+        "现在数字人全天带货，永不打烊直播间，想分清真假不能只靠脸，得看画面有没有挂AI标。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 263，目标为 280，偏差率为 6.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕识别真假展开，交代全天带货、标注规则、仿真人风险与消费者避坑动作，信息推进完整。",
+      "script_spans": [
+        "平台新规说了，AI带货必须亮明身份，标识要醒目持续提示，不能一闪而过。",
+        "你下单前，别急着付款，记得瞄一眼角落里“AI生成”的小字"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以真人身份制造悬念，中段递进到标注规则和避坑动作，结尾追问信任，推进完整。",
+      "script_spans": [
+        "半夜刷到主播喊秒杀，你猜他是真人吗？",
+        "你下次看到永不累的主播，会先找那行标识吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句反问带来对话感，但“永不打烊直播间”“拿代码仿真人面孔”等处不顺，朗读需临时调整。",
+      "script_spans": [
+        "半夜刷到主播喊秒杀，你猜他是真人吗？",
+        "别急着付款，记得瞄一眼角落里“AI生成”的小字",
+        "永不打烊直播间",
+        "标识要醒目持续提示",
+        "有些商家拿代码仿真人面孔"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“技术能仿人，透明得靠规矩”凝练好记，“比真人能熬”也有画面感，修辞克制且服务观点。",
+      "script_spans": [
+        "比真人能熬",
+        "技术能仿人，透明得靠规矩。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，先提出辨识难题再给出标注建议；但“标了”与“不标”的判断过于绝对，“拿代码仿真人面孔”也使因果和表达不清。",
+      "script_spans": [
+        "技术能仿人，透明得靠规矩。",
+        "标了，你一眼认出合成；不标，有些商家拿代码仿真人面孔"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "查看标识、下单前留意的提醒稳妥；但“标了你一眼认出”“只能凭标注避坑”过于绝对，可能误导。",
+      "script_spans": [
+        "下单前，别急着付款，记得瞄一眼角落里“AI生成”的小字",
+        "标了，你一眼认出合成"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3648f0a9d5bb497f96762b7d737721b0",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ceadae505bf54f0ea3eb138132529b1e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

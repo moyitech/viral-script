@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-f2c6d01b99164b928b49b9237aca2e7c",
+  "run_id": "run-20260902T142921Z-7bb0a7bf18d3",
+  "trace_sha256": "abecbfead23df37369368db2f8fa22672e0d00527e9617a33b8cdc38a6c0c119",
+  "created_at": "2026-09-03T11:44:32.543105Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直面副业课的增收与交学费之争，覆盖广告机制、风险和年轻人避坑需求。",
+      "script_spans": [
+        "你刷到副业课说下班挣外快，真增收还是交学费？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 457，目标为 450，偏差率为 1.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从平台审核、机构盈利模式到投诉数据，再落到避坑方法，信息单元层层推进，主题集中。",
+      "script_spans": [
+        "卖课的人主要靠课费赚钱，接单与否他未必上心。",
+        "课程缩水退费遭拒，平均涉诉超七千元。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出增收与交学费的冲突，中段不断补充套路，结尾追问自然有余味。",
+      "script_spans": [
+        "你刷到副业课说下班挣外快，真增收还是交学费？",
+        "广告越猛，越算账：学费交了，时间没了，剩啥？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，但中段信息压得太紧，至少两处需要重断句，影响连续朗读。",
+      "script_spans": [
+        "你信了容易掉坑。",
+        "广告越猛，越算账：学费交了，时间没了，剩啥？",
+        "借AI短视频带货新概念，把先学后付变贷款。",
+        "以先学后付分期缴费实质贷款诱导报名。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“钱没挣到先背债”和“时间比学费贵”形象克制，准确强化了风险，也便于观众复述。",
+      "script_spans": [
+        "钱没挣到先背债。",
+        "时间比学费贵，你细品。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，随后解释广告为何泛滥、用数据佐证，最后给出筛课建议并回扣时间成本。",
+      "script_spans": [
+        "为啥广告满天飞却难回本？",
+        "普通人咋避坑？先问课教真本事还是贩卖焦虑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，避坑建议较安全；但对机构动机和行业现象作了未经限定的泛化归因，易造成误导。",
+      "script_spans": [
+        "普通人咋避坑？先问课教真本事还是贩卖焦虑。",
+        "卖课的人主要靠课费赚钱，接单与否他未必上心。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c59dce6fd71d416dbce088621d022571",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-8cd19a361c424ca39312df7e5857d31a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

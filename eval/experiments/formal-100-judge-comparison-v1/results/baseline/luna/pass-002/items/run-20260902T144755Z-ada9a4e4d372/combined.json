@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-330d4f4fcf464b929caefc61535df36c",
+  "run_id": "run-20260902T144755Z-ada9a4e4d372",
+  "trace_sha256": "ead01721e79da9803a2d54ac14089d79d7a72694bebb74ba4a7493b8a19db6af",
+  "created_at": "2026-09-03T12:17:04.569385Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答融资负担下降为何未缓解经营压力，覆盖成本、需求、库存和回款等核心痛点。",
+      "script_spans": [
+        "信用好更容易贷，利息往下走。",
+        "别光看利率低，先数数手头订单稳不稳？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息集中且有推进，依次呈现融资、成本、订单、库存和回款压力，并落到订单稳定性判断。",
+      "script_spans": [
+        "刚省出点息，转头贴进料里。",
+        "货堆库里卖不出，厂里转着没钱进。",
+        "有的厂收入平了，利润反降，机器空转也费钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用利息下降与经营更难的反差抓人，中段层层落到账单、订单和回款，结尾提醒也顺势收住。",
+      "script_spans": [
+        "利息降了，厂子却更难干。负担轻了，压力没小。",
+        "钱好借了，但借来干嘛？",
+        "别光看利率低，先数数手头订单稳不稳？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和反问制造了节奏，但“融资协调推开”等表述生硬，仍需重写后才顺口。",
+      "script_spans": [
+        "利息降了，厂子却更难干。负担轻了，压力没小。",
+        "现在融资协调推开，线上点一点对接银行。",
+        "货堆库里卖不出，厂里转着没钱进。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“负担轻了，压力没小”和“省下的利，难填亏空”短促有反差，准确说透融资与经营压力的落差。",
+      "script_spans": [
+        "负担轻了，压力没小。",
+        "刚省出点息，转头贴进料里。",
+        "省下的利，难填亏空。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，融资成本到经营压力的转折成立；但个别表述生硬，部分句子需要重断句才能顺畅理解。",
+      "script_spans": [
+        "刚省出点息，转头贴进料里。",
+        "现在融资协调推开，线上点一点对接银行。",
+        "水电气工钱哪样不升？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无违规，但“利息往下走”缺少适用条件，可能造成普遍降息的误解。",
+      "script_spans": [
+        "别光看利率低，先数数手头订单稳不稳？",
+        "信用好更容易贷，利息往下走。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-bf2839c5cb034b2e8a8d8c1ba6ae7922",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

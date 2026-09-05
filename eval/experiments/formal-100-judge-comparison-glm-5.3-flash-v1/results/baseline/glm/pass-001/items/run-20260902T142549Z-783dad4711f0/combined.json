@@ -1,0 +1,157 @@
+{
+  "evaluation_id": "combined-ca102ec5ab764aa7acd0b549c5257f3d",
+  "run_id": "run-20260902T142549Z-783dad4711f0",
+  "trace_sha256": "6294185093e4ef293fcb28bf8fc198a0834b728363356e2fc0da709dca1771d1",
+  "created_at": "2026-09-03T13:46:20.275245Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直答'未必更安全'，强项与两处漏洞两侧齐讲，落点回到普通人，关键对象与痛点全覆盖。",
+      "script_spans": [
+        "无密码登录加速普及，账户却未必更安全",
+        "所以对普通人，开了passkey别躺平",
+        "安全得层层设防，不是换把锁就高枕无忧"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 447，目标为 450，偏差率为 0.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "密钥原理、同步找回、令牌盗用逐层推进，NIST与谷歌说法有实据，观众还能带走两条可操作建议。",
+      "script_spans": [
+        "passkey是密钥对，网站只存公钥，私钥锁在你设备里",
+        "令牌是进门后的通行证，passkey只管开门，不管进门后",
+        "备一台闲置手机存密钥，登录后点开活跃会话看陌生设备"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句反差加'留了缝'设悬，中段两转折持续兑现钩子，结尾一问由正文自然生长，三段齐整。",
+      "script_spans": [
+        "无密码登录加速普及，账户却未必更安全。铺开背后留了缝",
+        "再看另一头。无密码掐断了密码钓鱼，却掐不住会话令牌被盗",
+        "设备全丢时，谁来证明你是你？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏与比喻基本功扎实，但NIST句等两处书面压缩需临时换词或重断，按规则封顶2分。",
+      "script_spans": [
+        "老密码靠人脑记，网站库被拖，密码跟着全泄露。",
+        "令牌是进门后的通行证，passkey只管开门，不管进门后。",
+        "NIST允许同步密钥获中等保障级",
+        "无密码掐断了密码钓鱼，却掐不住会话令牌被盗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "指纹锁与开门进门之喻贴切助解，'只管开门，不管进门后'离文可复述，修辞克制未喧宾夺主。",
+      "script_spans": [
+        "令牌是进门后的通行证，passkey只管开门，不管进门后",
+        "这就像家门换指纹锁，进门难了，可备用钥匙丢哪还得自己操心",
+        "无密码掐断了密码钓鱼，却掐不住会话令牌被盗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "转折承接清楚，每处风险都配对策，'只管开门'划清因果边界，结尾设问自然回扣开头与题设。",
+      "script_spans": [
+        "无密码掐断了密码钓鱼，却掐不住会话令牌被盗",
+        "这跟密码重置没两样",
+        "当无密码成默认，我们该想：设备全丢时，谁来证明你是你？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "开篇即留边界'未必更安全'，既讲强项也讲令牌被盗、备份失效等短板，建议具体且不夸大，无绝对化承诺，价值导向安全。",
+      "script_spans": [
+        "无密码登录加速普及，账户却未必更安全。铺开背后留了缝。",
+        "无密码掐断了密码钓鱼，却掐不住会话令牌被盗",
+        "安全得层层设防，不是换把锁就高枕无忧"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-bd344465040d48aa8f6e169a8ef0bb65",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b8e88e835a0e43b3a00b8d3d317dc092",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

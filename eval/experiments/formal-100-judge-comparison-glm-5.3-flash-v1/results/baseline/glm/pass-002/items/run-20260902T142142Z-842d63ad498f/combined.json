@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-814467892cc2420fab0795e5208ba0ca",
+  "run_id": "run-20260902T142142Z-842d63ad498f",
+  "trace_sha256": "8d5d03d2213ce558ed47fc466e70fd9a30b2776b9d7d02ee09ca4e8d5199019f",
+  "created_at": "2026-09-03T14:25:03.986127Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出两面，正反情境都落在孩子与课堂，结尾给出取舍，正面回答题设且人群契合。",
+      "script_spans": [
+        "它既能因材施教，也可能放大学习差距。",
+        "算法若总盯着尖子生，一个劲喂拓展题，后排弱生连练手机会常被挤掉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "正反情境各推进一步，配资源比喻与教师兜底做法，信息单元具体，现实中确有此类部署，论证扎实。",
+      "script_spans": [
+        "今早系统就推三道类似题让他练熟，一步一步带。",
+        "老师每天扫一眼后台，发现谁掉队就拉一把，补句鼓励才稳妥。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即抛对比问句，中段一正一反场景持续兑现钩子，结尾余味由正文自然长出，无生硬互动。",
+      "script_spans": [
+        "AI助教进课堂，是开小灶还是拉大差距？",
+        "孩子昨晚卡在一道数学题，急得抓头发",
+        "机器分得清错题，却分不清孩子的委屈"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，'扫一眼后台''拉一把'具体好念，重音停顿清楚，通篇朗读无需临时改词。",
+      "script_spans": [
+        "老师每天扫一眼后台，发现谁掉队就拉一把，补句鼓励才稳妥"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "类比与画面均服务理解，结尾分得清错题分不清委屈、冷屏暖意两处离文可复述，全篇修辞不喧宾夺主。",
+      "script_spans": [
+        "好比资源就这么多，偏向一头，另一头慢慢更荒",
+        "机器分得清错题，却分不清孩子的委屈。冷屏给不了那句辛苦了，暖意还得人来给。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "用但换个情形清晰转折，资源比喻补上差距拉大的因果桥，结尾回扣开头之问，层层递进。",
+      "script_spans": [
+        "好比资源就这么多，偏向一头，另一头慢慢更荒。",
+        "机器分得清错题，却分不清孩子的委屈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反两说且以可能、若限定，不夸大不承诺；另提醒别把教学全托付给屏幕，边界清楚，导向安全。",
+      "script_spans": [
+        "它既能因材施教，也可能放大学习差距",
+        "但提醒你，别把教学全托付给屏幕"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-31c25877852a43debdad91f36562871e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

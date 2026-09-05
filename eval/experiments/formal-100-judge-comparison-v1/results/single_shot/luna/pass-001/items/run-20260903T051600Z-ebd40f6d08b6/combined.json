@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-863efded578e423fb107f89db72264d1",
+  "run_id": "run-20260903T051600Z-ebd40f6d08b6",
+  "trace_sha256": "5104e3425cf771c34873bd7ddf622627fe3dc25c8c4a3f9c76a1893f0b7241c7",
+  "created_at": "2026-09-03T12:10:22.696159Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从暴雨场景切入，明确回答极端天气下准时承诺应转为弹性，并同时覆盖用户、骑手与平台。",
+      "script_spans": [
+        "极端天气下死守分钟级的准时指标，已经偏离了服务的本质，承诺本身需要随天气转为弹性缓冲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 694，目标为 700，偏差率为 0.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“天气—需求—配送—规则”展开，既有机制解释和风险后果，也给出透明预警、弹性计时等可执行建议。",
+      "script_spans": [
+        "像极端高温天，居民为了避开户外暴晒反而更频繁叫外卖，订单量会明显跳升。",
+        "务实的做法是平台把天气因子透明植入进度条，暴雨大风时主动标注“配送延长”，用事前沟通替代事后机械赔券。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "暴雨与“28分钟”形成即时冲突，中段连续推进，结尾用“更成熟的快”留下余味，观看动机完整。",
+      "script_spans": [
+        "窗外暴雨倾盆，你手机上的外卖订单还显示“预计28分钟送达”",
+        "当极端天气从意外变成季节常态，肯慢下来的配送，反而是更成熟的快。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头设问和“骑手也是肉身”有对话感，但中段抽象搭配偏多，个别句子断裂，朗读时仍需重断句。",
+      "script_spans": [
+        "骑手也是肉身，不是算法里的无限资源",
+        "承诺本身需要随天气转为弹性缓冲",
+        "现实影响该怎么落地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“骑手也是肉身，不是算法里的无限资源”把抽象风险说得具体，“更成熟的快”收束有复述价值，修辞克制。",
+      "script_spans": [
+        "骑手也是肉身，不是算法里的无限资源",
+        "准时承诺不该是风雨里的军令状",
+        "肯慢下来的配送，反而是更成熟的快。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "现象、成因、取舍、落地建议与结论依次推进，但用延迟、健康损耗和收入不丰厚直接推出“非怠工”，因果证据仍不足。",
+      "script_spans": [
+        "为什么坏天气一来配送就崩？绝不只是骑手想偷懒。",
+        "那么平台继续用超时罚款去逼出速度，行得通吗？这就到了取舍层面。",
+        "热浪中骑手配送延迟和健康损耗同步攀升，但额外收入并不丰厚，可见延误是系统外力而非怠工。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见明显违规，能兼顾用户与骑手安全；但“物理规律就不允许准点”等说法过满，易把复杂情形说成必然结论。",
+      "script_spans": [
+        "平台把天气因子透明植入进度条，暴雨大风时主动标注“配送延长”",
+        "物理规律就不允许准点"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9560806465724e75b0fecade4322ce43",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-54bd63d17a8c4d4b939a78c61c96e4b9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-79de213319554eccb45b43338898f995",
+  "run_id": "run-20260903T051601Z-92c1d29a88e8",
+  "trace_sha256": "555325f37c4a17590f307a3083a6698267d3e1b56c2588aa6dbddbf6caaed6c3",
+  "created_at": "2026-09-03T12:01:46.288433Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面覆盖补位与依赖两面，锁定老人、子女和陪诊服务，结论也直接回应题目。",
+      "script_spans": [
+        "可陪诊走红，到底补上照护缺口，还是让全家把照顾担子卸给陌生人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 662，目标为 700，偏差率为 5.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕照护补位与依赖风险，原因、服务内容、行业乱象和规范路径层层增加信息。",
+      "script_spans": [
+        "陪诊补的是流程和临场缺口，对异地看病、子女飞不出的家，是实打实帮手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以老人独自就医的闯关感入题，中段转向依赖与监管，结尾追问自然落到亲情。",
+      "script_spans": [
+        "一个人去医院，对不少老人像闯关。",
+        "但花钱买来的陪伴，真等同于照护吗？",
+        "下次爸妈看病，先想钱能买陪同，谁来买走孤单？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有清晰停顿和对话感，多个短句好读；但“子女飞不出的家”等句需要临时换词，影响连贯度。",
+      "script_spans": [
+        "一个人去医院，对不少老人像闯关。",
+        "陪诊是补位，不是替位。",
+        "子女飞不出的家",
+        "留做事的筛浑水的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“补位，不是替位”和“跑不出亲人惦记”形成清晰对照，既好记又准确区分流程服务与情感照护。",
+      "script_spans": [
+        "陪诊是补位，不是替位。",
+        "陪诊帮你跑完流程，却跑不出亲人惦记。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有钩子、判断、展开和回扣，但责任转移的因果铺垫不足，规范表述也有语病。",
+      "script_spans": [
+        "陪诊是补位，不是替位。",
+        "硬朗老人事事靠陪诊，儿女觉着有人撑着，探望少了，责任转移了。",
+        "这波规范给行业装护栏，留做事的筛浑水的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且明确提示陪诊不能替代亲情；但“持证透明收费就能划开正规与黄牛”等表述过于绝对，存在误导风险。",
+      "script_spans": [
+        "陪诊补的是流程和临场缺口，对异地看病、子女飞不出的家，是实打实帮手。",
+        "一旦当万能拐杖，就悄悄制造依赖，把本该在场的亲情推远。",
+        "持证透明收费就能划开正规与黄牛。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-7d23306720bb420ba539b6ed39d9cbc5",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-7306a51cc70a4eeea31b039a6e4e8a36",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

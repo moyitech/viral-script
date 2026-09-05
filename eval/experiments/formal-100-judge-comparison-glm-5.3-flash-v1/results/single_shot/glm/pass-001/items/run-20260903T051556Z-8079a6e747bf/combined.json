@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-442c9a250a164cb6b36c90d807d66b58",
+  "run_id": "run-20260903T051556Z-8079a6e747bf",
+  "trace_sha256": "d55919f0e4479f4438dda77bbf9da631afa1d99a381714b992a50e5968197917",
+  "created_at": "2026-09-03T14:09:00.424847Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答“不必然牺牲”，效率与隐私两侧均覆盖，企业义务与员工权利兼顾，人群不偏。",
+      "script_spans": [
+        "效率提升不必然牺牲员工隐私",
+        "员工若见私人邮件遭抓取，完全有权质疑其正当性",
+        "用模型护流程安全，而不是拿员工隐私去换管理省事"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 277，目标为 280，偏差率为 1.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "研究结论、掩码实践、权利边界层层给增量，与引用资料相符，无编造、无同义复述。",
+      "script_spans": [
+        "对训练数据记忆的抑制效果接近差分隐私训练，说明效率与隐私保护并非零和",
+        "把邮件里的姓名、电话等替换成占位符，模型依旧能判出违规内容，个人身份却不被暴露"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头亮出矛盾立场可留人，中段信息递进但全程解说式平推，无转折与追问，结尾自然收束却平淡，缺转发冲动。",
+      "script_spans": [
+        "效率提升不必然牺牲员工隐私",
+        "近期从技术路线看，专门研究大模型微调中隐私、效用与效率权衡的论文发现"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "掩码示例与结尾顺口，但\"隐私、效用与效率权衡\"\"于模型调用前\"等书面堆叠，至少两处需临时改词重断句。",
+      "script_spans": [
+        "把邮件里的姓名、电话等替换成占位符，模型依旧能判出违规内容",
+        "真正的平衡之道在于用模型护流程安全，而不是拿员工隐私去换管理省事",
+        "专门研究大模型微调中隐私、效用与效率权衡的论文发现",
+        "于模型调用前布置敏感实体识别与掩码",
+        "部署此类筛查的企业负有告知义务，须限定仅对工作账户与工作事务做分析"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "结尾对比句是唯一记忆点，但「真正的平衡之道在于」书卷气重，中段论文式直述无形象转换，金句略显刻意。",
+      "script_spans": [
+        "用模型护流程安全，而不是拿员工隐私去换管理省事",
+        "专门研究大模型微调中隐私、效用与效率权衡的论文发现，像低秩适配这类参数高效方法"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结论先行，技术、工程、制度三层递进，因果桥清楚，结尾回扣题设，经得起追问。",
+      "script_spans": [
+        "说明效率与隐私保护并非零和。在工程落地时",
+        "部署此类筛查的企业负有告知义务，须限定仅对工作账户与工作事务做分析",
+        "真正的平衡之道在于用模型护流程安全，而不是拿员工隐私去换管理省事"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以'不必然''接近'限定结论，明确企业告知义务与员工质疑权，价值导向平衡，无夸大、误导或引战风险。",
+      "script_spans": [
+        "效率提升不必然牺牲员工隐私",
+        "部署此类筛查的企业负有告知义务，须限定仅对工作账户与工作事务做分析",
+        "员工若见私人邮件遭抓取，完全有权质疑其正当性"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ba30cb6cd18c4728be102b5524fd57f8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-730aae4e98ac4265ac49c69a0238c114",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

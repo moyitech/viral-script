@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-b272454d3f5a44838e2c52c1b6069809",
+  "run_id": "run-20260902T142256Z-4864c49e1737",
+  "trace_sha256": "857d2b3f09faf7ff9afaaa031f237337614674be5d607a52c0cc0cf5c90a6592",
+  "created_at": "2026-09-03T12:16:14.221581Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答避开伪风口，覆盖普通投资者、真假信息辨别和查证动作，核心承诺兑现。",
+      "script_spans": [
+        "避开伪风口，别轻易信带AI名头的暴涨帖。",
+        "查交易所官网披露的营收构成，比听小道消息靠谱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中在识别AI伪风口，既有监管处罚与账号处置案例，也给出核查营收、查资质等可执行方法。",
+      "script_spans": [
+        "北京证监局曾对编造假芯片订单的自媒体，开出二十多万罚单。",
+        "这类假信息哪怕只活两天，也能搅动情绪。",
+        "查交易所官网披露的营收构成，比听小道消息靠谱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“暴涨秘闻”反转到罚单，中段不断补充案例与核验动作，结尾追问也自然承接。",
+      "script_spans": [
+        "群里转的AI股暴涨秘闻，其实是罚单源头。",
+        "那伪风口怎么冒出来的？",
+        "你点转发前停三秒，想想这消息谁核实过？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏短促，建议句有对话感；但“更得冷汗”等两处搭配失当，仍会卡顿。",
+      "script_spans": [
+        "你刚想跟风，先醒醒",
+        "市场靠信息定价，假料一搅局，散户最受伤。",
+        "更得冷汗",
+        "不信群里晒收益截图的内幕"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一篇小作文就能换罚单”和“慢一步查证亏不了大钱”具体醒目，修辞克制，适合观众复述。",
+      "script_spans": [
+        "一篇小作文就能换罚单，法律红线清清楚楚",
+        "赚钱没捷径，慢一步查证亏不了大钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头由谣言切入，随后落到监管案例、识别方法和自我防范，主线清楚；但病句和个别因果跳接削弱收束。",
+      "script_spans": [
+        "那伪风口怎么冒出来的？",
+        "守住钱包靠自己查证，别把决策交给机器生成文案。",
+        "群里转的AI股暴涨秘闻，其实是罚单源头。",
+        "你打开软件满屏智能概念，更得冷汗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 1,
+      "reason": "“慢一步查证亏不了大钱”对投资结果作确定性保证，易造成金融误导；“最低罚二十万”也缺乏适用边界。",
+      "script_spans": [
+        "慢一步查证亏不了大钱",
+        "编谣传谣最低罚二十万"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0d043d21ce0c4eeda581d3216b498460",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-cec9a732cc2c4562b1cb63834465e890",
+  "run_id": "run-20260902T141733Z-ab3ea92dbc93",
+  "trace_sha256": "2ddc9a75e54f80dec46ad786ae14248ceee55ff61d18623eeb12710e6e0e4fda",
+  "created_at": "2026-09-03T12:15:14.625049Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直面低风险债基为何亏损，覆盖利率、久期、信用与普通投资者决策。",
+      "script_spans": [
+        "你买的低风险债基亏了钱，别以为稳赚不赔。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "利率、久期、信用风险与购买前筛选建议层层推进，信息密度足，能提供具体判断方法。",
+      "script_spans": [
+        "市场利率悄悄抬头时，老债券价格就滑落。",
+        "久期拉长，摆幅更猛，你账户数字肉眼可见地掉。",
+        "下手前弄清久期长短和信用等级，别只认低风险标签盲目冲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出亏损反差，中段连续推进利率、久期与信用风险，结尾问题自然收束。",
+      "script_spans": [
+        "你买的低风险债基亏了钱，别以为稳赚不赔。",
+        "下次打开账户见绿，先琢磨是利率动还是企业慌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、重点清楚，但“底子事实”“跑价也跌”等表达不顺，临场朗读需重断句或换词。",
+      "script_spans": [
+        "别以为稳赚不赔。它本就不是保本金的产品。",
+        "下手前弄清久期长短和信用等级，别只认低风险标签盲目冲。",
+        "债基八成以上仓位其实是债券，这是底子事实。",
+        "哪怕评级下滑，买家先跑价也跌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“债市一降温账就绿”和“利率动还是企业慌”把抽象风险变成可复述的判断，修辞克制。",
+      "script_spans": [
+        "债市一降温账就绿",
+        "下次打开账户见绿，先琢磨是利率动还是企业慌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "利率、久期到信用再到建议的主线清楚，但个别句子语义粘连，分散化结论也不够严谨。",
+      "script_spans": [
+        "市场利率悄悄抬头时，老债券价格就滑落。",
+        "哪怕评级下滑，买家先跑价也跌。",
+        "基金分散买几十只，一只爆雷也难完全消化。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "明确说明债基不保本并解释利率、信用风险，未承诺收益，也未诱导具体交易，整体表述稳妥。",
+      "script_spans": [
+        "它本就不是保本金的产品",
+        "下手前弄清久期长短和信用等级，别只认低风险标签盲目冲"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0f91b50a100e48ae83efdddde37ddd20",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

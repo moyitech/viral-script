@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-76158669ded647deadcb92890a2fb6c6",
+  "run_id": "run-20260902T144906Z-3dcb03bae976",
+  "trace_sha256": "26d93ff744c8d020fd39c6b2197c56cc32f4218bc30cd1ad5e60724eb8bbdb9f",
+  "created_at": "2026-09-03T14:27:01.005332Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛题，中段分答电力、土地两侧，结尾回扣筹码与账单，全程正面回应题设，人群痛点贴合。",
+      "script_spans": [
+        "多国争建算力中心，电力与土地为啥成新筹码？卡住大家的早不只是芯片，而是电够不够、地批不批。",
+        "家门口空地变机房，电费单可能悄悄涨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦电与地，从电网排队、指标叠加到枢纽资源绑死层层推进，论据与结论互证，信息增量具体。",
+      "script_spans": [
+        "北京上海广州盖机房，楼体一年半能封顶，可电网接入要排更长的队。",
+        "能耗双控、PUE限值、绿电比例层层叠加，变电站和指标才是真门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即有项目暂停加电费上涨的个人利益点，中段电、地两路持续推进，结尾提问由保农田自然长出。",
+      "script_spans": [
+        "美国超1300亿数据中心项目暂停，你家电费可能悄悄替它涨",
+        "楼体一年半能封顶，可电网接入要排更长的队",
+        "下一个被改变的生活角落，会是你家旁边的田地吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、有对话感，但“能耗双控、PUE限值”与“核心区位土地”两处术语并列堆叠，朗读需放缓重断。",
+      "script_spans": [
+        "卡住大家的早不只是芯片，而是电够不够、地批不批",
+        "能耗双控、PUE限值、绿电比例层层叠加",
+        "八大算力枢纽和一线城群，电力容量、能耗指标、核心区位土地高度绑死"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制并服务理解，“拼的是变电站和农田”与“每帧画面背后是账单”皆可离文复述，无堆砌炫技。",
+      "script_spans": [
+        "这场仗打到今天，拼的是变电站和农田",
+        "你刷的每帧画面，背后是真实电力账单和地主收租"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先电后地再落生活，每段有明确功能与承接句，因果有桥梁，结尾用你家田地自然回扣开头与题设。",
+      "script_spans": [
+        "咱们先看问题在哪。硬件能买，电和地却卡在容量与审批里。咱们先说电这一侧。",
+        "再看土地这一侧。",
+        "下一个被改变的生活角落，会是你家旁边的田地吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无违规且多用'可能'限定，但开头将美国项目暂停与观众电费并置，争议归因缺边界，'地主收租'略标签化。",
+      "script_spans": [
+        "社区反对声变多，有的地方暂停新建保农田",
+        "美国超1300亿数据中心项目暂停，你家电费可能悄悄替它涨",
+        "背后是真实电力账单和地主收租"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-506dab448204487881f93e7e44600dee",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

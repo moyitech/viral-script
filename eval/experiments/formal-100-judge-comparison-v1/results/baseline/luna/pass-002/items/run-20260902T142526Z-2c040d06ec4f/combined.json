@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-5831ab7d1acb4eca821b915e2cbfc9bf",
+  "run_id": "run-20260902T142526Z-2c040d06ec4f",
+  "trace_sha256": "e430896fc12fa5381bc6bac5b187ea4f605b27cc76192ef44760cb64c0dd8902",
+  "created_at": "2026-09-03T12:15:12.569656Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即提出慰藉与侵权冲突，并以标识、同意和转发建议覆盖情感与伦理两侧。",
+      "script_spans": [
+        "用AI复原逝者声音，你花几百块求安慰却可能侵权。",
+        "不少失去至亲的人只是想再听句叮嘱，才碰这技术。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "“两道坎”分别落到AI标识和声音同意，既有规则说明，也给出纪念与转发时的判断方法。",
+      "script_spans": [
+        "咱们得看清两道坎。",
+        "按规定，这类AI合成的音频必须在开头或结尾加清晰语音提示",
+        "下次点开那样的声音前，先停三秒问自己：我是在纪念回忆，还是在假装他还在人世呢？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“几百块求安慰却可能侵权”制造冲突，中段两道坎递进，结尾追问自然收束。",
+      "script_spans": [
+        "你花几百块求安慰却可能侵权",
+        "咱们得看清两道坎",
+        "我是在纪念回忆，还是在假装他还在人世呢？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和分层结构便于跟读，但“踩过边界线”“一听知”等表达不顺，口语节奏被明显打断。",
+      "script_spans": [
+        "咱们得看清两道坎。",
+        "没标清就容易踩过那条伦理边界线",
+        "让人一听知是机器造的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“两道坎”帮助分层，“那不是真人回来”直观有力，结尾追问留下可复述的伦理命题。",
+      "script_spans": [
+        "咱们得看清两道坎",
+        "那不是真人回来",
+        "我是在纪念回忆，还是在假装他还在人世呢？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先抛出风险，再按两道坎展开，最后回到使用与转发提醒，转折和结论均能自然承接。",
+      "script_spans": [
+        "咱们得看清两道坎。",
+        "另一道坎在同意。",
+        "想转发先说清这是AI声，别让对方误以为人回来了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有明确提示与尊重同意的意识，但把适用范围和侵权后果说成一概而论，容易造成法律误导。",
+      "script_spans": [
+        "想转发先说清这是AI声",
+        "按规定，这类AI合成的音频必须在开头或结尾加清晰语音提示",
+        "那份声音一旦公开传播，就变成对他声音权益的冒犯"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-07d7d095acc9482f81b183749e585bc0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

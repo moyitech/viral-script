@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-0b8dbf11f47c4daab4e9dfe8df3c3d85",
+  "run_id": "run-20260902T141317Z-03db82151b6e",
+  "trace_sha256": "d0ae178a5dc1cc6d7b9bb84a3bf69feeeca1b243405538316e4c2cf6aba7612a",
+  "created_at": "2026-09-03T12:15:42.509102Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答申诉是否更难，既呈现智能客服的阻碍，也给出转人工的具体保底。",
+      "script_spans": [
+        "机器先挡一道关卡，但留了保底。",
+        "你碰账号钱财或安全明说转人工，系统就得优先派真人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中于人机客服协同，交代衔接、责任与申诉动作，信息点能连续推进判断。",
+      "script_spans": [
+        "不是让你把遭遇讲两遍，真人接手就懂前面事。",
+        "企业那头也不能拿AI自动生成当挡箭牌，把责任推干净。",
+        "现在规则落地，复杂申诉你直接喊转人工，别在层层菜单里白绕。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出AI绕晕与新规保底的冲突，中段持续补充规则和用法，结尾落到可执行的转人工动作。",
+      "script_spans": [
+        "AI绕晕你吞申诉，九月新规却塞人工口。",
+        "算法能挡一时，挡不了你开口要真人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和对照句有节奏，‘机器先挡’等表达好读；但多处压缩过猛，临场需要重断句或换词。",
+      "script_spans": [
+        "机器先挡一道关卡，但留了保底。",
+        "你申诉不会更难治。",
+        "你碰账号钱财或安全明说转人工，系统就得优先派真人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "拟人、对比和口语化表达服务于观点，‘标准逼它交班’与‘算法能挡一时’清晰易复述，整体没有堆砌。",
+      "script_spans": [
+        "现在标准逼它交班。",
+        "算法能挡一时，挡不了你开口要真人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线基本清楚，但把投诉上涨单归因于承诺难追究，且“申诉不会更难治”表述生硬。",
+      "script_spans": [
+        "落地新规写明白，智能和真人要顺畅接力。",
+        "现在规则落地，复杂申诉你直接喊转人工，别在层层菜单里白绕。",
+        "症结就是从前AI承诺难追究。",
+        "你申诉不会更难治。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "规则方向和用户操作建议基本清楚，但“不会更难治”“挡不了”等绝对化措辞把标准效果说成确定保证，仍有误导风险。",
+      "script_spans": [
+        "智能和真人要顺畅接力",
+        "你申诉不会更难治",
+        "挡不了你开口要真人"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-efd71abb64134aea8c9b3e9c3977d36b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

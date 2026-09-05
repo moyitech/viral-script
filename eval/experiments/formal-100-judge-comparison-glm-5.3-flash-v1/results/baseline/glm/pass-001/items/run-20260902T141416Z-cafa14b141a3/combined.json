@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-b6b11eba3ed74deb982717dfb8a0af32",
+  "run_id": "run-20260902T141416Z-cafa14b141a3",
+  "trace_sha256": "e28e4f5145bf1195b2f04896fbf9cd8ac24d135375eab2d6716c0c6be55ecbbf",
+  "created_at": "2026-09-03T13:46:56.946607Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答低成本不等于低风险，成本与风险两侧并讲，结尾回扣低费率迷眼，人群痛点踩得准。",
+      "script_spans": [
+        "指数基金费率又降了，但低成本不等于低风险",
+        "省下的手续费填不平大跌的坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 266，目标为 280，偏差率为 5.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题不漂移，费率事实、两类风险、跟踪误差定义到查招募书层层推进，观众能带走判断方法。",
+      "script_spans": [
+        "二是基金可能没完全跟上指数，它拿着现金或调仓慢了就有偏差",
+        "买前看清招募书里的跟踪误差要求"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字内完成降费与照样亏的反差钩子，中段以两类风险来源和跟踪误差持续兑现，结尾多问一句误差自然收束。",
+      "script_spans": [
+        "指数基金费率又降了，但低成本不等于低风险。你少交了申购费，可市场跌了照样亏",
+        "省下的手续费填不平大跌的坑，买基金前多问一句误差有多大，才不会被低费率迷了眼"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主，'步子没踩齐''迷了眼'等口语贯穿，气口清楚，朗读基本无需临时换词。",
+      "script_spans": [
+        "跟踪误差就是基金和指数步子没踩齐",
+        "省下的手续费填不平大跌的坑，买基金前多问一句误差有多大，才不会被低费率迷了眼"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "步子没踩齐把跟踪误差讲得形象准确，手续费填不平大跌的坑离开正文仍可复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "跟踪误差就是基金和指数步子没踩齐",
+        "省下的手续费填不平大跌的坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清晰、结尾回扣到位；但开篇两度立论省钱不等于无风险，大波动拉大误差一句又缺因果桥，经不起追问。",
+      "script_spans": [
+        "风险其实来自两个地方",
+        "省下的手续费填不平大跌的坑，买基金前多问一句误差有多大，才不会被低费率迷了眼",
+        "大波动时这个误差就会拉大",
+        "省下的是真金白银的成本，但风险可不是费率能买走的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "无收益承诺与误导销售，明确提示指数波动和跟踪误差风险，建议看清招募书，导向安全。",
+      "script_spans": [
+        "省下的是真金白银的成本，但风险可不是费率能买走的",
+        "买前看清招募书里的跟踪误差要求，别只盯着费率便宜就下手"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-614b185d348646a18c2b6e6e99f2dedf",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-4e35f0e1451444be9bb03d9276c2f384",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

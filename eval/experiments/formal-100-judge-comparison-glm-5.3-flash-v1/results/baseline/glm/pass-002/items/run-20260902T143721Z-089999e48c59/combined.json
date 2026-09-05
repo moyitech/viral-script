@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-7bee6a7f095b4800bda067bd1410fc5b",
+  "run_id": "run-20260902T143721Z-089999e48c59",
+  "trace_sha256": "c1c6dfe41f119ae857d19774c9ee14c7cf704ed84c0e28971b13ea67f0b200c5",
+  "created_at": "2026-09-03T14:29:15.125549Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即复现题设二元问，正文分述真免钱与变相收费两侧，“你找房时”锁定核心人群，全程扣题。",
+      "script_spans": [
+        "说好免押金，搬进去了却收服务费。",
+        "其实两头都占：有的平台真免钱，有的把押金挪进月租和服务费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "免押变收费的机制、租金溢价与服务费比例、托管新规各成信息单元，落点给算账方法，增量扎实。",
+      "script_spans": [
+        "但房租比个人直租高大概一成五到两成，还要收服务费，合租收月租一成，整租收百分之八。",
+        "把租金、服务费、中介费加起来，算三个月总支出。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛“免押却收服务费”的冲突，中段以具体数字和转折持续兑现，结尾问句由算账主线自然生长。",
+      "script_spans": [
+        "说好免押金，搬进去了却收服务费。",
+        "但房租比个人直租高大概一成五到两成，还要收服务费",
+        "省了进门的钱，却赔了过日子的钱，这买卖你算清了吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口清楚、对话感强，但'获了周转空间''免押多限公寓'两处需临时换词重断，只能评2分。",
+      "script_spans": [
+        "这钱按月从卡里扣，你不留意就扛下了。",
+        "低收入的人获了周转空间，但长线可能多掏。",
+        "早几年免押多限公寓"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“省了进门的钱，却赔了过日子的钱”对仗易复述；“账”的比喻贯穿全文，修辞克制、服务理解，无堆砌。",
+      "script_spans": [
+        "省了进门的钱，却赔了过日子的钱",
+        "咱们心里得有本账",
+        "别光盯着免押金三个字"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "现象、机制、反例、监管解释层层递进，“所以你找房时”承接自然，结尾金句回扣开头设问。",
+      "script_spans": [
+        "所以你找房时，别光盯着免押金三个字。",
+        "省了进门的钱，却赔了过日子的钱，这买卖你算清了吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反两面都讲，数据有'大概'限定，建议具体可操作，结尾以提问收束不作断言，无煽动夸大或违规承诺。",
+      "script_spans": [
+        "其实两头都占：有的平台真免钱，有的把押金挪进月租和服务费",
+        "把租金、服务费、中介费加起来，算三个月总支出",
+        "低收入的人获了周转空间，但长线可能多掏"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d4e892cc0cfd45e3bf94370af5d5d13b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-894267300b9d459a8066d7528f65e3e6",
+  "run_id": "run-20260903T051533Z-243bcf25cdc1",
+  "trace_sha256": "42714ffad275bc3cfd9ed1701fc82023e24f4a24e65f6e91866f9d03243b2e79",
+  "created_at": "2026-09-03T12:34:10.357390Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕线上唯一入口的便利与排斥展开，覆盖效率、受影响群体和线下兜底，结论明确。",
+      "script_spans": [
+        "真正的数字政府，不该让任何人在预约页面前被拦下。",
+        "保留多元通道，才是正确的取舍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从效率收益、排斥机制到政策依据和群体差异，信息单元持续推进，并给出具体判断标准。",
+      "script_spans": [
+        "窗口人员有限，重复咨询多，把流程搬进手机确实能减轻大厅压力，还能留下可追溯的记录。",
+        "要看最慢的那个人能不能办成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“只接受线上预约”制造具体冲突，中段层层补充原因与边界，结尾以“最慢的人”留下价值判断。",
+      "script_spans": [
+        "从下月起，所有事项只接受线上预约",
+        "可一位赶了几十里路的老人，对着智能手机干瞪眼",
+        "要看最慢的那个人能不能办成"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头画面感强、结尾收束利落，整体能读通；但中段抽象名词和政策化句式偏多，个别表达需重断句或换词。",
+      "script_spans": [
+        "年轻人手指一点就搞定，可一位赶了几十里路的老人，对着智能手机干瞪眼。",
+        "便利的生成，伴随的是排斥的生成。",
+        "这说明，选择纯线上往往是局部执行走的偏锋，并非顶层设计本意。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“便利的生成，伴随的是排斥的生成”和“留一扇能敲开的窗”形象克制，观点清晰，也便于观众复述。",
+      "script_spans": [
+        "便利的生成，伴随的是排斥的生成。",
+        "留一扇能敲开的窗，比做一个完美的码，更重要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构按场景、判断、原因、政策、群体和结论递进，转折与回扣清楚，结论自然回应题设。",
+      "script_spans": [
+        "为什么越来越多地方推崇纯线上？原因不复杂。",
+        "所以，评判政务服务好不好，别只盯着网办率多高，要看最慢的那个人能不能办成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制且有条件限定，但开头未交代地点和来源，便将“所有事项只接受线上预约”写成确定事实，存在误导风险。",
+      "script_spans": [
+        "但也要说清楚，不是所有地区都一刀切，有些地方征集民意后保留了人工帮办",
+        "政务服务大厅门口贴出通知：从下月起，所有事项只接受线上预约。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-890b80171772427ba6cec82e4b21f009",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

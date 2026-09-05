@@ -1,0 +1,157 @@
+{
+  "evaluation_id": "combined-106fe1bebe404dca865f7fbdd743cdbb",
+  "run_id": "run-20260902T143920Z-f50984648c6e",
+  "trace_sha256": "0d74a0618b426dd537bfb2227e5eeae3e075047e4b25584fc8a8628b4cfa3ad7",
+  "created_at": "2026-09-03T13:47:53.152931Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇设问即亮出“该留但停表豁免”的正面回答，消费者想准点与骑手担险两侧兼顾，并落到普通观众可做的行动。",
+      "script_spans": [
+        "这承诺该留，但遇极端天气得停表豁免",
+        "咱付配送费自然想准点，可费用里没含天气险，不能让骑手单扛风险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 414，目标为 450，偏差率为 8.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "红灯停表试点、清华高温数据均有据可依，赔付差价、派单缺陷、风险分担等信息单元层层推进，无明显编造。",
+      "script_spans": [
+        "北京推动美团等试了“红灯停表”。等红灯和恶劣天气，考核时长顺延。",
+        "40℃午高峰订单涨超两成，骑手多接单冒健康险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇摔伤与保谁之问勾人，中段赔几块对扣几十层层反转，结尾多等十分钟由勾不怕晚自然长出。",
+      "script_spans": [
+        "暴雨天你饿肚子，骑手摔伤，准时承诺保谁？",
+        "你买准时保，雨天迟到平台赔几块，骑手却扣几十。",
+        "下次见暴雨红色预警，你愿意多等十分钟换骑手平安到家吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句有节奏、像真人讲话，但“停表豁免”“考核时长顺延”等压缩书面词，朗读需临时换词。",
+      "script_spans": [
+        "系统派单只看距离，不看积水深度，骑手怕罚钱常会猛蹬车闯红绿灯",
+        "说明算法能看天吃饭，不难",
+        "但遇极端天气得停表豁免",
+        "等红灯和恶劣天气，考核时长顺延"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "看天吃饭、拿命填表等喻体服务论证，拿命换饭一句离文可复述，修辞克制无堆砌。",
+      "script_spans": [
+        "你准时收到饭，可能是别人拿命换的。",
+        "避了自个儿的热，别转成别人的险。",
+        "说明算法能看天吃饭，不难。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从承诺该留、症结在一刀切，到平台试停表、个人勾不怕晚，因果有桥，“把表拨给人情”自然回扣开篇设问。",
+      "script_spans": [
+        "承诺本身没错，难在它不分天气一刀切。",
+        "平台咋改？北京推动美团等试了“红灯停表”。等红灯和恶劣天气，考核时长顺延。说明算法能看天吃饭，不难。",
+        "还是该把表拨给人情？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "导向安全未涉违规，但“派单只看距离”“费用里没含天气险”属未经限定归因，易误导，需补边界。",
+      "script_spans": [
+        "该朝人倾斜，别拿命填表",
+        "北京推动美团等试了“红灯停表”",
+        "系统派单只看距离，不看积水深度",
+        "可费用里没含天气险",
+        "你下单时勾个不怕晚，骑手就能少闯一个红灯"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-04cc35ec231247b2a735c64a331cd03c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9bf63733193d4738a590c26856998571",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

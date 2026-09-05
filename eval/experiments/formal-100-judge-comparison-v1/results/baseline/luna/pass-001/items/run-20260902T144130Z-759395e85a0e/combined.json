@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-f0598392d5914995a0639e78ea8f63c6",
+  "run_id": "run-20260902T144130Z-759395e85a0e",
+  "trace_sha256": "705e25cfaea1529d5bbd86e0d12e707e9ce2c5c2b9cbf62451c6319f38ea2ffb",
+  "created_at": "2026-09-03T11:44:58.055701Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "始终围绕一键开药的便利与误诊风险展开，既讲风险来源，也明确区分复诊续方和新发不适。",
+      "script_spans": [
+        "方便是少跑医院，风险是没检查就开方。",
+        "续方留给老毛病，新发不适老老实实去线下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 717，目标为 700，偏差率为 2.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "内容从先药后方、检查缺失、初诊急症推进到复诊边界，既有监管信息，也给出可执行判断。",
+      "script_spans": [
+        "平台图快跳过问诊，直接让系统配药。人工智能自动生成，医生面都没露。",
+        "初诊急症尤其危险，该抽血拍片，线上略过就漏诊。",
+        "下次点药前问自己：这是复诊，还是拿药凑合？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用便捷与伤肝的反差抓人，中段不断补充风险，结尾把判断题自然落到观众身上。",
+      "script_spans": [
+        "手指点一下药就送到家，可吃错药可能伤肝又费钱",
+        "下次点药前问自己：这是复诊，还是拿药凑合？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和对话式承接较多，但有两处明显卡嘴，尚未达到无需改词的自然口播。",
+      "script_spans": [
+        "为啥会出错？咱们顺着原因看。",
+        "互联网问诊一键开药，少跑腿还送药上门，便捷像糖，风险像刺，咽太快会卡喉。",
+        "有医生说过，正确诊断离不开必要检查，线上线和下标准一样，这是底线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“便捷像糖，风险像刺”形成清晰反差，“身体不陪你赌”收成可复述的提醒，修辞克制且服务判断。",
+      "script_spans": [
+        "便捷像糖，风险像刺，咽太快会卡喉",
+        "贪方便是人性，但身体不陪你赌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有明确的提问、解释、转折和收束；但监管执行到“患者破局”之间缺少中间因果，结论略跳。",
+      "script_spans": [
+        "初诊急症尤其危险，该抽血拍片，线上略过就漏诊。",
+        "续方留给老毛病，新发不适老老实实去线下。",
+        "细则是框架，整改快慢看平台自觉。落地得等，患者得自己破局。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提醒方向稳妥，但部分风险描述和就医建议过于绝对，需补充适用边界以免引发误解。",
+      "script_spans": [
+        "必须本人开方，严禁先药后方。",
+        "续方留给老毛病，新发不适老老实实去线下。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ac117f16a11f419ba8a57bbd42b7200d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-59bb4cf300fd4dbb9496130f8afbb58e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

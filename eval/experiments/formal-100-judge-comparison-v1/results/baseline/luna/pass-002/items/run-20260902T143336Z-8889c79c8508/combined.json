@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-ba37dd30bd1d4377a960e8f8da2572d0",
+  "run_id": "run-20260902T143336Z-8889c79c8508",
+  "trace_sha256": "d4ad6860c1f7c548815cb0f7422ccc913eeba313bacff6ba142acfbed00b7a0b",
+  "created_at": "2026-09-03T12:15:45.773866Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答排名隐藏能否缓解焦虑，兼顾学生、家长与政策效果，结论也回到家长和孩子。",
+      "script_spans": [
+        "成绩排名不公开，能缓解一部分孩子的焦虑，却难止住学生自己的慌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "政策、两组数据和研究局限构成了有效增量，但双减调查并未直接证明排名隐藏改善家长焦虑，关键结论有归因跳跃。",
+      "script_spans": [
+        "教育部早有规定，义务教育学校不能把考分排名公开贴出来。",
+        "上海有高中测过，平时焦虑约17%，考前涨到32%",
+        "可见不公开排名，护住的是许多父母的平静。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用反问制造焦虑反差，中段持续补充政策、数据与取舍，结尾自然落到亲子对话。",
+      "script_spans": [
+        "孩子回来说老师不念排名了，你以为他不焦虑？",
+        "父母松了手，娃却还攥着拳。",
+        "与其猜他排第几，不如问他累不累。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感，钩子和收束较顺，但中段统计、政策表述偏挤，需重断句或换词。",
+      "script_spans": [
+        "可你要知道，它只管校内张榜，管不住回家后爸妈的嘴。",
+        "研究发现紧张来自个人家庭学校多方，不只一张榜。",
+        "政策做了选择：先护家长，再慢慢摸索学生端。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“名次藏起来，比较没藏起来”简洁有力，“父母松了手，娃却还攥着拳”画面感自然，便于复述。",
+      "script_spans": [
+        "名次藏起来，比较没藏起来。",
+        "父母松了手，娃却还攥着拳。",
+        "排名隐藏不是焦虑开关，只是把竞争从墙上挪进心里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整、递进清楚，也能主动限定单校研究；但前文把双减调查当作隐藏排名效果，后文的因果结论因此站不住。",
+      "script_spans": [
+        "相关不等于因果，别把影子当实体。",
+        "可见不公开排名，护住的是许多父母的平静。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "文案有“相关不等于因果”等边界提醒，但把双减调查归因于隐藏排名，且“先护家长”等判断仍显武断。",
+      "script_spans": [
+        "相关不等于因果，别把影子当实体",
+        "可见不公开排名，护住的是许多父母的平静"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-564b35e7bfa545d393f566c51c9971b6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

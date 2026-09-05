@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-1354f344539344dfb7ea275beaadeac2",
+  "run_id": "run-20260902T142445Z-00cdddf62a2a",
+  "trace_sha256": "52af1633435bb4be8222336dc1941da085afb724e1bd50c0c64108f52a452cd9",
+  "created_at": "2026-09-03T14:24:16.674718Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛囤卡与租不起的矛盾，全文始终答‘为何难传导’，机制、影响与普通观众落点齐备，结尾回扣题设。",
+      "script_spans": [
+        "大厂囤了几千块AI芯片，小公司却连一张卡都租不起",
+        "这波芯片热若只暖了大厂，景气的底座还能稳吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "价格、架构、计费、政策四层信息各自推进，GPU数千美元与2028节点均有据可查，无编造亦无漂移。",
+      "script_spans": [
+        "芯片贵只是第一道坎。不同厂商架构封闭，模型想换平台得重写代码",
+        "工信部发文建中小企业专属算力池，也试算力银行存闲卡。但这体系要到2028年才基本建成"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即见大厂囤卡与小厂租不起的反差；中段供给、架构、政策层层递进；结尾之问从算力如水电的愿景自然长出。",
+      "script_spans": [
+        "大厂囤了几千块AI芯片，小公司却连一张卡都租不起",
+        "你要按分钟计费，他给年框合同",
+        "这波芯片热若只暖了大厂，景气的底座还能稳吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句对比有节奏，但'也试算力银行存闲卡'等两处需换词重断，取两子分较低值定2分。",
+      "script_spans": [
+        "小老板想用AI管仓库，一查算力价就摇头。",
+        "你要按分钟计费，他给年框合同。",
+        "也试算力银行存闲卡。",
+        "这就像刚学熟一台机床，换家还得从头学徒。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "卡、淌等动词让红利受阻可感，机床学徒类比贴切；开头囤卡反差与结尾芯片热只暖大厂皆可脱稿复述，修辞克制不喧宾。",
+      "script_spans": [
+        "红利卡在供给端，没淌进小厂手里",
+        "这就像刚学熟一台机床，换家还得从头学徒",
+        "等哪天算力真能像水电按表取用，小厂才有底气翻盘"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "三处设问过渡清晰，水电按表回扣按分钟计费，结尾呼应开头；唯‘苦等专区接通’所指略跳，不伤主线。",
+      "script_spans": [
+        "关键机制是啥？芯片贵只是第一道坎。",
+        "等哪天算力真能像水电按表取用，小厂才有底气翻盘。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有据克制，政策表述与时间边界清楚；但“囤了几千块”“连一张卡都租不起”属绝对化归因，改写措辞后才稳妥。",
+      "script_spans": [
+        "政策在补位，工信部发文建中小企业专属算力池，也试算力银行存闲卡。但这体系要到2028年才基本建成，眼前覆盖还没铺开。",
+        "大厂囤了几千块AI芯片，小公司却连一张卡都租不起",
+        "小厂连试错资本都没有"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d80158ce3c774e4687d6382e7ce3cd22",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

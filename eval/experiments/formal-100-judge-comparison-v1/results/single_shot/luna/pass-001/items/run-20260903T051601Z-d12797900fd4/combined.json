@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-b8467df9638041d198696eb852941d44",
+  "run_id": "run-20260903T051601Z-d12797900fd4",
+  "trace_sha256": "273a222f29dde008bd576775dde9f2fdf61754cc8acb54530eef77c8c3aeb4ce",
+  "created_at": "2026-09-03T12:03:38.385259Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直指公共服务质量，既讲公益设施被挤出的风险，也讲盘活补缺的可能，结论回应普通人关切。",
+      "script_spans": [
+        "盘活这些闲置资产，会不会反过来让公共服务更差？",
+        "很多闲置房本来就没在提供服务，盘活后改造成社区中心，反而补齐了缺口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 671，目标为 700，偏差率为 4.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕公共服务是否受损展开正反机制、政策工具与监督条件，信息单元持续推进判断。",
+      "script_spans": [
+        "近年也有专项基金明确把保租房、人才公寓、平急两用设施列为盘活方向，相当于用资本引导留住公共功能。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用公共服务缺口对照闲置公房，中段以多次追问和反转推进，结尾有原则余味，但“公共棉袄”削弱收束。",
+      "script_spans": [
+        "社区养老托育场地紧巴巴，可有些机关事业单位的公房却空着落灰",
+        "那地方真有动力这么干吗？",
+        "闲置资产是城市的休眠存款",
+        "公共棉袄"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答推进和短句停顿较自然，主体也能听懂；但结尾严重串词，且多处政策化表达削弱口播感。",
+      "script_spans": [
+        "那地方真有动力这么干吗？",
+        "唤醒它不该以牺牲公共棉袄为代价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“休眠存款”“先保刚需，再谈增值”有复述价值，整体比喻克制；但“公共棉袄”明显误词，破坏末句准确性。",
+      "script_spans": [
+        "闲置资产是城市的休眠存款",
+        "先保刚需，再谈增值",
+        "公共棉袄"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，正反转折清楚；但把复杂结果收束为“全过程晒在阳光下”，且“公共棉袄”表述失当，因果与结尾均需修正。",
+      "script_spans": [
+        "这里头的关键是规划时有没有把公众需求放在前头。",
+        "所以影响好坏，取决于全过程是否晒在阳光下。",
+        "唤醒它不该以牺牲公共棉袄为代价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体讨论有边界并承认不确定性，但“有些地方因此偏爱能快速回本的业态”属未限定的动机归因，易引发误解。",
+      "script_spans": [
+        "盘活不是万能药，得承认局部不确定性",
+        "有些地方因此偏爱能快速回本的业态"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-749731cfa25d499792be6ac1bb189088",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-2956cfe7bf0a445a8a293b3852eafc91",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

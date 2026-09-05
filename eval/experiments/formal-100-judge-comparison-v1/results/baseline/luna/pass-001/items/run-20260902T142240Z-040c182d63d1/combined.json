@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-37fb985744e146aaa5399bd755378af0",
+  "run_id": "run-20260902T142240Z-040c182d63d1",
+  "trace_sha256": "8b348a585bcb0b59960f1d26caaedb8d4e933508f5dc8a6f4a7dd3294d196f2d",
+  "created_at": "2026-09-03T11:44:33.707953Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "始终正面回答能否公开，并同时处理催缴正当性、住户隐私和实际操作方式。",
+      "script_spans": [
+        "答案很直接：不能。",
+        "催缴本就是物业的活，邻居接手发全名，容易变味成私刑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 731，目标为 700，偏差率为 4.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，法律属性、平台风险、传播后果、例外边界和替代方案均提供了有效增量。",
+      "script_spans": [
+        "姓名加上欠费状态，在法律上关联了具体个人。",
+        "群聊截图随手一转，隐私就脱离控制，姓名一旦流动很难收回。",
+        "要是欠费户提前同意，或只发隐去门牌的匿名清单，那另说。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出隐私与催缴的冲突，中段连续补充法律、平台和例外，结尾余味自然。",
+      "script_spans": [
+        "邻里群贴欠费住户姓名，催缴有理就能放弃隐私？",
+        "姓名一旦流动很难收回。",
+        "体面收账比曝光更长久。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句和问答节奏清楚，但法律说明夹杂多处书面、拗口表达，真人朗读仍需重断句。",
+      "script_spans": [
+        "答案很直接：不能。",
+        "这顾虑能理解，但自发晒名恐怕仍不妥。",
+        "个人信息保护法立了保护框架，处理得有合法事由",
+        "微信不光是聊天工具，还是持牌平台有它的规矩。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“欠费是钱的事，姓名是脸的事”对照清楚，配合“别把方便当法权”等句，记忆点鲜明且不喧宾夺主。",
+      "script_spans": [
+        "欠费是钱的事，姓名是脸的事",
+        "别把方便当法权。",
+        "脸面这东西，碎了难粘回原样，留一线收钱反更顺。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "先给结论，再按法律、平台、例外和替代方案展开；但从“合法事由”直接跳到“不免责”，关键因果解释不足。",
+      "script_spans": [
+        "正式物业通知走流程，不写全名也能催。",
+        "这顾虑能理解，但自发晒名恐怕仍不妥。",
+        "处理得有合法事由，催缴欠款并不在免责里头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能劝阻公开曝光并给出私信替代方案，但“催缴欠款并不在免责里头”“得由法院或授权机构”过于绝对，易造成法律误导。",
+      "script_spans": [
+        "先私信一声更稳当，也留邻居体面",
+        "催缴欠款并不在免责里头",
+        "真需公示，得由法院或授权机构走程序"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-10eb010e0e3d438ea6321f3429398fe6",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a89eaa8c2071405a9e66bfdd62b2514b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

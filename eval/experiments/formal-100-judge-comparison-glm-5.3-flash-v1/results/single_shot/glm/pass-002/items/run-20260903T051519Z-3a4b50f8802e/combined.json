@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-a9ea881f4dae4f17a43022dfecf93dd9",
+  "run_id": "run-20260903T051519Z-3a4b50f8802e",
+  "trace_sha256": "276b7a6d376d98b958172bd9433c8d3a1326bd892242850733c4cc9030f52b4f",
+  "created_at": "2026-09-03T15:27:43.177001Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答“为何反感”，用人方与求职者两侧、监管与心理切角齐备，落脚求职者痛点，切角具体。",
+      "script_spans": [
+        "这是用人方把议价风险和探底成本转嫁给求职者"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "转嫁动机、监管反差、公平心理、行动建议四个信息单元各有推进，与资料吻合，无明显编造。",
+      "script_spans": [
+        "人的公平感高度依赖决策过程透明",
+        "先通过招募方或熟人问清薪资带宽"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头点出反感但偏平铺，中段有监管转折与心理递进，结尾自然收束却缺余味与互动。",
+      "script_spans": [
+        "面议把数字藏到面试才说，求职者前期投入车马和时间，最后却可能听到一个远低预期的数",
+        "把主动权留一点给自己，也省下奔波的力气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有\"核心就一句话\"等对话感，但\"公平感高度依赖决策过程透明\"等抽象句需改词重断，故给2分。",
+      "script_spans": [
+        "核心就一句话",
+        "不像疏忽，更像刻意留弹性空间",
+        "这是用人方把议价风险和探底成本转嫁给求职者，用模糊掩盖薪酬不透明",
+        "人的公平感高度依赖决策过程透明"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“不像疏忽”这类对比句，但“议价风险和探底成本转嫁”偏抽象，整体讲解腔，金句感不足。",
+      "script_spans": [
+        "不像疏忽，更像刻意留弹性空间",
+        "这是用人方把议价风险和探底成本转嫁给求职者"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结论前置后监管、心理、建议层层递进，“怀疑”“可能”留有余地，结尾主动权回扣前文无力感。",
+      "script_spans": [
+        "不像疏忽，更像刻意留弹性空间",
+        "把主动权留一点给自己"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "立足监管要求与实用建议，无违规；但刻意留弹性空间、暗藏套路等归因未留余地，易引导对立情绪，加限定更稳妥。",
+      "script_spans": [
+        "先通过招募方或熟人问清薪资带宽，确认大体匹配再往下走",
+        "这是用人方把议价风险和探底成本转嫁给求职者，用模糊掩盖薪酬不透明",
+        "不像疏忽，更像刻意留弹性空间，让人怀疑真实区间偏低或暗藏套路"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-bd61de3f455b475e80a037e4ec8bfb80",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

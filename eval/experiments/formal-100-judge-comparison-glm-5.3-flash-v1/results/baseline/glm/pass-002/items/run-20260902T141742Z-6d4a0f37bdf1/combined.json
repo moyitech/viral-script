@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-37182441a5bd420ca3f3c9e195054756",
+  "run_id": "run-20260902T141742Z-6d4a0f37bdf1",
+  "trace_sha256": "b4832dd7901ed45c29eb628f4f751262879e2bf8b9452348a31f50dd3213a1eb",
+  "created_at": "2026-09-03T14:26:19.334801Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点明两侧都不可牺牲，结尾以'不是谁让谁'回扣题设，业主核心人群全程命中。",
+      "script_spans": [
+        "这事儿不能让休闲直接让步，也没法只顾车不管人",
+        "车停下了，人还能不能坐下？能不能用边角拼出休闲角？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从规划欠账、民法典决策规则到错峰方案层层推进，例证具体且与资料吻合，无编造。",
+      "script_spans": [
+        "按民法典，共有部分改用途得业主共同决定",
+        "国外有停车楼，底层留零售，立面缝里塞花园和借书角",
+        "白天停车少，老人带孩子活动；夜里车回巢，人退场"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即呈现花园抹平与停车难的双向冲突；中段法条、案例、错峰方案持续兑现钩子，结尾提问由业委会话题自然长出。",
+      "script_spans": [
+        "把小区仅有的花园抹平划车位，老人孩子连晒太阳的地方都没了",
+        "那休闲非得给车轮子投降吗？倒也不一定。",
+        "车停下了，人还能不能坐下？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏与画面感整体在线，但民法典句等书面压缩处朗读需重断句换词，达到两处只能封顶2分。",
+      "script_spans": [
+        "其实可以错峰用空地：白天停车少，老人带孩子活动；夜里车回巢，人退场",
+        "按民法典，共有部分改用途得业主共同决定",
+        "公共空间布局容易碎成片、变单一，真实痛点难解"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“车回巢，人退场”把错峰讲得形象好懂；“车停下了，人还能不能坐下”离开正文仍可复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "咱们不是没地方，是没动脑筋。直接全铺沥青，最省事却最笨",
+        "夜里车回巢，人退场",
+        "车停下了，人还能不能坐下？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问过渡自然，因果桥清楚，方案对照两种极端后果后收束回开头，结构扎实可追问。",
+      "script_spans": [
+        "为啥会掐成这样？老小区当年建时车少，没留几个车位",
+        "所以答案不是谁让谁。下次业委会动公共空间，先问一句"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "双方诉求并陈不站队，引民法典给出程序边界，问题归因有研究佐证，无煽动夸大或误导表述。",
+      "script_spans": [
+        "这事儿不能让休闲直接让步，也没法只顾车不管人。",
+        "按民法典，共有部分改用途得业主共同决定。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-105c7e0cf7e941e8860dde2dcc63de6c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

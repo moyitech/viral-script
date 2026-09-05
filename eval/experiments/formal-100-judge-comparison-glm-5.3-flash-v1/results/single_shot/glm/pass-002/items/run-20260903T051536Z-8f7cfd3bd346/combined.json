@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-04c79cfea56a4282ad628d323f43a2a0",
+  "run_id": "run-20260903T051536Z-8f7cfd3bd346",
+  "trace_sha256": "876c2e951582e92da3e97d4ef1e840912107bade8bb104d5bd28a7154ee132d4",
+  "created_at": "2026-09-03T15:26:22.684573Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 2,
+      "reason": "开头即给出分区分时答案，照明一侧回答充分；但噪声仅点到禁声与外放，题设两侧只答了一半。",
+      "script_spans": [
+        "用分区分时低干扰设计同时满足夜游与安全",
+        "照明和噪声的平衡不能靠全面加灯和禁声"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，法规、研究、管理实践层层推进且与事实相符，结尾给出可执行建议，信息增量扎实。",
+      "script_spans": [
+        "新建改建道路装灯率虽要求百分百，但不同区域亮度能耗应按规划区别，不是越亮越安全",
+        "部分公园仅在出入口与主要步道保留基础照明，生态敏感区主动调暗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "前20字平铺议题缺强钩，中段'不是越亮越安全'有反差，结尾有余味，但整体推进趋平，冲动感不足。",
+      "script_spans": [
+        "不是越亮越安全",
+        "该亮的地方亮、该暗的地方暗",
+        "公园延长开放时间，照明和噪声的平衡"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "首尾如“该亮的地方亮”顺口，但中段法规与研究转述书面腔重，多处需临时换词重断句。",
+      "script_spans": [
+        "该亮的地方亮、该暗的地方暗",
+        "避免去生态敏感区用强光手电或外放音乐",
+        "现行城市照明管理明确工作遵循以人为本、节能环保、美化环境原则，严格控制能耗",
+        "新建改建道路装灯率虽要求百分百，但不同区域亮度能耗应按规划区别"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，'该亮的地方亮、该暗的地方暗'与'把黑夜留给自然'均可脱离上下文复述，无堆砌。",
+      "script_spans": [
+        "该亮的地方亮、该暗的地方暗",
+        "把黑夜留给自然"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "观点、法规、研究、实践、建议层次清楚，因果有桥；但论点并提噪声，正文论据全落在照明一侧。",
+      "script_spans": [
+        "过强灯光同样干扰动植物，说明无差别照明会制造新矛盾",
+        "照明和噪声的平衡不能靠全面加灯和禁声"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点表述克制，建议用“优先”“避免”限定边界；引用规章与管理实例均有据，无夸大承诺、引战或误导风险。",
+      "script_spans": [
+        "优先选有基础暖光步道的区域，避免去生态敏感区用强光手电或外放音乐",
+        "现行城市照明管理明确工作遵循以人为本、节能环保、美化环境原则",
+        "部分公园仅在出入口与主要步道保留基础照明，生态敏感区主动调暗"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ca9fd684a6a94c2b8592d4dbe91610f9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

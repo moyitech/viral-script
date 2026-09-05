@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-26157bfe90304d90bc5478bbd1cdffc4",
+  "run_id": "run-20260902T144303Z-cd53d39bf14f",
+  "trace_sha256": "6e09011906330375786780fc6ca95fbb1092266f2afe0c819f83dc9b99f8d12d",
+  "created_at": "2026-09-03T13:47:10.680975Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接抛出订单涨与不招人的矛盾，数据与成本原因两线全程扣题，结尾回扣设问。",
+      "script_spans": [
+        "你厂里接单多了，老板却死活不肯招人，犯嘀咕不？",
+        "订单的确在回暖，可企业不敢马上招正式工，怕背长债"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 293，目标为 280，偏差率为 4.64%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，新订单、用工、总体指数三项数据与社保、辞退成本解释环环相扣，还给出观察方法。",
+      "script_spans": [
+        "八月新订单指数过了五十，比上月升两点一",
+        "正式工招进门，合同一签就得管社保，像长期饭票"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字即抛出单多不招人的具体反差；中段数据、缩人、回暖不均层层兑现钩子；结尾温差之问由正文自然长出。",
+      "script_spans": [
+        "你厂里接单多了，老板却死活不肯招人，犯嘀咕不？",
+        "但从业人员指数连续往下掉，现在四十八点七，厂里实际在缩人。",
+        "订单像早春的风，厂里却还裹着厚棉袄不肯脱。这冷暖温差，到底哪天能扯平？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口为主，重音停顿清楚，中段解释与比喻收尾皆可照读上口。",
+      "script_spans": [
+        "为啥怕背长债？正式工招进门，合同一签就得管社保，像长期饭票",
+        "订单像早春的风，厂里却还裹着厚棉袄不肯脱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制：“长期饭票”点透社保绑定，“早春风、厚棉袄”贴切且离文可复述，无堆砌炫技。",
+      "script_spans": [
+        "正式工招进门，合同一签就得管社保，像长期饭票。",
+        "订单像早春的风，厂里却还裹着厚棉袄不肯脱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问、数据、归因、对策层层递进，怕背长债有社保与辞退成本作因果桥，结尾自然回扣。",
+      "script_spans": [
+        "为啥怕背长债？正式工招进门，合同一签就得管社保",
+        "订单像早春的风，厂里却还裹着厚棉袄不肯脱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "数据表述留有余地，点明回暖不扎实、不均匀，无绝对化承诺、煽动或误导性建议，导向安全。",
+      "script_spans": [
+        "整体制造大指数四十九点八，还在线下，回暖不扎实",
+        "订单若再缩水，辞退要赔钱走流程也费神"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5af650ca43794665ab4e9d24ecacc200",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-71f3d19d476147d4b33b7f62a18343bb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

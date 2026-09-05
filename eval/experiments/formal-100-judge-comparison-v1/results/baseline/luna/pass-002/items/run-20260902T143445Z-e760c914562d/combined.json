@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-95e48b918fe14b3f8137aa610ab0033b",
+  "run_id": "run-20260902T143445Z-e760c914562d",
+  "trace_sha256": "39bdb2aa799bbf7d8f2b5a908329d894bdccc0a2417ed2113097795c55d50f19",
+  "created_at": "2026-09-03T12:15:43.482390Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "始终围绕父母与老人谁能作主展开，既覆盖日常照料，也覆盖择校管教等重大选择，精准命中冲突家庭。",
+      "script_spans": [
+        "姥姥追着喂饭，娃妈偏让娃自己吃，这日常谁说了算？",
+        "把老人经验当参谋，父母做最终舵手，娃才能稳稳长大。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律依据、照料分工、重大教育选择及冲突化解路径均有展开，观众能获得清晰的判断框架。",
+      "script_spans": [
+        "家庭教育促进法写明白，父母或其他监护人负责实施家庭教育。",
+        "可碰到择校、报课外班，或者用“不打不成材”的老法子管教，就得父母点头。",
+        "社区和妇联能帮着调解，严重时法院可发家庭教育指导令。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出喂饭冲突，中段区分生活照料与教育决策，结尾回到孩子安稳感，推进和余味都自然。",
+      "script_spans": [
+        "姥姥追着喂饭，娃妈偏让娃自己吃，这日常谁说了算？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和案例有对话感，但法律解释偏定义式，且“私家家事”“添衣背书”等表达会打断自然语速。",
+      "script_spans": [
+        "姥姥追着喂饭，娃妈偏让娃自己吃，这日常谁说了算？",
+        "家教从私家家事，变成了国家关注的国事。",
+        "老人可以添衣背书"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“责任在纸面上，生活在手脚上”形象呈现权责错位，“请人看店不能改招牌”也便于复述，修辞克制且服务理解。",
+      "script_spans": [
+        "责任在纸面上，生活在手脚上，两边错位就吵起来。",
+        "就像请人看店不能改招牌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线有起承转合，也给出日常与重大选择的对照；但法律责任与决定权的推导不足，“只管生活照护”又显得过于绝对。",
+      "script_spans": [
+        "老人决定今晚几点睡、菜做软还是硬，也都行。可碰到择校、报课外班，或者用“不打不成材”的老法子管教，就得父母点头。",
+        "法律给的底线挺清楚：孩子日常教育的决定权，主要在父母手里",
+        "受托照料只管生活照护，教育取舍还是父母扛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题聚焦、反对体罚且不煽动；但把受托照料、日常拍板和监护转移说得过于绝对，可能造成法律误解。",
+      "script_spans": [
+        "父母或其他监护人负责实施家庭教育",
+        "受托照料只管生活照护，教育取舍还是父母扛。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-36dc15bfde794f869182deabcbf7bf54",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

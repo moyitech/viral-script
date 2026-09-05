@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-9e4e3752fa67420ea14723a038991115",
+  "run_id": "run-20260902T141402Z-40e8baf393e7",
+  "trace_sha256": "4927cf0d81d88a425f4a77acd8473d7a6bcc4e31e72da32b57c3ad216eaa9fb2",
+  "created_at": "2026-09-03T14:26:21.083682Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头痛点直指申诉难，正文覆盖更难与不难两侧，落点回到用户与创作者，全程扣题。",
+      "script_spans": [
+        "这事儿不能一刀切。全面接智能客服，不代表申诉必更难。",
+        "短视频创作者最依赖流量，账号一封收入断"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据、新规、实操层层推进，标准号与日期具体，场景区分给出判断方法，信息密度高。",
+      "script_spans": [
+        "你涉及钱和账号安全，明确说转人工，系统得优先派给人。",
+        "AI看不懂你剪辑里的授权证据，只给模板回复。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句十次转人工无人理即入冲突；中段数据与设问层层兑现钩子；结尾之问由正文自然生长，余味足。",
+      "script_spans": [
+        "转人工按了十次也没人理，话费悄咪咪没了",
+        "那为啥你感觉更难？",
+        "可要是入口还藏死，这便捷是真给咱，还是给报表看的？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、对话感强，但标准编号和连续百分比两处朗读需临时换词，拉低顺口度。",
+      "script_spans": [
+        "部分企业把人工入口藏进多层菜单，就想省人力钱",
+        "标准号是GB/T 47746，2026年的。",
+        "比例到了26.79%，同比还涨超26%。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "捉迷藏、冒火星等比喻贴切克制，'你讲封号它回天气'与结尾一问离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "找入口像捉迷藏",
+        "你讲封号它回天气，这成了消费维权新痛点",
+        "别跟它绕圈，直接要人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承转自然，归因与新规递进清楚，结尾反问回扣开头藏入口的痛点。",
+      "script_spans": [
+        "那为啥你感觉更难？部分企业把人工入口藏进多层菜单，就想省人力钱。",
+        "下次再遇机器人绕圈子，直接喊转人工。标准写清企业得接手，你有了抓手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "数据与归因均有出处，'这虽是宣传'等限定到位，维权建议不夸大不诱导，审核安全。",
+      "script_spans": [
+        "这虽是宣传，但方向对。",
+        "平台不能拿AI说的当挡箭牌推责，必须认账。",
+        "新规给了底牌，但落地快慢看平台执行力。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-51d23b9d2e3c4c12ac51a802dbcace32",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

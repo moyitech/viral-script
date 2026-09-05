@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-b9de9ddecafb4415b19de641b869d143",
+  "run_id": "run-20260903T051648Z-adcd39188f51",
+  "trace_sha256": "69ed1f6396867c8c655ad49a549f9700e13e4cb2295229d9f619d2d66c265661",
+  "created_at": "2026-09-03T12:31:53.519278Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应安全与效率的冲突，覆盖通勤者痛点，并提出分级安检等兼顾方案。",
+      "script_spans": [
+        "真正兼顾不是退回不检，而是用分级安检、智能识包把细用在高危项，把流畅留日常通勤。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦安检取舍，既写拥堵代价，也补充作业环境、资源错配和分级优化，信息推进充分。",
+      "script_spans": [
+        "安检员做的是典型视觉搜索作业，站台嘈杂、隐私缺失会分散注意力。",
+        "代价分布不均，打工族天天买单，平峰空站却照样细查，资源错配流失效率。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用雨中排队与空车厢制造反差，中段持续补充机制、案例和解法，结尾追问也由全文自然推出。",
+      "script_spans": [
+        "早高峰的地铁站，人潮被拦在站外淋着雨排队",
+        "明明奔着安全去的细化安检，怎么反倒让站台挤成罐头、列车吃不满。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有钩子也有对话感，但中段多处书面化、搭配生硬，朗读需反复重断句。",
+      "script_spans": [
+        "直接加人手持排查最顺手",
+        "那么多花的这些时间，到底换来了什么？",
+        "流程一味加细，若不给降干扰，看漏风险没准反升。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“站台挤成罐头、列车吃不满”与“把细用在高危项，把流畅留日常通勤”形象且可复述，修辞没有压过论点。",
+      "script_spans": [
+        "站台挤成罐头、列车吃不满",
+        "把细用在高危项，把流畅留日常通勤"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，能从成因走到方案；但对安全收益和公众配合度的因果铺垫不足，结尾判断略有外扩。",
+      "script_spans": [
+        "真正兼顾不是退回不检，而是用分级安检、智能识包把细用在高危项，把流畅留日常通勤。",
+        "用确定时间成本换未必踏实的安全感。",
+        "若长期只顾加码不留出口，公众配合度下滑，防线反从内部松。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动或危险建议，也承认安全底线；但部分归因偏满，易把个案推成普遍结论。",
+      "script_spans": [
+        "安全底线当然要守",
+        "只盯管控方便，忘了系统配套",
+        "到底防风险，还是凑形式"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-82c75b283d2848dc9222513d952e2334",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

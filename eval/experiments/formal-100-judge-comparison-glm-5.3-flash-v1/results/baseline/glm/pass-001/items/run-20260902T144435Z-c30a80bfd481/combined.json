@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-de00cd18954c4ca29fbebf5a8dc1d3c8",
+  "run_id": "run-20260902T144435Z-c30a80bfd481",
+  "trace_sha256": "132a322ddc97d90a51efca229b4d24d53329e08324512eaf11b164cf42a68ada",
+  "created_at": "2026-09-03T13:49:39.553987Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接给出短期与长期双面判断，中段紧扣竞争成因，结尾落回普通人选购，题设两侧与人群全覆盖。",
+      "script_spans": [
+        "低价混战会更狠还是更弱？我的判断：短期可能更狠，长期未必",
+        "对普通人影响直接"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 455，目标为 450，偏差率为 1.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从库存压力、退税机制、市场吞吐到政策与捡漏实例，信息单元各自推进，与引用背景相符，无编造。",
+      "script_spans": [
+        "研究出口退税发现，往年退税鼓励出海，厂子懒做内销",
+        "买衣服可能撞见同厂外贸款标价少一半"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头抛低价混战之问并亮明判断，中段从库存甩货到退税机制、捡漏尾单层层兑现，结尾设问自然留余味。",
+      "script_spans": [
+        "外贸转内销，低价混战会更狠还是更弱？我的判断：短期可能更狠，长期未必。",
+        "现在单子黄了，货堆在库里。海外客不要，只能国内找补，价能低就低。",
+        "到时你买东西，选便宜还是选合适，反倒费神。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句利落、有对话感，但“厂子懒做内销”“挑物别光看便宜”至少两处需临时换词，最高2分。",
+      "script_spans": [
+        "海外客不要，只能国内找补，价能低就低",
+        "厂子懒做内销",
+        "外贸尾单尺寸标准未必合国内习惯，挑物别光看便宜"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“生产线总得喂饱”“先甩货回血”形象贴切，“短期可能更狠，长期未必”离开正文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "出口企业掉头回国卖，生产线总得喂饱。",
+        "如今关税压顶，产能转回国内，供给一下涌进，先甩货回血。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线基本可跟随，但“先降价甩”插回长期论证，与“先甩货回血”重复，时间前提需观众自行补齐。",
+      "script_spans": [
+        "你想，为啥不能说永远打价？关键在机制",
+        "建渠道要花钱，重新做包装换标签也费钱，企业想快回本，往往只能先降价甩"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "判断均以“可能”“未必”限定，并转述财新、消费报告与研究，无煽动、夸大或无依据承诺，导向安全。",
+      "script_spans": [
+        "我的判断：短期可能更狠，长期未必。",
+        "外贸尾单尺寸标准未必合国内习惯，挑物别光看便宜。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8d51011204694ba7b4fd6310d7961a68",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e04e2cd86d964cedb9935c224a6d65de",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

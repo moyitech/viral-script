@@ -1,0 +1,133 @@
+{
+  "evaluation_id": "combined-55daa80339f34ca39f88637b4c6172ff",
+  "run_id": "run-20260902T142649Z-73fac2853a3f",
+  "trace_sha256": "929cf42660fb481d28345e4783145c6303640c480c40e74b7f860c44340c281a",
+  "created_at": "2026-09-03T12:16:05.727675Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直面作业挤课间与安静管理的利弊，后文兼顾学生、教师和学校执行，结论持续回扣题设。",
+      "script_spans": [
+        "课间被作业挤掉，孩子安静坐着真能学好？这么干，恐怕并不真有利。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法规要求、学校动因、研究线索和执行现象层层推进，既给出判断依据，也保留研究局限，信息增量充足。",
+      "script_spans": [
+        "2023年那份通知说得直白，不能对课间正当游戏、出教室设不必要约束",
+        "身体活动和记忆整合有关联，一直闷坐反而注意力掉队。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“真能学好”抛出冲突，中段补足规矩、原因与现实，结尾追问自然生长。",
+      "script_spans": [
+        "课间被作业挤掉，孩子安静坐着真能学好？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和设问有对话感，但法规、研究表达偏书面，且有两处明显卡口，影响连续朗读。",
+      "script_spans": [
+        "课间被作业挤掉，孩子安静坐着真能学好？",
+        "不能对课间正当游戏、出教室设不必要约束",
+        "身体活动和记忆整合有关联"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“脑子像土地要歇耕”把休息必要性说得具体，既有画面也便于复述，整体修辞不过量。",
+      "script_spans": [
+        "就像咱总以为多写一题是一题，却忘了脑子像土地要歇耕。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "分段顺序清楚，能从规则、动因转到执行和结论；但“全天不动”及近视风险的推断跨步过大，削弱因果严密性。",
+      "script_spans": [
+        "那学校为什么还爱安静管理？您想过没，老师也有苦衷。",
+        "一个班四十人全天不动，失去的不只是十分钟，是每天重置状态的机会，连望远处都不行，近视风险悄悄叠高。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动且承认研究局限，但“近视风险悄悄叠高”等健康因果表述偏满，需补充条件或改为可能。",
+      "script_spans": [
+        "当然研究也有局限，不是唯一答案",
+        "近视风险悄悄叠高"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0534001c85ab42bf96534a8143ddf927",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

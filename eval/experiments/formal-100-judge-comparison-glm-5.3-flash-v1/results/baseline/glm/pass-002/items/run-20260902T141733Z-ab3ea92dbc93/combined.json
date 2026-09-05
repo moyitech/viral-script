@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-86f04c8cd964470c82a569477e3f7cc5",
+  "run_id": "run-20260902T141733Z-ab3ea92dbc93",
+  "trace_sha256": "2ddc9a75e54f80dec46ad786ae14248ceee55ff61d18623eeb12710e6e0e4fda",
+  "created_at": "2026-09-03T14:23:15.994564Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点中低风险却亏钱的痛点，利率与信用两侧都答了，结尾诊断法正对持有人困惑。",
+      "script_spans": [
+        "你买的低风险债基亏了钱，别以为稳赚不赔。",
+        "别只认低风险标签盲目冲。下次打开账户见绿，先琢磨是利率动还是企业慌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从仓位构成到利率、久期、信用层层推进，存单类比解释到位，还留下可操作的判断方法。",
+      "script_spans": [
+        "市场利率悄悄抬头时，老债券价格就滑落。好比存钱利息升了，老存单不香得便宜卖。基金攥着旧债，净值跟着缩。",
+        "下手前弄清久期长短和信用等级"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出低风险也亏钱的反差，中段利率、信用两条成因持续兑现新信息，结尾由正文自然长出琢磨式余味。",
+      "script_spans": [
+        "你买的低风险债基亏了钱，别以为稳赚不赔",
+        "下次打开账户见绿，先琢磨是利率动还是企业慌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音落在攥、砸、爆雷等实词上，中段类比自然，朗读无需临时改词，也无两处明显拗口。",
+      "script_spans": [
+        "好比存钱利息升了，老存单不香得便宜卖",
+        "基金攥着旧债，净值跟着缩",
+        "下次打开账户见绿，先琢磨是利率动还是企业慌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "存单类比贴切，帮观众秒懂利率风险；账就绿、攥着旧债点到为止，结尾一句离开正文仍可复述，无堆砌。",
+      "script_spans": [
+        "好比存钱利息升了，老存单不香得便宜卖",
+        "下次打开账户见绿，先琢磨是利率动还是企业慌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "因果桥齐全，类比承接自然，结尾用利率动还是企业慌回扣两大机制与开头亏钱场景。",
+      "script_spans": [
+        "债券名字带固定收益，但基金净值每天按市价算，债市一降温账就绿。",
+        "基金分散买几十只，一只爆雷也难完全消化。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全篇为风险揭示与纠偏，不作收益承诺，并提醒看清久期与信用等级，边界清楚，审核安全。",
+      "script_spans": [
+        "别以为稳赚不赔。它本就不是保本金的产品。",
+        "下手前弄清久期长短和信用等级，别只认低风险标签盲目冲。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-68e665bae0d54f378d63630cb9373d0a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

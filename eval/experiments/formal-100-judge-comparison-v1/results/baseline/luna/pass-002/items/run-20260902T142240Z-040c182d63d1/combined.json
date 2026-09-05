@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-aa4a38f75a024360b162af43149ce723",
+  "run_id": "run-20260902T142240Z-040c182d63d1",
+  "trace_sha256": "8b348a585bcb0b59960f1d26caaedb8d4e933508f5dc8a6f4a7dd3294d196f2d",
+  "created_at": "2026-09-03T12:15:55.578321Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答隐私与催缴的冲突，覆盖物业、住户、邻居和平台，并给出更稳妥的催缴方式。",
+      "script_spans": [
+        "答案很直接：不能。催缴再正当，也不能让住户丢掉姓名保密的底线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "围绕隐私、平台规则和替代做法展开，信息点较充足；但合法事由、免责等概念说得过满，关键法律结论缺少边界。",
+      "script_spans": [
+        "姓名加上欠费状态，在法律上关联了具体个人。",
+        "乱发别人姓名欠款，可能被投诉违规，轻则删消息，重则功能受限。",
+        "处理得有合法事由，催缴欠款并不在免责里头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出隐私与催缴冲突，中段层层补充边界，结尾从体面自然落到可执行建议。",
+      "script_spans": [
+        "邻里群贴欠费住户姓名，催缴有理就能放弃隐私？",
+        "那在微信群里发总可以吧？平台规矩也管这桩。",
+        "体面收账比曝光更长久。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感，短句和比喻有效；但法律表述与个别句式卡顿，尚未达到顺滑口播。",
+      "script_spans": [
+        "物业要回钱，住户保脸面，两边得平衡。",
+        "群聊截图随手一转，隐私就脱离控制，姓名一旦流动很难收回。",
+        "个人信息保护法立了保护框架，处理得有合法事由，催缴欠款并不在免责里头。",
+        "微信不光是聊天工具，还是持牌平台有它的规矩。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“欠费是钱的事，姓名是脸的事”具体好记，末尾关于脸面的比喻自然，修辞没有压过观点。",
+      "script_spans": [
+        "欠费是钱的事，姓名是脸的事",
+        "别拿脸面垫脚。",
+        "脸面这东西，碎了难粘回原样，留一线收钱反更顺。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头定论、分段反问和结尾建议完整，主线基本可跟随；但平台身份与曝光受约束之间缺少因果桥，公示边界也交代不足。",
+      "script_spans": [
+        "有人觉得小群熟人无所谓，或者欠费害大家不便利，曝光算维权？这顾虑能理解，但自发晒名恐怕仍不妥。",
+        "微信不光是聊天工具，还是持牌平台有它的规矩。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题明确，强调催缴与隐私需平衡；但“持牌平台”和公示程序的说法过于绝对，易造成法律误导。",
+      "script_spans": [
+        "催缴再正当，也不能让住户丢掉姓名保密的底线。",
+        "真需公示，得由法院或授权机构走程序；"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0793dbbd34b7498c977e46ab0e3bb22d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

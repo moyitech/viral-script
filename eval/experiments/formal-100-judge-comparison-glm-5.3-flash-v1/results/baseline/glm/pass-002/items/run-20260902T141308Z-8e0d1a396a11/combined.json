@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-41d48a277fd54cbcb618a141514c7126",
+  "run_id": "run-20260902T141308Z-8e0d1a396a11",
+  "trace_sha256": "297cbaf0f1bde4c239496f8610cbeb359d36a7a892c0ee8a29ef03ae55a2cd34",
+  "created_at": "2026-09-03T14:24:19.664306Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出两侧选择，结论先留急用钱再还贷正面兼顾，咱普通家庭精准命中核心人群。",
+      "script_spans": [
+        "咱们直说：先留够急用钱，多余的再去提前还贷",
+        "存款利息赶不上房贷，提前还还是留钱？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "LPR事实、还息机制、流动性代价、合同提醒各自推进，与长期低利率判断互证，无编造。",
+      "script_spans": [
+        "提前还掉部分本金，往后利息按剩的算，真能少付",
+        "还之前翻下合同，确认预约和违约金约定"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛'息差倒挂'冲突与悬念，中段以'别急''再往深想'层层转折推进，结尾金句自然收束有余味。",
+      "script_spans": [
+        "息差倒挂：存款利息赶不上房贷，提前还还是留钱？",
+        "你可能会想，那不等着降息直接全还了？别急。",
+        "所以匆忙全还光未必聪明，手里有粮才不怕意外敲门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口密集，'留着亏利息，还了省利息'节奏清楚，全文可自然朗读无需改词。",
+      "script_spans": [
+        "留着亏利息，还了省利息，这账好算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "表达克制不炫技，'留着亏利息，还了省利息'对照清晰，'手里有粮才不怕意外敲门'离文仍可复述。",
+      "script_spans": [
+        "留着亏利息，还了省利息，这账好算。",
+        "手里有粮才不怕意外敲门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先给结论再摆账，设问别急转折自然，结尾手里有粮回扣开头，因果桥齐整。",
+      "script_spans": [
+        "留着亏利息，还了省利息，这账好算",
+        "你可能会想，那不等着降息直接全还了？别急。",
+        "所以匆忙全还光未必聪明，手里有粮才不怕意外敲门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "建议克制且留余地，提醒翻合同确认违约金，利率数字用\"大概\"限定，未见夸大或误导承诺。",
+      "script_spans": [
+        "先留够急用钱，多余的再去提前还贷",
+        "还之前翻下合同，确认预约和违约金约定",
+        "这轮低利率被不少观点看成长期常态"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-86aceaf3c68748bdaa7a58fd14d2d9fd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

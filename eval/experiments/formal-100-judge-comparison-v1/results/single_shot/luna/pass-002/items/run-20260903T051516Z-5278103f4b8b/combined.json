@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-fe66b6f2c9ff4a60a4807e5d8ceddee1",
+  "run_id": "run-20260903T051516Z-5278103f4b8b",
+  "trace_sha256": "e7d9f3fc65c7c01e2bfa590c50d2f27b235315e700a7a3f2030488a240cb2f10",
+  "created_at": "2026-09-03T12:32:02.462809Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接给出判断，随后解释摩天楼的材料、排热与街谷效应，并落到居民和社区应对。",
+      "script_spans": [
+        "城市夜间越来越热，摩天楼确实在加剧热岛效应",
+        "对普通居民来说，不必坐等楼宇重建"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕夜间热岛，材料蓄热、设备废热、通风受阻和气候升温层层增加信息量，结论也有依据。",
+      "script_spans": [
+        "这些低反照率材料白天吸饱太阳辐射，夜间以长波形式缓慢释放热量",
+        "楼内密集的空调与通风系统向外排放废热",
+        "高楼排列过密还会显著降低天空视角因子并阻挡自然风"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头直接抛出摩天楼与夜热的因果，机制展开也顺，但中段偏线性，结尾停在建议，缺少更强余味或自然互动。",
+      "script_spans": [
+        "城市夜间越来越热，摩天楼确实在加剧热岛效应",
+        "先从窗户遮阳、减少白天吸热，以及在社区推动屋顶绿化与通风廊道讨论"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "信息顺序清楚，也有“添火”“扣上锅盖”的形象比喻；但技术术语和长串并列让多处气口偏长。",
+      "script_spans": [
+        "等于半夜里持续给城市添火",
+        "高楼排列过密还会显著降低天空视角因子并阻挡自然风",
+        "相比开阔低矮区域，夜间辐射降温的通道被切断，温度回落明显更迟"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“半夜里持续给城市添火”和“像扣上锅盖”把废热与热量滞留说得具体，画面鲜明且不过度堆砌，容易被复述。",
+      "script_spans": [
+        "等于半夜里持续给城市添火",
+        "热量被束缚在街谷里像扣上锅盖"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有清晰的因果链和收束，但长句信息堆叠，末段建议的并列关系与作用路径不够清楚，口播需重断句。",
+      "script_spans": [
+        "同时楼内密集的空调与通风系统向外排放废热，等于半夜里持续给城市添火",
+        "在全局气候整体升温的背景下，这种局部叠加让夜晚本该凉爽的时段也变得闷热难耐",
+        "高楼排列过密还会显著降低天空视角因子并阻挡自然风，热量被束缚在街谷里像扣上锅盖，相比开阔低矮区域，夜间辐射降温的通道被切断，温度回落明显更迟",
+        "先从窗户遮阳、减少白天吸热，以及在社区推动屋顶绿化与通风廊道讨论"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，机制解释有依据；但将复杂的因地制宜关系说成确定结论，存在过度归因风险。",
+      "script_spans": [
+        "不必坐等楼宇重建",
+        "摩天楼确实在加剧热岛效应"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-33a28cbdbf4e457bb6fbecf21b037574",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

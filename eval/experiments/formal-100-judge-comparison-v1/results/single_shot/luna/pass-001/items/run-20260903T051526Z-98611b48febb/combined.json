@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-497a1107fd6446e5a1e54a6661776e36",
+  "run_id": "run-20260903T051526Z-98611b48febb",
+  "trace_sha256": "66df9c5cc2fa7f8ad53508ff4db362380f07d738d86433aef84d0054cf89e3f8",
+  "created_at": "2026-09-03T12:01:49.602850Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接回答价格是否会下行，并区分局部品类与全行业，兼顾企业、消费者和本土厂商。",
+      "script_spans": [
+        "转内销会压低部分品类的价格，但远没到全行业价格战的地步"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 730，目标为 700，偏差率为 4.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕供给切换、库存清理、渠道能力和消费端影响层层补充，信息单元具体，结论有支撑。",
+      "script_spans": [
+        "短期清库存可能甩卖，长期想扎根就得做研发和品牌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用低价悬念制造即时吸引，中段持续补充反例、成本和行业边界，结尾以镜子作收束，余味自然。",
+      "script_spans": [
+        "低价潮要来了？先说我的判断：转内销会压低部分品类的价格，但远没到全行业价格战的地步",
+        "所以，出口转内销不是低价炸弹，而是一面镜子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答推进和具体比喻增强了可听性，但两处分析句术语密集，朗读时仍需重断句。",
+      "script_spans": [
+        "不是把集装箱直接搬进商场。",
+        "别指望所有东西永久白菜价。",
+        "且相关结论受样本局限，不能推演到所有行业。",
+        "我国社零按购买力平价远超美国，足以容纳多元供给。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“两条腿走路”“低价炸弹”“一面镜子”都服务于理解，末句形成自然、准确且便于复述的记忆点。",
+      "script_spans": [
+        "出口和内销未必是零和，部分企业两条腿走路反而互补",
+        "所以，出口转内销不是低价炸弹，而是一面镜子",
+        "别怕卷，怕的是只会用降价一条路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，随后按供给、企业经营、消费者影响展开，反例与不确定性有明确交代，结尾回扣自然。",
+      "script_spans": [
+        "但这里有个反例和不确定性：出口和内销未必是零和，部分企业两条腿走路反而互补"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "整体表述克制，明确限定适用范围，没有煽动对立、夸大承诺或危险建议，平台与伦理风险较低。",
+      "script_spans": [
+        "且相关结论受样本局限，不能推演到所有行业。",
+        "别指望所有东西永久白菜价。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b3ce12e44cc24a51a9add08e75ac427c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-23ae7f26a39242f1bf27e1e891d0ff11",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

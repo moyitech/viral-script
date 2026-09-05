@@ -1,0 +1,163 @@
+{
+  "evaluation_id": "combined-085d904bf59c4deabeea762b2011db19",
+  "run_id": "run-20260902T141822Z-7803eac29b49",
+  "trace_sha256": "2f6349ae9e64945de6e9c39c8c2deea756d84b3b04b160e1a18f77bedf30e48b",
+  "created_at": "2026-09-03T11:44:15.800956Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕抽成收紧，既讲规则变化，也区分不同类型小开发者，明确回答了生存空间仍在但需换渠道。",
+      "script_spans": [
+        "生存空间没关死，肯用网页引流、外链结账的反而活泛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 617，目标为 700，偏差率为 11.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "规则、费率、地区差异和用户渠道都提供了有效增量，但下载量数字与背景口径不一致，削弱信息可信度。",
+      "script_spans": [
+        "比如年流水不到一百万美元的小队，走小企业计划，抽成卡在百分之十五，填表就能进，不用改代码。",
+        "去年商店生态给开发者带来一点四万亿美元销售，全球下载一百四十九亿次"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用抽成与生存的反差立刻抓人，中段持续补充规则与选择，结尾“挖井”追问也由正文自然推出。",
+      "script_spans": [
+        "小开发者被抽成逼到墙角，但活路没封死，只是上架不能躺赚。",
+        "你是要等平台下雨，还是现在就去挖井？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "反问、短句和“咱们看真实情况”增强了口播感，但数字串、压缩句和混杂比喻多处卡顿，仍需重断句润色。",
+      "script_spans": [
+        "咱们看真实情况。",
+        "你敢押上身家吗？",
+        "新模型是百分之二加五到十三加百分之五叠加",
+        "过去固定抽成日子翻篇，大平台监管诉讼下把费拆层，小团队反留有缝。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“门店只是个入口”清楚好记，但隐喻从墙角、缝隙一路叠到喂奶、干处、挖井和下雨，末段略显用力。",
+      "script_spans": [
+        "自己有用户门店只是个入口。",
+        "把靠商店喂奶的人晾在干处。",
+        "水很大但小虾得找自己的渠。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有钩子、展开和回扣，路径基本清楚；但平台动机用“大概”带过，前段因果和概念衔接不够稳。",
+      "script_spans": [
+        "你若只在店里等客就更挤，自己有用户门店只是个入口。",
+        "平台为啥这么做？大概是怕罚也想留钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，但将外链结账概括为通用活路，未交代地区、资格与规则限制，容易误导小开发者照做。",
+      "script_spans": [
+        "收紧不是单一动作，各地节奏不同。",
+        "生存空间没关死，肯用网页引流、外链结账的反而活泛。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.75,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.25,
+    "weighted_average": 2.25,
+    "normalized_score": 0.75,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 617,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.11857142857142858
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-76c40e15795247c4a8f2c74833264d75",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-cde396ca026d48979a4cf9185ae15b0a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

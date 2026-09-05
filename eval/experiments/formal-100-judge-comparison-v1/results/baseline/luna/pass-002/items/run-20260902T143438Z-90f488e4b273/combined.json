@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-8de4c060d1a74e4f9563191ddef43ec0",
+  "run_id": "run-20260902T143438Z-90f488e4b273",
+  "trace_sha256": "b3253c0c48eaa53ee65c06c4e4adb80e91414c7d17d52dfe25e23820a88f96ce",
+  "created_at": "2026-09-03T12:15:57.599136Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答花多花少，覆盖新规、商家变化与普通消费者，切角具体且贴近消费决策。",
+      "script_spans": [
+        "直播间低价承诺退潮，你支出或升或降。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕低价承诺退潮展开，串起规则、供给变化与冲动消费，既有事实也给出判断方向。",
+      "script_spans": [
+        "之前平台明要最低价，暗用限流逼商家守低价。",
+        "沉住气看用料和售后，比质价比反而淘好货。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用花少或多花制造反差，中段展开规则、商家与消费行为，结尾追问承接自然。",
+      "script_spans": [
+        "竟花更少？也可能多花。",
+        "不喊最低价的场子，是帮你省心，还是悄悄拿了选价权？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 1,
+      "reason": "“你刚看直播主播”“两头扯”等多处搭配生硬，朗读需反复重断句并临时换词。",
+      "script_spans": [
+        "你刚看直播主播不保最低价，竟花更少？也可能多花。",
+        "最强依据是新规让强制比价词消失，你失去公开锚点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“口袋松了”“指尖一滑”把冲动消费说得具体，结尾“悄悄拿了选价权”也有余味。",
+      "script_spans": [
+        "口袋松了。指尖一滑，钱就出去了。",
+        "悄悄拿了选价权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "有开头、展开和回扣，主线基本可跟随；但比价、懒得比较与满减之间的因果关联没有讲透。",
+      "script_spans": [
+        "咱们先捋捋：直播间低价承诺退潮，你支出或升或降。",
+        "升是因没了比价你懒得货比三家，降是因不用凑满减被套牢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有“也可能多花”的保留，但对新规范围和行业趋势的概括偏绝对，可能误导观众。",
+      "script_spans": [
+        "也可能多花",
+        "不准强制降价和全网最低价承诺",
+        "现在行业从价格战转质量战"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-83950d8e72244d69bafe0ffd13e383bb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

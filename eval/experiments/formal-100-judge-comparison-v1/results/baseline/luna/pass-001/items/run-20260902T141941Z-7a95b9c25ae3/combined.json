@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-8c5aa53711e94f3cb227414c006089c6",
+  "run_id": "run-20260902T141941Z-7a95b9c25ae3",
+  "trace_sha256": "d6fb2e5b161526ea9f0aaa0bbdee8d98d992f10d93940e4fa3deb0e023610564",
+  "created_at": "2026-09-03T11:44:33.200840Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“免费搬走”与“流量截流”的区别，覆盖生成式搜索、原站和普通用户的核心疑问。",
+      "script_spans": [
+        "内容没被搬走，访客却先截胡。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 290，目标为 280，偏差率为 3.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，既解释答案摘要如何截流，又给出点击数据和小站应对，多个信息单元连续推进。",
+      "script_spans": [
+        "页面顶部直接给段总结，把几页内容揉一块，问题立刻被接住",
+        "有研究看到百科页点击降约一成多。",
+        "别死磕旧排名，学着想被AI引一句。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差立住，中段用“截流—原因—边界—应对”递进，结尾问题自然留出余味。",
+      "script_spans": [
+        "内容没被搬走，访客却先截胡。",
+        "省下的步骤，就是原站丢掉的脚步。",
+        "当答案替你读完网页，谁还愿做那个翻原稿的人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、问答和比喻让节奏利落，但“生成式搜索改写答案”“小站得想法”均需临时重断句或换词。",
+      "script_spans": [
+        "你说白嫖吗？不算搬走，算截流。",
+        "生成式搜索改写答案，网站内容不会被免费搬走",
+        "小站得想法在答案里被提到"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“先截胡”“省下的步骤，就是原站丢掉的脚步”等比喻贴题，形象解释流量转移，且有可复述句。",
+      "script_spans": [
+        "内容没被搬走，访客却先截胡。",
+        "不算搬走，算截流。",
+        "省下的步骤，就是原站丢掉的脚步。",
+        "内容没消失，只是退到后台。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、机制、数据和结论顺序清楚；但用“不占你服务器”直接推出“不算搬走”，混淆内容复用与物理存储，关键概念承接不足。",
+      "script_spans": [
+        "省下的步骤，就是原站丢掉的脚步。",
+        "它把别人写的料重拼，却不占你服务器，访客却在别处止步。",
+        "不算搬走，算截流。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动，也区分了内容未消失与流量下降；但把个案研究外推到网站整体，“不会”过于绝对，需限定范围。",
+      "script_spans": [
+        "有研究看到百科页点击降约一成多。",
+        "网站内容不会被免费搬走，但原站流量正被入口吃掉。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-829d5b8dbafd44b79623630c7187f64a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-7e0cc938352e4bd181e3b44b1194e956",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-76a0579702de414899cfb6f481bda1cd",
+  "run_id": "run-20260903T051649Z-bc5d263f4e90",
+  "trace_sha256": "04da778efb3d3eb77192bbee93c2acf00720a97e9edcc0c98ab7da7760094e59",
+  "created_at": "2026-09-03T15:26:42.057646Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给出明确判断，效率与局限两侧都答到，建议段直指求职者痛点，结尾回扣题设。",
+      "script_spans": [
+        "当前AI面试官读不透人的潜力，它本质是个高效的初筛漏斗，不是识人伯乐。",
+        "面试可以交给代码初筛，但读懂人，终究是人擅长的事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“漏斗而非伯乐”集中展开，机制、局限、应对层层推进，方法具体可带走，无编造迹象。",
+      "script_spans": [
+        "但预测日后工作表现，算法关联性并不高，它只看得到你展现的碎片，读不到内在动机与长期成长力。",
+        "比如少用模糊形容词，多用结果和行为描述，提前演练摄像头前的表达。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前15字即设“面试无真人”反差钩子；中段以机制、利弊、对策层层兑现；结尾金句由漏斗主题自然生长，余味足。",
+      "script_spans": [
+        "你刚结束一场面试，对面却没有真人",
+        "但预测日后工作表现，算法关联性并不高",
+        "面试可以交给代码初筛，但读懂人，终究是人擅长的事"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句节奏清楚、好读；但术语句与抽象并列两处明显拗口，按规则上限只能给2分。",
+      "script_spans": [
+        "因为潜力藏在经历背后，不在像素里。",
+        "你能做的，是把经历讲具体、逻辑讲清楚",
+        "这类系统靠自然语言处理拆解语言内容",
+        "读不到内在动机与长期成长力"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "漏斗与伯乐之比准确服务观点，“潜力藏在经历背后，不在像素里”离开上下文仍可复述，修辞克制不炫技。",
+      "script_spans": [
+        "它本质是个高效的初筛漏斗，不是识人伯乐",
+        "潜力藏在经历背后，不在像素里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立论再摆利弊，因果桥清楚，结尾自然回扣开头与题设，各段功能明确递进。",
+      "script_spans": [
+        "它只看得到你展现的碎片，读不到内在动机与长期成长力。因为潜力藏在经历背后，不在像素里。",
+        "别把算法当伯乐。它加快流程，却也给普通人提了醒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以“当前”“关联性并不高”等限定表述观点，不夸大不承诺；建议部分安全可行，导向稳妥。",
+      "script_spans": [
+        "别慌，也别迷信：当前AI面试官读不透人的潜力，它本质是个高效的初筛漏斗，不是识人伯乐。",
+        "但预测日后工作表现，算法关联性并不高"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-bba7d0401e614a96bc790e81459fbdaa",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

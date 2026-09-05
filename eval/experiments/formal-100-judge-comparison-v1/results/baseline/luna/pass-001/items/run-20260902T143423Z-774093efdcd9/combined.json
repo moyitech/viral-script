@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-d511ea5752b04399b765069320ab3e05",
+  "run_id": "run-20260902T143423Z-774093efdcd9",
+  "trace_sha256": "383d54cdda9e04cbc55622f297f2f1505805e5fa25c647a41b3e6d644f024945",
+  "created_at": "2026-09-03T11:44:20.902819Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否会花更多，并覆盖商家定价与消费者冲动购买两侧。",
+      "script_spans": [
+        "其实未必，但确实可能更贵。",
+        "一头先搁一边。另一头呢，没了低价幌子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 279，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，价格机制、冲动消费和比价方法形成了连续的信息推进。",
+      "script_spans": [
+        "商家不用为流量硬压价，利润空间自己捞，标价一松，日常杂货慢慢回涨。",
+        "冲动买的常是非必需，结果同样东西没比过去便宜，总账单却悄悄涨了一截。",
+        "花一分钟比价，省下冤枉钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出反差，中段从价格机制转到冲动消费，结尾用自检问题自然收束。",
+      "script_spans": [
+        "滑开直播间，主播不喊最低价，你反而花更多？",
+        "另一头呢，没了低价幌子，你本来会多想两秒再买，甚至关掉页面。",
+        "下次心动，先问是自己需要，还是被带节奏？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏明快、气口较短，但部分压缩表达略卡，朗读时仍需临时调整，尚未达到自然顺滑。",
+      "script_spans": [
+        "你脑子一热多塞两件没用",
+        "利润空间自己捞",
+        "冲动买的常是非必需"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“低价幌子”和“总账单却悄悄涨了一截”形象准确，既有画面感，也服务于消费提醒。",
+      "script_spans": [
+        "没了低价幌子",
+        "总账单却悄悄涨了一截",
+        "是自己需要，还是被带节奏？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头给出条件化结论，随后分两头解释，结尾用比价建议自然回扣。",
+      "script_spans": [
+        "其实未必，但确实可能更贵。",
+        "这一头先搁一边。另一头呢，没了低价幌子",
+        "下单前退出直播间，去搜索框查查平时价，别懒。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且给出比价建议；但对新规和平台控价的归因较绝对，易造成未经证实的误导。",
+      "script_spans": [
+        "其实未必，但确实可能更贵。",
+        "花一分钟比价，省下冤枉钱。",
+        "新规不让强逼标最低价",
+        "以前平台常暗里控价，现在红线划清了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3b245a17ec444afbb0ebcb38a1055f60",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-10a00c66d65e464480669b6b50419670",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

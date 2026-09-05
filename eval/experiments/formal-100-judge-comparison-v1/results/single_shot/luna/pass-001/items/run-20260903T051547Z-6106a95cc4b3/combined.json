@@ -1,0 +1,160 @@
+{
+  "evaluation_id": "combined-4a29e776c3424c55b6b94a56502ad786",
+  "run_id": "run-20260903T051547Z-6106a95cc4b3",
+  "trace_sha256": "2df465d5def572fa589d19bfe919f834ea7db5063c545ff56545f41cad2f8bda",
+  "created_at": "2026-09-03T12:01:47.435166Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答一键开药的误诊风险，覆盖线上便利、线下限制、复诊边界及普通用户应对。",
+      "script_spans": [
+        "一键开药不是原罪，但它只该是稳定慢病复诊的捷径，一旦越过复诊边界，误诊风险会成倍藏在日常里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 862，目标为 700，偏差率为 23.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题高度集中，风险机制、监管边界、典型误区和自护建议均有具体推进。",
+      "script_spans": [
+        "比如长期头痛，未必是颈椎病，也可能是血压波动或眼底问题，不测血压不查视野，谁也不敢打包票。",
+        "细则同时要求，一旦发现患者病情突发或其实是首诊，必须立刻终止线上活动，引导去实体医院"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用便捷与风险反差设问，中段连续推进案例、监管和现实提醒，结尾以对照收束，余味自然。",
+      "script_spans": [
+        "手指点几下，药就送到家",
+        "一键开药不是原罪，但它只该是稳定慢病复诊的捷径"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有反问、举例和短句，节奏并不拖沓；但“直接顺承”“反应也累积”等表达卡嘴，核心段落仍偏抽象。",
+      "script_spans": [
+        "比如长期头痛，未必是颈椎病，也可能是血压波动或眼底问题",
+        "系统若直接顺承，就可能放过悄悄恶化的信号。",
+        "可病情会演变，身体对药物的反应也累积。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“药能快递，身体不能简配”准确凝练，配合后勤与前线的对照形成记忆点，修辞总体服务观点。",
+      "script_spans": [
+        "药能快递，身体不能简配；线上续方是后勤补给，不是前线战场。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，中段按风险、监管、反例和自护推进，结尾回扣线上边界，层次完整自然。",
+      "script_spans": [
+        "规矩和漏洞都说完了，落到咱们自己身上，最容易被忽略的现实影响是什么？",
+        "线上续方是后勤补给，不是前线战场。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体立场克制，明确区分稳定复诊与首诊风险；但“成倍”等说法偏夸张，需补充限定。",
+      "script_spans": [
+        "一键开药不是原罪，但它只该是稳定慢病复诊的捷径",
+        "误诊风险会成倍藏在日常里"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 862,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.23142857142857143
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-475f402e070748b68121e98d09bcbce1",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1554add3e95d4fe6ae0ccbd80aaad096",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

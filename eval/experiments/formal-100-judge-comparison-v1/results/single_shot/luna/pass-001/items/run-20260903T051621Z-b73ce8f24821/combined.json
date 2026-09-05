@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-b03fab647ca2402bbfa6f7dac7d6512a",
+  "run_id": "run-20260903T051621Z-b73ce8f24821",
+  "trace_sha256": "9718b2e0932284b211419b4664358b313dcb62063bf5a79a485a7f663a3460c9",
+  "created_at": "2026-09-03T11:58:42.426893Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答传统行业员工如何应对，覆盖转型压力、技能更新和培训选择，核心人群与题设高度贴合。",
+      "script_spans": [
+        "传统行业员工想不被绿色转型落下，靠死守工位没用，得主动给自己的技能包换血"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 453，目标为 450，偏差率为 0.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，政策范围、职业教育案例、就业结构和个人行动层层补充，观众能获得具体应对方法。",
+      "script_spans": [
+        "职业教育系统正在把绿色技能填进课本，比如汽修课加电动汽车维修，建筑工培训加节能材料",
+        "先对照行业清单摸准对口课，哪怕先从线上公开课补基础"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出岗位重构，中段用政策、培训和个人行动递进，结尾留下明确警示与余味。",
+      "script_spans": [
+        "正发生一场不声不响的岗位重构",
+        "职业教育系统正在把绿色技能填进课本",
+        "产线就会悄悄绕开你"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和“说白了”增强了口播感，但政策段信息偏密，“摸热新工具”等说法卡嘴，仍需重断句或换词。",
+      "script_spans": [
+        "说白了，传统行业员工想不被绿色转型落下，靠死守工位没用",
+        "工人选进修时，要挑直接嵌进新生产线的那类",
+        "绿色转型会生出新岗位，但只认提前摸热新工具的人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务观点，把抽象转型压力转成“技能包换血”等易复述表达。",
+      "script_spans": [
+        "经验不再百搭",
+        "得主动给自己的技能包换血",
+        "转型洗掉的是旧手艺，不是老工人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线由岗位变化推进到技能更新和行动建议，但把政策改造直接等同于旧技能贬值，因果与结论都偏绝对。",
+      "script_spans": [
+        "说白了，传统行业员工想不被绿色转型落下，靠死守工位没用，得主动给自己的技能包换血",
+        "这套改造直接让老工艺知识贬值，不更新就等于把饭碗递出去。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有敏感违规，但政策执行和就业后果表述过满，并将转型压力过度归因于个人，容易制造焦虑。",
+      "script_spans": [
+        "先对照行业清单摸准对口课，哪怕先从线上公开课补基础。",
+        "要求三年内做完节能降碳改造",
+        "不更新就等于把饭碗递出去"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-573731ac40ed4038b650aa63f4f6492d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-089bbb76a0d14765bb7a4ffb68d60ea8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

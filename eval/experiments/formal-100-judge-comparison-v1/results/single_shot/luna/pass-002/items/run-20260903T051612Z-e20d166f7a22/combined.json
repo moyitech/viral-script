@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-b42e08626c524511879d6a48df8217d6",
+  "run_id": "run-20260903T051612Z-e20d166f7a22",
+  "trace_sha256": "085e21982f6765d59956053a8d9a30d39c65368b81b793e368b3f8dca08bf48c",
+  "created_at": "2026-09-03T12:32:02.379281Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答已购房家庭能否受益，并区分商贷、公积金和固定利率，覆盖了受众最关心的受益路径与限制。",
+      "script_spans": [
+        "已购房家庭确实能省钱，但降息不是一键到账的福利。",
+        "商贷若浮动利率，利息按合同重定价日重算LPR"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中且信息密度高，重定价、协商加点和防骗都可执行；但条件交代偏薄，提前还贷一句也没有推进主结论。",
+      "script_spans": [
+        "2024年11月后还能跟银行协商周期和加点",
+        "调整不收费，公积金自动降，商贷手机银行就能申请",
+        "早几年高位办贷的正符合条件",
+        "此前新老房贷利差扩大，提前还贷曾明显增多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头先给出省钱利益再埋下反差，中段连续补充规则，结尾落到防骗和办理门槛，推进完整。",
+      "script_spans": [
+        "已购房家庭确实能省钱，但降息不是一键到账的福利。",
+        "商贷若浮动利率，利息按合同重定价日重算LPR",
+        "凡要钱代办降息的全是骗术，固定利率得先转浮动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能顺读，开头和结尾有口播感，但中段术语密集、个别句子过长，临场需要重断句。",
+      "script_spans": [
+        "调整不收费，公积金自动降，商贷手机银行就能申请",
+        "2024年11月后还能跟银行协商周期和加点，把高加点降到新发放平均附近，早几年高位办贷的正符合条件。",
+        "公积金贷款和重定价日在年初的商贷，2026年1月已自动调低，月供直接少了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一键到账的福利”把降息限制说得具体好记，“被合同与规则卡着”强化反差，修辞克制且服务理解。",
+      "script_spans": [
+        "降息不是一键到账的福利。",
+        "受益时间和方式被合同与规则卡着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头与结尾能收束主旨，整体顺序可跟；但长句连续堆叠规则与条件，提前还贷无过渡，部分适用范围直接跳过。",
+      "script_spans": [
+        "已购房家庭确实能省钱，但降息不是一键到账的福利。",
+        "固定利率得先转浮动。",
+        "把高加点降到新发放平均附近，早几年高位办贷的正符合条件。",
+        "公积金贷款和重定价日在年初的商贷，2026年1月已自动调低，月供直接少了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能提示降息并非自动到账，但“正符合条件”“手机银行就能申请”等说法泛化资格和渠道，存在金融误导风险。",
+      "script_spans": [
+        "降息不是一键到账的福利",
+        "早几年高位办贷的正符合条件",
+        "商贷手机银行就能申请"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-790c9d56bf364e49bf5d011fb2dee08a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

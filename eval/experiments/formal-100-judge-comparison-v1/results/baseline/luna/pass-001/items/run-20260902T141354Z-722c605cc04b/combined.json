@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-e86d4f935eeb479dbdafb82ce8f1f065",
+  "run_id": "run-20260902T141354Z-722c605cc04b",
+  "trace_sha256": "fc42fe1801c780551121d05d001868779854b72ccb8cd8dc070baec5171fd160",
+  "created_at": "2026-09-03T11:44:23.147086Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直接否定低成本等于低风险，随后解释费用与市场波动的区别，并给出选基建议，完整回应题设。",
+      "script_spans": [
+        "低成本不等于低风险。",
+        "挑基金时，看看跟踪误差大不大，标的指数猛不猛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 447，目标为 450，偏差率为 0.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，已讲清费用、底层波动和跟踪误差，但“五百多亿”紧接指数降费，容易把全行业让利规模误作指数基金单项成效。",
+      "script_spans": [
+        "手续费是买进门的成本，风险是里面资产的波动。",
+        "挑基金时，看看跟踪误差大不大，标的指数猛不猛。",
+        "一年能帮投资者省下五百多亿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用省费与亏损风险的反差抓人，中段持续补充风险来源，结尾问题也顺势引出互动。",
+      "script_spans": [
+        "省下0.3%申购费，亏钱风险却没走。",
+        "跟踪误差来自现金留存、大额申赎，管理费也会影响，但不是风险本身。",
+        "你会因为手续费便宜，就忽略指数本身的风险吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句、设问和比喻交替，气口清楚，核心展开有对话感，基本无需临时改词。",
+      "script_spans": [
+        "省下0.3%申购费，亏钱风险却没走。",
+        "费率低就像左口袋省钱，右口袋的市场风险并没少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“低成本不等于低风险”定住核心反差，“便宜不是护身符”收束有复述价值，修辞克制且服务理解。",
+      "script_spans": [
+        "低成本不等于低风险。",
+        "便宜不是护身符。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出判断，中段依次解释底层波动与跟踪误差，后段给出筛选动作，结尾回扣风险，论证推进顺畅。",
+      "script_spans": [
+        "手续费是买进门的成本，风险是里面资产的波动。",
+        "你少付手续费，不等于指数不跳水。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未作收益承诺并提示自评风险，但将风险近乎归结为指数涨跌，且“省下五百多亿”易让人误解为指数基金单独贡献，需加限定。",
+      "script_spans": [
+        "先问自己扛不扛得住标的波动。",
+        "风险看的是跟踪指数本身跌不跌。",
+        "一年能帮投资者省下五百多亿。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5c26c3d29cc545e7b0707d6d9e397b7c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-20386d01ced546a481af3ce85e7d530d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

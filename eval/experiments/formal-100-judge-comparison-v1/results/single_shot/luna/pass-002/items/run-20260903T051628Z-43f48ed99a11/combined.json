@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-174f96e6d2984709b0dc5458be04a24c",
+  "run_id": "run-20260903T051628Z-43f48ed99a11",
+  "trace_sha256": "7a5625de62bd2f3261efbe6a6f4fc1f67c6836e736a494b769f7deaf3b43d9aa",
+  "created_at": "2026-09-03T12:42:13.267244Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答已购房家庭是否受益，并同时交代受益条件、限制人群与行动路径，切角精准。",
+      "script_spans": [
+        "已购房家庭确实能减负，但绝不是人人坐等收钱。",
+        "高加点、且重定价日已过或主动协商成功的人，月供和总利息确实下来了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕降息不等于人人自动受益，层层拆解LPR、加点、重定价及例外，信息单元充分且有推进。",
+      "script_spans": [
+        "房贷利率是“LPR加上加点”。",
+        "重定价周期原来默认一年，现在能跟银行商量改短到三个月或半年。",
+        "公积金贷款又是另一套规则，它往往每年元旦自动跳价，和商贷错峰。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接制造反差，中段用规则、取舍和边界持续推进，结尾自然落到查合同与防骗局。",
+      "script_spans": [
+        "你以为房贷利率降了，月供就会自动变少？",
+        "真正受益的前提，是你的贷款踩中了重定价和加点调整的规则节点。",
+        "打开手机银行，查查合同里的重定价日和加点数"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和收束有对话感，主体逻辑也清楚；但条件并列与术语集中，朗读仍需重断句。",
+      "script_spans": [
+        "你以为房贷利率降了，月供就会自动变少？",
+        "规则打开门，但不是自动门。",
+        "符合条件的浮动利率存量贷做过一轮批量调整",
+        "那些高加点、且重定价日已过或主动协商成功的人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照都服务于规则解释，“规则打开门，但不是自动门”简洁准确，具备自然复述的记忆点。",
+      "script_spans": [
+        "可老贷款人的实惠却像隔着一层玻璃。",
+        "规则打开门，但不是自动门。",
+        "降息实打实，净受益却被城市、贷款类型和你的操作卡着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先用落差设问，再解释定价机制，随后展开规则取舍与适用边界，最后落到查询和防骗，链路完整。",
+      "script_spans": [
+        "你以为房贷利率降了，月供就会自动变少？",
+        "那么中间的取舍是什么？规则打开门，但不是自动门。",
+        "所以别光看新闻标题激动。打开手机银行，查查合同里的重定价日和加点数"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体风险可控，条件和政策边界交代较清；但“全是骗局”过于绝对，可能将正规有偿咨询与诈骗混同，建议收窄表述。",
+      "script_spans": [
+        "北上深二套房贷有各自政策下限，不是想降多少降多少",
+        "凡说花钱代办降息的，全是骗局"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1f456779670d4e7fba677c60e9c11cd6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

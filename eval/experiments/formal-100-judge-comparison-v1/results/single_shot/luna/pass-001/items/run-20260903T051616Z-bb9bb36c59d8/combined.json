@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-9d97337e146c4c6c8e019f30c9766a3c",
+  "run_id": "run-20260903T051616Z-bb9bb36c59d8",
+  "trace_sha256": "603d9812ff19cc155f4d0c6dbe75bb5d8aa6cae81e9022515b0cc80a0defc2d7",
+  "created_at": "2026-09-03T11:57:35.025868Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应题设两面，既讲因材施教的可能，也讲资源与算法如何放大差距，且锁定学校和家长。",
+      "script_spans": [
+        "AI助教不是因材施教或放大差距的开关，而是考验学校底气的试纸"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 646，目标为 700，偏差率为 7.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从设备与数据偏差讲到教师设计和家长观察，信息层层推进，既有风险解释，也有可执行判断标准。",
+      "script_spans": [
+        "这类系统靠数据和终端跑起来，有的学校网络稳、平板齐，有的连基本接口都卡。",
+        "AI在批改、推题、即时反馈上确实帮老师省了机械劳动，让老师腾出手盯住掉队的人。",
+        "有的拿它做动态分层作业，学生体验完全不同。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用家长担忧制造反差，中段不断追问、举例和转折，结尾“被接住”收得自然。",
+      "script_spans": [
+        "家长群却炸了：我家娃会不会被算法越甩越远？",
+        "那落到实际，什么在真正左右结果？",
+        "与其焦虑，不如多看孩子有没有被接住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和问答段有对话感，短句气口较好；但中段出现书面化、搭配生硬的句子，朗读仍需重断句和换词。",
+      "script_spans": [
+        "那是不是就该把AI请出教室？",
+        "忘了分层教学的人才核心",
+        "用不好，它照丑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“技术中性，但落地有偏向”准确凝练，“用得好，它托底；用不好，它照丑”形象且便于复述。",
+      "script_spans": [
+        "技术中性，但落地有偏向。",
+        "用得好，它托底；用不好，它照丑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提出“放大镜”判断，再解释成因、回应反方疑问，最后落到教师与学校责任，回扣自然。",
+      "script_spans": [
+        "AI助教本身不决定公平，它更像一面放大镜——能把好的教学支持放大，也能把原有的资源鸿沟放大。",
+        "那是不是就该把AI请出教室？",
+        "所以，AI助教不是因材施教或放大差距的开关，而是考验学校底气的试纸"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以条件化表述讨论算法偏见与资源差距，未作绝对承诺、煽动对立或危险建议，整体审核风险低。",
+      "script_spans": [
+        "其实这种担心不多余，但也别急着站队。",
+        "技术用对了地方，它是老师的望远镜，不是替代品。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e7009b698c044615b1f11bb3ea63cbb5",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-88d20838fd824683995d748d9198f72e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

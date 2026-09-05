@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-e179477dedd6429e881aa238a930b521",
+  "run_id": "run-20260902T144107Z-582ee7f45bc7",
+  "trace_sha256": "e367a70c61528cf21504d0675c7c2ed953f6b8c7555e51dc0ace9eb4f4809ca4",
+  "created_at": "2026-09-03T14:25:42.420415Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即回应题设两侧，点名运维、数据分析等新岗，结尾回到产线工人转岗路径，人群与冲突均命中。",
+      "script_spans": [
+        "智能工厂砍掉一线普工，却新招运维和数据分析岗",
+        "一边减操作工，一边增技术岗，这就是升级的路",
+        "要是你正站产线，有空就戳戳设备监控的软件界面，肯学就能转新岗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "大典新职业、用工结构研究、转岗条件层层递进，信息具体不空转，与引用资料吻合，无明显编造。",
+      "script_spans": [
+        "有研究跟了制造企业，发现机器换人后用工结构真变了",
+        "会调参数、看报表的师傅，车间抢着留，老师傅转岗有机会",
+        "大典还标了近百个数字职业，能看出路子往这走"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头无人产线之问即立冲突，中段以新职业、研究与转岗信息层层兑现，结尾关灯之问余味自然。",
+      "script_spans": [
+        "走进工厂没人站产线，活儿谁干？",
+        "智能工厂砍掉一线普工，却新招运维和数据分析岗",
+        "哪天厂子关灯自己跑，你琢磨谁在云服务端握开关？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，节奏明快，'这帮人''戳戳'等口语词贯穿，朗读无需改词。",
+      "script_spans": [
+        "一边减操作工，一边增技术岗，这就是升级的路。",
+        "这帮人不用搬料，坐着盯屏幕看机械臂健不健康，活儿干净还缺人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "画面与拟人点到即止且服务理解，'关灯自己跑、云端握开关'离稿可复述，无堆砌炫技。",
+      "script_spans": [
+        "这帮人不用搬料，坐着盯屏幕看机械臂健不健康",
+        "一边减操作工，一边增技术岗，这就是升级的路",
+        "哪天厂子关灯自己跑，你琢磨谁在云服务端握开关？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问开场、证据展开、转折衔接自然，结尾'谁握开关'回扣'活儿谁干'，每段功能清晰，论证完整。",
+      "script_spans": [
+        "走进工厂没人站产线，活儿谁干？",
+        "新职业要懂网络，也得会看设备报错代码",
+        "哪天厂子关灯自己跑，你琢磨谁在云服务端握开关？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体客观平衡，研究与大典引用有据；但“学俩月就能上手”“肯学就能转新岗”属未经限定的就业承诺，宜补充边界或改写措辞。",
+      "script_spans": [
+        "有研究跟了制造企业，发现机器换人后用工结构真变了",
+        "一边减操作工，一边增技术岗，这就是升级的路",
+        "年轻人学俩月就能上手",
+        "肯学就能转新岗"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-40f5b825f1514482b7e87f793bdb123e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,157 @@
+{
+  "evaluation_id": "combined-71bf8dc9244a4f26a9d1c9eac110bad2",
+  "run_id": "run-20260902T141725Z-4721f3ac3104",
+  "trace_sha256": "8431b25ef66011afc8c650bceac6c1ddfce7f0029212692eeb155e7f56c61225",
+  "created_at": "2026-09-03T13:45:09.715266Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头点出老用户被多收，正文依次解释成因与对策，结尾回扣会员价，正面回应题设，人群精准。",
+      "script_spans": [
+        "常叫车的老用户反而被多收十块车费。",
+        "所以动态会员价下，老客比新客更贵。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 443，目标为 450，偏差率为 1.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "机制、法规与应对多单元推进，法规表述与资料相符；但两句'多掏钱'近乎同义复述，冲淡增量。",
+      "script_spans": [
+        "按规定，网约车运价走市场调节为主。",
+        "你越怕迟到它越猜你肯多掏钱保点。",
+        "猜你愿意多掏钱保方便，就不给优惠。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇十块反差直接抓人；中段机制、法规、对策层层兑现钩子；结尾熟客税之问由正文自然生长。",
+      "script_spans": [
+        "常叫车的老用户反而被多收十块车费",
+        "常去写字楼，它认你收入稳，敢多收两块",
+        "当会员价悄悄长成熟客税，你会换着叫吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句好读有对话感，但'保点''沉默成本被算'等处生硬拗口，临场需换词，难直接照读。",
+      "script_spans": [
+        "常去写字楼，它认你收入稳，敢多收两块。",
+        "你昨晚加班叫车，发现比同事贵一截。",
+        "你越怕迟到它越猜你肯多掏钱保点。",
+        "每次下单都在喂它画像，沉默成本被算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "熟客税、肥羊等比喻点到为止且服务理解；会员价长成熟客税离开语境仍可复述，无堆叠炫技。",
+      "script_spans": [
+        "当会员价悄悄长成熟客税",
+        "你只盯一个平台，就成了高黏性肥羊",
+        "每次下单都在喂它画像"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整且结尾回扣题设，但'容忍度''保点''沉默成本'概念含混，转入法规段缺少过渡。",
+      "script_spans": [
+        "当会员价悄悄长成熟客税，你会换着叫吗？",
+        "还看你对晚高峰的容忍度，建个档案。",
+        "每次下单都在喂它画像，沉默成本被算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有法规边界铺垫且建议无害，但“不能明着杀熟，就绕成动态折扣”“被放高价组”把推测当事实，归因绝对化，需加限定才稳妥。",
+      "script_spans": [
+        "按规定，网约车运价走市场调节为主。",
+        "但它不能明着杀熟，就绕成动态折扣。",
+        "常去写字楼，它认你收入稳，敢多收两块。",
+        "你只盯一个平台，就成了高黏性肥羊。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-55fcf0ca12cd4be9aae29dd4f4a71171",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-80978338d534451a85ba6ef56ef5e3ae",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

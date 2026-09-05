@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-b24aadd5ec5f46a5b211ab5b843a2513",
+  "run_id": "run-20260903T051604Z-1af311fd360a",
+  "trace_sha256": "696001d1d5b1f9e53528ad5ae850b22117dcc9de879646ae466b3deab052213e",
+  "created_at": "2026-09-03T15:27:00.048190Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从开场场景到破局方案都正面回答谁来维护，馆方读者双主体明确，弱势人群痛点踩得准。",
+      "script_spans": [
+        "公共图书馆座位被长期占用，表面是几个人贪方便，底层是公共空间分配规则模糊，现场管理也缺位。",
+        "破局得靠馆内明示离座上限，巡场轻声提醒；也靠读者把明显无主的书送到服务台。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从法条责任到执行缺位，再到两种简化方案的反驳，信息单元层层推进，增量具体可带走。",
+      "script_spans": [
+        "法律层面，公共图书馆法把图书馆写成免费开放的公共文化设施，也把管理责任交给县级以上文化主管部门和馆方。",
+        "真实阅读常有短暂离座：去打印、接水、换书。如果一刀切清场，认真看书的人反而被打断"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头书包与凉椅的反差具体抓人，中段设问引新信息层层推进，结尾问句由正文自然生长，留有余味。",
+      "script_spans": [
+        "九点所有桌角都立着书包和水杯，但一半椅子是凉的",
+        "为什么这种占用能持续一整天？",
+        "它其实在问我们：免费给所有人的位置，能不能用清楚的小规则，还给大家都能坐下的底气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句问答推进上口，但“分配规则模糊”“精细度标尺”等书面句需临场改词，只值2分。",
+      "script_spans": [
+        "规则粗线条，执行就软。",
+        "底层是公共空间分配规则模糊，现场管理也缺位"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "「铺货」「私有化」等比喻贴切助解，「严了伤读者，松了亏后来人」简洁可复述，修辞克制不炫技。",
+      "script_spans": [
+        "没人当面抢，却把公共空间私有化了",
+        "桌子自然变成谁先铺货归谁",
+        "严了伤读者，松了亏后来人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "现象归因、反证困境到破局层层递进，因果桥清楚，结尾回扣开场占座与题设。",
+      "script_spans": [
+        "规则粗线条，执行就软。",
+        "这里没容易的开关，严了伤读者，松了亏后来人。",
+        "免费给所有人的位置，能不能用清楚的小规则，还给大家都能坐下的底气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "归因指向规则与管理而非个人，建议带'明显无主'等限定，权衡'严了伤读者'，无煽动夸大。",
+      "script_spans": [
+        "严了伤读者，松了亏后来人",
+        "占座别只怪个人修养",
+        "也靠读者把明显无主的书送到服务台"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9a381fb520af43a28aa3a334e5e3bfb0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

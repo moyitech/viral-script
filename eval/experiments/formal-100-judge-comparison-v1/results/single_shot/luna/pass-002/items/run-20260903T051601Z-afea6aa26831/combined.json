@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-faee71acca6041298c6779f0d964f842",
+  "run_id": "run-20260903T051601Z-afea6aa26831",
+  "trace_sha256": "9f0146aea69327cabe1e5ee8b4bf204ff6163be144b2750e2c84f69c2c110f49",
+  "created_at": "2026-09-03T12:32:02.822711Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应公开姓名与隐私边界，兼顾欠费催缴的正当性，受众和冲突两侧都命中。",
+      "script_spans": [
+        "催缴有理并不代表能放弃隐私。",
+        "用书面通知、私下沟通能解决的事，别用公开羞辱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕个人信息、传播失控、例外边界和替代方案层层补充，既有判断依据，也给出可执行做法。",
+      "script_spans": [
+        "姓名加上小区楼号，就是能锁定真人的个人信息。",
+        "被截图、被转发，后果远超催缴本意。",
+        "用书面通知、私下沟通能解决的事，别用公开羞辱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“便民变曝光台”形成反差，中段持续补充边界与风险，结尾金句收束自然。",
+      "script_spans": [
+        "小区业主群本来是便民，却成了曝光台。",
+        "费没催回来，邻居先成了仇人",
+        "名字不是催缴的筹码，关起门来的边界感，才真正省麻烦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体可读，设问和短句有节奏；但法律解释句偏长，信息连续堆叠，朗读时需要多次重断句。",
+      "script_spans": [
+        "你可能会问，那欠费的人就不需要承担公开压力吗？",
+        "一旦把名字丢进几百人的群聊，信息传播就脱离了你的控制，被截图、被转发，后果远超催缴本意。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "反差、对照和结尾金句都服务观点，“名字不是催缴的筹码”具备自然复述性，未见堆砌。",
+      "script_spans": [
+        "小区业主群本来是便民，却成了曝光台。",
+        "催缴有理是债权逻辑，隐私保护是基本权利逻辑，前者不能吞掉后者。",
+        "名字不是催缴的筹码，关起门来的边界感，才真正省麻烦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整、转折清楚，但把群聊曝光与私下提醒概括为“性质完全不同”，区分缺少必要限定。",
+      "script_spans": [
+        "先说因果。姓名加上小区楼号，就是能锁定真人的个人信息。",
+        "催缴有理是债权逻辑，隐私保护是基本权利逻辑，前者不能吞掉后者。",
+        "这跟单独发消息提醒，性质完全不同。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能区分催缴正当性与隐私边界，但把具体情境概括为“绝大多数越线”、排除例外，法律结论偏满，易误导。",
+      "script_spans": [
+        "但冷静看，催缴有理并不代表能放弃隐私。",
+        "在邻里群公开住户姓名，绝大多数情况下已经越过个人信息保护的线"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b9ce5871fdb240f09fd36503e69d3a40",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

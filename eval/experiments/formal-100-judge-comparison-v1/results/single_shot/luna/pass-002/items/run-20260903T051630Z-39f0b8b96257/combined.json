@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-7801835d5c4646cc9bf14f51db21a2f5",
+  "run_id": "run-20260903T051630Z-39f0b8b96257",
+  "trace_sha256": "142adcd6b7e4839907a47fd5f15d332afa293db885a9afa0a47ec7d6fdcc3d33",
+  "created_at": "2026-09-03T12:31:46.304127Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释老用户变贵的机制，同时对比新人低价，并给出普通用户可执行的应对方式。",
+      "script_spans": [
+        "同样路线，自己账号比新注册的朋友还贵十几块",
+        "新人相反，平台用低价拉新"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕动态定价持续推进，涵盖算法机制、例外情况、法律边界和比价策略，信息增量较充足。",
+      "script_spans": [
+        "它翻看你历史订单、常去区域、取消率，把你塞进“价格不敏感群体”",
+        "证明主观杀熟需要连续截图比对",
+        "这种比价能逼它收敛"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句用老号比新号贵的具体冲突抓人，中段追问算法、补充反例和规则，结尾落到可执行建议并留下余味。",
+      "script_spans": [
+        "自己账号比新注册的朋友还贵十几块",
+        "那算法具体怎么干的？",
+        "老用户别用忠诚换溢价，勤比价就是守住钱包的缰绳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头叙事和结尾建议有节奏，但中段抽象术语、长并列较多，朗读时需要重断句。",
+      "script_spans": [
+        "你开了三年网约车会员，最近发现同样路线，自己账号比新注册的朋友还贵十几块。",
+        "这种个性化定价依赖用户画像，平台通过大数据分析预测你愿付的最高价。",
+        "个性化定价在法律视角下是价格歧视的混合体，有一定效率理由，能改善分配效率，也可能侵犯隐私、引发信任崩塌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“别用忠诚换溢价”与“钱包的缰绳”形成自然记忆点，少量比喻强化了被定价和守住权益的感受。",
+      "script_spans": [
+        "粘性成了被收割的标签",
+        "平台在利润与口碑间走钢丝",
+        "老用户别用忠诚换溢价，勤比价就是守住钱包的缰绳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有钩子、机制解释、法律分析和建议，但比价能逼平台收敛的因果不足，结尾法律判断也有扩大。",
+      "script_spans": [
+        "这里有个反例得说清：不是所有老用户都更贵",
+        "动态价随供需波动正常，高峰溢价人人平等",
+        "在运力饱和的城市，平台更惜用户，这种比价能逼它收敛",
+        "只有明摆着按身份杀熟才违规"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有“不是所有老用户都更贵”的边界说明，但对算法杀熟和违法条件作确定性归因，且多账号比价建议存在误导与规则风险。",
+      "script_spans": [
+        "不是所有老用户都更贵",
+        "动态会员价根本不是给老用户的福利",
+        "只有明摆着按身份杀熟才违规"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-93d186f136da4e9db18075976cd9f8b8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

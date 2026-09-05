@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-6928723d7a29435bb5fe648cb51f3abe",
+  "run_id": "run-20260902T142928Z-b55472c5d11c",
+  "trace_sha256": "43388645fad850cbfba498c53d9db57f2b2cd77f6fbf514bdcf0bd26f9eb279d",
+  "created_at": "2026-09-03T13:47:21.906816Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答两侧：扩围利好与自付压力同抛，结论落到交不交得起的判断法，人群与痛点贴合。",
+      "script_spans": [
+        "回答你：扩围是好事，外地人也能就地参保了。可保险费得全额自己扛，没有单位分担。",
+        "能就交，不能先缓，别硬扛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 434，目标为 450，偏差率为 3.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "降费率、半基数、补贴与申领门槛层层推进，均有据可查，还教观众算淡月账，增量具体。",
+      "script_spans": [
+        "养老缴费比例多地降到两成以下，像广东从二十降到十八。低收入者还能按一半基数交，养老金算法不打折。",
+        "你不妨先算笔小账，看自己最淡的月份，能不能挤出这笔。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段转折与算账推进扎实，结尾提问自然；但开场是标题式陈述，'户政''回答你'费解，钩子偏弱。",
+      "script_spans": [
+        "好在新规给了缓冲。",
+        "政策把门槛砍低了，可这每月续上的钱，你手头能稳住吗？",
+        "社保扩围放开户政，收入不稳者缴费仍吃力。",
+        "回答你："
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏与重音设计好，但开头新闻腔压缩，'干灵活活儿的''报八成费'等处需换词才能顺口。",
+      "script_spans": [
+        "能就交，不能先缓，别硬扛。",
+        "过半干灵活活儿的觉得费高、难连续交",
+        "另有补贴，最高报八成费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'社保像存水'一句离开上下文仍可复述，'买菜钱都得算计'具体传神，全篇修辞克制不喧宾夺主。",
+      "script_spans": [
+        "社保像存水，别等漏光才补。",
+        "他们不是不愁养老，是今天买菜钱都得算计。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线递进、结尾回扣成立，但停止自动扣款一句夹在缓冲利好里，功能错位，衔接突兀。",
+      "script_spans": [
+        "以前企业出的那部分也得你付，现在比例实打实降了。",
+        "好在新规给了缓冲。",
+        "多地停止银行自动扣款，得自己按月按季交。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制，'能就交，不能先缓'给了选择边界；但'断保年限重算''连续满十五年'表述绝对化，易误导断缴人群，需加限定改写。",
+      "script_spans": [
+        "能就交，不能先缓，别硬扛。",
+        "断保过后年限重算，老了少份依靠。",
+        "连续交满十五年才真管用。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-231337ce06ad49d49c6de773654938ef",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-bb1e1b224e02456c9a9b14908f8894ea",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

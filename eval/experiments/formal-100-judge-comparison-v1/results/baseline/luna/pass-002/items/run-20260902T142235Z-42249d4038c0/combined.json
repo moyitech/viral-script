@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-930e01a4ba0e416cb677af691c383ec3",
+  "run_id": "run-20260902T142235Z-42249d4038c0",
+  "trace_sha256": "58906b2c5196492e690a5e5a9a5227f1d6d101d1c17c1a956ef0172fe84f7aa5",
+  "created_at": "2026-09-03T12:16:03.541127Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应催缴与隐私的冲突，也覆盖物业、邻居及普通群成员的实际处境。",
+      "script_spans": [
+        "催缴再有理，也不能在邻里群曝光欠费邻居姓名"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，覆盖识别风险、隐私边界和应对办法，但法律与平台规则表述绝对，论据推进仍有限。",
+      "script_spans": [
+        "姓名加欠费数额，就是清晰个人画像，一下认出是谁家。",
+        "物业没权直接晒，普通邻居更没权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出曝光与隐私的冲突，中段连续补充法律、平台和邻里影响，结尾追问也由主题自然延伸。",
+      "script_spans": [
+        "催缴再有理，也不能在邻里群曝光欠费邻居姓名",
+        "那真碰上老赖欠费咋办？找物业私聊，别甩名字进群。",
+        "下次见群里晒名单，你觉得解气还是越界？尺度谁定？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和反问有对话感，但“催缴的理压不过邻居安稳生活的权”等表述拗口，核心解释仍显生硬。",
+      "script_spans": [
+        "那真碰上老赖欠费咋办？找物业私聊",
+        "催缴的理压不过邻居安稳生活的权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“今天你晒他，明天别人晒你”形成自然对照，既好记又能推动换位思考，整体修辞克制，没有堆砌金句。",
+      "script_spans": [
+        "今天你晒他，明天别人晒你",
+        "催缴的理压不过邻居安稳生活的权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "有观点、解释、风险提示和解决方案，主线基本清楚；但从隐私侵害跳到平台处罚，因果桥不足。",
+      "script_spans": [
+        "那真碰上老赖欠费咋办？找物业私聊，别甩名字进群。",
+        "群聊平台自己也有规矩，不让公开成员资料。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "倡导私聊催缴、避免公开曝光，整体风险可控；但“没权”“不让公开”等绝对化表述缺少具体边界，易造成法律与平台规则误导。",
+      "script_spans": [
+        "找物业私聊，别甩名字进群",
+        "物业没权直接晒，普通邻居更没权",
+        "群聊平台自己也有规矩，不让公开成员资料"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9348c2c3dc5c4f96b05954bd33cc0377",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

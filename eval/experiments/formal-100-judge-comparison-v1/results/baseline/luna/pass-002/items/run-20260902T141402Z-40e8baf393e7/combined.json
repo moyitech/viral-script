@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-c7e4ce732d2d4475b2c707879fca9aa7",
+  "run_id": "run-20260902T141402Z-40e8baf393e7",
+  "trace_sha256": "4927cf0d81d88a425f4a77acd8473d7a6bcc4e31e72da32b57c3ad216eaa9fb2",
+  "created_at": "2026-09-03T12:17:49.397318Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕“申诉会不会更难”给出条件化回答，兼顾AI效率、人工入口、国标约束和创作者应对。",
+      "script_spans": [
+        "全面接智能客服，不代表申诉必更难。",
+        "新规给了底牌，但落地快慢看平台执行力。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "围绕申诉难易提供机制、国标和应对办法，信息密度较高；但把26.79%直接说成AI客服相关比例，削弱论据可信度。",
+      "script_spans": [
+        "复杂申诉，账号被盗牵扯货款，机器人读不懂前后文。",
+        "普通人留好截图，别信AI口头承诺。",
+        "售后投诉里，超四分之一跟AI客服有关。比例到了26.79%，同比还涨超26%。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用乱扣费和转人工失灵制造急迫冲突，中段连续补充数据、新规和应对，结尾追问也有余味。",
+      "script_spans": [
+        "你投诉短视频乱扣费，转人工按了十次也没人理",
+        "下次再遇机器人绕圈子，直接喊转人工。",
+        "可要是入口还藏死，这便捷是真给咱，还是给报表看的？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体对话感较强、短句密集，但“发视频限流申诉信发不出”“简单封禁机器秒解省时间”朗读时需重断句。",
+      "script_spans": [
+        "这事儿不能一刀切。全面接智能客服，不代表申诉必更难。",
+        "发视频限流申诉信发不出",
+        "简单封禁机器秒解省时间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“找入口像捉迷藏”“你讲封号它回天气”形象又好复述，修辞服务痛点，没有明显堆砌。",
+      "script_spans": [
+        "找入口像捉迷藏，急得冒汗。",
+        "你讲封号它回天气，这成了消费维权新痛点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、原因、新规、建议层层推进；但统计口径混淆，结尾把有条件的人机转接扩大成“企业得接手”，论证仍有跳步。",
+      "script_spans": [
+        "回到短视频申诉，简单封禁机器秒解省时间。但复杂申诉，账号被盗牵扯货款，机器人读不懂前后文。",
+        "售后投诉里，超四分之一跟AI客服有关。比例到了26.79%，同比还涨超26%。",
+        "标准写清企业得接手，你有了抓手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有边界意识，但将26.79%等数据归因于AI客服，易造成明显误导，需核准统计口径。",
+      "script_spans": [
+        "这事儿不能一刀切。全面接智能客服，不代表申诉必更难。",
+        "售后投诉里，超四分之一跟AI客服有关。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6f0991e01a3540d896c6eda9fd45b0fe",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

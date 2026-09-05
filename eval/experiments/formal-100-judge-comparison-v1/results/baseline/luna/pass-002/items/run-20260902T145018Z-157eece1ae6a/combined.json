@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-826856e92a364900b5f93a398e171fed",
+  "run_id": "run-20260902T145018Z-157eece1ae6a",
+  "trace_sha256": "72d26adf4b4e7dc1ae7d09c9f1447c6b305a77aee07b771e5a04a3dab0dc6cf7",
+  "created_at": "2026-09-03T12:16:08.895858Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直面传统行业员工的转型风险，既讲岗位压力，也给出补技能、问培训的具体路径。",
+      "script_spans": [
+        "你现在就该找车间主任问清单位有没有转岗培训计划"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策范围、技能变化、培训方向和可执行动作均有交代，信息持续推进，也回应了老师傅的经验价值。",
+      "script_spans": [
+        "国家正在钢铁、水泥、电解铝等九个高耗能行业推三年节能降碳改造",
+        "绿色转型其实不是甩掉老师傅，经验仍值钱，而是逼着手艺换代"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出降薪丢岗风险，中段持续补充政策、培训和行动，结尾用老师傅反转收束，推进完整。",
+      "script_spans": [
+        "钢厂师傅三年里可能因不会节能新设备降薪或丢岗了",
+        "你现在就该找车间主任问清单位有没有转岗培训计划，先摸底再报名",
+        "绿色转型其实不是甩掉老师傅，经验仍值钱，而是逼着手艺换代"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "“先摸底再报名”有现场感，但开头和培训段语序生硬，长句也削弱了整体口播节奏。",
+      "script_spans": [
+        "先摸底再报名，别等红头文件下来了才着急",
+        "可能因不会节能新设备降薪或丢岗了",
+        "外面的职业培训课定期更新才能追上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不是甩掉老师傅，而是逼着手艺换代”对比自然、观点鲜明，既缓解焦虑，也留下了易复述的记忆点。",
+      "script_spans": [
+        "先摸底再报名，别等红头文件下来了才着急",
+        "绿色转型其实不是甩掉老师傅，经验仍值钱，而是逼着手艺换代"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体形成风险、政策、技能、行动的主线，但“政策窗口”直推个人补技能，培训课程一段也缺少自然承接。",
+      "script_spans": [
+        "先摸底再报名，别等红头文件下来了才着急",
+        "政策窗口开着，就得主动把绿色技能补上",
+        "外面的职业培训课定期更新才能追上，已经把电动汽车维修、节能材料这些新课加进来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体给出技能升级建议，也强调经验仍有价值；但将降薪丢岗与政策直接相连，并泛化转岗机会和岗位需求，存在误导风险。",
+      "script_spans": [
+        "绿色转型其实不是甩掉老师傅，经验仍值钱",
+        "钢厂师傅三年里可能因不会节能新设备降薪或丢岗了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a532fb39c7084e31b9c299f04914292d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

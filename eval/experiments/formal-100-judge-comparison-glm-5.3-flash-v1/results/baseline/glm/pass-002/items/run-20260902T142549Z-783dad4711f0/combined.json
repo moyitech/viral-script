@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-22a213ad744d4109a2f57b93ed4a698d",
+  "run_id": "run-20260902T142549Z-783dad4711f0",
+  "trace_sha256": "6294185093e4ef293fcb28bf8fc198a0834b728363356e2fc0da709dca1771d1",
+  "created_at": "2026-09-03T14:24:32.678075Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答“未必更安全”，强项与两类漏洞两侧齐备，收尾落回普通人的具体做法。",
+      "script_spans": [
+        "无密码登录加速普及，账户却未必更安全",
+        "无密码掐断了密码钓鱼，却掐不住会话令牌被盗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "密钥原理、NIST同步、令牌窃取层层推进，末尾给出备用机与查会话两条可带走做法。",
+      "script_spans": [
+        "网站只存公钥，私钥锁在你设备里",
+        "备一台闲置手机存密钥，登录后点开活跃会话看陌生设备"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头“加速普及却未必更安全”直接立反转，中段转折不断供新冲突，结尾设问自然生长、留有回味。",
+      "script_spans": [
+        "无密码登录加速普及，账户却未必更安全。",
+        "但转折来了。",
+        "当无密码成默认，我们该想：设备全丢时，谁来证明你是你？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口密集，'只管开门，不管进门后'重音停顿清楚，通篇口语词序，朗读基本免改。",
+      "script_spans": [
+        "令牌是进门后的通行证，passkey只管开门，不管进门后。",
+        "你想啊，这就像家门换指纹锁，进门难了，可备用钥匙丢哪还得自己操心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "指纹锁类比贴切、助解概念，“只管开门，不管进门后”准确可复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "令牌是进门后的通行证，passkey只管开门，不管进门后。",
+        "这就像家门换指纹锁，进门难了，可备用钥匙丢哪还得自己操心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "“但转折来了”“再看另一头”过渡清楚，两条建议各对应一处漏洞，结尾反问回扣开篇。",
+      "script_spans": [
+        "令牌是进门后的通行证，passkey只管开门，不管进门后",
+        "当无密码成默认，我们该想：设备全丢时，谁来证明你是你？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "整体判断审慎，「未必更安全」「别躺平」等限定到位，归因清楚，无绝对化承诺或危险建议。",
+      "script_spans": [
+        "账户却未必更安全",
+        "安全得层层设防，不是换把锁就高枕无忧"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1accde3f1a6344e48910abc9feaef373",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

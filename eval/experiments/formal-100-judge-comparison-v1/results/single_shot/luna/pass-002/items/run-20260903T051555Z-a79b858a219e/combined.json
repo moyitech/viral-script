@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-dce4f9f52b3d46b6b3f5a46a2c430c1d",
+  "run_id": "run-20260903T051555Z-a79b858a219e",
+  "trace_sha256": "a981bb1bfb52e954674252f14a728d1e3f0ca6ad784fde217d7812a4cc5cf610",
+  "created_at": "2026-09-03T12:32:55.984271Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从政策规则、医生风险到患者应对，完整回答重复检查为何发生，覆盖患者与接诊端两侧。",
+      "script_spans": [
+        "互认卡壳，根子不在没发文，而在规则把认不认的最终按钮交给了接诊医生。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息单元密集，既有时间、费用、案例和制度依据，也区分合理重检与防御性开单，结论有增量。",
+      "script_spans": [
+        "早在2006年各地就试着推互认，可直到现在，有患者一周内转院又被要求做两次肺部CT。",
+        "病情发展了、设备参数不同、正常代谢变化，这些例外都合理。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“二十年”与重复检查制造冲突，中段持续补充规则、责任和例外，结尾追问由正文自然落地。",
+      "script_spans": [
+        "政策推了快二十年，你换家医院看同样的病，医生照样开单让你重新拍片抽血。",
+        "医生说病情变了或机器不一样，咱配合重做；若明明该认却不认，你也有理由较较真。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问句、短句和行动建议好读；但“最终按钮”“跨机构依然松”等搭配拗口，临场需要调整气口。",
+      "script_spans": [
+        "钱花得冤不冤？",
+        "咱配合重做",
+        "调得出的片子未必抵一句“我看不太准”",
+        "像紧密型医联体内部，正要求全部项目互认，跨机构依然松"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“调得出的片子未必抵一句‘我看不太准’”与“不是一张免检证”都好复述，形象服务于观点，未显堆砌。",
+      "script_spans": [
+        "调得出的片子未必抵一句“我看不太准”。",
+        "互认是患者的权利，不是一张免检证。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头抛出痛点并给出判断，中段按规则、风险、代价展开，结尾用行动建议自然回扣权利边界。",
+      "script_spans": [
+        "政策推了快二十年，你换家医院看同样的病，医生照样开单让你重新拍片抽血。",
+        "互认是患者的权利，不是一张免检证。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能区分合理重检并给出温和建议；但“根子不在没发文”及“纯属防御性开单”归因过满，易削弱客观性。",
+      "script_spans": [
+        "病情发展了、设备参数不同、正常代谢变化，这些例外都合理。",
+        "互认卡壳，根子不在没发文，而在规则把认不认的最终按钮交给了接诊医生。",
+        "有的纯属防御性开单"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ef6276331dff405e986b433e01c50ed0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

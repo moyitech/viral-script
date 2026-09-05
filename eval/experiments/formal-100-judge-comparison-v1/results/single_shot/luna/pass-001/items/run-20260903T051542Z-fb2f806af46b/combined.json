@@ -1,0 +1,164 @@
+{
+  "evaluation_id": "combined-5a50620aae4a456aa88afaddf9d3c4d3",
+  "run_id": "run-20260903T051542Z-fb2f806af46b",
+  "trace_sha256": "04f94dc3cbcc519bb16103b158e428458ad04f2d0871be6d8c58a305432735b0",
+  "created_at": "2026-09-03T11:57:38.634908Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "始终围绕家庭闲钱去向展开，既区分短钱与长钱，也回应收益下降后的风险取舍。",
+      "script_spans": [
+        "照着“什么时候用钱”把资金切成短钱和长钱两层",
+        "如果答案是下周还信用卡、随时买菜付款，那老实用活期或现金管理"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 852，目标为 700，偏差率为 21.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "收益缩水原因、流动性与期限匹配、国债边界和执行步骤层层推进，信息具体且有可操作判断。",
+      "script_spans": [
+        "银行系统里的水很足，短端市场利率长期在低位晃荡",
+        "今年三年期电子式利率在百分之一点六左右，五年期接近百分之一点七",
+        "左边留活水，右边再去挑国债或存款"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“半根冰棍”制造具体落差，中段持续解释与分层决策，结尾以用钱日历自然收束。",
+      "script_spans": [
+        "昨天赚的钱还不够买半根冰棍。",
+        "而是你自家的用钱日历做主。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答和生活化比喻有吸引力，但中段长句、术语和多层条件叠加，气口与口语感都不够稳。",
+      "script_spans": [
+        "你点开零钱理财页面，发现昨天赚的钱还不够买半根冰棍。",
+        "监管早把现金管理类理财套进了和货币基金差不多的框架",
+        "国债做不到像零钱包那样随时无损赎回，提前拿出来要按持有时长扣掉部分利息，急用钱时会卡脖子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“半根冰棍”和“左边留活水”具体好记，类比服务判断，没有连续堆砌辞藻。",
+      "script_spans": [
+        "昨天赚的钱还不够买半根冰棍。",
+        "左边留活水，右边再去挑国债或存款"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先解释收益为何下降，再按用钱时间分流资金，随后补足风险与赎回边界，结尾自然回扣决策原则。",
+      "script_spans": [
+        "为什么收益偏偏这时候变瘪？",
+        "那钱该挪去哪儿？咱们先停一下，你想想这笔闲钱最晚哪天必须花出去？",
+        "闲钱安置的头条铁律，从来不是追着最高收益跑，而是你自家的用钱日历做主。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制并提示现金管理不保本、国债流动性边界，但“保本品种”等建议缺少充分限定，仍可能造成无风险暗示。",
+      "script_spans": [
+        "不过得提醒，理财和存款不同，现金管理品也不保本，只是亏损概率低。",
+        "把确认不动的那块转去能锁息的保本品种"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 852,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.21714285714285714
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b25e74824273433faa10b73bb41cb4ea",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-69003ed5f1754c7a8969d057d107e5d9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

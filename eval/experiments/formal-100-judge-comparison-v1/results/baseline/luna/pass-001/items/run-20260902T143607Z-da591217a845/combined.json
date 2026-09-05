@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-d8f72d5bd3bc4a9f8d3ae6a52211980c",
+  "run_id": "run-20260902T143607Z-da591217a845",
+  "trace_sha256": "72ff5602c1ac76c0643d941f53e7554b94b75f1afef22e7f1085299c442331dc",
+  "created_at": "2026-09-03T11:47:18.001876Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否应有回报，并同时处理亲情与劳动两面，给出非工资化的具体方案。",
+      "script_spans": [
+        "这事该给明确回报，但不能全按保姆工资算。",
+        "明确回报不一定是发工资，每月给笔营养费，或固定周末让老人歇两天，比闷头白干强。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 299，目标为 280，偏差率为 6.79%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕回报与家庭关系持续推进，劳动场景、健康负担、情感后果和解决方案形成有效信息链。",
+      "script_spans": [
+        "老人清早起来做早饭，喂完娃收拾碗筷。",
+        "若只当义务，累坏身体全家更麻烦。",
+        "明确回报不一定是发工资，每月给笔营养费，或固定周末让老人歇两天，比闷头白干强。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“累出病却不掏钱”制造冲突，中段以具体照料场景和回报方案持续推进，结尾收得自然。",
+      "script_spans": [
+        "老人带娃累出病，子女却觉得理所当然不掏钱，连句谢都没有。",
+        "每月给笔营养费，或固定周末让老人歇两天，比闷头白干强。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "动作细节有画面、节奏也清楚，但两处搭配生硬，朗读时仍需重断句。",
+      "script_spans": [
+        "白天接送上学，洗衣陪玩",
+        "你说一边亲情互助，一边真实付出，躲开不谈才生隔阂",
+        "眼下很多老人肩上带娃重担不轻"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“躲开不谈才生隔阂”和“闷头白干”形成自然对照，形象但不堆砌，能把家庭付出讲得具体。",
+      "script_spans": [
+        "躲开不谈才生隔阂。",
+        "比闷头白干强。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提出立场，再列举劳动与健康代价，回应亲情无价的异议，最后落到回报和定规矩，递进完整。",
+      "script_spans": [
+        "你若认亲情无价不该谈钱，可账不理清，老人默默扛着，心里委屈才真伤感情。",
+        "咱们主动开口定个规矩，把付出摆明面儿上，老人心里没疙瘩，过得舒坦，家才不累。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "明确区分回报与保姆工资，建议较克制；但开头把个案和子女态度概括得过满，容易造成误导。",
+      "script_spans": [
+        "明确回报不一定是发工资",
+        "老人带娃累出病，子女却觉得理所当然不掏钱，连句谢都没有"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4e7164415d934c829901aa5d4a7c2626",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6eca1e3e64884ff8b0bd6a1eaebde9b6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-7529dfa793024c7980da26736f4fe67f",
+  "run_id": "run-20260903T051555Z-a79b858a219e",
+  "trace_sha256": "a981bb1bfb52e954674252f14a728d1e3f0ca6ad784fde217d7812a4cc5cf610",
+  "created_at": "2026-09-03T12:02:28.301543Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从政策卡点、医生顾虑到患者应对，正面回答重复检查为何发生，且覆盖患者核心痛点。",
+      "script_spans": [
+        "互认卡壳，根子不在没发文，而在规则把认不认的最终按钮交给了接诊医生。",
+        "所以下次换诊，先把旧报告和原片递过去，问一句“这项在互认清单吗”"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 450，目标为 450，偏差率为 0.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策沿革、费用占比、重复CT案例、规则例外与应对建议层层推进，信息密度高，也未把所有重检一概归为浪费。",
+      "script_spans": [
+        "早在2006年各地就试着推互认，可直到现在，有患者一周内转院又被要求做两次肺部CT。",
+        "病情发展了、设备参数不同、正常代谢变化，这些例外都合理。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“二十年”叠加重复检查制造冲突，中段不断补充数据、责任与例外，结尾给出追问动作并留下权利边界。",
+      "script_spans": [
+        "政策推了快二十年，你换家医院看同样的病，医生照样开单让你重新拍片抽血。",
+        "平台互通了二百多个地级市，但调得出的片子未必抵一句“我看不太准”。",
+        "互认是患者的权利，不是一张免检证。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答感和清晰停顿，解释也不拖沓；但“扛着医疗责任”和医联体处出现搭配、句式卡顿，影响连续朗读。",
+      "script_spans": [
+        "钱花得冤不冤？我的判断很直接",
+        "可当医生扛着医疗责任，面对外院数据，宁可重检也不愿冒风险。",
+        "像紧密型医联体内部，正要求全部项目互认，跨机构依然松。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“未必抵一句”把制度困境说得具体，“权利”与“免检证”的对照克制有力，形成自然且易复述的记忆点。",
+      "script_spans": [
+        "调得出的片子未必抵一句“我看不太准”。",
+        "互认是患者的权利，不是一张免检证。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头抛出痛点，随后解释规则与责任风险，再区分合理重检和防御性开单，结尾回到可执行建议，主线完整。",
+      "script_spans": [
+        "可当医生扛着医疗责任，面对外院数据，宁可重检也不愿冒风险。",
+        "所以下次换诊，先把旧报告和原片递过去，问一句“这项在互认清单吗”。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体给出例外边界，避免把互认等同免检；但将障碍归因于医生“按钮”并称部分开单“纯属防御性”，容易造成不当归责。",
+      "script_spans": [
+        "医生说病情变了或机器不一样，咱配合重做",
+        "互认卡壳，根子不在没发文，而在规则把认不认的最终按钮交给了接诊医生。",
+        "有的重检真为救命，有的纯属防御性开单。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c186c342a26f45c2864f174a9cb1c8c1",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-66549fccc7184e4989c1487eb072fd34",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

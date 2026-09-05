@@ -1,0 +1,164 @@
+{
+  "evaluation_id": "combined-8bf34134e8184940aae29c52ec8233a2",
+  "run_id": "run-20260903T051524Z-462d9256870a",
+  "trace_sha256": "af585e6dc15a08ed3cd7ac6427473c235ae6c0cab1ffb7da0a70742d12ac6bd5",
+  "created_at": "2026-09-03T11:57:51.663921Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答效率与真实反馈的关系，兼顾教师、人机协作、偏差和学校规范。",
+      "script_spans": [
+        "AI提速不等于反馈注水，分水岭在于它有没有被人攥在手里当帮手，而不是替人坐堂。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 775，目标为 700，偏差率为 10.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕人机协作持续推进，既讲效率收益，也落到偏差、制度与课堂效果，信息增量充分。",
+      "script_spans": [
+        "重复活儿交出去了，人才腾出空去点破学生论证里的那道裂缝。",
+        "某些智能写作教练一旦识别出作者性别或族群信息，给出的修改建议语气就变了调"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“等一周”对撞“一个阅”，中段引入偏见与制度风险，结尾回到真人反馈，推进和余味完整。",
+      "script_spans": [
+        "交上去等一周，拿回来只见一个“阅”字加总分。",
+        "可是如果把判卷权全托付给模型，隐患就冒出来了。",
+        "记住，作文里那句“我看见你的挣扎了”，永远只能由一个真人写给你。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有节奏，整体可读；但中段长句、抽象搭配较多，影响连续口播。",
+      "script_spans": [
+        "效率这么猛，有人却倒吸凉气：机器懂什么叫真实的触动吗？",
+        "不少一线教师现在采取让AI先筛一遍基础问题、自己再针对内容和思维写评语的方式。",
+        "容易用身份标签替代文本本身特质，让反馈滑向安全牌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“机器管语言皮相，人教思维骨血”高度凝练，既有画面又概括立场；“红笔海”与结尾也留下复述点。",
+      "script_spans": [
+        "机器管语言皮相，人教思维骨血。",
+        "把老师从红笔海里捞出来",
+        "AI能跑多快都行，别让它替我们思考怎么做人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先用反馈滞后引题，再讲协作收益与托管风险，结尾回到真人反馈，递进和回扣清楚。",
+      "script_spans": [
+        "过去一个语文老师面对百十来本作业，大量精力耗在标点纠错和格式对齐上",
+        "可是如果把判卷权全托付给模型，隐患就冒出来了。",
+        "效率高本身不是原罪，它把老师从红笔海里捞出来，却也逼着我们必须守住一道线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调人机协同并提示算法偏差，边界意识较清楚；但“都标得清清楚楚”“永远只能”等绝对化表述仍可能误导。",
+      "script_spans": [
+        "AI提速不等于反馈注水，分水岭在于它有没有被人攥在手里当帮手",
+        "作文里那句“我看见你的挣扎了”，永远只能由一个真人写给你。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 775,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.10714285714285714
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-0b374bc5abc142b49d8ad1dd81496702",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-4e9d1aecca8e4e129b13942765004b47",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

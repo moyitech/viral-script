@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-3ffbe27ff511430a9a71e547b34a21de",
+  "run_id": "run-20260903T051537Z-632b02f844c5",
+  "trace_sha256": "1943b5a161d98004f67848d0ad009ad86240bb2566a656472eff9be4714e8713",
+  "created_at": "2026-09-03T15:27:32.040631Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答“眼睛难分”，中段解释成因与标注新规，结尾给查标签的可操作动作，全程正面回应题设。",
+      "script_spans": [
+        "普通消费者单靠眼睛，已经很难稳稳分清真人和合成主播了",
+        "划拉一下画面角落，找找“AI”小字；看清来源再决定信不信"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题不漂移，技术成因、监管新规、标注局限各单元层层推进，观众能带走“找AI小字”的判断方法。",
+      "script_spans": [
+        "观众在直播间买的往往是那种陪伴感，形象够像、反应够快，大脑就自动把它归成“认识的主播”",
+        "标注只是给了你追问的权利，不是免骗金牌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "凌晨三点开场即入戏，“连个活人都没有”反差抓人；中段连环设问推进，结尾找AI小字由正文自然长出。",
+      "script_spans": [
+        "凌晨三点，你刷进一个直播间，主播笑容甜美，话术丝滑，背后可能连个活人都没有。",
+        "可既然能以假乱真，为什么近来各大平台纷纷要求挂上“AI”标签？",
+        "下次刷到主播永远不累、永远微笑，先别急着下单。划拉一下画面角落，找找“AI”小字"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口清楚，首尾对话感足；但“纳入标识义务”“存在感被稀释”等书面句需换词重断，最高2分。",
+      "script_spans": [
+        "凌晨三点，你刷进一个直播间，主播笑容甜美，话术丝滑，背后可能连个活人都没有。",
+        "新的监管办法把人工智能生成内容纳入标识义务",
+        "真人的肉体存在感被稀释"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“护身符”“免骗金牌”比喻贴切不堆砌，“追问的权利，不是免骗金牌”离文仍可复述，收尾有余味。",
+      "script_spans": [
+        "标注只是给了你追问的权利，不是免骗金牌。",
+        "才不会被无声的代码带了货。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以三连问衔接各段，段落功能清晰，因果有桥，结尾回扣开头“永远微笑”场景与题设。",
+      "script_spans": [
+        "可既然能以假乱真，为什么近来各大平台纷纷要求挂上“AI”标签？",
+        "下次刷到主播永远不累、永远微笑，先别急着下单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "对监管与乱象的表述有据且克制，明确标识非万能护身符等边界，无夸大承诺或煽动，导向安全。",
+      "script_spans": [
+        "得承认，标识不是万能护身符。",
+        "标注只是给了你追问的权利，不是免骗金牌。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0c70a89510ac47e0a0c53c5550e829a9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

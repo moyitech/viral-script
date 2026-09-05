@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-377854207dd24e94ba4dbff46374d415",
+  "run_id": "run-20260902T144914Z-13e5795b3f52",
+  "trace_sha256": "cbb34ed4fe4ab5941bd77909386dde12a2f6a3c1a824ba42837061fd55f2b3f3",
+  "created_at": "2026-09-03T13:48:33.052434Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛题，中段拆粮稳与账涨两侧，结尾回扣，普通人场景覆盖到位。",
+      "script_spans": [
+        "官方说的粮价稳，大多盯住原粮米面。可这部分在全家消费里占比不大。",
+        "真正拉动花费的，往往是咱们就餐的选择。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 481，目标为 450，偏差率为 6.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "原粮口径、宽口径涨幅、外食溢价层层推进，数据与研究均有支撑，无编造。",
+      "script_spans": [
+        "米面便宜一块，总账单也省不出几毛。",
+        "同样饭菜下馆子可能贵两三倍，蔬菜类溢价更突出。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛反差与悬念，中段口径区分、数据、研究逐层兑现，结尾由就餐选择自然引出提问，无趋平段落。",
+      "script_spans": [
+        "粮价平稳，你家吃饭账单却悄悄涨了，钱漏在哪儿？",
+        "钱到底花哪儿了？看更宽口径的餐桌成本。",
+        "想想看，在家吃还是下馆子，是不是早就标好了价？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口清楚，多用对话式表达，全文朗读基本无需临时改词，节奏干净利落。",
+      "script_spans": [
+        "米面便宜一块，总账单也省不出几毛。",
+        "你去超市扛袋面粉，标签没大变。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“整张餐桌，不是只称米缸”离开上下文仍可复述，“从田间到舌尖”等修辞服务理解，克制无堆砌。",
+      "script_spans": [
+        "账单算的是整张餐桌，不是只称米缸。",
+        "从田间到舌尖，每道环节都可能加价。",
+        "米面便宜一块，总账单也省不出几毛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "“两笔账”框架贯穿，每段功能明确，因果有桥，结尾自然回扣开头提问。",
+      "script_spans": [
+        "钱到底花哪儿了？看更宽口径的餐桌成本。",
+        "吃饭从厨房挪到餐厅，账单就厚了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "区分粮价与餐桌总账，引用数据带'有个月''可能'限定，不夸大不引战，导向安全。",
+      "script_spans": [
+        "粮价大体平稳，支出增加也是实情，两笔账不能混为一谈",
+        "食品烟酒加在外餐饮，有个月同比涨了百分之一点四",
+        "有研究算过，同样饭菜下馆子可能贵两三倍，蔬菜类溢价更突出"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c4b561713642401098ee1bb402a2484b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-191a116ac4ee4d34a5c4d1e103621f44",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-71a87268c9954eac91fbd714be0d376a",
+  "run_id": "run-20260902T143920Z-f50984648c6e",
+  "trace_sha256": "0d74a0618b426dd537bfb2227e5eeae3e075047e4b25584fc8a8628b4cfa3ad7",
+  "created_at": "2026-09-03T14:26:38.561882Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点“准时承诺保谁”，先答“该留但停表豁免”，消费者与骑手两侧兼顾，结尾回扣题设。",
+      "script_spans": [
+        "这承诺该留，但遇极端天气得停表豁免",
+        "咱普通人咋办？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "赔付差价、派单盲区、红灯停表试点、高温订单数据层层推进，各单元服务同一主题，无编造，增量具体。",
+      "script_spans": [
+        "平台赔几块，骑手却扣几十",
+        "北京推动美团等试了“红灯停表”。等红灯和恶劣天气，考核时长顺延",
+        "清华跟踪百城数据发现，40℃午高峰订单涨超两成，骑手多接单冒健康险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即冲突设问，赔扣对比、红灯停表、清华数据层层兑现，结尾追问由正文自然生长，不生硬喊互动。",
+      "script_spans": [
+        "暴雨天你饿肚子，骑手摔伤，准时承诺保谁？",
+        "雨天迟到平台赔几块，骑手却扣几十",
+        "40℃午高峰订单涨超两成，骑手多接单冒健康险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口密、对话感强，但“停表豁免”“该朝人倾斜”等压缩书面语需临时换词，定档2分。",
+      "script_spans": [
+        "你买准时保，雨天迟到平台赔几块，骑手却扣几十。",
+        "说明算法能看天吃饭，不难。",
+        "但遇极端天气得停表豁免。",
+        "现在效率和安全取舍，该朝人倾斜"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“赔几块扣几十”“别拿命填表”等表达简练贴题，服务理解与情绪，记忆点离开正文仍可复述，无堆砌感。",
+      "script_spans": [
+        "系统派单只看距离，不看积水深度",
+        "别拿命填表",
+        "还是该把表拨给人情？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从派单盲区推到骑手闯灯因果闭合，“平台咋改”“普通人咋办”承转自然，结尾“拨表”回扣开头停表。",
+      "script_spans": [
+        "系统派单只看距离，不看积水深度，骑手怕罚钱常会猛蹬车闯红绿灯",
+        "天气拖累配送，硬要准时，怕是逼人冒险",
+        "今天天气配不配谈准时？还是该把表拨给人情？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "立场克制、导向安全，无明确违规；但“只看距离不看积水”属绝对化归因，“勾个不怕晚就能少闯红灯”因果过确定，宜补边界。",
+      "script_spans": [
+        "承诺本身没错，难在它不分天气一刀切",
+        "系统派单只看距离，不看积水深度",
+        "你下单时勾个不怕晚，骑手就能少闯一个红灯"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f247171934f84823b359eb676c74a855",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

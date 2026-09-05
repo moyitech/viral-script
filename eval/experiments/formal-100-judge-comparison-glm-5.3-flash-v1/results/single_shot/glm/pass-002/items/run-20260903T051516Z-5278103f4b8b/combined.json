@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-5b98f818c66b490c93a0bc92023298cb",
+  "run_id": "run-20260903T051516Z-5278103f4b8b",
+  "trace_sha256": "e7d9f3fc65c7c01e2bfa590c50d2f27b235315e700a7a3f2030488a240cb2f10",
+  "created_at": "2026-09-03T15:27:38.783489Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给出肯定答案，并区分夏季与全球升温背景，结尾落到普通居民可操作建议，完整覆盖题设。",
+      "script_spans": [
+        "摩天楼确实在加剧热岛效应",
+        "对普通居民来说，不必坐等楼宇重建"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "材料吸放热、空调废热、街谷阻风三个信息单元层层推进，术语配比喻解释，观众能带走机制与做法。",
+      "script_spans": [
+        "白天吸饱太阳辐射，夜间以长波形式缓慢释放热量",
+        "热量被束缚在街谷里像扣上锅盖"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头直给结论仍能进入主题，中段机制层层递进；但结尾以建议直接收束，无余味与互动，缺追看冲动。",
+      "script_spans": [
+        "不是单纯因为夏天到了",
+        "低反照率材料白天吸饱太阳辐射，夜间以长波形式缓慢释放热量",
+        "摩天楼确实在加剧热岛效应，这背后有清晰的城市物理逻辑",
+        "先从窗户遮阳、减少白天吸热，以及在社区推动屋顶绿化与通风廊道讨论，就能实实在在缓过来一些。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有'半夜里给城市添火''像扣上锅盖'等生动表达，但'低反照率''天空视角因子'等书面术语多处拗口，需临场改词。",
+      "script_spans": [
+        "等于半夜里持续给城市添火",
+        "热量被束缚在街谷里像扣上锅盖",
+        "夜间以长波形式缓慢释放热量",
+        "显著降低天空视角因子并阻挡自然风",
+        "在全局气候整体升温的背景下，这种局部叠加"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "半夜添火与扣锅盖两处比喻贴切克制，服务理解且可复述，无堆砌炫技，记忆点自然。",
+      "script_spans": [
+        "等于半夜里持续给城市添火",
+        "热量被束缚在街谷里像扣上锅盖"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "三个成因用'同时''还会'递进衔接，比喻承接解释因果，结尾行动建议自然回扣开头与题设。",
+      "script_spans": [
+        "同时楼内密集的空调与通风系统向外排放废热",
+        "在社区推动屋顶绿化与通风廊道讨论"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "热岛归因有清晰物理逻辑支撑，建议部分以'缓过来一些'留有余地，无夸大、煽动或无依据承诺，导向安全。",
+      "script_spans": [
+        "这背后有清晰的城市物理逻辑",
+        "就能实实在在缓过来一些"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ce9af6e5832a4ef9bfce92cc4f2d88e7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

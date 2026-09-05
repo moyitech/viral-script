@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-f9e95ba03ebe462c902bd65a6f25ce37",
+  "run_id": "run-20260902T142138Z-6b373e674595",
+  "trace_sha256": "8ffbeb6d735b938dd33d4a101112a10964583bce5023a2247c7cf4e75bd2d1b5",
+  "created_at": "2026-09-03T14:25:01.490828Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即正面作答“会不会吞”，点差与汇率两线并进，全程锁定换汇买理财的普通观众，切角具体。",
+      "script_spans": [
+        "汇率波动会不会吞掉收益？可能会，但普通人常先被点差啃掉一层",
+        "咱们拿人民币去买外币理财"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从购汇点差到结汇损耗再到落袋算法层层推进，无空转复述，人民币走强情景与资料趋势相符，无编造。",
+      "script_spans": [
+        "银行挂出卖出价，一般比你搜的中间价高些",
+        "先问经理换汇价差多少。把这笔摩擦扣掉，看真实能落袋多少利润"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛利息填不上差价的冲突，中段点差与结汇层层兑现钩子，结尾反问自然生长。",
+      "script_spans": [
+        "你换汇买境外理财，赚的息可能不够填换汇差价",
+        "这时候汇率波动可能吞收益，但点差已先咬",
+        "如果回头钱没多几块，这趟忙活图什么？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句有对话感，整体读得顺；但“结汇回”“已先咬”需临时补词，加上播报腔一句，未达免改朗读的标准。",
+      "script_spans": [
+        "银行买入价又压低，一进一出差掉一块。",
+        "近期它显示偏强走势",
+        "你再把外币结汇回"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "点差啃咬的比喻贯穿全文且贴切，这趟忙活图什么一句好复述，修辞克制无堆砌。",
+      "script_spans": [
+        "常先被点差啃掉一层",
+        "但点差已先咬",
+        "换回本币明显少一截"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "钩子、机制、情景、对策四段各司其职，因果桥清楚，结尾反问回扣开头之问，概念口径全程一致。",
+      "script_spans": [
+        "这时候汇率波动可能吞收益，但点差已先咬",
+        "如果回头钱没多几块，这趟忙活图什么？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "收益与成本表述均带'可能''一般'等限定，无确定承诺、无煽动夸大，建议仅指向核对来回成本，导向安全。",
+      "script_spans": [
+        "汇率波动会不会吞掉收益？可能会，但普通人常先被点差啃掉一层。",
+        "银行挂出卖出价，一般比你搜的中间价高些。",
+        "所以你挑跨境理财，先问经理换汇价差多少。把这笔摩擦扣掉，看真实能落袋多少利润。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-deb45aaadf7147f5aa25011d37881a02",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

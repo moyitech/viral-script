@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-ca761e7011a54d638499955b89635004",
+  "run_id": "run-20260902T145046Z-3cc1ecef1ec8",
+  "trace_sha256": "e5feb375847e8f67ffdbe14d86533d28e0466e9ef7f5fe730faa809e652decaf",
+  "created_at": "2026-09-03T12:21:39.540739Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释粮价平稳与餐桌支出增加为何并存，覆盖菜价、加工服务和外食习惯，核心观众明确。",
+      "script_spans": [
+        "粮价平稳是实情，餐桌支出增加也是实情，两边都不矛盾。",
+        "原粮平稳只是第一环，后面加工、流通、就餐方式全在加价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕价格口径、食材结构和就餐方式展开，统计权重、服务溢价与消费链条形成有效递进，信息增量充足。",
+      "script_spans": [
+        "鲜菜肉类和水产，哪样波动都猛。",
+        "同样一盘菜，家里做和外头吃，差价能拉到两三倍甚至十三倍。",
+        "原粮平稳只是第一环，后面加工、流通、就餐方式全在加价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用粮价不动与菜钱多出的反差抓人，中段持续拆解品类、加工和外食，结尾追问自然。",
+      "script_spans": [
+        "粮食价格没动，你家每月买菜钱却多出一百？",
+        "从前算饭钱看粮价，现在得看全产业链。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和追问有对话感，但多处术语和比喻卡顿，朗读时至少需要改词、重断句。",
+      "script_spans": [
+        "粮食价格没动，你家每月买菜钱却多出一百？",
+        "有的月份粮食还微微降了一点，对总指数拉动不到零点零几个点。",
+        "同样一盘菜，家里做和外头吃，差价能拉到两三倍甚至十三倍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“几分钱抵不过几毛钱”具体易懂，“买原料变成买服务”准确概括了支出变化，表达克制而有复述价值。",
+      "script_spans": [
+        "买一斤米省的几分钱，抵不过一把青菜多的几毛钱。",
+        "吃饭从买原料变成买服务，成本结构整个换了赛道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，能从粮食价格转到食材、服务和外食，但CPI权重、家庭伙食占比与总餐桌支出混在一起，关键因果缺桥。",
+      "script_spans": [
+        "从前算饭钱看粮价，现在得看全产业链。",
+        "粮食在物价指数里占比本就不高。原粮像小麦稻谷，国家调控强，价格常年走平线。米面贵贱，占你家伙食费比例越来越小。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且承认调查边界；但将研究中的食物溢价泛化为同一道菜差价，数字表述易误导，需收窄。",
+      "script_spans": [
+        "调查覆盖总有照不到的缝，但方向没错",
+        "同样一盘菜，家里做和外头吃，差价能拉到两三倍甚至十三倍"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d296c6c423fd45779f99da4210072b84",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

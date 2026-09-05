@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-f7779bc267644bb4a4531c633443b53e",
+  "run_id": "run-20260903T051551Z-5b4bec96b797",
+  "trace_sha256": "b6db77ad5c1c1c5ceedccd1ee588fa2a47c8262a8f076bdb89bc41047e93088a",
+  "created_at": "2026-09-03T12:06:38.079226Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否付酬，并兼顾法律、亲情、老人付出与家庭安排，落点具体且贴近普通家庭。",
+      "script_spans": [
+        "现行法律没把带孙辈定义成老人的义务劳动，更没写子女必须付酬",
+        "把买菜、玩具、托育的花费摊在桌面上，给他们留足回自己家的自由"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 457，目标为 450，偏差率为 1.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，法律边界、家庭付出、调查与研究、实践建议均有推进；但把相关研究直接说成证明“不是负担”，结论超出证据。",
+      "script_spans": [
+        "调查显示超过一半老人正帮子女做家务或照看孙辈",
+        "把买菜、玩具、托育的花费摊在桌面上",
+        "这证明长辈投入不是负担，是实打实的家庭资产"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用家庭冲突设问，中段连续补充法律、数据与代价，结尾落到具体做法，推进和余味都成立。",
+      "script_spans": [
+        "可万一老人半开玩笑问“带娃是不是该发点辛苦费”，你接不接得住？",
+        "把买菜、玩具、托育的花费摊在桌面上，给他们留足回自己家的自由"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "观点线索清楚，起承转合完整；但“伦理托底”等抽象说法偏书面，法律和数据段气口不够轻快。",
+      "script_spans": [
+        "我说句不绕弯的：",
+        "民法典里家庭定位是成员互相帮助，不是雇主和保姆。",
+        "老人伸手带娃，本质是伦理托底。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“亲情的账户早晚被掏空”“托底不等于无成本”形象准确，把亲情与现实付出说清，也便于观众复述。",
+      "script_spans": [
+        "亲情的账户早晚被掏空",
+        "托底不等于无成本"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有情境—立场—机制—数据—建议的推进，但把“高质量参与”偷换成“不是负担”，父母陪伴减少的因果也缺少桥梁。",
+      "script_spans": [
+        "往下看机制。",
+        "所以别等老人累到沉默才想起来谈钱。",
+        "这证明长辈投入不是负担，是实打实的家庭资产",
+        "年轻父母若默认老人该扛，自己便少了陪伴，孩子也错失部分父母依恋"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未煽动对立，并给出费用透明、保留自由等协商建议；但“这证明”扩大研究结论，法律表述也偏绝对。",
+      "script_spans": [
+        "把买菜、玩具、托育的花费摊在桌面上，给他们留足回自己家的自由",
+        "这证明长辈投入不是负担，是实打实的家庭资产。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9ffe3787f0374c069df8781c2658bc51",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b9b67abdea624919a8201063543b336a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

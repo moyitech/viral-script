@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-246b9c957457437fbd1138a9b701224f",
+  "run_id": "run-20260903T051617Z-5d986a432430",
+  "trace_sha256": "ef2a4f4cfc818a47bd3b1635cf51ee9fc4185ccf36549f7c545697bc180ef7bc",
+  "created_at": "2026-09-03T14:11:40.967036Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即扣兼容难题，判断直接回应是否买单，成本与监管两侧及消费者均覆盖。",
+      "script_spans": [
+        "同一款无线耳机，连苹果和连安卓可能得换根线",
+        "我的判断很直接：标准各自成阵，消费者一定在分摊兼容成本"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 763，目标为 700，偏差率为 9.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从配件支出、欧盟立法到隐性税层层推进，事实与结论互证，与引用相符无编造。",
+      "script_spans": [
+        "欧盟已经立法，从二〇二四年底起手机平板等小电子设备统一换USB-C，笔记本也给了到二〇二六年的缓冲。",
+        "试错那十几分钟就是隐性税。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头场景冲突直给，中段以欧盟立法、成本转嫁层层推进并设问转折，结尾由'圈不住全球碎片'自然收出余味，三段俱实。",
+      "script_spans": [
+        "同一款无线耳机，连苹果和连安卓可能得换根线",
+        "那监管出手统一不就完了？欧盟已经立法",
+        "政策能圈住一块市场，圈不住全球碎片"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、例子具体，整体能顺读；但“因私有协议孤立而没法直连”“挑明标准通用”等书面句拗口，朗读需临时改词。",
+      "script_spans": [
+        "家里设备一多，你想让新买的平板接旧显示器，可能得专门淘个转换头",
+        "就连车载音响和小音箱，也常因私有协议孤立而没法直连",
+        "挑明标准通用、主动避开专属接口的产品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'画圈''隐性税''碎片'等比喻服务理解且贯穿全文，'看不见的兼容税'离文可复述，全篇克制，无炫技堆叠。",
+      "script_spans": [
+        "全球技术阵营在各自画圈",
+        "试错那十几分钟就是隐性税",
+        "给自己减掉那笔看不见的兼容税最实在的法子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "反问过渡、让步收束自然，结尾回扣开篇判断，前提与因果桥完整可追问。",
+      "script_spans": [
+        "那监管出手统一不就完了？",
+        "政策能圈住一块市场，圈不住全球碎片"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "通篇以“可能”“说不定”限定判断，欧盟立法影响范围主动划清边界，无煽动、夸大或不当承诺。",
+      "script_spans": [
+        "可边界清楚地摆着：这只约束欧盟境内，美国、亚洲大片市场并没同步立法。",
+        "厂商重排产线的成本，长期看说不定就揉进了零售价，消费者换种方式继续付。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4ea4536c524e43c5847e8ec654455193",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-36882ac624054e8a8f2ab0a48be5b733",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-da5edeee0ce84c28b75e7bcb50222e3e",
+  "run_id": "run-20260902T143315Z-b54d7325ce30",
+  "trace_sha256": "4f1570a0bd3ed70516bae46d624b9ecfdf52cbb801258732476b8d8588fede82",
+  "created_at": "2026-09-03T11:44:18.817367Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答延时是否带来增长，兼顾商场成本、顾客需求与特殊场景，核心受众也明确。",
+      "script_spans": [
+        "商场延长营业时间，消费热闹大多带不来真实增长，除非抓准了人的刚需。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 493，目标为 450，偏差率为 9.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕延时经营，依次给出转化率、增量成本、刚需场景和顾客判断方法，信息有推进。",
+      "script_spans": [
+        "行业里看转化率，就是进门的人里真正掏钱买东西的比例",
+        "多开那几个小时，卖货的钱往往填不满这笔额外的开销。",
+        "像世界杯深夜，球迷看完赛冲进来吃宵夜买周边"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“通宵热闹却亏钱”制造反差，中段从转化率推到世界杯场景，结尾问题自然回扣成本。",
+      "script_spans": [
+        "商场通宵亮灯热闹，其实多半在亏钱。",
+        "那什么情况真能赚？像世界杯深夜，球迷看完赛冲进来吃宵夜买周边",
+        "下次见商场深夜不关门，不妨想想，它是接住了你的生活，还是在硬扛成本？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感，短句节奏也清楚；但转化率解释和时段判断处搭配生硬，朗读需要重断句。",
+      "script_spans": [
+        "灯亮着人走着，水电和店员工资全得照付。",
+        "别光高兴，那说明这片圈子真有消费劲头。",
+        "行业里看转化率，就是进门的人里真正掏钱买东西的比例，硬拉长时间人来了只是看，商场往往白白亮着灯养电费。",
+        "它愿开的时段，往往是你想去也有朋友陪、有饭吃的地方。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“冷清的亮堂”和“顾客握着开关”都形象准确，既帮助理解成本逻辑，也留下了可复述的判断。",
+      "script_spans": [
+        "这种冷清的亮堂，算是延时误区的一个缩影。",
+        "咱们顾客其实握着开关，肯买单才让延时有意义。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线由结论、原因、例外到提醒，基本顺畅；但把夜间热闹直接推成消费劲头，且增长与盈利概念有混用。",
+      "script_spans": [
+        "像世界杯深夜，球迷看完赛冲进来吃宵夜买周边，这时候延时顺着人的瘾头走。",
+        "你发现家附近商场越夜越热闹，别光高兴，那说明这片圈子真有消费劲头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "没有明显违规，且承认延时需匹配需求；但“多半在亏钱”“大多带不来真实增长”等泛化判断缺少范围和依据，易误导。",
+      "script_spans": [
+        "除非抓准了人的刚需",
+        "商场通宵亮灯热闹，其实多半在亏钱。",
+        "商场延长营业时间，消费热闹大多带不来真实增长"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f466a41842dc492abd900f5aedd8a360",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b01b5b28600d4c46aea0ebd8a52a9d90",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

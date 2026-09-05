@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-0cddeeac58024964af0688c94dc1623b",
+  "run_id": "run-20260902T142200Z-c2ada823dbf9",
+  "trace_sha256": "71c3b296fa2dfc45cc636e358474ce3ca7ff152a62b44aa228b71c9456bca62d",
+  "created_at": "2026-09-03T12:15:57.524704Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答能否辨认，覆盖真人、合成、消费者与平台责任，切角集中。",
+      "script_spans": [
+        "标了AI你能认出，没标时你只能猜。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕辨认困难推进到标识、商业动机、仿冒风险和算法责任，信息单元充足。",
+      "script_spans": [
+        "新规白纸黑字：AI生成内容必须亮明身份",
+        "选真人还是合成，从来不是你单方面的判断题。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差直接，中段从监管、骗局到标签漏洞不断加码，结尾问题由全文自然落地。",
+      "script_spans": [
+        "你以为真人主播半夜喊家人们，其实是一串代码在念稿。",
+        "所以下次指尖划过笑脸主播，你会先盯那行小字吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有设问和对话感，但“字小如一闪过”等多处卡嘴，抽象压缩也拖慢节奏。",
+      "script_spans": [
+        "你以为真人主播半夜喊家人们，其实是一串代码在念稿。",
+        "可有的标在角落，字小如一闪过，你稍不留神还是混过去。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“标签才是救命绳”“温情被模拟”把识别难题和情感风险说透，修辞集中且不盖过信息。",
+      "script_spans": [
+        "标签才是救命绳。",
+        "那不是笨，是温情被模拟。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整、主线清楚，但把识别特征说成二分法，部分因果与平台算法判断缺少铺垫。",
+      "script_spans": [
+        "一边要透明，一边想钻缝，现实就这么拉扯。",
+        "你喊一句，真人会卡顿，合成不喘气。",
+        "技术全天转，店家排名反靠前，算法爱勤快不管背后真不真。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明确违规，强调AI标识也有依据；但把“合成不喘气”当辨别线索，并用绝对化、恐慌化表述，易误导观众。",
+      "script_spans": [
+        "AI生成内容必须亮明身份",
+        "真人会卡顿，合成不喘气。",
+        "中老年一信，钱包就空了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2b36ea2bed444f9299de16a638cf1853",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

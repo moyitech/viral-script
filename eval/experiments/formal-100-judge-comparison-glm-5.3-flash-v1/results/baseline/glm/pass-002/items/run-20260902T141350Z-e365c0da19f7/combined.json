@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-aae22cb8c33549cf90aa880d19c7d8a6",
+  "run_id": "run-20260902T141350Z-e365c0da19f7",
+  "trace_sha256": "816e5fb2efcdefb7af2e6460e4d451c0643640418c99bbc7fc7d4b66cfb0764e",
+  "created_at": "2026-09-03T14:25:22.986524Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头摆明两难并给出判断标准，利率账与备用金两侧都答，结尾折中方案正面回应题设。",
+      "script_spans": [
+        "这事儿不能一刀切，得看你的房贷利率和手头备用金谁更紧迫。",
+        "折中办法：留半年开支，余钱部分还。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "LPR、合同加点、省息测算、新规风险、流动性反例与留钱框架层层推进，无编造，增量具体。",
+      "script_spans": [
+        "提前还十万，若利率差两点，年省两千。连续省十年就两万。",
+        "我见过有人全还清图安心，结果收入一断，没现金月供都扛不住，本金套牢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直抛两难冲突，中段以利率账、新规风险、反例层层推进，结尾提问由权衡自然长出。",
+      "script_spans": [
+        "留现金吃息越来越少，提前还贷又怕将来缺钱。",
+        "但别急着冲去还款。",
+        "你愿不愿为随时取钱，放弃那点还贷省下的利？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、对话感强，但提前还所能省的等处拗口，朗读需临时换词重断，只能给2分。",
+      "script_spans": [
+        "预约期可能拖上数月，急用钱时等不起。",
+        "那部分差额，就是提前还所能省的。",
+        "但全砸房贷遇看病失业就抓瞎"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“锁死”“弹药”“抓瞎”贴切克制，“留半年开支，余钱部分还”离开语境仍可复述。",
+      "script_spans": [
+        "钱还进去就容易锁死",
+        "现金也是抓住新机会的弹药",
+        "留半年开支，余钱部分还"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，两难与折中结论呼应清楚；但说不准利率推不出别全还光，退休一例抛出未答。",
+      "script_spans": [
+        "折中办法：留半年开支，余钱部分还。",
+        "不过谁也说不准下年利率怎么走，所以别全还光。",
+        "若你已临近退休，收入固定，那逻辑又不同。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "通篇以'若''可能''有的'限定建议，明确承认利率走向难测，正反情形并举，无绝对化承诺与煽动。",
+      "script_spans": [
+        "这事儿不能一刀切，得看你的房贷利率和手头备用金谁更紧迫。",
+        "不过谁也说不准下年利率怎么走，所以别全还光。",
+        "有的设违约条款，没问清就亏手续费。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-202b537129b74d72837c37256066899f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

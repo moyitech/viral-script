@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-78715ad5366745c28524dab7d512fa14",
+  "run_id": "run-20260902T142412Z-9ac699ec904a",
+  "trace_sha256": "bf27e12702c45d09fe7989f48a23a802dd5e5f733b708bfd31c54a9db0bf1fb9",
+  "created_at": "2026-09-03T12:17:19.598912Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面覆盖AI助教的个性化教学与公平风险，并落到学校和普通学生的真实处境。",
+      "script_spans": [
+        "这东西真能因材施教？还是把学习差距放大？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "既解释个性化推荐如何运作，也拆出设备、数据偏差和师资托底等差距机制，信息推进充分。",
+      "script_spans": [
+        "AI记你每道题的耗时与错点，自动调低或调高下一个题目难度。",
+        "可家里没平板的同学，学校机房一周才开一次。",
+        "所以因材施教或放大差，不比模型多聪明，比咱们托底网密不密。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出“尖子生更尖、差生更慌”，中段层层推进到设备、算法与资源差距，结尾追问自然有余味。",
+      "script_spans": [
+        "班里装了AI助教，尖子生更尖，差生更慌，这反差就摆在眼前。",
+        "当孩子对着屏幕卡住时，你怪他不开窍，还是怪没递那块垫脚石？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和案例段有画面、能听懂，但多处搭配生硬，长句与书面政策表述拖慢节奏。",
+      "script_spans": [
+        "你发现没，班里装了AI助教，尖子生更尖，差生更慌",
+        "系统收你作业，发现哪闷了，就变着法给例题。",
+        "政策层面其实也提过，教育部等五部门发过行动计划，讲育人为本、公平普惠，要规模教育和个性培养统一。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“技术不改资源底子，只是映射旧差距”可独立复述；“垫脚石”“梯子”承接自然，形象但没有压过论点。",
+      "script_spans": [
+        "技术不改资源底子，只是映射旧差距",
+        "还是怪没递那块垫脚石？",
+        "下次见娃发呆，先想咱备没备梯子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "总—分—总结构清楚，个性化与公平风险均有展开；但算法偏差、学校动机与政策落地之间多靠并置，关键因果桥不足。",
+      "script_spans": [
+        "其实两边都在发生，全看它怎么落进真实教室。",
+        "所以因材施教或放大差，不比模型多聪明，比咱们托底网密不密。",
+        "学校也知这弊病，可师资不够只能赌一把。买系统是为减负，领导也乐见数据好看。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "双向讨论且无明显违规，但“差生”等标签和城乡概括，以及“差出半学期”等断言，易造成未经限定的误导印象。",
+      "script_spans": [
+        "其实两边都在发生，全看它怎么落进真实教室。",
+        "尖子生更尖，差生更慌",
+        "城里的校早跑通了，乡下刚领钥匙。",
+        "进度悄咪咪差出半学期"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-00c1a7e0f66b4481b5055caf3318485a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

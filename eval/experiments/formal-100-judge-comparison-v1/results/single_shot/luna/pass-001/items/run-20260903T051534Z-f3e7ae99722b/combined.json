@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-c80497e63595435a84f3d363dce052d0",
+  "run_id": "run-20260903T051534Z-f3e7ae99722b",
+  "trace_sha256": "470d272b16aff041081042eaaab8012e5976033ba85653e8d16a4cb1dac2b7da",
+  "created_at": "2026-09-03T12:01:25.922023Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕价格来源、品质保障和避坑建议展开，覆盖省钱与品质两侧，且直接面向普通消费者。",
+      "script_spans": [
+        "预制菜价格低，核心不是压缩原料，而是用工业预加工替掉了堂食最贵的人力与门店损耗。",
+        "想省钱又不想踩坑，买包装菜认准“预制菜”标识和配料表无防腐剂"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 438，目标为 450，偏差率为 2.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "成本机制、标准定义和选购建议都带来信息增量，但价格比较过于绝对，品质判断也主要停留在“无防腐剂”，关键结论缺少展开。",
+      "script_spans": [
+        "从原料到上市，规模化生产让单份成本直线下降，这是它省钱的主因。",
+        "同样一盘红烧肉，预制菜比餐厅便宜一大半，比自己买菜做也便宜"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用价格反差立刻设问，中段连续补充成本、标准和避坑信息，结尾以“二选一”自然收束。",
+      "script_spans": [
+        "同样一盘红烧肉，预制菜比餐厅便宜一大半，比自己买菜做也便宜",
+        "省钱和品质从来不是二选一，看懂标签和边界，你就能把预制菜变成厨房里的效率工具"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体逻辑清楚、气口尚可，但政策长句和“牺牲不了即时风味”造成重断句与卡嘴，未达到自然顺口。",
+      "script_spans": [
+        "其实，便宜和好并不对立。",
+        "2026年面向社会的预制菜国标征求意见稿有个关键信号：预制菜定义里明确不添加防腐剂",
+        "预制菜牺牲不了即时风味却换来了稳定与便宜。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“便宜和好并不对立”的对照，也有“效率工具”的收束记忆点；但“牺牲不了即时风味”语义反拧，削弱核心表达。",
+      "script_spans": [
+        "便宜和好并不对立。",
+        "把预制菜变成厨房里的效率工具，而不是品质妥协的代名词",
+        "预制菜牺牲不了即时风味却换来了稳定与便宜。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构有价格原因、标准解释、消费建议的递进，但“牺牲不了即时风味”语义自相矛盾，且无防腐剂并不能直接推出品质兼得。",
+      "script_spans": [
+        "那品质怎么保？2026年面向社会的预制菜国标征求意见稿有个关键信号：",
+        "预制菜牺牲不了即时风味却换来了稳定与便宜。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且提醒熟透较稳妥；但价格比较过于绝对，“预制菜”标识和无防腐剂的购买建议可能造成误导，需补充适用范围。",
+      "script_spans": [
+        "加热务必熟透，别贪快",
+        "同样一盘红烧肉，预制菜比餐厅便宜一大半，比自己买菜做也便宜",
+        "买包装菜认准“预制菜”标识和配料表无防腐剂"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.7916666666666666,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.375,
+    "weighted_average": 2.375,
+    "normalized_score": 0.7916666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b1bee50c76fc465792e72f085ffe8008",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-28ebffa4b4994b7787f6487aa555e1ab",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

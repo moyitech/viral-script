@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-f964b82986574a57844b0b63463341bd",
+  "run_id": "run-20260903T051605Z-755b9d2b2655",
+  "trace_sha256": "0c733fc371cbfd70780b0c03caeb26b1ab7ad96424ffffa5a4472a9033bf2a38",
+  "created_at": "2026-09-03T11:57:14.064120Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答厂商是否应负责，既讲默认设置造成的入侵风险，也给出厂商改进与用户防护，切题完整。",
+      "script_spans": [
+        "智能家居频遭远程入侵，厂商该为出厂默认设置负责吗？该负主要责任。",
+        "厂商在设备首次联网激活时强制用户创建独立密码并不复杂"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 267，目标为 280，偏差率为 4.64%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中且有具体防护建议，但“多数”“黑客社区公开流传”等概括未展开，“留了后门”又把默认不安全说得过满。",
+      "script_spans": [
+        "第一件事就是改掉默认密码，关闭用不上的远程控制功能。",
+        "多数消费者根本不知道这些默认凭证已在黑客社区公开流传",
+        "却为了所谓开箱即用留了后门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开篇直接抛出责任冲突，中段有事实与技术推进，但结尾仅给建议，缺少自然余味或互动。",
+      "script_spans": [
+        "智能家居频遭远程入侵，厂商该为出厂默认设置负责吗？",
+        "你新购智能设备，第一件事就是改掉默认密码，关闭用不上的远程控制功能。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "句式有明确停顿，技术说明和生活类比交替，整体朗读顺畅自然。",
+      "script_spans": [
+        "这无异于把家门钥匙藏在门口地毯下",
+        "你新购智能设备，第一件事就是改掉默认密码"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“把家门钥匙藏在门口地毯下”把技术风险转成可视场景，形象准确，便于复述。",
+      "script_spans": [
+        "这无异于把家门钥匙藏在门口地毯下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构按风险、责任、技术改进和行动建议推进，主线清楚；但“留了后门”概念偷换，且“主要责任”的边界与论证不足。",
+      "script_spans": [
+        "从技术角度看，厂商在设备首次联网激活时强制用户创建独立密码并不复杂",
+        "这类风险显然是厂商发货前埋下的",
+        "却为了所谓开箱即用留了后门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "给出改密码、关闭闲置远程功能的稳妥建议，但将责任一概归于厂商并称“留了后门”，存在过度归因和误导风险。",
+      "script_spans": [
+        "你新购智能设备，第一件事就是改掉默认密码，关闭用不上的远程控制功能。",
+        "该负主要责任。",
+        "却为了所谓开箱即用留了后门。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-56cdde65b1c64c9e93f4ece43f2fcc26",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-cd32b669f761429885d4a6347b4ac6f3",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

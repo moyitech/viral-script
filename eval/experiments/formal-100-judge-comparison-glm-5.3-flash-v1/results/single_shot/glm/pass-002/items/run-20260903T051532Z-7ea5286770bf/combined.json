@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-dc333cf87ea24e02bf1b9a734dd63649",
+  "run_id": "run-20260903T051532Z-7ea5286770bf",
+  "trace_sha256": "f7bcf785b56945f54a8c52e139f18ba140e8241f1d797e3dc8893fbcae7d8aef",
+  "created_at": "2026-09-03T15:26:23.843980Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答'谁维护'，馆方主责与读者反馈两侧覆盖，紧扣普通读者痛点。",
+      "script_spans": [
+        "馆方和主管部门必须扛起责任，不能把难题甩给读者互相监督",
+        "普通读者最稳妥的做法是第一时间向服务台或值班馆员反馈"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "责任归属、法律依据、危害定性与实操建议各有推进，与法条相符，无编造。",
+      "script_spans": [
+        "法律明确公共图书馆是向社会免费开放、保障公众基本文化权益的公共文化设施",
+        "别自己拔书硬刚"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字点出占座冲突并发问设悬，中段以担责、法律、反转、实用建议层层兑现，结尾余味自然生长，无硬喊互动。",
+      "script_spans": [
+        "公共图书馆座位被长期占用，公平谁来维护？",
+        "占座看似小事，实则是少数人把公共空间变成了私人领地，挤掉了别人本该享有的阅读权利",
+        "图书馆的安静里该有人守住那把椅子的轮转"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读，“甩给读者互相监督”“拔书硬刚”有对话感；但法条定义句与“椅子的轮转”需改写才能顺口。",
+      "script_spans": [
+        "不能把难题甩给读者互相监督",
+        "别自己拔书硬刚",
+        "法律明确公共图书馆是向社会免费开放、保障公众基本文化权益的公共文化设施，其日常运行管理由属地主管部门负责",
+        "图书馆的安静里该有人守住那把椅子的轮转"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“免费不等于无序”凝练可复述，“私人领地”“挤掉”形象贴切助理解，修辞点到为止，末句稍雕琢但不喧宾夺主。",
+      "script_spans": [
+        "免费不等于无序",
+        "少数人把公共空间变成了私人领地，挤掉了别人本该享有的阅读权利",
+        "不能把难题甩给读者互相监督"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "答案、法律支撑、行动指引层层递进，结尾'免费不等于无序'自然回扣题设。",
+      "script_spans": [
+        "占座看似小事，实则是少数人把公共空间变成了私人领地，挤掉了别人本该享有的阅读权利",
+        "免费不等于无序"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法律表述与条文相符，引导读者向馆方反馈、明确反对硬刚，不挑动读者对立，公允无夸大。",
+      "script_spans": [
+        "法律明确公共图书馆是向社会免费开放、保障公众基本文化权益的公共文化设施，其日常运行管理由属地主管部门负责",
+        "碰到长期占座，普通读者最稳妥的做法是第一时间向服务台或值班馆员反馈，别自己拔书硬刚"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8ba9310f44c84e5e9b5fe4533ff9cdab",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

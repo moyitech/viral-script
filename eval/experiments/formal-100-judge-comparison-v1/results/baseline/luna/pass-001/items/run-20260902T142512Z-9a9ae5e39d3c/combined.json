@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-97265e2f00164d80bda8c6cf36438047",
+  "run_id": "run-20260902T142512Z-9a9ae5e39d3c",
+  "trace_sha256": "1e4672b6aaa172bcbfe3eb677fda4e7e108a3e371127a430f9121dce8fe3bd50",
+  "created_at": "2026-09-03T11:51:13.581235Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面比较无密码登录的安全收益与设备丢失后的找回风险，覆盖题目两侧并落到普通用户。",
+      "script_spans": [
+        "答案得看两边。",
+        "这比记密码再加收验证码稳当不少。",
+        "明早只剩一张手机卡怎么拿回账号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 296，目标为 280，偏差率为 5.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，既解释私钥与抗钓鱼机制，也交代设备丢失和旧式多因素的代价，信息推进充分。",
+      "script_spans": [
+        "手机里那串私钥替你签字，远程只收到一个验过信号",
+        "云里同步的密钥也得靠老设备批准",
+        "黑客摆个假登录页在中间截胡就绕开"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用省麻烦却可能锁死制造冲突，中段补上安全收益与恢复风险，结尾把问题落到观众自身。",
+      "script_spans": [
+        "省掉记密码的麻烦却换来设备全丢就锁死",
+        "可一旦手机落出租车、家里电脑又进水泡了",
+        "先问自己明早只剩一张手机卡怎么拿回账号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "观点和转折都清楚，且有具体场景；但技术解释偏密，几处搭配拗口，朗读时需要重断句。",
+      "script_spans": [
+        "答案得看两边。",
+        "手机里那串私钥替你签字，远程只收到一个验过信号",
+        "最后只能走邮箱找回、答密保证明你是你"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“私钥替你签字”把技术机制说得具体，“被关门外”和“只换认证形态不顶用”留下清晰记忆点，修辞克制且服务解释。",
+      "script_spans": [
+        "手机里那串私钥替你签字",
+        "你直接被关门外",
+        "只换认证形态不顶用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "安全收益、设备风险与旧式多因素局限层层展开，但长句和恢复结论的绝对化削弱了口播严密性。",
+      "script_spans": [
+        "可一旦手机落出租车、家里电脑又进水泡了",
+        "所以看到系统弹无密码开通，别顺手点完就乐",
+        "最后只能走邮箱找回、答密保证明你是你",
+        "说明只换认证形态不顶用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能讲清无密码登录的安全收益与找回风险，但“根本不会”“骗不走半点”等绝对表述容易造成过度安全感。",
+      "script_spans": [
+        "手机里那串私钥替你签字，远程只收到一个验过信号",
+        "原始密码根本不会往外跑，钓鱼短信链接再真也骗不走半点凭据"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b404b280c74c47e5b9b59b6829a8f4f3",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-138e3801fdb948bc9b057bd07b1b6130",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

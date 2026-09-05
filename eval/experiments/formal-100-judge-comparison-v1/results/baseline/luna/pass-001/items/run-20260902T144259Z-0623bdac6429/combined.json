@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-ddda5f567a9a458184c653e249dfbf59",
+  "run_id": "run-20260902T144259Z-0623bdac6429",
+  "trace_sha256": "eef04d6d69b21e7fe90f202ad32583e7848b86f3d7e13f1f2be413d4bc4b671a",
+  "created_at": "2026-09-03T11:44:41.758984Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇设问直指短期刺激与长期信心，既解释补贴如何促消费，也落到收入预期这一核心痛点。",
+      "script_spans": [
+        "短期刺激能变成长久信心吗？",
+        "真要变成长久底气，得让犹豫的人敢花、小店能接住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 659，目标为 700，偏差率为 5.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策细节、消费券研究、受益人群与收入预期层层推进，既有机制也有数据，结论不止停在口号。",
+      "script_spans": [
+        "政府每掏一块，带动三块四消费。",
+        "真正犹豫的人，怕的是下月收入不稳，不是少赚那点补。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“越发越多”对撞“越攒越紧”，中段不断补充信息，结尾问题也从论点自然落到个人选择。",
+      "script_spans": [
+        "补贴越发越多，大家却越攒越紧。",
+        "补贴把将来的需求，提前挤到这几天。",
+        "下次看到补贴弹窗，你会先算省多少，还是先想下个月工资稳不稳？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、对话感和比喻都有效，但“成交价十五个点补贴”等两处搭配生硬，朗读需临时改词。",
+      "script_spans": [
+        "补贴越发越多，大家却越攒越紧。",
+        "成交价十五个点补贴",
+        "老旧小区加装电梯也能报更新"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“信心像盆火”把补贴与收入预期的关系说清楚，类比连贯克制，也留下了适合复述的记忆点。",
+      "script_spans": [
+        "信心像盆火，补贴是柴，收入预期是风。",
+        "光添柴不通风，火苗窜一下就弱了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构按现象、机制、局限和判断展开，补贴促成短期消费与收入预期支撑长期信心的因果链基本完整。",
+      "script_spans": [
+        "为啥补贴能撬动短时消费？",
+        "那为啥说难变长久底气？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，也补充了样本边界；但“大家却越攒越紧”等普遍化判断缺少限定，个别标签化叙述也可能造成误导。",
+      "script_spans": [
+        "有研究跟过数字消费券。",
+        "当然，样本多在城市，乡下未必这样，而且券像打折标签，只促成了计划外的那单。",
+        "补贴越发越多，大家却越攒越紧。",
+        "没怎么触到抠搜过日子的手心。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b674a06a50e64862986cbedc8f49e61e",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-bb8233c1bd4541b29aea2e75223c3bd7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

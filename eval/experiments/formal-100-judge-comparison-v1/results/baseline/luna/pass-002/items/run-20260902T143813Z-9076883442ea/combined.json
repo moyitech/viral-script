@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-23812a9875eb465b992a3003302937c4",
+  "run_id": "run-20260902T143813Z-9076883442ea",
+  "trace_sha256": "58d3c2f0c2e863f1e73fca6f91caea117e522782be2650ade85379c35fe6aa1f",
+  "created_at": "2026-09-03T12:18:14.371399Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面覆盖自主支配与防诈代管两侧，并针对普通家庭给出清晰落地建议。",
+      "script_spans": [
+        "老人自己能作主时，养老金归自己花，这是法律底线。",
+        "咱普通人家怎么落地？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律案例、认知障碍数据、授权边界和操作步骤彼此推进，既有依据，也给出可执行的判断与做法。",
+      "script_spans": [
+        "最高法出过案例，子女没理由扣着父母存折不让用，法院直接令退卡。",
+        "有调查说约14%的老人有认知障碍，这部分人确可能需要帮手。",
+        "老人清醒时，自己选监护人或者写委托，白纸黑字写清权限，最好公证一下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“护钱还是丢权”制造冲突，中段连续推进，结尾由正文自然落到提醒，余味和互动都在。",
+      "script_spans": [
+        "您把养老金交儿女代管，是护钱还是丢权？",
+        "钱是老人名下的，单方接管算哪门子代管？",
+        "不是递的，防诈的布也成绳锁。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、反问和设问让整体可读；但“法院直接令退卡”与“写张条写清能花哪”均需临时换词，未达顺口。",
+      "script_spans": [
+        "您把养老金交儿女代管，是护钱还是丢权？",
+        "法院直接令退卡",
+        "写张条写清能花哪、不能花哪"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“防诈的布也成绳锁”把保护与控制的边界说得形象，另有“不是自家钱柜”辅助记忆，修辞克制。",
+      "script_spans": [
+        "代管人不是自家钱柜",
+        "不是递的，防诈的布也成绳锁。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线有开头、冲突、方案和回扣，但把认知障碍直接接到代管需求，又从功能退化跳到公证，适用条件和因果桥不够。",
+      "script_spans": [
+        "可老人要买菜看病，掏卡发现不在手，好心若过了线，反成了侵权。",
+        "咱普通人家怎么落地？",
+        "这部分人确可能需要帮手。",
+        "要是功能退化了，去公证处走程序，别桌底收卡。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动，能同时说明自主与授权监督；但“法律底线”及“功能退化了去公证处”边界不够精确，易被当成普遍法律结论。",
+      "script_spans": [
+        "老人清醒时，自己选监护人或者写委托，白纸黑字写清权限，最好公证一下。",
+        "老人自己能作主时，养老金归自己花，这是法律底线。",
+        "功能退化了，去公证处走程序，别桌底收卡。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-994430ccd3c449498d0ddd3109571100",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

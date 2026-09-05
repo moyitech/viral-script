@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-b6f5e41e60f2434da4772914dfd7bb8d",
+  "run_id": "run-20260902T143718Z-62d478bd04e2",
+  "trace_sha256": "3608160c31c547cb7b4cdd3a55d8290f4ade2d8544eed43983ae02f32a59c7f0",
+  "created_at": "2026-09-03T13:46:38.702499Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出题设两侧并给出裁断标准，正反两段分别对应防骗与夺权，核心人群痛点命中，无偏题。",
+      "script_spans": [
+        "是防骗还是夺权？这俩不冲突，但得看是不是老人自愿",
+        "真要防诈又不夺权，关键得父母自己点头"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 292，目标为 280，偏差率为 4.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕自愿与否层层推进，有法律依据支撑，并落到代管条、写权限、对账等可执行方法，信息单元无复述。",
+      "script_spans": [
+        "法律不许子女无理拦着父母管自己的钱",
+        "坐下来写张代管条，权限写清，花销怎么批写明白，每月对次账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛防骗与夺权的冲突悬念，中段正反场景与法律点层层兑现，结尾落在比硬抢长久，余味自然生长。",
+      "script_spans": [
+        "子女没收爸妈养老金卡，是防骗还是夺权？这俩不冲突，但得看是不是老人自愿。",
+        "可你若直接藏卡改密，买棵葱都要跟你报批，想给孙辈红包都够不着，自主没了。",
+        "每月对次账，比硬抢长久。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与画面感撑起节奏，但“由他主意”不成话需换词，“花销怎么批写明白”需重断句，未达免改全文。",
+      "script_spans": [
+        "骗子来电你替他挂断，买药取钱你跑腿",
+        "花多少仍由他主意",
+        "花销怎么批写明白"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "跑腿与钱笼子两个比喻贴切且服务理解，买棵葱报批生动具体，金句离开上下文仍可复述，全程无堆砌。",
+      "script_spans": [
+        "代管说白了就是个帮手，像请个跑腿，能护钱也能伤自尊。",
+        "这不是防诈，是把爸妈关进钱笼子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由是否自愿统摄全篇，正例、反例与法理衔接自然，结尾方案回扣开头二元之问，论证完整闭环。",
+      "script_spans": [
+        "买棵葱都要跟你报批，想给孙辈红包都够不着，自主没了",
+        "这不是防诈，是把爸妈关进钱笼子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点平衡，强调自愿前提，法律表述与最高法典型案例一致，建议具体且有边界，无夸大误导。",
+      "script_spans": [
+        "这俩不冲突，但得看是不是老人自愿。",
+        "法律不许子女无理拦着父母管自己的钱",
+        "真怕被骗，别急收卡。坐下来写张代管条，权限写清"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9bfa0ba9de3441cb9d36f375e29029eb",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-bd90b4cd51f54bd980d0ca0a50501ec4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

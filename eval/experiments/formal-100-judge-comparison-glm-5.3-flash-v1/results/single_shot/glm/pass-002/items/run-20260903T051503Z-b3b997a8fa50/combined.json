@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-ec2319b75098491c881b016e02a42f87",
+  "run_id": "run-20260903T051503Z-b3b997a8fa50",
+  "trace_sha256": "89821fa266633a7f7038db3eeb62a785068b111d97e792ba082a538ee2814b22",
+  "created_at": "2026-09-03T15:28:32.735760Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头摆出信心与托市两侧，结论给出注销加落地的判断标尺，并落到散户筛选需求，完整覆盖题设与核心人群。",
+      "script_spans": [
+        "一边是股东说管理层在秀信心，另一边散户嘀咕这不过是跌多了托盘的套路",
+        "只能从注销比例和历史信誉做笨办法筛选"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "制度松绑、注销与激励之别、声誉调节效应、笨办法筛选层层推进，与引用证据相符，未发现明显编造。",
+      "script_spans": [
+        "有的直接注销，总股本缩了，每股盈利自然抬升",
+        "声誉好的公司，回购容易被当成定心丸；声誉弱的，投资者往往先打折看"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头抄底撤退二选一直击矛盾，中段连环设问推进兑现信息，结尾裸泳句自然收出余味，无生硬互动。",
+      "script_spans": [
+        "看到新闻弹窗说某公司又回购几十亿，你第一反应是抄底还是撤退？",
+        "可数量堆上去，就能代表信心靠谱吗？",
+        "潮水退了，才知道谁在裸泳托市。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句设问与口语承接出色，但“这是因果上的驱动力”“价值效应”等书面腔至少两处需临时换词，只能封顶2分。",
+      "script_spans": [
+        "今年这波回购潮，到底谁是真金白银，谁在演戏？",
+        "声誉好的公司，回购容易被当成定心丸；声誉弱的，投资者往往先打折看",
+        "这是因果上的驱动力",
+        "企业声誉好坏会让同样一则回购公告的价值效应差很多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "股份还在锅里、成本最低的表演等表达准确克制，裸泳托市句离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "有的回购回来用于员工激励，股份还在锅里；有的直接注销",
+        "注销比例越高，信号越真；光喊口号，就是成本最低的表演。",
+        "潮水退了，才知道谁在裸泳托市。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以设问衔接各段，按动因—用途—市场反馈递进，前提与因果有桥，结尾回扣开头抄底与演戏之问。",
+      "script_spans": [
+        "可数量堆上去，就能代表信心靠谱吗？",
+        "所以回购可以是信心的语言，但得看是不是注销、是不是落地"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点两面呈现，明确提示回购不是上涨保证并援引监管禁令，无荐股式承诺与煽动，风险边界交代清楚。",
+      "script_spans": [
+        "回购不是上涨保证，监管也明令禁止用回购操纵股价",
+        "别把所有的回购都当成抄底暗号"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7e26759f9c0c46668d036183c1a6e4e3",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

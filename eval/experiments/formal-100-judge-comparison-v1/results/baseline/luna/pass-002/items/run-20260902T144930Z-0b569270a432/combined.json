@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-e11b905884194f5095c205bdd752d3b3",
+  "run_id": "run-20260902T144930Z-0b569270a432",
+  "trace_sha256": "766c4da8aeec515447f6a46a151773b2d89733f223d089cee5b92eedc84b2092",
+  "created_at": "2026-09-03T12:18:01.763804Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从规则占位、轨道拥挤到通信依赖，正面回答了轨道为何可能成为新争端，也贴近普通用户。",
+      "script_spans": [
+        "太空轨道正成新争端，但国际规则暂压着火，老框架还没崩。",
+        "你用的太空上网服务底层也是这盘棋。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "规则占位、轨道拥挤、战略依赖和超二十万颗申请层层推进，信息单元充足，结论也有支撑。",
+      "script_spans": [
+        "各国抢着在老条约里报备占坑。",
+        "低轨挤得像早高峰地铁。",
+        "有国家一次递了超二十万颗星申请，圈地明显提速。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头把网络风险与轨道争夺直接绑定，中段层层推进，结尾落到公共资源与规则滞后的余味上。",
+      "script_spans": [
+        "卫星互联网狂建，你家的网络可能卡在别国占轨上。",
+        "轨道不是免费公地，先占先赢的玩法改起来难得等新规追上来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "比喻和短句增强了对话感，但“筹码使”等多处句式生硬，整体还未达到自然顺口。",
+      "script_spans": [
+        "低轨挤得像早高峰地铁。",
+        "谁手里有网，断别人信号就能当谈判筹码使",
+        "轨道不是免费公地，先占先赢的玩法改起来难得等新规追上来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“低轨挤得像早高峰地铁”将拥挤具象化，“轨道不是免费公地”形成自然、易复述的判断，修辞克制有效。",
+      "script_spans": [
+        "低轨挤得像早高峰地铁。",
+        "轨道不是免费公地，先占先赢的玩法改起来难得等新规追上来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "有“规则—拥挤—风险—提醒”主线，但把报备、避干扰与轨道占位混为一谈，部分因果跳跃。",
+      "script_spans": [
+        "提醒你，别把救灾军工这些关键通信全押外层空间单一网。",
+        "填张申请说我要这片天，别人就得给你腾地儿，条约逼着避干扰。",
+        "谁手里有网，断别人信号就能当谈判筹码使，逼人让步。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有“国际规则暂压着火”等克制边界，但把频率申报写成占轨、强制腾位，容易误导并放大争端判断。",
+      "script_spans": [
+        "国际规则暂压着火，老框架还没崩",
+        "填张申请说我要这片天，别人就得给你腾地儿"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9ab46b99a65046c6afa0373693c6d3a4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

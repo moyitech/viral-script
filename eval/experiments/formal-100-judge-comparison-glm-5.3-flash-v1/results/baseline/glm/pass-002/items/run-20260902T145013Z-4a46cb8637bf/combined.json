@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-8ff165c96b494776a056ec4f4f20499e",
+  "run_id": "run-20260902T145013Z-4a46cb8637bf",
+  "trace_sha256": "221a6720eca27b0abbc1f9d60b1b2081df32035dbc00d4b9fb1002c7d4960b7f",
+  "created_at": "2026-09-03T14:26:46.288779Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接给兼顾方案，安全与效率、居民骑手物业均覆盖，结尾热饭安心回扣题设。",
+      "script_spans": [
+        "真要兼顾，得把车和人分开走。",
+        "切好了空间，热饭和安心能同碗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "停靠区、门禁探头、平台底图、驿站转交层层推进，论据扎实无编造，观众能带走具体方法。",
+      "script_spans": [
+        "划区不是简单画块地，得有人引导，骑手问清楼号再迈腿，重物提前借小车",
+        "真坏蛋想进不因禁骑手转身，门禁加探头才是硬防护"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头十五字即抛反差结论，中段方案与转折持续兑现，结尾行动提问由正文自然生长，余味足。",
+      "script_spans": [
+        "禁骑手进小区，安全没变好，送餐更慢。",
+        "有的小区大门外划了专属停靠区，像香港丽园，骑手停好车走路送餐，车不进园。",
+        "下次拿凉菜，别光怨骑手慢，先问物业门外划停靠区没。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句对仗节奏好，但'不因禁骑手转身''查证力'两处拗口，朗读需临时换词",
+      "script_spans": [
+        "物业怕担责，居民怕生人乱窜，骑手怕超时罚自己",
+        "真坏蛋想进不因禁骑手转身",
+        "驿站取餐听着麻烦，却让门岗省了查证力"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻皆服务说理，绕路等于罚自己、信任比闸机更扛事离文可复述，密度适中不喧宾夺主。",
+      "script_spans": [
+        "时间就是薪水，绕路等于罚自己。",
+        "安全感和速度在互相拽袖子。",
+        "信任比闸机更扛事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "问题诊断到破局到平台侧功能清晰，设问过渡自然，因果有桥，结尾回扣车人分开与题设。",
+      "script_spans": [
+        "那怎么破局？有的小区大门外划了专属停靠区",
+        "别光怨骑手慢，先问物业门外划停靠区没"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "三方立场并陈不拉偏架，主动交代老小区抄不了作业、地图有偏差等局限，无煽动夸大或误导承诺。",
+      "script_spans": [
+        "物业怕担责，居民怕生人乱窜，骑手怕超时罚自己。",
+        "可这法子要物业协同、骑手守规，老小区没人力抄不了作业。",
+        "技术帮人少跑腿，可不是万能，老小区地图有时偏。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b3aa90ae392745b897502161b2042ef8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

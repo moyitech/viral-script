@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-151d384c71124318a094f0f2ed8c421d",
+  "run_id": "run-20260902T144907Z-77e1a0bf8454",
+  "trace_sha256": "f576f566a555af972ff1c7d4d61269c9a8e8dc195209925aa3114a123e47a76e",
+  "created_at": "2026-09-03T12:16:37.767525Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕小商家出海，正面拆解规则收紧与政策便利两面，并明确回答谁更难、谁能受益。",
+      "script_spans": [
+        "小商家出海真被严规逼垮了？有人反倒借势活了。",
+        "小商家现实影响分两路，有人借势活，有人被洗走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "具体交代9610退货政策、适用条件、B2C风险与扶持路径，信息单元持续推进判断，增量充足。",
+      "script_spans": [
+        "从4月1日起，走这模式的货能退到别的监管场。",
+        "企业得系统对接海关，还得有独立作业区。",
+        "产品缺安全标，到海外直接被扣。税务不合规，收款账户说冻就冻。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“逼垮”与“借势活”制造反差，中段松紧并置持续推进，结尾选择题自然收束并促成自问。",
+      "script_spans": [
+        "小商家出海真被严规逼垮了？有人反倒借势活了。",
+        "小商家现实影响分两路，有人借势活，有人被洗走。",
+        "你愿花半月对接系统，还是赌运气被封号？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答式承接较多，整体能读；但“企业得系统对接海关”“全球监管都在收”等处需临时换词。",
+      "script_spans": [
+        "小商家发错尺码，货能退回来，不用全砸在海外。",
+        "企业得系统对接海关，还得有独立作业区。",
+        "全球监管都在收"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“规则挑的也许是能力不是规模”形成清晰判断，“有人借势活，有人被洗走”有对照记忆点，修辞不过量。",
+      "script_spans": [
+        "小商家现实影响分两路，有人借势活，有人被洗走。",
+        "所以规则挑的也许是能力不是规模。",
+        "舒服赚钱的路被堵了，这是取舍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "按政策便利、合规门槛、扶持分化到行动选择递进，转折清楚，结尾也回扣开头的两种结果。",
+      "script_spans": [
+        "但这便利不是白给，企业得系统对接海关，还得有独立作业区。",
+        "所以规则挑的也许是能力不是规模。你愿花半月对接系统，还是赌运气被封号？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有条件说明和合规提醒，但“说冻就冻”“就封号”过于绝对，未交代平台规则与处置条件，易误导。",
+      "script_spans": [
+        "但这便利不是白给，企业得系统对接海关，还得有独立作业区。",
+        "税务不合规，收款账户说冻就冻。",
+        "你若换IP太频，多店同环境就封号。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-dd2c9dcfb1344de29095d7b2a8d89ac6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

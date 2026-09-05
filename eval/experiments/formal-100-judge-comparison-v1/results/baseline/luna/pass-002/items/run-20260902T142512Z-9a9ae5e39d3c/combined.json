@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-0ccffa1df8a943d1a401275f84cdbeea",
+  "run_id": "run-20260902T142512Z-9a9ae5e39d3c",
+  "trace_sha256": "1e4672b6aaa172bcbfe3eb677fda4e7e108a3e371127a430f9121dce8fe3bd50",
+  "created_at": "2026-09-03T12:16:56.099260Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "既回答是否更安全，也正面处理设备丢失和找回困境，最后把结论转成普通用户能执行的自问。",
+      "script_spans": [
+        "答案得看两边。",
+        "先问自己明早只剩一张手机卡怎么拿回账号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "安全机制、钓鱼抵抗、设备丢失恢复和短信多因素局限均有解释，且用自检问题收束，信息增量充足。",
+      "script_spans": [
+        "手机里那串私钥替你签字，远程只收到一个验过信号",
+        "说明只换认证形态不顶用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以省掉麻烦却可能锁死制造反差，中段补充安全收益与恢复风险，结尾把问题落到账号找回。",
+      "script_spans": [
+        "省掉记密码的麻烦却换来设备全丢就锁死",
+        "可一旦手机落出租车、家里电脑又进水泡了",
+        "先问自己明早只剩一张手机卡怎么拿回账号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感和明确重音，但技术解释与设备丢失段落气口偏长，连续朗读容易卡住。",
+      "script_spans": [
+        "答案得看两边。",
+        "你按指纹或刷脸认完，手机里那串私钥替你签字，远程只收到一个验过信号",
+        "可一旦手机落出租车、家里电脑又进水泡了，云里同步的密钥也得靠老设备批准"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“替你签字”“被关门外”把技术机制和恢复困境说得具体，结尾“只剩一张手机卡”也留下了可复述的提醒。",
+      "script_spans": [
+        "手机里那串私钥替你签字",
+        "你直接被关门外",
+        "先问自己明早只剩一张手机卡怎么拿回账号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "两面展开和结论回扣清楚；但技术说明与找回风险均塞进长句，云里同步与老设备批准的因果也说得过满。",
+      "script_spans": [
+        "答案得看两边。",
+        "手机里那串私钥替你签字，远程只收到一个验过信号，原始密码根本不会往外跑",
+        "云里同步的密钥也得靠老设备批准，你直接被关门外"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能同时讲清防钓鱼优势与设备丢失后的恢复风险，但“骗不走半点凭据”“只能走邮箱”等绝对表述易造成误导。",
+      "script_spans": [
+        "答案得看两边。",
+        "钓鱼短信链接再真也骗不走半点凭据",
+        "最后只能走邮箱找回、答密保证明你是你"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1890d51b3c7f4a599d96385c35a749e5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

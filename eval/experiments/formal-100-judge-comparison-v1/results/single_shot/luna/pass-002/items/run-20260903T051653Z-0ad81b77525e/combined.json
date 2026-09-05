@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-c0c1507f72bd4a16a71e410bf9820238",
+  "run_id": "run-20260903T051653Z-0ad81b77525e",
+  "trace_sha256": "2f629b2937e8ec4c9e2ebd97c86fd0cc87fb7a5f6e08749868b73d97dbdcfca8",
+  "created_at": "2026-09-03T12:31:52.653233Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“会不会被搬走”，同时区分内容搬运与流量、品牌受损，并覆盖网站应对路径，切题完整。",
+      "script_spans": [
+        "生成式搜索没有把全网内容整锅端走，但它把原本属于网站的首屏利益切走了一块。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕“内容是否被免费搬走”，用流量数据、影响边界、内容差异和应对策略逐层推进，信息增量充分。",
+      "script_spans": [
+        "被AI摘要覆盖的页面流量下滑大约一成半，和“归零”传言差得远。",
+        "纯定义类、产品总结容易被吃掉，实操经验类却可能借引用翻身。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用熬夜干货被压成摘要的利益冲突抓人，中段层层推进，结尾把流量焦虑落到行动上。",
+      "script_spans": [
+        "你熬通宵写的干货，在搜索引擎里被人工智能凝成四行摘要，用户瞄一眼就走了",
+        "毕竟流量逻辑变了，不是不点链接就全灭，而是谁进答案谁说话。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "追问、比喻和具体动词让整体能听懂，但长句与抽象机制表述偏多，气口不够轻快。",
+      "script_spans": [
+        "咱们把边界摊开说。",
+        "可见技术截取有边界，规则还在拉扯，不是单向掠夺，只是分配权挪了位置，未来信源透明度会很关键。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“整锅端走”和“谁进答案谁说话”形象且贴题，修辞适量，能把复杂的流量变化讲得易懂好记。",
+      "script_spans": [
+        "生成式搜索没有把全网内容整锅端走，但它把原本属于网站的首屏利益切走了一块。",
+        "毕竟流量逻辑变了，不是不点链接就全灭，而是谁进答案谁说话。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有开头、解释、边界、策略和回扣，因果主线清楚；但两处抽象搭配拗口，削弱口播自然度。",
+      "script_spans": [
+        "过去用户带着问题找链接，站点靠点击换广告或转化；现在AI先消化多个页面，合成答案。",
+        "可恰恰因为只留结论不留出处存在感，原站的品牌积累被悄悄稀释。",
+        "内容得改写成机器好摘、用户可信的结构，数据透明、论点清晰，才容易被智能答案收录引用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动，边界意识较清楚；但“收益就直接断流”“用户习惯一旦改了就难回去”过于确定，容易夸大影响。",
+      "script_spans": [
+        "生成式搜索没有把全网内容整锅端走，但它把原本属于网站的首屏利益切走了一块。",
+        "收益就直接断流",
+        "用户习惯一旦改了就难回去"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9119c231d74d4ba7953fd088521621d1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

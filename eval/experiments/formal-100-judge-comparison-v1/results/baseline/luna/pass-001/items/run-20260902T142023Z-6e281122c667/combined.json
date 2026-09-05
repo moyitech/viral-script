@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-ef746cf3cfff4bf293f5a2c78d36d636",
+  "run_id": "run-20260902T142023Z-6e281122c667",
+  "trace_sha256": "8784df7d0bf633f1e2b1152ab91486c4edec4faf74bbf04a81853d1736da7f20",
+  "created_at": "2026-09-03T11:44:51.040124Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“免费搬走”是否成立，覆盖平台、原站、普通用户和流量变化，结论也回扣题设。",
+      "script_spans": [
+        "我的判断是：内容确实被拿去喂了摘要，但原站没完全消失，只是活法变了。",
+        "平台说这是补充链接，站长说这是抢饭吃。",
+        "所以不是简单搬走，而是把访问路径重画了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 460，目标为 450，偏差率为 2.22%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕摘要分流展开，近九成与百分之十五的数据支撑事实，还解释机制和普通人的影响，信息推进充分。",
+      "script_spans": [
+        "有的出版商点击率掉了近九成。",
+        "但一项针对维基百科的跟踪发现，曝光页面流量大约少了百分之十五。",
+        "AI答案框压在搜索结果上面，用户扫一眼往往就直接走了，不点原站。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“掉了快九成”制造强冲突，中段依次推进事实、机制和影响，结尾追问自然生长。",
+      "script_spans": [
+        "原站访客却掉了快九成",
+        "关键在机制。",
+        "你愿意只当免费素材，还是留个名？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句较多、对话感尚可，但“推开的”“展出来了”等搭配不顺，朗读时需要改词。",
+      "script_spans": [
+        "平台说这是补充链接，站长说这是抢饭吃。",
+        "谷歌从24年推开的AI概览",
+        "被揉成一句就展出来了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“免费搬走”和“访问路径重画”把抽象的流量变化说得具体，画面清楚，也留下了可复述的判断。",
+      "script_spans": [
+        "所以不是简单搬走，而是把访问路径重画了。",
+        "平台说这是补充链接，站长说这是抢饭吃。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "事实、机制、影响、结论层层递进，因果桥明确，结尾回扣“免费素材”与原站来源，整体不跳跃。",
+      "script_spans": [
+        "先看事实。",
+        "关键在机制。",
+        "所以不是简单搬走，而是把访问路径重画了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，数据表述有一定边界；但将流量变化直接归因于平台，并用“裁了人”“消失”等说法，略有夸大风险。",
+      "script_spans": [
+        "有的出版商点击率掉了近九成",
+        "这说明抓取改写真发生了，但不是所有站都归零。",
+        "用户扫一眼往往就直接走了，不点原站",
+        "大媒体裁了人，小站长更没议价力。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b51794b5b4774edc9b0f3d1b7fc6c2b2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e62c7720aebd49169f45c8e4db30e683",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

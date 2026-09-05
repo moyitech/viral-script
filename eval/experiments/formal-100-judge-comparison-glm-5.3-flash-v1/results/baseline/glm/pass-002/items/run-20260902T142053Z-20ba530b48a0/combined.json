@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-092c02070023416e904c05cbfedc36e8",
+  "run_id": "run-20260902T142053Z-20ba530b48a0",
+  "trace_sha256": "61ab03941ff0c96a84a4387071291fcfff5a56f30f188b325ae3729fa16598d0",
+  "created_at": "2026-09-03T14:25:33.659609Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即入题，结尾落到'有地方落锁'；秩序与出行两侧均正面回答，骑行者、行人、老人、游客都覆盖到。",
+      "script_spans": [
+        "整治秩序和方便出行，两头得掰平。",
+        "整治秩序不是画个圈就完事，得让人有地方落锁。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围栏机制、车位容量、景区收费例层层推进，'光画圈不建场'诊断到位，结尾给出可带走的判断方法。",
+      "script_spans": [
+        "可高峰一来，车位秒满，你要晚一步，推着找下一个点。",
+        "说明光画圈不建场，矛盾转嫁了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句直击扣钱痛点，中段用试点、车位爆满、景区缴费层层兑现，结尾互动由内容自然长出。",
+      "script_spans": [
+        "禁停区扩大，你锁不了车还白扣钱！",
+        "骑车十分钟，还车半小时，白掏二十块。",
+        "下次见禁停线，先瞅瞅旁边，给没给画车位？这关乎腿脚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与比喻见功力，但'进片就告警''投诉聊还车难'等压缩表达需临时补词重断，达两处明显卡嘴。",
+      "script_spans": [
+        "你擀面杖也得找个案板，禁停线画在空地旁才叫治理",
+        "围栏靠蓝牙嗅探，进片就告警",
+        "不少投诉聊还车难"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "擀面杖找案板的类比贴切易复述，光画圈不建场一语中的，修辞克制、服务理解不炫技。",
+      "script_spans": [
+        "你擀面杖也得找个案板，禁停线画在空地旁才叫治理。",
+        "光画圈不建场，矛盾转嫁了。",
+        "不是说不能管，是管法得留缝。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问过渡自然，'为啥划这片''光禁不疏'承上启下，擀面杖案板之喻收束并回扣开头落锁难题。",
+      "script_spans": [
+        "为啥划这片？以前单车糊地铁口，路人挤不过去，居民天天投诉。",
+        "你擀面杖也得找个案板，禁停线画在空地旁才叫治理。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "既认治理必要也点出出行代价，争议点均有上下文兜底，无煽动夸大或无据承诺。",
+      "script_spans": [
+        "不是说不能管，是管法得留缝",
+        "利益撞一块，不能只管一边"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-405607adde0349ed954bdf31df86ce50",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

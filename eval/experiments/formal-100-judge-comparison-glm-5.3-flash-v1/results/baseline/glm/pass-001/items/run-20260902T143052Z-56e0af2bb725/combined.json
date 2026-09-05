@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-bbeba11da4ad4abf8a712c00d0b10d82",
+  "run_id": "run-20260902T143052Z-56e0af2bb725",
+  "trace_sha256": "31cdb9ec65dbe6cb5ee4fc91e59bd9cfa6604b53aafc624b26a74c6b61ff0856",
+  "created_at": "2026-09-03T13:46:27.793953Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即扣'咋变家庭债'，成本成因与自愿变强制、社交压力两侧都答到，切中普通家长钱包痛点",
+      "script_spans": [
+        "交五千研学，课堂外教育咋变家庭债？",
+        "可压垮钱包，是自愿项目被班里推着必须交"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 278，目标为 280，偏差率为 0.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "成本构成、定价机制、社交压力层层推进，结尾给到商量值不值的判断方法，信息扎实不空转",
+      "script_spans": [
+        "好课程要人熬好些天写方案。做手册画图片都要钱，租小车订吃住更省不下",
+        "先跟孩子商量值不值再掏钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头五千元与家庭债直给冲突，中段转折兑现钩子，结尾建议由正文自然生长。",
+      "script_spans": [
+        "交五千研学，课堂外教育咋变家庭债？",
+        "可压垮钱包，是自愿项目被班里推着必须交",
+        "下次班里发单，先跟孩子商量值不值再掏钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、有对话感，但'算完成本报的'易听岔、'压垮钱包，是'缺字需重断，两处卡嘴只能降档。",
+      "script_spans": [
+        "别的娃回来聊见闻，自己娃插不上话",
+        "机构算完成本报的",
+        "可压垮钱包，是自愿项目被班里推着必须交"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“家庭债”“压垮钱包”服务情绪不堆砌；“自愿项目被班里推着必须交”离开上下文仍可复述。",
+      "script_spans": [
+        "课堂外教育咋变家庭债",
+        "自愿项目被班里推着必须交",
+        "别的娃回来聊见闻，自己娃插不上话"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线可跟随，结尾回扣发单场景；但'公益自愿'对研发成本的'但'转折生硬，签合同到定价过渡跳跃",
+      "script_spans": [
+        "下次班里发单，先跟孩子商量值不值再掏钱。附近免费展馆，也能开眼界",
+        "政策说公益自愿，但好课程要人熬好些天写方案",
+        "文件也要求学校签合同，把项目和标准列清楚。你说这价谁定的？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "既讲成本依据又点负担痛点，政策转述准确，结尾建议克制务实，无夸大与对立煽动。",
+      "script_spans": [
+        "它收费不低，因真有老师设计和出门花销。",
+        "政策说公益自愿，但好课程要人熬好些天写方案。",
+        "下次班里发单，先跟孩子商量值不值再掏钱。附近免费展馆，也能开眼界。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-202ae8e533e64cd5bd0b513cb898a948",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-29e8dd6ae5b14f13b53642f4a9696ef3",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

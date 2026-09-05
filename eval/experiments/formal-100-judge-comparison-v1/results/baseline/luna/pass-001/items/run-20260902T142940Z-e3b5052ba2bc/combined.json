@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-ab40bb810ffc47df8e961ae63d23a1c3",
+  "run_id": "run-20260902T142940Z-e3b5052ba2bc",
+  "trace_sha256": "a051de75b1a84ef27ea1c6795f537d6373a41fd5b66ddbaedb2b4109f2101cfa",
+  "created_at": "2026-09-03T11:45:34.501613Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接对答增收与交学费，并覆盖年轻人、培训广告和防坑行动，切角明确。",
+      "script_spans": [
+        "年轻人刷这些广告，多数在交学费而非真赚钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 263，目标为 280，偏差率为 6.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "投诉金额、诱导贷款、平台禁用收益承诺和报名核验形成信息递进，事实与提醒都较具体。",
+      "script_spans": [
+        "今年一季度，技能培训投诉成了维权重灾区，平均涉诉超七千块。",
+        "真要报名，先问清是不是贷款合同。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用想增收却先交学费制造反差，中段连续推进，结尾以护钱包收束并留下余味。",
+      "script_spans": [
+        "刷副业课想增收，却先交了学费？",
+        "再看平台侧，规则明显收紧。",
+        "卖课比教赚钱还多，咱先护钱包再想副业。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、问句有节奏，但“投诉成了维权重灾区”搭配不顺，“培训类不少”收尾发虚。",
+      "script_spans": [
+        "你攒点钱不易，看见晒收益就报名，最后课越上越水。",
+        "技能培训投诉成了维权重灾区",
+        "培训类不少"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“先交了学费”和“卖课比教赚钱还多”形成自然反差，表达克制，便于观众复述。",
+      "script_spans": [
+        "刷副业课想增收，却先交了学费？",
+        "卖课比教赚钱还多，咱先护钱包再想副业。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按问题、案例、平台、建议推进，但平台总量数据与培训乱象的关联未展开，且由禁用承诺推到增收困难，因果桥不足。",
+      "script_spans": [
+        "再看平台侧，规则明显收紧。",
+        "真要报名，先问清是不是贷款合同。",
+        "普通人想稳增收有多难？",
+        "去年平台拦违规素材超百亿条，关停账户超四百万个，培训类不少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有贷款核查等风险提示，但“多数”“卖课比教赚钱还多”等泛化归因缺少限定，易制造误导印象。",
+      "script_spans": [
+        "真要报名，先问清是不是贷款合同。",
+        "年轻人刷这些广告，多数在交学费而非真赚钱。",
+        "卖课比教赚钱还多，咱先护钱包再想副业。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-0a206cc6a7d3466e80ebea2a37fce359",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-bc07ad3d78d54fcbad04305035b83b52",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

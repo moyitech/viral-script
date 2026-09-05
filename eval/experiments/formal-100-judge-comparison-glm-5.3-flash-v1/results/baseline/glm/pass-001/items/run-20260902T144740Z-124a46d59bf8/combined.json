@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-da347244db2e486991f89eb5e21ea14d",
+  "run_id": "run-20260902T144740Z-124a46d59bf8",
+  "trace_sha256": "4c55371789872e80984ef3d2ee86018852ade8cecc09d8026dbb24a34944b361",
+  "created_at": "2026-09-03T13:48:31.258804Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直答“不会全面更难”，险与便两侧都覆盖，且以大小卖家对比紧扣小商家人群。",
+      "script_spans": [
+        "规则趋严，小商家出海会更难吗？我直说：不会全面更难，掉以轻心的才被筛掉",
+        "大卖家擦伤，小商家伤得重"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 283，目标为 280，偏差率为 1.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "退货新政、被扣风险、孵化扶持到行动建议层层推进，事实解释结论互相支撑，增量具体。",
+      "script_spans": [
+        "以前只能原关区退，现在零售能跨关区退，货就近退场，费用降了",
+        "一次认证不全货被扣，或者税务不清账号冻住",
+        "先花三天摸清报关和税务底线再开店"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字内抛出反差结论，中段以退货新规、扣货冻号层层兑现钩子，结尾红利反转由筛选逻辑自然长出，无硬喊互动。",
+      "script_spans": [
+        "小商家出海没更难，但马虎合规的就危险了。",
+        "可跨境卖货链条长，国内外两头管，小本买卖最容易漏环节。",
+        "别人离场，你反而能接住红利，把难字变成机会。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，'我直说''你看'等对话承接自然，具体动词如'接住红利''扶一把'上口，无需临时改词。",
+      "script_spans": [
+        "从报关到外汇都得顾，漏一项就出事",
+        "别人离场，你反而能接住红利，把难字变成机会"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "全篇克制不堆辞藻，比喻服务理解：大卖家擦伤、小商家伤得重准确贴切，离开上下文仍可复述，结尾有余味不油腻。",
+      "script_spans": [
+        "大卖家擦伤，小商家伤得重。",
+        "掉以轻心的才被筛掉",
+        "把难字变成机会"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "“可”字转折带出风险面，“所以”收束并回扣趋严题设，各段功能清晰、因果有桥。",
+      "script_spans": [
+        "可跨境卖货链条长，国内外两头管，小本买卖最容易漏环节",
+        "所以别被“趋严”吓退，先花三天摸清报关和税务底线再开店"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "认证、税务、报关风险交代具体，建议附“先摸清底线”前置条件，“红利”非确定性承诺，导向安全。",
+      "script_spans": [
+        "一次认证不全货被扣，或者税务不清账号冻住，对小商家可能是大打击",
+        "先花三天摸清报关和税务底线再开店",
+        "有些地方开了免费孵化中心，手把手帮零基础商家走流程"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5da65a663b3f4f5c9304913bed66a75f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-59f15ccec6a94c0c9a388d3f60bb78d1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

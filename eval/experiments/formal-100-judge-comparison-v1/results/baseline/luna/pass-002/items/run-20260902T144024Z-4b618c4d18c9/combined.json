@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-e178590579754439a04c374a9f15c876",
+  "run_id": "run-20260902T144024Z-4b618c4d18c9",
+  "trace_sha256": "9bbbc340b23cb44dad261aace2d743118e026aa5f4215185408b22f35e5822c8",
+  "created_at": "2026-09-03T12:17:18.953415Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释统计物价与家庭体感的落差，覆盖价格、收入、刚性支出和住房，精准命中普通家庭。",
+      "script_spans": [
+        "物价确实温和回升，可普通家庭觉钱不够花，原因在平均算法盖住了刚需。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕平均物价与家庭体感差异，价格篮子、收支结构、住房负担层层推进，信息增量充足。",
+      "script_spans": [
+        "里面几百种东西，有的贵得狠。像3月其他用品和服务，价格同比爬了13.5%",
+        "可花掉的一万五里，住和吃占掉五成多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“1%”与家庭缺钱形成反差，中段层层拆解，结尾追问自然承接。",
+      "script_spans": [
+        "3月物价同比只涨1%，你家开支却追不上收入？",
+        "指数调和了涨跌，却调不平你家的预算表。",
+        "下次见1%的涨幅，翻翻自己账本：究竟哪笔支出在啃你的余钱？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数句子短促、有画面，也有对话感；但个别搭配生硬，核心解释仍有抽象和卡顿。",
+      "script_spans": [
+        "新闻说总水平安稳，你逛超市却步步心惊。",
+        "普通家庭觉钱不够花",
+        "想攒钱得像挤牙膏般省。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“购物车”“预算表”“统计局的尺子”等比喻贴近生活，“统计温和不等于日子松”也便于复述。",
+      "script_spans": [
+        "只是统计镜头没对准你的购物车。",
+        "指数调和了涨跌，却调不平你家的预算表。",
+        "统计温和不等于日子松。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线按价格、收支、住房递进，结尾也有回扣；但“工资涨得慢”难由数据推出，收入与难留钱之间缺少关键桥梁。",
+      "script_spans": [
+        "统计温和不等于日子松。下次见1%的涨幅，翻翻自己账本：究竟哪笔支出在啃你的余钱？",
+        "工资是进账大头，近六成，它涨得慢，月底就难留钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制且无明显违规，但“靠房子赚钱也难了”等将数据直接延伸为因果判断，需补充限定。",
+      "script_spans": [
+        "两边都没撒谎，只是统计镜头没对准你的购物车。",
+        "财产净收入只增1.1%，靠房子赚钱也难了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-bacc4b201fc4471b80e32b001da83c0c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

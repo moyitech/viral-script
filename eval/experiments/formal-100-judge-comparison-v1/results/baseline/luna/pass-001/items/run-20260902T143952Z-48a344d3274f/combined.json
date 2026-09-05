@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-8444c06c5ef34193b419d1da06ac1626",
+  "run_id": "run-20260902T143952Z-48a344d3274f",
+  "trace_sha256": "e1fe339d38893e8d345364a2c953c857ada0a0c798eb8e0768c386449a7200a0",
+  "created_at": "2026-09-03T11:45:07.978717Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答干旱如何抬高水电成本，并覆盖风光、煤电及源网荷储等应对路径。",
+      "script_spans": [
+        "能源转型正用多能互补加现货市场，学着不靠天吃饭。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 701，目标为 700，偏差率为 0.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，既解释干旱导致成本上升的机制，也给出多能互补、储能、需求响应和现货价格信号。",
+      "script_spans": [
+        "建坝的钱要摊到每度电，成本就往上窜。",
+        "价格高了，储能放点电，工厂错峰生产。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用水电减半与电价下跌的反差抓人，中段连续追问转折，结尾回到“多几条腿”自然收束。",
+      "script_spans": [
+        "西南干旱水电减半，多地电价却跌两成？",
+        "那是不是该关煤电，全换风光？不行，这步跨不得。",
+        "系统多几条腿，总比赌老天稳当。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句切分清楚，问答和比喻有对话感；但“利润亏了钱”“习惯还没养成就”等多处拗口，朗读需临时修正。",
+      "script_spans": [
+        "价格高了，储能放点电，工厂错峰生产。",
+        "老天不靠谱，系统得自己长骨头。",
+        "火电利润亏了钱",
+        "用户侧响应慢，习惯还没养成就。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“长骨头”和“多几条腿”形成一致隐喻，把系统韧性和多元互补说得具体，易于复述。",
+      "script_spans": [
+        "老天不靠谱，系统得自己长骨头。",
+        "系统多几条腿，总比赌老天稳当。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、成本机制、替代困境和解决方案层次完整，但个别关键动作语义不清，影响论证闭合。",
+      "script_spans": [
+        "先搞清干旱怎么抬成本。",
+        "可煤电排放高，眼下发电量还过半。保供稳价，暂时离不了它。",
+        "缺水时段电价贵，就压火电压新能源填。",
+        "用户侧响应慢，习惯还没养成就。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "没有煽动或危险建议，整体强调多方平衡；但“电价跌两成”“暂时离不了它”缺少时间、范围限定，仍有泛化误导风险。",
+      "script_spans": [
+        "清洁和稳定，两头要顾。",
+        "多地电价却跌两成？",
+        "保供稳价，暂时离不了它。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3816705abc8644cd853cab4715cd4ad5",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-4f3690cd6f2c439494d92978aad24a80",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

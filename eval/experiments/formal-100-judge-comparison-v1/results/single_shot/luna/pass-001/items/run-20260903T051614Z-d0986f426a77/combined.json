@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-ee652fe3098547d9ab83b3ae6e399507",
+  "run_id": "run-20260903T051614Z-d0986f426a77",
+  "trace_sha256": "b1ef9b84d316806fc8a9f0a24ef4040db0e367f3284ecf75e08fb84da9dd5179",
+  "created_at": "2026-09-03T12:02:33.181399Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答短期刺激与长期信心的关系，兼顾补贴效果、持续性和普通消费者的决策风险。",
+      "script_spans": [
+        "消费补贴频频加码，确实能让你我当下多掏钱买买买，但想靠它长出长久信心，怕是很难。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 281，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "用数字券撬动率、购买者特征、需求透支和收入预期等信息，具体支撑短期有效、长期有限的判断。",
+      "script_spans": [
+        "每发1元数字消费券，能撬动3块多消费",
+        "那些花得最猛的，往往是本来就要买、补贴等同现金的人，并非真对未来松了绑。",
+        "补贴退场后，稳定的收入和预期才是信心真正的底。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出短期刺激与长期信心的冲突，中段用数据、需求透支和钱包承接推进，结尾建议与金句自然收束。",
+      "script_spans": [
+        "消费补贴频频加码，确实能让你我当下多掏钱买买买，但想靠它长出长久信心，怕是很难。",
+        "短期烟火气不等于长期底气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答和生活化表达，但“长出长久信心”“透支后面月份的刚需”等处不够顺，录音时需要改词。",
+      "script_spans": [
+        "补贴停了会不会接着花，得看钱包鼓不鼓",
+        "长出长久信心",
+        "透支后面月份的刚需"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“短期烟火气不等于长期底气”对照鲜明、易于复述；“透支后面月份的刚需”把需求前置讲得具体，修辞克制。",
+      "script_spans": [
+        "短期烟火气不等于长期底气",
+        "透支后面月份的刚需"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先给出判断，再用数字券和换新补贴展开，随后落到消费建议，结尾自然回扣短期与长期。",
+      "script_spans": [
+        "这账其实不难算。为什么这么说？",
+        "另一面，汽车家电换新补贴虽拉高了淡季销量，却也可能透支后面月份的刚需。",
+        "记住，短期烟火气不等于长期底气，补贴退场后，稳定的收入和预期才是信心真正的底。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "使用可能、往往等限定词，未作收益承诺，且提醒量力消费，整体客观稳妥。",
+      "script_spans": [
+        "如果手头紧，千万别借钱凑热闹"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9f807cf03aef4577b1eece139368733e",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9391d7a9eea745cbb3756be84f708ee5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

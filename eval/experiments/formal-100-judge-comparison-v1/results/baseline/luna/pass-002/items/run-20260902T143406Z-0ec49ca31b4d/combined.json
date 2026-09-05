@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-2f84acc3682946b29032de9b146b8506",
+  "run_id": "run-20260902T143406Z-0ec49ca31b4d",
+  "trace_sha256": "d8ec5d650f0e986c667fb3c6be4fd509a07418885d3bc42b4bf8dc5c7d34bd7b",
+  "created_at": "2026-09-03T12:16:45.841305Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答研学为何成为负担，覆盖收费机制、软性压力与家庭决策，核心家长人群明确。",
+      "script_spans": [
+        "课堂外教育为啥成负担？卡在自愿变软强制，钱花得不明不白。",
+        "下次表格递来，先问娃：这趟你真想学点啥？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，政策边界、成本构成、价格区间和软强制压力相互推进，并给出透明收费与理性选择的信息。",
+      "script_spans": [
+        "学校不能拿这个搞营利创收。",
+        "交通要租车，过夜要住宿，导师要薪酬，手册要印刷，每一层都加价",
+        "今年机构订单在掉、客单价也降，家长变清醒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出掉队与吃土的冲突，中段逐层拆成本和软强制，结尾回到家庭选择，推进与余味都在。",
+      "script_spans": [
+        "家长怕不报研学孩子掉队，报了又月月吃土。",
+        "下次表格递来，先问娃：这趟你真想学点啥？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答和短句带来明显口播感，但“班级一动就掉队”等压缩表达不够顺，调查账目段还需重断句，整体未到朗朗上口。",
+      "script_spans": [
+        "家长怕不报研学孩子掉队，报了又月月吃土。",
+        "班级一动就掉队",
+        "有家庭金融调查覆盖收入消费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“自愿变软强制”“把好奇秤成利润”既有反差又能概括观点，修辞克制，留下了可复述的判断。",
+      "script_spans": [
+        "自愿变软强制",
+        "把好奇秤成利润"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问与分段展开清楚，但“普通家庭一年挣的也就几万”过度概括，“体感不会骗人”不能替代对只旅不学的论证。",
+      "script_spans": [
+        "政策其实划了线。",
+        "这压力比文件实在，软强制叫人难躲。",
+        "普通家庭一年挣的也就几万。",
+        "体感不会骗人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，边界意识较好；但“每一层都加价”“体感不会骗人”过于绝对，易把个案感受说成普遍事实。",
+      "script_spans": [
+        "研学要坚持公益普惠、家长自愿，学校不能拿这个搞营利创收。",
+        "每一层都加价，公益二字就淡了。",
+        "体感不会骗人。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5046ef949c94484482f6d6a05101950b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

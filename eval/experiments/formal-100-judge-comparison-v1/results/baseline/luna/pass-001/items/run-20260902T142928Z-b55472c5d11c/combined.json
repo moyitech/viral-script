@@ -1,0 +1,157 @@
+{
+  "evaluation_id": "combined-9ffcdb443bce410a81435f37835681b8",
+  "run_id": "run-20260902T142928Z-b55472c5d11c",
+  "trace_sha256": "43388645fad850cbfba498c53d9db57f2b2cd77f6fbf514bdcf0bd26f9eb279d",
+  "created_at": "2026-09-03T11:44:45.033694Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直面收入不稳者的缴费压力，也交代扩围带来的参保便利，题设两侧和目标人群都覆盖到。",
+      "script_spans": [
+        "扩围是好事，外地人也能就地参保了。",
+        "可保险费得全额自己扛，没有单位分担。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 434，目标为 450，偏差率为 3.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "具体给出降费、低基数、补贴和缴费操作，信息量足；但断保后“年限重算”有关键风险，且“十五年才真管用”过于绝对。",
+      "script_spans": [
+        "低收入者还能按一半基数交，养老金算法不打折。",
+        "但补贴要自己申领，不主动送上门。",
+        "断保过后年限重算，老了少份依靠。",
+        "连续交满十五年才真管用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出扩围与缴费压力的冲突，中段连续给出新信息，结尾追问也自然承接。",
+      "script_spans": [
+        "社保扩围放开户政，收入不稳者缴费仍吃力。",
+        "好在新规给了缓冲。",
+        "政策把门槛砍低了，可这每月续上的钱，你手头能稳住吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答承接较顺，但开头错词、重复用词和技术化表达造成多处卡顿，整体未达到顺滑口播。",
+      "script_spans": [
+        "回答你：扩围是好事，外地人也能就地参保了。",
+        "能就交，不能先缓，别硬扛。",
+        "社保扩围放开户政",
+        "过半干灵活活儿的觉得费高、难连续交。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“今天买菜钱都得算计”把社保压力落到生活场景，反差自然，形成可复述记忆点；“社保像存水”略显牵强。",
+      "script_spans": [
+        "他们不是不愁养老，是今天买菜钱都得算计。",
+        "社保像存水，别等漏光才补。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "按痛点、政策、算账和建议递进，主线清楚；但开头“放开户政”表意不明，断保论断又与“不能先缓”形成风险导向。",
+      "script_spans": [
+        "好在新规给了缓冲。",
+        "你不妨先算笔小账，看自己最淡的月份，能不能挤出这笔。",
+        "社保扩围放开户政，收入不稳者缴费仍吃力。",
+        "断保过后年限重算，老了少份依靠。",
+        "能就交，不能先缓，别硬扛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 1,
+      "reason": "“断保过后年限重算”及“养老金算法不打折”属确定性政策表述，易误导缴费与待遇判断。",
+      "script_spans": [
+        "断保过后年限重算",
+        "养老金算法不打折"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.7916666666666666,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.375,
+    "weighted_average": 2.375,
+    "normalized_score": 0.7916666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ce549e52ad9243bd9b7782d76e7eac5f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d0ef9683fe78441e80f90176e9d5c392",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-1f4d775e44294d01b4f0b85d913a3597",
+  "run_id": "run-20260902T142023Z-6e281122c667",
+  "trace_sha256": "8784df7d0bf633f1e2b1152ab91486c4edec4faf74bbf04a81853d1736da7f20",
+  "created_at": "2026-09-03T14:26:04.146653Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即给判断，平台与站长两侧都摆出，'对普通人的影响'直击普通观众，结尾回扣题设。",
+      "script_spans": [
+        "我的判断是：内容确实被拿去喂了摘要，但原站没完全消失，只是活法变了",
+        "平台说这是补充链接，站长说这是抢饭吃"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "事实、机制、影响层层推进，'九成对一成五'的对比给出差异化判断，无同义灌水。",
+      "script_spans": [
+        "有的出版商点击率掉了近九成。但一项针对维基百科的跟踪发现，曝光页面流量大约少了百分之十五。",
+        "被AI引到的站还能分点流量，没被引的就像消失了一样"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛免费改写与访客掉九成的反差，中段用数据、机制和立场对立持续推进，结尾互动由免费素材的呼应自然长出，三段各自成立。",
+      "script_spans": [
+        "网站内容被生成式搜索免费改写，原站访客却掉了快九成",
+        "下次看见AI答案，不妨点开发源地看看。你愿意只当免费素材，还是留个名？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主、重音停顿清楚，超市货架与抢饭吃等表达上口，录音基本无需改词。",
+      "script_spans": [
+        "就像超市把商品拆开摆货架，包装不见了",
+        "平台说这是补充链接，站长说这是抢饭吃"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "超市拆包与被AI认出等表达服务理解，平台说补充链接、站长说抢饭吃的对仗离开上下文仍可复述，克制无炫技。",
+      "script_spans": [
+        "就像超市把商品拆开摆货架，包装不见了",
+        "平台说这是补充链接，站长说这是抢饭吃"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、结尾回扣，但开头把个案九成说成普遍，'大媒体裁了人'过渡生硬，经不起追问。",
+      "script_spans": [
+        "所以不是简单搬走，而是把访问路径重画了",
+        "网站内容被生成式搜索免费改写，原站访客却掉了快九成。",
+        "大媒体裁了人，小站长更没议价力。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "数字多带“有的”“大约”限定，双方观点并陈，总体克制；但开头把个案损失说成“原站访客”普遍掉九成，未经限定，易误导。",
+      "script_spans": [
+        "有的出版商点击率掉了近九成",
+        "平台说这是补充链接，站长说这是抢饭吃",
+        "原站访客却掉了快九成"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7c1aedbf31b744bda3ea491865658b45",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

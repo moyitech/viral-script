@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-542b04322b7043d6a58486976f8672ef",
+  "run_id": "run-20260902T144820Z-a8d73c877d07",
+  "trace_sha256": "5dbd55ef50301a6fa769dcc395c764426e93eef098ee4fdbbea25eeec84e919b",
+  "created_at": "2026-09-03T14:26:20.604969Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接点出电与地是新筹码，全文分两侧展开并落到普通人视角，切角具体不跑题。",
+      "script_spans": [
+        "早些年大家愁买不到GPU，如今愁的是变电站接不上、地块批不下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从并网时差、能耗指标门票到自建电厂与用地错位，层层推进且有事实支撑，无空话凑数。",
+      "script_spans": [
+        "能耗指标像一张门票，普通机房拿不到就接不住AI需求。没有指标，空地白给也没用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字即抛出芯片与电地的反差，中段电、地、反差层层兑现钩子，结尾提问由农田电站的余味自然长出。",
+      "script_spans": [
+        "建数据中心现在拼的不是芯片，是电和地。",
+        "你看美国多地项目直接暂停，排队接电等好几年，就是这道坎。",
+        "下次看到算力中心，你会先问它耗了哪的电、占了哪的地吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口干净，设问与对仗推着节奏走，无拗口卡点，朗读无需改词。",
+      "script_spans": [
+        "你可能会想，机房不就是一堆服务器吗？可它吃电像个小城镇。",
+        "以前是下订单等送货，现在是找供电部门协调工期。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "吃电像小城镇、指标像门票均贴切易懂，云建在别人农田与电站上离文仍可复述，修辞克制无堆砌。",
+      "script_spans": [
+        "可它吃电像个小城镇。",
+        "能耗指标像一张门票",
+        "电可以离网自建，地却得落地。",
+        "我们用的云，多半建在别人的农田和电站上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "电与地两线并行，过渡自然，自建与落地的反差成立，结尾提问回扣开头，逻辑闭环。",
+      "script_spans": [
+        "电不够，大厂还能自己盖电厂救急。地不让用，却很难绕开。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "预测均用'可能''常常'限定，中美对比与资本话题只陈述现象，无煽动夸大或无依据承诺。",
+      "script_spans": [
+        "算力成本里，电费和地价占比可能会悄悄爬升",
+        "电不够，大厂还能自己盖电厂救急。地不让用，却很难绕开。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-153e30306b964d23b51d6344be907744",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

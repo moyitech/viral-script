@@ -1,0 +1,167 @@
+{
+  "evaluation_id": "combined-4c1f3fbd7e894ca3922a44b9924a52fb",
+  "run_id": "run-20260902T144359Z-3b1d5d9b284c",
+  "trace_sha256": "96d8bc333073e77f70e981e0db25cb91c47de6e792110136b114399864454b5b",
+  "created_at": "2026-09-03T13:49:04.510691Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答‘消失但有新岗’，两侧并重；运维、训练师等新岗具体，直指普通工人出路并回扣题设。",
+      "script_spans": [
+        "一线操作岗在消失，但新工作真来了",
+        "普通工人咋办？得学新技能，转去伺候产线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 402，目标为 450，偏差率为 10.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "158个新职业与广东调查支撑论点，替代机制、门槛与转型路径层层推进，信息密度高且无编造。",
+      "script_spans": [
+        "国家最近修订职业大典，净增了158个新职业",
+        "广东制造企业调查也发现，AI既替代人，也造出新岗",
+        "厂里不缺活，缺的是会下指令的人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字黑灯车间反差抓人，中段以158个新职业、门槛抬高等持续兑现，结尾问答自然生长有回味。",
+      "script_spans": [
+        "你走进黑灯车间没一人，活却干完了。",
+        "不过新岗不是谁都能上，工厂招人写明白要会调系统，不然门难进。",
+        "当机器包办生产，人去哪儿？去当给智能产线下命令的人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口和拖拉机比喻很出彩，但“都得专人”缺字、“转运维岗”易断错，两处需临时补词重断。",
+      "script_spans": [
+        "平时拧螺丝的，现在看曲线找毛病。",
+        "模型要喂数据，都得专人",
+        "就能转运维岗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "拖拉机类比贴切助解，“缺的是会下指令的人”离开上下文仍可复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "就像拖拉机替了牛，却需要拖拉机手。",
+        "厂里不缺活，缺的是会下指令的人。",
+        "平时拧螺丝的，现在看曲线找毛病。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "‘替活但需人管’搭好因果桥，‘新岗不是谁都能上’设转折，结尾‘下命令的人’回扣开头，层层递进。",
+      "script_spans": [
+        "机器替了重复力气活，但得有人管机器调程序",
+        "不过新岗不是谁都能上，工厂招人写明白要会调系统",
+        "当机器包办生产，人去哪儿？去当给智能产线下命令的人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无违规煽动，也点明“新岗不是谁都能上”的门槛；但“肯学就能端新饭碗”“学一阵子就能转运维岗”属未限定承诺，需补边界",
+      "script_spans": [
+        "不过新岗不是谁都能上，工厂招人写明白要会调系统，不然门难进。",
+        "你别怕进厂没前途，肯学就能端新饭碗。",
+        "老师傅学一阵子就能转运维岗。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 402,
+        "target": 450,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.10666666666666667
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f56ac6a9b826460781382d7e8b234ae1",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ce62092218584737a3d1bce4222d2ad1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

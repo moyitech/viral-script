@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-a6290ca4a4f54270a1cd857c673d0680",
+  "run_id": "run-20260903T051540Z-e0c38d5dad20",
+  "trace_sha256": "9cbe378c37873217037857e21310dadc71901bb25bda71e0baf4e173ee3d78d3",
+  "created_at": "2026-09-03T14:07:49.757951Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头点出憋屈，结尾回扣题设，明确给出兼顾路径，安全与效率两侧兼顾，直指通勤族痛点。",
+      "script_spans": [
+        "兼顾安全与通勤效率，不能靠一刀切把每个人拦下来慢检，真正的出路在分流设计和安检技术升级",
+        "安全是底线，但效率不是给安全陪绑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 458，目标为 450，偏差率为 1.78%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "视觉搜索机制、二十分钟实测、规定与落地落差层层推进，事实、解释与结论相互支撑，增量扎实。",
+      "script_spans": [
+        "安检员干的是典型的视觉搜索活儿，站台嘈杂、视线被挡，注意力一掉，漏检概率就抬头",
+        "有城市全网覆盖后，早高峰进站多耗了近二十分钟"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即抛出憋屈场景，中段靠视觉搜索与二十分钟数据持续兑现，结尾金句由正文自然生长。",
+      "script_spans": [
+        "地铁安检越来越细，你有没有过这种憋屈：包要过机，人也要被棒子扫",
+        "为什么细查反而可能削弱安全？安检员干的是典型的视觉搜索活儿",
+        "棍子舞得再花，不如机器铺得宽"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口干净，活儿、填坑、陪绑等口语词自然，通篇朗读无需改词，节奏有起伏。",
+      "script_spans": [
+        "包要过机，人也要被棒子扫，排队拐了几道弯，车来了却挤不进",
+        "安检员干的是典型的视觉搜索活儿，站台嘈杂、视线被挡，注意力一掉，漏检概率就抬头"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“熬勤”造词自然，“棍子舞得再花，不如机器铺得宽”离开正文仍可复述，修辞服务论点不炫技。",
+      "script_spans": [
+        "通勤变成熬勤",
+        "安全是底线，但效率不是给安全陪绑。棍子舞得再花，不如机器铺得宽"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "自问自答搭因果桥，机制、例证、对策递进清晰，结尾以棍子与机器回扣开头和题设，闭环自然。",
+      "script_spans": [
+        "为什么细查反而可能削弱安全？",
+        "棍子舞得再花，不如机器铺得宽"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "先认'安全当然重要'再提诉求，'可能削弱''不等于'留足边界，批评对措施不对人，公允无煽动。",
+      "script_spans": [
+        "安全当然重要，可把防线全压在进站口细查，不等于城里就更安全",
+        "为什么细查反而可能削弱安全",
+        "我们懂安保用意，但不该只让乘客填坑"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c1bb0e09c6224590a863c0e6fd7d63a8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-76016f67220d43bebd5ed11ec648068b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

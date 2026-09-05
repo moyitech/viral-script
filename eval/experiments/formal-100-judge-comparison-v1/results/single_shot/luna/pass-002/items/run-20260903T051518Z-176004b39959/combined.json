@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-d6273734302e4ab6a8b0325409f60796",
+  "run_id": "run-20260903T051518Z-176004b39959",
+  "trace_sha256": "fcb107656a0d00f7ed18d771b57f4e968d515b8f4b4d5c4e633cceb1d0e38330",
+  "created_at": "2026-09-03T12:32:51.037908Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇提出效率与真实反馈的冲突，随后落到教师、家长和学生的具体应对，完整回答题设。",
+      "script_spans": [
+        "效率提升本身不背削弱真实反馈的锅",
+        "对普通家庭，别把AI批改当终点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“人是否留在反馈闭环”推进，调研比例、修改层次和家庭教师建议层层增加判断依据，信息密度高。",
+      "script_spans": [
+        "常态化用AI辅助的老师只有约两成，更多学校连使用边界都没定。",
+        "学生根据智能反馈修改时，多是增删词句这类低阶动作，少有重构论证的高阶改动。",
+        "机器擅长标出病句，却很难说出“你这个论点凭什么成立”"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用效率与温度的冲突立题，中段层层推进，结尾追问自然回扣个人体验。",
+      "script_spans": [
+        "一方面老师改一篇作文得花十几分钟，全班堆起来几天都改不完；另一方面，AI秒批秒改",
+        "下次见AI评语，先琢磨：这说的是“我”吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚、短句较多，但核心解释仍夹着“低阶动作”“高阶改动”等书面术语，真人口播需略作转译。",
+      "script_spans": [
+        "机器先扫错别字和格式，老师再抓重点",
+        "多是增删词句这类低阶动作，少有重构论证的高阶改动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和拟人克制，‘把判断权交给快捷键’形成可复述的判断，既有力度又不油腻。",
+      "script_spans": [
+        "效率提升本身不背削弱真实反馈的锅",
+        "工具快不是原罪，把判断权交给快捷键才是。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先以效率与反馈设问并给出判断，再用调研、实验和分对象建议推进，结尾回扣“判断权”，论证闭合。",
+      "script_spans": [
+        "真正决定反馈真不真实的，是人有没有留在闭环里。",
+        "工具快不是原罪，把判断权交给快捷键才是。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制且无明显违规，但“连使用边界都没定”“效率越高，离真反馈越远”表述偏绝对，可能造成过度概括。",
+      "script_spans": [
+        "若老师用省下的时间开一场写作小会，反馈就从纠错变成对话。",
+        "更多学校连使用边界都没定",
+        "否则效率越高，离真反馈越远。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1f372a797992464cb514a66e01a662c8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

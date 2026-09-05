@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-70470ca9324d4f1dba852d4b9492d22d",
+  "run_id": "run-20260902T143354Z-9a98c6ef6db3",
+  "trace_sha256": "176a834ea1339c1460ee466d76fa5b9143079177f4abe30cf9e544e1ff9024c8",
+  "created_at": "2026-09-03T12:15:45.552262Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否增长，并同时拆解增量、挪单与成本，还给出不同业态的判断标准。",
+      "script_spans": [
+        "热闹能不能变真金白银，得看多卖的货能不能盖过多花的电费和人手，还得想想是不是把原来傍晚来的人挪到了深夜。",
+        "延时是拉增长的手段，不是目的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息单元层层推进：先区分客流与销售，再讲指标、场景、成本和业态，观众能带走判断方法。",
+      "script_spans": [
+        "商场数人头容易，可客流和零售额是两本账。",
+        "这种夜经济不是挂个招牌就行，得有餐饮和社交业态打底。",
+        "延时意味着空调、保安、保洁都得跟着熬。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头先抛利润冲突，中段用指标、场景和成本持续推进，结尾互动自然且有余味。",
+      "script_spans": [
+        "拖晚关门多来的客人，可能吃掉你原本稳赚的利润。",
+        "咱得瞧转化率和坪效，才晓得热闹管不管用。",
+        "下次见商场挂出不打烊的牌子，你琢磨下，它多赚的那顿夜宵钱，够不够给店员买杯热咖啡？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句、设问和具体例子交替，气口自然，连续朗读基本不用临时换词。",
+      "script_spans": [
+        "为啥热闹常常是假象？",
+        "可成本那头不能装看不见。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“两本账”“给电表打工”等表达具体好记，既服务判断，也没有堆砌到妨碍理解。",
+      "script_spans": [
+        "客流和零售额是两本账。",
+        "社区型卖日用品的，硬撑凌晨开门只是给电表打工。",
+        "如果连咖啡都买不起，那热闹只是陪它熬鹰。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，能从客流误判推进到成本与业态；但“晨间早餐”等表述拗口，短期营收到新增生意的因果也略跳。",
+      "script_spans": [
+        "商场数人头容易，可客流和零售额是两本账。",
+        "一部分人看完球顺势吃个晨间早餐，从看球到清早补给连成串，短时间营收真上去了。",
+        "这算新增了生意，因为平时深夜商场空荡荡，现在凭空多出一批外地游客和年轻球迷。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无明确违规或危险导向，但“店员刷手机到天亮”等个案与泛化表述证据不足，易造成夸大印象，建议加限定。",
+      "script_spans": [
+        "延时是拉增长的手段，不是目的。",
+        "我见过社区商场硬学网红延时，结果店员刷手机到天亮，水电单比营业额还好看。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f899871a9fec45ec8e913dc9f961aab2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

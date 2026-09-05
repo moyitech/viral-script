@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "comparison": "combined_judge_repeatability",
+  "source_groups": [
+    "baseline",
+    "single_shot"
+  ],
+  "record_count": 600,
+  "dimension_count": 7,
+  "dimensions": {
+    "engagement": {
+      "count": 600,
+      "exact_agreement_count": 546,
+      "exact_agreement_rate": 0.91,
+      "quadratic_weighted_kappa": 0.6734068503921133,
+      "mae": 0.09,
+      "baseline_distribution": {
+        "2": 97,
+        "3": 503
+      },
+      "repeat_distribution": {
+        "2": 101,
+        "3": 499
+      },
+      "delta_distribution": {
+        "-1": 29,
+        "0": 546,
+        "1": 25
+      }
+    },
+    "logic_structure": {
+      "count": 600,
+      "exact_agreement_count": 596,
+      "exact_agreement_rate": 0.9933333333333333,
+      "quadratic_weighted_kappa": -0.0033444816053513904,
+      "mae": 0.006666666666666667,
+      "baseline_distribution": {
+        "2": 2,
+        "3": 598
+      },
+      "repeat_distribution": {
+        "2": 2,
+        "3": 598
+      },
+      "delta_distribution": {
+        "-1": 2,
+        "0": 596,
+        "1": 2
+      }
+    },
+    "oral_fluency": {
+      "count": 600,
+      "exact_agreement_count": 572,
+      "exact_agreement_rate": 0.9533333333333334,
+      "quadratic_weighted_kappa": 0.7418879056047197,
+      "mae": 0.04666666666666667,
+      "baseline_distribution": {
+        "1": 1,
+        "2": 62,
+        "3": 537
+      },
+      "repeat_distribution": {
+        "2": 54,
+        "3": 546
+      },
+      "delta_distribution": {
+        "-1": 9,
+        "0": 572,
+        "1": 19
+      }
+    },
+    "rhetoric_memorability": {
+      "count": 600,
+      "exact_agreement_count": 588,
+      "exact_agreement_rate": 0.98,
+      "quadratic_weighted_kappa": 0.7980364656381487,
+      "mae": 0.02,
+      "baseline_distribution": {
+        "1": 1,
+        "2": 23,
+        "3": 576
+      },
+      "repeat_distribution": {
+        "1": 2,
+        "2": 27,
+        "3": 571
+      },
+      "delta_distribution": {
+        "-1": 9,
+        "0": 588,
+        "1": 3
+      }
+    },
+    "safety_compliance": {
+      "count": 600,
+      "exact_agreement_count": 568,
+      "exact_agreement_rate": 0.9466666666666667,
+      "quadratic_weighted_kappa": 0.17305538806098697,
+      "mae": 0.05333333333333334,
+      "baseline_distribution": {
+        "2": 23,
+        "3": 577
+      },
+      "repeat_distribution": {
+        "2": 17,
+        "3": 583
+      },
+      "delta_distribution": {
+        "-1": 13,
+        "0": 568,
+        "1": 19
+      }
+    },
+    "theme_information": {
+      "count": 600,
+      "exact_agreement_count": 600,
+      "exact_agreement_rate": 1.0,
+      "quadratic_weighted_kappa": 1.0,
+      "mae": 0.0,
+      "baseline_distribution": {
+        "3": 600
+      },
+      "repeat_distribution": {
+        "3": 600
+      },
+      "delta_distribution": {
+        "0": 600
+      }
+    },
+    "topic_alignment": {
+      "count": 600,
+      "exact_agreement_count": 597,
+      "exact_agreement_rate": 0.995,
+      "quadratic_weighted_kappa": -0.00222717149220486,
+      "mae": 0.008333333333333333,
+      "baseline_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 598
+      },
+      "repeat_distribution": {
+        "1": 1,
+        "3": 599
+      },
+      "delta_distribution": {
+        "-2": 1,
+        "0": 597,
+        "1": 1,
+        "2": 1
+      }
+    }
+  },
+  "evaluator_fingerprint_sha256": "781b2b335b54222a72d5c7d40dc776a8f2d76ebea76d565cd375053880a7b812",
+  "source_evaluation_ids": {
+    "baseline": {
+      "baseline": "eval-20260902T145230.970004Z-bbd076de",
+      "repeat": "eval-20260902T162412.483340Z-ed2c0c1d"
+    },
+    "single_shot": {
+      "baseline": "eval-20260903T051804.460933Z-8b54d273",
+      "repeat": "eval-20260903T052952.391434Z-64f51796"
+    }
+  },
+  "baseline_request_count_distribution": {
+    "4": 472,
+    "5": 120,
+    "6": 8
+  },
+  "repeat_request_count_distribution": {
+    "4": 459,
+    "5": 138,
+    "6": 3
+  },
+  "overall": {
+    "dimension_comparison_count": 4200,
+    "dimension_exact_agreement_count": 4067,
+    "dimension_exact_agreement_rate": 0.9683333333333334,
+    "all_dimensions_exact_count": 488,
+    "all_dimensions_exact_rate": 0.8133333333333334,
+    "normalized_score_exact_count": 494,
+    "normalized_score_exact_rate": 0.8233333333333334,
+    "baseline_normalized_score_mean": 0.9830158730158731,
+    "repeat_normalized_score_mean": 0.9835714285714285,
+    "normalized_score_mean_delta": 0.0005555555555554292,
+    "normalized_score_mae": 0.009126984126984122,
+    "normalized_score_spearman": 0.7115137650552098
+  }
+}

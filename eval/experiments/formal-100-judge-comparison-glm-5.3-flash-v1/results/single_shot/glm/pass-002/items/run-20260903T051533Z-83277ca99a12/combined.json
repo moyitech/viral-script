@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-bce588abc07c4100a99e2a4056a044e0",
+  "run_id": "run-20260903T051533Z-83277ca99a12",
+  "trace_sha256": "60a39f1d2502f4034558a831df20b9007a6d4289116703a446a31b2362c307de",
+  "created_at": "2026-09-03T15:29:00.058464Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即点明关心变压迫的症结，兼顾关心与压力两侧，对象与人群痛点均命中。",
+      "script_spans": [
+        "原本出自关心却让人感到压迫，症结在于它把自愿的信任扭成了强制的透明"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "诊断、机制、规范、佐证到可操作建议层层递进，短篇幅内信息密度高且无注水。",
+      "script_spans": [
+        "当你的位置随时能被刷新，那种被无声注视的感觉会悄悄磨掉你对生活的掌控感",
+        "去手机设置里把位置权限关掉就行"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头以关心变压迫的反差点题，结尾余味自然；但中段多为抽象观点陈述，缺具体转折与新信息，推进趋平。",
+      "script_spans": [
+        "原本出自关心却让人感到压迫",
+        "去手机设置里把位置权限关掉就行",
+        "不少家庭研究都指出，情感支持固然重要，但边界模糊的渗透反而会累积心理负担"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "关权限与结尾两段顺口好读；但“强制的透明”“边界模糊的渗透”等抽象堆叠多处拗口，需临时换词。",
+      "script_spans": [
+        "要是真的透不过气，去手机设置里把位置权限关掉就行",
+        "症结在于它把自愿的信任扭成了强制的透明",
+        "但边界模糊的渗透反而会累积心理负担"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“扭成强制的透明”“直播坐标”等表达贴切克制，结尾金句离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "把自愿的信任扭成了强制的透明",
+        "留一点看不见的余地，才是家人能走得更远的底气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "归因、机制、规范、行动各段功能清晰，因果桥齐备，结尾以余地回扣开头的透明之问。",
+      "script_spans": [
+        "健康亲密的关系里，安全感应该生于彼此尊重各自空间",
+        "说到底，留一点看不见的余地，才是家人能走得更远的底气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以“即使对方绝无伤害之意”作前提，建议具体可行且留有选择权，无煽动夸大或误导承诺，安全稳妥。",
+      "script_spans": [
+        "即使对方绝无伤害之意",
+        "要是真的透不过气，去手机设置里把位置权限关掉就行"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5d865d97503b4d1a82800b3546827b97",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-48b021f561ea4c799ffc45ba3b1c2e99",
+  "run_id": "run-20260902T144735Z-605f3b41eb90",
+  "trace_sha256": "98f4d03671001d57a803285d0b30b2b1a02d6219dc613077b98d7f5f9d6678d9",
+  "created_at": "2026-09-03T12:15:57.816170Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应囤药带来的浪费与风险，并给出适度备药建议，核心人群和冲突两侧都覆盖。",
+      "script_spans": [
+        "囤药给了安心，却也真变成浪费和风险。",
+        "备药求稳没错，但别超量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕囤药的浪费、用药风险与控制方法推进，包含过期、转卖、垃圾分类等具体信息。",
+      "script_spans": [
+        "一年过期药的数量，能以万吨算。",
+        "个人手里剩的药不能转卖给药店，法律不允许。",
+        "家里留点退烧感冒的就行，别照着网传清单狂买。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出退烧药被丢弃的后果，中段由浪费推进到处理风险，结尾提问也自然承接。",
+      "script_spans": [
+        "你囤的退烧药，最后全扔垃圾桶了。",
+        "下次看到抢药，你会先翻翻自家抽屉吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有短句和对话承接，但“不是一户两家”等搭配生硬，朗读时至少多处需要换词或重断句。",
+      "script_spans": [
+        "你仔细想，这难道不是花冤枉钱买焦虑？",
+        "没开封的药直接丢，不是一户两家。",
+        "一年过期药的数量，能以万吨算。",
+        "原本求个心安，反倒填了垃圾桶，这账不算不知道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“药箱里的踏实，其实来自少而精，不是堆满”把核心观点说得具体，简洁且便于复述。",
+      "script_spans": [
+        "药箱里的踏实，其实来自少而精，不是堆满。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按浪费、风险、建议展开，主线清楚；但部分判断过于绝对，个别结论缺少必要边界。",
+      "script_spans": [
+        "备药求稳没错，但别超量。",
+        "但堆太多，反而记不住哪瓶还能用。",
+        "药有保质期，放久就失效。",
+        "药卡在家里，既不能卖钱也不能随手丢，它算有害垃圾。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题聚焦囤药浪费与处理，整体无煽动或危险指令；但“最后全扔”“放久就失效”等绝对化表述，且用药建议边界不足，需改写。",
+      "script_spans": [
+        "备药求稳没错，但别超量。",
+        "你囤的退烧药，最后全扔垃圾桶了。",
+        "药有保质期，放久就失效。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-69a260f498e34f0691ec2304927b5b88",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

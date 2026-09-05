@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-219ac2eb4c4d45eca19666f3c08280c2",
+  "run_id": "run-20260902T143038Z-b182907c3bc9",
+  "trace_sha256": "d70468c20f28cbd5afca7c001cd57bc44fada8f4189dbdd65e36877f0a5a07a8",
+  "created_at": "2026-09-03T11:44:27.671616Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应合作学习走样的原因，覆盖家长、学校、评价与公平等关键冲突，切中普通家长痛点。",
+      "script_spans": [
+        "合作学习为啥走样？根子在任务甩出校门，没人守边界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 661，目标为 700，偏差率为 5.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕任务外包、家长代劳、同伴训练和评价偏差层层推进，既有机制解释，也呈现了公平后果。",
+      "script_spans": [
+        "更关键，合作本事得在同伴磕碰里长。",
+        "评分表重美观轻过程，寒门娃家长没空做，往往沉默。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以孩子合作与家长比资源的反差入题，中段案例递进，结尾追问自然收束。",
+      "script_spans": [
+        "小组作业本该练孩子合作，现在却逼家长比资源。",
+        "那家长多上心，娃真能学扎实吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句有冲击力、口语词足，但多处压缩表达和搭配生硬，连续朗读时需要重断句。",
+      "script_spans": [
+        "家长怕娃拖小组后腿，熬夜代劳。",
+        "这反常识，本练同伴配合，却考家长时间。",
+        "现在版面精美，却是家长后台较劲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“作业成家庭财报”“合作变筛选”形象克制，既压缩观点，也留下了可复述的判断。",
+      "script_spans": [
+        "作业成家庭财报。",
+        "合作变筛选，公平受影响。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "案例段的代劳链条清楚，开头到结尾也能回扣；但政策责任与小组任务衔接偏跳，公平后果推导略快。",
+      "script_spans": [
+        "老师留个探究题，默认家里有人帮查资料做海报。家长怕娃拖小组后腿，熬夜代劳。",
+        "批改检查该教师担",
+        "班级里寒门娃可能退群，差距更早固化。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，政策边界表述较稳；但绝对化归因和阶层化表达易放大个案，需限定适用范围。",
+      "script_spans": [
+        "双减文件严禁变相给父母留任务",
+        "谁家材料贵谁得分高。",
+        "班级里寒门娃可能退群，差距更早固化。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-60134f6021dd4cc38e503d55fa619345",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e853e1fdac0840f5be953b15853a29b0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

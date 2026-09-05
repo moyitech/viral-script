@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-242ca88a498148f19d185f9ce62cf2d4",
+  "run_id": "run-20260902T141946Z-21b981b3d666",
+  "trace_sha256": "f9e1d7fba5ebc5ca8111f9f149aa17c7a7e9e3ea11768c2034ec0a3ba9254a86",
+  "created_at": "2026-09-03T14:23:53.879538Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即以R1债基亏损点题，全篇只答低风险为何亏，标签与实亏两侧及普通持有人痛点均覆盖。",
+      "script_spans": [
+        "你账户里那只低风险债基，前天一天亏掉三百块，销售页却写着R1低风险",
+        "低风险这标签，意思是比股票稳，不是写包票"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "利率、会计、久期、信用、股仓、流动性层层推进各有增量，标签含义首尾呼应且补入五档新信息。",
+      "script_spans": [
+        "市场利率一涨，旧债就不香，价格往下走",
+        "早先摊余成本会藏住波动，现在市值法让亏直接现形"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即具体亏损与R1标签反差，中段用市值法、久期、信用、流动性层层兑现，结尾提问由取舍权衡自然长出。",
+      "script_spans": [
+        "你账户里那只低风险债基，前天一天亏掉三百块，销售页却写着R1低风险",
+        "监管评R1骗人吗？不是。低风险的低，只是比股票波动小，不保本",
+        "绿几天不是天塌，是债基在呼吸。你愿意用这点波动，换比活期高些收益吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、节奏清楚，但“最稳非无险”“躲开利率跳”等处拗口，朗读需临时换词重断句。",
+      "script_spans": [
+        "市场利率一涨，旧债就不香，价格往下走",
+        "销售页写R1照监管五档，R1最稳非无险",
+        "经理调仓也难完全躲开利率跳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "借条类比和放大镜比喻都贴切且服务理解，绿几天不是天塌一句离文可复述，修辞克制无堆叠炫技。",
+      "script_spans": [
+        "你借给同学钱，说好年息五块，后来银行息涨到八块，旧借条没人按面额买",
+        "低风险这标签，意思是比股票稳，不是写包票",
+        "绿几天不是天塌，是债基在呼吸"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "借同学借条搭起利率与债价的因果桥，各风险项过渡自然，结尾回扣R1标签与开头亏损实例。",
+      "script_spans": [
+        "你借给同学钱，说好年息五块，后来银行息涨到八块，旧借条没人按面额买",
+        "下次买前，先盯久期和持仓股票多少"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全篇以风险揭示为主线，“不是写包票”“不保本”等边界清楚，无确定性收益承诺，导向安全。",
+      "script_spans": [
+        "低风险这标签，意思是比股票稳，不是写包票",
+        "销售页写R1照监管五档，R1最稳非无险",
+        "债基常年正多负少，只是别当神仙保本"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b7174499478c41119dede36e7bb11f37",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

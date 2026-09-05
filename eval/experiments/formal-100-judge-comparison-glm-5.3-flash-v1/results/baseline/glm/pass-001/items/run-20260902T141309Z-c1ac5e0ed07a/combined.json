@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-4c56098962b548949ed14c0687f67b1f",
+  "run_id": "run-20260902T141309Z-c1ac5e0ed07a",
+  "trace_sha256": "1ae6ac8e24abc530189f447e09ed9a61c7309793095c55ada2ad7044cbfaf34d",
+  "created_at": "2026-09-03T13:46:18.871462Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即入题，便利与负债两侧都正面回应，结尾建议与回扣指向普通消费者，切角具体。",
+      "script_spans": [
+        "你点0元下单，多拿三件衣服试尺码，真方便？",
+        "先用后付既方便试错，也悄悄抬升负债可能，不是单方好事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 256，目标为 280，偏差率为 8.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机制、初衷、心理与场景扩展层层推进，无感累积的账单链条有事实支撑，观众可带走关闭方法。",
+      "script_spans": [
+        "它本是为怕质量不好不敢买的人降门槛，就像店里试衣间但不押钱，先试再定，不合身退掉不花",
+        "但正因买时没付钱，手感轻了，钱从指缝溜走没觉，本来一件顺手拿三件，留下的变多，账单就厚了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字内“真方便？”即成反差钩子，中段由机制到风险再到场景逐层兑现，结尾“停两秒”由正文自然生长。",
+      "script_spans": [
+        "你点0元下单，多拿三件衣服试尺码，真方便？",
+        "但正因买时没付钱，手感轻了，钱从指缝溜走没觉",
+        "下次划到0元下单，你先停两秒？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有对话感、可读，但“悄悄抬升负债可能”“钱从指缝溜走没觉”等处硬压缩，朗读需临时换词。",
+      "script_spans": [
+        "本来一件顺手拿三件，留下的变多，账单就厚了",
+        "也悄悄抬升负债可能",
+        "钱从指缝溜走没觉"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "试衣间类比与“钱从指缝溜走”贴切助解，“无感消费常是负债起点”离开上下文仍可复述，全篇克制不堆砌。",
+      "script_spans": [
+        "就像店里试衣间但不押钱，先试再定",
+        "钱从指缝溜走没觉",
+        "方便是真方便，可无感消费常是负债起点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "各段功能清楚，‘正因买时没付钱’补上关键因果桥，结尾回扣0元下单开篇，层层递进。",
+      "script_spans": [
+        "但正因买时没付钱，手感轻了",
+        "方便是真方便，可无感消费常是负债起点。下次划到0元下单，你先停两秒？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反并陈，'抬升负债可能''常是'均留余地，建议具体可操作，无煽动夸大或确定性承诺，安全。",
+      "script_spans": [
+        "先用后付既方便试错，也悄悄抬升负债可能，不是单方好事",
+        "你想可控，就打开支付设置关掉这功能，少点冲动"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c03ae6e87d0744b1933557b62592a1aa",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-570604f1edd84d9186fe23387aeca74b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

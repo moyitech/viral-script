@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-f39cf6ed186b4c8d91a60c4faf9f403e",
+  "run_id": "run-20260902T144103Z-e56fed619f0e",
+  "trace_sha256": "cfe19ee7e82e64afa0672e0d615b35abb7ceaf00430a96b9383a8962e4d35465",
+  "created_at": "2026-09-03T13:54:39.179974Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头点出两头冲突，法律与认知两侧都答，结尾给出兼顾做法，正面回应题设。",
+      "script_spans": [
+        "你要防诈，也得保他自主，两头都得顾",
+        "防诈用提醒，自主用留权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 671，目标为 700，偏差率为 4.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "判例、万人调查、意定监护困境逐一推进且与引用资料相符，观众能带走判断线和具体做法。",
+      "script_spans": [
+        "老人清醒时，自己选监护人，去公证处写清权限，这叫意定监护",
+        "大型调查跟过上万老人，认知出状况的不少"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即有反差冲突，中段案例、场景、数据层层兑现，结尾抢卡或教认骗之问由正文自然长出。",
+      "script_spans": [
+        "子女代管养老金，防诈却可能夺了自主权",
+        "最高法有案例，儿子收走老妈存折被诉，法院说子女无理阻碍不行",
+        "下次见父母差点上当，你是抢卡还是坐下来教他认骗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短气口、对话感足，但“私下了代管”“跑出漏洞易侵财”等处需临时换词，拗口不止一处。",
+      "script_spans": [
+        "可你妈手机弹出中奖信息，你顺手把卡收走，以为挡了诈骗，她却觉得没了底气",
+        "正规监护尚且漏多，私下了代管更没刹车"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "钱牢、软夺权等比喻贴切助解；不是任性是尊严一句离文可复述，金句密度适度未喧宾夺主。",
+      "script_spans": [
+        "老人自己花自己的钱，不是任性，是尊严",
+        "代管若只防诈不汇报，老人像被关进钱牢",
+        "你帮他是情，替他决是越界"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "问句推进、首尾回扣，主线可跟随；但监护缺陷要点跨段重述，先说被查又说漏洞，转折偏急。",
+      "script_spans": [
+        "正规监护尚且漏多，私下了代管更没刹车",
+        "监护人乱花还得被查。可惜专业队伍少，协议规则粗，跑出漏洞易侵财"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法律与调查说法均有限定，兼顾防诈与自主，无煽动夸大，导向尊重老人，审核风险低。",
+      "script_spans": [
+        "哪怕父母年高，只要清醒，银行通常让他自取。子女代领得有书面委托。",
+        "你帮他是情，替他决是越界。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c5f15edf313449ba9bc2ad7eeadc66e8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e32c7a09c61146019f9ab2245e687b8c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-7caee8431ba14e3487a2aead44fed854",
+  "run_id": "run-20260903T051513Z-5cb17bb1ac7b",
+  "trace_sha256": "b3740d201d9e49789384d5e2a00e71fcd020af1f2465f5f7092ab8c3a8120934",
+  "created_at": "2026-09-03T15:28:57.582785Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即摆出防诈与自主权冲突，判断句直接作答，子女与老人两侧痛点均有覆盖。",
+      "script_spans": [
+        "代管养老金本身不是侵权，但把代管变成单方面接管，无视父母清醒时的意愿，就滑向了剥夺自主权。",
+        "防诈的好心，怎么就变了味？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "判决案例、意定监护、认知边界等信息单元各有推进，与引用相符，观众可带走判断方法。",
+      "script_spans": [
+        "其实意定监护制度早有平衡设计：老人清醒时指定监护人，既托付防诈又保留意愿。",
+        "这里有个边界：认知退化是渐进的，不能凭子女感觉判定无能力。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛出没收银行卡与法院判决的冲突，中段法律、案例、边界层层推进，结尾金句自然收束留余味。",
+      "script_spans": [
+        "把父母的养老金银行卡收走，子女本意是怕老人被骗，可法院有过判决，孩子必须把卡还给老人。",
+        "代管防住了骗子，却也可能防住了父母自己。",
+        "养老金是父母最后的体面，不是子女的保管箱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读通，短句与气口安排用心；但中段法律、研究表述偏书面，两处需临时换词重断句。",
+      "script_spans": [
+        "养老金是父母最后的体面，不是子女的保管箱。",
+        "对比失能老人确实需要协助，不少低龄健康老人也被全盘接管，取舍完全错位。",
+        "反过来，若老人已明显受骗高危又拒绝帮助，子女可尝试临时保全但需及时补正规手续，否则同样越界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "防骗子也防住父母、保管箱等比喻准确克制，金句可脱离上下文复述，无炫技堆砌。",
+      "script_spans": [
+        "代管防住了骗子，却也可能防住了父母自己。",
+        "养老金是父母最后的体面，不是子女的保管箱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以“私下”承转、用设问推进边界讨论，结尾回扣没收卡意象，因果桥与回扣完整。",
+      "script_spans": [
+        "可问题就出在这个“私下”上。",
+        "负责任的保护，起点该是一张老人自愿签的授权书，而不是一次悄悄没收的银行卡。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反两面兼顾，建议均附带条件边界，无煽动夸大或误导承诺，导向安全。",
+      "script_spans": [
+        "这里有个边界：认知退化是渐进的，不能凭子女感觉判定无能力。",
+        "子女可尝试临时保全但需及时补正规手续，否则同样越界"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7fa173095b3346959a11394041500e22",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

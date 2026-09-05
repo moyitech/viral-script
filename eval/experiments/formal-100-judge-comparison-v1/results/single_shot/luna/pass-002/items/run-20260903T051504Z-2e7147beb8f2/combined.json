@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-2b921847a8a842f392d45ebab6df3c91",
+  "run_id": "run-20260903T051504Z-2e7147beb8f2",
+  "trace_sha256": "fa2d2e32ae4455978793db9c38615b6b9d624e932d748d409b60fa984b60a13c",
+  "created_at": "2026-09-03T12:32:10.286155Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答谁有决定权，并区分祖辈日常执行与父母重大事项拍板，核心人群和冲突两侧都覆盖。",
+      "script_spans": [
+        "隔代育儿里最锋利的矛盾，往往不是爱不爱，而是谁有日常教育的决定权。",
+        "孩子今天喝多少水、傍晚散不散步，实际带养人随机应变更顺手；但碰到升学取向、品德塑造、医疗选择这些大事，核心决定权必须留在父母手里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，法律责任、代际错位、分层决策、监护例外及外部支持逐层推进，信息增量充分。",
+      "script_spans": [
+        "责任写在父母名下，劳作落在祖辈肩上，这种错位不放平，冲突就不断。",
+        "破解不是比谁嗓门大，而是用足外部支持，像社区、妇联的家庭教育指导资源，能帮两代人对齐步调。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用穿衣冲突追问“谁说了算”，中段持续推进责任、例外与后果，结尾判断有余味。",
+      "script_spans": [
+        "家里带娃的爷爷奶奶坚持孩子得穿厚点，父母却要科学穿衣，谁说了算？",
+        "决定权绑的是责任，不是辛苦量。带娃流汗多，不等于握紧方向盘"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和收束有对话感，但中段法律术语、名词并列和个别不顺句式，朗读需改词。",
+      "script_spans": [
+        "谁生养谁负责，谁负责谁拍板。",
+        "升学取向、品德塑造、医疗选择这些大事",
+        "法院能依情况下发家庭教育指导令"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“责任写在父母名下，劳作落在祖辈肩上”形成对照，结尾方向盘比喻易复述，整体克制。",
+      "script_spans": [
+        "责任写在父母名下，劳作落在祖辈肩上",
+        "谁负责谁拍板"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问引入，先判定再解释成因，继而分层取舍、补充例外与后果，结尾自然回扣责任和决定权。",
+      "script_spans": [
+        "有人问，难道祖辈就只能听话照做？当然不是，这里要讲取舍。",
+        "如果父母因故失去监护能力，祖辈依法接替成监护人，决定权才随之转移，这是少见的例外。",
+        "说到底，决定权绑的是责任，不是辛苦量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动，也说明了监护人例外；但“谁负责谁拍板”等绝对化表述，可能把复杂监护规则说得过满。",
+      "script_spans": [
+        "如果父母因故失去监护能力，祖辈依法接替成监护人，决定权才随之转移，这是少见的例外。",
+        "谁生养谁负责，谁负责谁拍板。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d17643de8fa141faaf13589b43f09b8d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

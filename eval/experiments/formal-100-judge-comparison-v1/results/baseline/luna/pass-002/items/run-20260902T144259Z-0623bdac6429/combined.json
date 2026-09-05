@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-c96abf0e9f134709b2672a4cad35946e",
+  "run_id": "run-20260902T144259Z-0623bdac6429",
+  "trace_sha256": "eef04d6d69b21e7fe90f202ad32583e7848b86f3d7e13f1f2be413d4bc4b671a",
+  "created_at": "2026-09-03T12:18:40.041141Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应短期刺激与长期信心的二元问题，始终围绕普通消费者的收入预期展开。",
+      "script_spans": [
+        "短期刺激能变成长久信心吗？我看啊，钱到手能燃起一时买买买的火，可信心得靠收入预期续柴。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策数字、消费券研究与收入预期共同推进，既解释短期效果，也给出长期信心的判断标准。",
+      "script_spans": [
+        "政府每掏一块，带动三块四消费。",
+        "花得最猛的，常是本来就要买、门槛迈得过的那拨人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“越补越攒”的反差抓人，中段持续给出数据与限制，结尾问题也自然承接主题。",
+      "script_spans": [
+        "补贴越发越多，大家却越攒越紧。",
+        "补贴把将来的需求，提前挤到这几天。",
+        "下次看到补贴弹窗，你会先算省多少，还是先想下个月工资稳不稳？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有提问、比喻和具体动作，整体可读；但“报更新”“算完省多少点赞转发”两处搭配与停顿不稳，拖低朗读顺滑度。",
+      "script_spans": [
+        "很多人本来犹豫，一看划算，怕错过，就走进卖场下单了。",
+        "老旧小区加装电梯也能报更新，街坊出门踏实点。",
+        "小区群里大妈算完省多少点赞转发，可问起明年还换不换，她摇头说先看老头退休金。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“补贴是柴，收入预期是风”准确承接全文论点，类比克制，“需求提前挤到这几天”也便于复述。",
+      "script_spans": [
+        "补贴把将来的需求，提前挤到这几天。",
+        "信心像盆火，补贴是柴，收入预期是风。",
+        "光添柴不通风，火苗窜一下就弱了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先解释补贴为何促消费，再追问为何难持久，最后用火与风回扣核心判断，层次清楚。",
+      "script_spans": [
+        "为啥补贴能撬动短时消费？",
+        "那为啥说难变长久底气？",
+        "所以你发现没，补贴频加码，短期数字好看。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体客观讨论补贴与消费信心，也有数据和边界提示；但部分群体判断过于绝对，需补充限定以避免泛化误导。",
+      "script_spans": [
+        "明年政策变不变还不好说",
+        "大家却越攒越紧",
+        "真正犹豫的人，怕的是下月收入不稳，不是少赚那点补"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-796497bffe944296823adee031659db8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-ed8273b22f564717914fc333e62f1dbd",
+  "run_id": "run-20260902T144521Z-e06bffa73c9c",
+  "trace_sha256": "746d0d0db34fcf62e302eca28b88d2d1ef1814332e6d889bdc552d39a9708c30",
+  "created_at": "2026-09-03T11:49:06.827019Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答资源如何分配，既讲急危重症优先，也讲非急症分流，并落到普通人的就医选择。",
+      "script_spans": [
+        "先判轻重，急的先救，不急的劝去别处。",
+        "平常感冒拉伤，去社区诊所反而省心省钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 455，目标为 450，偏差率为 1.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，分诊、绿色通道、收费退款和社区替代方案层层推进，信息单元具体且有行动指向。",
+      "script_spans": [
+        "进门先预检分诊，护士看症状定紧急级别。",
+        "最急的走绿色通道推去抢救，慢的领号坐边上看。",
+        "结果那类人少两成"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“抢走救命床”制造强冲突，中段持续给出分诊和分流方案，结尾问题自然回扣日常选择。",
+      "script_spans": [
+        "你发烧去急诊，可能抢走心梗老人救命床。",
+        "医院咋拦人？进门先预检分诊，护士看症状定紧急级别。",
+        "下次小病又想奔急诊，先问：这床该不该留给身后救护车的人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和排比带来利落节奏，但“问两句血压呼吸”等多处表达不顺，需重断句或换词。",
+      "script_spans": [
+        "急的先救，不急的劝去别处。",
+        "机器给人排队",
+        "问两句血压呼吸",
+        "前面人缠护士误事"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“把好钢用在刀刃”和“给自家留后路”具体易懂，既有画面，也留下了可复述的记忆点。",
+      "script_spans": [
+        "分诊不是拒人，是把好钢用在刀刃。",
+        "把急诊让给真急的，等于给自家留后路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构有钩子、机制展开、日常影响和结尾回扣，主线基本可跟随；但个别表述含混，收费效果也被绝对化。",
+      "script_spans": [
+        "光分诊不够，得让人愿去别处。",
+        "把急诊让给真急的，等于给自家留后路。",
+        "机器给人排队。",
+        "床全留危急的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "资源优先与分诊原则表述清楚，但把发烧、头疼等简单归为轻症，可能造成误导并延误就医。",
+      "script_spans": [
+        "先判轻重，急的先救，不急的劝去别处",
+        "你发烧去急诊，可能抢走心梗老人救命床",
+        "头疼脑热不喘不晕的"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4cd268ac8182472a8d3c34e5eaacb22e",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1ceb21a8cf8e4a2c92135230e6ef2ca7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

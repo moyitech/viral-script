@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-af9637a1567a44b99ae84657db1e6c16",
+  "run_id": "run-20260902T141700Z-fc2049ccdece",
+  "trace_sha256": "4e47d39d33a394d5f5d567d3066b12b6f295c85f0d9da9dda6bac23d0923d943",
+  "created_at": "2026-09-03T12:17:36.653649Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直面安检加严、通勤拥堵与安全风险，聚焦普通通勤者，并提出技术提效的兼顾路径。",
+      "script_spans": [
+        "要兼顾安全和效率，不能只把关口加严，得让安检更聪明，用新技术把时间抢回来。",
+        "上班族得留缓冲，城市也得给明确预期。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，案例、政策落地、安检员注意力研究和技术方案层层增加信息量。",
+      "script_spans": [
+        "站里车厢空荡，站外长队拐进人行道。",
+        "有实证研究跟踪地铁岗，发现用透明挡板隔开路人交谈干扰，绩效会变好，工位微气候差人也稳不住。",
+        "当机器认得包，人就不必拦所有人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“多耗20分钟”制造安全与效率冲突，中段连续转向现场、人员和技术，结尾追问自然。",
+      "script_spans": [
+        "早高峰多耗20分钟安检，安全就真能兜住吗？",
+        "为啥越细查，危险反倒可能从指缝溜走？",
+        "下次你遇长队，该问的不是要不要防护，而是为何不能既稳当又顺畅。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句推进有力度，也有对话感，但研究句和技术表达偏密，朗读时仍需重断句。",
+      "script_spans": [
+        "大家吐槽说是加强安检，真轮到自己就舞两下棒子。",
+        "有实证研究跟踪地铁岗，发现用透明挡板隔开路人交谈干扰，绩效会变好，工位微气候差人也稳不住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比和画面感服务论点，“车厢空着人挤外面”与“机器认得包”都具备自然复述性。",
+      "script_spans": [
+        "细查清单变长，可通道数没跟着涨。",
+        "只堵门口不增机，车厢空着人挤外面。",
+        "当机器认得包，人就不必拦所有人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构推进清楚，但“兼顾很难是二选一”语病明显；拥挤致漏检的因果和技术方案落地仍缺少桥接。",
+      "script_spans": [
+        "再把视线移到安检员身上。他们是做视觉搜索的，环境一乱注意力就飘。",
+        "兼顾很难是二选一，是把身份识别、智能判图悄悄嵌进人流。",
+        "你越想抠细，现场越噪，漏检风险反被悄悄抬高。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，但“漏检风险反被悄悄抬高”“机器认得包”把因果和技术效果说得过满，需加限定。",
+      "script_spans": [
+        "技术替人盯包，人才有空帮真需要的人。",
+        "你越想抠细，现场越噪，漏检风险反被悄悄抬高。",
+        "当机器认得包，人就不必拦所有人。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ae9b4b2a026447cc813c4860eeb397fe",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

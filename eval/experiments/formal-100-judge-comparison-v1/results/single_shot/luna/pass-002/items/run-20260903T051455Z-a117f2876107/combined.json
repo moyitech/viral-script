@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-d8720d262bc24ebbacc5cb673c2778a2",
+  "run_id": "run-20260903T051455Z-a117f2876107",
+  "trace_sha256": "4d79630e8ed9ec5bdbddaff521bdead68992c0358e2247bb52b84da3815c5763",
+  "created_at": "2026-09-03T12:31:52.638895Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕平台流量、商家经营与消费者选择展开，并给出不把生路全押给平台的明确回答。",
+      "script_spans": [
+        "街边小店真会被流量绑架吗？我的判断是：还没到绑架那步",
+        "所以街边店别把生路全押给超级应用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从流量入口、平台规则、老客沉淀到佣金风险逐层推进，既有判断也有可执行建议。",
+      "script_spans": [
+        "展示位和抽成规则全由平台定，小店自己的老客沉淀不下来",
+        "留块黑板写自家微信，老客还是得自己攒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用早餐店的具体变化切入，中段不断追加平台代价，结尾以“门口灯笼”收束并留下余味。",
+      "script_spans": [
+        "楼下早餐店老板最近发现，一半客人进店先问“有团购吗”",
+        "流量潮水退去，能活下来的都是有自己门口灯笼的店。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感和画面，但中段商业术语、并列信息偏密，需重断句。",
+      "script_spans": [
+        "小店老板若只会接平台单，哪天佣金涨了，要么涨价要么消失。",
+        "高德这类地图应用也用免开店费拉小店上榜，抖音有扶持计划给曝光，看似白送流量，实则把经营命脉往线上拽。",
+        "咱们点单是便宜了，但你想过没，当一条街的店都靠同一几个APP派单，哪家口味好全看算法推荐。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“流量寄居者”和“门口灯笼”把平台依赖说得具体，隐喻克制且容易复述。",
+      "script_spans": [
+        "很多店已经成了平台的“流量寄居者”",
+        "流量潮水退去，能活下来的都是有自己门口灯笼的店。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由早餐店现象切入，依次解释平台变化、经营代价和应对方式，结尾自然回扣流量依赖。",
+      "script_spans": [
+        "以前抖音靠探店视频带单，小店得自己拍段子或请达人。现在独立团购工具把内容剥掉",
+        "小店老板若只会接平台单，哪天佣金涨了，要么涨价要么消失"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有“还没到绑架那步”等边界判断，也承认点单更便宜；但“全由平台定”“全看算法推荐”等表述过满，易造成单一归因和误导。",
+      "script_spans": [
+        "我的判断是：还没到绑架那步",
+        "咱们点单是便宜了",
+        "展示位和抽成规则全由平台定",
+        "哪家口味好全看算法推荐"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0e866428ec9c4ae7ab1bfffc5e343e41",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

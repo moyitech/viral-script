@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-75e40fc9749140f9a33e86d5e65c201b",
+  "run_id": "run-20260902T144553Z-d895cc6def27",
+  "trace_sha256": "10c42a6aabce583f54899151b6c71e589841bc0302e770c36d8b40cf7a4691be",
+  "created_at": "2026-09-03T13:46:33.412016Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即抛重复缴费之问，全文围绕例外条款与医生否决权正面作答，紧扣患者视角。",
+      "script_spans": [
+        "互认推得慢，咱们换院照样重复掏钱，为啥？政策留了例外，医生手握否决权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 433，目标为 450，偏差率为 3.78%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "案例、政策时间线、例外条款、医生动因层层推进，信息具体有据，认知增量扎实。",
+      "script_spans": [
+        "一周内同个肺部CT做两遍，影像几乎没差，钱却实打实付了两次",
+        "可文件也留了口子：病情变了、设备参数不同，就可以重查"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直点重复检查浪费钱，中段以陆先生案例和“文件留口子”层层推进，结尾“那支笔”收束并自然带出提问。",
+      "script_spans": [
+        "换医院就得重做检查，刚花的钱又打水漂。",
+        "为什么清单写了互认，却拦不住重做？",
+        "互认清单列得再长，不如医生那支笔肯认旧结果。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主，气口与重音清楚，'二话不说''留了口子'等口语贯穿核心解释，朗读无需临时改词。",
+      "script_spans": [
+        "医生二话不说，又开单子做CT和血常规。",
+        "可文件也留了口子：病情变了、设备参数不同，就可以重查。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，“清单列得再长，不如医生那支笔”是离开上下文仍可复述的记忆点，无堆砌炫技。",
+      "script_spans": [
+        "刚花的钱又打水漂",
+        "可文件也留了口子",
+        "互认清单列得再长，不如医生那支笔肯认旧结果"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问引出论点，案例与政策互证，结尾回扣医生否决权与开头之问，因果桥完整。",
+      "script_spans": [
+        "所以互认清单列得再长，不如医生那支笔肯认旧结果"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制，引政策例外有边界；但“手握否决权”“嫌调阅麻烦顺手开单”等归因未经限定，易误导观众归责医生，需补表述边界。",
+      "script_spans": [
+        "文件也留了口子：病情变了、设备参数不同，就可以重查",
+        "医生手握否决权",
+        "医生嫌调阅旧数据麻烦，顺手就开新检查"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-12c555163f16426e94bf5b1ee9c075b8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-bb0452aa556046d19a71fa66e5559e9f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

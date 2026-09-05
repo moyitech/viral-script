@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-f886c8ebee244c9cb8040dd31a6d8950",
+  "run_id": "run-20260903T051532Z-42d3170a6f44",
+  "trace_sha256": "d72c9a290046f5bd5de8caaf0859aa76dee056ea255b82e8f9310ad6c7736d12",
+  "created_at": "2026-09-03T12:32:22.279663Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应普工减少与新岗位出现，覆盖运维、调参、数据分析及一线人群的转岗痛点。",
+      "script_spans": [
+        "人从台前操作退到设备身后，做看护、调参数、读数据"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中且列出具体工种和技能方向，但“只是换了模样”过度概括替代风险，信息边界不够清楚。",
+      "script_spans": [
+        "工业机器人操作员和系统运维员已是正式工种",
+        "岗位没无影无踪，只是换了模样"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出普工岗位缩减的冲突，中段补充岗位转型与调研依据，结尾落到个人行动，推进完整。",
+      "script_spans": [
+        "智能工厂一上线，流水线上的普工岗位就明显缩减",
+        "如果还想在厂里干，别只拼肌肉记忆下的手速"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有口语化收尾和清晰重音，但长句、病句与书面术语叠加，朗读需重断句。",
+      "script_spans": [
+        "简单重复的操作岗最先被压缩",
+        "岗位没无影无踪",
+        "制造业升级真正带来的不是失业潮，而是工作重心的转移"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“人退到设备身后”和“岗位只是换了模样”形象易懂，结尾的“被甩下”也有警醒感，修辞克制且便于复述。",
+      "script_spans": [
+        "人从台前操作退到设备身后",
+        "岗位没无影无踪，只是换了模样"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按岗位变化、工种举例、调研判断和行动建议推进；但岗位替代到需求上升的因果桥偏短，结论有扩大。",
+      "script_spans": [
+        "智能技术同时产生替代和创造效应",
+        "一线体力岗减了，技术类岗位需求在稳步爬升",
+        "岗位没无影无踪，只是换了模样"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且指出替代与创造并存；但岗位变化、需求上升等表述过于绝对，容易造成泛化误导。",
+      "script_spans": [
+        "智能技术同时产生替代和创造效应",
+        "岗位没无影无踪，只是换了模样"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-710c00a7d800419abe491b10da767d27",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

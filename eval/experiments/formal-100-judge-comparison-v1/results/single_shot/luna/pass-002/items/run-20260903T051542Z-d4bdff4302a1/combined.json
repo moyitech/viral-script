@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-537a686d5e5e43f4a04cfb63f8062411",
+  "run_id": "run-20260903T051542Z-d4bdff4302a1",
+  "trace_sha256": "6309d0d5dfcd92e7f64bd16f6d57d6c5619522c9781a3df7bf925c104279beba",
+  "created_at": "2026-09-03T12:42:47.810556Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答高位接盘担忧，覆盖红利资产、拥挤风险与普通投资者。",
+      "script_spans": [
+        "红利交易拥挤确实抬高了高位接盘风险，但还没成全面泡沫"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕拥挤风险推进，既解释同向持仓的传导机制，也给出查季报的判断方法。",
+      "script_spans": [
+        "真正的雷藏在持仓结构里，而不是股息率本身",
+        "翻翻季报，看它前十大持仓是不是和同行高度重叠"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以稳健与高危反差抓人，中段递进解释拥挤风险，结尾给出自然且有余味的行动提醒。",
+      "script_spans": [
+        "避风港可能堵成高危区",
+        "如果连机构都在抢同一批股票，退潮时谁也跑不快",
+        "避风港一旦堵车，先保机动性"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问句、比喻和行动建议增强可听性，但金融术语和长句仍让核心解释不够顺滑。",
+      "script_spans": [
+        "为什么扎堆会这么凶险？想象一座窄天桥",
+        "抛出指令雪崩般涌来",
+        "资产有现金流底子，但人群扎堆会短期掩盖估值缺点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "窄天桥、避风港堵车等比喻帮助理解机制，“红利还是那个红利，变的是人群”简洁有力，适合复述。",
+      "script_spans": [
+        "想象一座窄天桥，几百人同时涌过去，一点风吹草动大家又同时折返，桥瞬间危险",
+        "红利还是那个红利，变的是人群",
+        "避风港一旦堵车，先保机动性"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从风险判断到拥挤机制、监管提示和个人建议层层递进，结尾回扣避风港比喻。",
+      "script_spans": [
+        "太多资金锁在同向多头，情绪一掉头，接盘池根本接不住",
+        "资产有现金流底子，但人群扎堆会短期掩盖估值缺点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体是风险教育，没有收益承诺或诱导交易；但“谁也跑不快”“先保机动性”带有绝对化和决策暗示，需补充条件边界。",
+      "script_spans": [
+        "买红利产品前，翻翻季报，看它前十大持仓是不是和同行高度重叠。",
+        "如果连机构都在抢同一批股票，退潮时谁也跑不快。",
+        "记住，避风港一旦堵车，先保机动性。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9beb63e275c7454d83c02e6e80a0e84d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

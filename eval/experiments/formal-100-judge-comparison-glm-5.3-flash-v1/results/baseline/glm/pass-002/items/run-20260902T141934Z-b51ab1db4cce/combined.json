@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-a604e9d94815484eb90ea9d09f88621a",
+  "run_id": "run-20260902T141934Z-b51ab1db4cce",
+  "trace_sha256": "b725c7470c6ea7225f97a6c204763cc42041de2ce5fc48a3c1a8e6ef6018e15b",
+  "created_at": "2026-09-03T14:24:37.101858Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答“受益但有条件”，正文分情形覆盖受益与卡点两侧，对象锁定存量房贷家庭，切角具体。",
+      "script_spans": [
+        "已购房家庭确实能受益，但只看新闻不算数。得看你的合同有没有被批量调，或者你主动去申。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "批量调整、加点门槛、重定价周期与反例层层推进，规则数据有据可依，观众能带走核对方法。",
+      "script_spans": [
+        "这确实让五千多万户每年少付一千多亿利息。",
+        "当你的加点比新贷平均加点高出三十个基点以上，才能去谈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即抛出降了却没少还的反差，中段以可问题在、什么人真拿到好处持续递进，结尾提问由合同核验自然长出。",
+      "script_spans": [
+        "存量房贷降了，你月供可能一分没少。",
+        "你的房贷，到底卡在哪一关？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口清楚、口语承接自然，但“主动去申”“才弄清”结尾截字，朗读需临时补词，止步两分。",
+      "script_spans": [
+        "申请不收任何费用，手机银行自己点就行",
+        "或者你主动去申",
+        "有些家庭拖到重定价日过了才弄清"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，降息才是你的钱、不是别人的新闻离开上下文仍可复述，全篇无堆砌炫技。",
+      "script_spans": [
+        "看清规则，降息才是你的钱，不是别人的新闻。",
+        "新闻里的降息和你账上扣款常差着一截。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整且结尾回扣开头，但“才弄清”缺宾语，与“反例也有”衔接跳跃，追问下显松散。",
+      "script_spans": [
+        "可问题在，你的房贷不会因新发放利率低就自动跟跌。",
+        "所以你真正要做的，是翻出合同看那行加点数和重定价日。",
+        "有些家庭拖到重定价日过了才弄清。反例也有，有人以为降息必降月供，结果重定价日未到，白白多还几个月。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全文限定到位，未承诺确定收益，明示转浮动不可逆与周期不确定性，不夸大不误导，符合平台审核要求。",
+      "script_spans": [
+        "固定转浮动后按规定不能回头，得慎重点",
+        "别指望所有老贷都一夜变便宜"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4b6c5dc48c774e58aecb8111b8278922",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

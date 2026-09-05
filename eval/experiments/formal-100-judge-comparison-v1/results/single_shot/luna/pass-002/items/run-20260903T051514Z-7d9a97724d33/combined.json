@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-9814b709163b4fdbbfcd1e44b94e0c50",
+  "run_id": "run-20260903T051514Z-7d9a97724d33",
+  "trace_sha256": "e444ae7744f86a91e1e4d5fbe36303cef9a31002459ce0db26cfe603fbf946bb",
+  "created_at": "2026-09-03T12:42:11.101323Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应AI助教的两面性，既写减负与个性化，也具体说明差距扩大的路径。",
+      "script_spans": [
+        "学校引入AI助教，它能在作业批改和路径推荐上帮老师减负，但千万别以为这就是因材施教"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中于教育公平，偏见、资源错配和人工干预构成连续的信息推进。",
+      "script_spans": [
+        "研究显示，教育人工智能从数据采集、模型训练到部署交互，全链条都可能携带结构性偏见",
+        "不同学校硬件和师资调优能力悬殊，薄弱校若直接采购统一系统，缺少本地化适配"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "主题和风险冲突明确，中段有两层推进，但开头铺垫略长，结尾停在规范提醒，缺少自然余味。",
+      "script_spans": [
+        "如果放任算法逻辑，它反而可能悄悄把学习差距拉得更大。",
+        "同时也要留意，当前规范虽在完善，但落地仍靠具体学校的执行力。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，但中段长句、抽象术语和书面搭配明显拖慢口播。",
+      "script_spans": [
+        "千万别以为这就是因材施教",
+        "不能当甩手掌柜",
+        "从数据采集、模型训练到部署交互，全链条都可能携带结构性偏见",
+        "学生拿到的只是打折扣的个性化，鸿沟反而被固化"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“打折扣的个性化”和“甩手掌柜”把抽象风险说得具体，记忆点自然，也没有修辞堆叠。",
+      "script_spans": [
+        "打折扣的个性化，鸿沟反而被固化",
+        "一线教师不能当甩手掌柜"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出判断，随后分列两重风险，最后落到教师干预与学校执行，结构完整。",
+      "script_spans": [
+        "第一个关键点在于偏见内嵌。",
+        "另一重风险是资源错配。",
+        "所以一线教师不能当甩手掌柜，必须保留人工干预的关口"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以条件性表述呈现算法偏见与资源差距风险，并提出人工复核，未见煽动、歧视、危险建议或绝对化承诺。",
+      "script_spans": [
+        "如果放任算法逻辑，它反而可能悄悄把学习差距拉得更大",
+        "必须保留人工干预的关口"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-37a9dfce55e84e588dc08c46b3819eb3",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

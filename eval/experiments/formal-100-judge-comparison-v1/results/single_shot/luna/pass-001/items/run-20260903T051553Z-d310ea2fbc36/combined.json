@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-c5d5aaa3f6374e4d9056874e1879777a",
+  "run_id": "run-20260903T051553Z-d310ea2fbc36",
+  "trace_sha256": "c8453ea5fc9de1783bfa71c6febfe73feb970d4021dc3f304e1a7f0a22e0252e",
+  "created_at": "2026-09-03T11:57:27.596564Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "紧扣邻里群公开姓名催费的隐私冲突，兼顾被点名者与催缴者，并给出可执行路径。",
+      "script_spans": [
+        "催缴理由再正当，也不是把别人姓名丢进群里公开晾晒的正当借口。",
+        "如果你是急着拿回钱的那位，正确路子是交物业转达、走业主表决，或者真到了份上找法院"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 470，目标为 450，偏差率为 4.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，先解释姓名与欠费事实的个人信息属性，再补平台责任和双向处置建议，信息增量充分。",
+      "script_spans": [
+        "姓名和具体的欠费事实绑在一起，就构成了可识别的特定个人状况",
+        "如果你是被点名那位，沉默不是必选项，你有权请对方删掉信息并澄清。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出群内公开姓名的冲突，中段递进解释，结尾用反差句自然收束。",
+      "script_spans": [
+        "物业费拖着没交，有邻居在业主群里直接甩出你的全名催款",
+        "邻里群是方便说话的，不是方便审判的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和收束有对话感，但中段法律术语、并列动作和个别搭配偏拗，朗读时仍需重断句。",
+      "script_spans": [
+        "催缴欠款只是民事主张，它并没有开着“公开隐私”的后门。",
+        "邻里群是方便说话的，不是方便审判的。",
+        "姓名和具体的欠费事实绑在一起，就构成了可识别的特定个人状况，想去触碰和处理它，必须踩在合法事由的框架里。",
+        "如果你是急着拿回钱的那位，正确路子是交物业转达、走业主表决，或者真到了份上找法院，别轻易用群公告代替法律文书。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“方便说话，不是方便审判”形成清晰对照，配合“公开晾晒”的画面感，记忆点自然且不过度。",
+      "script_spans": [
+        "把别人姓名丢进群里公开晾晒",
+        "邻里群是方便说话的，不是方便审判的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按冲突、机制、应对递进，结尾也能回扣；但法律机制句偏抽象，平台协议与侵权判断的衔接不够顺。",
+      "script_spans": [
+        "落到普通人身上，边界其实很实用。",
+        "邻里群是方便说话的，不是方便审判的。",
+        "姓名和具体的欠费事实绑在一起，就构成了可识别的特定个人状况，想去触碰和处理它，必须踩在合法事由的框架里。",
+        "另外，像微信这样的日常通讯平台，协议里早把账号发布行为的责任明确压给了使用者本人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体明确克制，给出删改和诉讼等正规路径；但法律结论表述偏绝对，未交代具体情境和公开范围差异，可能误导。",
+      "script_spans": [
+        "正确路子是交物业转达、走业主表决，或者真到了份上找法院",
+        "催缴理由再正当，也不是把别人姓名丢进群里公开晾晒的正当借口"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4b9118b9af6c4c07b60a15c9c5791f1f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-439722499e57454fbec260bfa467e112",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

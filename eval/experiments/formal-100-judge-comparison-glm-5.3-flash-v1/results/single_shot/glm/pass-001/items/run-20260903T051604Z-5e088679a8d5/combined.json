@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-53cb9fbdd5034970ab27dfad9c881bb3",
+  "run_id": "run-20260903T051604Z-5e088679a8d5",
+  "trace_sha256": "5bcb196594dd8eb7f3b1ac3e9be2a3997fed209b6b504d46303c73c6dbacf07a",
+  "created_at": "2026-09-03T14:09:33.409694Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头以真实事件引出辩题，判断句直接回应能否忽视个性表达，两侧取舍与结论均扣题。",
+      "script_spans": [
+        "我的判断很明确：统一发型可以提倡，但绝不能搞强制整齐；纪律教育一旦忽视个性表达，就容易踩过法律给学校留的边界。",
+        "当德育碰上发型，学校真有权力把孩子的头发剪成一个样吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 752，目标为 700，偏差率为 7.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法条、案例与取舍分析层层推进，整齐等于守纪是自加因果、德育变对抗等均给出认知增量。",
+      "script_spans": [
+        "学校把“整齐”直接等同于“守纪”，这个因果其实是自己加的，上位文件给的只是底线。",
+        "简单粗暴的统一，反而把德育变成对抗，学生学会的是应付而不是内化。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头按倒剪发场面即冲突，中段以文件底线、银川三明案例与军队类比持续兑现，结尾剪刀意象余味自然。",
+      "script_spans": [
+        "一个男生因为头发稍长，被三名老师按倒在地",
+        "有人拿部队说事：军人统一发型，学生为什么不行？",
+        "你说这是纪律胜利了吗？恰恰相反"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体读得通、有对话感，但“与过错程度适应”“把家校推到对立”等压缩句需临时改词，拗口超两处，只能给2分。",
+      "script_spans": [
+        "男生头发前不遮眉、侧不掩耳、后不触领",
+        "引导孩子整洁朴素没问题，但别用剪刀替他们剪掉表达的空间",
+        "惩戒规则要求与过错程度适应",
+        "牺牲的是孩子对规则的认同，也把家校推到对立"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "剪刀意象贯穿首尾服务论点，“剪掉表达的空间”贴切且脱离上下文仍可复述，全篇克制无堆砌炫技。",
+      "script_spans": [
+        "但别用剪刀替他们剪掉表达的空间",
+        "纪律不是复刻同一个头型，尊重个性才是真正的教育方针",
+        "把德育变成对抗，学生学会的是应付而不是内化"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进层层衔接，部队类比先立后破，结尾以剪刀回扣开头与题设，因果桥完整自然。",
+      "script_spans": [
+        "那学校这么干，到底在取舍什么？一方面队列整齐、管理省事；另一方面是学生的人格尊严和身体自主权，发型受民法保护。",
+        "引导孩子整洁朴素没问题，但别用剪刀替他们剪掉表达的空间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制、有法理依据，也承认仪容倡导合理；但开头把争议起因“头发稍长”当定论，与校方烫染说法相左，宜补限定。",
+      "script_spans": [
+        "也不是说仪容倡导全错，朴素整洁有必要，但强制剪齐是另一回事",
+        "部队强制源于公共安全和法律授权，校园仪容只是教育细节",
+        "一个男生因为头发稍长，被三名老师按倒在地"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-6feb65ddbcc04b98be7ace36cfbf97d7",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-102f0a6ab9024db599a317f6bc6b975c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

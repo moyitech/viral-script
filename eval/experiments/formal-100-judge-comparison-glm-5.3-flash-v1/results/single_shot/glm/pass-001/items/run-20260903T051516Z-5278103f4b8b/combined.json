@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-3cf469e2e67c422e96f73d864ad7e037",
+  "run_id": "run-20260903T051516Z-5278103f4b8b",
+  "trace_sha256": "e7d9f3fc65c7c01e2bfa590c50d2f27b235315e700a7a3f2030488a240cb2f10",
+  "created_at": "2026-09-03T14:11:38.621729Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直答“确实加剧”，兼顾季节与全球升温两种归因，结尾落到普通居民，全程紧扣题设。",
+      "script_spans": [
+        "摩天楼确实在加剧热岛效应",
+        "对普通居民来说，不必坐等楼宇重建"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 304，目标为 280，偏差率为 8.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "材料蓄热、空调废热、街谷滞热三层机制各自推进，配“添火”“扣锅盖”类比，信息具体集中。",
+      "script_spans": [
+        "白天吸饱太阳辐射，夜间以长波形式缓慢释放热量",
+        "热量被束缚在街谷里像扣上锅盖"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头直给结论能入题，中段机制递进清楚；但缺悬念反差，结尾只收建议无互动余味。",
+      "script_spans": [
+        "摩天楼确实在加剧热岛效应",
+        "等于半夜里持续给城市添火",
+        "在全局气候整体升温的背景下，这种局部叠加让夜晚本该凉爽的时段也变得闷热难耐",
+        "就能实实在在缓过来一些"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口清楚、比喻生动，但'低反照率''长波形式'等术语需临场改词，中段科普讲解腔拉低整体顺口度。",
+      "script_spans": [
+        "等于半夜里持续给城市添火",
+        "这些低反照率材料白天吸饱太阳辐射，夜间以长波形式缓慢释放热量",
+        "高楼排列过密还会显著降低天空视角因子并阻挡自然风"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且贴切，“半夜添火”“扣上锅盖”离开正文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "等于半夜里持续给城市添火",
+        "热量被束缚在街谷里像扣上锅盖"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由材料蓄热到空调排热再到挡风滞热，因果桥齐全，“局部叠加”承上启下，结尾自然回扣题设。",
+      "script_spans": [
+        "同时楼内密集的空调与通风系统向外排放废热，等于半夜里持续给城市添火",
+        "在全局气候整体升温的背景下，这种局部叠加让夜晚本该凉爽的时段也变得闷热难耐"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "归因有物理逻辑支撑，建议措辞如“实实在在缓过来一些”留有余地，无绝对化承诺、煽动或误导风险。",
+      "script_spans": [
+        "这背后有清晰的城市物理逻辑，不是单纯因为夏天到了",
+        "就能实实在在缓过来一些"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-dec5cf359a6f430e90bca79714ce5236",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-fb4194ac75b842c094d59b6093a936cd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

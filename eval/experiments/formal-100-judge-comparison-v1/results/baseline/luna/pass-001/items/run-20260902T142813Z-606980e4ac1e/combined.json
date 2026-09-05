@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-b9db305e49cf494cadbe12bfe4e7e2d5",
+  "run_id": "run-20260902T142813Z-606980e4ac1e",
+  "trace_sha256": "a00c37bb4fdb4edae717bdc9415a3810923447db3917409cf9d1733cfaf6afc2",
+  "created_at": "2026-09-03T11:44:24.448867Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即回应能否忽视个性，既谈学校纪律边界，也谈学生自主与整齐个性的平衡，切合题设。",
+      "script_spans": [
+        "学校若要求统一发型，纪律教育不能忽视个性表达。",
+        "学校能提整洁要求，但没理由强制一模一样。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 302，目标为 280，偏差率为 7.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕规范底线、学校权限、个体自主和拒绝入校后果推进，信息单元清楚，结论有具体支撑。",
+      "script_spans": [
+        "教育部规范只划了不烫不染不怪异的底线。",
+        "之前有学校因发型不符把学生挡在校门外，这种不让进其实算变相停课。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用校门冲突抓人，中段持续补充规则与权利依据，结尾自然留下思考空间。",
+      "script_spans": [
+        "强制剪发进不了校门，纪律就能压过孩子自我吗？",
+        "之前有学校因发型不符把学生挡在校门外，这种不让进其实算变相停课。",
+        "整齐和个性本来不必打架。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句居多、观点清楚，也有家长对话感；但两处搭配发硬，朗读时需要重断句。",
+      "script_spans": [
+        "咱们家长得看清，管纪律不等于管脑袋里的想法。",
+        "头发长在各自头上，连着人的尊严和身体自主。",
+        "孩子也想得体，这是成长自然需要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照都较克制，“管纪律不等于管脑袋里的想法”自然有力，结尾观点也便于复述。",
+      "script_spans": [
+        "管纪律不等于管脑袋里的想法。",
+        "留些自我空间给孩子，班级的规矩反而更立得住。",
+        "整齐和个性本来不必打架。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整洁与统一的区分和结尾回扣都成立；但“不让进其实算变相停课”从事件直接跳到法律定性，论证桥不足。",
+      "script_spans": [
+        "学校能提整洁要求，但没理由强制一模一样。",
+        "整齐和个性本来不必打架。",
+        "这种不让进其实算变相停课。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "基本不煽动，能说明纪律与个性边界，但“没权”“算变相停课”等法律判断过于绝对，需补充具体情境与依据。",
+      "script_spans": [
+        "学校能提整洁要求，但没理由强制一模一样。",
+        "这种不让进其实算变相停课。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4b32e659ba594a3990af36ef7837a9a8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-fb0fa79ea9764a0ebfea22e25894bdaa",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

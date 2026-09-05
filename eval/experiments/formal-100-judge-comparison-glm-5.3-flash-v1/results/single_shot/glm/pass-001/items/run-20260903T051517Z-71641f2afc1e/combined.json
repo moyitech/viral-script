@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-3a414b2491934dfa8e0b1c2832624817",
+  "run_id": "run-20260903T051517Z-71641f2afc1e",
+  "trace_sha256": "e2e2fff4deafa84eabb440673311e345f1850472d103c6d3fb5600340c656df5",
+  "created_at": "2026-09-03T14:10:09.781055Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点便捷与风险两侧，结尾回扣两端，人群与核心冲突覆盖完整",
+      "script_spans": [
+        "可这便捷背后，误诊的风险常被大家轻轻放过",
+        "一键开药只是稳定慢病复诊的续方通道，它绝不该变成自我诊断、随意吃药的后门",
+        "线上续方对长期控病的人确实省力，但快不能替掉该有的谨慎"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 263，目标为 280，偏差率为 6.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "由复诊红线讲到无查体的续方漏洞，再给应对动作，层层推进无编造",
+      "script_spans": [
+        "线上问诊必须拿着以往明确诊断资料，确认是复诊才许开药",
+        "没有触诊听诊，也没有化验影像支撑。老毛病若悄悄变化，描述几句就被当成老样续药",
+        "要是吃药后症状没缓，反而冒出新生不适，马上停掉线上续方，去实体机构查清楚"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字立场景抛反差，中段监管、漏洞、提醒层层兑现钩子，结尾余味自然生长，三段各自成立不互偿。",
+      "script_spans": [
+        "手指点几下就能收到药，够方便吧。可这便捷背后，误诊的风险常被大家轻轻放过",
+        "更现实的漏洞在屏幕这边：没有触诊听诊，也没有化验影像支撑",
+        "但快不能替掉该有的谨慎"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句节奏清楚，但“老样续药”“新生不适”等生造压缩词需临时改口，拗口已达两处，只能评2分。",
+      "script_spans": [
+        "手指点几下就能收到药，够方便吧。",
+        "描述几句就被当成老样续药",
+        "反而冒出新生不适"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“通道变后门”类比准确服务理解，“快不能替掉谨慎”离开上下文仍可复述，修辞克制无炫技。",
+      "script_spans": [
+        "一键开药只是稳定慢病复诊的续方通道，它绝不该变成自我诊断、随意吃药的后门",
+        "老毛病若悄悄变化，描述几句就被当成老样续药，真问题反而藏住了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段段各有功能，“更现实的漏洞”承转顺，结尾“快不能替谨慎”扣回开头",
+      "script_spans": [
+        "更现实的漏洞在屏幕这边",
+        "没有触诊听诊，也没有化验影像支撑。老毛病若悄悄变化，描述几句就被当成老样续药，真问题反而藏住了",
+        "线上续方对长期控病的人确实省力，但快不能替掉该有的谨慎"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述公允，复诊限定与监管细则一致，提醒停的是线上续方而非用药，风险提示有边界，无绝对化承诺。",
+      "script_spans": [
+        "线上问诊必须拿着以往明确诊断资料，确认是复诊才许开药，首诊和病情不明严禁直接给方",
+        "马上停掉线上续方，去实体机构查清楚"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d251c4b0096b4cf58ed557935d8ac154",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-7eff2af5d341438bb4cb8b1078064720",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-002092a74cab4dfdab7d5a4f285b4bfd",
+  "run_id": "run-20260902T144917Z-f95fa2e5ba3e",
+  "trace_sha256": "3a2842c69e32660447db625f370f4313b15c4d66403af693523de961f1952a85",
+  "created_at": "2026-09-03T13:55:07.859087Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头亮明粮价与账单两侧，正文沿原粮到成品、外食溢价逐层作答，结尾回扣题设，痛点贴合。",
+      "script_spans": [
+        "两侧都实在：粮价没动，账单先动了。",
+        "下次看物价，别只盯粮价那一根线，整张餐桌才说了算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 304，目标为 280，偏差率为 8.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移：原粮成品之别、米面占比、外食溢价层层推进，馆子贵几倍有调研支撑，信息可带走。",
+      "script_spans": [
+        "米面在消费里占的份量小，一家三口半月吃袋米才几十块",
+        "同样一盘肉，家里做便宜，馆子卖得贵几倍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即立住粮价与账单的反差，中段借原粮成品、加工流通、外出就餐层层递进，结尾由外卖话题自然长出余味与行动点。",
+      "script_spans": [
+        "粮食没贵，你饭桌花钱却多了",
+        "更实在的推手是，咱们在外吃或买现成饭多了",
+        "别只盯粮价那一根线，整张餐桌才说了算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句好读、对话感强，但“两侧都实在”“价稍晃”等压缩说法拗口，需临时换词，定2分。",
+      "script_spans": [
+        "你平时总点外卖吧？同样一盘肉，家里做便宜，馆子卖得贵几倍。",
+        "两侧都实在",
+        "价稍晃全家月开销就往上蹦一大截"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，'粮价一根线对整张餐桌'离开上下文仍可复述，是自然记忆点，全文无堆砌炫技。",
+      "script_spans": [
+        "粮价没动，账单先动了",
+        "别只盯粮价那一根线，整张餐桌才说了算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "问句推进、'这还只是''更实在的推手'层层设桥，因果链完整，结尾金句自然回扣开头，经得起追问。",
+      "script_spans": [
+        "粮价稳的只是地头原粮，你吃的是做成饭菜的成品。",
+        "这还只是家里煮饭的部分。",
+        "你以为粮便宜该省下，钱却溜去别处了。想看住账单，一周少点两顿外卖就管用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "对比有具体限定，外出就餐贵几倍有研究佐证；建议带前提条件，无绝对化承诺、煽动或敏感内容，导向安全。",
+      "script_spans": [
+        "同样一盘肉，家里做便宜，馆子卖得贵几倍",
+        "想看住账单，一周少点两顿外卖就管用",
+        "别只盯粮价那一根线，整张餐桌才说了算"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-63183e791b7c49cc9d99268e17ea7b6e",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b76fae5d7c1c4c7a985ded4ae6b21a2b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

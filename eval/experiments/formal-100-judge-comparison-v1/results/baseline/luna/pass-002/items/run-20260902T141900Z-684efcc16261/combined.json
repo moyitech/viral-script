@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-6b808c6a14924367802fc50b085e5ac0",
+  "run_id": "run-20260902T141900Z-684efcc16261",
+  "trace_sha256": "8188d62597b2bbbc7eb485b64f8e989dc77d68680ef7340b54a8c5c10c4438cd",
+  "created_at": "2026-09-03T12:15:09.574208Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应高位接盘疑问，兼顾红利属性、拥挤风险与普通人应对，核心受众和题设均命中。",
+      "script_spans": [
+        "买红利求稳，却可能高位接盘他人抛压。这事儿不绝对。",
+        "普通人咋办？别押身家，用闲钱长拿，看是不是最后一棒。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，依次解释红利为何受追捧、拥挤如何形成、如何放大风险，并给出可操作的观察指标。",
+      "script_spans": [
+        "市场上太多钱钻进差不多的红利股票，理由雷同都奔高股息。钱多主意少，桥窄了，拥挤交易形成。",
+        "怎么避坑？看成交量是否异常放大，看周围人是否都在夸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出高位接盘冲突，中段持续解释拥挤风险，结尾用伞与踩人形成余味。",
+      "script_spans": [
+        "买红利求稳，却可能高位接盘他人抛压。",
+        "下次红利刷屏，先问：桥上的人是不是早你一步？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和比喻增强了可听性，但中段概念跳接、句式省略较多，至少两处需要重断句。",
+      "script_spans": [
+        "一边是息，一边是价，两头得算。",
+        "研究里讲这是市场自己内生风险，持仓同质，不是公司爆雷是人都挤一块儿，微观流动性突然干，卖盘找不到买盘。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“钱多主意少”等可复述句，但桥、蹦极、收租站岗等意象连续叠加，略削弱克制感。",
+      "script_spans": [
+        "钱多主意少，桥窄了，拥挤交易形成。",
+        "原本你求安稳，结果参加了蹦极。",
+        "表面收租实际站岗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整且转折清楚，但“利率变化—集体撤退”等关键因果缺少条件说明，部分建议又过于绝对。",
+      "script_spans": [
+        "那是红利本身错了吗？不是。它本靠分红扛跌，每年给现金波动时有点缓冲。公司还是那公司，人变了。",
+        "一旦利率风向变，齐刷刷持仓集体撤退砸深坑，接盘真成站岗。",
+        "三年以上才叫投资，三天叫排队。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能提示拥挤风险并劝用闲钱，但“有息兜底”“三年以上才叫投资”易造成误导性投资暗示，需补充风险边界。",
+      "script_spans": [
+        "别押身家，用闲钱长拿，看是不是最后一棒。",
+        "红利有息兜底，未必全输。",
+        "三年以上才叫投资，三天叫排队。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1bddc4f53cfb4d8eb97221d6b26c1779",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

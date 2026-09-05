@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-b9d420509c3148bd9e2cc45bdf15d70e",
+  "run_id": "run-20260902T144509Z-c581420bda0f",
+  "trace_sha256": "a465bfab863884d72ebf24434b5e4490d25908d6c63c69834eb68e9c884ed2ba",
+  "created_at": "2026-09-03T11:47:28.564418Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇提出补缺与依赖的两面，覆盖老人、子女和服务使用边界，正面回应题设。",
+      "script_spans": [
+        "花钱请人陪看病，补上了照顾缺口，却也可能养出依赖。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 730，目标为 700，偏差率为 4.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息从照护缺口、依赖风险推进到价格、补贴、识别与使用方法，观点有事实支撑且增量充分。",
+      "script_spans": [
+        "一线城市时薪大概五十到一百，工薪族也用得起。",
+        "正规陪诊师有身份牌，先查再雇才稳妥。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“补缺口”与“养依赖”形成冲突，中段由便利转向风险再给出用法，结尾追问自然落地。",
+      "script_spans": [
+        "花钱请人陪看病，补上了照顾缺口，却也可能养出依赖。",
+        "可依赖的苗头，藏在舒服里。",
+        "红马甲多了，不妨自问：今天陪诊结束，老人明天敢独自迈一步吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和反问让整体好读，但“像上海新推……”衔接悬空，“念屏”需改成“读屏”，朗读会卡顿。",
+      "script_spans": [
+        "你看看小区里的老人，独自进医院像进迷宫。",
+        "像上海新推的老年助医陪诊规范",
+        "陪诊师念屏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻集中但不炫技，既帮助理解依赖风险，也留下“临时拐杖”“桥不是墙”等可复述表达。",
+      "script_spans": [
+        "独自进医院像进迷宫。",
+        "原本扶一把，变成替他活。",
+        "服务本意是桥，不是墙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以缺口切入，先讲价值再讲依赖风险，随后给出家属参与和渐进放手的用法，结尾自然回扣。",
+      "script_spans": [
+        "那现实里该怎么用？正规服务和家人参与要拧成绳。",
+        "陪完不是终点，是起点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体呈现服务利弊并给出查验、家属参与等边界；但“工薪族也用得起”及身份牌要求缺少地域和条件限定，可能造成误判。",
+      "script_spans": [
+        "我们买的是应急，不是代劳。",
+        "一线城市时薪大概五十到一百，工薪族也用得起。",
+        "正规陪诊师有身份牌，先查再雇才稳妥。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f259e3d567f94c80924bc671303aae55",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1497f8b3af484d77b8e153b40b3e5cbc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

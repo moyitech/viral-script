@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-ec8fa06da05a4dc69af84acecbf20644",
+  "run_id": "run-20260903T051605Z-2bf557db30e8",
+  "trace_sha256": "a00c46f04ddd335c76e00dcfdd25b936f86df0b58b9a70f86eb5896806fd6329",
+  "created_at": "2026-09-03T14:09:06.560989Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即复述题设并给出'靠谱但有前提'的回答，固定与浮动两侧都覆盖，买前人群痛点命中，结尾回扣题设。",
+      "script_spans": [
+        "靠谱，但前提是你只认合同里100%写死的固定利益"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 261，目标为 280，偏差率为 6.79%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中在'什么才锁得住'，机制、反例、监管、操作四层推进，实现率约五成多等论据有背景可核，无编造。",
+      "script_spans": [
+        "普通型寿险或年金险的预定利率在保单签发时就由保险公司按规则定好",
+        "过往行业分红实现率曾平均只有五成多，演示里的漂亮数字常落空"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即抛收益下滑与锁利的两难，中段用机制对比和五成实现率持续兑现，结尾行动提醒自然生长，仅监管句稍平。",
+      "script_spans": [
+        "保险收益预期往下掉，现在去锁长期回报还靠不靠谱？",
+        "靠谱，但前提是你只认合同里100%写死的固定利益。",
+        "过往行业分红实现率曾平均只有五成多，演示里的漂亮数字常落空。",
+        "别被计划书的高预期带节奏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "自问自答开场顺口，但“过往行业分红实现率”等名词堆叠拗口，朗读需临时重断句换气。",
+      "script_spans": [
+        "靠谱，但前提是你只认合同里100%写死的固定利益",
+        "演示里的漂亮数字常落空",
+        "普通型寿险或年金险的预定利率在保单签发时就由保险公司按规则定好",
+        "过往行业分红实现率曾平均只有五成多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“写死的固定利益”“漂亮数字常落空”“带节奏”均贴切自然，单拎可复述，修辞克制无堆砌。",
+      "script_spans": [
+        "你只认合同里100%写死的固定利益",
+        "演示里的漂亮数字常落空",
+        "别被计划书的高预期带节奏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问、前提、机制、反例、行动层层递进，'而分红险'转折清楚，结尾提醒回应开头的靠谱之问，无逻辑断点。",
+      "script_spans": [
+        "而分红险、万能险除了那点最低保证，剩余收益全系在险企投资表现上",
+        "别被计划书的高预期带节奏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论附前提，区分保证与非保证收益，并提醒自行核算现金价值，无确定性承诺，导向稳妥。",
+      "script_spans": [
+        "靠谱，但前提是你只认合同里100%写死的固定利益",
+        "演示里的漂亮数字常落空",
+        "别被计划书的高预期带节奏"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d8d722f4523845a6b0011dffc33ea5c0",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c7a7979ce7ff41258d12c8197f0e1c98",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

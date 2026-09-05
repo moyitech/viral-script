@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-02bc027524e94e6eafd13f4c2551e4d5",
+  "run_id": "run-20260903T051554Z-2f4cfd62a729",
+  "trace_sha256": "e16af9698b271fbac8aa1f687fb67ade06c280a6617827e1db29b4a0e1e7e260",
+  "created_at": "2026-09-03T14:09:58.737776Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答老用户为何更贵，机制、新旧用户对比与普通人对策均覆盖题设。",
+      "script_spans": [
+        "老用户因为依赖平台、比价意愿弱，自然被划进高单价区"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 428，目标为 450，偏差率为 4.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，从溢价机制、数据依据到监管边界层层推进，与法规背景相符，无编造。",
+      "script_spans": [
+        "它盯着你的打开习惯、常去地点和付款记录，悄悄算出你对涨价的忍受度。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以越频繁越贵的反差直击痛点；中段追问定价机制层层兑现；结尾该问就问由正文自然长出余味。",
+      "script_spans": [
+        "你叫车越频繁，平台弹出的动态会员价反而越贵",
+        "那系统凭什么认定你该多付？",
+        "留好订单截图，至少不当沉默的韭菜，该问就问。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答推进与建议段节奏不错，但“折算成溢价系数”“包装差异化”等抽象词连串，朗读需临时换词。",
+      "script_spans": [
+        "那系统凭什么认定你该多付？它盯着你的打开习惯、常去地点和付款记录，悄悄算出你对涨价的忍受度",
+        "而是网约车在市场化定价允许的范围内，把老用户的忠诚度直接折算成了溢价系数"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞均服务解释与情绪，忠诚度折算成溢价系数与不当沉默的韭菜离开语境仍可复述，无连续炫技。",
+      "script_spans": [
+        "把老用户的忠诚度直接折算成了溢价系数",
+        "动态会员价表面是回馈，实际按支付意愿切分人群",
+        "留好订单截图，至少不当沉默的韭菜，该问就问。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进、转折自然，因果有桥，结尾回扣开头憋屈感，短气口为主全程可跟随。",
+      "script_spans": [
+        "落到咱们普通人头上，怎么办？别被“会员优先”的标签黏住",
+        "留好订单截图，至少不当沉默的韭菜，该问就问。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无明确违规且留有监管边界，但“真相是”“悄悄算出”等定性说法未经限定，易让观众当作已证实事实。",
+      "script_spans": [
+        "暂行办法给了平台自主定价的空间",
+        "就可能踩到不正当价格行为的线",
+        "真相是，这不是后台抽风，而是网约车在市场化定价允许的范围内，把老用户的忠诚度直接折算成了溢价系数",
+        "动态会员价表面是回馈，实际按支付意愿切分人群"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-14c0a253d7a846c4b9855b2bea8debaa",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-230178663d3843bb9bdf3057f073c819",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

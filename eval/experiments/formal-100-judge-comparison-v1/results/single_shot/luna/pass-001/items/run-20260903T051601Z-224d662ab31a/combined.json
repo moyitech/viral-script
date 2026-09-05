@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-d0ddf4f15f0c4093a0734a963bef1328",
+  "run_id": "run-20260903T051601Z-224d662ab31a",
+  "trace_sha256": "1f0b059de6d216bed4f238b7366c40e611bb62d2157257f86b910e96a3b604b9",
+  "created_at": "2026-09-03T11:58:00.735815Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头同时呈现危重与非急症冲突，结尾给出急重优先和替代出口，正面回答分配难题。",
+      "script_spans": [
+        "有限医疗资源分配应当急重优先",
+        "其他需求有替代出口"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 645，目标为 700，偏差率为 7.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕分诊机制、就医链条缺口和替代出口推进，既解释原因，也给出改革效果，信息增量充分。",
+      "script_spans": [
+        "靠症状和体征做预检分诊，把最危险的排在最前面。",
+        "结果非紧急就诊明显回落，危急病人的等候反而缩短。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用急诊室里的强烈反差抓人，中段连续追问并补上边界与方案，结尾判断有余味。",
+      "script_spans": [
+        "深夜高烧伴胸痛的老人，和只是来开感冒药的年轻人",
+        "那硬把非急症挡在门外，就解决问题了吗？",
+        "急诊室的门该为生死而开，不该为方便而堵"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体可读且有对话感，但核心论证夹杂抽象书面表达，个别搭配生硬，尚未达到精心设计的自然口播。",
+      "script_spans": [
+        "为什么大家不往门诊去？",
+        "取舍必须是体系性的：让真正紧急的获得保障，其他需求有替代出口。",
+        "给感冒患者多验一次血，心梗患者就少一份警觉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "反差、设问和门口比喻都服务于论证，“为生死而开”形成自然记忆点，表达克制不油。",
+      "script_spans": [
+        "真正急的反而被拖慢",
+        "分配不是冷冰冰拦人，而是用规则把资源导回该去的地方",
+        "急诊室的门该为生死而开，不该为方便而堵"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以场景和设问开篇，中段厘清分诊边界并转向体系方案，证据与结尾衔接自然。",
+      "script_spans": [
+        "这里得说清边界。分诊排序不等于拒绝救治",
+        "不过效果能持续，还得靠基层医疗真正接得住"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "急重优先、分诊不等于拒治的边界较清楚；但将普通患者检查与心梗警觉说成直接此消彼长，因果过度简化。",
+      "script_spans": [
+        "分诊排序不等于拒绝救治，万一非急症其实是重症早期，误判代价极大。",
+        "给感冒患者多验一次血，心梗患者就少一份警觉。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3121d78dc9c04f09a0d8175e25f93ac2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-701fb13ace0e4a4294f4b1ac5776fee4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

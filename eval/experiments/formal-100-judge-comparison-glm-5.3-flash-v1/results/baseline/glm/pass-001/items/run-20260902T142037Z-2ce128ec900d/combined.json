@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-8554d647bf634af5896e0a846a11597a",
+  "run_id": "run-20260902T142037Z-2ce128ec900d",
+  "trace_sha256": "d3223e837415106f5bd73e0bc4b1554a9dda7a37640533082ff79e19196d8280",
+  "created_at": "2026-09-03T13:46:08.834950Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头立冲突，中段正面回答能否受益并给出条件，结尾落到已购房家庭可执行动作，题设两侧与核心人群全覆盖。",
+      "script_spans": [
+        "已购房家庭能真正受益，但每个人月供不会自动大降，得靠规则一步步兑现",
+        "所以别看新闻标题说降息，就以为明天少还钱。翻开合同，看清重定价日写在哪天"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 274，目标为 280，偏差率为 2.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕存量房贷调整集中展开，批量调加点、重定价日、固定利率转浮动、防骗提醒各自推进，与公告内容相符，无编造。",
+      "script_spans": [
+        "大部分浮动利率银行批量调整，不用申请，直接把合同里虚高加点压到新发放低利率附近，这是第一笔落地省钱",
+        "当初选固定利率的，得先手机申请转浮动才能进这波调整"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出“降了却没少扣”的反差；中段公式、批量调整、重定价日层层兑现钩子；结尾行动指引由正文自然生长。",
+      "script_spans": [
+        "你房贷利率降了，但银行没扣你更少月供",
+        "直接把合同里虚高加点压到新发放低利率附近，这是第一笔落地省钱",
+        "翻开合同，看清重定价日写在哪天"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、对话感足，但“没扣你更少月供”“大部分浮动利率银行批量调整”两处需换词重断，只能封顶2分。",
+      "script_spans": [
+        "翻开合同，看清重定价日写在哪天",
+        "但银行没扣你更少月供",
+        "大部分浮动利率银行批量调整"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，“落地省钱”“全是骗子”具体有力；骗子警示与“翻开合同”均可离开语境复述，无炫技堆叠。",
+      "script_spans": [
+        "直接把合同里虚高加点压到新发放低利率附近，这是第一笔落地省钱",
+        "收费代办降息全是骗子，手机银行自己就能办",
+        "翻开合同，看清重定价日写在哪天"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "按公式拆成加点与LPR两条路径，固定利率单独补位，结尾回扣开头月供未降的疑问，因果桥清晰，结尾自然点题。",
+      "script_spans": [
+        "剩下的LPR部分，得看合同重定价日。可能是一月一日，等那天到了才按最新LPR重算利息"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述公允克制，'不会自动大降''可能是'等限定清楚，反诈提醒与官方口径一致，无夸大承诺。",
+      "script_spans": [
+        "已购房家庭能真正受益，但每个人月供不会自动大降，得靠规则一步步兑现",
+        "可能是一月一日，等那天到了才按最新LPR重算利息",
+        "提醒：收费代办降息全是骗子，手机银行自己就能办"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-213133994ba54e818ebe6cb8f30ed107",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-404b1f7c7203412eab78ba551ba455ca",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

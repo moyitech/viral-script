@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-8aaf817e65514eb39a16adfad257452b",
+  "run_id": "run-20260903T051630Z-241e03ab9d2e",
+  "trace_sha256": "044d350f6b3529826d47c10f316843537420a32d018e3048e1b74dea803c5532",
+  "created_at": "2026-09-03T12:00:56.635894Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答快与吵的两面，并补上居民治理诉求，目标观众和题设冲突均命中。",
+      "script_spans": [
+        "快递确实会比地面更快，但城市不一定变得更吵"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 253，目标为 280，偏差率为 9.64%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息从速度机制、噪声来源推进到空域与反馈治理，信息单元彼此支撑，观众能带走具体判断。",
+      "script_spans": [
+        "无人机走直线、不绕路，避开了红绿灯和小区出入口的拥堵",
+        "居民区试飞前，应该有噪声公示和简便的反馈渠道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“更快”与“更吵”的反差立题，中段连续补充原因和治理，结尾标准鲜明，余味自然。",
+      "script_spans": [
+        "快递确实会比地面更快，但城市不一定变得更吵",
+        "飞得低本身不是问题，听不见、不心烦才是真进步。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数句子清楚顺口，但首句和降噪说明句信息过密，政策表述也拉长了口播气口。",
+      "script_spans": [
+        "无人机走直线、不绕路，避开了红绿灯和小区出入口的拥堵",
+        "快递确实会比地面更快，但城市不一定变得更吵，前提是降噪能力和试点节奏得同步跟上",
+        "新一代电动飞行器没有燃油引擎的高频轰鸣，螺旋桨声也比老式直升机低沉柔和"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不能先飞再治”和“听不见、不心烦才是真进步”简洁有力，既形成记忆点，也把治理要求说具体。",
+      "script_spans": [
+        "不能先飞再治。",
+        "飞得低本身不是问题，听不见、不心烦才是真进步。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线顺着速度、噪声、治理推进，但从空域细化直接推到合法通道和不再是特例，结论有所扩大。",
+      "script_spans": [
+        "快递确实会比地面更快，但城市不一定变得更吵",
+        "眼下低空空域正做细化划分，给这类配送打开了合法通道，让飞行不再是特例。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有降噪、公示和反馈边界，但“确实更快”“合法通道”等表述过于笼统，易造成效率与合规已普遍保障的误解。",
+      "script_spans": [
+        "前提是降噪能力和试点节奏得同步跟上，不能先飞再治",
+        "居民区试飞前，应该有噪声公示和简便的反馈渠道",
+        "快递确实会比地面更快",
+        "给这类配送打开了合法通道，让飞行不再是特例"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b6065498ca484084b6690429a4963705",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-14d292bcbb134334893fcfa00ac3a678",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

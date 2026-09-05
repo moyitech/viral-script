@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-b3f410f4f2b24af0b4fd6c2df73547d7",
+  "run_id": "run-20260902T141458Z-41fa4689aa4d",
+  "trace_sha256": "58dc10e5f1f81f0dc589781db2d2569c317f4d89842dacf43ff29a391c2163d8",
+  "created_at": "2026-09-03T11:44:20.744293Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答申诉是否变难，并同时覆盖规则改善与用户应对。",
+      "script_spans": [
+        "不会一边倒更难，前提是规矩落地生效。",
+        "真碰复杂纠纷，你直接喊转人工，截图留底。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 495，目标为 450，偏差率为 10.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "投诉痛点、标准要求、适用场景和留证方法都有交代，信息推进具体。",
+      "script_spans": [
+        "它填了人机脱节空白，五月发布九月实施。",
+        "若入口藏起，你截屏留证找消协反映。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出封号与AI循环，中段由新国标推进到应对办法，结尾有余味，留人链路完整。",
+      "script_spans": [
+        "你刚被短视频封号，转人工却卡在AI循环里耗掉半天。",
+        "真碰复杂纠纷，你直接喊转人工，截图留底。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和后段有明确对话感，信息推进也清楚；但中段压缩句和拗口搭配较多，朗读需重断句。",
+      "script_spans": [
+        "真碰复杂纠纷，你直接喊转人工，截图留底。",
+        "顺畅衔接意思是人工接手不用你重讲一遍。",
+        "之前多平台上线吐槽转人工难的小剧场。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“接力要稳”“拿算法当挡箭牌”等可记表达，但“冷菜单变热对接”搭配生硬，金句感未完全落地。",
+      "script_spans": [
+        "核心就一句接力要稳",
+        "平台不能借AI乱回逃责，拿算法当挡箭牌。",
+        "当冷菜单变热对接，我们维权的步子，能迈得更实了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "从客服困境到标准要求再到申诉动作，主线可跟随；但小剧场句跳脱，规则效果的推断略快。",
+      "script_spans": [
+        "顺畅衔接意思是人工接手不用你重讲一遍。",
+        "真碰复杂纠纷，你直接喊转人工，截图留底。",
+        "之前多平台上线吐槽转人工难的小剧场。",
+        "像视频误判这种简单事，机器查规则马上给结果，处理快了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体安全且有人工优先边界，但把规则要求说成确定效果，存在误导风险。",
+      "script_spans": [
+        "涉财产人身，比如账号被盗余额被划，优先排人工。",
+        "不该再遇层层菜单",
+        "机器查规则马上给结果，处理快了",
+        "冤屈有人听"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9b3473f19daf4721b12eb45b7c796d39",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c3c899b9df2e4faa8ae20c94997a3263",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

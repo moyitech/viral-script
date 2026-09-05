@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-44d3f4a6b7cc42429e238e3f3247153f",
+  "run_id": "run-20260903T051632Z-f652f931c082",
+  "trace_sha256": "465387eaaf6cc9bee9df25564e6c5384f7aa52b1e4f80b706ceb01f3d4a99d69",
+  "created_at": "2026-09-03T14:09:52.568617Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即并列出钱与出力两侧，通篇正面回答付出不同怎么算公平，结尾回扣轮班与题设。",
+      "script_spans": [
+        "大哥每月转钱却半年没踏进家门，小妹辞职贴身伺候连轴转，到了春节算总账，到底谁亏了？",
+        "真正的公平，是看每个人实际能挤出的资源，和老人最缺的那块有没有被补上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 770，目标为 700，偏差率为 10.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终扣住公平账，法律边界、长护险、性别惯性层层推进，信息互证、增量明确。",
+      "script_spans": [
+        "法律确实要求子女履行经济供养和生活照料义务，但条文并没有把照顾时长切成均等份额。",
+        "这两年长期护理保险正从试点走向全国，专业机构接手洗澡喂药，等于把某个子女的物理付出折算成社会支持"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即转钱不回家与辞职贴身伺候的反差，中段以误区、法律信息持续兑现钩子，结尾之问由正文自然生长。",
+      "script_spans": [
+        "大哥每月转钱却半年没踏进家门，小妹辞职贴身伺候连轴转",
+        "这里有个常见误区：以为转账就能买平所有亏欠",
+        "下次再为轮班红了眼，先问一句：爸妈此刻最怕什么？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数段落顺口，但条文与研究句名词堆叠，至少两处朗读需换词重断，卡在书面腔。",
+      "script_spans": [
+        "可失能老人夜里要翻身、要有人说话，这些都不是手机汇款能替代的。",
+        "怨气往往来自偷偷比较，而不是谁真的想甩手。",
+        "法律确实要求子女履行经济供养和生活照料义务，但条文并没有把照顾时长切成均等份额。",
+        "专业机构接手洗澡喂药，等于把某个子女的物理付出折算成社会支持，家里账本就能松一口气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "床前谈判桌、那把尺等比喻均服务理解，结尾句离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "结果床前成了谈判桌",
+        "算公平的那把尺，量的不是谁伺候了几百小时，而是谁在关键环节没掉链子",
+        "别让账目清晰了，家却冷了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问过渡自然，因果有桥，从误区到方案再到后果递进，结尾回扣开头算账意象。",
+      "script_spans": [
+        "那既然法律不强制平分，家里该怎么取舍？",
+        "所以回头看，算公平的那把尺，量的不是谁伺候了几百小时，而是谁在关键环节没掉链子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法律义务先认后讲边界，性别分工引研究佐证且主张改写，无煽动、标签化或夸大承诺，导向安全。",
+      "script_spans": [
+        "法律确实要求子女履行经济供养和生活照料义务，但条文并没有把照顾时长切成均等份额",
+        "怨气往往来自偷偷比较，而不是谁真的想甩手"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e1a14523329a41d1b5c0d44843369c5a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-749da27d64e5481eb1ed688f62af2a88",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

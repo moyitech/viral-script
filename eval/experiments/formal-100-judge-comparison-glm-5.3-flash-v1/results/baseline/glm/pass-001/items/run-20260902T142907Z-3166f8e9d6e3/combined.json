@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-6cd245edfa254d30b338301cb0fdc5f8",
+  "run_id": "run-20260902T142907Z-3166f8e9d6e3",
+  "trace_sha256": "05c398db95c57d6fd23ad7d6be1c2713304c89e09088e2539d046ff4e09c4c88",
+  "created_at": "2026-09-03T13:45:26.444081Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答反感成因，中段补企业动机与反例，结尾给对策，题设两侧与求职者人群全覆盖。",
+      "script_spans": [
+        "为啥越来越反感？因为面议把本该先讲清的价码藏后头",
+        "有的活靠提成活，底薪浮动难写死，先圈简历再聊本正常"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 690，目标为 700，偏差率为 1.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "透明度研究、预期差、监管动作、反例与对策逐层推进，引用佐证扎实，无编造痕迹。",
+      "script_spans": [
+        "有研究盯着薪酬决定过程看，发现透明比合理更抓人",
+        "员工想跳个槽涨百分之十五，企业往往只给一小部分"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头20字即抛冲突设问，中段研究、市场、监管层层递进，结尾以行动建议自然收束。",
+      "script_spans": [
+        "薪资面议坑了求职者时间，企业躲开比价还省事？",
+        "员工想跳个槽涨百分之十五，企业往往只给一小部分。",
+        "下次看到面议，先抛个区间问题，再决定要不要花半天跑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句密集、对话感强，但“压实内容真实的责任”“再聊本正常”等处拗口需改词，封顶2分。",
+      "script_spans": [
+        "但多数普通招聘挂面议，可能只想把人钓来再压价",
+        "智联、BOSS这些大站，都接到压实内容真实的责任",
+        "先圈简历再聊本正常"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "盲盒、攥着基准等比喻贴切不堆砌，“你不写清楚，我就不点开”离开上下文仍可复述。",
+      "script_spans": [
+        "当招聘页只写面议，等于先邀请你玩一场盲盒游戏。",
+        "你不写清楚，我就不点开，这是普通人能做的反击。",
+        "求职者怕的不是谈薪，是连谈的基准都被人攥着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "三段功能清晰，两处设问过渡自然，结尾区间提问回扣开头白忙三天的跑面试场景。",
+      "script_spans": [
+        "那企业为什么一句面议就让咱心里没底？这里头有取舍",
+        "下次看到面议，先抛个区间问题，再决定要不要花半天跑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "对压价动机用“可能”限定，并明确区分提成岗等合理面议与藏薪，未点名贬损企业，不煽动、不夸大，导向与监管要求一致。",
+      "script_spans": [
+        "当然，反例有一说一：销售或高阶职位薪资本来就看业绩和资源，写死反而僵",
+        "有的活靠提成活，底薪浮动难写死，先圈简历再聊本正常"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ccabea51987e4e80ab280bb96c2f14ec",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-7aa44c0441834244b43019994c2648f4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

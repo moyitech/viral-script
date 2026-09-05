@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-ab7905a1129b42499afed420bab4f38b",
+  "run_id": "run-20260902T144428Z-1d319c57cfb7",
+  "trace_sha256": "060fb7356114d09da9af376989b51a6d8e7e172af60fb5c0f9f1b1eb2cf4928e",
+  "created_at": "2026-09-03T11:44:38.870259Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答机会与成本的权衡，覆盖流入城市、租金、工资、保障房和年轻人决策。",
+      "script_spans": [
+        "房租吞掉工资，机会却还在门外排队。",
+        "普通青年做去留决定，别只盯招聘薪水。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 304，目标为 280，偏差率为 8.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，租金机制、工资滞后、保障房和决策建议都有效，但成本多数跑赢机会缺少对机会收益的具体比较。",
+      "script_spans": [
+        "有些城市配了保障房，租金比市场低四成左右，但数量有限，不是谁排队都能拿到。",
+        "先量量自己存款，能烧掉几个月贵房租，心里要有数。",
+        "成本多数跑赢机会"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用工资被吞、机会排队的反差抓人，中段按租金、工资、保障房递进，结尾追问也从前文自然生长。",
+      "script_spans": [
+        "房租吞掉工资，机会却还在门外排队。",
+        "有些城市配了保障房，租金比市场低四成左右，但数量有限",
+        "你用更贵居住成本，换没落袋的机会，真的划算吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有提问、有画面，整体能听懂，但多处词序和概念表达卡顿，尚未达到自然口播。",
+      "script_spans": [
+        "你刚发工资就先交租，手头活钱是不是更薄了？",
+        "可老板给的薪水平常追得慢",
+        "你用更贵居住成本，换没落袋的机会，真的划算吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻集中在关键位置，既有“活钱变薄”的具象感，也有“进门票先贵了”的可复述收束，未显得堆砌。",
+      "script_spans": [
+        "月月净流，活钱变薄。",
+        "城里的好机会确实在，但进门票先贵了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、机制、工资、保障房、建议层层展开，主线可跟随；但工资滞后与机会收益的因果桥不足，结论有扩大。",
+      "script_spans": [
+        "人聚得密，房就紧。",
+        "普通青年做去留决定，别只盯招聘薪水。",
+        "可老板给的薪水平常追得慢。",
+        "你用更贵居住成本，换没落袋的机会，真的划算吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无煽动或明显违规，且交代保障房数量有限；但将房价研究表述为租金结论，并用“成本多数跑赢机会”作过度概括，易误导。",
+      "script_spans": [
+        "有些城市配了保障房，租金比市场低四成左右，但数量有限，不是谁排队都能拿到",
+        "成本多数跑赢机会。",
+        "一项覆盖95座城的研究明确说，人口往里挤，租金明显抬头"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-eeffbed600a84dcb8552a084b0b47722",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-5e4a3d446472465b975d645eab557f2f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

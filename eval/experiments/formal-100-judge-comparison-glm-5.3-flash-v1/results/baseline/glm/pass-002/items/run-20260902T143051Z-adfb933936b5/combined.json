@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-81cdc598859e450486cf4a8de2e5bc35",
+  "run_id": "run-20260902T143051Z-adfb933936b5",
+  "trace_sha256": "3e611fb1a10c29fbc83ece46413f894043b1f745e55a681b8c713fb3316d9e3c",
+  "created_at": "2026-09-03T14:26:12.992912Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直问题设，风险真假与防范对策两侧都答，通勤族等普通人被点名，全篇围绕出门充电。",
+      "script_spans": [
+        "手机没电借公共充电口，可能被洗空银行卡，也可能虚惊。",
+        "出门充电该注意啥？别慌也别马虎。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，风险判定、机制拆解、对策清单层层推进，观众能带走判断方法与具体做法。",
+      "script_spans": [
+        "核心结论很清楚：技术上有门路，生活里极少见",
+        "花几十块买个充电宝，陌生口尽量绕开"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即抛出洗空银行卡与虚惊的反差钩子；中段用结论反转和机制追问持续兑现；结尾二选一提问由正文自然长出。",
+      "script_spans": [
+        "手机没电借公共充电口，可能被洗空银行卡，也可能虚惊",
+        "听着吓人，但骗子更爱蹭 wifi 骗密码",
+        "下次电量见底，你插陌生USB还是摸包里宝？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句利落、对话感在，但专有名词和压缩词两处以上需临场换词，决定性卡在2分。",
+      "script_spans": [
+        "点错就开门，不点多数拦着",
+        "美国密歇根州总检察长曾发文提醒这类攻击",
+        "求安心就自带能源，物理切断数据线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "开门、赌运气等比喻贴切克制，服务理解；习惯比技术更护身离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "点错就开门，不点多数拦着",
+        "习惯比技术更护身"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，机制与选择讲得清；但正规桩句缺因果桥，3C标挡风险一说经不起追问。",
+      "script_spans": [
+        "你屏上若弹信任电脑，点错就开门，不点多数拦着",
+        "正规桩虽归物业管，也别瞌睡时充",
+        "买充电头挑有3C标的，几块钱就挡住风险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体两侧呈现、反恐慌边界清楚；但“几块钱就挡住风险”是未限定安全承诺，“得赌运气”又放大风险，宜改写。",
+      "script_spans": [
+        "技术上有门路，生活里极少见",
+        "公共桩不是处处陷阱，但预防没错",
+        "几块钱就挡住风险",
+        "贪方便用公共口，得赌运气"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a433e607885c445db5e3cf1633bf055c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

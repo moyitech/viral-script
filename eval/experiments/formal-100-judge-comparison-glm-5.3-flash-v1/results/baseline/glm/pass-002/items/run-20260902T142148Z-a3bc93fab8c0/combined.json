@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-4324cd26d84a4ccaad3b1bce1890f038",
+  "run_id": "run-20260902T142148Z-a3bc93fab8c0",
+  "trace_sha256": "bc6628d961a9d0bfe11f18f817c53eb1594b20d3fe26d5c65526cc02337bc5bf",
+  "created_at": "2026-09-03T14:25:09.469468Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即否定二选一并给出两边条件，法律线与流量线均扣题，结尾以'帮了谁'回扣，全程正面回答无偏题。",
+      "script_spans": [
+        "这事儿不能二选一。拍得克制是公共监督，乱传就成二次伤害。",
+        "下次看见路边吵起来，你先拍还是先想：这视频发出去，到底帮了谁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "法条变化、剪影保护、虚化建议等干货扎实且无编造，但'砍掉前因后果'与'你以为在曝光'两处复述，削弱推进。",
+      "script_spans": [
+        "民法典里讲，肖像权保护早就不看是否赚钱",
+        "背影剪影能认出人也受保护",
+        "有研究专门聊这类视频，说它常砍掉前因后果，看的人容易误读真相"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇十八字即亮监督与侵权的反差，中段法律底线、半截真相、算法助推层层加码，结尾问句从手机意象自然长出。",
+      "script_spans": [
+        "街拍吵架发上网，说是监督，却可能侵权害人",
+        "你以为在曝光，其实只给了半截真相",
+        "这视频发出去，到底帮了谁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、对话感强，但'脸虚化或大局景''纠纷多私事'等压缩句朗读需临时改词，故两分。",
+      "script_spans": [
+        "你手机一举，两边就悬着。",
+        "脸虚化或大局景，就没事。",
+        "但纠纷多私事，双方认出就麻烦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且贴切，“机器只认停留时长”形象；“举手机很容易，收回伤害却难”离文可复述，无炫技堆叠。",
+      "script_spans": [
+        "举手机很容易，收回伤害却难",
+        "机器不理谁对谁错，只认停留时长",
+        "拍得克制是公共监督，乱传就成二次伤害"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "设问推进、结尾回扣手机，主线可跟随；但'什么算合理使用'问后未答即转谈漏拍前因，衔接断裂需观众补齐。",
+      "script_spans": [
+        "为啥一条视频两面性这么强？法律先划了线。",
+        "话再说回你手里的手机。",
+        "那什么算合理使用？常只拍动手瞬间，漏了谁先骂人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "立场克制，法律表述多用“可能”限定；但“一发就上热门”“只认停留时长”属绝对化归因，宜补边界。",
+      "script_spans": [
+        "拍得克制是公共监督，乱传就成二次伤害",
+        "只要没经人同意，你制作公开人家肖像，就可能踩侵权界限",
+        "平台爱推冲突内容，一发就上热门",
+        "机器不理谁对谁错，只认停留时长"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d511999d30684ee59259069960eaa625",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

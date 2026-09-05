@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-238120932cd745c982c9085c18820c5b",
+  "run_id": "run-20260902T144917Z-f95fa2e5ba3e",
+  "trace_sha256": "3a2842c69e32660447db625f370f4313b15c4d66403af693523de961f1952a85",
+  "created_at": "2026-09-03T14:29:15.209237Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即并置粮价与账单两侧，从原粮成品差、米面占比到外食溢价层层作答，直击普通家庭支出痛点。",
+      "script_spans": [
+        "粮价稳的只是地头原粮，你吃的是做成饭菜的成品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "原粮与成品、米面占比、加工流通、外食溢价四个信息单元递进，外食贵几倍的说法有调研数据支撑。",
+      "script_spans": [
+        "米面在消费里占的份量小，一家三口半月吃袋米才几十块，可天天鲜菜肉蛋一天花几十"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字反差直接立住矛盾，中段以原粮成品、加工费、外卖溢价层层兑现，结尾从正文长出观点，不硬喊互动。",
+      "script_spans": [
+        "粮食没贵，你饭桌花钱却多了。",
+        "更实在的推手是，咱们在外吃或买现成饭多了。",
+        "下次看物价，别只盯粮价那一根线，整张餐桌才说了算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有对话感，但“两侧都实在”费解，“加工流通”“人工店租”名词堆叠，至少两处需换词，最高2分。",
+      "script_spans": [
+        "你平时总点外卖吧？同样一盘肉，家里做便宜，馆子卖得贵几倍。",
+        "两侧都实在",
+        "经过加工流通，每层都加人工店租，价格就翻着走"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“粮价没动，账单先动了”对仗克制好复述，“晃、蹦、溜”等动词助理解，“整张餐桌才说了算”离文仍成立，无堆砌。",
+      "script_spans": [
+        "粮价没动，账单先动了",
+        "价稍晃全家月开销就往上蹦一大截",
+        "别只盯粮价那一根线，整张餐桌才说了算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进、归因分层清楚，从在家煮饭过渡到外食推手，结尾建议与整张餐桌的说法回扣开篇。",
+      "script_spans": [
+        "更实在的推手是，咱们在外吃或买现成饭多了",
+        "下次看物价，别只盯粮价那一根线，整张餐桌才说了算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "无敏感违规与夸大承诺，外卖省钱建议具体克制，价格对比有依据，导向安全。",
+      "script_spans": [
+        "想看住账单，一周少点两顿外卖就管用。",
+        "同样一盘肉，家里做便宜，馆子卖得贵几倍。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6c22173dd7114b77879203d2626f30c9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

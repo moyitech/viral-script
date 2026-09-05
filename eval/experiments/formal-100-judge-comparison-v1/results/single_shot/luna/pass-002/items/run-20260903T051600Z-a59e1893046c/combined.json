@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-39785d8d1f064153b225c9c523535d36",
+  "run_id": "run-20260903T051600Z-a59e1893046c",
+  "trace_sha256": "56c5dc75e65d19efe396c8c9da9e4dc789303cb2d5cbbc84517527c524ad951c",
+  "created_at": "2026-09-03T12:31:50.334409Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直指低风险债基为何亏损，覆盖利率、信用、流动性等原因，并给出购买前的判断方法。",
+      "script_spans": [
+        "低风险从来不等于不亏钱",
+        "翻开定期报告，看它久期多长、信用债占比几成"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕“低风险不等于不亏”，从估值、久期、杠杆到风险准备金层层补充，信息增量充分。",
+      "script_spans": [
+        "市场利率一上行，老债券的价钱就得往下走",
+        "久期越长的债基，对利率那点风吹草动越敏感",
+        "用这笔钱前想清楚自己扛不扛得住几天浮亏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“没买股票却连续变绿”制造反差，中段层层拆风险，结尾留下可复述的余味。",
+      "script_spans": [
+        "明明没买股票，净值却绿了好几天",
+        "低风险三个字是温度计，不是救生圈"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、反问和比喻增强了对话感，但技术表达密集，长句与个别搭配拖慢了朗读节奏。",
+      "script_spans": [
+        "为什么债券价格会跳？",
+        "基金持有的仓位按市值估算，净值自然跟着皱眉。",
+        "更常见的误会是我们把“固定收益”读成了“固定赚钱”，以为债基就是躺着收息，事实上经理日常也在买卖债券赚差价，市价波动直接传达到你账上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“长债像跷跷板”帮助理解利率敏感度，结尾比喻准确凝练，记忆点鲜明且不过分炫技。",
+      "script_spans": [
+        "长债像跷跷板，利率稍动净值就大幅起伏",
+        "低风险三个字是温度计，不是救生圈"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先解释债价与利率的因果，再展开多类风险，最后回到标签辨析和选基建议，论证链条完整。",
+      "script_spans": [
+        "市场利率一上行，老债券的价钱就得往下走，基金持有的仓位按市值估算，净值自然跟着皱眉。",
+        "所以下次看到低风险债基亏损，先别骂骗子。",
+        "低风险三个字是温度计，不是救生圈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见明确违规，风险提示较充分；但“就去挑”带有未限定的投资建议，“一分不补”等绝对说法仍可能误导。",
+      "script_spans": [
+        "低风险从来不等于不亏钱",
+        "短债基金被宣传得稳当，也只是波动小，并非不亏。",
+        "实际情况是，那笔钱只用于赔付因操作失误或违规带来的损失，市场正常波动它一分不补。",
+        "如果你真怕晃，就去挑主投短久期国债的纯债基"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e21a77ede7d24ab1bca4cfaa2c21df9c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

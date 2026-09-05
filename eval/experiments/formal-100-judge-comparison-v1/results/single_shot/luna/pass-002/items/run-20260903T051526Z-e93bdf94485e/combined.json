@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-e3feaf76808f482098d88ef39df53b90",
+  "run_id": "run-20260903T051526Z-e93bdf94485e",
+  "trace_sha256": "ea2962671b9db2adf064f8905353edc66b3e4e1388aab3cbaf4c1ad75a4719ab",
+  "created_at": "2026-09-03T12:31:28.301885Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答慰藉与越界的条件，兼顾逝者家属、合成标识和滥用边界，切角明确。",
+      "script_spans": [
+        "只要清晰标注这是合成内容，并且征得直系亲属同意，它就是温情的纪念；一旦隐瞒或滥用，就踩过了伦理红线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，规则、研究发现、商业化风险与使用建议形成递进，能提供判断标准和具体行动指引。",
+      "script_spans": [
+        "现行规定已经明确，利用人工智能生成的音频内容，必须在起始、末尾或中间添加语音提示"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出慰藉与越界的冲突，中段递进到规则、研究和风险，结尾落到具体提醒。",
+      "script_spans": [
+        "用人工智能复原逝者声音，算慰藉还是越界？",
+        "但研究同时警告，若变成可买卖的情感消费品，会削弱缅怀的本真意义",
+        "别拿去公开传播，更别假装逝者真的说了这话。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，但法规与研究段抽象、句式偏长，朗读需刻意断句。",
+      "script_spans": [
+        "这事儿不能一概而论。",
+        "这层显式标识，就是防止真假混淆的法定门槛。",
+        "从部分丧亲家庭的实证研究看，适度使用这类声音重建，能缓解思念带来的痛苦；但研究同时警告，若变成可买卖的情感消费品，会削弱缅怀的本真意义。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“慰藉还是越界”形成鲜明对照，结尾提醒具体克制，“别假装逝者真的说了这话”自然且便于复述。",
+      "script_spans": [
+        "用人工智能复原逝者声音，算慰藉还是越界？",
+        "别拿去公开传播，更别假装逝者真的说了这话。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头定性、规则解释、研究补充到行动建议层层推进；但从标识要求直接推到只限私人空间，结论范围有所扩大。",
+      "script_spans": [
+        "这事儿不能一概而论。我的判断是：",
+        "记住只把它留在私人空间缅怀，别拿去公开传播"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能区分慰藉与滥用，也强调标识和同意；但将适用条件泛化为所有音频，并称为法定门槛，易造成误导。",
+      "script_spans": [
+        "这事儿不能一概而论。",
+        "一旦隐瞒或滥用，就踩过了伦理红线。",
+        "只要清晰标注这是合成内容，并且征得直系亲属同意，它就是温情的纪念",
+        "利用人工智能生成的音频内容，必须在起始、末尾或中间添加语音提示"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-acf819f24c5146a58c535807822a913b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-f9629f3d873b442e909be9aa6d995261",
+  "run_id": "run-20260903T051601Z-d12797900fd4",
+  "trace_sha256": "273a222f29dde008bd576775dde9f2fdf61754cc8acb54530eef77c8c3aeb4ce",
+  "created_at": "2026-09-03T15:31:53.504169Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出题设矛盾，全程回答会不会影响服务，变差风险与补缺口两侧并重，落在普通人感知上。",
+      "script_spans": [
+        "社区养老托育场地紧巴巴，可有些机关事业单位的公房却空着落灰，盘活这些闲置资产，会不会反过来让公共服务更差？",
+        "先保刚需，再谈增值，才是普通人能感知的良性循环。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从出让金卡点、专项基金引导到监督缺位，信息单元层层推进且与外部资料互证，无编造，增量扎实。",
+      "script_spans": [
+        "国有企业手里的闲置土地若改用途，常卡在补交巨额出让金和规划限制上",
+        "近年也有专项基金明确把保租房、人才公寓、平急两用设施列为盘活方向，相当于用资本引导留住公共功能",
+        "如果监督跟不上，收益进了别处，公共服务还是原地踏步。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头养老托育与公房落灰成反差钩子，中段连续设问推进，结尾休眠存款留余味。",
+      "script_spans": [
+        "社区养老托育场地紧巴巴，可有些机关事业单位的公房却空着落灰",
+        "可账面上漂亮，就等于居民有感吗？",
+        "闲置资产是城市的休眠存款"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏与比喻是成立的，但文件式条件句和术语连排段朗读需临时换词重断，只能封顶两分。",
+      "script_spans": [
+        "社区养老托育场地紧巴巴，可有些机关事业单位的公房却空着落灰",
+        "一旦统筹推进，若只按市场租金排序，低价公益项目容易出局"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务说理，休眠存款与先保刚需再谈增值均可复述；唯公共棉袄一处含混。",
+      "script_spans": [
+        "空着落灰",
+        "闲置资产是城市的休眠存款",
+        "先保刚需，再谈增值",
+        "唤醒它不该以牺牲公共棉袄为代价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进层层递进，每段承担明确功能，先保刚需回扣开头养老托育之问，结尾自然收束题设。",
+      "script_spans": [
+        "这里头的关键是规划时有没有把公众需求放在前头。",
+        "那地方真有动力这么干吗？现实里，取舍挺棘手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点有明确限定，'若''如果''有些'等条件词到位，承认'盘活不是万能药'，无煽动夸大与无据承诺，价值导向安全。",
+      "script_spans": [
+        "盘活本身不是削弱服务，而是把错配的资源重排一遍",
+        "若只按市场租金排序，低价公益项目容易出局",
+        "盘活不是万能药，得承认局部不确定性"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f7bdb458477e4b76836561928db9f12a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

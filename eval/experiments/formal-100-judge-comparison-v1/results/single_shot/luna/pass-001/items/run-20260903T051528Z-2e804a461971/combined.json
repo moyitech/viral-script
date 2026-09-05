@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-730b4e43e5524c47b0aab9e486d28a9f",
+  "run_id": "run-20260903T051528Z-2e804a461971",
+  "trace_sha256": "00db048cddd14da6abe6da60aa54e3cc7e30b236b317fd3559e3fde517ea4b80",
+  "created_at": "2026-09-03T11:59:23.535902Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "紧扣一键开药的误诊风险，兼顾稳定复诊的便利与新症状的风险，直接服务普通观众判断。",
+      "script_spans": [
+        "一键开药最危险的地方，在于把需要当面查体的新病，伪装成了“老毛病续方”。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 482，目标为 450，偏差率为 7.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "规则、现实操作、屏幕局限、病情变化和自检问题依次推进，信息单元具体且彼此支撑。",
+      "script_spans": [
+        "医生看不到你的面色和体征，也没有化验单实时更新",
+        "比如慢病出现新并发症，线上续方就可能沿着旧诊断错下去。",
+        "下次想点开药前，先问自己：这真是同一个老问题吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用便捷与误诊反差起钩，中段层层补足风险，结尾追问自然延伸。",
+      "script_spans": [
+        "你以为点几下手机就能送药上门，是互联网医疗的福利？有时候，它也可能是误诊的起点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有设问、短句和金句撑住节奏，但两处搭配明显不顺，改词和重断句后才适合直接口播。",
+      "script_spans": [
+        "药能快递，病不隔屏而愈。",
+        "更曾被曝光过平台先选药再配方的操作",
+        "对普通人来说，真正的便宜是稳定老病的续药省了请假奔波。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“药能快递，病不隔屏而愈”与“已知答案的快捷键”准确收束观点，形象且便于复述。",
+      "script_spans": [
+        "药能快递，病不隔屏而愈。",
+        "一键开药是给已知答案的人用的快捷键，不是给未知症状开的绿灯。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "风险提出后接规则边界，再解释屏幕为何易错，最后落到行动建议，主线完整且结论自然回扣。",
+      "script_spans": [
+        "为什么隔着屏幕容易错？",
+        "规则要求此时必须终止线上并引导线下",
+        "所以记住，一键开药是给已知答案的人用的快捷键，不是给未知症状开的绿灯。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "边界和线下分流明确，但“最危险”“已知答案”等比喻偏绝对，可能让观众误以为可自行判断复诊，需补医生确认。",
+      "script_spans": [
+        "初诊和病情变化不宜线上，否则容易漏诊误诊。",
+        "规则要求此时必须终止线上并引导线下",
+        "一键开药最危险的地方",
+        "一键开药是给已知答案的人用的快捷键，不是给未知症状开的绿灯。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-95b33d14e7a240359038f104626b486a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-54f5936bbd9d438d8c1badb273f5ac66",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-8bdd390799914c13819c4026df4730d8",
+  "run_id": "run-20260902T144130Z-45bd1cdd1ea8",
+  "trace_sha256": "5ab9dfec5dcbbcd279fc79c6e09baf0f715951961561f1852248dfcbd22e7738",
+  "created_at": "2026-09-03T14:25:54.173553Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即立快与吵的对立，两侧均给出数据并落到居民痛点，结尾交还选择，题设全覆盖。",
+      "script_spans": [
+        "快递省下十五分钟，你却要多忍上空嗡嗡声",
+        "要时效得放飞机，要安静得收空域"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "时效、成本、审批、分贝等单元层层推进且互证，引文可核，无编造，增量扎实。",
+      "script_spans": [
+        "城市末端配送，过去半小时到一小时，如今压到十五到二十分钟",
+        "无人机噪声比直升机低十五分贝，但直升机就因吵被限飞，这差距不算真解噪"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字立住省时换噪音的冲突，中段试点局限、噪声机理、公平性层层递进，结尾问句由嗡嗡声自然长出。",
+      "script_spans": [
+        "快递省下十五分钟，你却要多忍上空嗡嗡声。",
+        "可快集中在试点片区，大量快递仍走地面三轮。",
+        "下次头顶嗡嗡响，你先查包裹到哪，还是先塞耳塞？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数短句气口顺、有对话感，但“真解噪”“技术降噪被密度抵消”等压缩表达朗读需临时换词。",
+      "script_spans": [
+        "要时效得放飞机，要安静得收空域。",
+        "这差距不算真解噪",
+        "技术降噪被密度抵消"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "要时效得放飞机，要安静得收空域以放收对仗收拢全文矛盾，好记可复述；单台与百台之比让降噪说理具体，修辞克制。",
+      "script_spans": [
+        "要时效得放飞机，要安静得收空域。",
+        "单台声频柔和点，航路划到楼顶百台齐飞就烦",
+        "好处沾不上却先听响"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先快后吵以问句过渡，密度抵消降噪因果清楚，结尾嗡嗡声回扣开头，层层递进。",
+      "script_spans": [
+        "那噪声从哪冒出来？",
+        "单台声频柔和点，航路划到楼顶百台齐飞就烦，技术降噪被密度抵消",
+        "下次头顶嗡嗡响，你先查包裹到哪，还是先塞耳塞？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体两面陈述、试点边界清楚，无煽动夸大；但老人对高音调更敏感属未经限定的群体归因，需补条件或改写。",
+      "script_spans": [
+        "可快集中在试点片区，大量快递仍走地面三轮",
+        "无人机噪声比直升机低十五分贝，但直升机就因吵被限飞，这差距不算真解噪",
+        "老人对高音调更敏感"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b03f2d5fa2e14c7298de52f6ad8f91af",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

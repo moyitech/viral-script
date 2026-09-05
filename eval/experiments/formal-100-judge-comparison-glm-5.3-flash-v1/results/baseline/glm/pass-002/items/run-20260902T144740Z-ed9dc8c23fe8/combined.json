@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-5882b2df17414774a968e11f6015f979",
+  "run_id": "run-20260902T144740Z-ed9dc8c23fe8",
+  "trace_sha256": "51ea9dce6f27fbeb6147fb14c24c72ddef0d71e6af4c5955542e674d7122db41",
+  "created_at": "2026-09-03T14:27:33.613485Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛问亮判断，两侧条件都覆盖，普通人账本视角贯穿首尾。",
+      "script_spans": [
+        "民生支出加码，消费意愿会跟着涨吗？我的判断：能缓口气，但难撑起大反弹"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机制、实证、效率之辨层层递进，判断方法可带走，无同义注水。",
+      "script_spans": [
+        "财政正把资金从大项目往人身上挪，推免费学前、育儿补贴",
+        "钱花得准，才卸得下后顾之忧；花得散，就像洒水难润根。效率比总量更关键"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇反差抓人，中段研究结论与'工作不稳'等转折持续兑现钩子，结尾一问由正文自然生长，留讨论余味。",
+      "script_spans": [
+        "财政掏钱办免费幼教，宝妈却继续捂紧钱袋",
+        "可要是工作不稳，补贴再甜也先存着",
+        "下次预算说民生涨了，你是去消费，还是继续攒防身？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与比喻有对话感，但“时劲”“突袭支出”需临场换词，研究一句压缩费劲，只能二档。",
+      "script_spans": [
+        "钱花得准，才卸得下后顾之忧；花得散，就像洒水难润根",
+        "得一点点时劲",
+        "教育支出和社保就业减贫明显"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'冻土化开''洒水难润根'比喻贴切、点到为止，'担子卸多少，才敢花多少'与结尾账本句均可离开文段复述。",
+      "script_spans": [
+        "消费意愿不像开关一按就亮，更像冻土化开",
+        "担子卸多少，才敢花多少，这是实在账",
+        "当补贴变底气，消费才自然醒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、回扣到位，但把研究中的减贫结论说成减轻焦虑，证据桥断裂。",
+      "script_spans": [
+        "消费意愿不像开关一按就亮，更像冻土化开",
+        "研究看得清楚，教育支出和社保就业减贫明显，医疗卫生那块直接减轻焦虑的效果偏弱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "判断留有余地、未作绝对承诺，整体稳妥；但\"城里没触到\"属绝对化概括，城乡对比易误导，资金挪用表述归因也偏武断，需补边界。",
+      "script_spans": [
+        "我的判断：能缓口气，但难撑起大反弹",
+        "可要是工作不稳，补贴再甜也先存着",
+        "在县乡领到实惠，敢花的心就活了；城里没触到，钱包照样捂紧",
+        "财政正把资金从大项目往人身上挪"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-446b687160cc4ccb9a7e392e9034c86b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

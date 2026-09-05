@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-f49bf2ecc29b42b8bfac09ff8b5484ef",
+  "run_id": "run-20260903T051547Z-014632c43ec7",
+  "trace_sha256": "2684cf00a4d17fef2d0cee935cb707ccfb810586df69a464ba36b418ec84b643",
+  "created_at": "2026-09-03T12:32:10.262864Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 2,
+      "reason": "明确讨论免押与收费转移，并落到租客决策；但几乎只论证“换种收费”，未正面展开免押对现金流的减负价值。",
+      "script_spans": [
+        "现在不少长租公寓打着零押金月付的招牌，可合同里悄悄收着每月百分之八到十的服务费",
+        "这基本不是天上掉馅饼，而是把押金成本转移成了别处的收费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，费用比例、适用人群、总价比较都提供了有效增量；但“普及”“不少”“大多”等范围判断偏泛，关键结论仍有过度概括。",
+      "script_spans": [
+        "所以你签合同前，一定把免押省下的钱、服务费和实际月租全加起来，再对比普通房源的年总价",
+        "现在不少长租公寓打着零押金月付的招牌，可合同里悄悄收着每月百分之八到十的服务费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用免押金反转抓住注意，中段不断补充费用、适用人群和规则，结尾落到算总账，推进完整。",
+      "script_spans": [
+        "租房免押金现在逐渐普及，但这基本不是天上掉馅饼",
+        "别光看零押金三个字就冲动下单，切记算清总账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体顺畅，有对话感，但两处长句堆叠信息过密，朗读时需要补气和重断句。",
+      "script_spans": [
+        "天上掉馅饼",
+        "现在不少长租公寓打着零押金月付的招牌，可合同里悄悄收着每月百分之八到十的服务费，算一年总支出反而可能高于传统押一付三",
+        "一定把免押省下的钱、服务费和实际月租全加起来，再对比普通房源的年总价，别光看零押金三个字就冲动下单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不是天上掉馅饼”把免押反差说得直观，“算清总账”又形成可复述的收束，修辞克制且服务观点。",
+      "script_spans": [
+        "不是天上掉馅饼，而是把押金成本转移成了别处的收费",
+        "切记算清总账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头提出判断，中段用费用与人群例证，结尾给出总账核算；但把押金上限直接推成平台必然转移收费，因果桥不足。",
+      "script_spans": [
+        "所以你签合同前，一定把免押省下的钱、服务费和实际月租全加起来，再对比普通房源的年总价",
+        "其实按规定住房租赁押金一般不能超过一个月租金，平台只是绕个弯把这笔钱从别的口子拿回来罢了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提醒核算年总价，方向稳妥；但把免押普遍归为转移收费，并将北京规则泛化，易造成误导。",
+      "script_spans": [
+        "签合同前，一定把免押省下的钱、服务费和实际月租全加起来",
+        "这基本不是天上掉馅饼，而是把押金成本转移成了别处的收费",
+        "其实按规定住房租赁押金一般不能超过一个月租金"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 16.0,
+    "partial_weighted_average": 2.2857142857142856,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9d684695cb174d5ca0fe36157506b1dc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

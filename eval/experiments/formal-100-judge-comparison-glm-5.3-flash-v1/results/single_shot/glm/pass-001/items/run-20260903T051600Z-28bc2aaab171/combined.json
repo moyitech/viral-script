@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-d99a547a8ae248f8a5040d82763797c4",
+  "run_id": "run-20260903T051600Z-28bc2aaab171",
+  "trace_sha256": "045dd448d0b5909e4803a6787cfd7b16b085a2abe5bc134568f02dd642767536",
+  "created_at": "2026-09-03T14:11:51.267379Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即亮判断正面答题，论据指向企业采购，结尾落回普通消费者，人群覆盖完整。",
+      "script_spans": [
+        "我的判断很直接：多数采购是合规与公关驱动，并非真实减排主力",
+        "普通人别以为事不关己。你买带“碳中和”标的奶茶或衣服"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 422，目标为 450，偏差率为 6.22%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "额外性、核查脱节、监管进展层层推进，事实与结论咬合，观众能带走判断方法。",
+      "script_spans": [
+        "它要求项目没了信用收入就不减排，可大量林业保护或废料利用本也会做",
+        "基准线划多高常由项目方自定，弹性空间不小，第三方难穿透原始数据"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字账面减排与烟囱冒烟直接立起反差；中段以'数字游戏怎么玩'持续揭新机制；结尾提问由奶茶溢价自然生长，留互动有余味。",
+      "script_spans": [
+        "企业争购碳信用，账面上减了排，烟囱却没少冒烟",
+        "那数字游戏怎么玩起来的？",
+        "下单前多问一句：这钱到底减了哪里的烟？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾有对话感，但中段如“强化碳市场信用监管”仍是念稿腔，朗读需改写才顺口。",
+      "script_spans": [
+        "下单前多问一句：这钱到底减了哪里的烟？",
+        "近期官方文件要求强化碳市场信用监管，从名录到核查全流程记录，但跨区互认尚需时间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'披绿衣''补丁不是盔甲'贴切且服务理解，'减了哪里的烟'与开头烟囱呼应成可复述记忆点，修辞点到为止，无堆砌炫技。",
+      "script_spans": [
+        "买来抵扣只是给既有行为披绿衣",
+        "信用只是补丁不是盔甲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承转自然，因果桥清楚，结尾“减了哪里的烟”回扣开头“烟囱没少冒烟”。",
+      "script_spans": [
+        "那数字游戏怎么玩起来的？核心在量化与核查脱节",
+        "下单前多问一句：这钱到底减了哪里的烟？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键论断明示为主观判断并用“多数”“可能”限定，兼顾监管进展，消费提醒克制，无违规夸大风险。",
+      "script_spans": [
+        "我的判断很直接：多数采购是合规与公关驱动，并非真实减排主力",
+        "你买带“碳中和”标的奶茶或衣服，溢价可能付了信用费",
+        "监管虽提出信用评价分级，但各平台标准割裂"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d15000e98f9f4afca540cc92ac8c105d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-3ebb12a6f8594dba90b6d9b1ec096c98",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

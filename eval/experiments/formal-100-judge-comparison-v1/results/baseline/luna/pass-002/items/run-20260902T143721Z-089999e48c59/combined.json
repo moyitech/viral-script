@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-4881d74b0df2415ead5465d32adca22c",
+  "run_id": "run-20260902T143721Z-089999e48c59",
+  "trace_sha256": "c1c6dfe41f119ae857d19774c9ee14c7cf704ed84c0e28971b13ea67f0b200c5",
+  "created_at": "2026-09-03T12:17:01.533592Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解真减负与成本转移两种情形，覆盖长租、公寓直租及普通租客的判断需求。",
+      "script_spans": [
+        "其实两头都占：有的平台真免钱，有的把押金挪进月租和服务费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕免押后的真实成本展开，给出合计租金、服务费和中介费的核算方法，信息推进充分。",
+      "script_spans": [
+        "房租比个人直租高大概一成五到两成，还要收服务费，合租收月租一成，整租收百分之八。",
+        "把租金、服务费、中介费加起来，算三个月总支出。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出免押却收服务费的冲突，中段持续补充收费模式与风险，结尾追问自然。",
+      "script_spans": [
+        "说好免押金，搬进去了却收服务费。",
+        "把租金、服务费、中介费加起来，算三个月总支出。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，但中段多处句式生硬，朗读需重断句或改词。",
+      "script_spans": [
+        "说好免押金，搬进去了却收服务费。",
+        "早几年免押多限公寓，现在连毕业季都推开了，覆盖面变了。",
+        "北京这类城市，早要求租赁企业收押金要第三方托管，不超一个月租金。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务观点，“成本悄悄挪到别处”和结尾对照句都形象、准确、便于复述。",
+      "script_spans": [
+        "可成本常悄悄挪到别处。",
+        "省了进门的钱，却赔了过日子的钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头立题、分模式展开并落到核算建议；但直租转北京监管突兀，“绕过这层”与“流水高了”因果不清。",
+      "script_spans": [
+        "所以你找房时，别光盯着免押金三个字。把租金、服务费、中介费加起来，算三个月总支出。",
+        "免押金其实是绕过这层，企业用别法收钱。",
+        "拿信用分当门槛，你达标就少交押金，但月月抽成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有费用核算和风险提示，整体不煽动；但把免押概括为绕过监管、改用别法收钱，并泛化收费规律，易造成误解。",
+      "script_spans": [
+        "把租金、服务费、中介费加起来，算三个月总支出。",
+        "免押金其实是绕过这层，企业用别法收钱。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2eaecf54cd7040ec93ac95bd41e3d451",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

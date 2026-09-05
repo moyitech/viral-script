@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-94855724ba13461287051e2e1a2d1e65",
+  "run_id": "run-20260902T141246Z-f3c65770edfa",
+  "trace_sha256": "45cb4775fa3650d51a3d57dc08f652ccfb1921cd70b15badc270ea52772d6f79",
+  "created_at": "2026-09-03T13:46:21.363236Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛出攒法之问，中段两条攒路对应两侧答案，结尾反问回扣人群痛点，覆盖完整。",
+      "script_spans": [
+        "攒金这动作，平时是投资，金疯涨时你跟风买，就成了追涨。年轻人问，到底算投资还是追涨？先看你的攒法。",
+        "你攒它是为十年后心里有底，还是为今天怕错过热闹？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 488，目标为 450，偏差率为 8.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "平摊机制、风评门槛、成本对比等单元递进推进，央行买入有据可依，增量明确。",
+      "script_spans": [
+        "系统把这笔钱按交易日平均，每天自动买一点。金价高时少买克数，低时多买克数。长期这么摊，成本就平滑了。",
+        "但今年1月，工行把新开户风险评级提到C3平衡型，得先测过风险承受力才让买。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛投资变接盘的反差；中段以两条攒法与工行提门槛层层兑现钩子；结尾追问攒金动机，余味由正文自然生长。",
+      "script_spans": [
+        "金价猛涨你月月攒金，可能正把投资做成追涨接盘",
+        "但今年1月，工行把新开户风险评级提到C3平衡型，得先测过风险承受力才让买",
+        "金子不会问你理由。你攒它是为十年后心里有底，还是为今天怕错过热闹？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句为主、有对话感，但金涨视频、新开户风险评级等至少两处需临时换词重断，按规则封顶2分。",
+      "script_spans": [
+        "产品给了平摊工具，用不用看人。",
+        "金价高时少买克数，低时多买克数。",
+        "若刷到金涨视频才心动手痒，开户追买，成本会比定投高一大截。",
+        "工行把新开户风险评级提到C3平衡型",
+        "工行积存金按这逻辑设计"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比与设问克制、服务说理，'金子不会问你理由''金子还是那块金子'可脱离语境复述，全篇无堆砌炫技。",
+      "script_spans": [
+        "金子不会问你理由",
+        "金子还是那块金子，你的买入价却差出好几个点",
+        "金价高时少买克数，低时多买克数"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "每段功能清晰，机制到门槛到建议层层递进，因果有桥，结尾自然回扣题设。",
+      "script_spans": [
+        "银行在高价位这么做，是在拦盲目追涨的人。",
+        "这法子贵在坚持，低点也别停，停了就失去平摊意义。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有追涨警示与风险测评边界，但“设个定期计划就稳妥”“低点也别停”属未经限定的投资建议，宜补金价下跌风险提示。",
+      "script_spans": [
+        "工行把新开户风险评级提到C3平衡型，得先测过风险承受力才让买",
+        "可能正把投资做成追涨接盘",
+        "设个定期计划就稳妥",
+        "低点也别停，停了就失去平摊意义"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-dcd97226aa924d7b937cd674175fba01",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-182172f5ada049d2b9e09d3f162059b5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-7f3631b7bf8445fb8661ee739edd3604",
+  "run_id": "run-20260902T143123Z-71b0048cc161",
+  "trace_sha256": "84f67522ec965dea2c5dce2eccc698e2fe972ad6a2c09fec22273d8d181a52c3",
+  "created_at": "2026-09-03T14:26:29.628305Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直问招聘官反应，结尾回扣考证选择，能换与不能换两侧都答，室友报班一句正中应届生场景。",
+      "script_spans": [
+        "能换工作的证主要是一类硬门槛，另一类可能只是墙上的奖状",
+        "应届生扎堆考证，先得看清类别",
+        "研究也发现，学历和实习实操比一堆纸证更影响录用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从退出目录的事实讲到改动原因再到避坑方法，信息单元层层推进，无同义重复，增量扎实。",
+      "script_spans": [
+        "2020年人社部通知已分批退出目录。政府不再发证了，改为用人单位和社会组织自己认定",
+        "准入类关系公共安全，必须卡死；水平评价类偏通用技术，退出是为让企业自己挑人",
+        "像民航安全检查员这类水平评价证，现在由行业机构认定，企业认才管用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字直戳考证投入与招聘官反应的反差；中段政策反转与避坑建议持续推进；结尾之问由首段奖状伏笔自然生长。",
+      "script_spans": [
+        "你熬夜刷课考下的证，招聘官会多看一眼吗？",
+        "可你们常报的水平评价类，比如某些技能证，2020年人社部通知已分批退出目录。",
+        "下次报名前，问自己：这证是饭碗的钥匙，还是墙上的奖状？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数短句好读，但“活化就业”与“人社部通知已分批退出目录”两处需换词重断，最高只能2分。",
+      "script_spans": [
+        "别跟着室友盲目报班，花几百块未必对求职有用。",
+        "退出是为让企业自己挑人，活化就业。",
+        "2020年人社部通知已分批退出目录"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "「饭碗的钥匙还是墙上的奖状」自然准确、可独立复述；比喻克制不堆砌，仅「活化就业」一词略偏书面。",
+      "script_spans": [
+        "能换工作的证主要是一类硬门槛，另一类可能只是墙上的奖状。",
+        "这证是饭碗的钥匙，还是墙上的奖状？考对了是踏板，考错了只是经历。",
+        "活化就业"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承接因果清楚，分类、原因、方法递进自然，结尾奖状比喻回扣开头，结构闭合完整。",
+      "script_spans": [
+        "为什么这么改？准入类关系公共安全，必须卡死",
+        "那普通人怎么避坑？想进特定行业，先查它要哪种证",
+        "这证是饭碗的钥匙，还是墙上的奖状"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "区分准入类与水平评价类并留余地，主动提示包过骗局，无夸大承诺或煽动，审核风险低。",
+      "script_spans": [
+        "别信广告说包过，那只是培训课",
+        "花几百块未必对求职有用"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1791e4e7538544048165491034a672a7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

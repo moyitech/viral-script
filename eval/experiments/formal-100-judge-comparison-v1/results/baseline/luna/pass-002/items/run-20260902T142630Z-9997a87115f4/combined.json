@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-e67bea2da1b944cbac82b344008d217d",
+  "run_id": "run-20260902T142630Z-9997a87115f4",
+  "trace_sha256": "a058b3dbcc8b824bd8fe0bf210c444754e97f0fac562dc92918605ee1176220c",
+  "created_at": "2026-09-03T12:16:13.103545Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答厂商与用户如何分责，覆盖默认设置、远程入侵和普通用户处境，切角明确。",
+      "script_spans": [
+        "厂商得担出厂安全责，用户也不能全甩手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕默认安全责任展开，风险机制、监管信号和用户补救均有推进，信息增量具体。",
+      "script_spans": [
+        "这隐患的根子就在出厂初始设置不合理",
+        "眼下强制安全规范已经在征求意见",
+        "你新买智能设备第一件事，先改掉初始密码，顺便在设置里关掉外部远程访问权限。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用隐私被拍与责任甩锅制造冲突，中段推进到默认设置、监管和自保，结尾追问承接自然。",
+      "script_spans": [
+        "智能摄像头被黑拍下你在家走动甚至私密画面，厂商却推说怪你懒得改密码？",
+        "这隐患的根子就在出厂初始设置不合理",
+        "当自家客厅变成公开直播现场的时候，我们到底该选省事还是选安心？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问句、比喻和明确行动建议，能听懂；但“担出厂安全责”生硬，中段并列信息过密，朗读需重断句。",
+      "script_spans": [
+        "像进自己家一样容易",
+        "厂商得担出厂安全责，用户也不能全甩手。",
+        "你想想，许多普通家庭用的智能设备出厂就写好统一弱密码，很多智能家居产品的远程访问开关默认处于打开状态"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“像进自己家一样容易”和“公开直播现场”把入侵风险说得具体，形象而不过度堆砌。",
+      "script_spans": [
+        "像进自己家一样容易",
+        "当自家客厅变成公开直播现场的时候"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先抛出隐私风险，再讲默认设置成因，随后落到厂商责任、用户行动与结尾追问，推进完整。",
+      "script_spans": [
+        "厂商得担出厂安全责，用户也不能全甩手。",
+        "这隐患的根子就在出厂初始设置不合理",
+        "你新买智能设备第一件事，先改掉初始密码，顺便在设置里关掉外部远程访问权限。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "责任分担和改初始密码建议较稳妥，但将入侵难度、默认设置等概括得过满，易造成误导，应补充条件和边界。",
+      "script_spans": [
+        "厂商得担出厂安全责，用户也不能全甩手",
+        "黑客拿简单工具扫一段就能闯进你家网络，像进自己家一样容易"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2fcfccf7e5214939a48738bcdf01556a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

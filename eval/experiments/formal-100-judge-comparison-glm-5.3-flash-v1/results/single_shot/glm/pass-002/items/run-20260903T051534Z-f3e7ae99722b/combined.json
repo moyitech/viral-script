@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-aac2f6a279c84728bec8b2a1f9f0de05",
+  "run_id": "run-20260903T051534Z-f3e7ae99722b",
+  "trace_sha256": "470d272b16aff041081042eaaab8012e5976033ba85653e8d16a4cb1dac2b7da",
+  "created_at": "2026-09-03T15:28:46.958010Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答省钱与品质如何兼得，成本与品质两侧均有着落，并落到消费者可执行的兼得做法。",
+      "script_spans": [
+        "便宜和好并不对立",
+        "想省钱又不想踩坑，买包装菜认准“预制菜”标识和配料表无防腐剂"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，成本解释、国标信号与选购建议层层推进，信息单元多且相互支撑，无编造迹象。",
+      "script_spans": [
+        "用工业预加工替掉了堂食最贵的人力与门店损耗",
+        "预制菜定义里明确不添加防腐剂"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以同菜差价直击利益点，中段用备菜更贵与国标信号层层兑现，结尾以“效率工具”之喻收出余味，三段俱立。",
+      "script_spans": [
+        "同样一盘红烧肉，预制菜比餐厅便宜一大半",
+        "那品质怎么保？2026年面向社会的预制菜国标征求意见稿有个关键信号",
+        "你就能把预制菜变成厨房里的效率工具，而不是品质妥协的代名词"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾顺口，建议段接地气；但国标句拗口、“牺牲不了即时风味”费解，两处需改词。",
+      "script_spans": [
+        "家里偶尔自己做，算上备菜洗碗其实更贵。",
+        "2026年面向社会的预制菜国标征求意见稿有个关键信号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不靠防腐剂撑着”与“效率工具而非品质妥协的代名词”均能离句复述，修辞克制且服务理解，无堆砌炫技。",
+      "script_spans": [
+        "靠工艺和冷链保质，不是靠防腐剂撑着",
+        "把预制菜变成厨房里的效率工具，而不是品质妥协的代名词"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、问答推进清晰，但权衡句牺牲不了即时风味却换来稳定自相矛盾，关键结论经不起追问。",
+      "script_spans": [
+        "那品质怎么保？",
+        "预制菜牺牲不了即时风味却换来了稳定与便宜"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "澄清防腐剂误区，提示认准标识、加热熟透等边界，无夸大承诺与煽动，审核风险低。",
+      "script_spans": [
+        "合规预制菜靠工艺和冷链保质，不是靠防腐剂撑着",
+        "买包装菜认准“预制菜”标识和配料表无防腐剂；下馆子别把中央厨房配送的菜误当成预制菜骂。加热务必熟透，别贪快"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e3f732f76dca451882e44dc7d0674098",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

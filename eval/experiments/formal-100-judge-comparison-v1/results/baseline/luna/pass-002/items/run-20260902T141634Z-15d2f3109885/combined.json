@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-f6b4a5ad16d3454e955be16a44837cc5",
+  "run_id": "run-20260902T141634Z-15d2f3109885",
+  "trace_sha256": "991d28f05a2bdb930681281c86eb45da2522dfb33817f390d5490a913d4c705b",
+  "created_at": "2026-09-03T12:21:19.123519Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 2,
+      "reason": "正面回答了回购信号与托市之问，也给出看用途的抓手，但对托市一侧缺少实质辨析，结论偏绝对。",
+      "script_spans": [
+        "你翻公告别光兴奋，先弄清回购用途是注销还是激励。",
+        "回购增多你敢跟吗？多是信心信号非短期托市。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "有研究信号、注销影响每股收益、用途辨别等有效信息，但把注销直接说成分钱，并以少数指标支撑普遍结论，增量有限。",
+      "script_spans": [
+        "钱没多赚，但股数少了，注销后每股收益就被抬高。",
+        "这是实打实分钱给全体股东，比喊口号更有分量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头追问直接，正文用注销与激励推进；但结尾“越要冷”收束生硬，也没有自然互动，余味不足。",
+      "script_spans": [
+        "回购增多你敢跟吗？",
+        "市场越热越要冷别把托市误会成信心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和提醒句带来一定对话感，但中段仍有抽象书面腔，多处需要重断句，未达到顺滑口播。",
+      "script_spans": [
+        "你翻公告别光兴奋，先弄清回购用途是注销还是激励。",
+        "毕竟他们比外界更懂账面，敢买回就是态度的表达。",
+        "市场越热越要冷别把托市误会成信心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“信任投票”“第一眼找注销”等可复述表达，但“实打实分钱”把注销对股东的作用说得过满，修辞略显用力。",
+      "script_spans": [
+        "如今低估值时，注销回购才更像咱老百姓说的信任投票。",
+        "这是实打实分钱给全体股东，比喊口号更有分量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "有钩子、解释、辨别和收束，主线可跟；但管理层买回直接推出信心、注销直接推出不托市，关键因果桥不足。",
+      "script_spans": [
+        "你翻公告别光兴奋，先弄清回购用途是注销还是激励。",
+        "毕竟他们比外界更懂账面，敢买回就是态度的表达。",
+        "这是实打实分钱给全体股东，比喊口号更有分量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有提示区分回购用途的审慎意识，但“敢跟”与“多是信心”易构成投资引导，且把注销回购说成给全体股东分钱，表述失真。",
+      "script_spans": [
+        "你翻公告别光兴奋，先弄清回购用途是注销还是激励。",
+        "回购增多你敢跟吗？多是信心信号非短期托市。",
+        "这是实打实分钱给全体股东，比喊口号更有分量。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 14.0,
+    "partial_weighted_average": 2.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.0,
+    "judge_normalized_score": 0.6666666666666666
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3467b3aafb794043b722bacc318ba703",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

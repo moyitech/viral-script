@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-46893ef9800c491782c40d933a15fa03",
+  "run_id": "run-20260903T051559Z-70842ac03adc",
+  "trace_sha256": "aa2456d712f5512d5933635cbb5264d764d13e515186bdab38ad06852a1b5efb",
+  "created_at": "2026-09-03T15:27:38.359960Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即扣'决定权'归属，老人与父母两侧均覆盖，建议直指隔代家庭痛点，回答完整。",
+      "script_spans": [
+        "但法律上的日常教育决定权，真不全在带娃的人手里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法条依据、权限边界、反向约束、实操建议层层推进，与引用法条相符，信息密度高且集中。",
+      "script_spans": [
+        "祖父母受委托照料，并不自动拿到最终决定权",
+        "边界在生活照护和习惯养成"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即入冲突，中段以设问和新信息持续推进，结尾金句由正文自然生长，余味足。",
+      "script_spans": [
+        "你天天给孙子做饭、接送上学，可一到报兴趣班、立规矩，儿子媳妇一句话就推翻你的安排",
+        "那老人付出算什么？边界在生活照护和习惯养成",
+        "带娃是情分，决定权是法定义务"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "首尾短句顺畅且有金句，但中段两处法律书面句抽象堆叠，朗读需临时改词重断句",
+      "script_spans": [
+        "哪怕在微信里约好，也比事后翻脸强",
+        "未成年人的家庭教育主体责任在父母或其他监护人",
+        "法律把家庭教育从纯家事变成有国家规范的事务，所以责任划分不是人情算计"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对照与生活化措辞服务理解，金句离开正文仍可复述，全篇克制，无辞藻堆砌或喧宾夺主。",
+      "script_spans": [
+        "带娃是情分，决定权是法定义务",
+        "老人管起居，父母守关键决策",
+        "反过来，父母也不能把老人当保姆，甩手不管再事后挑刺"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "钩子、法理、边界、建议逐段递进，转折自然有承接，结尾金句回扣开头冲突与题设。",
+      "script_spans": [
+        "那老人付出算什么？边界在生活照护和习惯养成"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述公允，既肯定老人付出也明确父母权责，建议克制不煽动，无绝对化承诺，合规稳妥。",
+      "script_spans": [
+        "与其争谁听谁的，不如提前把分工写明白：老人管起居，父母守关键决策。",
+        "老人日夜付出值得尊重，但替子女硬做主，往往两头不落好。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9ffadf922ba248c9888bb59d6519f87d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-73a8d0e8da3146f4ae09ef89b56be817",
+  "run_id": "run-20260903T051508Z-e4eaba95c1e7",
+  "trace_sha256": "16f2fd7b18d2df680b671b70cf3da50c90e252181a295c62087d47838d08c0c7",
+  "created_at": "2026-09-03T11:57:44.402687Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答算法能否识别潜力，兼顾企业筛选效率与求职者风险，核心人群和冲突都命中。",
+      "script_spans": [
+        "算法能帮企业快速筛掉明显不合适的人，却还读不懂潜力这件事的全貌。",
+        "你真去面对机器时，就把它当第一道关卡，别让一串算法分数否定自己的真实可能。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 254，目标为 280，偏差率为 9.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕能筛选但读不全潜力，补充评分机制、效率、偏差和应用扩展，信息单元充足且结论有支撑。",
+      "script_spans": [
+        "它靠语音语义和微表情特征自动打分，确实比随性的闲聊更标准，也给HR省下大量初筛时间。",
+        "某些声线或长相特征跟干活能力根本无关，模型却可能顺着这些偏差悄悄带偏录用结果。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“AI能否看穿潜力”设问，中段补出机制与偏差风险，结尾用“后劲”收出余味。",
+      "script_spans": [
+        "如今招聘现场架起摄像头，AI面试官照着脚本追问，它真能一眼看穿你的潜力吗？",
+        "工具能算出门面规矩，算不出人往上走的后劲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，转折和重音清楚，核心展开像真人解释，连续朗读基本无需改词。",
+      "script_spans": [
+        "但风险也在这，某些声线或长相特征跟干活能力根本无关",
+        "工具能算出门面规矩，算不出人往上走的后劲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务观点，“算出门面规矩、算不出后劲”对照鲜明，易于理解和复述。",
+      "script_spans": [
+        "工具能算出门面规矩，算不出人往上走的后劲。",
+        "别让一串算法分数否定自己的真实可能。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、判断、机制、风险和建议顺序清楚，但从招聘偏差跳到公共就业服务略显突兀，因果桥不够。",
+      "script_spans": [
+        "我的判断很直接，算法能帮企业快速筛掉明显不合适的人，却还读不懂潜力这件事的全貌。",
+        "但风险也在这，某些声线或长相特征跟干活能力根本无关",
+        "眼下智慧面试正从企业内推往公共就业服务延伸，技术落地明显提速。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未煽动对立，也没有承诺性误导；但“根本无关”“算不出”过于绝对，宜补充岗位和模型边界。",
+      "script_spans": [
+        "算法能帮企业快速筛掉明显不合适的人，却还读不懂潜力这件事的全貌",
+        "某些声线或长相特征跟干活能力根本无关",
+        "工具能算出门面规矩，算不出人往上走的后劲。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-14d46cdab8104fa9ba528a92d55a0edc",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-3c33e8abca354352987e72d471c2371f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

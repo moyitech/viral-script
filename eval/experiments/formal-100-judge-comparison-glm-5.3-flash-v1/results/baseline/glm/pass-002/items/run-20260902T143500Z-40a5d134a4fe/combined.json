@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-0089898f87c04e4382b84f1b7aa64aab",
+  "run_id": "run-20260902T143500Z-40a5d134a4fe",
+  "trace_sha256": "9d6d635c7791273a0d76f2653c311b44fe48cf13e5ecc91331ed55632061c59e",
+  "created_at": "2026-09-03T14:24:47.115348Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头亮问题、结尾回扣，正反两侧与家长痛点全程对准，回答完整。",
+      "script_spans": [
+        "直接说：单藏名次缓解不了焦虑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策、数据、机制、建议层层推进，17%与32%有据可查，信息无注水。",
+      "script_spans": [
+        "平时焦虑约17%，临考升到32%",
+        "孩子从比名次变成猜自己够不够好，更耗神"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛数据反差设问，中段层层兑现新信息，结尾由建议自然长出余味与互动感。",
+      "script_spans": [
+        "可考前焦虑却从17%跳到32%，真护住心吗？",
+        "收走名次表，考试诊断还在，家长私下比还在，分数照样发",
+        "别问第几名，问问今天哪道题卡住了，听他慢慢讲讲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "通篇短气口衔接紧凑，'别问第几名，问问今天哪道题卡住了'自然上口，重音停顿清楚，全篇无需临时改词。",
+      "script_spans": [
+        "别问第几名，问问今天哪道题卡住了，听他慢慢讲讲",
+        "但收走名次表，考试诊断还在，家长私下比还在，分数照样发"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻贴切不炫技，压住红榜压不住心思离开上下文仍可复述，接住焦虑呼应收尾。",
+      "script_spans": [
+        "悄悄把压力递回孩子手中",
+        "孩子从比名次变成猜自己够不够好，更耗神",
+        "规定只压住红榜压不住心思，这才是该接住的焦虑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "“收走名次表…分数照样发”层层递进，回扣有力；但由临考数据断言“不关排名显不显”，结论超出证据。",
+      "script_spans": [
+        "收走名次表，考试诊断还在，家长私下比还在，分数照样发",
+        "说明紧绷感来自考试节点本身，不关排名显不显"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "数据引用与来源相符，建议温和可行；但凭考前焦虑升高即断言与排名无关，属超数据范围的绝对化归因，需加边界措辞才稳妥。",
+      "script_spans": [
+        "平时焦虑约17%，临考升到32%",
+        "别问第几名，问问今天哪道题卡住了",
+        "说明紧绷感来自考试节点本身，不关排名显不显"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e4d7e4eb50554668a470fed900dbe0ea",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-2d5426e3b2fc44e9a76abb5d24a3448d",
+  "run_id": "run-20260902T142147Z-4e3e9f535dbe",
+  "trace_sha256": "4025da66f0717c61bfe048d2f6b29f5e1cb630dfa115453f64c7d5c2aa33a99b",
+  "created_at": "2026-09-03T13:45:46.237747Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即亮出监督与伤害两面，正文给边界与取舍，全程围绕普通人如何拍、如何传展开。",
+      "script_spans": [
+        "街头纠纷视频上网，既是公共监督，也可能是二次伤害，不能只认一头",
+        "普通人取舍就两条路：打码保事实，露脸扛风险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 493，目标为 450，偏差率为 9.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从肖像权底线到营利要件删除，再到识别标准与打码取舍，层层推进且与引证相符，无编造。",
+      "script_spans": [
+        "早先侵权得证明营利目的，现在不用了",
+        "侧脸声音能认人，同样进保护圈"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差“帮正义也赔钱”直接抓人，中段以标尺更换、两条路持续兑现钩子，结尾问句由正文自然生长，余味足。",
+      "script_spans": [
+        "你拍下邻居吵架发上网，可能帮了正义，也赔了钱",
+        "先问自己：要的是公道，还是流量？因为视频发出去那秒，对方找回脸面的机会，就捏在陌生人指头里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏与对话感成立，但“制作公开人家肖像是侵权”“传段未打码冲突”等法条压缩句拗口，朗读需换词重断。",
+      "script_spans": [
+        "普通人取舍就两条路：打码保事实，露脸扛风险",
+        "没经肖像权人同意，制作公开人家肖像是侵权",
+        "你今早传段未打码冲突，明晚可能收法院传票"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“打码保事实，露脸扛风险”与“镜头不判案，只放大后果”离文可复述；仅“社死牢房”稍生硬，整体修辞服务理解，无堆砌。",
+      "script_spans": [
+        "打码保事实，露脸扛风险",
+        "镜头不判案，只放大后果"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承接、因果桥清楚，结尾以镜头不判案回扣开头举手机，各段功能完整递进。",
+      "script_spans": [
+        "为什么乱发容易赔钱？背后的标尺早换了",
+        "镜头不判案，只放大后果"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "立场平衡不煽动，法律表述留例外边界，风险提示多带限定词，导向安全。",
+      "script_spans": [
+        "街头纠纷视频上网，既是公共监督，也可能是二次伤害，不能只认一头。",
+        "但为公共利益做舆论监督，留了合理使用口子。",
+        "普通人取舍就两条路：打码保事实，露脸扛风险。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-1f63fe70b4a04ddbaaadf19e7355dc5c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-817229798d12454f90129d96802725e9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

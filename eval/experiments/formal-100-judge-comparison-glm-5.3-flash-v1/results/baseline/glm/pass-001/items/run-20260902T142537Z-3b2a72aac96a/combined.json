@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-75312d810992474eb1b8239a5e71cc7b",
+  "run_id": "run-20260902T142537Z-3b2a72aac96a",
+  "trace_sha256": "961d869dbd19dd33c89261dada3f72e1caaaeb932b8b212966b0840f3cdcbfa2",
+  "created_at": "2026-09-03T13:47:47.854267Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直答反感原因，成本与公平两线覆盖冲突，结尾建议正中求职者痛点。",
+      "script_spans": [
+        "岗位写着薪资面议，你为啥想划走？因为招聘方把本该标明的钱数捂起来了。",
+        "所以见着面议，先打听清楚范围再投。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 274，目标为 280，偏差率为 2.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移，成本细账、透明度研究、规范背书层层推进，末尾给可执行做法。",
+      "script_spans": [
+        "你投简历、填资料、改简历、等面试通知，前后花掉好几天宝贵精力。",
+        "有研究就提到，薪酬过程透明更能让人觉得公平，面议恰巧少了这层，自然越看越烦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直问戳中共同经验，中段用时间成本、公平感、研究层层兑现钩子，结尾建议由痛点自然长出，留有余味。",
+      "script_spans": [
+        "岗位写着薪资面议，你为啥想划走？",
+        "你投简历、填资料、改简历、等面试通知，前后花掉好几天宝贵精力",
+        "别让没完没了的猜测耗光你找工作的力气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句好读、有节奏，但'就反感在…被捂住''薪酬过程透明'等处需换词重断，书面味拉低流畅。",
+      "script_spans": [
+        "你投简历、填资料、改简历、等面试通知，前后花掉好几天宝贵精力。",
+        "过程模糊，就像被蒙着眼去谈条件。",
+        "求职者反感，就反感在明明该公开的数字被捂住",
+        "有研究就提到，薪酬过程透明更能让人觉得公平"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "以捂住、蒙眼等具象动作讲抽象机制，修辞克制不炫技，结尾一句离开正文仍可复述，记忆点自然不刻意。",
+      "script_spans": [
+        "过程模糊，就像被蒙着眼去谈条件",
+        "因为招聘方把本该标明的钱数捂起来了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "钩子、成本论证、公平感、规范与建议功能分明，因果桥清楚，结尾回扣开头与题设。",
+      "script_spans": [
+        "这正说明面议把筛选成本大多推给了求职者。",
+        "别让没完没了的猜测耗光你找工作的力气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制、有规范与研究依托；但“本该标明”“明明该公开”将面议一律归为故意隐瞒，归因绝对化，加边界更稳妥。",
+      "script_spans": [
+        "现在相关招聘规范也强调信息该明示到位。",
+        "所以见着面议，先打听清楚范围再投。",
+        "因为招聘方把本该标明的钱数捂起来了。",
+        "明明该公开的数字被捂住"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9807a1d0f52049a0ae30112243c2f563",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-5e23a09d555a46509fc62c1113518d42",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-da82e01cf6fb4ff0a804da931599b52c",
+  "run_id": "run-20260903T051611Z-dff9468b61ca",
+  "trace_sha256": "e5e454ecf2f3f2fb63e318112f288a7569b1802a6b093057a12957fd97d8f659",
+  "created_at": "2026-09-03T11:58:07.365879Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应海水升温与海鲜价格两端，既讲养殖冲击，也解释短期价格为何未必明显上涨。",
+      "script_spans": [
+        "海水持续升温让近海网箱和滩涂养殖直面热浪威胁，但你餐桌上常见的海鲜短期未必会明显更贵。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 257，目标为 280，偏差率为 8.21%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "热浪危害、产量增长、替代供给、调运缓冲和消费建议层层补充，观众能获得明确判断。",
+      "script_spans": [
+        "国内海水养殖总产量这些年依然保持稳步扩张，淡水养殖同样在增量互补，市场供给有较强缓冲能力"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以养殖遇险与价格未必上涨形成反差，中段转向供给缓冲，结尾收在餐桌安稳，推进完整。",
+      "script_spans": [
+        "海水持续升温让近海网箱和滩涂养殖直面热浪威胁，但你餐桌上常见的海鲜短期未必会明显更贵。",
+        "不过，国内海水养殖总产量这些年依然保持稳步扩张",
+        "气候挑战真实存在，咱盘子里的菜目前还稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能顺读，开头和收尾利落，但中段有抽象并列，按自然语速需适当重断句。",
+      "script_spans": [
+        "但你餐桌上常见的海鲜短期未必会明显更贵",
+        "淡水养殖同样在增量互补",
+        "而跨区调运习惯也平抑了局部价格波动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“钱包、菜篮子、盘子”把供给风险落到日常，“气候挑战真实存在，咱盘子里的菜目前还稳”反差自然且易复述。",
+      "script_spans": [
+        "如果你担心钱包",
+        "冻品影响小，整体菜篮子不用慌。",
+        "气候挑战真实存在，咱盘子里的菜目前还稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，转折也清楚，但“冻品影响小”缺少因果解释，结尾从海鲜价格扩大到“整体菜篮子”。",
+      "script_spans": [
+        "不过，国内海水养殖总产量这些年依然保持稳步扩张，淡水养殖同样在增量互补",
+        "冻品影响小，整体菜篮子不用慌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，但“冻品影响小”“菜篮子不用慌”概括过满，可能弱化品种和区域差异。",
+      "script_spans": [
+        "气候挑战真实存在",
+        "冻品影响小，整体菜篮子不用慌"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4a62a7356d494df0841b0dd1596e307f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1ceb507acb8c432999eb8605a7d33f8f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

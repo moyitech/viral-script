@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-c61d5e2f48084403b5d83e81e9f5de4e",
+  "run_id": "run-20260902T142318Z-6d3a6356f256",
+  "trace_sha256": "c76c51b59a6426b658fd40298ed4dbece3a86958cb5d6623aad99abe22fed91d",
+  "created_at": "2026-09-03T14:34:29.498987Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答不必然牺牲隐私，员工与企业两侧及“你”的痛点全覆盖，落地与法规环节扣题，切角具体。",
+      "script_spans": [
+        "你刚写封私人吐槽邮件，公司机器瞬间读透，两边利益实在撞车",
+        "效率涨不必然卖你私生活"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦效率与隐私权衡，研究结论、脱敏方案、法规底线层层推进，均有依据，增量具体可信。",
+      "script_spans": [
+        "某些高效训练法本身压低记忆数据可能",
+        "先给信件脱敏，把邮件里姓名电话遮住再让模型筛"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛效率涨而隐私不丢的反差问句；中段以私人邮件场景、实验反转、脱敏与红线层层推进；结尾提问自然。",
+      "script_spans": [
+        "筛查邮件变快了员工隐私却没丢？",
+        "你刚写封私人吐槽邮件，公司机器瞬间读透，两边利益实在撞车。",
+        "你明天发工作公邮，会猜它先罩匿名纱吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "脱敏段讲解顺口有对话感，但“压低记忆数据可能”“私训法”“法规划了”等处需换词重断，拗口成片拖住上限。",
+      "script_spans": [
+        "先给信件脱敏，把邮件里姓名电话遮住再让模型筛，机器只瞅模式不瞅真人",
+        "某些高效训练法本身压低记忆数据可能，模型吃算力小记数据浅，原本为省显卡顺带少背私料，反比笨重私训法更把隐私风挡住",
+        "相关法规划了最小必要线",
+        "效率涨不必然卖你私生活"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "机器只瞅模式不瞅真人一语贴切可复述；但压低记忆数据可能、笨重私训法等压缩生造妨碍理解，略显刻意。",
+      "script_spans": [
+        "机器只瞅模式不瞅真人，人名地址变星号",
+        "效率涨不必然卖你私生活",
+        "某些高效训练法本身压低记忆数据可能",
+        "反比笨重私训法更把隐私风挡住"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从冲突到研究到落地到法规层层递进，省算力与少记私料的因果桥清晰，结尾“匿名纱”回扣开头设问。",
+      "script_spans": [
+        "原本为省显卡顺带少背私料，反比笨重私训法更把隐私风挡住",
+        "你明天发工作公邮，会猜它先罩匿名纱吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键结论留有余地，如'不必然''某些''可能'；脱敏建议与最小必要法规边界清楚，无夸大或误导。",
+      "script_spans": [
+        "效率涨不必然卖你私生活",
+        "某些高效训练法本身压低记忆数据可能",
+        "相关法规划了最小必要线，只许必要业务碰邮件，不能借提速名头翻私聊底朝天"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b7314202331944cd9c9b31d198247615",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

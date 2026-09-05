@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-c9ec11b4bf604e8992120f30f6603c32",
+  "run_id": "run-20260902T141414Z-754043ebe856",
+  "trace_sha256": "9a77c7b06d365c778734130ecd714fbfcc77c94ccc6388a5878d119e4b787a8c",
+  "created_at": "2026-09-03T11:43:54.565183Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答小开发者是否有空间，并覆盖低价档与外跳支付两条生路，目标人群和冲突两侧明确。",
+      "script_spans": [
+        "还有空间，但别只赖在商店里。",
+        "你得常看自己区域的条款，靠例外和分流找生路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 293，目标为 280，偏差率为 4.64%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，低价档、外跳支付、区域条款和合规风险形成连续信息增量，观众能带走具体应对方向。",
+      "script_spans": [
+        "小团队年进账不到百万级，能走低价档，手续费反而轻了",
+        "另一些地儿允许外跳支付，用户跑商店外付款，抽成可归零。",
+        "可这口子像季节风，随时合上，只是临时窗口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“收紧却有活路”制造反差，中段补充分档、外跳与风险，结尾自然留下行动余味。",
+      "script_spans": [
+        "抽成收紧，小开发者反倒有活路。",
+        "可这口子像季节风，随时合上，只是临时窗口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、算账和对比句增强可听性，但多处搭配生硬，朗读仍需换词重断。",
+      "script_spans": [
+        "大户被掐，小户得松",
+        "你想，原本三十块得交九块，现在可能只交一两块",
+        "大商店年流水规模依旧极庞大",
+        "小团队年进账不到百万级"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“大户被掐，小户得松”和“高墙没倒，但缝里透光”形象凝练，增强理解，也留下了可复述的记忆点。",
+      "script_spans": [
+        "大户被掐，小户得松。",
+        "高墙没倒，但缝里透光，小开发者活不活看会不会侧身走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从抽成变化转向两条生路再回到合规建议，基本可跟；但“大商店”一段游离，大小户得失缺少因果解释。",
+      "script_spans": [
+        "可这口子像季节风，随时合上，只是临时窗口。",
+        "高墙没倒，但缝里透光，小开发者活不活看会不会侧身走。",
+        "大商店年流水规模依旧极庞大。",
+        "大户被掐，小户得松。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有提醒查看区域条款并强调窗口性，但“可归零”“只交一两块”等说法缺少地区、方案和适用条件，容易造成费率误判。",
+      "script_spans": [
+        "你得常看自己区域的条款",
+        "可这口子像季节风，随时合上，只是临时窗口。",
+        "原本三十块得交九块，现在可能只交一两块。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3a472db7aff840e9b3710a407cf1afc1",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b4999d3b57924a4d829af22f36ccfcce",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

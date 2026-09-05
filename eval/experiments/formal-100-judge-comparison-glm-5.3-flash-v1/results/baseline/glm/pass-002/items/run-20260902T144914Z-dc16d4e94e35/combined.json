@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-35a180b220884376bac462ca646170f4",
+  "run_id": "run-20260902T144914Z-dc16d4e94e35",
+  "trace_sha256": "7633fcdfebdd16fb5ad7a4155a4682fb4a2bb7f0dd92ef46e65775ba53b16f9c",
+  "created_at": "2026-09-03T14:29:18.504500Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛题设矛盾，正文两侧都答：先证融资确松，再答压力源自订单与硬开销，人群对位小厂老板。",
+      "script_spans": [
+        "中小企业融资负担确实在减轻，但经营压力为啥还是不小？因为省下的息，填不上订单的坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移，融资改善、刚性成本、需求不足、存活周期各成信息单元，多省调研数据支撑扎实。",
+      "script_spans": [
+        "一份覆盖多省的调研发现，超九成企业愁卖不动货",
+        "利息少付一块，料钱多花一大块，工钱少不掉，单子稀稀拉拉，机器空转"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句以还息与停工反差抓人，中段靠硬成本、压价两难持续兑现钩子，结尾两问由正文自然长出，余味足。",
+      "script_spans": [
+        "你刚还完利息松口气，车间却停了一半。",
+        "那钱省下来了，怎么夜里还睡不踏实？",
+        "你降价抢单只会更亏，不降又没活干。",
+        "你身边小厂，真正卡在低息贷，还是卡在没单子？单降息，够吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句铺排、一问一答节奏好；但“时间轻了”“一层垫背”两处搭配别扭，朗读需临时换词。",
+      "script_spans": [
+        "利息少付一块，料钱多花一大块，工钱少不掉，单子稀稀拉拉，机器空转。",
+        "机器响的时间比去年轻了快一半",
+        "融资轻松也只是一层垫背"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "省息填坑与糖粮之喻贴切、离开上下文仍可复述，口语比喻全程服务理解，无堆砌炫技。",
+      "script_spans": [
+        "因为省下的息，填不上订单的坑。",
+        "利息少付一块，料钱多花一大块",
+        "降息是糖，订单是粮，没粮人撑不住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "让步反驳与递进承接清楚，结尾金句回扣开头与题设；仅'一层垫背'比喻略生硬，不影响主线。",
+      "script_spans": [
+        "有人会说，政策不也在帮着降成本吗？可原料涨价和外面订单波动，借钱未必管得住",
+        "降息是糖，订单是粮，没粮人撑不住"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述克制公允，多处留有边界，如“这题没有标准解”“也不是所有厂都这样”，无夸大承诺、煽动或误导性断言。",
+      "script_spans": [
+        "也不是所有厂都这样，像靠近市场的批发零售还显点韧劲，但多数没这运气",
+        "可原料涨价和外面订单波动，借钱未必管得住",
+        "这题没有标准解"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-17aaa8f256f4447bb1e75766909abd3f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

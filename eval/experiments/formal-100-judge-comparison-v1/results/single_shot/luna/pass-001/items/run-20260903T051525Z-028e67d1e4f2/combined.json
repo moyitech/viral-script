@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-c2c7a4486c6e4fcc95b1aad7fef2c050",
+  "run_id": "run-20260903T051525Z-028e67d1e4f2",
+  "trace_sha256": "fc4cf6565502ff0b0879b446951a7d2c20b53ed06212f18bf36dca9a8c5b8bc7",
+  "created_at": "2026-09-03T11:57:16.283703Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接围绕抽成收紧与小开发者生存展开，并给出小规模经营、外部支付两条应对路径，题设两侧均有回应。",
+      "script_spans": [
+        "只要路子对，生存空间一点没缩水。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 302，目标为 280，偏差率为 7.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息集中，优惠门槛、费率、外部支付和司法不确定性层层补充，既有判断也有可执行的核对提醒。",
+      "script_spans": [
+        "年进账不过百万美元，佣金就卡在百分之十五上下的低位，登记一次简单无需改代码。",
+        "外部付款免抽成多是临时司法结果，别拿它做三年规划，每月核对后台费率变动才稳当。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "“没饭吃？”先抛冲突，再用两条依据和风险提醒递进，结尾落到可执行的核对建议，收束自然。",
+      "script_spans": [
+        "搞得小开发者立刻没饭吃？",
+        "再看另一个依据，部分海外区域市场已经松口",
+        "别拿它做三年规划，每月核对后台费率变动才稳当。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头有钩子，结尾也顺；但核心解释信息挤在长串并列句里，个别搭配卡顿，未达到自然精心。",
+      "script_spans": [
+        "搞得小开发者立刻没饭吃？",
+        "守住小本经营规模",
+        "登记一次简单无需改代码"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“别拿它做三年规划”把临时政策风险说得具体，配合“分文不取”等表达，记忆点清楚且不喧宾夺主。",
+      "script_spans": [
+        "别拿它做三年规划",
+        "这笔交易平台分文不取"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构从传闻、判断到两条依据再到风险提醒，主线清楚；但流水规模并不能推出平台离不开小开发者，结论的因果桥仍不足。",
+      "script_spans": [
+        "先看依据，主流商店依旧留给小玩家优惠通道",
+        "去年商店体系里开发者流水合计超过一万亿美元，平台根本离不开这群人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有“临时司法结果”的风险提示，但“生存空间一点没缩水”“分文不取”等表述过于绝对，易造成误判。",
+      "script_spans": [
+        "但必须提醒，外部付款免抽成多是临时司法结果，别拿它做三年规划",
+        "生存空间一点没缩水",
+        "这笔交易平台分文不取"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-7c8e382ff80b47808173222a85b52abc",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-8adcd906b5674af8b87b1977f72ba371",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

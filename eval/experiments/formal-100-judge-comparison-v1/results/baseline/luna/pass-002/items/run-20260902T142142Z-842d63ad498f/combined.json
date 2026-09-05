@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-dead698c66994951a900223b81c7d3bf",
+  "run_id": "run-20260902T142142Z-842d63ad498f",
+  "trace_sha256": "8d5d03d2213ce558ed47fc466e70fd9a30b2776b9d7d02ee09ca4e8d5199019f",
+  "created_at": "2026-09-03T12:15:15.518440Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头提出二元冲突，随后呈现个性化收益、差距风险与教师介入，完整回应题设。",
+      "script_spans": [
+        "AI助教进课堂，是开小灶还是拉大差距？",
+        "老师每天扫一眼后台，发现谁掉队就拉一把"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "用错题推荐、算法偏向和教师兜底三个信息单元推进，既有场景也有判断，信息增量充分。",
+      "script_spans": [
+        "今早系统就推三道类似题让他练熟，一步一步带。",
+        "算法若总盯着尖子生，一个劲喂拓展题"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用公平冲突抓人，中段以两种情形推进，结尾落到人的温度，收束自然。",
+      "script_spans": [
+        "AI助教进课堂，是开小灶还是拉大差距？",
+        "但换个情形，算法若总盯着尖子生，一个劲喂拓展题，后排弱生连练手机会常被挤掉。",
+        "机器分得清错题，却分不清孩子的委屈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有画面、承接自然，但“正合他节奏”和“连练手机会”两处朗读时明显卡顿。",
+      "script_spans": [
+        "你想想，孩子昨晚卡在一道数学题，急得抓头发。",
+        "因为步骤正合他节奏",
+        "后排弱生连练手机会常被挤掉"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且贴合公平议题，结尾两组对照形成清晰记忆点，便于观众复述。",
+      "script_spans": [
+        "好比资源就这么多，偏向一头，另一头慢慢更荒。",
+        "说到底，机器分得清错题，却分不清孩子的委屈。",
+        "冷屏给不了那句辛苦了，暖意还得人来给。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先用个案解释优势，再转入风险，最后落到教师兜底与人文关怀，转折和结论回扣自然。",
+      "script_spans": [
+        "但换个情形，算法若总盯着尖子生",
+        "别把教学全托付给屏幕。",
+        "冷屏给不了那句辛苦了，暖意还得人来给。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反两面均用可能性表达，并提醒保留教师把关，未作绝对承诺或煽动性归因。",
+      "script_spans": [
+        "它既能因材施教，也可能放大学习差距。",
+        "但提醒你，别把教学全托付给屏幕。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6e201ce5dd4c4aada1a929e710efb263",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

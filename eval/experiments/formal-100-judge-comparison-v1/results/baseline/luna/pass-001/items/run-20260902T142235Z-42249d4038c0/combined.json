@@ -1,0 +1,148 @@
+{
+  "evaluation_id": "combined-a17abc6951b049d8bdd66f31f044c2dc",
+  "run_id": "run-20260902T142235Z-42249d4038c0",
+  "trace_sha256": "58906b2c5196492e690a5e5a9a5227f1d6d101d1c17c1a956ef0172fe84f7aa5",
+  "created_at": "2026-09-03T11:43:55.936110Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直接回应“催缴有理”与隐私边界，并覆盖物业、邻居和群成员的处理场景。",
+      "script_spans": [
+        "催缴再有理，也不能在邻里群曝光欠费邻居姓名"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 282，目标为 280，偏差率为 0.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "围绕隐私边界给出识别、平台风险和私聊催缴等信息；但“清晰个人画像”“没权”表述过满，论证缺少边界。",
+      "script_spans": [
+        "找物业私聊，别甩名字进群。",
+        "姓名加欠费数额，就是清晰个人画像，一下认出是谁家。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "冲突明确、推进完整，结尾提问自然，能把观众从围观带到判断。",
+      "script_spans": [
+        "催缴再有理，也不能在邻里群曝光欠费邻居姓名",
+        "下次见群里晒名单，你觉得解气还是越界？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句较多，问答段有口播感；但“个人画像”“安稳生活的权”等搭配生硬，影响连续朗读。",
+      "script_spans": [
+        "那真碰上老赖欠费咋办？找物业私聊，别甩名字进群。",
+        "催缴的理压不过邻居安稳生活的权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“今天你晒他，明天别人晒你”形成清晰记忆点，修辞适量且服务观点。",
+      "script_spans": [
+        "今天你晒他，明天别人晒你"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "先判定边界，再讲平台风险和处理办法，主线可跟随；但从“法律保护”直接推到“谁都没权”，缺少适用条件与论证桥。",
+      "script_spans": [
+        "那真碰上老赖欠费咋办？找物业私聊，别甩名字进群。",
+        "法律保护这信息不被乱晒，物业没权直接晒，普通邻居更没权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "倡导私下催缴、避免公开羞辱，方向稳妥；但多处绝对化断言法律权利和平台规则，易造成误导。",
+      "script_spans": [
+        "找物业私聊，别甩名字进群",
+        "物业没权直接晒，普通邻居更没权",
+        "群聊平台自己也有规矩，不让公开成员资料"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8fca26c6e2754e379966221702aef772",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ddf5ecdac14e412fa131a7ed37c01618",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-27f8afc41ec44e9db8a3145a49e5fbe7",
+  "run_id": "run-20260903T051519Z-3a4b50f8802e",
+  "trace_sha256": "276b7a6d376d98b958172bd9433c8d3a1326bd892242850733c4cc9030f52b4f",
+  "created_at": "2026-09-03T14:11:21.279393Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答为何反感，雇主动机、监管落差与心理痛点层层覆盖，结尾建议紧扣面议场景，人群契合。",
+      "script_spans": [
+        "求职者越来越反感，核心就一句话：这是用人方把议价风险和探底成本转嫁给求职者",
+        "碰见面议岗位别急着投简历"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 274，目标为 280，偏差率为 2.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "成本转嫁、监管明示落差、公平感依赖透明三个单元递进，有据可依，末尾给出问清带宽的可执行方法。",
+      "script_spans": [
+        "如今监管部门已要求网络招聘平台明示薪资等信息，但许多岗位却仍标面议",
+        "人的公平感高度依赖决策过程透明",
+        "先通过招募方或熟人问清薪资带宽，确认大体匹配再往下走"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段监管对比与心理层递进扎实；但开头是趋势陈述加套话式悬念，结尾以建议直接收束，缺余味或互动牵引。",
+      "script_spans": [
+        "不像疏忽，更像刻意留弹性空间",
+        "这种被拿捏的无力感最败好感",
+        "求职者越来越反感，核心就一句话",
+        "把主动权留一点给自己，也省下奔波的力气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "首尾对话感不错，中段抽象名词堆叠、论文式表述拉低整体节奏",
+      "script_spans": [
+        "碰见面议岗位别急着投简历，先通过招募方或熟人问清薪资带宽",
+        "这是用人方把议价风险和探底成本转嫁给求职者，用模糊掩盖薪酬不透明",
+        "人的公平感高度依赖决策过程透明"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "整体克制不油，「心里打鼓」「被拿捏」点缀自然；但关键句是抽象名词串，缺一句离开语境仍可复述的话。",
+      "script_spans": [
+        "让人还没入职就心里打鼓",
+        "这种被拿捏的无力感最败好感",
+        "用人方把议价风险和探底成本转嫁给求职者，用模糊掩盖薪酬不透明",
+        "人的公平感高度依赖决策过程透明"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从核心答案、监管佐证到心理机制，每段功能清晰；建议段以主动权回扣开头转嫁的不对等，闭环完整。",
+      "script_spans": [
+        "再从心理看，人的公平感高度依赖决策过程透明",
+        "把主动权留一点给自己，也省下奔波的力气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无违规且建议稳妥，但“更像刻意留弹性空间”“暗藏套路”等归因缺边界，易标签化用人方，需改写更稳。",
+      "script_spans": [
+        "碰见面议岗位别急着投简历，先通过招募方或熟人问清薪资带宽，确认大体匹配再往下走",
+        "不像疏忽，更像刻意留弹性空间，让人怀疑真实区间偏低或暗藏套路",
+        "用模糊掩盖薪酬不透明"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-419968340fab48f29c18764336ddf9b3",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a435d8c8074241fb80de11fe3f821d0c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-0ebe67e876524796b7858d83f5c399d4",
+  "run_id": "run-20260903T051604Z-1af311fd360a",
+  "trace_sha256": "696001d1d5b1f9e53528ad5ae850b22117dcc9de879646ae466b3deab052213e",
+  "created_at": "2026-09-03T14:09:57.399630Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "全文紧扣“谁来维护公平”，馆方立规与读者配合都有落点，占用与被挡两侧及弱势人群覆盖到位。",
+      "script_spans": [
+        "破局得靠馆内明示离座上限，巡场轻声提醒；也靠读者把明显无主的书送到服务台",
+        "维护公平，光呼吁素质不够。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 770，目标为 700，偏差率为 10.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，法律依据、执行困境、严松权衡依次推进，观众能带走法规知识、判断方法与解法。",
+      "script_spans": [
+        "馆员面对占座，既没有罚则也没有强制搬离授权",
+        "这里没容易的开关，严了伤读者，松了亏后来人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以书包与凉椅的反差入题，中段接连抛出法律空缺、清场反例、预约门槛等新转折，结尾之问由正文自然生长，余味足。",
+      "script_spans": [
+        "九点所有桌角都立着书包和水杯，但一半椅子是凉的",
+        "也有人主张上预约码，可临时起意看书的人会被挡在系统外，技术反成门槛",
+        "免费给所有人的位置，能不能用清楚的小规则，还给大家都能坐下的底气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，如“规则粗线条，执行就软”节奏干脆，重音停顿清楚，照读无需改词。",
+      "script_spans": [
+        "规则粗线条，执行就软。",
+        "桌子自然变成谁先铺货归谁。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“严了伤读者，松了亏后来人”“谁先铺货归谁”贴切且可复述，修辞服务理解与情绪，密度克制，无炫技堆叠。",
+      "script_spans": [
+        "严了伤读者，松了亏后来人",
+        "桌子自然变成谁先铺货归谁",
+        "从一张桌子看，它量得出城市对弱者的友好度"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以设问逐段推进，先立因果再驳一刀切清场，结尾回扣“别只怪修养”与题设，段段功能清晰。",
+      "script_spans": [
+        "规则粗线条，执行就软。",
+        "占座别只怪个人修养，它其实在问我们：免费给所有人的位置，能不能用清楚的小规则，还给大家都能坐下的底气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述客观公允，不苛责占用者个人，法律表述与原文相符，建议方案平和可行，无煽动、夸大或误导承诺风险。",
+      "script_spans": [
+        "维护公平，光呼吁素质不够。",
+        "破局得靠馆内明示离座上限，巡场轻声提醒；也靠读者把明显无主的书送到服务台。",
+        "占座别只怪个人修养"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-a19806520aca489095cf8c353a1fb3cc",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ec52c7a51a0f455490a53028da446dc8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

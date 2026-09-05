@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-b88e88f14e494a2caf6b69d68b359dea",
+  "run_id": "run-20260903T051603Z-f9228fbffb38",
+  "trace_sha256": "6962c87d25e01367bc15e8323ddfbe5f8208c76b36db8adff8b5e6d1b93a1460",
+  "created_at": "2026-09-03T15:30:04.967903Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给出'更难但有生机'的判断，难与不难两侧均有展开，建议与机会都指向小商家，全程扣题。",
+      "script_spans": [
+        "小商家出海整体难度在爬坡，但这是优胜劣汰不是关门打狗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "合规细化、退货试点、孵化中心、内容电商各成信息单元并推进论证，与资料相符，观众可带走判断与方法。",
+      "script_spans": [
+        "从如实申报、外汇结算到账号环境一致性，要求越来越细，罚则也更明确",
+        "跨关区退货试点铺开，加上多地建起零门槛孵化中心"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段靠退货试点、内容电商等新信息持续推进，结尾余味自然；但前20字是结论式陈述，缺具体悬念或利益钩子。",
+      "script_spans": [
+        "其实这两年内容电商兴起，又给了会做短视频的小商家新流量窗口",
+        "跨境电商规则趋严，小商家出海整体难度在爬坡"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数短句好读，“摸黑过河”有对话感；但合规列举与退货政策句名词堆叠，两处需重断句。",
+      "script_spans": [
+        "任何环节漏了都可能被扣货冻款，小本经营抗不住这种闪失",
+        "从如实申报、外汇结算到账号环境一致性",
+        "跨关区退货试点铺开，加上多地建起零门槛孵化中心"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，'筛掉赌徒、留下长期主义者'离开上下文仍可复述，无堆砌炫技，密度适度。",
+      "script_spans": [
+        "规则收紧筛掉的是赌徒，留下的是愿意做功课的长期主义者",
+        "新手不至于摸黑过河"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "'另一边'承接自然，处罚与抗风险之间因果桥清晰，'筛掉赌徒'结尾回扣开头'优胜劣汰'，层层递进。",
+      "script_spans": [
+        "任何环节漏了都可能被扣货冻款，小本经营抗不住这种闪失",
+        "规则收紧筛掉的是赌徒，留下的是愿意做功课的长期主义者"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "风险有'可能'限定，'不是关门打狗'避免制造对立，建议留边界，整体公允无夸大。",
+      "script_spans": [
+        "但这是优胜劣汰不是关门打狗",
+        "任何环节漏了都可能被扣货冻款",
+        "先在一个平台把税务和品类认证弄明白再谈扩张"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ec0c8eb31a424637a91822533c8bc6ad",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

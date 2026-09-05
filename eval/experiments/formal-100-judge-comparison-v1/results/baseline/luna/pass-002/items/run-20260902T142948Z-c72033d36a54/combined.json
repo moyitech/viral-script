@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-3320a7c208724a779ff1826f2a8a9a59",
+  "run_id": "run-20260902T142948Z-c72033d36a54",
+  "trace_sha256": "ac711242eb5bee71c0e64f82a56fbbd885476d95478a5262dd4c7b5f58f0827a",
+  "created_at": "2026-09-03T12:16:04.487211Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“交得起吗”，同时覆盖自缴压力、减负、缴费周期和补贴，直指收入不稳人群。",
+      "script_spans": [
+        "能交，但得用新政策减负，硬交立马断粮。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，半基数、分期缴费和补贴扩围形成连续信息推进，给出具体减负抓手。",
+      "script_spans": [
+        "多地允许低收入者，按一半基数交养老保险。",
+        "还能按季按年自己挑。",
+        "补贴也扩到新业态，像骑手快递这类，最高能补八成费用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用生存与养老的冲突抓人，中段连续给出减负、缴费和补贴信息，结尾落到具体提醒。",
+      "script_spans": [
+        "月入三千的零工，刨去房租吃饭，要硬拿八百交社保，今天活下去和明天养老直接打架。",
+        "多地允许低收入者，按一半基数交养老保险。待遇不打折，每月能省下将近两成钱，紧日子能喘口气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句、有对话感，但“收入一断缴费就停”等处需重断句，结尾“再保年限”也不顺。",
+      "script_spans": [
+        "能交，但得用新政策减负，硬交立马断粮。",
+        "收入一断缴费就停",
+        "看清当地门槛再保年限"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“今天活下去和明天养老直接打架”具体有力，“紧日子能喘口气”自然传达减负效果，修辞克制且易复述。",
+      "script_spans": [
+        "今天活下去和明天养老直接打架。",
+        "每月能省下将近两成钱，紧日子能喘口气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "问题—政策—建议的主线清楚，但“按年交费能锁住参保资格”把多地做法泛化，适用边界与因果不足。",
+      "script_spans": [
+        "收入不稳的人交得起吗？能交，但得用新政策减负，硬交立马断粮。",
+        "按年交费能锁住参保资格，少跑腿"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "信息方向基本克制，但“待遇不打折”和“按年交费能锁住参保资格”把地方性条件说成普遍结论，容易误导，需补充地区与资格边界。",
+      "script_spans": [
+        "多地允许低收入者，按一半基数交养老保险。",
+        "按年交费能锁住参保资格"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-51ecee0541234a38862cece9428c7be2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

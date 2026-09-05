@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-e9bb525b69754ba18ef2071fccb7c589",
+  "run_id": "run-20260902T144346Z-2abc61ffd4fd",
+  "trace_sha256": "578c43f398b35077bcf42b245b0d0727c8fe7158a7bb762521c98dc6aa7fd919",
+  "created_at": "2026-09-03T11:44:55.843210Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从电子化动因、政策底线到取报告办法，始终围绕不会用手机的老人给出回应。",
+      "script_spans": [
+        "那老人咋拿报告？本人拿身份证，在院里自助机边刷一下，机器吐张纸出来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 731，目标为 700，偏差率为 4.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息单元充足，既解释电子化收益，也给出线下取报告路径，并补充执行落差与隐私顾虑。",
+      "script_spans": [
+        "医院省了打印库房钱，可得有人教。老人若总找家属，多一道麻烦。",
+        "技术快信任慢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用就医风险制造冲突，中段不断补充政策与应对路径，结尾问题也从照护场景自然生长。",
+      "script_spans": [
+        "医院全面推行电子报告，不会用手机的老人直接漏看病情。",
+        "下次陪爸妈去，你会先问护士有纸吗？还是默默递过自己手机？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答和短句带来对话感，整体能读通；但政策表达偏硬，个别长句与压缩句拖慢气口。",
+      "script_spans": [
+        "您说这场景熟不熟？好多老人进医院像进迷宫。",
+        "有的院门口只认扫码闸机，没手机老人愣在门口，这和保留传统方式的要求有出入，只是执行走了样。",
+        "地方试刷脸关联报告，老人怕隐私漏不敢用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照都服务于解释，既呈现老人困境，又留下“电子是加法，不是减法”等自然可复述的观点。",
+      "script_spans": [
+        "电子是加法，不是减法。",
+        "技术快信任慢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、政策、办法、反例和结尾层次完整，但把并行要求直接推成必须提供纸质报告，结论偏大。",
+      "script_spans": [
+        "但现实有反例。有的院门口只认扫码闸机，没手机老人愣在门口",
+        "这不是软建议，是硬性要求。医院再智能，也得留那张纸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导保留传统服务，方向稳妥；但“直接漏看病情”“硬性要求”及通用操作承诺过于绝对，可能造成误导。",
+      "script_spans": [
+        "电子是加法，不是减法。",
+        "不会用手机的老人直接漏看病情",
+        "这不是软建议，是硬性要求"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8cad8edf3f7b4581aee27460a3b998fa",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-5cf93d6d787f4c48b81399846ba0506a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

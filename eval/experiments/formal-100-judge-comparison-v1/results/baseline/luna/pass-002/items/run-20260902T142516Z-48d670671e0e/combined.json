@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-fcb57d10a1494bda82362279e55ca645",
+  "run_id": "run-20260902T142516Z-48d670671e0e",
+  "trace_sha256": "cbc43fa3b12971ab627fe508416b92c7bbb6f6e808375fdb53f5c74bf42f7dd9",
+  "created_at": "2026-09-03T12:15:45.134440Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应课间被作业挤占与安静管理，覆盖学生休息、活动及家长关注，切入具体。",
+      "script_spans": [
+        "下课铃响了，孩子却被迫坐着写作业？这种安静管理真不利于学生。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕课间休息集中推进，给出规定、身心收益、挤占后果和家长行动，信息增量充分。",
+      "script_spans": [
+        "按规定课间休息不能占用，学生正当游戏出教室不该被约束",
+        "它能帮孩子调情绪、放松眼睛，也能增强体质防控近视"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出课间被作业挤占的冲突，中段递进到规则、益处与家庭提醒，结尾留下代际余味。",
+      "script_spans": [
+        "下课铃响了，孩子却被迫坐着写作业？",
+        "咱们当年的跑跳，不该成稀罕事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感，观点推进也顺，但“正当游戏出教室”“憋座位上”等处语序生硬，影响连贯口播。",
+      "script_spans": [
+        "下课铃响了，孩子却被迫坐着写作业？",
+        "学生正当游戏出教室不该被约束",
+        "作业一挤占娃只能憋座位上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“听铃就往外冲”与“连伸懒腰都怕吵秩序”形成鲜明对照，结尾比喻自然，具备复述价值。",
+      "script_spans": [
+        "你小时候听见铃就往外冲，现在孩子连伸懒腰都怕吵秩序。",
+        "咱们当年的跑跳，不该成稀罕事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、规定、影响、建议、结尾层层推进，但由身体不适直接断言换不来更好成绩，成绩因果缺少论证。",
+      "script_spans": [
+        "看似安静守纪律，却丢了放松和社交。",
+        "其实这类占用课间行为正被严查。",
+        "作业一挤占娃只能憋座位上，视线发木心里烦，换不来更好成绩。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题聚焦且建议温和，健康依据较充分；但“课间休息不能占用”“正被严查”表述过满，需补充边界和时效。",
+      "script_spans": [
+        "它能帮孩子调情绪、放松眼睛，也能增强体质防控近视",
+        "按规定课间休息不能占用",
+        "其实这类占用课间行为正被严查"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8adac9f703214722822913a0145a4e98",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

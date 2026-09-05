@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-994fef077cce49778471df3b162421be",
+  "run_id": "run-20260902T144017Z-ee52770d87c0",
+  "trace_sha256": "436b77f139c86ae1fc13f012a5aac2726e5ec6bb5843cea2697a6f5d36f21566",
+  "created_at": "2026-09-03T12:15:47.799422Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "紧扣省钱与品质冲突，解释低价来源并给出选购、加热建议，普通观众可直接执行。",
+      "script_spans": [
+        "想省钱又保品质，挑对了就能兼顾。",
+        "咱们普通人咋办？买正规厂牌，看包装贮运方式，冷冻冷藏分清楚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "成本拆解、国标边界和购买建议较具体，但把“不添防腐剂”直接当作品质保障，个别判断也缺乏依据。",
+      "script_spans": [
+        "工厂把同种菜集中做，大批量进货压低单价。",
+        "文件明确，不含主食、即食类，餐厅中央厨房现做的菜也不在这范围。",
+        "这规矩划清界限，你买得明白不怕糊弄。",
+        "配料表写“熟制后食用”的才正宗，表上生僻字少更稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用省钱与担忧制造冲突，中段连续回答成本、品质和购买，结尾问题自然承接取舍。",
+      "script_spans": [
+        "你花八块吃预制菜，比堂食省二十，却怕它差？",
+        "为啥它便宜？",
+        "那品质咋保？",
+        "咱们普通人咋办？",
+        "你愿用半小时自由换这顿踏实饭吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答开头和短句节奏不错，但中后段有多处搭配生硬，连续朗读时需要临时重断。",
+      "script_spans": [
+        "风味稳，出餐快，价就低。",
+        "它是预加工熟制、加热就吃的预包装菜。",
+        "口感补上钱包没瘪。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“赚工业效率的钱，让出的是堂食锅气”把价格与体验的取舍说透，修辞集中且服务观点。",
+      "script_spans": [
+        "你赚工业效率的钱，让出的是堂食锅气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "按便宜原因、品质边界、购买行动递进，主线清楚；但标准定义并不能推出品质不被糊弄，结尾判断也偏跳。",
+      "script_spans": [
+        "为啥它便宜？工厂把同种菜集中做，大批量进货压低单价。",
+        "咱们普通人咋办？买正规厂牌，看包装贮运方式，冷冻冷藏分清楚。",
+        "这规矩划清界限，你买得明白不怕糊弄。",
+        "你花三分钟加热，换来半小时自由，口感补上钱包没瘪。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，消费建议方向安全；但将“熟制后食用”与“正宗”、生僻字少与稳妥强绑定，易造成误导。",
+      "script_spans": [
+        "买正规厂牌，看包装贮运方式，冷冻冷藏分清楚。",
+        "配料表写“熟制后食用”的才正宗，表上生僻字少更稳。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-893e4025aab7481696d2510c128cff83",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

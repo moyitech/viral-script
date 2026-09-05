@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-73c6d618466f45828dde85d590a14d84",
+  "run_id": "run-20260903T051519Z-4198a42385a9",
+  "trace_sha256": "a1e02df47f1f2b57468f027a4c81454cc4c8880c4bfa2f5a7d8b96c9005188ce",
+  "created_at": "2026-09-03T12:31:44.077726Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答安全是否提升，既讲密码与钓鱼防护，也讲设备、找回和会话风险，且落到普通人的操作建议。",
+      "script_spans": [
+        "无密码登录确实堵住了密码泄露和钓鱼冒充的大漏洞，但风险被推到了设备本身和登录之后的环节。",
+        "对普通人来说，这意味着管好主设备的锁屏、生物识别和绑定的云端账号，比死记硬背复杂密码更紧要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中且信息密度足，从私钥机制、同步密钥与账户找回，推进到会话劫持和设备防护，信息彼此有推进。",
+      "script_spans": [
+        "传统密码在远端服务器留着副本，库一被拖走就集体暴露，重复撞库更是灾难。",
+        "更隐蔽的是，即便登录瞬间固若金汤，登录后的会话凭证若遭窃取，攻击依然可能发生。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“黑客没辙”的反差钩住，中段连续补充机制、取舍与会话风险，结尾用设备比喻自然收束。",
+      "script_spans": [
+        "你以为换了无密码登录，黑客就彻底没辙了？",
+        "更隐蔽的是，即便登录瞬间固若金汤，登录后的会话凭证若遭窃取，攻击依然可能发生。",
+        "记住，无密码不是把门拆了，而是把钥匙焊在了你日常用的设备里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体结构清楚、收尾好读，但多处技术解释句偏长，连续朗读时需要重断句。",
+      "script_spans": [
+        "别等手机丢了才想起远程挂失。",
+        "官方指南也确认，跨设备同步的密钥同样能达到正规的安全级别，这说明它已是主流选择。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“战场转移”和“钥匙焊在设备里”把抽象风险讲具体，既有画面感，也留下了可复述的安全提醒。",
+      "script_spans": [
+        "其实账户安全的战场只是转移了，不是终结。",
+        "记住，无密码不是把门拆了，而是把钥匙焊在了你日常用的设备里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构由机制、取舍、会话风险推进到防护建议，主线清楚；但由安全级别直接推出“主流选择”，论据并不能支撑该结论。",
+      "script_spans": [
+        "更隐蔽的是，即便登录瞬间固若金汤，登录后的会话凭证若遭窃取，攻击依然可能发生。",
+        "达到正规的安全级别，这说明它已是主流选择"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能提醒设备与会话风险，建议也较稳妥；但“根本骗不走”和“始终锁在设备中”过于绝对，可能造成过度安全感。",
+      "script_spans": [
+        "风险被推到了设备本身和登录之后的环节",
+        "私钥始终锁在你的手机或电脑中",
+        "钓鱼网站根本骗不走它"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-cc47b5b6822e42a9afe9496a0aa1d56b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

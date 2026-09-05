@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-b20689ae5bc748aeb890ea5974a69cef",
+  "run_id": "run-20260902T142534Z-5b67a37b0318",
+  "trace_sha256": "fba81753e8a50acbc2d0b72457a59c7c9317bbca60b896f6d0de2cd666c984e4",
+  "created_at": "2026-09-03T14:25:24.975565Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头亮明取舍，结论回扣题设，“该不该报”与“如何区分”两问均被直接回答，职场人群痛点贴合。",
+      "script_spans": [
+        "我的答案：平常困境别报，真有伤人危险才依法报。关心和冒犯，差在守没守边界。",
+        "下次见同事愁，你是先递路子还是先亮底牌？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“守边界”集中展开，决策规则、保密援助渠道、法律依据层层递进，观众能带走可用的判断方法。",
+      "script_spans": [
+        "个人信息保护法讲最小必要，收集要限于必要范围，家里事不算工作必知。",
+        "不少企业有保密员工援助服务，是企业出钱员工自己找，名字不报主管，可推荐他自用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛“帮人反被约谈”的反差钩子，中段以援助渠道、法律依据等新信息持续推进，结尾两问由正文自然生长。",
+      "script_spans": [
+        "帮同事上报家困，反让他被约谈冒犯？",
+        "平常困境别报，真有伤人危险才依法报",
+        "下次见同事愁，你是先递路子还是先亮底牌？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句设问、对话式承接让全篇节奏好带；但“觉被职场排斥”等两处需换词重断，上限只能2分。",
+      "script_spans": [
+        "咱们平常看见同事恍神，别秒变侦探",
+        "同事容易觉被职场排斥",
+        "被人越界兜底常感被冷落不愿说"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“别秒变侦探”贴切易记，“关心和冒犯，差在守没守边界”离开上下文仍可复述，修辞克制不压观点。",
+      "script_spans": [
+        "关心和冒犯，差在守没守边界",
+        "咱们平常看见同事恍神，别秒变侦探"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "各段功能清楚，“话说回来”“这里取舍明显”承接自然，结尾设问回扣开头与题设，关键因果有桥梁。",
+      "script_spans": [
+        "先想这事儿归不归公司管",
+        "话说回来，关心不是替他决策。",
+        "所以关心别人，先问需不需要，别替他做主。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "平常不报、涉自残伤人才依法报，边界清楚；援引最小必要原则并推荐保密援助渠道，无煽动夸大或不当承诺。",
+      "script_spans": [
+        "平常困境别报，真有伤人危险才依法报",
+        "个人信息保护法讲最小必要，收集要限于必要范围",
+        "不少企业有保密员工援助服务，是企业出钱员工自己找，名字不报主管"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6e720a5769854f6ba41ebf724a1541fc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

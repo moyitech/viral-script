@@ -1,0 +1,148 @@
+{
+  "evaluation_id": "combined-4a792bab0d6943be92f6f171d7d33344",
+  "run_id": "run-20260903T051501Z-b5b5092331e6",
+  "trace_sha256": "2a75ec52ac37069ba8bbc5b2df15c0169a322317558b2627140f5a8aa7b81c24",
+  "created_at": "2026-09-03T14:07:29.231817Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即给判断，正反两面各给依据，结尾直接回答绑架之问，全程锁定街边小店，不偏题。",
+      "script_spans": [
+        "说被绑架太绝对，说不受影响又天真。我的判断是：街边小店没被绑死，但命脉确实交出去了。",
+        "小店最好的姿态，是把平台当引流渠道，别当成唯一命脉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 274，目标为 280，偏差率为 2.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从平台规则、多平台竞争到私域底牌，信息单元层层推进，寄生类比给出可带走的判断方法。",
+      "script_spans": [
+        "小店想被附近人看见，就得按它的规则上线商品，流量怎么分由不得自己",
+        "别把全部老客都押在平台核销上，自家建的微信群和回头客，才是抗风险的底牌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头小面馆入题有悬念，中段正反推进兑现判断，结尾“寄生”收束自然有回味。",
+      "script_spans": [
+        "你家门口的小面馆，生意好不好，现在半只脚已踩进超级应用的流量池",
+        "绑架谈不上，寄生却已开始"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主，气口与重音清楚，中段解释像当面说话，全程无需临时改词。",
+      "script_spans": [
+        "小店想被附近人看见，就得按它的规则上线商品，流量怎么分由不得自己"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“流量池”“底牌”贴切不堆砌，“绑架谈不上，寄生却已开始”离开原文仍可复述。",
+      "script_spans": [
+        "自家建的微信群和回头客，才是抗风险的底牌",
+        "绑架谈不上，寄生却已开始"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "一方面另一方面双线并行，但提醒一句转折自然，结论回扣开篇设问，因果桥完整可跟随。",
+      "script_spans": [
+        "另一方面，多个超级应用正互相抢线下商户，纷纷免开店费、给流量扶持，小店反而能多选一，不算只吊在一棵树上。",
+        "所以，绑架谈不上，寄生却已开始。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "先驳绝对化再下判断，建议自带边界，归因有依据，不夸大不误导",
+      "script_spans": [
+        "说被绑架太绝对，说不受影响又天真",
+        "别把全部老客都押在平台核销上，自家建的微信群和回头客，才是抗风险的底牌"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e86449afa06f4f28976bc2b157adfa5d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-0b0e55367dcc4939a0d2f1a8ca3b4dff",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

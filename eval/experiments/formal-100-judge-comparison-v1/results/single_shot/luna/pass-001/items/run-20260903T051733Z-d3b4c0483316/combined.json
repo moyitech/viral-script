@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-0f9aaf31dae6430c8724d6eb8588f4ea",
+  "run_id": "run-20260903T051733Z-d3b4c0483316",
+  "trace_sha256": "ee75e56b286fccb1a5a16a192bfc18f50165d12b085f782019f04a6d4ca353bc",
+  "created_at": "2026-09-03T11:58:51.181236Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接回答是否划算，并覆盖一单难求的成因、替代选择与不同现金流人群的决策条件。",
+      "script_spans": [
+        "盲目抢存并不必然更划算，得看你的钱能静多久。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 652，目标为 700，偏差率为 6.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，供需解释、提前支取损失、存保额度、期限倒挂和现金流匹配形成连续的信息增量。",
+      "script_spans": [
+        "需求陡增碰上供给限量，自然开票就空。",
+        "有的银行五年利率反低于三年，锁更久反吃亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用门槛下降却更难抢制造冲突，中段追问不断转向成本与期限，结尾落到需求匹配，推进和收束都自然。",
+      "script_spans": [
+        "可越是降价越抢不到",
+        "那抢到手是否就赢了？别急。",
+        "抢到是运气，匹配需求才是真划算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "提问、转折和结论清楚，整体能读通；但金融术语偏密，几处句式生硬，影响自然口播。",
+      "script_spans": [
+        "那抢到手是否就赢了？别急。",
+        "其实大行本身负债端便宜",
+        "需求陡增碰上供给限量，自然开票就空。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“可越是降价越抢不到”制造反差，“抢到是运气，匹配需求才是真划算”落成可复述结论，修辞适度。",
+      "script_spans": [
+        "可越是降价越抢不到",
+        "抢到是运气，匹配需求才是真划算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、供需、风险到决策的链条基本清楚，但“降价”概念不准，贷款利率低与挤向存单之间也缺少解释桥。",
+      "script_spans": [
+        "需求陡增碰上供给限量，自然开票就空。",
+        "银行把大额存单起购门槛降到20万，可越是降价越抢不到",
+        "老百姓看贷款市场利率连年低位，怕资产缩水，全挤向这个有存款保险背书的标准化产品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有风险提示和流动性提醒，但把征求意见稿说成已修订规则，且对分散配置给出未经限定的建议，仍可能误导。",
+      "script_spans": [
+        "如果只是跟风怕错过，不如先厘清自身现金流。",
+        "2026年规则修订后，个人认购起点从30万滑到20万",
+        "超出五十万本息保障额度的部分就要分散布局"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-450d1af4178f4cf8858a7cb20a102c49",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1fcb0be3768e4103ac7f9beec322d4ed",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

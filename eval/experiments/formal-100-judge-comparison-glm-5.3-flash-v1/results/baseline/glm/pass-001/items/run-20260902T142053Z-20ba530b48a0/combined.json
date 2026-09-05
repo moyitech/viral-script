@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-edd326033cec4371aba2ad3caba98ce2",
+  "run_id": "run-20260902T142053Z-20ba530b48a0",
+  "trace_sha256": "61ab03941ff0c96a84a4387071291fcfff5a56f30f188b325ae3729fa16598d0",
+  "created_at": "2026-09-03T13:46:02.886772Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点出秩序与出行两头，中段正反案例都服务题设，结尾给出判断方法，全程正面回答会不会伤及。",
+      "script_spans": [
+        "整治秩序和方便出行，两头得掰平。不是说不能管，是管法得留缝。",
+        "可见禁停扩大，可能伤出行没留余地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 702，目标为 700，偏差率为 0.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "五道口成因、车位容量、景区还车难、围栏机制层层推进，事实与结论互证，观众能带走判断依据。",
+      "script_spans": [
+        "以前单车糊地铁口，路人挤不过去，居民天天投诉。城管搬过，治标不治本。",
+        "骑车十分钟，还车半小时，白掏二十块。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首20字即“锁不了车还白扣钱”的切身冲突，中段连环设问推进，结尾“先瞅瞅旁边”由正文自然长出。",
+      "script_spans": [
+        "禁停区扩大，你锁不了车还白扣钱！",
+        "那骑车的人怎么办？",
+        "下次见禁停线，先瞅瞅旁边，给没给画车位？这关乎腿脚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句接地气、对话感强，但进片就告警、投诉聊还车难等处朗读需临时补词，卡住气口，封顶2分。",
+      "script_spans": [
+        "为啥划这片？以前单车糊地铁口，路人挤不过去，居民天天投诉。",
+        "围栏靠蓝牙嗅探，进片就告警",
+        "不少投诉聊还车难"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "口语比喻贴切不炫技，“骑车十分钟，还车半小时”与“擀面杖也得找个案板”离开上下文仍可复述。",
+      "script_spans": [
+        "骑车十分钟，还车半小时，白掏二十块。",
+        "你擀面杖也得找个案板，禁停线画在空地旁才叫治理。",
+        "多走几步是小事，乱停是大患。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进因果，划区原因、骑行代价、疏堵对比层层递进，结尾落锁回扣开头管法留缝，桥接完整。",
+      "script_spans": [
+        "为啥划这片？以前单车糊地铁口",
+        "说明光画圈不建场，矛盾转嫁了。",
+        "整治秩序不是画个圈就完事，得让人有地方落锁。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点平衡、措辞留余地，事实与投诉背景相符，无煽动夸大或误导承诺，导向安全。",
+      "script_spans": [
+        "可见禁停扩大，可能伤出行没留余地",
+        "一边行人能走，一边骑车多步，利益撞一块，不能只管一边",
+        "不是说不能管，是管法得留缝"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5a26b6fe5b32442dbacc89cddb18b9b6",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1642b9000434426bbe9ff737bb3ce7e4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

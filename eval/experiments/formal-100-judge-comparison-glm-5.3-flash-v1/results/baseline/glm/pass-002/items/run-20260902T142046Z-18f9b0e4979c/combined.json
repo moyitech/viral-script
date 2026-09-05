@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-bf32c0a32f304c2995a26c17087b43a1",
+  "run_id": "run-20260902T142046Z-18f9b0e4979c",
+  "trace_sha256": "8caa8de3d5d790746e056f941aadb864b122fa39a32bc1876b57b798b6c0cffe",
+  "created_at": "2026-09-03T14:25:09.050988Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛题即答“没一边倒受伤”，骑车、行人、游客两侧代价与收益全覆盖，结尾回扣磨合，切角具体。",
+      "script_spans": [
+        "整治秩序会不会伤及出行？会添些麻烦，但没一边倒受伤",
+        "但街面不再被单车堵门，老人孩子走道安稳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不跑偏，四千件留言、围栏机制、五道口试点、二十元调度费层层推进，观众能带走避坑方法。",
+      "script_spans": [
+        "电子围栏一上，停错地方锁不了车",
+        "有人骑十分钟，还车交二十块调度费，这真伤及口袋了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差即立题，为啥这样、取舍在哪儿连环设问推进，结尾建议由二十元调度费自然长出，余味足。",
+      "script_spans": [
+        "禁停区变大，骑车人觉得碍事，走路人反倒通顺",
+        "有人骑十分钟，还车交二十块调度费，这真伤及口袋了",
+        "下次见禁停线，先开软件找点，别让几块钱学费交在路边"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、气口清楚，整体好读；但“猛一管束”意思悬空，“围栏发信号”生硬添句，两处需临时换词重断句。",
+      "script_spans": [
+        "有人骑十分钟，还车交二十块调度费，这真伤及口袋了",
+        "随手停惯了，猛一管束。",
+        "电子围栏一上，停错地方锁不了车。围栏发信号。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "钻车缝、挤车堆形象贴切助理解，规矩在脚下与学费交在路边离文可复述，克制不油不喧宾。",
+      "script_spans": [
+        "行人免得钻车缝走，孩子上学不绊脚",
+        "规矩在脚下",
+        "别让几块钱学费交在路边"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "自问自答主线清晰、取舍讲得明白；但“为啥这样”与围栏答案指代含混，“猛一管束”等断句突兀，衔接有跳脱。",
+      "script_spans": [
+        "取舍在哪儿？车得停指定点，你得多走几十米",
+        "吐槽停车难。为啥这样？电子围栏一上，停错地方锁不了车",
+        "随手停惯了，猛一管束"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反两面陈述得失，案例与留言数据有据可依，无夸大承诺或煽动，价值导向安全。",
+      "script_spans": [
+        "会添些麻烦，但没一边倒受伤",
+        "划区不是随便画，得靠数据"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c063a1ef6b9a48b98ceab914ec2a7326",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

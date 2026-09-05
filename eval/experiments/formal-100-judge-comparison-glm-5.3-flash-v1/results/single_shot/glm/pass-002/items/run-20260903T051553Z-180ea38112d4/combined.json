@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-5167290aed7b4217a7db59ec1c7c25fe",
+  "run_id": "run-20260903T051553Z-180ea38112d4",
+  "trace_sha256": "01d4d132c435d171fd61fe63336b2defd00b2b54e0dbe500b24015e84dea9956",
+  "created_at": "2026-09-03T15:27:07.119977Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即回应增收还是交学费，结论明确指向交学费，全程紧扣年轻人副业课痛点，切角具体。",
+      "script_spans": [
+        "许多年轻人满怀期待点进去，多数不是在增收，而是在给套路交学费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "涉诉金额、套路链条、平台新规与防坑清单层层推进，各有增量，事实与结论互为支撑。",
+      "script_spans": [
+        "平均涉诉金额超七千元",
+        "用先学后付掩盖贷款本质，课程注水后退费无门，承诺的接单也常落空"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段有数据与“反证”转折，结尾余味自然；但前二十字偏铺陈，反差至“交学费”才落地，钩子稍慢。",
+      "script_spans": [
+        "这正好反证此前满屏的赚钱承诺多不真实",
+        "那些精致名师头像可能是AI生成，别被封面骗了",
+        "副业培训广告铺天盖地，许多年轻人满怀期待点进去"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾对话感不错，但禁令连排句与“反证”句书面拗口，朗读需临时换词重断。",
+      "script_spans": [
+        "不少机构以免费试听为饵，用先学后付掩盖贷款本质，课程注水后退费无门",
+        "明文禁止“轻松月入”类保证收益话术，严禁AI伪造专家背书，要求AI素材标注"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“给套路交学费”与“别被封面骗了”均可独立复述，“为饵”“注水”比喻克制贴切，无堆砌炫技。",
+      "script_spans": [
+        "多数不是在增收，而是在给套路交学费",
+        "那些精致名师头像可能是AI生成，别被封面骗了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "现象、双论据、建议到收尾层层递进，反证推理有桥，结尾回扣开头期待与AI背书。",
+      "script_spans": [
+        "这正好反证此前满屏的赚钱承诺多不真实",
+        "签约前看清退款条款与合同主体，保留好付款凭证"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主体有投诉数据与平台规则支撑，建议边界清楚；但“多数…交学费”以偏概全，“反证”归因跳步，加限定才稳妥。",
+      "script_spans": [
+        "签约前看清退款条款与合同主体，保留好付款凭证",
+        "那些精致名师头像可能是AI生成",
+        "许多年轻人满怀期待点进去，多数不是在增收，而是在给套路交学费",
+        "这正好反证此前满屏的赚钱承诺多不真实"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b04fa11404844feaab2f9c290a4d0a18",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

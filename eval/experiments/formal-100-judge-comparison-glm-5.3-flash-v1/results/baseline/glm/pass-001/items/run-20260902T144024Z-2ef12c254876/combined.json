@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-7b4128065d0843f290d64ece4df28b96",
+  "run_id": "run-20260902T144024Z-2ef12c254876",
+  "trace_sha256": "8ad869937ab0d8ef4e1cfa2e5d8f00683b5bcb2d6b1f528879f8c8cdd20cf286",
+  "created_at": "2026-09-03T13:46:18.439773Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即正面回答短期与长久之问，覆盖两侧，建议直指普通消费者痛点。",
+      "script_spans": [
+        "直接说，它撬得动你今天花钱，难补上你明天的底气",
+        "信心不是靠补贴养出来的，是靠活儿稳、收入涨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 272，目标为 280，偏差率为 2.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "倍数、人群分布、政策扩围层层推进，事实与判断互撑，与引用相符无编造。",
+      "script_spans": [
+        "政府每贴一块钱，短期能带出三块四的消费",
+        "花得最猛的那拨人，本来账户里就有钱，买不买都打算花"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字以敢花与敢信的反差立钩，中段数据加两重转折持续兑现，结尾提问由底气话题自然长出。",
+      "script_spans": [
+        "补贴加码让你敢花，却未必敢信明天",
+        "听着挺猛，可他们发现，花得最猛的那拨人，本来账户里就有钱，买不买都打算花",
+        "等这波补贴停了，你敢不敢照常进超市买菜？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，停顿重音清楚，'听着挺猛''日子长着呢'等口语贯穿全篇，朗读无需临时改词。",
+      "script_spans": [
+        "听着挺猛，可他们发现，花得最猛的那拨人，本来账户里就有钱，买不买都打算花",
+        "信心不是靠补贴养出来的，是靠活儿稳、收入涨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "撬动与底气的对照准确贴题，信心靠活儿稳收入涨一句离开正文仍可复述，修辞克制不抢戏。",
+      "script_spans": [
+        "它撬得动你今天花钱，难补上你明天的底气",
+        "信心不是靠补贴养出来的，是靠活儿稳、收入涨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先答后证再转折，段段有功能，结尾以反问自然回扣开头的敢花与底气之问。",
+      "script_spans": [
+        "听着挺猛，可他们发现",
+        "等这波补贴停了，你敢不敢照常进超市买菜？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键数据有短期限定且与研究一致，消费建议留有余地，无绝对化承诺与煽动，表述公允安全。",
+      "script_spans": [
+        "政府每贴一块钱，短期能带出三块四的消费",
+        "别为了凑那点补贴，搬回家用不上的电器，反倒压了现金流"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e189bda45a5949b28135056d754c2fc8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-248f5e787516402888f9c17f828fc149",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

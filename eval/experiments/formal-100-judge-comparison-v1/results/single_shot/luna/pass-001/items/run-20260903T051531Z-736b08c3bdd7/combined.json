@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-80171a3d53f14815b8f87f55b97cc333",
+  "run_id": "run-20260903T051531Z-736b08c3bdd7",
+  "trace_sha256": "eeb679d1a07948dc1f51254653b05e9a85b5d28e82c0c829a23da95cce9d7605",
+  "created_at": "2026-09-03T11:58:02.805911Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答已购房家庭能否受益，覆盖商贷、公积金、受益条件与实际操作。",
+      "script_spans": [
+        "已购房家庭当然能少吃利息，但好处绝不是自动均摊",
+        "高位接盘的商贷用户去手机银行申下调",
+        "公积金贷款按规则在次年元旦自动跳价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 459，目标为 450，偏差率为 2.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中且信息密度高，定价公式、重定价周期、加点协商和避坑建议均有推进。",
+      "script_spans": [
+        "房贷利率就是“LPR加加点”两个拼图。",
+        "重定价周期改短，下行期能更快蹭低息，可万一利率反弹就反噬",
+        "你该做的是翻出合同看清重定价日，掂量自己加点有没有谈的空间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用新旧利率反差抓人，中段持续补充规则与风险，结尾落到具体行动，推进完整。",
+      "script_spans": [
+        "新闻里新发放首套商贷利率已经探到3%出头，可你那笔背了几年的老房贷，月供数字纹丝不动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体可读且有对话感，但多处术语串联和生硬搭配让气口不够利落。",
+      "script_spans": [
+        "月供数字纹丝不动，心里落差能不大吗",
+        "前年秋天银行曾对浮动利率存量贷集中批量下调，把很多高于下限的拉到LPR减30基点附近"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“两个拼图”把利率公式讲得直观，“招牌利率”形成了自然、准确且便于复述的提醒。",
+      "script_spans": [
+        "房贷利率就是“LPR加加点”两个拼图。",
+        "别光盯着眼前的招牌利率。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从利率落差到机制再到操作建议基本清楚，但“谈得动否”“申下调”拗口，口播需改写。",
+      "script_spans": [
+        "房贷利率就是“LPR加加点”两个拼图。",
+        "重定价周期改短，下行期能更快蹭低息，可万一利率反弹就反噬",
+        "全看你重定价日和加点幅度谈得动否",
+        "高位接盘的商贷用户去手机银行申下调"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提示双向风险并提醒防骗，但时间表述和收益承诺偏满，需补充限定。",
+      "script_spans": [
+        "可万一利率反弹就反噬",
+        "别光看新闻就急着提前还贷",
+        "去年11月起加点也能协商了",
+        "已购房家庭当然能少吃利息",
+        "月供能松几百块"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3ab6d4a6b0f64c73bde95969c12dea9e",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1e0a4f52515b42039b643ba105fea33a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

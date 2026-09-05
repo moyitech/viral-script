@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-45908a43ad8f42789cf57ebe7a9e225c",
+  "run_id": "run-20260902T142805Z-e84860a5bdfd",
+  "trace_sha256": "dd4f63f7ad141af5ab24f53f7ebd948e945740f0acd450b5f1a74a8f040f4182",
+  "created_at": "2026-09-03T14:25:18.365712Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答该不该报，中段给保命破例与主动托付两条例外，结尾以同意划界，题设两侧全被覆盖。",
+      "script_spans": [
+        "发现同事家庭困境，该不该上报？多数别报，关心先问愿不愿被知道。",
+        "没开口就代劳，是越界。开了口再传话，是帮忙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律红线、标签代价、保命破例各成一环，还落到递选项、发联系方式的可用做法，增量具体扎实。",
+      "script_spans": [
+        "法律写单位连员工婚育状态，都不能无理由收集。",
+        "若对方话里透出自残或伤人，保密要让给保命。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差句直击冲突，中段法律、重罚、破例层层兑现，结尾二选一提问自然生长；仅“你猜家变去报”一句稍拖。",
+      "script_spans": [
+        "帮同事上报家变，常是冒犯不是关心。",
+        "若对方话里透出自残或伤人，保密要让给保命。",
+        "下次见同事眼眶红，你是先递纸，还是先摸手机找老板？",
+        "你猜家变去报目的不明，敏感信息一旦流转，尴尬标签跟很久。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数短句节奏清楚好读，但“你猜家变去报目的不明”与“连家属聊都封密”两处需临时重断，只能止步2分。",
+      "script_spans": [
+        "没开口就代劳，是越界。开了口再传话，是帮忙。",
+        "先轻声问，最近需不需要我陪你去聊？",
+        "你猜家变去报目的不明，敏感信息一旦流转，尴尬标签跟很久。",
+        "公司援助计划平时连家属聊都封密，唯独法定危险信号得打破。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻贴切且服务论点，“关心是递选项，不是替他签单”离文可复述，密度克制未喧宾夺主。",
+      "script_spans": [
+        "没开口就代劳，是越界。开了口再传话，是帮忙。",
+        "你递梯子不掀屋顶，关心才不像窥探。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "问答式过渡与结尾回扣俱佳，但“你猜家变去报目的不明”一句费解，因果桥需观众自行补齐。",
+      "script_spans": [
+        "那什么关口必须破例？",
+        "下次见同事眼眶红，你是先递纸，还是先摸手机找老板？",
+        "你猜家变去报目的不明，敏感信息一旦流转，尴尬标签跟很久。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "危险信号破例与同意边界清楚，法律表述留有限定，自残话题处理稳妥，导向安全。",
+      "script_spans": [
+        "若对方话里透出自残或伤人，保密要让给保命",
+        "界限在没经同意别替他喊话"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-cbf8cdefc7da442384a8a7995422df69",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

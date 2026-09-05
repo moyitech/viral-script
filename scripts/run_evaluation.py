@@ -91,9 +91,17 @@ def build_parser() -> argparse.ArgumentParser:
     score.add_argument("--overwrite", action="store_true")
     score.add_argument(
         "--reasoning-effort",
-        choices=("no_think", "low", "high"),
+        choices=("no_think", "low", "high", "xhigh", "max"),
         default="high",
-        help="Hy3 Judge reasoning effort. Default: high.",
+        help="Judge reasoning effort. Default: high.",
+    )
+    score.add_argument(
+        "--judge-model-id",
+        default=None,
+        help=(
+            "Override the configured HY3_MODEL for Judge requests. The exact API "
+            "model id is recorded in the evaluator fingerprint."
+        ),
     )
     return parser
 
@@ -185,7 +193,13 @@ async def _run(args: argparse.Namespace) -> int:
         result = await BatchEvaluationRunner(rubric, config).run(paths)
     else:
         # Judge sampling is isolated from the generation model defaults.
-        hy3 = replace(get_settings().hy3, temperature=0.0, top_p=1.0)
+        configured_hy3 = get_settings().hy3
+        hy3 = replace(
+            configured_hy3,
+            model=args.judge_model_id or configured_hy3.model,
+            temperature=0.0,
+            top_p=1.0,
+        )
         async with AsyncHy3Client(hy3) as client:
             judge = Hy3JudgeEvaluator(
                 client,

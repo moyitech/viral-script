@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-c03cc1583a32467c8755a63933eeee38",
+  "run_id": "run-20260903T051523Z-2f2ca1a078ea",
+  "trace_sha256": "016e3abcc1e765c027307d8ae1731c511818d6d2a6cce64be327f41621ad5a57",
+  "created_at": "2026-09-03T12:31:29.886845Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答难以分清，并覆盖监管标识、技术特征、误导风险和消费者应对，切题完整。",
+      "script_spans": [
+        "单凭眼睛和直觉其实已经很难分清对面是真人主播还是数字人合成形象了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕辨识困难展开，监管依据、技术原因、典型风险和实用检查方法形成有效递进。",
+      "script_spans": [
+        "数字人能二十四小时不间断直播，表情语气都经过算法精细调校",
+        "尤其涉及养生理财别光凭感觉信"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段持续补充监管、技术风险和识别方法，结尾可执行；但前20字只是场景铺垫，冲突出现得偏晚。",
+      "script_spans": [
+        "数字人能二十四小时不间断直播",
+        "你下次刷到主播卖力推销，先盯一眼画面边角有没有‘AI生成’标识",
+        "普通消费者在刷到那些全天不停带货的直播间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能顺着读完，直接称呼和提醒有口播感，但长句与抽象表达集中，换气和重断句压力明显。",
+      "script_spans": [
+        "你下次刷到主播卖力推销",
+        "全天候值守更容易让人卸下防备，监管才强制标注来保障分辨权",
+        "表情语气都经过算法精细调校，和真人互动的节奏几乎无异，靠观感下结论天然容易出错"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“靠观感下结论天然容易出错”把风险说得利落，结尾“别光凭感觉信”也便于复述，修辞克制。",
+      "script_spans": [
+        "靠观感下结论天然容易出错",
+        "别光凭感觉信"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先给出判断，再解释技术与风险，最后落到标识核验和重点品类，因果与结论衔接自然。",
+      "script_spans": [
+        "靠观感下结论天然容易出错",
+        "先盯一眼画面边角有没有‘AI生成’标识"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无明显违规；但把标注规则泛化为普遍要求，并将互动近似真人、监管原因说得过满，易造成误导。",
+      "script_spans": [
+        "尤其涉及养生理财别光凭感觉信",
+        "当前要求AI带货必须主动亮明身份的规则"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c82abc91c8144c66ad1e8c3a8e38e992",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

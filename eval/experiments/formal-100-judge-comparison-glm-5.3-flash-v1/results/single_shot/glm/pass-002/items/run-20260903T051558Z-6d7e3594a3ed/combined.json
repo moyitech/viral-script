@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-53cf6cccc72443fbacd4ff71644df5e5",
+  "run_id": "run-20260903T051558Z-6d7e3594a3ed",
+  "trace_sha256": "e8ab4c9a021db2bf0d3f25e10f2cec30b38441c81f996c406f72ac8b6b0f2a66",
+  "created_at": "2026-09-03T15:27:59.154458Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即回应降薪值不值，结尾给出底线条件，中间用数据回应潮升温，两侧与中年人群全覆盖。",
+      "script_spans": [
+        "只要那行当能让你攒下越老越吃香的具体本事，眼前少挣的薪水，拉长到十年来看根本不算亏",
+        "动手前把家庭半年开支算明白，拿房贷去押注陌生领域，趋势再对也扛不住断粮"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "技能复利标准、两组市场数据、开支测算与房贷警示各司其职，信息单元层层递进无空转。",
+      "script_spans": [
+        "三十一岁往上的成熟职场人在换工作人群里占比早就过了半数",
+        "大范围统计里中年劳动者的失业率反而低于年轻大盘，可见基本盘没传说中那么脆弱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛降薪转行反差，中段两组数据接连翻转预期，结尾以断粮警示自然收束，三段各自立住无代偿。",
+      "script_spans": [
+        "四十五岁舍得降薪去陌生行业从头练手，在外人眼里多半像犯傻",
+        "大范围统计里中年劳动者的失业率反而低于年轻大盘",
+        "拿房贷去押注陌生领域，趋势再对也扛不住断粮"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，'攒本事''算开支'等口语承接自然，重音落点清楚，通读无需临时改词或重断句。",
+      "script_spans": [
+        "只要那行当能让你攒下越老越吃香的具体本事，眼前少挣的薪水，拉长到十年来看根本不算亏",
+        "拿房贷去押注陌生领域，趋势再对也扛不住断粮"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“技能复利”“扛不住断粮”两处贴切克制，均可脱离上下文复述，修辞服务理解且无堆叠炫技。",
+      "script_spans": [
+        "先摸清岗位有没有技能复利，别只盯着月薪缩水",
+        "拿房贷去押注陌生领域，趋势再对也扛不住断粮"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "判断、佐证、操作、底线四段功能清晰，过渡语自然，结尾回扣题设并补上风险边界。",
+      "script_spans": [
+        "再把视野拉到整体就业",
+        "所以真要转，先摸清岗位有没有技能复利，别只盯着月薪缩水"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "后文有开支测算与房贷风险提醒，边界尚可；但'根本不算亏'属绝对化断言，'越老越吃香'条件空泛难验证，宜改写措辞更稳。",
+      "script_spans": [
+        "动手前把家庭半年开支算明白，拿房贷去押注陌生领域，趋势再对也扛不住断粮",
+        "只要那行当能让你攒下越老越吃香的具体本事，眼前少挣的薪水，拉长到十年来看根本不算亏"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-008784bebb8c4c37bdb7f494c547dc9c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

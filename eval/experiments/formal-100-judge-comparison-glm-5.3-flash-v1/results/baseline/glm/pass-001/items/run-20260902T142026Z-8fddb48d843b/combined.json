@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-bc158733970f4e4096290d806b59bc53",
+  "run_id": "run-20260902T142026Z-8fddb48d843b",
+  "trace_sha256": "9eeda93fbbc34f31a335118ea28a5f727a8e17050a228302046f4d6700d7e8b5",
+  "created_at": "2026-09-03T13:44:29.119674Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即扣二元题，两侧各给判断依据，落点指向举手机的普通观众，全程正面作答。",
+      "script_spans": [
+        "这既是公共监督，也可能成二次伤害",
+        "你举手机拍路人吵架传上网，算监督还是毁人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 277，目标为 280，偏差率为 1.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法条、去营利门槛、立法目的、合理使用例外与打码建议层层推进，论据扎实无编造。",
+      "script_spans": [
+        "法律早去掉赚钱门槛，哪怕没获利也照样可能算",
+        "先给脸打码再发最稳，别嫌麻烦"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出拍与毁人的冲突问句，中段以去营利门槛、合理使用等新信息层层推进，结尾问句从手机意象自然长出，留有余味。",
+      "script_spans": [
+        "你举手机拍路人吵架传上网，算监督还是毁人？",
+        "但碰到真干坏事的，法律又开了后门，让你能拍了曝光，或许算合理用。",
+        "你举起的手机，到底是公道还是枷锁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口密集，口语词序贯穿核心解释，全程无需换词重断，对话感强。",
+      "script_spans": [
+        "在拍之前，先想一秒：你是要大家评理，还是让别人社死？",
+        "先给脸打码再发最稳，别嫌麻烦"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "踩线、开后门等比喻都服务理解，“给全脸就从监督滑向伤人”离开全文仍可复述，密度偏高但未喧宾夺主。",
+      "script_spans": [
+        "别贪那张清晰特写，给全脸就从监督滑向伤人。",
+        "但碰到真干坏事的，法律又开了后门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立规则再设例外再给行动建议，结尾回扣开头之问，因果桥完整，结构干净利落。",
+      "script_spans": [
+        "但碰到真干坏事的，法律又开了后门，让你能拍了曝光，或许算合理用",
+        "你举起的手机，到底是公道还是枷锁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "双面框架公允，法律结论均以“可能”“或许”限定，并给出打码等清晰边界建议，无煽动夸大或误导承诺。",
+      "script_spans": [
+        "没经人家点头，你就把可认出的脸传出去，可能踩侵权线。",
+        "所以真撞见欺负人，先给脸打码再发最稳，别嫌麻烦。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-23afa3a016b14572a63fba9073f27d40",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-cd5224468d4040a3a0090a6b06d744d1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

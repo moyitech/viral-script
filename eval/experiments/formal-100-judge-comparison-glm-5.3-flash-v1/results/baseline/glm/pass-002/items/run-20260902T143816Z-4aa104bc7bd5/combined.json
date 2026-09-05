@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-30bbeae555ea4e15bbc913e2503b9b4c",
+  "run_id": "run-20260902T143816Z-4aa104bc7bd5",
+  "trace_sha256": "b39c7c245e4468cf2cb5aa28d17f6619801ace40ed8d89f61ba62cfd3d945113",
+  "created_at": "2026-09-03T14:25:27.231853Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即回应题设两侧，多能互补与现货市场直指“如何应对”，结尾落到普通人错峰用电，人群契合。",
+      "script_spans": [
+        "干旱让水电变贵，转型却没被天气掐住",
+        "咱们普通人记住看分时电价，高峰少开大功率电器就行"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "发电原理、储能补位、现货错峰、旱情案例层层推进，各单元有增量，案例与引用相符，未见编造。",
+      "script_spans": [
+        "水电坝里靠水流落差带机器，天旱水少就转不动，出力掉得明显",
+        "现货市场像实时菜价，把贵时段标出来，大家看见贵就错峰"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头十六字即成“掐住天气”反差钩子；中段以机理、现货市场、旱情案例持续推进，结尾呼应看天吃饭余味自然。",
+      "script_spans": [
+        "干旱让水电变贵，转型却没被天气掐住。",
+        "现货市场像实时菜价，把贵时段标出来，大家看见贵就错峰",
+        "未来看天吃饭，慢慢变成看系统怎么聪明调度了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口清楚，掐住、顶上、抓瞎等词重音鲜明，中段口语承接自然，朗读无需临时改词。",
+      "script_spans": [
+        "你想啊，水电少了，风光顶上，系统就不至于抓瞎。",
+        "现货市场像实时菜价，把贵时段标出来，大家看见贵就错峰，整体成本就被摊薄了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“现货市场像实时菜价”准确帮助理解；结尾“看天吃饭变看系统”脱离上下文仍可复述，修辞克制不炫技。",
+      "script_spans": [
+        "现货市场像实时菜价，把贵时段标出来",
+        "未来看天吃饭，慢慢变成看系统怎么聪明调度了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "问答式过渡与“不过”转折衔接自然，承认极端旱情局限后仍给出对策，结尾回扣开头与题设。",
+      "script_spans": [
+        "那价格怎么稳？",
+        "不过极端旱情局部还是会紧",
+        "未来看天吃饭，慢慢变成看系统怎么聪明调度了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制并交代了旱情局限，无违规导向；但把成本摊薄说成必然结果略夸大，改为有望摊薄更稳。",
+      "script_spans": [
+        "不过极端旱情局部还是会紧",
+        "不是说水电不发了，而是多源搭把手才稳",
+        "大家看见贵就错峰，整体成本就被摊薄了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-dd426ea6433b419e81882505e25b8438",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

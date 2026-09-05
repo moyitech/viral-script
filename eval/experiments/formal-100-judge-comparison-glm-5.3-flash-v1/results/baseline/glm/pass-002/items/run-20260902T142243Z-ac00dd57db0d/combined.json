@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-8067a54867884b7c9c48621fc71270e2",
+  "run_id": "run-20260902T142243Z-ac00dd57db0d",
+  "trace_sha256": "445a57e99dd0726d18ea21c2d4a6d9ce3a0a685835eb8b82258cd6c0a0999c3b",
+  "created_at": "2026-09-03T14:26:08.953729Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直答“搬走一部分、没全白拿”，冲突两侧与站长、搜索用户两类人群全覆盖。",
+      "script_spans": [
+        "我的回答很直白：搬走了一部分，但没全白拿。",
+        "我们搜得爽了，靠内容活的人得算账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机制、数据、应对策略逐层推进，一成半与九成流量数据均有研究支撑，无编造，增量具体。",
+      "script_spans": [
+        "这样比下来，每日流量大约降了一成半。",
+        "干货教程类和百科类，被摘走后用户还可能点原文深看。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛具体损失冲突，中段用数据与反转持续兑现钩子，结尾追问由站长视角自然生长，三段均立得住。",
+      "script_spans": [
+        "你写半年的文章，被AI答案截留了访客？",
+        "那站长都亏吗？不一定。",
+        "会不会想到背后某个站长正盯着曲线？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有对话感，但“合规抓取难认定是不是白嫖”“确被改写呈现”两处压缩拗口，朗读需换词重断。",
+      "script_spans": [
+        "用户省了事，站长丢了客。",
+        "要是站长关上爬虫大门，AI可能连你名字都不提。",
+        "合规抓取难认定是不是白嫖",
+        "内容确被改写呈现，原站也留了姓名。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“用户省了事，站长丢了客”与“答案柜台”贴切易复述，比喻服务理解，克制不炫技。",
+      "script_spans": [
+        "用户省了事，站长丢了客。",
+        "搜索不再只是链接列表，倒像答案柜台。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "爬虫取舍一段因果桥梁清晰，结尾回扣开头设问，全文层层递进、闭环完整。",
+      "script_spans": [
+        "要是站长关上爬虫大门，AI可能连你名字都不提。",
+        "所以免费搬走这话不全对。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "多用'不一定''可能''大约'限定结论，兼顾用户、站长与平台三方，法律争议留有余地，无夸大或误导。",
+      "script_spans": [
+        "搬走了一部分，但没全白拿。",
+        "合规抓取难认定是不是白嫖，官司输赢还早。",
+        "要是站长关上爬虫大门，AI可能连你名字都不提。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-db33458a35944cd4ba7ff7f8121d495e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

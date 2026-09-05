@@ -1,0 +1,143 @@
+{
+  "evaluation_id": "combined-99847f06fed34ec4aa88d1f133a09e3d",
+  "run_id": "run-20260902T144456Z-206c4d2fc12d",
+  "trace_sha256": "14253cc5b4007d081fdafe28262029374211d145a0b4dcbff93b395d938b7e9d",
+  "created_at": "2026-09-03T12:22:15.163258Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应循环价值与质量风险，并落到普通消费者的渠道、成色和保修选择。",
+      "script_spans": [
+        "翻新机这股热浪，到底是循环经济好事，还是质量盲区大坑？",
+        "正规厂拆开修，换电池装新屏，机器续命又省矿料，碳排也少。可路边小店常只喷漆换壳，旧电池鼓包都不管，隐患留给下家，售后还没影。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "信息单元较丰富，兼顾政策、工艺风险与选购方法；但把二手交易量与翻新规模混说，削弱数据可信度。",
+      "script_spans": [
+        "正规厂拆开修，换电池装新屏，机器续命又省矿料，碳排也少。",
+        "别只看价格香，多问保修多久、从哪来。",
+        "国内一年翻新手机近三亿部，全球每四部就有一部翻新。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用回收与买到翻新机的反差抓人，中段不断切换利弊和避坑，结尾互动也顺着购买场景落地。",
+      "script_spans": [
+        "你刚把旧手机交回收，转头怕买翻新机用半月坏？",
+        "可路边小店常只喷漆换壳，旧电池鼓包都不管，隐患留给下家",
+        "下次再刷到低价翻新机，你是直接划走，还是先问那句：这机器保多久？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答节奏较好，但“交回收”“用半月坏”等表达卡顿，局部需重断句或换词。",
+      "script_spans": [
+        "这中间的账怎么算？",
+        "可路边小店常只喷漆换壳，旧电池鼓包都不管",
+        "你刚把旧手机交回收，转头怕买翻新机用半月坏？",
+        "机器分准新到瑕疵，按成色标了级。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“隐患留给下家”和“便宜不是唯一刻度”形象又克制，既能概括风险，也方便观众复述。",
+      "script_spans": [
+        "隐患留给下家，售后还没影。",
+        "机器续命又省矿料，碳排也少。",
+        "毕竟便宜不是唯一刻度。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问、两面展开和购买建议层层推进，转折清楚，结尾也回扣低价诱惑与避坑主题。",
+      "script_spans": [
+        "我交个底，它两头都占。",
+        "你说该咋选？咱买的时候，先盯渠道和成色标签。",
+        "下次再刷到低价翻新机，你是直接划走，还是先问那句：这机器保多久？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未煽动对立，且给出渠道、保修等避坑建议；但“常只……都不管”“根本没进检测线”属未经限定的泛化，易造成误导。",
+      "script_spans": [
+        "不是非黑即白。",
+        "多问保修多久、从哪来。",
+        "可路边小店常只喷漆换壳，旧电池鼓包都不管",
+        "还说个人直转，根本没进检测线"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7cb54defbdb54b329922e7534e3c9621",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-2c0ecf4713e641a89dd91a9b876640ed",
+  "run_id": "run-20260903T051537Z-5ce63f97870d",
+  "trace_sha256": "8c0cbebb2b11d9435c496556f9ba4494152868d32266e7773d41bf3322635a64",
+  "created_at": "2026-09-03T12:32:10.284117Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直问承诺是否合理，随后落到平台规则、骑手处境、需求激增和消费者责任，完整回应题设。",
+      "script_spans": [
+        "极端天气下，死守准时的硬性承诺并不合理",
+        "遇到坏天气，提前下单，送达晚几分钟不妨多些宽容"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕极端天气下不应死守准时推进，规则调整、骑手代价、需求激增和行动建议形成多层信息增量。",
+      "script_spans": [
+        "像“红灯停表”这类调整，就是给时效松绑的明确信号。",
+        "高温热浪来袭，骑手接单量往上走，可配送延迟同步增加",
+        "极端高温时不少居民点外卖是为避开户外暴晒，订单明显跳涨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以极端天气与准时承诺的冲突设问，中段连续补充政策、研究和需求侧变化，结尾收束自然。",
+      "script_spans": [
+        "暴雨台风天，你手机上的外卖订单还牢牢卡着30分钟必达的承诺，这真的合理吗？",
+        "实证研究也戳破幻象：高温热浪来袭，骑手接单量往上走，可配送延迟同步增加",
+        "极端天气里，留得出缓冲的平台，才送得长久。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体可读，观点和提醒清楚，也有对话感；但中段长句和抽象词较集中，朗读需多次重断句，尚未达到精心设计的自然口播。",
+      "script_spans": [
+        "遇到坏天气，提前下单，送达晚几分钟不妨多些宽容",
+        "最近一些城市已推动平台在恶劣天气、复杂路况下顺延骑手考核时间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“接单量往上走、配送延迟同步增加”形成清晰反差，结尾“留得出缓冲的平台，才送得长久”简洁有记忆点。",
+      "script_spans": [
+        "骑手接单量往上走，可配送延迟同步增加",
+        "别让投诉变成最后一根稻草。",
+        "极端天气里，留得出缓冲的平台，才送得长久。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提出判断，再以平台规则、供给风险、需求压力递进解释，最后落到行动，结论自然回扣题设。",
+      "script_spans": [
+        "我的判断很直接：极端天气下，死守准时的硬性承诺并不合理",
+        "抛开配送不谈，单看需求侧，极端高温时不少居民点外卖是为避开户外暴晒",
+        "极端天气里，留得出缓冲的平台，才送得长久。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题立场清楚，未见明显违规；但“死守”“必须”等绝对化表述，容易简化复杂责任，建议补充天气和平台规则边界。",
+      "script_spans": [
+        "遇到坏天气，提前下单，送达晚几分钟不妨多些宽容",
+        "平台必须把配送时间留出足够弹性"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-bd06b1686940405780739440410f9641",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-139324befa7a4aef929b7a8225b301ba",
+  "run_id": "run-20260902T141440Z-f6d43e768d2a",
+  "trace_sha256": "35e9a00818510dedbc3be0e813686246e452baecc566db30fbb96e2b1d8b42de",
+  "created_at": "2026-09-03T12:15:59.327567Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答稳健投资可能高位接盘的问题，覆盖拥挤风险与红利支撑，也给出普通人的应对路径。",
+      "script_spans": [
+        "这事儿真可能，但拥挤不代表必亏，看你怎么买。",
+        "普通人怎么避坑？别看朋友圈全晒红利就跟着梭。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕拥挤风险，完成定义、流动性机制、红利辨析和分批配置建议，信息有递进。",
+      "script_spans": [
+        "红利交易拥挤，指太多钱同向挤进高股息。",
+        "这种拥挤内生风险，不靠业绩爆雷也会发作。",
+        "把钱分几份，慢慢买。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出求稳却接盘的冲突，中段用机制、监管和避坑建议持续推进，结尾追问自然。",
+      "script_spans": [
+        "你买红利求稳，却高位接盘了？",
+        "你拿分红的耐心够吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和比喻带来对话感，但多处搭配生硬，仍需重断或换词。",
+      "script_spans": [
+        "这事儿真可能，但拥挤不代表必亏，看你怎么买。",
+        "收息策略露出脆弱面。",
+        "最近新规管住过度抱团，基金讲清风格偏离。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "窄桥比喻把流动性风险讲具体，“躲风险的地方反而最危险”有反差且可复述，修辞没有压过观点。",
+      "script_spans": [
+        "想象一座窄桥，上千人同时往前涌。",
+        "当大家都挤进来躲风险，躲风险的地方反而最危险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有定义、机制、辨析、建议的完整链条，但把风险简化为是否卖出，结论经不起进一步追问。",
+      "script_spans": [
+        "等风向一变，所有人想卖，市场接不住这么密的抛压。",
+        "拿不住才真亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动或收益承诺，也区分了拥挤与必亏；但“分红能补点本、拿不住才真亏”过于绝对，可能弱化本金亏损风险。",
+      "script_spans": [
+        "拥挤不代表必亏，看你怎么买",
+        "分红能补点本。拿不住才真亏"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0e309232a4554422b056508ed35f530d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

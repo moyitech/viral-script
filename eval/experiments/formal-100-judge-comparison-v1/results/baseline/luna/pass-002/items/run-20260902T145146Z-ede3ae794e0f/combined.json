@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-da20f395488d4f08bdbac82e2af8155a",
+  "run_id": "run-20260902T145146Z-ede3ae794e0f",
+  "trace_sha256": "a7057bd352a392a87351d170c9c34e7c01ef876b1cab08beeffe891260fcdaab",
+  "created_at": "2026-09-03T12:16:13.867427Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答消费者会买单，并覆盖兼容成本、欧盟干预及其他市场分裂，切口贴合普通用户。",
+      "script_spans": [
+        "消费者确实在买单，但欧盟立规矩统一接口，能省下这块花销。",
+        "可其他大市场没全跟进，标准阵营还是各立山头，自愿合作常卡壳，你等不及只能自己掏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕兼容成本，既有成本机制、欧盟时间表和政策取舍，也给出购买建议，信息推进充分。",
+      "script_spans": [
+        "厂商爱用自家充电协议，你换手机或跨品牌，线就对不上。",
+        "从2024年底开始，小设备必须用USB-C口，笔记本慢一点，2026年才跟上。",
+        "买设备时多问一句，比事后补线强。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“隐形税”制造痛点，中段从成本转向欧盟干预与全球分裂，结尾追问自然收束。",
+      "script_spans": [
+        "换手机线又对不上，标准分裂正收你隐形税。",
+        "欧盟走硬碰硬的路，从2024年底开始，小设备必须用USB-C口，笔记本慢一点，2026年才跟上。",
+        "下次挑新品，你会先盯接口吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能顺着读，开头有抓力；但“觉一个头”等缺词和多处生硬搭配，限制了自然流畅度。",
+      "script_spans": [
+        "出国带错线就抓瞎",
+        "你也许觉一个头不贵",
+        "统一省往后开支，已花冤枉钱回不来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“隐形税”“标准战争续费”把兼容成本具体化，表达克制且有复述价值，没有连续堆砌修辞。",
+      "script_spans": [
+        "别替别人的标准战争续费。",
+        "当标准变成阵营游戏，每根线都在悄悄扣钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "“问题—干预—影响”的主线清楚，但把协议、接口与线材兼容混为一谈，且从统一到无需另购线因果过度。",
+      "script_spans": [
+        "问题先说清。",
+        "那干预怎么选？",
+        "对你影响很直接。",
+        "厂商爱用自家充电协议，你换手机或跨品牌，线就对不上。",
+        "强制统一让买这类货不用另购线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体讨论兼容成本并呈现统一标准的利弊，但“隐形税”“每根线都在悄悄扣钱”等表述强化了因果和损失感，需适当限定。",
+      "script_spans": [
+        "强制统一是种取舍：厂商少点自由，你少花钱。",
+        "标准分裂正收你隐形税。",
+        "这些开销最终贴进标价，你买时没察觉"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2a96ceeece824a04be897df464417fe6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

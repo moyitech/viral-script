@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-ba63688c7a8a43b983161952dc030974",
+  "run_id": "run-20260903T051519Z-4198a42385a9",
+  "trace_sha256": "a1e02df47f1f2b57468f027a4c81454cc4c8880c4bfa2f5a7d8b96c9005188ce",
+  "created_at": "2026-09-03T15:27:55.310264Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即回应题问，堵漏与风险转移两侧并答，落点对准普通人，覆盖完整。",
+      "script_spans": [
+        "你以为换了无密码登录，黑客就彻底没辙了？其实账户安全的战场只是转移了，不是终结。",
+        "无密码登录确实堵住了密码泄露和钓鱼冒充的大漏洞，但风险被推到了设备本身和登录之后的环节。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机制、取舍、会话风险、防护建议层层推进，与背景资料相符无编造，增量扎实。",
+      "script_spans": [
+        "证明身份的私钥始终锁在你的手机或电脑中，远程只认公钥，钓鱼网站根本骗不走它。",
+        "一旦所有个人设备尽失，找回账户往往还是绕回邮箱验证的老路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字反问直击认知反差；中段机制对比、取舍、会话风险层层兑现钩子；结尾比喻自然生长留余味。",
+      "script_spans": [
+        "你以为换了无密码登录，黑客就彻底没辙了？",
+        "更隐蔽的是，即便登录瞬间固若金汤，登录后的会话凭证若遭窃取，攻击依然可能发生。",
+        "记住，无密码不是把门拆了，而是把钥匙焊在了你日常用的设备里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、门钥比喻收尾好读，但'若遭窃取''并非凭空而生'等书面词需换词，拗口超过两处。",
+      "script_spans": [
+        "库一被拖走就集体暴露，重复撞库更是灾难",
+        "远程只认公钥，钓鱼网站根本骗不走它",
+        "更隐蔽的是，即便登录瞬间固若金汤，登录后的会话凭证若遭窃取，攻击依然可能发生。",
+        "找回账户往往还是绕回邮箱验证的老路，安全感并非凭空而生。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "战场转移、钥匙焊进设备等比喻贴切克制，服务理解；结尾一句离开上下文仍可复述，记忆点自然。",
+      "script_spans": [
+        "其实账户安全的战场只是转移了，不是终结。",
+        "无密码不是把门拆了，而是把钥匙焊在了你日常用的设备里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "判断—机制—取舍—对策逐段递进，「这意味着」承接自然，结尾钥匙之喻回扣开场。",
+      "script_spans": [
+        "对普通人来说，这意味着管好主设备的锁屏、生物识别和绑定的云端账号，比死记硬背复杂密码更紧要。",
+        "无密码不是把门拆了，而是把钥匙焊在了你日常用的设备里。护好那块屏幕，它才真正替你守住房门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "整体公允克制，先讲堵住的漏洞也讲转移的风险，建议有边界，未作绝对化安全承诺",
+      "script_spans": [
+        "无密码登录确实堵住了密码泄露和钓鱼冒充的大漏洞，但风险被推到了设备本身和登录之后的环节",
+        "一旦所有个人设备尽失，找回账户往往还是绕回邮箱验证的老路，安全感并非凭空而生"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-89c694f3bf524351b58e2fb032b1ed60",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

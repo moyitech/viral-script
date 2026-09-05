@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-f0481bda84374a3b8865340c921335fb",
+  "run_id": "run-20260903T051529Z-90d667863460",
+  "trace_sha256": "ad78567d84cd48e40303488c85437fb5f2ab4affad8aa138bb8af4e9184eceb9",
+  "created_at": "2026-09-03T15:26:13.893521Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出托市疑问，主体亮明信心信号判断，两侧都答且落到普通观众的决策提醒，切角具体不泛化。",
+      "script_spans": [
+        "看到满屏公司回购自家股票，你第一反应是护盘救价？",
+        "我的判断很明确，当下回购增多主要是信心信号，不是短期托市",
+        "钱真正注销到账了，才算公司对自己投了信任票"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信号理论、注销增厚每股收益、预案风险三个单元层层推进，与引用资料相符，无编造，还给观众留下核验方法。",
+      "script_spans": [
+        "一是学术上，回购公告常被视作内部人用真金白银表态，比空口喊话更有分量",
+        "越来越多回购选择注销股份，直接让每股收益变厚",
+        "预案不等于落地，只看董事会一纸计划就冲进去，容易踩到假动作"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直问护盘救价制造反差，中段两点依据加风险提醒持续推进，结尾镜子和信任票自然留味。",
+      "script_spans": [
+        "看到满屏公司回购自家股票，你第一反应是护盘救价？",
+        "但提醒一句，预案不等于落地，只看董事会一纸计划就冲进去，容易踩到假动作",
+        "所以回购是一面镜子，钱真正注销到账了，才算公司对自己投了信任票"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口与对话感基础不错，但“常被视作”“且”“家数扩了”等书面处需临时换词，顺口度受限。",
+      "script_spans": [
+        "只看董事会一纸计划就冲进去，容易踩到假动作",
+        "回购公告常被视作内部人用真金白银表态",
+        "且越来越多回购选择注销股份"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "镜子、信任票的收束离开上下文仍可复述，真金白银对照空口喊话贴切，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "回购是一面镜子，钱真正注销到账了，才算公司对自己投了信任票。",
+        "回购公告常被视作内部人用真金白银表态，比空口喊话更有分量"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "钩子、双依据、风险转折、结论回扣环环相扣，因果桥清晰，护盘与托市概念范围前后一致。",
+      "script_spans": [
+        "依据有两点。一是学术上，回购公告常被视作内部人用真金白银表态",
+        "但提醒一句，预案不等于落地",
+        "所以回购是一面镜子，钱真正注销到账了，才算公司对自己投了信任票"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以“我的判断”框定观点，并提示预案不等于落地、勿盲目冲入，无夸大承诺与误导性荐股。",
+      "script_spans": [
+        "但提醒一句，预案不等于落地，只看董事会一纸计划就冲进去，容易踩到假动作。",
+        "现行规则严禁借回购操纵市场"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-af64990563e9458a8f1ac947e495dd87",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-d65f307e9b014f4b81d032c2cd28e43b",
+  "run_id": "run-20260903T051615Z-903a4fc167d2",
+  "trace_sha256": "4544be8ec1e303afaedf112d692fa5b5ada0c7743f54a386de8b51e64bd7fcaf",
+  "created_at": "2026-09-03T15:27:07.117412Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头顶住“谁来兜底”之问，给出政府不全包、厂商不独扛、企业与个人自建韧性的完整答案，两侧与普通观众均覆盖。",
+      "script_spans": [
+        "数字地基的兜底，政府不会全包，厂商也不能独扛",
+        "多云容灾、异地双活，才是真正有效的韧性路径"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "宕机事实、免责条款、安全评估实质、韧性路径层层推进，再落到个人备份，与引用相符无编造，增量具体可带走。",
+      "script_spans": [
+        "国家只对关键领域的云平台做安全评估，盯的是业务连续性和数据可迁移",
+        "给身份证扫描件、家庭照片这类重要资料留个本地备份"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "扫码卡顿开头直击日常痛点，免责条款反转与风险追问层层推进，结尾金句由正文自然生长，余味足。",
+      "script_spans": [
+        "你正扫码进门禁却转圈，想点外卖卡在支付，背后可能只是某个云机房一次基础解析失败",
+        "但真要云厂商赔损失？服务条款早把短暂中断列进免责范围",
+        "底层地基还会晃，把全部信任压在一朵云上，才是最大的脆弱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口干净，比喻接地气，通篇无需改词即可上口，仅个别术语略书面但不碍朗读。",
+      "script_spans": [
+        "企业若把系统全押在单一云，等于把所有鸡蛋放一辆易晚点的地铁",
+        "云端一抖，你的行程、支付、追剧全断联。别等赔偿，也别恐慌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "鸡蛋放易晚点的地铁新颖贴切，云端一抖具象有力，结尾金句离文可复述，修辞克制不堆砌。",
+      "script_spans": [
+        "企业若把系统全押在单一云，等于把所有鸡蛋放一辆易晚点的地铁",
+        "云端一抖，你的行程、支付、追剧全断联。",
+        "把全部信任压在一朵云上，才是最大的脆弱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "现象归因、判断、企业方案、个人方案递进清晰，“那风险怎么摊”桥接自然，结尾回扣“数字地基”完成闭环。",
+      "script_spans": [
+        "那风险怎么摊？企业若把系统全押在单一云",
+        "落到普通人身上，云端一抖，你的行程、支付、追剧全断联"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "无煽动夸大，未点名具体厂商，责任划分与备份建议均有边界，导向安全。",
+      "script_spans": [
+        "把连带事故全算给厂商，既不现实也不符合现行契约",
+        "现行办法里，国家只对关键领域的云平台做安全评估",
+        "给身份证扫描件、家庭照片这类重要资料留个本地备份"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-fcc262cf6f9f4776ae6df9af777d7169",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

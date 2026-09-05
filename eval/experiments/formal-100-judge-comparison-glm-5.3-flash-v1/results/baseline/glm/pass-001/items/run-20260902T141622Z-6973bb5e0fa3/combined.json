@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-5bd9c6662da34ed8898f28b184fe2d5e",
+  "run_id": "run-20260902T141622Z-6973bb5e0fa3",
+  "trace_sha256": "4d623c0a1eb98e394b59b868ee7e1191dffe9829c7039b6e6fab323e5ef59b47",
+  "created_at": "2026-09-03T13:44:19.060631Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头亮明立场，停车与休闲两侧都接住，结尾回扣兼顾，人群痛点贴合。",
+      "script_spans": [
+        "我的回答是，休闲不该白白让步，停车难也得管",
+        "两边都要顾，才像过日子的样"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 301，目标为 280，偏差率为 7.50%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，权属知识、让步代价与开会方案层层推进，研究佐证无编造。",
+      "script_spans": [
+        "依法得大伙共同决定，物业不能闷头拍板",
+        "动手前开业主会，把停车和休闲需求摆一起谈"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字点出具体冲突，中段驳问、法理、让步层层兑现钩子，结尾互动由正文自然生长，三段无代偿。",
+      "script_spans": [
+        "小区空地变车位，老人孩子立刻没处玩。这仗怎么打？",
+        "铲平了，熟人变路人。",
+        "你家小区若遇这事，是先顾车还是先留地？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口加对话式设问，重音停顿清楚，全文可照读，是精心设计的自然口播。",
+      "script_spans": [
+        "那片地是邻居聊天晒太阳的地方，老人小孩都爱去，铲平了，熟人变路人。",
+        "车停不下确实误事，但硬全占，生活就塌了一角。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞点到为止且服务理解，熟人变路人、路修宽了心远了均可离开上下文复述，无堆砌炫技。",
+      "script_spans": [
+        "铲平了，熟人变路人。",
+        "公共空间本就是大家喘气的地方",
+        "路修宽了，心可能反而远了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立后驳，让步与转折衔接自然，结尾回扣开头之问，因果链完整。",
+      "script_spans": [
+        "车停不下确实误事，但硬全占，生活就塌了一角",
+        "铲平了，熟人变路人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "兼顾停车与休闲双方，法律表述有依据且以建议口吻呈现，'心可能反而远了'留有余地，无煽动夸大。",
+      "script_spans": [
+        "休闲不该白白让步，停车难也得管",
+        "车停不下确实误事，但硬全占，生活就塌了一角",
+        "依法得大伙共同决定，物业不能闷头拍板",
+        "路修宽了，心可能反而远了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-43418afed8d9433f92e87e817a6ba17f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-eddd0abbc0eb4fef88cdea2d4b4fa020",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

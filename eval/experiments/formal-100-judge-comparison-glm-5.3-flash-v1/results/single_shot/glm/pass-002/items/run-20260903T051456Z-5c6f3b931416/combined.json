@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-db23642824594928a3002c93ba7873ac",
+  "run_id": "run-20260903T051456Z-5c6f3b931416",
+  "trace_sha256": "56f4c08eb02a1eb6106d4a58f9874d29897f7907d23e9527cb7132b77b7c7ea9",
+  "created_at": "2026-09-03T15:28:11.744080Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给出'未必花更多但单笔易买贵'的两面答案，规则与行为两侧都扣题，结尾回扣普通消费者的疑虑。",
+      "script_spans": [
+        "普通消费者未必每个月总支出变多，但缺少公开比价锚点后，单笔订单买贵的概率明显抬升",
+        "没最低价承诺不等于更贵，但你的比价动作不能省"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，规则、行为、隐性低价三层递进，附可操作的比价方法，信息有据无明显编造。",
+      "script_spans": [
+        "很多平台虽然嘴上不提最低价，却通过流量管控和后台协议悄悄要求商家维持低价",
+        "先截屏退出搜同款平常价，给自己三分钟冷静"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头反差“未必花更多”落点慢且表述绕；中段靠暗中限价转折推进；结尾建议自然，整体稳而不抓人。",
+      "script_spans": [
+        "其实在这轮新规出台前，很多平台虽然嘴上不提最低价，却通过流量管控和后台协议悄悄要求商家维持低价",
+        "下次在直播间心动，先截屏退出搜同款平常价，给自己三分钟冷静",
+        "直播间低价承诺退潮，普通消费者未必每个月总支出变多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "结尾口令式建议顺口，但中段'暗中限定更低价''唤起冲动'等书面对策句拗口，需临时改词重断句。",
+      "script_spans": [
+        "下次在直播间心动，先截屏退出搜同款平常价，给自己三分钟冷静，别让氛围替你做决定",
+        "禁止强制全网最低价和暗中限定更低价后",
+        "直播间实时互动和主播魅力容易唤起冲动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，“别让氛围替你做决定”离开上下文仍可复述，“低价兜底、缺锚点”对照清楚，无堆砌炫技。",
+      "script_spans": [
+        "别让氛围替你做决定",
+        "过去有低价兜底，现在缺了锚点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头立论带转折，规则与行为分段推进，'缺了锚点更难比价'因果有桥，结尾自然回扣。",
+      "script_spans": [
+        "直播间低价承诺退潮，普通消费者未必每个月总支出变多，但缺少公开比价锚点后，单笔订单买贵的概率明显抬升",
+        "过去有低价兜底，现在缺了锚点，观众更难冷静比价，情绪下单变多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "通篇用'未必''概率''容易'等限定表述，结尾主动纠偏，无夸大承诺与误导，导向安全。",
+      "script_spans": [
+        "普通消费者未必每个月总支出变多",
+        "没最低价承诺不等于更贵，但你的比价动作不能省"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7e8e71305ef543f0bad6861321b7aab6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

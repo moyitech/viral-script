@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-4e1c31ad5a554b29b3b6e0a220bd0c84",
+  "run_id": "run-20260902T143433Z-8d05a87c4e2c",
+  "trace_sha256": "5ab811a363efb1fbcc4b32882477f8c9ba963ab32eff42c86310465ccb4c8d93",
+  "created_at": "2026-09-03T11:44:36.522246Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答了摩天楼是否加剧热岛，并区分高度、密度和其他热源，贴合普通观众。",
+      "script_spans": [
+        "它会加剧夜间热岛效应，但不能把账全扣它头上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 701，目标为 700，偏差率为 0.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机制、反例、地域差异和治理办法都有推进，主题集中，观众能获得具体判断与行动线索。",
+      "script_spans": [
+        "白天混凝土和玻璃像海绵吸饱太阳热，半夜慢慢吐到空气里。",
+        "关键在密度和吸热材质，不在身高。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用反常识追问立刻入题，中段不断补充热源与反转，结尾回到生活场景并留下选择题。",
+      "script_spans": [
+        "半夜热醒怪摩天楼？它加重却不是唯一祸首。",
+        "那怪完楼高，把楼推矮就能凉快？想得太简单。",
+        "这片水泥林子是留了风道，还是捂紧了被子？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答、比喻和生活化承接，读起来不沉闷；但科学段落长串并列，个别搭配拗口，需重断句。",
+      "script_spans": [
+        "咱们先拆开看，夜里城区比郊外暖，太阳早下山，楼却还在放热。",
+        "有研究归纳过，高层密集区空间挤、建材吃热、冷却系统耗能，本地温度就抬起来。",
+        "科学上各城数据难统一，因形状纬度和人群差异，不能乱套用，多种热源缠一起，想单独算清高楼贡献有多难。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“海绵吐热”“厚被”“水泥林子”把蓄热、散热和通风困境讲得具体，意象集中且有可复述的记忆点。",
+      "script_spans": [
+        "白天混凝土和玻璃像海绵吸饱太阳热，半夜慢慢吐到空气里。",
+        "这就像给城市盖了床厚被，热憋在底下。",
+        "这片水泥林子是留了风道，还是捂紧了被子？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线推进清楚，反例和结论能回扣；但“死板”搭配失当，数据限制句并列过密，口播时需重断句。",
+      "script_spans": [
+        "那怪完楼高，把楼推矮就能凉快？想得太简单。",
+        "关键在密度和吸热材质，不在身高。",
+        "干燥内陆楼群把热困得更死板。",
+        "科学上各城数据难统一，因形状纬度和人群差异，不能乱套用，多种热源缠一起，想单独算清高楼贡献有多难。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能区分高楼与其他热源，也提示城市差异；但“多开窗更舒服”等建议缺少空气质量和室内安全边界，易被误用。",
+      "script_spans": [
+        "但不能把账全扣它头上。",
+        "科学上各城数据难统一，因形状纬度和人群差异，不能乱套用",
+        "个人习惯上，夜晚多开窗对流比硬扛冷气舒服些。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-283d2828b74b4bef8a989773a2af74be",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f710e7dab4a345688f6cb75224cf5008",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

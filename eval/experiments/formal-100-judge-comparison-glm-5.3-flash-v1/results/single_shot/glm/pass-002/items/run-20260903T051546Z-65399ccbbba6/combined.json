@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-ddebc1e5eb6a4b82bc6bde1236db76a2",
+  "run_id": "run-20260903T051546Z-65399ccbbba6",
+  "trace_sha256": "4369b3ad90384e955b80170fbe40903fb229baa089fe64d85afee8e8887199a2",
+  "created_at": "2026-09-03T15:27:22.362838Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头点破假稿撑股价，中段拆两类陷阱，末尾给出查验动作，全程正面回答题设且紧扣普通投资者。",
+      "script_spans": [
+        "普通投资者想避开伪风口，核心就一句话：认主营收入，不认概念包装",
+        "真要验货，直接去交易所和上市公司公告查原始披露文件，别被群里晒的盈利截图带偏节奏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "假订单、假课件、罚单关停、查公告层层给出新信息，与监管案例相符，无编造，增量扎实。",
+      "script_spans": [
+        "不少账号拿AI批量编造假订单、假政策，在互联网上搅完情绪就跑，股价被带起来他们早撤了",
+        "这类编造传播虚假信息的行为，已经引来监管罚单和账号关停，绝不是法外之地"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句设个人持仓悬念并迅速反转，中段以假订单、无资质、罚单持续供新信息，结尾余味自然。",
+      "script_spans": [
+        "但你盯上的那只“人工智能牛股”，也许只靠一篇机器写的假稿子撑着",
+        "为什么这么讲？不少账号拿AI批量编造假订单、假政策，在互联网上搅完情绪就跑",
+        "AI是生产力工具，不是你闭眼冲票的暗号。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏与对话感整体在线，但“编造传播虚假信息的行为”“引来…关停”两处拗口，需改词才顺口。",
+      "script_spans": [
+        "认主营收入，不认概念包装",
+        "这类编造传播虚假信息的行为",
+        "已经引来监管罚单和账号关停"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“认主营收入，不认概念包装”简洁可复述，“搅完情绪就跑”“暗号”等形象表达服务理解，无堆砌。",
+      "script_spans": [
+        "认主营收入，不认概念包装",
+        "在互联网上搅完情绪就跑",
+        "AI是生产力工具，不是你闭眼冲票的暗号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先亮观点再以'为什么这么讲'搭桥，陷阱、后果、验法层层递进，结尾回扣开头与题设，因果完整。",
+      "script_spans": [
+        "普通投资者想避开伪风口，核心就一句话：认主营收入，不认概念包装。为什么这么讲？",
+        "AI是生产力工具，不是你闭眼冲票的暗号。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以避坑提示为主线，'也许''往往'限定到位，查公告与监管罚单表述有据，无夸大或收益承诺。",
+      "script_spans": [
+        "也许只靠一篇机器写的假稿子撑着",
+        "这类编造传播虚假信息的行为，已经引来监管罚单和账号关停，绝不是法外之地。",
+        "真要验货，直接去交易所和上市公司公告查原始披露文件，别被群里晒的盈利截图带偏节奏。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8325f64b2c3c4d71bcb212bb5774e958",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-d92fd50bf06543a3a60cf050f4d6d86c",
+  "run_id": "run-20260903T051603Z-93fdf1bcec04",
+  "trace_sha256": "7c39d55522120035d5d5c05facd0ef8a561b11f237a6adb1fa8640e4def5b97f",
+  "created_at": "2026-09-03T12:32:07.352159Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从企业动机讲到求职者核查，正面回应提效与压价两端，核心人群和行动建议都明确。",
+      "script_spans": [
+        "这是企业良心发现提效率，还是你的工资被暗暗砍了一刀？",
+        "效率该鼓掌，可落笔签字前，主动权必须牢牢攥在自己手里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕提效与压价风险，空岗成本、谈判变化和薪酬核查层层推进，观众能获得可执行的判断方法。",
+      "script_spans": [
+        "岗位空着一天，企业就背着一天的无形损耗",
+        "先问清底薪绩效试用期。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用两轮面试与快速录用制造冲突，中段不断补充判断和风险，结尾自然落到签约主动权。",
+      "script_spans": [
+        "面试才两轮，录用通知就砸过来，比去年这时候快出一大截。",
+        "这是企业良心发现提效率，还是你的工资被暗暗砍了一刀？",
+        "效率该鼓掌，可落笔签字前，主动权必须牢牢攥在自己手里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读通，反问和短句有节奏；但“主流是在抢效率”“少去来回拉锯”两处搭配生硬。",
+      "script_spans": [
+        "面试才两轮，录用通知就砸过来",
+        "缩短招聘流程，主流是在抢效率，不是系统性压价",
+        "市场稍有风吹草动双方就重谈，紧缩后报价更干脆，少去来回拉锯"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“砸过来”“暗暗砍了一刀”“它比你还想快”让抽象判断变具体，记忆点自然，没有连续堆砌辞藻。",
+      "script_spans": [
+        "录用通知就砸过来",
+        "还是你的工资被暗暗砍了一刀？",
+        "它比你还想快。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整、回扣自然，但“管理架空”表述生硬，长句堆叠，且从空岗成本推到非压价的因果桥不足。",
+      "script_spans": [
+        "但如果一面就发录用，且薪酬结构含糊，别晕头签合同，先问清底薪绩效试用期。",
+        "从管理架空到项目停滞，隐性开支不小",
+        "流程拖长反而让薪资谈判变数更多，市场稍有风吹草动双方就重谈，紧缩后报价更干脆，少去来回拉锯。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不涉违规，且提醒核对薪酬结构较稳妥；但“主流是在抢效率，不是系统性压价”归因过满，容易把复杂情形说成定论。",
+      "script_spans": [
+        "但如果一面就发录用，且薪酬结构含糊，别晕头签合同，先问清底薪绩效试用期。",
+        "我的结论很直接：缩短招聘流程，主流是在抢效率，不是系统性压价。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c9a62529335b431c82cdae8af1cb90ca",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-e2d2a0823db94efa86b322f0b30f7644",
+  "run_id": "run-20260903T051636Z-9a3b347ee98f",
+  "trace_sha256": "fa1cc8d3623d1b9e36821c1e4562f45a6580ca45e592cef76cdf0cf0c6aebb81",
+  "created_at": "2026-09-03T11:57:33.586993Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "同时回应便利与诱导负债两面，聚焦普通人的消费决策，观点明确且给出应对办法。",
+      "script_spans": [
+        "对普通人，好处真实：不确定合身先买回比划，退掉不用掏钱。但延迟支付抹掉花钱痛感，才是隐忧。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 445，目标为 450，偏差率为 1.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕先用后付持续推进，涵盖平台动机、消费心理、生活场景、用户收益与风险，结尾还有可执行判断标准。",
+      "script_spans": [
+        "从电商到外卖、共享单车，后付模式已铺进几百个生活场景。",
+        "下单前自问：现在立刻扣款，我还买吗？如果答案模糊，就关掉它。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“0元收到多件同款”制造反差，中段解释动因并递进到风险，结尾追问和建议都自然落地。",
+      "script_spans": [
+        "你收到快递，拆开竟是三件同款不同尺码的衣裳，下单时没花一分钱。",
+        "下单前自问：现在立刻扣款，我还买吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和劝导段有对话感，但核心论证夹杂抽象比喻与硬性术语，朗读节奏不够利落。",
+      "script_spans": [
+        "你收到快递，拆开竟是三件同款不同尺码的衣裳",
+        "它不是帮你管钱的安全带，而是把购买犹豫碾平的转换器，负债风险悄悄转嫁到你头上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“待付款像隐形账单”和“把它当有限试用权”兼具画面与判断，修辞克制，易于复述。",
+      "script_spans": [
+        "待付款像隐形账单，收货时轻松，还款日撞一块才慌神。",
+        "把它当有限试用权，不是信用额度。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由消费场景引出判断，再解释平台动机，转入便利与风险，最后以自问和关停建议完成自然回扣。",
+      "script_spans": [
+        "为什么平台拼命推？因为国内消费金融早能补“没钱”的缺口，这功能根本不主打穷，而是主打“不敢买”。",
+        "但延迟支付抹掉花钱痛感，才是隐忧。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能同时说明试用便利和还款风险，也给出自问与关闭建议；但“平台拼命推”“根本不主打穷”等归因过于绝对，可能误导。",
+      "script_spans": [
+        "好处真实：不确定合身先买回比划，退掉不用掏钱。",
+        "下单前自问：现在立刻扣款，我还买吗？",
+        "平台拼命推",
+        "这功能根本不主打穷，而是主打“不敢买”",
+        "关掉默认开通的“0元付”"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2e283dd3e67d44c39ad40e47e6066ecc",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a695ad6c3c9b48b48e10242201123248",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

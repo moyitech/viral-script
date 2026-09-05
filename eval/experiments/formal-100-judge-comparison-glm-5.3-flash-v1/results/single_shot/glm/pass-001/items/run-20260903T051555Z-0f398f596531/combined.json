@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-e878f9c6e6d64afb835bcaac2676334d",
+  "run_id": "run-20260903T051555Z-0f398f596531",
+  "trace_sha256": "364e186cdd486409cba1205b3dee4da0dabddd181b075d594723cf6efe59a5dc",
+  "created_at": "2026-09-03T14:08:14.419136Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即入二元题，正文给明确立场并保留报道与存证例外，结尾直接回扣设问，普通拍摄者被点名回应。",
+      "script_spans": [
+        "你以为在伸张正义，其实可能正把别人推进更深的坑。",
+        "边界其实清楚：存证据交警方可以，传网络让网友审判不行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 414，目标为 450，偏差率为 8.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "聚焦拍摄上传的法律后果，营利要件删除、可识别肖像、例外门槛层层递进，有法条依据，无编造与复读。",
+      "script_spans": [
+        "关键在民法典的转向：不经过肖像权人同意，制作、公开肖像就算侵权，删掉了营利要求。",
+        "再说，肖像保护早不限于正脸，可被识别的背影侧影也算，随手拍更难脱身。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即具体冲突场景，中段以营利误区、法条转向、背影也算层层兑现，结尾提问由正文自然生长，无塌陷。",
+      "script_spans": [
+        "你以为在伸张正义，其实可能正把别人推进更深的坑",
+        "这视频留给警察，还是留给陌生人消遣？",
+        "别让别人的难堪，成为你的流量养料"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、有对话感，但“少数合理实施”“虽写需授权”等处需临时换词，两处拗口封顶2分。",
+      "script_spans": [
+        "法律现在看重的不是你赚没赚钱，而是人家同不同意被放到网上",
+        "只有法律说的少数合理实施，比如涉公共利益的真实报道",
+        "很多平台虽写需授权，但事后维权成本高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“图一时热闹”对“永久放大”对比准确，结尾“流量养料”比喻克制且离开上下文仍可复述，无炫技堆叠。",
+      "script_spans": [
+        "你举手机图一时热闹，对方人生至暗却被永久放大",
+        "别让别人的难堪，成为你的流量养料"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "错觉、法条、例外、代价、边界层层搭桥，因果完整，结尾存证据可以、传网络不行精准回扣开头的二元设问。",
+      "script_spans": [
+        "那什么情况例外？只有法律说的少数合理实施，比如涉公共利益的真实报道。",
+        "下次想拍前，先问：这视频留给警察，还是留给陌生人消遣？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法条转述准确，例外与边界均交代清楚，无煽动夸大或不当承诺，价值导向正向。",
+      "script_spans": [
+        "只有法律说的少数合理实施，比如涉公共利益的真实报道",
+        "边界其实清楚：存证据交警方可以，传网络让网友审判不行"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4c5bcdb422304a8db28fbf7e8628e80b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-4c0dfdbb365e46959ecf3f5bcd7096ea",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-c8acaf1e8b0c4c28b500dab7188055da",
+  "run_id": "run-20260902T143525Z-4b9a78dd67a9",
+  "trace_sha256": "037a11b026599817cf5985d562af4c157f31e0b806c984d15faf3df2de73d37a",
+  "created_at": "2026-09-03T12:16:44.819123Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接围绕退役潮的污染风险与回收出路展开，并落到普通家庭如何处理废旧光伏板。",
+      "script_spans": [
+        "退役潮真来了，留不留污看回收怎么做。",
+        "下回见废旧板，别当碎玻璃卖，找正规渠道才真绿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "退役规模、污染路径、政策目标、产能矛盾和资源化价值层层补充，观众能获得明确的风险判断与处置建议。",
+      "script_spans": [
+        "板子分层，玻璃盖着电池，电池粘着塑料。",
+        "烧完重金属进了飞灰，这可是绿电末端最尴尬处。",
+        "玻璃和金属提纯，又能回炉做新板。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用反差制造悬念，中段持续补充风险、政策与出路，结尾回到行动提醒，推进完整。",
+      "script_spans": [
+        "别以为太阳干净到底。绿电尾巴未必绿",
+        "下回见废旧板，别当碎玻璃卖，找正规渠道才真绿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句密集，问答和收束有重音；但多处句式压缩、词组生硬，朗读仍需重断句。",
+      "script_spans": [
+        "那认真收能扳回一城吗？能。",
+        "咱们到2030年累计退役预计几十万吨。",
+        "不让板子变成死胶层。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“绿电尾巴未必绿”和“一块板子两种命”便于复述，类比服务于回收判断，表达没有过度炫技。",
+      "script_spans": [
+        "绿电尾巴未必绿",
+        "一块板子两种命，全看末端怎么接。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按风险—政策—回收—行动推进，但用不同年份的数量目标直接比较，“处理缺口”结论的因果桥不足。",
+      "script_spans": [
+        "那认真收能扳回一城吗？能。",
+        "可退役量预估远超这数，产能得加快补。",
+        "板子不是普通玻璃，里头含铅含氟。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有条件表述并强调规范回收，但“随意丢才污染，规范收是资源”过度二分，含铅含氟也缺少适用范围。",
+      "script_spans": [
+        "填埋不是不行，得做防渗处理。",
+        "随意丢才污染，规范收是资源。",
+        "板子不是普通玻璃，里头含铅含氟。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5b78c1786c30474e93cae4b5f14ff2a8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

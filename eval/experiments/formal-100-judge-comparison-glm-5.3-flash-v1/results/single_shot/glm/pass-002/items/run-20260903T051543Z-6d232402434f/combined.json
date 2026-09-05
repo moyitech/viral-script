@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-c1dd754dcf7e4de0a9bc97116cb887a0",
+  "run_id": "run-20260903T051543Z-6d232402434f",
+  "trace_sha256": "adc4ecf3d87e6936307ab16c3fca16290413ee3e7205cc82d4e50388767d7d0a",
+  "created_at": "2026-09-03T15:27:22.435564Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "风险与防范两侧都答到位，场景、判断到具体做法直指出行充电人群。",
+      "script_spans": [
+        "我的判断很明确：它作为技术威胁被官方提醒了十多年",
+        "最稳的是自带充电宝，电从自己兜里出"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题紧扣果汁劫持，机制、反差证据与分层建议层层推进，信息扎实无漂移。",
+      "script_spans": [
+        "USB接口天生电力数据同线传输，四根引脚里两根供电、两根通信用",
+        "想中招你得忽略系统弹窗还用怪异线缆"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头3%电量加'敢插吗'直击场景冲突，中段以官方警告十年对比野外零案发持续反转推进，结尾金句由正文自然生长，三段均成立。",
+      "script_spans": [
+        "你手机只剩3%电量，高铁站墙上的公共USB口闪着绿灯。陌生人递来根线说免费充，你敢插吗？",
+        "可作为反差，有安全媒体梳理过，自相关概念提出以来野外零案发。",
+        "为什么原理吓人却难到手？",
+        "出门可以借电，别借出数据通道，这几克重量的线就是你的边界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和钩子确实顺口，但“野外零案发”“过流保护”等书面压缩处需临时换词重断，构成决定性不足。",
+      "script_spans": [
+        "四根引脚里两根供电、两根通信用",
+        "最稳的是自带充电宝，电从自己兜里出",
+        "自相关概念提出以来野外零案发",
+        "国内充电桩国标也在紧抓过流保护和防火"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'电从自己兜里出'贴切又口语，'借电别借数据通道'与'几克重的线是边界'可离文复述，修辞克制不炫技。",
+      "script_spans": [
+        "最稳的是自带充电宝，电从自己兜里出。",
+        "出门可以借电，别借出数据通道，这几克重量的线就是你的边界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "设问过渡自然、结尾回扣开头，但过流防火与数据乱跑之间因果桥不足。",
+      "script_spans": [
+        "为什么原理吓人却难到手？",
+        "国内充电桩国标也在紧抓过流保护和防火，没给数据乱跑留方便"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "风险叙述有边界，明说确凿案例'公开记录里几乎找不到'，仍给出防护建议，不夸大不诱导，导向安全。",
+      "script_spans": [
+        "它作为技术威胁被官方提醒了十多年，但真正发生在路人身上的确凿案例，公开记录里几乎找不到",
+        "有安全媒体梳理过，自相关概念提出以来野外零案发",
+        "出门可以借电，别借出数据通道"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-508d8b13820e46468cf303dfc06361b4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

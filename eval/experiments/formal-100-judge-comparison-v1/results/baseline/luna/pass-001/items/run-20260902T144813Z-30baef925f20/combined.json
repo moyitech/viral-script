@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-2d54022c4dfb4cae819c92556855bdf4",
+  "run_id": "run-20260902T144813Z-30baef925f20",
+  "trace_sha256": "eabec21b575b4c5e8e133ac57f62fe38af8b5588d7f312d2225bc9b3cd515ed1",
+  "created_at": "2026-09-03T11:46:02.964087Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答双向诉求，后文覆盖怕动物者、养宠人和商场，并提出兼顾路径，核心人群与冲突两侧齐全。",
+      "script_spans": [
+        "宠物友好商场也该照顾怕动物的人，但不能把牵绳合规狗全关门外，两边都要顾。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 269，目标为 280，偏差率为 3.93%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，覆盖恐惧体验、准入规则、撤牌现象和错峰方案；但法规表述绝对，地区范围未交代，论据推进不足。",
+      "script_spans": [
+        "近期不少商场默默摘了宠物友好标牌，改回禁宠，养宠人也困惑。",
+        "再看法规，白纸黑字只硬放行导盲犬这类工作犬进公共场所。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛出双方冲突，中段补充情绪、法规和规则变化，结尾用分流方案自然落到友好的再定义。",
+      "script_spans": [
+        "带狗进商场被拦，怕动物的人也没全安心。",
+        "那怎么两头顾？留个错峰时段或独立电梯就成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和设问让整体能读通，但“白纸黑字只硬放行”等表达卡嘴，结尾“怕动物者的门”也偏书面。",
+      "script_spans": [
+        "那怎么两头顾？留个错峰时段或独立电梯就成。",
+        "白纸黑字只硬放行",
+        "怕动物者的门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“留一扇门”把抽象的平衡诉求变成画面，收束有余味，修辞克制且没有压过实际信息。",
+      "script_spans": [
+        "当商场学会留一扇怕动物者的门，而不是只贴禁入告示"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问后依次展开体验、规则和方案，主线可跟；但法规说满，避宠建议衔接不足，结尾倡议略跳。",
+      "script_spans": [
+        "那怎么两头顾？留个错峰时段或独立电梯就成。",
+        "再看法规，白纸黑字只硬放行导盲犬这类工作犬进公共场所。",
+        "找无障碍通道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调双方权益、未煽动对立；但将各地差异较大的宠物入场法规概括为“只”允许工作犬，易造成法律误导，需限定地区和场所。",
+      "script_spans": [
+        "宠物友好商场也该照顾怕动物的人，但不能把牵绳合规狗全关门外，两边都要顾。",
+        "再看法规，白纸黑字只硬放行导盲犬这类工作犬进公共场所。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f8090c6b13434819a8fdfcd81095adfb",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d39b16920eb94556bd3aa7423f268013",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

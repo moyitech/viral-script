@@ -1,0 +1,158 @@
+{
+  "evaluation_id": "combined-072640c28d0343d6aacd2a19540b80fd",
+  "run_id": "run-20260902T143813Z-9076883442ea",
+  "trace_sha256": "58d3c2f0c2e863f1e73fca6f91caea117e522782be2650ade85379c35fe6aa1f",
+  "created_at": "2026-09-03T11:44:55.082951Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答防诈骗与自主权的冲突，覆盖老人、子女和不同能力状态，且给出具体代管边界。",
+      "script_spans": [
+        "您把养老金交儿女代管，是护钱还是丢权？",
+        "那老人真容易受骗怎么办？",
+        "咱普通人家怎么落地？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 446，目标为 450，偏差率为 0.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕自主权与防诈骗，案例、认知障碍数据、授权监督和家庭操作建议彼此推进，信息增量充足。",
+      "script_spans": [
+        "最高法出过案例，子女没理由扣着父母存折不让用，法院直接令退卡。",
+        "有调查说约14%的老人有认知障碍，这部分人确可能需要帮手。",
+        "代管人不是自家钱柜，得为本人的利益花销，外面还有监督盯着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出护钱与丢权的冲突，中段持续补充法律边界和解决路径，结尾追问自然收束。",
+      "script_spans": [
+        "您把养老金交儿女代管，是护钱还是丢权？",
+        "老人清醒时，自己选监护人或者写委托，白纸黑字写清权限，最好公证一下。",
+        "您下次见儿女伸手管爸妈养老金，先轻声问：这卡是爸妈递您的吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体气口较短，问答和动作描写有口播感，但个别重复和生硬表达会影响顺读，需要临时换词。",
+      "script_spans": [
+        "咱普通人家怎么落地？老人脑子清楚时，卡攥自己手里最稳",
+        "真要儿女帮取帮管，写张条写清能花哪、不能花哪",
+        "要是功能退化了，去公证处走程序，别桌底收卡"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "好心越线反成侵权、自家钱柜和防诈成绳锁等表达兼顾解释与余味，形象克制，容易被观众复述。",
+      "script_spans": [
+        "好心若过了线，反成了侵权。",
+        "代管人不是自家钱柜，得为本人的利益花销",
+        "防诈的布也成绳锁。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从权利底线推进到例外和操作建议，结尾回扣有力；但“功能退化后去公证处”混淆了设定监护的时序与程序边界。",
+      "script_spans": [
+        "那老人真容易受骗怎么办？",
+        "咱普通人家怎么落地？",
+        "您下次见儿女伸手管爸妈养老金，先轻声问：这卡是爸妈递您的吗？",
+        "要是功能退化了，去公证处走程序，别桌底收卡。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "强调自主、授权和监督，方向稳妥；但“法律底线”“直接令退卡”及公证程序表述偏绝对，可能误导。",
+      "script_spans": [
+        "好心若过了线，反成了侵权。",
+        "代管人不是自家钱柜，得为本人的利益花销，外面还有监督盯着。",
+        "老人自己能作主时，养老金归自己花，这是法律底线。",
+        "最高法出过案例，子女没理由扣着父母存折不让用，法院直接令退卡。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e8df97484dbf4951a121e25cd0c52c21",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-64c3482b3f204680aada2c33dfe0be37",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

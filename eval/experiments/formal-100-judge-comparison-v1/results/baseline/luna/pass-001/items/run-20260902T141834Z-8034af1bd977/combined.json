@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-a5761a0936d94ee8a8a55901cd2879cd",
+  "run_id": "run-20260902T141834Z-8034af1bd977",
+  "trace_sha256": "ba9508212615bb6b7ae3e75679dd155e1bf331691ea0ccc790c1955acb3fa417",
+  "created_at": "2026-09-03T11:45:51.467904Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答算法能否识别潜力，并同时覆盖企业效率、求职者损失与监管责任，受众和冲突均对位。",
+      "script_spans": [
+        "算法到底能不能读懂人的潜力？",
+        "企业用AI面试官省了钱，求职者却丢了被看懂的机会。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 749，目标为 700，偏差率为 7.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕效率与被看懂的代价，从评分机制、预测局限推进到偏差、责任和监管，信息单元充足。",
+      "script_spans": [
+        "它算得出你说了几个专业词，算不出你临场悟性。",
+        "分数高，不等于以后工作就干得好。",
+        "错判一个人，公司丢的是钱，人丢的是时机。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用省钱与被看懂的机会形成冲突，中段不断补充误判、偏见和监管问题，结尾追问也自然承接。",
+      "script_spans": [
+        "企业用AI面试官省了钱，求职者却丢了被看懂的机会。",
+        "如果全交给机器，谁来为错判负责？",
+        "下次见AI面试官，你会藏起紧张，还是赌它读得懂你？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、反问和具体动作让主体好读，但个别说明及“可信”相关表述拗口，需临场拆改。",
+      "script_spans": [
+        "你看招聘现场，摄像头架着，算法实时出分。",
+        "对年龄、性别群体有偏",
+        "边界划在可信上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“它读的是概率，不是人”准确收束核心反差，“技术跑得快，规矩得跟上趟”也有复述价值，修辞不过量。",
+      "script_spans": [
+        "它读的是概率，不是人。",
+        "看人像看标本。",
+        "技术跑得快，规矩得跟上趟。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按“机制—收益—局限—偏差—监管”递进，结尾也能回扣；但将白领数据直接推成慢热者吃亏，因果桥不足。",
+      "script_spans": [
+        "那它怎么给人打分？镜头对着你，先抓眼神、语速、用词，再和岗位模型比对。",
+        "因为模型常拿过往白领数据练手，慢热者天然吃亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，且提醒分数不等于能力；但“读不出”“天然吃亏”等绝对化、归因过满，需补充适用边界。",
+      "script_spans": [
+        "分数高，不等于以后工作就干得好。",
+        "它能盯住你的微表情和说话关键词，却读不出你压力下沉默后冒出的真本事。",
+        "因为模型常拿过往白领数据练手，慢热者天然吃亏。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2064841911b84042b55ac8635ed7dcb5",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-bdcf2099f6e74180a6dab2542e4f914f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-12ff10b0f0ae49ca8774486612e8f737",
+  "run_id": "run-20260902T143816Z-4aa104bc7bd5",
+  "trace_sha256": "b39c7c245e4468cf2cb5aa28d17f6619801ace40ed8d89f61ba62cfd3d945113",
+  "created_at": "2026-09-03T12:16:57.505829Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直面干旱、水电与能源转型的冲突，明确提出多能互补和灵活市场，受众与题设匹配。",
+      "script_spans": [
+        "干旱推高成本，能源转型靠多能互补和灵活电力市场来应对看天吃饭。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，既解释水电受旱减出力，也说明风光、储能和现货市场如何补位，还落到分时用电。",
+      "script_spans": [
+        "风和光不靠水，有风有晴就能发，储能把多余电存住，缺时放出来补位。",
+        "那价格怎么稳？现货市场像实时菜价，把贵时段标出来，大家看见贵就错峰"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头有反差，中段从供电补位推进到价格机制和极端情形，结尾完成自然转折，追看动力完整。",
+      "script_spans": [
+        "干旱让水电变贵，转型却没被天气掐住。",
+        "那价格怎么稳？现货市场像实时菜价，把贵时段标出来",
+        "未来看天吃饭，慢慢变成看系统怎么聪明调度了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、问答和生活化比喻让内容基本好读；但“水电坝里”等搭配拗口，术语压缩削弱顺滑度。",
+      "script_spans": [
+        "你想啊，水电少了，风光顶上",
+        "水电坝里靠水流落差带机器",
+        "多能互补让各类电源搭伙调度扛波动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和口语化短句服务解释，“现货市场像实时菜价”最易复述，结尾也留下清晰记忆点。",
+      "script_spans": [
+        "多源搭把手才稳。",
+        "现货市场像实时菜价，把贵时段标出来",
+        "未来看天吃饭，慢慢变成看系统怎么聪明调度了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有总述、解释、转折和回扣，主线可跟随；但现货价格如何转成系统成本下降的因果桥偏短，‘风光顶上’也较绝对。",
+      "script_spans": [
+        "不是说水电不发了，而是多源搭把手才稳。",
+        "不过极端旱情局部还是会紧，像西南前几年大旱，水电曾掉大半，那时还得别的电源顶上。",
+        "那价格怎么稳？现货市场像实时菜价，把贵时段标出来，大家看见贵就错峰，整体成本就被摊薄了。",
+        "水电少了，风光顶上，系统就不至于抓瞎。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动或危险内容，也提示极端旱情边界；但“成本被摊薄”“少开电器就行”略显绝对。",
+      "script_spans": [
+        "不过极端旱情局部还是会紧",
+        "整体成本就被摊薄了。",
+        "高峰少开大功率电器就行。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7b7b919ba1d4469ea204859b453ee197",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

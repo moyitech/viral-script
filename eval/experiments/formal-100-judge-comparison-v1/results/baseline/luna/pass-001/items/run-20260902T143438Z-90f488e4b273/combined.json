@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-a117773f0b09423c9d561d821d14a71c",
+  "run_id": "run-20260902T143438Z-90f488e4b273",
+  "trace_sha256": "b3253c0c48eaa53ee65c06c4e4adb80e91414c7d17d52dfe25e23820a88f96ce",
+  "created_at": "2026-09-03T11:50:51.811490Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从消费者支出变化切入，同时解释低价退潮、新规影响和冲动消费，覆盖多花与可能省钱两侧。",
+      "script_spans": [
+        "升是因没了比价你懒得货比三家，降是因不用凑满减被套牢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 440，目标为 450，偏差率为 2.22%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕低价退潮后的支出变化，兼顾规则、行业和消费心理，并给出可执行的判断方法。",
+      "script_spans": [
+        "沉住气看用料和售后，比质价比反而淘好货。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差鲜明，中段从规则转到消费心理，结尾追问自然；但“升降”两条因果略跳，推进略有松动。",
+      "script_spans": [
+        "竟花更少？也可能多花。",
+        "不喊最低价的场子，是帮你省心，还是悄悄拿了选价权？",
+        "升是因没了比价你懒得货比三家，降是因不用凑满减被套牢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有“指尖一滑”等口语重音，但多处句子压缩生硬，需重断句或补词，整体只能顺读。",
+      "script_spans": [
+        "指尖一滑，钱就出去了。",
+        "你刚看直播主播不保最低价，竟花更少？",
+        "最强依据是新规让强制比价词消失，你失去公开锚点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“口袋松了。指尖一滑，钱就出去了”具象好记，“悄悄拿了选价权”也有余味，修辞没有堆砌。",
+      "script_spans": [
+        "口袋松了。指尖一滑，钱就出去了。",
+        "不喊最低价的场子，是帮你省心，还是悄悄拿了选价权？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "规则、行业、消费者三层推进清楚，但部分因果推导过快，结尾转向选价权，未完全回扣花更多的条件。",
+      "script_spans": [
+        "升是因没了比价你懒得货比三家，降是因不用凑满减被套牢。",
+        "定价权回来，商家敢标实价，不再虚高再打折。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规导向，也保留了涨跌两种可能；但将监管效果、平台做法和冲动消费因果说得过满，容易造成泛化误导。",
+      "script_spans": [
+        "你支出或升或降。",
+        "沉住气看用料和售后，比质价比反而淘好货。",
+        "最强依据是新规让强制比价词消失，你失去公开锚点。",
+        "直播间一句最低价，本来就是吸引你冲动的钩子。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-45c183138c7a4de585a34b7bff8291c2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ab53dd2cf8644e74b85d330d740a468b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

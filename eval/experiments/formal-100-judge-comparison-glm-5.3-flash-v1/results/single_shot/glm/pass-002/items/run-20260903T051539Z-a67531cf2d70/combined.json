@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-a43d55985e9a4987926a2b9408000122",
+  "run_id": "run-20260903T051539Z-a67531cf2d70",
+  "trace_sha256": "0ee315b9c9bb2923aea3fd04d335ee64ab4ce892e566eceab6a5fd64a60e7d2e",
+  "created_at": "2026-09-03T15:28:22.359226Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答'多数人交学费'，中段解释广告为何泛滥，结尾回扣增收正道，两侧与人群全覆盖。",
+      "script_spans": [
+        "看上去是带你增收，其实大多数人是在乖乖交学费",
+        "真正能增收的路径，从来不是买一套现成话术，而是先把手头的小技能磨熟，再慢慢接单变现"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据、贷款陷阱、规则漏洞、防坑动作层层推进，无同义复读，观众能带走具体判断方法。",
+      "script_spans": [
+        "技能培训已经成了维权重灾区，平均每一笔纠纷涉及金额超过七千元",
+        "看到副业课，先去搜搜机构有没有投诉记录",
+        "钱交出去那刻，主动权就不在你手里了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即完成增收与交学费的反转钩子，中段以数据、追问、漏洞层层推进，结尾观点自然生长有回味。",
+      "script_spans": [
+        "你刷到的那些副业培训广告，看上去是带你增收，其实大多数人是在乖乖交学费",
+        "那为什么平台明明收紧了规则，这类广告还满天飞",
+        "真正能增收的路径，从来不是买一套现成话术，而是先把手头的小技能磨熟，再慢慢接单变现"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口干净，对话感贯穿全篇，重音停顿清楚，通读无需改词，节奏自然。",
+      "script_spans": [
+        "看上去是带你增收，其实大多数人是在乖乖交学费",
+        "钱交出去那刻，主动权就不在你手里了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比与口语表达服务理解，‘主动权就不在你手里’与‘天选之子’对照离开上下文仍可复述，无堆砌。",
+      "script_spans": [
+        "看上去是带你增收，其实大多数人是在乖乖交学费",
+        "钱交出去那刻，主动权就不在你手里了",
+        "第一反应应该是‘我又不是那个天选之子’，而不是‘这次轮到我赚钱’"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "问答式过渡承接规则与漏洞，预付式回接退费难题，结尾回扣开头与题设，因果链完整。",
+      "script_spans": [
+        "那为什么平台明明收紧了规则，这类广告还满天飞？",
+        "可很多账号换了‘分享我自己出单经验’的说法，就把人引流到私域聊天，脱离了审核视野",
+        "再加上培训普遍是预付式，钱交出去那刻，主动权就不在你手里了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体是防骗提示，导向安全；但“大多数人是在乖乖交学费”缺乏数据支撑，“从来不是”过于绝对，需补边界。",
+      "script_spans": [
+        "看到副业课，先去搜搜机构有没有投诉记录",
+        "其实大多数人是在乖乖交学费",
+        "真正能增收的路径，从来不是买一套现成话术"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6f0af8fb6af64ad58a65f6436865c6a4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

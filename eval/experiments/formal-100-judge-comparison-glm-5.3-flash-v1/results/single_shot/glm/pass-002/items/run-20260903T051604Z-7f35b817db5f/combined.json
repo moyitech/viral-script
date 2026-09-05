@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-b4dd6336bfd34d0ead2132c53ca03542",
+  "run_id": "run-20260903T051604Z-7f35b817db5f",
+  "trace_sha256": "53c42c92cb250c15acdefecad7cdae11f487acb04f0badc7b729f0badd66bc7e",
+  "created_at": "2026-09-03T15:29:02.195288Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "全文紧扣门禁之争，安全与效率两侧均给出解法，结尾划线细节直指点外卖的居民，切角具体不空谈。",
+      "script_spans": [
+        "一刀切禁止骑手进小区，表面省心，实际两头不讨好，真正的出路是把通行规则细化到楼栋和时段"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "效率账、社区案例、平台算法层层推进，案例与机制有据可依，还交代适用边界，信息密度扎实。",
+      "script_spans": [
+        "骑手停好车步行上楼，居民让出门口一小块地，换来了送货上门",
+        "给小区通行类型打标签，复杂内部环境转由固定人员集中取送"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头门禁拦骑手配热汤面凉半截制造反差，中段连环设问推进，结尾划线建议由正文自然生长。",
+      "script_spans": [
+        "可你有没有想过，把人挡在铁门外，楼里的盗窃风险未必真降多少，你的热汤面却先凉了半截",
+        "那有没有小区试过不这么硬碰硬？",
+        "下次抱怨骑手迟到时，先看看小区门口有没有一块让他停稳的划线，那比装十道锁都管用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "热汤面、扛箱跑楼等表达生动，短句气口尚可；但平台段照搬政策文件腔，'让渡边界感'等书面词需临场改口。",
+      "script_spans": [
+        "骑手停好车步行上楼，居民让出门口一小块地，换来了送货上门",
+        "部分外卖平台已对照算法新要求，给小区通行类型打标签，复杂内部环境转由固定人员集中取送"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "账本、扛箱跑楼等形象表达服务理解，门禁关便利开规则一句离开上下文仍可复述，修辞克制。",
+      "script_spans": [
+        "最后一百米变成扛箱跑楼",
+        "门禁关上的是便利，该打开的是规则",
+        "居民让出门口一小块地，换来了送货上门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "禁入后果因果链完整，两处设问承接自然，结尾划线回扣开头铁门，段落各司其职。",
+      "script_spans": [
+        "禁入后骑手只能门口交接，最后一百米变成扛箱跑楼",
+        "门禁关上的是便利，该打开的是规则。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "兼顾居民与骑手双方立场，观点均有限定，无煽动夸大，结尾比喻属修辞不误导。",
+      "script_spans": [
+        "物业为什么趋严？陌生电动车在儿童区穿行、闲杂人员混入，居民投诉有道理。",
+        "不过这套在窄旧小区或强隐私楼盘未必行得通，空间本就不富余，照搬反而添堵。",
+        "技术填不平所有沟，但减少了人与人的摩擦，也让用户理解延迟不是骑手懒。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3f11cfa50ff44d58bc26c3a0e4f91eb0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

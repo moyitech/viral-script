@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-c7f8bd8fd6014c059e907457110f9c9e",
+  "run_id": "run-20260903T051546Z-a7bf57d3d0f8",
+  "trace_sha256": "45f62c880b33ece2b0ec187e657889d98d37de607ee5e4d07681c6e5022ae85a",
+  "created_at": "2026-09-03T15:29:41.880391Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "首句即正面回答题设，高层与低层两侧、程序与补偿两要点都覆盖，结尾自然回扣。",
+      "script_spans": [
+        "多数人的便利不等于少数人就得认亏让步",
+        "高层别拿“多数决”压人，低层也别消极拖延"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "程序条件、物权保留、判例补偿、外挂矛盾各信息单元递进，有引用佐证，无同义注水。",
+      "script_spans": [
+        "法律上的多数业主同意，只是启动改建的程序条件",
+        "一楼二楼业主因电梯井遮挡通风采光、带来噪音或房屋贬值，常依公平原则拿到实质补偿"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头以多数与少数的冲突直接入题，民法典与判例信息持续，但讲解味重、推进趋平，结尾建议式收束缺互动拉力。",
+      "script_spans": [
+        "多数人的便利不等于少数人就得认亏让步",
+        "加装电梯本质是改造共有部分，需平衡各方利益。",
+        "最好在方案公示时就亮明异议、谈妥补偿，避免最后对簿公堂"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "首尾有对话感，但中段“带来噪音或房屋贬值”“需平衡各方利益”搭配生硬，朗读需临时换词。",
+      "script_spans": [
+        "电梯紧贴低层窗外，矛盾天生尖锐",
+        "既伤钱又伤邻里感情",
+        "因电梯井遮挡通风采光、带来噪音或房屋贬值",
+        "需平衡各方利益"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“高层别拿多数决压人”对仗可复述，“矛盾天生尖锐”有形象，但说明性表达偏多，记忆点力度普通，不够出彩。",
+      "script_spans": [
+        "高层别拿“多数决”压人，低层也别消极拖延",
+        "矛盾天生尖锐",
+        "民法典虽降低了改建表决门槛，但低层住户的物权和居住安宁不受影响。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "立论、法理、判例、根源到对策层层递进，“所以”承接有力，结尾回扣开头与题设。",
+      "script_spans": [
+        "民法典虽降低了改建表决门槛，但低层住户的物权和居住安宁不受影响",
+        "最好在方案公示时就亮明异议、谈妥补偿，避免最后对簿公堂"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "不拉偏架不煽动对立，“常依公平原则”留有余地，建议务实有边界，价值导向安全。",
+      "script_spans": [
+        "常依公平原则拿到实质补偿",
+        "高层别拿“多数决”压人，低层也别消极拖延",
+        "最好在方案公示时就亮明异议、谈妥补偿，避免最后对簿公堂"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ce4268fff05a4afc9cc7cc27d1c12c64",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

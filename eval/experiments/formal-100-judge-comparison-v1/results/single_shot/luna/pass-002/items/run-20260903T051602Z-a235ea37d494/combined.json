@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-e137471afdef4acf93f98b5983207e5f",
+  "run_id": "run-20260903T051602Z-a235ea37d494",
+  "trace_sha256": "2f1bcba772830286659b39a68c5b9ffa936237cab3c26a29e2085a35b9218218",
+  "created_at": "2026-09-03T12:31:42.048895Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即回答视频能否证明身份，并覆盖家庭群诈骗、识别局限与核验方法，选题两侧完整命中。",
+      "script_spans": [
+        "在深度伪造泛滥的现在，视频通话里的“亲眼所见”只能算线索，不能算身份证据。",
+        "视频通话的价值，是提醒你“可能有事”，而不是“此人无疑”。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕视频身份核验，解释受骗机制、技术局限和替代流程，多个信息单元连续推进。",
+      "script_spans": [
+        "为什么家庭群成了重灾区？因为长辈最吃“眼见为凭”这套，他们默认镜头前就是真人。",
+        "提前和亲人约个暗号，比如只有你们知道的一句废话，或者挂掉后用电信号码回拨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出家庭转账危机，中段连续拆解误区，结尾落到可执行的核验流程，推进完整。",
+      "script_spans": [
+        "你姑姑晚上发来视频通话，背后是医院走廊，声音带着哭腔说表弟车祸要押金。",
+        "下次镜头里亲人急用钱，先挂断，用另一渠道对暗号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "案例抓人，反问和操作建议清楚；但多处术语化、书面化表达，加上两处语病，影响连续口播。",
+      "script_spans": [
+        "脸可以造假，流程不能省",
+        "先挂断，用另一渠道对暗号",
+        "平台确实在接深度伪造检测",
+        "最好把暗号写在纸贴在冰箱",
+        "这是2026年每个家庭群该贴里的公告"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“脸可以造假，流程不能省”简洁有对照和复述价值；“信任链”“缝”等意象克制，未压过信息。",
+      "script_spans": [
+        "家庭群里的信任链，恰恰是最容易被AI撬开的缝。",
+        "脸可以造假，流程不能省"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由案例钩子提出判断，继而解释受骗原因、回应平台疑问，最后落到跨渠道核验，结构递进且回扣自然。",
+      "script_spans": [
+        "那你可能会问，平台不是有检测工具吗，怎么不拦住？",
+        "所以家庭群里最管用的不是新技术，是老办法。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "防骗建议安全且不煽动，但“肉眼根本分不出”等绝对表述易造成过度恐慌，需改为强调仅凭肉眼难以判断。",
+      "script_spans": [
+        "先挂断，用另一渠道对暗号，别让脸和声音替你做决定",
+        "技术方在追生物信号，可肉眼根本分不出"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f727ae035dc14219b318144c5b358186",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

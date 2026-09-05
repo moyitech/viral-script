@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-9162e4061f834af28be25d854275ebc8",
+  "run_id": "run-20260902T145122Z-d39fc9acbdbb",
+  "trace_sha256": "463fb8c842b92d019db2771112ae9a6a85b3a240f8677f53b2cfa97a1015fccc",
+  "created_at": "2026-09-03T11:45:32.347766Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答能否让步，并同时交代高层需求、低层损失与协商补偿，核心对象和冲突两侧齐全。",
+      "script_spans": [
+        "答案是否定的。法律不讲谁人多谁有理。",
+        "所以老楼加电梯算平衡账，不是票数账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 272，目标为 280，偏差率为 2.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕公平加梯持续推进，写出出行需求、采光噪音、房价影响、补偿与协议等具体信息。",
+      "script_spans": [
+        "法院审理时依公平原则，认低层受损，判获数万元补偿。",
+        "记住先签白纸黑字补偿协议再开工最稳当。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出多数与少数的冲突，中段以老人需求、实际损失和补偿判例推进，结尾余味自然。",
+      "script_spans": [
+        "多数人的便利能硬挤他们让步吗？",
+        "法院审理时依公平原则，认低层受损，判获数万元补偿。",
+        "只讲便利不讲公道，电梯通了邻里情也断了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头问答和结尾比喻有口播感，整体能读通；但“架井道”“判获”等说法拗口，核心解释需临时换词。",
+      "script_spans": [
+        "多数人的便利能硬挤他们让步吗？",
+        "但装电梯常在外墙架井道，低层屋里变暗，白天也得开灯，还有嗡嗡声。",
+        "法院审理时依公平原则，认低层受损，判获数万元补偿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“平衡账，不是票数账”准确提炼核心观点，末句形成反差和余味，修辞克制且便于复述。",
+      "script_spans": [
+        "所以老楼加电梯算平衡账，不是票数账。",
+        "只讲便利不讲公道，电梯通了邻里情也断了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提问定结论，再解释双方利益冲突，最后落到补偿协商和书面协议，回扣“平衡账”自然。",
+      "script_spans": [
+        "但装电梯常在外墙架井道，低层屋里变暗，白天也得开灯，还有嗡嗡声。",
+        "所以老楼加电梯算平衡账，不是票数账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "立场兼顾高层便利与低层权益，但“常掉一截”“判获数万元”等概括偏满，法律建议也缺少地域和个案边界。",
+      "script_spans": [
+        "得面对面聊，给受影响邻居合理赔偿",
+        "等卖房时一楼二楼市价常掉一截，不好出手。",
+        "表决规则虽认可加装，但不能拿多数同意硬压少数户。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e9cff11b55884caca5e233db29e98e52",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d66d19f3993d488fa7c7b1a82c072087",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

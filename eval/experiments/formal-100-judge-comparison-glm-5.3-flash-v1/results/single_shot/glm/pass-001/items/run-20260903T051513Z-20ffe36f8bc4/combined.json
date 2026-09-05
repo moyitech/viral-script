@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-f4370f620ac44ef69fdd2f12ab50174f",
+  "run_id": "run-20260903T051513Z-20ffe36f8bc4",
+  "trace_sha256": "fa51f2134193f6e2c7c26c90fd9932ea1104ea6efb65a5d7d5636bc6f18b9f21",
+  "created_at": "2026-09-03T14:10:47.351503Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇抛出循环与盲区之问，正文以判断句正面回应两侧，并以官翻渠道建议落到普通买家痛点。",
+      "script_spans": [
+        "它确实是资源循环的真实路径，但盲区得靠规则而非侥幸来避开",
+        "对普通人，影响很实在"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 405，目标为 450，偏差率为 10.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策底线、作坊乱象、市场体量与自查方法依次推进，信息单元互不重复，结尾给出可带走判断。",
+      "script_spans": [
+        "国家正在完善二手商品交易制度，明确再制造产品的性能与安全环保指标不得低于新品",
+        "电池健康度自己能查，主板暗伤却难防，所以渠道就是防线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头半价与拼装主板的反差直接抓人，中段从政策底线转到小作坊乱象再落到普通人建议，层层兑现钩子，结尾余味自然生长。",
+      "script_spans": [
+        "你花一半价钱拿到的“95新”手机，可能藏着拼装主板",
+        "但落地时，许多小作坊只做外壳抛光、贴膜伪装",
+        "只是这条链子，得亮出来才作数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与对仗节奏清楚，但政策转述句拗口、『鸿沟就此拉开』偏书面，朗读需临时换词。",
+      "script_spans": [
+        "电池健康度自己能查，主板暗伤却难防，所以渠道就是防线",
+        "明确再制造产品的性能与安全环保指标不得低于新品",
+        "官方翻新和街边翻新的鸿沟就此拉开"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对照与比喻点到即止、服务理解，“渠道就是防线”“得亮出来才作数”均可离稿复述，无堆砌炫技。",
+      "script_spans": [
+        "可能藏着拼装主板，也可能真让矿山少挖一层",
+        "电池健康度自己能查，主板暗伤却难防，所以渠道就是防线",
+        "只是这条链子，得亮出来才作数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "硬底线与落地落差构成转折，“电池能查、暗伤难防”搭起因果桥，结尾回扣省钱减废与亮链之问。",
+      "script_spans": [
+        "但落地时，许多小作坊只做外壳抛光、贴膜伪装，电池衰减和维修记录全无披露",
+        "循环账里省下的钱和少掉的垃圾都是真的，只是这条链子，得亮出来才作数"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键断言多带“可能”“往往”“尽量”等限定，政策转述与文件口径一致，建议附边界，无夸大或煽动。",
+      "script_spans": [
+        "你花一半价钱拿到的“95新”手机，可能藏着拼装主板",
+        "尽量走品牌官翻或带质检的平台，别碰无凭证小店",
+        "翻新机价格往往只有新机几成"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-aad01a9dc09a4e149f610379c2132919",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d98ac40863e6468d8e6628f294ef1ab2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

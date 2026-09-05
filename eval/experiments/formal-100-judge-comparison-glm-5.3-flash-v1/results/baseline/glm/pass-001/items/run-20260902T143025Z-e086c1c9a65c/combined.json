@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-de935b9c45d74d6aa2fa26918f54f8aa",
+  "run_id": "run-20260902T143025Z-e086c1c9a65c",
+  "trace_sha256": "993baaed8ff61b74e752e29022309c0bd221e884a7af973f8a576060c457100a",
+  "created_at": "2026-09-03T13:45:35.283596Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛家长场景即入题，纪律与个性两侧都接住，结论直答'不能忽视'，人群痛点贴合。",
+      "script_spans": [
+        "学校抓纪律没错，但拿统一发型硬刚个性，可能就越界了",
+        "普通家庭怎么受影响？孩子因发型不合被挡在校门外，这像变相停课，罚得偏重"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 434，目标为 450，偏差率为 3.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从规范条文到权利依据、军队类比反驳再到家长对策，信息单元层层推进，无编造无复述。",
+      "script_spans": [
+        "教育部规范只禁烫染和怪异发，全国没强制统一长度标准",
+        "可军人发型是法律强制的公务需要，校园管理是教育，没这权力，两件事不能混为一谈"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字即现亲子与校规冲突，中段以规范边界、军警对比、变相停课持续兑现，结尾问句由寸头令自然生长，余味足。",
+      "script_spans": [
+        "你刚给孩子扎好马尾，老师却说这发型不让进校？",
+        "常有人拿部队整齐来比学生，可军人发型是法律强制的公务需要",
+        "下次见到寸头令，你不妨问：纪律的尺子，该由法律还是眉毛量？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口为主、对话感强，但“怪异发”“纪律为习惯”两处需临时换词重断，按规则封顶2分。",
+      "script_spans": [
+        "平时多教娃，仪容干净就够，不必为头发跟学校硬顶。",
+        "教育部规范只禁烫染和怪异发",
+        "纪律为习惯，不是复制外表"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，头发连着身体自主权讲得形象；纪律的尺子一句离开上下文仍可复述，仅纪律为习惯稍生硬。",
+      "script_spans": [
+        "头发长在自己头上，连着身体自主权",
+        "管仪容整洁可以，但不能管到思想顺从",
+        "纪律的尺子，该由法律还是眉毛量？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问过渡清晰，军队类比的反驳搭好因果桥，结论'管仪容可以、不管思想顺从'不扩大，结尾回扣题设。",
+      "script_spans": [
+        "头发长在自己头上，连着身体自主权，法律保护人格尊严",
+        "管仪容整洁可以，但不能管到思想顺从。纪律为习惯，不是复制外表"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论多留余地，建议平和沟通与正规反映渠道，无煽动夸大，核心论断与规范事实相符，边界清楚。",
+      "script_spans": [
+        "学校抓纪律没错，但拿统一发型硬刚个性，可能就越界了",
+        "强制一律剪短，可能侵犯孩子权利",
+        "家长先平和问老师：整洁就行吧？"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-49ba1c28d4954aabb952c571fd273748",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-80f0f230182644b99fbd81b66369605c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

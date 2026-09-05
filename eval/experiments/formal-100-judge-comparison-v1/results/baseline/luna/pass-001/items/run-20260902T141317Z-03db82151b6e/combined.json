@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-de175ba852fd404f89bf86cbd65dae71",
+  "run_id": "run-20260902T141317Z-03db82151b6e",
+  "trace_sha256": "d0ae178a5dc1cc6d7b9bb84a3bf69feeeca1b243405538316e4c2cf6aba7612a",
+  "created_at": "2026-09-03T11:44:00.293517Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答申诉是否更难，既讲智能客服的阻碍，也交代人工兜底和用户操作，核心受众明确。",
+      "script_spans": [
+        "机器先挡一道关卡，但留了保底。",
+        "复杂申诉你直接喊转人工"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 264，目标为 280，偏差率为 5.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕人机客服协同，规则要求、企业责任、投诉痛点和申诉做法形成连续的信息推进。",
+      "script_spans": [
+        "智能和真人要顺畅接力。",
+        "你碰账号钱财或安全明说转人工，系统就得优先派真人。",
+        "企业那头也不能拿AI自动生成当挡箭牌，把责任推干净。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出AI绕晕与新规保底的冲突，中段持续补充转人工和责任边界，结尾行动号召自然落地。",
+      "script_spans": [
+        "AI绕晕你吞申诉，九月新规却塞人工口。",
+        "算法能挡一时，挡不了你开口要真人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和指令感利于口播，但多处搭配生硬，影响连贯与自然。",
+      "script_spans": [
+        "复杂申诉你直接喊转人工，别在层层菜单里白绕。",
+        "短视频全面接智能客服，你申诉不会更难治。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“算法能挡一时，挡不了你开口要真人”的记忆点，但“塞人工口”“不会更难治”措辞生硬，修辞略显用力。",
+      "script_spans": [
+        "算法能挡一时，挡不了你开口要真人。",
+        "AI绕晕你吞申诉，九月新规却塞人工口。",
+        "短视频全面接智能客服，你申诉不会更难治。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有钩子、展开、行动建议和回扣，但“投诉上涨”到“承诺难追究”的因果略跳，且开头“更难治”明显拗口。",
+      "script_spans": [
+        "机器先挡一道关卡，但留了保底。",
+        "下次被绕就索性要人工，别让冷冰冰代码替你吃亏。",
+        "你申诉不会更难治。",
+        "上半年这类智能客服投诉涨得明显，症结就是从前AI承诺难追究。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，人工转接与责任边界交代清楚；但“不会更难治”近似保证，复杂申诉建议加适用条件。",
+      "script_spans": [
+        "智能和真人要顺畅接力。",
+        "你申诉不会更难治。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-01e057a5d1684784ba7009d35f3b560a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-03f4966d9a614a31aa35a327941610eb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-b426a518a72149dfbd8c22e5dcf3ee2c",
+  "run_id": "run-20260902T143406Z-0ec49ca31b4d",
+  "trace_sha256": "d8ec5d650f0e986c667fb3c6be4fd509a07418885d3bc42b4bf8dc5c7d34bd7b",
+  "created_at": "2026-09-03T13:46:42.231413Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛出负担之问，正文用软强制与层层加价正面作答，结尾落回家长决策，全程扣题。",
+      "script_spans": [
+        "课堂外教育为啥成负担？卡在自愿变软强制，钱花得不明不白"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 635，目标为 700，偏差率为 9.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策、加价链、价格锚点层层推进，数据缺口如实交代而不编造，主题集中信息密。",
+      "script_spans": [
+        "机构接手，交通要租车，过夜要住宿，导师要薪酬，手册要印刷，每一层都加价",
+        "在北京，高品质半日游约三百，走十二天国外线报价三到四万"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即摆出掉队与吃土两难，中段以设问层层兑现新信息，结尾问娃、买书由正文自然长出余味。",
+      "script_spans": [
+        "家长怕不报研学孩子掉队，报了又月月吃土。",
+        "老师不点名，群里接龙排队，你不接就显眼。",
+        "下次表格递来，先问娃：这趟你真想学点啥？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口密集，排比与设问推进节奏清楚，'娃能不去吗''月底得紧巴巴'等表达真人可照读，无需临时改词。",
+      "script_spans": [
+        "机构接手，交通要租车，过夜要住宿，导师要薪酬，手册要印刷，每一层都加价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "排比算账帮助理解，把好奇秤成利润与钱包窟窿离文仍可复述，修辞点到为止，无堆砌炫技。",
+      "script_spans": [
+        "每一层都加价，公益二字就淡了。",
+        "账本不透明时，课堂外教育先成了钱包窟窿。",
+        "把好奇秤成利润"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "问答式推进、因果桥大多清楚，但只旅不学一段转折指代不明，追问即断，稍欠打磨。",
+      "script_spans": [
+        "老师不点名，群里接龙排队，你不接就显眼。这压力比文件实在，软强制叫人难躲",
+        "也有只旅不学的情况，钱花得更冤。可老调查样本偏旧不一定准"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "数据存疑处主动交代边界，批评有政策与成本依据，不夸大不煽动，结尾建议克制稳妥。",
+      "script_spans": [
+        "但没单独拆研学占比，咱说不准精确比重",
+        "真做课程不便宜。半日研学课，研发可能熬十天"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b4cc0a4a65074b9b9d090315c5905ab8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-608d1a4519c04692982e5ed2afd2c253",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

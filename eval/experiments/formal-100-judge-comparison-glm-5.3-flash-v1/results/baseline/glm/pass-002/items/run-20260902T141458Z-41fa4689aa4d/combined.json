@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-e9598277c27641ca80f688591b96c863",
+  "run_id": "run-20260902T141458Z-41fa4689aa4d",
+  "trace_sha256": "58dc10e5f1f81f0dc589781db2d2569c317f4d89842dacf43ff29a391c2163d8",
+  "created_at": "2026-09-03T14:23:16.464096Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直抛封号申诉之问，正文以'不会一边倒更难'作答，封号限流人群与新旧两面均覆盖，切角具体。",
+      "script_spans": [
+        "你刚被短视频封号，转人工却卡在AI循环里耗掉半天。短视频全面接智能客服，申诉会更难吗？",
+        "九月起不会一边倒更难，前提是规矩落地生效。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "投诉数据、国标发布实施、转人工细则到实操止损建议层层推进，信息单元各异且与引用背景相符，无编造。",
+      "script_spans": [
+        "中消协点名转人工不畅，上半年这类投诉涨超两成。",
+        "涉财产人身，比如账号被盗余额被划，优先排人工。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "前20字封号卡AI循环冲突具体；第二段痛点与开头重复致推进趋平，结尾口号收束，缺互动抓手。",
+      "script_spans": [
+        "你刚被短视频封号，转人工却卡在AI循环里耗掉半天",
+        "当冷菜单变热对接，我们维权的步子，能迈得更实了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主，气口与重音清楚，'机器人绕圈，真人不露面'节奏明快，通篇朗读无需改词，对话感自然。",
+      "script_spans": [
+        "机器人绕圈，真人不露面。你打半天字，它回固定话术",
+        "以前你气得摔手机，现在规则撑腰"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞服务理解，'接力要稳''冷菜单变热对接'离开上下文可复述，密度克制无堆叠炫技。",
+      "script_spans": [
+        "名字拗口，核心就一句接力要稳",
+        "拿算法当挡箭牌",
+        "当冷菜单变热对接"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "痛点铺垫、国标解读、场景落地、止损建议四段递进，结尾'冷菜单变热对接'自然回扣开头，因果桥接清晰。",
+      "script_spans": [
+        "以前你气得摔手机，现在规则撑腰。",
+        "当冷菜单变热对接，我们维权的步子，能迈得更实了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键断言留有“规矩落地”前提，涉财产优先人工与找消协留证表述稳妥，无夸大、无误导或争议归因。",
+      "script_spans": [
+        "九月起不会一边倒更难，前提是规矩落地生效",
+        "涉财产人身，比如账号被盗余额被划，优先排人工",
+        "若入口藏起，你截屏留证找消协反映"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-fa6f8208dc4c43288b922ec25a117608",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

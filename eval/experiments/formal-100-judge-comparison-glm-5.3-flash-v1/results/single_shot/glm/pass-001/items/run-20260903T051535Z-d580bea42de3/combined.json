@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-870a4715a5ca400199c59d7028376a29",
+  "run_id": "run-20260903T051535Z-d580bea42de3",
+  "trace_sha256": "5c40cdf9a39a147f1cc1b0bfda97ff51d1d07cfaffe9be6939963c9aa8d3821a",
+  "created_at": "2026-09-03T14:10:14.365875Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点明循环经济与风险两面，政策与市场双侧展开，并落到普通用户选购，正面回应题设。",
+      "script_spans": [
+        "本质是循环经济在消费端的落地，但把它当成毫无风险的便宜货就错了",
+        "所以普通用户买这类产品，一定认准带验机报告和质保的渠道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 252，目标为 280，偏差率为 10.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策红线、亿级规模、暗病盲区层层推进，与资料相符无编造，观众能带走具体判断方法。",
+      "script_spans": [
+        "明确再制造品质量和安全环保性能不低于原型新品，给行业划了红线",
+        "非正规翻新常缺统一检测，电池主板暗病才是真正盲区"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头先抽象定性再出反差，中段靠暗病盲区推进尚可，但结尾“确实有意义”平淡收束，缺余味与互动冲动。",
+      "script_spans": [
+        "但把它当成毫无风险的便宜货就错了",
+        "电池主板暗病才是真正盲区",
+        "这种循环模式若规范好，对减少电子废弃物确实有意义。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体读得通，但“再制造品质量和安全环保性能不低于原型新品”拗口费气，“若规范好”偏书面，朗读需两处临时换词。",
+      "script_spans": [
+        "一定认准带验机报告和质保的渠道，别只看价格低",
+        "明确再制造品质量和安全环保性能不低于原型新品",
+        "这种循环模式若规范好，对减少电子废弃物确实有意义"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“划红线”“盲区”“暗病”有局部修辞服务理解，但主体是政策通报式书面句，缺一句观众愿复述的话。",
+      "script_spans": [
+        "给行业划了红线",
+        "电池主板暗病才是真正盲区",
+        "本质是循环经济在消费端的落地",
+        "明确再制造品质量和安全环保性能不低于原型新品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "‘从政策看’‘而从市场看’‘所以’桥接清楚，结论由盲区分析推出，结尾回扣循环模式。",
+      "script_spans": [
+        "所以普通用户买这类产品，一定认准带验机报告和质保的渠道",
+        "这种循环模式若规范好，对减少电子废弃物确实有意义"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "明确提示翻新风险，建议认准验机报告和质保渠道，属保护性提醒；环保收益用'若规范好'限定，政策表述有据，无夸大承诺。",
+      "script_spans": [
+        "但把它当成毫无风险的便宜货就错了",
+        "一定认准带验机报告和质保的渠道，别只看价格低",
+        "若规范好，对减少电子废弃物确实有意义"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c63ac93449504ef9a1bafecd2df2dadb",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-fb9c1be371264504af6390e91276f2d8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

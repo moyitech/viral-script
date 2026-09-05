@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-4a5b8687fac34c5f8f9d245ec899f24e",
+  "run_id": "run-20260903T051542Z-39e8ee37bec4",
+  "trace_sha256": "5f83c206ed7a4e3fb3e5cba2d253904ab72318cd1603cf0dc86cb8a52f3aad96",
+  "created_at": "2026-09-03T12:45:52.368635Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应囤药带来的安全感、浪费与风险，并给出具体备药建议，覆盖题设两侧。",
+      "script_spans": [
+        "打开自家药柜看看，里面塞满常用药，真能换来那份心安吗？",
+        "真想留点药防身，先翻出家里抽屉已有的好好盘点一下，只补最用得着的一两种"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦囤药后果，保质期、转卖、弃置和备药建议层层增加有效信息。",
+      "script_spans": [
+        "很多家庭当初跟风囤下的感冒药退烧药，直到放过期也没吃上几回",
+        "个人想把剩余药品转卖出去涉嫌违法",
+        "过期了记得归到有害垃圾里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用药柜反问制造悬念，中段连续推入浪费、转卖和投放风险，结尾用可执行建议留下明确余味。",
+      "script_spans": [
+        "打开自家药柜看看，里面塞满常用药，真能换来那份心安吗？",
+        "更关键的是，个人想把剩余药品转卖出去涉嫌违法",
+        "只补最用得着的一两种，放阴凉干燥处密封好"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有提问和行动建议，听感不差；但“防疫政策调整前后”等表述拗口，结尾连续动作也需重断句。",
+      "script_spans": [
+        "打开自家药柜看看，里面塞满常用药，真能换来那份心安吗？",
+        "之前防疫政策调整前后",
+        "先翻出家里抽屉已有的好好盘点一下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“手里有药心不慌”形成可复述的安全感反差，“悄悄滑向浪费和隐藏的风险”有画面，修辞不喧宾夺主。",
+      "script_spans": [
+        "手里有药心不慌",
+        "悄悄滑向浪费和隐藏的风险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，能从提问推进到风险再落到建议；但多处长句与抽屉已有的省略，口播时需重断句。",
+      "script_spans": [
+        "说实在的，那种‘手里有药心不慌’的踏实感，多半会悄悄滑向浪费和隐藏的风险。",
+        "真想留点药防身，先翻出家里抽屉已有的好好盘点一下",
+        "很多家庭当初跟风囤下的感冒药退烧药，直到放过期也没吃上几回",
+        "个人想把剩余药品转卖出去涉嫌违法，而随手把过期药扔进普通垃圾桶",
+        "先翻出家里抽屉已有的好好盘点一下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，且反对囤药和转卖；但把环境影响说成必然发生，也未提示各地过期药投放规则可能不同。",
+      "script_spans": [
+        "先翻出家里抽屉已有的好好盘点一下",
+        "又会让有害成分慢慢渗进土壤和地下水"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5989ddf4ede44b45a004d378dfcc3746",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

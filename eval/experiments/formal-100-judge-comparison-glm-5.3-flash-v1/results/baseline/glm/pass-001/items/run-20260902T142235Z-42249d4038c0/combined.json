@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-d23fce6213f04aa68a6b6d9bcc5771da",
+  "run_id": "run-20260902T142235Z-42249d4038c0",
+  "trace_sha256": "58906b2c5196492e690a5e5a9a5227f1d6d101d1c17c1a956ef0172fe84f7aa5",
+  "created_at": "2026-09-03T13:45:33.819776Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答'催缴再有理也不能曝光'，兼顾催缴与隐私两侧，并给出私聊方案，直击邻里群场景人群。",
+      "script_spans": [
+        "催缴再有理，也不能在邻里群曝光欠费邻居姓名",
+        "找物业私聊，别甩名字进群"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 282，目标为 280，偏差率为 0.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从个人画像、无权曝光、换位自省到平台违规风险逐层推进，终落私聊方案，信息单元各有增量。",
+      "script_spans": [
+        "姓名加欠费数额，就是清晰个人画像，一下认出是谁家",
+        "今天你晒他，明天别人晒你"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字内立住“有理也不能晒”的冲突，中段法律、平台、对策层层兑现，结尾提问由正文长出。",
+      "script_spans": [
+        "催缴再有理，也不能在邻里群曝光欠费邻居姓名，这侵犯隐私。",
+        "那真碰上老赖欠费咋办？找物业私聊，别甩名字进群。",
+        "下次见群里晒名单，你觉得解气还是越界？尺度谁定？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主且有'别甩名字进群'这类自然口语，但'乱发别人名踩线''下次见群里晒名单'两处压缩过度，朗读需临时补词重断。",
+      "script_spans": [
+        "咱自己换个位置想想，今天你晒他，明天别人晒你",
+        "软件许可写明了保信息安全，乱发别人名踩线。",
+        "下次见群里晒名单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "个人画像的比喻服务理解，换位对句与“理压不过权”收束句可脱离上下文复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "姓名加欠费数额，就是清晰个人画像，一下认出是谁家",
+        "今天你晒他，明天别人晒你",
+        "催缴的理压不过邻居安稳生活的权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "立论、说理、让步处理俱全，'真碰上老赖咋办'自然引出替代方案，结尾回扣'理压不过权'，链条完整。",
+      "script_spans": [
+        "那真碰上老赖欠费咋办？找物业私聊，别甩名字进群",
+        "催缴的理压不过邻居安稳生活的权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "倡导私聊解决并用'可能'限定平台后果，法律表述与个人信息保护方向一致，不煽动不夸大，边界交代清楚。",
+      "script_spans": [
+        "找物业私聊，别甩名字进群",
+        "你发群里，系统可能判违规",
+        "催缴的理压不过邻居安稳生活的权"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-38ed79b708b44c7aa57059ef776cba56",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-400c157bf3af460d9ea25f5c4cc29aa9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

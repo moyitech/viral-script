@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-65f78349086a4350a656889dfbbea5c0",
+  "run_id": "run-20260903T051619Z-14c1b330f371",
+  "trace_sha256": "214714eb4a6e78f49f83fd73941aebe91b03bab5d42323cceab171b2529d7cbc",
+  "created_at": "2026-09-03T12:32:21.223946Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“更快”与“更吵”两侧，兼顾用户时效和居民噪声感受，结论也给出判断条件。",
+      "script_spans": [
+        "快递更快实打实趋势，但城市不会变直升机工地，密集起降噪声烦恼也是真问题"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕快递提速与噪声代价，时效数据、噪声机制、技术折中和社区反馈形成连续信息增量。",
+      "script_spans": [
+        "末端配送半到一小时缩至十五到二十分，生鲜急救直接有用。",
+        "单架不震耳，但起降点贴窗顶，一天几十次累积就成干扰源。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用噪声与无人机送药制造反差，中段连续推进，结尾把争议落到具体距离，余味自然。",
+      "script_spans": [
+        "楼上突然一阵嗡嗡声，你看到无人机把药投到邻家阳台，比骑手绕路早到十分钟",
+        "那么，提速和安静只能二选一吗？技术给了折中",
+        "取决于起降点离窗几米，不只飞机能飞多高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 1,
+      "reason": "两项都被电报式压缩句拖垮，整体不适合直接录制。",
+      "script_spans": [
+        "原先审批久航线死板",
+        "诉清晨破静"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "画面化比喻不过量，结尾把噪声争议落到“离窗几米”，形成清晰、准确且可复述的判断。",
+      "script_spans": [
+        "城市不会变直升机工地",
+        "是我们重学分配头顶空间",
+        "取决于起降点离窗几米，不只飞机能飞多高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线有设问、解释、现实取舍和结论回扣；但若干因果句过度压缩，关键桥梁需观众自行补足。",
+      "script_spans": [
+        "那么，提速和安静只能二选一吗？技术给了折中：",
+        "所以低空物流加速的不是噪音本身，是我们重学分配头顶空间。",
+        "空域越开效率越高，居民对头顶物体容忍线靠密度时段磨合。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体承认提速与噪声的两面性，也提出实测边界；但“单架不震耳”“比直升机柔和”缺少条件限定，可能淡化噪声风险。",
+      "script_spans": [
+        "不能假装看不见",
+        "边界靠实测调",
+        "单架不震耳",
+        "几百米高比直升机柔和"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-49c5458710d04c2e9fe2c0895ccde565",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

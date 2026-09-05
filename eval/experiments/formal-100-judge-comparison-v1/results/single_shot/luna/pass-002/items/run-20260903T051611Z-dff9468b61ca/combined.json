@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-f832597c851646f798c87db43af795af",
+  "run_id": "run-20260903T051611Z-dff9468b61ca",
+  "trace_sha256": "e5e454ecf2f3f2fb63e318112f288a7569b1802a6b093057a12957fd97d8f659",
+  "created_at": "2026-09-03T12:31:52.221609Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直答海鲜是否涨价，既呈现升温对养殖的冲击，也覆盖供给缓冲和消费者应对。",
+      "script_spans": [
+        "海水持续升温让近海网箱和滩涂养殖直面热浪威胁，但你餐桌上常见的海鲜短期未必会明显更贵。",
+        "如果你担心钱包，平时买海鲜多留意局部受灾产地的鲜货品种就行"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中在“短期未必涨价”，从灾害影响推进到产量、替代供给和调运缓冲，最后给出消费判断。",
+      "script_spans": [
+        "还伴随赤潮等生态灾害多发，打乱了生物生长节律，让渔民更难预判当年收成",
+        "国内海水养殖总产量这些年依然保持稳步扩张，淡水养殖同样在增量互补",
+        "市场供给有较强缓冲能力，而跨区调运习惯也平抑了局部价格波动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用养殖受灾与海鲜价格的反差抓人，中段补足供给缓冲，结尾收束自然。",
+      "script_spans": [
+        "海水持续升温让近海网箱和滩涂养殖直面热浪威胁，但你餐桌上常见的海鲜短期未必会明显更贵。",
+        "气候挑战真实存在，咱盘子里的菜目前还稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有生活化收尾和明确判断，但两处核心解释长而书面，气口与对话感都被信息堆叠削弱。",
+      "script_spans": [
+        "冻品影响小，整体菜篮子不用慌。",
+        "国内海水养殖总产量这些年依然保持稳步扩张，淡水养殖同样在增量互补，市场供给有较强缓冲能力"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“气候挑战”与“盘子里的菜”形成清晰对照，结尾口语自然、可复述，整体没有修辞堆砌。",
+      "script_spans": [
+        "气候挑战真实存在，咱盘子里的菜目前还稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先抛出价格判断，再用风险与供给缓冲解释，结尾回到菜篮子，结构完整且转折自然。",
+      "script_spans": [
+        "不过，国内海水养殖总产量这些年依然保持稳步扩张，淡水养殖同样在增量互补，市场供给有较强缓冲能力",
+        "气候挑战真实存在，咱盘子里的菜目前还稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体判断克制且未作确定涨价承诺，但“冻品影响小”“整体菜篮子不用慌”缺少范围和依据，容易造成过度安心。",
+      "script_spans": [
+        "短期未必会明显更贵",
+        "气候挑战真实存在",
+        "冻品影响小，整体菜篮子不用慌"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c3dcd2b17bb74bd89a8338d26f602313",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

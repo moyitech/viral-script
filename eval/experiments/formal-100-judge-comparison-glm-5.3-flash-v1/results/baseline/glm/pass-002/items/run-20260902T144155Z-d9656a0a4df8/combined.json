@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-85457129cd664ddaaf38a24637876a0e",
+  "run_id": "run-20260902T144155Z-d9656a0a4df8",
+  "trace_sha256": "f58935fdb864d7ae5f050e6480a61e6f538cb9fe2e4156fce6b8d396834f884f",
+  "created_at": "2026-09-03T14:26:52.663133Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答“找人工窗口拿纸质”，覆盖电子化与不用手机两侧，结尾“陪老人”点中家属人群，全程扣题。",
+      "script_spans": [
+        "不会用手机患者能找人工窗口拿纸质",
+        "下次陪老人去，先问一句有纸质吗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "有政策依据和“提前要纸质”的实用增量，但保留服务点与人工窗口结论各说两遍，增量被复述稀释。",
+      "script_spans": [
+        "像门诊大厅还留着导诊员，你报个名字，他就能帮打印",
+        "医院全面推行是趋势，但不代表甩开不用手机的人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "首句设问具体，结尾自然收束有余味；但答案首段即揭，后段两次重申能拿纸质，中后段推进趋平。",
+      "script_spans": [
+        "医院全推电子报告，没手机老人咋取单？",
+        "下次陪老人去，先问一句有纸质吗？",
+        "医院全面推行是趋势，但不代表甩开不用手机的人。",
+        "你开口找人工窗口，通常能拿到纸质。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，'你想啊''报个名字'等对话式承接贯穿中段，重音停顿清楚，朗读无需临时换词。",
+      "script_spans": [
+        "你想啊，医院不能因为上了电子系统，就把不看屏幕的人推开。",
+        "像门诊大厅还留着导诊员，你报个名字，他就能帮打印。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "表达克制不堆砌，“后路”“屏幕隔开两代人”贴切自然，离开上下文仍可复述，记忆点明确扎实。",
+      "script_spans": [
+        "这是底线，也是给老人的后路。",
+        "别让屏幕隔开两代人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先给答案再补依据与例证，段段有功能，“提前说免跑空”因果清楚，结尾回扣开头与题设。",
+      "script_spans": [
+        "国家发文说过，智能服务和老人熟悉的办法要一块走，不能光给屏幕看",
+        "挂号时直接跟护士说要纸质报告，省得后面跑空"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "贴合国家保留传统服务的政策要求，‘通常’‘提醒一句’等限定到位，无夸大承诺或对立煽动。",
+      "script_spans": [
+        "国家发文说过，智能服务和老人熟悉的办法要一块走，不能光给屏幕看。",
+        "政策写明了，传统服务方式必须保留，这是底线，也是给老人的后路。",
+        "你开口找人工窗口，通常能拿到纸质。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b2bc36b41af844ad9f79a6a9f6b675b4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-54e64ad5c0264284a96673592e489ceb",
+  "run_id": "run-20260903T051602Z-4438b539235f",
+  "trace_sha256": "921c71dc84cdf3b828efd35bea8de68b6b2d2104effc535427de6b3c1aec0eea",
+  "created_at": "2026-09-03T12:45:17.459691Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应“更快还是更吵”，同时解释提速、噪声与普通人的实际影响，题设两侧都覆盖。",
+      "script_spans": [
+        "提速是真的，噪声争议也必然来，它不是二选一，而是同步发生。",
+        "对普通人意味着什么？在深圳、杭州这些首批航路划设区，点外卖或医药物资确实可能更快抵家"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息单元连续推进：配送时效、噪声机理、居民感受和管控边界都有具体判断，认知增量充足。",
+      "script_spans": [
+        "已经从三十到六十分钟压到了十五到二十分钟",
+        "电动无人机用分布式推进，在五百英尺高度比直升机安静十五分贝",
+        "居住区限飞和时段管控，才是平衡快与静的真正边界"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用急救药与噪声制造反差，中段有证据和转折，结尾的交换隐喻自然收束。",
+      "script_spans": [
+        "你点的一份急救药，可能十五分钟从天而降，但伴随的是头顶持续的风切声。",
+        "用新的声音换旧的时间，接受这点，我们才能谈便利。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体读得通，问句和短句有对话感，但多处长句与术语堆叠，气口不够利落。",
+      "script_spans": [
+        "那噪声怎么破？",
+        "最强证据是部分试点城市的末端配送时效，已经从三十到六十分钟压到了十五到二十分钟。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“用新的声音换旧的时间”形成准确对照，既概括主题，也留下可复述的记忆点，整体不过度炫技。",
+      "script_spans": [
+        "用新的声音换旧的时间",
+        "降噪是硬约束，不是可选配件"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问后先给判断，再按提速、噪声、普通人影响层层展开，末尾回扣“快与静”的权衡，结构闭合。",
+      "script_spans": [
+        "我的判断很直接：提速是真的，噪声争议也必然来，它不是二选一，而是同步发生。",
+        "那噪声怎么破？关键在动力架构的取舍。",
+        "长远看，技术迭代会压低声音，但居住区限飞和时段管控，才是平衡快与静的真正边界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动、歧视或危险建议，但“噪声争议也必然来”等绝对判断、个别数据场景限定不足，存在误导风险。",
+      "script_spans": [
+        "它不是二选一，而是同步发生",
+        "噪声争议也必然来",
+        "这不是实验室画饼，是已经发生的运营变化"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-93c263bf2683418fb5f55a1da1895cfb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

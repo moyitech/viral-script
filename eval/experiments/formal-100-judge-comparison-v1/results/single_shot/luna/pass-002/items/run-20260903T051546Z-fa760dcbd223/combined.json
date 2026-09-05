@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-329852833ff849df8c0091d837498211",
+  "run_id": "run-20260903T051546Z-fa760dcbd223",
+  "trace_sha256": "dbdb6c3a5a9eb538a3475f90756233fc16d233d8fac4d7f1d511029c046e2a48",
+  "created_at": "2026-09-03T12:32:02.654414Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解提效与压价两端，并落到普通求职者的谈薪判断，完全命中题设。",
+      "script_spans": [
+        "这到底是企业在救火提效，还是借机把你的工资偷偷往下压？",
+        "那普通人面对极速招聘该咋办？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕流程提速与薪资公平，补充空岗成本、定薪透明度、跨界匹配和求职应对，信息推进充分。",
+      "script_spans": [
+        "一个坑位空着，现有同事就得把缺的活全揽了，这种消耗每天都在烧钱。",
+        "往往是薪资评估的精细度。",
+        "谈薪时主动问一句定价依据是什么，比纠结面试几轮更实在"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头抛出空岗加班与面试骤减的反差，中段持续追问代价，结尾建议自然落到公平。",
+      "script_spans": [
+        "岗位空着没人填，团队天天加班兜底干活，老板却突然把面试从五轮砍到两轮。",
+        "那速度提上来，到底拿什么做的交换？往往是薪资评估的精细度。",
+        "招聘流水线可以踩油门，但薪资不能搞速食。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "观点和问答承接清楚，但重复表达与抽象转场较多，部分句子朗读时需要临时重断句。",
+      "script_spans": [
+        "你想，多轮面试本来能摸清人的真实分量，也能对照市场慢慢开价。",
+        "为什么老板们现在急着极速招人？",
+        "再把视野放回现实拉扯。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“薪资不能搞速食”和“公平才是不翻车的底盘”形成对照，修辞服务判断，也便于观众复述。",
+      "script_spans": [
+        "招聘流水线可以踩油门，但薪资不能搞速食。",
+        "流程只是交通工具，公平才是不翻车的底盘。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "起承转合清楚，先讲空岗成本再落到求职建议；但把算法定薪的不透明称为“反例”，概念关系不够严密。",
+      "script_spans": [
+        "先说因果。为什么老板们现在急着极速招人？",
+        "那普通人面对极速招聘该咋办？",
+        "这里有个反例得提一句："
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有边界意识，也避免把快招一概归为压价；但对企业动机和长期后果的断言偏满，容易形成未经限定的因果判断。",
+      "script_spans": [
+        "当然，不是所有快招都恶意压价，只是粗线条操作容易滑进那个坑，这中间存在不小的模糊地带。",
+        "企业不是单纯想对人狠，是先被空岗的代价逼急了。",
+        "短期省了日历上的天数，长期却会把真正的好手吓跑，雇主招牌也磨坏了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-122a74dcfa8745509866f26d450223b6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

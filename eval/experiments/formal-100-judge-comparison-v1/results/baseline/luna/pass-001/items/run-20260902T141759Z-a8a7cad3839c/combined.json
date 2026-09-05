@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-daa45353d7e14c8a92f5afd26b9f8d45",
+  "run_id": "run-20260902T141759Z-a8a7cad3839c",
+  "trace_sha256": "12dc39281773205a0e6258413f7754ad3c122182e06804763518c2497a31ba42",
+  "created_at": "2026-09-03T11:44:03.602161Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答费率下降不等于低风险，覆盖降费、市场波动、跟踪误差及普通投资者的购买判断。",
+      "script_spans": [
+        "降费后买指数基金更便宜，但低成本不防亏钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 740，目标为 700，偏差率为 5.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "降费数据、风险机制、跟踪误差成因与购买检查项层层补充，既有事实也给出可执行判断方法。",
+      "script_spans": [
+        "现金留存、大额申赎会拉开距离；成分股调整也让走势偏一点。",
+        "先弄清跟踪什么指数，波动大不大。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出降费与亏损的反差，中段连续补足风险来源，结尾提问也自然承接。",
+      "script_spans": [
+        "降费后买指数基金更便宜，但低成本不防亏钱。",
+        "下次看到降费宣传，你会先翻指数吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、问答和生活化比喻有效，但多处搭配和转折生硬，成稿还需要重断句、换词。",
+      "script_spans": [
+        "但咱们得掰开看",
+        "指数和净值之间的差便是跟踪误差，免不掉只是大小问题。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“便宜和安稳是两码事”等表达准确克制，既帮助区分成本与风险，也留下可复述的记忆点。",
+      "script_spans": [
+        "便宜和安稳是两码事。",
+        "你买的是指数基金，不是避风港基金。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有背景、机制、判断、建议的完整推进，但被动跟踪观点反复出现，跟踪误差的定义也过于简化。",
+      "script_spans": [
+        "这么一算，便宜和安稳是两码事。",
+        "指数基金本是被动工具，不赌方向只跟指数。",
+        "指数和净值之间的差便是跟踪误差，免不掉只是大小问题。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不承诺保本，也明确提示市场风险；但费率和收费规则未限定具体产品及例外情形，可能造成理解偏差。",
+      "script_spans": [
+        "便宜不代表路安全。",
+        "指数基金申购费压到最低档",
+        "持有超一年销售服务费免了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-591bde1338d147198ef11bfbd8f732a6",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-93dd09e9b09340428621716728823d44",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-b947555fe93946df87bae4c7791cca22",
+  "run_id": "run-20260902T142548Z-09ef143d8384",
+  "trace_sha256": "08ceb7585095f6b61adcc8394152bf17dbb46df63673c3f763c9f44d415aeaab",
+  "created_at": "2026-09-03T14:24:25.677938Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即入垫付场景，善意该有与边界要画两侧并答，通篇对好心人说话，切角具体不跑偏。",
+      "script_spans": [
+        "善意当然该有，但替陌生人垫费这事，得先画条线",
+        "边界长在你确认键上，小额救急莫犹豫，大额陌生请缓行"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律悬空、骗术机理、平台缓冲层层推进，研究表述自带样本限定，与引用相符无编造。",
+      "script_spans": [
+        "但垫付必要花费能请求偿还，甚至管理人因事务受损还能适当补偿",
+        "有访谈近三十名受骗者的研究，样本不大，但发现容易顺手答应钱请求的多是高信任倾向的人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头扣款后陌生人消失的冲突具体，中段法律悬空、骗术剖析、平台功能层层兑现钩子，结尾提问由正文自然生长，有余味。",
+      "script_spans": [
+        "你替排队的陌生人输了停车码，钱刚扣完，人扭头钻进车流不见了。",
+        "那为啥偏有人盯上好心人？因为骗子常扮急切，用互惠话术让你抹不开面。",
+        "下回有人凑来让垫钱，你肯先问他是谁吗？那份犹豫不是冷漠，是善意的自保。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "首尾对话感足，但“受益人若提抗辩”“高信任倾向”等书面表达需改写方能顺口播出。",
+      "script_spans": [
+        "你替排队的陌生人输了停车码，钱刚扣完，人扭头钻进车流不见了",
+        "但垫付必要花费能请求偿还，甚至管理人因事务受损还能适当补偿"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，如钱掉进认不出人的黑洞；边界长在确认键上、信任整筐交出去均离开语境可复述，无堆砌炫技。",
+      "script_spans": [
+        "救急可以，但别让钱掉进认不出人的黑洞。",
+        "边界长在你确认键上，小额救急莫犹豫，大额陌生请缓行。",
+        "善意本身从不是错，错的是把信任整筐交出去的那瞬。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承转自然，因果桥齐全，结尾反问回扣开头垫付场景，善意与边界论点闭环。",
+      "script_spans": [
+        "那为啥偏有人盯上好心人？因为骗子常扮急切",
+        "下回有人凑来让垫钱，你肯先问他是谁吗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法律与平台功能说明均附边界，防骗建议留有余地，无夸大承诺与煽动歧视。",
+      "script_spans": [
+        "但你要直接亮付款码让人扫，保护就不一定罩着你",
+        "延时到账只在特定转账生效",
+        "小额救急莫犹豫，大额陌生请缓行"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-75b796ccaccd4bd9beced8461ce5a0e9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

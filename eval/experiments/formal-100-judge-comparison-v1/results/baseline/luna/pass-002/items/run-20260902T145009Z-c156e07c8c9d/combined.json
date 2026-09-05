@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-ed41ec06fdd146c0a07b54646a61451b",
+  "run_id": "run-20260902T145009Z-c156e07c8c9d",
+  "trace_sha256": "90c987eb955772d49f4b48c05ad397f21f3db5ac8dab57b7f477faafa422918a",
+  "created_at": "2026-09-03T12:28:46.418926Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 2,
+      "reason": "正面讨论普通人进入低空产业的路径，但没有给出普通岗位规模，核心“多少”只被模糊带过。",
+      "script_spans": [
+        "普通人的机会在应用端，不在制造热潮里。",
+        "它确实在造岗，但数量没传言那么满。",
+        "新闻里的百万缺口，是长期预测，不是明天招工。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕普通岗位持续推进，供需错配、产业转向和应用端机会彼此衔接，信息具体且能形成明确判断。",
+      "script_spans": [
+        "可低空物流和表演场景，消化不了这么多刚拿证的人。",
+        "植保、巡检、设备维护这些接地气的活，反而长期缺手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“百万缺口”与就业率下滑制造反差，中段解释供需错配，结尾自然落到个人选择。",
+      "script_spans": [
+        "低空产业喊缺100万飞手，可重庆飞手就业率从80%掉到40%以下。",
+        "这就像开了很多驾校，但路上的货还没那么多。",
+        "当风口从天上落到地面，你准备的是执照，还是解决问题的手艺？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答推进和类比，气口不长；但“数量没传言那么满”等表述不顺，核心段仍需改词。",
+      "script_spans": [
+        "咱们掰开看。先看问题在哪。",
+        "数量没传言那么满",
+        "一边整体新发职位涨了快七成，可那是研发岗的价码"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“驾校与货运需求”的类比把供需错配讲透，结尾用“解决问题的手艺”形成自然、可复述的记忆点。",
+      "script_spans": [
+        "这就像开了很多驾校，但路上的货还没那么多。",
+        "当风口从天上落到地面，你准备的是执照，还是解决问题的手艺？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "分段顺序清楚，先讲现象、再讲机制、最后给普通人建议；但职位增幅与研发“价码”被直接相连，关键解释不成立。",
+      "script_spans": [
+        "先看问题在哪。",
+        "再看关键机制。",
+        "一边整体新发职位涨了快七成，可那是研发岗的价码。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不涉敏感、煽动或明显违法内容；但“飞手证好考”“你肯干就能站稳”过度概括，易形成就业和门槛误导。",
+      "script_spans": [
+        "它确实在造岗，但数量没传言那么满",
+        "飞手证好考",
+        "你肯干就能站稳"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a83e1be89b7c40d6baaeb4fd2c0a9791",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

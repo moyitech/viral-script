@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-7996f2f043c94c30b94330049e139821",
+  "run_id": "run-20260903T051518Z-a99bdc94b6bc",
+  "trace_sha256": "f9a1571993543d27760773100c0b70561d5fd571d938781526fa4b1c45a3e781",
+  "created_at": "2026-09-03T12:33:39.939526Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答延时营业能否带来真实增长，既分析商场经营账，也落到普通消费者的便利与账单，题设两侧齐全。",
+      "script_spans": [
+        "延长营业时间不是天然的增长药，它只在特定场景里把热闹变成真实销售",
+        "那对普通人有什么影响？我们逛夜场是多了选择，深夜也能约朋友吃饭看球。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕热闹与真实增长的差别，指标、成本、观赛案例和消费者影响层层补充，信息增量充分。",
+      "script_spans": [
+        "客流进店只是起点，零售行业衡量真增长看的是转化率和单位面积营业额。",
+        "世界杯期间有些商场搞深夜观赛，确实接住了夜间流量，甚至衍生出赛后早餐的补给消费。",
+        "说白了，半夜多开那几个小时，得有对应的交易密度才划算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用热闹却未必赚钱设问，中段补足成本与坪效机制，结尾把判断落到消费选择上，推进完整。",
+      "script_spans": [
+        "人流熙熙攘攘，好像生意火爆，老板真赚到钱了吗？",
+        "半夜多开那几个小时，得有对应的交易密度才划算。",
+        "分清气氛和账目，才看得清谁在真增长。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚，也有“说白了”等承接；但指标术语和几处压缩表达让核心段落不够顺口。",
+      "script_spans": [
+        "说白了，半夜多开那几个小时，得有对应的交易密度才划算。",
+        "零售行业衡量真增长看的是转化率和单位面积营业额。",
+        "商场若靠延时摊薄成本，可能悄悄提高客单价或缩服务。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“账面虚火更旺”和“分清气氛和账目”把抽象经营判断说具体，修辞克制，形成了可复述的记忆点。",
+      "script_spans": [
+        "让账面虚火更旺",
+        "账单不会骗人。",
+        "分清气氛和账目，才看得清谁在真增长。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "有判断、机制、案例和结论，但“客单价撑不起坪效”概念混用，成本如何导致多数时候不增长也论证不足。",
+      "script_spans": [
+        "客流进店只是起点，零售行业衡量真增长看的是转化率和单位面积营业额。",
+        "说白了，半夜多开那几个小时，得有对应的交易密度才划算。",
+        "新增时段若客单价撑不起坪效"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "观点有场景边界，但“多数时候”概括过满；“悄悄提高客单价或缩服务”属于未经限定的负面推测，需补充条件。",
+      "script_spans": [
+        "它只在特定场景里把热闹变成真实销售",
+        "多数时候只是拉长了成本线",
+        "可能悄悄提高客单价或缩服务"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b7ea728c0d0048d9947bac7fd716ed91",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

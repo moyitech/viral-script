@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-bb40acb336c64cee8f6e2e0942da2fd5",
+  "run_id": "run-20260903T051542Z-959c1334aa0a",
+  "trace_sha256": "6d94f9ab1f7a3758fc26e38d0711456e502b754324f00ff5a22271551d72e028",
+  "created_at": "2026-09-03T12:01:48.745629Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解低物价增速与家庭紧日子的错位，覆盖指标、收入、住房及普通家庭应对。",
+      "script_spans": [
+        "可家里买菜、交租、给孩子缴资料费，怎么处处都觉得手头紧？",
+        "所以别只盯着那个温和的百分比，翻开你账本里删不掉的那几行，才是你个人的真实物价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 737，目标为 700，偏差率为 5.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题高度集中，连续提供CPI篮子、收入中位数、刚性支出和资产预期等信息，也给出个人记账方法。",
+      "script_spans": [
+        "居民消费价格指数像个统一配好的菜篮子，把吃喝穿戴服务全掺在一起算平均。",
+        "钱进口的袋，先去填房贷、老人、娃的刚需，剩下才能考虑吃顿好的或换件衣服。",
+        "理清哪是需要刚性出的、哪是能缓一缓的，比争论指数准不准更让自己踏实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段层层补上收入、住房和预期因素，推进充分；但前20字仍先给口径铺垫，钩子慢半拍。",
+      "script_spans": [
+        "还有一笔更隐蔽的账，藏在价格指数门外。",
+        "房子买卖本身不计入CPI，可每月的月供或租金，却是很多家庭最大的现金出口。",
+        "官方口径里物价只是温和往上挪了挪"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答推进和生活化比喻，但中段出现多处抽象搭配与不顺词组，朗读需重断句或换词。",
+      "script_spans": [
+        "可家里买菜、交租、给孩子缴资料费，怎么处处都觉得手头紧？",
+        "拿到的增速明显比平均数要矜持",
+        "钱进口的袋，先去填房贷、老人、娃的刚需"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“两本不同的账”“算盘声”把指标与体感的落差说得具体，意象自然，留下了可复述的记忆点。",
+      "script_spans": [
+        "这不是你一个人的错觉，而是指标和体感在算两本完全不同的账。",
+        "宏观和微观之间，留着你自己的算盘声。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，设问、分层解释和结尾回扣清楚；但把中位数增速推成一半家庭更谨慎，住房与CPI的概念边界也混杂。",
+      "script_spans": [
+        "这不是你一个人的错觉，而是指标和体感在算两本完全不同的账。",
+        "那既然收入数字也在往上走，为什么还是兜不住底？",
+        "收入排中间的那拨人，拿到的增速明显比平均数要矜持，也就是说，一半左右的家庭进账更谨慎。",
+        "房子买卖本身不计入CPI，可每月的月供或租金，却是很多家庭最大的现金出口。它不影响大数"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题明确、表达克制，但把房贷或租金概括为“不影响大数”，且将中位数增速外推为半数家庭更谨慎，存在误导。",
+      "script_spans": [
+        "这不是你一个人的错觉，而是指标和体感在算两本完全不同的账。",
+        "统计局的权重和你每天必须掏钱的节奏根本对不上",
+        "它不影响大数，却决定你敢不敢买杯奶茶"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-697a8070da414cd9a20054cfef2755b4",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c9546188ecfe40ad9b7dc8e9450dac89",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

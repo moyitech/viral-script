@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-70367f9d21aa44218dbcf185abbf3a88",
+  "run_id": "run-20260902T144828Z-9af3693ff962",
+  "trace_sha256": "61dd66027f944ade4f6b2d389f6eb3489356bb8e8c4f148cc3f161f76352a71a",
+  "created_at": "2026-09-03T14:26:28.564192Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直指囤药后果，安心与浪费风险两侧均覆盖，结尾建议回扣题设，人群精准。",
+      "script_spans": [
+        "你家囤的退烧药，可能没拆封就扔了",
+        "家里备点常用药是能换份安心，但囤过头就会变成浪费和风险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，从闲置浪费到违法转卖、有害垃圾层层推进，给出可执行建议，论证扎实无编造。",
+      "script_spans": [
+        "个人卖药不合法，算违法的",
+        "过期药得专门按有害垃圾处理",
+        "下次买药只留三四样常用的，少囤些"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头钩子具体有力，但中段连用数句重复说浪费，推进趋平；结尾收束自然但缺转发评论冲动。",
+      "script_spans": [
+        "你家囤的退烧药，可能没拆封就扔了。",
+        "你想转卖给药店？那不行，个人卖药不合法，算违法的。",
+        "药盒占着抽屉，过期前你也没瞄一眼。这花出去的钱算是打了水漂，地方还被占着，纯属浪费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主，气口多在十字内，问答式承接自然，通篇无需临时换词或重断句。",
+      "script_spans": [
+        "你想转卖给药店？那不行，个人卖药不合法，算违法的。",
+        "买回来往柜里一放，没生病根本想不起用。",
+        "这花出去的钱算是打了水漂，地方还被占着，纯属浪费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "包袱、打了水漂等比喻贴切、服务理解，家净人踏实的收尾可独立复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "所以别信囤着才保险，那多余药是包袱。",
+        "清掉那些用不上的，家净了，人也就踏实了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "囤置—过期—浪费—风险—处理—少囤环环相扣，结尾家净人踏实自然回扣开头的安心。",
+      "script_spans": [
+        "买回来往柜里一放，没生病根本想不起用。过阵子保质期过了，只能扔掉",
+        "所以别信囤着才保险，那多余药是包袱",
+        "清掉那些用不上的，家净了，人也就踏实了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "转卖违法、有害垃圾处理等关键说法与权威信息一致，备药建议有边界，无夸大煽动或误导承诺，合规稳妥。",
+      "script_spans": [
+        "家里备点常用药是能换份安心，但囤过头就会变成浪费和风险",
+        "那不行，个人卖药不合法，算违法的",
+        "过期药得专门按有害垃圾处理，随手丢可是隐患"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-aa5c9c0c982b4939981b7b07578f4800",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

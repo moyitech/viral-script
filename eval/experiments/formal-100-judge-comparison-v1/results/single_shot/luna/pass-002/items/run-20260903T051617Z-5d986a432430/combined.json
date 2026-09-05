@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-c36c859cac0349038fb61e93c19247e0",
+  "run_id": "run-20260903T051617Z-5d986a432430",
+  "trace_sha256": "ef2a4f4cfc818a47bd3b1635cf51ee9fc4185ccf36549f7c545697bc180ef7bc",
+  "created_at": "2026-09-03T12:32:22.256520Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答消费者是否买单，并覆盖标准分裂、兼容成本、监管边界与购买建议。",
+      "script_spans": [
+        "我的判断很直接：标准各自成阵，消费者一定在分摊兼容成本",
+        "作为买东西的人，挑明标准通用、主动避开专属接口的产品，才是给自己减掉那笔看不见的兼容税最实在的法子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕兼容税持续推进，场景、成本机制、监管局限和未来缓解路径都有具体增量。",
+      "script_spans": [
+        "充电口只是最显眼的切口，数据协议、音视频传输同样各搞一套。",
+        "结果要么是反复掏钱买桥接配件，要么是换机时被同生态锁定、接受更高的续购价。",
+        "欧盟已经立法，从二〇二四年底起手机平板等小电子设备统一换USB-C，笔记本也给了到二〇二六年的缓冲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前段用换线、协议罢工制造具体冲突，中段转入监管与日常场景，结尾给出自然行动建议。",
+      "script_spans": [
+        "同一款无线耳机，连苹果和连安卓可能得换根线",
+        "政策能圈住一块市场，圈不住全球碎片。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有清晰停顿和对话感，但“琐碎罢工”“揉进零售价”等表达卡顿，朗读时需重断句或换词。",
+      "script_spans": [
+        "先看因果链怎么缠住你。",
+        "这种天天遇见的琐碎罢工",
+        "厂商重排产线的成本，长期看说不定就揉进了零售价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“设备溢价和耐心损耗”“看不见的兼容税”把隐性成本具象化，表达克制且便于复述。",
+      "script_spans": [
+        "更藏在设备溢价和耐心损耗里",
+        "给自己减掉那笔看不见的兼容税"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头立论，随后按成本机制、监管反例、生活场景和行动建议递进，结尾自然回扣兼容税。",
+      "script_spans": [
+        "先看因果链怎么缠住你。",
+        "结果要么是反复掏钱买桥接配件，要么是换机时被同生态锁定、接受更高的续购价。",
+        "当然，若将来无线充电和通用协议彻底成熟，这类摩擦或自然消融，但眼下离那步还远。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见明显违规，但“消费者一定”及“普通家庭二十多台设备”等表述绝对化、范围过宽，易造成泛化误导。",
+      "script_spans": [
+        "作为买东西的人，挑明标准通用、主动避开专属接口的产品",
+        "标准各自成阵，消费者一定在分摊兼容成本"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f0b85664ed014f13865ab0943f9d43de",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

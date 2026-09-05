@@ -1,0 +1,157 @@
+{
+  "evaluation_id": "combined-d92c2d82739442d2bde41192caab2820",
+  "run_id": "run-20260902T143250Z-e17d5f3e0c1f",
+  "trace_sha256": "9ac7194795700cd6d337eb6172faa988641fce5618ee3946b132d6817185a185",
+  "created_at": "2026-09-03T13:54:38.850336Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即给出三方答案，厂商、政府、用户逐一回应，小店、打车等例紧扣普通观众痛点。",
+      "script_spans": [
+        "这锅不能只甩厂商，也不能全靠政府，用户自己得留后路",
+        "政府做的是立规矩，不是当保险箱",
+        "你开个小店，收银靠云插件，云一黑客人刷不了码"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 729，目标为 700，偏差率为 4.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "事故数据、赔偿上限、评估办法、多云灾备层层推进，事实、解释与结论互证，论证扎实无编造。",
+      "script_spans": [
+        "为什么它们敢写上限？因为云市场集中，用户难换门",
+        "它只盯党政和关键设施，看云商人员稳定、供应链安全、业务连续",
+        "用多云加灾备，一个云停了另一个接上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字扫码卡住加千亿损失直给冲突，中段以数据、追问与反转连续兑现，结尾自问由容灾话题自然长出，三段各自立住。",
+      "script_spans": [
+        "你扫码骑车突然卡住，一次云故障卷走千亿，损失谁担？",
+        "为什么它们敢写上限？因为云市场集中，用户难换门。",
+        "当地铁般频繁的云中断来了，你的系统能自己撑几分钟吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口足、例子接地气，但政策段并列堆叠与书面比喻朗读时需临时换词改口。",
+      "script_spans": [
+        "你开个小店，收银靠云插件，云一黑客人刷不了码。",
+        "它只盯党政和关键设施，看云商人员稳定、供应链安全、业务连续。",
+        "当地铁般频繁的云中断来了，你的系统能自己撑几分钟吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "水电无兜底、立规矩不当保险箱、一家咳嗽拖垮你，比喻皆服务论点且可离文复述，密度适中不见炫技。",
+      "script_spans": [
+        "云服务像水电，但水电有公共兜底，云目前是商业合同",
+        "政府做的是立规矩，不是当保险箱",
+        "多云不是完美，但少让一家咳嗽拖垮你"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "三问推进环环相扣，水电与保险类比搭桥清楚，结尾地铁之问自然回扣扫码开头与题设。",
+      "script_spans": [
+        "云服务像水电，但水电有公共兜底，云目前是商业合同",
+        "那政府来兜底吗",
+        "当地铁般频繁的云中断来了，你的系统能自己撑几分钟吗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体论断有分寸，建议也留有余地，但开头把千亿损失估计说成既成事实，股价归因武断，需补限定。",
+      "script_spans": [
+        "政府做的是立规矩，不是当保险箱",
+        "没人保哪种方案完美，但韧性要自己建",
+        "一次云故障卷走千亿，损失谁担？",
+        "厂商股价没怎么崩，市场默许了波动风险"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c57a414912a44bf7a00c72369014e2b1",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-36334eb7459949d4b3e5945495d2b28a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

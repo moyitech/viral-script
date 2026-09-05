@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-8271b2fe78e4452fa194b7b70c3fe507",
+  "run_id": "run-20260902T144421Z-08a30e628741",
+  "trace_sha256": "14fa1795a98a19724611ea184c9efb7f52f4c1bed1ae986db66c9cd1a35979e9",
+  "created_at": "2026-09-03T13:46:53.218934Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给答案，扩张与标准两侧全程并进，结尾落到普通人判断，完整回应题设。",
+      "script_spans": [
+        "标准跟得上吗？新规矩出了，但补上的缺口有限，另一边项目还在疯跑。",
+        "下次看到家门口建储能，先问一句：它经过全程盯防了吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 751，目标为 700，偏差率为 7.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "装机数据、热失控机理、新规盲区、海外事故层层推进，关键事实有据，观众可带走判断方法。",
+      "script_spans": [
+        "电池堆在一起，只要一块过热，火就跳着烧",
+        "可这文件重点管新开工的场站，那些已经建好和正赶工期的，用的还是早先规范"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头烧壳与装机猛涨构成具体反差钩子，中段数据、新规、海外火灾层层转折，结尾提问由家门口场景自然长出。",
+      "script_spans": [
+        "锂电池集装箱刚落地就烧成空壳，可全国储能装机还在同比猛涨六成。标准跟得上吗？",
+        "审查员分身乏术，今天验完东边，西边又开工",
+        "下次看到家门口建储能，先问一句：它经过全程盯防了吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句顺口、有对话感，但文件全称与结尾书面句需换词重断，两处拗口故定为2分。",
+      "script_spans": [
+        "储能就是大号充电宝。上面给指标，下面抢开工。",
+        "今年4月能源局发了新型储能电站建设工程质量监督大纲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“大号充电宝”点透概念，“产业要跑，安全不能跛脚”离开原文仍可复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "风光电多了得有地方存，储能就是大号充电宝",
+        "我们缺的不是标准文本，而是让每块电池被盯紧的耐心",
+        "产业要跑，安全不能跛脚"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问串联各段，因果有桥梁，审查缺口到验收风险推理顺，结尾自然回扣开头提问。",
+      "script_spans": [
+        "数量翻着倍走，出事机会自然往上叠。",
+        "审查员分身乏术，今天验完东边，西边又开工。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述客观克制，风险说法均有边界，如谁也不敢说绝对防住；涉股内容仅为风险提醒而非承诺，价值导向与审核要求均安全。",
+      "script_spans": [
+        "谁也不敢说绝对防住",
+        "买储能概念股或村里建站，都得明白验收报告不等于永远平安"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9d534c8a490840a59572cdb8ec86056e",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-94d8715f6ff5443ea3a0bf4205175ba1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

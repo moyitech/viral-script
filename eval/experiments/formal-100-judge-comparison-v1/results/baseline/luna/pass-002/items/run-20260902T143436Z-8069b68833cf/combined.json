@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-7eb9e856d1204c8d8cfaebd78c55a430",
+  "run_id": "run-20260902T143436Z-8069b68833cf",
+  "trace_sha256": "4a99b527d6e6b2e6dd3aede5af947dd13db6007bdd568f82ac611846ff7b1e94",
+  "created_at": "2026-09-03T12:15:45.250009Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应摩天楼是否加剧夜间热岛，既讲高楼增热机制，也交代低矮楼群与普通居民影响，切角完整。",
+      "script_spans": [
+        "摩天楼确实加剧热岛，但低矮楼群也跑不掉。",
+        "对咱们日子啥影响？你热得睡不着，空调开更久，电费悄悄爬。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中，依次解释蓄热、空调排热、挡风遮天、低矮楼群对照及生活影响，信息推进具体，未见明显编造。",
+      "script_spans": [
+        "高楼密密挤成一排，混凝土和玻璃白天吃进太阳光。太阳下山后，墙体还温着，慢慢吐热。",
+        "楼群密、建材吸热，加上空调排热，直接把周边气温顶高。",
+        "好在楼顶种绿植、墙面刷浅色，能卸掉部分热包袱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“帮凶”制造反差，中段连续追问并补上矮楼反例，结尾从影响落到留风，推进完整。",
+      "script_spans": [
+        "都说摩天楼烤热了夜，其实它只是帮凶。",
+        "那咋不算主犯？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、解释有对话感，但“楼太高巷子像死胡同”“外头似闷罐”等处需补停顿或换词。",
+      "script_spans": [
+        "你以为后半夜会凉？其实楼板像大电池，储的能量慢慢往外吐。",
+        "可楼太高巷子像死胡同",
+        "外头似闷罐"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“帮凶/主犯”和“给风留路”把复杂机制压成可复述的判断，类比清楚，修辞没有盖过信息。",
+      "script_spans": [
+        "楼板像大电池，储的能量慢慢往外吐。",
+        "楼可以高，但得给风留路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构有钩子、机制、反面与对策，主线可跟随；但由数据不足和低矮楼群蓄热直接推出“帮凶”而非“主犯”，比较桥梁不足。",
+      "script_spans": [
+        "楼群密、建材吸热，加上空调排热，直接把周边气温顶高。",
+        "往后怪楼高时，先想想怎么让风穿堂过。楼可以高，但得给风留路。",
+        "夜里真实数据还薄。夜间模型也还粗。另一面，矮房子铺得广，外墙总面积大，存的热未必少。所以判它帮凶，不判主犯，道理在这。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且能区分帮凶与主犯；但“开窗也没用”等绝对化表述可能误导，需补充条件。",
+      "script_spans": [
+        "所以判它帮凶，不判主犯，道理在这。",
+        "开窗也没用，外头似闷罐。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f63cba80ce8f44889741219fa82eb525",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

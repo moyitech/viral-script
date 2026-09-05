@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-5bc1c9bd92634c88816c7eee61d835ae",
+  "run_id": "run-20260903T051623Z-83f0db1a1686",
+  "trace_sha256": "1bf162b9f002ddc197ef1dc0ba0418051b0d5b4d908ce7c34ba3c5565fda07bf",
+  "created_at": "2026-09-03T12:31:51.029452Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从升温影响养殖到回答是否涨价，再延伸至本地波动和消费建议，正面覆盖题设两侧及普通消费者。",
+      "script_spans": [
+        "海水升温真实冲击近海养殖，但餐桌海鲜短期不会普遍更贵",
+        "普通家庭逛菜场，不必因气候新闻抢购干贝"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕价格传导，既有升温、产量和均价数据，也解释总供给与局部波动，信息推进较充分。",
+      "script_spans": [
+        "去年全国海水养殖产出两千多万吨，增速还在百分之五以上",
+        "实际行情里，海水产品批发均价每斤二十二块上下，一年跌了四个多百分点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用升温与降价的反差抓人，中段持续补充机制和数据，结尾建议自然落地。",
+      "script_spans": [
+        "海水越来越烫，近海网箱里的鱼却不一定少，你上周买的鲅鱼价格可能比前年还便宜。",
+        "一边是科学家警告海洋热浪杀死珊瑚和养殖生物，一边是统计表上水产总量连年涨，这矛盾到底怎么解？",
+        "听到气候警报，先逛趟菜场再决定买啥。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，整体可读；但“受灾面积被对冲”“短时常价”等片段卡嘴，影响连续朗读。",
+      "script_spans": [
+        "可价格传导看的是总盘子。",
+        "听到气候警报，先逛趟菜场再决定买啥。",
+        "受灾面积被对冲",
+        "本地活鲜可能短时常价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“总盘子”“被供给拽住”把价格机制说得具体，结尾也形成可复述的消费提醒。",
+      "script_spans": [
+        "价格传导看的是总盘子。",
+        "终端价就被供给拽住了。",
+        "听到气候警报，先逛趟菜场再决定买啥。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主旨、数据、解释和建议链条完整，但‘受灾面积被对冲’因果跳跃，‘短时常价’疑似病句，削弱论证和口播清晰度。",
+      "script_spans": [
+        "可价格传导看的是总盘子",
+        "当然，遇上特别热的夏天，本地活鲜可能短时常价，学会看替代品种更聪明",
+        "受灾面积被对冲",
+        "本地活鲜可能短时常价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有“局部波动不代表整体涨价”的边界意识，但“热浪年年来”及“受灾面积被对冲”概括过满，易造成误导。",
+      "script_spans": [
+        "局部波动不代表整体涨价",
+        "热浪年年来，确实让鲍鱼海带烂在海里",
+        "受灾面积被对冲"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-83dd95dc185e4a9fad07c72df77684b9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-eee01fa377e34da58d5e709d37145e63",
+  "run_id": "run-20260902T144529Z-9ea0e10260ea",
+  "trace_sha256": "47b9795f2ec1d335cf43a590c8d77e69df5939498eb155bdbb7274a97e453b28",
+  "created_at": "2026-09-03T12:22:00.142125Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应急诊分流与资源优先级，也覆盖非急症患者和危重患者两端，行动建议明确。",
+      "script_spans": [
+        "有限资源先给最急的",
+        "你感冒别直冲急诊去门诊"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕分诊、资源挤占、后果和收费分流层层补充，既有操作信息，也给出可执行的就医判断。",
+      "script_spans": [
+        "护士按急重优先问症状摸体征分轻重",
+        "有些城市用收费杠杆引开非紧急的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用心梗老人等不及制造冲突，中段补充分诊与收费分流，结尾追问也承接自然。",
+      "script_spans": [
+        "你发烧流鼻涕挤急诊，那边心梗老人等不及",
+        "有些城市用收费杠杆引开非紧急的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏明快、重音清楚，但多处压缩表达连读拥挤，仍需临时补停顿或换词。",
+      "script_spans": [
+        "不是谁吵谁先，是病重先走。",
+        "你不舒服先掂量轻重，别一股脑冲急诊",
+        "护士按急重优先问症状摸体征分轻重。",
+        "这矛盾说明不分流急重的人等不到。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不是谁吵谁先，是病重先走”简洁有力，配合“堵别人生路”强化理解，修辞没有堆砌。",
+      "script_spans": [
+        "不是谁吵谁先，是病重先走",
+        "小病占床堵别人生路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线是分诊、资源占用、后果和建议，但“不分流急重的人等不到”表述生硬，收费措施到改善结果也缺少解释桥梁。",
+      "script_spans": [
+        "医院有分诊台，护士按急重优先问症状摸体征分轻重。",
+        "这矛盾说明不分流急重的人等不到。",
+        "有些城市用收费杠杆引开非紧急的，这类病人明显少了，急诊腾位给真救命的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "急重优先的原则客观，但将症状直接对应就诊地点，并用占床、堵路归责，可能造成误导和羞辱。",
+      "script_spans": [
+        "有限资源先给最急的",
+        "胸痛昏迷直接进抢救室，流涕拉肚去基层门诊",
+        "小病占床堵别人生路"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2be5442e78bc4ff3b4ab8ca52fd59e99",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-ba91de84dba740fcad8dac0cb0be2d7f",
+  "run_id": "run-20260903T051600Z-cb81dfc50d11",
+  "trace_sha256": "661fb2386f03d99b75d1ce174a8ec534ba1faafa48cb4544408d52a27f55e5d1",
+  "created_at": "2026-09-03T15:26:16.117276Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给判断，兼顾稀缺成因与是否划算两侧，并落到普通人存钱决策，正面回答题设。",
+      "script_spans": [
+        "我的判断是，抢大额存单更多是被稀缺感带着走",
+        "对普通人来说，资金超五十万就得拆几家银行保底数"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，限量动机、利率对比、流动性成本、拆存建议层层推进，事实支撑结论，无明显编造。",
+      "script_spans": [
+        "四大行五年期大额存单最高定价约百分之一点六，而约十家民营银行却在密集下架三年期、五年期定存",
+        "虽新规允许转让，不等于随时有人接手，流动性成本暗藏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出利率低却藏起来卖的反差，中段用锁钱逻辑与利率对比持续兑现，结尾排不排队自然留互动。",
+      "script_spans": [
+        "明明利率只剩一点几，银行为什么还把大额存单藏起来卖？",
+        "先问自己：这钱三五年确定不动吗？",
+        "再决定排不排队"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主且有对话感，但“流动性成本暗藏”“存款保险覆盖”等书面片段朗读需改写，卡两处封顶。",
+      "script_spans": [
+        "低息环境下，抢存更像帮银行锁钱，不是捡漏。",
+        "虽新规允许转让，不等于随时有人接手，流动性成本暗藏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "安全垫对摇钱树自然贴切，帮银行锁钱、吃掉收益均服务理解，修辞克制不炫技，离开上下文也可复述。",
+      "script_spans": [
+        "大额存单是安全垫，不是摇钱树",
+        "抢存更像帮银行锁钱，不是捡漏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "本质、取舍、建议、结论四段功能清晰，因果有桥，结尾回扣排不排队的开头疑问，递进完整。",
+      "script_spans": [
+        "先看这一单难求的本质。",
+        "额度紧的时候，先核对自己存款保险覆盖和用钱节奏，再决定排不排队。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "利率数据带约、部分等限定，五十万保本与提前支取规则交代清楚，无收益承诺，整体劝审慎，导向安全。",
+      "script_spans": [
+        "存单属一般性存款，五十万内保本，但起购二十万，提前支取按活期算",
+        "算总账未必比分散存中小银行更划算",
+        "先核对自己存款保险覆盖和用钱节奏，再决定排不排队"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-643e1f98644a4de6b1854ff16f3e160c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

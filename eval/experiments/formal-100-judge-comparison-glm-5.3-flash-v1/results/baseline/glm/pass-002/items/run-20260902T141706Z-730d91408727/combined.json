@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-f78661b243f043ec9a3685599664aca7",
+  "run_id": "run-20260902T141706Z-730d91408727",
+  "trace_sha256": "e076521b5211f8847634e4db0dcaa98be8b3e7de8b2b6574f666616027388555",
+  "created_at": "2026-09-03T14:24:08.765803Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直答'没被绑架，却也不自由'，全文围绕平台依赖展开，得失两侧与店主、顾客人群均覆盖。",
+      "script_spans": [
+        "你搜附近小吃，街边老店只在一个App亮着。没被绑架，却也不自由。",
+        "小店不会被铁链拖走，但生意脉息已系在平台入口上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从入店机制到佣金定价、核销风险层层推进，抖省省、扫街榜等例证与背景一致，无编造重复。",
+      "script_spans": [
+        "像抖省省，去掉短视频只留低价入口，几个月就聚起千万用户。",
+        "客人不是认你招牌，是认App红字标价。让出定价权，也交出了客人数据。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开场即见反差钩子，中段靠抖省省与核销率等新信息持续兑现，结尾提问与风的比喻由正文自然长出，不喊互动。",
+      "script_spans": [
+        "你搜附近小吃，街边老店只在一个App亮着。没被绑架，却也不自由。",
+        "可这流量不是白给的，它带着条件。",
+        "流量像风，借风起飞，也得防风停。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主，大体顺口，但脉息、核销率等书面处需临时改词断句，未达免改程度。",
+      "script_spans": [
+        "小店不用写脚本，传个套餐图就能见客。流量大，单子就来了。",
+        "但生意脉息已系在平台入口上",
+        "可抖音核销率曾低于传统平台，说明只靠爆款引流的店订单易泡汤"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻短而贴切、服务理解，“流量像风”“点亮别人的规则”离开原文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "如今手指代替了脚步，平台用补贴把习惯搬进手机。",
+        "这不是明抢，是交换。",
+        "我们点一下，其实在点亮别人的规则。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问衔接层层递进，'流量带着条件'因果清楚，结尾借风回扣开头的'不自由'与题设。",
+      "script_spans": [
+        "为啥店家越来越靠单个超级App？",
+        "可这流量不是白给的，它带着条件。",
+        "流量像风，借风起飞，也得防风停。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "批评有边界：明言'这不是明抢，是交换'，核销率表述以'曾'限定，利弊并陈，无煽动、夸大或无据承诺，导向安全。",
+      "script_spans": [
+        "没被绑架，却也不自由",
+        "这不算坏事，客人得实惠，小店省吆喝",
+        "这不是明抢，是交换",
+        "可抖音核销率曾低于传统平台"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3a8cfbe5a1d04c33be6e8763b4e2e1ca",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

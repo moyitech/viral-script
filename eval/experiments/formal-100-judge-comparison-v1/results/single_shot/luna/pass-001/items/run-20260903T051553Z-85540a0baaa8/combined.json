@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-25e342fa893d44edb132f837574edfbe",
+  "run_id": "run-20260903T051553Z-85540a0baaa8",
+  "trace_sha256": "cc42ef3b48eeb2958ec34b54b95a4911cea8cfdaa7d598584d08b712896c1924",
+  "created_at": "2026-09-03T11:57:36.767873Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答干旱下能源转型如何减少对单一水源依赖，兼顾系统调节、火电风险与家庭用户。",
+      "script_spans": [
+        "能源转型应对看天吃饭的核心不是多装机，而是把电源、储能和负荷连成灵活可调的系统。",
+        "普通家庭盯紧分时电价，把充电、洗衣挪到便宜时段"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 278，目标为 280，偏差率为 0.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中且信息单元层层推进，既解释水电与火电的涉水风险，也给出电网和家庭侧的具体应对。",
+      "script_spans": [
+        "别忘了火电冷却也大量吃水，干旱同样勒它脖子，单一能源路线都怕没水。",
+        "既减支出也帮电网削峰，举手之劳就是转型一环。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出干旱与成本冲突，中段连续补机制和对策，结尾也由“看天吃饭”自然收回。",
+      "script_spans": [
+        "干旱推高水电成本，能源转型应对看天吃饭",
+        "别忘了火电冷却也大量吃水，干旱同样勒它脖子，单一能源路线都怕没水。",
+        "别奢望风调雨顺，系统弹性越强，电费才越不被老天爷情绪左右，韧性是熬出来的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有短句和口语劲，但开头句式、“坝前水位和流量转化”明显卡顿，技术术语也削弱了连贯性。",
+      "script_spans": [
+        "出力掉得狠，缺口被迫用高价电补",
+        "干旱推高水电成本，能源转型应对看天吃饭的核心不是多装机，而是把电源、储能和负荷连成灵活可调的系统",
+        "水电靠坝前水位和流量转化"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“看天吃饭”“勒它脖子”“老天爷情绪”把抽象风险变得可感，至少留下两处可复述的表达。",
+      "script_spans": [
+        "能源转型应对看天吃饭的核心不是多装机，而是把电源、储能和负荷连成灵活可调的系统。",
+        "干旱同样勒它脖子",
+        "电费才越不被老天爷情绪左右，韧性是熬出来的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、机制、风险、行动和结论链条完整，但现货市场、虚拟电厂与跨区购电的因果条件压缩过度。",
+      "script_spans": [
+        "水电靠坝前水位和流量转化，干旱季河沟断流，出力掉得狠",
+        "电力现货和虚拟电厂让风光、火电、用户侧响应实时匹配，缺电区域能立刻从富余地方买电"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有敏感或危险内容，家庭建议较稳；但“立刻买电”“最终大家分摊”等因果与普遍性表述过满，需补充适用边界。",
+      "script_spans": [
+        "把充电、洗衣挪到便宜时段，既减支出也帮电网削峰",
+        "缺电区域能立刻从富余地方买电",
+        "成本直接传导到账单，这账最终大家分摊"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b33c167705e246649c7ffd2ad8f38b32",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6ac63051c3e949308d0e98e95904f7d2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

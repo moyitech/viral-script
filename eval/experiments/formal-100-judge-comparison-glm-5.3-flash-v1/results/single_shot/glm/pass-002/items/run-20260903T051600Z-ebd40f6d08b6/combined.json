@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-33929180c0e7437582059abacbecaa61",
+  "run_id": "run-20260903T051600Z-ebd40f6d08b6",
+  "trace_sha256": "5104e3425cf771c34873bd7ddf622627fe3dc25c8c4a3f9c76a1893f0b7241c7",
+  "created_at": "2026-09-03T15:28:09.999706Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出题设冲突，正面给出弹性缓冲的判断，兼顾用户预期与骑手处境，覆盖完整。",
+      "script_spans": [
+        "极端天气下死守分钟级的准时指标，已经偏离了服务的本质，承诺本身需要随天气转为弹性缓冲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "高温订单跳升、停表机制、骑手健康损耗等论据层层推进，无编造，观众能带走具体判断。",
+      "script_spans": [
+        "像极端高温天，居民为了避开户外暴晒反而更频繁叫外卖，订单量会明显跳升",
+        "暴雨大风时主动标注“配送延长”，用事前沟通替代事后机械赔券"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇暴雨与28分钟承诺即成反差，中段单量跳升、停表机制持续兑现钩子，结尾悖论自然留味。",
+      "script_spans": [
+        "窗外暴雨倾盆，你手机上的外卖订单还显示“预计28分钟送达”，可配送地图上那个小蓝点正卡在立交桥下不动。",
+        "像极端高温天，居民为了避开户外暴晒反而更频繁叫外卖，订单量会明显跳升。",
+        "当极端天气从意外变成季节常态，肯慢下来的配送，反而是更成熟的快。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数短句好读、有画面感，但\"天气因子透明植入\"\"该怎么落地\"等处拗口需改词，定为2分。",
+      "script_spans": [
+        "用户要的是安稳到手的热菜，不是冷冰冰的违约账单。",
+        "务实的做法是平台把天气因子透明植入进度条"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "军令状、看天变色点到为止不堆砌，热菜对账单、慢对快均贴切，离开原文仍可复述。",
+      "script_spans": [
+        "用户要的是安稳到手的热菜，不是冷冰冰的违约账单。",
+        "准时承诺不该是风雨里的军令状，它得学会看天变色。",
+        "肯慢下来的配送，反而是更成熟的快。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，结尾回扣开头，但“现实影响该怎么落地”语义含混，属生硬过渡。",
+      "script_spans": [
+        "那么平台继续用超时罚款去逼出速度，行得通吗？这就到了取舍层面。",
+        "现实影响该怎么落地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点公允有资料支撑，兼顾骑手安全与消费者预期，无煽动夸大或绝对化承诺。",
+      "script_spans": [
+        "务实的做法是平台把天气因子透明植入进度条，暴雨大风时主动标注“配送延长”，用事前沟通替代事后机械赔券",
+        "消费者也该明白，风雪天慢到的餐，可能正是免于事故的后勤防线"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-06f90bc3d719485abb3287401ab1dc59",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

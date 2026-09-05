@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-7ffe4d1bde1643f4aeec3433f2290bf6",
+  "run_id": "run-20260903T051601Z-224d662ab31a",
+  "trace_sha256": "1f0b059de6d216bed4f238b7366c40e611bb62d2157257f86b910e96a3b604b9",
+  "created_at": "2026-09-03T12:32:25.010796Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答资源如何分配，既强调急重优先，也解释非急症涌入成因并提出替代出口。",
+      "script_spans": [
+        "有限医疗资源分配应当急重优先",
+        "取舍必须是体系性的：让真正紧急的获得保障，其他需求有替代出口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，依次提供急诊定位、拥堵成因、分诊边界、替代出口及改革效果，信息推进充分。",
+      "script_spans": [
+        "为什么大家不往门诊去？很多时候是夜间门诊关门、社区信任不足，或者自觉“拖不得”。",
+        "结果非紧急就诊明显回落，危急病人的等候反而缩短。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用急重与非急重同场的反差抓人，中段持续追问并补足边界，结尾的公平判断自然收束。",
+      "script_spans": [
+        "深夜高烧伴胸痛的老人，和只是来开感冒药的年轻人，挤在同一间急诊室里。",
+        "那硬把非急症挡在门外，就解决问题了吗？",
+        "不过效果能持续，还得靠基层医疗真正接得住，否则只是把人从一个门口推到另一个门口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有清楚的对话承接，但长句、抽象并列和少数生硬搭配叠加，朗读需要重断句。",
+      "script_spans": [
+        "那硬把非急症挡在门外，就解决问题了吗？",
+        "我的看法很明确，有限医疗资源分配应当急重优先，但非急症患者涌入不是单纯因为大家不懂规矩，而是整个就医链条的错位与基层承接的缺口。",
+        "取舍必须是体系性的：让真正紧急的获得保障，其他需求有替代出口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“把人从一个门口推到另一个门口”和“为生死而开”具体有力，修辞克制，留下了可复述的判断。",
+      "script_spans": [
+        "否则只是把人从一个门口推到另一个门口。",
+        "急诊室的门该为生死而开，不该为方便而堵"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有开头、解释、反问和收束，推进顺畅；但“少一份警觉”把资源挤占与临床后果连接得不够严密。",
+      "script_spans": [
+        "这里得说清边界。分诊排序不等于拒绝救治",
+        "给感冒患者多验一次血，心梗患者就少一份警觉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "明确强调分诊不等于拒治，也承认误判风险；但把资源冲突写成必然因果，结尾“生死/方便”二分略显绝对，易造成误导。",
+      "script_spans": [
+        "分诊排序不等于拒绝救治，万一非急症其实是重症早期，误判代价极大。",
+        "给感冒患者多验一次血，心梗患者就少一份警觉。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ac9fc3ed42824bbe9206e8655c58cb61",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

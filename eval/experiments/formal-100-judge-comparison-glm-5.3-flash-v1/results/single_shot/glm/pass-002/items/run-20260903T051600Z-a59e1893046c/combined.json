@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-9b163f039e88461088e7c0bda1406de1",
+  "run_id": "run-20260903T051600Z-a59e1893046c",
+  "trace_sha256": "56c5dc75e65d19efe396c8c9da9e4dc789303cb2d5cbbc84517527c524ad951c",
+  "created_at": "2026-09-03T15:27:46.890024Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答低风险为何也亏钱，机制解释、标签澄清到选购动作全程扣题，直击普通持有人误区。",
+      "script_spans": [
+        "你买的那只标注低风险的债券基金，明明没买股票，净值却绿了好几天。低风险难道不就是稳赚吗？",
+        "翻开定期报告，看它久期多长、信用债占比几成，用这笔钱前想清楚自己扛不扛得住几天浮亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题全程聚焦，风险来源逐一给机制不空转，风险准备金、市值法等说法站得住，观众带走判断方法。",
+      "script_spans": [
+        "市场利率一上行，老债券的价钱就得往下走，基金持有的仓位按市值估算，净值自然跟着皱眉。",
+        "那笔钱只用于赔付因操作失误或违规带来的损失，市场正常波动它一分不补。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字即抛出低风险却翻绿的反差，中段用设问持续兑现新信息，结尾金句自然收出余味，无硬拉互动。",
+      "script_spans": [
+        "你买的那只标注低风险的债券基金，明明没买股票，净值却绿了好几天。",
+        "那低风险标签又算什么？",
+        "低风险三个字是温度计，不是救生圈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与比喻让全文大体好读，但'两成仓位经理'断句歧义、'主投短久期国债的纯债基'修饰堆叠，朗读需临时调整。",
+      "script_spans": [
+        "长债像跷跷板，利率稍动净值就大幅起伏",
+        "剩下不到两成仓位经理还能灵活调配",
+        "就去挑主投短久期国债的纯债基"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "跷跷板讲久期、温度计对照救生圈，比喻贴切服务理解，记忆点可脱离语境复述，密度克制不喧宾夺主。",
+      "script_spans": [
+        "长债像跷跷板，利率稍动净值就大幅起伏",
+        "低风险三个字是温度计，不是救生圈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进段段有功能，风险来源层层递进，结尾温度计比喻回扣开头，因果桥完整不需观众补跳。",
+      "script_spans": [
+        "为什么债券价格会跳？债券常被叫做固定收益资产，但固定的是利息约定，不是市价。",
+        "低风险三个字是温度计，不是救生圈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "主动澄清不保本边界，纠正稳赚误解，建议均附限定，无夸大承诺与煽动表述，符合投教合规要求。",
+      "script_spans": [
+        "其实低风险从来不等于不亏钱",
+        "但那只是波动浅，不是免死金牌",
+        "用这笔钱前想清楚自己扛不扛得住几天浮亏"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1e167e86255f480789faa5fc5de1a0b3",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-05dc66625b2f49e78da8adc509cd5ac2",
+  "run_id": "run-20260902T142220Z-61ebf4344b43",
+  "trace_sha256": "e3cd917132196fd40399b05b0ae4d226ab75525ac5e09ec5e4e9e49e1f7716ef",
+  "created_at": "2026-09-03T11:44:02.747568Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答汇率会否吞收益，兼顾升贬值、换汇与持有期，并聚焦普通人的配置判断。",
+      "script_spans": [
+        "这事儿不绝对，汇率能吞掉你的利息，也能反过来送你汇兑盈利，全看你进场价格和拿多久。",
+        "普通人想在额度内试水跨境理财，得把购汇结汇的隐形损耗算进总账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 705，目标为 700，偏差率为 0.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕收益、点差、汇率和持有期层层补充，并给出可执行的总账计算和压力测试方法。",
+      "script_spans": [
+        "你一进一出，先被扣掉一层成本。",
+        "再问，如果本币升值三五个点，利润还在不在。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出收益被汇率吞掉的冲突，中段用点差、升值和反例持续推进，结尾问题也由正文自然长出。",
+      "script_spans": [
+        "换美元买理财，收益常不抵汇率波动损失",
+        "你先问自己，预期息差减掉点差还剩多少；再问，如果本币升值三五个点，利润还在不在",
+        "当你盯着年化数字时，有没有想过，那道换汇差价才是你真正的起跑线？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话式停顿，解释也能听懂；但个别专业串联偏长且“波动说来越快”卡嘴，离自然顺滑仍差一档。",
+      "script_spans": [
+        "你一进一出，先被扣掉一层成本。",
+        "汇率弹性这些年明显变大，波动说来越快",
+        "普通人想在额度内试水跨境理财，得把购汇结汇的隐形损耗算进总账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“吞掉利息”“两道坎”“总账”等表达兼顾解释与记忆，反复适度，结尾“起跑线”也留下了复述点。",
+      "script_spans": [
+        "汇率能吞掉你的利息，也能反过来送你汇兑盈利",
+        "头一道坎是换汇差价，第二道坎是持有期汇率走向",
+        "当你盯着年化数字时，有没有想过，那道换汇差价才是你真正的起跑线？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "总账、风险和策略主线清楚，也有实用结论；但汇率被直接当减项，近期行情段还有重复，论证不够严密。",
+      "script_spans": [
+        "你先问自己，预期息差减掉点差还剩多少；再问，如果本币升值三五个点，利润还在不在。",
+        "利息减点差减汇率可能剩零。",
+        "近期人民币对美元就偏强，钱变得更值钱了。",
+        "你看近期市场，人民币一步步走强，换美元的成本看似低了，但回头结汇更亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提醒汇率与点差风险较克制，但将购汇结汇统一说成钞价，并用近期走势作泛化判断，需补充产品和时点边界。",
+      "script_spans": [
+        "这事儿不绝对，汇率能吞掉你的利息，也能反过来送你汇兑盈利，全看你进场价格和拿多久。",
+        "你拿人民币去银行买美元，用的是钞卖价。等赎回再结汇，银行用钞买价收。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e028e6872fa44b1cba515566c3fcb514",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f86721f5ea744aed85b3369322828f2b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

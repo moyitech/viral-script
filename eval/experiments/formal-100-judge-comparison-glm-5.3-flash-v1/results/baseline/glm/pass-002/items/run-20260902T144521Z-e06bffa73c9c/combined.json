@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-b7cf8d8320b54970b90924af893ea818",
+  "run_id": "run-20260902T144521Z-e06bffa73c9c",
+  "trace_sha256": "746d0d0db34fcf62e302eca28b88d2d1ef1814332e6d889bdc552d39a9708c30",
+  "created_at": "2026-09-03T14:27:00.039852Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即立冲突并给出分配总则，分诊与收费对应拦与劝，结尾回扣普通人就医选择，全程扣题。",
+      "script_spans": [
+        "资源该这么分：先判轻重，急的先救，不急的劝去别处",
+        "这床该不该留给身后救护车的人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "轻症界定、分诊分级、收费退款与少两成结果层层推进，数据有据，观众能带走可用的判断标准。",
+      "script_spans": [
+        "进门先预检分诊，护士看症状定紧急级别",
+        "非紧急自己付更多，再配退款机制，转去诊所也不亏。结果那类人少两成"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头“抢走救命床”即立冲突，中段问题、机制、结果层层兑现，结尾一问由正文自然长出。",
+      "script_spans": [
+        "你发烧去急诊，可能抢走心梗老人救命床",
+        "光分诊不够，得让人愿去别处。有些地方动收费，非紧急自己付更多",
+        "下次小病又想奔急诊，先问：这床该不该留给身后救护车的人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口贯穿全文，重音停顿清楚，设问与“你想”等口语承接自然，朗读无需临时改词。",
+      "script_spans": [
+        "问两句血压呼吸，把人排进不同队。最急的走绿色通道推去抢救，慢的领号坐边上看。",
+        "你想，急诊大夫和床位就那些，你占着，危重的可能错失黄金时间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“等于给自家留后路”离文可复述，好钢用刀刃贴切点到为止，全篇克制不堆砌辞藻。",
+      "script_spans": [
+        "把急诊让给真急的，等于给自家留后路",
+        "分诊不是拒人，是把好钢用在刀刃",
+        "不凶的病指啥？头疼脑热不喘不晕的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "光分诊不够衔接两机制，先答判轻重再答劝别处，末句救护车之问回扣开头，因果桥齐全。",
+      "script_spans": [
+        "光分诊不够，得让人愿去别处",
+        "你想，急诊大夫和床位就那些，你占着，危重的可能错失黄金时间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "分诊不是拒人、退款不亏等表述有边界；但开头把发烧者说成抢占救命床，且不喘不晕当自查标准，未经限定易误导。",
+      "script_spans": [
+        "分诊不是拒人，是把好钢用在刀刃",
+        "先判轻重，急的先救，不急的劝去别处",
+        "你发烧去急诊，可能抢走心梗老人救命床",
+        "头疼脑热不喘不晕的"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ccaafc6c3a5142a59c4bd529bf83a9cd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

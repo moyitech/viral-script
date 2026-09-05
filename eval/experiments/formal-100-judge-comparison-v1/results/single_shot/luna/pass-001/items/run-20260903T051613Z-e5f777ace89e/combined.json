@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-9221471f51354d749b5ee34a9a422d52",
+  "run_id": "run-20260903T051613Z-e5f777ace89e",
+  "trace_sha256": "fb38704c9be57ca4ddf96512b75b70412c5c6e6df18e86a2497cc89e04ea512d",
+  "created_at": "2026-09-03T11:58:45.865467Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答现在锁定是否靠谱，覆盖固收与分红两侧，并给普通消费者具体的合同核验和流动性建议。",
+      "script_spans": [
+        "只有白纸黑字写进现金价值的固定利益，才叫真正锁定；现在挑普通型寿险或年金险里的固收类，靠谱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 760，目标为 700，偏差率为 8.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，确定利益、分红实现率、利率和流动性等信息彼此推进，最后落到现金价值表与保证条款的判断方法。",
+      "script_spans": [
+        "演示利率是假设，不是承诺，别混淆。",
+        "买之前问自己：合同里哪行字保证我拿钱？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用业务员的降息话术制造风险感，中段持续拆解锁定与分红差异，结尾警示有余味。",
+      "script_spans": [
+        "业务员说利率还要降，现在不锁定长期保险以后更亏。",
+        "可你翻合同的时候，真知道哪部分叫“锁定”吗？别急着签字。",
+        "买之前问自己：合同里哪行字保证我拿钱？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有明确钩子、问句和收束句，整体能听懂；但核心段落连续堆叠金融概念，少数搭配生硬，未达精心设计的自然口播。",
+      "script_spans": [
+        "可你翻合同的时候，真知道哪部分叫“锁定”吗？别急着签字。",
+        "若冲着可能高收益去，得接受它也可能跑输定存。",
+        "才听进去锁定长期回报",
+        "连行业样本公司都出现过保单价值贡献为负，意味着当年保单剩余边际都填不上履约亏损",
+        "同一边界我只说一次"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“白纸黑字”“把可能当保证”把抽象的确定性说具体，警示句有复述价值，修辞没有压过信息。",
+      "script_spans": [
+        "只有白纸黑字写进现金价值的固定利益，才叫真正锁定",
+        "分红看公司投资收益脸色。",
+        "把可能当保证，签完才发现梦碎。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，结论、背景、对比和行动建议层层推进；但监管清单不能直接推出产品回归确定性，且分红险保证与演示的边界表述偏宽。",
+      "script_spans": [
+        "如果你要的是几十年后绝对确定的那笔钱，就翻合同现金价值表，选固收类",
+        "监管也连续升级人身险负面清单，2026版已经拉到一百多条红线，逼着产品回归确定性。",
+        "但被包装成高回报的分红险，演示再漂亮也不是锁定。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能区分固定利益和演示利益，但“靠谱”“窗口还在”等泛化推荐缺少产品边界，“100%确定”也易造成误解。",
+      "script_spans": [
+        "演示利率是假设，不是承诺，别混淆。",
+        "现在挑普通型寿险或年金险里的固收类，靠谱。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9c965fb642064142aeabbe3a309fe4d0",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-83b9775090374b64b0467030327c9f48",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-834b556bacb04deaa5f776a3f198b504",
+  "run_id": "run-20260903T051559Z-70842ac03adc",
+  "trace_sha256": "aa2456d712f5512d5933635cbb5264d764d13e515186bdab38ad06852a1b5efb",
+  "created_at": "2026-09-03T14:09:40.065313Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即正面回答决定权归属，祖辈边界与父母权责两侧均覆盖，结尾回扣带娃痛点。",
+      "script_spans": [
+        "但法律上的日常教育决定权，真不全在带娃的人手里",
+        "老人管起居，父母守关键决策"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 406，目标为 450，偏差率为 9.78%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律依据、例外情形、双向约束、实操建议层层推进，与引用相互印证，无编造痕迹。",
+      "script_spans": [
+        "祖父母受委托照料，并不自动拿到最终决定权",
+        "哪怕在微信里约好，也比事后翻脸强"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即设祖辈冲突，中段用“老人付出算什么”续推，结尾金句自然收束，留有余味。",
+      "script_spans": [
+        "你天天给孙子做饭、接送上学，可一到报兴趣班、立规矩，儿子媳妇一句话就推翻你的安排",
+        "那老人付出算什么？边界在生活照护和习惯养成",
+        "带娃是情分，决定权是法定义务"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整段能读通，日常例子好读，但法条式句子需临时换词重断，中段书面讲解压低顺口度。",
+      "script_spans": [
+        "反过来，父母也不能把老人当保姆，甩手不管再事后挑刺。",
+        "法律把家庭教育从纯家事变成有国家规范的事务，所以责任划分不是人情算计。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“带娃是情分，决定权是法定义务”离开上下文仍可复述，保姆、战场之喻贴切克制，无堆砌。",
+      "script_spans": [
+        "带娃是情分，决定权是法定义务",
+        "父母也不能把老人当保姆，甩手不管再事后挑刺"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "承转问句衔接自然，父母祖辈两侧对照推进，结尾金句回扣开头与题设。",
+      "script_spans": [
+        "那老人付出算什么？边界在生活照护和习惯养成",
+        "反过来，父母也不能把老人当保姆，甩手不管再事后挑刺"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法律边界交代清楚，双向约束不偏袒，建议务实稳妥，无煽动夸大或绝对化表述。",
+      "script_spans": [
+        "反过来，父母也不能把老人当保姆，甩手不管再事后挑刺。",
+        "对普通家庭，与其争谁听谁的，不如提前把分工写明白：老人管起居，父母守关键决策。",
+        "带娃是情分，决定权是法定义务。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-84ace3c18c854a7281f4d1a63bae797b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9b64ba3b2e8c44e7915276ba8f6803ae",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

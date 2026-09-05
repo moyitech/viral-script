@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-90605aef0be243038127e5b827f19d6a",
+  "run_id": "run-20260902T141317Z-03db82151b6e",
+  "trace_sha256": "d0ae178a5dc1cc6d7b9bb84a3bf69feeeca1b243405538316e4c2cf6aba7612a",
+  "created_at": "2026-09-03T14:23:38.921137Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直答'不会更难治'，难与不难两侧都讲到，'你'的痛点贴合普通观众，切角具体。",
+      "script_spans": [
+        "短视频全面接智能客服，你申诉不会更难治",
+        "复杂申诉你直接喊转人工，别在层层菜单里白绕"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "接力规则、优先转人工、企业担责、投诉上涨层层推进，有事实有解释，观众能带走判断方法。",
+      "script_spans": [
+        "智能和真人要顺畅接力。不是让你把遭遇讲两遍，真人接手就懂前面事",
+        "你碰账号钱财或安全明说转人工，系统就得优先派真人",
+        "企业那头也不能拿AI自动生成当挡箭牌，把责任推干净"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即立冲突反差，中段以保底、接力、优先派真人持续兑现，结尾余味与行动建议自然生长，留客力强。",
+      "script_spans": [
+        "AI绕晕你吞申诉，九月新规却塞人工口",
+        "从前AI答非所问瞎转，现在标准逼它交班",
+        "算法能挡一时，挡不了你开口要真人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口为主、重音清楚，但开头与转人工规则两处压缩过狠，需临时重断句。",
+      "script_spans": [
+        "算法能挡一时，挡不了你开口要真人。",
+        "AI绕晕你吞申诉，九月新规却塞人工口。",
+        "你碰账号钱财或安全明说转人工"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "接力与交班一喻贯穿人机衔接，挡箭牌、冷冰冰代码皆服务理解，金句离开上下文仍可复述，收放适度。",
+      "script_spans": [
+        "智能和真人要顺畅接力",
+        "拿AI自动生成当挡箭牌，把责任推干净",
+        "别让冷冰冰代码替你吃亏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "起承转合清楚，'从前—现在'搭因果桥，结尾'被绕就要人工'回扣开头，闭环自然。",
+      "script_spans": [
+        "机器先挡一道关卡，但留了保底",
+        "从前AI答非所问瞎转，现在标准逼它交班",
+        "算法能挡一时，挡不了你开口要真人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "涉转人工表述带明确条件，企业责任归因与官方口径一致，建议具体且无夸大承诺。",
+      "script_spans": [
+        "你碰账号钱财或安全明说转人工，系统就得优先派真人",
+        "企业那头也不能拿AI自动生成当挡箭牌，把责任推干净",
+        "复杂申诉你直接喊转人工，别在层层菜单里白绕"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7016a81822ad4c739e46ec00fb897449",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

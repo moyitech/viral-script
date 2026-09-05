@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-26711db2b94e477ca8fa00d0fc7835d7",
+  "run_id": "run-20260902T144748Z-7d0c20e11201",
+  "trace_sha256": "9063bf32509e457f8da577f68143b0de2f997a569d595f7dc90f848ee3b0e7e2",
+  "created_at": "2026-09-03T12:15:57.372639Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否集体涨价，既解释出口限制边界，也区分光伏、电池，并落到普通人的购买账单。",
+      "script_spans": [
+        "全球绿色产业不会集体涨价",
+        "涨跌已分进你家账单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕价格分化展开，政策边界、产业差异、加工能力和供需缺口层层增加有效信息。",
+      "script_spans": [
+        "光伏在跌，电池在涨，旱涝不均。",
+        "这不是所有绿色产品都贵，而是关键材料紧平衡拖着部分价格走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“出口卡了”制造反差，中段持续拆分光伏与电池，结尾落到账单并自然追问。",
+      "script_spans": [
+        "出口卡了，绿色产品没集体涨价，有的真贵了。",
+        "涨跌已分进你家账单。你买带电池的重一点，插电的轻一点，对吧？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、反问和比喻让整体可听，但技术名词、压缩句和收尾比较拗口，朗读仍需多处重断句。",
+      "script_spans": [
+        "为什么没全线飞涨？限制有边界。",
+        "普通人买电动车，发现优惠少了成本硬挺。",
+        "你买带电池的重一点，插电的轻一点，对吧？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“成本像水管，源头紧下游涩”和“政策卡的是战略物项，市场分的是日常开销”都形象且可复述。",
+      "script_spans": [
+        "成本像水管，源头紧下游涩，从矿场传到电池包。",
+        "政策卡的是战略物项，市场分的是日常开销。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头定论、分产业展开、结尾回扣清楚，但举报与合规出口的因果偏弱，结尾“带电池”和“插电”概念也未交代。",
+      "script_spans": [
+        "全球绿色产业不会集体涨价，光伏在跌，电池在涨，旱涝不均。",
+        "还让群众举报违规偷运，说明合规出口没堵死",
+        "你买带电池的重一点，插电的轻一点，对吧？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有违规煽动，且区分产业链涨跌；但“不会集体涨价”“稀土加工超九成”等表述过于绝对或泛化，易造成误导。",
+      "script_spans": [
+        "这不是所有绿色产品都贵，而是关键材料紧平衡拖着部分价格走。",
+        "全球绿色产业不会集体涨价",
+        "可稀土加工超九成还在中国手里"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ef2e585eed9b413eb5857304fb6c8c54",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

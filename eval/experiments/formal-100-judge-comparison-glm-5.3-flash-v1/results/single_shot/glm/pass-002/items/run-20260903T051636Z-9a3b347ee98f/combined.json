@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-73f04fa7f9fc41e8bbd9b5391b2937af",
+  "run_id": "run-20260903T051636Z-9a3b347ee98f",
+  "trace_sha256": "fa1cc8d3623d1b9e36821c1e4562f45a6580ca45e592cef76cdf0cf0c6aebb81",
+  "created_at": "2026-09-03T15:28:25.455635Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇点题并给明确判断，便利与负债两侧均覆盖，落点直指普通用户决策，结尾回扣题设之问。",
+      "script_spans": [
+        "对普通人，好处真实：不确定合身先买回比划，退掉不用掏钱",
+        "真正的便利，不该让你忘记钱在流出"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“不主打穷、主打不敢买”层层推进，含平台动机、风险机制与自检方法，与背景资料相符，无编造。",
+      "script_spans": [
+        "这功能根本不主打穷，而是主打“不敢买”",
+        "下单前自问：现在立刻扣款，我还买吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头“三件同款”反差抓人；中段“不主打穷、主打不敢买”持续转折；结尾自问由正文自然长出，余味足。",
+      "script_spans": [
+        "你收到快递，拆开竟是三件同款不同尺码的衣裳，下单时没花一分钱",
+        "这功能根本不主打穷，而是主打“不敢买”",
+        "现在立刻扣款，我还买吗？如果答案模糊，就关掉它"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏与画面感在线，朗读不卡；但中段多处书面讲解腔，真人开口感打折。",
+      "script_spans": [
+        "你在多家平台各欠一点，待付款像隐形账单，收货时轻松，还款日撞一块才慌神",
+        "但延迟支付抹掉花钱痛感，才是隐忧"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，“延后付款换下单率”“立刻扣款还买吗”离开原文仍可复述，记忆点自然不炫技。",
+      "script_spans": [
+        "说白了，平台用延后付款换你的下单率",
+        "待付款像隐形账单，收货时轻松，还款日撞一块才慌神",
+        "真正的便利，不该让你忘记钱在流出"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进、利弊转折、行动建议与首尾回扣俱全，关键因果有桥梁，观众无需自行补齐逻辑。",
+      "script_spans": [
+        "为什么平台拼命推？因为国内消费金融早能补“没钱”的缺口",
+        "收货时轻松，还款日撞一块才慌神"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "利弊并陈且边界清楚：先承认好处真实，风险用隐忧限定，判断有自我标注，无夸大承诺或煽动。",
+      "script_spans": [
+        "对普通人，好处真实：不确定合身先买回比划，退掉不用掏钱",
+        "把它当有限试用权，不是信用额度"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b95a715e3efb459083d274b2e01aac33",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

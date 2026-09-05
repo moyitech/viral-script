@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-e8d6d2fa42a74a109e50398cd94975d6",
+  "run_id": "run-20260903T051606Z-b4203b2362da",
+  "trace_sha256": "0ba4aef3aeddc7c589e6f687226c9d8a48118085562cdf80db562ebc51893f73",
+  "created_at": "2026-09-03T12:01:16.800399Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头先回答是否集体涨价，再区分材料、时间和消费者影响，核心人群与题设两侧都覆盖。",
+      "script_spans": [
+        "不会让全球绿色产业集体涨价，但供应链高度集中的那几种材料",
+        "普通人选购绿电设备会不会马上多掏钱？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 425，目标为 450，偏差率为 5.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕出口管控如何传导到终端价格展开，覆盖管制边界、加工集中、时间差和选购建议，信息推进明确。",
+      "script_spans": [
+        "现在的出口管控大多对准战略矿产和两用物项，不是所有绿色原料都受限。",
+        "终端产品不会明天就统一调价，因为巨头会调配库存、切换采购地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用降价预期与矿端逆风制造反差，中段不断抛出边界、集中度和选购后果，结尾提醒自然落地。",
+      "script_spans": [
+        "买太阳能板和电动车的人盼着降价，但矿端的风向却反着吹",
+        "为什么不是一刀切暴涨？看清管制的边界就知道",
+        "别只看能效标签，看看它肚子里的矿从哪来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和设问能带节奏，但长串抽象判断与术语并置，朗读时仍需重断句。",
+      "script_spans": [
+        "为什么不是一刀切暴涨？看清管制的边界就知道。",
+        "关键原料出口受限，不会让全球绿色产业集体涨价，但供应链高度集中的那几种材料，价格底线已经被政策重新钉死。",
+        "绿色转型的成本曲线，不再只由技术迭代决定，也开始被矿仓里的政策锁链扯动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“矿端的风向却反着吹”和“肚子里的矿从哪来”具体好记，少量比喻服务理解，未压过信息。",
+      "script_spans": [
+        "矿端的风向却反着吹",
+        "别只看能效标签，看看它肚子里的矿从哪来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "按先下结论、解释边界、拆分短长期、落到建议推进，转折清楚，结尾自然回扣矿源与价格主题。",
+      "script_spans": [
+        "为什么不是一刀切暴涨？看清管制的边界就知道。",
+        "长期看，含受限材料的电机、储能单元可能悄悄溢价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，分析方向较克制，但“价格底线被政策钉死”等表述偏绝对，可能放大涨价预期。",
+      "script_spans": [
+        "终端产品不会明天就统一调价，因为巨头会调配库存、切换采购地。",
+        "价格底线已经被政策重新钉死"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-62cbe937c1f84c80aa2a4313490e44ca",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-0b86a9bee893405b95c05b4d150f4b0a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

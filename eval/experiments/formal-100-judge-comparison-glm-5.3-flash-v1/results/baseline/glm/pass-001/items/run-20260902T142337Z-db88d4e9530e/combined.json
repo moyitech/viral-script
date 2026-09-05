@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-9d2a9e2e884c4577b5de5131f411304c",
+  "run_id": "run-20260902T142337Z-db88d4e9530e",
+  "trace_sha256": "028128b6175a9deabf417e7e1e743df6c5d6b3d2ed329328eb9c13ff3acbf966",
+  "created_at": "2026-09-03T13:46:16.039341Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直答“不一定二选一”，企业效率与员工隐私两侧兼谈，落点对准普通员工，结尾回扣题设。",
+      "script_spans": [
+        "这事儿不一定非得二选一。企业用模型查邮件，快和隐私能兼顾，但得看做法。",
+        "企业想省审查人力，员工想护私，两边靠做法平衡。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 461，目标为 450，偏差率为 2.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律底线、微调研究、匿名化机制、泄露反例层层推进，观众能带走“先遮名字再筛查”的判断方法。",
+      "script_spans": [
+        "有研究看模型训练阶段，发现用省算力的微调法，隐私泄露风险反而降，和以前想的相反。",
+        "企业把姓名、电话、身份证号先遮掉，这叫匿名化。模型只扫剩下内容，活儿照样快，你的隐私没裸奔。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出效率与隐私的冲突问句；中段以研究反转、匿名化做法持续兑现钩子；结尾提问由正文自然生长，三段均立得住。",
+      "script_spans": [
+        "你发的邮件被大模型秒扫，效率翻倍但隐私没了？",
+        "发现用省算力的微调法，隐私泄露风险反而降，和以前想的相反",
+        "下次公司说装智能邮件盾，你问一句，它真把名字涂掉了吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口清楚，整体能上口；但“不留个人痕”“隐私准冒烟”两处生硬别扭，朗读需临时换词重断句，只能评2分。",
+      "script_spans": [
+        "模型只扫剩下内容，活儿照样快，你的隐私没裸奔",
+        "这就像隔雾看形，AI巡检不留个人痕",
+        "公司若直接全量读你信，不加处理，隐私准冒烟"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，匿名化讲解落地；“不必知道你是谁，也能懂邮件好坏”可独立复述，“从隐私里抠出的工时”留有余味。",
+      "script_spans": [
+        "模型不必知道你是谁，也能懂邮件好坏",
+        "企业把姓名、电话、身份证号先遮掉，这叫匿名化",
+        "遮住，效率才不至于只是从你隐私里抠出的工时"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由合规底座到技术做法再到个人影响，因果有桥，结尾“遮住”自然回扣开头之问。",
+      "script_spans": [
+        "法律一般要求最小必要，处理员工邮件要有合法理由，不能滥读私人通信。这是合规底座。",
+        "下次公司说装智能邮件盾，你问一句，它真把名字涂掉了吗？遮住，效率才不至于只是从你隐私里抠出的工时。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法律表述留“一般”余地，企业与员工两侧平衡不引战，风险提示均有条件限定，无夸大误导。",
+      "script_spans": [
+        "法律一般要求最小必要，处理员工邮件要有合法理由，不能滥读私人通信。",
+        "企业想省审查人力，员工想护私，两边靠做法平衡。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-52f8d6ad29a8435493ad113c77941a4a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-2a5b7043d5ac40caa930ac95c1dd231f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-9e548ff89e664a1e9df3ff3de888a885",
+  "run_id": "run-20260903T051536Z-8f67e328590c",
+  "trace_sha256": "948c8c511d04e293ba291ec1ad755a2363e4968082eea9b296ec0f0559a6ac27",
+  "created_at": "2026-09-03T12:31:35.982739Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应效率与隐私的冲突，覆盖企业、员工及技术和监管两侧，落点具体。",
+      "script_spans": [
+        "用大模型筛查邮件，效率提升本身不必然等于侵犯隐私"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕邮件筛查的隐私边界，风险、匿名化、人工监督和监管均有推进，信息增量充足。",
+      "script_spans": [
+        "一旦原始数据在外包模型里转一圈，泄露风险就实实在在发生了。",
+        "基于明确目的做最小必要处理，并且留人把关。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用效率与隐私的冲突抓人，中段连续补出法律、技术和监管转折，结尾金句也自然收住。",
+      "script_spans": [
+        "公司花几千块接个大模型，全天自动翻员工的邮箱，漏邮件、泄密、摸鱼全揪出来。",
+        "那是不是只要上AI筛查，就注定和员工隐私你死我活？倒也不是。",
+        "大模型筛查邮件，省的是人力，不该省的是分寸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句、问答和转折配合自然，技术信息虽密，但整体朗读气口清楚，基本无需改词。",
+      "script_spans": [
+        "为什么大家第一反应就是牺牲隐私？因为很多系统直接把原始邮件喂给模型",
+        "那是不是只要上AI筛查，就注定和员工隐私你死我活？倒也不是。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比、拟人和杠杆隐喻都服务观点，尤其“省的是人力，不该省的是分寸”简洁而可复述。",
+      "script_spans": [
+        "照理说效率越强、隐私越惨，但真相没这么简单。",
+        "工具用法才是杠杆。",
+        "大模型筛查邮件，省的是人力，不该省的是分寸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按风险、反例、监管和结论递进，但从模型训练研究跳到邮件匿名化方案，证据与结论衔接不足。",
+      "script_spans": [
+        "那是不是只要上AI筛查，就注定和员工隐私你死我活？倒也不是。",
+        "近期关于模型训练的研究发现，某些高效方法反而能像专业隐私手段那样压住数据记忆风险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调最小必要、人工把关，方向稳妥；但“全揪出来”及将外包处理直接等同风险发生，存在夸大和误导。",
+      "script_spans": [
+        "效率提升本身不必然等于侵犯隐私",
+        "基于明确目的做最小必要处理，并且留人把关",
+        "全天自动翻员工的邮箱，漏邮件、泄密、摸鱼全揪出来",
+        "一旦原始数据在外包模型里转一圈，泄露风险就实实在在发生了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a4f94905bb1e46a4b2ea172a4f8dcc5a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

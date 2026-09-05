@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-1d8a105ea1d64eabbd0b4c8940596a5b",
+  "run_id": "run-20260902T144226Z-4f37e87af19d",
+  "trace_sha256": "65eac0d7c4db120fc2ff304834fc743f52ba37f60906959d257ff908e45037be",
+  "created_at": "2026-09-03T11:44:42.671007Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆分短期刺激与长期信心，并落到普通人的收入、房贷和日常消费。",
+      "script_spans": [
+        "短期能拉消费，长久信心真没那么简单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 420，目标为 450，偏差率为 6.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，数据、政策机制与家庭账本各自推进，既说明短期效果，也解释长期信心为何难由补贴单独支撑。",
+      "script_spans": [
+        "政府每贴1元，带出3.4元消费。",
+        "当下是舒服，可下月房租学费照旧。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“先涨后补”制造具体风险，中段数据、政策权衡和个人账单层层推进，结尾比喻与提问都能自然留住余味。",
+      "script_spans": [
+        "你领的家电补贴，可能正被先涨后补吃掉。",
+        "你说这补贴是加油还是挖坑？",
+        "补贴像递水给跑者，前路平不平，才定他信不信能跑远。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有钩子、对话感和生活落点，但两处以上短语压缩生硬，朗读时需要补词或重断句，未达自然顺滑。",
+      "script_spans": [
+        "你说这补贴是加油还是挖坑？",
+        "当下是舒服，可下月房租学费照旧。",
+        "可反应最强的，是本来就要花且花超门槛的人",
+        "全国统一定标准防先涨后补"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“先涨后补吃掉”“补贴像递水给跑者”把政策风险和信心关系说得具体，且有可单独复述的判断，修辞没有压过信息。",
+      "script_spans": [
+        "你领的家电补贴，可能正被先涨后补吃掉。",
+        "补贴像递水给跑者，前路平不平，才定他信不信能跑远。",
+        "工资没涨，路还是自己走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，先讲效果再落到政策和家庭压力；但需求前移如何导致信心不足、按比例补贴为何更高效，论证不够。",
+      "script_spans": [
+        "两边得掰开看：短期能拉消费，长久信心真没那么简单。",
+        "这更像把以后的需求提前挪过来。",
+        "按比例让贵车多拿，效率是高了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，且未作确定性承诺；但“信任就垮”“不是靠补贴能续命”等表述偏绝对，易造成过度归因。",
+      "script_spans": [
+        "两边得掰开看：短期能拉消费，长久信心真没那么简单。",
+        "长久信心看收入预期和社保，不是靠补贴能续命。",
+        "可若骗补蔓延，大家觉政策虚，信任就垮。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-44ec9fc242bf4110a2d0676af2dc9c30",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ef6065f6ba0f4efd9db6f51bfaa5c09e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

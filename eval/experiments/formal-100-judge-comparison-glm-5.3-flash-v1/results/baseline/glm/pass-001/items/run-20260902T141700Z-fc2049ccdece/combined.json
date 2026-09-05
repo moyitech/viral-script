@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-5f114502a0ad4ba988c95402e6841af6",
+  "run_id": "run-20260902T141700Z-fc2049ccdece",
+  "trace_sha256": "4e47d39d33a394d5f5d567d3066b12b6f295c85f0d9da9dda6bac23d0923d943",
+  "created_at": "2026-09-03T13:48:20.071478Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直指多耗时间与安全两问，全程围绕通勤族展开，结尾“既稳当又顺畅”正面回扣题设的兼顾之问。",
+      "script_spans": [
+        "要兼顾安全和效率，不能只把关口加严，得让安检更聪明，用新技术把时间抢回来",
+        "让绝大多数人无障碍走过，少数行李自动留疑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 712，目标为 700，偏差率为 1.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从政策落差到视觉搜索实证，再到漏检机理与智能方案，信息单元层层推进，事实解释相互支撑。",
+      "script_spans": [
+        "有实证研究跟踪地铁岗，发现用透明挡板隔开路人交谈干扰，绩效会变好",
+        "你越想抠细，现场越噪，漏检风险反被悄悄抬高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以20分钟代价直击冲突，中段用规定悖论与安检员实证层层兑现，结尾之问由正文自然长出，留有余味。",
+      "script_spans": [
+        "早高峰多耗20分钟安检，安全就真能兜住吗？",
+        "为啥越细查，危险反倒可能从指缝溜走",
+        "下次你遇长队，该问的不是要不要防护，而是为何不能既稳当又顺畅"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句利落、动词鲜活，多数好读；但“工位微气候差人也稳不住”“自动留疑”等处需换词重断，书面腔拖了后腿。",
+      "script_spans": [
+        "行李必过机，人还持棒扫",
+        "工位微气候差人也稳不住",
+        "少数行李自动留疑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务论证，舞两下棒子、机器认得包就不必拦所有人等记忆点离文可复述，金句不压观点。",
+      "script_spans": [
+        "真轮到自己就舞两下棒子",
+        "当机器认得包，人就不必拦所有人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "四段设问依次推进，从拥挤、噪声到漏检的因果有桥，结尾自然回扣开头与题设，无逻辑断点。",
+      "script_spans": [
+        "为啥越细查，危险反倒可能从指缝溜走？",
+        "下次你遇长队，该问的不是要不要防护，而是为何不能既稳当又顺畅。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "批评具体措施但肯定防护初衷，主张以技术兼顾安全与效率，表述有据、不煽动不夸大，导向安全。",
+      "script_spans": [
+        "要兼顾安全和效率，不能只把关口加严，得让安检更聪明，用新技术把时间抢回来。",
+        "该问的不是要不要防护，而是为何不能既稳当又顺畅。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ad1e6695566843f68d3360c62b947a05",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-48ff16cd594641e192e4ce85580e006d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

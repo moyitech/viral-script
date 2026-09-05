@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-450f0c242eb84b758698077024a096b0",
+  "run_id": "run-20260903T051541Z-9a3a885d0efe",
+  "trace_sha256": "8546732f990b869495c1754a11b36b07f60ae5ee8c651e4ee136f59eda85e2d1",
+  "created_at": "2026-09-03T15:26:01.215442Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头点出收益缩水，随即回答钱往哪放，对象锁定普通家庭，题设两侧与人群痛点均命中。",
+      "script_spans": [
+        "这钱到底挪去哪？我的判断很直接：普通家庭别急找陌生高息渠道",
+        "闲钱第一目标是匹配用款节奏，不是硬拔收益"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，利率、监管、储蓄国债、花钱清单各推进一步，与背景资料相符，无编造。",
+      "script_spans": [
+        "货币市场短端利率常年趴在低位，这类产品底层买的票据存款本来就生不出多少利息",
+        "前几年监管把现金管理类产品的投资范围卡紧，过去靠弹性撑起的收益空间彻底没了",
+        "先写下未来半年的花钱清单，再决定哪笔能沉下去，哪笔必须留着透气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇首句即抛收益缩水反差，中段以利率与监管新信息层层兑现，结尾清单建议自然生长出余味，无硬凑互动。",
+      "script_spans": [
+        "最近打开一看，收益缩水得连瓶酱油都抠不出来。这钱到底挪去哪？",
+        "先写下未来半年的花钱清单，再决定哪笔能沉下去，哪笔必须留着透气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音停顿清楚，中段解释同样像真人说话，录音稿基本无需改词。",
+      "script_spans": [
+        "收益缩水得连瓶酱油都抠不出来",
+        "再决定哪笔能沉下去，哪笔必须留着透气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“连瓶酱油都抠不出来”与“沉下去、透气”两处比喻贴切克制，脱离上下文仍可复述，全程服务理解，无堆砌。",
+      "script_spans": [
+        "收益缩水得连瓶酱油都抠不出来",
+        "再决定哪笔能沉下去，哪笔必须留着透气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "判断先行，双因解释再落到可操作建议，结尾回扣用款节奏，因果桥清楚，层层递进。",
+      "script_spans": [
+        "低利率和强监管双压下，闲钱第一目标是匹配用款节奏，不是硬拔收益",
+        "如果确认有三五年不碰的钱，可以关注财政部发行的储蓄国债，利率比活期好看些，但也要接受它跑不赢通胀的现实",
+        "说到底，闲钱安置没有完美角落"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "主动提示远离陌生高息渠道，荐国债时附带跑不赢通胀的边界，无收益承诺与夸大诱导，价值导向安全。",
+      "script_spans": [
+        "普通家庭别急找陌生高息渠道",
+        "但也要接受它跑不赢通胀的现实"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f4446a86846b4c13af8687dfa4ce89d7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

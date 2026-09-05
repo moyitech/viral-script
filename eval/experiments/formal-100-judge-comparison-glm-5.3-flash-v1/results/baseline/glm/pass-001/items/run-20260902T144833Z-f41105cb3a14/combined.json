@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-b5e2cd7c44d64d5c956fc77cb2d71b84",
+  "run_id": "run-20260902T144833Z-f41105cb3a14",
+  "trace_sha256": "31bf706c2bb5986b62c9732df4955e0d324b0d901eb8d85f87ac1ae0b6d31421",
+  "created_at": "2026-09-03T13:47:29.399678Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直点浪费与误服，结论回扣安全感之问；浪费与风险两侧均覆盖，直指普通家庭药箱。",
+      "script_spans": [
+        "你囤的常用药，正变成浪费和误服风险",
+        "真正的安全感来自清楚家里有什么能用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 680，目标为 700，偏差率为 2.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终扣囤药代价；万吨数据、转卖违法、储存变质、回收处置与备药清单层层推进，无编造。",
+      "script_spans": [
+        "有白皮书算过，全国一年过期药约一点五万吨",
+        "卖药得有经营许可资质，咱没证转卖就踩红线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直指个人囤药风险抓人，中段用丢弃视频、万吨数据、卖药违法反转层层兑现，结尾追问由正文自然生长。",
+      "script_spans": [
+        "你囤的常用药，正变成浪费和误服风险。",
+        "你也许盘算，剩药卖药店回点血？这念头得掐了，个人卖药真的违法。",
+        "当药箱成了心理安慰，你敢不敢只留必需的？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "中段解释自然口语、短气口为主，但结尾“来自清楚家里有什么能用”等两处需临时换词重断，取低档。",
+      "script_spans": [
+        "你想送人怕嫌弃，扔了肉疼，不扔碍事，这就是真实处境",
+        "药怕潮也怕晒，卫生间厨房一放，成分悄悄变",
+        "真正的安全感来自清楚家里有什么能用",
+        "哪种药啥时用写清"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻口语化且服务说理，如“药是救急不是存钱”离开上下文仍可复述，密度适度无炫技堆砌。",
+      "script_spans": [
+        "扔了肉疼，不扔碍事，这就是真实处境。",
+        "药不是护身符，堆得多反而遮了眼光。",
+        "药是救急不是存钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "恐慌囤药、转卖违法、变质风险到处置方案环环相扣，设问承接自然，结尾回扣开头与题设。",
+      "script_spans": [
+        "你也许盘算，剩药卖药店回点血？这念头得掐了",
+        "说到底，药是救急不是存钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "转卖违法、有害垃圾等提示准确，慢病用药守医嘱边界，'说不定'留有余地，无夸大或煽动。",
+      "script_spans": [
+        "法律讲明白，卖药得有经营许可资质，咱没证转卖就踩红线",
+        "长期慢性病药严格按医生吩咐来",
+        "温度一高药效说不定打对折"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c271262efc50484d86166a86a944c462",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ba0ea00fbdf740cda00116d4243cac57",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

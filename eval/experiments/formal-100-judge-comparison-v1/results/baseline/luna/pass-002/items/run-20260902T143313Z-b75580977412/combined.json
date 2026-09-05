@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-41f1679cb7b445288ca21a45c48a1a4f",
+  "run_id": "run-20260902T143313Z-b75580977412",
+  "trace_sha256": "003e762c5d63a240a955ec3fb3089549d2fb33e5d40eb9d68854501552d8e509",
+  "created_at": "2026-09-03T12:15:38.819326Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答效率与真实反馈的关系，兼顾机器提效、教师判断和孩子体验，并落到具体使用场景。",
+      "script_spans": [
+        "你把AI当替身，反馈虚；当助手，反馈实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从批改耗时、全国调研到偏差风险和实验证据，信息单元层层推进，既有事实也有判断方法。",
+      "script_spans": [
+        "手工深批一篇，要十五到二十分钟。全班一次，得花八到十小时。",
+        "发现常态用AI帮批文的老师约两成，学生用AI写作文不到两成。",
+        "但一个小实验，二十八个学生用智能反馈改了十周议论文，成绩明显好了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“省十小时”对撞“错过点评”立刻设问，中段以案例、调研和反例递进，结尾自然落到亲子互动。",
+      "script_spans": [
+        "省下十小时批改，却可能错过孩子需要的那句点评。",
+        "机器查漏，人点亮，两边配合才像教书。",
+        "下次娃作文秒出评语，别光看分数，翻翻问他，这句让你想改吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、比喻和对话式追问增强了节奏，但多处搭配拗口，朗读时仍需临时换词。",
+      "script_spans": [
+        "机器查漏，人点亮，两边配合才像教书。",
+        "发现常态用AI帮批文的老师约两成",
+        "二十八个学生用智能反馈改了十周议论文"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“冷暖机器分不清”“机器查漏，人点亮”简洁贴题，既有形象对照，也把人机分工压缩成可复述的判断。",
+      "script_spans": [
+        "冷暖机器分不清。",
+        "机器查漏，人点亮，两边配合才像教书。",
+        "你把AI当替身，反馈虚；当助手，反馈实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、原因分析、反例和行动建议完整，主线可跟随；但结尾把工具偏见风险过度归结为使用方式。",
+      "script_spans": [
+        "为什么老师愿意交给它？手工深批一篇，要十五到二十分钟。",
+        "多数老师先让机器初筛，自己复核。",
+        "算法不是活人，学的是过往数据，难免带偏见。",
+        "工具不背锅，用法定好坏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体交代了人机协同、偏见与依赖风险，但“冷暖机器分不清”等绝对化表达仍可能把复杂问题说死。",
+      "script_spans": [
+        "如果AI知道学生身份特征，反馈可能偏移，这对真实反馈是隐患。",
+        "冷暖机器分不清。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-57fd44068d244c658d4323612ad1cbbc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

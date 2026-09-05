@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-56dc283d8c3e42c7af8c401b2c33a92f",
+  "run_id": "run-20260902T144510Z-074551eaf24a",
+  "trace_sha256": "c5730afda8fa9e7a9115adcf25ba540964356f069effb3de39c2d0d51756ca67",
+  "created_at": "2026-09-03T11:48:25.097705Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从优先救治危急病人写到非急症分流与配套保障，完整回应资源分配难题。",
+      "script_spans": [
+        "医生和床位先给心跳骤停、大出血的急重病人",
+        "同时非急症得有出口，疏导到社区门诊或延时诊所"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 678，目标为 700，偏差率为 3.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "分级规则、拥挤后果、成因与收费分流方案层层补充，信息单元充足且能形成判断依据。",
+      "script_spans": [
+        "急诊预检分诊按症状轻重排次序，急重优先是硬原则。",
+        "收费杠杆能调行为，却替代不了家门口诊所能开门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛出抢救风险，中段连续补充分诊、拥堵数据和解决方案，结尾追问承接自然。",
+      "script_spans": [
+        "非急症挤占急诊，危急患者可能错失抢救时机。",
+        "可现实常倒挂。很多患者夜奔急诊只图方便，病却不凶险。",
+        "怎么破？把非急症往外围推。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答推进和短句节奏，但多处压缩表达与结尾问法生硬，难称朗朗上口。",
+      "script_spans": [
+        "有限资源该怎么分？",
+        "为啥挤？",
+        "像清华长庚医院告知书就写，急诊专救危重症，从2019年实施分级管理。",
+        "下次身体闹脾气，你先想想该去哪吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“救命分钟”“先救命再管小病”等表达具体克制，既强化资源稀缺感，也留下可复述的记忆点。",
+      "script_spans": [
+        "你若感冒去急诊，实则挪用了别人的救命分钟。",
+        "先救命再管小病。",
+        "急诊科本为24小时救急，却被当作全天候门诊。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线和转折基本清楚，但“急救设备被绑定”的因果过猛，结尾问法也削弱了收束。",
+      "script_spans": [
+        "可现实常倒挂。",
+        "怎么破？把非急症往外围推。",
+        "非急症占了椅子和护士，急救设备就被绑定，真正危急的人反而没余地。",
+        "下次身体闹脾气，你先想想该去哪吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "分诊优先和分流建议总体克制，但把感冒发烧一概视为非急症并归责个人，缺少紧急症状例外，可能误导就医。",
+      "script_spans": [
+        "同时非急症得有出口，疏导到社区门诊或延时诊所",
+        "不该让感冒发烧者堵门"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5a4599dd1c2e44018fb983c60046ac90",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-2e501502869f4bb28ee11ae9af8a23a5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

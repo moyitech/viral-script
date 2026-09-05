@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-2620cb68b26e41b38ad466ffe74ef2fe",
+  "run_id": "run-20260903T051508Z-e4eaba95c1e7",
+  "trace_sha256": "16f2fd7b18d2df680b671b70cf3da50c90e252181a295c62087d47838d08c0c7",
+  "created_at": "2026-09-03T15:27:43.742414Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问直扣标题，正文先给判断再分利弊，结尾落到求职者视角，回答完整。",
+      "script_spans": [
+        "算法能帮企业快速筛掉明显不合适的人，却还读不懂潜力这件事的全貌",
+        "别让一串算法分数否定自己的真实可能"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "判断、打分机制、偏差风险、落地趋势、应对建议层层推进，均有据可依，增量扎实。",
+      "script_spans": [
+        "它靠语音语义和微表情特征自动打分",
+        "某些声线或长相特征跟干活能力根本无关，模型却可能顺着这些偏差悄悄带偏录用结果",
+        "眼下智慧面试正从企业内推往公共就业服务延伸"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头场景加提问直接抛出悬念，中段风险转折与新信息持续推进，结尾建议加金句自然生长出余味。",
+      "script_spans": [
+        "如今招聘现场架起摄像头，AI面试官照着脚本追问，它真能一眼看穿你的潜力吗？",
+        "但风险也在这，某些声线或长相特征跟干活能力根本无关，模型却可能顺着这些偏差悄悄带偏录用结果。",
+        "工具能算出门面规矩，算不出人往上走的后劲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主，首尾自然上口；但并列名词堆叠与政策通稿句两处需换气重断句，流畅度被封顶在2分。",
+      "script_spans": [
+        "但风险也在这，某些声线或长相特征跟干活能力根本无关",
+        "工具能算出门面规矩，算不出人往上走的后劲。",
+        "它靠语音语义和微表情特征自动打分",
+        "眼下智慧面试正从企业内推往公共就业服务延伸，技术落地明显提速"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，关卡之喻贴切，结尾对句离开上下文仍可复述，无炫技堆叠。",
+      "script_spans": [
+        "就把它当第一道关卡，别让一串算法分数否定自己的真实可能",
+        "工具能算出门面规矩，算不出人往上走的后劲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "短句气口多，'但风险也在这'承接自然，利弊因果清楚，结尾金句回扣开头设问。",
+      "script_spans": [
+        "但风险也在这，某些声线或长相特征跟干活能力根本无关",
+        "工具能算出门面规矩，算不出人往上走的后劲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "两面并陈且用“可能”限定风险，判断自限为个人观点，无夸大、煽动或误导。",
+      "script_spans": [
+        "我的判断很直接，算法能帮企业快速筛掉明显不合适的人，却还读不懂潜力这件事的全貌。",
+        "但风险也在这，某些声线或长相特征跟干活能力根本无关，模型却可能顺着这些偏差悄悄带偏录用结果。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2026a65f87bd42eb8d05bf07ca5f7b3a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

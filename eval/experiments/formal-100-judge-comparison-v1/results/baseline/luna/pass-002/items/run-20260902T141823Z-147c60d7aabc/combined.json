@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-726cba5b3c8f4e91861ea9345fa360f9",
+  "run_id": "run-20260902T141823Z-147c60d7aabc",
+  "trace_sha256": "e04da0c371bb2860058c4ddb3c0f317ef3ee421ca25858cbd53d71673ff8a80c",
+  "created_at": "2026-09-03T12:21:40.978562Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应夜游、照明和噪声冲突，覆盖游客安全与鸟类生态，并给出分区分时方案。",
+      "script_spans": [
+        "面对夜游需求和照明噪声，平衡不是二选一，而是分区分时。",
+        "公园主路和入口留基础亮光，老人孩子看清路不摔不慌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，兼顾安全、节能、生态和噪声，既解释原因，也提供了具体可执行的游客行为建议。",
+      "script_spans": [
+        "人聚的步道广场亮暖光，鸟栖的林深角落调暗静音。",
+        "像候鸟迁徙季，有些公园就调暗灯光护鸟，算一个实招。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用亮灯与全静的反差设问，中段连续推进分区分时方案，结尾把建议落到具体行动。",
+      "script_spans": [
+        "公园夜里全亮灯，反而惹麻烦；静悄悄也未必妥当。",
+        "那全黑全静行不行？真不行。",
+        "外放音乐换耳机，轻步慢声，便守住了平衡。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答和短句让整体能读通，但多处搭配生硬、表达压缩，尚未达到自然顺口的口播状态。",
+      "script_spans": [
+        "你晚上逛园怕黑摔跤，鸟却怕强光撞墙迷路，咋整？",
+        "人聚的步道广场亮暖光，鸟栖的林深角落调暗静音。",
+        "外放音乐换耳机，轻步慢声，便守住了平衡。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“错开时空”和“人睡不踏实，鸟飞不安稳”形象准确，既帮助理解，也留下了自然可复述的记忆点。",
+      "script_spans": [
+        "让人的活动与鸟的生态错开时空。",
+        "人睡不踏实，鸟飞不安稳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提出两难，再分别回应全亮与全黑的弊端，最后落到游客行动，转折和结论回扣自然。",
+      "script_spans": [
+        "为啥不能全园通明？城市照明管理讲以人为本节能环保，通宵亮灯既费电又扰生态。",
+        "那全黑全静行不行？真不行。",
+        "外放音乐换耳机，轻步慢声，便守住了平衡。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以分区分时兼顾夜游安全与鸟类栖息，建议具体克制，没有煽动对立、危险引导或夸大承诺。",
+      "script_spans": [
+        "公园主路和入口留基础亮光，老人孩子看清路不摔不慌",
+        "外放音乐换耳机，轻步慢声，便守住了平衡。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8a177a56bca844c188c85c13df37994a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

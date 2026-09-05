@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-510236a2cc4c4158a6a1d84460f67205",
+  "run_id": "run-20260903T051518Z-a99bdc94b6bc",
+  "trace_sha256": "f9a1571993543d27760773100c0b70561d5fd571d938781526fa4b1c45a3e781",
+  "created_at": "2026-09-03T14:10:00.916650Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即给判断，正反两侧与消费者视角都覆盖，全程正面回答题设，人群无错位。",
+      "script_spans": [
+        "延长营业时间不是天然的增长药，它只在特定场景里把热闹变成真实销售，多数时候只是拉长了成本线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 448，目标为 450，偏差率为 0.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "转化率、坪效、交易密度层层推进，世界杯与成本压力有据可依，无漂移无编造，增量扎实。",
+      "script_spans": [
+        "零售行业衡量真增长看的是转化率和单位面积营业额",
+        "半夜多开那几个小时，得有对应的交易密度才划算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开场画面叠疑问直接钩住人，中段案例与“利润被吃掉”的转折持续兑现，结尾金句由正文自然生长留余味，三段各自成立。",
+      "script_spans": [
+        "商场半夜还亮着灯，人流熙熙攘攘，好像生意火爆，老板真赚到钱了吗？",
+        "新增时段若客单价撑不起坪效，账面流水涨了，利润反倒被吃掉一截",
+        "分清气氛和账目，才看得清谁在真增长。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音停顿清楚，中段口语承接自然，朗读基本无需临时改词。",
+      "script_spans": [
+        "账面流水涨了，利润反倒被吃掉一截",
+        "说白了，半夜多开那几个小时，得有对应的交易密度才划算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“增长药”“虚火”等比喻贴切服务论证，“账单不会骗人”与结尾金句离开上下文仍可复述，全篇克制无堆砌炫技。",
+      "script_spans": [
+        "多数时候只是拉长了成本线，让账面虚火更旺",
+        "你享受便利的同时，账单不会骗人。",
+        "延时营业可以是城市夜经济的注脚，却不是实体商业的万能解药。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "机制、成本、正反例、消费者影响递进清楚，交易密度补足因果桥，结尾回扣开头与题设。",
+      "script_spans": [
+        "说白了，半夜多开那几个小时，得有对应的交易密度才划算",
+        "分清气氛和账目，才看得清谁在真增长"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点鲜明但用特定场景、可能等限定词设边界，正反并陈，无绝对化承诺、煽动或误导表述，价值导向安全。",
+      "script_spans": [
+        "延长营业时间不是天然的增长药，它只在特定场景里把热闹变成真实销售",
+        "新增时段若客单价撑不起坪效，账面流水涨了，利润反倒被吃掉一截"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8593a53911944d3a9b9cac5f8ab59166",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-18a2164d1dc3402aacccac30c72d10f4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

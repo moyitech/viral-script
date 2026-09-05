@@ -1,0 +1,164 @@
+{
+  "evaluation_id": "combined-c325f3dd0f634271ab8ccb264df6c3b4",
+  "run_id": "run-20260903T051556Z-ecfe8e52ac08",
+  "trace_sha256": "2f077b4609d09b0fe414c6c8d6c9955a55bf63fd690ef6d861c0240ba3830042",
+  "created_at": "2026-09-03T11:57:16.275843Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答低成本不等于低风险，覆盖降费、资产暴露、被动跟踪和普通投资者的应对。",
+      "script_spans": [
+        "低成本从来不等于低风险。",
+        "下次看到低费率指数基金，先问自己扛不扛得住它跟踪的那个市场"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 805，目标为 700，偏差率为 15.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕核心判断逐层补充费率改革、市场风险、被动管理与跟踪误差，信息单元丰富且能形成判断收束。",
+      "script_spans": [
+        "降费是监管让利，降的是交易摩擦，不是资产价格的脆弱性。",
+        "但跟踪误差更多来自成分股调整、流动性不足这些客观因素。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“便宜不就是安全吗”的反差设问抓人，中段持续补充风险来源，结尾追问自然收束。",
+      "script_spans": [
+        "便宜不就是安全吗？其实恰恰相反",
+        "下次看到低费率指数基金，先问自己扛不扛得住它跟踪的那个市场"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有清楚的对话式承接，但长句和金融抽象词偏多，朗读仍需重断句。",
+      "script_spans": [
+        "市场大跌时，费率再低也挡不住账户缩水",
+        "指数型产品的认申购费被进一步压到和债券型同档，买这类产品确实更省钱了。",
+        "主动基金可能靠经理能力平滑波动，但指数基金把这个功能也省了，费率低的一部分原因正是你放弃了那层主动保护。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务解释，“便宜买到的，是市场本来的样子”等句子自然准确，具备复述价值。",
+      "script_spans": [
+        "便宜买到的，是市场本来的样子。",
+        "便宜是监管给的糖，风险是指数给的考题。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整且层次清楚，但“主动保护”的概念偷换，加上“同一边界”承接突兀，削弱论证严密性。",
+      "script_spans": [
+        "这根因果链很清楚：降费是监管让利，降的是交易摩擦，不是资产价格的脆弱性。",
+        "费率低的一部分原因正是你放弃了那层主动保护。",
+        "同一边界我只说一次：误差是小，但永远存在"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "降费不等于降风险的提醒较稳妥，但“风险就是高于债券型”“主动保护”等说法过于绝对，可能误导投资者。",
+      "script_spans": [
+        "低成本从来不等于低风险。",
+        "预期波动和风险就是高于债券型",
+        "费率低的一部分原因正是你放弃了那层主动保护。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 805,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.15
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9f71bf233e354de484e76cea8d281eff",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-12b0f432c4fd4808ac4921a2a970b89c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

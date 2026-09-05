@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-2120fd160e2f4d94b07346c5bcef866c",
+  "run_id": "run-20260903T051628Z-43f48ed99a11",
+  "trace_sha256": "7a5625de62bd2f3261efbe6a6f4fc1f67c6836e736a494b769f7deaf3b43d9aa",
+  "created_at": "2026-09-03T15:27:29.090527Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛落差，正文正面回答能减负但非人人自动受益，受益条件与限制两侧都覆盖，背贷家庭痛点精准。",
+      "script_spans": [
+        "说直接点：已购房家庭确实能减负，但绝不是人人坐等收钱。",
+        "降息实打实，净受益却被城市、贷款类型和你的操作卡着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从LPR加点、重定价日到批量调整与协商机制逐层推进，事实具体可核，无编造，观众能带走判断方法。",
+      "script_spans": [
+        "房贷利率是“LPR加上加点”",
+        "如果当初选固定利率，得先主动申请转成浮动，否则降价雨淋不到你。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛“利率降月供没降”的反差，中段以重定价、加点、取舍层层兑现，结尾查合同与防骗提醒由正文自然长出，不喊口号。",
+      "script_spans": [
+        "你以为房贷利率降了，月供就会自动变少？",
+        "可这是一次性选择，未来若反弹，短周期反而更快吃亏",
+        "打开手机银行，查查合同里的重定价日和加点数"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与比喻接地气，但中段两处叠加定语拗口，朗读需临时重断句。",
+      "script_spans": [
+        "规则打开门，但不是自动门。如果当初选固定利率，得先主动申请转成浮动，否则降价雨淋不到你。",
+        "多家银行对符合条件的浮动利率存量贷做过一轮批量调整",
+        "那些高加点、且重定价日已过或主动协商成功的人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，“规则打开门，但不是自动门”“降价雨淋不到你”离开原文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "规则打开门，但不是自动门",
+        "降价雨淋不到你",
+        "降息实打实，净受益却被城市、贷款类型和你的操作卡着"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "每段功能明确，政策出台有因果桥，一次性选择的利弊讲透，结尾查合同防骗回扣开头悬念，结构闭环。",
+      "script_spans": [
+        "正因为这个矛盾，2024年秋，多家银行对符合条件的浮动利率存量贷做过一轮批量调整，不需要借款人动手。",
+        "利率往下走时，周期改短能更快吃低息；可这是一次性选择，未来若反弹，短周期反而更快吃亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "明确“不是人人坐等收钱”，交代城市下限、逾期先还清等边界，降息承诺均留有余地，并警示代办骗局，导向安全。",
+      "script_spans": [
+        "已购房家庭确实能减负，但绝不是人人坐等收钱",
+        "北上深二套房贷有各自政策下限，不是想降多少降多少",
+        "但凡说花钱代办降息的，全是骗局，那才真亏"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3927ccc9f5534afcadc8768341b3466b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

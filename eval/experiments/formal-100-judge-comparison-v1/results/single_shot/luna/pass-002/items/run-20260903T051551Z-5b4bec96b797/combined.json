@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-1c45dea456bc4bfabf17f1924b9cb480",
+  "run_id": "run-20260903T051551Z-5b4bec96b797",
+  "trace_sha256": "b6db77ad5c1c1c5ceedccd1ee588fa2a47c8262a8f076bdb89bc41047e93088a",
+  "created_at": "2026-09-03T12:43:04.039085Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答老人付出是否应被看见，兼顾法律、亲情与现实压力，并给出费用共担和自主安排的落点。",
+      "script_spans": [
+        "现行法律没把带孙辈定义成老人的义务劳动，更没写子女必须付酬",
+        "把买菜、玩具、托育的花费摊在桌面上，给他们留足回自己家的自由"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律边界、家庭代价、调查数据、儿童发展与行动建议层层推进，既有事实也有判断，信息增量较足。",
+      "script_spans": [
+        "调查显示超过一半老人正帮子女做家务或照看孙辈",
+        "有研究观察到老人高质量参与养育时，孩子的情绪和社交表现反而更稳",
+        "把买菜、玩具、托育的花费摊在桌面上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“辛苦费”制造亲情与现实的冲突，中段不断补充法律、代价和研究，结尾落到可执行的家庭协商。",
+      "script_spans": [
+        "可万一老人半开玩笑问“带娃是不是该发点辛苦费”，你接不接得住？",
+        "所以别等老人累到沉默才想起来谈钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头设问和结尾建议有对话感，但中段法律、研究表述偏书面，至少两处朗读需重断句。",
+      "script_spans": [
+        "你接不接得住？",
+        "给他们留足回自己家的自由",
+        "现行法律没把带孙辈定义成老人的义务劳动",
+        "民法典里家庭定位是成员互相帮助，不是雇主和保姆"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“托底不等于无成本”把亲情支持与现实代价说透，“摊在桌面上”也给抽象协商留下了可复述的画面，修辞不过量。",
+      "script_spans": [
+        "托底不等于无成本",
+        "把买菜、玩具、托育的花费摊在桌面上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、法律说明、现实代价到建议的链条清楚，但把相关性说成“证明”，又将劳动回报转成费用与自由，论证边界不够严密。",
+      "script_spans": [
+        "往下看机制。民法典里家庭定位是成员互相帮助，不是雇主和保姆。",
+        "所以别等老人累到沉默才想起来谈钱。",
+        "这证明长辈投入不是负担，是实打实的家庭资产",
+        "把买菜、玩具、托育的花费摊在桌面上，给他们留足回自己家的自由，比事后算工资更体面"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动对立，建议较克制；但法律概括过满，且把研究关联直接说成“证明”，容易造成误导。",
+      "script_spans": [
+        "把买菜、玩具、托育的花费摊在桌面上",
+        "现行法律没把带孙辈定义成老人的义务劳动，更没写子女必须付酬",
+        "这证明长辈投入不是负担，是实打实的家庭资产"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e898116b21854cfda5bde276dba602c4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

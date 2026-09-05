@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-004e426be6674fbdb47a5c7bc419d2d6",
+  "run_id": "run-20260903T051559Z-70842ac03adc",
+  "trace_sha256": "aa2456d712f5512d5933635cbb5264d764d13e515186bdab38ad06852a1b5efb",
+  "created_at": "2026-09-03T12:32:15.125770Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答祖辈照护与父母决策的冲突，覆盖日常分工、关键事项和普通家庭的解决路径。",
+      "script_spans": [
+        "老人管起居，父母守关键决策。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕权责边界逐层补充法律主体、照护范围、例外情形与协商方案，信息具体且有行动指引。",
+      "script_spans": [
+        "除非父母失联或丧失监护能力，未成年人的家庭教育主体责任在父母或其他监护人。",
+        "吃饭穿衣、作息礼貌，老人可以主抓。遇到择校、就医、管教原则这类事，权限要看当初的约定。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出付出与决定权的冲突，中段层层拆分边界，结尾给出可执行方案并留下鲜明余味。",
+      "script_spans": [
+        "你天天给孙子做饭、接送上学，可一到报兴趣班、立规矩，儿子媳妇一句话就推翻你的安排。",
+        "哪怕在微信里约好，也比事后翻脸强。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头有对话感，但中段法律长句和抽象并列明显，连续朗读时需要重断句。",
+      "script_spans": [
+        "你天天给孙子做饭、接送上学",
+        "除非父母失联或丧失监护能力，未成年人的家庭教育主体责任在父母或其他监护人。",
+        "法律把家庭教育从纯家事变成有国家规范的事务，所以责任划分不是人情算计。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“带娃是情分，决定权是法定义务”对仗利落，配合“两头不落好”等表达，既好懂又有复述价值，整体没有堆砌。",
+      "script_spans": [
+        "带娃是情分，决定权是法定义务。",
+        "老人日夜付出值得尊重，但替子女硬做主，往往两头不落好。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头到结尾递进完整，分工建议也能回扣冲突；但把家庭教育责任直接推成具体决定权限，关键法律因果仍不够严密。",
+      "script_spans": [
+        "与其争谁听谁的，不如提前把分工写明白",
+        "带娃是情分，决定权是法定义务。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "明确父母主体责任，也承认老人付出，但把“决定权”概括为法定义务，且将权限简单归因于约定，法律边界不够严谨。",
+      "script_spans": [
+        "祖父母受委托照料，并不自动拿到最终决定权。",
+        "带娃是情分，决定权是法定义务。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-df51fadb53944764b704f6c48cfdeda7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

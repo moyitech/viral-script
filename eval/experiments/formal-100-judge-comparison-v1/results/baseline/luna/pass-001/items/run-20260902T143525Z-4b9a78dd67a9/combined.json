@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-961e2a278eb243cc8920d7106fec0dad",
+  "run_id": "run-20260902T143525Z-4b9a78dd67a9",
+  "trace_sha256": "037a11b026599817cf5985d562af4c157f31e0b806c984d15faf3df2de73d37a",
+  "created_at": "2026-09-03T11:44:34.294803Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答污染是否发生，覆盖退役规模、污染路径、政策缺口、回收价值和居民行动。",
+      "script_spans": [
+        "退役潮真来了，留不留污看回收怎么做。",
+        "下回见废旧板，别当碎玻璃卖，找正规渠道才真绿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 713，目标为 700，偏差率为 1.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦退役光伏板，规模、污染机制、政策目标、产能缺口和资源化路径均有推进。",
+      "script_spans": [
+        "这么多板子若当建筑垃圾，里头的重金属可能渗进周边土里。",
+        "一边是标准红线，一边是处理缺口，这就是现实取舍。",
+        "随意丢才污染，规范收是资源。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差直接，中段用“为啥”持续推进，结尾“接住尾巴”有余味且行动明确。",
+      "script_spans": [
+        "别以为太阳干净到底。绿电尾巴未必绿",
+        "接不住尾巴，绿电就打折。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答让整体能读通，但“为啥不直接吞掉它”等多处搭配生硬，尚未达到自然顺口。",
+      "script_spans": [
+        "那认真收能扳回一城吗？能。",
+        "那为啥不直接吞掉它？",
+        "为啥烧了事？因为分开电池和塑料费功夫。",
+        "可退役量预估远超这数，产能得加快补。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“绿电尾巴”“一块板子两种命”等比喻贴合主题，帮助理解，也留下了自然可复述的记忆点。",
+      "script_spans": [
+        "绿电尾巴未必绿",
+        "一块板子两种命，全看末端怎么接。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构递进完整，但“死胶层”“绿电真绿不绿”表述突兀，核心因果虽清楚，口播仍需改词。",
+      "script_spans": [
+        "一边是标准红线，一边是处理缺口，这就是现实取舍。",
+        "不让板子变成死胶层。",
+        "绿电真绿不绿，末端见分晓。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无煽动、危险操作或确定性承诺，但“土壤水源都吃亏”等把潜在风险说得过满，需补充适用条件。",
+      "script_spans": [
+        "填埋不是不行，得做防渗处理。",
+        "飞灰若乱倒，土壤水源都吃亏。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2c3c4bdfecd34203905b9cdca65347b2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-24c0598b660b494faed07cf2b1ff7333",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

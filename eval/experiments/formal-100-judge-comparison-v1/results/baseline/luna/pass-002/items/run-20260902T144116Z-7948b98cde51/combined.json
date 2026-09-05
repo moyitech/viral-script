@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-268ce57fb84e40a8b523efc6289ddd2f",
+  "run_id": "run-20260902T144116Z-7948b98cde51",
+  "trace_sha256": "69be8311bd41cffab6b60b251e39da5cdeca42e13a01e4ca5a02db8dfb621e11",
+  "created_at": "2026-09-03T12:19:04.507338Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答不同贡献如何公平，覆盖陪护、出钱、距离和能力差异，核心人群与题设高度贴合。",
+      "script_spans": [
+        "付出不同怎么算公平？",
+        "钱和力能互补，姐姐陪床弟弟汇钱，也算扯平。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，既讲钱力互补与距离差异，也提供开会、书面分工、补偿和长护险等具体做法。",
+      "script_spans": [
+        "住远的多出钱，住近的多跑腿，天经地义。",
+        "写张纸写下谁管医院谁管买药。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“干得少未必不公平”制造反差，中段不断补充算账、照护和外援，结尾追问也由主题自然生长。",
+      "script_spans": [
+        "干得少未必不公平",
+        "床前的人暖着，账本冷着，选哪头？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、问句和对话式承接较多，但“正推开”“也可是”会造成朗读卡顿，需微调。",
+      "script_spans": [
+        "你想啊，硬凑天数平摊，姐日夜熬，弟露个面，能不拆家？",
+        "国家正推开长期护理保险",
+        "补偿可以是直接给钱，也可是继承时多分些"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“别让账单替感情算账”和“床前的人暖着，账本冷着”形象克制，既提炼观点，也留下可复述的画面。",
+      "script_spans": [
+        "别让账单替感情算账",
+        "床前的人暖着，账本冷着"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线由原则推进到协商落地；但“也算扯平”缺少换算依据，结尾把亲情与算账对立起来。",
+      "script_spans": [
+        "普通人家最好趁早围坐开会，把出钱出力摆到桌面上。",
+        "姐姐陪床弟弟汇钱，也算扯平。",
+        "床前的人暖着，账本冷着，选哪头？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导协商互补，风险在于“天经地义”等绝对化判断和“继承时多分”未交代法律前提，可能误导家庭安排。",
+      "script_spans": [
+        "普通人家最好趁早围坐开会，把出钱出力摆到桌面上。",
+        "住远的多出钱，住近的多跑腿，天经地义。",
+        "补偿可以是直接给钱，也可是继承时多分些。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ef2f8205becf4651902789db1fa05e78",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

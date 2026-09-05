@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-3a58b8640786418a847c88b35a4e320a",
+  "run_id": "run-20260902T142318Z-6d3a6356f256",
+  "trace_sha256": "c76c51b59a6426b658fd40298ed4dbece3a86958cb5d6623aad99abe22fed91d",
+  "created_at": "2026-09-03T14:06:10.488447Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直接作答'不必然牺牲'，效率动机与隐私顾虑两侧、员工视角全覆盖，结尾回扣痛点。",
+      "script_spans": [
+        "效率涨不必然卖你私生活",
+        "你刚写封私人吐槽邮件，公司机器瞬间读透"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 279，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "研究发现、机制解释、脱敏做法、法律底线逐层推进，无同义复述，观众能带走具体方法。",
+      "script_spans": [
+        "有实验研究复盘，某些高效训练法本身压低记忆数据可能",
+        "把邮件里姓名电话遮住再让模型筛，机器只瞅模式不瞅真人",
+        "相关法规划了最小必要线，只许必要业务碰邮件"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛反差悬念，中段以场景、实验发现、落地方法层层兑现，结尾互动由脱敏内容自然长出。",
+      "script_spans": [
+        "筛查邮件变快了员工隐私却没丢？",
+        "你刚写封私人吐槽邮件，公司机器瞬间读透，两边利益实在撞车",
+        "你明天发工作公邮，会猜它先罩匿名纱吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数短句好读，但技术段压缩词连串、'法规划了'易误断，至少两处需重断句换词，封顶2分。",
+      "script_spans": [
+        "机器只瞅模式不瞅真人，人名地址变星号",
+        "反比笨重私训法更把隐私风挡住",
+        "相关法规划了最小必要线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "口语比喻点到为止，『机器只瞅模式不瞅真人』离文仍可复述，全篇无炫技堆叠，记忆点自然。",
+      "script_spans": [
+        "机器只瞅模式不瞅真人，人名地址变星号",
+        "不能借提速名头翻私聊底朝天"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，'落地咋办'过渡自然；但'更把隐私风挡住'把实验'相似'结论夸成更优，结论扩大。",
+      "script_spans": [
+        "那平时落地咋办？先给信件脱敏",
+        "你明天发工作公邮，会猜它先罩匿名纱吗？",
+        "反比笨重私训法更把隐私风挡住",
+        "这念头实在正常。有实验研究复盘"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "整体克制公允，“不必然”“某些”留有余地，脱敏建议与最小必要原则给出明确边界，研究归因清楚，无煽动、夸大或越线承诺。",
+      "script_spans": [
+        "效率涨不必然卖你私生活",
+        "先给信件脱敏，把邮件里姓名电话遮住再让模型筛",
+        "相关法规划了最小必要线，只许必要业务碰邮件"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-19c0690d26384d529d6942cd07f0259c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1bbccbc85bc943618a9fa573b4fcfe1a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

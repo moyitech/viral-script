@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-12ed7a39d0cf4a87be7addd0a498fb2f",
+  "run_id": "run-20260902T142644Z-1cff99b1f5be",
+  "trace_sha256": "a4dfa1422cd455a80fb5c543aa4ceb4361c5eb17a88bae56971081fe25f793c2",
+  "created_at": "2026-09-03T14:24:35.817393Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即抛两难并直给分两处放的答案，缩水原因与闲钱去向两侧齐备，落点始终对准普通家庭。",
+      "script_spans": [
+        "家庭闲钱该分两处放：急用的留现金类，剩下的配国债",
+        "普通人怎么落手？手边要用的钱，留点现金类更健康。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕两分法集中展开，监管限投、利率数据、国债取舍、半年开支法则与十万块算账层层递进，数字有据。",
+      "script_spans": [
+        "监管规则早定了，现金管理类只能投货币市场工具，投资范围卡死，久期也受限",
+        "但国债锁期限，提前兑取会损利息，流动不如活期理财，这是明显的取舍",
+        "同样十万块，放活期年息几百，买三年国债年多拿千把块"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛收益缩水与用钱卡壳的两难，中段规则、利率、取舍层层推进，结尾问句由分两处放自然长出。",
+      "script_spans": [
+        "活钱理财收益腰斩，取出来买国债又怕用钱时卡壳。",
+        "你算算，同样十万块，放活期年息几百，买三年国债年多拿千把块。",
+        "钱怎么分份，可能比盯着那点收益更值得琢磨。你家闲钱，打算怎么分两处放？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口干净，数字已转成口头读法，核心解释像当面算账，照读即可成稿。",
+      "script_spans": [
+        "急用的留现金类，剩下的配国债",
+        "咱们先看为啥收益缩水"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“腰斩”“卡壳”点到即止服务理解，“急用的留现金类，剩下的配国债”可独立复述，无堆砌炫技。",
+      "script_spans": [
+        "急用的留现金类，剩下的配国债。",
+        "它虽赚得少，胜在随时能取回，靠它救急最顺手。",
+        "钱怎么分份，可能比盯着那点收益更值得琢磨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先答后证再落地，转折、让步与设问承接自然，取舍交代完整，结尾设问回扣开头与题设。",
+      "script_spans": [
+        "咱们先看为啥收益缩水",
+        "不过收益淡了产品更稳，急用钱不慌",
+        "你家闲钱，打算怎么分两处放？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "无收益承诺与销售诱导，明确提示提前兑取损息、锁期限等取舍，措辞克制且有据，审核风险低。",
+      "script_spans": [
+        "提前兑取会损利息，流动不如活期理财，这是明显的取舍",
+        "买之前得掂量，这钱几年真用不上再下手"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9aff8f857e004d3c87c6a9209e83e923",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

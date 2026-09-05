@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-2bdc2c0d45464f7c87a2d71998469c41",
+  "run_id": "run-20260902T141859Z-805eda0c4133",
+  "trace_sha256": "e42e50c2cfbb5e05ec0e9728140f07de3eba817a2ea77a5ebd07115b1a7fcba5",
+  "created_at": "2026-09-03T13:46:05.427852Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直击骑行者被扣钱痛点，两侧冲突都正面回应，结论落到先有地方可停，人群与题设对位准确。",
+      "script_spans": [
+        "你骑共享单车到地铁口，车锁不上还扣钱，这就是禁停区扩大的直接代价",
+        "禁停范围扩大确实会伤及出行便利，但也整治了乱停堵路乱象，两边不能只顾一边"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 281，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "拦锁机制、持续计费、停车区容量、分流效果逐层推进，结尾给出可操作方法，事实与试点相符，无编造。",
+      "script_spans": [
+        "停到禁停区的车收不到锁车信号，信号拦着不让上锁，没法结算",
+        "可同一试点在周边画了停车区，能停两百多辆，两座场分流，居民不再被乱车挡道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出锁不上还扣钱的具体冲突，中段以机制解释加可字转折持续兑现，结尾余味由正文生长。",
+      "script_spans": [
+        "你骑共享单车到地铁口，车锁不上还扣钱",
+        "可同一试点在周边画了停车区",
+        "禁停扩不扩，关键看留没留这条路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口顺、对话感足；但“两座场分流”不成话，“人流大车乱放”需重断句，朗读要临时改词。",
+      "script_spans": [
+        "整治不是把车赶尽，是给行人腾出道儿",
+        "两座场分流",
+        "之前那地方人流大车乱放"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞点到为止且服务说理，赶尽与腾出道儿对照贴切，结尾一句离开上下文仍可复述。",
+      "script_spans": [
+        "整治不是把车赶尽，是给行人腾出道儿",
+        "禁停扩不扩，关键看留没留这条路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "损失、机制、配套到结论层层递进，可字转折清楚，结尾回扣开头扣钱困境，关键因果桥完整。",
+      "script_spans": [
+        "所以禁停能扩，但得先有地方可停",
+        "禁停扩不扩，关键看留没留这条路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "立场平衡、有试点事实依托，但“居民不再被乱车挡道”属绝对化断言，“一直计费”宜加限定，补充边界后更稳妥。",
+      "script_spans": [
+        "禁停范围扩大确实会伤及出行便利，但也整治了乱停堵路乱象，两边不能只顾一边",
+        "居民不再被乱车挡道",
+        "就一直计费"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-00267d1a3a4f4dabbf84690109b20d04",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-be52b54002054914903e8ef0d4b9a463",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

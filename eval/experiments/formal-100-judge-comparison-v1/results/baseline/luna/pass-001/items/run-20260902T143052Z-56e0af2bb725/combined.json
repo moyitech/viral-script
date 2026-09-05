@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-fe2bb8cb5cc2422bb07efff9ea6ce1eb",
+  "run_id": "run-20260902T143052Z-56e0af2bb725",
+  "trace_sha256": "31cdb9ec65dbe6cb5ee4fc91e59bd9cfa6604b53aafc624b26a74c6b61ff0856",
+  "created_at": "2026-09-03T11:44:26.931258Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释高收费的成本来源，也写出被迫参与和社交压力，覆盖家长的核心困境。",
+      "script_spans": [
+        "可压垮钱包，是自愿项目被班里推着必须交。",
+        "家长怕娃没去集体活动被同学疏远。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 278，目标为 280，偏差率为 0.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，成本构成、收费规范、群体压力和替代方案彼此补充，观众能获得原因与应对方法。",
+      "script_spans": [
+        "做手册画图片都要钱，租小车订吃住更省不下。",
+        "下次班里发单，先跟孩子商量值不值再掏钱。附近免费展馆，也能开眼界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“五千”与“家庭债”制造反差，中段从成本解释转到被迫参与和社交压力，结尾给出替代方案，推进完整。",
+      "script_spans": [
+        "交五千研学，课堂外教育咋变家庭债？",
+        "可压垮钱包，是自愿项目被班里推着必须交。",
+        "附近免费展馆，也能开眼界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句和设问有对话感，但多处压缩过猛，“成本报的”等表述明显卡顿，需改写。",
+      "script_spans": [
+        "你说这价谁定的？",
+        "因真有老师设计和出门花销",
+        "机构算完成本报的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“家庭债”“压垮钱包”有画面，“自愿项目被班里推着必须交”有现实刺点；但“机构算完成本报的”语义残缺，削弱表达完整性。",
+      "script_spans": [
+        "课堂外教育咋变家庭债",
+        "自愿项目被班里推着必须交",
+        "机构算完成本报的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "成本—压力—建议的主线基本可跟，但“机构算完成本报的”语义残缺，且成本推高价格的因果论证偏跳。",
+      "script_spans": [
+        "可压垮钱包，是自愿项目被班里推着必须交。",
+        "机构算完成本报的。",
+        "机构成本堆起价低不了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导自愿和理性消费，但“必须交”“价低不了”“借凑”等表述泛化并强化焦虑，需补充限定或改写。",
+      "script_spans": [
+        "下次班里发单，先跟孩子商量值不值再掏钱。",
+        "可压垮钱包，是自愿项目被班里推着必须交。",
+        "机构成本堆起价低不了。",
+        "手头紧也去借凑。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-19b3dde6ca7a48b4b65646c8a9bf8a53",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d95119234bb34c9a8a9ab6d0a8534cd9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

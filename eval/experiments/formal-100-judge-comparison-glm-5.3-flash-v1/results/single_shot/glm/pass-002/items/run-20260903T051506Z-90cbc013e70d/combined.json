@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-42f98921f151484ea2437de50eaea979",
+  "run_id": "run-20260903T051506Z-90cbc013e70d",
+  "trace_sha256": "090e0b6479a60000c52fdbb9d9a8e5c3759e7943cd61c3a505b3f9a310204ad2",
+  "created_at": "2026-09-03T15:26:42.624321Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出慰藉与不安两侧，结论落在普通使用者的自问与选择上，全程正面回答题设。",
+      "script_spans": [
+        "它可以是一种情感慰藉，但绝不能伪装成真实的逝者重临",
+        "对普通使用者，关键不是禁不禁止，而是问自己"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "技术原理、双重影响、标识规则、行动建议层层推进，事实与结论互证，无编造痕迹。",
+      "script_spans": [
+        "每一次回应都是算法在替逝者说话，有人获得安慰，也有人因此更难接受死亡本身",
+        "现行人工智能内容标识规则里，合成音频必须在起始或末尾加上可感知的语音提示"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以温暖与发凉的设问直击冲突；中段用安慰悖论与标识新规层层兑现；结尾自问与金句由正文自然生长，余味足。",
+      "script_spans": [
+        "听到已故亲人的声音从手机里传来，你是觉得温暖，还是突然脊背发凉？",
+        "有人获得安慰，也有人因此更难接受死亡本身",
+        "声音可以重放，但告别需要真实完成"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数段落短句顺畅、有对话感，但'可感知的语音提示''人格形象'等处偏条文腔，朗读需临时换词。",
+      "script_spans": [
+        "每一次回应都是算法在替逝者说话",
+        "合规的复原声音应当大大方方亮明身份",
+        "现行人工智能内容标识规则里，合成音频必须在起始或末尾加上可感知的语音提示",
+        "等于未经许可盗用了逝者的人格形象"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“声音可以重放，但告别需要真实完成”离开上下文仍可复述；“挤进”“滑向”等动词准确克制，服务理解与情绪，无堆砌炫技。",
+      "script_spans": [
+        "声音可以重放，但告别需要真实完成",
+        "它正挤进人类最私密的哀悼空间",
+        "别让机器替你决定悲伤何时结束"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "判断、机制、边界、建议四段功能清晰，结尾以告别回扣开头判断，因果桥完整。",
+      "script_spans": [
+        "那边界到底在哪？",
+        "声音可以重放，但告别需要真实完成"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体观点平衡、引导挑选带标识服务，导向安全；但将缺标识直接等同于未经许可盗用人格形象，定性绝对，宜补边界。",
+      "script_spans": [
+        "有人获得安慰，也有人因此更难接受死亡本身",
+        "挑选带明确标识的服务，别让机器替你决定悲伤何时结束",
+        "少了这道标识，所谓“重逢”就滑向了伦理越界，等于未经许可盗用了逝者的人格形象"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-31a51a4736014069a5be36d38ed5777c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

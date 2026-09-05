@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-c485b5f283b24df5a776138e5aaf7ac5",
+  "run_id": "run-20260902T142358Z-d8ed43a39f0e",
+  "trace_sha256": "bbae0b16bc3d385b09048e2f3e0aeb9ddf6cc278e31bd476c8bca5de0ca2fb61",
+  "created_at": "2026-09-03T11:43:54.529493Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应陌生人垫付与善意边界，覆盖风险、法律后果和普通人的应对方法，切题完整。",
+      "script_spans": [
+        "好心替陌生人垫钱，对方却骗你更惨？善意得留，但没边界的帮忙容易让自己栽跟头。",
+        "下次扫码前默数几秒，问他为何寻我？有答再付。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 440，目标为 450，偏差率为 2.22%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，法律责任、诈骗心理、支付工具和核验步骤层层补充，观众能带走具体的防骗判断方法。",
+      "script_spans": [
+        "这法律上算没义务的帮忙，你垫的必要钱理论能要回。",
+        "骗子常造紧迫感逼你秒转。",
+        "核身份不麻烦，开视频看一眼就行，只垫小额试水。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出垫钱被骗的反差，中段连续转入案例、法律和应对，结尾用“有答再付”自然落点。",
+      "script_spans": [
+        "好心替陌生人垫钱，对方却骗你更惨？",
+        "下次扫码前默数几秒，问他为何寻我？有答再付。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "叙事和收束有对话感，但法律解释与建议段多处压缩生硬，朗读时需要重断句。",
+      "script_spans": [
+        "你一想万一是真的呢，不帮怕耽误事",
+        "人家若真实意思不需要这管理，就能抗辩不认账",
+        "钱出去不保证回袋"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“平台工具只是补丁”“有答再付”有复述价值，但“善意留着风险隔开些”等压缩句略显生硬，记忆点未完全自然。",
+      "script_spans": [
+        "平台工具只是补丁，真边界在你那步停顿。",
+        "下次扫码前默数几秒，问他为何寻我？有答再付。",
+        "善意留着风险隔开些。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、案例、风险解释和行动建议层次完整，但法律概念压缩，且“等半日”如何破解套路的因果桥不够充分。",
+      "script_spans": [
+        "边界画哪？",
+        "平台工具只是补丁，真边界在你那步停顿。",
+        "这法律上算没义务的帮忙，你垫的必要钱理论能要回。可民法典写了，人家若真实意思不需要这管理，就能抗辩不认账。",
+        "研究指容易信人的性格更易接陌生请求，你肯等半日套路易破。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，但“警方止付可截住”“开视频看一眼就行”易造成安全与追回确定性误导。",
+      "script_spans": [
+        "真急有官方渠，引她去岗亭而非掏钱",
+        "钱没进户头前警方止付可截住",
+        "开视频看一眼就行"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3b57843d8a2043bda334dff0f1c384cf",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-2ee2db56073f4a2d93792ea8d03323c4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

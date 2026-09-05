@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-f87434b5eebe4d918c8cf556808354f8",
+  "run_id": "run-20260903T051519Z-3a4b50f8802e",
+  "trace_sha256": "276b7a6d376d98b958172bd9433c8d3a1326bd892242850733c4cc9030f52b4f",
+  "created_at": "2026-09-03T11:57:05.503449Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释“薪资面议”引发反感的原因，并覆盖用人方、求职者成本与应对建议。",
+      "script_spans": [
+        "招聘写着“薪资面议”，求职者越来越反感，核心就一句话：这是用人方把议价风险和探底成本转嫁给求职者",
+        "碰见面议岗位别急着投简历，先通过招募方或熟人问清薪资带宽"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 274，目标为 280，偏差率为 2.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "中心论点集中，依次补充监管、透明公平、求职成本和行动建议，信息单元有推进。",
+      "script_spans": [
+        "人的公平感高度依赖决策过程透明。",
+        "求职者前期投入车马和时间，最后却可能听到一个远低预期的数"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出“面议”引发反感的冲突，中段层层补充机制与风险，结尾给出有余味的自保建议。",
+      "script_spans": [
+        "招聘写着“薪资面议”，求职者越来越反感",
+        "再从心理看，人的公平感高度依赖决策过程透明",
+        "把主动权留一点给自己，也省下奔波的力气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "建议段有对话感，句意也顺；但前两段长句和抽象并列较多，需主动切气口。",
+      "script_spans": [
+        "碰见面议岗位别急着投简历",
+        "把议价风险和探底成本转嫁给求职者"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "把抽象的不透明与被动感转成具体情绪，并用“把主动权留一点”留下自然记忆点，修辞没有喧宾夺主。",
+      "script_spans": [
+        "让人还没入职就心里打鼓",
+        "这种被拿捏的无力感最败好感",
+        "把主动权留一点给自己，也省下奔波的力气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头立论、随后解释机制、结尾给出建议，主线清楚；但由监管要求直接推到“更像刻意”，动机判断缺少论证。",
+      "script_spans": [
+        "再从心理看，人的公平感高度依赖决策过程透明。",
+        "不像疏忽，更像刻意留弹性空间，让人怀疑真实区间偏低或暗藏套路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主体没有煽动或危险承诺，建议也较稳妥；但把“面议”普遍归因为刻意留空间并暗示低薪套路，存在未经限定的误导风险。",
+      "script_spans": [
+        "先通过招募方或熟人问清薪资带宽，确认大体匹配再往下走",
+        "不像疏忽，更像刻意留弹性空间"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d89fcbbdfbb04dee9f667a7257aca56a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-011c5e75aa0f4b97a6c904694f09e812",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-efb6ca731206406c833c9f47edcdf8ff",
+  "run_id": "run-20260903T051523Z-8d1ef1b409e8",
+  "trace_sha256": "a2252aad638aa4711a879f325f9ab97de27d22c0a45d02b3cf2e0bb6e389ba4c",
+  "created_at": "2026-09-03T14:19:25.256715Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即入题，正面回答为何反感，兼谈求职者与招聘方两侧，切中普通人求职痛点。",
+      "script_spans": [
+        "你刷到写着‘薪资面议’的岗位，是不是下意识想划走？",
+        "它背后往往不是公司想灵活谈，而是把本该明示的信息成本推给求职者。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 443，目标为 450，偏差率为 1.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息成本、过程透明、时间沉没层层推进，监管与研究论据扎实，无明显编造，增量清晰。",
+      "script_spans": [
+        "求职者对新薪酬的满意感，更依赖过程透明而不是数额本身合理。",
+        "对普通人来说，这种岗位最贵的不是工资未知，而是时间沉没。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直击划走冲动引发共鸣，中段以学术视角与调查数据持续兑现，结尾建议由正文自然生长，余味清晰。",
+      "script_spans": [
+        "你刷到写着‘薪资面议’的岗位，是不是下意识想划走？",
+        "这种岗位最贵的不是工资未知，而是时间沉没。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口顺、有对话感，但‘对博弈弱势方的消耗’等句核心解释仍偏书面讲解，只能取低档。",
+      "script_spans": [
+        "当公司连个范围都不给，你根本没法判断自己是不是被当成冤大头",
+        "这时候模糊薪资更像是对博弈弱势方的消耗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "时间沉没、先亏了心态等表达克制且贴切，服务理解与情绪，离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "这种岗位最贵的不是工资未知，而是时间沉没。",
+        "让人还没面试就先亏了心态"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "三段功能清晰，设问承转自然，关键因果有桥，结尾绕行回扣开头划走，闭环完整。",
+      "script_spans": [
+        "为什么一句‘面议’这么招人烦？",
+        "下次再看到面议，要么开场就问清范围，要么直接绕行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制，多用'往往''不妨'留余地；但把'面议'直接定性为站在合规对立面，归因超出五部门对平台的指向，宜加限定。",
+      "script_spans": [
+        "招聘方若真想招人，不妨把底线数字亮出来",
+        "这种模糊写法本身就站在了合规趋势的对立面"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d81cf18abdf644d59bcd72669bfbe95c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-55927a95c7714fac8ad477c7f84c0ca9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

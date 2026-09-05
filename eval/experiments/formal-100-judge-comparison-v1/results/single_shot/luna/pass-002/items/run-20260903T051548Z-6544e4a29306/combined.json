@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-8bfd7608833c481382eaad46dcf1b996",
+  "run_id": "run-20260903T051548Z-6544e4a29306",
+  "trace_sha256": "f7d40ff90ae560912e532091685219a688b78c12648521c4aa1cf9810b5f545f",
+  "created_at": "2026-09-03T12:42:32.915063Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕项目扩张、安全风险和标准边界展开，既回应监管能否跟上，也落到投资人和居民的实际关切。",
+      "script_spans": [
+        "标准追得上体量，却兜不住所有意外。",
+        "投资人别幻想标准到了就高枕无忧"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据、机理、政策缺口和现实影响各自推进，既解释风险为何上升，也明确标准不是运行期的免死金牌。",
+      "script_spans": [
+        "全球公开报道的储能火灾已经十起往上",
+        "它本身就有热失控连锁的脾气，短路或过充可能引爆相邻单元。",
+        "标准主要管建设工程质量，运行期的变量它覆盖有限"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用增长与火灾形成冲突，中段持续追问监管与风险，结尾以安全追问和警句自然收束。",
+      "script_spans": [
+        "一边狂奔，一边冒烟，电池安全的规矩真能同步吗？",
+        "所以，别只盯装机数字狂欢，要问安全冗余留够没。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "设问和比喻有口播感，但多处单句承载过多信息，气口与重音需主动拆分。",
+      "script_spans": [
+        "一边狂奔，一边冒烟，电池安全的规矩真能同步吗？",
+        "加上独立储能项目比去年同期暴增两倍多，新电站从批复到带电运行可能就几个月，而标准从发文到企业贯标、人员培训需要周期。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务观点，“边跑边系鞋带”和“敬畏心不能抢跑”形象准确，具备复述价值。",
+      "script_spans": [
+        "监管其实是边跑边系鞋带，在速度和稳妥间找平衡点。",
+        "电站能抢装，敬畏心不能抢跑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构由冲突引题、因果解释、监管取舍、现实影响到结论回扣，转折关系清楚，核心观点前后一致。",
+      "script_spans": [
+        "先把因果理一理。为什么风险陡增？",
+        "可现实是，安全后评价导则还在起草",
+        "所以，别只盯装机数字狂欢，要问安全冗余留够没。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体风险提示克制，也明确“无需恐慌”；但“定期巡检靠企业自省”等概括偏满，可能误导监管覆盖范围。",
+      "script_spans": [
+        "咱们居民也无需恐慌，但得明白没有百分百免灾的集装箱",
+        "定期巡检靠企业自省，基层质监力量也有限",
+        "标准主要管建设工程质量，运行期的变量它覆盖有限"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-dcb6798a33b8445ab01fcbfceef8026e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

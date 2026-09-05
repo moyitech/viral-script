@@ -7,7 +7,11 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from hyscript.evaluation.stability import compare_judge_runs, export_judge_stability
+from hyscript.evaluation.stability import (
+    combine_judge_comparisons,
+    compare_judge_runs,
+    export_judge_stability,
+)
 
 
 def _record(run_id: str, scores: tuple[int, int], normalized: float) -> dict:
@@ -28,6 +32,46 @@ def _record(run_id: str, scores: tuple[int, int], normalized: float) -> dict:
 
 
 class JudgeStabilityTests(unittest.TestCase):
+    def test_combined_spearman_is_recomputed_from_pooled_rows(self) -> None:
+        summary = {
+            "record_count": 2,
+            "dimensions": {"quality": {}},
+            "evaluator_fingerprint_sha256": "f" * 64,
+            "baseline_evaluation_id": "first",
+            "repeat_evaluation_id": "second",
+            "baseline_request_count_distribution": {"1": 2},
+            "repeat_request_count_distribution": {"1": 2},
+        }
+
+        def row(run_id: str, baseline: float, repeat: float) -> dict:
+            return {
+                "run_id": run_id,
+                "baseline_quality": 1,
+                "repeat_quality": 2,
+                "changed_dimension_count": 1,
+                "baseline_normalized_score": baseline,
+                "repeat_normalized_score": repeat,
+            }
+
+        combined, _rows = combine_judge_comparisons(
+            {
+                "baseline": (
+                    summary,
+                    [row("baseline-1", 0.1, 0.2), row("baseline-2", 0.2, 0.1)],
+                ),
+                "single_shot": (
+                    summary,
+                    [row("single-1", 0.8, 0.9), row("single-2", 0.9, 0.8)],
+                ),
+            }
+        )
+
+        # Each subgroup is perfectly inverse (-1), while pooling all four pairs
+        # exposes the between-workflow separation and produces 0.6.
+        self.assertAlmostEqual(
+            combined["overall"]["normalized_score_spearman"], 0.6
+        )
+
     def test_compare_and_export_repeat_judge_passes(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -76,6 +120,21 @@ class JudgeStabilityTests(unittest.TestCase):
             self.assertEqual(summary["overall"]["all_dimensions_exact_rate"], 0.5)
             self.assertEqual(summary["dimensions"]["topic_alignment"]["exact_agreement_rate"], 1.0)
             self.assertEqual(rows[0]["changed_dimensions"], "engagement")
+
+            combined, combined_rows = combine_judge_comparisons(
+                {
+                    "baseline": (summary, rows),
+                    "single_shot": (summary, rows),
+                }
+            )
+            self.assertEqual(combined["record_count"], 4)
+            self.assertEqual(combined["source_groups"], ["baseline", "single_shot"])
+            self.assertEqual(
+                combined["overall"]["dimension_exact_agreement_rate"], 0.75
+            )
+            self.assertEqual(combined["overall"]["all_dimensions_exact_rate"], 0.5)
+            self.assertEqual(combined["overall"]["normalized_score_spearman"], 1.0)
+            self.assertEqual(combined_rows[0]["source_group"], "baseline")
 
             output = root / "output"
             export_judge_stability(

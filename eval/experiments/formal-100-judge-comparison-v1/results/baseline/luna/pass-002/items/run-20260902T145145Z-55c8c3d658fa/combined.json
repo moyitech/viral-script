@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-ecee7c4d1a96433badfff26db5ada1e5",
+  "run_id": "run-20260902T145145Z-55c8c3d658fa",
+  "trace_sha256": "c11a22d73d7393d46f731f150b0e852b97834be26a671806c6c5c3f319e6476b",
+  "created_at": "2026-09-03T12:18:36.222512Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答轨道是否会成为新争端，覆盖规则竞争、商业依赖和普通人的现实感受。",
+      "script_spans": [
+        "轨道会成为新争端，但争夺不从飞船对撞开始，而从文件桌和频谱占坑算起。",
+        "我们普通人能做的，是看清网速背后那张星图债单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中且信息单元充足，依次解释频谱申报、战略依赖、轨道拥挤和治理滞后。",
+      "script_spans": [
+        "国际电信联盟立了规矩，各国要发非静止卫星，得先通报频率占用。",
+        "网络贯通军民两界，断网就是掐命脉，这不算开火，也是实打实的摩擦。",
+        "规则没坏，只是摩擦成本涨了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用网速与抢地盘的反差抓人，中段层层推进到频谱、依赖和治理滞后，末尾追问也自然留下余味。",
+      "script_spans": [
+        "卫星互联网让上网更快，却可能引爆太空抢地盘。",
+        "要是轨道被分完了，下一代抬头还能看见多少自由星空？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有“为啥说占坑”“你想”等口语承接，但“文件桌”“反例是……”等表达卡顿，整体未达顺滑口播。",
+      "script_spans": [
+        "为啥说占坑？",
+        "你想，平时上网靠它，战时指挥也靠它",
+        "而从文件桌和频谱占坑算起",
+        "反例是治理并非失效只是迟钝"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“天上没星，纸上已分地盘”很有画面；但“卡脖子”“掐命脉”“星图债单”连续叠加，后半略显用力。",
+      "script_spans": [
+        "天上没星，纸上已分地盘。",
+        "等于卡脖子",
+        "断网就是掐命脉",
+        "网速背后那张星图债单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线按规则、依赖、拥挤到结论推进，但“先到先得”偷换占有概念，“反例”转折也缺乏承接。",
+      "script_spans": [
+        "不是立刻宇宙开战，但卫星背后常连着国家账本。",
+        "通报先到先得。谁先把计划交了，谁就圈走一片轨道空域。",
+        "反例是治理并非失效只是迟钝。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见明确违规，但“断网就是掐命脉”等绝对化表述，以及模糊归因的谈判案例，容易放大冲突和误导判断。",
+      "script_spans": [
+        "不是立刻宇宙开战，但卫星背后常连着国家账本。",
+        "某国曾拿切断星链服务当谈判条件，换对方资源。",
+        "网络贯通军民两界，断网就是掐命脉"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d52c6a880ff64def99e4a341037c7fb5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

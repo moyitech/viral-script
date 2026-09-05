@@ -1,0 +1,161 @@
+{
+  "evaluation_id": "combined-17659c0915b640c5ac95529f60d516ce",
+  "run_id": "run-20260903T051619Z-14c1b330f371",
+  "trace_sha256": "214714eb4a6e78f49f83fd73941aebe91b03bab5d42323cceab171b2529d7cbc",
+  "created_at": "2026-09-03T12:06:27.822627Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答快递提速与噪声冲突，覆盖技术、社区影响和监管取舍，核心人群明确。",
+      "script_spans": [
+        "快递更快实打实趋势，但城市不会变直升机工地，密集起降噪声烦恼也是真问题"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 520，目标为 700，偏差率为 25.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕提速与噪声的权衡，提供审批、时效、声学、起降密度和社区反馈等多层信息，认知增量充足。",
+      "script_spans": [
+        "多旋翼发高频音调声，不同于汽车低频，单架不震耳，但起降点贴窗顶，一天几十次累积就成干扰源。",
+        "现实里深圳、合肥等试点开数百条航线，送药餐用户等更短。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用楼上噪声与无人机送药制造反差，中段连续推进速度、噪声和治理取舍，结尾留下可讨论的判断。",
+      "script_spans": [
+        "楼上突然一阵嗡嗡声，你看到无人机把药投到邻家阳台，比骑手绕路早到十分钟",
+        "快递更快已起飞，城市更吵否，取决于起降点离窗几米，不只飞机能飞多高。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 1,
+      "reason": "中段多处电报式压缩，缺词且卡顿，真人口播需系统重写。",
+      "script_spans": [
+        "原先审批久航线死板。今低空改革铺开适飞域增，报批压几十分钟。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“城市不会变直升机工地”和“起降点离窗几米”把抽象取舍变成画面，既有记忆点也没有堆砌辞藻。",
+      "script_spans": [
+        "城市不会变直升机工地",
+        "取决于起降点离窗几米，不只飞机能飞多高。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按提速原因、噪声机制、技术折中和社区反馈递进，但多处压缩句缺主谓与因果桥，听者需自行补全。",
+      "script_spans": [
+        "那么，提速和安静只能二选一吗？技术给了折中：",
+        "原先审批久航线死板。今低空改革铺开适飞域增，报批压几十分钟。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制，明确承认噪声与社区分歧；但“报批压几十分钟”“快递更快已起飞”等断言缺少适用场景和边界，易造成泛化。",
+      "script_spans": [
+        "但城市不会变直升机工地，密集起降噪声烦恼也是真问题，不能假装看不见。",
+        "报批压几十分钟",
+        "末端配送半到一小时缩至十五到二十分",
+        "快递更快已起飞，城市更吵否，取决于起降点离窗几米"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.7916666666666666,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.375,
+    "weighted_average": 2.375,
+    "normalized_score": 0.7916666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 520,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.2571428571428571
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2dbbc5e96c8840dbb49f2b625ac20ef7",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e5261887eb6340fb9bd52ff3803bdfef",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

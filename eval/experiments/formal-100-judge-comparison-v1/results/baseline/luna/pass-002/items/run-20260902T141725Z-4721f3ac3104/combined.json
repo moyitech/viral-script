@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-abbcde74ff514a608547edb0d409302f",
+  "run_id": "run-20260902T141725Z-4721f3ac3104",
+  "trace_sha256": "8431b25ef66011afc8c650bceac6c1ddfce7f0029212692eeb155e7f56c61225",
+  "created_at": "2026-09-03T12:21:30.431494Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直指老用户变贵的原因，既讲算法定价，也覆盖新客优惠、老客处境和应对方式。",
+      "script_spans": [
+        "所以动态会员价下，老客比新客更贵。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，算法画像、支付意愿、差异化优惠和比价建议均有推进，但多处机制写成确定事实，且“老客更贵”被反复改写。",
+      "script_spans": [
+        "它先收集你常走的路线和叫车时间。",
+        "同样路程，老号显示会比新号贵几块。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“多收十块”制造具体冲突，中段不断补充画像、定价和应对，结尾追问也从主题自然长出。",
+      "script_spans": [
+        "常叫车的老用户反而被多收十块车费。",
+        "当会员价悄悄长成熟客税，你会换着叫吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句推进有冲击力，但“拿算法算”“加位点”等词组生硬，影响连续朗读。",
+      "script_spans": [
+        "常叫车的老用户反而被多收十块车费。",
+        "平台拿算法算你习惯，觉得你离不开它。",
+        "它把老客当稳定现金流，悄悄加位点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“喂它画像”和“熟客税”把抽象算法风险说具体，画面感和警示感都有，修辞没有压过解释。",
+      "script_spans": [
+        "每次下单都在喂它画像，沉默成本被算。",
+        "当会员价悄悄长成熟客税，你会换着叫吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按现象、机制、规则、应对展开，主线可跟随；但从市场调节价直接推到能差异定价，再推到“不能明着杀熟”存在逻辑跳步。",
+      "script_spans": [
+        "按规定，网约车运价走市场调节为主。",
+        "但它不能明着杀熟，就绕成动态折扣。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有“按规定”作边界提示，但把平台动机和动态定价机制说成既定事实，并以“肥羊”“熟客税”强化指控，存在误导和标签化风险。",
+      "script_spans": [
+        "按规定，网约车运价走市场调节为主。",
+        "所以动态会员价下，老客比新客更贵。",
+        "你只盯一个平台，就成了高黏性肥羊。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-766a012f678f4fa2bafb824e9ab4f62e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

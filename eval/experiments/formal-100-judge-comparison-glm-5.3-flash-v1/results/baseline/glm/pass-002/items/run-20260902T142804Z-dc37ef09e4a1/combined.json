@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-fca8851e045a46ee938c90b4060bf072",
+  "run_id": "run-20260902T142804Z-dc37ef09e4a1",
+  "trace_sha256": "23ab274ac899896634b57adaa67d5427ae6b2ba210a5afbfbfada6b3961b1528",
+  "created_at": "2026-09-03T14:25:35.488296Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头亮明结论，作业挤占与安静管理两侧均有回应，落点指向家长，结尾提问回扣题设。",
+      "script_spans": [
+        "课间被作业挤掉，安静管理反让孩子吃亏。",
+        "家长如果看见孩子课间被留，可以拿出规定平和沟通"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "规定依据、学校动机、损害机制、家长行动层层推进，含三十分钟大课间等硬信息，论证扎实。",
+      "script_spans": [
+        "文件也写明，每天专门排了三十分钟大课间。",
+        "孩子连上两节课，身体眼睛都绷着，去走廊跑跳望远处才是大脑重启的过程。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即点出反差冲突，中段连用追问、反转与新信息推进，结尾提问由要回休息权自然长出，三段均留得住人。",
+      "script_spans": [
+        "课间被作业挤掉，安静管理反让孩子吃亏。",
+        "那学校搞安静管理图什么？主要是怕走廊磕碰担责任。",
+        "当下回见孩子课间被留，您会替他要吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "中段对话感强、节奏利落，但'十分重要必要''放松身'等处卡嘴需改词，政策复述段偏文件腔。",
+      "script_spans": [
+        "孩子不是蓄电池，充会儿电才跑得动",
+        "安静只堵小磕碰，却丢了大收益",
+        "课间休息十分重要必要",
+        "能调情绪、放松身、防近视",
+        "不能对出教室玩要设不必要约束"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务观点，蓄电池比喻贴切，堵小磕碰丢大收益的对句离开原文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "孩子不是蓄电池，充会儿电才跑得动。",
+        "安静只堵小磕碰，却丢了大收益。",
+        "成长本来就在跑动里发生"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承接自然，因果有桥，权衡句收束有力，结尾蓄电池比喻回扣开头与题设。",
+      "script_spans": [
+        "那学校搞安静管理图什么？主要是怕走廊磕碰担责任。",
+        "安静只堵小磕碰，却丢了大收益。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "健康效益表述与教育部口径一致，批评落点在管理而非孩子，且体谅老师难处、建议平和沟通，无煽动夸大。",
+      "script_spans": [
+        "家长如果看见孩子课间被留，可以拿出规定平和沟通",
+        "老师也不容易，怕事才收得紧。咱理解难处，也守住底线",
+        "长期可能让注意力更涣散"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-30defcf7bb6a418599033f25aee3ca38",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

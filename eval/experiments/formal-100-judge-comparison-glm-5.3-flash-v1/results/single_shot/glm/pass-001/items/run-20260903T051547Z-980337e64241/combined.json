@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-155a4a4f87a94dfa8ad6bfb27b94e52f",
+  "run_id": "run-20260903T051547Z-980337e64241",
+  "trace_sha256": "a54e9ca93100d646af625a515089fb4b2ce84dc291ddf00c5473a61f3ac95fb1",
+  "created_at": "2026-09-03T14:11:04.205299Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头痛感反差即入题，双因覆盖指数错位与收入偏慢，结尾回扣普通家庭关切",
+      "script_spans": [
+        "物价只是温和回升，许多家庭却直喊钱不够花，根本原因是官方物价指数和自家开支结构错位了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 267，目标为 280，偏差率为 4.64%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "四层信息各自推进，占比数据与固定项排查法具体可用，论据与结论相互支撑",
+      "script_spans": [
+        "不少家庭一半以上的进账直接填了这两坑",
+        "把房租、学费、医保这些固定项单独铺开，你才发现钱早被悄悄分完了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首20字反差直给，中段以权重错位和一半进账填两坑的实例持续兑现，结尾由正文自然生出余味。",
+      "script_spans": [
+        "物价只是温和回升，许多家庭却直喊钱不够花",
+        "不少家庭一半以上的进账直接填了这两坑",
+        "你才发现钱早被悄悄分完了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体可读，'吃掉了月薪的大块头'等处顺口；但'开支结构错位''增速并不突出'等书面段需临时改词重断，主体仍是讲解腔。",
+      "script_spans": [
+        "可它们实打实吃掉了你月薪的大块头，稍一动弹就放大痛感",
+        "根本原因是官方物价指数和自家开支结构错位了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，吃掉月薪的大块头、钱早被悄悄分完了均可独立复述，无堆砌炫技。",
+      "script_spans": [
+        "可它们实打实吃掉了你月薪的大块头",
+        "你才发现钱早被悄悄分完了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "一方面另一方面层次清楚，但开头把根因限定为指数错位，收入偏慢溢出该框架",
+      "script_spans": [
+        "一方面，物价指数只统计一篮子代表商品",
+        "根本原因是官方物价指数和自家开支结构错位了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无违规、建议也克制，但“根本原因”下定论，“权重有限”“一半以上进账”未给依据和边界，易误导观众，措辞补限定后更稳妥。",
+      "script_spans": [
+        "别光看菜价跌了就宽心，把房租、学费、医保这些固定项单独铺开",
+        "上半年居民实际收入增速并不突出",
+        "根本原因是官方物价指数和自家开支结构错位了",
+        "像居住、教育这些避不开的花费在里头权重有限",
+        "不少家庭一半以上的进账直接填了这两坑"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-1fa92453cbfd42199060787a5a77fbc5",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-11756418944841f3892f597bb217bacb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

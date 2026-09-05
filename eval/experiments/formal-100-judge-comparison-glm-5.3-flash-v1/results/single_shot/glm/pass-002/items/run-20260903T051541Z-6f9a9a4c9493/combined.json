@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-72d321723da44b48ae4c7d7b23a459c7",
+  "run_id": "run-20260903T051541Z-6f9a9a4c9493",
+  "trace_sha256": "c676d5bc61687c48210b083aa9ce8021bfb7a3385be724cef93571e1f1d281f8",
+  "created_at": "2026-09-03T15:26:48.555010Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即摆出秩序与赶路两侧冲突，判断直指只禁不疏，结尾建议回扣通勤人群，全程正面答题。",
+      "script_spans": [
+        "整治乱停乱放当然没错，可这刀切下去，会不会误伤了赶路的人？",
+        "我的判断是，禁停范围扩大本身不怪，真正让人吃亏的是只禁不疏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围栏机制、画圈不画车位、调度费与改乘地铁层层递进，与引用背景吻合，无编造，增量具体。",
+      "script_spans": [
+        "像五道口试点，车进禁停区就发信号锁不住，逼你停进栏内",
+        "假期景区周边有人因找不到合规点，被收高价调度费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直入锁不上车的具体冲突，中段以机制、民情、代价层层推进，结尾建议加双关收束自然生长，无硬喊互动。",
+      "script_spans": [
+        "你着急上班，扫码骑了辆共享单车，到了地铁口却发现锁不上车",
+        "共享单车本来是解决最后一公里的，现在最后一公里倒成了最难的一公里",
+        "秩序要紧，可便利也不能掉地上，看清边界再上车"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇短气口为主，'逼你停进栏内''推着找场站'顺口有画面，朗读基本无需改词，节奏有起有伏。",
+      "script_spans": [
+        "像五道口试点，车进禁停区就发信号锁不住，逼你停进栏内。",
+        "所以出门前先瞅一眼手机里的围栏圈，别等到了跟前才傻眼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“最难的一公里”翻转贴切好复述，“这刀切下去”服务情绪，金句密度适中，无炫技堆叠妨碍理解。",
+      "script_spans": [
+        "可这刀切下去，会不会误伤了赶路的人",
+        "共享单车本来是解决最后一公里的，现在最后一公里倒成了最难的一公里",
+        "秩序要紧，可便利也不能掉地上，看清边界再上车"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先承认正当性再析机制后谈代价，因果有桥，段段功能清晰，结尾回扣开头锁车场景。",
+      "script_spans": [
+        "如果只画圈不画车位，秩序好了出行却断了",
+        "秩序要紧，可便利也不能掉地上，看清边界再上车"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "先肯定整治正当性再提疏堵结合，观点两面兼顾；无煽动、夸大或绝对化承诺，调度费与涨价等事实主张均有现实依据，导向安全。",
+      "script_spans": [
+        "划定禁停区有正当性，但得看怎么划，不能一禁了之",
+        "秩序要紧，可便利也不能掉地上，看清边界再上车"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-13f3badde8144ebd9bb54d96cbeb9a0a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

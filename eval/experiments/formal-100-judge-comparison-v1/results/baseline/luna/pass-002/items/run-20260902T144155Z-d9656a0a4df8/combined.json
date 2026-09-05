@@ -1,0 +1,134 @@
+{
+  "evaluation_id": "combined-40c88b50c24b4c7bb7a3366600d343eb",
+  "run_id": "run-20260902T144155Z-d9656a0a4df8",
+  "trace_sha256": "f58935fdb864d7ae5f050e6480a61e6f538cb9fe2e4156fce6b8d396834f884f",
+  "created_at": "2026-09-03T12:15:52.949327Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答取纸质报告的办法，并覆盖电子化趋势与不会用手机患者的核心冲突。",
+      "script_spans": [
+        "医院全推电子报告，没手机老人咋取单？别急，医院搞电子化，不会用手机患者能找人工窗口拿纸质。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，政策依据、窗口操作与提前提醒层层增加信息，结论也回到老人实际处境。",
+      "script_spans": [
+        "国家发文说过，智能服务和老人熟悉的办法要一块走，不能光给屏幕看。",
+        "提醒一句，挂号时直接跟护士说要纸质报告，省得后面跑空。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直击老人取报告的冲突，中段补充政策和操作路径，结尾由屏幕与两代人的关系自然收束。",
+      "script_spans": [
+        "医院全推电子报告，没手机老人咋取单？",
+        "别让屏幕隔开两代人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句、设问和具体动作衔接自然，气口清楚，核心解释基本像当面沟通，朗读无需临时改词。",
+      "script_spans": [
+        "你想啊，医院不能因为上了电子系统，就把不看屏幕的人推开。",
+        "你报个名字，他就能帮打印。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“没手机老人咋取单”具体易懂，“别让屏幕隔开两代人”自然有余味，修辞克制且服务于主题。",
+      "script_spans": [
+        "没手机老人咋取单？",
+        "别让屏幕隔开两代人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、政策、场景、提醒和收束层次清楚，但把保留传统服务直接推到导诊员必能打印，因果略跳。",
+      "script_spans": [
+        "医院全面推行是趋势，但不代表甩开不用手机的人。",
+        "你报个名字，他就能帮打印。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "原则方向有依据，但把保留传统服务直接说成医院必能打印纸质报告，易造成就医预期误导。",
+      "script_spans": [
+        "智能服务和老人熟悉的办法要一块走",
+        "你报个名字，他就能帮打印"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9fa09b2dfa1a480ab289c1458b883870",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

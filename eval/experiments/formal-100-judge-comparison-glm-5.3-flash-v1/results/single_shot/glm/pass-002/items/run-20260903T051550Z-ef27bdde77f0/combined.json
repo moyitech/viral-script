@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-cee4785e9da0401b92036e25d752891c",
+  "run_id": "run-20260903T051550Z-ef27bdde77f0",
+  "trace_sha256": "41cbb036ca8ca4c9c823f5e7d5b2e05b4e2a6f8ae3007420ef75374a1fc41e5a",
+  "created_at": "2026-09-03T15:29:41.876357Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给出二元题的明确判断，正文同时覆盖不涨与局部涨两侧，结尾落到普通消费者决策，与题设和人群高度契合。",
+      "script_spans": [
+        "关键原料出口受限，不会让全球绿色产业集体涨价，但会撕开一道价格断层",
+        "普通人买车买板，盯住具体品类比看宏观喊话管用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "多个信息单元层层推进：管控范围、钴配额推价、光伏降价、备货与替代各有事实支撑，与引用资料相互印证，无编造迹象。",
+      "script_spans": [
+        "中间品价格一下被推高；但同一时间，光伏产业链因为产能过剩，多晶硅和组件价格还在往下走",
+        "可绿色产业用的铜、硅、铝大多不在严控清单里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字抛出限稀土与降价并存的反差，中段以追问和新数据层层兑现，结尾建议由价格断层自然长出。",
+      "script_spans": [
+        "你发现没，新闻里这边刚说某国限制稀土出口，那边新能源车降价促销却还在继续",
+        "那为什么市场上已经出现涨价声音？",
+        "真正该做的，是看清你买的那件绿色产品卡在供应链哪一环"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句好读、判断句有劲，但中段夹公文词与书面句，口播前需微调换词。",
+      "script_spans": [
+        "欧美拼命补贴本土加工，中国企业守着精炼优势，双方都在用时间换空间。",
+        "各国近年完善的主要是战略矿产两用物项的出口合规"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "价格断层、整座地基等比喻贴切克制，全线发红鲜活，核心句离开正文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "但会撕开一道价格断层——有的部件悄悄贵了，有的反而更便宜",
+        "受限的是局部供应链，不是整座地基",
+        "不是原料一紧就全线发红"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进、段落功能清晰，地缘风险让步后仍回到结论，价格断层收尾自然回扣开头的拧巴现象。",
+      "script_spans": [
+        "那为什么市场上已经出现涨价声音？看看近况就明白",
+        "不确定性在于，如果地缘冲突把更多精炼产能卷进管制，今天的缓冲层可能明天就失效"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "核心判断以条件句和不确定性呈现，主动澄清标题党说法，边界清楚，无煽动夸大或无依据承诺。",
+      "script_spans": [
+        "如果地缘冲突把更多精炼产能卷进管制，今天的缓冲层可能明天就失效",
+        "正规贸易凭许可仍能走，走私规避才是打击对象",
+        "别被“集体涨价”的标题吓到"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-898d0c2a3679420584ea9f3580af0a25",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-431168deae1c43619bde3694891c6f79",
+  "run_id": "run-20260903T051556Z-42de9273c737",
+  "trace_sha256": "bb183acb98eebffc51297bfb9dcd764d95cb46d5bf5c4ba40433fb90d68518a9",
+  "created_at": "2026-09-03T14:08:23.570387Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头接通勤痛点，判断直接回应能否兼顾并给出前提，落点对准通勤族，题设两侧均覆盖。",
+      "script_spans": [
+        "城市安全与通勤效率能兼顾，但前提是站点管理别只发新规通知不加通道",
+        "通勤族若避不开大站，早高峰尽量错开半小时出门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 262，目标为 280，偏差率为 6.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "判断、案例、规范依据、错峰建议层层推进，多耗二十分钟等细节具体，有依据无编造。",
+      "script_spans": [
+        "乘客多耗二十分钟，进站口挤满而车厢却还空着，这是典型流程与设施脱节",
+        "现行运营规范早就明确鼓励推广安检新技术、新产品，用模式升级换效率"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字直击通勤痛点设悬念，中段用进站挤、车厢空的反差与新规信息持续兑现，结尾余味自然生长，三段无代偿。",
+      "script_spans": [
+        "安检突然变细，是不是以后上班都得提前半小时？",
+        "进站口挤满而车厢却还空着",
+        "别让一道安检门，隔开了一座城本该顺畅的呼吸节奏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "钩子与“说白了”段落顺口有对话感，但政策转述句和压缩判断句至少两处需临时重断句换气。",
+      "script_spans": [
+        "说白了，细查不靠堆人墙。",
+        "安检突然变细，是不是以后上班都得提前半小时？倒也不用恐慌。",
+        "但前提是站点管理别只发新规通知不加通道",
+        "现行运营规范早就明确鼓励推广安检新技术、新产品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "挤满与空着的对比服务理解，'细查不靠堆人墙'与结尾'呼吸节奏'离开上下文仍可复述，修辞克制无堆砌。",
+      "script_spans": [
+        "细查不靠堆人墙",
+        "别让一道安检门，隔开了一座城本该顺畅的呼吸节奏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "案例到流程与设施脱节的因果衔接清楚，另一边转折自然，结尾回扣安检与通勤题设。",
+      "script_spans": [
+        "进站口挤满而车厢却还空着，这是典型流程与设施脱节",
+        "别让一道安检门，隔开了一座城本该顺畅的呼吸节奏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "先安抚恐慌再给判断，建议用'尽量'限定，批评对事不对人且有规范依据，导向安全。",
+      "script_spans": [
+        "倒也不用恐慌",
+        "通勤族若避不开大站，早高峰尽量错开半小时出门，或留意站点临时引导"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f1d5f737b0c1463eabfc7d940d957663",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e3e867c97203471baf96a5ce832e4dea",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

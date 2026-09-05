@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-2a6222e828e1418289203d38528cf679",
+  "run_id": "run-20260902T142510Z-1e5b852ccee3",
+  "trace_sha256": "e104be14343aadf3525fe5117483ef00b0afe7a08cc2ea75954418577a990a34",
+  "created_at": "2026-09-03T13:44:36.389850Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头痛点对应题设，急用与收益两侧兼顾，分两路正面回答往哪放，家庭人群明确未跑题。",
+      "script_spans": [
+        "钱挪走怕急用抓瞎，留着又亏利息",
+        "家庭闲钱别全堆活钱，分两路走：日常要用的留现金类，半年不用的试储蓄国债"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 285，目标为 280，偏差率为 1.79%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "利率环境、国债条款、提前兑取规则层层推进，附圈钱日程的可操作方法，数据有据无编造。",
+      "script_spans": [
+        "短端利率在百分之一点三附近，现金产品底层赚钱少，给到你的收益还会被压低",
+        "国债提前兑取会扣利息，只适合真闲钱，买前拿纸笔圈出半年不动的钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头双难钩子扎实，中段有问答推进；但“这类产品”指代不清致推进趋平，结尾缺少追看冲动。",
+      "script_spans": [
+        "你的现金理财收益正变少，钱挪走怕急用抓瞎，留着又亏利息",
+        "这类产品受规则约束，高收益资产难配了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "钱挪走怕急用抓瞎顺口有画面，但这儿得直视、受规则约束等两处拗口，需临时换词，最高2分。",
+      "script_spans": [
+        "钱挪走怕急用抓瞎，留着又亏利息",
+        "这类产品受规则约束，高收益资产难配了",
+        "虽不能每天赎回，但锁点时间换稍高利息"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“抓瞎”“圈出”等口语修辞服务理解，双难句与“分两路走”可离文复述，克制不炫技。",
+      "script_spans": [
+        "钱挪走怕急用抓瞎，留着又亏利息",
+        "买前拿纸笔圈出半年不动的钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线可跟随、因果基本成立，但该句紧跟国债段，指代含混且解释错位，打断论证推进。",
+      "script_spans": [
+        "为啥这么分？先看大环境",
+        "再说替代：三年期储蓄国债利率约一点六三",
+        "这类产品受规则约束，高收益资产难配了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "利率表述克制有据，主动提示锁定期与提前兑取扣息风险，用'试'字留余地，无确定性收益承诺。",
+      "script_spans": [
+        "但要注意，国债提前兑取会扣利息，只适合真闲钱",
+        "虽不能每天赎回，但锁点时间换稍高利息"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8fb967789a58425baaeba77f824b71c5",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-53a70be4916843e98019d89b0767ec17",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-0a8e391844c445d686a636c2fe400207",
+  "run_id": "run-20260902T142046Z-18f9b0e4979c",
+  "trace_sha256": "8caa8de3d5d790746e056f941aadb864b122fa39a32bc1876b57b798b6c0cffe",
+  "created_at": "2026-09-03T12:21:30.843443Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直面禁停扩围的双向影响，并覆盖骑行者、行人和游客的具体出行痛点。",
+      "script_spans": [
+        "会添些麻烦，但没一边倒受伤。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，电子围栏、投诉量、停车点和调度费等信息层层推进，利弊判断有依据。",
+      "script_spans": [
+        "为啥这样？电子围栏一上，停错地方锁不了车。",
+        "有人骑十分钟，还车交二十块调度费，这真伤及口袋了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以骑车人与路人的反差入题，中段持续补充成本与收益，结尾落到具体行动，推进和收束都自然。",
+      "script_spans": [
+        "禁停区变大，骑车人觉得碍事，走路人反倒通顺。",
+        "下次见禁停线，先开软件找点，别让几块钱学费交在路边。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句和问答推进较利落，但“没一边倒受伤”等表述生硬，核心解释仍有压缩和断裂感。",
+      "script_spans": [
+        "以前骑车随手停，现在得瞅禁停线。",
+        "会添些麻烦，但没一边倒受伤。",
+        "随手停惯了，猛一管束。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“路面一下清了”“几块钱学费交在路边”把秩序收益和现实代价说具体，画面感强且不过度堆砌。",
+      "script_spans": [
+        "行人免得钻车缝走，孩子上学不绊脚。",
+        "别让几块钱学费交在路边。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，能从利弊转到机制和建议，但“常遇还车难”“周边常缺位”等表达压缩过度。",
+      "script_spans": [
+        "取舍在哪儿？车得停指定点，你得多走几十米。",
+        "商圈点少时，假日常遇还车难。景区周边常缺位"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且承认还车难和调度费风险；但“只是多走几步”“吃亏的多是游客”等概括偏绝对，可能淡化真实影响。",
+      "script_spans": [
+        "会添些麻烦，但没一边倒受伤。",
+        "骑车人只是多走几步。",
+        "吃亏的多是游客。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-52973d523b254a93b5985b60baf8621f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-e91192a07ea147f68d5ad87f011aa811",
+  "run_id": "run-20260902T143349Z-0e905f672d2d",
+  "trace_sha256": "ece34484cacf0a979c2c126191d831cdd6aad962e1971f3cb31f3b8b00f86abe",
+  "created_at": "2026-09-03T14:26:03.160354Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛反差即亮结论，升温冲击与价格走势两侧都答到，落脚普通人钱包，题设覆盖完整。",
+      "script_spans": [
+        "我直接把结论拍你面前：眼下不会普遍更贵",
+        "咱普通人买鱼买虾，钱包暂时没受压"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题紧扣为何没贵，产量、出塘、北迁、替补逐层推进，边界补充周全，数据有据无编造。",
+      "script_spans": [
+        "海水养殖产量还涨了百分之五点二，海水产品均价反倒跌了百分之四点七",
+        "等温线明显北迁，北方冷水海域也能多养鱼"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛出涨价反降的反差，中段以数据和设问层层推进，结尾疑问由正文自然长出，余味足。",
+      "script_spans": [
+        "挑虾见标价没涨反降？海水升温祸害养殖，咱餐桌海鲜却偏偏没更贵",
+        "还有个悄悄发生的挪移：等温线明显北迁，北方冷水海域也能多养鱼",
+        "我们这代人的便宜海鲜，能续到哪年？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "中段对话感与短气口见功力，但数字堆叠与“若减产”书面句两处需重断句换词，按规封顶2分。",
+      "script_spans": [
+        "那菜场为啥没贵？中间有个坎儿要认清。",
+        "前十一月二十省水产超六千三百万吨",
+        "局部野生近海贝类若减产"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，'碗里不会空''链条通着呢钱就难涨'脱离上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "碗里不会空",
+        "链条通着呢，钱就难涨",
+        "万一热浪砸进主产区，降价的好日子就得留神"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结论先行、设问过渡、机制分列再收束，因果桥清楚，结尾回扣开篇反差，经得起追问。",
+      "script_spans": [
+        "海里热浪灭了部分野生种群，可人工塘口把缺口顶住了",
+        "我们这代人的便宜海鲜，能续到哪年？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "数据均有出处支撑，结论限定“眼下”“暂时”，还主动补边界与风险情形，无夸大、煽动或误导性承诺。",
+      "script_spans": [
+        "眼下不会普遍更贵",
+        "不过得留个边界，升温不是均匀打",
+        "万一热浪砸进主产区，降价的好日子就得留神"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1300711ad15f46bb87e209d882cd7a68",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

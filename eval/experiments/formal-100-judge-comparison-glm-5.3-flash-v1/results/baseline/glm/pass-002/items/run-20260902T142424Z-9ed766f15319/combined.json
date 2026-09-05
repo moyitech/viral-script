@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-dca0639f7f0b498ab2bb5459487254ba",
+  "run_id": "run-20260902T142424Z-9ed766f15319",
+  "trace_sha256": "6d8f371a6401342de16165269016feb3e154bcd7b7dc1c587ef63f1905ebb2ea",
+  "created_at": "2026-09-03T14:24:26.098772Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即摆出反差，点明卡在太贵太散，正面回答为何难传导，结尾回扣小厂用算力，全程贴合题设与人群。",
+      "script_spans": [
+        "说白了，算力繁荣难传导，就卡在芯片太贵、资源太散。",
+        "等小厂真能像买电一样用算力，这波繁荣才算落了地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "价格、囤卡差距、孤岛排队、总量破千与按需付费层层推进，事实解释结论相扣，还能带走行动方法。",
+      "script_spans": [
+        "一块好用的AI训练芯片价格达数千美元，大公司能囤几千块，中小企业连几块都凑不齐",
+        "留意本地按需计费的小额算力试点，比如问问园区有没有就近算力池"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛抢不到芯片的反差钩子，中段价格、孤岛、总量反转层层兑现，结尾余味由按需付费建议自然长出。",
+      "script_spans": [
+        "中小企业眼看着AI芯片需求暴涨，自己却连一块高端GPU都难抢到。这反差够狠",
+        "其实全国算力总规模已破千 EFLOPS",
+        "等小厂真能像买电一样用算力，这波繁荣才算落了地"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "通篇短句短气口，重音落在对比与转折处，“难，常要排队等上好多天”如当面说话，无需改词即可录。",
+      "script_spans": [
+        "小厂想按需取用？难，常要排队等上好多天",
+        "大公司能囤几千块，中小企业连几块都凑不齐，根本跑不动大模型"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "孤岛与买电类比贴切、服务理解，买电一句离开上下文仍可复述，修辞点到为止没有堆叠炫技。",
+      "script_spans": [
+        "算力多锁在封闭集群，没有统一入口，像孤岛",
+        "等小厂真能像买电一样用算力，这波繁荣才算落了地"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "两个分论点先总后分，以其实反转补足总量充足却触不到的张力，结尾像买电自然回扣，因果有桥。",
+      "script_spans": [
+        "再说，算力多锁在封闭集群，没有统一入口，像孤岛",
+        "其实全国算力总规模已破千 EFLOPS，这是每秒百亿亿次计算的能力，硬件不少，但小企碰不到。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "归因有依据且留余地，如'常要排队'；建议以'留意试点'软性引出，无绝对化承诺、无煽动对立，导向安全。",
+      "script_spans": [
+        "小厂想按需取用？难，常要排队等上好多天。",
+        "留意本地按需计费的小额算力试点，比如问问园区有没有就近算力池"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7b829bc7d34a4981a452b1da6e3c2787",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-977b273df4e24fa0b3bbdc060f9804db",
+  "run_id": "run-20260902T145046Z-3cc1ecef1ec8",
+  "trace_sha256": "e5feb375847e8f67ffdbe14d86533d28e0466e9ef7f5fe730faa809e652decaf",
+  "created_at": "2026-09-03T14:27:59.508888Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即摆出粮价与菜账两端，三层原因正面解题，落点回到普通家庭账本，题设与人群全覆盖。",
+      "script_spans": [
+        "粮价平稳是实情，餐桌支出增加也是实情，两边都不矛盾。",
+        "原粮平稳只是第一环，后面加工、流通、就餐方式全在加价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "权重结构、加工溢价、外食转变三个信息单元各自推进，结论给出全产业链判断方法，增量扎实。",
+      "script_spans": [
+        "买一斤米省的几分钱，抵不过一把青菜多的几毛钱。",
+        "差价能拉到两三倍甚至十三倍"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句具体反差立起钩子，中段以统计权重、加工溢价、就餐变化层层兑现，结尾问句由正文自然长出并留互动余味。",
+      "script_spans": [
+        "粮食价格没动，你家每月买菜钱却多出一百？",
+        "买一斤米省的几分钱，抵不过一把青菜多的几毛钱",
+        "差价能拉到两三倍甚至十三倍"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口设计好、对话感强，但米面贵贱一句搭配别扭，调查覆盖一句需换词重说，两处拗口只能2分。",
+      "script_spans": [
+        "买一斤米省的几分钱，抵不过一把青菜多的几毛钱。",
+        "米面贵贱，占你家伙食费比例越来越小",
+        "不过调查覆盖总有照不到的缝，但方向没错"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'省几分米钱抵不过多几毛菜钱'贴切且可独立复述，'别人厨房''厨师和房租'等形象点到为止，没有连续炫技。",
+      "script_spans": [
+        "买一斤米省的几分钱，抵不过一把青菜多的几毛钱",
+        "钱花在别人厨房里",
+        "你付的不只是食材，还有厨师和房租"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段间以先说、再看清晰承接，账本多了几笔回扣开头一百元之问，因果桥齐整，主线可跟随。",
+      "script_spans": [
+        "那为什么明明粮价没变，感觉花钱更憋屈？",
+        "你家的账本，是不是也悄悄多了这几笔？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键数字以研究出处带出，跌涨两面均提，还主动交代调查局限，无煽动、夸大或误导性承诺。",
+      "script_spans": [
+        "不过调查覆盖总有照不到的缝，但方向没错，外食占比提高是看得见的趋势",
+        "肉蛋虽然这段有些跌，但其他品类补上来"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-566e496882a24478bae02bdeea662248",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

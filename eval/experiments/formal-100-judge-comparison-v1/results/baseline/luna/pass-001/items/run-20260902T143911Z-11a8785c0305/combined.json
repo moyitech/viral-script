@@ -1,0 +1,167 @@
+{
+  "evaluation_id": "combined-278701ea4f7d47bfb7f5529b8dbcde74",
+  "run_id": "run-20260902T143911Z-11a8785c0305",
+  "trace_sha256": "51e160c00beb6eb38abc22538db58258f6636c34d338cd3abe5972d82a1ed442",
+  "created_at": "2026-09-03T11:44:49.256897Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应是否该给回报，兼顾老人和子女的顾虑，并把回报落到分担开支与接手照料，针对性明确。",
+      "script_spans": [
+        "要我说该给，但不是雇保姆那样结账。",
+        "老人付出时间精力，孩子爸却觉得白帮忙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 830，目标为 700，偏差率为 18.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，补足照料成本、健康风险的双面性与隐性回报方案，信息有推进，具体例子也能落地。",
+      "script_spans": [
+        "学者整理发现，带娃对祖辈健康影响说法不一。",
+        "周末接手带两天，让他跟老伙计去逛逛庙会。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出报酬冲突，中段用家庭分工和体面解决方案持续推进，结尾提问自然承接。",
+      "script_spans": [
+        "带外孙三年没拿报酬，女婿说天经地义不该给。",
+        "明给不如暗里分担。亮出心意比亮出钞票更管用。",
+        "你家长辈带娃，开口要过回报没？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、问答承接顺，但“护体面”“学马虎”搭配生硬，朗读时至少两处需要临时换词。",
+      "script_spans": [
+        "他当是本分，老人当是情分，这就拧了。",
+        "带他去吃顿好的，比说不给更护体面。",
+        "孩子看长辈默默干活没人认，可能学马虎。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“本分与情分拧了”“亮出心意比亮出钞票更管用”都具体好记，修辞克制且服务观点。",
+      "script_spans": [
+        "他当是本分，老人当是情分，这就拧了。",
+        "亮出心意比亮出钞票更管用。",
+        "家庭不是公司，可情分也经不住老这么透支。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整、主线可跟；但将明确回报转成隐性体谅，并把未认可长辈与孩子学马虎相连，论证有跳步。",
+      "script_spans": [
+        "那不该给的理由呢？账算太清就伤亲情。",
+        "或许该想的不是给不给钱，而是怎么认这份情。",
+        "孩子看长辈默默干活没人认，可能学马虎。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导体谅老人、没有煽动对立；但法律义务、劳动强度及家庭后果的表述偏泛，部分建议也可能造成误导。",
+      "script_spans": [
+        "这说明付出实打实，但身体结果因人而异。",
+        "法律好像也没把日常帮带娃写成硬义务。",
+        "报酬可以藏在生活里，不摆上桌面。",
+        "孩子看长辈默默干活没人认，可能学马虎。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 830,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.18571428571428572
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e0478416db8c4fbebceac77dfc99f349",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d043ca1d57c84579b3fbd2c186c3923c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

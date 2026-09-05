@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-aaf1d83f596e4c5aaafe29457aff2db3",
+  "run_id": "run-20260902T141834Z-8034af1bd977",
+  "trace_sha256": "ba9508212615bb6b7ae3e75679dd155e1bf331691ea0ccc790c1955acb3fa417",
+  "created_at": "2026-09-03T13:45:36.250702Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛题设之问并亮明立场，企业与求职者两侧、普通求职人群全程覆盖，结尾回扣题设。",
+      "script_spans": [
+        "算法到底能不能读懂人的潜力？它能盯住你的微表情和说话关键词，却读不出你压力下沉默后冒出的真本事。",
+        "错判一个人，公司丢的是钱，人丢的是时机。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 749，目标为 700，偏差率为 7.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "打分机制、研究实证、偏见盲区、政策边界逐一推进，信息单元环环相扣，核验未见编造。",
+      "script_spans": [
+        "先抓眼神、语速、用词，再和岗位模型比对",
+        "发现有些算法对年龄、性别群体有偏",
+        "到2027年想普及一批大模型场景，可边界划在可信上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛企业省钱与求职者丢机会的反差，中段连环追问加转折持续兑现，结尾互动由正文自然长出，三段各自成立。",
+      "script_spans": [
+        "企业用AI面试官省了钱，求职者却丢了被看懂的机会。算法到底能不能读懂人的潜力？",
+        "下次见AI面试官，你会藏起紧张，还是赌它读得懂你？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口为主，对仗句自带重音停顿，全文上口无需临时改词。",
+      "script_spans": [
+        "它算得出你说了几个专业词，算不出你临场悟性",
+        "技术跑得快，规矩得跟上趟"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比与比喻均服务理解，如读概率不是人、看人像看标本，离开上下文仍可复述，全程克制无堆砌。",
+      "script_spans": [
+        "它读的是概率，不是人。",
+        "它处理很快，但看人像看标本。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承接层层递进，因果有桥、概念一致，结论自然回扣开头与题设，经得起追问。",
+      "script_spans": [
+        "省了钱就一定公平吗？",
+        "现在监管跟上了吗？",
+        "我们图了效率，是不是也该给潜力留个活口？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "多处有\"未必\"\"不等于\"等限定，但开篇对立框架与\"读不出真本事\"\"拿谁当小白鼠\"等表述偏绝对，宜软化。",
+      "script_spans": [
+        "分数高，不等于以后工作就干得好。",
+        "意思是允许用，但不能乱用。",
+        "企业用AI面试官省了钱，求职者却丢了被看懂的机会。",
+        "它能盯住你的微表情和说话关键词，却读不出你压力下沉默后冒出的真本事。",
+        "可如果算法自己都没被验证透，拿谁当小白鼠？"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-592fe84f6e4a4e70a8d594c2f425be4d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-546a0e693ce945c28abfde847c76dd50",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

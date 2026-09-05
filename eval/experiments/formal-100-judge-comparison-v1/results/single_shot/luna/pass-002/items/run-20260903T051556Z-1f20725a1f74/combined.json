@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-3b5351a52d144148bf2530027e774ac2",
+  "run_id": "run-20260903T051556Z-1f20725a1f74",
+  "trace_sha256": "0409fde9adb09971f7d4c50192a3555346b83ef6c1cb65db9db7fe505595706e",
+  "created_at": "2026-09-03T12:32:57.594826Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从资源挤占讲到分级分流，再落到普通人就医选择，完整回应了谁优先及如何分配。",
+      "script_spans": [
+        "所以医疗资源分配的第一原则，不是谁先到谁先看，而是谁更危急谁优先。",
+        "小痛小病先找社区或家庭诊所，真有胸痛、昏厥别耽搁立刻去。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕急诊拥堵，问题机制、分诊和价格引导均有信息推进，且给出可执行的就医建议。",
+      "script_spans": [
+        "当大量非急症患者涌入，急诊有限的医生和床位就被悄悄挪用，危急者黄金时间被稀释",
+        "护士依据症状和体征把病人分成若干级，危重的直送抢救室，不急的排后面。",
+        "有地区对非紧急急诊收费调整后，这类患者明显回落，急症平均等候反而缩短。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用等候与抢救的反差抓人，中段给出分诊和价格杠杆，结尾把公共规则落到你我身上。",
+      "script_spans": [
+        "而你旁边病床真正心梗的人可能正等着抢救。",
+        "预检分诊硬杠杠"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，论述也能听懂；但两处术语化长句卡住气口，整体还不像精心打磨的口播。",
+      "script_spans": [
+        "不是谁先到谁先看，而是谁更危急谁优先。",
+        "急诊科在建设规范里本就是接收急危重症的首诊场所",
+        "系统研究也发现，加速分诊决策类的干预能疏解拥挤。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“谁更危急谁优先”和“把不急的留给不急的渠道”清晰有力，类比克制，能被观众复述。",
+      "script_spans": [
+        "而是谁更危急谁优先",
+        "把不急的留给不急的渠道，既是规矩，也是给危急者留出活路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出冲突与分配原则，中段解释分诊和引导机制，结尾转向行动，层次递进且自然回扣。",
+      "script_spans": [
+        "所以医疗资源分配的第一原则，不是谁先到谁先看，而是谁更危急谁优先。",
+        "破解靠的是预检分诊硬杠杠。",
+        "把不急的留给不急的渠道，既是规矩，也是给危急者留出活路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "强调分级分诊和危急症状及时就医，整体不煽动；但把急诊定位说得过窄，轻症转诊建议缺少例外边界，可能造成误导。",
+      "script_spans": [
+        "危重的直送抢救室，不急的排后面",
+        "真有胸痛、昏厥别耽搁立刻去",
+        "二十四小时待命是为救命，不是处理寻常小病",
+        "小痛小病先找社区或家庭诊所"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d07fcca9a6e5469e8f1240e5f8c611d5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

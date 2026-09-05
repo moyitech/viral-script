@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-a6d308c682884f868189cd1d1cf7fb56",
+  "run_id": "run-20260903T051556Z-42de9273c737",
+  "trace_sha256": "bb183acb98eebffc51297bfb9dcd764d95cb46d5bf5c4ba40433fb90d68518a9",
+  "created_at": "2026-09-03T12:42:11.989429Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应安全与效率的兼顾，覆盖管理、技术和通勤者三方，核心人群与冲突两侧都明确。",
+      "script_spans": [
+        "城市安全与通勤效率能兼顾，但前提是站点管理别只发新规通知不加通道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从排队损耗、设施脱节推进到技术升级和出行建议，信息单元彼此递进，结论有依据。",
+      "script_spans": [
+        "进站口挤满而车厢却还空着，这是典型流程与设施脱节。",
+        "现行运营规范早就明确鼓励推广安检新技术、新产品，用模式升级换效率"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用通勤焦虑设问，中段有现实对比和解决方案，结尾以安检门与城市呼吸收出余味。",
+      "script_spans": [
+        "安检突然变细，是不是以后上班都得提前半小时？",
+        "进站口挤满而车厢却还空着，这是典型流程与设施脱节。",
+        "别让一道安检门，隔开了一座城本该顺畅的呼吸节奏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头问答、短句和“说白了”利于起势，但中段政策表达偏硬，信息连续堆叠，朗读需重断句。",
+      "script_spans": [
+        "倒也不用恐慌。",
+        "说白了，细查不靠堆人墙。",
+        "我的核心判断很明确：城市安全与通勤效率能兼顾，但前提是站点管理别只发新规通知不加通道。",
+        "另一边，现行运营规范早就明确鼓励推广安检新技术、新产品，用模式升级换效率，不是死守人海战术。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“细查不靠堆人墙”简洁有力，结尾“城市呼吸”形成画面感，修辞克制且服务观点。",
+      "script_spans": [
+        "细查不靠堆人墙。",
+        "别让一道安检门，隔开了一座城本该顺畅的呼吸节奏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先抛出焦虑，再给判断，随后用拥堵现象、规范方向和具体建议推进，结尾也回扣题设。",
+      "script_spans": [
+        "另一边，现行运营规范早就明确鼓励推广安检新技术、新产品",
+        "具体提醒很实用：通勤族若避不开大站，早高峰尽量错开半小时出门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "整体客观克制，建议带有限定，未见煽动、夸大承诺或明显误导风险。",
+      "script_spans": [
+        "通勤族若避不开大站，早高峰尽量错开半小时出门，或留意站点临时引导"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f8f93990fcd949009f823423b542c111",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

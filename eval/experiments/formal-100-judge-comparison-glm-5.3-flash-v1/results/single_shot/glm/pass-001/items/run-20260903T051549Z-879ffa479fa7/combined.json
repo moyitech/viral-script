@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-18675f37273e4bbdb1daabe7e9caec0c",
+  "run_id": "run-20260903T051549Z-879ffa479fa7",
+  "trace_sha256": "65483d31289718686c807c42bcfacba7fbd3f212432ab2e938158527cab47a25",
+  "created_at": "2026-09-03T14:09:33.314751Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答“直觉分不清、靠标识”，中段析成因与监管，结尾落到观众动作，全程正面覆盖题设两侧与核心人群。",
+      "script_spans": [
+        "普通人靠直觉分清真人和合成，基本不现实",
+        "标识成了眼下最靠得住的防线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 458，目标为 450，偏差率为 1.78%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从技术拟真、监管标注到老专家引流乱象，各信息单元递进支撑，观众能带走找角标、防没标的具体方法。",
+      "script_spans": [
+        "生成技术把形象、声音和话术磨得越来越像真人",
+        "比如用虚拟老专家形象精准盯住中老年群体，把他们引流去私域买高价保健品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字反差直接立钩，中段监管划线与老专家骗局两转折续力，结尾行动建议自然收束有余味。",
+      "script_spans": [
+        "你以为在和真人砍价，对面可能只是一串代码在循环播放。",
+        "可利益面前总有人绕开规则，比如用虚拟老专家形象精准盯住中老年群体",
+        "进直播间先扫一眼角标，再决定信不信那张不知疲倦的脸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，停顿重音清楚，中段到结尾都像当面说话，成稿可直接进录音棚。",
+      "script_spans": [
+        "商家图它不休息、不闹绯闻，全天候守店铺。",
+        "进直播间先扫一眼角标，再决定信不信那张不知疲倦的脸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "放大镜对免责牌一喻准确且可独立复述，机器不睡觉具体好记，修辞克制不抢观点。",
+      "script_spans": [
+        "标识是普通人的放大镜，不是商家的免责牌。",
+        "别觉得天天守播的真人有多勤奋，可能只是机器不睡觉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "两处设问承接自然，“机器不睡觉”回扣“不知疲倦的脸”，结尾收在角标与信任，因果桥完整。",
+      "script_spans": [
+        "为什么越来越难分？",
+        "别觉得天天守播的真人有多勤奋，可能只是机器不睡觉。",
+        "记住，标识是普通人的放大镜，不是商家的免责牌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "警示私域保健品骗局有报道可依，主张机器主播可买但须亮明身份，边界公允，无夸大承诺或煽动。",
+      "script_spans": [
+        "机器主播不是不能买，但得先亮明机器身份",
+        "带货短视频用AI辅助，创作者必须主动添加标注，没标平台就限制分发",
+        "把他们引流去私域买高价保健品"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-aff430ab48f74b619f3db8b4f65fca7a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6f84523e955b4fccb6f9a43b0d41ab8c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

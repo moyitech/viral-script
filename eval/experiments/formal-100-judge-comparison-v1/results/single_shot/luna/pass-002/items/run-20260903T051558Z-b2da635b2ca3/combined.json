@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-81c6c5c643a14e6bb6109eb24e29befe",
+  "run_id": "run-20260903T051558Z-b2da635b2ca3",
+  "trace_sha256": "4e06f8b8ddc8eecf530b9760c64ef0919805b1c5938ac7ca67391a6d97e41de5",
+  "created_at": "2026-09-03T12:31:59.794540Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直指体感落差，正文解释统计口径，结尾给出记账建议，完整覆盖题设与普通家庭。",
+      "script_spans": [
+        "CPI同比才涨1%左右，房价和菜价却让人心跳。",
+        "对普通人，别把全国CPI当自家账单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，既有CPI、消费构成和收入增速等信息，但核心解释混用统计口径，部分结论被说满。",
+      "script_spans": [
+        "上半年居民花出去的钱，食品烟酒加上居住就占了一半还多；",
+        "收入看似实际涨了百分之四，但财产性收入增速才一点多",
+        "CPI为了看清趋势，常把食品和能源拿掉算核心涨势",
+        "如果房租、学费、看病这些不进CPI的权重越来越重"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用物价低、体感高的反差抓人，中段连续揭示统计口径，结尾给出记账行动，推进完整。",
+      "script_spans": [
+        "CPI同比才涨1%左右，房价和菜价却让人心跳。",
+        "真正该盯的是工资覆盖刚性支出后的余量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头问答和短句起势自然，但统计解释句偏长，并列信息密集，需靠重断句才能稳住气口。",
+      "script_spans": [
+        "问题不在你的错觉。",
+        "CPI为了看清趋势，常把食品和能源拿掉算核心涨势，曲线漂亮了，普通人盯着的菜价油价却被抹平。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不是同一本账”和“别把全国CPI当自家账单”形象准确，既解释差异，也留下可复述的判断。",
+      "script_spans": [
+        "官方通胀指标和普通家庭压力，根本不是同一本账。",
+        "别把全国CPI当自家账单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、主体分层、结尾回扣清楚，主线可跟随；但CPI与核心CPI混写，且把部分支出说成不进指数，关键因果站不稳。",
+      "script_spans": [
+        "问题不在你的错觉。官方通胀指标和普通家庭压力，根本不是同一本账。",
+        "记账时单列那些统计看不见的花费，比争论通胀数字更踏实。",
+        "CPI为了看清趋势，常把食品和能源拿掉算核心涨势",
+        "如果房租、学费、看病这些不进CPI的权重越来越重"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 1,
+      "reason": "把房价、房租、学费和看病概括为统计之外，并用“曲线漂亮了”暗示人为粉饰，易造成明显误导。",
+      "script_spans": [
+        "房子是家庭最大开支，波动全在统计之外",
+        "房租、学费、看病这些不进CPI的权重越来越重"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 16.0,
+    "partial_weighted_average": 2.2857142857142856,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6193aa949dd44283aa0228b392d8f309",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

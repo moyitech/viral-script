@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-c6ff54e96ee044e7b425adc37fb821e8",
+  "run_id": "run-20260902T144017Z-ee52770d87c0",
+  "trace_sha256": "436b77f139c86ae1fc13f012a5aac2726e5ec6bb5843cea2697a6f5d36f21566",
+  "created_at": "2026-09-03T14:26:43.070996Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇立住省钱与品质之问，先讲为何便宜、再讲国标与挑选，结尾回扣权衡，全程正面作答且直击普通消费者痛点。",
+      "script_spans": [
+        "想省钱又保品质，挑对了就能兼顾",
+        "咱们普通人咋办"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "成本拆解、国标要点、挑选清单层层推进，不添防腐剂与超七成恋锅气有据可查，无编造，观众能带走可操作判断方法。",
+      "script_spans": [
+        "工厂把同种菜集中做，大批量进货压低单价",
+        "预制菜不添防腐剂",
+        "买正规厂牌，看包装贮运方式，冷冻冷藏分清楚"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字八块对二十的账直接立冲突；中段三问层层给新信息；结尾从半小时自由长出提问，不生硬。",
+      "script_spans": [
+        "你花八块吃预制菜，比堂食省二十，却怕它差？",
+        "吃饭不光比价签。当标价更低时，你愿用半小时自由换这顿踏实饭吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句密、有对话感，主体读来顺；但“经工业化预加工”“贮运方式”等书面腔需临时换词，难到3分。",
+      "script_spans": [
+        "切配用机器搞，厨师人力省掉。门店房租也降，剩菜浪费少",
+        "回家热透，顺手焯把青菜拌进去",
+        "它经工业化预加工",
+        "看包装贮运方式"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，赚效率的钱让出锅气一句离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "你赚工业效率的钱，让出的是堂食锅气",
+        "你花三分钟加热，换来半小时自由"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "起承转合完整，三问推进顺畅；但结尾问句“用半小时自由换踏实饭”与前文“换来半小时自由”方向相拧，回扣欠自然。",
+      "script_spans": [
+        "你赚工业效率的钱，让出的是堂食锅气",
+        "你愿用半小时自由换这顿踏实饭吗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "国标范围表述准确，购买与加热建议克制务实，无夸大承诺或误导，价值导向安全。",
+      "script_spans": [
+        "预制菜不添防腐剂",
+        "文件明确，不含主食、即食类，餐厅中央厨房现做的菜也不在这范围",
+        "买正规厂牌，看包装贮运方式，冷冻冷藏分清楚"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-03964ef21f50413db322eb02c9aeb9eb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

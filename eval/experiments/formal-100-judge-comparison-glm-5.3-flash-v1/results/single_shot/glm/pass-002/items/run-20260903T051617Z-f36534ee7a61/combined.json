@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-0136e0b97ab345ab8036e01144074b43",
+  "run_id": "run-20260903T051617Z-f36534ee7a61",
+  "trace_sha256": "20d2e3e403ae2521626a07bb79d81d6a21ef99e1e236ee98e57d684e7d583ec9",
+  "created_at": "2026-09-03T15:30:46.196249Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即对上题设矛盾，正文沿统计口径与就餐选择两侧作答，结尾落回普通家庭，扣题完整。",
+      "script_spans": [
+        "你发现没，超市里米面油价格几乎没动，可一家子每月吃喝花销却悄悄涨了",
+        "所以对普通人来说，盯住米价没意义，该盯的是自己的碗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "原粮口径、链上加价、外出溢价各单元递进推进，关键数据有背景支撑，增量具体可信。",
+      "script_spans": [
+        "统计里的粮食主要指原粮，像小麦稻谷，它在消费指数里权重有限",
+        "外出就餐同类食物溢价能达到两到十三倍，蔬菜最夸张"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头米面油没涨对照花销上涨，反差钩子直接；中段两本账到外食溢价层层兑现；结尾盯住自己的碗收束自然。",
+      "script_spans": [
+        "你发现没，超市里米面油价格几乎没动，可一家子每月吃喝花销却悄悄涨了",
+        "外出就餐同类食物溢价能达到两到十三倍，蔬菜最夸张",
+        "盯住米价没意义，该盯的是自己的碗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、气口清楚，但'根本在产业链的加价'等处压缩拗口，朗读需临时换词。",
+      "script_spans": [
+        "所以对普通人来说，盯住米价没意义，该盯的是自己的碗。",
+        "根本在产业链的加价和餐桌上的选择。",
+        "并且，月度数据里食品烟酒及在外餐饮类价格同比也在上涨，证明这不是个别感受。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "两本账、饭桌搬到外面贴切助解，该盯自己的碗与把厨房用起来离文可复述，修辞克制不炫技。",
+      "script_spans": [
+        "粮食价格平稳和家庭餐桌支出其实是两本账",
+        "越来越多人把饭桌搬到了外面",
+        "餐桌支出控不控得住，终究看你愿不愿意把厨房用起来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以两本账立骨，先释口径再讲加价与选择，因果桥清楚，结尾用厨房回扣开头，层层递进。",
+      "script_spans": [
+        "粮食价格平稳和家庭餐桌支出其实是两本账",
+        "根本在产业链的加价和餐桌上的选择",
+        "餐桌支出控不控得住，终究看你愿不愿意把厨房用起来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "数据引用以“有研究提到”等限定措辞呈现，无绝对化承诺；建议属生活方式范畴，不涉误导销售或煽动，导向安全。",
+      "script_spans": [
+        "有研究提到，外出就餐同类食物溢价能达到两到十三倍，蔬菜最夸张",
+        "所以对普通人来说，盯住米价没意义，该盯的是自己的碗"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-eeea45e1a5bd42b080963c687d0cccb3",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

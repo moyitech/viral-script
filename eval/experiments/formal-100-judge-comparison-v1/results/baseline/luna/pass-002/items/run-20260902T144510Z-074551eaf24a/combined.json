@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-f6805f1baa0d489eafe9008aee0b1012",
+  "run_id": "run-20260902T144510Z-074551eaf24a",
+  "trace_sha256": "c5730afda8fa9e7a9115adcf25ba540964356f069effb3de39c2d0d51756ca67",
+  "created_at": "2026-09-03T12:17:15.750422Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答资源优先级，并同时覆盖非急症分流与基层承接，贴合普通观众痛点。",
+      "script_spans": [
+        "医生和床位先给心跳骤停、大出血的急重病人",
+        "同时非急症得有出口，疏导到社区门诊或延时诊所"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从分诊规则、拥挤后果到收费和退款等改革，信息层层推进，既有数据也有可执行判断。",
+      "script_spans": [
+        "国家规定分四级，一二类危急紧急立刻救，三四类次紧急非紧急要等。",
+        "收费杠杆能调行为，却替代不了家门口诊所能开门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接落到生死冲突，中段用规则、数据和方案持续推进，结尾追问也由主题自然生长。",
+      "script_spans": [
+        "非急症挤占急诊，危急患者可能错失抢救时机。",
+        "可现实常倒挂。",
+        "怎么破？把非急症往外围推。",
+        "下次身体闹脾气，你先想想该去哪吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和反问形成节奏，但多处术语堆叠、搭配生硬，口播仍需重断句和改词。",
+      "script_spans": [
+        "分诊不是推走病人，是排顺序。",
+        "非急症占了椅子和护士，急救设备就被绑定，真正危急的人反而没余地。",
+        "收费杠杆能调行为，却替代不了家门口诊所能开门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“先救命再管小病”和“收费杠杆能调行为”兼顾解释与记忆，表达有力度但未堆砌辞藻。",
+      "script_spans": [
+        "这不只是排队先后，是生死资源的调配。",
+        "分诊不是推走病人，是排顺序。",
+        "收费杠杆能调行为，却替代不了家门口诊所能开门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开篇定原则，继而解释分诊、现实成因和改革路径，转折自然，结尾回扣题设，整体论证闭合。",
+      "script_spans": [
+        "可现实常倒挂。很多患者夜奔急诊只图方便，病却不凶险。",
+        "怎么破？把非急症往外围推。",
+        "光靠医院分流不够，还得医保引导。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "急重优先与分流思路清楚，但把感冒就诊概括为“挪用”并作单向归因，未交代症状加重时仍应及时就医的边界。",
+      "script_spans": [
+        "同时非急症得有出口，疏导到社区门诊或延时诊所，不然他们照样涌进来。",
+        "你若感冒去急诊，实则挪用了别人的救命分钟。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3428dcbb26e74a3592561e37fbfaa67c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

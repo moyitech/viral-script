@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-efdbbe8b26374d478d692befcc1428b7",
+  "run_id": "run-20260903T051609Z-bc58044cb8fd",
+  "trace_sha256": "0918f9bdcea5eeaff5f15e13a0922e5b54eea6532c221b8938997bf638964764",
+  "created_at": "2026-09-03T11:57:07.646309Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答申诉是否更难，同时覆盖智能客服效率与人工切换，并给出明确应对建议。",
+      "script_spans": [
+        "我的判断很明确：全面接入智能客服未必让申诉变得更难，核心在于人工切换是否真顺畅。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 263，目标为 280，偏差率为 6.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕人工转接展开，交代规则、责任和速度局限，也提供涉及钱财安全时的具体申诉动作，信息持续推进。",
+      "script_spans": [
+        "新规则强调企业必须为智能客服的承诺买单。",
+        "涉及钱财或安全时平台须优先安排真人处理。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直击申诉困局，中段用新规和实测推进，结尾给出索要人工的动作，余味自然。",
+      "script_spans": [
+        "想找客服维权，却掉进机器人来回兜圈的陷阱。",
+        "近期落地的协同服务标准直击痛点，它明确要求复杂纠纷必须及时流转人工，隐藏入口不被允许。",
+        "机器能跑腿提速，可维权最后那一步还得你自己开口攥紧。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚、短句较多，但“流转人工”“快至秒级”“开口攥紧”等搭配拗口，收尾尤其影响朗读。",
+      "script_spans": [
+        "要是申诉被卡，干脆直接索要人工",
+        "有电商实测显示智能客服响应快至秒级",
+        "机器能跑腿提速，可维权最后那一步还得你自己开口攥紧"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“机器能跑腿”与“维权最后一步”形成清晰反差，类比克制，观点具体，容易被观众复述。",
+      "script_spans": [
+        "商家拿人工智能当挡箭牌",
+        "单纯速度救不了你的委屈。",
+        "机器能跑腿提速，可维权最后那一步还得你自己开口攥紧。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提出用户困境和核心判断，再解释规则与速度局限，最后落到索要人工，转折清楚且结论回扣自然。",
+      "script_spans": [
+        "我的判断很明确：全面接入智能客服未必让申诉变得更难，核心在于人工切换是否真顺畅。",
+        "机器能跑腿提速，可维权最后那一步还得你自己开口攥紧。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动或危险内容，但“必须”“不被允许”“须优先”等表述边界不足，容易把有限条件说成普遍义务。",
+      "script_spans": [
+        "全面接入智能客服未必让申诉变得更难，核心在于人工切换是否真顺畅",
+        "复杂纠纷必须及时流转人工，隐藏入口不被允许",
+        "涉及钱财或安全时平台须优先安排真人处理"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-1369d347bea1474ab1e319aa4bd67d83",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e83f5d13e4d445e28853fa98f8022a3b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

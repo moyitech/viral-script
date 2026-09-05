@@ -1,0 +1,143 @@
+{
+  "evaluation_id": "combined-45e7d628f9cd4578873a0b7c5c091ca1",
+  "run_id": "run-20260902T144359Z-3b1d5d9b284c",
+  "trace_sha256": "96d8bc333073e77f70e981e0db25cb91c47de6e792110136b114399864454b5b",
+  "created_at": "2026-09-03T12:16:06.250981Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面覆盖一线岗位减少、新工作类型与普通工人转岗，核心冲突和受众都回应到位。",
+      "script_spans": [
+        "一线操作岗在消失，但新工作真来了。",
+        "普通工人咋办？得学新技能，转去伺候产线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从机器人排故、系统调试到数据维护和技能门槛，信息单元具体递进，结论有明确增量。",
+      "script_spans": [
+        "机器人卡壳了，你得上手排故障。",
+        "软件要升级，模型要喂数据，都得专人。",
+        "技能门槛悄悄抬高了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用无人车间反差抓人，中段持续推进岗位变化与技能门槛，结尾回扣问题并自然落到新职业。",
+      "script_spans": [
+        "你走进黑灯车间没一人，活却干完了。",
+        "普通工人咋办？得学新技能，转去伺候产线。",
+        "当机器包办生产，人去哪儿？去当给智能产线下命令的人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答有对话感，但多处省略和搭配生硬，朗读时至少两处需要临时换词。",
+      "script_spans": [
+        "机器人卡壳了，你得上手排故障",
+        "机器替了重复力气活",
+        "产线自己转，人退后头管异常",
+        "工厂招人写明白要会调系统"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "拖拉机替牛的类比直观准确，“厂里不缺活，缺的是会下指令的人”简洁有力，修辞没有压过信息表达。",
+      "script_spans": [
+        "就像拖拉机替了牛，却需要拖拉机手。",
+        "厂里不缺活，缺的是会下指令的人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整、转折清楚，但由职业数量直接推出岗位替代，且“厂里不缺活”扩大了结论。",
+      "script_spans": [
+        "不过新岗不是谁都能上，工厂招人写明白要会调系统，不然门难进。",
+        "当机器包办生产，人去哪儿？去当给智能产线下命令的人。",
+        "这说明啥？机器替了重复力气活",
+        "厂里不缺活，缺的是会下指令的人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题明确，能说明岗位变化与技能要求；但“一线操作岗在消失”“肯学就能端新饭碗”过度绝对，易造成就业误导。",
+      "script_spans": [
+        "新工作真来了",
+        "新岗不是谁都能上，工厂招人写明白要会调系统",
+        "一线操作岗在消失",
+        "肯学就能端新饭碗"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c5da844d842848d18fee79dbe8ec4aef",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

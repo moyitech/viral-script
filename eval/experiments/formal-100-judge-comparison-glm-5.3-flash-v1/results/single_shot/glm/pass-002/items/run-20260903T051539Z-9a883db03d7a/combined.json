@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-995961c4b4ad4524a30fb817a5a1bf3b",
+  "run_id": "run-20260903T051539Z-9a883db03d7a",
+  "trace_sha256": "bfa7885194f64dfc8cf6ac50de5975700b26d853a333d112765ef5fc0420d791",
+  "created_at": "2026-09-03T15:30:55.261775Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答会吞收益，中段机制、末段“到手人民币”判据全程扣题，普通人痛点被正面接住。",
+      "script_spans": [
+        "钱没亏在标的，亏在了汇率上",
+        "对普通人来说，影响很直接"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中：点差、折算、资金量逐层推进，企业错配有据，落点为可操作算账法，无注水。",
+      "script_spans": [
+        "企业跨境融资的前车之鉴表明，币值错配会让盈利被汇兑损益反噬",
+        "别只看境外产品挂的浮夸回报，要算“到手人民币”的账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头换汇场景加“白干了”反差即时勾人；中段点差机制与资金量占比层层兑现，结尾“落袋”收束自然有余味，无硬喊互动。",
+      "script_spans": [
+        "你兴冲冲把人民币换成美元去买境外理财，最后算账却发现白干了——钱没亏在标的，亏在了汇率上。",
+        "别只看境外产品挂的浮夸回报，要算“到手人民币”的账。",
+        "跨境理财的账，不能只算外币收益，得看人民币落袋多少。汇率不是背景音，是主角之一。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾对话感好，但“汇兑损益反噬”“占比越突出”等中段书面句需临时改词重读，流畅度打折。",
+      "script_spans": [
+        "别只看境外产品挂的浮夸回报，要算“到手人民币”的账。",
+        "企业跨境融资的前车之鉴表明，币值错配会让盈利被汇兑损益反噬",
+        "资金量越小，换汇点差在总收益里占比越突出"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“吞掉收益”“背景音对主角”等比喻克制且服务理解；“钱没亏在标的，亏在了汇率上”脱离正文仍可复述，全篇无堆砌。",
+      "script_spans": [
+        "钱没亏在标的，亏在了汇率上",
+        "它真能吞掉你的收益",
+        "汇率不是背景音，是主角之一"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、结尾回扣自然；但“低点买外币”为何构成风险没搭因果桥，需观众自行补齐。",
+      "script_spans": [
+        "如果持有期间本币升值，外币资产即使有利息，折回人民币也可能所剩无几",
+        "这时候换出人民币，相当于在相对低点买了外币"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以风险提示为主线，关键结论多带“可能”“如果”限定，无收益承诺与诱导性表述，边界清楚，导向安全。",
+      "script_spans": [
+        "如果承受不了汇率反向波动，盲目跨境理财可能连本土稳健选项都不如",
+        "别只看境外产品挂的浮夸回报，要算“到手人民币”的账"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2d844d8148e5493284c335f1349df200",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

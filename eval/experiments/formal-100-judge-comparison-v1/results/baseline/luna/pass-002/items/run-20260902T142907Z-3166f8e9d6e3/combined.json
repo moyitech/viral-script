@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-1c60e9e94cad4743b5c2a51c6c51a27d",
+  "run_id": "run-20260902T142907Z-3166f8e9d6e3",
+  "trace_sha256": "05c398db95c57d6fd23ad7d6be1c2713304c89e09088e2539d046ff4e09c4c88",
+  "created_at": "2026-09-03T12:15:52.162183Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答反感来源，覆盖求职者成本、企业动机、岗位例外和应对方式，核心人群明确。",
+      "script_spans": [
+        "为啥越来越反感？因为面议把本该先讲清的价码藏后头。",
+        "下次看到面议，先抛个区间问题，再决定要不要花半天跑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，多个信息单元从时间成本推进到公平、预期差、监管与投递策略，认知增量充足。",
+      "script_spans": [
+        "求职者怕的不是谈薪，是连谈的基准都被人攥着。",
+        "员工想跳个槽涨百分之十五，企业往往只给一小部分。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用时间成本和企业动机制造冲突，中段有原因、边界与监管推进，结尾落到可执行追问，互动自然。",
+      "script_spans": [
+        "薪资面议坑了求职者时间，企业躲开比价还省事？",
+        "下次看到面议，先抛个区间问题，再决定要不要花半天跑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句推进和对话式问答有效，但研究、监管表述拗口，后段并列长句也需重断。",
+      "script_spans": [
+        "你精心改简历，跑完两轮面试，临了才问薪酬范围。",
+        "有研究盯着薪酬决定过程看，发现透明比合理更抓人。",
+        "智联、BOSS这些大站，都接到压实内容真实的责任。",
+        "规则在倒逼透明，可落地慢，当求职者集体嫌弃模糊标价，企业也该算算流失成本。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“盲盒游戏”“遮羞布”等比喻贴切，既帮助理解信息不透明，也形成可复述的记忆点，整体不过度堆砌。",
+      "script_spans": [
+        "当招聘页只写面议，等于先邀请你玩一场盲盒游戏。",
+        "面议成了低薪岗位的掩护"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，开头设问、原因拆解、例外和行动建议衔接清楚；但将算法定薪透明度直接套到招聘面议，关键因果桥不足。",
+      "script_spans": [
+        "销售或高阶职位薪资本来就看业绩和资源，写死反而僵",
+        "企业用AI或者算法来定薪，过程不敞开，人就觉不公平。面议正好把上下限都捂住"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，但将“面议”概括为低薪岗位掩护，容易把部分企业动机说成普遍事实。",
+      "script_spans": [
+        "销售或高阶职位薪资本来就看业绩和资源，写死反而僵，面议能谈出合理价",
+        "面议成了低薪岗位的掩护，好公司却敢直接标出范围"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2737269ea0754df6bcc19c3abc68771b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

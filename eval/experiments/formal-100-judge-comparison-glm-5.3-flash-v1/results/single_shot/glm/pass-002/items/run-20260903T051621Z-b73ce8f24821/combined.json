@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-fcbc67eb5be84ba4b74debc71d6b4116",
+  "run_id": "run-20260903T051621Z-b73ce8f24821",
+  "trace_sha256": "9718b2e0932284b211419b4664358b313dcb62063bf5a79a485a7f663a3460c9",
+  "created_at": "2026-09-03T15:33:50.417685Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头点明传统行业员工处境，围绕换技能、挑培训、盯政策入口给出对策，正面回答题设且人群精准。",
+      "script_spans": [
+        "传统行业员工想不被绿色转型落下，靠死守工位没用，得主动给自己的技能包换血",
+        "工人选进修时，要挑直接嵌进新生产线的那类"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移，九行业改造、职教新课、培训挑选法层层推进，均有据可查，观众能带走具体行动方法。",
+      "script_spans": [
+        "眼下政策已经把九个高耗能行业拎出来，要求三年内做完节能降碳改造",
+        "汽修课加电动汽车维修，建筑工培训加节能材料"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以'手艺先一步被改写'立反差，中段政策新信息与转折持续兑现，结尾'产线绕开你'余味自然。",
+      "script_spans": [
+        "厂子不一定关门，但干活的手艺先一步被改写了",
+        "别去听空泛的碳中和讲座，那换不来上岗权",
+        "你迟迟不碰新设备，产线就会悄悄绕开你，留你停在旧车间叹气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，'拎出来''跑不掉'重音清楚，通篇像当面说话，朗读基本无需临时改词。",
+      "script_spans": [
+        "厂子不一定关门，但干活的手艺先一步被改写了",
+        "别等车间主任排名单，先对照行业清单摸准对口课"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'转型洗掉的是旧手艺，不是老工人'离开上下文仍可复述，'把饭碗递出去'等比喻贴切且克制，无炫技堆叠。",
+      "script_spans": [
+        "转型洗掉的是旧手艺，不是老工人",
+        "不更新就等于把饭碗递出去",
+        "得主动给自己的技能包换血"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "政策事实到个人饭碗有因果桥，段段各司其职，结尾回扣开头与题设，短气口语化，逻辑经得起追问。",
+      "script_spans": [
+        "这套改造直接让老工艺知识贬值，不更新就等于把饭碗递出去",
+        "转型洗掉的是旧手艺，不是老工人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "政策与就业信息有据，价值导向正面；但「生疏者只能边缘化」「换不来上岗权」等断言过于绝对，易放大焦虑，宜加边界。",
+      "script_spans": [
+        "转型洗掉的是旧手艺，不是老工人",
+        "生疏者只能边缘化",
+        "别去听空泛的碳中和讲座，那换不来上岗权",
+        "不更新就等于把饭碗递出去"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-947c79f5be8b43778b0b24263e2d4807",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

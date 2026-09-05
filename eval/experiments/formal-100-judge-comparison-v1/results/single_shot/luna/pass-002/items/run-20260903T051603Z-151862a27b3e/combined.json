@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-c05530e787ce4b36baed43cadc248929",
+  "run_id": "run-20260903T051603Z-151862a27b3e",
+  "trace_sha256": "8772418aa8269fc4381f5b1b6fad76ed919739d37dfc7e286c8231e1f9a4eedd",
+  "created_at": "2026-09-03T12:32:47.087588Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应小商家是否更难，既解释规则收紧的压力，也给出合规型小团队的出路。",
+      "script_spans": [
+        "规则不是要把小商家赶走，而是在做筛选。",
+        "真想长期做，得弄懂报关逻辑和税务边界，把合规当成入场券而非绊脚石。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕规则筛选小商家展开，风控、合规风险、退货政策和实操建议层层补充，信息增量明确。",
+      "script_spans": [
+        "小额B2C恰恰是合规风险高发区，产品认证缺一张，货可能在海外被扣；税务没走对，收款账户说冻就冻。",
+        "2026年4月海关推跨关区退货，虽方便退货，却要求企业作业系统直连海关数据。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用强反差和二选一设问抓人，中段持续给出风险与应对，结尾也有自然余味。",
+      "script_spans": [
+        "大平台风控精确到登录环境，海关却刚全面推广跨关区退货。",
+        "小商家出海，到底是被踢出局，还是被重新发牌？",
+        "规则拧紧的是漏洞，不是大门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有反问和短句支撑节奏，但中段搭配生硬、信息并列偏密，朗读时至少两处需要重断句。",
+      "script_spans": [
+        "小商家出海，到底是被踢出局，还是被重新发牌？",
+        "规则拧紧的是漏洞，不是大门。",
+        "合规能力强的微小团队反而少了乱打架的对手",
+        "Shopee这类入门成本低的平台仍能练手，但真想长期做，得弄懂报关逻辑和税务边界"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“规则拧紧的是漏洞，不是大门”简洁准确，配合“重新发牌”等比喻，形成可复述记忆点。",
+      "script_spans": [
+        "小商家出海，到底是被踢出局，还是被重新发牌？",
+        "规则拧紧的是漏洞，不是大门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先抛出判断，再解释小额B2C风险、监管链条和政策影响，最后落到经营建议，结论能回扣开头。",
+      "script_spans": [
+        "矛盾背后是跨境链条太长，国内外监管都盯紧，平台也不敢兜底。",
+        "所以别问出海难不难。规则拧紧的是漏洞，不是大门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制、不煽动；但“说冻就冻”“一次处罚就是关门”将后果绝对化，容易误导。",
+      "script_spans": [
+        "规则拧紧的是漏洞，不是大门。",
+        "税务没走对，收款账户说冻就冻",
+        "一次处罚就是关门"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e73b3822801f441b80ea00fbc9a0a3cd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

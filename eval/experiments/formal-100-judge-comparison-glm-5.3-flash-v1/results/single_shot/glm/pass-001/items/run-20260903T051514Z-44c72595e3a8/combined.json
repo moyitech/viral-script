@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-1a9a284dec27400e9830933fe503b9e5",
+  "run_id": "run-20260903T051514Z-44c72595e3a8",
+  "trace_sha256": "28f0406f57b37429060c965f2db4d6e61df1932327a4499543d09733602778ea",
+  "created_at": "2026-09-03T14:09:33.439314Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即设监督与伤害之问，主体正面回答二元选择，结尾落到录制者做法，覆盖冲突两侧与目标人群。",
+      "script_spans": [
+        "看到路边有人激烈吵架，你本能举起手机录下传上网，觉得自己是在做公共监督员？",
+        "绝大多数不是监督，而是对当事人的二次伤害",
+        "拍下留作报警证据就好，千万别顺手点发布"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 254，目标为 280，偏差率为 9.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，肖像权与公共利益两点各自推进论证，法条内容与核验资料相符，结尾给出可执行做法，信息密度高。",
+      "script_spans": [
+        "民法典里肖像权保护早就不看营利目的，只要未经同意制作公开他人可被识别的形象就构成侵权",
+        "真碰上纠纷，拍下留作报警证据就好"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即入具体冲突并把观众卷入，'反常识'与'别以为'持续制造反转，结尾给可执行建议收束自然，三段各自成立。",
+      "script_spans": [
+        "看到路边有人激烈吵架，你本能举起手机录下传上网，觉得自己是在做公共监督员？",
+        "反常识的是，这随手一发很可能让你先踏入了侵权红线",
+        "别以为曝光能倒逼文明，脱离语境的视频往往只剩羞辱",
+        "真碰上纠纷，拍下留作报警证据就好，千万别顺手点发布让伤害扩散"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾顺口有对话感，但中段两处书面短语堆叠需临时重断句，达不到精心设计的自然。",
+      "script_spans": [
+        "看到路边有人激烈吵架，你本能举起手机录下传上网",
+        "只要未经同意制作公开他人可被识别的形象就构成侵权",
+        "又让当事人被迫接受全网陌生人的围观与道德审判"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，'红线''围观与道德审判'点到为止，金句和行动建议均可脱离上下文复述，无堆砌炫技。",
+      "script_spans": [
+        "别以为曝光能倒逼文明，脱离语境的视频往往只剩羞辱",
+        "拍下留作报警证据就好，千万别顺手点发布让伤害扩散",
+        "又让当事人被迫接受全网陌生人的围观与道德审判"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先设场景再转论点，两条依据递进支撑，先驳曝光倒逼文明再收束到行动建议，回扣开头录制动作。",
+      "script_spans": [
+        "核心依据有两点：民法典里肖像权保护早就不看营利目的",
+        "别以为曝光能倒逼文明，脱离语境的视频往往只剩羞辱",
+        "你本能举起手机录下传上网"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法律表述有依据且措辞留余地，建议克制不煽动，无误导夸大或争议归因风险。",
+      "script_spans": [
+        "这随手一发很可能让你先踏入了侵权红线",
+        "拍下留作报警证据就好，千万别顺手点发布让伤害扩散"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-17f153b771d54defa365e4e613586810",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ab5d603b68eb4d139ef5409b1e56e4ec",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

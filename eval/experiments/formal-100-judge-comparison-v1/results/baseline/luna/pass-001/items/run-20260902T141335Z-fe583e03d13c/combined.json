@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-08634b47915440cfa0bb6f6913dc8d50",
+  "run_id": "run-20260902T141335Z-fe583e03d13c",
+  "trace_sha256": "d76124588072e6946f5cc5d102c4f8e4986ae692a42dcc8bf5039c4a85072429",
+  "created_at": "2026-09-03T11:44:12.511185Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应成本与晚归影响的两面冲突，覆盖加班族、夜班人群，并给出兜底建议。",
+      "script_spans": [
+        "省成本是实情，冷落晚归人也是实情。",
+        "先吃亏的是加班族、夜班师傅。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 306，目标为 280，偏差率为 9.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，成本规制、时间可达性、等待代价和受影响人群层层补充，既有解释也有可执行建议。",
+      "script_spans": [
+        "公交带着公益属性，成本规制下财政会补上部分亏空。",
+        "等待变长，安全感和时间成本都往上蹿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用错过末班车制造即时冲突，中段递进成本、安全与公平，结尾追问自然留下余味。",
+      "script_spans": [
+        "你刚下夜班拖着累身到站台，末班车却半小时前开走了。",
+        "账面好看了，末班后的空白谁填？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体句意清楚、短句不少，但“拖着累身”等表达拗口，书面术语也削弱口播顺滑度。",
+      "script_spans": [
+        "夜间客流本来就稀，但稀不等于不该被接住。",
+        "你刚下夜班拖着累身到站台",
+        "公交可达性讲究时间维度，车少了，夜归等待直接翻倍拉长。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“稀不等于不该被接住”和“末班后的空白谁填”简洁有力，既传达立场，也留下可复述的记忆点。",
+      "script_spans": [
+        "夜间客流本来就稀，但稀不等于不该被接住。",
+        "账面好看了，末班后的空白谁填？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "有场景、分析、影响和建议，主线可跟随；但由财政补亏直接推到减班并非冷落，因果桥明显不足。",
+      "script_spans": [
+        "这取舍不能只盯一边：省成本是实情，冷落晚归人也是实情。",
+        "你看，这说明减班省力，不是把人推开不管。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，提醒建议安全；但“这说明”把成本规制直接推成减班非冷落，因果判断过满，需加限定。",
+      "script_spans": [
+        "出门前看清末班时间，或备好替代出行，别赌运气。",
+        "你看，这说明减班省力，不是把人推开不管。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e07341f21cf2422991f46d1a1fa9013d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-73396584b134425db1347b44747fe5aa",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

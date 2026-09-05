@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-1b4dd79f673c4862b15a43d36b93771d",
+  "run_id": "run-20260902T141850Z-a4b3dec2b8f7",
+  "trace_sha256": "051a4789ca2170339ae128f5e8e3c6c1b7d74a13c45dab2c639f4368f575413b",
+  "created_at": "2026-09-03T13:55:42.185769Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直扣题设，定价机制与平台动机两侧都答，落点始终对准老用户，覆盖完整切角具体。",
+      "script_spans": [
+        "老用户绑定平台更久，打车却更贵，合理吗？",
+        "系统给你贴标签：这人贵点也肯上车。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 699，目标为 700，偏差率为 0.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题全程聚焦动态会员价，机制、动机、监管、对策层层推进，附并非人人更贵的反例，信息增量足。",
+      "script_spans": [
+        "你加班雨天叫车急，取消又重叫，它记你认价。",
+        "并非所有老用户都更贵，敏感者反得低价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差设问直接入题，中段机制、动机、监管层层兑现钩子，结尾建议加反问由正文自然长出。",
+      "script_spans": [
+        "老用户绑定平台更久，打车却更贵，合理吗？",
+        "并非所有老用户都更贵，敏感者反得低价。",
+        "当系统比你还懂钱包，便宜剩几分真？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数短句有对话感、好读好断，但“新客留券引”残缺、“同一边界”费解，朗读需临时换词重断，拗口不止一处。",
+      "script_spans": [
+        "你加班雨天叫车急，取消又重叫，它记你认价。",
+        "老用户补贴退坡，新客留券引。",
+        "同一边界我只说一回：不能明着欺诈是底线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "「看行为不看脸」「贴标签」等表达服务理解，结尾反问可复述，修辞点到为止，无炫技堆叠。",
+      "script_spans": [
+        "看行为不看脸。",
+        "系统给你贴标签：这人贵点也肯上车。",
+        "当系统比你还懂钱包，便宜剩几分真？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，设问过渡自然，结尾回扣题设；但运价办法一句插入突兀，同一边界一句指代不明。",
+      "script_spans": [
+        "那它具体怎么定价的？看行为不看脸。",
+        "运价办法说市场调节，但平台不能有不正当行为。",
+        "同一边界我只说一回：不能明着欺诈是底线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "正反并陈，有'并非所有老用户都更贵'等限定；但'拿人定价，就少优惠多收点'等断言归因偏确定，宜补争议限定。",
+      "script_spans": [
+        "并非所有老用户都更贵，敏感者反得低价",
+        "个性化定价讨论里，说提效率也有，说割韭菜的也不少",
+        "它拿人定价，你有黏性，就少优惠多收点",
+        "老用户想靠会员省，结果被数据算计了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5ecd35c83484405fa6752326f0e998d6",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-04ca5193de3945e09a4b74f2dba115cd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

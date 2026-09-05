@@ -1,0 +1,158 @@
+{
+  "evaluation_id": "combined-d4e0d500f00141c08931596ab1d5e72d",
+  "run_id": "run-20260902T141350Z-e365c0da19f7",
+  "trace_sha256": "816e5fb2efcdefb7af2e6460e4d451c0643640418c99bbc7fc7d4b66cfb0764e",
+  "created_at": "2026-09-03T13:46:05.389556Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛两侧难题，中段按利率与备用金给判断方法，结尾折中方案正面回答题设，人群精准。",
+      "script_spans": [
+        "留现金吃息越来越少，提前还贷又怕将来缺钱",
+        "得看你的房贷利率和手头备用金谁更紧迫",
+        "留半年开支，余钱部分还"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 714，目标为 700，偏差率为 2.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦抉择，LPR水平、合同加点、省钱账、新规费用、备用金规模层层推进，引用可核，增量具体。",
+      "script_spans": [
+        "眼下五年期以上房贷参考利率，是百分之三点五",
+        "它常在那报价上加几十个点。若你早年贷的，利率可能高不少",
+        "提前还十万，若利率差两点，年省两千",
+        "有的设违约条款，没问清就亏手续费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直给两难冲突，中段连环设问与转折持续推进，结尾之问由内容自然长出，留存力强。",
+      "script_spans": [
+        "留现金吃息越来越少，提前还贷又怕将来缺钱。",
+        "但别急着冲去还款。",
+        "你愿不愿为随时取钱，放弃那点还贷省下的利？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句居多、有对话感，但“年省两千”“余钱部分还”等压缩句朗读需换词重断，多个“若”偏书面。",
+      "script_spans": [
+        "但别急着冲去还款。",
+        "我见过有人全还清图安心，结果收入一断，没现金月供都扛不住",
+        "算下来，提前还十万，若利率差两点，年省两千。",
+        "当下存款率再降，你愿不愿为随时取钱，放弃那点还贷省下的利？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "以“弹药”“抓瞎”等口语形象点到即止，“留半年开支，余钱部分还”离开语境仍可复述，克制不炫技。",
+      "script_spans": [
+        "现金也是抓住新机会的弹药。",
+        "低利率时代闲钱躺账户确实亏，但全砸房贷遇看病失业就抓瞎。",
+        "留半年开支，余钱部分还。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清晰、结尾回扣题设，但反例中既称全还清又称月供扛不住，前后矛盾，经不起追问。",
+      "script_spans": [
+        "先算最直观的利率账",
+        "不过谁也说不准下年利率怎么走，所以别全还光",
+        "我见过有人全还清图安心，结果收入一断，没现金月供都扛不住"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "总体公允克制：明确不能一刀切，建议均带条件，并提示违约条款与预约风险，无夸大或诱导。",
+      "script_spans": [
+        "这事儿不能一刀切，得看你的房贷利率和手头备用金谁更紧迫。",
+        "有的设违约条款，没问清就亏手续费。预约期可能拖上数月，急用钱时等不起。",
+        "若工作收入波动大，留笔撑半年的钱比省息更要紧。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-188de343415241e9a1d8f639e395dadc",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-686b3c71048a4f9e8d48980849ada2b2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

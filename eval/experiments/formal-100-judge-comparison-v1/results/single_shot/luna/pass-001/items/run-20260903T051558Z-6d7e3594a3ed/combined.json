@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-4b929ed7f1fe4e83974d7c86e6f83241",
+  "run_id": "run-20260903T051558Z-6d7e3594a3ed",
+  "trace_sha256": "e8ab4c9a021db2bf0d3f25e10f2cec30b38441c81f996c406f72ac8b6b0f2a66",
+  "created_at": "2026-09-03T11:57:16.664922Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕中年降薪转行给出条件式判断，并补充家庭风险，完整覆盖收益与代价。",
+      "script_spans": [
+        "只要那行当能让你攒下越老越吃香的具体本事，眼前少挣的薪水，拉长到十年来看根本不算亏。",
+        "动手前把家庭半年开支算明白，拿房贷去押注陌生领域，趋势再对也扛不住断粮。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 253，目标为 280，偏差率为 9.64%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中且有数据和风险提示，但用失业率与流动占比支撑“值得转行”仍显不足，方法论增量有限。",
+      "script_spans": [
+        "最后落一句实在的：动手前把家庭半年开支算明白，拿房贷去押注陌生领域，趋势再对也扛不住断粮。",
+        "中年劳动者的失业率反而低于年轻大盘"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用降薪转行像犯傻制造冲突，中段用数据推进，结尾落到家庭现金流，收束自然且有警醒。",
+      "script_spans": [
+        "四十五岁舍得降薪去陌生行业从头练手，在外人眼里多半像犯傻",
+        "动手前把家庭半年开支算明白，拿房贷去押注陌生领域，趋势再对也扛不住断粮"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有“别只盯着月薪缩水”的口语感，但开头与数据段意群偏长，至少两处需要重断句，整体未到朗朗上口。",
+      "script_spans": [
+        "别只盯着月薪缩水。",
+        "四十五岁舍得降薪去陌生行业从头练手，在外人眼里多半像犯傻，但我给的判断很直白",
+        "只要那行当能让你攒下越老越吃香的具体本事，眼前少挣的薪水，拉长到十年来看根本不算亏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“越老越吃香”“技能复利”把长期收益说具体，结尾“扛不住断粮”有画面，克制而好记。",
+      "script_spans": [
+        "越老越吃香的具体本事",
+        "先摸清岗位有没有技能复利",
+        "趋势再对也扛不住断粮"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "判断、数据、建议顺序清楚，但把“换工作”直接等同“换赛道”，并以失业率推出转行价值，因果桥不足。",
+      "script_spans": [
+        "所以真要转，先摸清岗位有没有技能复利，别只盯着月薪缩水。",
+        "三十一岁往上的成熟职场人在换工作人群里占比早就过了半数，中年换赛道早就不是新闻。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有风险提示，但“十年看根本不算亏”把转行收益说得过满，可能误导个体决策，需补充不确定性。",
+      "script_spans": [
+        "动手前把家庭半年开支算明白，拿房贷去押注陌生领域，趋势再对也扛不住断粮。",
+        "眼前少挣的薪水，拉长到十年来看根本不算亏。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-08d5ffc1cd504fc685efa58343bf77ae",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-78548cb36dce460d978c210de29f3cae",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

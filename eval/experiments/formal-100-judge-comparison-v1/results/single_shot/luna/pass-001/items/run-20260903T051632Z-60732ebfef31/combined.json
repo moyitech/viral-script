@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-dda2e306577d4056a6e91c48fd0ee526",
+  "run_id": "run-20260903T051632Z-60732ebfef31",
+  "trace_sha256": "cd0ad42d872ddd622638417cb988aa59eabb5fe4f5aa6c5f1d66023f796a53fd",
+  "created_at": "2026-09-03T11:58:54.804996Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "紧扣“薪资面议”引发反感，覆盖企业动机、求职者顾虑、平台治理与应对策略，回答完整。",
+      "script_spans": [
+        "求职者为什么越来越烦这句老话？",
+        "企业为什么死抱着面议不放？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 661，目标为 700，偏差率为 5.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕信息透明与信任，依次交代岗位对比、企业动机、求职成本、监管边界和行动建议，信息推进充分。",
+      "script_spans": [
+        "企业省了事，求职者却先丢了信任底票。",
+        "通勤成本、社保基数、涨薪预期都要前置评估。",
+        "少数高管岗或弹性项目确实难提前定薪"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用同屏薪资反差抓人，中段连续追问并补充动机与监管，结尾判断也由前文自然落地。",
+      "script_spans": [
+        "滑过十家八家写着“薪资面议”，可就在同一屏，别的岗位明晃晃标着月薪范围。",
+        "下次刷到面议，先问一句：这公司是省事，还是防我？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和反问有对话感，但“信息不对称的红灯”等表达偏抽象，中段句序也有卡顿，朗读需重断。",
+      "script_spans": [
+        "求职者为什么越来越烦这句老话？",
+        "我的判断是，它早已从中性说明，变成了暗示信息不对称的红灯。",
+        "这是雇主的取舍：透明能省双方时间，但谈判筹码他们认为更重要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“信任底票”“规则不亮，人就不会认账”把抽象的不透明说得具体，表达克制且便于复述。",
+      "script_spans": [
+        "企业省了事，求职者却先丢了信任底票。",
+        "规则不亮，人就不会认账。",
+        "敢写清价的公司，往往更敢对人负责。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构推进清楚，企业、求职者、平台到建议的顺序完整；但结尾把透明直接推成负责，且对普通岗位动机下定论，论证略有扩大。",
+      "script_spans": [
+        "这是雇主的取舍：透明能省双方时间，但谈判筹码他们认为更重要。",
+        "当然，也不是所有面议都是坑，少数高管岗或弹性项目确实难提前定薪",
+        "普通岗位再写面议，多半是懒或防备。",
+        "敢写清价的公司，往往更敢对人负责。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有明确例外边界，但把普通岗位的面议概括为“懒或防备”，并推断常为压价，归因偏满，容易误导。",
+      "script_spans": [
+        "当然，也不是所有面议都是坑，少数高管岗或弹性项目确实难提前定薪",
+        "普通岗位再写面议，多半是懒或防备。",
+        "但更常见的心思，是怕亮出底牌就被同行比价，或者想留着面试时看人下菜碟压价。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ebe10defad61474a8cc65f6174ab6f08",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-dd02e78067b943a8a021eba41c43d36d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

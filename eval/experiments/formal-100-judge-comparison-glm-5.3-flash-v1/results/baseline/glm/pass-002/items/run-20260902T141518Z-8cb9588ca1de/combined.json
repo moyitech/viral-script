@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-6bf331f3498f45e99b13e47e739ebbf5",
+  "run_id": "run-20260902T141518Z-8cb9588ca1de",
+  "trace_sha256": "840bdb81a9467f60b2679a3c443a572cbda0ae8073a55adb00537fdbd2b3babc",
+  "created_at": "2026-09-03T14:25:23.290884Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问直击安检与通勤矛盾，安全与效率两侧及通勤族痛点均覆盖，系统对策加个人建议回答完整。",
+      "script_spans": [
+        "城市安全和通勤效率能兼顾，但不能靠一刀切把所有人堵在站外干等",
+        "真要兼顾，您出门前不妨手机刷下站点高峰提示，留十分钟余量别硬闯"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策依据、真实案例、安检员研究层层递进，收在可操作建议，信息密实，未见明显编造。",
+      "script_spans": [
+        "规定里早说了，鼓励用安检新技术和新模式",
+        "有研究提到安检员看屏幕受干扰也会影响判断，盯屏像找茬游戏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出多排20分钟换安全的反差质问，中段以新规、排队实况、研究层层兑现，结尾余味自然生长，无需喊互动。",
+      "script_spans": [
+        "你多排20分钟队换来的安全，值得吗？",
+        "包要过机人也要扫，车厢空着人堵门口",
+        "安全是底线，但通勤的急脾气，总得有人顺着捋顺。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音停顿清楚，比喻句和对仗句上口，全篇朗读无需临时改词。",
+      "script_spans": [
+        "包要过机人也要扫，车厢空着人堵门口",
+        "就像超市自助结账代替人工盘点，机器快了质量效率都能拉起来，不是光靠加人加杆子延长队伍"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "超市自助结账与找茬游戏两处类比均服务理解，“通勤的急脾气总得有人顺着捋顺”离开正文仍可复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "就像超市自助结账代替人工盘点",
+        "盯屏像找茬游戏",
+        "通勤的急脾气，总得有人顺着捋顺"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "提问、立场、依据、反差、归因、建议环环相扣，因果有桥，结尾回扣开篇之问，主线经得起追问。",
+      "script_spans": [
+        "可有的城市全网细检后，早高峰进站排起长队",
+        "说明光细不够还得巧办法"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "既认可安检安全底线，又建议留余量别硬闯，批评落在流程而非对立，无煽动夸大或误导承诺。",
+      "script_spans": [
+        "真要兼顾，您出门前不妨手机刷下站点高峰提示，留十分钟余量别硬闯，也留意快检通道是否开着。",
+        "安全是底线，但通勤的急脾气，总得有人顺着捋顺。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-62a256dd043f420285329ea3d9d29275",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

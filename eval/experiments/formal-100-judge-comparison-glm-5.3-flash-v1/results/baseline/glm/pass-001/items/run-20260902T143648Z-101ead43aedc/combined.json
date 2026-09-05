@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-c1c1e6bde51148a1ab0c45ff94c80081",
+  "run_id": "run-20260902T143648Z-101ead43aedc",
+  "trace_sha256": "42bf1aa8e3e743d2fb0707c5c01c7f793d0a23b0b56fabfec6725ac441d22cf4",
+  "created_at": "2026-09-03T13:46:44.513401Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直问关心怎成绑架，结尾回扣定位要求，监控与被盯两侧及核心人群全覆盖。",
+      "script_spans": [
+        "关心本身没错，错在实时共享把保护变成了盯着你跑",
+        "很多家庭装定位本意是怕出事能马上找到"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 468，目标为 450，偏差率为 4.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从盯人机制、平台规则到替代方案层层推进，随时说不要一句给出可带走的判断标准。",
+      "script_spans": [
+        "可位置二十四小时透明，被盯的人走到哪都被看见，会觉得到处被管",
+        "关心和监控，差的就是能不能随时说不要"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即用“被骂冷血”设冲突与悬念，中段场景和转折密集兑现钩子，结尾反问由正文自然生长，三段都立得住。",
+      "script_spans": [
+        "关掉家人定位却被骂冷血，关心怎成了绑架？",
+        "下班想绕路逛会儿，关了共享，到家就被盘问；周末赖床，他们看你不移动，电话就催锻炼",
+        "该想的不是顺不顺从，而是咱们的关系还经得起不随时盯吗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口密，中段以场景和对话式承接展开，无两处明显拗口，转录音稿基本不用改词。",
+      "script_spans": [
+        "下班想绕路逛会儿，关了共享，到家就被盘问",
+        "微信也不硬开位置，权限要你点才用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“远程牵着线”“地图绿点”喻体贴切不堆砌，“关心和监控差在能否说不要”离开上下文仍可复述，克制且有记忆点。",
+      "script_spans": [
+        "关心和监控，差的就是能不能随时说不要",
+        "人像被远程牵着线",
+        "亲人间信任不该靠地图绿点维持"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线可跟随且结尾能回扣题设，但研究一句与前后论点脱节，提及即弃经不起追问。",
+      "script_spans": [
+        "下次家人要你开定位，该想的不是顺不顺从",
+        "有研究提到家庭情感支持影响心理状态，但样本多是学生，不能套所有人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "不指责任何一方，研究引用主动限定样本，建议温和可执行，无煽动夸大或误导承诺。",
+      "script_spans": [
+        "关心本身没错，错在实时共享把保护变成了盯着你跑",
+        "不是家人心坏，是自主感被一点点吃掉",
+        "有研究提到家庭情感支持影响心理状态，但样本多是学生，不能套所有人"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4c2eb54d47f2482cbd9399734216231f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-165d83c331314cc09c7204e0c502c84a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

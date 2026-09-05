@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-90993dacd4dd4bfbaf5c2ed6a057797b",
+  "run_id": "run-20260903T051518Z-a99bdc94b6bc",
+  "trace_sha256": "f9a1571993543d27760773100c0b70561d5fd571d938781526fa4b1c45a3e781",
+  "created_at": "2026-09-03T15:42:57.473279Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即给判断，热闹与真增长两侧都答，还专段回应普通人，结尾回扣题设，覆盖完整。",
+      "script_spans": [
+        "我的判断很直接：延长营业时间不是天然的增长药，它只在特定场景里把热闹变成真实销售",
+        "那对普通人有什么影响？我们逛夜场是多了选择"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机制、正例、成本约束层层推进，交易密度给出判断标尺，论证扎实无编造，信息增量足。",
+      "script_spans": [
+        "新增时段若客单价撑不起坪效，账面流水涨了，利润反倒被吃掉一截",
+        "说白了，半夜多开那几个小时，得有对应的交易密度才划算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头半夜亮灯画面带出真假生意的反差疑问，中段世界杯案例与利润被吃的转折持续兑现，结尾余味自然。",
+      "script_spans": [
+        "商场半夜还亮着灯，人流熙熙攘攘，好像生意火爆，老板真赚到钱了吗",
+        "账面流水涨了，利润反倒被吃掉一截",
+        "下次看到通宵营业的促销，先想清楚是为需求还是为气氛买单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句多为顺口，'说白了'等承接自然，但'租金停滞和运营成本高的压力'等书面段朗读需换气重断。",
+      "script_spans": [
+        "商场半夜还亮着灯，人流熙熙攘攘，好像生意火爆，老板真赚到钱了吗？",
+        "说白了，半夜多开那几个小时，得有对应的交易密度才划算。",
+        "但传统购物中心本就面临租金停滞和运营成本高的压力",
+        "零售行业衡量真增长看的是转化率和单位面积营业额"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "虚火、熬黑夜等修辞克制且服务理解，账单不会骗人、分清气氛和账目离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "照明、空调、人手全要跟着熬黑夜",
+        "你享受便利的同时，账单不会骗人。",
+        "分清气氛和账目，才看得清谁在真增长。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "各段功能清晰，承接词与因果桥到位，结尾回扣开头与题设，论证链条自然闭合。",
+      "script_spans": [
+        "别被霓虹灯下的拥挤骗了",
+        "分清气氛和账目，才看得清谁在真增长"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "核心判断以'我的判断很直接'明示为观点，风险归因均带'若''可能'等条件限定，无夸大承诺、煽动或误导消费导向。",
+      "script_spans": [
+        "延长营业时间不是天然的增长药，它只在特定场景里把热闹变成真实销售",
+        "新增时段若客单价撑不起坪效，账面流水涨了，利润反倒被吃掉一截",
+        "商场若靠延时摊薄成本，可能悄悄提高客单价或缩服务"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ef7be90df98b4c368512c3fd027567fd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

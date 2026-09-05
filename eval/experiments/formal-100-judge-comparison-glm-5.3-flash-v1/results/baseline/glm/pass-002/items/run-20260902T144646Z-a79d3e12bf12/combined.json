@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-8700109a94cc4ab18252b7d35f978d17",
+  "run_id": "run-20260902T144646Z-a79d3e12bf12",
+  "trace_sha256": "45fbe01e376b09099a59d2307e0182bd1ad56cde73d0741f2345a782ec252973",
+  "created_at": "2026-09-03T14:28:05.469351Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即问重复花钱，正文分答合理重查与不该重查，结尾落到患者怎么做，正面覆盖题设两侧。",
+      "script_spans": [
+        "为啥互认写进文件，咱们还总重复花钱？",
+        "你下次换医院，包里装旧报告开口问认不认"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策时限、例外情形、利益机制、费用占比逐层推进，事实与解释相扣，信息密度高且无明显编造。",
+      "script_spans": [
+        "检查费占看病花销快到三成，重复就是烧钱",
+        "医生接诊时系统弹窗说可互认，他常常照样开单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即具体冲突，中段以'不该的重查'层层转折推进，结尾提问由正文自然生长，留有余味。",
+      "script_spans": [
+        "上家医院查的血项，下家不认，你又得掏钱重查。",
+        "那为啥还有不该的重查？",
+        "可要是医生摇头，这钱咱还得认吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口与对话感整体在线，但“可执行层面对接还没稳”“跨市像跨省难”等压缩书面句朗读需临时改词，卡在3分门槛之下。",
+      "script_spans": [
+        "怕漏了病灶被投诉，不如重做买个安心",
+        "这方向是对的，可执行层面对接还没稳",
+        "小县城平台更弱，跨市像跨省难"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，'人和系统的缝''隔壁机器能对话'离开上下文仍可复述，无炫技堆叠。",
+      "script_spans": [
+        "落地难，难在人和系统的缝，不止纸面规定。",
+        "当医院敢信隔壁机器能对话，钱才不白流。",
+        "钱和人手缺，进度拖，互认蜗牛爬。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚、结尾能回扣提问，但重查填空档一句所指不明且自称动机说不清，第一个拧巴处后无对应承接。",
+      "script_spans": [
+        "那为啥还有不该的重查？",
+        "可要是医生摇头，这钱咱还得认吗？",
+        "大医院流水大，重查或许填空档，动机说不清",
+        "第一个拧巴处：互认不是全认"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "批评有边界，明说重查是保安全而非懒政，猜测均加限定，建议务实，无误导夸大。",
+      "script_spans": [
+        "文件把这些列为例外，底色是保安全，不是懒政",
+        "怕漏了病灶被投诉，不如重做买个安心",
+        "重查或许填空档，动机说不清"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-856ac9fce0fc446e87b9556e913ebdf1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

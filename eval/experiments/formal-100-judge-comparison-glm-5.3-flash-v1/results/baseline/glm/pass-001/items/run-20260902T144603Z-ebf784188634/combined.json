@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-6748cd2b1c314bf88f7ccabdd85490e8",
+  "run_id": "run-20260902T144603Z-ebf784188634",
+  "trace_sha256": "0da191cc6bc872ca5e41d732e309349566a58712802b4e9ccbd2cb8430bc46d7",
+  "created_at": "2026-09-03T13:48:13.451876Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即以电车与光伏反差回应涨价之问，中段拆电池链与光伏两侧，结尾回扣普通买家，题设全程被正面回答。",
+      "script_spans": [
+        "原料出口受限不会让绿色产业集体涨，但靠受限矿的电池链先动了",
+        "下次听说原料受限，先问自己买的是哪类能源品？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 281，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "钴镍受限、加工集中、硅料自给等信息单元层层推进，结论有据，无编造，观众能带走具体判断方法。",
+      "script_spans": [
+        "像稀土加工咱们占九成以上，别国短期补不上",
+        "光伏靠硅料，咱们自己产得多，货源稳，这头供应没被卡"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差钩子具体抓人，中段电池与光伏对比持续兑现悬念，结尾提问由分类逻辑自然长出。",
+      "script_spans": [
+        "你买电车怕涨价？光伏却在跌呢。这反差挺真实。",
+        "原料出口受限不会让绿色产业集体涨，但靠受限矿的电池链先动了。",
+        "光伏靠硅料，咱们自己产得多，货源稳",
+        "下次听说原料受限，先问自己买的是哪类能源品？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句问答推进，气口清楚，口语词贯穿主体解释，朗读基本无需改词。",
+      "script_spans": [
+        "为啥电池先动？它用的钴镍稀土，好些资源国收紧出口。",
+        "说白了，绿产业不是铁板一块。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“铁板一块”点题贴切，“成本悄悄往上走、货架价标高”形象具体，可复述且无堆砌。",
+      "script_spans": [
+        "绿产业不是铁板一块",
+        "厂子成本悄悄往上走，货架价也就标高了",
+        "别听风就是雨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "前提、解释、转折、建议层层递进，成本到货架价的因果桥明确，结尾提问自然回扣开头反差。",
+      "script_spans": [
+        "任一处限出口，厂子成本悄悄往上走，货架价也就标高了",
+        "买绿货时，看清含不含受限矿，别听风就是雨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "多处主动设限，如'不会集体涨''不是统统堵死''短期补不上'，无煽动夸大，无确定性承诺，价值导向安全。",
+      "script_spans": [
+        "原料出口受限不会让绿色产业集体涨，但靠受限矿的电池链先动了",
+        "其实管制多针对特定两用矿，不是统统堵死",
+        "别国短期补不上",
+        "买绿货时，看清含不含受限矿，别听风就是雨"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-730e7fc2b72a4bb5be7d52e2b0f8f9a4",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-3938d98541854dc091929c5f1d0f6056",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

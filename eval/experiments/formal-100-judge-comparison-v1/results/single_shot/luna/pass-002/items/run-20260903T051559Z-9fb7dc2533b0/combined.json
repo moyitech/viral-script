@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-e2000b9353f2457db932bf94e34bd1bf",
+  "run_id": "run-20260903T051559Z-9fb7dc2533b0",
+  "trace_sha256": "b91ead19b8b6bcf6fd997342b6e788c47658379aa7582fedb0f21ee21669334a",
+  "created_at": "2026-09-03T12:32:36.810660Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应普通投资者如何避开AI伪风口，既给出识别标准，也落到主营与资质核查。",
+      "script_spans": [
+        "避开伪风口不能看标签亮不亮，得看业务实不实在、资质合不合规。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中于AI谣言与伪风口识别，案例、监管规则和核查建议层层增加信息与判断抓手。",
+      "script_spans": [
+        "近期网信和证监部门联合整治，一批利用AI批量编写资本市场谣言的账号被依法关闭。",
+        "别只盯公司公告里的“大模型”字眼，去查主营构成和从业资质。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用罚单制造冲突，中段解释监管与识别方法，结尾以“技术还是话术”留下判断余味。",
+      "script_spans": [
+        "一篇用AI改写的芯片订单假消息，让两个自媒体运营者吃了罚单。",
+        "监管靠什么拆穿把戏？关键机制在于，资本市场靠真实信息定价",
+        "下次再刷到“AI选股稳赚”，先退后一步，问清这是技术还是话术。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，但中段连续出现监管术语与被动句式，朗读需多次重断句。",
+      "script_spans": [
+        "你以为蹭上智能概念就能吃肉，可能接了别人写好的剧本。",
+        "芯片、AI都是市场最敏感的板块，有人动歪脑筋，直接让人工智能生成虚假订单和利好，通过自媒体散发，专门诱导跟风买入。",
+        "关键机制在于，资本市场靠真实信息定价，证券法早明确禁止编传虚假信息，自媒体不是法外之地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“工具中立，但用工具作恶绝不中立”与“接了别人写好的剧本”兼具准确性和复述感，修辞克制。",
+      "script_spans": [
+        "工具中立，但用工具作恶绝不中立。",
+        "你以为蹭上智能概念就能吃肉，可能接了别人写好的剧本。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "整体按案例引入、规则解释、风险落点、行动建议和结论收束，主线清楚且回扣题设。",
+      "script_spans": [
+        "监管靠什么拆穿把戏？关键机制在于，资本市场靠真实信息定价",
+        "落到普通人身上，影响很现实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体是风险提示，未给出荐股或收益承诺；但“真有能力”“不会骗人”等绝对化表述，容易把复杂投资判断说得过满。",
+      "script_spans": [
+        "下次再刷到“AI选股稳赚”，先退后一步",
+        "真有能力的企业，不需要靠小作文撑估值。",
+        "概念会一轮轮热，但合规与业务实质不会骗人。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-83503131f8b24380a148243f181672dd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

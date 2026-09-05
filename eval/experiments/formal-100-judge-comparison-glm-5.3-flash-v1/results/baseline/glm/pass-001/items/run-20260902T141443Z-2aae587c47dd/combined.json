@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-546c868f04d1491e86552fde2d9eb2a8",
+  "run_id": "run-20260902T141443Z-2aae587c47dd",
+  "trace_sha256": "5d8ca18ce7f066d2ec00f387598127ceab2c630950d9067f1343098dce86733d",
+  "created_at": "2026-09-03T13:46:42.197583Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答结论，收紧与生存两侧齐备，兼顾开发者与普通用户，结尾回扣题设。",
+      "script_spans": [
+        "小开发者还有空间，甚至比之前安稳",
+        "平台喊收紧，其实给肯算账的小开发者留了门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 456，目标为 450，偏差率为 1.33%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "小企业计划、欧盟分层、美国窗口层层推进，数字与引用资料吻合，无编造，增量具体。",
+      "script_spans": [
+        "年收入一百万美元以下，仍能走苹果小企业计划，佣金锁在百分之十五",
+        "苹果在欧盟换了分层费，原先按安装收费取消，改成百分之二加百分之五到十三，再加百分之五"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句反差钩子立住，中段靠其实、不过等转折持续给新信息，结尾提问从算账主题自然长出。",
+      "script_spans": [
+        "商店抽成更狠，小开发者却交得少了。",
+        "美国那边更松，外部支付链接暂时零抽成，虽然最高法院可能改口，但眼下是窗口。",
+        "平台喊收紧，其实给肯算账的小开发者留了门。下次条款更新，你先看哪句？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏与对话感扎实，但“原先按安装收费取消”“若用户暴增”两处需换词或重断，止步2分。",
+      "script_spans": [
+        "听起来吓人，但小开发者用户少，常落低档，难碰高额区间",
+        "原先按安装收费取消，改成百分之二加百分之五到十三，再加百分之五",
+        "欧盟那套计费若用户暴增"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，算账一词贯穿全文，想爆红得先算清账可脱离上下文复述，不炫技。",
+      "script_spans": [
+        "活下去可以，想爆红得先算清账。",
+        "平台喊收紧，其实给肯算账的小开发者留了门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清晰、结尾回扣到位；但'这计划'紧接美国外链段，指代对象含糊，需听众回猜。",
+      "script_spans": [
+        "不过边界要明确，欧盟那套计费若用户暴增，成本会跳涨",
+        "这计划不用改代码，填表就行"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键政策均带“暂时”“可能改口”等限定，并主动交代地域与成本边界，无夸大承诺、引战或误导风险。",
+      "script_spans": [
+        "外部支付链接暂时零抽成，虽然最高法院可能改口，但眼下是窗口",
+        "不过边界要明确，欧盟那套计费若用户暴增，成本会跳涨",
+        "不过美国外链免抽只限美国，出了境就失效"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3303e1811949440e84744def0c9998ac",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a86619ddba514f93a91611dc573745a3",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

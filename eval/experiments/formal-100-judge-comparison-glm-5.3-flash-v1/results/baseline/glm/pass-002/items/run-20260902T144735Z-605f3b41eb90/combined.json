@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-9f27553bb5ac4fd1ad79e3286f692b0a",
+  "run_id": "run-20260902T144735Z-605f3b41eb90",
+  "trace_sha256": "98f4d03671001d57a803285d0b30b2b1a02d6219dc613077b98d7f5f9d6678d9",
+  "created_at": "2026-09-03T14:27:24.372946Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即作答安心变浪费与风险，浪费、风险两侧与普通家庭人群均覆盖，结尾以少而精回扣题设。",
+      "script_spans": [
+        "囤药给了安心，却也真变成浪费和风险。",
+        "药箱里的踏实，其实来自少而精，不是堆满。",
+        "家里留点退烧感冒的就行，别照着网传清单狂买。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "万吨数据、转卖禁令、有害垃圾依次推进，事实、解释与结论互证，观众能带走具体知识与判断方法。",
+      "script_spans": [
+        "一年过期药的数量，能以万吨算。",
+        "个人手里剩的药不能转卖给药店，法律不允许。",
+        "过期药药效掉了，吃下去不顶事还可能添乱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头弃药画面即成反差钩子，中段由浪费推进到失效与处理难题，结尾提问从抽屉细节自然长出，留有行动余味。",
+      "script_spans": [
+        "你囤的退烧药，最后全扔垃圾桶了。",
+        "但堆太多，反而记不住哪瓶还能用。",
+        "下次看到抢药，你会先翻翻自家抽屉吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，'不是吓唬你''翻翻自家抽屉'等对话式表达贯穿，通读不需临时改词，节奏有起伏。",
+      "script_spans": [
+        "真到孩子半夜发烧，手边有盒没过期的就能救急。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "语言克制不炫技，'堆着却是废塑料'对比助解；'少而精，不是堆满'与'花钱买焦虑'离开全文仍可复述。",
+      "script_spans": [
+        "你仔细想，这难道不是花冤枉钱买焦虑？",
+        "药箱里的踏实，其实来自少而精，不是堆满。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "现象、风险、对策层层递进，堆太多记不住哪瓶能用架好因果桥，结尾提问自然回扣囤药开头。",
+      "script_spans": [
+        "真到孩子半夜发烧，手边有盒没过期的就能救急。",
+        "但堆太多，反而记不住哪瓶还能用。",
+        "你想防病，结果背上了处理负担，这可是真麻烦，不是吓唬你。",
+        "下次看到抢药，你会先翻翻自家抽屉吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "备药建议留有余地，转卖违法与有害垃圾表述均有依据，未见夸大、误导或煽动。",
+      "script_spans": [
+        "备药求稳没错，但别超量。",
+        "个人手里剩的药不能转卖给药店，法律不允许。",
+        "过期药药效掉了，吃下去不顶事还可能添乱。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-beaef80191014112be974c72c39d04e8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,166 @@
+{
+  "evaluation_id": "combined-6c42510419804cf787f0d8b6e3bd5a33",
+  "run_id": "run-20260903T051600Z-a59e1893046c",
+  "trace_sha256": "56c5dc75e65d19efe396c8c9da9e4dc789303cb2d5cbbc84517527c524ad951c",
+  "created_at": "2026-09-03T14:10:05.193654Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点题，全程围绕为何亏钱与低风险标签含义，结尾还给出持有人可操作的自查建议。",
+      "script_spans": [
+        "其实低风险从来不等于不亏钱，债基的账面回撤几乎都来自债券本身的价格跳动，而不是公司跑路",
+        "它只是把债基和股票基金比个相对高低，绝不承诺保本"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 848，目标为 700，偏差率为 21.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，利率、久期、信用、流动性、杠杆逐层推进，风险准备金用途等关键结论有依据。",
+      "script_spans": [
+        "市场利率一上行，老债券的价钱就得往下走",
+        "那笔钱只用于赔付因操作失误或违规带来的损失，市场正常波动它一分不补"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即以低风险却净值翻绿制造反差，中段利率、杠杆、风险准备金等新信息层层兑现，结尾建议与金句自然收束，余味足。",
+      "script_spans": [
+        "你买的那只标注低风险的债券基金，明明没买股票，净值却绿了好几天。",
+        "实际情况是，那笔钱只用于赔付因操作失误或违规带来的损失，市场正常波动它一分不补。",
+        "翻开定期报告，看它久期多长、信用债占比几成，用这笔钱前想清楚自己扛不扛得住几天浮亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "比喻上口有对话感，但'仓位经理'处须重断句，'账面回撤'抽象拗口，两处封顶2分。",
+      "script_spans": [
+        "长债像跷跷板，利率稍动净值就大幅起伏",
+        "剩下不到两成仓位经理还能灵活调配",
+        "债基的账面回撤几乎都来自债券本身的价格跳动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "跷跷板喻久期贴切助解，温度计与救生圈收尾可独立复述；修辞分散点到为止，无堆砌炫技，密度克制。",
+      "script_spans": [
+        "长债像跷跷板，利率稍动净值就大幅起伏。",
+        "更常见的误会是我们把“固定收益”读成了“固定赚钱”",
+        "低风险三个字是温度计，不是救生圈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "问答式过渡清晰，利率到净值的因果有桥，跷跷板类比具体，结尾回扣开头并落到行动。",
+      "script_spans": [
+        "为什么债券价格会跳？",
+        "长债像跷跷板，利率稍动净值就大幅起伏",
+        "所以下次看到低风险债基亏损，先别骂骗子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全文明确“不保本金”“不是免死金牌”等边界，风险准备金用途表述准确，无夸大承诺与误导销售，导向安全。",
+      "script_spans": [
+        "其实低风险从来不等于不亏钱",
+        "可合同里写着不保本金",
+        "但那只是波动浅，不是免死金牌"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 848,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.21142857142857144
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-59f29268e82b413caa29afaf12faa8ba",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-45d40ad600d74adf8b9d8f66a5b781ba",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

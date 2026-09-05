@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-ed479e9042544c91ad8d080576ea71ac",
+  "run_id": "run-20260903T051535Z-dca0354a0e6b",
+  "trace_sha256": "4046b333ce09a9c4746feaa72bacc69a6219fc09684d33c606c5df89b5dfd825",
+  "created_at": "2026-09-03T14:12:17.141269Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛题并给判断，岗位数量、考证风险两侧与普通求职者均覆盖，结尾建议直击题设。",
+      "script_spans": [
+        "它能创造普通岗位，但集中在无人机运维、低空调度等一线，绝非考个证就能躺赢拿高薪"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 308，目标为 280，偏差率为 10.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "判断、缺口数据、就业率反转、落地建议层层推进，数字与结论互证，无同义灌水。",
+      "script_spans": [
+        "无人机操控、农林植保类技能岗缺口百万起步，连装调检修工需求都预估达数百万量级",
+        "今年部分城市持证飞手就业率从百分之八十骤降到不足四十"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头疑问直指求职者利益，中段用就业率骤降反转兑现悬念；结尾纯给建议收束，无余味或互动。",
+      "script_spans": [
+        "普通求职者真能分到这杯新赛道就业红利吗？",
+        "持证飞手就业率从百分之八十骤降到不足四十",
+        "给普通人的提醒很具体，优先盯紧本地低空物流、电力巡检的现场运维与调度招聘，跟着落地项目走比硬考飞手执照稳当"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有'躺赢拿高薪'等鲜活表达，但'政策评估与行业跟踪显示''重招岗位'两处书面费解，需临时换词才能顺读。",
+      "script_spans": [
+        "绝非考个证就能躺赢拿高薪",
+        "多份政策评估与行业跟踪显示，低空试点显著促进企业招人",
+        "求职人数增幅远超重招岗位"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且贴题，饭碗、躺赢皆有助理解；结尾跟项目走比硬考证稳当离开上下文仍可复述，记忆点自然。",
+      "script_spans": [
+        "这类一线饭碗是真实存在的",
+        "跟着落地项目走比硬考飞手执照稳当"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "判断—双依据—建议结构完整，结尾回扣普通求职者；但比较对象错位，承接转折略生硬。",
+      "script_spans": [
+        "给普通人的提醒很具体，优先盯紧本地低空物流、电力巡检的现场运维与调度招聘",
+        "求职人数增幅远超重招岗位",
+        "第二条依据，但现实数据反转"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "主动破除「考个证躺赢拿高薪」的夸大预期，就业率数据加「部分城市」限定，建议具体且不作收益承诺，导向安全。",
+      "script_spans": [
+        "绝非考个证就能躺赢拿高薪",
+        "今年部分城市持证飞手就业率从百分之八十骤降到不足四十",
+        "跟着落地项目走比硬考飞手执照稳当"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2f30a6d53b2f48c6b0d495944667934a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b39ea1e00dac4353ac8fe52df20b4d8a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-09a1ff23cd424ee5bc978fef4ed673ad",
+  "run_id": "run-20260902T144506Z-121585631f52",
+  "trace_sha256": "1f24bb3535851a1a3a69d1976b94e3148707c882a927e8dd31829aec271a8fef",
+  "created_at": "2026-09-03T12:16:53.735440Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正文正面解释订单回暖与企业不敢扩招的矛盾，覆盖大中小企业、老板和求职者，结论也回扣题目。",
+      "script_spans": [
+        "订单眼看着多了，厂长老王却把招工启事撕了。",
+        "别看单子飘红，厂门没敞开。回暖是信号，不是发令枪。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据、预期、企业规模、用工成本和劳动者体感依次推进，既给出事实，也提供了判断招工是否启动的具体标准。",
+      "script_spans": [
+        "订单是真回暖了。八月制造业新订单指数爬到五十点六，比上月升了两点一，需求明显起来。",
+        "怕这波单子是下游暂时补库存，下个月可能掉回去。",
+        "正式工工资社保每月固定背，订单停了这笔钱也不能停。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用撕招工启事制造反差，中段层层解释，结尾以三个月的判断标准自然收束并留下思考。",
+      "script_spans": [
+        "订单眼看着多了，厂长老王却把招工启事撕了。",
+        "回暖是信号，不是发令枪。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感、短句较多，但多处压缩表达需要重断句或换词，尚未达到顺口成稿。",
+      "script_spans": [
+        "为啥两侧这么拧巴？咱们拆开看大环境。",
+        "正式工工资社保每月固定背，订单停了这笔钱也不能停。",
+        "大型返三成上年失业险，中小微最高返六成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“正式工像背上的石头”和“回暖是信号，不是发令枪”形象准确，既帮助理解成本压力，也便于观众复述。",
+      "script_spans": [
+        "可正式工像背上的石头。",
+        "回暖是信号，不是发令枪。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，数据—预期—成本—用工选择层层推进；但“正式工”与“合同工”概念混用，结尾“三个月”也缺少推导。",
+      "script_spans": [
+        "为啥两侧这么拧巴？咱们拆开看大环境。",
+        "所以老板们找临时工顶班或老产线加班。临时工干完结钱走，不背长期包袱。",
+        "正式工像背上的石头。万一俩月后单子黄了，裁人得依法给补偿，合同工不是想退就退。",
+        "得看单子能不能连住三个月。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动对立，结尾提醒较克制；但“这钱只能留老员工稳岗，不是奖你扩招新人”把政策边界说得过死，易造成误导。",
+      "script_spans": [
+        "别只怪厂抠门，得看单子能不能连住三个月。",
+        "这钱只能留老员工稳岗，不是奖你扩招新人。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a5f3fc4b617e4e35b1017c903db78b5e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

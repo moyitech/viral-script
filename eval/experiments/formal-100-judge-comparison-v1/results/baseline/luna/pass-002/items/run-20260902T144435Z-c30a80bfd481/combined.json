@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-78472bde53c944849792acd6210bb049",
+  "run_id": "run-20260902T144435Z-c30a80bfd481",
+  "trace_sha256": "132a322ddc97d90a51efca229b4d24d53329e08324512eaf11b164cf42a68ada",
+  "created_at": "2026-09-03T12:16:35.255922Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直接给出短期更激烈、长期未必的判断，并覆盖企业转向、竞争机制及普通消费者处境，正面回应题设。",
+      "script_spans": [
+        "我的判断：短期可能更狠，长期未必。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕价格战强弱，补足供给冲击、渠道成本、政策方向和消费者影响，信息单元连续推进，观众能获得判断依据。",
+      "script_spans": [
+        "出口厂原先靠海外单活着。现在单子黄了，货堆在库里。",
+        "建渠道要花钱，重新做包装换标签也费钱，企业想快回本，往往只能先降价甩。",
+        "近期同款商品更便宜，你能捡漏省钱，买衣服可能撞见同厂外贸款标价少一半。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出强冲突并给出判断，中段转向长期机制，结尾留下真实选择困扰，推进完整。",
+      "script_spans": [
+        "外贸转内销，低价混战会更狠还是更弱？",
+        "你想，为啥不能说永远打价？关键在机制。",
+        "选便宜还是选合适，反倒费神。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和反问让主体基本好读，但多处压缩式搭配生硬，仍有明显临时换词和重断句点。",
+      "script_spans": [
+        "现在单子黄了，货堆在库里。",
+        "这轮转内销撞上低需求加高竞争",
+        "外贸尾单尺寸标准未必合国内习惯，挑物别光看便宜"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“生产线总得喂饱”“先甩货回血”把供需压力说活，“选便宜还是选合适”形成自然且可复述的收束，修辞不过量。",
+      "script_spans": [
+        "生产线总得喂饱。",
+        "先甩货回血。",
+        "选便宜还是选合适，反倒费神。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头定论、短期解释、长期转折和消费落点齐全，但“市场能吞吐”直接推到“错开价位”，长期缓和缺少充分因果桥。",
+      "script_spans": [
+        "我的判断：短期可能更狠，长期未必。",
+        "但咱们超大规模市场能吞吐，厂子慢慢建渠道就会错开价位。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "没有明显违规，且用“短期可能、长期未必”保留边界；但“只能”“标价少一半”等表述易造成误导，需限定范围。",
+      "script_spans": [
+        "短期可能更狠，长期未必",
+        "政策也在推内外贸一体，并非权宜",
+        "海外客不要，只能国内找补",
+        "买衣服可能撞见同厂外贸款标价少一半"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7cd99bb4f2d24ea585b2b86ff42a90c0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

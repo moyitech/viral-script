@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-1eff0e5c0e534f988e034ad6ab4a10fb",
+  "run_id": "run-20260902T144740Z-ed9dc8c23fe8",
+  "trace_sha256": "51ea9dce6f27fbeb6147fb14c24c72ddef0d71e6af4c5955542e674d7122db41",
+  "created_at": "2026-09-03T12:16:01.217939Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应民生支出能否提振消费意愿，并覆盖支出效率、就业稳定、城乡受益差异等关键条件。",
+      "script_spans": [
+        "我的判断：能缓口气，但难撑起大反弹。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕“减轻家庭后顾之忧能否转化为消费”，机制、研究分项、效率与群体差异均有推进。",
+      "script_spans": [
+        "钱花得准，才卸得下后顾之忧；花得散，就像洒水难润根。",
+        "可要是工作不稳，补贴再甜也先存着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“掏钱却不敢花”的反差抓人，中段补上机制、效率和区域差异，结尾追问与家庭账本自然衔接。",
+      "script_spans": [
+        "财政掏钱办免费幼教，宝妈却继续捂紧钱袋。",
+        "担子卸多少，才敢花多少，这是实在账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和生活场景有口播感，但“冻土化开，得一点点时劲”等处卡嘴，需改词重断。",
+      "script_spans": [
+        "可要是工作不稳，补贴再甜也先存着。",
+        "消费意愿不像开关一按就亮，更像冻土化开，得一点点时劲。",
+        "月底突袭支出少了，去超市手脚变松。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻不止制造画面，也解释了消费意愿的渐进性；“担子卸多少，才敢花多少”短而准确，具备复述记忆点。",
+      "script_spans": [
+        "消费意愿不像开关一按就亮，更像冻土化开，得一点点时劲。",
+        "担子卸多少，才敢花多少，这是实在账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、机制、条件、结尾结构完整，转折也清楚；但从“减贫”研究推到消费意愿，概念和因果桥仍不够严密。",
+      "script_spans": [
+        "可要是工作不稳，补贴再甜也先存着。",
+        "研究看得清楚，教育支出和社保就业减贫明显，医疗卫生那块直接减轻焦虑的效果偏弱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规或承诺，但部分因果和地域判断偏绝对，易造成过度归因，需补充条件边界。",
+      "script_spans": [
+        "能缓口气，但难撑起大反弹",
+        "在县乡领到实惠，敢花的心就活了；城里没触到，钱包照样捂紧。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-bdd225df8e344b878804658757733d30",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

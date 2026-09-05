@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-2e46b5fa6bcc4aa68117da363f80fd9b",
+  "run_id": "run-20260902T142200Z-c2ada823dbf9",
+  "trace_sha256": "71c3b296fa2dfc45cc636e358474ce3ca7ff152a62b44aa228b71c9456bca62d",
+  "created_at": "2026-09-03T13:45:57.938455Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛出分不清之问，结尾以不是单方面判断题作答，全程紧扣题设，观众、商家与平台两侧及核心人群均覆盖。",
+      "script_spans": [
+        "能不能分清？标了AI你能认出，没标时你只能猜",
+        "选真人还是合成，从来不是你单方面的判断题"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 662，目标为 700，偏差率为 5.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "判定线索、新规动因、仿冒案例、标签漏洞与算法偏差层层推进，信息单元相互支撑，观众能带走盯标签的判断方法。",
+      "script_spans": [
+        "假借老专家卖保健品。中老年一信，钱包就空了",
+        "技术全天转，店家排名反靠前，算法爱勤快不管背后真不真"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即有反差钩子，中段新规、骗局、标签漏洞层层兑现，结尾小字之问由正文自然生长。",
+      "script_spans": [
+        "你以为真人主播半夜喊家人们，其实是一串代码在念稿",
+        "中老年一信，钱包就空了",
+        "所以下次指尖划过笑脸主播，你会先盯那行小字吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、对话感足，但“字小如一闪过”“还想你当真人信赖”等压缩句需临时改词，卡在两处拗口。",
+      "script_spans": [
+        "你喊一句，真人会卡顿，合成不喘气。",
+        "字小如一闪过，你稍不留神还是混过去",
+        "商家省了轮班钱还想你当真人信赖"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，“温情被模拟”等句离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "那不是笨，是温情被模拟",
+        "一边要透明，一边想钻缝，现实就这么拉扯",
+        "标签才是救命绳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "'那标了就万事稳'转折自然，成本到仿冒再到算法偏差因果有桥，结尾盯小字回扣开头与题设，层层递进无断裂。",
+      "script_spans": [
+        "那标了就万事稳？",
+        "所以下次指尖划过笑脸主播，你会先盯那行小字吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "立意是提醒观众防范AI冒充与标注漏洞，对长辈不贴标签，无夸大承诺或煽动，导向安全。",
+      "script_spans": [
+        "新规白纸黑字：AI生成内容必须亮明身份，没标的账号平台能限流甚至删链。",
+        "可偏有人动歪脑筋，拿数字人仿真人面孔和声音，假借老专家卖保健品",
+        "那不是笨，是温情被模拟"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-66e522d834104190af40217dc93c853e",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-44ca5794f3c0463ca8ff2138eb9da6f7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

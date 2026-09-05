@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-e1ef99de8b4c47daaf52a65e91ea9913",
+  "run_id": "run-20260903T051548Z-898f88e9aa86",
+  "trace_sha256": "deb02d5b17fd6bd2f86bd2989825f0b836b7064793a4d098a8595891a8024b35",
+  "created_at": "2026-09-03T15:28:57.580182Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "两侧都答：先立'填空档'判断，再以'关怀不外包'接住卸责之问，人群落到普通家庭。",
+      "script_spans": [
+        "眼下的陪诊热本质上填的是照护空档，而非制造依赖",
+        "把它当借力的拐杖，别当甩手的轮椅"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "成因、判断、政策例证、乱象反例、操作建议逐层推进，事实均有出处，无同义灌水。",
+      "script_spans": [
+        "看上海的做法，已要求老年陪诊机构向民政备案，陪诊师得通过专项考核、挂身份牌上岗，收费明码标价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇即立老人独闯门诊的困境，中段卸责之问、沪例与乱象持续推进，结尾拐杖轮椅自然留味。",
+      "script_spans": [
+        "一位八十岁老人心脏复查，女儿临时出差",
+        "可也有人嘀咕：花钱买陪伴，是不是在替儿女卸责？",
+        "把它当借力的拐杖，别当甩手的轮椅"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主，气口与重音清晰，'嘀咕''能救急'等表达自然，通篇朗读无需临时改词。",
+      "script_spans": [
+        "把它当借力的拐杖，别当甩手的轮椅",
+        "落到咱普通人家，老人独居看病犯难"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "拐杖与轮椅之喻贴切可复述，陪得一程对照熬药喂饭自然有画面，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "把它当借力的拐杖，别当甩手的轮椅",
+        "陪诊师陪得了一程，陪不了常年熬药喂饭"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "空白生需求、乱象催收紧、家庭划底线，因果桥齐全，结尾金句回扣开场红马甲。",
+      "script_spans": [
+        "这种空白才是陪诊生长的土壤",
+        "把它当借力的拐杖，别当甩手的轮椅；制度筛过的人，才托得住脆弱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反两面呈现争议再作回应，政策与风险表述克制，建议给出正规渠道边界，无夸大承诺与煽动导向。",
+      "script_spans": [
+        "真正要警惕的，是行业跑太快、规矩没跟上，让帮忙变了味",
+        "从社区养老中心或官方名单里找正规陪诊，能救急",
+        "陪得了一程，陪不了常年熬药喂饭，家庭的关怀底线不能外包"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-19da12fe2cb94fffb80ef55cad8145e7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

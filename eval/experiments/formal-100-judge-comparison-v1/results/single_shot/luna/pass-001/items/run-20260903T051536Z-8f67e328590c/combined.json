@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-42c449a5ec91432e9a86d10d3d5a1c3e",
+  "run_id": "run-20260903T051536Z-8f67e328590c",
+  "trace_sha256": "948c8c511d04e293ba291ec1ad755a2363e4968082eea9b296ec0f0559a6ac27",
+  "created_at": "2026-09-03T12:01:32.342853Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答效率与隐私是否必然冲突，并同时覆盖企业效率、员工隐私和合规边界，受众痛点明确。",
+      "script_spans": [
+        "效率提升本身不必然等于侵犯隐私，真正决定走向的是数据怎么进模型、有没有守住法律底线。",
+        "效率红利可以吃，但得在透明规则里吃。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 749，目标为 700，偏差率为 7.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕技术不必然零和、关键在数据处理与监管推进，风险、匿名化、人工监督等信息单元持续增加判断依据。",
+      "script_spans": [
+        "里面混着身份证号、病史闲聊，这踩了个人信息处理的最小必要红线。",
+        "匿名化也不是万能，过度脱敏可能让模型漏掉真实违规线索"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“翻邮箱”制造隐私冲突，中段连续反转并补上监管边界，结尾金句自然回扣主题。",
+      "script_spans": [
+        "公司花几千块接个大模型，全天自动翻员工的邮箱",
+        "工具用法才是杠杆。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有钩子和停顿，基本能读通；但中段研究与合规表述偏密，多个解释句需要重断气口。",
+      "script_spans": [
+        "老板觉得效率起飞，员工却后背发凉",
+        "通常认为效率和隐私保护互相拖累，但近期关于模型训练的研究发现，某些高效方法反而能像专业隐私手段那样压住数据记忆风险，这和老经验相反。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“效率起飞”“后背发凉”具象化冲突，结尾“省的是人力，不该省的是分寸”短而可复述。",
+      "script_spans": [
+        "老板觉得效率起飞，员工却后背发凉",
+        "省的是人力，不该省的是分寸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整且有清晰转折，但把模型训练研究直接转到邮件筛查，未充分说明二者如何对应，部分风险表述也偏绝对。",
+      "script_spans": [
+        "那是不是只要上AI筛查，就注定和员工隐私你死我活？倒也不是。",
+        "边界是：基于明确目的做最小必要处理，并且留人把关。",
+        "近期关于模型训练的研究发现，某些高效方法反而能像专业隐私手段那样压住数据记忆风险，这和老经验相反。",
+        "一旦原始数据在外包模型里转一圈，泄露风险就实实在在发生了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "没有明确违规，且补充了匿名化边界；但“风险就实实在在发生了”等表述把潜在风险说成既成事实，需加条件限定。",
+      "script_spans": [
+        "匿名化也不是万能，过度脱敏可能让模型漏掉真实违规线索",
+        "泄露风险就实实在在发生了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b00c1bb895b6486bbdad5bb239f07c67",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-274df800d34d4cf7a0150b32d509e504",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

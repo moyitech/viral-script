@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-7426ba947acf4d3bb0bf894de3b5da19",
+  "run_id": "run-20260902T144735Z-605f3b41eb90",
+  "trace_sha256": "98f4d03671001d57a803285d0b30b2b1a02d6219dc613077b98d7f5f9d6678d9",
+  "created_at": "2026-09-03T11:47:50.855754Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应囤药带来的安全感、浪费与风险，并给出适度备药建议，精准命中普通家庭痛点。",
+      "script_spans": [
+        "备药求稳没错，但别超量。",
+        "药箱里的踏实，其实来自少而精，不是堆满。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 483，目标为 450，偏差率为 7.33%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕过期浪费、药效风险、转卖限制、垃圾分类和适量备药连续推进，观众能获得具体判断与建议。",
+      "script_spans": [
+        "更麻烦的是，个人手里剩的药不能转卖给药店，法律不允许。",
+        "家里留点退烧感冒的就行，别照着网传清单狂买。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“全扔垃圾桶”制造具体冲突，中段持续推进浪费、处理和备药信息，结尾提问也自然。",
+      "script_spans": [
+        "你囤的退烧药，最后全扔垃圾桶了。",
+        "下次看到抢药，你会先翻翻自家抽屉吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句较多，已有对话感；但“不是一户两家”“能以万吨算”搭配拗口，朗读需要调整。",
+      "script_spans": [
+        "很多人一慌就买一大包，结果烧退了药没碰。",
+        "不是一户两家。",
+        "一年过期药的数量，能以万吨算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“少而精，不是堆满”的可复述对照，但焦虑、垃圾桶、废塑料等意象反复叠加，部分比喻生硬。",
+      "script_spans": [
+        "药箱里的踏实，其实来自少而精，不是堆满。",
+        "买药的花销够吃顿好的，堆着却是废塑料。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "有开头、风险展开、处理困境和备药结论，主线可跟随；但“药”指代过宽，未限定过期药，削弱逻辑严谨性。",
+      "script_spans": [
+        "备药求稳没错，但别超量。",
+        "药卡在家里，既不能卖钱也不能随手丢，它算有害垃圾。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导适量备药、反对转卖，方向稳妥；但部分医疗表述过于绝对，需补充用药与处置边界。",
+      "script_spans": [
+        "备药求稳没错，但别超量。",
+        "药有保质期，放久就失效。",
+        "真到孩子半夜发烧，手边有盒没过期的就能救急。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-45a18679288440e48a184bfb4a0fadb0",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-eb6e52b1071d4e90aef61e41a35c6b88",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

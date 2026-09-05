@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-f05a1f569847444c94cfc4aebf9736c4",
+  "run_id": "run-20260902T144646Z-a79d3e12bf12",
+  "trace_sha256": "45fbe01e376b09099a59d2307e0182bd1ad56cde73d0741f2345a782ec252973",
+  "created_at": "2026-09-03T13:49:32.712479Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即抛“为啥还总重复花钱”，合理与不该重查两侧都答，患者视角贯穿到结尾建议。",
+      "script_spans": [
+        "为啥互认写进文件，咱们还总重复花钱？",
+        "落地难，难在人和系统的缝，不止纸面规定。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 764，目标为 700，偏差率为 9.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策时间表、合理例外、利益与系统成因依次推进，数据与案例有出处支撑，增量具体。",
+      "script_spans": [
+        "说市域内互认超两百项，医联体内全部互认，时间表排到二零三零",
+        "检查费占看病花销快到三成，重复就是烧钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直给冲突与利益点，中段连环设问并兑现新信息，结尾反问由正文自然长出，三段均独立成立。",
+      "script_spans": [
+        "上家医院查的血项，下家不认，你又得掏钱重查",
+        "那为啥还有不该的重查？医院像隔了堵墙",
+        "可要是医生摇头，这钱咱还得认吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有对话感，读来顺；但'判断为标准''执行层面对接'等书面压缩让朗读要临时改词。",
+      "script_spans": [
+        "怕漏了病灶被投诉，不如重做买个安心",
+        "文件写接诊医生判断为标准",
+        "可执行层面对接还没稳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，隔墙、蜗牛爬等形象准确，结尾机器对话之喻离开上下文仍可复述。",
+      "script_spans": [
+        "医院像隔了堵墙，质控没对齐，甲不敢信乙",
+        "当医院敢信隔壁机器能对话，钱才不白流",
+        "纸上便利进不了诊室"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问领起，“拧巴处”分层递进，转折与因果桥齐备，结尾反问自然回扣开头的花钱之问。",
+      "script_spans": [
+        "第一个拧巴处：互认不是全认。",
+        "那为啥还有不该的重查？",
+        "可要是医生摇头，这钱咱还得认吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "区分了合理重查与系统问题，边界意识好；但\"每个院长护自家科室\"属绝对化标签，重查填空档的牟利暗示虽有\"或许\"仍易误导。",
+      "script_spans": [
+        "文件把这些列为例外，底色是保安全，不是懒政",
+        "怕漏了病灶被投诉，不如重做买个安心",
+        "每个院长护自家科室，标准各定各的",
+        "大医院流水大，重查或许填空档，动机说不清"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-a4119d5859bb45c7be69ffdd49562998",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-408ff162f84d485fac06dab042609b60",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

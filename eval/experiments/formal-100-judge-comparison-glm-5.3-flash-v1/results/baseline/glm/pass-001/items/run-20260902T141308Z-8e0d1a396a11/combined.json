@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-ad5fcaccd8cd45719976d2131801731a",
+  "run_id": "run-20260902T141308Z-8e0d1a396a11",
+  "trace_sha256": "297cbaf0f1bde4c239496f8610cbeb359d36a7a892c0ee8a29ef03ae55a2cd34",
+  "created_at": "2026-09-03T13:45:23.302891Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给出兼顾方案，提前还与留现金两侧均落实，普通家庭痛点贯穿全篇，切角具体。",
+      "script_spans": [
+        "先留够急用钱，多余的再去提前还贷。",
+        "咱普通家庭，经不起突然断流。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 302，目标为 280，偏差率为 7.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从利差、部分还款省息机制到流动性代价层层推进，LPR数据与长期低利率判断均有依据，观众能带走决策方法。",
+      "script_spans": [
+        "提前还掉部分本金，往后利息按剩的算，真能少付。",
+        "这轮低利率被不少观点看成长期常态，更显现金流金贵。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头对比直接抛问题，中段以反问、转折、代价层层推进，收尾敲门落点自然有回味。",
+      "script_spans": [
+        "息差倒挂：存款利息赶不上房贷，提前还还是留钱？",
+        "你可能会想，那不等着降息直接全还了？别急。",
+        "所以匆忙全还光未必聪明，手里有粮才不怕意外敲门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、算账清楚，但“被不少观点看成长期常态”是书面被动腔，LPR数据句也需重断句，止步两档。",
+      "script_spans": [
+        "留着亏利息，还了省利息，这账好算",
+        "现在五年期以上房贷利率参考LPR大概百分之三点五",
+        "这轮低利率被不少观点看成长期常态，更显现金流金贵"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解：还账对句顺口好记，有粮不怕敲门可独立复述，不炫技也不干瘪。",
+      "script_spans": [
+        "留着亏利息，还了省利息，这账好算。",
+        "省了息却丢了周转空间，这是实情。",
+        "手里有粮才不怕意外敲门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先答后证，让步转折自然，还了省息与急用难取的因果各有桥梁，结尾回扣开头结论，概念全程一致。",
+      "script_spans": [
+        "可钱一旦还进去，急用再取就难了，手里灵活度立马变弱。",
+        "所以匆忙全还光未必聪明，手里有粮才不怕意外敲门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "利率带“大概”“参考”限定，长期判断归于“不少观点”，并提醒留急用钱、查合同违约金，无夸大承诺。",
+      "script_spans": [
+        "先留够急用钱，多余的再去提前还贷",
+        "还之前翻下合同，确认预约和违约金约定",
+        "这轮低利率被不少观点看成长期常态"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3a6a26cc1a36488a9845e12191a5d294",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e8069bd3ecb24fbf8d42cd49c0d78a74",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

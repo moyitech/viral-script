@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-b4602c5f88da45d69bc47e3edb9d718c",
+  "run_id": "run-20260902T143354Z-9a98c6ef6db3",
+  "trace_sha256": "176a834ea1339c1460ee466d76fa5b9143079177f4abe30cf9e544e1ff9024c8",
+  "created_at": "2026-09-03T14:25:17.235023Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答'不一定'，真假增长两侧都论证，判断标准与例子贴普通人，无偏题。",
+      "script_spans": [
+        "商场延长营业时间搞出消费热闹，能带来真实增长吗？不一定。",
+        "热闹能不能变真金白银，得看多卖的货能不能盖过多花的电费和人手，还得想想是不是把原来傍晚来的人挪到了深夜。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "转化率、坪效、世界杯案例、成本账与空铺率层层推进，信息具体有依据，无同义注水。",
+      "script_spans": [
+        "转化率说白了就是进门的人里多少真买单，坪效像每平米地盘挣多少流水。",
+        "我见过社区商场硬学网红延时，结果店员刷手机到天亮，水电单比营业额还好看。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇直给“稳赚利润被吃掉”的反差，中段用指标、案例、成本层层兑现钩子，结尾咖啡之问由正文自然长出，留有余味。",
+      "script_spans": [
+        "拖晚关门多来的客人，可能吃掉你原本稳赚的利润",
+        "你想想，原本八点就能成交的裙子，硬拖到十点才卖，商场多付两小时空调，顾客也没多买一件",
+        "下次见商场挂出不打烊的牌子，你琢磨下，它多赚的那顿夜宵钱，够不够给店员买杯热咖啡？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，设问与对比给足停顿重音；中段口语贯穿，转录音稿基本无需改写。",
+      "script_spans": [
+        "转化率说白了就是进门的人里多少真买单，坪效像每平米地盘挣多少流水",
+        "你想想，原本八点就能成交的裙子，硬拖到十点才卖，商场多付两小时空调，顾客也没多买一件"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "给电表打工、空铺率比霓虹灯等表达具体贴切，比喻均在服务理解与情绪，无堆砌炫技，可复述记忆点不止一个。",
+      "script_spans": [
+        "硬撑凌晨开门只是给电表打工",
+        "空铺率比霓虹灯更能说明问题",
+        "结果店员刷手机到天亮，水电单比营业额还好看"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问领段、转折清楚，成本段补全反面，结尾咖啡之问回扣开头与题设，因果桥扎实。",
+      "script_spans": [
+        "为啥热闹常常是假象？",
+        "可成本那头不能装看不见。",
+        "它多赚的那顿夜宵钱，够不够给店员买杯热咖啡？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全篇有条件判断，明确成本与业态边界，无绝对化承诺或误导，导向安全适合平台。",
+      "script_spans": [
+        "热闹能不能变真金白银，得看多卖的货能不能盖过多花的电费和人手",
+        "延时是拉增长的手段，不是目的"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3796c94843744b48ad5a8ae9270c58ab",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

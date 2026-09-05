@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-468abefcca4c48bba930d8a5b333b457",
+  "run_id": "run-20260902T144617Z-cebf4988bbb5",
+  "trace_sha256": "c25ad17e09100a0d318aa9b95117ea98dc4039a960cf99b563b1089fd410ef6e",
+  "created_at": "2026-09-03T11:47:38.664769Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直面“尽孝还是甩锅”，中段同时写照护补位与依赖风险，结尾把判断落到家庭是否到场，针对性很强。",
+      "script_spans": [
+        "雇人陪爸妈看病，是尽孝还是甩锅？这钱该花，但别全靠它。",
+        "陪诊一边补上照护缺口，一边也让人担心养出依赖。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 430，目标为 450，偏差率为 4.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "服务内容、老人困境、依赖风险、上海监管和费用依次展开，既有可带走的操作信息，也有明确的家庭边界。",
+      "script_spans": [
+        "他帮取号、代排队，替老人说清哪里不舒服，药取好递到手。",
+        "现在监管在划线，上海要求机构备案、陪诊师持证上岗。",
+        "花钱补的是流程缺口，不是亲情缺口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“尽孝还是甩锅”立刻抛出冲突，中段补足场景、服务与依赖风险，结尾追问自然。",
+      "script_spans": [
+        "雇人陪爸妈看病，是尽孝还是甩锅？",
+        "电话里你说别怕，转头却点单。",
+        "下次复诊，你出现还是点个单？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和反问有节奏，整体能读通；但“关键家庭不缺席”等多处压缩过猛，像提纲，需临时补词或重断句。",
+      "script_spans": [
+        "电话里你说别怕，转头却点单。",
+        "走廊站会儿，比转账强。",
+        "关键家庭不缺席。",
+        "这时点个陪诊师，他帮取号、代排队，替老人说清哪里不舒服，药取好递到手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“花钱补的是流程缺口，不是亲情缺口”对比清楚，兼顾观点与情绪，整体修辞克制且便于复述。",
+      "script_spans": [
+        "花钱补的是流程缺口，不是亲情缺口。",
+        "买得到跑腿，买不来亲情。",
+        "走廊站会儿，比转账强。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先给出“该花但别全靠”的总判断，再按需求、收益、风险、监管和行动建议递进，结尾自然回扣题设。",
+      "script_spans": [
+        "这钱该花，但别全靠它。",
+        "可若你次次不露面，只点单。老人习惯外人照料，依赖可能悄悄生根。",
+        "花钱补的是流程缺口，不是亲情缺口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见明显违规，能兼顾服务价值与家庭责任；但将上海监管要求泛化，并以“风险低”概括陪诊安全，易造成误解。",
+      "script_spans": [
+        "这钱该花，但别全靠它。",
+        "上海要求机构备案、陪诊师持证上岗。",
+        "陪诊通常只陪走流程，不碰打针输液，风险低。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-421a6a1c44264c62acbe29c8553246ef",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-50b549e559d945108ac6d8f49756b1e2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

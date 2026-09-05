@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-c6243b5db3254282b834fdf23dbecf3a",
+  "run_id": "run-20260902T142510Z-1e5b852ccee3",
+  "trace_sha256": "e104be14343aadf3525fe5117483ef00b0afe7a08cc2ea75954418577a990a34",
+  "created_at": "2026-09-03T14:24:59.659536Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直陈收益缩水与两难，正文给出分路答案，兼顾流动性与收益，紧扣家庭闲钱人群。",
+      "script_spans": [
+        "钱挪走怕急用抓瞎，留着又亏利息",
+        "日常要用的留现金类，半年不用的试储蓄国债"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移，环境、替代、风险、行动层层推进，利率数字具体，观众能带走可操作的分钱方法。",
+      "script_spans": [
+        "短端利率在百分之一点三附近，现金产品底层赚钱少",
+        "买前拿纸笔圈出半年不动的钱，算好用钱日程"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字即抛收益缩水与挪留两难，中段以数据、设问和风险提示持续兑现，结尾由利差自然收出余味。",
+      "script_spans": [
+        "你的现金理财收益正变少，钱挪走怕急用抓瞎，留着又亏利息。",
+        "为啥这么分？先看大环境：眼下银行体系流动性宽裕",
+        "但要注意，国债提前兑取会扣利息，只适合真闲钱",
+        "别小看这点利差，积少成多也是钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句上口，但“锁点时间换稍高利息”“受规则约束”两处需换词重断，取两子分较低值为2分。",
+      "script_spans": [
+        "钱挪走怕急用抓瞎，留着又亏利息。",
+        "虽不能每天赎回，但锁点时间换稍高利息。",
+        "这类产品受规则约束，高收益资产难配了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“分两路走”“纸笔圈钱”自然贴切、离开正文仍可复述，修辞克制且服务理解，无堆砌也无干瘪。",
+      "script_spans": [
+        "家庭闲钱别全堆活钱，分两路走：日常要用的留现金类，半年不用的试储蓄国债",
+        "买前拿纸笔圈出半年不动的钱",
+        "票息写进合同，国家信用撑着比浮动收益更稳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "设问推进与风险提示清楚，但“这类产品”指代含混、位置突兀，打断替代方案论证，结尾回扣偏弱。",
+      "script_spans": [
+        "为啥这么分？",
+        "但要注意，国债提前兑取会扣利息，只适合真闲钱",
+        "这类产品受规则约束，高收益资产难配了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "无收益承诺与夸大，主动提示提前兑取扣息、只适合真闲钱，建议措辞留有余地，导向安全。",
+      "script_spans": [
+        "但要注意，国债提前兑取会扣利息，只适合真闲钱",
+        "三年期储蓄国债利率约一点六三，票息写进合同",
+        "半年不用的试储蓄国债"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-fde3bd194fc0479bb2c8df8aaa134898",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

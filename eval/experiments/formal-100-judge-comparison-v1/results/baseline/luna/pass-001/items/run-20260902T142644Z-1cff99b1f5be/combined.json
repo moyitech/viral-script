@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-ac03d49acbfc425d887aac70ad4a51f4",
+  "run_id": "run-20260902T142644Z-1cff99b1f5be",
+  "trace_sha256": "a4dfa1422cd455a80fb5c543aa4ceb4361c5eb17a88bae56971081fe25f793c2",
+  "created_at": "2026-09-03T11:44:26.099629Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应收益缩水与流动性冲突，并给出现金类和国债分层方案，普通家庭的决策对象也对准了。",
+      "script_spans": [
+        "家庭闲钱该分两处放：急用的留现金类，剩下的配国债。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 429，目标为 450，偏差率为 4.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "原因、利率数据、期限取舍、额度和算账依次推进，既有事实支撑，也给出可执行的分配方法。",
+      "script_spans": [
+        "监管规则早定了，现金管理类只能投货币市场工具，投资范围卡死，久期也受限，不能拉长久期搏收益。",
+        "国债锁期限，提前兑取会损利息，流动不如活期理财，这是明显的取舍。",
+        "先留半年的开支放活期理财保灵活。余钱再买国债，单账号每期上限一百万，一般够普通家用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用收益腰斩与流动性冲突抓人，中段持续给出原因和取舍，结尾提问也由分配建议自然引出。",
+      "script_spans": [
+        "活钱理财收益腰斩，取出来买国债又怕用钱时卡壳。",
+        "不过收益淡了产品更稳，急用钱不慌。",
+        "你家闲钱，打算怎么分两处放？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体逻辑清楚、句子不算长，但多处金融术语和数字表达需要重断句，听感不够顺滑。",
+      "script_spans": [
+        "它虽赚得少，胜在随时能取回，靠它救急最顺手。",
+        "先留半年的开支放活期理财保灵活。",
+        "货币环境又宽松，银行间隔夜利率前半年均值百分之一点三一。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "整体表达克制，反差句准确好记，既概括了收益与安全的取舍，也留下了可复述的分配提醒。",
+      "script_spans": [
+        "不过收益淡了产品更稳，急用钱不慌。",
+        "钱怎么分份，可能比盯着那点收益更值得琢磨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构从冲突引入，经过原因解释和产品比较，落到分层建议与金额示例，结尾回扣问题，推进完整。",
+      "script_spans": [
+        "咱们先看为啥收益缩水。",
+        "不过收益淡了产品更稳，急用钱不慌。那另一头国债利息高些。",
+        "钱怎么分份，可能比盯着那点收益更值得琢磨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调流动性与期限取舍，方向克制；但“随时能取回”表述过满，未提示赎回限制，金融建议仍有误导风险。",
+      "script_spans": [
+        "这是明显的取舍",
+        "胜在随时能取回"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5a00024167694f319229caa4e4e7d11a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b9eaaf46138842f38e46a4c5724c793a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

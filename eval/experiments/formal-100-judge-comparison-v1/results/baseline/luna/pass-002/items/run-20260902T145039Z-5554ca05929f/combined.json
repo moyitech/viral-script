@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-97c2868179fe411eae63abc72f426c65",
+  "run_id": "run-20260902T145039Z-5554ca05929f",
+  "trace_sha256": "4f110bd181ec9ca008c3606e5512c44a4847dcd9f154b49b246b9555ff31351f",
+  "created_at": "2026-09-03T12:16:15.272427Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答多数能否逼少数让步，同时覆盖高层出行需求、低层损失与普通人协商路径，切角明确。",
+      "script_spans": [
+        "老旧小区加电梯，便利多数就能逼少数让步吗？真没这么简单。",
+        "高层老人爬楼喘，买菜都费劲；低层没这需求，反怕挡光、通风差、噪音吵，房子还可能贬值。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "案例、数据、判决和行动建议彼此推进，既解释利益冲突，也给出举证、补偿与协商的具体做法。",
+      "script_spans": [
+        "武汉一单元十四户，十二户同意装，就因一楼两户反对卡壳，律师说不能简单少数服从多数。",
+        "法官去现场测了噪音和采光，才定这数。这钱不是施舍，是受损该得的补偿。",
+        "低层合理异议要拿依据，拍照测噪音，不是死拦就有理。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以一楼反对的现场冲突起钩，中段不断补充利益、案例和解法，结尾提问也由论证自然生长。",
+      "script_spans": [
+        "“凭啥我为你们方便牺牲采光？”一楼大爷杵拐杖挡住电梯井",
+        "法院按公平原则断过案。",
+        "你家若在一楼，肯要不补偿的电梯吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句与对话式承接占主导，重音、停顿清楚，信息密度虽高，朗读仍基本顺滑。",
+      "script_spans": [
+        "普通人碰上这事，先别急着量尺寸。",
+        "你只发通知不谈心，施工队来了也得撤。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“方便就成了欺负”把公平冲突压缩成可复述判断，现场动作和“白吃亏”增强画面感，修辞没有盖过信息。",
+      "script_spans": [
+        "刚画的线被踩花。",
+        "法律不阻止装电梯，但也不让谁白吃亏。",
+        "要是只凭票数硬推，方便就成了欺负。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由冲突场景提出问题，继而用案例说明公平边界，再落到协商、举证和补偿建议，结尾自然回扣硬推与受损。",
+      "script_spans": [
+        "多数业主签字只是审批第一步，不是低层必须吞下损失的理由。",
+        "法律不阻止装电梯，但也不让谁白吃亏。",
+        "要是只凭票数硬推，方便就成了欺负。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调协商、补偿和举证，未煽动对立；但“受损该得”与“施工队来了也得撤”把个案和可能结果说成普遍规则，需加限定。",
+      "script_spans": [
+        "低层合理异议要拿依据，拍照测噪音，不是死拦就有理。",
+        "这钱不是施舍，是受损该得的补偿。",
+        "你只发通知不谈心，施工队来了也得撤。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3519a244214e4c5c8778d377153a77b0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

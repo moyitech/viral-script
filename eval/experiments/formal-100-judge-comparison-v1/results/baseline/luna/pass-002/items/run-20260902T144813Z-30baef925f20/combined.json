@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-35b28b168c264e9eb056d67d0f25d3e0",
+  "run_id": "run-20260902T144813Z-30baef925f20",
+  "trace_sha256": "eabec21b575b4c5e8e133ac57f62fe38af8b5588d7f312d2225bc9b3cd515ed1",
+  "created_at": "2026-09-03T12:27:17.958432Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应宠物友好空间如何兼顾怕动物者，兼顾养宠人与怕动物者，并给出错峰和分流建议。",
+      "script_spans": [
+        "宠物友好商场也该照顾怕动物的人，但不能把牵绳合规狗全关门外，两边都要顾。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中且有法规、投诉变化和分流建议，但法规未交代适用范围，方案与结论的依据仍显不足。",
+      "script_spans": [
+        "商场接到投诉，常把规则往回收。",
+        "留个错峰时段或独立电梯就成。",
+        "白纸黑字只硬放行导盲犬这类工作犬进公共场所。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛出双方都不满意的冲突，中段补法规与投诉，结尾用“留一扇门”自然收束。",
+      "script_spans": [
+        "带狗进商场被拦，怕动物的人也没全安心。",
+        "当商场学会留一扇怕动物者的门，而不是只贴禁入告示"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感，短句也较多，但“牵绳合规狗”“白纸黑字只硬放行”等表达卡顿，影响连续朗读。",
+      "script_spans": [
+        "你想啊，怕动物的人真不是矫情。",
+        "牵绳合规狗",
+        "白纸黑字只硬放行导盲犬这类工作犬进公共场所"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“留一扇怕动物者的门”把包容方案说具体，“宠物友好才真叫友好”形成自然回扣，记忆点清楚。",
+      "script_spans": [
+        "留一扇怕动物者的门",
+        "宠物友好才真叫友好"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "起承转合基本完整，冲突、法规、对策顺次展开；但法规转折较快，分流方案的可行性与边界缺少解释。",
+      "script_spans": [
+        "那怎么两头顾？留个错峰时段或独立电梯就成。",
+        "再看法规，白纸黑字只硬放行导盲犬这类工作犬进公共场所。",
+        "留个错峰时段或独立电梯就成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能兼顾怕动物者与养宠人，不煽动对立；但“只硬放行”泛化不同地区法规，“独立电梯就成”也缺少适用边界。",
+      "script_spans": [
+        "两边都要顾",
+        "怕动物的人真不是矫情",
+        "白纸黑字只硬放行导盲犬这类工作犬进公共场所",
+        "留个错峰时段或独立电梯就成"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5058aab137cd4e4ba49c8d8f9e24493e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

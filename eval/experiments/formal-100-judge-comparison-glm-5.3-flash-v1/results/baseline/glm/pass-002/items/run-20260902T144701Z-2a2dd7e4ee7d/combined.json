@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-f001928ed92a47069444973a68ba799e",
+  "run_id": "run-20260902T144701Z-2a2dd7e4ee7d",
+  "trace_sha256": "7640e6efb60e4a2cdea76602c72bed3dba1134e964cdc92c7c5c260f767a552c",
+  "created_at": "2026-09-03T14:27:09.597475Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直问消费意愿，正文答'会跟涨但看钱落哪'，两面兼顾，落点在养娃家庭痛点。",
+      "script_spans": [
+        "财政更侧民生，消费意愿会跟涨，但只看钱落哪，不是所有民生都灵。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策背景、直减开销、研究证据层层推进，还分出医疗短板，增量具体且与引用结论相符。",
+      "script_spans": [
+        "原本愁学费，现在敢买肉蛋奶",
+        "教育社保类支出帮家庭卸了贫困焦虑，大人敢添衣小孩敢报班；医疗卫生那块效果还偏弱，钱没花到痛处。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即设具体悬念，中段连续兑现并给出医疗效果偏弱的反转，结尾追问由正文自然生长，三段均立住。",
+      "script_spans": [
+        "工资没涨，你咋敢去母婴店了？",
+        "医疗卫生那块效果还偏弱，钱没花到痛处",
+        "下次听见民生投入，先想谁替你扛风险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏与对话感扎实，但“更侧民生”“旺消费”等压缩说法至少两处需临时换词才顺口。",
+      "script_spans": [
+        "政策方向对，落地慢半拍，得实打实兜住失业和养娃，钱进日常缝里才行",
+        "财政更侧民生，消费意愿会跟涨",
+        "别以为基建转民生就立刻旺消费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比与白描贴切不堆砌，进你家账本、钱没花到痛处离开正文仍可复述，分寸克制。",
+      "script_spans": [
+        "不是搞大项目，是进你家账本",
+        "原本愁学费，现在敢买肉蛋奶",
+        "钱没花到痛处"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "两点机制到落地条件递进清楚，'卸了贫困焦虑'与结尾'扛风险'首尾回扣，因果桥完整。",
+      "script_spans": [
+        "政策方向对，落地慢半拍，得实打实兜住失业和养娃，钱进日常缝里才行。",
+        "下次听见民生投入，先想谁替你扛风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论多处限定，如不是所有民生都灵、落地慢半拍，研究转述克制，无夸大承诺或煽动，价值导向安全。",
+      "script_spans": [
+        "不是所有民生都灵",
+        "别以为基建转民生就立刻旺消费。政策方向对，落地慢半拍",
+        "有研究跟过，教育社保类支出帮家庭卸了贫困焦虑"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5006433c4a7747a19e53c0b744189e0e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

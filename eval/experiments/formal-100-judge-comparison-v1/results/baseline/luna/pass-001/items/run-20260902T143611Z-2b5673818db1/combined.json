@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-5ebbd5eeb3c44b899d6250b8cd4016f3",
+  "run_id": "run-20260902T143611Z-2b5673818db1",
+  "trace_sha256": "38c54408086245047e7dbeaf35264d90f23c03176de5adb655ef7a2d5b3f9d3d",
+  "created_at": "2026-09-03T11:44:13.776402Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答污染是否发生以及如何避免，覆盖退役潮、处理端风险和普通用户处置路径，结尾回扣充分。",
+      "script_spans": [
+        "污不污染看回收。",
+        "以后你换屋顶光伏，别当破烂贱卖。",
+        "绿色能源不是生来净，是前后都有人管。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 491，目标为 450，偏差率为 9.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“污染取决于回收处理”持续推进，退役规模、规范流程、违规风险、个人行动和政策目标形成有效信息链。",
+      "script_spans": [
+        "旧板含些有害金属，乱扔会渗进土里。",
+        "正规厂得先卸铝框再碎玻璃，废水废气集中管住，不能乱排。",
+        "国家也画了线，到27年底综合利用25万吨，想把板子引回正路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“毒尾巴”制造反差，中段连续推进处理风险与行动建议，结尾金句自然收束。",
+      "script_spans": [
+        "你踩梯子拆旧板，绿电竟留毒尾巴？",
+        "那跟咱们有啥关系？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句密集、节奏明快，也有对话式承接；但多处词语压缩或搭配生硬，朗读需重断句。",
+      "script_spans": [
+        "旧板不是普通垃圾，退役潮真来了。",
+        "那跟咱们有啥关系？",
+        "你我家屋顶那块，终有一天要下岗。",
+        "废水废气集中管住，不能乱排。",
+        "绿电干不干净，得看末尾收尾这道工序。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“处理端才是漏污的口”和“绿色能源不是生来净”形象准确，既帮助理解又留下可复述记忆点。",
+      "script_spans": [
+        "处理端才是漏污的口",
+        "绿色能源不是生来净，是前后都有人管。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构由退役背景转到污染机制，再到规范处理、公众行动和价值回扣，因果链完整，结论能回应题设。",
+      "script_spans": [
+        "污不污染看回收。",
+        "板子本身不算脏，处理端才是漏污的口。",
+        "绿色能源不是生来净，是前后都有人管。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明确违规，且给出正规回收导向；但部分表述过度简化，行业现象缺少限定，容易造成误导。",
+      "script_spans": [
+        "国家也画了线，到27年底综合利用25万吨",
+        "板子本身不算脏，处理端才是漏污的口",
+        "不少厂只挑玻璃铝铜卖，电池片直接烧掉，细料飞进空气"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9718fcde955d4df18a2118b0d896206a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-63458a7c060c4c11beba10916eea95b1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

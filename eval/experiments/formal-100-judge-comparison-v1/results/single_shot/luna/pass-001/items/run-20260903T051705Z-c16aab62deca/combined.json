@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-b80b69d080c6446490b954b236223fdc",
+  "run_id": "run-20260903T051705Z-c16aab62deca",
+  "trace_sha256": "f52031af9fedfe11da3a6083e9d6ac8d3ea2307cf4fea706bcf1498ae413e5c5",
+  "created_at": "2026-09-03T11:58:25.173891Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面呈现三兄妹付出差异，并给出能力、距离与资源协商的公平方案，完整回应题设。",
+      "script_spans": [
+        "老父亲中风失能，三兄妹当初拍板轮流照护，可十个月下来，住隔壁的二姐辞职全天陪护",
+        "公平是让每分力被看见，而非每人做同样多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 440，目标为 450，偏差率为 2.22%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "案例、法律边界、结构原因和家庭及社会解法层层推进，信息具体，能留下可执行的分工与补偿方法。",
+      "script_spans": [
+        "学术调查也发现，赡养里女儿和就近居住者常承担更重照料",
+        "家里先把金钱、看护、跑腿拆项算清，明确补偿陪护者"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出失能、轮流照护与付出悬殊，后文有判断和解法，结尾用公平定义自然收束。",
+      "script_spans": [
+        "老父亲中风失能，三兄妹当初拍板轮流照护",
+        "公平是让每分力被看见，而非每人做同样多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "案例有画面，句意也清楚；但并列信息和抽象词扎堆，几处读感偏硬，难称顺口。",
+      "script_spans": [
+        "家庭群弹出一句“公平呢”，瞬间冷场。",
+        "学术调查也发现，赡养里女儿和就近居住者常承担更重照料，这源于结构制约而非敷衍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“公平是让每分力被看见”准确凝练，既能复述又服务主题；“家庭本就不是流水线”也有辨识度。",
+      "script_spans": [
+        "家庭本就不是流水线。",
+        "公平是让每分力被看见，而非每人做同样多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由个案冲突切入，先区分法律义务与实际分摊，再转入家庭和社会解法，结尾回扣公平标准，递进完整。",
+      "script_spans": [
+        "从法律看，老年人权益保障法明确子女有赡养义务，但没细说怎么分摊体力与时间。",
+        "破局靠内外两手。",
+        "公平是让每分力被看见，而非每人做同样多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "倡导协商分工、补偿照护者，方向稳妥；但部分归因和政策表述过于概括，存在误导边界。",
+      "script_spans": [
+        "公平是让每分力被看见，而非每人做同样多。",
+        "这源于结构制约而非敷衍",
+        "社会面长期护理保险已结束试点迈向全国"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8a36cdfb29984c21859c73ccf964c22d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-314e1b2fff3d4865ad9d4be39be1a013",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

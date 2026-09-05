@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-b5fc826a7e9d424dacd1c1f9b94060e0",
+  "run_id": "run-20260902T141416Z-cafa14b141a3",
+  "trace_sha256": "e28e4f5145bf1195b2f04896fbf9cd8ac24d135375eab2d6716c0c6be55ecbbf",
+  "created_at": "2026-09-03T11:43:43.280399Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答费率下降是否降低风险，并覆盖市场波动、跟踪误差及普通投资者的购买判断。",
+      "script_spans": [
+        "指数基金费率又降了，但低成本不等于低风险。",
+        "买基金前多问一句误差有多大，才不会被低费率迷了眼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 266，目标为 280，偏差率为 5.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕成本与风险的区分推进，补充两类风险、跟踪误差成因和购买前的实用检查点，信息增量充分。",
+      "script_spans": [
+        "风险其实来自两个地方。",
+        "跟踪误差就是基金和指数步子没踩齐。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“低成本不等于低风险”制造反差，中段逐层拆解风险，结尾回到决策提醒，推进完整。",
+      "script_spans": [
+        "指数基金费率又降了，但低成本不等于低风险。",
+        "风险其实来自两个地方。",
+        "省下的手续费填不平大跌的坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主，停顿自然，重音明确，连续解释也没有明显卡嘴处。",
+      "script_spans": [
+        "风险其实来自两个地方。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“步子没踩齐”和“填不平大跌的坑”把抽象风险说具体，表达克制，有两处可复述的记忆点。",
+      "script_spans": [
+        "跟踪误差就是基金和指数步子没踩齐。",
+        "省下的手续费填不平大跌的坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先给结论，再解释指数波动和跟踪误差，最后回到购买建议，转折与层次自然，结论没有明显扩大。",
+      "script_spans": [
+        "一是标的指数本身会涨会跌，这是你买基金就要扛的波动。",
+        "省下的手续费填不平大跌的坑，买基金前多问一句误差有多大"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提示了费率与市场风险的区别，但“风险其实来自两个地方”过于绝对，容易让观众漏掉其他风险。",
+      "script_spans": [
+        "低成本不等于低风险",
+        "风险其实来自两个地方"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-81432480d5b444e3960cec2888fb3ee2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-5805fb451f794b8b8df087a0852b1eb9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

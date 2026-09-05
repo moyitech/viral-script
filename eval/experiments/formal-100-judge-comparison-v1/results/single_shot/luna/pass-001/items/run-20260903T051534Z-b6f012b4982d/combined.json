@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-61a63e6f39ad4798bfb970ad400bd84c",
+  "run_id": "run-20260903T051534Z-b6f012b4982d",
+  "trace_sha256": "5c3517f2645a9bfb0cff6a717682109357710f6b5a76dcb6dc636fc5277b384a",
+  "created_at": "2026-09-03T11:57:51.019746Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即回答“会不会争端”，并同时写出轨道扩张、规则博弈及普通用户影响，切题完整。",
+      "script_spans": [
+        "卫星互联网狂飙，太空轨道正滑向新争端，不是星战，而是占位与规则的博弈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 457，目标为 450，偏差率为 1.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕轨道拥挤、协调机制、碰撞和用户影响层层补充，信息单元有效，结论有依据。",
+      "script_spans": [
+        "先申报先得保护期，逼着大家跑马圈地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“变挤”对“慢时代”制造反差，中段持续推进规则与风险，结尾留下自然的博弈余味。",
+      "script_spans": [
+        "天上突然变挤了，但管天上的规矩还停留在慢时代。",
+        "这已经不是单纯技术赛跑了。",
+        "而便利的代价是看不见的博弈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话式推进，但多处抽象书面表达和不完整搭配，朗读时需要重断句或临时换词。",
+      "script_spans": [
+        "那为什么容易起冲突？关键在国际协调机制。",
+        "电联的无线电规约本是上世纪协调慢节奏太空的",
+        "另外太空拥挤也推高碰撞风险，日常服务背后藏着系统脆弱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“天上变挤了”“新边疆”等比喻把抽象规则竞争变得可视可记，修辞克制且服务主题。",
+      "script_spans": [
+        "天上突然变挤了",
+        "轨道从来不是无主荒地，它正变成需要谈判的新边疆。",
+        "而便利的代价是看不见的博弈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构从扩张、规则推进到影响，但从规则变化跳到连接和用户选择，因果桥仍不够。",
+      "script_spans": [
+        "那为什么容易起冲突？关键在国际协调机制。",
+        "底层规则波动可能突然影响连接稳定性。当某片天空被特定网络优先占据，选择未必在你手里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且多处使用可能性表述；但“先到先得”“重新划界”等说法简化规则机制，容易造成太空被实际占地的误解。",
+      "script_spans": [
+        "未来偏远地区也能高速上网，但底层规则波动可能突然影响连接稳定性",
+        "先到先得的游戏里，我们刷着卫星视频时，也得知道头顶正被悄悄重新划界"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-bf5626c4d2a94ab392e47e082954cade",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-aa2335d1ae7a4b5e8a640ff47a9c2107",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

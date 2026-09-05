@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-94ca9dd10f9d40a68fffb428b66a3f31",
+  "run_id": "run-20260902T141759Z-a8a7cad3839c",
+  "trace_sha256": "12dc39281773205a0e6258413f7754ad3c122182e06804763518c2497a31ba42",
+  "created_at": "2026-09-03T12:21:21.896793Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直点降费不防亏，随后解释指数风险并给出购买前核查方法，题设两侧和目标人群痛点都覆盖。",
+      "script_spans": [
+        "降费后买指数基金更便宜，但低成本不防亏钱。",
+        "先弄清跟踪什么指数，波动大不大。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息从费率变化推进到市场风险、跟踪误差成因和筛选方法，避免把降费等同安全，认知增量具体。",
+      "script_spans": [
+        "每年整体让利数百亿，是真金白银回口袋。",
+        "现金留存、大额申赎会拉开距离；成分股调整也让走势偏一点。",
+        "先懂工具再下手，别被省钱迷眼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“便宜却不防亏”制造反差，中段持续拆解风险，结尾提问也由内容自然生长。",
+      "script_spans": [
+        "降费后买指数基金更便宜，但低成本不防亏钱。",
+        "下次看到降费宣传，你会先翻指数吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感、短句多，但中段出现多处句式残缺或停顿不顺，朗读时仍需人工切分。",
+      "script_spans": [
+        "咱们得掰开看，基金到底怎么给你挣钱？",
+        "别只盯费率低就冲。先弄清跟踪什么指数，波动大不大。",
+        "成本下降改变不了随指数波动。",
+        "持有超一年销售服务费免了，更实惠。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不是避风港基金”把低费率与不保本的区别说得形象，全文修辞克制，有可复述的判断。",
+      "script_spans": [
+        "你买的是指数基金，不是避风港基金。",
+        "便宜和安稳是两码事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有降费、解释风险、购买建议和结论回扣的完整路径，但费用低留更多份额概念含混，部分因果承接仍不够严密。",
+      "script_spans": [
+        "便宜和安稳是两码事。",
+        "那你买时怎么看？别只盯费率低就冲。",
+        "费用低留更多份额，但份额不代表保本。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提示了不保本、波动和跟踪误差风险；但“持有超一年销售服务费免了”等表述过于绝对，易把适用条件说成普遍规则。",
+      "script_spans": [
+        "它只是紧跟指数，不保本金",
+        "合同写明年化误差不超某范围，那是合规目标，不代表你不亏",
+        "持有超一年销售服务费免了",
+        "指数基金本是被动工具，不赌方向只跟指数"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-755833a2a4854d8eb4f4edd68cb85415",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

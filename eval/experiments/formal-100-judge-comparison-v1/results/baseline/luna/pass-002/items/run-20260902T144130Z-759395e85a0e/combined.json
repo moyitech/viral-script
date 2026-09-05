@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-bead18aba0af4cba8487153df99970cf",
+  "run_id": "run-20260902T144130Z-759395e85a0e",
+  "trace_sha256": "705e25cfaea1529d5bbd86e0d12e707e9ce2c5c2b9cbf62451c6319f38ea2ffb",
+  "created_at": "2026-09-03T12:21:53.836577Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解一键开药的便捷与误诊风险，并区分复诊续方和新发不适，直达普通用户决策。",
+      "script_spans": [
+        "方便是少跑医院，风险是没检查就开方。",
+        "续方留给老毛病，新发不适老老实实去线下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息从检查缺失、首诊漏诊延伸到先药后方监管，再落到适用边界，论证和建议均有增量。",
+      "script_spans": [
+        "平台图快跳过问诊，直接让系统配药。",
+        "初诊急症尤其危险，该抽血拍片，线上略过就漏诊。",
+        "细则要求患者拿明确诊断的病历"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“送到家”对撞“伤肝又费钱”，中段持续补充误诊场景，结尾提醒自然落地。",
+      "script_spans": [
+        "手指点一下药就送到家，可吃错药可能伤肝又费钱。",
+        "为啥会出错？咱们顺着原因看。",
+        "下次点药前问自己：这是复诊，还是拿药凑合？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句多、钩子清楚，整体能读通；但多处压缩表达和错字让气口与词序不够自然，尚未达到精心设计的口播。",
+      "script_spans": [
+        "咱们正面说，方便是少跑医院，风险是没检查就开方。",
+        "线上线和下标准一样",
+        "监管把线上线下拉平，同标准逼平台收手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“吃错药的代价，比排队更贵”把抽象风险变成日常成本，搭配“身体不陪你赌”，记忆点清楚且不过度。",
+      "script_spans": [
+        "便捷像糖，风险像刺，咽太快会卡喉。",
+        "贪方便是人性，但身体不陪你赌。",
+        "吃错药的代价，比排队更贵。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、原因、风险到建议的顺序清楚，但多处表述拗口，个别监管判断和结论之间的过渡也不够顺。",
+      "script_spans": [
+        "为啥会出错？咱们顺着原因看。",
+        "下次点药前问自己：这是复诊，还是拿药凑合？",
+        "老病历要求写明了，可上传入口藏得深。",
+        "线上线和下标准一样，这是底线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能提示复诊边界并反对先药后方，但“线上全靠你打字”概括过度，可能误导观众理解线上诊疗。",
+      "script_spans": [
+        "必须本人开方，严禁先药后方。",
+        "线上全靠你打字。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b685a92d45a1411688632ccd4dfc4885",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,134 @@
+{
+  "evaluation_id": "combined-46f747274d4846e59bb0a152728c666d",
+  "run_id": "run-20260902T141246Z-f3c65770edfa",
+  "trace_sha256": "45cb4775fa3650d51a3d57dc08f652ccfb1921cd70b15badc270ea52772d6f79",
+  "created_at": "2026-09-03T12:15:17.421767Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应年轻人攒金的投资或追涨之问，以定期、主动两种攒法给出清晰区分，核心人群与冲突两侧齐全。",
+      "script_spans": [
+        "年轻人问，到底算投资还是追涨？先看你的攒法。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕攒金是否追涨，既解释定期积存的均摊机制，也补充主动申购、风险评级和坚持策略，信息增量充足。",
+      "script_spans": [
+        "金价高时少买克数，低时多买克数。长期这么摊，成本就平滑了。",
+        "工行把新开户风险评级提到C3平衡型，得先测过风险承受力才让买。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用追涨接盘制造风险冲突，中段持续给出两种攒法，结尾追问自然回收。",
+      "script_spans": [
+        "金价猛涨你月月攒金，可能正把投资做成追涨接盘。",
+        "你攒它是为十年后心里有底，还是为今天怕错过热闹？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主，提问、对比和提醒交替推进，朗读气口清楚，基本没有卡嘴段落。",
+      "script_spans": [
+        "金价高时少买克数，低时多买克数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "用“追涨接盘”和“金子不会问你理由”压住核心反差，形象但不喧宾夺主，容易复述。",
+      "script_spans": [
+        "金子还是那块金子，你的买入价却差出好几个点。",
+        "金子不会问你理由。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，先拆定期与主动再给建议；但把投资与追涨主要归因于攒法，且将风险门槛解读成拦追涨，因果偏跳。",
+      "script_spans": [
+        "积存金有两条路。一条是定期积存",
+        "银行在高价位这么做，是在拦盲目追涨的人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制且无明确收益承诺，但“设个定期计划就稳妥”把定投说成普遍适用，金融建议边界不足。",
+      "script_spans": [
+        "咱们普通人别只盯着红柱看。",
+        "你若是工薪族，想对抗通胀，设个定期计划就稳妥。",
+        "成本会比定投高一大截。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-418c73fde8504ccb8b6aa86834b07714",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

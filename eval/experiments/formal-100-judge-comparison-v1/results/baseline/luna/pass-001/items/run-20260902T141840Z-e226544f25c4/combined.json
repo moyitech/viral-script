@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-36d086a1ce0d445b925b128f2d64a664",
+  "run_id": "run-20260902T141840Z-e226544f25c4",
+  "trace_sha256": "0a21b6905d3c19642273c583034d09510a9e30aafe2635a7bf00e36d533b60a8",
+  "created_at": "2026-09-03T11:44:29.837018Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应延长夜游中的照明与噪声取舍，并覆盖游客、居民和生态需求，给出可执行的平衡办法。",
+      "script_spans": [
+        "延长开放得让夜游尽兴，也要压住光声干扰。",
+        "演出只在周末定时办，并且摆去离住宅远的园门旁。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 424，目标为 450，偏差率为 5.78%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕“该亮则亮、该暗则暗”，从安全、生态、居民睡眠推进到分区和限时，信息增量明确。",
+      "script_spans": [
+        "主步道留基础灯，让你我走得稳当。水边和林地熄灯，候鸟安稳过冬休息。",
+        "演出只在周末定时办，并且摆去离住宅远的园门旁。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用拒装路灯制造反差，中段持续补充分区治理和夜游影响，结尾自然留下余味。",
+      "script_spans": [
+        "晚上逛公园正舒服，管理方却拒装路灯？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有短句和对话感，但多处搭配生硬，朗读时需临场修词。",
+      "script_spans": [
+        "简单说，灯只打脚下，不朝天上乱射。",
+        "灯太亮惊飞林里栖息鸟"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“灯只打脚下，不朝天上乱射”具体好记，末尾把暗巷转成生态保护，形象且不油腻。",
+      "script_spans": [
+        "灯只打脚下，不朝天上乱射",
+        "黑处正替城市降了温"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，先提出冲突，再落到分区照明与控噪；但“声音控制在低处”等表述含混，结尾由暗巷推到安静也略跳。",
+      "script_spans": [
+        "简单说，灯只打脚下，不朝天上乱射。",
+        "声音控制在低处，不往楼里钻。",
+        "看见虫飞不刺眼，听见风声不嘈杂。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调照明、噪声与生态平衡，但“矮灯就足够用”“暗巷别嫌烦”缺少通行安全边界，容易造成不当引导。",
+      "script_spans": [
+        "这两边得掐准分寸，不能只顾一头。",
+        "视线内有矮灯就足够用。",
+        "下次见暗巷别嫌烦，也许正护你一夜静。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-0aacff1925844b238651c44142a28520",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-234d93aa38df4011addb828112ff6149",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

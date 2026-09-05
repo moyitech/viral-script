@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-777e70c2375e475b824a9d4388142ec2",
+  "run_id": "run-20260902T143634Z-69a599a3ef3f",
+  "trace_sha256": "141c3956405339b15a9f9d1d0c7f25171f0c640bd9f4dd17412ef753b70e9e4f",
+  "created_at": "2026-09-03T13:46:54.476037Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即亮“该给”立场，法理与现实两侧并陈，紧扣双职工家庭的回报难题。",
+      "script_spans": [
+        "我的看法直白：该给，但不能当雇保姆算钟点，也别当免费老好人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 468，目标为 450，偏差率为 4.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法条、调查数据、研究结论层层推进，数据与背景资料相符，结尾情绪有依据。",
+      "script_spans": [
+        "调查显示，超半数老人正帮子女带娃或做家务。六十出头那群，比例冲到七成以上",
+        "祖辈如果高质量参与，孩子社交能力反而更好"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头20字内即有冲突反差，中段法理、数据、场景持续兑现钩子，结尾余味由正文自然生长，不喊互动。",
+      "script_spans": [
+        "老人带娃发工资，听着生分，法律却没义务给。",
+        "你想过没，你下班进门饭已做好，娃作业有人盯，这背后是老人退掉自己的旅游线",
+        "别等身体垮了，才在饭桌上算总账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音停顿清楚，“你想过没”“搭把手”等对话式表达自然，朗读无需临时改词。",
+      "script_spans": [
+        "该给，但不能当雇保姆算钟点，也别当免费老好人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，'雇保姆算钟点''免费老好人'立住立场，'饭桌上算总账'离开上下文仍可复述。",
+      "script_spans": [
+        "该给，但不能当雇保姆算钟点，也别当免费老好人。",
+        "平时帮带，就是家里人搭把手，不是欠薪的合同。",
+        "别等身体垮了，才在饭桌上算总账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问过渡自然，“那边界在哪”承接因果，结尾“怕被当成理所当然”回扣开头立场。",
+      "script_spans": [
+        "硬算账伤感情，不提补偿也累心。那边界在哪？明确回报不必写工资条",
+        "老人不图等价交换，但怕被当成理所当然"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法律义务表述留有必要条件，观点双向克制，调查与研究说法有据，无夸大、煽动或误导承诺。",
+      "script_spans": [
+        "该给，但不能当雇保姆算钟点，也别当免费老好人",
+        "祖辈只有当子女真没能力抚养时，才必须接手孙辈",
+        "硬算账伤感情，不提补偿也累心"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-93b82000be2d4c6a9cf20029e076c97b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c99b6e3b1ac640a181005fa4d2a896cc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

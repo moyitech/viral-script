@@ -1,0 +1,165 @@
+{
+  "evaluation_id": "combined-f68dfab91f4c43b1878d46b2a81bbe0f",
+  "run_id": "run-20260902T144748Z-7d0c20e11201",
+  "trace_sha256": "9063bf32509e457f8da577f68143b0de2f997a569d595f7dc90f848ee3b0e7e2",
+  "created_at": "2026-09-03T13:49:18.789841Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接作答不会集体涨价，光伏与电池两侧都覆盖，结尾落到观众账单，全程扣题。",
+      "script_spans": [
+        "全球绿色产业不会集体涨价，光伏在跌，电池在涨，旱涝不均。",
+        "你装太阳能划算，换储能电池得掂量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 566，目标为 700，偏差率为 19.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "紧扣分化涨价主线，管制边界、成本传导、加工格局、投资空档层层推进，关键论据有出处。",
+      "script_spans": [
+        "商务部公告写明白，主要管战略矿产两用物项，像部分稀土、石墨相关",
+        "过去谁有矿谁牛，现在能把矿石变高纯材料、有回收线更重要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句'卡了却没普涨'反差抓人；中段以问答与光伏电池分化持续推进；结尾从账单自然引出'对吧'式互动。",
+      "script_spans": [
+        "出口卡了，绿色产品没集体涨价，有的真贵了。",
+        "但电池这条线又是另一番景象。",
+        "涨跌已分进你家账单。你买带电池的重一点，插电的轻一点，对吧？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏和比喻设计见功力，但个别句需重断句、中段仍有新闻腔，按子分低值评2。",
+      "script_spans": [
+        "政策卡的是战略物项，市场分的是日常开销",
+        "现在能把矿石变高纯材料、有回收线更重要",
+        "发现优惠少了成本硬挺"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "水管传成本、磨粉做面包两个比喻均助理解且不堆砌；结尾对句离开上下文仍可复述。",
+      "script_spans": [
+        "成本像水管，源头紧下游涩，从矿场传到电池包。",
+        "矿石变材料像小麦磨粉做面包，精炼才能进工厂。",
+        "政策卡的是战略物项，市场分的是日常开销。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问过渡自然，水管比喻搭起因果桥，结尾回扣开头边界之分，段落功能清晰。",
+      "script_spans": [
+        "成本像水管，源头紧下游涩，从矿场传到电池包。",
+        "政策卡的是战略物项，市场分的是日常开销。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "主动设限如'不是所有矿都禁运'，区分涨跌不作绝对化承诺，消费提示留有余地，无煽动夸大，审核风险低。",
+      "script_spans": [
+        "咱们不是所有矿都禁运",
+        "这不是所有绿色产品都贵，而是关键材料紧平衡拖着部分价格走",
+        "你装太阳能划算，换储能电池得掂量"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 566,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.19142857142857142
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ae2c375dcb504b66ae0fb97b85a54508",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-7a9e57718e3d4eb7967cb779feefd610",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

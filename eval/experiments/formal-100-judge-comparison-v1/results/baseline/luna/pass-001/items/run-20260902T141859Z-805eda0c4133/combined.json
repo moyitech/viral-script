@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-4a9464a7b8fa43aa80fcd2054f9f58a7",
+  "run_id": "run-20260902T141859Z-805eda0c4133",
+  "trace_sha256": "e42e50c2cfbb5e05ec0e9728140f07de3eba817a2ea77a5ebd07115b1a7fcba5",
+  "created_at": "2026-09-03T11:43:55.413315Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答便利受损与秩序改善两面，并提出扩大禁停的前提，完整命中题设。",
+      "script_spans": [
+        "禁停范围扩大确实会伤及出行便利，但也整治了乱停堵路乱象，两边不能只顾一边。",
+        "所以禁停能扩，但得先有地方可停。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 281，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "锁车机制、停车容量和行动建议层层推进，信息具体，能支撑核心判断。",
+      "script_spans": [
+        "停到禁停区的车收不到锁车信号，信号拦着不让上锁，没法结算。",
+        "周边画了停车区，能停两百多辆"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用锁不上还扣钱制造即时损失，中段补足机制与停车区对照，结尾把判断落到“留没留这条路”。",
+      "script_spans": [
+        "你骑共享单车到地铁口，车锁不上还扣钱",
+        "可同一试点在周边画了停车区，能停两百多辆",
+        "禁停扩不扩，关键看留没留这条路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能顺着读，也有真人承接；但“伤及出行便利”偏书面，“两座场分流”明显卡顿，需临时修正。",
+      "script_spans": [
+        "你要是弃车走人，就一直计费",
+        "伤及出行便利",
+        "两座场分流"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“给行人腾出道儿”把治理目的说具体，“禁停扩不扩，关键看留没留这条路”形成可复述的收束，修辞克制。",
+      "script_spans": [
+        "不是把车赶尽，是给行人腾出道儿",
+        "禁停扩不扩，关键看留没留这条路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出冲突，中段解释机制和疏导作用，结尾给出建议并自然回扣题设，结构完整。",
+      "script_spans": [
+        "你骑共享单车到地铁口，车锁不上还扣钱，这就是禁停区扩大的直接代价。",
+        "所以禁停能扩，但得先有地方可停。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "兼顾秩序与出行，解释电子围栏后果并给出找停车区建议，未见夸大或煽动。",
+      "script_spans": [
+        "禁停范围扩大确实会伤及出行便利，但也整治了乱停堵路乱象，两边不能只顾一边。",
+        "所以禁停能扩，但得先有地方可停。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3e5bacb42f434cfabe763d126583b8ed",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-0a0310765cc345f38a1df40d7180419e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

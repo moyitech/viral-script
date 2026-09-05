@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-99c8b839d0ef4013ad7709d1344bba21",
+  "run_id": "run-20260902T143634Z-69a599a3ef3f",
+  "trace_sha256": "141c3956405339b15a9f9d1d0c7f25171f0c640bd9f4dd17412ef753b70e9e4f",
+  "created_at": "2026-09-03T12:16:26.886808Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否回报，兼顾法律边界、老人付出与年轻家庭处境，落点具体。",
+      "script_spans": [
+        "该不该给明确回报？我的看法直白：该给",
+        "明确回报不必写工资条，可以是每月贴补，或帮缴保险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕回报边界，法律、调查数据、家庭负担和可行方式共同提供了判断依据。",
+      "script_spans": [
+        "民法典里说，祖辈只有当子女真没能力抚养时，才必须接手孙辈。",
+        "明确回报不必写工资条，可以是每月贴补，或帮缴保险。",
+        "有研究跟踪家庭发现，祖辈如果高质量参与，孩子社交能力反而更好。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用回报与法律义务制造冲突，中段补充现实和方案，结尾追问自然收束并留下余味。",
+      "script_spans": [
+        "老人带娃发工资，听着生分，法律却没义务给。该不该给明确回报？",
+        "别等身体垮了，才在饭桌上算总账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚，生活场景有口语感，但“当雇保姆算钟点”“退掉旅游线”等处朗读会卡顿。",
+      "script_spans": [
+        "你想过没，你下班进门饭已做好，娃作业有人盯",
+        "不能当雇保姆算钟点",
+        "老人退掉自己的旅游线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“搭把手”“硬算账伤感情”“饭桌上算总账”形象克制，既帮助理解，也留下了可复述的判断。",
+      "script_spans": [
+        "平时帮带，就是家里人搭把手，不是欠薪的合同。",
+        "硬算账伤感情，不提补偿也累心。",
+        "别等身体垮了，才在饭桌上算总账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "法律、现实、建议和结尾层层推进；但补偿如何改善照护、减少矛盾没有充分解释，因果跳步。",
+      "script_spans": [
+        "咱们先捋捋法理。",
+        "硬算账伤感情，不提补偿也累心。那边界在哪？",
+        "年轻人要是主动递份心意，老人可能带得更踏实，矛盾也容易少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动对立，回报建议较稳妥；但法理和研究结论表述偏绝对，补充边界后更安全。",
+      "script_spans": [
+        "明确回报不必写工资条，可以是每月贴补，或帮缴保险。",
+        "民法典里说，祖辈只有当子女真没能力抚养时，才必须接手孙辈。",
+        "有研究跟踪家庭发现，祖辈如果高质量参与，孩子社交能力反而更好。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e22e258575464fe892b53446941da5fc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

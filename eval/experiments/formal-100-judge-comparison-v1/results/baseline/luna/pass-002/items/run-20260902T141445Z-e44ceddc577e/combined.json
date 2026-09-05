@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-1047bfbf9c25437a87615fe5262ad971",
+  "run_id": "run-20260902T141445Z-e44ceddc577e",
+  "trace_sha256": "845d5298e4c43444b5355c2d266b19df335a19ff64bdc9cd0745ab3757c6989b",
+  "created_at": "2026-09-03T12:15:22.387494Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面区分定期积存与情绪追涨，并结合年轻人资金约束和银行门槛给出判断。",
+      "script_spans": [
+        "走定期定额慢慢存，是投资；盯着金价疯涨去追，可能成了接盘。",
+        "年轻人钱不多，路子选错，亏的是机会成本。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，机制、门槛、持有成本和配置边界层层补充，能给年轻人可执行的判断；“全行业”略有泛化。",
+      "script_spans": [
+        "金价高时这笔钱买得少，低时就买得多。时间拉长，你的成本价就被摊平了。",
+        "但金子本身不付红不生利，它只是资产拼图一块，不是短线暴富工具。",
+        "全行业在收紧。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出门槛冲突，中段用机制、规则和风险层层推进，结尾回到自我追问，互动与余味都自然。",
+      "script_spans": [
+        "银行把攒金门槛抬到C3级，你工资刚够买金却被拦门外，这算投资还是追涨？",
+        "金价高时这笔钱买得少，低时就买得多。",
+        "金子不会变，人心容易慌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答推进较顺，但“给长期价值默默托了个底”等搭配拗口，影响连续朗读。",
+      "script_spans": [
+        "咱们看工行的玩法。",
+        "金价高时这笔钱买得少，低时就买得多。",
+        "给长期价值默默托了个底",
+        "黄金在组合里是分散风险的防守员"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且贴合观点，既帮助理解定投逻辑，也留下“把时间拉成朋友”等自然、可复述的记忆点。",
+      "script_spans": [
+        "它把时间拉成朋友，而不是赌单边上涨。",
+        "它只是资产拼图一块，不是短线暴富工具。",
+        "金子不会变，人心容易慌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "定投机制、银行风控与个人选择顺序清楚，但“怕大家昏头”的因果偏简化，且由多家银行推到“全行业”过宽。",
+      "script_spans": [
+        "答案不同，走的门就不是一道。",
+        "因为金价一路走强，上头怕大家昏头。",
+        "全行业在收紧。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有风险提示和反暴富表述，但把定投直接定性为投资，并臆测银行“怕大家昏头”，仍可能造成金融误导。",
+      "script_spans": [
+        "但金子本身不付红不生利，它只是资产拼图一块，不是短线暴富工具。",
+        "因为金价一路走强，上头怕大家昏头。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6bd823e138c94d6ba3ab0e4163baf6d6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

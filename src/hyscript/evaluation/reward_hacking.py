@@ -108,8 +108,10 @@ class RewardHackingConfig:
             or self.max_script_characters < 1
         ):
             raise ValueError("max_script_characters must be greater than zero.")
-        if self.reasoning_effort not in {"no_think", "low", "high"}:
-            raise ValueError("reasoning_effort must be no_think, low, or high.")
+        if self.reasoning_effort not in {"no_think", "low", "high", "xhigh"}:
+            raise ValueError(
+                "reasoning_effort must be no_think, low, high, or xhigh."
+            )
 
 
 def _canonical_json_sha256(payload: Any) -> str:

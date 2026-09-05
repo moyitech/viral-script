@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-0503bb0dd46a4fd69f6ba121d9246143",
+  "run_id": "run-20260902T144755Z-ada9a4e4d372",
+  "trace_sha256": "ead01721e79da9803a2d54ac14089d79d7a72694bebb74ba4a7493b8a19db6af",
+  "created_at": "2026-09-03T11:44:38.504529Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应融资负担下降后压力仍在的原因，覆盖成本、订单、库存、回款和利润等核心痛点。",
+      "script_spans": [
+        "钱好借了，但借来干嘛？但原料人工一直贵"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 262，目标为 280，偏差率为 6.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，依次拆解融资、成本、需求、现金流和利润压力，信息单元具体且有明显推进。",
+      "script_spans": [
+        "刚省出点息，转头贴进料里",
+        "货堆库里卖不出，厂里转着没钱进"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用利息下降与经营更难制造反差，中段连续转折，结尾落到订单，追问自然。",
+      "script_spans": [
+        "利息降了，厂子却更难干。",
+        "钱好借了，但借来干嘛？",
+        "别光看利率低，先数数手头订单稳不稳？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和追问带来节奏感，但两处动词搭配生硬，影响自然朗读。",
+      "script_spans": [
+        "借钱不再跑断腿，成本实实在在减。",
+        "现在融资协调推开",
+        "厂里转着没钱进"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“负担轻了，压力没小”对照鲜明，“省出点息，转头贴进料里”具体好记，整体克制。",
+      "script_spans": [
+        "负担轻了，压力没小。",
+        "刚省出点息，转头贴进料里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出反差，中段由融资转向经营现实，结尾以订单稳定性回扣主题，转折和因果基本完整。",
+      "script_spans": [
+        "钱好借了，但借来干嘛？",
+        "别光看利率低，先数数手头订单稳不稳？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有违规煽动或金融承诺，但“水电气工钱哪样不升”“回款慢半天”等绝对化、夸张表达，需加限定。",
+      "script_spans": [
+        "别光看利率低，先数数手头订单稳不稳？",
+        "水电气工钱哪样不升？",
+        "回款慢半天，日子就熬不住。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-7b42fb426b444c70899fba617102e95b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f7a10bc3bf8a418cba47b7566777d0ed",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-2bb8ec6b2a9b4918bcccdab5eba1bf41",
+  "run_id": "run-20260902T143056Z-b47870a56a1b",
+  "trace_sha256": "1aefcbb9f68e0bb6b95e868c26ad877538406e3b0638ae8e0c4359b919f07b9a",
+  "created_at": "2026-09-03T14:24:57.064415Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直答真能却零实锤，中后段面向普通人给分层充电对策，题设两侧与核心人群全覆盖。",
+      "script_spans": [
+        "充电线偷数据？真能，却零实锤。",
+        "那普通人注意啥？自带插头插墙电最稳当。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题紧扣充电窃密，机制、零案例核查、政策与对策逐层推进，论据扎实无编造。",
+      "script_spans": [
+        "数据线里分电力线和信号线，插上后信号线就能通信。",
+        "坏人算账，做这陷阱成本贵得很，不如发短信骗你点开链接。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛'真能却零实锤'的反差，中段用机制、案例追问、政策层层兑现钩子，结尾提问由正文自然生长。",
+      "script_spans": [
+        "充电线偷数据？真能，却零实锤。",
+        "那为啥没听谁真丢？",
+        "下次出门，你会带插头还是赌桩干净？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句利落、有对话感，但'USB插进''防人动线'等处压缩过头，朗读需临时补词改口，止步2分。",
+      "script_spans": [
+        "坏人算账，做这陷阱成本贵得很，不如发短信骗你点开链接。",
+        "系统看到USB插进，会跳窗问传文件还是仅充电。",
+        "借桩时手捂接口，防人动线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，'坏人懒得摆摊，爱躺赚'和'怕它不如怕陌生WiFi'离开上下文仍可复述。",
+      "script_spans": [
+        "坏人懒得摆摊，爱躺赚。",
+        "怕它不如怕陌生WiFi。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "问答式过渡层层推进，借USB的伏笔后文兑现，结尾回扣开头设问，闭环完整。",
+      "script_spans": [
+        "要是只能借公共USB，后面说咋办",
+        "下次出门，你会带插头还是赌桩干净？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "风险表述克制，用“可能”“极低”限定，无夸大承诺；建议具体正当，不涉误导销售或煽动对立，导向安全。",
+      "script_spans": [
+        "风险不是零，但概率极低",
+        "文件可能被读走"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5590026dd367499492732052e1086d23",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-30fd1fa69c8e4768b46334f59b8d8d75",
+  "run_id": "run-20260903T051534Z-ac76ec96c342",
+  "trace_sha256": "c657a0443dce770ad638097f7ca52f40257af238d0d4b2f314f312f74e476497",
+  "created_at": "2026-09-03T12:32:37.347076Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从替代进展、企业顾虑到试点方案，始终围绕为何怕换系统作答。",
+      "script_spans": [
+        "国产工业软件在近年的技术追赶中进步飞快，政策也在推加速替代，可很多制造企业听到要更换原有系统依然心里打鼓。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "解释恐惧来源、迁移难点、政策压力和试点办法，多个信息单元持续推进。",
+      "script_spans": [
+        "工业软件本质是把工厂工艺经验软件化",
+        "迁移不等于装个新程序，等于把老师傅脑子里的经验重新梳理一遍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "主题进入较快，中段有风险与方案推进；但前20字仍是背景陈述，结尾收得过快，缺少余味或互动牵引。",
+      "script_spans": [
+        "恐惧的不是国产软件本身，而是老系统里压着十几年产线工艺数据和操作习惯",
+        "先选一条边缘产线做试点运行，验证了再逐步扩面。",
+        "国产工业软件在近年的技术追赶中进步飞快，政策也在推加速替代"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有画面和对话感，但前后两处信息句偏硬，朗读时仍需重断句。",
+      "script_spans": [
+        "真要换，千万别全厂一把推平",
+        "政策也在推加速替代",
+        "现行政策要求重点国企2027年前完成全面替代"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“全焊在旧平台上”和“老师傅脑子里的经验”把迁移难题说得具体，画面感强且不油。",
+      "script_spans": [
+        "图纸、参数、排产逻辑全焊在旧平台上，迁移不等于装个新程序，等于把老师傅脑子里的经验重新梳理一遍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先界定恐惧来源，再解释迁移风险，最后落到试点策略，因果与结论闭合。",
+      "script_spans": [
+        "恐惧的不是国产软件本身，而是老系统里压着十几年产线工艺数据和操作习惯，贸然切换怕直接导致停工。",
+        "真要换，千万别全厂一把推平，先选一条边缘产线做试点运行，验证了再逐步扩面。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，试点建议稳妥；但政策范围与“垄断多年”等表述缺少限定，容易造成泛化误导。",
+      "script_spans": [
+        "先选一条边缘产线做试点运行，验证了再逐步扩面",
+        "现行政策要求重点国企2027年前完成全面替代",
+        "国外产品垄断多年"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-983f41c5e5974f1cb7028e49c4d2bf3f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-9e6a7b038f0c4985bf85cb1e1d002050",
+  "run_id": "run-20260902T142318Z-6d3a6356f256",
+  "trace_sha256": "c76c51b59a6426b658fd40298ed4dbece3a86958cb5d6623aad99abe22fed91d",
+  "created_at": "2026-09-03T12:15:23.763558Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应效率与隐私的冲突，既写企业提效动机，也给出脱敏和最小必要原则，核心人群明确。",
+      "script_spans": [
+        "效率涨不必然卖你私生活"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "围绕效率—隐私主线，提供训练、脱敏和必要性原则；但训练记忆风险与邮件读取隐私混为一谈，增量有限。",
+      "script_spans": [
+        "先给信件脱敏，把邮件里姓名电话遮住再让模型筛",
+        "相关法规划了最小必要线，只许必要业务碰邮件",
+        "公司机器瞬间读透",
+        "某些高效训练法本身压低记忆数据可能"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用效率与隐私反差抓人，中段连续给出风险、实验与脱敏方案，结尾以具体提问自然收束。",
+      "script_spans": [
+        "筛查邮件变快了员工隐私却没丢？",
+        "那平时落地咋办？",
+        "你明天发工作公邮，会猜它先罩匿名纱吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和落地建议较口语，但技术解释段多处搭配生硬，朗读与理解都需重断句。",
+      "script_spans": [
+        "那平时落地咋办？",
+        "机器只瞅模式不瞅真人",
+        "有实验研究复盘，某些高效训练法本身压低记忆数据可能",
+        "反比笨重私训法更把隐私风挡住"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“只瞅模式不瞅真人”清楚好记，但“隐私风挡住”“罩匿名纱”等说法偏生硬，修辞略显刻意。",
+      "script_spans": [
+        "只瞅模式不瞅真人",
+        "更把隐私风挡住",
+        "会猜它先罩匿名纱吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构有开头、冲突、方案与结尾，但从训练阶段的记忆风险跳到邮件筛查隐私，关键因果桥缺失，部分表述也难顺听。",
+      "script_spans": [
+        "那平时落地咋办？先给信件脱敏",
+        "模型吃算力小记数据浅，原本为省显卡顺带少背私料",
+        "模型照抓违规处速度也不降"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提出脱敏和最小必要原则，方向稳妥；但把脱敏后速度不降、隐私风险收窄说得过于确定，可能误导。",
+      "script_spans": [
+        "先给信件脱敏",
+        "只许必要业务碰邮件",
+        "模型照抓违规处速度也不降"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 16.0,
+    "partial_weighted_average": 2.2857142857142856,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f92646f2f7714f789eae7098cdad4afb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

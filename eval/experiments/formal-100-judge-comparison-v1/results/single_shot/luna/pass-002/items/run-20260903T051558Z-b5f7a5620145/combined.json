@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-4f4034d225b344a8871e786802b9d111",
+  "run_id": "run-20260903T051558Z-b5f7a5620145",
+  "trace_sha256": "aa1cc6c7b167d2c094ddf28a60075d4156ade60ac12028fe670fc7f49641d0c0",
+  "created_at": "2026-09-03T12:31:35.142073Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答稳健投资是否可能高位接盘，覆盖拥挤交易、红利资产与普通投资者应对。",
+      "script_spans": [
+        "红利交易拥挤确实让稳健投资面临接盘风险",
+        "布局红利时，先观察资金是不是太挤"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕拥挤风险展开，依次解释流动性、估值、股息率和踩踏机制，信息推进具体。",
+      "script_spans": [
+        "同质化持仓掐断了流动性退路",
+        "估值被推高、股息率悄悄摊薄，原本的安全垫就变薄"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用避险反转高位接盘，中段递进拆解风险，结尾提醒自然且有余味。",
+      "script_spans": [
+        "很多人本来冲着红利资产去避险，结果却可能挤进高位接盘的游戏。",
+        "千万别把稳健误解为闭眼死扛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "比喻和提醒句易懂，整体可读；但核心段落有两处长串术语，需重断句，口语感未贯穿。",
+      "script_spans": [
+        "道理很简单，拥挤交易就像一座超载的天桥",
+        "千万别把稳健误解为闭眼死扛",
+        "太多资金同向涌动，一旦风吹草动集体折返，市场微观流动性瞬间枯竭，价格崩跌远比基本面预示更快",
+        "再看另一个侧面，稳健常误以为拿住收息就行，可当持仓过于拥挤，估值被推高、股息率悄悄摊薄，原本的安全垫就变薄"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“超载的天桥”把抽象风险讲具体，“闭眼死扛”便于复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "拥挤交易就像一座超载的天桥",
+        "千万别把稳健误解为闭眼死扛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出判断，中段分别解释流动性和安全垫风险，结尾回到分散与撤退建议，递进完整。",
+      "script_spans": [
+        "道理很简单，拥挤交易就像一座超载的天桥",
+        "所以具体提醒一句，布局红利时，先观察资金是不是太挤"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题聚焦且未作收益承诺，但投资建议边界不足，个别“瞬间枯竭”“从容撤退”表述偏绝对，易造成误导。",
+      "script_spans": [
+        "布局红利时，先观察资金是不是太挤",
+        "给自己留好分散和从容撤退的空间"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-223e3f46bcd24aceae67b3a89ea87db8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

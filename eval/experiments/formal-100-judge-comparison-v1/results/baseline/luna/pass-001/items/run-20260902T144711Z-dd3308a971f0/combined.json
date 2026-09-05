@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-f287d5a68ef04a1fa72e19fe0313320f",
+  "run_id": "run-20260902T144711Z-dd3308a971f0",
+  "trace_sha256": "220b11662955aad6fc414b71b460d95b8f5005e3b56c8c96418ec2962d15beb8",
+  "created_at": "2026-09-03T11:46:07.520313Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否集体涨价，区分电车与光伏，并覆盖产业端和普通消费者。",
+      "script_spans": [
+        "关键原料出口受限，全球绿色产业不会集体涨价，有的贵有的稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 472，目标为 450，偏差率为 4.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "始终围绕产业价格分化展开，管制清单、供应链替代、价格表现和消费建议均有推进。",
+      "script_spans": [
+        "它只圈住镓、锗、石墨和部分中重稀土，这些是电池和永磁电机的料。",
+        "各国砸钱建自己的加工线，可新产能没那么快转起来。",
+        "当矿产成博弈棋子，账单早写答案：分化才是常态。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出电车涨、光伏跌的反差，中段连续解释清单、替代与产能，结尾落到账单和建议，推进自然。",
+      "script_spans": [
+        "你刚看中一款电车，价签涨了，可太阳能板却在跌价。",
+        "分化才是常态。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和“为啥、咱们”带来对话感，但“短期难替”“价格就挑着蹦”等表达拗口，影响连贯口播。",
+      "script_spans": [
+        "为啥不会一起涨？咱们看管制清单。",
+        "出口合规把关也更严了。",
+        "眼下空档价格就挑着蹦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“供应链在打架”和“分化才是常态”易复述、能概括分化逻辑；“价格就挑着蹦”略显刻意，但未妨碍理解。",
+      "script_spans": [
+        "供应链在打架",
+        "分化才是常态",
+        "价格就挑着蹦"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，能从管制讲到价格分化并回扣结论；但‘出口合规’突兀，材料价到终端账单的因果桥不足。",
+      "script_spans": [
+        "于是矛盾兑现：靠受限矿的车企提价，硅料足的太阳能价反而松。",
+        "出口合规把关也更严了。",
+        "所以换电车多比价别慌追涨，装光伏倒能多逛几家。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且强调产业价格分化；但“光伏不受影响”等表述边界不足，容易造成过度确定的判断。",
+      "script_spans": [
+        "全球绿色产业不会集体涨价，有的贵有的稳",
+        "但硅料不在这名单里，光伏不受影响"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3e7eca1717e041d5b37dfe398c0a1d12",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-33b8d0b720444bd5beb1ac44c45048af",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

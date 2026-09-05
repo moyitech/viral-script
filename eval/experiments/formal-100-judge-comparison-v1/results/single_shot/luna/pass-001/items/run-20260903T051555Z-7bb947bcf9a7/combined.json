@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-eb8e47ce737140e5ab6bcc84811ce618",
+  "run_id": "run-20260903T051555Z-7bb947bcf9a7",
+  "trace_sha256": "7caa90a076cfe60f05ad3fdb12ad98cc07532ca238fb6aa0bb307b2e6361f118",
+  "created_at": "2026-09-03T11:57:38.402008Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接回应纪律教育与个性表达的冲突，并覆盖学校、学生及家长的核心处境。",
+      "script_spans": [
+        "学校强制统一发型，纪律教育绝不能忽视个性表达"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 255，目标为 280，偏差率为 8.93%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "既给出发型规范底线，又解释统一长度、权利边界和惩戒后果，信息推进充分。",
+      "script_spans": [
+        "教育部的日常规范仅强调整洁朴素，明确禁止烫发染发和怪异发型"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直切统一发型与个性冲突，中段连续补足规范、边界和案例，结尾以权益警示自然收束。",
+      "script_spans": [
+        "学校强制统一发型，纪律教育绝不能忽视个性表达",
+        "若学生仅因发型微错被拒校门，实属变相停课且缺法定程序",
+        "别让纪律外衣掩盖合法权益。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 1,
+      "reason": "公文化法律句式贯穿核心展开，长串概念和生硬搭配让口播需重写。",
+      "script_spans": [
+        "发型打理归属人格尊严与身体自主权范畴",
+        "家长应依规范底线提出沟通"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一刀切”与“借部队管理说事站不住脚”鲜明易记，末句“纪律外衣”形成自然收束，修辞没有喧宾夺主。",
+      "script_spans": [
+        "这种一刀切要求不仅压抑少年心性，更越过合理边界。",
+        "借部队管理说事站不住脚",
+        "别让纪律外衣掩盖合法权益。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先讲规范底线，再区分军队与校园管理，最后落到拒绝入校后果，论证链条完整。",
+      "script_spans": [
+        "军人强制源于法律授权的公共任务，校园细则是教育导向而非普遍强制"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体反对粗暴执行，价值导向安全；但法律定性过于绝对，补充适用条件后才更稳妥。",
+      "script_spans": [
+        "学校惩戒须与过错相适",
+        "家长应依规范底线提出沟通",
+        "全国层面从没下达过必须统一长度的硬标准",
+        "若学生仅因发型微错被拒校门，实属变相停课且缺法定程序"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-bd0f9df1a86e42ed984d2421f5bc3b7b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-0072eecfd26c4ddeb2f27dd582575054",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-2611a8c3377248b59e4e3c7745b6dc90",
+  "run_id": "run-20260902T142917Z-f59f76de30a4",
+  "trace_sha256": "cdf8fd89088dfbe58ead1cc18b8fcb8c45951895b83f4d78f7cea0f775630a76",
+  "created_at": "2026-09-03T14:30:43.389334Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即亮'两边得平衡'立场，学校动因与学生自尊两侧都答，结尾追问回扣题设。",
+      "script_spans": [
+        "要我说，纪律得抓，但个性不能当没看见。纪律教育和个性表达，不是非得二选一，两边得平衡。",
+        "其实换个法，约定整洁、分清场合就行。留点空间给孩子，纪律也没塌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从教育部底线讲到民法典与惩戒规则，案例与法条层层推进，无同义灌水，增量具体可信。",
+      "script_spans": [
+        "全国并没有确切长度标准，也不强制全校一个样。它没逼所有男生都寸头，女生都扎马尾。",
+        "按规定惩戒得和过错程度匹配，发型问题顶多轻微过错"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头十六字即抛冲突质问，中段以场景、规范、案例逐层递进兑现钩子，结尾之问由论证自然长出，三段均立得住",
+      "script_spans": [
+        "孩子头发被强行剪，德育就能不顾权利？",
+        "被拦的孩子得校外剪完才回，误了半天课，这其实近乎变相停课",
+        "下次见发型令，咱先问一句：这是教规矩，还是怕麻烦？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有对话感，读来顺；但“为任务必需”“像管外表成管自由”等处压缩拗口，需临时换词，封顶2分。",
+      "script_spans": [
+        "你拦他剪，他手护着脑袋退墙角。",
+        "可那岗位为任务必需，有强制法理，校园是教育场，性质两码事。",
+        "像管外表成管自由"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻点到为止且服务理解，'纪律成了理发店'形象贴切，'头发会再长，被推开的尊严却难补'离文可复述，无堆砌",
+      "script_spans": [
+        "班主任晨会点名，先摸头量尺，纪律成了理发店",
+        "头发会再长，被推开的尊严却难补"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "案例先行、'说明'点明因果，部队类比被正面拆解，结尾'教规矩还是怕麻烦'回扣开头。",
+      "script_spans": [
+        "有些地方曾要求女生剪特定短发，每月得理一次，家长吐槽才松了口，说明硬碰硬反而伤了信任。",
+        "头发会再长，被推开的尊严却难补。下次见发型令，咱先问一句：这是教规矩，还是怕麻烦？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "明确表示不是反对学校管仪表，争议归因用'近乎''恐怕'限定，不煽动不夸大，表述安全。",
+      "script_spans": [
+        "咱们聊这些，不是反对学校管仪表，是怕管法越过线",
+        "这其实近乎变相停课",
+        "那恐怕越了教育分寸"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c0fb0bd4e61344f29454d0e1ab6a4c75",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

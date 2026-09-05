@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-2c6e8d05160543dd8c64b6585afc4e64",
+  "run_id": "run-20260902T143051Z-adfb933936b5",
+  "trace_sha256": "3e611fb1a10c29fbc83ece46413f894043b1f745e55a681b8c713fb3316d9e3c",
+  "created_at": "2026-09-03T11:45:36.590668Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答公共充电风险与应对，覆盖风险判断、使用选择和普通人的避险动作，目标受众明确。",
+      "script_spans": [
+        "出门充电该注意啥？别慌也别马虎。",
+        "花几十块买个充电宝，陌生口尽量绕开。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 480，目标为 450，偏差率为 6.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕公共USB窃密，先校准风险，再解释数据通道，最后给出充电宝、插头和使用习惯等具体方案，信息有递进。",
+      "script_spans": [
+        "核心结论很清楚：技术上有门路，生活里极少见。",
+        "USB线里既走电也走数据。",
+        "普通人影响直白得很。花几十块买个充电宝，陌生口尽量绕开。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“洗空银行卡”制造具体风险和反转，中段补机制与应对，结尾问题由主题自然生长。",
+      "script_spans": [
+        "手机没电借公共充电口，可能被洗空银行卡，也可能虚惊。",
+        "下次电量见底，你插陌生USB还是摸包里宝？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和追问让整体能读通，但“自带能源”“插头转接自家线”等处卡嘴，口气不够顺。",
+      "script_spans": [
+        "别慌也别马虎。",
+        "关键机制在哪？",
+        "求安心就自带能源，物理切断数据线",
+        "用插头转接自家线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“端口握手”“物理切断数据线”帮助理解机制，“别见口就插，也别年年恐慌”克制有记忆点。",
+      "script_spans": [
+        "它趁手机和端口握手时顺带读文件",
+        "求安心就自带能源，物理切断数据线",
+        "所以别见口就插，也别年年恐慌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "风险—机制—建议的主线清楚，但把国家充电安全要求用来证明手机USB窃密，论据对象错位；3C标识的防护作用也说得过满。",
+      "script_spans": [
+        "关键机制在哪？USB线里既走电也走数据。",
+        "那怎么选？贪方便用公共口，得赌运气；求安心就自带能源，物理切断数据线。",
+        "国家这几年也要求强化充电信息安全，说明预防不是瞎紧张。",
+        "买充电头挑有3C标的，几块钱就挡住风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能提示风险罕见，整体不煽动；但把3C充电头说成几块钱即可挡住风险，可能误导用户。",
+      "script_spans": [
+        "技术上有门路，生活里极少见。",
+        "买充电头挑有3C标的，几块钱就挡住风险。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-625aeb8822254089b22e2ac8ecc381ab",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-3e91a3819bd44eb2a40b06426af5c056",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

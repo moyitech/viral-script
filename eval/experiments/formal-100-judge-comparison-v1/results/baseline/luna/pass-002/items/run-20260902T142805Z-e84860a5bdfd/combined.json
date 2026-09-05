@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-22a380ba388042d88cb4b08ad6041d44",
+  "run_id": "run-20260902T142805Z-e84860a5bdfd",
+  "trace_sha256": "dd4f63f7ad141af5ab24f53f7ebd948e945740f0acd450b5f1a74a8f040f4182",
+  "created_at": "2026-09-03T12:15:46.723957Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否上报及边界，覆盖普通同事、危险例外与可执行的关心方式，切角贴合题设。",
+      "script_spans": [
+        "多数别报，关心先问愿不愿被知道。",
+        "若对方话里透出自残或伤人，保密要让给保命。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕隐私、标签风险、危险例外、同意边界和援助渠道层层给出判断与做法，信息增量充足。",
+      "script_spans": [
+        "私事曝光容易让旁人贴标签。",
+        "界限在没经同意别替他喊话。",
+        "把联系方式发他，不逼他马上用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出关心与冒犯的反差，中段递进到例外和做法，结尾问题自然回扣。",
+      "script_spans": [
+        "帮同事上报家变，常是冒犯不是关心。",
+        "那什么关口必须破例？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、反问和对照句很利落，但多处压缩表达不顺，朗读时需要临时重断句。",
+      "script_spans": [
+        "关心是递选项，不是替他签单。",
+        "法律写单位连员工婚育状态，都不能无理由收集。",
+        "你猜家变去报目的不明"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“关心是递选项，不是替他签单”准确好记，多个比喻服务于边界判断，没有明显炫技。",
+      "script_spans": [
+        "关心是递选项，不是替他签单。",
+        "你递梯子不掀屋顶，关心才不像窥探。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，先答判断再讲风险、例外和做法；但法律依据跳到同事无权上报，危险情形的处置对象也不够明确。",
+      "script_spans": [
+        "关心和冒犯的分水岭，就在他有没有交给你话语权。",
+        "普通同事更没权把家事捅给上层。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "明确区分了同意与危险例外，但“多数别报”“法定危险信号”等表述过泛，易让人误解法律和上报边界。",
+      "script_spans": [
+        "若对方话里透出自残或伤人，保密要让给保命。",
+        "多数别报，关心先问愿不愿被知道。",
+        "普通同事更没权把家事捅给上层。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d79a9e0aa57141d2843bf4fc4304a92a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

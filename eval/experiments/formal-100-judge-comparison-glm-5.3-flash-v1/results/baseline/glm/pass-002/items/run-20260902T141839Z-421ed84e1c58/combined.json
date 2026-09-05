@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-33f051fe3fa64ee68536f61b400d5e6b",
+  "run_id": "run-20260902T141839Z-421ed84e1c58",
+  "trace_sha256": "52556b4c28ca9c81ace5300195ae9ba2ac3beb293da356dd9da6841a846b4867",
+  "created_at": "2026-09-03T14:25:09.783054Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接答‘眼前看不会’，正反两面与小店人群全覆盖，结尾回扣题设。",
+      "script_spans": [
+        "街边小店会被绑架吗？眼前看不会，可依赖暗中生。",
+        "补贴退坡后，小店被绑还是解绑？敢不敢引老客回柜台续命。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从排序佣金到老客流失层层推进，机制、反例与结论互证，信息密度高无注水。",
+      "script_spans": [
+        "平台用低价流量引你上架，套餐排序都听它的。",
+        "越依赖，议价权越弱，平台是水管也是闸门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字即反转立冲突，中段以抖省省日活、免开店费等新信息持续兑现，结尾问题自然生长留余味。",
+      "script_spans": [
+        "小店没被流量绑死，反成超级应用争抢的宠儿。",
+        "但小店上了平台，真就由人拿捏没余地？",
+        "补贴退坡后，小店被绑还是解绑？敢不敢引老客回柜台续命。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口清楚、对话感足；但“可依赖暗中生”“终归算法和佣金规则定”两处压缩拗口，需改词重断，封顶2分。",
+      "script_spans": [
+        "流量像风，说停就停，小店根基还是靠味道。",
+        "可依赖暗中生",
+        "终归算法和佣金规则定"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "水管与闸门点破平台双重角色，流量如风一句离开上下文仍可复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "平台是水管也是闸门",
+        "流量像风，说停就停，小店根基还是靠味道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "四段各司其职，因果有桥，‘水管也是闸门’承上启下，结尾回扣绑架之问。",
+      "script_spans": [
+        "以前靠路人晃进店，小店不参加，附近人刷不到就垮。",
+        "越依赖，议价权越弱，平台是水管也是闸门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体兼顾平台扶持与风险两面，导向安全；但「不参加就垮」「由算法定」等绝对化归因未加限定，宜补边界改写更稳妥。",
+      "script_spans": [
+        "高德也免首年开店费，小店能踩几家平台比价。",
+        "小店不参加，附近人刷不到就垮。",
+        "你生意见不见光由算法定，不由你手艺定，这账清楚。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7ec05b1585e24ba38360e0ba17499035",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

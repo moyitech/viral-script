@@ -1,0 +1,144 @@
+{
+  "evaluation_id": "combined-8d24f4983f354524adba73919946dae4",
+  "run_id": "run-20260902T142221Z-8824ed274519",
+  "trace_sha256": "0bd6e92c0423740805f51bcc637b91c5b5c9e864b394faed5c7e02fbf61f684e",
+  "created_at": "2026-09-03T12:16:26.983946Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答长期锁定是否靠谱，区分合同固收与分红浮动，并覆盖期限和流动性适配。",
+      "script_spans": [
+        "靠谱，但只认合同写固收那侧。赌分红回暖可不算靠谱锁定。",
+        "你若三五年内买房结婚，这钱不能动。锁了反成包袱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中，既讲合同确定性和锁定代价，也讲分红实现率、行业压力及购买决策，信息推进充分。",
+      "script_spans": [
+        "普通型年金保单利益确定。预定利率签完就冻在合同里。",
+        "可实际兑现曾滑到55%。后来部分新品回超100%。像坐过山车。",
+        "锁定适合闲钱放长期。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“错过2%保底”制造损失感，中段持续切换确定与浮动，结尾的选择题自然留下思考。",
+      "script_spans": [
+        "盯着分红险高预期的人，正错过合同里写死2%保底。",
+        "一边是写进合同的慢涨零花钱。一边是看天吃饭的浮动红包。",
+        "你愿拿确定薄利还是等风来？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答感带出节奏，但“这来对抗钱变薄”等多处语法断裂，重读时容易卡顿。",
+      "script_spans": [
+        "那不锁的那边啥样？看分红这头。",
+        "这来对抗钱变薄。",
+        "后来部分新品回超100%。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“装进罐头”等比喻易记，但“零花钱”“浮动红包”连续叠加，略显刻意，削弱了克制感。",
+      "script_spans": [
+        "你等于把今天利率装进罐头。",
+        "演示漂亮像商场海报。实际到账像打折季实付。",
+        "一边是写进合同的慢涨零花钱。一边是看天吃饭的浮动红包。",
+        "演示漂亮像商场海报。实际到账像打折季实付。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按固收、代价、分红、结论展开，主线可跟随；但个别句子残缺，部分数据到结论的因果桥不够充分。",
+      "script_spans": [
+        "不是说所有人都该锁。你若三五年内买房结婚，这钱不能动。锁了反成包袱。",
+        "所以锁不锁？要白纸黑字慢钱就挑固收年金。",
+        "这来对抗钱变薄。",
+        "差一点，三十年复利拉出鸿沟。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能区分合同利益与分红风险，也提醒流动性；但“利益确定”“活到老领到老”泛化绝对，缺少条款边界，仍有金融误导风险。",
+      "script_spans": [
+        "不是说所有人都该锁。",
+        "分红不保证，可能落空。",
+        "普通型年金保单利益确定。",
+        "活到老领到老。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c85b7094c8f24e0fb7278ce3bc969abb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

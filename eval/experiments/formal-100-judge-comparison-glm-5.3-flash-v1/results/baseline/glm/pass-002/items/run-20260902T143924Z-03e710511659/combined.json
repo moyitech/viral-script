@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-b8955b20a25347d5a1f8e95752991b6f",
+  "run_id": "run-20260902T143924Z-03e710511659",
+  "trace_sha256": "8ed96b5dbf64806a71ee3f42f72f1cb772de65aa2edebf5bd43cd937d0a98cf4",
+  "created_at": "2026-09-03T14:30:27.723534Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即抛题设矛盾，正文兼顾温和数据与家庭体感两侧，切口对准普通家庭刚性开支，结尾回扣提问。",
+      "script_spans": [
+        "物价说只涨1%，你咋还觉得钱不够花？",
+        "你家开支结构和CPI不合拍",
+        "温和数字撑不住刚性开支，这账得自己算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦体感错位，数据、支出结构、收入三层各推进一步，事实解释结论互证，还给出自查账单的方法增量。",
+      "script_spans": [
+        "上半年食品烟酒占消费支出30.6%，居住又占21.1%，两项过半",
+        "上半年财产净收入只增1.1%，基本没跟上",
+        "所以体感通胀藏在账单里，不在头条中"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即立'1%与钱不够花'的反差，中段开支结构、收入侧层层兑现钩子，结尾'翻账目看哪笔最倔'由正文自然生长。",
+      "script_spans": [
+        "物价说只涨1%，你咋还觉得钱不够花？",
+        "你家老人药费，哪会等物价平稳再收？",
+        "下次听物价温和，不妨翻自己账目，看哪笔最倔"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句与反问交替推进，气口和重音清楚；仅收入统计一句术语偏密，整体可直接录制。",
+      "script_spans": [
+        "你算算，房租和买菜钱，是不是固定吞掉一大半？",
+        "钱刚到手，先填了房租学费那些硬坑，菜场省下的根本补不上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'体感通胀藏在账单里，不在头条中'离开上下文仍可复述；'价格黏得很''看哪笔最倔'点睛服务理解，不堆砌不炫技。",
+      "script_spans": [
+        "体感通胀藏在账单里，不在头条中",
+        "这部分每月必掏，价格黏得很",
+        "先填了房租学费那些硬坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "为啥错位承上启下，因果桥清晰；支出、收入两侧递进收束，结尾以算账回扣开头与题设，主线无断点。",
+      "script_spans": [
+        "为啥错位？你家开支结构和CPI不合拍",
+        "收入侧呢，多数人靠工资，财产收益薄",
+        "下次听物价温和，不妨翻自己账目，看哪笔最倔"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "数据表述客观公允，主动厘清房价与房租的统计边界，建议止于自查账目，无煽动夸大或不当承诺。",
+      "script_spans": [
+        "官方3月数据，全国居民消费价格同比涨1.0%，真不算高。",
+        "房价虽不在CPI里，房租可算其中",
+        "下次听物价温和，不妨翻自己账目，看哪笔最倔。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3cb4b5e559c54290b7431c5913562e0c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

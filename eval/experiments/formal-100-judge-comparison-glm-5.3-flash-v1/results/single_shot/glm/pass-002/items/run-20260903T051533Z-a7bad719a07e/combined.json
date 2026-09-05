@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-efe426a6c0cb4ea69d850f9052eb7cf0",
+  "run_id": "run-20260903T051533Z-a7bad719a07e",
+  "trace_sha256": "a2828c10157c347d60e5740acc02c8cb6623546544b400bcdc9ba5f7be6f414a",
+  "created_at": "2026-09-03T15:26:13.924346Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头点明纠结场景并亮明立场，直答该不该上报，又以交还主动权区分关心与冒犯，两侧均覆盖。",
+      "script_spans": [
+        "除非涉及人身伤害风险，否则别把同事的家庭困境当成汇报材料，关心不等于举报。",
+        "把主动权交还对方，才是关心而不是冒犯。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从法律边界、援助渠道到行动话术层层给出增量，信息单元各自推进，越界关心的研究佐证也落到实处。",
+      "script_spans": [
+        "家庭信息在法律上属于敏感个人范畴，处理必须合法、正当、必要，且限于最小范围",
+        "很多企业设有员工援助计划，由第三方保密提供，既能帮同事又不泄露隐私",
+        "研究提示，越界的关心反而容易制造职场排斥感，让人更封闭。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛出同事变故与上报纠结的具体冲突；中段立场、法律边界、EAP、例外依次推进；结尾金句自然收束。",
+      "script_spans": [
+        "看到同事家里出了变故，你纠结该不该上报领导？",
+        "研究提示，越界的关心反而容易制造职场排斥感，让人更封闭。",
+        "上报的尺子不在你手里，在法律和对方的安全底线里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾顺口有对话感，但中段“且限于最小范围”像念法条，“职场排斥感”读来拗口需改词。",
+      "script_spans": [
+        "真想关心，不妨私下问一句：需不需要我帮你联系公司保密资源？",
+        "处理必须合法、正当、必要，且限于最小范围"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "「关心不等于举报」与结尾「尺子」之喻准确克制，离开语境仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "别把同事的家庭困境当成汇报材料，关心不等于举报",
+        "把主动权交还对方，才是关心而不是冒犯",
+        "上报的尺子不在你手里，在法律和对方的安全底线里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "立场、法理、例外、行动、收尾环环相扣，法定例外与开头的风险条件一致，结尾的尺子比喻自然回扣判断。",
+      "script_spans": [
+        "只有法定例外，比如自残或伤害他人倾向，才必须上报。",
+        "上报的尺子不在你手里，在法律和对方的安全底线里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "先立人身伤害风险例外，再引合法正当必要与最小范围，主张留有例外且措辞克制，无夸大或引战风险。",
+      "script_spans": [
+        "除非涉及人身伤害风险，否则别把同事的家庭困境当成汇报材料，关心不等于举报",
+        "只有法定例外，比如自残或伤害他人倾向，才必须上报",
+        "研究提示，越界的关心反而容易制造职场排斥感，让人更封闭"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1c333ea38cd542b58970be4476310aff",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

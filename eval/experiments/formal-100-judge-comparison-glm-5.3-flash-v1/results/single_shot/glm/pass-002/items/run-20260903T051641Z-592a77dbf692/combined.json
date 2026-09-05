@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-f8f325cccb14463cb0acfaa15aefa959",
+  "run_id": "run-20260903T051641Z-592a77dbf692",
+  "trace_sha256": "c52866c16c7246f2ba66ac907f72ba29d808350713da404160e0bc1df4fbec82",
+  "created_at": "2026-09-03T15:30:37.077285Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直给判断，结尾回扣'怕的不是国产'，替代加速与换系统顾虑两侧都答到。",
+      "script_spans": [
+        "企业怕换系统，不是看不起国产崛起，而是换工业软件等于给奔跑中的产线做开颅手术"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策、机理、案例辨析、试点路径层层推进，关键论据有据可查，结论有支撑。",
+      "script_spans": [
+        "那些成功多在可停机的非实时场景，有专业团队护航，不等于你的车间也能照抄"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛2027红线与百分百替换，紧接老总叹气成反差；中段连设质疑与转折，结尾余味由正文长出。",
+      "script_spans": [
+        "可我听到的不是狂欢，是工厂老总的叹气：产线系统真不敢动",
+        "那有人肯定问，不是有企业换完国产数据库，性能反而翻了好几倍吗？",
+        "企业怕的从来不是用国产，是怕换完系统，自己都看不懂自己的工厂了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口贯穿，比喻与反问自带重音停顿，无超长气段和拗口长句，照稿直读基本无需改词。",
+      "script_spans": [
+        "而是换工业软件等于给奔跑中的产线做开颅手术，稍有不慎就是全线瘫痪"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "开颅手术、老房重排电路等比喻各自服务理解、分布克制不堆砌，“给工厂重新学说话”离开上下文仍可复述。",
+      "script_spans": [
+        "换工业软件等于给奔跑中的产线做开颅手术",
+        "像给老房子重排电路，墙里的线你没看清就敢动",
+        "得给工厂一点重新学说话的时间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承接反例、条件区分清晰，结尾回扣开头判断，各段功能与因果桥完整。",
+      "script_spans": [
+        "那有人肯定问，不是有企业换完国产数据库，性能反而翻了好几倍吗？",
+        "企业怕的从来不是用国产，是怕换完系统，自己都看不懂自己的工厂了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "成功案例与风险边界并陈，提醒不盲目乐观、不打包票，无绝对化承诺与煽动对立，符合平台审核要求。",
+      "script_spans": [
+        "确实有金融、汽车部件的案例跑通了，核心指标超过旧系统，但这恰恰是不能盲目乐观的地方",
+        "那些成功多在可停机的非实时场景，有专业团队护航，不等于你的车间也能照抄",
+        "老师傅脑子里的经验能不能落进新系统，没人敢打包票"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b8015dfd47bb456690f090c4f12a5652",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

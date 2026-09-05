@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-ef15fa8da7eb44509b8821dd4c18e1e7",
+  "run_id": "run-20260903T051600Z-2c8ffad36743",
+  "trace_sha256": "8285b5fce307d8b8c030d1cceca103a1778343c162e78c14a8540d7fc1c7bd63",
+  "created_at": "2026-09-03T12:01:43.360182Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答消费者是否承担兼容成本，并覆盖标准碎片化、支出后果、监管过渡与购买人群。",
+      "script_spans": [
+        "全球技术标准各自成阵，消费者注定要为兼容难题买单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 255，目标为 280，偏差率为 8.93%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕兼容成本展开，依次解释协议不通、重复购买、政策过渡和下单核验，信息推进完整。",
+      "script_spans": [
+        "不同阵营的充电与连接协议互不打通，买新设备常得另购转接头或重复配置电源",
+        "下次更换手机或耳机前，先确认接口规格再下单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用充电线堆积制造具体痛点，中段补充法规与过渡期，结尾建议自然，推进和收束都较完整。",
+      "script_spans": [
+        "抽屉里那堆互不通用、越积越多的充电线",
+        "部分地区已通过强制法规来统一充电接口",
+        "先确认接口规格再下单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读通，开头和结尾有提醒感，但中段长句、抽象名词和个别搭配挤在一起，朗读需要重断句。",
+      "script_spans": [
+        "先确认接口规格再下单",
+        "抬升日常看不见的开销",
+        "重复配置电源"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“充电线堆积”的具体画面，但“隐性兼容费偷走你的钱包预算”搭配生硬，记忆点不够自然。",
+      "script_spans": [
+        "抽屉里那堆互不通用、越积越多的充电线",
+        "别让隐性兼容费偷走你的钱包预算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "起承转合清楚，但把法规出台直接等同于监管公开承认消费损失，因果桥不足。",
+      "script_spans": [
+        "部分地区已通过强制法规来统一充电接口",
+        "正说明当地监管层也公开承认碎片化让普通人多花冤枉钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，提醒核对接口较稳妥；但“注定”“互不打通”及“公开承认”存在绝对化和过度归因，需加限定。",
+      "script_spans": [
+        "下次更换手机或耳机前，先确认接口规格再下单",
+        "消费者注定要为兼容难题买单",
+        "不同阵营的充电与连接协议互不打通",
+        "正说明当地监管层也公开承认碎片化让普通人多花冤枉钱"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3902722c541644a4aaa1e0427f472520",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-2abf5b65346346f089bce1a46a605e0d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

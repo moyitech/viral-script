@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-9aee1539ec5e41cc9bf8c86622a8e8eb",
+  "run_id": "run-20260903T051536Z-c0d5aafaa513",
+  "trace_sha256": "ca9a0678af9b90b3250f25f6a16bc0b872484121aa5b9f352147fdb7c1c3bb56",
+  "created_at": "2026-09-03T12:32:18.560264Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正文始终围绕订单回暖与招聘收缩的矛盾，解释企业顾虑并落到普通求职者判断。",
+      "script_spans": [
+        "订单变多了，工厂却还在缩招。",
+        "所以看制造业体温，别只盯订单曲线，用工数才是真温度计。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据、企业成本、行业分化和个人判断层层推进，信息具体，能解释订单回暖不等于全面招工。",
+      "script_spans": [
+        "整体制造业景气其实还没迈过荣枯线，大企业生产端稍稳，小厂依然在收缩区挣扎。",
+        "企业签一份正式合同，后面跟着社保、培训、还有万一要分手的解雇补偿，全是刚性支出。",
+        "市场情绪摇摆的时候，单一指标最容易骗人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头订单变多却缩招立刻制造反差，中段层层补充需求、用工与政策原因，结尾自然落到判断和行动。",
+      "script_spans": [
+        "订单变多了，工厂却还在缩招。",
+        "别被账面订单晃了眼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有“那有人问了”“咱们个人”等对话感，但“正式军”“体感会很钝”等表达拗口，整体尚未达到顺滑口播。",
+      "script_spans": [
+        "订单变多了，工厂却还在缩招。",
+        "那有人问了，既然活儿多起来，为啥不算算账",
+        "剥人的成本比接单的利润还烫手",
+        "把临时工转成正式军",
+        "普通打工者体感会很钝"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“活儿在账上，人却在门外”和“用工数才是真温度计”形象准确，帮助观众记住核心判断，修辞没有压过信息。",
+      "script_spans": [
+        "活儿在账上，人却在门外。",
+        "用工数才是真温度计"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "数据到企业选择再到个人体感的结构清楚，但把用工指数直接解释成加班和不招聘，因果桥仍不够。",
+      "script_spans": [
+        "另外得说清边界：订单回暖能不能延续，现在谁也不敢打包票，别拿一个月数据当拐点。",
+        "从业人员指数连续下滑就说明，宁可让人累着，也不松招聘的口子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能提示“别拿一个月数据当拐点”，但把单月指数推成企业动机、招聘行为和岗位真假，且政策表述偏绝对，仍有误导风险。",
+      "script_spans": [
+        "别拿一个月数据当拐点",
+        "从业人员指数连续下滑就说明，宁可让人累着，也不松招聘的口子",
+        "宏观嘴上说订单回暖，但用工没跟，意味着岗位释放是虚的",
+        "返的是之前交的失业保险费，招新人可没这份额"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c2b0a5b1eac849e39c48b7e5683140c2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

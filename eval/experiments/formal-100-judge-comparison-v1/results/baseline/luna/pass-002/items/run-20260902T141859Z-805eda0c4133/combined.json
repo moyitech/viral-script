@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-905c0d9732894a559d8b38e6435a64a4",
+  "run_id": "run-20260902T141859Z-805eda0c4133",
+  "trace_sha256": "e42e50c2cfbb5e05ec0e9728140f07de3eba817a2ea77a5ebd07115b1a7fcba5",
+  "created_at": "2026-09-03T12:15:16.232964Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接回答会不会伤及出行，兼顾便利与秩序，并给出先有地方可停这一关键条件。",
+      "script_spans": [
+        "禁停范围扩大确实会伤及出行便利，但也整治了乱停堵路乱象，两边不能只顾一边。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕禁停扩围的便利代价、治理收益和配套条件展开，既有机制也有可执行建议，信息增量充分。",
+      "script_spans": [
+        "停到禁停区的车收不到锁车信号，信号拦着不让上锁，没法结算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出锁不上还扣钱的具体冲突，中段补足机制与停车容量，结尾自然落到判断标准。",
+      "script_spans": [
+        "你骑共享单车到地铁口，车锁不上还扣钱",
+        "禁停扩不扩，关键看留没留这条路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体句子不长，开头和结尾较顺，但中段有书面化表达及“两座场分流”等明显卡嘴处。",
+      "script_spans": [
+        "整治不是把车赶尽，是给行人腾出道儿。",
+        "下次撞见禁停线，先开软件找附近划线区。",
+        "禁停范围扩大确实会伤及出行便利，但也整治了乱停堵路乱象",
+        "能停两百多辆，两座场分流"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“给行人腾出道儿”和“关键看留没留这条路”具体、克制又好复述，修辞没有喧宾夺主。",
+      "script_spans": [
+        "整治不是把车赶尽，是给行人腾出道儿。",
+        "禁停扩不扩，关键看留没留这条路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从出行代价讲到停车供给再落到判断标准，递进清楚；但“两座场分流”成分残缺，影响口播和理解。",
+      "script_spans": [
+        "所以禁停能扩，但得先有地方可停。",
+        "两座场分流"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体能平衡出行便利与秩序治理，也未作危险承诺；但将试点机制泛化为普遍结果，部分表述过于绝对。",
+      "script_spans": [
+        "禁停范围扩大确实会伤及出行便利，但也整治了乱停堵路乱象，两边不能只顾一边。",
+        "你骑共享单车到地铁口，车锁不上还扣钱，这就是禁停区扩大的直接代价。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d4fbdf35144641e185987f22b42d5217",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

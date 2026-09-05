@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-4e07c34fdb3746708b61a9d21c562ed7",
+  "run_id": "run-20260903T051603Z-dd7989760810",
+  "trace_sha256": "c8dd6e822d340cfb0f68b418c32b71bb3ed9ade1cd72d9f48d59ff4d72e2d1bc",
+  "created_at": "2026-09-03T12:43:53.104664Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 2,
+      "reason": "正面讨论普通岗位、入行门槛与风险，但“创造多少”始终没有量化回答，岗位类别不能替代数量。",
+      "script_spans": [
+        "我的判断很明确：低空产业确实在冒出普通岗位，但绝不是人人考个证就能高薪",
+        "主要是无人机操控员、装调检修工、低空物流调度员、农林植保巡查员这些。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕普通人就业，既拆解运营端岗位链条，也给出持证过剩、场景限制和技能复合等具体判断，信息推进充分。",
+      "script_spans": [
+        "一架无人机背后，需要的不是单个飞手，而是一串让系统转起来的技能型人手。",
+        "岗位增量不等于人人有份。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以具体场景反问切入，中段不断补充岗位、门槛与反例，结尾既收束判断又留下行动方向。",
+      "script_spans": [
+        "天上无人机送咖啡、田间无人机喷药，可地面上的普通人真能靠低空经济端稳饭碗吗？",
+        "岗位增量不等于人人有份。",
+        "挑一个已落地的细分场景扎根，比追风口更稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答推进自然，具体场景也便于换气；但两处核心长句抽象且书面，朗读需重断句，整体只能评2分。",
+      "script_spans": [
+        "为什么突然需要这么多地面的人？",
+        "空域申请、航线规划、气象应对、地面站看守，这些下沉工种正把就业门槛从中等技能拉向更广的群体。",
+        "有学术评估发现低空试点政策对上市企业用工确有带动，但样本偏重东部和民企，不能直接代表全国普通人的就业面。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“运营天空”和“给踏实手艺人加了一双翅膀”既有画面又服务观点，“光凭证书排队”也便于复述。",
+      "script_spans": [
+        "运营天空",
+        "低空不是一夜暴富的神话，它更像给踏实手艺人加了一双翅膀",
+        "光凭证书排队，等来的可能是过剩。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整、主线可跟随，但百万缺口与局部就业率不在同一层级，缺少解释；“就业门槛拉向更广群体”也表述生硬。",
+      "script_spans": [
+        "一架无人机背后，需要的不是单个飞手，而是一串让系统转起来的技能型人手。",
+        "常听预测说飞手缺口达百万级，可现实里某些城市持证飞手就业率已经掉到四成以下",
+        "这些下沉工种正把就业门槛从中等技能拉向更广的群体。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "对高薪传闻、样本外推和考证风险均作了限定，避免把岗位增长包装成人人受益。",
+      "script_spans": [
+        "绝不是人人考个证就能高薪",
+        "不能直接代表全国普通人的就业面"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6979605679fd442ba8249e0d03924dc4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

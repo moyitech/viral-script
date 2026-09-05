@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-7c587642cffc4eb6a6bd20082fc81c26",
+  "run_id": "run-20260903T051519Z-3a4b50f8802e",
+  "trace_sha256": "276b7a6d376d98b958172bd9433c8d3a1326bd892242850733c4cc9030f52b4f",
+  "created_at": "2026-09-03T12:31:27.064458Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回应反感原因，并覆盖用人方、求职者与应对建议，切角具体，完整命中题设。",
+      "script_spans": [
+        "招聘写着“薪资面议”，求职者越来越反感，核心就一句话"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕薪资不透明展开，分别提供机制解释、公平感受和行动建议，信息有推进。",
+      "script_spans": [
+        "这是用人方把议价风险和探底成本转嫁给求职者",
+        "面议把数字藏到面试才说，求职者前期投入车马和时间",
+        "先通过招募方或熟人问清薪资带宽"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出反感冲突，中段递进到监管、心理和成本，结尾给出可执行建议，推进完整。",
+      "script_spans": [
+        "招聘写着“薪资面议”，求职者越来越反感",
+        "把主动权留一点给自己，也省下奔波的力气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "主线清楚、建议可执行，但抽象术语和长串因果让朗读不够松弛。",
+      "script_spans": [
+        "碰见面议岗位别急着投简历",
+        "这是用人方把议价风险和探底成本转嫁给求职者"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“被拿捏的无力感”“把主动权留一点给自己”形象且可复述，修辞克制并服务于解释与行动。",
+      "script_spans": [
+        "这种被拿捏的无力感最败好感",
+        "把主动权留一点给自己"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按原因、心理感受、应对建议推进，但由仍标面议直接推到刻意和低薪套路，意图判断缺少证据桥。",
+      "script_spans": [
+        "再从心理看，人的公平感高度依赖决策过程透明。",
+        "碰见面议岗位别急着投简历，先通过招募方或熟人问清薪资带宽",
+        "不像疏忽，更像刻意留弹性空间，让人怀疑真实区间偏低或暗藏套路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，核实薪资的建议也稳妥；但将“面议”普遍归因为刻意压低或暗藏套路，存在过度归因。",
+      "script_spans": [
+        "碰见面议岗位别急着投简历，先通过招募方或熟人问清薪资带宽",
+        "许多岗位却仍标面议，不像疏忽，更像刻意留弹性空间，让人怀疑真实区间偏低或暗藏套路"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c6a34f9902fe4a488dab6807cffc8cca",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

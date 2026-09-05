@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-1b72171dc9b8422e948ee285b738347a",
+  "run_id": "run-20260903T051547Z-6106a95cc4b3",
+  "trace_sha256": "2df465d5def572fa589d19bfe919f834ea7db5063c545ff56545f41cad2f8bda",
+  "created_at": "2026-09-03T12:33:02.498508Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从便利切入，完整解释线上复诊的误诊机制、监管边界与用户避险动作，正面回应题目。",
+      "script_spans": [
+        "一键开药不是原罪，但它只该是稳定慢病复诊的捷径，一旦越过复诊边界，误诊风险会成倍藏在日常里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "不只给出结论，还用体征缺失、模板问答、监管禁令和用户误区层层补足风险认知。",
+      "script_spans": [
+        "这些动态体征是文字描述替代不了的。",
+        "诊断本来就需要冗余信息交叉验证，一键把路径压到最短，也压薄了安全垫。",
+        "一键开药最怕的不是程序，是自我诊断的错觉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用便捷反问凭什么开，中段不断补充风险、规则和反例，结尾警句自然收束，追看动力足。",
+      "script_spans": [
+        "手指点几下，药就送到家，这听起来像医疗的进步，可你有没有想过，当医生没见到你本人，这盒药凭什么开给你？",
+        "药能快递，身体不能简配；线上续方是后勤补给，不是前线战场。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "具体例子和提醒段落较顺，但中段有多处书面化、抽象搭配，整体仍需口头化打磨。",
+      "script_spans": [
+        "别偷懒点屏幕，去实体诊室",
+        "系统若直接顺承，就可能放过悄悄恶化的信号",
+        "诊断本来就需要冗余信息交叉验证，一键把路径压到最短，也压薄了安全垫"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“药能快递，身体不能简配”把便利与风险压缩成鲜明反差，整体比喻服务于论证，没有喧宾夺主。",
+      "script_spans": [
+        "一键把路径压到最短，也压薄了安全垫。",
+        "药能快递，身体不能简配；线上续方是后勤补给，不是前线战场。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，随后由信息缺口推到误诊风险，再转入监管和个人决策，结尾回扣复诊边界，递进完整。",
+      "script_spans": [
+        "一键把路径压到最短，也压薄了安全垫。",
+        "规矩和漏洞都说完了，落到咱们自己身上，最容易被忽略的现实影响是什么？",
+        "把合适的病例留给线上，把未知交给诊室，守住复诊的边界，便捷才真正属于你。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能区分稳定复诊与首诊，并提醒新症状及时线下就医；但“误诊风险会成倍”缺少依据和限定，措辞偏满。",
+      "script_spans": [
+        "即便合规复诊，医生仅靠图文也难百分百捕捉细微变化，只是风险相对可控。",
+        "误诊风险会成倍藏在日常里"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-112918d4c5ae43b9881d93d7882df42f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

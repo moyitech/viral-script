@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-c117ae9cfbb549e298cb70faa77abe52",
+  "run_id": "run-20260903T051519Z-5977e136e363",
+  "trace_sha256": "5000ac33da30322add050db502d87b8065ff8477897f8334faa3361fa82f4c40",
+  "created_at": "2026-09-03T12:06:20.068942Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答能否读懂潜力，并同时覆盖企业效率、求职者风险与用人方边界，切角具体。",
+      "script_spans": [
+        "算法能帮企业快速筛掉明显不匹配的简历和人，但远读不懂一个人真正的潜力。",
+        "对找工作的人，把经历讲成有逻辑的故事，比练微笑更靠谱；对用人方，别让算法当终审"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 762，目标为 700，偏差率为 8.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕效率与潜力识别的边界持续推进，包含机制解释、偏差风险、效度标准和行动建议，信息增量充足。",
+      "script_spans": [
+        "自动视频面试系统在提交简历后就能直接介入，帮人力资源在零沟通下缩小候选人池。",
+        "一个学历普通但上手极快、风格迥异的人，反而容易被低分剔除，因为他对不上历史数据的胃口。",
+        "不确定性在于，很多工具的长期预测效度还没公开验证。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用面试后的反差立刻抛出算法评分，中段持续补充偏差与边界，结尾以比喻和建议自然收束。",
+      "script_spans": [
+        "你刚结束一场视频面试，对着镜头讲完项目经历，以为打分的会是后面坐着的人。其实，算法已经把你的停顿、笑容和用词频率转成了分数。",
+        "所以，AI面试官不是读心术，它只是把放大镜换成了滤镜。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体承接清楚、语气有起伏，但“零沟通下”等表述偏硬，长句和术语让中段多次需要重断句。",
+      "script_spans": [
+        "先说企业为什么急着用。",
+        "自动视频面试系统在提交简历后就能直接介入，帮人力资源在零沟通下缩小候选人池。",
+        "心理学上，问同样问题、提前定标准的结构化面谈才更预测绩效，而不少AI面试恰恰少了这层严谨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“放大镜换成滤镜”准确概括算法局限，“辅助的筛子，不是潜力的裁判”也便于复述，修辞克制且服务观点。",
+      "script_spans": [
+        "它只是把放大镜换成了滤镜。",
+        "它该是辅助的筛子，不是潜力的裁判。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构按现象、动因、风险、边界、现实与建议递进，转折自然，效率与公平的论证链条基本完整。",
+      "script_spans": [
+        "先说企业为什么急着用。",
+        "那标榜客观，是不是就能放心？这里有个取舍。",
+        "所以，AI面试官不是读心术，它只是把放大镜换成了滤镜。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制且未煽动，但将部分系统机制说成普遍事实，需限定适用范围，避免造成误导。",
+      "script_spans": [
+        "它只是把放大镜换成了滤镜。",
+        "算法已经把你的停顿、笑容和用词频率转成了分数。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4d150d505acf432c8133f98d73c84ce8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-928bee1f15904e2e8aa699d85b827056",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -67,9 +67,7 @@ uv run --no-sync python scripts/run_evaluation.py score \
 
 ### 100 个测试用例配对评测
 
-正式评测固定使用仓库公开、由本项目构造的 100 个开放式选题。三候选主编基线先为每题冻结
-一份实时检索背景，再生成 280、450、700 字三档文案；端到端直接生成复用同一批背景，每项
-只调用一次 Hy3 生成内容。两组各 300 条，共 300 组严格配对。
+正式评测固定使用仓库公开的 100 个开放式选题。三候选主编基线先为每题冻结一份实时检索背景，再生成 280、450、700 字三档文案；端到端直接生成复用同一批背景，每项只调用一次 Hy3 生成内容。两组各 300 条，共 300 组严格配对。
 
 实验前，先执行不联网的准备检查：
 
@@ -77,9 +75,11 @@ uv run --no-sync python scripts/run_evaluation.py score \
 uv run --no-sync python scripts/run_formal_experiment.py prepare
 ```
 
-真实实验必须显式分阶段启动，且可在失败后原命令续跑：
+首先使用 hy3 根据本项目构建的口播文案生成 Agent 进行生成：
 
 ```bash
+# 真实实验必须显式分阶段启动，且可在失败后原命令续跑。
+
 uv run --no-sync python scripts/run_formal_experiment.py generate
 
 uv run --no-sync python scripts/run_formal_experiment.py score
@@ -87,25 +87,53 @@ uv run --no-sync python scripts/run_formal_experiment.py score
 uv run --no-sync python scripts/run_formal_experiment.py report
 ```
 
-复用冻结研究执行端到端直接生成、评分、复评和对照报告：
+端到端方式直接生成文案，并进行评分、复评和对照报告：
 
 ```bash
 uv run --no-sync python scripts/run_end_to_end_experiment.py run
 ```
 
-只对两组冻结成稿增量运行攻击检测、不重跑原八维评分：
+在 Agent、端到端两组各 300 条成稿上，用不同打分模型最高推理强度实现双 Judge 对照（Hy3=`high`，
+GPT-5.6-Luna=`xhigh`）：
+
+```bash
+uv run --no-sync python scripts/run_judge_model_comparison.py prepare
+uv run --no-sync python scripts/run_judge_model_comparison.py score
+uv run --no-sync python scripts/run_judge_model_comparison.py repeat
+uv run --no-sync python scripts/run_judge_model_comparison.py report
+```
+
+
+同一组冻结文案也使用 `glm-5.3-flash`、`max` 推理强度重复完整双 Judge
+对照：
+
+```bash
+uv run --no-sync python scripts/run_glm_judge_model_comparison.py prepare
+uv run --no-sync python scripts/run_glm_judge_model_comparison.py score
+uv run --no-sync python scripts/run_glm_judge_model_comparison.py repeat
+uv run --no-sync python scripts/run_glm_judge_model_comparison.py report
+```
+
+对两组冻结成稿增量运行攻击检测分：
 
 ```bash
 uv run --no-sync python scripts/run_incremental_attack_evaluation.py
 ```
 
-基线默认并发为 32 个任务、64 个 Hy3、8 个 Tavily 和 64 个 Judge 请求；端到端直接生成使用
-300 个任务、512 个 Hy3 和 512 个 Judge 请求，本次新增 Tavily 请求为 0。基线产物见
-[`formal-100-v1`](eval/experiments/formal-100-v1/README.md)，严格配对结果见
-[端到端直接生成对照报告](eval/experiments/formal-100-e2e-single-shot-v1/report/comparison.md)。
+基线产物见[`formal-100-v1`](eval/experiments/formal-100-v1/README.md)，严格配对结果见[端到端直接生成对照报告](eval/experiments/formal-100-e2e-single-shot-v1/report/comparison.md)。
 
-两组正式生成及各自两轮 Judge 的最终记录合计超过 6,000 万 Hy3 token；基线重新联网执行
-还会产生 Tavily 请求，运行前请先确认服务配额和成本。
+两组正式生成及各自两轮 Judge 的最终记录合计超过 6,000 万 Hy3 token。
+
+Judge 内部一致性：
+
+| Judge | 合并样本 | 逐维完全一致率 | 七维全部一致率 | 总分 MAE | 总分 Spearman |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| **Hy3** | **600** | **96.83%** | **81.33%** | **0.009127** | **0.7115** |
+| GPT-5.6-Luna | 600 | 92.48% | 55.00% | 0.021429 | 0.6078 |
+| GLM-5.3-Flash | 600 | 91.60% | 52.00% | 0.025000 | 0.5799 |
+
+按两轮绝对分差的内部一致性排序为 **Hy3 > GPT-5.6-Luna >
+GLM-5.3-Flash**。下面两组并列表中的重复评价指标是 Hy3 的分组诊断。
 
 | 指标 | 三候选主编基线 | 端到端直接生成 | 对照结论 |
 | --- | ---: | ---: | --- |
@@ -117,11 +145,10 @@ uv run --no-sync python scripts/run_incremental_attack_evaluation.py
 | 重复评价逐维一致率 | 99.05% | 94.62% | 单条文案的细粒度分差仍需谨慎解释 |
 | 七维完全一致样本 | 93.67% | 69.00% | 直接生成组评分波动更大 |
 | 攻击维度自然成稿标记 | 4 / 300 | 3 / 300 | 7 条警报逐条复核均有可定位问题 |
-| 人工盲评 | 50 项模板待标注 | 同左 | 当前没有 Judge—人工一致性证据 |
+| 人工盲评 | 50 项双人评分已回收 | 尚未覆盖 | GPT-5.6-Luna 的人工排序相关最高，但仍为弱相关 |
 
-对两组各 300 条冻结成稿的增量检测中，三类 reward-hacking 合并标记为 0/300、1/300，
-引用风险为 4/300、2/300；7 条警报复核均非明显误报。其余样本没有独立人工负标签，因此
-不把该结果表述为严格误报率。此次增量检测没有重跑原八维评分。
+对两组各 300 条冻结成稿的增量检测中，三类 reward-hacking 合并标记为 0/300、1/300，引用风险为 4/300、2/300；7 条警报复核均非明显误报。
+在这 50 条上，GPT-5.6-Luna 与两位人工平均分的七维总分 Spearman 为 0.236，高于GLM-5.3-Flash 的 0.033；Hy3 七维全部满分，因无方差而无法计算排序相关。
 
 完整的分长度、领域、难例标签结果，典型输出分析与模型能力边界见
 [任务 1 模型输出评估报告](docs/task1-evaluation-report.md)。
@@ -204,15 +231,17 @@ uv run --no-sync python scripts/run_incremental_attack_evaluation.py
 
 ### Judge 一致性与对抗检验
 
-| 指标 | 三候选主编基线 | 端到端直接生成 |
-| --- | ---: | ---: |
-| 逐维完全一致 | 99.05%（2,080/2,100） | 94.62%（1,987/2,100） |
-| 七维全部一致的输出 | 93.67%（281/300） | 69.00%（207/300） |
-| 总分 MAE | 0.003175 | 0.015079 |
-| 总分 Spearman | 0.2734 | 0.7072 |
+内部一致性统一混合三候选主编基线 300 条与端到端直接生成 300 条，按 600 条计算；两种
+生成流程不再作为这张主结果表的独立比较对象。
 
-基线的大量满分压低了 Spearman；直接生成分布更宽，因此 Spearman 更高，但逐维一致率和
-全维一致率更低。两者都不能单独证明细粒度排序稳定。
+| Judge | 逐维完全一致率 | 七维全部一致率 | 总分 MAE | 总分 Spearman |
+| --- | ---: | ---: | ---: | ---: |
+| **Hy3** | **96.83%（4,067/4,200）** | **81.33%（488/600）** | **0.009127** | **0.7115** |
+| GPT-5.6-Luna | 92.48%（3,884/4,200） | 55.00%（330/600） | 0.021429 | 0.6078 |
+| GLM-5.3-Flash | 91.60%（3,847/4,200） | 52.00%（312/600） | 0.025000 | 0.5799 |
+
+按两轮绝对分差，Hy3 的内部一致性最高，GPT-5.6-Luna 第二，GLM-5.3-Flash 第三。分组
+Spearman 会分别受到基线天花板效应和直接生成较宽分布的影响，因此只在正式报告中作为诊断保留。
 
 | 对抗攻击类型 | 检出 | 检出率 |
 | --- | ---: | ---: |

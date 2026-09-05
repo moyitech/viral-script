@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-10d3569fdcb0440bb7b1516ce0af3f12",
+  "run_id": "run-20260902T141800Z-b3aa0a82ee91",
+  "trace_sha256": "731281a23cafe364bec86fa35a8dc793b665fd1dab91b78062ce21ed42c0ba3e",
+  "created_at": "2026-09-03T11:45:09.745272Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应座位长期占用的公平问题，既明确馆方与文化部门责任，也覆盖占座读者这一冲突一方。",
+      "script_spans": [
+        "馆方要负主责，占座的人也得收手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 644，目标为 700，偏差率为 8.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕公平治理，法律边界、占座造成的资源浪费、馆员执行困境和责任分层都在推进判断。",
+      "script_spans": [
+        "但法里没细说，留本书占一整天算什么，也没提馆员能不能收走东西。",
+        "一小时变三小时，资源卡在虚无里。",
+        "治理手段试过好些，效果总卡在执行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头“没座”对“堆满桌”形成强冲突，中段不断补充责任、执行和现实困境，结尾回到公共公平，推进完整。",
+      "script_spans": [
+        "想看书的人没座，占座的书却堆满桌。这公平谁管？",
+        "公平就从小动作活过来。那时满厅书和人，各得其所才叫公共。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和主体多用短句，读感有对话感；但“借灯位”“不住”等表述卡嘴，难称精心设计。",
+      "script_spans": [
+        "你说为啥踢给馆员？原因挺实在。",
+        "真备考的学生，只能站着借灯位抄笔记。",
+        "直接收走占物怕引争吵，不理又对老读者不住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“这球就踢给馆员了”和“清了东桌西桌冒新包”具体好记，修辞服务观点，没有堆砌到妨碍理解。",
+      "script_spans": [
+        "这球就踢给馆员了。",
+        "清了东桌西桌冒新包。",
+        "公平就从小动作活过来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、冲突、难点和结论基本成链，但责任从文化部门跳到馆员时桥梁偏弱，且中段插入外地与台湾材料后回扣不足。",
+      "script_spans": [
+        "馆方要负主责，占座的人也得收手。",
+        "所以公平不是帖张条就稳。",
+        "这球就踢给馆员了。",
+        "台湾同行聊过多元包容，落到占座却少实招。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，且兼顾馆方与读者；但“馆方要负主责”“责在文化部门”未限定法定职责，易把治理倡议听成确定责任。",
+      "script_spans": [
+        "馆方难道不想管？他们有难处。",
+        "说到底责在文化部门，可细则没落地。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5d274f35bc054862a9a1926ddcf358ee",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-bb15b76dfcba4df8975e7148ddc1600a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-9802f88fd10d4b87814ae8fe47ed24ab",
+  "run_id": "run-20260902T142641Z-d05d946a209d",
+  "trace_sha256": "9f38b5cf090486584630ecf5421cc5d09b2b51f13013a35a01c21c7b22362460",
+  "created_at": "2026-09-03T14:25:01.143171Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给“拆两半”方案，先解缩水成因再答去处，覆盖题设两侧并落在普通家庭场景。",
+      "script_spans": [
+        "这题不是二选一，而是把闲钱拆两半",
+        "普通人家能碰的，主要是储蓄国债"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "利率机制、监管约束、国债数据层层推进，含可操作配比与量化对比，引用可核，无编造。",
+      "script_spans": [
+        "水涨船高，现金管理产品主要买这些短债，底层资产不赚钱，它给投资者的收益只能往下挪",
+        "十万块一年能多几百块利息，可要是全锁死，生病救急就傻眼"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出两难冲突，中段数据与转折持续兑现，结尾问句由正文自然生长，留有余味。",
+      "script_spans": [
+        "闲钱放现金类收益掉到1字头，挪走怕锁死，不动又亏息",
+        "其实啊，这题不是二选一，而是把闲钱拆两半",
+        "你是要伸手就破的方便，还是肯站几年等那点利差？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "通篇短气口，设问带节奏，“拆两半”“锁点利”等口语动词贯穿，朗读无需改词。",
+      "script_spans": [
+        "其实啊，这题不是二选一，而是把闲钱拆两半。一半接着放活钱，保你随时用；另一半挪去锁点利"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "窗纸、收益栏绿了等比喻点到为止且服务理解，薄得像层窗纸离开上下文仍可复述，无堆砌。",
+      "script_spans": [
+        "当活钱利息薄得像层窗纸",
+        "两层夹击，你看到的收益栏就绿了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "成因、去处、落地三段递进，过渡句清晰，结尾权衡回扣开头两难，因果桥完整。",
+      "script_spans": [
+        "两层夹击，你看到的收益栏就绿了",
+        "落到实际，你先算家里几个月开销，比如三四个月工资留活钱应急"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体边界清楚，主动提示不保本金与扣息风险；但“保你随时用”“抵消通胀”属绝对化承诺，措辞需限定更稳妥。",
+      "script_spans": [
+        "还有同业存单指数基金，净值每天变，不保本金，也算折中。",
+        "手头紧时，国债不能当活期刷。",
+        "一半接着放活钱，保你随时用",
+        "另一半挪去锁点利，抵消通胀"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-dd9b8c94733247c69d19d74a7bb01df6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-0e5ef1da27374c9e8a7a5e0e8f5ad69e",
+  "run_id": "run-20260902T144241Z-24c927ad6676",
+  "trace_sha256": "ba4975a639d6fee4aa921e6cb083948c1f25d0276bf52dbf2b32971122d86e98",
+  "created_at": "2026-09-03T14:25:46.353134Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即问公平，全文围绕付出不同怎么算给法律底线与家庭拆解法，结尾回扣老人与子女双方。",
+      "script_spans": [
+        "姐请了半年假守床前，你只微信转了钱，这算公平？",
+        "老人要的是身边热乎，不是账本漂亮。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，法条底线、家庭会议清单、长护险覆盖九十多城层层递进，兼有判断方法与具体增量。",
+      "script_spans": [
+        "把爸换尿管次数、粥钱列明白。姐陪床天数多，你出钱占比大，折中。",
+        "长期护理保险正从试点推向全国铺开，已覆盖九十多城。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即给出具体反差并追问公平，中段法律、家庭会、长护险持续上新，结尾余味由账本比喻自然生长。",
+      "script_spans": [
+        "姐请了半年假守床前，你只微信转了钱，这算公平？",
+        "妈摆手说都一样，可你俩知道不一样。",
+        "老人不求平，求有人疼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "通篇短句、对话感强，读来上口；但“儿女里女儿”“老过法子”等处需换词重断，卡住节奏。",
+      "script_spans": [
+        "她手糙了，你钱包瘪了，都不是白干",
+        "有研究说儿女里女儿多管陪护儿子管钱",
+        "这路数不是法，只是老过法子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "算盘声盖呼噜声等喻体鲜活、离开原文仍可复述，但「不是X是Y」式金句连续堆叠，点染过度显刻意。",
+      "script_spans": [
+        "别让算盘声盖了妈的呼噜声",
+        "它不管谁心委屈，只问人有没有人管。法官不量心跳，只量能力和钱。赡养不是交易，是兜底。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "情绪、法律、开家庭会、借外力四段各司其职，设问过渡自然，账本意象贯穿并回扣开头与题设。",
+      "script_spans": [
+        "家庭会不是审判，是找最大公约数。",
+        "账算清了，人才踏实。别让算盘声盖了妈的呼噜声。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "性别分工说法有研究支撑且明确限定只是经验路数；长护险进展表述留有余地，无绝对承诺或煽动风险。",
+      "script_spans": [
+        "这路数不是法，只是老过法子",
+        "这险种还在铺，没全亮灯，方向对",
+        "长护险是外援，不是你家顶梁柱"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f7ba25c996be4007bab616fcf80e2c11",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

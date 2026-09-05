@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-0c767d0aa5234d9e91e6a59c422472c7",
+  "run_id": "run-20260903T051619Z-dccc5bbfcde6",
+  "trace_sha256": "501a44d831ece25adc1d2baa795ea688b6c37f730947e37024c84762cd5c8579",
+  "created_at": "2026-09-03T15:28:34.575495Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即抛充电两难，风险判断与四条对策正面回答题设，出门人群痛点抓得准。",
+      "script_spans": [
+        "插上吧，怕相册聊天记录被摸走；不插吧，怕错过接站的人",
+        "最稳的是自己带充电头，找墙插输自己的电"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从线材同源原理、政策佐证到案例查无实证的成因逐层推进，对策具体，增量扎实。",
+      "script_spans": [
+        "普通USB线本来就是电力和数据同路走",
+        "改造设备要本钱，蹲点等边角料信息收益还不稳",
+        "充电宝也是好搭档，它跟手机之间只谈电不谈隐私"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开场两难直击痛点，中段以案例稀缺的翻转持续供新信息，结尾钥匙意象收出余味，无硬凑互动。",
+      "script_spans": [
+        "插上吧，怕相册聊天记录被摸走；不插吧，怕错过接站的人",
+        "真被坐实了的案例却少得可怜",
+        "电可以借，但数据接口的钥匙别随手交"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口与对话感总体在线；不足在“推充电基础设施体系”与“默认连上常会弹信任框”两处需临时换词重断，未达3分档。",
+      "script_spans": [
+        "插上吧，怕相册聊天记录被摸走；不插吧，怕错过接站的人。",
+        "手机默认连上常会弹信任框",
+        "国内这两年推充电基础设施体系"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "钥匙与暗雷比喻贴切且前后呼应，只谈电不谈隐私简练可复述，修辞克制，服务理解不喧宾夺主。",
+      "script_spans": [
+        "手机连上去就像把家门钥匙递给生人",
+        "它跟手机之间只谈电不谈隐私",
+        "电可以借，但数据接口的钥匙别随手交"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "三处设问当过渡，机理、反证、对策层层递进，结尾塞充电头自然回扣开头两难。",
+      "script_spans": [
+        "那为什么传了十来年，真被坐实了的案例却少得可怜？",
+        "下次出门前，往包里塞个充电头，比对着充电桩胡思乱想要实在得多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "风险表述克制，'低概率的暗雷'定性避免夸大，建议均附条件与替代方案，无误导煽动，公允稳妥。",
+      "script_spans": [
+        "它更像个低概率的暗雷，绝不是满地都是的陷阱",
+        "手机跳出“是否信任此设备”时，果断点不信任，只留充电选项"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-492f7848fe7c4274ae9672d2231cfbc6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

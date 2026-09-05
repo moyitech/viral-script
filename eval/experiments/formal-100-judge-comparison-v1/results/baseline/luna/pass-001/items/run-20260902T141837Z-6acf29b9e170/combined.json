@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-b9295b321e804dfa958e2a19a3cd0978",
+  "run_id": "run-20260902T141837Z-6acf29b9e170",
+  "trace_sha256": "3c5fba9e45e8582395c9c518863e6229c6b3dee494b15d5817e7645b7c8ad39c",
+  "created_at": "2026-09-03T11:45:20.978788Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回应低风险债基为何亏损，并覆盖净值、利率、信用和普通投资者决策。",
+      "script_spans": [
+        "明明标着低风险，债基却亏了本金，为啥？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 492，目标为 450，偏差率为 9.33%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，估值、利率、信用、久期与股票仓位构成多层有效信息，解释不止于口号。",
+      "script_spans": [
+        "基金每天用市值法算账，按市场交易价重新估持仓债券。",
+        "久期长的债对利率更敏感，摆幅更大。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用亏本金制造冲突，中段连续拆解风险，结尾问题自然承接，具备追看和互动动力。",
+      "script_spans": [
+        "明明标着低风险，债基却亏了本金，为啥？",
+        "那绿了的净值到底怎么算出来的？",
+        "下次见飘绿，先琢磨利率动没动，还是发债方出了篓子？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句较多、节奏明快，但“按市场交易价重新估持仓债券”和“买前看清久期长和信用低的品种”都需要重断句或改词。",
+      "script_spans": [
+        "债价跌，净值就跟着跌，中间起伏全反映。",
+        "按市场交易价重新估持仓债券。",
+        "若刚买就遇利率涨浮亏，先别慌卖，拿一阵等息补回或许就平了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“旧手机遇新款降价”和“不是保险箱”把利率风险讲得具体，记忆点自然且不过度堆砌。",
+      "script_spans": [
+        "就像旧手机遇新款降价",
+        "你以为闭眼拿利息，其实在扛波动。",
+        "低风险是监管边界，不是保险箱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，先解释估值再拆原因；但“买前看清久期长和信用低的品种”与前文筛选原则冲突，结尾建议因此失准。",
+      "script_spans": [
+        "债价跌，净值就跟着跌，中间起伏全反映。",
+        "买前看清久期长和信用低的品种"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "明确提示不保本不保收益，整体无明确违规；但“先别慌卖”等息补回缺少条件，且风险评级表述过度简化，可能误导。",
+      "script_spans": [
+        "低风险只是相对标签，不保本也不保收益。",
+        "先别慌卖，拿一阵等息补回或许就平了。",
+        "监管给R1、R2级，只比波动谁大谁小"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2504f8222ced48cb96c52734f20e703a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-93573c98b1174a339acde64c11601e5b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

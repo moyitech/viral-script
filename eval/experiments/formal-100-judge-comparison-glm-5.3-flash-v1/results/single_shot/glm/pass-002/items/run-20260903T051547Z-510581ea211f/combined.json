@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-f1f82b86b01e437d8624249f5445e930",
+  "run_id": "run-20260903T051547Z-510581ea211f",
+  "trace_sha256": "bd43f58676cda66a97140a1ce26d8853f600702d13834846844db84225037d45",
+  "created_at": "2026-09-03T15:27:58.397574Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即正面回应题设二元，防骗与自主权两侧都给出判断，建议落到子女可执行做法，人群痛点贴合。",
+      "script_spans": [
+        "直接回答：若没拿到父母真实意愿下的委托就收走工资卡，防骗作用有限，剥夺自主权却是实实在在的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律边界、司法佐证、意定监护与实操建议层层推进，信息各自支撑论点，与引用相符无编造迹象。",
+      "script_spans": [
+        "老年人对自己的养老金享有自主管理权，司法实践也明确制止子女无理阻碍老人管钱",
+        "正规代管也必须基于老人清醒时主动设立的意定监护或委托授权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛防骗与架空的冲突，中段以法律边界和让步转折持续兑现钩子，结尾观点由正文自然生长，留有余味。",
+      "script_spans": [
+        "子女代管父母养老金，到底是防诈骗还是悄悄架空老人？",
+        "现实里确实有部分老人因认知退化更容易掉进骗局，但这构不成全面没收钱财的理由。",
+        "别把代管当成孝顺的默认选项，自主尊严比避免被骗更基础。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾顺口有对话感，但中段法律句拗口，需临时换词重断句，未达上口标准。",
+      "script_spans": [
+        "子女代管父母养老金，到底是防诈骗还是悄悄架空老人？",
+        "保护应当是帮忙核对、把关预警，而不是替代本人做所有决定。",
+        "正规代管也必须基于老人清醒时主动设立的意定监护或委托授权",
+        "趁他们意识清楚时坐下来约好大额支出商量界限"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "架空、默认选项等表达贴切克制，服务于理解与情绪，关键句离开上下文仍可复述，无炫技堆叠。",
+      "script_spans": [
+        "防骗作用有限，剥夺自主权却是实实在在的",
+        "别把代管当成孝顺的默认选项，自主尊严比避免被骗更基础。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先亮立场再让步转折，用'不替代本人做决定'厘清保护边界，结尾回扣开头二元设问，论证闭环。",
+      "script_spans": [
+        "现实里确实有部分老人因认知退化更容易掉进骗局，但这构不成全面没收钱财的理由",
+        "别把代管当成孝顺的默认选项，自主尊严比避免被骗更基础"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反两面兼顾，法律表述与司法实践一致，建议均附前提，无夸大煽动误导。",
+      "script_spans": [
+        "司法实践也明确制止子女无理阻碍老人管钱",
+        "正规代管也必须基于老人清醒时主动设立的意定监护或委托授权",
+        "现实里确实有部分老人因认知退化更容易掉进骗局，但这构不成全面没收钱财的理由"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0babd372c0384ade99edc8e1dc1b7d64",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

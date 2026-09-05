@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-332bbb681afd4198a227890e904c05fe",
+  "run_id": "run-20260902T143802Z-e985b61084bf",
+  "trace_sha256": "952736a539b32f6ca21fb5ef7e5124361b03b9b344b54b9998dd7fb8e02513b8",
+  "created_at": "2026-09-03T13:46:13.888919Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头点题省钱品质能兼得，中段给规则边界，结尾回扣天平，两侧与普通消费者全覆盖。",
+      "script_spans": [
+        "省钱和好品质能兼得，但你得懂门道。",
+        "当规则慢慢收紧，省钱和品质的天平，其实握在你翻看标签的手里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 736，目标为 700，偏差率为 5.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "成本拆解、国标边界、挑选清单层层递进，信息单元多且各有推进，仅个别句复述，看完能带走门道。",
+      "script_spans": [
+        "工厂大批量做，摊薄成本。集中加工省了门店厨师和房租水电。",
+        "包装硬挺没冰渣，说明冻得稳。小作坊没标，再便宜也慎选。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句反差即钩子，“边界在哪”“怎么挑”两问续推，结尾提问自翻标签建议长出，自然不生硬。",
+      "script_spans": [
+        "预制菜卖得便宜，却不准加防腐剂",
+        "可便宜背后，边界在哪？",
+        "下次购物，你会先找哪行字？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "主体短句气口清楚、对话感足，但预制小份装一句与贮运等书面词需临时换词重断。",
+      "script_spans": [
+        "倒锅里加把青菜，锅气回一点，别光热主食",
+        "预制小份装刚够一顿少丢弃",
+        "看包装贮运方式，分冷冻冷藏常温三类"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解与情绪，“天平握在翻标签手里”“锅气回一点”离开上下文仍可复述。",
+      "script_spans": [
+        "省钱和品质的天平，其实握在你翻看标签的手里",
+        "倒锅里加把青菜，锅气回一点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "三段设问推进功能分明，中央厨房算餐饮不算预制补足因果桥梁，结尾自然回扣开头与题设。",
+      "script_spans": [
+        "可便宜背后，边界在哪？",
+        "中央厨房供门店，店里再加工，算餐饮不算预制。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "引征求意见稿给依据、建议多留余地，整体安全；但开头把草案说成“不准”，“自制更贵”也缺边界，需补限定。",
+      "script_spans": [
+        "今年二月，国务院食安办等部门公开国标征求意见稿",
+        "小作坊没标，再便宜也慎选",
+        "预制菜卖得便宜，却不准加防腐剂",
+        "算上油价停车，自制更贵"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-cba4d088e8c448a4bc33ddba3e65ade4",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-83e68484d54b45f0ba24275c326e43c9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

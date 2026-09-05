@@ -1,0 +1,161 @@
+{
+  "evaluation_id": "combined-f967b9bdedaf41aeb7d6f7ccdb9b4b41",
+  "run_id": "run-20260903T051600Z-98a8f16c3987",
+  "trace_sha256": "de8d15e905a65d95444c2f9f9b5cd656daf6d63dce24346c5852493fb114fb3c",
+  "created_at": "2026-09-03T11:57:06.806485Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答统一赔额之争，兼顾平台提醒、索赔举证与普通用户的实际处境。",
+      "script_spans": [
+        "普通人要的不是一个全国统一定价，而是一条能证明自己吃亏的明路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 498，目标为 450，偏差率为 10.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，区分行政处罚与民事赔偿，并给出举证、留证等可执行信息，论证有推进。",
+      "script_spans": [
+        "这说明行政罚归罚，民事赔偿是另一回事。",
+        "截图留证，盯住平台是否给了具体风险描述和补救建议。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用提醒却难索赔制造冲突，中段推进到举证困境，结尾把观点落到留证起点，收束自然。",
+      "script_spans": [
+        "你收到平台“数据泄露提醒”短信，读过就算完？",
+        "平台发提醒不是责任的终点，而是你留证据的起点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，但中段法律概念密集，个别句式不顺，朗读时需要重断句。",
+      "script_spans": [
+        "你收到平台“数据泄露提醒”短信，读过就算完？",
+        "统一标准远水救不了近火，先把举证习惯养起来。",
+        "现实里，泄露后平台被通报罚款常有，但直接赔用户无几。",
+        "个保法把用户和平台当作不平等主体来调整，平台本就该负更高安全保障义务。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“责任的终点”与“留证据的起点”形成清晰对照，既帮助记忆也服务观点，整体修辞克制。",
+      "script_spans": [
+        "平台发提醒不是责任的终点，而是你留证据的起点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从提醒失效切入，经行政罚与民事赔偿区分，落到举证建议，主线递进且结论回扣题设。",
+      "script_spans": [
+        "但到了索赔环节，仍卡在“你损失了多少”的举证上。",
+        "统一标准远水救不了近火，先把举证习惯养起来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动也无明显违规，但“才有谈赔偿的资格”等绝对化说法易造成法律误导，需补充限定。",
+      "script_spans": [
+        "看到提醒别只点“已读”。截图留证",
+        "拿得出证据才有谈赔偿的资格。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 498,
+        "target": 450,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.10666666666666667
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ad258fbfdf6b4e1f92a209cde01a94bd",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f6dc75d59bcb45ef94cc4c8078404ec8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

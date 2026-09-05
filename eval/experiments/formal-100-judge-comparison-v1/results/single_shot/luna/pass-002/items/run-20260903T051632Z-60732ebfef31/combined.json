@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-0f0bda2a29fc41e39f6b8fa5c613613c",
+  "run_id": "run-20260903T051632Z-60732ebfef31",
+  "trace_sha256": "cd0ad42d872ddd622638417cb988aa59eabb5fe4f5aa6c5f1d66023f796a53fd",
+  "created_at": "2026-09-03T12:42:19.010851Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答反感原因，同时覆盖企业坚持面议的动机与求职者的现实顾虑，切入具体。",
+      "script_spans": [
+        "企业为什么死抱着面议不放？",
+        "那求职者为何不再买账？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕信息不对称展开，依次提供企业动机、求职风险、监管边界和筛选方法，信息推进充分。",
+      "script_spans": [
+        "它早已从中性说明，变成了暗示信息不对称的红灯。",
+        "通勤成本、社保基数、涨薪预期都要前置评估。",
+        "把模糊当筛选门槛，你反而能省下无效面试"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用同屏对比立刻抛出冲突，中段按企业、求职者、平台递进，结尾反问也由正文自然生长。",
+      "script_spans": [
+        "你刷招聘软件，滑过十家八家写着“薪资面议”",
+        "下次刷到面议，先问一句：这公司是省事，还是防我？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感，转折也清楚；但“前置评估”和监管表述偏书面，几处长句需要重断句。",
+      "script_spans": [
+        "企业为什么死抱着面议不放？",
+        "通勤成本、社保基数、涨薪预期都要前置评估",
+        "今年监管部门要求主要招聘平台压实信息明示责任，资质和内容审核要到位"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“规则不亮，人就不会认账”把公平感转成可复述判断，“省事还是防我”也形成记忆点，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "面议像突然掉队的旧习惯",
+        "规则不亮，人就不会认账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由现象提出判断，再解释双方动机，补充监管与例外，最后落到可执行建议，前后回扣完整。",
+      "script_spans": [
+        "企业省了事，求职者却先丢了信任底票。",
+        "透明能省双方时间，但谈判筹码他们认为更重要。",
+        "这不是矫情，是风险预判"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无煽动和明确违法建议，但对企业动机、岗位面议与诚信的归因偏强，“本身没踩线”也过于绝对，需补充限定。",
+      "script_spans": [
+        "当然，也不是所有面议都是坑，少数高管岗或弹性项目确实难提前定薪",
+        "这不是矫情，是风险预判：时间去哪了？",
+        "更常见的心思，是怕亮出底牌就被同行比价，或者想留着面试时看人下菜碟压价。",
+        "但“面议”两个字本身没踩线，它钻了模糊地带。",
+        "普通岗位再写面议，多半是懒或防备。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8e2d289d4aa743d6b6a50b488bcaf732",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

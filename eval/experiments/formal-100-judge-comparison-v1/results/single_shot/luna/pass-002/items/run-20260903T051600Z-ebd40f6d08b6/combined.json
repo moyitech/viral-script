@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-aabc89a32ec040faa7c1937768974e63",
+  "run_id": "run-20260903T051600Z-ebd40f6d08b6",
+  "trace_sha256": "5104e3425cf771c34873bd7ddf622627fe3dc25c8c4a3f9c76a1893f0b7241c7",
+  "created_at": "2026-09-03T12:32:26.562984Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应准时承诺是否合理，并同时覆盖用户体验、骑手安全与平台规则，提出弹性缓冲的具体立场。",
+      "script_spans": [
+        "极端天气下死守分钟级的准时指标，已经偏离了服务的本质，承诺本身需要随天气转为弹性缓冲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕极端天气下的供需、速度、安全和规则调整层层推进，既有机制解释，也给出进度条标注等落地方案。",
+      "script_spans": [
+        "订单量会明显跳升。同时路面湿滑或酷热让行驶速度被动降低",
+        "用事前沟通替代事后机械赔券"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用暴雨、卡住的蓝点制造冲突，中段连续追问并给出规则与落地方案，结尾观点有余味。",
+      "script_spans": [
+        "窗外暴雨倾盆，你手机上的外卖订单还显示“预计28分钟送达”，可配送地图上那个小蓝点正卡在立交桥下不动。",
+        "可用户花真金白银买了准时险，白等岂不委屈？",
+        "准时承诺不该是风雨里的军令状，它得学会看天变色。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开场画面和反问有重音，整体能读通；但“现实影响该怎么落地”与“把天气因子透明植入进度条”显得生硬。",
+      "script_spans": [
+        "窗外暴雨倾盆，你手机上的外卖订单还显示“预计28分钟送达”",
+        "现实影响该怎么落地。",
+        "把天气因子透明植入进度条"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻集中在关键转折，“骑手也是肉身”和“风雨里的军令状”既好记，又准确服务于安全与规则讨论。",
+      "script_spans": [
+        "骑手也是肉身，不是算法里的无限资源",
+        "准时承诺不该是风雨里的军令状",
+        "肯慢下来的配送，反而是更成熟的快。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按场景、原因、取舍到落地推进，主线清楚；但把相关影响直接推成“非怠工”，因果结论略显过满。",
+      "script_spans": [
+        "务实的做法是平台把天气因子透明植入进度条，暴雨大风时主动标注“配送延长”",
+        "可见延误是系统外力而非怠工"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，但将复杂原因说成绝对结论，个别归因可能误导观众，需限定范围或改写。",
+      "script_spans": [
+        "可能正是免于事故的后勤防线",
+        "可见延误是系统外力而非怠工"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-cde524d93702401eb39c1deb3fd58879",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

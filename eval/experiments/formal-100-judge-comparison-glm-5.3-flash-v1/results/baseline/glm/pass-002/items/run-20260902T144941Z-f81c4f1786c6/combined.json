@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-d97ce93e56384d4aa503c931bc5423a3",
+  "run_id": "run-20260902T144941Z-f81c4f1786c6",
+  "trace_sha256": "60ee004fdc9239f25b2fc34d0dd6150b5c1f1a7bc51d227a2e2bdfd1e124fb1f",
+  "created_at": "2026-09-03T14:27:10.479089Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点题，融资与经营两侧分述，'利息填不上订单坑'正面回答为何压力不减，锁定小厂老板人群。",
+      "script_spans": [
+        "利息降了，但小厂订单丢得更快，压力没解。",
+        "贷款省下的利息填不上订单流失的坑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "协调机制、短贷、九成销售下滑、利润降两成等事实层层推进，各有解释与功能，结论有据，无编造痕迹。",
+      "script_spans": [
+        "银行照单对接，少手续和抵押，利息省下一截。",
+        "账面营收没大掉，净利润降超20%占两成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句20字内即有降息与丢单的反差，中段融资与经营两线交替给出新信息与两难，结尾一问由两环结构自然长出，互动不突兀。",
+      "script_spans": [
+        "利息降了，但小厂订单丢得更快，压力没解。",
+        "厂里想囤货怕跌价，不囤又接不住急单。",
+        "你家附近的小厂，这会儿卡在哪一环？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有画面，多数能顺读，但“净利润降超20%占两成”与“吸了八成就业”两处需临时换词重断，封顶2分。",
+      "script_spans": [
+        "会计做表手汗湿一片，刚喘气又得跑银行",
+        "账面营收没大掉，净利润降超20%占两成"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "阿司匹林之喻贴切且点到为止，利息填不上订单的坑、订单是命根子均可离开上下文复述，全篇无堆砌炫技。",
+      "script_spans": [
+        "便宜钱是阿司匹林，止不了经营的疼。",
+        "贷款省下的利息填不上订单流失的坑。",
+        "订单才是命根子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "两侧分述后以'利息填不上订单坑'搭起因果桥，段落功能清晰，结尾'生意转起来'回扣开头的'机器不转'。",
+      "script_spans": [
+        "你再看经营那边，货却卖不动。",
+        "厂子真喘气还得靠生意转起来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键数据与调查相符，建议部分不作收益承诺，比喻意在防夸大，整体客观公允，符合平台审核要求。",
+      "script_spans": [
+        "便宜钱是阿司匹林，止不了经营的疼",
+        "钱救急不救穷，自己找路才踏实"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9e3afe0bc9254408816c9d5177775507",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

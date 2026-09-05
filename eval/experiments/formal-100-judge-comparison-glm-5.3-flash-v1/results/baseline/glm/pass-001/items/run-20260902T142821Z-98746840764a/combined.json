@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-a86febcd732e43898648d62f798203d4",
+  "run_id": "run-20260902T142821Z-98746840764a",
+  "trace_sha256": "f37a83cc63230908353cd986ff46871edaacec2c06eefa173ce232ed74b95f2a",
+  "created_at": "2026-09-03T13:46:11.361053Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即锁定中小企业用不上算力，繁荣与受阻两侧齐全，结尾回扣题设，人群痛点对位。",
+      "script_spans": [
+        "为啥繁荣传不到你这？芯片需求是真升温，总算力也在扩，但大厂囤卡如山，中小企业连门都摸不着。",
+        "算力像电，可电网还没通到厂门口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 680，目标为 700，偏差率为 2.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "成本、架构、租用粒度、政策时差逐层推进，事实与解释互撑，无同义注水，增量具体可带走。",
+      "script_spans": [
+        "不同厂商芯片架构封闭，模型搬过去要重练，小团队耗不起时间。",
+        "好比想买杯奶茶的冰，却逼你包下整个冰库。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即有缺货与摸不到门的反差，中段以成本、云租、政策、Token转机层层兑现，结尾问句由比喻自然长出。",
+      "script_spans": [
+        "AI芯片火到缺货，你小厂想用时却连门都摸不到。",
+        "转机也有，第三方云开始按Token计费。",
+        "算力像电，可电网还没通到厂门口。咱们这行啥时候能拧开龙头接上这波算力？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、比喻生动，多数好读；但中段两处报告腔拗口，朗读需临时换词重断。",
+      "script_spans": [
+        "好比想买杯奶茶的冰，却逼你包下整个冰库",
+        "算力像电，可电网还没通到厂门口",
+        "信通院提到供给区域割裂，推理需求爆发却对不上，传统机柜租赁通常跟不上精细化用算",
+        "更麻烦的是，AI芯片专用于训练推理，中小企业多半难有议价权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "奶茶冰与冰库的类比贴切又好复述，电网比喻收束有余味，修辞密度克制服务理解，未喧宾夺主。",
+      "script_spans": [
+        "好比想买杯奶茶的冰，却逼你包下整个冰库。",
+        "不是政策没用，是时间差让繁荣先肥了巨头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问过渡自然，买不起、租不到、等不及三段各管一层因果，结尾比喻自然回扣传导主题。",
+      "script_spans": [
+        "那云上租不行吗？云服务这块，模式太粗放。它们习惯整柜租、裸金属租，你要的只是偶尔跑下模型。",
+        "试点城市才零星启动，现在才开头。体系要到2028年底才基本建成，眼前落地还得等。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体多用“可能”“多半”等限定，无违规承诺；但“囤卡如山”“先肥了巨头”偏绝对且带对立色彩，宜软化。",
+      "script_spans": [
+        "这差距可能直接掐断尝试",
+        "中小企业多半难有议价权",
+        "大厂囤卡如山，中小企业连门都摸不着",
+        "是时间差让繁荣先肥了巨头"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2b305e13b155426eb725e1b5a951b5a8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-dd3e7101f1f24f3794cbe06516d56725",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,165 @@
+{
+  "evaluation_id": "combined-623687f8c7614b5592cdd34effe0f950",
+  "run_id": "run-20260903T051627Z-96715b0dc155",
+  "trace_sha256": "7ec7bb9c21d43fb5badca255e3b960b89da7063d6c5a5b391517b35091e8a021",
+  "created_at": "2026-09-03T14:19:37.156612Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头用限流冻佣金切入，判断直答题设，新规与风险两侧都覆盖，人群痛点贴合。",
+      "script_spans": [
+        "很多人慌了：平台全面接智能客服，咱普通用户还有地方讲理吗？我先给个鲜明判断：智能客服全面化不必然让申诉更难",
+        "对短视频平台而言，创作者收益、账号资产都算财产范畴"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 829，目标为 700，偏差率为 18.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "标准要求、免责边界、投诉数据、实操建议层层推进，信息具体不空转，增量扎实。",
+      "script_spans": [
+        "尤其涉及财产、人身安全场景，用户明确要人工，系统必须优先派真人",
+        "下次碰见机器绕弯，直接发转人工明示权，新规是你后盾；但自己也截图留证"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出限流冻结的具体冲突，中段以新规、对比持续转折推进，结尾漏斗与墙之喻由正文自然生长，留有余味。",
+      "script_spans": [
+        "你刷短视频突然账号被限流，或者带货佣金被冻结，急着申诉却卡在AI客服的死循环里",
+        "那是不是全面接智能就没救了？恰恰相反，近期有个关键进展改变天平",
+        "智能客服该是筛掉垃圾咨询的漏斗，不是堵死真人申诉的墙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾生动上口，但“畸形攀升”“强制协同”“明示权”等处书面拗口，录音前需临时换词。",
+      "script_spans": [
+        "打字数它回“已读”，点按钮跳回首页，再找人工入口像捉迷藏。",
+        "多层菜单跳转让消费者维权成本畸形攀升",
+        "下次碰见机器绕弯，直接发转人工明示权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，捉迷藏、免责牌贴切；漏斗不是墙离开上下文仍可复述，记忆点自然不炫技。",
+      "script_spans": [
+        "点按钮跳回首页，再找人工入口像捉迷藏",
+        "智能客服该是筛掉垃圾咨询的漏斗，不是堵死真人申诉的墙"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问衔接段落，转折清楚，结尾漏斗与墙回扣分水岭判断，因果桥完整。",
+      "script_spans": [
+        "但白纸黑字和指尖体验中间，还隔着现实博弈。",
+        "智能客服该是筛掉垃圾咨询的漏斗，不是堵死真人申诉的墙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体判断克制并提示留证自保，但“不是建议，是强制协同要求”将国标性质绝对化，“故意制造摩擦”归因过重，需加限定才稳妥。",
+      "script_spans": [
+        "智能客服全面化不必然让申诉更难",
+        "但自己也截图留证，别空口争辩",
+        "这标准不是建议，是强制协同要求",
+        "是产品设计故意制造摩擦，用机器消耗你的耐心"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 829,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.18428571428571427
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-1507edea0d6b4f6baab45d18d6dcdaac",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ab879a298b614ecaa3451e1db8bf7c93",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

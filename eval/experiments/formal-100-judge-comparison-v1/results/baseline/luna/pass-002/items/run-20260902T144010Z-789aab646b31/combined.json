@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-ae5ac4cfca364d05bb218adaa51a1b83",
+  "run_id": "run-20260902T144010Z-789aab646b31",
+  "trace_sha256": "1e5d88681c9dd6e5cc7d19e632e7a0c7a4364f9553dd004aac081ae768030dee",
+  "created_at": "2026-09-03T12:17:02.585111Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应“更快”与“更吵”两侧，既写配送效率，也写居民噪声代价，核心受众和取舍问题明确。",
+      "script_spans": [
+        "快递确实更快，城市也确实更吵，这两头你得一起接。",
+        "下次看到配送宣传，先问自己：你家安静值那几分钟？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "时效对比、避开拥堵、噪声来源和数量影响均有具体展开，信息单元能推进“便利换安静”的判断。",
+      "script_spans": [
+        "从前骑手地面绕路常耗半小时以上，遇早晚高峰更没谱",
+        "技术能降噪，但架不住数量多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用时效与噪声的反差立刻设问，中段双线推进并补足细节，结尾把公共选择落到家庭体验，互动自然。",
+      "script_spans": [
+        "快递快了十几分钟，你家头顶却多了嗡嗡响。",
+        "下次看到配送宣传，先问自己：你家安静值那几分钟？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和问答式转折利落，整体能读通；但中段两处搭配生硬，需重断句或换词。",
+      "script_spans": [
+        "快递快了十几分钟，你家头顶却多了嗡嗡响。",
+        "吵从哪来？",
+        "你买生鲜急用药东西更快到手",
+        "十五分钟上下就卸你窗台"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“少的是路程，多的是头顶声响”形成清晰反差；“嗡嗡响”“扎耳”把抽象噪声落到日常，修辞克制且好复述。",
+      "script_spans": [
+        "我们少的只是路程，多出的却是每天头顶声响。",
+        "老人午休孩子写字时，这新声音真扎耳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线和结论回扣清楚，但“商家备货也更轻巧”没有因果解释，“窗外挂持续杂音”句法不顺，整体难达满分。",
+      "script_spans": [
+        "低空物流试点跑起来，快递确实更快，城市也确实更吵，这两头你得一起接。",
+        "商家备货也更轻巧",
+        "窗外挂持续杂音"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体讨论效率与噪声权衡，没有煽动或危险建议；但时效、噪声和窗台投递的表述过于确定，可能误导观众。",
+      "script_spans": [
+        "这两头你得一起接。",
+        "十五分钟上下就卸你窗台"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f0bcd16a7160406cae849fdc06d0ccb4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

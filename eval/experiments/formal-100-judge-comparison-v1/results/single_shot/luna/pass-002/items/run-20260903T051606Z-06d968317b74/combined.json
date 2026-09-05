@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-a8648f969aee4b9ab9f0d313fa9e4df3",
+  "run_id": "run-20260903T051606Z-06d968317b74",
+  "trace_sha256": "cc12a07d77c2d4327a3493b0d6cc0a6497359422023ba2da1846a46443cceb45",
+  "created_at": "2026-09-03T12:31:56.181791Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答小开发者是否有生存空间，并给出控规模、选市场等路径，核心人群与冲突两侧均有覆盖。",
+      "script_spans": [
+        "小开发者其实没被逼到墙角",
+        "要么控规模吃小微红利，要么挑宽松市场跳转但留退路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕费率分层、外链窗口与应对策略展开，信息单元彼此推进，观众能获得风险判断和行动方向。",
+      "script_spans": [
+        "欧盟按新法案把统一费率拆成分层组合，增长快的品类综合成本更高。",
+        "美国虽撬开外链缝，可那更像是诉讼拉扯里的临时窗口，不是永久免死金牌。",
+        "活下来的团队，都是先算账再写代码。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出“团灭”反差，中段持续推进到分层、外链与应对，结尾落到可执行判断，余味自然。",
+      "script_spans": [
+        "你以为商店抽成越来越狠，小开发者就要团灭了？先别急着叹气。",
+        "选市场比骂市场重要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有钩子和生活化收束，但中段连续出现抽象压缩表达，多个短语拗口，朗读时需要重断句。",
+      "script_spans": [
+        "你以为商店抽成越来越狠，小开发者就要团灭了？",
+        "欧盟按新法案把统一费率拆成分层组合",
+        "政策一回头押注收入瞬间补交"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“钱没离开口袋，只是过滤嘴换形状”和“先算账再写代码”兼具画面与判断，能脱离上下文复述。",
+      "script_spans": [
+        "钱没离开口袋，只是过滤嘴换形状。",
+        "活下来的团队，都是先算账再写代码。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、展开、策略和结尾回扣完整，主线可跟随；但关键因果含混，长句和绝对化结论削弱说服力。",
+      "script_spans": [
+        "过去那种交固定费全球卖货的日子确实翻篇了。",
+        "选市场比骂市场重要。",
+        "政策一回头押注收入瞬间补交，比交佣金危险得多。",
+        "抽成从来不是小开发者的生死线，看不懂自己该挂哪个标签才是。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有违规导向，也提示了外链窗口期风险；但“抽成从来不是生死线”等绝对化判断可能淡化个体差异，需加限定。",
+      "script_spans": [
+        "那免手续费只是上诉里的暂停执行，不是落地政策",
+        "抽成从来不是小开发者的生死线"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ca0898ef487f4b59b496d5d210867d38",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

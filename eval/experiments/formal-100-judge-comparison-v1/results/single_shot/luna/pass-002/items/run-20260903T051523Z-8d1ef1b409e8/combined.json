@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-d30180fe4aee482e9cf5db94c04e04f8",
+  "run_id": "run-20260903T051523Z-8d1ef1b409e8",
+  "trace_sha256": "a2252aad638aa4711a879f325f9ab97de27d22c0a45d02b3cf2e0bb6e389ba4c",
+  "created_at": "2026-09-03T12:33:14.431379Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从信任、透明度和时间成本解释反感，并兼顾求职者与招聘方的应对，正面覆盖题设。",
+      "script_spans": [
+        "薪资面议在今天的招聘里，已经从中性表述变成了信任减分项。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主线集中，透明、博弈和时间成本均有推进；但研究与调查被概括带过，关键泛化结论缺少限定。",
+      "script_spans": [
+        "现在许多平台上的职位其实直接标了薪资区间，面议反而显得像在藏什么。",
+        "学术上有个角度很说明问题：求职者对新薪酬的满意感，更依赖过程透明而不是数额本身合理。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用高频场景和下意识划走制造代入，中段层层推进，结尾给出可执行选择，收束自然。",
+      "script_spans": [
+        "你刷到写着‘薪资面议’的岗位，是不是下意识想划走？",
+        "下次再看到面议，要么开场就问清范围，要么直接绕行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头提问和结尾建议较利落，主体大体能读通；但抽象术语叠加，多个中段句子需要重断句。",
+      "script_spans": [
+        "是不是下意识想划走？",
+        "要么开场就问清范围，要么直接绕行。",
+        "把本该明示的信息成本推给求职者",
+        "学术上有个角度很说明问题：求职者对新薪酬的满意感，更依赖过程透明而不是数额本身合理。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“最贵的不是工资未知，而是时间沉没”把抽象成本变成可感知的损失，且全篇修辞克制，便于复述。",
+      "script_spans": [
+        "最贵的不是工资未知，而是时间沉没。",
+        "让人还没面试就先亏了心态。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "有提问、解释、损失和建议的递进链条；但把平台治理要求直接推成薪资模糊与合规对立，因果桥不足。",
+      "script_spans": [
+        "对普通人来说，这种岗位最贵的不是工资未知，而是时间沉没。",
+        "五部门最近也要求招聘平台做到信息明示到位，这种模糊写法本身就站在了合规趋势的对立面。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "给出先问范围、减少时间成本的建议较稳妥；但把面议普遍归因为转嫁成本，并称其与合规对立，存在动机臆测和夸大。",
+      "script_spans": [
+        "下次再看到面议，要么开场就问清范围，要么直接绕行。",
+        "它背后往往不是公司想灵活谈，而是把本该明示的信息成本推给求职者。",
+        "这种模糊写法本身就站在了合规趋势的对立面。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4e35913508c24d7389d5c5c953778bec",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

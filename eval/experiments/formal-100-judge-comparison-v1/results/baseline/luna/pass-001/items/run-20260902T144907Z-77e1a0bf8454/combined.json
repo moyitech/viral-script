@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-2b419ec024b84c23a56fc882d72de9d0",
+  "run_id": "run-20260902T144907Z-77e1a0bf8454",
+  "trace_sha256": "f576f566a555af972ff1c7d4d61269c9a8e8dc195209925aa3114a123e47a76e",
+  "created_at": "2026-09-03T11:45:06.627086Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头提出难不难，正文分别拆解退货便利、合规压力与扶持路径，始终围绕小商家出海给出条件式回答。",
+      "script_spans": [
+        "严是真严，但难不难看你站哪边。",
+        "小商家现实影响分两路，有人借势活，有人被洗走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 727，目标为 700，偏差率为 3.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中于规则收紧下的两面性，既解释9610退货政策及门槛，也补足B2C合规风险和应对路径，信息有推进。",
+      "script_spans": [
+        "海关今年推了跨关区退货，这政策只管9610模式。",
+        "但这便利不是白给，企业得系统对接海关，还得有独立作业区。",
+        "小额B2C算是小网店卖给老外个人。这类生意链条长，海关税务都盯你。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“被逼垮”与“借势活”制造反差，中段持续推进，结尾选择题也由正文自然落下。",
+      "script_spans": [
+        "小商家出海真被严规逼垮了？有人反倒借势活了。",
+        "你愿花半月对接系统，还是赌运气被封号？这道选择题，现在就得做。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和部分解释有对话感，但多处短语生硬、信息口气不稳，尚未达到自然顺口。",
+      "script_spans": [
+        "小商家发错尺码，货能退回来，不用全砸在海外。",
+        "你平时没账期没系统，那就享不到。",
+        "小商家现实影响分两路，有人借势活，有人被洗走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“规则挑的也许是能力不是规模”有独立复述性，反差和比喻适量，未压过信息传达。",
+      "script_spans": [
+        "所以规则挑的也许是能力不是规模。",
+        "小商家现实影响分两路，有人借势活，有人被洗走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "分段按利好、压力、扶持与结论推进，主线清楚；但单子小、抗风险弱不能直接推出监管风险高，封禁表述也偏绝对。",
+      "script_spans": [
+        "先说松的那边，因果很简单。",
+        "那紧的那边锁在哪？",
+        "因为单子小、抗风险弱，一旦认证不全，货被扣甚至销毁，小本生意就垮。",
+        "平台也较真，账号环境乱就封。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，也交代了政策门槛；但“说冻就冻”“就封号”等绝对化表述易制造确定性恐慌，需补充适用条件和范围。",
+      "script_spans": [
+        "但这便利不是白给，企业得系统对接海关，还得有独立作业区。",
+        "税务不合规，收款账户说冻就冻。平台也较真，账号环境乱就封。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-192eab12aaeb4191872d743aa9ca083b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c569bb5d2b2b4bf593feaafdafdb5232",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-d38e332e714f45f68d5e12d49bb17ce3",
+  "run_id": "run-20260903T051556Z-ecfe8e52ac08",
+  "trace_sha256": "2f077b4609d09b0fe414c6c8d6c9955a55bf63fd690ef6d861c0240ba3830042",
+  "created_at": "2026-09-03T15:27:38.238064Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答低成本不等于低风险，费用与风险两侧全覆盖，落点回到普通投资者，紧扣题设。",
+      "script_spans": [
+        "其实恰恰相反，低成本从来不等于低风险",
+        "回到咱普通投资者的钱袋子，这次降费当然是实打实的利好"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "降费事实、成本与风险之辨、被动取舍、跟踪误差层层推进，与监管资料相符，无编造。",
+      "script_spans": [
+        "降费是监管让利，降的是交易摩擦，不是资产价格的脆弱性",
+        "跟踪误差更多来自成分股调整、流动性不足这些客观因素"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头20字内抛出降费利益点并翻转“便宜即安全”的错觉，中段以“风险从哪里来”等新问持续递进，结尾自问收束由正文自然生长。",
+      "script_spans": [
+        "指数基金费率又降了，不少人下意识觉得，便宜不就是安全吗？其实恰恰相反",
+        "市场大跌时，费率再低也挡不住账户缩水，你少付的手续费填不上净值回撤的坑",
+        "先问自己扛不扛得住它跟踪的那个市场，再笑嘻嘻省手续费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数段落短句好读，但“交易摩擦”“资产价格的脆弱性”等书面术语堆叠，多处需临时换词重断。",
+      "script_spans": [
+        "市场大跌时，费率再低也挡不住账户缩水，你少付的手续费填不上净值回撤的坑",
+        "降费是监管让利，降的是交易摩擦，不是资产价格的脆弱性"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻贴题不堆砌，“低风险错觉才是最贵的手续费”离开上下文仍可复述，糖与考题的对照强化记忆，克制有效。",
+      "script_spans": [
+        "低风险错觉才是最贵的手续费",
+        "便宜是监管给的糖，风险是指数给的考题",
+        "市场倾盆大雨时，你和他一起淋着"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "因果桥清楚，提问式过渡自然，结尾低风险错觉才是最贵的手续费回扣开头与题设。",
+      "script_spans": [
+        "市场大跌时，费率再低也挡不住账户缩水，你少付的手续费填不上净值回撤的坑",
+        "那风险究竟从哪里来？",
+        "先问自己扛不扛得住它跟踪的那个市场，再笑嘻嘻省手续费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全文不荐品、不承诺收益，反以“低风险错觉才是最贵的手续费”警示观众，降费与跟踪误差表述均有边界，导向安全。",
+      "script_spans": [
+        "低风险错觉才是最贵的手续费",
+        "极端情绪下，ETF场内价格受供求影响暂时偏离净值，这种不确定性也不是降费能消除的"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-eff5d6afb17449fea3678d08ffb99cc4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

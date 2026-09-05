@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-e4757684ebd5464c8a1327362cd5b166",
+  "run_id": "run-20260902T142243Z-ac00dd57db0d",
+  "trace_sha256": "445a57e99dd0726d18ea21c2d4a6d9ce3a0a685835eb8b82258cd6c0a0999c3b",
+  "created_at": "2026-09-03T12:15:44.027775Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直答“会不会”，并同时交代改写、留链和点击损失，完整覆盖平台、站长与用户的核心冲突。",
+      "script_spans": [
+        "我的回答很直白：搬走了一部分，但没全白拿。",
+        "用户省了事，站长丢了客。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕答案摘要如何分流点击推进，机制、流量数据、内容差异和应对取舍都提供了明确增量。",
+      "script_spans": [
+        "它把几个站的内容揉成通顺段落，放在最上面。",
+        "这样比下来，每日流量大约降了一成半。",
+        "有些站适应快，专写清晰短句。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“截留了访客”直击损失，中段有数据、博弈和转折，结尾回到站长处境，互动自然生长。",
+      "script_spans": [
+        "你写半年的文章，被AI答案截留了访客？",
+        "你的货摆不摆上去，由它的算法挑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体以短句推进，问答节奏明快；但多处词组不顺，朗读仍需临时换词。",
+      "script_spans": [
+        "那站长都亏吗？不一定。",
+        "有研究比了多语言百科页面。",
+        "现在某些查询点击掉了快九成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“用户省了事，站长丢了客”对照利落，“流量蛋糕重切了”也便于复述，修辞克制且服务观点。",
+      "script_spans": [
+        "用户省了事，站长丢了客。",
+        "流量蛋糕重切了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先给判断，再解释答案框的分流机制，随后补充数据、取舍和法律边界，结尾又回扣“免费搬走”，递进完整。",
+      "script_spans": [
+        "现在AI直接给改写好的总结，就显示在答案框。",
+        "但平台说带了出处链接，算是给原站指路。",
+        "所以免费搬走这话不全对。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且承认法律边界模糊；但对抓取、点击流失和用户行为的概括偏满，易造成单向误导。",
+      "script_spans": [
+        "但法律边界还模糊。",
+        "内容确实被抓取改写，原站链接也留在下面。",
+        "答案已经写在脸前，谁还翻链接。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-94c7944ca2c74313b838ad63e8cef456",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

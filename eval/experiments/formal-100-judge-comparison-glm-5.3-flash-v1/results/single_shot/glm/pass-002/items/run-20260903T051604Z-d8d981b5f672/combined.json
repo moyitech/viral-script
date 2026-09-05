@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-045d521530fa4816be1ce318d083f9c1",
+  "run_id": "run-20260903T051604Z-d8d981b5f672",
+  "trace_sha256": "348a06c0f48bc251f3cfb083c44a6d19d35274fd80b63f330ac246ba9c1c7bd7",
+  "created_at": "2026-09-03T15:28:01.582678Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答会否留下新污染，风险与可控两侧都讲，结尾还落到普通人的处置选择。",
+      "script_spans": [
+        "光伏板退役本身不是污染灾难，但回收体系如果跑输时间，绿色能源确实会留下新包袱",
+        "听到这，你大概关心，这事儿跟普通人有什么关系？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，材料构成、风险边界、回收经济账逐层推进，政策与现状互证，增量大。",
+      "script_spans": [
+        "机械和热解能拆出玻璃铝框，但电池里的硅和银常被送进炉子烧掉；专门产线能高纯度提料，可成本下不来",
+        "风险在点状渗漏，不是大规模扩散"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差设问抓人，中段转折与信息持续兑现，结尾余味由正文自然生长。",
+      "script_spans": [
+        "家里屋顶那片曾省下电费的蓝板子，二三十年后变成电子垃圾",
+        "和跟风炒作报废危机不同，真实难点在经济效益",
+        "别等板子堆成山才找办法，现在每收一块，都是在给蓝天续费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有节奏，对话感在线；但政策术语段需换气改词，拗口处不止一处，只能给2分。",
+      "script_spans": [
+        "装的时候人人夸清洁，拆的时候没人想买单，这就是绿色链条上的裂缝",
+        "新出的污染控制技术规范把拆卸运输贮存全管起来了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "记忆点贴切可复述，但结尾连堆三句金句，略显刻意，克制不足。",
+      "script_spans": [
+        "绿色的电不该终结于黑色的渣",
+        "报废量会翻着跟头涨",
+        "别等板子堆成山才找办法，现在每收一块，都是在给蓝天续费。让清洁从出厂延续到报废，才算真的绿色。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承转自然，风险解释有前提有边界，结尾回扣开头“清洁延续到报废”。",
+      "script_spans": [
+        "那为什么这两年突然都讨论退役潮了？因为八九十年代这批板子正集中到寿",
+        "绿色的电不该终结于黑色的渣，退役光伏板是给我们的回收课，不是环保污点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "既驳“安全得很”也驳“毒倒一片”，风险双向限定；建议指向有资质渠道，客观公允无夸大。",
+      "script_spans": [
+        "有人觉得它就是玻璃和铝，安全得很，这忽视了电池片里的物质；但说它会毒倒一片人也是吓唬，风险在点状渗漏，不是大规模扩散。",
+        "别信路边高价收旧板的小广告，交给有资质渠道，才算没白装当年那块绿电板。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-93dc501229a04e7e9c81d366ba85e6c2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

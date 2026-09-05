@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-ba9411a41f1d4e47b88f88dd5dc76a18",
+  "run_id": "run-20260902T142512Z-9a9ae5e39d3c",
+  "trace_sha256": "1e4672b6aaa172bcbfe3eb677fda4e7e108a3e371127a430f9121dce8fe3bd50",
+  "created_at": "2026-09-03T14:24:01.118490Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直抛题设并明示看两边，正反两侧与找回痛点全命中普通用户，落点指向开通决策。",
+      "script_spans": [
+        "无密码登录加速普及，账户真从此更安全？答案得看两边",
+        "先问自己明早只剩一张手机卡怎么拿回账号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "私钥不外传、丢设备锁死、旧验证码被截胡三单元递进推进，结尾给出可带走的自检方法。",
+      "script_spans": [
+        "手机里那串私钥替你签字，远程只收到一个验过信号，原始密码根本不会往外跑",
+        "黑客摆个假登录页在中间截胡就绕开，说明只换认证形态不顶用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛安全反转的利益冲突，中段钓鱼骗不走、丢机被锁门外两转折持续兑现，结尾自问由正文自然生长，留有回味。",
+      "script_spans": [
+        "省掉记密码的麻烦却换来设备全丢就锁死",
+        "可一旦手机落出租车、家里电脑又进水泡了",
+        "先问自己明早只剩一张手机卡怎么拿回账号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "中段讲解像真人当面说话，但“验过信号”“答密保证明”两处需临时补词重断，顺口度受限。",
+      "script_spans": [
+        "原始密码根本不会往外跑，钓鱼短信链接再真也骗不走半点凭据",
+        "黑客摆个假登录页在中间截胡就绕开",
+        "远程只收到一个验过信号",
+        "最后只能走邮箱找回、答密保证明你是你"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“私钥替你签字”“假登录页截胡”形象准确、服务理解，结尾一问离开上下文仍可复述，无炫技堆砌。",
+      "script_spans": [
+        "手机里那串私钥替你签字",
+        "黑客摆个假登录页在中间截胡就绕开",
+        "想清楚这个再睡那才叫真踏实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "转折与因果桥层层衔接，丢设备推到被关门外链条完整，结尾自问回扣开头锁死之忧。",
+      "script_spans": [
+        "可一旦手机落出租车、家里电脑又进水泡了，云里同步的密钥也得靠老设备批准",
+        "先问自己明早只剩一张手机卡怎么拿回账号，想清楚这个再睡那才叫真踏实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论限定为看两边，既说明抗钓鱼优势也提示锁死与找回风险，无确定性安全承诺，导向安全。",
+      "script_spans": [
+        "答案得看两边",
+        "钓鱼短信链接再真也骗不走半点凭据",
+        "先问自己明早只剩一张手机卡怎么拿回账号"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-962e63ec0856432c90258e9498b530c0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

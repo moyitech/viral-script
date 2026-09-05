@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-47a97148930c4af4b7c287f8de1f5083",
+  "run_id": "run-20260903T051539Z-a67531cf2d70",
+  "trace_sha256": "0ee315b9c9bb2923aea3fd04d335ee64ab4ce892e566eceab6a5fd64a60e7d2e",
+  "created_at": "2026-09-03T12:32:28.940219Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答增收还是交学费，覆盖广告套路、平台监管、受骗风险与真正变现路径，核心痛点明确。",
+      "script_spans": [
+        "看上去是带你增收，其实大多数人是在乖乖交学费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从投诉金额、贷款陷阱讲到审核漏洞和识别方法，信息单元持续推进，既有依据也有具体行动建议。",
+      "script_spans": [
+        "平均每一笔纠纷涉及金额超过七千元",
+        "就把人引流到私域聊天，脱离了审核视野",
+        "先去搜搜机构有没有投诉记录"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用增收与交学费的反差钩住人，中段持续追问并给出识别方法，结尾落到可执行判断，推进完整。",
+      "script_spans": [
+        "看上去是带你增收，其实大多数人是在乖乖交学费",
+        "那为什么平台明明收紧了规则，这类广告还满天飞？",
+        "看到副业课，先去搜搜机构有没有投诉记录"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有追问和具体动作，读起来不费劲；但数据引入偏长，末段条件并列让气口不够利落。",
+      "script_spans": [
+        "那为什么平台明明收紧了规则，这类广告还满天飞？",
+        "今年一季度全国消协组织发布的投诉分析里，技能培训已经成了维权重灾区，平均每一笔纠纷涉及金额超过七千元",
+        "凡是合同里藏着‘分期变贷款’‘不过退费’苛刻条件的，直接划走"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "反差表达贯穿全文，“钱交出去那刻，主动权就不在你手里了”形象准确，既有警示力也便于观众复述。",
+      "script_spans": [
+        "钱交出去那刻，主动权就不在你手里了",
+        "我又不是那个天选之子",
+        "真正能增收的路径，从来不是买一套现成话术"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头先定性，中段解释广告为何泛滥及风险机制，结尾给出筛选方法并回扣增收主题，递进完整。",
+      "script_spans": [
+        "那为什么平台明明收紧了规则，这类广告还满天飞？",
+        "再加上培训普遍是预付式，钱交出去那刻，主动权就不在你手里了",
+        "真正能增收的路径，从来不是买一套现成话术"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主体能提示贷款、退费和投诉核查风险，但“大多数”“普遍”“直接划走”等泛化或绝对建议，容易把个案推成普遍结论。",
+      "script_spans": [
+        "看到副业课，先去搜搜机构有没有投诉记录",
+        "其实大多数人是在乖乖交学费",
+        "培训普遍是预付式，钱交出去那刻，主动权就不在你手里了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2c35c4045eba4186b6900432f9bfc916",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

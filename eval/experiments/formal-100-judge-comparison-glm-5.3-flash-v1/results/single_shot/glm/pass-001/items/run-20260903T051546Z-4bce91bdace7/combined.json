@@ -1,0 +1,157 @@
+{
+  "evaluation_id": "combined-f1375b07b2d44f2eb2d8bb2d1fe21878",
+  "run_id": "run-20260903T051546Z-4bce91bdace7",
+  "trace_sha256": "e90ca57de4d2787fdc2065234817b3a774f57a1769509c0f652bb9ff5ab53713",
+  "created_at": "2026-09-03T14:09:37.009082Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即抛上报两难并给出立场，两条分寸正面回答关心与冒犯之辨，普通同事人群贯穿全文。",
+      "script_spans": [
+        "我的建议很明确：在没有危险信号时，普通同事之间，别急着上报，更别把对方家事当任务处理。",
+        "对咱们普通人，分寸就两条：对方没开口求你，就不主动深挖；对方流露轻生或伤人念头，那突破保密是法律例外。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 420，目标为 450，偏差率为 6.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律、心理、援助计划、两条分寸层层推进，论据有支撑且可落地，观众能带走判断方法与话术。",
+      "script_spans": [
+        "家庭事务在法律上属于高度敏感的个人信息，用人单位收集都得有合法依据和最小必要原则，何况平级同事。",
+        "职场中感到被窥探、被特殊对待，会迅速转化为排斥感，让人精力内耗。",
+        "很多企业其实设有员工援助计划，保密且专业"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出偷听家事的两难，中段以法律、心理、EAP方案层层兑现，结尾金句自然收束，三段均在线。",
+      "script_spans": [
+        "你偶然听到邻座同事在电话里为家里重病老人发愁，第一反应是告诉领导还是装作没听见？",
+        "那真想帮忙怎么办？很多企业其实设有员工援助计划，保密且专业",
+        "关心同事的底线，是先守住他的隐私边界，而不是替他做主。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数短句顺口有节奏，但组织行为研究一句与那突破保密是法律例外两处拗口需换词，最高2分。",
+      "script_spans": [
+        "你只需轻轻提一句“公司好像有心理支持资源”，远比你直接找HR上报体面",
+        "对方没开口求你，就不主动深挖",
+        "对方流露轻生或伤人念头，那突破保密是法律例外。",
+        "而且组织行为研究反复提示，职场中感到被窥探、被特殊对待，会迅速转化为排斥感，让人精力内耗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "雷区、温度等比喻服务理解，“先守住他的隐私边界，而不是替他做主”离文可复述，克制不堆砌。",
+      "script_spans": [
+        "这看似热心，却可能踩中隐私和人际的双重雷区。",
+        "对方没开口求你，就不主动深挖",
+        "关心同事的底线，是先守住他的隐私边界，而不是替他做主。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立场后说理，两处设问承接自然，危险信号例外与开头前提一致，结尾回扣题设收束干净。",
+      "script_spans": [
+        "为什么这么说？家庭事务在法律上属于高度敏感的个人信息",
+        "那真想帮忙怎么办？",
+        "关心同事的底线，是先守住他的隐私边界，而不是替他做主。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "边界意识好，设危险信号例外；但法律表述绝对化欠限定，排斥感归因过满，易误导观众，需补边界。",
+      "script_spans": [
+        "在没有危险信号时，普通同事之间，别急着上报",
+        "对方流露轻生或伤人念头，那突破保密是法律例外",
+        "家庭事务在法律上属于高度敏感的个人信息",
+        "会迅速转化为排斥感，让人精力内耗"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-74130391f64f4c88a787fe1f7c5d0337",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e5e1e17c7bb34014864b5cda5eebf0a7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

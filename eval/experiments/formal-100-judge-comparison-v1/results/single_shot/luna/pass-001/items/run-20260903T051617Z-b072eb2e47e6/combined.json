@@ -1,0 +1,148 @@
+{
+  "evaluation_id": "combined-5a81078e15164939aca3ec97cbd0b4a3",
+  "run_id": "run-20260903T051617Z-b072eb2e47e6",
+  "trace_sha256": "447ad5140fc0cee3e140ad945907c4ea1dea5e6b53210aa21b42aa34fd1d4f52",
+  "created_at": "2026-09-03T11:58:31.034744Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "紧扣融资改善与经营承压的反差，覆盖供给、成本、需求和现金流两侧。",
+      "script_spans": [
+        "融资负担减轻，恰恰没能让经营压力同步消失。",
+        "货能不能顺利出去，比贷款利率小数点更重要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 751，目标为 700，偏差率为 7.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“融资不是万能药”层层展开，成本、订单、现金流、行业分化均有具体解释。",
+      "script_spans": [
+        "原材料、房租、人工这些成本往往更硬，而且不少是常年刚性支出。",
+        "终端消费和投资不跟上，仓库里的存货就变不成现金。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用融资变便宜与老板仍焦虑的反差入题，中段转向成本和需求，结尾追问自然促发思考。",
+      "script_spans": [
+        "银行现在愿意给小企业借钱了，利息也往下走，可不少厂子和店老板还是眉头紧锁。",
+        "钱能借到了，可货卖给谁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句、问句和具体动词交替，停顿重音清楚，整体朗读自然，基本无需临时改词。",
+      "script_spans": [
+        "钱能借到了，可货卖给谁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且贴合论点，“货卖给谁”和“贷款利率小数点”形成自然、易复述的记忆点。",
+      "script_spans": [
+        "单靠降费止血，贴不住成本与需求的伤口。",
+        "货能不能顺利出去，比贷款利率小数点更重要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先讲融资改善，再转入成本与需求约束，最后用判断问题收束，因果链和结论回扣自然。",
+      "script_spans": [
+        "钱能借到了，可货卖给谁？这时候如果硬借钱扩产，没订单反而背新债",
+        "所以别一听“融资利好”就觉得企业稳了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，能提示需求与现金流风险；但“银行现在愿意”“利息也往下走”等概括过宽，易造成普遍化误解。",
+      "script_spans": [
+        "这不是否定金融侧的努力，而是单靠降费止血，贴不住成本与需求的伤口。",
+        "银行现在愿意给小企业借钱了，利息也往下走"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-0c617bfe89004de99f1c468f08bac6af",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-91110f85247c4ca7bc22d1be6ffac66f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

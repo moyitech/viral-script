@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-3de10729970e4563b691e202d727e064",
+  "run_id": "run-20260903T051603Z-f6a9f714f7a5",
+  "trace_sha256": "c1b3e045a5339a0e741c9295cdc32b9d9a6bc7fe6f8ec3218fd0d93356476bb0",
+  "created_at": "2026-09-03T11:57:05.027798Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答申诉是否变难，覆盖平台、监管与普通用户，并给出可执行应对。",
+      "script_spans": [
+        "我的判断是：不会必然更难过，但接下来几个月，你大概率先经历一段更烦的过渡期",
+        "普通人影响直接：申诉别跟机器人绕圈，直接说“转人工”三个字"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 441，目标为 450，偏差率为 2.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕申诉难度推进，数据、国标、责任边界和操作建议都带来明确增量。",
+      "script_spans": [
+        "上半年AI客服投诉量同比上涨超26%",
+        "明确禁止层层隐藏人工入口，涉人身财产安全优先转真人",
+        "简单问题机器答，复杂纠纷必须流转人工，切换时同步对话信息"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用限流申诉撞上机器客服制造冲突，中段持续给出数据、规则和应对办法，结尾也留下明确余味。",
+      "script_spans": [
+        "视频账号突然被限流，你急着申诉，对面却是答非所问的机器客服。",
+        "普通人影响直接：申诉别跟机器人绕圈，直接说“转人工”三个字"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体结构清楚、建议段有对话感，但中段多处概念压缩，朗读时需要重断句和换词。",
+      "script_spans": [
+        "申诉别跟机器人绕圈，直接说“转人工”三个字",
+        "首个人工与智能客服协同国家标准生效",
+        "企业不能为AI乱承诺切割责任"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“全面接入不等于全面挡事”和“申诉死胡同”到“起跑线”都简洁有力，修辞服务观点，没有明显堆砌。",
+      "script_spans": [
+        "全面接入不等于全面挡事。",
+        "AI客服不是申诉死胡同，而是你该大声要真人的起跑线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，能从投诉痛点推到国标再落到行动；但部分结论外扩，因果与责任边界仍不够严密。",
+      "script_spans": [
+        "但国标逼出硬杠杠：简单问题机器答，复杂纠纷必须流转人工，切换时同步对话信息",
+        "效率首次让位于可申诉权。",
+        "企业必须买单，截图就是有重量的证据。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动且有边界意识，但“企业必须买单”等把标准效果说成确定法律后果，易误导维权预期。",
+      "script_spans": [
+        "不会必然更难过",
+        "复杂纠纷必须流转人工",
+        "若它承诺免罚却不认账，企业必须买单，截图就是有重量的证据。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-54e505e8523940b78c447d6830f0793d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-215acb44728247399b9f984b131e90cf",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

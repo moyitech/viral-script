@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-112528d397824f77b46c6eb02256350d",
+  "run_id": "run-20260903T051522Z-60c437b3e369",
+  "trace_sha256": "fb8f277e1450b41bc35a811699579ebc4ee7861df116ec54fc5b14102664b857",
+  "created_at": "2026-09-03T12:31:44.432066Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否值得抢，既讲收益和稀缺原因，也覆盖流动性、保障与普通储户的决策需求。",
+      "script_spans": [
+        "眼下这类存单年化大多只在百分之一出头",
+        "钱要锁几年，先问自己能不能承受流动性打折，再算实际到手收益。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，收益比较、流动性代价、认购门槛和保险边界各自提供了可执行的判断依据。",
+      "script_spans": [
+        "提前支取只能拿活期利息，转让虽说允许，真到急用钱时未必能顺利出手",
+        "如果投入超过五十万，记住存款保险只保本息五十万内"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用利率与抢购反差设问，中段补足收益、流动性和保险风险，结尾自然落到决策。",
+      "script_spans": [
+        "大额存单利率平平却一单难求，抢着存真更划算吗？",
+        "钱要锁几年，先问自己能不能承受流动性打折，再算实际到手收益。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有清晰的问答和收束，但中段连续并列，换气与重音安排不够自然。",
+      "script_spans": [
+        "答案恐怕是否定的。",
+        "少数长期限稍高，但比起部分中小银行普通定存优势已很薄，个别期限甚至利率倒挂",
+        "提前支取只能拿活期利息，转让虽说允许，真到急用钱时未必能顺利出手，隐性成本不小"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不是送福利”“流动性打折”把抽象风险说具体，表达克制，留下了可复述的判断。",
+      "script_spans": [
+        "银行限量发额度更像锁资金的安排，不是送福利。",
+        "钱要锁几年，先问自己能不能承受流动性打折，再算实际到手收益。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先给结论，再从收益、流动性、门槛和保障展开，末尾回到是否值得抢，主线清楚且回扣自然。",
+      "script_spans": [
+        "答案恐怕是否定的。眼下这类存单年化大多只在百分之一出头",
+        "再看流动性，提前支取只能拿活期利息",
+        "钱要锁几年，先问自己能不能承受流动性打折，再算实际到手收益。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体以风险提示和条件化表达为主，但将认购起点概括为已降至二十万，未说明征求意见稿或适用范围，容易造成金融信息误解。",
+      "script_spans": [
+        "钱要锁几年，先问自己能不能承受流动性打折，再算实际到手收益。",
+        "个人认购起点近期降到了二十万"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e9dce196be014098bb582e4141c2ed76",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

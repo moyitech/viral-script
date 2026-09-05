@@ -1,0 +1,144 @@
+{
+  "evaluation_id": "combined-02aa38f1c30240e094a17208c4ffdc02",
+  "run_id": "run-20260902T143557Z-458af84d4339",
+  "trace_sha256": "4a4f0b4e99759ca59e7dd15fc34fe67c17e4494a7990268a2c0925ed4ac3891b",
+  "created_at": "2026-09-03T12:18:36.248338Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直指会员费与低价的矛盾，兼顾扩张、门槛和普通消费者的回本痛点，结尾也给出判断标准。",
+      "script_spans": [
+        "花260元办卡才能进山姆，可你买的东西未必真便宜。",
+        "再说山姆近六年门店翻倍到67家",
+        "所以别看排队进店热闹，先想自己消费频率。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "会员费、退费规则、返利、大包装和消费频率形成多组有效信息，既有事实也给出可执行的判断方法。",
+      "script_spans": [
+        "Costco章程写清楚，退费后六个月才能再办卡，退两次就可能被拒。",
+        "如果你一周只逛一次，省下的差价可能填不满会员费，反而贴钱。",
+        "大包装看着划算，可你得有地方囤，不然烂在角落更亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用费用与低价反差立刻设问，中段不断补充规则、返利和风险，结尾追问由前文自然推出。",
+      "script_spans": [
+        "花260元办卡才能进山姆，可你买的东西未必真便宜。",
+        "低价不是白给，先交钱再谈省，想随时走没那么自由。",
+        "你愿意为了账面低价，先交一笔不确定回本的钱吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句、转折和反问安排自然，数字信息也能顺读，整体气口清楚，基本无需临时改词。",
+      "script_spans": [
+        "花260元办卡才能进山姆，可你买的东西未必真便宜。",
+        "要是一年逛不了几回，那张卡反而是笔亏本账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制，‘买张门票’和‘先交钱再谈省’把会员费门槛说得直观，结尾‘信任要掂量’也有余味。",
+      "script_spans": [
+        "像买张门票。",
+        "低价不是白给，先交钱再谈省",
+        "便宜背后，除了金钱门槛，还有信任要掂量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按门槛来源、消费者影响、行动建议递进，主线清楚；但返利因果偏强，扩张、约谈与配送吐槽并列，未充分推出信任门槛。",
+      "script_spans": [
+        "那商家为什么敢这么玩？他们用规则把你轻轻绑住。",
+        "对咱们普通人，影响很直接。",
+        "所以别看排队进店热闹，先想自己消费频率。",
+        "钱回账户逼你再来",
+        "再说山姆近六年门店翻倍到67家，刚因食品安全被约谈，极速达首日还有人吐槽配送慢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明确违规，但“绑住”“逼你再来”将营销机制说成强制，“工薪族算不清”也有标签化和误导风险。",
+      "script_spans": [
+        "省下的差价可能填不满会员费，反而贴钱。",
+        "他们用规则把你轻轻绑住。",
+        "钱回账户逼你再来。",
+        "咱们工薪族算不清，容易被大包装忽悠。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-84c9f359500f47d9be7743f1b21fc43a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

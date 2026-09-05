@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-1bb53ce719264e80a72430922749bc29",
+  "run_id": "run-20260902T144941Z-f81c4f1786c6",
+  "trace_sha256": "60ee004fdc9239f25b2fc34d0dd6150b5c1f1a7bc51d227a2e2bdfd1e124fb1f",
+  "created_at": "2026-09-03T11:44:50.626398Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆开融资与经营两端，围绕小厂订单、成本和现金流回答了压力为何仍在。",
+      "script_spans": [
+        "融资减负是真事，可经营压力另一头更重。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 442，目标为 450，偏差率为 1.78%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策、短贷期限、订单成本、利润数据和应对建议层层补充，信息单元充足且共同支撑主旨。",
+      "script_spans": [
+        "有调查问过多省小厂，超九成觉得销售下滑拖后腿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用利息与订单的反差抓人，中段持续补充数据和经营困境，结尾追问也由观点自然引出。",
+      "script_spans": [
+        "利息降了，但小厂订单丢得更快，压力没解。",
+        "你家附近的小厂，这会儿卡在哪一环？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和对话感较强，整体能读通；但“买料价签”“招工自然收”等搭配生硬，影响顺口度。",
+      "script_spans": [
+        "钱好借了，可厂子没活干，机器不转，这坎儿得看清。",
+        "买料价签月月高",
+        "利润薄了招工自然收"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且贴合经营语境，把融资与经营的差别说透，金句自然，便于观众理解和复述。",
+      "script_spans": [
+        "贷款省下的利息填不上订单流失的坑。",
+        "便宜钱是阿司匹林，止不了经营的疼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "融资—经营—应对的顺序清楚，主线可跟随；但政策到实际优惠的因果压缩过度，且“招工自然收”句意残缺。",
+      "script_spans": [
+        "你再看经营那边，货却卖不动。",
+        "银行照单对接，少手续和抵押，利息省下一截。",
+        "利润薄了招工自然收。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，核心判断有调查依据；但把政策普遍效果说满，并将中小企业数据直接套成“小厂”，需加限定。",
+      "script_spans": [
+        "融资减负是真事，可经营压力另一头更重。",
+        "有调查问过多省小厂，超九成觉得销售下滑拖后腿。",
+        "银行照单对接，少手续和抵押，利息省下一截。",
+        "小厂吸了八成城镇就业，利润薄了招工自然收。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e9aab1917b8e4f3cb2431cedef86649d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c093a42b80c14c64a8352c4e4963ca4e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

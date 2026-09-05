@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-d9c1590547f24d73a027fe1635e54c62",
+  "run_id": "run-20260903T051555Z-73a7e9f1e3a5",
+  "trace_sha256": "4dc0bda2de4781dd17ee31c005a08cac3486ac84b398467ef956dd12cbcae230",
+  "created_at": "2026-09-03T11:57:37.514408Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从陌生人求助场景切入，覆盖善意、风险与边界，并给出核实和拦截的具体做法。",
+      "script_spans": [
+        "陌生人垫付费用，善意本身无错，但必须框定边界",
+        "先核事主身份、走可拦截渠道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 711，目标为 700，偏差率为 1.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律追偿条件、诈骗操纵机制、平台风控和应对步骤彼此推进，信息单元充足且有行动增量。",
+      "script_spans": [
+        "事后能请求受益人还必要费用，若自己受损还能要适当补偿",
+        "不法分子常伪造权威或可怜身份，用互惠话术和限时紧迫感逼你转账",
+        "钱未抵对方账户前，风控模型识别异常会主动警示“可能遭遇欺诈”"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用具体求助场景制造悬念，中段依次推进法律、诈骗与平台，结尾建议自然落地。",
+      "script_spans": [
+        "你拎着菜正出小区，一个满头汗的姑娘拦住说手机掉沟里了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有直接称呼和清楚停顿，但中段术语、长句与不顺搭配较多，朗读需重断句。",
+      "script_spans": [
+        "你没多想替她付了。",
+        "慢十秒不是冷漠",
+        "我们不妨从法律、诈骗因果和平台机制三次推进看。",
+        "就能借通道避开大多损坑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“雪中送炭”与“收割同情”形成反差，“善意如刀，边界是鞘”简洁且便于复述。",
+      "script_spans": [
+        "你感觉雪中送炭，其实是对方在收割你的同情",
+        "所以善意如刀，边界是鞘。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问引出总论点，随后按法律、诈骗、平台递进，结尾回扣边界并落到行动建议，结构完整。",
+      "script_spans": [
+        "我们不妨从法律、诈骗因果和平台机制三次推进看",
+        "所以善意如刀，边界是鞘",
+        "下次陌生人的垫付请求过来，先核事主身份、走可拦截渠道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "未见明显违规，法律边界与核验建议较克制；但“只撑腰”“避开大多损坑”略显绝对，易造成过度保障感。",
+      "script_spans": [
+        "善意本身无错，但必须框定边界",
+        "慢十秒不是冷漠，是让好心不被滥用",
+        "法律只撑腰真正的急难救助，不鼓励无谓慷慨。",
+        "就能借通道避开大多损坑。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-558af47dd56940e59975409d4068f8fb",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-697968ff49544c0c81d856c0a1024010",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

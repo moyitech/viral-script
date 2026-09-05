@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-b1a402348f3c465b9c930ebd3be66827",
+  "run_id": "run-20260903T051537Z-2fb887f49f0b",
+  "trace_sha256": "a75a79267f4d84ac744ed926cf191ae0e325893b91d902890dd7ab83791aeae0",
+  "created_at": "2026-09-03T12:31:56.156681Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直面延长营业与真实增长的落差，覆盖成本、客流转化和核心经营指标，回答明确。",
+      "script_spans": [
+        "延时营业带来的热闹，多半是假性繁荣，很难直接变成真实的销售和利润增长。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，成本、客流转化和交易指标层层推进，观众能获得判断延时营业是否有效的具体方法。",
+      "script_spans": [
+        "所以别被客流数字迷惑，多留意交易笔数和客单价才靠谱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“人挤人”与“月底算账未必好看”形成反差，中段补成本与转化，结尾自然落到经营指标。",
+      "script_spans": [
+        "商场半夜还亮着灯、人挤人，看着红火，但到了月底算账未必好看。",
+        "营业时间拉得再长，也比不上把单位时间的转化做扎实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体读得通，开头有画面感，但中段连续出现偏长、偏抽象的解释句，朗读需重断句。",
+      "script_spans": [
+        "商场半夜还亮着灯、人挤人",
+        "如果多出来的时段里，客流只是散步看热闹，单位面积产出的销售额反而会被摊薄，成本却一分不少。",
+        "现在大家确实比前几年更愿意逛实体商场了，但像深夜观赛那种集聚，更多是情绪释放和社交，真正掏钱买单的转化并不高。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“月底算账未必好看”把表面热闹与真实收益区分开，结尾判断利落可复述，修辞克制且服务观点。",
+      "script_spans": [
+        "看着红火，但到了月底算账未必好看。",
+        "营业时间拉得再长，也比不上把单位时间的转化做扎实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、成本解释、案例转折和指标结论层次清楚，但把客流稀释直接等同于单位面积销售额被摊薄，关键因果不成立。",
+      "script_spans": [
+        "所以别被客流数字迷惑，多留意交易笔数和客单价才靠谱。",
+        "如果多出来的时段里，客流只是散步看热闹，单位面积产出的销售额反而会被摊薄，成本却一分不少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能区分客流、交易笔数与客单价；但“多半是假性繁荣”和“转化并不高”泛化过强，缺少场景与数据边界，可能误导。",
+      "script_spans": [
+        "多留意交易笔数和客单价才靠谱",
+        "多半是假性繁荣",
+        "真正掏钱买单的转化并不高"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a50c5773dc5947cd80bcfbc7315170c0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

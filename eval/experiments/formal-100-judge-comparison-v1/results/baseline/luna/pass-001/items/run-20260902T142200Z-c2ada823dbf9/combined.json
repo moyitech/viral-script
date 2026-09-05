@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-0e3cc55b61444c7d951f87c89a69cb01",
+  "run_id": "run-20260902T142200Z-c2ada823dbf9",
+  "trace_sha256": "71c3b296fa2dfc45cc636e358474ce3ca7ff152a62b44aa228b71c9456bca62d",
+  "created_at": "2026-09-03T11:50:38.733154Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正文从消费者辨识难切入，兼顾真人、合成、平台与商家，直面回答还能不能分清。",
+      "script_spans": [
+        "标了AI你能认出，没标时你只能猜。",
+        "选真人还是合成，从来不是你单方面的判断题。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 662，目标为 700，偏差率为 5.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "标注边界、仿冒风险、平台漏洞与算法偏向层层推进，既有判断也有具体风险。",
+      "script_spans": [
+        "拿数字人仿真人面孔和声音，假借老专家卖保健品。",
+        "平台要求标识醒目且持续提示，可有的标在角落，字小如一闪过",
+        "若算法不向真人表达倾斜，我们看走眼的机会只多不少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用真人与代码的反差起钩，中段不断补充风险与漏洞，结尾追问由正文自然生长。",
+      "script_spans": [
+        "你以为真人主播半夜喊家人们，其实是一串代码在念稿。",
+        "所以下次指尖划过笑脸主播，你会先盯那行小字吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、反问和具象比喻有传播力，但两处以上卡嘴，且中段书面压缩明显，未达到自然录音稿。",
+      "script_spans": [
+        "你喊一句，真人会卡顿，合成不喘气。",
+        "现在刷到的全天播货架",
+        "字小如一闪过"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“标签才是救命绳”和“温情被模拟”形象准确，既压缩观点又留下可复述的记忆点。",
+      "script_spans": [
+        "标签才是救命绳",
+        "那不是笨，是温情被模拟。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构由识别现象推进到标注规则、治理漏洞和算法影响，转折自然，结尾回扣选择困境。",
+      "script_spans": [
+        "那标了就万事稳？",
+        "一边要透明，一边想钻缝，现实就这么拉扯。",
+        "选真人还是合成，从来不是你单方面的判断题。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提醒标识和消费风险，方向安全；但把“真人会卡顿，合成不喘气”当识别依据，过于绝对，易误导判断。",
+      "script_spans": [
+        "平台要求标识醒目且持续提示",
+        "真人会卡顿，合成不喘气"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-6f0bd51e97934f4b9941c5c74ffdcf87",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-fa027987e3c44d5d81f061d4b3a6091b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

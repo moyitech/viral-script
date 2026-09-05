@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-9a1958320f1c415d8a447cdfe5044269",
+  "run_id": "run-20260902T142640Z-5f6e692359f3",
+  "trace_sha256": "aeee946fee1e424e5ef8f69c9d24c26e82b27e0a500d97c5f14a188520bfdc67",
+  "created_at": "2026-09-03T11:44:26.375644Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面比较无密码的防护收益与设备、恢复、会话风险，完整回应普通用户对“更安全”的追问。",
+      "script_spans": [
+        "无密码加速普及，账户真就更安全了吗？得看两面。",
+        "所以无密码压住密码盗窃风险，没把账户塞进铁桶。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 681，目标为 700，偏差率为 2.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "私钥机制、密码与钓鱼、恢复风险、令牌攻击和普及数据层层加入，信息密度高且结论有边界。",
+      "script_spans": [
+        "私钥在你手机里生成，从不上传服务器。",
+        "现在多了偷登录后的会话令牌，那是进门后的通行条。",
+        "你省了记密码的脑容量，却押上设备主权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“省麻烦”对撞“丢手机天塌”，中段连续补上恢复、令牌和采纳转折，结尾留下设备主权的追问。",
+      "script_spans": [
+        "指纹登录省了记密码的麻烦，丢手机却像天塌了。",
+        "你省了记密码的脑容量，却押上设备主权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体可读，短句和比喻有节奏；但技术术语连排、句子压缩，朗读时仍需在多处重断。",
+      "script_spans": [
+        "你想，过去输密码时后台谁都能瞅见，现在本地点头就行。",
+        "新版数字身份指南允许把钥匙通过同步网备份到别设备，能达到二级保证。",
+        "现在多了偷登录后的会话令牌，那是进门后的通行条。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“钥匙不出门，贼进不来”和“前门、后窗”把技术边界讲成画面，结尾“设备主权”也留下可复述的余味。",
+      "script_spans": [
+        "钥匙不出门，贼进不来。",
+        "无密码关了前门，后窗得另上锁。",
+        "你省了记密码的脑容量，却押上设备主权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "收益、恢复、会话攻击再到结论的顺序清楚；但前后对私钥是否上传的表述边界冲突，部分推断略显跳跃。",
+      "script_spans": [
+        "无密码关了前门，后窗得另上锁。",
+        "私钥在你手机里生成，从不上传服务器。",
+        "新版数字身份指南允许把钥匙通过同步网备份到别设备，能达到二级保证。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体承认无密码的局限并提示会话令牌风险，但“点开也不怕”“贼进不来”等绝对表述可能让观众高估防护，需补充边界。",
+      "script_spans": [
+        "无密码压住密码盗窃风险，没把账户塞进铁桶。",
+        "钓鱼邮件点开也不怕",
+        "钥匙不出门，贼进不来"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9f400b7abcfb46d9beb6a06d7be2625e",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d0bd0815dfbf48caa90eaa0a4ddece3c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-232bcf75098743ec8f1545a75c06689e",
+  "run_id": "run-20260902T143721Z-089999e48c59",
+  "trace_sha256": "c1c6dfe41f119ae857d19774c9ee14c7cf704ed84c0e28971b13ea67f0b200c5",
+  "created_at": "2026-09-03T11:51:06.400383Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解免押的两种结果，并落到租客核算支出的实际痛点。",
+      "script_spans": [
+        "有的平台真免钱，有的把押金挪进月租和服务费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 493，目标为 450，偏差率为 9.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "给出租金溢价、服务费比例、监管背景和三个月核算法，信息具体且能推进判断。",
+      "script_spans": [
+        "房租比个人直租高大概一成五到两成，还要收服务费",
+        "把租金、服务费、中介费加起来，算三个月总支出。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出免押与服务费的冲突，中段用两类平台和算账方法推进，结尾追问自然促成思考。",
+      "script_spans": [
+        "说好免押金，搬进去了却收服务费。",
+        "把租金、服务费、中介费加起来，算三个月总支出。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、追问和收束句有节奏，整体能读通；但中段有多处词序生硬、信息挤在一起，需重断句或换词。",
+      "script_spans": [
+        "说好免押金，搬进去了却收服务费。",
+        "把租金、服务费、中介费加起来，算三个月总支出。",
+        "免押多限公寓",
+        "低收入的人获了周转空间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比和口语化表达服务于解释，既有“门槛低了流水高了”的节奏，也有自然可复述的收束金句。",
+      "script_spans": [
+        "门槛低了流水高了",
+        "省了进门的钱，却赔了过日子的钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线按模式、成本、风险到建议推进，但免押与免中介费被混用，“绕过托管”的因果也未讲透。",
+      "script_spans": [
+        "所以你找房时，别光盯着免押金三个字。",
+        "不收中介费，算是真减负。",
+        "免押金其实是绕过这层，企业用别法收钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "全文提醒核算总支出并承认模式差异，较克制；但将免押金概括为绕过监管，易造成误导。",
+      "script_spans": [
+        "低收入的人获了周转空间，但长线可能多掏",
+        "免押金其实是绕过这层，企业用别法收钱。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5b946c8ea2c74d97afab5bc72a63080f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ecd02afcc6b2421ba31709572d83b9a4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

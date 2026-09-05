@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-12dac6f6c3b547e98b228cd1dc25042f",
+  "run_id": "run-20260902T143816Z-4aa104bc7bd5",
+  "trace_sha256": "b39c7c245e4468cf2cb5aa28d17f6619801ace40ed8d89f61ba62cfd3d945113",
+  "created_at": "2026-09-03T11:45:02.103210Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答干旱冲击下如何稳住转型，覆盖水电、风光、储能、市场和普通用户，切角与题设高度一致。",
+      "script_spans": [
+        "干旱推高成本，能源转型靠多能互补和灵活电力市场来应对看天吃饭。",
+        "咱们普通人记住看分时电价，高峰少开大功率电器就行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 305，目标为 280，偏差率为 8.93%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "围绕看天吃饭展开，给出水电受旱、风光储能补位、现货调节和用户错峰等信息；但降本机制仍较简化，部分结论缺少充分推进。",
+      "script_spans": [
+        "储能把多余电存住，缺时放出来补位。",
+        "现货市场像实时菜价，把贵时段标出来",
+        "大家看见贵就错峰，整体成本就被摊薄了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以水电变贵与转型未被天气掐住形成反差，中段推进到互补、储能和市场，结尾收束自然。",
+      "script_spans": [
+        "干旱让水电变贵，转型却没被天气掐住。",
+        "未来看天吃饭，慢慢变成看系统怎么聪明调度了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有“你想啊”等口语承接，整体能读通；但“水电坝里靠水流落差带机器”等多处卡嘴，未达自然口播。",
+      "script_spans": [
+        "你想啊，水电少了，风光顶上，系统就不至于抓瞎。",
+        "水电坝里靠水流落差带机器",
+        "干旱推高成本，能源转型靠多能互补和灵活电力市场来应对看天吃饭。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“现货市场像实时菜价”把抽象机制讲得直观，“看天吃饭”到“看系统怎么聪明调度”也形成了可复述的收束。",
+      "script_spans": [
+        "现货市场像实时菜价",
+        "未来看天吃饭，慢慢变成看系统怎么聪明调度了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "总述、原理、价格、极端情形和行动建议顺序清楚；但现货市场、居民错峰与整体降本之间的因果连接不足，结尾略口号化。",
+      "script_spans": [
+        "不是说水电不发了，而是多源搭把手才稳。",
+        "不过极端旱情局部还是会紧",
+        "现货市场像实时菜价，把贵时段标出来，大家看见贵就错峰，整体成本就被摊薄了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规或煽动，且留有极端旱情边界；但“大家看见贵就错峰、整体成本就被摊薄”把市场效果说得过于确定，易误导。",
+      "script_spans": [
+        "不是说水电不发了，而是多源搭把手才稳。",
+        "大家看见贵就错峰，整体成本就被摊薄了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-7c06f2fab26946f38c923ea43d439704",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-4cf43eaaea464756badea299fb77b6fe",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

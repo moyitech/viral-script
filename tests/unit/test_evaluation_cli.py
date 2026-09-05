@@ -21,6 +21,7 @@ class EvaluationCliTests(unittest.TestCase):
             PROJECT_ROOT / "eval/rubrics/script_quality_v1.json",
         )
         self.assertEqual(args.reasoning_effort, "high")
+        self.assertIsNone(args.judge_model_id)
 
     def test_judge_concurrency_accepts_512_and_rejects_513(self) -> None:
         accepted = build_parser().parse_args(
@@ -31,6 +32,38 @@ class EvaluationCliTests(unittest.TestCase):
             build_parser().parse_args(
                 ["score", "--trace", "trace.json", "--concurrency", "513"]
             )
+
+    def test_judge_accepts_xhigh_reasoning_effort(self) -> None:
+        args = build_parser().parse_args(
+            [
+                "score",
+                "--trace",
+                "trace.json",
+                "--reasoning-effort",
+                "xhigh",
+                "--judge-model-id",
+                "gpt-5.6-luna-cdx",
+            ]
+        )
+
+        self.assertEqual(args.reasoning_effort, "xhigh")
+        self.assertEqual(args.judge_model_id, "gpt-5.6-luna-cdx")
+
+    def test_judge_accepts_max_reasoning_effort(self) -> None:
+        args = build_parser().parse_args(
+            [
+                "score",
+                "--trace",
+                "trace.json",
+                "--reasoning-effort",
+                "max",
+                "--judge-model-id",
+                "glm-5.3-flash",
+            ]
+        )
+
+        self.assertEqual(args.reasoning_effort, "max")
+        self.assertEqual(args.judge_model_id, "glm-5.3-flash")
 
     def test_trace_directory_skips_results_configs_and_output_tree(self) -> None:
         with TemporaryDirectory() as directory:

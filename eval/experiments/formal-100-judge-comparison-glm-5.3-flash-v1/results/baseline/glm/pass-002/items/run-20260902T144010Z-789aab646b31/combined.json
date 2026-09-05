@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-efbe28aede294d73a32a6cb4c3555afd",
+  "run_id": "run-20260902T144010Z-789aab646b31",
+  "trace_sha256": "1e5d88681c9dd6e5cc7d19e632e7a0c7a4364f9553dd004aac081ae768030dee",
+  "created_at": "2026-09-03T14:26:19.900356Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛两头冲突，快与吵各自成段展开，结尾问句回扣题设，居民痛点贯穿全篇。",
+      "script_spans": [
+        "快递确实更快，城市也确实更吵，这两头你得一起接",
+        "下次看到配送宣传，先问自己：你家安静值那几分钟？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "时效对比、降噪极限、起降点取舍逐层推进，数据与背景资料相符，能带走判断方法。",
+      "script_spans": [
+        "从前骑手地面绕路常耗半小时以上，遇早晚高峰更没谱；现在无人机飞直线，十五分钟上下就卸你窗台",
+        "技术能降噪，但架不住数量多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字直给快与吵的反差，为啥快、吵从哪来持续兑现信息，结尾提问由权衡自然生长，余味足。",
+      "script_spans": [
+        "快递快了十几分钟，你家头顶却多了嗡嗡响。",
+        "技术能降噪，但架不住数量多。",
+        "下次看到配送宣传，先问自己：你家安静值那几分钟？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、动词具体，但'急用药东西''窗外挂持续杂音'等处首读需临时重断或换词，封顶2分。",
+      "script_spans": [
+        "现在无人机飞直线，十五分钟上下就卸你窗台，红绿灯拥堵全撇开",
+        "技术能降噪，但架不住数量多。",
+        "你买生鲜急用药东西更快到手",
+        "窗外挂持续杂音",
+        "机器比老直升机轻巧声低些"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "嗡嗡响、扎耳形象贴切，用安静换方便、安静值几分钟凝练准确，离开语境仍可复述，全篇克制。",
+      "script_spans": [
+        "先想清楚愿不愿用安静换方便。",
+        "我们少的只是路程，多出的却是每天头顶声响。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问分段各司其职，转折有桥、让步有承接，结尾自然回扣开头的十几分钟承诺。",
+      "script_spans": [
+        "机器比老直升机轻巧声低些，可空域试点在铺开，一群群低空掠过",
+        "技术能降噪，但架不住数量多。小区要规划起降点，先想清楚愿不愿用安静换方便。",
+        "我们少的只是路程，多出的却是每天头顶声响"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "利弊并陈，快与吵均有限定词支撑，降噪局限与起降点权衡讲清边界，结尾留观众自判，无煽动、夸大或误导承诺。",
+      "script_spans": [
+        "技术能降噪，但架不住数量多。",
+        "机器比老直升机轻巧声低些",
+        "小区要规划起降点，先想清楚愿不愿用安静换方便。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8782472cf04e4624bafa303fccc35cbf",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

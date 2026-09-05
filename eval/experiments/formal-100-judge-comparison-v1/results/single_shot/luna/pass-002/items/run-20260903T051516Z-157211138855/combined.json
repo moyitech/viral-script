@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-a294d1c096624993bbd2927380be1f92",
+  "run_id": "run-20260903T051516Z-157211138855",
+  "trace_sha256": "81ab498153cc398628df03490ed5165263f09f9e1d7dbf3e9e60c56716577895",
+  "created_at": "2026-09-03T12:31:27.819531Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接承接芯片需求与中小企业算力困境，成本、供给两侧均有回应，核心受众和冲突没有偏移。",
+      "script_spans": [
+        "人工智能芯片需求正一路飙升，但算力的繁荣火热却很难传导到中小企业手里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕成本、供给和服务形态连续推进，既解释传导受阻，也给出轻量推理的落地建议，信息增量充分。",
+      "script_spans": [
+        "第一道坎是成本，训练级芯片造价极其昂贵，大公司能批量囤卡堆出千块规模，中小企业连凑一两块都费劲",
+        "第二道坎是供给，算力散落区域割裂且异构芯片生态封闭，传统整包租赁模式死板"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用需求飙升与中小企业难受益制造反差，中段两道坎递进，结尾给出可执行的试水建议，推进完整。",
+      "script_spans": [
+        "人工智能芯片需求正一路飙升，但算力的繁荣火热却很难传导到中小企业手里",
+        "第一道坎是成本",
+        "第二道坎是供给",
+        "建议这类企业先关注地方算力补贴类试点，从轻量推理场景切进去试水更稳妥"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "分层清楚、例子具体，整体能读通；但两处抽象并列长句拉长气口，朗读需重断句。",
+      "script_spans": [
+        "第一道坎是成本",
+        "连凑一两块都费劲",
+        "面向中小企业的普惠服务体系和易用渠道远未真正下沉成型",
+        "算力散落区域割裂且异构芯片生态封闭"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“第一道坎”“跨几道沟”等表达帮助分层和理解，成本对比具体，留下了可复述的画面感。",
+      "script_spans": [
+        "第一道坎是成本",
+        "大公司能批量囤卡堆出千块规模，中小企业连凑一两块都费劲",
+        "但要把它变成中小企业用得顺手、买得起的普惠服务还得跨几道沟"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "成本、供给两条线分段展开，总量与可用服务的转折清楚；但末尾建议与前文障碍之间缺少具体推导。",
+      "script_spans": [
+        "根本原因在于高端算力资源既昂贵又分散，面向中小企业的普惠服务体系和易用渠道远未真正下沉成型。",
+        "建议这类企业先关注地方算力补贴类试点，从轻量推理场景切进去试水更稳妥。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，但“根本原因”“根本匹配不了”和“更稳妥”带有绝对化、未经限定的判断与建议，需补边界。",
+      "script_spans": [
+        "第一道坎是成本",
+        "根本原因在于高端算力资源既昂贵又分散",
+        "根本匹配不了小厂随用随取、轻量弹性的业务节奏",
+        "从轻量推理场景切进去试水更稳妥"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-75d6d86a3bed4ec1bf462e8fb1c5414b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

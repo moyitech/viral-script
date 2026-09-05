@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-71a240e932ef4af2a482c5cc526854fb",
+  "run_id": "run-20260903T051514Z-44c72595e3a8",
+  "trace_sha256": "28f0406f57b37429060c965f2db4d6e61df1932327a4499543d09733602778ea",
+  "created_at": "2026-09-03T12:31:29.898222Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 2,
+      "reason": "明确讨论拍摄上传的监督与伤害，但几乎只论证二次伤害，未交代公共监督何时成立。",
+      "script_spans": [
+        "觉得自己是在做公共监督员？",
+        "绝大多数不是监督，而是对当事人的二次伤害"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "围绕侵权风险、公共利益、语境伤害和应对建议推进，信息具体；但“只要”与“绝大多数”都把结论说得过满。",
+      "script_spans": [
+        "拍下留作报警证据就好，千万别顺手点发布让伤害扩散",
+        "只要未经同意制作公开他人可被识别的形象就构成侵权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“监督员”反转侵权风险，中段给出两层理由，结尾落到可执行建议，推进和收束都自然。",
+      "script_spans": [
+        "反常识的是，这随手一发很可能让你先踏入了侵权红线",
+        "脱离语境的视频往往只剩羞辱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "前后钩子和结尾顺口，但法律依据段过长，连续抽象词与并列结构使气口明显变重。",
+      "script_spans": [
+        "真碰上纠纷，拍下留作报警证据就好",
+        "核心依据有两点：民法典里肖像权保护早就不看营利目的，只要未经同意制作公开他人可被识别的形象就构成侵权",
+        "而吵架双方情绪失控的碎片画面，既难证明涉及公共利益，又让当事人被迫接受全网陌生人的围观与道德审判"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“脱离语境的视频往往只剩羞辱”把二次伤害说得具体，配合“顺手点发布让伤害扩散”，形成易复述的警示。",
+      "script_spans": [
+        "脱离语境的视频往往只剩羞辱",
+        "顺手点发布让伤害扩散"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、两点展开、建议收束，主线清楚；但从情绪碎片直接推到侵权和“绝大多数”二次伤害，缺少例外与因果边界。",
+      "script_spans": [
+        "核心依据有两点",
+        "脱离语境的视频往往只剩羞辱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导留存证据、避免扩散较稳妥，但将未经同意公开可识别形象一概认定侵权，忽略法定例外，易造成法律误导。",
+      "script_spans": [
+        "拍下留作报警证据就好",
+        "只要未经同意制作公开他人可被识别的形象就构成侵权"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 16.0,
+    "partial_weighted_average": 2.2857142857142856,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d3919fd0a5454fee9853f861e0476b74",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

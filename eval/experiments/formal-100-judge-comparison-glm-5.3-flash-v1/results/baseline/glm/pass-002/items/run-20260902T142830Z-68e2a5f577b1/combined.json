@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-bcb97be28b0146d899ea674c1a170ebb",
+  "run_id": "run-20260902T142830Z-68e2a5f577b1",
+  "trace_sha256": "5571bdbab9f415ff68d6f387cc5e44d06b834691d803492bf1cc6aef62f617ab",
+  "created_at": "2026-09-03T14:26:10.857994Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接给结论，统一定额与设兜底两面兼顾，落点对准只收到提醒的普通用户。",
+      "script_spans": [
+        "看似该统一赔，其实硬统一定死可能让你更亏",
+        "别搞一刀切定额，但得设个最低兜底"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "责任义务、法律弹性、处罚现状、双门槛推演各给新信息，结尾留证主张可操作，无同义复述。",
+      "script_spans": [
+        "个保法算是民法典特别法，补了权利细节，却没写死赔偿数目",
+        "门槛定低了，平台拿低额赔偿顶锅，你反而难多要；门槛定高了，小创业者可能赔穿"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字内抛出“只发提醒不赔”冲突并紧接反转；中段低高门槛双向推演持续兑现钩子；结尾提问从建议自然长出。",
+      "script_spans": [
+        "数据泄露后平台只发提醒不赔，看似该统一赔，其实硬统一定死可能让你更亏",
+        "门槛定低了，平台拿低额赔偿顶锅，你反而难多要；门槛定高了，小创业者可能赔穿",
+        "要是平台只发提醒不赔，你会自己较真还是等统一？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口密，法律与赔偿分析像当面算账，‘写死’‘赔穿’等落点清楚，录音基本不用改词。",
+      "script_spans": [
+        "要是平台只发提醒不赔，你会自己较真还是等统一？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“顶锅”“赔穿”“写死”等口语词精准服务说理，“别搞一刀切定额，但得设个最低兜底”离开上下文仍可复述，全程无堆砌。",
+      "script_spans": [
+        "别搞一刀切定额，但得设个最低兜底",
+        "补了权利细节，却没写死赔偿数目",
+        "真泄露了主动主张，比盼统一标准更实在"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以责任和法律垫前提，再推演门槛高低两种后果，'所以'承接顺，结尾回扣只发提醒的开头。",
+      "script_spans": [
+        "法院还能按损害酌情判，可见法律故意留了弹性",
+        "所以咱们别光等平台提醒，自己留好账号异常证据"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "立场平衡有边界，法律表述与权威资料一致，'可能''多是'等措辞留余地，无煽动夸大或误导承诺。",
+      "script_spans": [
+        "别搞一刀切定额，但得设个最低兜底",
+        "真泄露了主动主张，比盼统一标准更实在"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1a936d48feb44d3b8788033833e4ada7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

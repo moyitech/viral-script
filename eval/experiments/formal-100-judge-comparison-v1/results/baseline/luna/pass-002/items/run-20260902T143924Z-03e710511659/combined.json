@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-4db45b14c4654ff7807da07bd04b0053",
+  "run_id": "run-20260902T143924Z-03e710511659",
+  "trace_sha256": "8ed96b5dbf64806a71ee3f42f72f1cb772de65aa2edebf5bd43cd937d0a98cf4",
+  "created_at": "2026-09-03T12:21:33.550687Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从平均物价、家庭支出结构到收入与刚性账单，完整回答了普通家庭为何钱不够花。",
+      "script_spans": [
+        "物价说只涨1%，你咋还觉得钱不够花？",
+        "钱刚到手，先填了房租学费那些硬坑，菜场省下的根本补不上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主线集中，数据、支出结构和账单感知都有增量；但统计类别与具体服务的对应、房租判断均不够严谨。",
+      "script_spans": [
+        "上半年食品烟酒占消费支出30.6%，居住又占21.1%，两项过半。",
+        "所以体感通胀藏在账单里，不在头条中。",
+        "像其他用品服务那类同比涨了13.5%，理发带娃上课这些日常服务，涨得比平均猛。",
+        "房价虽不在CPI里，房租可算其中，它也没跟着指数降。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用反差提问抓人，中段依次拆解价格、开支和收入错位，结尾落到自查账目，推进自然。",
+      "script_spans": [
+        "物价说只涨1%，你咋还觉得钱不够花？",
+        "所以体感通胀藏在账单里，不在头条中。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏明快、对话感不错，但“其他用品服务那类”“老人药费再收”等处朗读时需改词或重断句。",
+      "script_spans": [
+        "为啥错位？你家开支结构和CPI不合拍。",
+        "像其他用品服务那类",
+        "你家老人药费，哪会等物价平稳再收？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“体感通胀藏在账单里，不在头条中”形成清晰记忆点，“硬坑”等口语比喻也服务于理解，修辞克制。",
+      "script_spans": [
+        "所以体感通胀藏在账单里，不在头条中。",
+        "钱刚到手，先填了房租学费那些硬坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、收入与支出两层展开、结尾回扣都清楚；但统计占比推到个体体验，部分因果桥梁不足。",
+      "script_spans": [
+        "为啥错位？你家开支结构和CPI不合拍。",
+        "所以体感通胀藏在账单里，不在头条中。",
+        "这部分每月必掏，价格黏得很。",
+        "可城里人实际收入约增3%，但工资涨得慢，账单不等人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "数据解释和家庭账单视角较稳，但把单项涨幅直接对应具体服务，并用“不是”“根本”等绝对说法，需收窄范围。",
+      "script_spans": [
+        "上半年食品烟酒占消费支出30.6%，居住又占21.1%，两项过半。",
+        "理发带娃上课这些日常服务，涨得比平均猛。",
+        "你平时感知来自后者，不是平均值。",
+        "菜场省下的根本补不上。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7b7d49447adc4c17a21f10ee9c0070e9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

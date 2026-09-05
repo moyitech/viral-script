@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-2c5e10b515154e0eb036c26834e16b13",
+  "run_id": "run-20260902T144226Z-4f37e87af19d",
+  "trace_sha256": "65eac0d7c4db120fc2ff304834fc743f52ba37f60906959d257ff908e45037be",
+  "created_at": "2026-09-03T13:48:23.961023Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头到结尾都扣题，两侧并答，落点对准普通消费者，切角具体。",
+      "script_spans": [
+        "两边得掰开看：短期能拉消费，长久信心真没那么简单",
+        "落到咱们身上很直接。你换冰箱省最多1500"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 420，目标为 450，偏差率为 6.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数字消费券与政策细节扎实无编造，短期、政策、个人三层各推进，增量足。",
+      "script_spans": [
+        "政府每贴1元，带出3.4元消费",
+        "长久信心看收入预期和社保，不是靠补贴能续命"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句先涨后补钩子具体有力，中段数据、政策调整与权衡层层推进，结尾比喻与加油挖坑之问均由正文自然生长，三段无代偿。",
+      "script_spans": [
+        "你领的家电补贴，可能正被先涨后补吃掉。",
+        "月底算账，券省的钱抵不过房贷利息，心照样虚。",
+        "补贴像递水给跑者，前路平不平，才定他信不信能跑远。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与对话感是亮点，但“且”“可若”等书面词需临场改口，政策段念稿感偏重。",
+      "script_spans": [
+        "政府每贴1元，带出3.4元消费",
+        "本来就要花且花超门槛的人",
+        "可若骗补蔓延，大家觉政策虚"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "递水给跑者收尾离开上下文仍可复述，先涨后补吃掉、给大商加血均助解，修辞克制无堆砌。",
+      "script_spans": [
+        "补贴像递水给跑者，前路平不平，才定他信不信能跑远。",
+        "钱涌进大卖场给大商加血"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线与结尾回扣清楚，但按比例为何更高效未解释，因果桥不足经不起追问。",
+      "script_spans": [
+        "补贴像递水给跑者，前路平不平，才定他信不信能跑远",
+        "按比例让贵车多拿，效率是高了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "通篇多用或更像等限定措辞，权衡两面呈现，数据与政策表述克制，无夸大、煽动或误导承诺，导向安全。",
+      "script_spans": [
+        "可能正被先涨后补吃掉",
+        "这儿有个权衡：按比例让贵车多拿，效率是高了",
+        "长久信心看收入预期和社保"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9d35c9b8b2394bb1ae2d719a37affbb7",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-887abb9e5a8942b081cab15907222955",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

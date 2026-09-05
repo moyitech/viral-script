@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-0952ef83a6174520837253b4ab7af345",
+  "run_id": "run-20260902T144058Z-58248bf4fd1d",
+  "trace_sha256": "9cb3ee726631abf51247400f3e33d656c6c45a642df831a8e9249f4e20c9a8f8",
+  "created_at": "2026-09-03T11:44:41.362328Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答盘活是否影响服务质量，回应减少服务的担忧，也说明如何拓展服务，目标人群和切角准确。",
+      "script_spans": [
+        "有人怕盘活会减服务，但地方盘活闲置资产，只要规范运作，选对用途，一般不会拉低公共服务质量，反而能拓展服务空间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 284，目标为 280，偏差率为 1.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕公共服务质量，既有闲置公房改造的具体场景，也有就近服务、节约资源和合规改造等信息推进。",
+      "script_spans": [
+        "扫扫地，刷刷墙，摆上桌椅板凳，改造成社区养老托育点，街坊走路就到，直接多出服务处，不用远跑。",
+        "别乱拆有保护的旧建筑，也要留足安全通道，照规划来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "“空置房改托育中心”先抛反差，中段补充用途、做法与边界，结尾追问自然回扣主题。",
+      "script_spans": [
+        "空置房改托育中心，公共服务反而更好？",
+        "不过动手改时得守规矩，别乱拆有保护的旧建筑，也要留足安全通道，照规划来，不然白忙活。",
+        "我们缺的真是房子吗？不如先看看家门口怎么用起来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体可读，动作列举有节奏；但“服务处”“省下钱和力”等说法生硬，部分长句需重断。",
+      "script_spans": [
+        "扫扫地，刷刷墙，摆上桌椅板凳",
+        "直接多出服务处",
+        "省下钱和力"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“让老房子干新活”和“扫扫地，刷刷墙”具体鲜活，修辞克制，既帮助理解也便于观众复述。",
+      "script_spans": [
+        "让老房子干新活",
+        "扫扫地，刷刷墙，摆上桌椅板凳",
+        "当闲房变身边服务站"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、例证、监管提醒和结尾形成完整主线；但“省下钱和力”到服务质量的转化缺少中间论证，结尾也略泛。",
+      "script_spans": [
+        "不过动手改时得守规矩，别乱拆有保护的旧建筑，也要留足安全通道，照规划来",
+        "省下钱和力，好把力气用在公共服务上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有用途和安全边界意识，但把盘活与服务质量提升作概括性因果，需补充条件，避免误导。",
+      "script_spans": [
+        "不过动手改时得守规矩，别乱拆有保护的旧建筑",
+        "一般不会拉低公共服务质量，反而能拓展服务空间"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-bc7e9b898ab04fdfaf948a3416639286",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9cd6b17b88794e6a933e677670450dc1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-a3d01c10965e4b989a45c37f05aa29c3",
+  "run_id": "run-20260902T143838Z-955151113293",
+  "trace_sha256": "6f1dfc5e7d321e2a066941536082db5076fc574a779e4b262f407382f3891e17",
+  "created_at": "2026-09-03T12:21:17.029582Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "明确回答“真行动还是数字游戏”，同时覆盖企业动机、额外性与核验方法，切合普通观众疑问。",
+      "script_spans": [
+        "我直接说，两头都沾边，关键买的项目够不够额外。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕额外性集中推进，兼有成本动机、反例解释、监管信息和购买核验建议，观众能带走判断标准。",
+      "script_spans": [
+        "企业自己改线花钱多，买信用抵任务便宜，所以不少去抢。",
+        "碳信用本要求论证额外性，意思是没这笔买卖根本不会发生减排",
+        "你公司准备买，先问这碳来自哪片林哪台设备。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“钱白花、排放照旧”制造冲突，中段以额外性和厂子案例推进，结尾追问自然留出余味。",
+      "script_spans": [
+        "企业抢购碳信用，钱白花没减排放。",
+        "碳信用本要求论证额外性，意思是没这笔买卖根本不会发生减排",
+        "当减排能花钱凑数，谁还乐意费劲改生产线呢？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏明快、信息推进清楚，但多处关键句卡嘴，核心解释仍需改写。",
+      "script_spans": [
+        "一边真金白银流出，一边排放照旧，这到底真行动还是数字游戏？",
+        "企业自己改线花钱多，买信用抵任务便宜，所以不少去抢。",
+        "企业抢购碳信用，钱白花没减排放。",
+        "关键买的项目够不够额外。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一边真金白银流出，一边排放照旧”形成清晰反差，“减排不发生第二次”也有可复述的记忆点，修辞不喧宾夺主。",
+      "script_spans": [
+        "一边真金白银流出，一边排放照旧",
+        "这减排不发生第二次"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、定义、例证和建议层次清楚，但“每月存证”直接跳到“难以糊弄”，监管与额外性之间缺少因果桥。",
+      "script_spans": [
+        "碳信用本要求论证额外性，意思是没这笔买卖根本不会发生减排，就好比不给钱就不干。",
+        "现在规则逼企业每月存证排放数据，台账摊开想糊弄也难了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有额外性和项目核验提醒，但“钱白花没减排放”“排放照旧”把个案风险泛化，且“每月存证”未限定适用范围，仍有误导风险。",
+      "script_spans": [
+        "关键买的项目够不够额外",
+        "别光看证书漂亮，得盯住减排真发生没",
+        "企业抢购碳信用，钱白花没减排放",
+        "一边真金白银流出，一边排放照旧",
+        "现在规则逼企业每月存证排放数据"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-beadbee33a534dac90318c885ed1eb10",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

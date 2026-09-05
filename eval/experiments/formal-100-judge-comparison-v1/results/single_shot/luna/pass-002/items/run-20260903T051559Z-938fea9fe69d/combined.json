@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-4ad47c2bee0d46e0abc3f99e2b3ab9ba",
+  "run_id": "run-20260903T051559Z-938fea9fe69d",
+  "trace_sha256": "f9e7de444941510302b71ae5be9168caef555d230a390c1efad94ff260b442b3",
+  "created_at": "2026-09-03T12:32:42.261223Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答补贴能否转化为信心，既写短期刺激，也写普通人长期消费预期。",
+      "script_spans": [
+        "补贴能买来眼前的热闹，但买不到长久的信心。",
+        "但这份划算，不会自动变成你下个月敢下馆子、敢旅游的底气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "中心始终围绕短期拉动不等于长期信心，数据、机制、个人影响和结论层层补足。",
+      "script_spans": [
+        "政府每贴1块钱，短期能撬动3块4的消费，效果确实猛。",
+        "花得最猛的，往往是本来就要买、而且专挑大牌的人",
+        "券是限时、要凑单的，天然制造脉冲式消费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“敢不敢花钱”制造现实冲突，中段以数据、受益人群和政策边界递进，结尾回到个人决策，收束有余味。",
+      "script_spans": [
+        "可你刚领完券之后，真的敢放心花钱了吗？",
+        "如果收入和对未来的预期没跟上，补贴一停，消费习惯很可能回到原样。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数段落有对话感和生活画面，但政策规则句信息挤在一起，朗读需重断句，末尾用词也略书面。",
+      "script_spans": [
+        "说白了，这更像给准备花钱的人添把火",
+        "超长期国债砸了六百多亿，但规则是汽车按价比例补、家电只补一级能效，资源明显向“换新”倾斜",
+        "用它来判断自己该不该扩张消费，反而容易误判"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“买来热闹、买不到信心”准确提炼主旨，“添把火”形象解释受益对象，记忆点自然且不过度煽情。",
+      "script_spans": [
+        "补贴能买来眼前的热闹，但买不到长久的信心。",
+        "这更像给准备花钱的人添把火，而不是让没钱的人敢花钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，随后以数据、机制、普通人影响和结论递进，结尾回扣“信心药”，主线完整。",
+      "script_spans": [
+        "为什么这么讲？有研究跟踪过数字消费券，发现政府每贴1块钱，短期能撬动3块4的消费",
+        "如果收入和对未来的预期没跟上，补贴一停，消费习惯很可能回到原样。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，也提示补贴的现实收益；但“买不到长久的信心”“补贴一停……回到原样”把复杂效果说得过满，需加条件限定。",
+      "script_spans": [
+        "趁着补贴把老旧空调、手机换了，确实省下一笔，这是实打实的利好。",
+        "补贴能买来眼前的热闹，但买不到长久的信心。",
+        "补贴一停，消费习惯很可能回到原样。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-aea3e19e68234eeaa36fbdfbe22c0dbf",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

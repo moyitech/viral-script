@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-c7219eef34944ae684a163a9381ecfb0",
+  "run_id": "run-20260903T051539Z-a67531cf2d70",
+  "trace_sha256": "0ee315b9c9bb2923aea3fd04d335ee64ab4ce892e566eceab6a5fd64a60e7d2e",
+  "created_at": "2026-09-03T11:59:55.256531Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕副业培训“增收还是交学费”正面作答，覆盖广告套路、平台漏洞和普通人避坑，核心受众基本对位。",
+      "script_spans": [
+        "你刷到的那些副业培训广告，看上去是带你增收，其实大多数人是在乖乖交学费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 424，目标为 450，偏差率为 5.78%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中且有数据、套路和避坑建议，但用投诉金额直接推出“大多数人交学费”，中心判断的证据跨度偏大。",
+      "script_spans": [
+        "平均每一笔纠纷涉及金额超过七千元。",
+        "看到副业课，先去搜搜机构有没有投诉记录；凡是合同里藏着‘分期变贷款’‘不过退费’苛刻条件的，直接划走。",
+        "其实大多数人是在乖乖交学费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“增收”对撞“交学费”，中段持续补充投诉、贷款和私域规避，结尾落到可执行筛选，推进和收束都自然。",
+      "script_spans": [
+        "看上去是带你增收，其实大多数人是在乖乖交学费",
+        "可很多账号换了‘分享我自己出单经验’的说法，就把人引流到私域聊天",
+        "看到副业课，先去搜搜机构有没有投诉记录"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "反问、提醒和收束句有对话感，整体可读；但规则说明与合同条件连续堆叠，朗读时仍需多次重断句。",
+      "script_spans": [
+        "那为什么平台明明收紧了规则，这类广告还满天飞？",
+        "钱交出去那刻，主动权就不在你手里了。",
+        "现在主流平台都禁止‘轻松月入三万’这种承诺收益，也要求视频开头和落地页卖的东西必须一致，AI生成的素材还得标清楚。",
+        "凡是合同里藏着‘分期变贷款’‘不过退费’苛刻条件的，直接划走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“交学费”和“主动权就不在你手里”把风险说得具体，“天选之子”也形成可复述的自我提醒，修辞克制且服务观点。",
+      "script_spans": [
+        "其实大多数人是在乖乖交学费",
+        "钱交出去那刻，主动权就不在你手里了",
+        "我又不是那个天选之子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构按数据、套路、平台漏洞到行动建议推进，主线清楚；但预付风险没有直接解释广告泛滥，结尾“从来不是”也把建议说得过满。",
+      "script_spans": [
+        "换了‘分享我自己出单经验’的说法，就把人引流到私域聊天，脱离了审核视野。",
+        "再加上培训普遍是预付式，钱交出去那刻，主动权就不在你手里了。",
+        "真正能增收的路径，从来不是买一套现成话术，而是先把手头的小技能磨熟，再慢慢接单变现。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "内容警示方向基本稳妥，但“大多数”“都”“根本”等绝对化表述，可能把个案和平台规则说成普遍事实。",
+      "script_spans": [
+        "看到副业课，先去搜搜机构有没有投诉记录",
+        "其实大多数人是在乖乖交学费",
+        "现在主流平台都禁止‘轻松月入三万’这种承诺收益"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-49ea82032e364f948f240270b703ef33",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c5ebceb7fd454eacaf6f822bd19e97e9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

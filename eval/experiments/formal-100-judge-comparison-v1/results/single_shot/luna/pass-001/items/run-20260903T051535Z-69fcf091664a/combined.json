@@ -1,0 +1,163 @@
+{
+  "evaluation_id": "combined-04b90f11578b41f7a07c2556653e3bba",
+  "run_id": "run-20260903T051535Z-69fcf091664a",
+  "trace_sha256": "981fc025c6f5fb9b6830d0b668354494be73ea2094e78c43a2ac1e52c8247f56",
+  "created_at": "2026-09-03T12:00:19.968552Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应循环价值与质量风险，并落到普通消费者的筛选和验机决策，题设两侧覆盖完整。",
+      "script_spans": [
+        "环保是长期账，个人省钱是眼前账，两者不冲突，前提是交易透明。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 851，目标为 700，偏差率为 21.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从政策、交易规模和环保收益，推进到渠道差异、检测成本及消费者验机，信息单元连续推进，主题集中。",
+      "script_spans": [
+        "小作坊翻新有生存空间，是因为专业检测设备贵，普通卖家没手段验机，信息差就是盲区温床。",
+        "查序列号看激活日期，用官方工具测功能。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用低价与电池风险制造反差，中段持续补充政策、盲区和避坑方法，结尾判断自然回收。",
+      "script_spans": [
+        "你花七成价钱买到的“99新”手机，可能电池循环次数早就满了，只是外壳被打磨得锃亮。",
+        "可便宜背后，取舍到底是什么？",
+        "翻新不是原罪，盲买才是风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句、追问和口语承接安排自然，核心段落重音清楚，连续朗读基本无需改词。",
+      "script_spans": [
+        "可便宜背后，取舍到底是什么？",
+        "具体怎么做？别碰明显低于市价的靓机"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“环保是长期账，个人省钱是眼前账”和“翻新不是原罪，盲买才是风险”具体克制，便于复述，且未压过信息。",
+      "script_spans": [
+        "环保是长期账，个人省钱是眼前账，两者不冲突，前提是交易透明。",
+        "翻新不是原罪，盲买才是风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、风险拆解和消费建议形成主线，但补贴与正规渠道的因果略跳，多处并列长句也影响口播节奏。",
+      "script_spans": [
+        "具体怎么做？别碰明显低于市价的靓机，查序列号看激活日期，用官方工具测功能。",
+        "政策还完善回收网络，支持互联网加二手模式，让旧机流转更顺畅，以旧换新补贴也间接把更多旧机送进正规翻新渠道，添了柴火。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有风险边界和核验建议，但“翻新热不是骗局”等表述收束过满，环保量化说法也缺少限定，存在误导可能。",
+      "script_spans": [
+        "不能一刀切认为所有翻新都危险，也别盲目信任所有标“焕新”的摊子。",
+        "优先选有认证资质的回收平台或品牌官翻，到手先查电池健康度，索要至少半年质保。",
+        "全球范围内翻新每年能削掉上千万吨电子垃圾",
+        "记住，翻新不是原罪，盲买才是风险。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 851,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.21571428571428572
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3d020cb3f33e448ba09cbc1664263282",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-678a7cacf93a47f8b04615995dc9532c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

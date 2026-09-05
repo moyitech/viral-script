@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-4ed92c135b2d4efdba09d5a17d3ea434",
+  "run_id": "run-20260902T144226Z-4f37e87af19d",
+  "trace_sha256": "65eac0d7c4db120fc2ff304834fc743f52ba37f60906959d257ff908e45037be",
+  "created_at": "2026-09-03T14:27:07.005927Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即亮两侧立场，短效与长效分段论证，结尾落到普通人账本，全程直答题设，人群痛点契合。",
+      "script_spans": [
+        "两边得掰开看：短期能拉消费，长久信心真没那么简单。",
+        "落到咱们身上很直接。你换冰箱省最多1500"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "3.4元撬动、625亿国债、按比例补等事实层层推进，判断与解释互相支撑，论据扎实无编造。",
+      "script_spans": [
+        "有研究跟过数字消费券，政府每贴1元，带出3.4元消费。",
+        "全国统一定标准防先涨后补，严打骗补。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字直点先涨后补吃掉补贴，冲突具体；中段数据与反转持续兑现，结尾余味由正文自然长出。",
+      "script_spans": [
+        "你领的家电补贴，可能正被先涨后补吃掉。",
+        "有研究跟过数字消费券，政府每贴1元，带出3.4元消费",
+        "你说这补贴是加油还是挖坑？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句顺口、对话感强，但“且花超门槛”“全国统一定标准防先涨后补”两处需换词重断，只能停在2分。",
+      "script_spans": [
+        "但券只是临时甜头，长久信心看收入预期和社保，不是靠补贴能续命",
+        "是本来就要花且花超门槛的人",
+        "全国统一定标准防先涨后补"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "吃掉、加血、递水给跑者均服务理解与情绪，点到为止；结尾比喻离文可复述，1元带3.4元也易记住。",
+      "script_spans": [
+        "钱涌进大卖场给大商加血",
+        "补贴像递水给跑者，前路平不平，才定他信不信能跑远。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "各段功能清晰，设问过渡自然，转折与因果有桥，结尾比喻自然回扣开头与题设。",
+      "script_spans": [
+        "短期效果到底多猛？",
+        "补贴像递水给跑者，前路平不平，才定他信不信能跑远。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "补贴效果有研究数据支撑，'可能正被先涨后补吃掉'留有余地，政策表述与严打骗补口径一致，无绝对化承诺或煽动，审核风险低。",
+      "script_spans": [
+        "你领的家电补贴，可能正被先涨后补吃掉",
+        "有研究跟过数字消费券，政府每贴1元，带出3.4元消费",
+        "全国统一定标准防先涨后补，严打骗补"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-885f9fef92684e4b92cfcee6d486e3fe",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

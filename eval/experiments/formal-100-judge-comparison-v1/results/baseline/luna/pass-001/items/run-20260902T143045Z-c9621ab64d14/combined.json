@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-62196154cd0649e981a7d318ace1479f",
+  "run_id": "run-20260902T143045Z-c9621ab64d14",
+  "trace_sha256": "8b92fb85aa8399394d1ca4917ee04ca717775a49ff460c93c008fc872911f839",
+  "created_at": "2026-09-03T11:46:13.441383Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应是否削弱真实反馈，同时覆盖教师、AI、学生和家长，兼顾效率收益与依赖风险。",
+      "script_spans": [
+        "答案不是二选一。效率提升不必然削弱真实反馈，关键看谁来用、怎么用。",
+        "如果只给分数，那是假快；如果能圈出哪句弱、建议换角度，就是真帮。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 452，目标为 450，偏差率为 0.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦效率与反馈的关系，工时、调研、实验和家长判断标准均形成有效信息推进。",
+      "script_spans": [
+        "一篇作文想改得深，老师得花十五到二十分钟，全班连起来要八到十小时。",
+        "可低阶改得多、高阶改得少，说明反馈引了路，思考还得自己补。",
+        "孩子自己多写的那几行，才是真实反馈没被削弱的证据。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“快十倍却越写越空”制造反差，中段用分工、实验和家长判断层层推进，结尾行动建议自然落地。",
+      "script_spans": [
+        "用AI改作文快了十倍多，孩子却越写越空？",
+        "人机协同不是偷懒，是分工。",
+        "下次看批改，先翻改后稿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感，短句和反问利于朗读；但“常态用”“有实验跟了”等压缩表达拗口，需临时重断句或换词。",
+      "script_spans": [
+        "别慌着禁。工具省时间，人才说人话。",
+        "全国调研里，约两成语文老师常态用AI初筛、自己复核",
+        "有实验跟了二十多个中学生十周。发现"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“机器先捡碎玻璃”把人机分工说具体，“假快/真帮”形成清晰对照，结尾也留下可复述的判断标准。",
+      "script_spans": [
+        "好比机器先捡碎玻璃，老师腾出手写真人评语。",
+        "如果只给分数，那是假快；如果能圈出哪句弱、建议换角度，就是真帮。",
+        "孩子自己多写的那几行，才是真实反馈没被削弱的证据。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提核心判断，再讲人机分工与单一依赖的风险，最后落到家长检验方法，结尾自然回扣题设。",
+      "script_spans": [
+        "AI接手错别字和病句筛查，好比机器先捡碎玻璃，老师腾出手写真人评语。",
+        "可低阶改得多、高阶改得少，说明反馈引了路，思考还得自己补。",
+        "下次看批改，先翻改后稿。孩子自己多写的那几行，才是真实反馈没被削弱的证据。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动，强调人机协同与监督；但“快了十倍多”“真帮”等表述偏绝对，可能夸大工具效果，宜补充适用条件。",
+      "script_spans": [
+        "人机协同不是偷懒，是分工。",
+        "用AI改作文快了十倍多",
+        "如果能圈出哪句弱、建议换角度，就是真帮"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-afed78fa660e44dfb059c30937585b60",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b9dd31c781ec4ac3a52d359fad4bcea0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-e0bcba31b44b4a7f95eacb97d4c52874",
+  "run_id": "run-20260903T051525Z-d8541d427599",
+  "trace_sha256": "19a761955e3d4d99f670bcb332ab1681a8808c668bb93a1881d95124ca2781b4",
+  "created_at": "2026-09-03T12:32:06.301202Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应安全与效率的兼顾，既讲清一刀切的代价，也给出分流和取送分离方案，覆盖普通居民与骑手。",
+      "script_spans": [
+        "真正糟糕的是“一禁了之”而不是“有序分流”"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕门禁限制展开，依次交代冲突后果、分流机制和居民影响，信息单元具体，能留下可执行的判断与方案。",
+      "script_spans": [
+        "大门外划出专属停靠区，骑手步行送进去",
+        "复杂小区由固定人员集中接手，骑手根本不需进门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用被挡在门外和热汤变凉制造具体冲突，中段持续补充后果与机制，结尾回到可执行的社区规则，推进完整。",
+      "script_spans": [
+        "小区门禁把骑手挡在铁门外，你点的热汤面在门口晃荡着变凉",
+        "关键在机制怎么选。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问句和短句带节奏，但多处抽象长句需要重断，个别搭配也不够顺口。",
+      "script_spans": [
+        "关键在机制怎么选。",
+        "你收餐可能多等两三分钟",
+        "这套取舍的核心，是把“让不让人进”转化成“用哪种方式进”",
+        "如果你愿意支持社区划停车区、看清楼号指引，就是在帮效率回流"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一刀切的省事”与“把让不让人进转化成用哪种方式进”简洁有画面，也把机制讲成了可复述的判断。",
+      "script_spans": [
+        "一刀切的省事，埋下的是每日多次的微小冲突。",
+        "把“让不让人进”转化成“用哪种方式进”"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构从冲突、后果推进到机制和用户影响，主线清晰；但“风险转嫁到平台算法”概念不当，削弱因果严密性。",
+      "script_spans": [
+        "关键在机制怎么选。像部分小区做的，大门外划出专属停靠区",
+        "订单超时风险转嫁到平台算法和骑手身上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "既指出一刀切的代价，也给出分流、取送分离等替代方案，未作绝对承诺或煽动对立。",
+      "script_spans": [
+        "真正糟糕的是“一禁了之”而不是“有序分流”",
+        "平台侧也在试“取送分离”，复杂小区由固定人员集中接手，骑手根本不需进门"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2abc1b769d594cfa8a121928598fc4a3",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

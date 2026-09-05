@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-b0cb3ee419ef4ed8a07230004b5d9535",
+  "run_id": "run-20260902T144740Z-124a46d59bf8",
+  "trace_sha256": "4c55371789872e80984ef3d2ee86018852ade8cecc09d8026dbb24a34944b361",
+  "created_at": "2026-09-03T12:15:57.468302Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答小商家是否更难，兼顾便利、合规风险与扶持因素，目标人群和切角都很明确。",
+      "script_spans": [
+        "小商家出海没更难，但马虎合规的就危险了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕合规难度展开，退货便利、合规风险、扶持渠道和行动建议层层增加信息，判断有具体支点。",
+      "script_spans": [
+        "以前只能原关区退，现在零售能跨关区退，货就近退场，费用降了。",
+        "从报关到外汇都得顾，漏一项就出事。",
+        "先花三天摸清报关和税务底线再开店。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“更难”与“危险”制造反差，中段从退货便利转到合规风险，结尾给出行动路径，推进完整。",
+      "script_spans": [
+        "小商家出海没更难，但马虎合规的就危险了。",
+        "所以别被“趋严”吓退，先花三天摸清报关和税务底线再开店。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和对话式承接较多，整体能读顺；但“原关区退”“小额单子小”等表达卡顿，尚未达到精心设计的自然口播。",
+      "script_spans": [
+        "我直说：不会全面更难",
+        "大卖家擦伤，小商家伤得重",
+        "以前只能原关区退",
+        "小额单子小、抗风险弱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“大卖家擦伤，小商家伤得重”对比鲜明，准确概括风险差异；“掉以轻心的才被筛掉”也利于复述。",
+      "script_spans": [
+        "掉以轻心的才被筛掉。",
+        "大卖家擦伤，小商家伤得重。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头定调，随后按便利、风险、扶持、建议推进，主线可跟随；但从局部政策直接推到“不会全面更难”，结论支撑不足。",
+      "script_spans": [
+        "可跨境卖货链条长，国内外两头管，小本买卖最容易漏环节。",
+        "别人离场，你反而能接住红利，把难字变成机会。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调合规风险，未见明显违规；但“不会全面更难”“三天摸清底线”等表述过满，易让人低估合规复杂度。",
+      "script_spans": [
+        "可跨境卖货链条长，国内外两头管",
+        "先花三天摸清报关和税务底线再开店"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-78fa3fbfe16842888915bf59e5b3bd7b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-4ec28fd938be4511aa6288d92513abd3",
+  "run_id": "run-20260903T051555Z-73a7e9f1e3a5",
+  "trace_sha256": "4dc0bda2de4781dd17ee31c005a08cac3486ac84b398467ef956dd12cbcae230",
+  "created_at": "2026-09-03T14:08:54.391942Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "场景直击垫付求助，正文正面回答为何需边界，冲突两侧与普通人群均覆盖，结尾回扣题设。",
+      "script_spans": [
+        "陌生人垫付费用，善意本身无错，但必须框定边界，否则助人行为会异化为风险入口",
+        "慢十秒不是冷漠，是让好心不被滥用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 711，目标为 700，偏差率为 1.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律、骗术、平台三个信息单元各自推进，事实与解释相互支撑，与引用背景相符，增量具体。",
+      "script_spans": [
+        "事后能请求受益人还必要费用，若自己受损还能要适当补偿",
+        "网络环境剥离了面部表情等线索，辨别真伪更难",
+        "部分支付平台如支付宝等近年上线延时到账，钱未抵对方账户前"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即入具体求助场景埋悬念，中段以法律、骗术、平台三问持续兑现，结尾慢十秒余味自然生长。",
+      "script_spans": [
+        "你拎着菜正出小区，一个满头汗的姑娘拦住说手机掉沟里了，求你帮扫个码付个打车费",
+        "你感觉雪中送炭，其实是对方在收割你的同情",
+        "慢十秒不是冷漠，是让好心不被滥用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开场与“收割同情”“刹一脚”生动，但“三次推进看”“高信任倾向个体”拗口，中段书面腔压住主体。",
+      "script_spans": [
+        "你拎着菜正出小区，一个满头汗的姑娘拦住说手机掉沟里了",
+        "你感觉雪中送炭，其实是对方在收割你的同情",
+        "我们不妨从法律、诈骗因果和平台机制三次推进看。",
+        "心理学实证提到，高信任倾向个体更易接纳骗子请求"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "善意如刀边界是鞘、收割同情等比喻贴切且服务理解，记忆点可独立复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "善意如刀，边界是鞘",
+        "法律只撑腰真正的急难救助，不鼓励无谓慷慨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问过渡清晰，专钓善意承上启下，各段功能明确，结尾慢十秒回扣开头场景与题设。",
+      "script_spans": [
+        "那么为何现今这边界更显紧迫？因为电信网络骗术专钓善意",
+        "下次陌生人的垫付请求过来，先核事主身份、走可拦截渠道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "全篇价值导向安全，多处留了余地；但“只撑腰”“就能避开大多损坑”属绝对化与近似承诺，改写措辞后才稳妥。",
+      "script_spans": [
+        "当然，不是每回求助皆陷阱",
+        "法院未必支持追偿",
+        "部分支付平台如支付宝等近年上线延时到账",
+        "法律只撑腰真正的急难救助，不鼓励无谓慷慨",
+        "垫资前多瞅眼提示，就能借通道避开大多损坑"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-65bf3b406d78405abc8290aba9d0833c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-eb9e39880fed48289d942141b4085c63",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

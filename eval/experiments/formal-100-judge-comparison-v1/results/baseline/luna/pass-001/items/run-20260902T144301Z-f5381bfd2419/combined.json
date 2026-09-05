@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-b862675bed934db881c0f8636ec5f1d0",
+  "run_id": "run-20260902T144301Z-f5381bfd2419",
+  "trace_sha256": "f16724b5c189a5179b0ec67f0791f0f89399c0720b6149100e84148c21bcd09d",
+  "created_at": "2026-09-03T11:45:49.735006Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答盘活与服务质量的关系，既讲增益路径，也讲挤占公共空间的风险，标准明确。",
+      "script_spans": [
+        "盘得好能补足短板，盘歪了才伤质量",
+        "单纯算经济账的盘法，才真让质量减分"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 732，目标为 700，偏差率为 4.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策原则、盘活案例、资金路径和风险边界层层补充，信息密度高，能带走判断标准。",
+      "script_spans": [
+        "闲置设备调剂给需要的部门，履职不受影响还省钱",
+        "老旧厂房改托育中心，公房激活做社区养老点",
+        "盘活的收益去哪了？按意见部分回补公共预算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出居民担忧，中段用政策、场景、风险逐层推进，结尾把判断落到“空间重新待人”，没有硬喊互动。",
+      "script_spans": [
+        "地方盘活闲置资产，居民却怕公共服务变差。",
+        "那空房怎么就变服务？看真实发生的事。",
+        "所以下次见大楼动工，别先骂卖地，看它招牌写啥。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、问答感清楚，但“解资金难”“规范盘活的双赢”等搭配生硬，政策术语集中，真人朗读仍需改词。",
+      "script_spans": [
+        "这事儿得两看：盘得好能补足短板，盘歪了才伤质量。",
+        "这基金由国资运营公司设，帮企业解资金难，也防甩卖贱卖伤公益。",
+        "短期个别项目有阵痛，长期规范盘活的双赢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“空房怎么就变服务”把抽象政策转成具体疑问，“锁着长草”“空间重新待人”形象且可复述，修辞没有压过判断。",
+      "script_spans": [
+        "那空房怎么就变服务？看真实发生的事。",
+        "街坊走几步能办成事，比锁着长草强太多。",
+        "空间重新待人，才算没白盘。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从政策前提到服务转化、收益回补和风险反例，转折清楚，结尾回扣公共性判断。",
+      "script_spans": [
+        "这事儿得两看：盘得好能补足短板，盘歪了才伤质量",
+        "那空房怎么就变服务？看真实发生的事",
+        "可风险在哪头？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "没有煽动、危险建议或交易承诺，且强调公共服务底线；但“长期规范盘活的双赢”表述过于确定，可能造成误导。",
+      "script_spans": [
+        "保基本服务是前提。",
+        "长期规范盘活的双赢。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5bceeda59b8b4faa9ca69c1c5e3f2f59",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-cedfd9f9f954416b8305391156e8063b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

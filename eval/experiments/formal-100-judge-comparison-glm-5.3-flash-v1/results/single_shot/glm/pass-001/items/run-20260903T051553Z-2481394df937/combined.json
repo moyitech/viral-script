@@ -1,0 +1,159 @@
+{
+  "evaluation_id": "combined-5d2b3e69c0784fbf85f05c6f3cdc59ae",
+  "run_id": "run-20260903T051553Z-2481394df937",
+  "trace_sha256": "3ca4e839460d1b3c0effc56fc4cc323c87c2279ed197c77cfe644db4fe9611fb",
+  "created_at": "2026-09-03T14:09:49.794252Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即扣短信提醒痛点，正面回答该不该统一并兼顾双方，结尾回扣题设。",
+      "script_spans": [
+        "我的看法很直接，赔偿标准现在不该强行全国统一，但平台绝不能靠一纸提醒就全身而退",
+        "为什么平台敢只发提醒？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 673，目标为 700，偏差率为 3.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律障碍、统一定价三弊端、公私双线现状层层递进，论据具体扎实，无编造。",
+      "script_spans": [
+        "可真要索赔，用户得证明泄露造成了具体损失，比如被骗子用账号借了钱",
+        "小平台一次拖库可能直接赔穿；医疗记录和论坛昵称若同价，敏感度就被抹平了",
+        "被网信办通报整改罚款，但这属于行政合规处罚，不代表用户拿到了民事赔偿"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开场短信直击共同经历，“没赔钱，也没人认责”立起冲突；中段设问不断兑现，结尾回扣短信留余味。",
+      "script_spans": [
+        "你收到过“系统漏洞已修复，请修改密码”的短信吗？",
+        "没赔钱，也没人认责。这合理吗？",
+        "那是不是监管出手，统一定个价，比如给每条泄露信息标个死价，就天下太平了？没那么简单。",
+        "提醒只是责任的起跑线，不是终点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有顺口的案例段，但法律解释书面腔重，多处需临时换词重断，两子分取低为2。",
+      "script_spans": [
+        "强行齐步走，小平台一次拖库可能直接赔穿",
+        "先想清楚平台到底补没补窟窿、告没告知风险",
+        "根子在法律对个人信息保护虽赋予了民事权利属性，个人信息保护法作为民法典的特别法也明确了处理规则",
+        "却可能消解了平台加固系统的动力，这中间的取舍得慎重",
+        "也需注意，并非所有泄露都该赔，若平台已尽合理防护且及时告知"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务论证，“因果链断在损害证明那一环”与结尾金句离开原文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "从漏洞、泄露到通知、无赔偿，这条因果链断在损害证明那一环。",
+        "强行齐步走，小平台一次拖库可能直接赔穿",
+        "补救和通知是底线，不是免责金牌",
+        "提醒只是责任的起跑线，不是终点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进、转折清楚，结尾以起跑线回扣开头，前提到结论链条完整。",
+      "script_spans": [
+        "从漏洞、泄露到通知、无赔偿，这条因果链断在损害证明那一环",
+        "那是不是监管出手，统一定个价，比如给每条泄露信息标个死价，就天下太平了？没那么简单。",
+        "所以下次再看到“请修改密码”的推送，别只忙着改"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "推测均用'可能''若'限定，明确行政罚款不等于民事赔偿，也给出'并非所有泄露都该赔'的边界，无夸大或承诺，导向安全。",
+      "script_spans": [
+        "但这属于行政合规处罚，不代表用户拿到了民事赔偿",
+        "并非所有泄露都该赔，若平台已尽合理防护且及时告知，风险自担也公平",
+        "小平台一次拖库可能直接赔穿"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3f96273e7feb40b6a37bb88bb3ca0002",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-7d149cd762e743ab8bb498eb506fb6b3",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

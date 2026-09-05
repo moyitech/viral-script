@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-f46c8503661249d9895050c503b51d93",
+  "run_id": "run-20260903T051531Z-1f2fab9bfbd5",
+  "trace_sha256": "4cd519892a6c9b1662345cf5e7d44ed546c639280d0f1302a5054e6c67164a60",
+  "created_at": "2026-09-03T12:31:47.596034Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答能否承担，并围绕低档、补贴和断缴风险服务收入不稳人群，切角明确。",
+      "script_spans": [
+        "灵活就业社保扩围后，收入不稳的人交得起，但必须主动选低档、用补贴"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主线集中，低档、补贴、单位分担等信息有推进；但地区性政策被说成普遍规则，关键数字与适用条件不足。",
+      "script_spans": [
+        "本来灵活就业者参保就得自己吞下原本单位那块保费，没有老板分担",
+        "缴费基数能在当地平均工资六成以下挑，比例也从过去两成降到约十八"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用收入不稳与缴费僵硬制造冲突，中段连续给出降档、补贴和缴费提醒，结尾建议自然收束。",
+      "script_spans": [
+        "送外卖、做零工，收入像过山车，可社保缴费通知一点不灵活。这钱到底交不交得起？",
+        "更实在的是补贴扩围，低收入、新业态从业者等群体符合条件能返大部分保费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，但中段多处概念压缩、搭配生硬，朗读需要重断句。",
+      "script_spans": [
+        "这钱到底交不交得起？直接回答：",
+        "缴费基数能在当地平均工资六成以下挑",
+        "低收入、新业态从业者等群体符合条件能返大部分保费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和口语化动词服务于解释，既有画面感又不过度堆砌，结尾形成可复述的判断。",
+      "script_spans": [
+        "收入像过山车",
+        "没有老板分担，所以体感更贵",
+        "先保不断比追高档更明智"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、直接回答、解释负担再落到缴费提醒，结构完整；但“交得起”的判断依赖未交代的地区和资格条件，因果不够严密。",
+      "script_spans": [
+        "直接回答：灵活就业社保扩围后，收入不稳的人交得起",
+        "必须主动选低档、用补贴，不能傻交全款"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有“符合条件”等限定，但“必须选低档”“断缴会凉了连续年限”把地区和险种差异说死，易误导参保决策。",
+      "script_spans": [
+        "符合条件",
+        "必须主动选低档、用补贴，不能傻交全款",
+        "断缴会凉了连续年限"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0e66561a64214e2b98bc408ac2a422d2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

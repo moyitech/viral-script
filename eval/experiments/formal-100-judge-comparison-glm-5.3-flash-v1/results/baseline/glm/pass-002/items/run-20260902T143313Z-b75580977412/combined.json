@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-f8e23b140ca7479aa79c64813fb67116",
+  "run_id": "run-20260902T143313Z-b75580977412",
+  "trace_sha256": "003e762c5d63a240a955ec3fb3089549d2fb33e5d40eb9d68854501552d8e509",
+  "created_at": "2026-09-03T14:36:14.138182Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即对准效率与真实反馈的张力，两侧论据兼给，结尾给出条件式答案，家长视角命中核心人群。",
+      "script_spans": [
+        "人工智能批作文，效率确实高了，但真实反馈没被带走，只是换了形式。",
+        "你把AI当替身，反馈虚；当助手，反馈实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "工时、全国调研、正反研究层层推进且均有出处，外婆背影例解释何为真实反馈，观众能带走判断方法。",
+      "script_spans": [
+        "可孩子写外婆背影，机器也许只判比喻怪，人却懂思念。",
+        "机器查漏，人点亮，两边配合才像教书。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句以十小时对一句点评制造反差，中段设问与数据持续推进，结尾问句由正文自然生长。",
+      "script_spans": [
+        "省下十小时批改，却可能错过孩子需要的那句点评",
+        "为什么老师愿意交给它？",
+        "翻翻问他，这句让你想改吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句利落、对话感强，但“常态用AI帮批文”“深层论证去改”等压缩表述需临时换词才顺口。",
+      "script_spans": [
+        "他们用机器跑量，用人手补温度。",
+        "发现常态用AI帮批文的老师约两成",
+        "深层论证去改的比例不高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞短促克制、服务论点，“机器查漏，人点亮”与“当替身反馈虚”离开上下文仍可复述，无堆叠。",
+      "script_spans": [
+        "可孩子写外婆背影，机器也许只判比喻怪，人却懂思念。冷暖机器分不清。",
+        "机器查漏，人点亮，两边配合才像教书",
+        "你把AI当替身，反馈虚；当助手，反馈实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问串联各段功能清晰，误用致模板化的因果完整，结尾省下的八小时自然回扣开篇十小时承诺。",
+      "script_spans": [
+        "可如果老师顺势把笔一搁，只转发机器评语，孩子收到的就是冷冰冰模板。",
+        "不如坐下来，用省下的八小时，听他讲讲自己写的世界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "数据与调研表述有出处支撑，风险与效果均用限定词，观点克制不夸大不煽动，导向健康。",
+      "script_spans": [
+        "有研究提醒，如果AI知道学生身份特征，反馈可能偏移，这对真实反馈是隐患",
+        "多数老师先让机器初筛，自己复核。他们用机器跑量，用人手补温度",
+        "但一个小实验，二十八个学生用智能反馈改了十周议论文，成绩明显好了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-331c853ed223477e8906f6bbde38d755",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

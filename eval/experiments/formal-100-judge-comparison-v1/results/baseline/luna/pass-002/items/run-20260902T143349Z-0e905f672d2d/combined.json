@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-1bb5400311f04a6484134350893e6852",
+  "run_id": "run-20260902T143349Z-0e905f672d2d",
+  "trace_sha256": "ece34484cacf0a979c2c126191d831cdd6aad962e1971f3cb31f3b8b00f86abe",
+  "created_at": "2026-09-03T12:15:48.564166Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答海鲜是否涨价，解释升温冲击与供给替代，并补充局部和未来风险，覆盖题设两侧。",
+      "script_spans": [
+        "眼下不会普遍更贵。",
+        "不过得留个边界，升温不是均匀打，局部野生近海贝类若减产，你吃那些小众海鲜可能就贵了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕价格疑问串联升温、产量、出塘、替代供给和风险边界，信息单元丰富，能形成明确的供需解释。",
+      "script_spans": [
+        "前十一月二十省水产超六千三百万吨，海水养殖产量还涨了百分之五点二，海水产品均价反倒跌了百分之四点七。",
+        "养殖户怕存塘风险赶着出塘，市场里货堆得满。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用价格反差立刻设问，中段连续用供给、替补与风险转折推进，结尾追问也从正文自然长出。",
+      "script_spans": [
+        "挑虾见标价没涨反降？",
+        "我们这代人的便宜海鲜，能续到哪年？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头钩子和转折有对话感，但数据句过度压缩，个别比喻不顺，连续朗读需临时重断句。",
+      "script_spans": [
+        "那菜场为啥没贵？",
+        "前十一月二十省水产超六千三百万吨",
+        "南北填平了才有便宜可占。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“人工塘口把缺口顶住了”和“便宜海鲜能续到哪年”形象准确，既帮助理解，也留下了自然的复述点。",
+      "script_spans": [
+        "人工塘口把缺口顶住了",
+        "链条通着呢，钱就难涨。",
+        "我们这代人的便宜海鲜，能续到哪年？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从价格反差转到供给解释再回到风险边界，整体可跟随；但替代机制与总体降价之间仍有推断跳步。",
+      "script_spans": [
+        "那菜场为啥没贵？中间有个坎儿要认清。",
+        "南北填平了才有便宜可占。",
+        "链条通着呢，钱就难涨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且主动提示局部与极端风险；但“成片死”“钱就难涨”等因果表述过满，可能误导观众。",
+      "script_spans": [
+        "不过得留个边界，升温不是均匀打",
+        "万一热浪砸进主产区，降价的好日子就得留神",
+        "热浪一冲鱼贝成片死",
+        "链条通着呢，钱就难涨"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4851941326aa4a18b12b1ae844890592",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

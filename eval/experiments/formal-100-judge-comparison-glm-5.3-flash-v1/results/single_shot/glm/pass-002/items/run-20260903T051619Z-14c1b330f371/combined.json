@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-04f5041b2f8d468eaea88ed2bc14f4a7",
+  "run_id": "run-20260903T051619Z-14c1b330f371",
+  "trace_sha256": "214714eb4a6e78f49f83fd73941aebe91b03bab5d42323cceab171b2529d7cbc",
+  "created_at": "2026-09-03T15:28:48.108576Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头到结尾都直答题设两侧，冲突与居民视角都覆盖，结论给出具体判断依据。",
+      "script_spans": [
+        "快递更快实打实趋势，但城市不会变直升机工地，密集起降噪声烦恼也是真问题",
+        "快递更快已起飞，城市更吵否，取决于起降点离窗几米，不只飞机能飞多高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移，提速依据、噪声机理、技术折中层层推进，信息密度高且有出处支撑。",
+      "script_spans": [
+        "末端配送半到一小时缩至十五到二十分",
+        "多旋翼发高频音调声，不同于汽车低频，单架不震耳，但起降点贴窗顶"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即画面加反差，中段连环设问持续兑现，结尾由正文自然生出余味，无硬喊互动。",
+      "script_spans": [
+        "楼上突然一阵嗡嗡声，你看到无人机把药投到邻家阳台，比骑手绕路早到十分钟",
+        "那么，提速和安静只能二选一吗？技术给了折中",
+        "快递更快已起飞，城市更吵否，取决于起降点离窗几米，不只飞机能飞多高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 1,
+      "reason": "电报式缩略贯穿全文，多处缺字生造缩语，朗读需频繁换词重断句，难成自然语流。",
+      "script_spans": [
+        "今低空改革铺开适飞域增，报批压几十分钟",
+        "飞越低投送便，却易钻窗",
+        "快递更快实打实趋势"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "『直升机工地』类比贴切助理解，结尾『离窗几米』离开上下文仍可复述，无炫技堆砌。",
+      "script_spans": [
+        "城市不会变直升机工地",
+        "所以低空物流加速的不是噪音本身，是我们重学分配头顶空间",
+        "取决于起降点离窗几米，不只飞机能飞多高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "设问推进、结尾回扣清楚，但多处压缩过狠，因果桥薄，如容忍线磨合句需听众自行补逻辑。",
+      "script_spans": [
+        "那么，提速和安静只能二选一吗？技术给了折中",
+        "空域越开效率越高，居民对头顶物体容忍线靠密度时段磨合",
+        "飞越低投送便，却易钻窗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "快与吵两面并陈，噪声定为真问题而非否定，'没零成本魔法'避免夸大承诺，结尾归因留有条件，无煽动或误导风险。",
+      "script_spans": [
+        "快递更快实打实趋势，但城市不会变直升机工地，密集起降噪声烦恼也是真问题，不能假装看不见",
+        "监管搭体系时把安全监视和噪声边界同迭代，没零成本魔法",
+        "城市更吵否，取决于起降点离窗几米，不只飞机能飞多高"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e356bbac593b44e7962465934a986e0d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

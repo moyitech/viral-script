@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-016678b6cb0a40bfbd8c463840f531de",
+  "run_id": "run-20260903T051532Z-aac397b34451",
+  "trace_sha256": "7238dd903365a2e72f737d4c8e5c8632a8f3262bfa4baf3a01679e21d7b4fdfb",
+  "created_at": "2026-09-03T11:58:34.881026Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应省钱与品质兼得，并给出标准筛选和购买动作，受众指向普通消费者。",
+      "script_spans": [
+        "其实省钱和品质能够兼得，诀窍就是盯准规范产品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 268，目标为 280，偏差率为 4.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "标准定义、规模化降本和购买建议提供了有效信息，但“不等于降质”缺少具体品质判断依据。",
+      "script_spans": [
+        "价格低是因为工厂集中规模化生产摊薄了人工与食材耗损",
+        "效率省下的钱不等于降质"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用价格反差抓人，中段连续补充标准、成本与购买判断，结尾自然留下警示余味。",
+      "script_spans": [
+        "超市卖的预制菜比堂食便宜一大截",
+        "语焉不详直接放下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头对比清楚、节奏尚可，但标准定义和成本解释连续堆叠，朗读时需要重断句。",
+      "script_spans": [
+        "同样一盘宫保鸡丁，超市卖的预制菜比堂食便宜一大截",
+        "预制菜必须以食用农产品为原料，不添任何防腐剂，经工业化预加工制成加热或熟制才吃的预包装菜肴"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“效率省下的钱不等于降质”与结尾警示都简洁可复述，修辞克制，服务于判断而非炫技。",
+      "script_spans": [
+        "效率省下的钱不等于降质",
+        "低价本身不可怕，怕的是你根本不知它从哪来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "段落按价格、标准、成本、购买建议推进，主线清楚；但从安全底线跳到品质兼得，关键因果没有补足。",
+      "script_spans": [
+        "价格低是因为工厂集中规模化生产摊薄了人工与食材耗损",
+        "这条线划清了安全底线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，引用的标准范围基本清楚；但“安全底线”和“只认”偏绝对，易让人误解为有统一强制标识或绝对安全保障。",
+      "script_spans": [
+        "预制菜必须以食用农产品为原料，不添任何防腐剂",
+        "连锁门店的中央厨房出品按规则还不在此列",
+        "这条线划清了安全底线",
+        "你买的时候，只认包装上明写配料和预制菜标识的"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-257f6dce78fc40b6b54e3e4e3a3ac3a5",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-5d1abd4ef9db4421b45047096b98f65b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-fcd56d8139174403b3c5f973c244dbea",
+  "run_id": "run-20260903T051519Z-5977e136e363",
+  "trace_sha256": "5000ac33da30322add050db502d87b8065ff8477897f8334faa3361fa82f4c40",
+  "created_at": "2026-09-03T15:28:42.659390Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即抛题设之问，正面给出能筛难读的判断，兼顾企业动机与求职者处境，核心人群覆盖到位。",
+      "script_spans": [
+        "我的判断很直接：算法能帮企业快速筛掉明显不匹配的简历和人，但远读不懂一个人真正的潜力。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦算法与潜力，从历史数据模板到效度边界层层推进，观众能带走筛子与裁判之辨及自查方法。",
+      "script_spans": [
+        "算法常从过去高绩效员工里提炼特征当模板",
+        "只有经过独立效度检验、能解释评分逻辑的算法，才配谈公平"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开场第二人称直接入戏，'算法已把停顿转成分数'的反差紧跟；中段靠问句与反例持续加码；结尾余味由正文自然长出。",
+      "script_spans": [
+        "你刚结束一场视频面试，对着镜头讲完项目经历，以为打分的会是后面坐着的人。其实，算法已经把你的停顿、笑容和用词频率转成了分数。",
+        "那标榜客观，是不是就能放心？这里有个取舍。",
+        "所以，AI面试官不是读心术，它只是把放大镜换成了滤镜。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口为主、比喻生动，但“产生不利差异”“才更预测绩效”等句拗口，需临时换词。",
+      "script_spans": [
+        "那些深思熟虑、说话稍慢的实干者就吃了哑巴亏",
+        "问同样问题、提前定标准的结构化面谈才更预测绩效"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'对不上历史数据的胃口''放大镜换成滤镜''筛子不是裁判'等比喻贴切且分布克制，均服务观点，离开原文仍可复述。",
+      "script_spans": [
+        "把公平的隐忧锁进黑箱",
+        "因为他对不上历史数据的胃口",
+        "所以，AI面试官不是读心术，它只是把放大镜换成了滤镜。",
+        "它该是辅助的筛子，不是潜力的裁判"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以设问推进各段，取舍与反例衔接自然，结尾不是潜力的裁判直接回扣开头之问，前提与结论闭合。",
+      "script_spans": [
+        "那标榜客观，是不是就能放心？",
+        "它该是辅助的筛子，不是潜力的裁判"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "多用量化限定如'部分''可能'，效度与公平边界清晰，政策与审计论述克制，无误导承诺或对立煽动。",
+      "script_spans": [
+        "只有经过独立效度检验、能解释评分逻辑的算法，才配谈公平",
+        "原因之一可能是它分析了面部或声音这类和工作无关的信号"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-28bc39cad8a7448eb1a6b63c218ae8bd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

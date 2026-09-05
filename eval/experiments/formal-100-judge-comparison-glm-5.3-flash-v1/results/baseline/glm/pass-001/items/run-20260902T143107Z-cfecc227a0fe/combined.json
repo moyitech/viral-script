@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-01276f19907f47239e54848cdd4d81ee",
+  "run_id": "run-20260902T143107Z-cfecc227a0fe",
+  "trace_sha256": "12224ec194975d483319d0175b7741ce5d457526fdf7bd1fd41ffc12b9e3dc0f",
+  "created_at": "2026-09-03T13:46:16.552498Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答能交但不少人交不起，扩围与负担两侧都答，紧扣收入不稳人群。",
+      "script_spans": [
+        "缴社保还是留饭钱？收入不稳的人卡在这了。能交，但真交不起的也一大把。",
+        "所以说，交得起的人踩中降费加补贴的缝隙。剩下的人，等收入先稳下来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 731，目标为 700，偏差率为 4.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "降费、基数、停代扣、平台试点、补贴均给出数字与代价，信息层层推进互为支撑。",
+      "script_spans": [
+        "低收入能申五成基数，待遇不打折。拿二线城市社平八千、按十六费率算：六成基月缴七百六，五成基月缴六百四，一年省一千五。",
+        "基层调查里，五成五人说费用高得扛不住，一半人怕中间断档。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出交社保还是留饭钱的两难，中段设问与新政细节层层兑现，结尾之问由正文自然生长，三段皆立。",
+      "script_spans": [
+        "缴社保还是留饭钱？收入不稳的人卡在这了",
+        "那为啥还有人断断续续？收入像潮水，这月有余下月空",
+        "当饭碗本身晃着，社保这道网，该先织给谁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "主体短句气口清楚、对话感强，但数据压缩表述至少两处需临时换词重断，最高只能止步2分。",
+      "script_spans": [
+        "月挣三千的兄弟，养家糊口紧巴巴，孩子上学老人看病，哪挤得出七八百块交养老？",
+        "这不是画饼，系统里基数真调低，缴费页面点开数字就少一截。",
+        "六成基月缴七百六，五成基月缴六百四",
+        "从二二年试出资十五亿，六百万骑手已盖上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "独木桥挑两筐、收入像潮水、不问缝就关着，比喻克制且服务理解，结尾一问离开全文仍可复述，无堆砌。",
+      "script_spans": [
+        "可没雇主分担，就像独木桥上挑两筐",
+        "收入像潮水，这月有余下月空",
+        "政策白纸黑字，落到街道才有细则，你不问缝就关着"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "矛盾、新政、余留困难、落地门槛层层递进，问答过渡自然，结尾回扣开头之问。",
+      "script_spans": [
+        "那为啥还有人断断续续？收入像潮水，这月有余下月空。",
+        "门虽开，认资格跑手续得用心，补贴先缴后返，手头现金得先垫上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "主动交代先缴后返、各地细则不一、需自行记缴等边界，不夸大承诺、不煽动对立，价值导向安全。",
+      "script_spans": [
+        "但门虽开，认资格跑手续得用心，补贴先缴后返，手头现金得先垫上。",
+        "政策白纸黑字，落到街道才有细则，你不问缝就关着。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e18c8853a69d4b94acc423a0303f2350",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d3c27a212d3948c480078edcf6418812",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-aa681798cb1847fe80d6dd758b8b0c9b",
+  "run_id": "run-20260903T051640Z-b1a39aba16c5",
+  "trace_sha256": "0b23e22d465ea1cfa80b07f8ab17d697f7a610d174360e9e32b44835c16f74c1",
+  "created_at": "2026-09-03T14:08:03.917616Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛二元问题并直接给出判断，慰藉与越界两侧均被正面回答，落点贴合普通观众。",
+      "script_spans": [
+        "用AI复原逝者声音本身不是伦理越界；真正越界的是掩盖它是合成的事实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 748，目标为 700，偏差率为 6.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息单元层层推进：标识规则、心理慰藉、变现风险、冒用场景各有论据，与引用背景相符，无编造。",
+      "script_spans": [
+        "监管已经要求服务提供者在声音起始或末尾加上明显提示",
+        "记忆就可能被做成商品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字即有具象冲突抓人，中段以追问与新信息层层兑现，结尾余味自然生长，无需喊互动。",
+      "script_spans": [
+        "你戴上耳机，听见去世母亲在叫你小名",
+        "那除了“有没有说清楚是合成”，还有什么让这件事在情感上变得棘手？",
+        "听到那声“合成”的提示，你才真的在和回忆相处，而不是和代码周旋。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句有对话感，但'服务提供者''学术讨论提醒'等书面表达需临时改词，中段讲解腔拉低流畅。",
+      "script_spans": [
+        "声音能复原，但有些话不该让机器替他讲，有些场景机器根本不能出场。",
+        "监管已经要求服务提供者在声音起始或末尾加上明显提示",
+        "但有些学术讨论提醒，如果把这种服务包装成持续付费的陪伴产品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，“没有尽头的扮演”与“和回忆相处”离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "记忆就可能被做成商品，亲人的形象在流量里被反复消耗",
+        "留住声音可以是一种温柔，但别让那份温柔，变成一场没有尽头的扮演"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段间以设问自然衔接，先规则后情感再风险，结论回扣开头耳机场景，因果桥完整。",
+      "script_spans": [
+        "那除了“有没有说清楚是合成”，还有什么让这件事在情感上变得棘手？",
+        "留住声音可以是一种温柔，但别让那份温柔，变成一场没有尽头的扮演。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点明确标注为个人看法，风险均以“要是”“可能”限定，监管要求与标识办法一致，无夸大误导或煽动性表述。",
+      "script_spans": [
+        "我的看法很明确，用AI复原逝者声音本身不是伦理越界",
+        "这里有个不确定：不是所有人都适合这种告别",
+        "要是有人拿复原的声音去冒用身份办业务"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f06946c01b474afbb4eca6d236989a70",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f9f1d0b59c5a45cea75a7671d6f1b92c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

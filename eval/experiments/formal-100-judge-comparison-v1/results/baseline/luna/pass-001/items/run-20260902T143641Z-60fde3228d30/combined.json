@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-592caffd500548fdb1526810ece665d1",
+  "run_id": "run-20260902T143641Z-60fde3228d30",
+  "trace_sha256": "807405cb58ea3b002d1d8dbfd5837ee9d2e28ab65f2121acb085ccded53acefc",
+  "created_at": "2026-09-03T11:48:00.114645Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答独立与疏远的两面，并落到法律、相处和普通家庭的可执行安排。",
+      "script_spans": [
+        "婚后收入各自管理，既尊重独立，也藏疏远风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 437，目标为 450，偏差率为 2.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "信息单元丰富，法律边界、家务分工和账户安排都有增量；但把满意度上升接到分账不冷场，论据并未证明。",
+      "script_spans": [
+        "民法典第一千零六十五条说得明白，男女能书面约婚内和婚前财产各归各，这叫分别财产制。",
+        "数万夫妻分析发现近二十年婚姻满意度缓升，钱分开不注定冷场。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用离婚风险与独立收益制造反差，中段递进法律、关系和操作建议，结尾收得自然且有余味。",
+      "script_spans": [
+        "各自管钱离婚易吃亏，却换回独立人身",
+        "钱各管行，心别各管"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句化、信息推进清楚，但“卡各拿各”等表述生硬，法律段落也有多处需要重断句或换词。",
+      "script_spans": [
+        "你以为分卡就是分财，其实没纸面约定，法院仍可能并账。",
+        "男女能书面约婚内和婚前财产各归各",
+        "很多家庭只是卡各拿各"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“亲密也像被计价”把关系风险说得具体，“钱各管行，心别各管”简洁有力，修辞克制且服务观点。",
+      "script_spans": [
+        "亲密也像被计价",
+        "钱各管行，心别各管"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，法律—关系—实践层层展开；但用婚姻满意度总体上升推出分账不致冷场，因果桥明显不足。",
+      "script_spans": [
+        "所以管钱方式不等同法律身份，却真划了边界。",
+        "数万夫妻分析发现近二十年婚姻满意度缓升，钱分开不注定冷场。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体讨论兼顾独立与关系风险，但“没签条子仍算共同财”及“你要独立，就得受点疏离”表述过满，可能误导。",
+      "script_spans": [
+        "既尊重独立，也藏疏远风险。",
+        "没签条子，法律上仍算共同财",
+        "你要独立，就得受点疏离。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-a2dfd61516324aeabd001bbab7cb965a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a719e7cb54644cc2a02b1dfd9bf427f6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

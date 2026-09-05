@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-0b56021a315b414eb767779cf4152654",
+  "run_id": "run-20260902T142438Z-ba6a0638f253",
+  "trace_sha256": "82a31ca845a73664f9f77d4f08854c2f2a80eb6464d307c356478ff7971fa25e",
+  "created_at": "2026-09-03T11:44:13.966893Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面覆盖“安慰”与“越界”两侧，聚焦逝者声音复原，也给出普通用户可理解的使用边界。",
+      "script_spans": [
+        "想再听句“吃饭没”或“生日快乐”，这种心情我懂。可拿她的声音去直播带货，可能就过界了。",
+        "亲人出于怀念小范围听听，是温柔补位；拿去编遗言商用，可能踩伦理线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 449，目标为 450，偏差率为 0.22%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，机制、伦理边界、标识规则、同意与心理影响层层补充，既有具体信息也有情绪余韵。",
+      "script_spans": [
+        "传段录音，算法一遍遍学她怎么换气怎么停顿，再按你写的词，合成没说过的话。",
+        "国家网信办等四个部门专门发了标识办法。",
+        "有研究跟踪丧亲家庭，发现有人觉语调熟心里松些，也有专家担心太像会拖慢痊愈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以逝者声音的反差直入，中段递进到使用边界与监管，结尾留下牵挂与孤独的追问。",
+      "script_spans": [
+        "你听见逝去妈妈的声音在笑，这到底是安慰还是冒犯？",
+        "当机器替逝者说话，我们听的到底是牵挂，还是自己的孤独？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头有画面感，但“传段录音”等多处省略和生硬短句，朗读需临时补停顿或换词。",
+      "script_spans": [
+        "这种心情我懂",
+        "技术本身中性，切菜还是伤人看人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“技术能模仿声调，模仿不了脾气”把技术边界说得具体，“你想要的她”留下克制而有余味的记忆点。",
+      "script_spans": [
+        "技术能模仿声调，模仿不了脾气。",
+        "你听到的，只是你想要的她。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按场景、机制、规则、建议推进，主线清楚；但“必须”与私下“不强标”的适用范围未解释，形成论证跳步。",
+      "script_spans": [
+        "你想留念想，挑带标识的正规服务，声纹取材要家属同意。",
+        "这类合成音频必须加显式标识",
+        "私家人拿录音建模自己听，常不强标，规矩外留点哀悼空间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制，明确提醒商用和冒充风险；但“这类合成音频必须加显式标识”及私用可不强标的说法过于绝对，易造成法律误解。",
+      "script_spans": [
+        "亲人出于怀念小范围听听，是温柔补位；拿去编遗言商用，可能踩伦理线。",
+        "挑带标识的正规服务，声纹取材要家属同意。",
+        "这类合成音频必须加显式标识",
+        "私家人拿录音建模自己听，常不强标，规矩外留点哀悼空间。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-199ad763f35b40169194741ea2c53889",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b419fc92315b417d8e5b963d17687aa7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

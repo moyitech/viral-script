@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-5000df2704e9466bbba89c2c4c968c0f",
+  "run_id": "run-20260902T141409Z-63302ee1095f",
+  "trace_sha256": "1c432336ab54468b6ec3d5e26e72249c8957608e05a0f7401501525f35775c4c",
+  "created_at": "2026-09-03T11:45:50.373073Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从成本端、晚归人受损到补偿方案，始终正面回答“省成本还是冷落人”两面。",
+      "script_spans": [
+        "这事儿既在省成本，也冷落了晚归人，账得掰开看。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 691，目标为 700，偏差率为 1.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "成本构成、负担转移、可达性影响和治理替代方案层层推进，信息单元充足且主题集中。",
+      "script_spans": [
+        "夜间车上人少，空跑一趟烧油又耗人。",
+        "企业成本肉眼可见降了，但晚归人的时间变成等车焦灼，金钱变成打车费悄悄转嫁出去。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出成本与晚归人的冲突，中段补充原因、代价和替代方案，结尾追问也自然收束。",
+      "script_spans": [
+        "夜公交班次砍了，公司账本轻了，晚归人却悬了。",
+        "边界就在这，节支不能只盯线路，得配套补偿才不算冷落人。",
+        "末班车早了，夜归人脚下的路，谁再来照亮一程？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头短句有节奏，主体也有对话感；但“等车焦灼”等搭配抽象拗口，几处长句需要重断气口。",
+      "script_spans": [
+        "你可能会问，为啥先拿夜线动刀？",
+        "白天线路能摊薄加油修车发工资的钱",
+        "企业成本肉眼可见降了，但晚归人的时间变成等车焦灼"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“账本轻了、个人沉重了”形成鲜明反差，“账得掰开看”也便于复述，修辞服务观点而未喧宾夺主。",
+      "script_spans": [
+        "公司账本轻了，晚归人却悬了。",
+        "企业轻松了，个人沉重了",
+        "这账本得摊在阳光下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按成本、影响、权衡、方案展开，但结尾“冷线缩间隔”与降频语境含义相冲，需明确是缩班还是缩短间隔。",
+      "script_spans": [
+        "社会总效率不一定更高。反例也有：若财政全额兜底，票价或税收又摊给所有人。",
+        "把时段客流画出来冷线缩间隔，或许更稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，但“工资还得加倍给”缺少适用条件，可能误导观众对夜班用工成本的理解。",
+      "script_spans": [
+        "但公益摆在那，不能只算经济账。",
+        "司机大半夜熬着，工资还得加倍给"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-417e118d30724e22a45fb39d78ca65f8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-0e4f71d660eb4c7f8ac302b409daa499",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

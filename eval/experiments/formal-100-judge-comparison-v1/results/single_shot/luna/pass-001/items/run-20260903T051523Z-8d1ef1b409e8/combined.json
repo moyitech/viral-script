@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-ced04b82023844048b372fd77244ba03",
+  "run_id": "run-20260903T051523Z-8d1ef1b409e8",
+  "trace_sha256": "a2252aad638aa4711a879f325f9ab97de27d22c0a45d02b3cf2e0bb6e389ba4c",
+  "created_at": "2026-09-03T11:57:21.118369Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释求职者为何反感，并兼顾招聘方与求职者的博弈，结尾还给出应对建议。",
+      "script_spans": [
+        "它背后往往不是公司想灵活谈，而是把本该明示的信息成本推给求职者。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 443，目标为 450，偏差率为 1.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕薪资不透明展开，既解释反感来源，也落到时间成本和可执行的求职策略。",
+      "script_spans": [
+        "薪资面议在今天的招聘里，已经从中性表述变成了信任减分项。",
+        "对普通人来说，这种岗位最贵的不是工资未知，而是时间沉没。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用真实划走场景设问，中段从信任、透明到时间成本逐层推进，结尾建议自然落地。",
+      "script_spans": [
+        "你刷到写着‘薪资面议’的岗位，是不是下意识想划走？",
+        "为什么一句‘面议’这么招人烦？",
+        "这种岗位最贵的不是工资未知，而是时间沉没。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有明确问答和行动建议，整体能读通；但中段长句和抽象术语偏多，朗读需重断句。",
+      "script_spans": [
+        "你刷到写着‘薪资面议’的岗位，是不是下意识想划走？",
+        "学术上有个角度很说明问题",
+        "对博弈弱势方的消耗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“时间沉没”和“先亏了心态”把抽象损耗说具体，修辞克制，观点清楚且有自然复述价值。",
+      "script_spans": [
+        "面议切断了预期管理，让人还没面试就先亏了心态。",
+        "这种岗位最贵的不是工资未知，而是时间沉没。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，从信息不透明推进到时间成本和应对建议，但个别因果桥接偏满，结论有轻微越界。",
+      "script_spans": [
+        "下次再看到面议，要么开场就问清范围，要么直接绕行。",
+        "五部门最近也要求招聘平台做到信息明示到位，这种模糊写法本身就站在了合规趋势的对立面。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能指出求职者的时间成本，也提到信息明示趋势；但把面议动机和合规关系说得过满，易造成泛化误导。",
+      "script_spans": [
+        "五部门最近也要求招聘平台做到信息明示到位",
+        "它背后往往不是公司想灵活谈，而是把本该明示的信息成本推给求职者。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-bf85c1400c6d45bcb08938b4d1bb49a4",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-3a004ae172444b4a9ab831c8c4541866",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

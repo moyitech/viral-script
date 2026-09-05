@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-f8b670ab592a4b95aaf9e5529b8ddef9",
+  "run_id": "run-20260903T051603Z-f6a9f714f7a5",
+  "trace_sha256": "c1b3e045a5339a0e741c9295cdc32b9d9a6bc7fe6f8ec3218fd0d93356476bb0",
+  "created_at": "2026-09-03T12:31:50.816040Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答申诉难度，既呈现过渡期风险，也落到普通用户的具体应对。",
+      "script_spans": [
+        "不会必然更难过，但接下来几个月，你大概率先经历一段更烦的过渡期",
+        "普通人影响直接：申诉别跟机器人绕圈，直接说“转人工”三个字"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中且信息单元递进，兼有标准变化、平台动因和可执行的申诉策略。",
+      "script_spans": [
+        "明确禁止层层隐藏人工入口，涉人身财产安全优先转真人。",
+        "简单问题机器答，复杂纠纷必须流转人工，切换时同步对话信息",
+        "留存AI聊天记录，若它承诺免罚却不认账，企业必须买单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头就是限流申诉撞上机器客服，中段用投诉数据、国标与行动建议层层推进，结尾自然落到要真人。",
+      "script_spans": [
+        "视频账号突然被限流，你急着申诉，对面却是答非所问的机器客服。",
+        "普通人影响直接：申诉别跟机器人绕圈，直接说“转人工”三个字；"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读通，行动建议有节奏；但长串标准表述和抽象结论挤在一起，需重断句。",
+      "script_spans": [
+        "申诉别跟机器人绕圈，直接说“转人工”三个字",
+        "上半年AI客服投诉量同比上涨超26%，中消协早已点名转人工机制不畅、循环应答是重灾区",
+        "效率首次让位于可申诉权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“全面接入不等于全面挡事”和“截图就是有重量的证据”都能独立复述，修辞克制且服务行动建议。",
+      "script_spans": [
+        "全面接入不等于全面挡事。",
+        "AI客服不是申诉死胡同，而是你该大声要真人的起跑线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "段落分工清楚、结尾能回扣题设，但把标准要求直接说成“监管堵死”，结论略有扩大。",
+      "script_spans": [
+        "但国标逼出硬杠杠：简单问题机器答，复杂纠纷必须流转人工",
+        "监管堵死纯AI推诿的路，全面接入不等于全面挡事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 1,
+      "reason": "“企业必须买单”把AI客服回复直接等同于确定法律责任，属于无依据的绝对化维权承诺，易误导用户。",
+      "script_spans": [
+        "企业必须买单"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e4aef9567d4b42a398842834d52646bc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

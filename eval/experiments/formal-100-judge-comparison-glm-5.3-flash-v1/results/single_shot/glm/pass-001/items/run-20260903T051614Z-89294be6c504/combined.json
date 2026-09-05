@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-8b5fc35de6ca4a59a19658232de636f5",
+  "run_id": "run-20260903T051614Z-89294be6c504",
+  "trace_sha256": "7c57a1cc7332e0fcf5d16b0c40cdc833ca2bd52e4e2dba02d88439dcc6b664c3",
+  "created_at": "2026-09-03T14:10:12.161971Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头立问、结尾作答，退役潮与污染风险两侧都接住，还落到普通人的处置场景，切角具体不跑题。",
+      "script_spans": [
+        "光伏板退役潮确实正在逼近，但只要我们守住回收的规矩，它未必成为环境欠账。",
+        "对普通人来说，这事儿不遥远。你小区或周边要是建了光伏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 432，目标为 450，偏差率为 4.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "退役量、规范实施、政策目标层层推进，无编造，观众能带走认准有资质回收点这一判断方法。",
+      "script_spans": [
+        "国内预计到2030年，累计退役组件大约45.7万吨",
+        "今年3月，废光伏设备回收处理污染控制技术规范已经正式实施"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头发电板变废玻璃反差抓人，中段用数据、规范、风险层层兑现，结尾余味自然生长不硬喊互动。",
+      "script_spans": [
+        "屋顶那块默默发电的太阳能板，早晚会变成一块没人要的废玻璃",
+        "那污染会不会跟着来？关键在末端怎么处理",
+        "绿色电是干净的，但干净不等于自动干净，废板子的归宿得有人管到底"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与问答撑起节奏，但规范全称连读费劲，'小散乱收荒匠'需重断句，两处卡嘴压到2分。",
+      "script_spans": [
+        "屋顶那块默默发电的太阳能板，早晚会变成一块没人要的废玻璃",
+        "报废时别当普通垃圾扔给流动回收佬",
+        "废光伏设备回收处理污染控制技术规范已经正式实施",
+        "难点是小散乱收荒匠可能图省事直接烧或埋"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“干净不等于自动干净”离开上下文仍可复述，“钉死”“环境欠账”点到为止，无堆砌炫技。",
+      "script_spans": [
+        "绿色电是干净的，但干净不等于自动干净",
+        "把拆卸、运输、贮存到处理的污染控制钉死了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "潮是否真来、污染是否跟着来两问推进，转折与因果桥齐备，结尾回扣开头废玻璃意象并回应题设。",
+      "script_spans": [
+        "那污染会不会跟着来？关键在末端怎么处理",
+        "绿色电是干净的，但干净不等于自动干净，废板子的归宿得有人管到底。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全篇多用'预计''可能''未必''只要'作限定，主动反驳夸大叙事，风险归因留有余地，建议稳妥无诱导，审核风险低。",
+      "script_spans": [
+        "但说绿色能源这就埋下新污染，结论下得有点早",
+        "难点是小散乱收荒匠可能图省事直接烧或埋，那样才会有渗重金属的风险",
+        "只要进正规渠道，玻璃、铝、铜能回来，有害物料被管住"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-215b19aceb58492daf2711c22d89abf6",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f1c74d5a01f24b679f00460194807ec3",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-c2c2a0b531ae4ac4b377adbc50f19123",
+  "run_id": "run-20260902T143433Z-8d05a87c4e2c",
+  "trace_sha256": "5ab811a363efb1fbcc4b32882477f8c9ba963ab32eff42c86310465ccb4c8d93",
+  "created_at": "2026-09-03T12:15:46.090673Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即回答高楼会加剧夜间热岛，同时解释并非唯一原因，还覆盖密度、材质、风道和治理对象，贴合题设。",
+      "script_spans": [
+        "它会加剧夜间热岛效应，但不能把账全扣它头上。",
+        "关键在密度和吸热材质，不在身高。",
+        "选房别只瞅楼多高，先看社区树多不多、风道通不通。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息围绕夜间热岛持续推进，分别解释存热、空调废热、通风受阻和天空变窄，并给出治理与选房判断，增量充分。",
+      "script_spans": [
+        "白天混凝土和玻璃像海绵吸饱太阳热，半夜慢慢吐到空气里。",
+        "楼挨得密，风钻不进巷子，天空被切窄，地面热量想散到天上变慢。",
+        "新楼审批多算一笔散热账，老楼改造少些玻璃幕。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“怪楼”制造反转，中段持续拆解热源与条件，结尾以生活化追问自然收住。",
+      "script_spans": [
+        "半夜热醒怪摩天楼？它加重却不是唯一祸首。",
+        "下次夜里热醒，你会不会想想，这片水泥林子是留了风道，还是捂紧了被子？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有鲜明对话感和画面感，但“楼挨密”“更死板”等搭配卡嘴，整体尚未达到精心设计的自然口播。",
+      "script_spans": [
+        "咱们先拆开看，夜里城区比郊外暖，太阳早下山，楼却还在放热。",
+        "楼挨密像高墙",
+        "干燥内陆楼群把热困得更死板",
+        "可见边界是密度和配套，不是高度独挑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“厚被”“水泥林子”等比喻把热量困住的机制说得直观，记忆点明确且没有连续堆砌。",
+      "script_spans": [
+        "这就像给城市盖了床厚被，热憋在底下。",
+        "这片水泥林子是留了风道，还是捂紧了被子？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构按立论、机制拆解、反例校正、边界说明和治理建议递进，结尾回扣风道与热醒，主线完整。",
+      "script_spans": [
+        "它加重却不是唯一祸首。",
+        "那怪完楼高，把楼推矮就能凉快？想得太简单。",
+        "下次夜里热醒，你会不会想想，这片水泥林子是留了风道，还是捂紧了被子？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体归因有边界、不煽动，但“多开窗”缺少空气质量、室外温度等前提，可能误导部分观众。",
+      "script_spans": [
+        "它加重却不是唯一祸首",
+        "夜晚多开窗对流比硬扛冷气舒服些"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9bfa95520ca0435d96a85cc97218c9c0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-0a1c7b56e11345949c90561246b760e6",
+  "run_id": "run-20260903T051534Z-53e16901e4cc",
+  "trace_sha256": "bf1a05d57e25d7cfa41d5013e5d4c81fd48ded7298fac00c0fec0f18420da5de",
+  "created_at": "2026-09-03T12:31:50.322874Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从费率变化切入，既解释低成本与低风险的区别，也落到普通人的指数选择与风险承受力。",
+      "script_spans": [
+        "费率一降再降，买指数基金是不是就更安全了？答案很直接：低成本不等于低风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“费率不等于风险”持续推进，改革信息、指数波动、跟踪误差和决策建议形成有效增量。",
+      "script_spans": [
+        "公募费率改革收官，指数型产品认申购费被压到和债券型同档",
+        "费用越高，跟踪误差往往越大。这次降费能在一定程度上减小误差"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用安全感反差设问，中段连续拆解“成本”和“波动”，结尾落到可执行的自问，推进和余味都成立。",
+      "script_spans": [
+        "费率一降再降，买指数基金是不是就更安全了？",
+        "那费率高低就完全不影响风险吗？也不是，它算间接有影响。",
+        "先问自己：这片底层资产的涨跌我扛不扛得住？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体问答节奏清楚，口语词也够多；但“它算间接有影响”和“这片底层资产”朗读需临场换词，未达精心设计的自然。",
+      "script_spans": [
+        "省钱是省钱，避险是避险",
+        "它算间接有影响",
+        "这片底层资产"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“省钱是省钱，避险是避险”把概念分开，“锦上添花，不是避风港”形成自然记忆点，修辞克制且服务结论。",
+      "script_spans": [
+        "省钱是省钱，避险是避险，这两件事不能混为一谈。",
+        "低成本让基金更贴近指数，却不降低指数自身的波动。",
+        "低成本是实打实的优惠，只是锦上添花，不是避风港。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构由提问、辨析、补充例外到行动建议递进，先区分直接风险，再解释费用的间接影响，结论回扣自然。",
+      "script_spans": [
+        "那费率高低就完全不影响风险吗？也不是，它算间接有影响。",
+        "低成本让基金更贴近指数，却不降低指数自身的波动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "明确区分费率优惠与市场风险，未作收益承诺，也没有诱导具体买卖，风险边界交代充分。",
+      "script_spans": [
+        "低成本不等于低风险"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e96f4460899e4ed397de4c07a03b5c88",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,164 @@
+{
+  "evaluation_id": "combined-87601badbc384ae48eedd2facc69c119",
+  "run_id": "run-20260903T051524Z-462d9256870a",
+  "trace_sha256": "af585e6dc15a08ed3cd7ac6427473c235ae6c0cab1ffb7da0a70742d12ac6bd5",
+  "created_at": "2026-09-03T14:11:28.856672Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出效率与真实反馈的冲突，结尾回扣题设，师生家长均覆盖，切角具体。",
+      "script_spans": [
+        "效率这么猛，有人却倒吸凉气：机器懂什么叫真实的触动吗？",
+        "AI提速不等于反馈注水，分水岭在于它有没有被人攥在手里当帮手，而不是替人坐堂"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 775，目标为 700，偏差率为 10.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息单元环环推进：筛选分工、偏见研究、课堂两极各有支撑，无编造，增量具体。",
+      "script_spans": [
+        "有研究跟踪发现，某些智能写作教练一旦识别出作者性别或族群信息，给出的修改建议语气就变了调",
+        "重复活儿交出去了，人才腾出空去点破学生论证里的那道裂缝"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字以“阅”字加总分的尴尬具体切入，中段连用“可是”“隐患”“两极”转折推进，结尾由真人反馈自然收出余味。",
+      "script_spans": [
+        "作文课最尴尬的事，是学生憋了两天写出一篇",
+        "可是如果把判卷权全托付给模型，隐患就冒出来了",
+        "作文里那句“我看见你的挣扎了”，永远只能由一个真人写给你"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "全篇对话感足、中段口语扎实，但“采取……写评语的方式”要重断句，“替代文本本身特质”抽象堆叠，两处拗口封顶2分。",
+      "script_spans": [
+        "重复活儿交出去了，人才腾出空去点破学生论证里的那道裂缝",
+        "不少一线教师现在采取让AI先筛一遍基础问题、自己再针对内容和思维写评语的方式",
+        "容易用身份标签替代文本本身特质，让反馈滑向安全牌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“红笔海”“安全牌”等比喻皆服务理解与情绪，不堆砌；“机器管语言皮相，人教思维骨血”离开上下文仍可复述。",
+      "script_spans": [
+        "拿回来只见一个“阅”字加总分",
+        "它把老师从红笔海里捞出来",
+        "机器管语言皮相，人教思维骨血"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "各段功能清晰，'为什么会这么讲''可是''回到真实课堂'层层衔接，结尾回扣开头。",
+      "script_spans": [
+        "可是如果把判卷权全托付给模型，隐患就冒出来了",
+        "机器管语言皮相，人教思维骨血"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "涉算法差别对待时主动说明非存心歧视，论断归因于研究，无夸大、煽动或不当承诺，导向安全。",
+      "script_spans": [
+        "我得说清边界：这不等于系统存心歧视，而是算法试图“个性化”时，容易用身份标签替代文本本身特质",
+        "有研究跟踪发现，某些智能写作教练一旦识别出作者性别或族群信息，给出的修改建议语气就变了调"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 775,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.10714285714285714
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c34aa254ed1e460db72bcb5f8a0618a8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6a1a1494986a4e00b752c1e1c9695c91",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

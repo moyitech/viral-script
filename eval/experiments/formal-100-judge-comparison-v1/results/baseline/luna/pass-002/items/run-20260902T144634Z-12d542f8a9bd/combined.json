@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-ba1e96d76ed8489b8a4358596d38a0c2",
+  "run_id": "run-20260902T144634Z-12d542f8a9bd",
+  "trace_sha256": "31c9ebb7ee7b14c5956be578ebbb7265d2db35f0e32e50e94efc57f76e648b95",
+  "created_at": "2026-09-03T12:15:51.906489Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答重复花钱的原因，覆盖政策例外、医生判断、平台障碍和患者人群。",
+      "script_spans": [
+        "根子在接诊医生握着认不认的决定权，文件也留了重查口子。",
+        "平台也没全连通，旧数据调不出。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕互认受阻持续推进，逐层补充重查例外、责任顾虑、设备差异和应对办法。",
+      "script_spans": [
+        "文件允许病情发展、设备参数不同就重查，正常代谢有快有慢，旧结果可能不准。",
+        "他怕担责，也习惯看熟机器出的图，同一检查不同机器的图细微差别可能影响判断，往往重新开单。",
+        "你下次转院把近期片和化验单递过去，主动问这结果能认不。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用重掏钱的具体冲突立刻抓人，中段持续补充政策、医生和平台障碍，结尾自然留下追问。",
+      "script_spans": [
+        "你刚拍的胸片换家医院大夫说不行，得重掏钱。",
+        "本该省下的钱卡在别人笔尖，这弯绕得人晕，啥时能直？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有“你为啥”“再说大夫”这样的对话承接，但多处句式生硬，朗读时需要重断句和换词。",
+      "script_spans": [
+        "你为啥还重复花钱？",
+        "接诊医生以自己判断为准，跨院信任没建起。",
+        "同一检查不同机器的图细微差别可能影响判断，往往重新开单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“本该省下的钱卡在别人笔尖”形象准确，概括制度落差并便于复述，整体修辞克制不喧宾夺主。",
+      "script_spans": [
+        "本该省下的钱卡在别人笔尖"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先抛出重复付费，再按政策、医生和平台展开，最后落到行动建议并回扣核心问题。",
+      "script_spans": [
+        "先看政策留的口子。",
+        "再说大夫这边。",
+        "你下次转院把近期片和化验单递过去，主动问这结果能认不。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题聚焦患者重复检查，例外情形交代到位；但把责任归因于医生决定权并称“卡在别人笔尖”，易强化不信任与误解。",
+      "script_spans": [
+        "文件允许病情发展、设备参数不同就重查",
+        "根子在接诊医生握着认不认的决定权"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c40f6c755b8a4634893e18fa47a4d008",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

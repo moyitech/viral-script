@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-2bce4152bcf34646a9abadf12d48cbbd",
+  "run_id": "run-20260903T051540Z-e0c38d5dad20",
+  "trace_sha256": "9cbe378c37873217037857e21310dadc71901bb25bda71e0baf4e173ee3d78d3",
+  "created_at": "2026-09-03T12:31:33.895740Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直面安检拥堵，既谈安全底线，也提出分流与技术升级，精准落到通勤者。",
+      "script_spans": [
+        "我的判断很明确：兼顾安全与通勤效率，不能靠一刀切把每个人拦下来慢检，真正的出路在分流设计和安检技术升级。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕安全与效率冲突持续推进，兼有机制解释、现实案例、天气场景和可执行建议，信息增量充分。",
+      "script_spans": [
+        "安检员干的是典型的视觉搜索活儿，站台嘈杂、视线被挡，注意力一掉，漏检概率就抬头。",
+        "有城市全网覆盖后，早高峰进站多耗了近二十分钟；而运营规定早鼓励用新技术提效率，落地却走了样。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用通勤憋屈迅速入题，中段以反常识追问推进，结尾金句自然收束并留下讨论空间。",
+      "script_spans": [
+        "地铁安检越来越细，你有没有过这种憋屈",
+        "为什么细查反而可能削弱安全？",
+        "安全是底线，但效率不是给安全陪绑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和后半段有明显对话感，但中段多处抽象、拗口表达拖慢节奏，整体只能顺读，难称朗朗上口。",
+      "script_spans": [
+        "你有没有过这种憋屈：包要过机，人也要被棒子扫",
+        "兼顾安全与通勤效率，不能靠一刀切把每个人拦下来慢检，真正的出路在分流设计和安检技术升级。",
+        "人力堆出来的细，代价是整体疏运变慢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对比都服务观点，‘效率不是给安全陪绑’与末句形成鲜明、准确且便于复述的记忆点。",
+      "script_spans": [
+        "把抱怨化成选择，才是通勤族的自保。",
+        "安全是底线，但效率不是给安全陪绑。",
+        "棍子舞得再花，不如机器铺得宽。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，能从拥堵现象推进到机制与对策；但“削弱安全”主要被解释成效率下降，关键安全因果仍未补足。",
+      "script_spans": [
+        "真正的出路在分流设计和安检技术升级。",
+        "为什么细查反而可能削弱安全？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有安全与效率的平衡意识，但“只会”“真正的出路”等绝对化归因，可能把局部案例说成普遍结论。",
+      "script_spans": [
+        "安全当然重要，可把防线全压在进站口细查，不等于城里就更安全。",
+        "单纯加人力只会让瓶颈更细。",
+        "真正的出路在分流设计和安检技术升级。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2b82f3e313f245cfb55ba57fcaff6c17",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

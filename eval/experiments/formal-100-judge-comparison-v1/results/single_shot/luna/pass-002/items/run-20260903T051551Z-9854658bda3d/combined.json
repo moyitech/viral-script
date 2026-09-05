@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-e7209a8a49f94d9e88be6a1f0c206bec",
+  "run_id": "run-20260903T051551Z-9854658bda3d",
+  "trace_sha256": "227521d7ddeb150d965e6eeedf3dd596de06de023cdd92236f56c05fac040aa3",
+  "created_at": "2026-09-03T12:42:39.152670Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答能否强迫让步，完整覆盖高层出行诉求、低层权益受损及解决路径。",
+      "script_spans": [
+        "高层住户家里有八旬老人，下趟楼得像长征；低层住户一开门，突然要挨着一个铁皮井道，采光隐私全变样。",
+        "所以老楼加梯，多数人的便利是买来的，不是表决来的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕多数便利与少数损失，法律原则、案例、补偿难题和现实阻力均形成有效推进。",
+      "script_spans": [
+        "多数决能决定公共事务怎么走，却无权让某一户单独吞下所有损失。",
+        "每栋楼损耗不同，没有统一赔偿公式，只能邻里反复磨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段案例与结尾有推进，但前20字先铺垫政策背景，具体冲突到后面才出现，首屏钩子不够快。",
+      "script_spans": [
+        "那如果高层铁了心要装，低层除了拦还有别的路吗？",
+        "哪怕只差两户，耐力赛也能拖垮整栋楼的愿望。",
+        "老小区改造写进政府工作报告好几年了，可到了单元楼门口"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体可读，问句与短句重音清楚；但法律程序和治理术语偏密，部分句子需要重断句。",
+      "script_spans": [
+        "可补偿数目最难谈，现实卡壳往往就卡在这儿。",
+        "有些地方规定双三分之二参与表决通过就能申请规划许可",
+        "现在有些社区搞成片审批、托管管家，是想降低单楼扯皮成本，但绕不开补偿议价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“便利是买来的，不是表决来的”把利益与规则讲成可复述的判断，类比克制，多处对照句也服务论点。",
+      "script_spans": [
+        "便利多数，从来不是让少数无偿让步的合法借口。",
+        "多数人的便利是买来的，不是表决来的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "冲突、规则、案例与谈判难题层次清楚，但末句把补偿写成推进电梯的唯一条件，结论略有扩大。",
+      "script_spans": [
+        "为什么不能靠票数硬推？",
+        "这说明加装可以推进，但得用钱换理解，不是比谁声音大。",
+        "愿意掏钱补差价，电梯才推得动；指望用票数压人，最后大概率两头空。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体兼顾高低层利益，未见明显违规；但部分法律结论和结果判断过于绝对，需补充个案与地区边界。",
+      "script_spans": [
+        "低层住户一开门，突然要挨着一个铁皮井道，采光隐私全变样",
+        "补偿的本质是填平损失，让低层权益回到未装梯时的状态",
+        "愿意掏钱补差价，电梯才推得动"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3664ef23d044434683e51b67bf385a19",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

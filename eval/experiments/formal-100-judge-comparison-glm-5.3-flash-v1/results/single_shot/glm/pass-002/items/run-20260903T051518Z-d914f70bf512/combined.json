@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-06e093221dc246a0ac94ef5e67c30944",
+  "run_id": "run-20260903T051518Z-d914f70bf512",
+  "trace_sha256": "1a1abbce36941130aa7dd32a9d922dd832069e9700a2dcd3b5de242bd4b5807f",
+  "created_at": "2026-09-03T15:28:47.461607Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给出明确判断，安全感与浪费风险两侧都答到，落点始终是普通家庭药箱，覆盖完整。",
+      "script_spans": [
+        "普通家庭过度囤常用药，那种安全感基本是自我安慰，最后大多走向浪费和处理风险",
+        "合理边界很简单：药箱做流动补给，少量、常用、近效期优先"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从虚假安全感到生命周期再到处置两难，各信息单元层层推进无复述，转卖违法与有害垃圾说法有据可依。",
+      "script_spans": [
+        "恐慌性囤积把短期波动放大成长期冗余，药还没拆封就面临到期",
+        "一边用不掉，一边退不出，只能堆着等废"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头具象提问直击囤药痛点，中段两难与隐蔽风险层层推进，结尾建议自然收束，无喊话痕迹。",
+      "script_spans": [
+        "你家药箱最深处，是不是躺着几盒没拆封的退烧药？",
+        "真正的两难在后续取舍：闲置药品个人不允许转卖，否则触碰药品经营法规；想扔也不行",
+        "下次想囤，先看现有量，够两周就停手"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数句子短促有力，如“吃掉钱包、占满抽屉”；但“放大成长期冗余”“触碰药品经营法规”等处需换词重断。",
+      "script_spans": [
+        "非理性备药先吃掉钱包，再占满抽屉",
+        "一边用不掉，一边退不出，只能堆着等废",
+        "但恐慌性囤积把短期波动放大成长期冗余",
+        "闲置药品个人不允许转卖，否则触碰药品经营法规"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“情绪垃圾桶”“先吃掉钱包再占满抽屉”等比喻自然贴切，可独立复述，修辞服务理解且不炫技。",
+      "script_spans": [
+        "药箱不是情绪垃圾桶，塞进去的焦虑最后变成环境的负担",
+        "非理性备药先吃掉钱包，再占满抽屉"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "每段功能清晰，囤积成因推到处置困局再到行动边界，因果桥完整，结尾金句回扣开头并给出可执行规则。",
+      "script_spans": [
+        "落到普通人身上，非理性备药先吃掉钱包，再占满抽屉",
+        "下次想囤，先看现有量，够两周就停手"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "转卖违法、废弃药属有害垃圾与官方口径一致；'可能耽误事''基本是自我安慰'留有余地，建议具体克制，无夸大或煽动。",
+      "script_spans": [
+        "闲置药品个人不允许转卖，否则触碰药品经营法规；想扔也不行，家庭废弃药被划入有害垃圾，得专门回收",
+        "以为有效却早已失效，可能耽误事"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5a666ae83edd46928dca0e78cc7a565a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

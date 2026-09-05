@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-b9cbb94e3a7e46939196f7dedee406a5",
+  "run_id": "run-20260903T051630Z-39f0b8b96257",
+  "trace_sha256": "142adcd6b7e4839907a47fd5f15d332afa293db885a9afa0a47ec7d6fdcc3d33",
+  "created_at": "2026-09-03T14:13:40.494670Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即老用户贵于新人场景，主体正面归因算法定价，人群与两侧冲突全覆盖，结尾回扣题设。",
+      "script_spans": [
+        "你开了三年网约车会员，最近发现同样路线，自己账号比新注册的朋友还贵十几块。",
+        "我的判断很直接：动态会员价根本不是给老用户的福利，而是平台用算法给你的支付意愿悄悄标了价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 732，目标为 700，偏差率为 4.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机制、反例、法律边界、对策逐层推进，关键论断有依据，观众能带走判断方法与可操作建议。",
+      "script_spans": [
+        "它翻看你历史订单、常去区域、取消率，把你塞进“价格不敏感群体”。",
+        "分群本来就有模糊地带，别把每次差价都当成被收割。",
+        "普通用户最好武器就是多账号轮着用，别让算法锁定你。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直给老用户反比新人贵的反差，中段以设问和反例持续供新，结尾金句自然生长，无需硬喊互动。",
+      "script_spans": [
+        "自己账号比新注册的朋友还贵十几块",
+        "这里有个反例得说清：不是所有老用户都更贵",
+        "老用户别用忠诚换溢价，勤比价就是守住钱包的缰绳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句可读，但“价格歧视的混合体”“平台更惜用户”等书面表达需临时换词重断。",
+      "script_spans": [
+        "新人相反，平台用低价拉新，补贴一撤，两端差价就显出来了。",
+        "个性化定价在法律视角下是价格歧视的混合体，有一定效率理由，能改善分配效率",
+        "在运力饱和的城市，平台更惜用户，这种比价能逼它收敛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，“别用忠诚换溢价”“粘性成了被收割的标签”离开上下文仍可复述，无堆砌。",
+      "script_spans": [
+        "平台用算法给你的支付意愿悄悄标了价",
+        "平台在利润与口碑间走钢丝",
+        "老用户别用忠诚换溢价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "核心因果桥完整，反例主动限界，结尾以忠诚换溢价回扣开头，段落功能层层递进清晰。",
+      "script_spans": [
+        "老用户高频打车，对价格变动相对脱敏，系统就默认你更愿意掏钱，粘性成了被收割的标签。",
+        "老用户别用忠诚换溢价，勤比价就是守住钱包的缰绳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "主动设限如“不是所有老用户都更贵”，法律边界清楚，比价建议属消费自保常识，无煽动夸大。",
+      "script_spans": [
+        "这里有个反例得说清：不是所有老用户都更贵",
+        "只有明摆着按身份杀熟才违规",
+        "自主不等于能搞不正当价格行为"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f5e8da8042844cc981b15d08c94eb9dd",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d7c8fdf6e3cf447d9228939c1340a8c4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

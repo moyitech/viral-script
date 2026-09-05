@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-e97e0175fc754d8a99da3bbc7528579b",
+  "run_id": "run-20260902T142138Z-6b373e674595",
+  "trace_sha256": "8ffbeb6d735b938dd33d4a101112a10964583bce5023a2247c7cf4e75bd2d1b5",
+  "created_at": "2026-09-03T12:15:07.998876Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕普通人跨境理财的换汇、结汇与汇率风险展开，既回答会否吞收益，也给出核算建议。",
+      "script_spans": [
+        "你换汇买境外理财，赚的息可能不够填换汇差价。汇率波动会不会吞掉收益？可能会",
+        "所以你挑跨境理财，先问经理换汇价差多少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "点差、购汇卖出价、结汇买入价和人民币走强分别推进解释，最后落到真实收益核算，信息增量明确。",
+      "script_spans": [
+        "银行挂出卖出价，一般比你搜的中间价高些。这多付的部分，就是换汇点差的硬成本。",
+        "同样美元本金，换回本币明显少一截。",
+        "把这笔摩擦扣掉，看真实能落袋多少利润。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用收益被差价吃掉设悬念，中段拆解点差与汇率，结尾追问自然收住。",
+      "script_spans": [
+        "你换汇买境外理财，赚的息可能不够填换汇差价。",
+        "如果回头钱没多几块，这趟忙活图什么？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有问答和比喻，整体能听懂，但“显示偏强走势”等表述卡嘴，需重断句或换词。",
+      "script_spans": [
+        "汇率波动会不会吞掉收益？可能会，但普通人常先被点差啃掉一层。",
+        "近期它显示偏强走势。",
+        "等产品到期赚到息，你再把外币结汇回。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“点差啃掉一层”把抽象成本说具体，“来回成本”也形成可复述的记忆抓手，修辞克制。",
+      "script_spans": [
+        "普通人常先被点差啃掉一层。",
+        "看清来回成本，比光瞄宣传数字更保底。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先抛出风险，再拆解购汇与结汇的双向成本，随后补充人民币走强情境，结尾自然回到操作建议。",
+      "script_spans": [
+        "银行挂出卖出价，一般比你搜的中间价高些。这多付的部分，就是换汇点差的硬成本。",
+        "那碰上人民币走强呢？近期它显示偏强走势。",
+        "所以你挑跨境理财，先问经理换汇价差多少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体为风险提示，未承诺收益或推荐具体产品；但“保底”和“挺固定”等表述边界不足，可能让人误解成本稳定或结果更有保障。",
+      "script_spans": [
+        "汇率波动会不会吞掉收益？可能会",
+        "看清来回成本，比光瞄宣传数字更保底"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-faa364c6224b4327ac81fa9dc444c906",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

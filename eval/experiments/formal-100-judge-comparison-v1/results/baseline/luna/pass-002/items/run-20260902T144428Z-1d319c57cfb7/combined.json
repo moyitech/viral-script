@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-8544b0e7f6ac430ca51f4873b4b8dee7",
+  "run_id": "run-20260902T144428Z-1d319c57cfb7",
+  "trace_sha256": "060fb7356114d09da9af376989b51a6d8e7e172af60fb5c0f9f1b1eb2cf4928e",
+  "created_at": "2026-09-03T12:16:41.663174Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面比较人口流入城市的机会与居住成本，明确站在年轻人决策场景给出成本更高的判断。",
+      "script_spans": [
+        "年轻人奔向人口流入城，成本多数跑赢机会。",
+        "普通青年做去留决定，别只盯招聘薪水。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "围绕人口、租金、工资和保障房推进，信息点明确；但机会收益几乎只有判断，成本高于机会的结论缺少比较依据。",
+      "script_spans": [
+        "人口往里挤，租金明显抬头，这是第一笔账。",
+        "租金比市场低四成左右，但数量有限",
+        "城里的好机会确实在，但进门票先贵了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用工资与机会的反差抓人，中段连续补账，结尾以成本换机会的追问自然收束。",
+      "script_spans": [
+        "房租吞掉工资，机会却还在门外排队。",
+        "一项覆盖95座城的研究明确说，人口往里挤，租金明显抬头，这是第一笔账。",
+        "你用更贵居住成本，换没落袋的机会，真的划算吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句、设问和转折让节奏清楚，但多处词组不顺，尤其“薪水平常追得慢”“量量自己存款”，口播需改词。",
+      "script_spans": [
+        "房租吞掉工资，机会却还在门外排队。",
+        "你琢磨下，人聚得密，房就紧。",
+        "可老板给的薪水平常追得慢。",
+        "先量量自己存款，能烧掉几个月贵房租，心里要有数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“房租吞掉工资”和“进门票先贵了”形象贴题，便于复述，修辞克制且服务观点。",
+      "script_spans": [
+        "房租吞掉工资，机会却还在门外排队。",
+        "城里的好机会确实在，但进门票先贵了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，先讲人口推高租金，再讲工资与保障房，最后落到决策；但从居住成本上升直接推到成本跑赢机会，比较桥梁不足。",
+      "script_spans": [
+        "人聚得密，房就紧。",
+        "先量量自己存款，能烧掉几个月贵房租，心里要有数。",
+        "成本多数跑赢机会。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "没有明显违规，保障房租金表述有依据；但“成本多数跑赢机会”过度概括，且将房价研究直接说成租金研究，需补限定。",
+      "script_spans": [
+        "有些城市配了保障房，租金比市场低四成左右，但数量有限",
+        "一项覆盖95座城的研究明确说，人口往里挤，租金明显抬头",
+        "成本多数跑赢机会"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-dbb6d7b258434390a01dbc43b221b979",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

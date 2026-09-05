@@ -1,0 +1,167 @@
+{
+  "evaluation_id": "combined-3be40d3acd7e4d04aff2664fba8b91bf",
+  "run_id": "run-20260903T051526Z-aa06a123ed4f",
+  "trace_sha256": "2a37b41808c06c2a2c762fa7b4b764bfeccd709c0fbb5fd72a9ba641471d7221",
+  "created_at": "2026-09-03T14:11:15.170916Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接抛出粮价平稳与开销上升的矛盾，从购买成品、统计权重、下馆子三面作答，结尾建议回扣家庭餐桌，完整覆盖题设与人群。",
+      "script_spans": [
+        "粮价明明没动，家里吃饭开销却悄悄爬升？",
+        "想给餐桌开销消肿，最实在的办法就是回归厨房自己掌勺"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 314，目标为 280，偏差率为 12.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，权重结构、服务成本捆绑、外出支出翻番层层推进，与调研佐证相符，观众能带走判断逻辑和可操作建议。",
+      "script_spans": [
+        "餐馆账单里紧紧捆着房租、人工和品牌溢价，同样一盘菜比自家厨房贵出一大截",
+        "多方调研显示近年间家庭外出吃饭的支出早已翻着跟头涨，这趋势在城镇家庭更明显"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头反差钩子有力，中段统计讲解推进趋平，结尾只给建议便收束，缺余味。",
+      "script_spans": [
+        "粮价明明没动，家里吃饭开销却悄悄爬升？",
+        "权重小到它的平稳对总指数影响有限",
+        "想给餐桌开销消肿，最实在的办法就是回归厨房自己掌勺"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "全篇能读通且有‘翻着跟头涨’等鲜活口语，但‘频繁下馆子频次越来越高’赘余，统计段主语跳跃需重断句，封顶2分。",
+      "script_spans": [
+        "同样一盘菜比自家厨房贵出一大截，原料成本只是零头",
+        "近年间家庭外出吃饭的支出早已翻着跟头涨",
+        "如今很多人频繁下馆子频次越来越高",
+        "权重小到它的平稳对总指数影响有限，常被鲜菜、肉禽和水产这些波动大的品类抵消，才是拉高日常菜篮子的主要推力"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "局部修辞贴切，“原料成本只是零头”可复述，但“频繁下馆子频次越来越高”重复累赘，记忆点不够鲜明。",
+      "script_spans": [
+        "餐馆账单里紧紧捆着房租、人工和品牌溢价",
+        "原料成本只是零头",
+        "如今很多人频繁下馆子频次越来越高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "有开头、展开与结论，主线可跟随且结尾能回扣，但主语悬空与重复表述使关键因果经不起追问。",
+      "script_spans": [
+        "想给餐桌开销消肿，最实在的办法就是回归厨房自己掌勺",
+        "常被鲜菜、肉禽和水产这些波动大的品类抵消，才是拉高日常菜篮子的主要推力",
+        "如今很多人频繁下馆子频次越来越高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无违规敏感点，归因也有调研支撑；但“原料成本只是零头”“翻着跟头涨”属未经限定的绝对化与夸大，需补边界更稳妥。",
+      "script_spans": [
+        "在居民消费统计里粮食占比本就不高，权重小到它的平稳对总指数影响有限",
+        "同样一盘菜比自家厨房贵出一大截，原料成本只是零头",
+        "多方调研显示近年间家庭外出吃饭的支出早已翻着跟头涨"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.75,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.25,
+    "weighted_average": 2.25,
+    "normalized_score": 0.75,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 314,
+        "target": 280,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.12142857142857143
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e2ca8e26858f46a88857600204246bb5",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6526641a85b144bda5a9d2264e8c74df",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

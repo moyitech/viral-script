@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-901de3257a294f4b8dcada7d50c35877",
+  "run_id": "run-20260903T051542Z-39e8ee37bec4",
+  "trace_sha256": "5f83c206ed7a4e3fb3e5cba2d253904ab72318cd1603cf0dc86cb8a52f3aad96",
+  "created_at": "2026-09-03T15:38:51.887736Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛题设之问，从浪费与风险两侧作答，结尾给出可行做法，直击囤药家庭痛点。",
+      "script_spans": [
+        "打开自家药柜看看，里面塞满常用药，真能换来那份心安吗？",
+        "真想留点药防身，先翻出家里抽屉已有的好好盘点一下，只补最用得着的一两种"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "保质期闲置、转卖违法、乱扔污染、真实案例到四步建议，信息单元层层推进，论据有支撑。",
+      "script_spans": [
+        "个人想把剩余药品转卖出去涉嫌违法",
+        "只补最用得着的一两种，放阴凉干燥处密封好，过期了记得归到有害垃圾里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头以动作加反问快速抓人，中段由浪费到违法再到案例层层推进，但结尾收成清单式叮嘱，缺余味或互动。",
+      "script_spans": [
+        "打开自家药柜看看，里面塞满常用药，真能换来那份心安吗？",
+        "就有人把成批未拆封的退烧药直接丢进垃圾桶，看着实在心疼",
+        "放阴凉干燥处密封好，过期了记得归到有害垃圾里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读通、开尾有对话感，但中段两处书面表达需临时改词重断，止步2分。",
+      "script_spans": [
+        "打开自家药柜看看，里面塞满常用药，真能换来那份心安吗？",
+        "多半会悄悄滑向浪费和隐藏的风险",
+        "先翻出家里抽屉已有的好好盘点一下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "借‘手里有药心不慌’反转为浪费与风险，修辞克制贴切，一句话离开上下文仍可复述，无堆砌。",
+      "script_spans": [
+        "那种‘手里有药心不慌’的踏实感，多半会悄悄滑向浪费和隐藏的风险",
+        "有害成分慢慢渗进土壤和地下水"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "'更关键的是'递进自然，乱扔致污染因果清楚，结尾'真想留点药防身'回扣开头安心之问。",
+      "script_spans": [
+        "而随手把过期药扔进普通垃圾桶，又会让有害成分慢慢渗进土壤和地下水",
+        "真想留点药防身，先翻出家里抽屉已有的好好盘点一下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "转卖风险用'涉嫌违法'限定措辞，过期药按有害垃圾处置与少量备药建议均有边界，无夸大或误导。",
+      "script_spans": [
+        "个人想把剩余药品转卖出去涉嫌违法",
+        "真想留点药防身，先翻出家里抽屉已有的好好盘点一下，只补最用得着的一两种"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6b4ce65a54b44865876daf268e7f8928",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

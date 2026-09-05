@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-d31748dffd2f4ae7af065cdcc54137ff",
+  "run_id": "run-20260903T051516Z-52abf56d6ca8",
+  "trace_sha256": "a7477a6a870382614334a87d22a7f26acea1b550dfdcc5e741c1950f7754d1f7",
+  "created_at": "2026-09-03T12:33:45.434158Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕患者重复花钱的追问，既解释推进慢的机制，也交代合理复查边界，题设两侧均有回应。",
+      "script_spans": [
+        "互认推得慢，根子不在政策没写，而在医疗质量的底子薄，加上医生手里那支笔的免责本能。",
+        "但反过来说，也不是所有重复都无理，手术前重新核磁确认韧带，有时确实为安全。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策例外、技术差异、医生风险、流程成本和真实案例层层推进，结论与建议都有具体支撑。",
+      "script_spans": [
+        "不同机构采购的设备档次不同，扫描的层厚、造影剂用法可能有微小差别",
+        "医生每日流水线上，重新开单比反复比对老片更省事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“重做吧”立刻制造损失冲突，中段层层解释阻力，结尾给出可执行追问，收束自然。",
+      "script_spans": [
+        "你带着三甲医院刚拍的片子，跑到另一家三甲挂号，医生扫一眼说，重做吧。",
+        "下次跨院就诊，别默认乖乖去缴费重做，先把旧报告递给医生问一句：这个能认吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和追问有口播感，但中段长句、术语和生硬比喻连续出现，读起来不够顺。",
+      "script_spans": [
+        "钱又掏了一次。",
+        "那有人问，现在不是有影像云平台吗，片子传过去不就得了？",
+        "不同机构采购的设备档次不同，扫描的层厚、造影剂用法可能有微小差别，接诊医生若没亲自看原始数据，认了外院结果出了事，追责时他解释不清。",
+        "以接诊医师判断为标准，这句话本是保护患者，落地却成了互认的软梗阻。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和拟人控制得当，“免责本能”“软梗阻”把制度落差说得具体，且有可复述的收束句。",
+      "script_spans": [
+        "医生手里那支笔的免责本能",
+        "落地却成了互认的软梗阻",
+        "该认的认，该查的查"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问、机制拆解、案例验证、边界校正和行动结论层层递进，转折与结尾回扣自然。",
+      "script_spans": [
+        "但反过来说，也不是所有重复都无理，手术前重新核磁确认韧带，有时确实为安全。",
+        "政策在铺路，但真省到口袋里，得靠咱们自己多张嘴，也靠医院把质控真正捏齐。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且交代了合理重做的边界；但“普遍的职业防御”等归因过于绝对，易形成对医生群体的泛化指责。",
+      "script_spans": [
+        "病情发展了、设备参数有差异、正常生理代谢变化，这些情形得重新查。",
+        "先把旧报告递给医生问一句：这个能认吗？",
+        "这不是某家医院的个别风气，是普遍的职业防御。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0e7a1aba7561498fa185a2ccf91373cd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

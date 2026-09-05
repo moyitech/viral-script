@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-a094b7c9d982473d82a3e170641cdb44",
+  "run_id": "run-20260903T051632Z-f652f931c082",
+  "trace_sha256": "465387eaaf6cc9bee9df25564e6c5384f7aa52b1e4f80b706ceb01f3d4a99d69",
+  "created_at": "2026-09-03T12:45:50.265953Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答不同付出如何公平，兼顾金钱、陪护、距离与老人需求，并给出动态分担方案。",
+      "script_spans": [
+        "真正的公平，是看每个人实际能挤出的资源",
+        "让住得远的兄姐多担医疗费，近的多陪床"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕公平推进，既解释陪护与金钱难等价，也补充法律、长护险和性别分工，信息增量充分。",
+      "script_spans": [
+        "贴身照料者耗掉的是无法回补的健康和社交",
+        "专业机构接手洗澡喂药，等于把某个子女的物理付出折算成社会支持",
+        "研究里提到，赡养行为常带着性别分工惯性"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用两种付出的强烈反差抛出算账悬念，中段持续补充法律、照护替代和家庭协商，结尾追问自然回扣主题。",
+      "script_spans": [
+        "大哥每月转钱却半年没踏进家门，小妹辞职贴身伺候连轴转，到了春节算总账，到底谁亏了？",
+        "下次再为轮班红了眼，先问一句：爸妈此刻最怕什么？答案往往比工时表更公道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾有对话感，但中段存在抽象术语和病句，朗读时需要调整。",
+      "script_spans": [
+        "到底谁亏了？",
+        "下次再为轮班红了眼，先问一句：爸妈此刻最怕什么？",
+        "每个家庭地理、健康、收入错得厉害",
+        "等于把某个子女的物理付出折算成社会支持",
+        "这种老剧本不重写得清楚"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“两笔账本来就不能简单相抵”和“别让账目清晰了，家却冷了”具体有反差，能独立复述，且未压过核心观点。",
+      "script_spans": [
+        "两笔账本来就不能简单相抵",
+        "别让账目清晰了，家却冷了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先抛出冲突，再解释法律与现实原因，继而给出分担方案，结尾回扣公平标准，递进自然。",
+      "script_spans": [
+        "为什么大家总为这个红脸？",
+        "反过来，让住得远的兄姐多担医疗费，近的多陪床，本身就是一种动态调整的公平",
+        "所以回头看，算公平的那把尺，量的不是谁伺候了几百小时，而是谁在关键环节没掉链子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，公平框架较克制；但“等于”夸大长护险的替代效果，“只会”也属绝对化，需补充边界。",
+      "script_spans": [
+        "真正的公平，是看每个人实际能挤出的资源",
+        "专业机构接手洗澡喂药，等于把某个子女的物理付出折算成社会支持",
+        "平均摊派只会制造新的委屈"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1a21b30ba6f9402cb1ac6794ea510dab",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

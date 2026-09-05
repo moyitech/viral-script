@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-6d07cad83e2348ebab4ce83aa79d7ac3",
+  "run_id": "run-20260903T051559Z-938fea9fe69d",
+  "trace_sha256": "f9e7de444941510302b71ae5be9168caef555d230a390c1efad94ff260b442b3",
+  "created_at": "2026-09-03T11:58:49.623026Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直问信心，随后区分短期省钱与长期预期，并落到普通人的换新决策，完整回应题设。",
+      "script_spans": [
+        "补贴能买来眼前的热闹，但买不到长久的信心。",
+        "那对咱们普通人有什么影响？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 406，目标为 450，偏差率为 9.78%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数字消费券效果、受益者特征、凑单机制和以旧换新规则层层推进，事实、解释与判断结合紧密。",
+      "script_spans": [
+        "政府每贴1块钱，短期能撬动3块4的消费，效果确实猛。",
+        "再加上券是限时、要凑单的，天然制造脉冲式消费。",
+        "这份划算，不会自动变成你下个月敢下馆子、敢旅游的底气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用敢不敢花钱制造冲突，中段持续给出数据、机制和现实影响，结尾自然收束并留下判断余味。",
+      "script_spans": [
+        "可你刚领完券之后，真的敢放心花钱了吗？",
+        "补贴能买来眼前的热闹，但买不到长久的信心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "观点推进清楚，设问和“说白了”带出对话感；但政策解释术语密集，个别并列句需要重断气口。",
+      "script_spans": [
+        "说白了，这更像给准备花钱的人添把火，而不是让没钱的人敢花钱。",
+        "再加上券是限时、要凑单的，天然制造脉冲式消费。",
+        "但规则是汽车按价比例补、家电只补一级能效，资源明显向“换新”倾斜，不是直接填腰包。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“添把火”“信心药”等比喻贴合论点，表达克制不堆砌，核心判断清楚，具备自然可复述的句子。",
+      "script_spans": [
+        "这更像给准备花钱的人添把火，而不是让没钱的人敢花钱。",
+        "所以别把国补当成信心药。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "全文按总判断、研究解释、政策例证、个人影响和行动边界递进，结尾自然回扣信心与扩张消费。",
+      "script_spans": [
+        "为什么这么讲？有研究跟踪过数字消费券",
+        "现在的以旧换新也是这个思路",
+        "但用它来判断自己该不该扩张消费，反而容易误判。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，且能区分补贴与信心；但“买不到”“不是让没钱的人”“很可能回到原样”等判断偏绝对，需补充限定。",
+      "script_spans": [
+        "趁着补贴把老旧空调、手机换了，确实省下一笔，这是实打实的利好",
+        "补贴能买来眼前的热闹，但买不到长久的信心",
+        "补贴一停，消费习惯很可能回到原样"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d1821ef8b7bd475280ede714e8df1d5f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-fc1c68aeadce441cb97174d2a9a82478",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

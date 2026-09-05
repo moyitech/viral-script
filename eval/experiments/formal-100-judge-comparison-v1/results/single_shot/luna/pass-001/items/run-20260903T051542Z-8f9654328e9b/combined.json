@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-36b4dca5f82e4d189144e1d0eb7d7651",
+  "run_id": "run-20260903T051542Z-8f9654328e9b",
+  "trace_sha256": "83e82b6a66e9a98aaea70226c59628c3b301cbce6d9a47ccbfd9383b12030e43",
+  "created_at": "2026-09-03T12:06:56.086852Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应骑手受限的安全与效率冲突，覆盖居民、骑手和物业，并提出具体兼顾方案。",
+      "script_spans": [
+        "居民图个安静安全怕生人乱窜，骑手愁超时罚钱白跑腿",
+        "用边界停靠加内部指引就能两头顾"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 253，目标为 280，偏差率为 9.64%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "始终围绕边界停靠和内部指引推进，既解释矛盾，也提供停车、标识、休息点等可执行信息。",
+      "script_spans": [
+        "大门外划出专属停靠区",
+        "把楼栋标号做得醒目，配上遮阴休息点",
+        "比单纯拦人更聪明"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出门禁冲突，中段用两类方案推进，结尾落到可执行建议，收束自然。",
+      "script_spans": [
+        "小区门禁把骑手电动车挡在外头，居民图个安静安全怕生人乱窜，骑手愁超时罚钱白跑腿，这矛盾真没解？错，两套需求能兼顾。",
+        "提醒一句，如果你家小区正为此吵，先推动画好外接停靠线和指路牌，比单纯拦人更聪明。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答开头和方案展开都利落，但“随意穿行风险”“推动画好外接停靠线”等说法不够顺，需临场改词。",
+      "script_spans": [
+        "这矛盾真没解？错，两套需求能兼顾。",
+        "里面少了随意穿行风险",
+        "先推动画好外接停靠线和指路牌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一刀切”“两头顾”提炼清楚，“最后一百米从慌乱变有序”具体形象，便于观众复述。",
+      "script_spans": [
+        "别用一刀切禁止，用边界停靠加内部指引就能两头顾。",
+        "最后一百米从慌乱变有序。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "冲突、方案和建议的顺序清楚，但“取餐路径反而更短”缺少解释，削弱了关键因果的闭合。",
+      "script_spans": [
+        "核心结论是：别用一刀切禁止，用边界停靠加内部指引就能两头顾",
+        "取餐路径反而更短"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，提出兼顾安全与效率的方案；但“就能两头顾”“取餐路径反而更短”偏绝对，可能造成过度承诺。",
+      "script_spans": [
+        "用边界停靠加内部指引",
+        "就能两头顾",
+        "取餐路径反而更短"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c8988db128bf4acabb2f805268e9e663",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6b8159e45c7449b58da2628ae2a25ae7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-150416f94d9d4b44936611f8492721a7",
+  "run_id": "run-20260903T051645Z-92eb7fdb7d16",
+  "trace_sha256": "1a90762f7589a338cc4db67bb9c1988b370871449b582dd8e5c90d33574e7167",
+  "created_at": "2026-09-03T11:57:26.045836Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答摩天楼是否加剧热岛，并交代作用机制、边界条件和应对建议，切合题设与核心人群。",
+      "script_spans": [
+        "摩天楼不是夜间闷热的唯一反派，它是一张系统账单里醒目的一行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 701，目标为 700，偏差率为 0.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕楼高并非唯一变量展开，机制、影响、限制与治理建议均有具体信息，避免单一归因。",
+      "script_spans": [
+        "干燥地方和湿润地方，同样的楼表现不同。",
+        "真正要降温，得从材质、风道和群落规划一起动手"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用城里汗、郊外凉的反差入题，中段连续拆解机制并加边界，结尾给出可执行判断。",
+      "script_spans": [
+        "你有没有发现，城里半夜开窗还是一身汗，驱车去郊外却凉快不少？",
+        "可话说回来，要是楼高注定等于火炉，那有些低层老城区为什么同样闷得慌？",
+        "摩天楼不是夜间闷热的唯一反派，它是一张系统账单里醒目的一行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体结构清楚、口语动词不少，但技术并列和书面化长句较多，连续朗读需重断句。",
+      "script_spans": [
+        "风钻不进来，热量散不掉",
+        "大面不透水广场和地下车库排风",
+        "绿色基础设施和智能材料虽有效，却卡在技术成本和监管缺口上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“吸饱太阳光、吐热”和“系统账单里醒目的一行”形象准确，帮助观众记住机制与结论。",
+      "script_spans": [
+        "白天吸饱太阳光，夜里慢慢往外吐热",
+        "它是一张系统账单里醒目的一行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，随后按作用机制、边界条件、现实影响和应对方案推进，结尾自然回扣核心判断。",
+      "script_spans": [
+        "先说它怎么起作用。",
+        "可话说回来，要是楼高注定等于火炉，那有些低层老城区为什么同样闷得慌？",
+        "真正要降温，得从材质、风道和群落规划一起动手"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "明确区分摩天楼作用与整体热岛成因，补充气候、密度和规划边界，无煽动或绝对承诺。",
+      "script_spans": [
+        "摩天楼不是夜间闷热的唯一反派，它是一张系统账单里醒目的一行"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-40295fa6029e4df789511ff425cb848c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e4de33a6ff2b473dab98aebabfe87594",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

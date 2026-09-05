@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-508c1ba4fd5b4ab1b301dbf342b967a7",
+  "run_id": "run-20260902T145146Z-ede3ae794e0f",
+  "trace_sha256": "a7057bd352a392a87351d170c9c34e7c01ef876b1cab08beeffe891260fcdaab",
+  "created_at": "2026-09-03T14:27:46.669698Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答消费者确实在买单，兼顾标准分裂与欧盟干预两侧，抽屉里的线直击普通用户痛点。",
+      "script_spans": [
+        "消费者确实在买单，但欧盟立规矩统一接口，能省下这块花销。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，隐形税机制、2024时间表、强制取舍与自保建议各单元层层推进，有据可带走判断方法。",
+      "script_spans": [
+        "从2024年底开始，小设备必须用USB-C口，笔记本慢一点，2026年才跟上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句以线对不上加隐形税立钩，中段从协议、藏价到欧盟时间表持续兑现，结尾问句由多问一句自然长出。",
+      "script_spans": [
+        "换手机线又对不上，标准分裂正收你隐形税。",
+        "当标准变成阵营游戏，每根线都在悄悄扣钱，下次挑新品，你会先盯接口吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和'抓瞎''续费'等活词撑起底子，但'让买这类货''流动难一直躲'两处明显卡嘴需重断，封顶2分。",
+      "script_spans": [
+        "出国带错线就抓瞎，家里旧头子退不掉",
+        "强制统一让买这类货不用另购线",
+        "但世界在流动难一直躲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "隐形税、山头、续费、扣钱一以贯之服务论点，别替别人的标准战争续费离稿仍可复述，修辞克制不喧宾。",
+      "script_spans": [
+        "别替别人的标准战争续费",
+        "抽屉里塞满各种线，这笔钱直接花在转接头，也可能悄悄藏进设备价格"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "四段各司其职，机制、取舍、局限递进清晰，结尾每根线都在扣钱回扣开头隐形税并重提问设。",
+      "script_spans": [
+        "强制统一是种取舍：厂商少点自由，你少花钱。",
+        "当标准变成阵营游戏，每根线都在悄悄扣钱，下次挑新品，你会先盯接口吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制、有取舍说明，无明确违规；但\"隐形税\"\"每根线都在悄悄扣钱\"属夸大修辞，\"开销最终贴进标价\"归因过满，宜补边界。",
+      "script_spans": [
+        "强制统一是种取舍：厂商少点自由，你少花钱",
+        "也可能悄悄藏进设备价格",
+        "标准分裂正收你隐形税",
+        "这些开销最终贴进标价，你买时没察觉",
+        "每根线都在悄悄扣钱"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-907b5170c582464f8631949c8510e31a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

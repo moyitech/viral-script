@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-8affeb5d4d9b4a1b902f8d12f204861e",
+  "run_id": "run-20260902T144435Z-c30a80bfd481",
+  "trace_sha256": "132a322ddc97d90a51efca229b4d24d53329e08324512eaf11b164cf42a68ada",
+  "created_at": "2026-09-03T11:45:19.348080Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头明确区分短期与长期，随后解释企业端机制，并落到普通人和小商家的具体影响，完整回应题设。",
+      "script_spans": [
+        "短期可能更狠，长期未必。",
+        "近期同款商品更便宜，你能捡漏省钱",
+        "可小商家利润更薄，街边店更难熬"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 455，目标为 450，偏差率为 1.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕低价竞争的时间变化，供给冲击、渠道成本、政策方向和消费后果彼此推进，信息增量充足。",
+      "script_spans": [
+        "财新调研过，这轮转内销撞上低需求加高竞争。",
+        "建渠道要花钱，重新做包装换标签也费钱，企业想快回本，往往只能先降价甩。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用价格战反问立刻抛出判断，中段推进短期到长期，结尾落到消费取舍，追看动力完整。",
+      "script_spans": [
+        "外贸转内销，低价混战会更狠还是更弱？",
+        "等外贸厂摸清国内喜好，低价尾单可能变定制款。",
+        "选便宜还是选合适，反倒费神。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和生活化举例好读，但“低需求加高竞争”等压缩搭配、尾单句式会让朗读临时卡顿。",
+      "script_spans": [
+        "现在单子黄了，货堆在库里。",
+        "这轮转内销撞上低需求加高竞争",
+        "外贸尾单尺寸标准未必合国内习惯"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“生产线总得喂饱”“先甩货回血”形象易懂，“低价尾单可能变定制款”形成自然记忆点，修辞不过量。",
+      "script_spans": [
+        "生产线总得喂饱。",
+        "先甩货回血。",
+        "低价尾单可能变定制款。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按短期冲击、长期机制、消费影响递进，主线清楚；但“市场能吞吐”到“错开价位”、以及政策方向到长期缓和，因果桥都偏弱。",
+      "script_spans": [
+        "海外客不要，只能国内找补，价能低就低。",
+        "但咱们超大规模市场能吞吐，厂子慢慢建渠道就会错开价位。",
+        "政策也在推内外贸一体，并非权宜。这就给长期缓和留了空间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体判断较克制，但“海外客不要、只能国内找补”等绝对化归因，且“财新调研过”易造成来源误导。",
+      "script_spans": [
+        "短期可能更狠，长期未必",
+        "海外客不要，只能国内找补"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8a2ca61fd1814e919d3bff283c8c9065",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-53eb97003b4f4ff78c481bb52f5f37ad",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

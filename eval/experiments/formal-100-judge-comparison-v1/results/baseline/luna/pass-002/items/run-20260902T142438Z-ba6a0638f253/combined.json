@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-75ffac6e83dd4c5798b0761f7396e73a",
+  "run_id": "run-20260902T142438Z-ba6a0638f253",
+  "trace_sha256": "82a31ca845a73664f9f77d4f08854c2f2a80eb6464d307c356478ff7971fa25e",
+  "created_at": "2026-09-03T12:21:43.087723Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面呈现怀念与商业滥用两侧，并落到标识、同意和心理影响，切题完整。",
+      "script_spans": [
+        "亲人出于怀念小范围听听，是温柔补位；拿去编遗言商用，可能踩伦理线。",
+        "你听到的，只是你想要的她。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从使用场景、合成机制讲到标识规则、家属同意和心理风险，信息单元持续推进，判断依据较具体。",
+      "script_spans": [
+        "传段录音，算法一遍遍学她怎么换气怎么停顿，再按你写的词，合成没说过的话。",
+        "你想留念想，挑带标识的正规服务，声纹取材要家属同意。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用逝者声音与安慰冒犯的冲突钩住人，中段推进边界和标识问题，结尾追问自然收束。",
+      "script_spans": [
+        "你听见逝去妈妈的声音在笑，这到底是安慰还是冒犯？",
+        "亲人出于怀念小范围听听，是温柔补位；拿去编遗言商用，可能踩伦理线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "情绪开场和收束自然，但中段有多处压缩式表达，需重断句或换词，影响连续口播。",
+      "script_spans": [
+        "想再听句“吃饭没”或“生日快乐”，这种心情我懂。",
+        "你听到的，只是你想要的她。",
+        "技术本身中性，切菜还是伤人看人。",
+        "人一听就知机器仿，不是本人回来。",
+        "私家人拿录音建模自己听，常不强标，规矩外留点哀悼空间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照都服务观点，尤其“模仿不了脾气”简洁有力，能脱离上下文被观众复述。",
+      "script_spans": [
+        "技术能模仿声调，模仿不了脾气。",
+        "你听到的，只是你想要的她。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按情境、技术、规则、建议推进，但“机器仿”“规矩外”等表达拗口，标识义务与私人使用边界也未交代清楚。",
+      "script_spans": [
+        "亲人出于怀念小范围听听，是温柔补位；拿去编遗言商用，可能踩伦理线。",
+        "人一听就知机器仿，不是本人回来。",
+        "私家人拿录音建模自己听，常不强标，规矩外留点哀悼空间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体讨论克制，但把标识义务说成普遍适用，且对私人使用的边界表述可能误导。",
+      "script_spans": [
+        "拿去编遗言商用，可能踩伦理线。",
+        "这类合成音频必须加显式标识",
+        "私家人拿录音建模自己听，常不强标，规矩外留点哀悼空间。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6269ebfb7e9149818715264059318528",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,158 @@
+{
+  "evaluation_id": "combined-2768f644cdc544e6a047b1d57a1121c9",
+  "run_id": "run-20260902T142211Z-79381c50b446",
+  "trace_sha256": "3f8da6150009664a6dd7f8606ec52fdb414741b7633b8a60b7a3e7360d5480cf",
+  "created_at": "2026-09-03T13:45:59.697197Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即亮明两侧，通篇围绕题设二元作答，落点对准普通家长，结尾回扣分注意力，人群与痛点命中。",
+      "script_spans": [
+        "AI助教进教室，有的娃被喂饱，有的娃被甩下。",
+        "它确实能因材施教，也藏着放大差距风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 441，目标为 450，偏差率为 2.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，从复制老分层到偏见生成再到家庭影响层层推进，关键论断均有资料支撑，仅个别句轻微重复。",
+      "script_spans": [
+        "过去得分高的多给拓展题，以为因材施教，实则在复制老分层。",
+        "算法偏见在数据和训练里滚雪球，不是单纯技术故障，而是把过去不平等又学一遍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字反差钩子立住，中段设问与场景层层兑现，结尾问句自然生长；仅引用句稍平。",
+      "script_spans": [
+        "AI助教进教室，有的娃被喂饱，有的娃被甩下。",
+        "问题出在哪？它真不是中立陪练，翻旧成绩单挑人教。",
+        "当算法比老师更会讲题，谁来接住分心的小孩？",
+        "研究综合发现公平获取本是难题，风险真存在。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有节奏、比喻鲜活，但“取舍是机器给效率人补温度”“全扔屏幕鸿沟定型”等压缩句需临时重断句，封顶2分。",
+      "script_spans": [
+        "AI助教进教室，有的娃被喂饱，有的娃被甩下。",
+        "它真不是中立陪练，翻旧成绩单挑人教",
+        "政策要求普惠和个性培养统一，取舍是机器给效率人补温度。",
+        "家长陪着用差距可放缓，全扔屏幕鸿沟定型。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻贴切服务理解，喂饱甩下与优等生教优等生皆可复述，收尾一问成记忆点，无堆砌。",
+      "script_spans": [
+        "AI助教进教室，有的娃被喂饱，有的娃被甩下。",
+        "好比优等生教优等生，差生错被忽略。",
+        "当算法比老师更会讲题，谁来接住分心的小孩？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线可跟随、设问过渡清楚，但政策取舍句衔接生硬，家庭补位即差距被填平的因果偏跳，经不起细问。",
+      "script_spans": [
+        "那它怎么放大差距？算法偏见在数据和训练里滚雪球",
+        "政策要求普惠和个性培养统一，取舍是机器给效率人补温度。",
+        "家里能课外补位，差距被填平"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体讨论克制，有风险提示与家长建议，但“差生错被忽略”“鸿沟定型”等标签化绝对化归因需加边界。",
+      "script_spans": [
+        "它确实能因材施教，也藏着放大差距风险",
+        "家长得留心娃是否被冷落",
+        "好比优等生教优等生，差生错被忽略",
+        "家长陪着用差距可放缓，全扔屏幕鸿沟定型",
+        "以为因材施教，实则在复制老分层"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-306031424c7b46ba9378b162f6d1b244",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-548cceef819148119baa2a45a9e3c5b5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

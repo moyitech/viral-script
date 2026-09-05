@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-24ccdb63b4334f079a3209a3acf38ce6",
+  "run_id": "run-20260903T051605Z-3a285ab8bc6e",
+  "trace_sha256": "d35326ff04055d8dfca796b7a70d8fde3c01fa2afede0392efdba49368a44ec7",
+  "created_at": "2026-09-03T14:15:05.791497Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问到结尾作答均扣住题设，骑手、平台、用户两侧冲突与消费者处境全覆盖。",
+      "script_spans": [
+        "极端天气下的准时承诺该留弹性，硬卡时间点对骑手、平台、用户都是双输",
+        "准时承诺不必废除，但得装上天气开关"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 490，目标为 450，偏差率为 8.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策松动与高温订单研究两处事实均扎实，由事实推进到解释与可执行建议，增量具体。",
+      "script_spans": [
+        "北京近期推动主要外卖平台试行“红灯停表”，等红灯的时间不计入考核",
+        "四十度极端高温的午高峰订单能涨两成以上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头暴雨倒计时对推车直接立冲突，中段红灯停表与高温订单数据层层兑现，结尾建议与安全线金句由正文自然收出余味。",
+      "script_spans": [
+        "暴雨天手机倒计时还在跳，骑手却在积水里推车。",
+        "四十度极端高温的午高峰订单能涨两成以上。",
+        "你躲开了烈日，骑手却替你走进烈日"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音落点清楚，“死磕”“抠掉”等词接地气，通篇可照读不改，无连续拗口片段。",
+      "script_spans": [
+        "暴雨天手机倒计时还在跳，骑手却在积水里推车。",
+        "所以准时承诺不必废除，但得装上天气开关。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "秒表赛跑、天气开关等比喻贴切克制且服务理解，烈日对仗句离开上下文仍可复述，全篇无炫技堆叠。",
+      "script_spans": [
+        "把配送员逼成和秒表赛跑的机器",
+        "准时承诺不必废除，但得装上天气开关。",
+        "你躲开了烈日，骑手却替你走进烈日"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "两处设问式过渡自然，风险转移论证有因果桥，结尾回扣开头判断，层层递进。",
+      "script_spans": [
+        "看看规则层面的松动",
+        "你躲开了烈日，骑手却替你走进烈日",
+        "所以准时承诺不必废除，但得装上天气开关"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "兼顾骑手、平台与用户三方，政策与数据表述均有出处，建议温和有边界，无煽动、夸大或误导。",
+      "script_spans": [
+        "准时承诺不必废除，但得装上天气开关",
+        "把骑手还原成会淋雨会中暑的人",
+        "少一次催单，可能就少一场本可避免的冒险"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2b953bc71de145589567acdd1a50ecd7",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f19c94de182b4e1aa465692b131a9bc9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-616f5035d40a471e8d630488ef2d3160",
+  "run_id": "run-20260902T143725Z-6a9d4526ef21",
+  "trace_sha256": "02b4730c007e036a8efb0cf890f38c4e7b2f7967b32f0c7fa7dd636e38c99258",
+  "created_at": "2026-09-03T14:30:43.352885Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答'有人多花有人省'，结尾回扣'总支出未必涨'，题设两侧与普通观众痛点全程覆盖。",
+      "script_spans": [
+        "你暗想更贵？不一定，有人多花有人省。",
+        "可能接受稍高价；但很多人开始比价，追求质价比。",
+        "所以低价承诺退潮，总支出未必涨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "新规影响、首问负责、情境唤起、比价分化各自推进，均与引用相符，末尾还给出可操作的判断方法。",
+      "script_spans": [
+        "办法要求首问负责，东西出问题先赔你",
+        "学术上叫情境唤起",
+        "小黄车点开别光看划价，拉详情比历史价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即设反差悬念；中段三问三转，层层兑现；结尾之问由正文自然生长，不生硬。",
+      "script_spans": [
+        "你刚划开直播间，主播没喊全网最低",
+        "可是冷静就能少花？也不一定",
+        "我是真缺它，还是怕错过那个价？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有对话感，朗读大体顺；但“紧逼感弱了”“按自己需求停”两处拗口需改词，上限2分。",
+      "script_spans": [
+        "以前主播拿最低价当饵，现在饵没了，价签自己说话。",
+        "小黄车点开别光看划价，拉详情比历史价。",
+        "不买就亏的紧逼感弱了",
+        "风往哪吹，你按自己需求停。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "以饵喻最低价、价签自己说话，贴合新规又易复述；停两秒之问离开上下文仍可传播；修辞克制，无堆砌炫技。",
+      "script_spans": [
+        "以前主播拿最低价当饵，现在饵没了，价签自己说话",
+        "手指要点付款前，停两秒：我是真缺它，还是怕错过那个价？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "两处设问承上启下，因果桥清楚，结尾自然回扣开头之问；仅收尾双问稍有重复，不伤主线。",
+      "script_spans": [
+        "那是不是就该多花钱？先别急。",
+        "可是冷静就能少花？也不一定。",
+        "手指要点付款前，停两秒：我是真缺它，还是怕错过那个价？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "通篇用'不一定''未必''可能'留余地，新规归因有据，不夸大不引战，导向安全。",
+      "script_spans": [
+        "你暗想更贵？不一定，有人多花有人省。",
+        "所以低价承诺退潮，总支出未必涨。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1193dd7989314d8aadf4b287df20b385",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

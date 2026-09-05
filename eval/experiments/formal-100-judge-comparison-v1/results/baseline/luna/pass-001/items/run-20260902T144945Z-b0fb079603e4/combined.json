@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-6101ebdb06064134b8dde44561a121ba",
+  "run_id": "run-20260902T144945Z-b0fb079603e4",
+  "trace_sha256": "55d59df86ed1b85201a224857f971eea699d0ef3da2d17cc442bd1267f351c97",
+  "created_at": "2026-09-03T11:47:01.704312Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 2,
+      "reason": "紧扣普通人入行与岗位错配，但只说“能创一些”，没有给出岗位规模或可核验的数量答案。",
+      "script_spans": [
+        "你正想考无人机证赚钱，可重庆飞手就业率掉四成",
+        "能创一些，但没传说中那么香"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 277，目标为 280，偏差率为 1.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕岗位增量与供需错配展开，政策滞后、地域差异、持证过剩和入行建议层层增加判断信息。",
+      "script_spans": [
+        "招人第三年才明显变多。东部数字化公司招得勤，国企内地慢些",
+        "可一线操控员岗位，全国说缺口上百万。就像重庆局部却已经挤爆了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用就业率反差立刻设问，中段持续展开供需错配，结尾落到避坑建议，推进和收束都自然。",
+      "script_spans": [
+        "你正想考无人机证赚钱，可重庆飞手就业率掉四成。",
+        "一边喊缺人一边有人没活干。",
+        "别急着砸钱交学费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、反问和建议让整体能读，但“国企内地”“重庆局部”等压缩句式连续出现，朗读时需临时改词。",
+      "script_spans": [
+        "能创一些，但没传说中那么香，一边喊缺人一边有人没活干。",
+        "普通干活的人",
+        "国企内地慢些",
+        "就像重庆局部却已经挤爆了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一边喊缺人一边有人没活干”把供需错配说得直观，结尾“别急着砸钱”也有复述价值。",
+      "script_spans": [
+        "一边喊缺人一边有人没活干。",
+        "持证的人比单子多不少。",
+        "别急着砸钱交学费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有提问、对比和建议，主线可跟随；但从培训班增多直接推到盲目入行，因果不足，局部与全国的关系也解释不够。",
+      "script_spans": [
+        "像农用植保巡检真缺熟手，但乱考证未必能接得到单",
+        "这两年考执照的培训班遍地开花，可见盲目入行的人真多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体是在提醒观众别盲目考证，建议也较稳妥；但“掉四成”“缺口上百万”“挤爆了”等说法缺少口径和限定，易造成夸大误导。",
+      "script_spans": [
+        "别急着砸钱交学费。",
+        "可见盲目入行的人真多。",
+        "就像重庆局部却已经挤爆了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-08f66697470d4896aa4983b4f0061864",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-79b57966f4a44650982c79d454511de7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

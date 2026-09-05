@@ -1,0 +1,168 @@
+{
+  "evaluation_id": "combined-bbe544d452d9401ea784973d54bbb6f6",
+  "run_id": "run-20260903T051653Z-0ad81b77525e",
+  "trace_sha256": "2f629b2937e8ec4c9e2ebd97c86fd0cc87fb7a5f6e08749868b73d97dbdcfca8",
+  "created_at": "2026-09-03T14:08:19.767560Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛题设之问，正面给出“没整锅端走但切走首屏利益”的判断，危害与边界两侧都覆盖，结尾落到普通站长。",
+      "script_spans": [
+        "生成式搜索没有把全网内容整锅端走，但它把原本属于网站的首屏利益切走了一块",
+        "可见技术截取有边界，规则还在拉扯，不是单向掠夺"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 823，目标为 700，偏差率为 17.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题紧扣生成式搜索与网站流量，机制、两组数据、边界与对策层层推进，观点与事实相互支撑，增量具体不空转。",
+      "script_spans": [
+        "搜索对多数大型出版商贡献了外部流量的两到四成",
+        "被AI摘要覆盖的页面流量下滑大约一成半",
+        "纯定义类、产品总结容易被吃掉，实操经验类却可能借引用翻身。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头熬夜干货被凝成四行摘要，冲突具体抓人；中段判断、数据与反转持续兑现钩子；结尾护城河余味由正文自然长出。",
+      "script_spans": [
+        "你熬通宵写的干货，在搜索引擎里被人工智能凝成四行摘要",
+        "这不是算法小感冒，是答案替代链接的结构转变",
+        "让自己在AI给出的答案里留个名，才是普通站长的下一个护城河"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数短句顺口有画面，但不留出处存在感、跨语言研究测算等处需临时换词重断，中段偏书面讲解。",
+      "script_spans": [
+        "你想，原本就靠这块引荐养团队，前端突然被截走一大截，团队运转就出问题。",
+        "不是不点链接就全灭，而是谁进答案谁说话",
+        "可恰恰因为只留结论不留出处存在感，原站的品牌积累被悄悄稀释",
+        "一项针对公开百科的跨语言研究测算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "整锅端走与切走一块把边界讲得形象，答案替代链接、谁进答案谁说话均可脱离原文复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "生成式搜索没有把全网内容整锅端走，但它把原本属于网站的首屏利益切走了一块",
+        "这不是算法小感冒，是答案替代链接的结构转变",
+        "谁进答案谁说话",
+        "让自己在AI给出的答案里留个名，才是普通站长的下一个护城河"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立判断再举证，以问句“任人白拿吗”自然转折引出边界，结尾回扣开头判断，段落功能清晰，因果有桥。",
+      "script_spans": [
+        "那网站内容真的就任人白拿、毫无还手之力了？咱们把边界摊开说。",
+        "内容没被搬空，但靠搜索被动等客的时代确实翻篇了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "对流量影响留有余地，主动澄清“归零”传言，无煽动夸大或无据承诺，表述安全公允。",
+      "script_spans": [
+        "平台生成摘要时通常仍挂着来源链接，版权和爬虫协议也没作废",
+        "可见技术截取有边界，规则还在拉扯，不是单向掠夺，只是分配权挪了位置",
+        "被AI摘要覆盖的页面流量下滑大约一成半，和“归零”传言差得远"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 823,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.1757142857142857
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e64199df91284e9da06143146d73aeea",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-0e53be00ed0149d1b76ae7ba8e2e6bac",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

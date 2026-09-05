@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-f8f8dc13e88d4f82ac8e2eb343adfc3e",
+  "run_id": "run-20260902T142907Z-3166f8e9d6e3",
+  "trace_sha256": "05c398db95c57d6fd23ad7d6be1c2713304c89e09088e2539d046ff4e09c4c88",
+  "created_at": "2026-09-03T14:24:28.506224Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答为何反感，中段补齐企业动机与就业市场两侧，结尾行动回扣求职者痛点，全篇未跑题。",
+      "script_spans": [
+        "为啥越来越反感？因为面议把本该先讲清的价码藏后头",
+        "求职者怕的不是谈薪，是连谈的基准都被人攥着"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "透明度研究、涨薪预期差距、五部门监管各自推进论证，反例边界再补一刀，单元多且少注水。",
+      "script_spans": [
+        "有研究盯着薪酬决定过程看，发现透明比合理更抓人",
+        "员工想跳个槽涨百分之十五，企业往往只给一小部分"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首20字即抛出双向冲突与利益点，中段以场景、研究、数据、监管层层兑现钩子，结尾行动建议由正文自然长出。",
+      "script_spans": [
+        "薪资面议坑了求职者时间，企业躲开比价还省事？",
+        "下次看到面议，先抛个区间问题，再决定要不要花半天跑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有对话感，但“再聊本正常”“接到压实内容真实的责任”两处需换词重断，止步2分。",
+      "script_spans": [
+        "你不写清楚，我就不点开，这是普通人能做的反击。",
+        "先圈简历再聊本正常",
+        "都接到压实内容真实的责任"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "盲盒、攥基准等比喻克制且服务理解，怕的不是谈薪、不点开等句离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "求职者怕的不是谈薪，是连谈的基准都被人攥着。",
+        "当招聘页只写面议，等于先邀请你玩一场盲盒游戏。",
+        "你不写清楚，我就不点开，这是普通人能做的反击。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承接推进，反例单独切分别和藏薪混了，结尾花半天跑回扣开头白忙三天，因果桥齐全。",
+      "script_spans": [
+        "那企业为什么一句面议就让咱心里没底？这里头有取舍",
+        "下次看到面议，先抛个区间问题，再决定要不要花半天跑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "批评面议藏薪但主动区分合理面议与压价，监管与数据表述克制有据，无煽动夸大。",
+      "script_spans": [
+        "当然，反例有一说一：销售或高阶职位薪资本来就看业绩和资源，写死反而僵，面议能谈出合理价",
+        "员工想跳个槽涨百分之十五，企业往往只给一小部分",
+        "多数普通招聘挂面议，可能只想把人钓来再压价"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3b0005b8a5f144588c8340ccd810f19c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-450c9e6c2e2742a4aa4e33a69da947c5",
+  "run_id": "run-20260902T144241Z-24c927ad6676",
+  "trace_sha256": "ba4975a639d6fee4aa921e6cb083948c1f25d0276bf52dbf2b32971122d86e98",
+  "created_at": "2026-09-03T13:48:10.620616Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛核心矛盾，结尾给判法，出力与出钱两侧兼答，直指普通多子女家庭痛点。",
+      "script_spans": [
+        "姐请了半年假守床前，你只微信转了钱，这算公平？公平不是刀切两半。",
+        "付出不同就得摊亮说。公平底是别装睡。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 709，目标为 700，偏差率为 1.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律底线、家庭会议、长护险三单元各自推进，事实与折中办法互证，无编造痕迹。",
+      "script_spans": [
+        "老年人权益保障法写子女要供养照料。它没说兄妹必须轮得一般齐。",
+        "每人报自己能出几小时、几多钱。把爸换尿管次数、粥钱列明白。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首二十字即抛姐弟付出反差之问，中段法律、家庭会、长护险层层兑现，结尾余味自然生长。",
+      "script_spans": [
+        "姐请了半年假守床前，你只微信转了钱，这算公平？",
+        "法律不替你记明细，只兜住老人不摔地",
+        "老人不求平，求有人疼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "通篇短句有节奏、对话感强，但“儿女里女儿”“老过法子”两处卡嘴，需临时换词重断，封顶2分。",
+      "script_spans": [
+        "法律不替你记明细，只兜住老人不摔地",
+        "有研究说儿女里女儿多管陪护儿子管钱",
+        "只是老过法子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "比喻贴切且有可复述句，但几乎句句造金句，结尾连排刻意对仗，超出点到为止的分寸。",
+      "script_spans": [
+        "别让算盘声盖了妈的呼噜声",
+        "她手糙了，你钱包瘪了",
+        "公平底是别装睡。付出不同是命，认账是选。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "三问过渡衔接自然，账的意象贯穿首尾，结尾回扣开头与题设，因果桥完整。",
+      "script_spans": [
+        "家里怎么破？挑个周五夜视频连通，别等火冒了。",
+        "你家那本账，终究得活人自己合上。老人不求平，求有人疼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法条与长护险数据有据且留余地，性别分工引研究并声明“不是法”，无煽动夸大或误导承诺。",
+      "script_spans": [
+        "有研究说儿女里女儿多管陪护儿子管钱。这路数不是法，只是老过法子",
+        "这险种还在铺，没全亮灯，方向对",
+        "真要闹僵，能力大的多担是常态"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-31ec7caa46734dad85354ef1859c1ecc",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-595f02ec7082494a8238ada903500713",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

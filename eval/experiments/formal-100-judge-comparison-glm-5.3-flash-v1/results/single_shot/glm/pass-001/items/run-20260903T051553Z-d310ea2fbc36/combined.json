@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-a7cf8dfd947b43cda5c0f5bc51270ae6",
+  "run_id": "run-20260903T051553Z-d310ea2fbc36",
+  "trace_sha256": "c8453ea5fc9de1783bfa71c6febfe73feb970d4021dc3f304e1a7f0a22e0252e",
+  "created_at": "2026-09-03T14:09:39.958440Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即摆出欠费与隐私两侧冲突，正文给出明确判断，被点名者与催款者双方人群均有落点。",
+      "script_spans": [
+        "催缴理由再正当，也不是把别人姓名丢进群里公开晾晒的正当借口",
+        "如果你是被点名那位，沉默不是必选项，你有权请对方删掉信息并澄清"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 470，目标为 450，偏差率为 4.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题聚焦催缴有理不等于可公示，法律机制、平台责任、双方对策层层推进，观众可带走具体做法。",
+      "script_spans": [
+        "姓名和具体的欠费事实绑在一起，就构成了可识别的特定个人状况",
+        "正确路子是交物业转达、走业主表决，或者真到了份上找法院"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头欠费与实名公示冲突直接抛出并附两难设问，中段法律与平台信息层层兑现钩子，结尾金句由正文自然生长。",
+      "script_spans": [
+        "物业费拖着没交，有邻居在业主群里直接甩出你的全名催款",
+        "这种事让你觉得是欠债还钱天经地义，还是个人隐私被冒犯了？",
+        "邻里群是方便说话的，不是方便审判的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数段落短句好读、结尾有力，但中段两处抽象堆叠朗读需临时改词重断。",
+      "script_spans": [
+        "邻里群是方便说话的，不是方便审判的",
+        "就构成了可识别的特定个人状况，想去触碰和处理它，必须踩在合法事由的框架里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“公开晾晒”“公示板”等比喻服务主题，“邻里群是方便说话的，不是方便审判的”离开上下文仍可复述，无堆砌。",
+      "script_spans": [
+        "催缴理由再正当，也不是把别人姓名丢进群里公开晾晒的正当借口",
+        "邻里群是方便说话的，不是方便审判的。",
+        "为了几笔物业费把邻居推上公开栏，最后赔进去的可能是自己的体面和法律责任。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "判断、机制、落地、回扣四段功能清晰，民事主张无公开后门的因果桥到位，结尾收束有力。",
+      "script_spans": [
+        "你用群聊当公示板，不仅可能撞上隐私侵权的墙，也违背了平台对信息发布的规范",
+        "邻里群是方便说话的，不是方便审判的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述公允有边界，'可能撞上隐私侵权的墙'留有余地，给出合法替代路径，无煽动夸大或无依据承诺。",
+      "script_spans": [
+        "催缴理由再正当，也不是把别人姓名丢进群里公开晾晒的正当借口",
+        "不仅可能撞上隐私侵权的墙，也违背了平台对信息发布的规范",
+        "正确路子是交物业转达、走业主表决，或者真到了份上找法院，别轻易用群公告代替法律文书"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-31239ac76bf746319d1808b51f059fea",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-210b21f14c014ae79f189c18b2908363",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

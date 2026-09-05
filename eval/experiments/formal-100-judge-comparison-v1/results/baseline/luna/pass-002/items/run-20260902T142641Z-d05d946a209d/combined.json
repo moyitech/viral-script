@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-c9dbfd1b15224fac9bf4e798fc692927",
+  "run_id": "run-20260902T142641Z-d05d946a209d",
+  "trace_sha256": "9f38b5cf090486584630ecf5421cc5d09b2b51f13013a35a01c21c7b22362460",
+  "created_at": "2026-09-03T12:15:42.417950Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应收益缩水后的去向，兼顾流动性与收益性，并落到普通家庭的分层配置。",
+      "script_spans": [
+        "其实啊，这题不是二选一，而是把闲钱拆两半。一半接着放活钱，保你随时用；另一半挪去锁点利，抵消通胀。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从利率下行、监管约束讲到产品比较和应急配置，数据、风险与行动建议都有推进。",
+      "script_spans": [
+        "为啥收益缩水？你看央行二季度的报告，里面说货币市场隔夜利率均值只有1.31%。",
+        "今年发行的三年期利率1.63%，五年期1.70%，比活钱那1字头高出一截。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出收益缩水与流动性冲突，中段层层补充原因、选项和限制，结尾追问自然留下余味。",
+      "script_spans": [
+        "闲钱放现金类收益掉到1字头，挪走怕锁死，不动又亏息。",
+        "落到实际，你先算家里几个月开销，比如三四个月工资留活钱应急。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答和生活化表达，读起来不难；但监管段术语并列、结尾比喻拗口，需重断句，未达全程顺口。",
+      "script_spans": [
+        "啥意思？就是金融机构之间借一夜钱，利息就这么低。",
+        "要求投资范围收窄、久期限制，单一银行存单占比也有限",
+        "你是要伸手就破的方便，还是肯站几年等那点利差？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且帮助理解，‘两边分开，心就不慌’和‘薄得像层窗纸’都自然易复述，没有修辞堆砌。",
+      "script_spans": [
+        "两边分开，心就不慌。",
+        "当活钱利息薄得像层窗纸"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头分层方案和后文建议衔接顺畅，但‘持有到期’后又说可提前取，概念存在冲突。",
+      "script_spans": [
+        "落到实际，你先算家里几个月开销，比如三四个月工资留活钱应急。",
+        "买了就得持有到期，提前取要扣利息，流动性差。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体风险提示较稳，但“保你随时用”“抵消通胀”偏绝对，建议补充产品边界与非个性化提示。",
+      "script_spans": [
+        "同业存单指数基金，净值每天变，不保本金，也算折中。",
+        "一半接着放活钱，保你随时用；另一半挪去锁点利，抵消通胀。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2730ffa7912947e4aab33b739caa37b3",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

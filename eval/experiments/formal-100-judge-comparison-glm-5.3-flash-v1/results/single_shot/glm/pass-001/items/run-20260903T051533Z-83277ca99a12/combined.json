@@ -1,0 +1,165 @@
+{
+  "evaluation_id": "combined-079cb43204c24baa96b991813d80bc8e",
+  "run_id": "run-20260903T051533Z-83277ca99a12",
+  "trace_sha256": "60a39f1d2502f4034558a831df20b9007a6d4289116703a446a31b2362c307de",
+  "created_at": "2026-09-03T14:11:32.052741Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点出关心与压迫的矛盾，'自愿信任扭成强制透明'正面回答为何，结尾回扣题设。",
+      "script_spans": [
+        "父母或伴侣要求你开启实时共享定位，原本出自关心却让人感到压迫",
+        "症结在于它把自愿的信任扭成了强制的透明"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 249，目标为 280，偏差率为 11.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "诊断、机制、原则、行动逐层推进，观众能带走解释框架和关闭权限的具体做法，主题不漂移。",
+      "script_spans": [
+        "当你的位置随时能被刷新，那种被无声注视的感觉会悄悄磨掉你对生活的掌控感",
+        "去手机设置里把位置权限关掉就行"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头以场景进入主题但反差落地稍晚；“家庭研究”一段说理趋平，结尾金句有余味、互动偏弱。",
+      "script_spans": [
+        "原本出自关心却让人感到压迫，症结在于它把自愿的信任扭成了强制的透明",
+        "要是真的透不过气，去手机设置里把位置权限关掉就行",
+        "健康亲密的关系里，安全感应该生于彼此尊重各自空间，而不是靠屏幕上的坐标每秒钟去确认一次存在。",
+        "不少家庭研究都指出，情感支持固然重要，但边界模糊的渗透反而会累积心理负担。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "结尾“关掉就行”接地气好读，但“强制的透明”“边界模糊的渗透”等书面表达至少两处需临时换词，限2分。",
+      "script_spans": [
+        "要是真的透不过气，去手机设置里把位置权限关掉就行",
+        "症结在于它把自愿的信任扭成了强制的透明"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“自愿的信任扭成强制的透明”点题准确；“直播坐标”“看不见的余地”两处金句自然可复述，克制不炫技。",
+      "script_spans": [
+        "把自愿的信任扭成了强制的透明",
+        "关心从来不需要用直播坐标来证明",
+        "留一点看不见的余地，才是家人能走得更远的底气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "让步句主动化解'对方并无恶意'的反驳，各段功能清晰，结尾自然回扣开头与题设。",
+      "script_spans": [
+        "即使对方绝无伤害之意",
+        "说到底，留一点看不见的余地，才是家人能走得更远的底气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "明言对方绝无伤害之意，未标签化家人；关定位建议安全可行；无煽动、夸大或确定性承诺。",
+      "script_spans": [
+        "即使对方绝无伤害之意",
+        "要是真的透不过气，去手机设置里把位置权限关掉就行",
+        "安全感应该生于彼此尊重各自空间"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 249,
+        "target": 280,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.11071428571428571
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-22498bb3470a42a4bf85cad990ef5cb4",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a8d0ed3145f640a68ca0bbd7fec5d3ed",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

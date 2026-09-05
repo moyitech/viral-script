@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-2f5955c203214f34bfcd5dff5587255c",
+  "run_id": "run-20260903T051613Z-e5f777ace89e",
+  "trace_sha256": "fb38704c9be57ca4ddf96512b75b70412c5c6e6df18e86a2497cc89e04ea512d",
+  "created_at": "2026-09-03T14:10:04.616103Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问锁定含义，结论直接作答；固收与分红两侧覆盖，切中普通投保人痛点。",
+      "script_spans": [
+        "结论先放这儿：只有白纸黑字写进现金价值的固定利益，才叫真正锁定",
+        "买之前问自己：合同里哪行字保证我拿钱？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 760，目标为 700，偏差率为 8.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "紧扣锁定主线，实现率、负面清单等论据层层推进，事实解释结论相互支撑，无编造。",
+      "script_spans": [
+        "去年行业平均分红实现率大概只有五成，部分产品甚至为零；但反例也有",
+        "监管也连续升级人身险负面清单，2026版已经拉到一百多条红线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头“怕钱毛了”痛点抓人，中段实现率数据加反例持续推进，结尾自问“哪行字保证我拿钱”由正文自然生长。",
+      "script_spans": [
+        "很多人怕钱毛了，才听进去锁定长期回报。",
+        "去年行业平均分红实现率大概只有五成，部分产品甚至为零；但反例也有",
+        "买之前问自己：合同里哪行字保证我拿钱？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句为主，有“看脸色”“哪行字拿钱”等口语点；但中段报告腔拗口，需临时改词重断句，只能两分。",
+      "script_spans": [
+        "分红险保证部分薄得多，分红看公司投资收益脸色。",
+        "意味着当年保单剩余边际都填不上履约亏损，投资端压力实实在在。",
+        "老产品因演示利率高、分母大更难达标。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“算给你看的梦”贯穿首尾、贴切不炫技，“演示利率是假设，不是承诺”离开上下文仍可复述，记忆点明确。",
+      "script_spans": [
+        "演示利益只是保险公司算给你看的梦",
+        "分红看公司投资收益脸色",
+        "演示利率是假设，不是承诺，别混淆"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结论先行、设问过渡、结尾回扣开头，因果桥完整，各段功能清晰层层递进。",
+      "script_spans": [
+        "为什么这两年锁定这个词突然火了？得从因果讲起",
+        "记住，合同里100%确定的才叫锁定，演示利益只是保险公司算给你看的梦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有'演示是假设非承诺'边界与正反数据；但'被包装成高回报'整体归因分红险，'挑固收类靠谱'未提回本前退保损失。",
+      "script_spans": [
+        "同一边界我只说一次：演示利率是假设，不是承诺，别混淆",
+        "但反例也有，今年披露的百余款新产品实现率超了百分之百",
+        "被包装成高回报的分红险",
+        "现在挑普通型寿险或年金险里的固收类，靠谱"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-35d01359b81647cf8a7617256f7c6f7b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-38825d8dc92f4aa383a50d30745f5f4f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

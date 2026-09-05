@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-3d457d9ebae74e9c8c31de9f3b69f570",
+  "run_id": "run-20260903T051630Z-f2626f12e803",
+  "trace_sha256": "8a5b6e49c0705e20a5ed21f498e7d444d2bc70510dc566f4a490a98fd27c8c9c",
+  "created_at": "2026-09-03T12:32:54.826024Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直面粮价不变与伙食费上涨的矛盾，覆盖食材结构、外食服务和家庭选择，目标观众明确。",
+      "script_spans": [
+        "粮食价格平稳和餐桌支出增加并不矛盾",
+        "越来越多双职工不在家做饭，转而外出就餐或点外卖。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息单元充足，既解释菜肉油价格波动，也拆出外食溢价、服务成本与时间机会成本，结论有具体抓手。",
+      "script_spans": [
+        "食用油等分项波动也会抵消粮食的平稳。",
+        "你付的钱里包含了厨房租金和服务员工资，本质是买休息时间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用标价没动、伙食账却变多制造反差，中段层层拆因，结尾既有余味也给出行动。",
+      "script_spans": [
+        "超市里大米白面标价没动，可你月底一算伙食账，钱却花得更多了。",
+        "下次觉得伙食费超支，先别怪粮价，翻翻账单里有多少是为人家的灶台和跑腿买单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "结构清楚、钩子有效，整体能读通；但中段有几处搭配拗口，尚未达到无需临时改词的自然口播。",
+      "script_spans": [
+        "超市里大米白面标价没动，可你月底一算伙食账，钱却花得更多了。",
+        "同样食材在外就餐溢价能达到在家做的数倍",
+        "把原粮换成自煮，是最直接的止损。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“粮仓批发刻度”和“舌尖账单”把统计口径与体感差距说得具体，“买休息时间”也形成自然记忆点。",
+      "script_spans": [
+        "统计口径里的粮食平稳，量的是粮仓批发刻度，不是你舌尖账单。",
+        "你付的钱里包含了厨房租金和服务员工资，本质是买休息时间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、展开顺序清楚，但“原粮出厂价”与“粮仓批发刻度”口径漂移，结尾“把原粮换成自煮”语义不成立。",
+      "script_spans": [
+        "你付的钱里包含了厨房租金和服务员工资，本质是买休息时间。",
+        "下次觉得伙食费超支，先别怪粮价，翻翻账单里有多少是为人家的灶台和跑腿买单。",
+        "我们看统计里的粮食，主要指原粮出厂价",
+        "统计口径里的粮食平稳，量的是粮仓批发刻度",
+        "把原粮换成自煮，是最直接的止损。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体解释较克制，也明确区分原粮与餐桌支出；但“最直接的止损”等绝对化建议易把复杂选择说成单一方案，需加条件。",
+      "script_spans": [
+        "粮食价格平稳和餐桌支出增加并不矛盾",
+        "把原粮换成自煮，是最直接的止损。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0a63153af7094ec89f66defa9d708691",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

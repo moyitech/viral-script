@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-8d1f02e134bd463ab66293e4d1d22eca",
+  "run_id": "run-20260902T144058Z-58248bf4fd1d",
+  "trace_sha256": "9cb3ee726631abf51247400f3e33d656c6c45a642df831a8e9249f4e20c9a8f8",
+  "created_at": "2026-09-03T12:18:40.833529Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应风险与收益，既讲规范和用途，也落到居民就近获得养老托育服务，核心人群明确。",
+      "script_spans": [
+        "有人怕盘活会减服务，但地方盘活闲置资产，只要规范运作，选对用途，一般不会拉低公共服务质量",
+        "改造成社区养老托育点，街坊走路就到，直接多出服务处，不用远跑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中回答盘活是否影响服务质量，用养老托育点、就近可达和改造边界提供了具体判断依据。",
+      "script_spans": [
+        "改造成社区养老托育点，街坊走路就到，直接多出服务处，不用远跑",
+        "别乱拆有保护的旧建筑，也要留足安全通道，照规划来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用空置房改托育中心制造反差，中段补充便利与合规边界，结尾追问自然延伸。",
+      "script_spans": [
+        "空置房改托育中心，公共服务反而更好？",
+        "不过动手改时得守规矩，别乱拆有保护的旧建筑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "动作化表达有画面，整体能读通；但“服务处”“省下钱和力”等搭配生硬，口播需改词。",
+      "script_spans": [
+        "扫扫地，刷刷墙，摆上桌椅板凳",
+        "直接多出服务处",
+        "省下钱和力"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“老房子干新活”和“闲房变身边服务站”具体好记，排比适量，没有盖过信息。",
+      "script_spans": [
+        "让老房子干新活",
+        "当闲房变身边服务站"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，先答疑再举例、补条件；但“本就是为了”把盘活直接等同于提效省力，因果桥仍不够。",
+      "script_spans": [
+        "有人怕盘活会减服务，但地方盘活闲置资产，只要规范运作，选对用途",
+        "不过动手改时得守规矩，别乱拆有保护的旧建筑",
+        "单位里闲着的资产搞活，本就是为了让办事更高效，省下钱和力"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有规划、安全通道等边界提醒，但“只要规范运作”便不会拉低服务质量的概括偏满，仍可能误导。",
+      "script_spans": [
+        "不过动手改时得守规矩，别乱拆有保护的旧建筑，也要留足安全通道，照规划来",
+        "只要规范运作，选对用途，一般不会拉低公共服务质量，反而能拓展服务空间"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-fea69297eb714a028b3ec8b96e75db72",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

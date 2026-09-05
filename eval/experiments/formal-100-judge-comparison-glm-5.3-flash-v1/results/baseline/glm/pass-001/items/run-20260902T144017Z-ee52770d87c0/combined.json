@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-c456350445c3457fac96cd2fc4287db8",
+  "run_id": "run-20260902T144017Z-ee52770d87c0",
+  "trace_sha256": "436b77f139c86ae1fc13f012a5aac2726e5ec6bb5843cea2697a6f5d36f21566",
+  "created_at": "2026-09-03T13:49:49.908006Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即点省钱与怕差的矛盾，两侧分述后落到普通人的挑选清单，结尾回扣取舍。",
+      "script_spans": [
+        "想省钱又保品质，挑对了就能兼顾",
+        "咱们普通人咋办？买正规厂牌，看包装贮运方式，冷冻冷藏分清楚"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 418，目标为 450，偏差率为 7.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "成本拆解、国标界定、挑选要点各自推进，事实与解释相扣，观众能带走判断方法。",
+      "script_spans": [
+        "工厂把同种菜集中做，大批量进货压低单价",
+        "今年征求意见的国标写明了，预制菜不添防腐剂"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句以八块对二十的具体价差立冲突，中段三问推进并兑现怕它差的悬念，结尾互动由半小时自由自然生长。",
+      "script_spans": [
+        "你花八块吃预制菜，比堂食省二十，却怕它差？",
+        "当标价更低时，你愿用半小时自由换这顿踏实饭吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口清楚、整体好读，但“经工业化预加工”“贮运方式”两处需临时换词，封顶2分。",
+      "script_spans": [
+        "风味稳，出餐快，价就低。",
+        "回家热透，顺手焯把青菜拌进去。",
+        "它经工业化预加工",
+        "看包装贮运方式"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，赚效率钱让出锅气、三分钟换半小时自由均离开上下文可复述，无堆砌炫技。",
+      "script_spans": [
+        "你赚工业效率的钱，让出的是堂食锅气",
+        "你花三分钟加热，换来半小时自由，口感补上钱包没瘪"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "问答式推进与首尾回扣清楚，但结尾“用半小时自由换踏实饭”与前文“换来半小时自由”换向矛盾，经不起追问。",
+      "script_spans": [
+        "为啥它便宜？",
+        "以前概念乱，现在国标帮理清",
+        "你花三分钟加热，换来半小时自由",
+        "你愿用半小时自由换这顿踏实饭吗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无违规表述，引国标有边界；但“挑对了就能兼顾”“生僻字少更稳”属未经限定建议，开头数字场景易被当实情。",
+      "script_spans": [
+        "今年征求意见的国标写明了，预制菜不添防腐剂",
+        "预算紧时，合法预制菜是省钱档口",
+        "你花八块吃预制菜，比堂食省二十",
+        "挑对了就能兼顾",
+        "表上生僻字少更稳"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-fb3fa424b7ff43a0a46f8750fca46d69",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9496dcef27fc40fe9c37fb34c0d9a608",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

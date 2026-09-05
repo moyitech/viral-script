@@ -37,7 +37,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--reasoning-effort",
-        choices=("no_think", "low", "high"),
+        choices=("no_think", "low", "high", "xhigh"),
         default="no_think",
     )
     parser.add_argument("--overwrite", action="store_true")

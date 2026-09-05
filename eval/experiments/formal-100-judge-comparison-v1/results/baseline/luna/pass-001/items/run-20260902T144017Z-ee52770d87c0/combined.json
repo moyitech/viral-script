@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-835dde97d8c54d69977495fe797d2340",
+  "run_id": "run-20260902T144017Z-ee52770d87c0",
+  "trace_sha256": "436b77f139c86ae1fc13f012a5aac2726e5ec6bb5843cea2697a6f5d36f21566",
+  "created_at": "2026-09-03T11:44:36.933937Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕低价成因、品质边界和购买方法展开，正面回应普通消费者如何在省钱与品质间取舍。",
+      "script_spans": [
+        "为啥它便宜？工厂把同种菜集中做，大批量进货压低单价。",
+        "咱们普通人咋办？买正规厂牌，看包装贮运方式，冷冻冷藏分清楚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 418，目标为 450，偏差率为 7.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中且信息单元充足，既有成本解释也有标准和购买建议；但把无防腐剂、字少等弱指标近似当成品质保障，核心增量有限。",
+      "script_spans": [
+        "层层摊薄开销。它经工业化预加工，炒炸烤煮提前完成，配料包回家只加热。",
+        "以前概念乱，现在国标帮理清。",
+        "品质咋保？今年征求意见的国标写明了，预制菜不添防腐剂。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用价格反差立刻设问，中段连续回答为何便宜、如何保质，结尾由自由话题自然落到互动。",
+      "script_spans": [
+        "你花八块吃预制菜，比堂食省二十，却怕它差？",
+        "那品质咋保？",
+        "当标价更低时，你愿用半小时自由换这顿踏实饭吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答式开头和短句有记忆点，但中段多处搭配生硬，整体还没达到自然口播。",
+      "script_spans": [
+        "你花八块吃预制菜，比堂食省二十，却怕它差？",
+        "口感补上钱包没瘪"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“让出的是堂食锅气”“三分钟换半小时自由”等记忆点，但“口感补上钱包没瘪”“省钱档口”略生硬，削弱自然度。",
+      "script_spans": [
+        "让出的是堂食锅气",
+        "你花三分钟加热，换来半小时自由",
+        "口感补上钱包没瘪",
+        "合法预制菜是省钱档口"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，低价原因、规则边界和消费建议依次展开；但“不添防腐剂”无法直接推出“品质保住”，结论的关键因果桥仍不充分。",
+      "script_spans": [
+        "为啥它便宜？工厂把同种菜集中做，大批量进货压低单价。",
+        "咱们普通人咋办？买正规厂牌，看包装贮运方式，冷冻冷藏分清楚。",
+        "品质咋保？今年征求意见的国标写明了，预制菜不添防腐剂。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且给出正规选购和贮运建议；但把相关标签和生僻字多少当成品质依据，容易误导消费者。",
+      "script_spans": [
+        "买正规厂牌，看包装贮运方式，冷冻冷藏分清楚。",
+        "配料表写“熟制后食用”的才正宗，表上生僻字少更稳。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.7916666666666666,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.375,
+    "weighted_average": 2.375,
+    "normalized_score": 0.7916666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9ba8e353a134499f81fece61e22c8835",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-113ec5eba56046c0bcacfab7dbfe13a0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

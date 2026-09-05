@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-922de52c4bcf4213822fd68cae487f20",
+  "run_id": "run-20260902T144241Z-24c927ad6676",
+  "trace_sha256": "ba4975a639d6fee4aa921e6cb083948c1f25d0276bf52dbf2b32971122d86e98",
+  "created_at": "2026-09-03T12:15:44.653703Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“如何算公平”，同时覆盖时间、金钱、照护与法律边界，并给出家庭协商办法。",
+      "script_spans": [
+        "姐陪床天数多，你出钱占比大，折中。",
+        "每人报自己能出几小时、几多钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "中心始终围绕“等价而非均分”，依次推进家庭判断、法律底线、协商清单和长护险外援，信息增量充分。",
+      "script_spans": [
+        "把爸换尿管次数、粥钱列明白。",
+        "长期护理保险正从试点推向全国铺开，已覆盖九十多城。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用陪护与转账的反差设问，中段连续切换法律、分工和外援，结尾落到有人疼，推进和余味都足。",
+      "script_spans": [
+        "姐请了半年假守床前，你只微信转了钱，这算公平？",
+        "家庭会不是审判，是找最大公约数。",
+        "老人不求平，求有人疼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句密集、停顿清楚，整体能读；但“别用出差塞责”等搭配生硬，至少需要临时换词。",
+      "script_spans": [
+        "老人要的是身边热乎，不是账本漂亮。",
+        "哥住外城多汇点，别用出差塞责。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“公平不是刀切两半”“老人不求平，求有人疼”都好记，但金句偏密，“风干了”的形象过猛，削弱克制感。",
+      "script_spans": [
+        "公平不是刀切两半。",
+        "老人不求平，求有人疼。",
+        "老人就吊在半空风干了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "由冲突转入法律、协商和外援，层次完整；但把“能力大的多担”说成法庭常态，混淆法律底线与家庭建议。",
+      "script_spans": [
+        "家庭会不是审判，是找最大公约数。",
+        "真要闹僵，能力大的多担是常态。",
+        "法官不量心跳，只量能力和钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，倡导共同照护；但“只量能力和钱”等说法过于绝对，长护险服务描述也可能误导。",
+      "script_spans": [
+        "公平不是刀切两半。",
+        "法官不量心跳，只量能力和钱。",
+        "它派护工来洗头喂饭，接走脏活。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-86b7ff5b81fc431eb3b4086fe6badb6d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

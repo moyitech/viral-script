@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-b1b4d089109a4fc4afe4c220fee4c619",
+  "run_id": "run-20260903T051721Z-01cc2458f763",
+  "trace_sha256": "259b5d193b7299c001f34e0a605cea42897febd9b10c4e0380a783e236e4f298",
+  "created_at": "2026-09-03T12:32:24.528846Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应宠物进入商场与怕动物者的双重需求，既呈现冲突，也给出分流方案，核心人群明确。",
+      "script_spans": [
+        "取舍不是二选一，是分流——明确携宠区与留白区"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕公共友好展开，兼顾商业动因、恐惧成本、法规变化、试点困境与可执行方案，信息推进充分。",
+      "script_spans": [
+        "宠物消费黏性高带流量，商家愿挂欢迎牌吸年轻客群",
+        "消费者用脚投票，规则清晰才能留住两边客人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段持续有新矛盾与方案，结尾互动自然；但前20字主要是场景铺垫，核心冲突到第二句才出现。",
+      "script_spans": [
+        "看商场标识若只写欢迎毛孩子，没提其他人怎么办，这友好差人情味。",
+        "商场贴着宠物友好贴纸，遛狗人举咖啡进进出出。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答有口播感，但多处压缩表达、搭配生硬，朗读时仍需补词或重断句。",
+      "script_spans": [
+        "她不是矫情，是真怕动物，心跳快得难受。",
+        "怕动物的人，也需在商场安心走路的权利。",
+        "规则不细商家靠自觉，终怕动物者不敢来或养宠人觉被骗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对举和比喻都服务于分流观点，“给害怕者留退路，给热爱者划跑道”画面清楚，易于复述。",
+      "script_spans": [
+        "宠物友好只讨好养宠人，就不叫公共友好，只是换拨人偏爱。",
+        "给害怕者留退路，给热爱者划跑道，让不同需求各得其所。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "场景、冲突、分流方案与结论递进清楚；但法律论证把导盲犬例外扩大为“工作犬”，概念边界不严谨。",
+      "script_spans": [
+        "取舍不是二选一，是分流——明确携宠区与留白区，标识清，牵引合规，双方都不将就",
+        "视障导盲犬是例外，法律要求公共场所让工作犬进"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导分流共处，未煽动对立或作消费承诺；但“法律要求公共场所让工作犬进”范围过宽，易造成法律误导。",
+      "script_spans": [
+        "取舍不是二选一，是分流——明确携宠区与留白区，标识清，牵引合规，双方都不将就。",
+        "法律要求公共场所让工作犬进"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2e86b67cb7f34ccb845035147f3cbef2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

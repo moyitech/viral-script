@@ -143,6 +143,50 @@ class AsyncHy3ClientTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(content, "OK")
         self.assertNotIn("max_tokens", completions.calls[0])
 
+    async def test_complete_sends_xhigh_as_top_level_parameter(self) -> None:
+        completions = RecordingCompletions()
+        client = AsyncHy3Client(
+            self.settings,
+            client=FakeAsyncOpenAI(completions),
+        )
+
+        await client.complete(
+            [ChatMessage(role="user", content="hello")],
+            reasoning_effort="xhigh",
+        )
+
+        request = completions.calls[0]
+        self.assertEqual(request["reasoning_effort"], "xhigh")
+        self.assertNotIn("extra_body", request)
+
+    async def test_complete_sends_max_as_top_level_parameter(self) -> None:
+        completions = RecordingCompletions()
+        client = AsyncHy3Client(
+            self.settings,
+            client=FakeAsyncOpenAI(completions),
+        )
+
+        await client.complete(
+            [ChatMessage(role="user", content="hello")],
+            reasoning_effort="max",
+        )
+
+        request = completions.calls[0]
+        self.assertEqual(request["reasoning_effort"], "max")
+        self.assertNotIn("extra_body", request)
+
+    async def test_complete_rejects_unknown_reasoning_effort(self) -> None:
+        client = AsyncHy3Client(
+            self.settings,
+            client=FakeAsyncOpenAI(),
+        )
+
+        with self.assertRaisesRegex(ValueError, "xhigh"):
+            await client.complete(
+                [ChatMessage(role="user", content="hello")],
+                reasoning_effort="invalid",
+            )
+
     def test_normalizes_and_aggregates_provider_reported_token_usage(self) -> None:
         first = llm_call_usage(
             ChatResponse(

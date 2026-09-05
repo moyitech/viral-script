@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-f8153bebd6494f9980419ac0fabacb9c",
+  "run_id": "run-20260902T143725Z-6a9d4526ef21",
+  "trace_sha256": "02b4730c007e036a8efb0cf890f38c4e7b2f7967b32f0c7fa7dd636e38c99258",
+  "created_at": "2026-09-03T11:45:55.459786Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕总支出是否上升，分别解释涨价与冲动减少两条路径，并落到普通消费者决策。",
+      "script_spans": [
+        "有人多花有人省",
+        "所以低价承诺退潮，总支出未必涨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 677，目标为 700，偏差率为 3.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "规则变化、价格机制、冲动消费与比价策略层层展开，信息点具体，结论也有行动提示。",
+      "script_spans": [
+        "二月施行的办法，四月施行的价格规则，都把强制低价禁了",
+        "小黄车点开别光看划价，拉详情比历史价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用价格反差抓人，中段不断反转，结尾把判断落到具体自问，互动感自然。",
+      "script_spans": [
+        "你暗想更贵？不一定，有人多花有人省。",
+        "可是冷静就能少花？也不一定。",
+        "我是真缺它，还是怕错过那个价？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答、短句和停顿设计不错，但“划价”“手握遥控器”等处卡嘴，结尾句式也不够自然。",
+      "script_spans": [
+        "你暗想更贵？不一定，有人多花有人省。",
+        "小黄车点开别光看划价，拉详情比历史价。",
+        "手指要点付款前，停两秒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“低价当饵”“手握遥控器”形象又克制，既解释机制，也留下了可复述的判断。",
+      "script_spans": [
+        "以前主播拿最低价当饵，现在饵没了，价签自己说话。",
+        "花钱多少，是你手握遥控器。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "双线讨论多花与少花，转折清楚；但从规则变化推到劣品减少、倒计时消失和省退货费，因果链有跳跃。",
+      "script_spans": [
+        "可是冷静就能少花？也不一定",
+        "商家不用被逼砍价，能把心思放质量上",
+        "没红字倒计时逼你，还省了退货运费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "结论用“未必”等作了限定，但把商家退场、劣品减少和省退货费说得过于确定，存在因果与普遍化误导。",
+      "script_spans": [
+        "总支出未必涨",
+        "靠低价甩货的商家会退场，货不对板的劣品少了",
+        "没红字倒计时逼你，还省了退货运费"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e39950c54da24e96a9417a9645b39779",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-24de6b56e24f412aad1fc6ca45db4b26",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-bf9e7bdc3d0440b99db1b3c57ece11a0",
+  "run_id": "run-20260902T144634Z-12d542f8a9bd",
+  "trace_sha256": "31c9ebb7ee7b14c5956be578ebbb7265d2db35f0e32e50e94efc57f76e648b95",
+  "created_at": "2026-09-03T13:49:25.610086Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即问重复花钱，正文从文件口子与医生决定权双向作答，并落到患者可做的一步。",
+      "script_spans": [
+        "根子在接诊医生握着认不认的决定权，文件也留了重查口子",
+        "你下次转院把近期片和化验单递过去，主动问这结果能认不"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 303，目标为 280，偏差率为 8.21%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "重查例外、医生担责、平台不通逐层推进，三成占比有据支撑，还给出转院实操建议。",
+      "script_spans": [
+        "文件允许病情发展、设备参数不同就重查，正常代谢有快有慢，旧结果可能不准",
+        "检查费常占看病花销近三成，白花真心疼"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开场重掏钱冲突直给，中段政策与医生两线递进兑现钩子，结尾疑问由正文长出，三段均成立。",
+      "script_spans": [
+        "你刚拍的胸片换家医院大夫说不行，得重掏钱",
+        "这是为保安全，却常变成重查理由",
+        "本该省下的钱卡在别人笔尖，这弯绕得人晕，啥时能直？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句多为口语、有对话感，但“互认可省”易误断，“同一检查不同机器的图细微差别可能影响判断”等处拗口，需临时重断句。",
+      "script_spans": [
+        "平台也没全连通，旧数据调不出",
+        "他怕担责，也习惯看熟机器出的图",
+        "政策喊互认可省费用",
+        "文件允许病情发展、设备参数不同就重查",
+        "同一检查不同机器的图细微差别可能影响判断"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "口子、笔尖、弯路等比喻克制且服务理解，钱卡笔尖一句离开上下文仍可复述，无炫技堆叠。",
+      "script_spans": [
+        "文件也留了重查口子",
+        "本该省下的钱卡在别人笔尖",
+        "这弯绕得人晕，啥时能直"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "总起双因后先政策后医生，为保安全却成借口的转折成立，结尾回扣开头与省钱主题。",
+      "script_spans": [
+        "这是为保安全，却常变成重查理由",
+        "本该省下的钱卡在别人笔尖，这弯绕得人晕，啥时能直？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "费用说法克制有据；但“他怕担责，也习惯看熟机器出的图”对医生无限定归因，易引医患对立，需补边界。",
+      "script_spans": [
+        "这是为保安全，却常变成重查理由",
+        "检查费常占看病花销近三成",
+        "他怕担责，也习惯看熟机器出的图"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3740c5b159894acba9fa2035d1fa517d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-62ce5764511f43358e3dc482b141e213",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

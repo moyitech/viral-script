@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-da0f8bdfa06640a89e408f1a7af270a3",
+  "run_id": "run-20260903T051547Z-f9c2a3c69ecb",
+  "trace_sha256": "a3163fd37a0d5596aaaf3eb44f847a5301398ff724b00632fe4e83479324e152",
+  "created_at": "2026-09-03T12:32:53.759402Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“增收还是交学费”，既写培训套路，也给年轻人可执行的取舍标准。",
+      "script_spans": [
+        "对绝大多数点开支付按钮的人，这第一笔账不是增收，是实打实交了学费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题聚焦且有数据、套路与避坑方法，但投诉排名和“七千块”口径混用，削弱信息可信度。",
+      "script_spans": [
+        "别先算多久回本，先看对方敢不敢把课时周期、退费比例白纸黑字写进合同。",
+        "技能培训类直接冲进服务领域前三，平均每人搭进去的钱超过七千块。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“轻松变现”与退费困境形成冲突，中段以投诉数据、话术进化和避坑标准持续推进，结尾边界句自然收束并留下余味。",
+      "script_spans": [
+        "刷到那些“下班后两小时，靠剪辑轻松变现”的短视频",
+        "规则在收，擦边的话术也在进化。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句问答和直接劝说有效，但“取舍该怎么拿”拗口，后段长句也需重断句。",
+      "script_spans": [
+        "为什么敢这么说？看看最近的维权盘面。",
+        "取舍该怎么拿？",
+        "凡是不能先让你低成本试错、不敢明示总成本的，别管海报写得多诱人，你交的那笔，就是它的利润，不是你的投资。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻集中但基本服务论证，“付款截图”和“焦虑解决方案”等表达形成清晰记忆点，没有堆砌到妨碍理解。",
+      "script_spans": [
+        "广告里的岁月静好，和投诉里的焦头烂额，中间只隔一张付款截图。",
+        "你以为在买机会，其实在买别人设计好的焦虑解决方案。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "起承转合完整，先判定风险再给筛选法；但“改文案加标识就能避开审核”的因果跳跃，令中段论证不够稳。",
+      "script_spans": [
+        "为什么敢这么说？看看最近的维权盘面。",
+        "可对方把文案改成“分享我自己的出单经验”，加上AI生成标识，就能避开机器审核。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "明确提醒不要一概而论，但“绝大多数”和“本质是”等表述概括过强，可能让观众形成误判。",
+      "script_spans": [
+        "当然，别一概而论说所有课都是骗局。",
+        "对绝大多数点开支付按钮的人，这第一笔账不是增收，是实打实交了学费。",
+        "一味催你扫码分期、回避书面承诺的，本质是用你的本金填他的现金流。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-584a5dd37345471a83ad29c54b075bd9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

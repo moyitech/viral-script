@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-adb5b28b13604dcba7677275f6bc8a4d",
+  "run_id": "run-20260902T141934Z-b51ab1db4cce",
+  "trace_sha256": "b725c7470c6ea7225f97a6c204763cc42041de2ce5fc48a3c1a8e6ef6018e15b",
+  "created_at": "2026-09-03T12:21:43.494329Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答能否受益，并围绕合同、重定价日和加点规则覆盖不同已购房人群。",
+      "script_spans": [
+        "存量房贷降了，你月供可能一分没少。已购房家庭确实能受益，但只看新闻不算数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕存量房贷是否真正降负，既讲调整条件，也给出反例、判断方法和可执行建议。",
+      "script_spans": [
+        "早批调整里，银行对浮动利率房贷直接批量改，不用你填表。",
+        "当你的加点比新贷平均加点高出三十个基点以上，才能去谈。",
+        "所以你真正要做的，是翻出合同看那行加点数和重定价日。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用月供不降制造强冲突，中段连续拆分情形并给出操作，结尾追问自然承接。",
+      "script_spans": [
+        "存量房贷降了，你月供可能一分没少。",
+        "那什么人真拿到好处？一是老房贷加点远高于新贷的人",
+        "你的房贷，到底卡在哪一关？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答式承接较多，整体能读通；但“加加点”等表述卡嘴，技术段落略显压缩，尚未达到顺滑口播。",
+      "script_spans": [
+        "存量房贷降了，你月供可能一分没少。",
+        "早批调整里，银行对浮动利率房贷直接批量改，不用你填表。",
+        "商贷公式本是LPR加加点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“新闻里的降息”和“你的钱”形成清晰对照，少量口语化比喻帮助记忆，没有堆砌。",
+      "script_spans": [
+        "新闻里的降息和你账上扣款常差着一截。",
+        "利率往下走时，改短更快蹭新LPR。",
+        "看清规则，降息才是你的钱，不是别人的新闻。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "批量调整、规则拆解、受益人群、反例与行动建议层层推进，转折清楚，结尾自然回扣题设。",
+      "script_spans": [
+        "可问题在，你的房贷不会因新发放利率低就自动跟跌。",
+        "那什么人真拿到好处？一是老房贷加点远高于新贷的人",
+        "所以你真正要做的，是翻出合同看那行加点数和重定价日。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "信息边界整体清楚，但把申请渠道和费用说成一律如此，未交代银行差异，容易误导操作。",
+      "script_spans": [
+        "所以你真正要做的，是翻出合同看那行加点数和重定价日。",
+        "申请不收任何费用，手机银行自己点就行。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-95e8fa64f5ed45abac4f33fa59015dec",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

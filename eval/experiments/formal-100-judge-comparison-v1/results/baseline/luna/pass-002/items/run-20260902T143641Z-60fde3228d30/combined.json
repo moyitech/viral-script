@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-a2ed52da0806443ea54b24e28060bb73",
+  "run_id": "run-20260902T143641Z-60fde3228d30",
+  "trace_sha256": "807405cb58ea3b002d1d8dbfd5837ee9d2e28ab65f2121acb085ccded53acefc",
+  "created_at": "2026-09-03T12:15:35.284465Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应独立与疏远的两面，兼顾法律边界、家庭冲突和普通人的可执行做法。",
+      "script_spans": [
+        "既尊重独立，也藏疏远风险。",
+        "留共同账户付家用，余钱各管矛盾少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "法律区分、家务研究和账户建议形成信息推进，但把满意度趋势直接推到“钱分开不冷场”，论据支撑不足。",
+      "script_spans": [
+        "书面约定才稳，口说无凭。",
+        "留共同账户付家用，余钱各管矛盾少。",
+        "数万夫妻分析发现近二十年婚姻满意度缓升，钱分开不注定冷场。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用离婚风险对撞独立收益，中段连续推进到法律、家务与实操，结尾收束自然且有余味。",
+      "script_spans": [
+        "各自管钱离婚易吃亏，却换回独立人身。",
+        "钱各管行，心别各管。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和反问有节奏，整体能读通；但法律、研究段落有压缩表达，个别句子需重断句或换词。",
+      "script_spans": [
+        "钱一分开，生活就容易算细账。",
+        "卡各拿各",
+        "有研究盯家庭分工"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对仗短句利落易复述，法律边界也被具体化，修辞克制，没有连续堆砌或喧宾夺主。",
+      "script_spans": [
+        "没纸面约定，法院仍可能并账。",
+        "钱各管行，心别各管。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "法律、关系风险、实操建议顺序清楚，但“独立就得受点疏离”与“疏远不是必然”拉扯，研究也推不出后句。",
+      "script_spans": [
+        "所以管钱方式不等同法律身份，却真划了边界。",
+        "留共同账户付家用，余钱各管矛盾少。",
+        "你要独立，就得受点疏离。",
+        "数万夫妻分析发现近二十年婚姻满意度缓升，钱分开不注定冷场。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能区分财产约定与管钱方式，也强调共同目标；但法律和关系后果多处泛化，建议补充适用边界。",
+      "script_spans": [
+        "疏远不是必然，看你们是否仍共享目标。",
+        "钱各管行，心别各管。",
+        "你要独立，就得受点疏离。",
+        "留共同账户付家用，余钱各管矛盾少。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7cc5124b42b14dd68519e43568a8195f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

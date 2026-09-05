@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-76a04d786a6643a797219b6b030dcfe3",
+  "run_id": "run-20260902T141323Z-35785d801e2b",
+  "trace_sha256": "24c3474f34c64faba654b1eb5f8eb78e793276d940c54d569477e26022118130",
+  "created_at": "2026-09-03T13:44:44.335510Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点出便利与门槛两侧，结尾以唯一选项成门槛回扣题设，双面覆盖且直指受影响的核心人群。",
+      "script_spans": [
+        "这对熟手机的人是少跑腿，对另一群人成了新门槛",
+        "当便利变成唯一选项，它就成了门槛"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 439，目标为 450，偏差率为 2.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策要求、走偏原因、老人触网规模层层推进，融合兜底不是二选一的判断带来增量，引用核验无编造。",
+      "script_spans": [
+        "国家其实有要求，线下的门不能关，除特殊情形外事项应进政务中心办",
+        "上亿老人还没触网，农村更明显，独居的找谁代点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出老人办社保被拒的具体冲突，中段以政策、走偏、民生层层兑现，结尾提问由正文自然生长，留有余味。",
+      "script_spans": [
+        "不会用智能手机的老人，跑大厅办社保却被拒，只因没线上约。",
+        "大厅排队是少了，可办事的人没消失，只是被挡在屏幕外。",
+        "我们享受指尖快，是不是该留个人工窗口给慢半拍的人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，问答推进有对话感，'你三秒提交'等句重音清楚，全文朗读无需临时改词。",
+      "script_spans": [
+        "一边省力一边设卡，现状就这么拧巴。",
+        "你三秒提交，他连门朝哪开都不知道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，“当便利变成唯一选项，它就成了门槛”离开正文仍可复述；“你三秒提交，他连门朝哪开”对比具体不炫技。",
+      "script_spans": [
+        "当便利变成唯一选项，它就成了门槛。",
+        "你三秒提交，他连门朝哪开都不知道。",
+        "一边省力一边设卡，现状就这么拧巴。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "每段功能清晰，办事的人没消失只是被挡在屏幕外因果桥扎实，结尾自然回扣开头案例与题设。",
+      "script_spans": [
+        "大厅排队是少了，可办事的人没消失，只是被挡在屏幕外",
+        "少开窗口省了力，却多了盲区"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "引用国家规定佐证，以'有些地方''常模糊'限定批评范围，倡导保留人工窗口，导向包容，无煽动夸大。",
+      "script_spans": [
+        "国家其实有要求，线下的门不能关，除特殊情形外事项应进政务中心办",
+        "有些地方图省事，把号源全推网上",
+        "政策留了特殊情形可线下办，落地却常模糊"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-96d84e0285bc457ab092892ba3c2a0fe",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a4cca5b27cb64068a60648dabe91f632",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-5e5399a748dd45729508a4cc01308e8b",
+  "run_id": "run-20260903T051541Z-6f9a9a4c9493",
+  "trace_sha256": "c676d5bc61687c48210b083aa9ce8021bfb7a3385be724cef93571e1f1d281f8",
+  "created_at": "2026-09-03T11:57:05.414162Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应禁停范围扩大与出行便利的冲突，覆盖治理、骑行者和配套停车两端，结论明确。",
+      "script_spans": [
+        "我的判断是，禁停范围扩大本身不怪，真正让人吃亏的是只禁不疏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 455，目标为 450，偏差率为 1.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从乱停危害、电子围栏机制到停车点缺失和费用后果，信息逐层推进，能带走具体判断与行动建议。",
+      "script_spans": [
+        "关键在电子围栏这套机制。像五道口试点，车进禁停区就发信号锁不住",
+        "如果只画圈不画车位，秩序好了出行却断了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出还车冲突，中段从正当性推进到机制与代价，结尾建议自然收束并留下权衡余味。",
+      "script_spans": [
+        "你着急上班，扫码骑了辆共享单车，到了地铁口却发现锁不上车",
+        "如果只画圈不画车位，秩序好了出行却断了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答感和短句推进，但“最后一个公里”“禁停区放大”两处明显卡嘴，需临时改词。",
+      "script_spans": [
+        "不能一禁了之。",
+        "最后一个公里",
+        "禁停区放大"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“最后一公里”的反转和“只禁不疏”形成清晰记忆点，表达克制，也把治理难题说得具体。",
+      "script_spans": [
+        "共享单车本来是解决最后一公里的，现在最后一公里倒成了最难的一公里。",
+        "只禁不疏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头场景引出冲突，随后解释治理正当性、机制和副作用，最后回到用户行动，段落递进自然。",
+      "script_spans": [
+        "共享单车乱停确实堵过人行道，甚至挤占机动车道",
+        "所以出门前先瞅一眼手机里的围栏圈，别等到了跟前才傻眼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "文案承认治理必要并提醒配套，但“离不开”等绝对化表述未限定范围，个案体验也可能被听成普遍结论。",
+      "script_spans": [
+        "整治乱停乱放当然没错，可这刀切下去，会不会误伤了赶路的人？",
+        "它又是很多人接驳地铁的最后一个公里，离不开。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ed9f0337ff1c489aa84aeff61ec42988",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e0ebc96941774f1a87e1ab82c511e54e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

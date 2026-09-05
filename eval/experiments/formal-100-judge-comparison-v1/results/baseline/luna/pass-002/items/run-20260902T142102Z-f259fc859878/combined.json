@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-89e502ef3d844aa185e1776136064168",
+  "run_id": "run-20260902T142102Z-f259fc859878",
+  "trace_sha256": "233701c4b77e54eaf7522e2100b246cd021b933b8b63512b9c999b0dc4258df3",
+  "created_at": "2026-09-03T12:16:00.104119Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解固收增额寿与分红险，并落到锁定时点和资金期限，覆盖题设冲突与普通人决策。",
+      "script_spans": [
+        "所以别问锁不锁长期回报，先问这笔钱能否十年不动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕确定性与预期收益展开，数据、机制和流动性门槛共同推进到可执行结论。",
+      "script_spans": [
+        "保险公司利润过去主要靠利差，低利率下投资端承压。",
+        "能接受低息但确定，就挑写进合同的；想要高点预期，得看清分红实现率波动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用确定与落空的反差抓人，中段持续拆分选择，结尾回到选错账户，互动自然。",
+      "script_spans": [
+        "固收确定但收益砍半，分红却可能落空",
+        "所以别问锁不锁长期回报，先问这笔钱能否十年不动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏有对话感，但金融术语和长句叠加，个别表述还需重断句或换词。",
+      "script_spans": [
+        "你选固收增额寿，等于把降息风险全转给保险公司",
+        "再看普通型预定利率研究值止跌回升到1.93%，说明如今锁的利率不高，未来若反弹，早锁死反成机会成本。",
+        "但任市场降息合同数字不变，睡得着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“看天吃饭”和“选错账户才是坑”形象概括波动与决策风险，修辞适度且便于复述。",
+      "script_spans": [
+        "实现率看天吃饭",
+        "锁定本身不是陷阱，选错账户才是坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线和结论清楚，但“风险全转给保险公司”说得过满，部分数据插入后缺少与选购结论的因果衔接。",
+      "script_spans": [
+        "所以别问锁不锁长期回报，先问这笔钱能否十年不动。",
+        "你选固收增额寿，等于把降息风险全转给保险公司",
+        "有个细节，2022年样本公司保单价值释放曾为负，险企运转成本也不低。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有资金期限提示，但“百分百确定”“风险全转给保险公司”等说法过满，可能掩盖产品条件与流动性风险。",
+      "script_spans": [
+        "钱短期要用的，硬锁反吃亏",
+        "现金价值百分百确定",
+        "等于把降息风险全转给保险公司",
+        "任市场降息合同数字不变"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8a8154c4feab4156b478808ae5b6507b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

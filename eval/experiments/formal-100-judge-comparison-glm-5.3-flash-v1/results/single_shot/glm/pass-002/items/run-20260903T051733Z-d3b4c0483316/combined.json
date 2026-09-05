@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-97d1b3d66b0a480c907c7218efc9791d",
+  "run_id": "run-20260903T051733Z-d3b4c0483316",
+  "trace_sha256": "ee75e56b286fccb1a5a16a192bfc18f50165d12b085f782019f04a6d4ca353bc",
+  "created_at": "2026-09-03T15:27:44.243165Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答'是否更划算'并给出判断标准，中段归因一单难求，结尾以需求匹配收束，两侧与储户人群全覆盖。",
+      "script_spans": [
+        "盲目抢存并不必然更划算，得看你的钱能静多久",
+        "抢到是运气，匹配需求才是真划算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦存单，计息规则、期限倒挂、五十万保障等单元层层推进，事实、解释与建议相互支撑，增量具体。",
+      "script_spans": [
+        "大额存单提前支取部分按支取日活期利率计息，真遇到急事赎回，利息损失不小",
+        "有的银行五年利率反低于三年，锁更久反吃亏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差设问抓人，中段银行动机、提前支取、期限倒挂层层推进，结尾金句自然收束有余味。",
+      "script_spans": [
+        "银行把大额存单起购门槛降到20万，可越是降价越抢不到",
+        "那抢到手是否就赢了？别急。",
+        "抢到是运气，匹配需求才是真划算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句钩子和'别急''灵光'等口语顺耳，但'按支取日活期利率计息''供给限量'等段密集书面，需临时换气重断句。",
+      "script_spans": [
+        "那抢到手是否就赢了？别急。",
+        "急用钱时远不如活期灵光。",
+        "大额存单提前支取部分按支取日活期利率计息",
+        "全挤向这个有存款保险背书的标准化产品，需求陡增碰上供给限量"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，体面之说点到为止；两句金句离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "可越是降价越抢不到",
+        "它只是名字听起来更体面些",
+        "抢到是运气，匹配需求才是真划算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "提问、归因、算账、建议四段功能分明，'先说''再看'承接清楚，关键因果有桥梁，结尾回扣开头立论。",
+      "script_spans": [
+        "先说为什么一单难求",
+        "那抢到手是否就赢了？别急。",
+        "抢到是运气，匹配需求才是真划算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论留有余地，主动提示提前支取计息规则与五十万保障边界，无夸大承诺，导向安全。",
+      "script_spans": [
+        "盲目抢存并不必然更划算，得看你的钱能静多久",
+        "大额存单提前支取部分按支取日活期利率计息",
+        "超出五十万本息保障额度的部分就要分散布局"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6e69e23a815e4306b15e7d0df8f72cb7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-3137578502b2410f9a871a070fa38d9c",
+  "run_id": "run-20260902T145050Z-873756d8f6c7",
+  "trace_sha256": "e46ae412471daf026067e0170bb1d817cbc434168b1d4f4d237710d5ef709d23",
+  "created_at": "2026-09-03T14:29:47.810476Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从头到尾正面回答“少数该不该让步”，高低层立场与核心人群全覆盖，结尾“你干吗”落在观众痛点上。",
+      "script_spans": [
+        "多数便利能压过权利吗？",
+        "换你住一楼，白吃亏你干吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线始终钉在多数决的权利边界，法条、判例、数据层层推进，末尾落到可操作的补偿方案，信息密度高无注水。",
+      "script_spans": [
+        "民法典开了加装电梯的表决口子，但票多不意味能压垮少数",
+        "批了上万部电梯，靠的是社区设服务中心快批快协调，不是多数欺少数"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出挡光让步的冲突设问；中段判例、数据与'现实常反过来'接连反转兑现钩子；结尾换位反问由正文长出，余味自然。",
+      "script_spans": [
+        "低层被挡光还得让步，多数便利能压过权利吗？",
+        "那给钱就顺了？现实常反过来。",
+        "换你住一楼，白吃亏你干吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句多、对话感强，读来大体顺；但低层拿填补是填平公道、不光光被挡两处卡嘴需换词，封顶2分。",
+      "script_spans": [
+        "老楼里七旬阿婆拎菜上六楼，歇三回",
+        "硬压常常没法子，得坐下来磨。",
+        "低层拿填补是填平公道",
+        "低层怕的不光光被挡"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'天平斜多数，但斜不是倒'与'电梯载不动邻里情'贴切好记，离开上下文仍可复述；修辞克制服务论证，无堆砌炫技。",
+      "script_spans": [
+        "天平斜多数，但斜不是倒",
+        "电梯载不动邻里情"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "各段功能清楚，“给钱就顺了？”转折承接自然，方案从案例推出，结尾回扣开头；短气口为主，朗读不吃力。",
+      "script_spans": [
+        "那给钱就顺了？现实常反过来。",
+        "所以真要落地，得把补偿摆前头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "既认老人需求也认低层损失，明确法律边界与补偿路径；结尾换位提问属共情而非引战，无夸大或误导承诺。",
+      "script_spans": [
+        "批准建和逼人签字，可是两码事。",
+        "当然，电梯离得远没实质影响，低层硬要钱法院也不支持，边界就这一条。",
+        "装电梯是好事，但好事不能建在别人吃亏上。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1a6cc168fd3849e8b45de007b26a7bd9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-9eadb99d75aa477e8c81150b1e706da9",
+  "run_id": "run-20260902T144305Z-4b3be16f56af",
+  "trace_sha256": "d2707e525cdf9b782a2e1da546cf2966b1d7fbf1ff3204494eb0f8d92b7be096",
+  "created_at": "2026-09-03T12:16:01.122054Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直指补缺口与养依赖，正反两面都展开到家人责任，精准对应普通家庭的就医场景。",
+      "script_spans": [
+        "它既补了照护缺口，也藏着制造依赖的风险",
+        "别把看病沟通全甩给陌生人，家人该出的力还是得自己出。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，既交代照护缺口和依赖机制，也补充费用与筛选建议，信息有实际增量。",
+      "script_spans": [
+        "陪诊师搀着走完流程，帮着问医生、拿药、取报告",
+        "老人习惯了外人陪，跟儿女聊病情的话越来越少，日常照顾也被挪走"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用迷路与养依赖制造冲突，中段完成正反转折，结尾落到家人责任，推进自然。",
+      "script_spans": [
+        "你妈一个人去医院迷路，花钱请人陪算补缺口还是养依赖？",
+        "但反过来看，如果子女周末明明有空，却次次点个陪诊单了事。",
+        "家人该出的力还是得自己出。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体可读，动作表达有画面；但中段仍有书面抽象句和生硬搭配，尚未达到自然顺口。",
+      "script_spans": [
+        "陪诊师搀着走完流程，帮着问医生、拿药、取报告",
+        "不少独居老人就缺这份陪伴温暖。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“像有了自家人陪着”有情绪画面，结尾“别把看病沟通全甩给陌生人”也具体好记，修辞克制。",
+      "script_spans": [
+        "老人像有了自家人陪着，心里踏实了",
+        "别把看病沟通全甩给陌生人，家人该出的力还是得自己出。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，先讲缺口再讲依赖并给出建议；但时薪信息突然插入，对依赖成因的概括也偏满。",
+      "script_spans": [
+        "但反过来看，如果子女周末明明有空，却次次点个陪诊单了事。",
+        "现在陪诊时薪大概五十到一百块，花钱前得想清。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且有培训与家人参与提醒；但把反复使用直接归为依赖，因果判断偏绝对，易造成对家属的道德压力。",
+      "script_spans": [
+        "找陪诊前，您得先问清他受过基础培训没，这步省不得。",
+        "如果子女周末明明有空，却次次点个陪诊单了事。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-490a019da58644f79ba8160ceb6174e3",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

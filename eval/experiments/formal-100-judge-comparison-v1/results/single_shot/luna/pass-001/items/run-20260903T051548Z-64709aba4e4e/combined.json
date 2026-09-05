@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-6b86ecf4f7d0401da3b7fb3c116ca9ac",
+  "run_id": "run-20260903T051548Z-64709aba4e4e",
+  "trace_sha256": "102aa8523bf26a0ea9a8de54835817ca05654b3de278013b964e56d7d47aeb36",
+  "created_at": "2026-09-03T12:03:17.278532Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕年费、囤货频率和返利条件拆解门槛，也说明高频囤货者才可能划算，完整回应题设。",
+      "script_spans": [
+        "大宗包装看着便宜，可这便宜背后确实横着隐形门槛。",
+        "而是给高频囤货用户的俱乐部。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 270，目标为 280，偏差率为 3.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "年费、使用频率、返利条件与履约问题分别推进，最后给出半年购物频率的具体判断方法，信息有落点。",
+      "script_spans": [
+        "偶尔消费摊下来反而更贵。",
+        "买不够数回不了本",
+        "务必拿自己半年购物频率对照"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用便宜与门槛制造反差，中段逐层拆解年费、返利和扩张风险，结尾自然落到消费判断。",
+      "script_spans": [
+        "大宗包装看着便宜，可这便宜背后确实横着隐形门槛",
+        "省不省钱，得看你的购物车够不够重"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话式开场，句子也不算长，但“横着门槛”“购物频率对照”等多处搭配卡顿，未达顺口。",
+      "script_spans": [
+        "你发现没，家门口会员制商超一家接一家开",
+        "便宜背后确实横着隐形门槛",
+        "务必拿自己半年购物频率对照"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“拦在门口”“绑住老顾客的绳”形象但不喧宾夺主，结尾用购物车够不够重留下了自然、易复述的记忆点。",
+      "script_spans": [
+        "本质不是随便逛的卖场，而是给高频囤货用户的俱乐部",
+        "更像绑住老顾客的绳",
+        "省不省钱，得看你的购物车够不够重"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线由门槛拆解到办卡建议，结论可执行；但扩张期品控投诉与消费门槛之间缺少过渡，形成旁支。",
+      "script_spans": [
+        "所以办卡前，务必拿自己半年购物频率对照",
+        "这两年门店扩张明显加快，但急速铺开时品控和履约失误的投诉也没断过。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题聚焦消费决策，建议总体克制；但个别表述过于绝对，可能让观众误解适用范围。",
+      "script_spans": [
+        "办卡前，务必拿自己半年购物频率对照",
+        "哪怕只想去买一桶油，也得先办卡",
+        "投诉也没断过"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8cc8ec0eb8394498ad02dacfa0f66e9b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c52112f97f334d56b58459e182a71a0c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-48f43615cbf64e92b28e6ef46dbfd7cf",
+  "run_id": "run-20260902T144024Z-4b618c4d18c9",
+  "trace_sha256": "9bbbc340b23cb44dad261aace2d743118e026aa5f4215185408b22f35e5822c8",
+  "created_at": "2026-09-03T13:47:59.539096Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即双面设问，中段用篮子结构、收入构成、房贷三路作答，结尾回扣涨幅与账本，人群与冲突两侧全覆盖。",
+      "script_spans": [
+        "物价确实温和回升，可普通家庭觉钱不够花，原因在平均算法盖住了刚需。",
+        "统计温和不等于日子松。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 731，目标为 700，偏差率为 4.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题紧扣平均数与体感之差，涨跌结构、收入构成、房价不入CPI层层推进，关键数据与引用相符，增量扎实。",
+      "script_spans": [
+        "像3月其他用品和服务，价格同比爬了13.5%，看病也贵了快2%。但猪肉降了11.5%",
+        "房价不进CPI，但月月房贷实打实划走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛出1%与开支的反差，中段以篮子、钱袋、房贷层层推进，结尾提问自然生长，钩子全程兑现。",
+      "script_spans": [
+        "3月物价同比只涨1%，你家开支却追不上收入？",
+        "新闻说总水平安稳，你逛超市却步步心惊。",
+        "下次见1%的涨幅，翻翻自己账本：究竟哪笔支出在啃你的余钱？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "中段篮子、琢磨、蹿前头等对话感扎实，但“觉钱不够花”“真觉便宜”两处漏“得”卡嘴，朗读需临时补词。",
+      "script_spans": [
+        "咱打开统计局的篮子看。里面几百种东西，有的贵得狠",
+        "你琢磨下，收入这条线刚往上挪，支出那根线早蹿前头了",
+        "可普通家庭觉钱不够花",
+        "若你全家只吃降价肉菜，可能真觉便宜"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "大锅粥、房东的嘴等比喻贴切服务理解，账本与尺子一句离开原文仍可复述，修辞密而不腻。",
+      "script_spans": [
+        "这平均数字像大锅粥，米少水多显淡，可你碗里偏偏捞到贵料",
+        "你每月房租不在下跌的猪肉里，它只跟房东的嘴走",
+        "你家的账本，比统计局的尺子更懂日子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "段落功能与过渡清楚，反例处理得当；但开头“开支追不上收入”语序颠倒，“支出线早蹿前头”又与实际增收4.2%相抵。",
+      "script_spans": [
+        "当然反例有。若你全家只吃降价肉菜，可能真觉便宜。",
+        "你家开支却追不上收入？",
+        "收入这条线刚往上挪，支出那根线早蹿前头了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键数据与官方口径相符，兼顾反例与个体差异，无夸大承诺或煽动表述，导向安全。",
+      "script_spans": [
+        "两边都没撒谎，只是统计镜头没对准你的购物车",
+        "若你全家只吃降价肉菜，可能真觉便宜。但多数人家避不开住行。体感差，不是你算错。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e7b3a0aaa8fa43039d7576df9b3108a8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e5d0b5fe7b05451785c22dffb47aa5be",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

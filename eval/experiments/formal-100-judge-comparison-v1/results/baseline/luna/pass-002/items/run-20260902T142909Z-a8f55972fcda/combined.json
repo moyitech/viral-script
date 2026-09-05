@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-7c838e7cf9fd4535926e9899e42c9b94",
+  "run_id": "run-20260902T142909Z-a8f55972fcda",
+  "trace_sha256": "bc9b33a2f2c486641821951079787b2790dac8039c46979a13b550ec3d470400",
+  "created_at": "2026-09-03T12:18:19.993165Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答视频通话能否验身，并具体落到家庭群诈骗、检测局限和普通人核验，题设两侧与核心人群均覆盖。",
+      "script_spans": [
+        "视频通话还能证明身份吗？",
+        "骗子就钻这个空子，专挑家庭群下手。",
+        "咱们普通人咋自保？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "换脸换声、肉眼误判、检测工具边界和带外确认层层推进，既解释风险，也给出可执行的判断与防骗方法。",
+      "script_spans": [
+        "现在合成视频能实时换脸，连声音一起仿。",
+        "可研究说人眼辨高质量深伪，准头可能不比瞎猜强。",
+        "这叫带外确认，多一步就破掉假画面。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接把转账与真假身份撞在一起，中段持续补充风险与应对，结尾由“脸不再是钥匙”自然留下余味。",
+      "script_spans": [
+        "家人视频喊转账，对面未必是真人。",
+        "视频通话没失去全部意义，它成了疑点不是证据。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答推进有口播感，但“重塑性情”“落实深伪标识”都不顺，需临场换词。",
+      "script_spans": [
+        "别嫌麻烦，亲姐突然要巨款本身就不正常。",
+        "几张照片重塑性情",
+        "私聊里难落实深伪标识"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“视频是疑点不是证据”“脸不再是钥匙”把抽象风险变成可复述判断，修辞克制且服务行动建议。",
+      "script_spans": [
+        "视频通话没失去全部意义，它成了疑点不是证据。",
+        "脸不再是钥匙，让记忆来验人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以提问开场，按风险原理、平台边界、自保方案展开，结尾回扣身份判断，段落功能清楚、主线完整。",
+      "script_spans": [
+        "为啥这么凶？",
+        "那平台没在管吗？",
+        "咱们普通人咋自保？",
+        "视频通话没失去全部意义，它成了疑点不是证据。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "防诈方向安全且有可执行建议，但“多一步就破掉假画面”等说法过于绝对，易让人误以为暗号能彻底防骗。",
+      "script_spans": [
+        "提前说好的暗号最管用",
+        "多一步就破掉假画面"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7deece1db5524fea84fe03faf031af43",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

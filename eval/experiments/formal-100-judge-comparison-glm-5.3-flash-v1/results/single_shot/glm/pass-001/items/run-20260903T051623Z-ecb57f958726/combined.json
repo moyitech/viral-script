@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-eab41ca0c45a47a39318f2cb18653df6",
+  "run_id": "run-20260903T051623Z-ecb57f958726",
+  "trace_sha256": "0ee6e4ec31c8ad6f8afed448886cfc8ffcb1c9b7eeff6243e756dfa2f0b6d118",
+  "created_at": "2026-09-03T14:09:59.948129Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即切默认设置风险，亮明厂商主责立场，中段补足用户与监管两侧，全程紧扣题设与观众痛点。",
+      "script_spans": [
+        "默认设置引发的大规模入侵，厂商必须背起主要担子",
+        "但把所有板子都打在厂商身上，真的公平吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 696，目标为 700，偏差率为 0.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机制、责任辨析与选购建议层层推进，无编造；强制性标准与行业转向有据可查，增量扎实。",
+      "script_spans": [
+        "很多厂家为了安装便捷和售后调试，在产品里预埋了统一口令，还把控制端口直接暴露在公网",
+        "眼下专门针对智能家居出厂安全的强制性规范还在走制定流程"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即立反差悬念，中段以入侵细节、责任之争、实操清单层层兑现，结尾比喻收束自然有余味。",
+      "script_spans": [
+        "你以为智能摄像头装好就安心了？现实里，不少设备出厂带着通用弱密码",
+        "你先把自己那扇没锁的门关上，比投诉更管用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读，比喻生动；但“以已告知改密来抗辩”等处拗口费气，朗读需改词重断。",
+      "script_spans": [
+        "这种方便厂家的设计，等于把家门钥匙藏在脚垫下",
+        "你先把自己那扇没锁的门关上，比投诉更管用",
+        "厂商常以已告知改密来抗辩，但出厂即留后门显然违背合理期待",
+        "而且眼下专门针对智能家居出厂安全的强制性规范还在走制定流程"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'钥匙藏脚垫下''没锁的门'首尾呼应，贴切克制、离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "这种方便厂家的设计，等于把家门钥匙藏在脚垫下",
+        "可批量扫描不分贫富"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "两处设问过渡自然，机制到反驳到化解层层递进，结尾“没锁的门”回扣“钥匙藏脚垫下”，闭环完整。",
+      "script_spans": [
+        "设备一联网，就被自动化程序嗅探到，隐私画面、门锁状态全成了公开秘密",
+        "厂商该负责，但别干等它负责——你先把自己那扇没锁的门关上，比投诉更管用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "立论平衡、建议均为防护性操作；但渲染恐慌措辞与未经限定的归因宜补边界。",
+      "script_spans": [
+        "法律上厂商是否全赔，得看具体过错",
+        "用户有基本防范义务，可厂商不能借“用户没改”就完全脱身",
+        "黑客用扫描工具就能轻松闯进你家客厅，盯着孩子睡觉",
+        "很多厂家为了安装便捷和售后调试，在产品里预埋了统一口令",
+        "隐私画面、门锁状态全成了公开秘密"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-a0c69f92afb4435c9bce4ef7962debab",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c5f29e5d57ce4381a53125157d192929",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

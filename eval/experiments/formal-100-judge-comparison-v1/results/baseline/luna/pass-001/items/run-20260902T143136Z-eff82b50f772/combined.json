@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-b0023d480ce14360a64c8e08a55ec357",
+  "run_id": "run-20260902T143136Z-eff82b50f772",
+  "trace_sha256": "c0bd36db1d88c573b2a378e019c8c99b0830388b544c96bac9ff4184d371167d",
+  "created_at": "2026-09-03T11:45:48.068902Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "紧扣中年人降薪转行的值不值，区分换赛道与降身段，并给出试水建议。",
+      "script_spans": [
+        "中年转行潮确实在升温，但值不值，得看你是换赛道还是降身段。",
+        "试水对了再谈降薪，别一冲动就签卖身契。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 453，目标为 450，偏差率为 0.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，数据、分类框架、技能复利和先试水建议形成多层信息，能带走一套初步判断方法。",
+      "script_spans": [
+        "三十一岁以上成熟人才占流动大盘百分之五十三点九",
+        "换赛道是去有前景的地儿，像硬科技或AI应用",
+        "先下班后接个新领域兼职试试"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用房贷车贷制造现实压力，中段以“换赛道/降身段”推进判断，结尾反问自然收束。",
+      "script_spans": [
+        "降薪三成重新入行，房贷车贷谁兜底？",
+        "换赛道是去有前景的地儿，像硬科技或AI应用，降薪但跟对风",
+        "你用今天少赚的三成，买的是往后十年的底气还是空欢喜？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头提问和建议段有对话感，但数据串联、术语并列和个别病句让朗读需要多次重断句。",
+      "script_spans": [
+        "降薪三成重新入行，房贷车贷谁兜底？",
+        "近期招聘报告里，三十一岁以上成熟人才占流动大盘百分之五十三点九，中年换工作成了主流现象。",
+        "换赛道是去有前景的地儿，像硬科技或AI应用，降薪但跟对风，新行业有技能复利，懂AI的岗位薪资杠杆明显，两三年可能填平差价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“换赛道还是降身段”形成清晰对照，“薪水是眼前数，本事是后面钱”短而可复述，修辞没有喧宾夺主。",
+      "script_spans": [
+        "换赛道还是降身段",
+        "薪水是眼前数，本事是后面钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头二分判断清楚，后文按数据、算账、行动展开；但失业率推到“老本行没那么快吞人”因果不足，收益预测也偏跳。",
+      "script_spans": [
+        "那降薪入行怎么算账？你降薪，等于把每月到手的钱，去换别的东西。",
+        "老本行没那么快吞人",
+        "两三年可能填平差价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体避免绝对承诺并强调先试水，但宏观失业率不能推出个人行业安全，薪资回本周期也缺少行业和个体边界。",
+      "script_spans": [
+        "降薪重入行不能一刀切。",
+        "试水对了再谈降薪",
+        "老本行没那么快吞人。",
+        "两三年可能填平差价。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-75f9d4b622544d9eb611733fe95be632",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9a57f937a67440b98b8bcf1e2c0e1f65",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-ff095799ae9149109a05872cdc6ab205",
+  "run_id": "run-20260902T142921Z-7bb0a7bf18d3",
+  "trace_sha256": "abecbfead23df37369368db2f8fa22672e0d00527e9617a33b8cdc38a6c0c119",
+  "created_at": "2026-09-03T14:25:39.616483Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛题即直给答案，交学费与增收两侧及年轻人痛点全程扣住，结尾时间账回扣题设。",
+      "script_spans": [
+        "我直说：不少年轻人在交学费，少数肯实操的才真增收",
+        "广告越猛，越算账：学费交了，时间没了，剩啥？时间比学费贵，你细品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，平台规则、报告数据与避坑方法层层推进，能带走涉诉七千元、晒单造假等具体增量。",
+      "script_spans": [
+        "中消协一季度报告点名：技能培训投诉成重灾区",
+        "先用免费教程练半月，别信晒单截图，那能造假"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直抛增收还是交学费之问，中段平台收紧、机构绕审层层反转，结尾算账收束余味自然。",
+      "script_spans": [
+        "你刷到副业课说下班挣外快，真增收还是交学费？",
+        "可机构绕开审核，借AI短视频带货新概念，把先学后付变贷款。",
+        "广告越猛，越算账：学费交了，时间没了，剩啥？时间比学费贵，你细品。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数段落短句有力、对话感足，但中消协段照搬报告语，拗口处不止两处，只能两分。",
+      "script_spans": [
+        "你心想涨点收入，点链接填资料，钱没挣到先背债。",
+        "数字技能培训借AI短视频带货虚假宣传，以先学后付分期缴费实质贷款诱导报名。",
+        "平台罚单虽多，难全覆盖，广告主投流往往为赚课费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制服务理解，“你学不会他换下一批”“时间比学费贵”离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "点链接填资料，钱没挣到先背债。",
+        "你学不会，他换下一批。",
+        "时间比学费贵，你细品。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、设问过渡清楚，但报告段书面腔重，两处名词堆叠需重断句，朗读明显卡壳。",
+      "script_spans": [
+        "为啥广告满天飞却难回本？",
+        "以先学后付分期缴费实质贷款诱导报名",
+        "数字技能培训借AI短视频带货虚假宣传"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "借报告事实提示风险，批判夸大宣传而不作收益承诺，措辞克制，无违规或误导隐患。",
+      "script_spans": [
+        "广告说零基础月入过万。你信了容易掉坑。",
+        "以先学后付分期缴费实质贷款诱导报名",
+        "别信晒单截图，那能造假"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3ee8b386a6254b54b7ab70e8cc43dd49",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

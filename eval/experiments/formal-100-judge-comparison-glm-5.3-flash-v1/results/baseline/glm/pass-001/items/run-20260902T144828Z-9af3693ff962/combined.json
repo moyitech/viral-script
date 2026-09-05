@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-0da93c43f30b42f0b3fbfac4d6152a16",
+  "run_id": "run-20260902T144828Z-9af3693ff962",
+  "trace_sha256": "61dd66027f944ade4f6b2d389f6eb3489356bb8e8c4f148cc3f161f76352a71a",
+  "created_at": "2026-09-03T13:47:59.542465Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即正面回答题设，浪费与风险两侧都展开，锁住囤药家庭，结尾建议切合人群痛点。",
+      "script_spans": [
+        "家里备点常用药是能换份安心，但囤过头就会变成浪费和风险",
+        "你家囤的退烧药，可能没拆封就扔了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 283，目标为 280，偏差率为 1.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，从闲置过期讲到转卖违法与有害垃圾处理，信息具体有依据，观众能带走做法。",
+      "script_spans": [
+        "你想转卖给药店？那不行，个人卖药不合法，算违法的",
+        "过期药得专门按有害垃圾处理，随手丢可是隐患"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头以未拆封就扔制造损失反差，钩子有力；中段连铺浪费与开头信息重叠、推进趋平；结尾收束自然但余味偏淡。",
+      "script_spans": [
+        "你家囤的退烧药，可能没拆封就扔了",
+        "你想转卖给药店？那不行，个人卖药不合法",
+        "药盒占着抽屉，过期前你也没瞄一眼。这花出去的钱算是打了水漂，地方还被占着，纯属浪费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主，问答式承接自然，气口清楚，朗读无需临时改词。",
+      "script_spans": [
+        "买回来往柜里一放，没生病根本想不起用。",
+        "你想转卖给药店？那不行，个人卖药不合法，算违法的。",
+        "清掉那些用不上的，家净了，人也就踏实了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞点到为止，包袱、打了水漂贴切助解；家净了人也就踏实了可独立复述，全篇无炫技堆叠。",
+      "script_spans": [
+        "那多余药是包袱",
+        "家净了，人也就踏实了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "钩子、论据、转折到建议层层推进，结尾家净人踏实回扣开头安心，逻辑闭环完整。",
+      "script_spans": [
+        "买回来往柜里一放，没生病根本想不起用。过阵子保质期过了，只能扔掉",
+        "清掉那些用不上的，家净了，人也就踏实了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "转卖违法与有害垃圾处理的提示准确克制，无夸大承诺，建议留有边界，导向安全。",
+      "script_spans": [
+        "你想转卖给药店？那不行，个人卖药不合法，算违法的。",
+        "过期药得专门按有害垃圾处理，随手丢可是隐患。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c0a883696c954cf08cdb431007994fd2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1cea98f5480e4c5895bbe111a7200648",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

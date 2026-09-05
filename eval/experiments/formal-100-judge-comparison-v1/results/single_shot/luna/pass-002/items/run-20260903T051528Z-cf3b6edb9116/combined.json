@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-30f83f9aa8c2403195a3a336234d95b5",
+  "run_id": "run-20260903T051528Z-cf3b6edb9116",
+  "trace_sha256": "22014584998fc5eb5aaa348c509d971d4966a1cbe5a407b0af32a667f07c9b16",
+  "created_at": "2026-09-03T12:32:12.248215Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应订单回暖与谨慎扩招的矛盾，明确解释固定成本、需求波动和临时工策略。",
+      "script_spans": [
+        "订单回暖了，工厂为什么还是不敢大规模招人？直接说原因：",
+        "真要补人，多半也是临时工先顶上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕谨慎扩招，订单、景气度、固定成本和从业人数共同推进判断，信息增量充分。",
+      "script_spans": [
+        "制造业新订单虽回到了扩张区间，但整体景气指数依然趴在荣枯线以下",
+        "制造业从业人数指数还在往下走，说明观望不是个例。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出反差，中段用成本、景气和用工数据层层推进，结尾自然落到临时工，余味足。",
+      "script_spans": [
+        "订单回暖了，工厂为什么还是不敢大规模招人？",
+        "别看到车间灯火通明就以为景气全面反转，那可能只是老板在试探需求。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，解释也能听懂；但中段长句和指标术语偏多，朗读时需要多次重断句。",
+      "script_spans": [
+        "订单回暖了，工厂为什么还是不敢大规模招人？",
+        "所以别看到车间灯火通明就以为景气全面反转",
+        "从近期信号看，制造业新订单虽回到了扩张区间，但整体景气指数依然趴在荣枯线以下，回暖根基并不扎实。",
+        "更现实的考量是，正式员工身后连着社保缴纳和辞退补偿，万一订单再次掉头，裁人的代价比接单还高。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“灯火通明却未必反转”形成准确反差，“临时工先顶上”也具体有画面，修辞克制且便于复述。",
+      "script_spans": [
+        "景气指数依然趴在荣枯线以下",
+        "别看到车间灯火通明就以为景气全面反转，那可能只是老板在试探需求。",
+        "真要补人，多半也是临时工先顶上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "起因、数据和结论顺序清楚，但“裁人的代价比接单还高”比较对象不成立，削弱关键因果。",
+      "script_spans": [
+        "从近期信号看，制造业新订单虽回到了扩张区间，但整体景气指数依然趴在荣枯线以下，回暖根基并不扎实。",
+        "裁人的代价比接单还高。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "数据判断与风险提示较克制，但“大家怕”“本质是在”概括企业动机，“裁人的代价比接单还高”缺少条件，易把推测说成普遍事实。",
+      "script_spans": [
+        "制造业新订单虽回到了扩张区间，但整体景气指数依然趴在荣枯线以下",
+        "大家怕这波好转是短期波动",
+        "裁人的代价比接单还高"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a7b081b297e148d983bf194d0b627e9f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

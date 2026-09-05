@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-80e6b5bec3b24a10979e8e4eb932505d",
+  "run_id": "run-20260902T144941Z-f81c4f1786c6",
+  "trace_sha256": "60ee004fdc9239f25b2fc34d0dd6150b5c1f1a7bc51d227a2e2bdfd1e124fb1f",
+  "created_at": "2026-09-03T12:16:10.610993Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释融资减负与经营承压的错位，覆盖小厂、订单和成本两侧，结论也回到经营压力。",
+      "script_spans": [
+        "融资减负是真事，可经营压力另一头更重。",
+        "贷款省下的利息填不上订单流失的坑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕订单、成本、现金流和短贷周转展开，数据、机制与应对建议彼此推进，信息增量充足。",
+      "script_spans": [
+        "超九成觉得销售下滑拖后腿。账面营收没大掉，净利润降超20%占两成。",
+        "厂里想囤货怕跌价，不囤又接不住急单。",
+        "得拓渠道控开支，把货转成现金。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用利息与订单的反差抓人，中段连续推进，结尾由“订单才是命根子”自然引出提问。",
+      "script_spans": [
+        "利息降了，但小厂订单丢得更快，压力没解。",
+        "贷款省下的利息填不上订单流失的坑。",
+        "你家附近的小厂，这会儿卡在哪一环？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句化、对话式承接较好，但多处生硬压缩，朗读时需要临时修正。",
+      "script_spans": [
+        "钱好借了，可厂子没活干，机器不转，这坎儿得看清。",
+        "买料价签月月高",
+        "利润薄了招工自然收。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比、比喻和具象细节彼此配合，既帮助理解压力来源，也留下了便宜钱与订单的鲜明记忆点。",
+      "script_spans": [
+        "月头贷到手月尾就得还。",
+        "贷款省下的利息填不上订单流失的坑。",
+        "便宜钱是阿司匹林，止不了经营的疼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "融资与经营两线展开、结论能回扣题目；但把就业占比直接推成招工收缩，因果桥不足，且“招工自然收”不够清楚。",
+      "script_spans": [
+        "卖不动就得降价，利润更薄。",
+        "小厂吸了八成城镇就业，利润薄了招工自然收。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，数据表达有依据；但“钱好借了”“小厂吸了八成城镇就业”范围过宽，易造成普遍化误导。",
+      "script_spans": [
+        "贷款省下的利息填不上订单流失的坑。",
+        "小厂吸了八成城镇就业"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-06c768f4748d4e0f90739b7c85736435",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

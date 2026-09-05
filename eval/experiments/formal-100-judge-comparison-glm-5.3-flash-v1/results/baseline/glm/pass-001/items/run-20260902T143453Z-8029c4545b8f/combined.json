@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-437d045bf14b45ffb340a2de327f4633",
+  "run_id": "run-20260902T143453Z-8029c4545b8f",
+  "trace_sha256": "1a73b1ff7464c20054d0e348c24fb39e2d2c40dab1442e4e99a445d05aca474c",
+  "created_at": "2026-09-03T13:46:52.279075Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头拦门点出年费门槛，中段答扩张数据与退卡规矩，结尾落到办不办的判断，题设两侧与普通消费者均覆盖。",
+      "script_spans": [
+        "但便宜背后藏着硬门槛：想进门先交两三百块年费",
+        "这类仓储店从几年前的三十多家开到如今六十多家，五年翻了一倍",
+        "先算清每周采购量，全家一周只买百来块东西，那卡就别办"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 306，目标为 280，偏差率为 9.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "年费性质、退卡锁定、扩张数据、采购量算法依次推进，事实有据不编造，观众带走可用的判断方法。",
+      "script_spans": [
+        "这笔钱不算货款，只是通行证，不是逛了就能省",
+        "退了会员费半年内不让你再办，轻轻把人拴住",
+        "先算清每周采购量，全家一周只买百来块东西，那卡就别办"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头“被拦下”即具体冲突，中段退卡规矩与扩张数据持续兑现，结尾算账建议由正文自然生长，留决策余味。",
+      "script_spans": [
+        "你拎着购物车到店门口，却被拦下：先付年费才能进。",
+        "退了会员费半年内不让你再办，轻轻把人拴住",
+        "先算清每周采购量，全家一周只买百来块东西，那卡就别办"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，“你想立马回头？难”等停顿重音清楚，全篇无卡嘴，朗读无需临时改词。",
+      "script_spans": [
+        "先掏钱才能摸货架，两三百块说多不多说少不少。你说就买一桶油，也得先办卡。",
+        "有的店写了规矩，退了会员费半年内不让你再办，轻轻把人拴住。你想立马回头？难。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“只是通行证”“轻轻把人拴住”两处比喻贴切克制，服务理解，记忆点离开上下文仍可复述，无堆砌感。",
+      "script_spans": [
+        "这笔钱不算货款，只是通行证",
+        "退了会员费半年内不让你再办，轻轻把人拴住"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从年费、退卡推到办卡建议顺当，但扩张数据段插在退卡与建议之间，与决策结论缺过渡桥。",
+      "script_spans": [
+        "你要是只图偶尔去捡漏，卡费可能比省下的多",
+        "这类仓储店从几年前的三十多家开到如今六十多家，五年翻了一倍，扩张真猛"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制，收益预期有明确限定；但“轻轻把人拴住”把公开退卡规则定性为挽留套路，未提防滥用背景，归因偏颇，宜改写。",
+      "script_spans": [
+        "这笔钱不算货款，只是通行证，不是逛了就能省",
+        "先算清每周采购量，全家一周只买百来块东西，那卡就别办，不然反而亏",
+        "退了会员费半年内不让你再办，轻轻把人拴住"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-36939819d1724e3dafdb0ec12b1ede5b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f460f04fb3574e1bb54393949587785f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

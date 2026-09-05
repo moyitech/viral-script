@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-85a0b3586aae4d9aa341f5497c9b5983",
+  "run_id": "run-20260902T141800Z-b3aa0a82ee91",
+  "trace_sha256": "731281a23cafe364bec86fa35a8dc793b665fd1dab91b78062ce21ed42c0ba3e",
+  "created_at": "2026-09-03T12:17:10.467128Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直指座位公平，既追问馆方责任，也交代占座者与读者自觉，完整回应“谁来维护”。",
+      "script_spans": [
+        "想看书的人没座，占座的书却堆满桌。这公平谁管？",
+        "馆方要负主责，占座的人也得收手。",
+        "日常却靠馆员提醒加读者自觉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律职责、资源稀缺、行为循环与执行困境逐层展开，既有解释也有行动建议，信息增量充足。",
+      "script_spans": [
+        "国家有部公共图书馆法，说县级以上文化部门管图书馆。",
+        "一小时变三小时，资源卡在虚无里。",
+        "治理手段试过好些，效果总卡在执行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出座位冲突，中段不断补充法律、执行和现实困境，结尾自然落到读者行动。",
+      "script_spans": [
+        "想看书的人没座，占座的书却堆满桌。这公平谁管？",
+        "读者骂馆懒，馆说没授权，这死结要有人解。",
+        "公平就从小动作活过来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感和具体场景，但多处信息叠加、措辞生硬，朗读时需临时重断句。",
+      "script_spans": [
+        "你说为啥踢给馆员？原因挺实在。",
+        "有些馆装了预约机，刷码才认你坐，但小馆没专人盯屏，设备也常空闲。",
+        "台湾同行聊过多元包容，落到占座却少实招。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照都服务于理解，既有“踢给馆员”的形象表达，也有公平与公共的收束记忆点。",
+      "script_spans": [
+        "这球就踢给馆员了。",
+        "清了东桌西桌冒新包。",
+        "公平不是帖张条就稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、责任层次大致能跟随，但“台湾同行”段落跳转突兀，文化部门、馆方与馆员的责任衔接未充分说明。",
+      "script_spans": [
+        "馆方难道不想管？他们有难处。",
+        "法律把担子搁文化部门肩头，日常却靠馆员提醒加读者自觉。",
+        "台湾同行聊过多元包容，落到占座却少实招。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导公平且无明显违规，但将管理责任一概归于文化部门，法律权限表述偏绝对，需补充边界。",
+      "script_spans": [
+        "日常却靠馆员提醒加读者自觉。",
+        "说到底责在文化部门，可细则没落地。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3444f4a15f034c4c8ec1bcde6b2ccd0e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

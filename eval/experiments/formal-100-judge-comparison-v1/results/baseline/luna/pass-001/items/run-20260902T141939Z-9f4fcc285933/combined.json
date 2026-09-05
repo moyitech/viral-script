@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-0fbaac96b5794c86a6263dbfc1809832",
+  "run_id": "run-20260902T141939Z-9f4fcc285933",
+  "trace_sha256": "04e935d1bd5675d340431f78aa4a394490fea8aa2994b0ed1f31ef92cf26377a",
+  "created_at": "2026-09-03T11:53:46.163142Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答现在是否锁定，区分合同确定收益与浮动分红，并给出普通消费者可执行的选择。",
+      "script_spans": [
+        "现在锁定长期回报靠谱，但只限合同里写死收益的普通固收产品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 300，目标为 280，偏差率为 7.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，既有55%实现率等量化信息，也有查现金价值、算回本年的具体动作，信息增量充分。",
+      "script_spans": [
+        "过去行业平均实现率曾掉到55%",
+        "你买前慢些翻翻现金价值页，拿笔算算回本年第几年"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出收益下行与锁定回报的冲突，中段持续给出对比和核查方法，结尾也自然收束。",
+      "script_spans": [
+        "收益往下掉，现在锁死长期回报靠谱吗？",
+        "过去行业平均实现率曾掉到55%",
+        "你买前慢些翻翻现金价值页，拿笔算算回本年第几年"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有问答、有对比，也给出购买动作；但“回本年第几年”等多处句式拗口，影响顺畅口播。",
+      "script_spans": [
+        "你买前慢些翻翻现金价值页，拿笔算算",
+        "拿笔算算回本年第几年",
+        "合同里那行写死的数额，才知你这波锁得稳不稳，别等多年后后悔"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“欠条到期得认账”把合同确定性讲具体，“别被高演示晃了眼”也便于复述，修辞适量。",
+      "script_spans": [
+        "就像欠条到期得认账",
+        "别被高演示晃了眼"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线基本清楚，结论、对比和操作建议层层推进；但将预定利率、合同收益与到期给付直接等同，“现在”依据也未展开。",
+      "script_spans": [
+        "可分红险那边呢？",
+        "普通寿险预定利率受规则保护，白纸黑字写进合同，到期一天不少确定给"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提示查看现金价值和区分确定收益与分红，方向较稳；但“最稳”“一天不少”等绝对承诺及“别碰”式建议缺少适当性边界。",
+      "script_spans": [
+        "你买前慢些翻翻现金价值页，拿笔算算回本年第几年",
+        "这是眼下最稳的选法",
+        "到期一天不少确定给"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-1259eca9319d4e9981069f5190229cd4",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a96ecdc5be4b4a668311de5bf1f1e9fc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

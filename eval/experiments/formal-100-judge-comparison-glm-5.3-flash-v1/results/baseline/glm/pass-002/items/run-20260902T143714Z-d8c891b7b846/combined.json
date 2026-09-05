@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-aa546661c139428287e8d9e0062f96e6",
+  "run_id": "run-20260902T143714Z-d8c891b7b846",
+  "trace_sha256": "81a6fc0aa01d018f2bba3452f7875c32ce4936d43d45ded9bbd44c10b4b95dbb",
+  "created_at": "2026-09-03T14:26:46.785822Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答'会不会留新污染'，覆盖退役潮压力与回收两侧，结尾落到普通人可执行做法，切角具体。",
+      "script_spans": [
+        "绿电末端会不会留新污染？得看板子怎么退场",
+        "你见旧板别混建筑垃圾，直接送正规回收点处理才稳妥"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，从标准覆盖环节到渗漏机理再到行动建议层层推进，有今年新规作核，无编造痕迹。",
+      "script_spans": [
+        "这标准盯紧拆卸、收集、运输、贮存，要求厂房防渗漏，培训人员操作"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头抛出污染冲突，但“规矩回收能救回材料”当场泄底；标准条款列举处推进趋平，结尾“干净电藏脏土”才补回余味。",
+      "script_spans": [
+        "旧光伏板扔错地方，可能污染水土",
+        "干净电藏脏土",
+        "但规矩回收能救回材料",
+        "这标准盯紧拆卸、收集、运输、贮存，要求厂房防渗漏，培训人员操作"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有画面、好读，但“规矩回收”“一年比年多”等处需临时补字换词，拉低顺口感。",
+      "script_spans": [
+        "工人按步骤收材料，不让碎玻璃金属乱跑，还能把有用东西回炉",
+        "但规矩回收能救回材料",
+        "退役量一年比年多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "动词具体如“拦下”“乱跑”，修辞克制服务理解；“干净电藏脏土”干脏对照鲜明，离开原文仍可复述。",
+      "script_spans": [
+        "正规拆运拦下大部分污染",
+        "不让碎玻璃金属乱跑",
+        "干净电藏脏土"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "设问开头与结尾回扣完整，主线可跟随；但金属渗土危害紧接回收方案，缺'乱弃才如此'的条件桥。",
+      "script_spans": [
+        "所以光伏叫绿色，也得有人善后",
+        "板子里面那些金属遇雨渗土里，附近水源被沾污"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制，多处有“可能”“容易”限定；但金属渗污句无条件限定，“拦下大部分污染”近似效果承诺，需补边界。",
+      "script_spans": [
+        "旧光伏板扔错地方，可能污染水土",
+        "直接送正规回收点处理才稳妥，别省事烧掉",
+        "板子里面那些金属遇雨渗土里，附近水源被沾污，鱼和庄稼喝水糟了",
+        "正规拆运拦下大部分污染"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d7ccf74131464237a654941e72e481e5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

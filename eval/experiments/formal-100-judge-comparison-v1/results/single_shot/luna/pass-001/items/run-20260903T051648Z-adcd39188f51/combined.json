@@ -1,0 +1,148 @@
+{
+  "evaluation_id": "combined-c9c44ab1647e4d4681fa0d50582efeba",
+  "run_id": "run-20260903T051648Z-adcd39188f51",
+  "trace_sha256": "69ed1f6396867c8c655ad49a549f9700e13e4cb2295229d9f619d2d66c265661",
+  "created_at": "2026-09-03T11:59:34.964422Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应安全与效率如何兼顾，覆盖安检、运营方和通勤族，并给出分级安检等具体方向。",
+      "script_spans": [
+        "真正兼顾不是退回不检，而是用分级安检、智能识包把细用在高危项，把流畅留日常通勤。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 688，目标为 700，偏差率为 1.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，政策、实证研究、深圳案例和成本分配共同推进判断，观众能获得机制解释与可执行方案。",
+      "script_spans": [
+        "为什么安检越做越细？上层规定本就鼓励推广安检新技术、推动新模式提效率，方向是巧干而非蛮干。",
+        "真正兼顾不是退回不检，而是用分级安检、智能识包把细用在高危项，把流畅留日常通勤。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用雨中排队与空车厢制造反差，中段不断追问并补充机制和案例，结尾自然落到可讨论的问题。",
+      "script_spans": [
+        "这画面是不是有点违和？明明奔着安全去的细化安检，怎么反倒让站台挤成罐头、列车吃不满。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "画面感和问答式开头有吸引力，但中段术语、抽象表达偏多，数处需要重断句。",
+      "script_spans": [
+        "这画面是不是有点违和？",
+        "给安检工位适度透明封闭能提升专注度"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“把细用在高危项，把流畅留日常通勤”对仗克制，准确浓缩取舍，另有“挤成罐头”等画面记忆点。",
+      "script_spans": [
+        "把细用在高危项，把流畅留日常通勤。",
+        "怎么反倒让站台挤成罐头、列车吃不满。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "起承转合清楚，机制、案例与方案层层推进；但把作业环境优化直接等同于安检细化，概念有滑移，部分因果缺少桥梁。",
+      "script_spans": [
+        "真正兼顾不是退回不检，而是用分级安检、智能识包把细用在高危项，把流畅留日常通勤。",
+        "实证研究提到，给安检工位适度透明封闭能提升专注度，说明细化也可以是作业环境软优化。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动、不夸大，也承认安全底线；但对运营方动机和资源配置的归因偏绝对，可能造成误导。",
+      "script_spans": [
+        "安全底线当然要守",
+        "只盯管控方便，忘了系统配套",
+        "平峰空站却照样细查，资源错配流失效率"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-7607d1a87e5d426fa54fbceb89388ed9",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c8600bc7deff40c7b61cfea784da72f9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

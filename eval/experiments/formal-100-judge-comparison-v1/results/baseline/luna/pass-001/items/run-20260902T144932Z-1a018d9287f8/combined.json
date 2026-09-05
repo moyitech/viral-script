@@ -1,0 +1,148 @@
+{
+  "evaluation_id": "combined-5c2997498aa745b8be72e99d5ff48436",
+  "run_id": "run-20260902T144932Z-1a018d9287f8",
+  "trace_sha256": "991a3e5b10525ff3953153d9695582f69c76959812a3bcdfa070d710fa80edb6",
+  "created_at": "2026-09-03T11:44:44.090886Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答安全与效率的冲突，既讲门禁边界，也给出停靠、步行和平台协同方案。",
+      "script_spans": [
+        "划块临时停靠区，他停好车走过来，饭送到也不迟。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 473，目标为 450，偏差率为 5.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕兼顾展开，覆盖物业、住户、骑手和平台，措施、影响与权衡都有具体信息支撑。",
+      "script_spans": [
+        "禁的是轮子和喧哗，不是送货人本身。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“进小区却没更慢”的反差立钩，中段连续给出停靠区、识别系统等解法，结尾追问自然有余味。",
+      "script_spans": [
+        "小区不让骑手骑车进，送餐却没更慢。",
+        "门是挡麻烦，还是挡邻居？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 1,
+      "reason": "多处成分残缺、搭配生硬，气口虽短却频繁卡顿，需重写后才能自然口播。",
+      "script_spans": [
+        "物业管门为平安，两头愿都不坏",
+        "美团建了进入难识别"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“禁的是轮子和喧哗，不是送货人本身”准确提炼冲突，“这账划算”与结尾追问也便于复述。",
+      "script_spans": [
+        "禁的是轮子和喧哗，不是送货人本身。",
+        "多等一分钟，换回家门口不打搅，这账划算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "展开顺序清楚，方案也能回扣冲突；但“没更慢”和“一分钟划算”先下结论，缺少效果桥接。",
+      "script_spans": [
+        "先看矛盾根子。很多小区只禁骑行，不把人挡门外。",
+        "送餐却没更慢。",
+        "多等一分钟，换回家门口不打搅，这账划算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动对立，但将配送时效和处罚效果说成普遍确定，需补充因小区而异等边界。",
+      "script_spans": [
+        "禁的是轮子和喧哗，不是送货人本身。",
+        "小区不让骑手骑车进，送餐却没更慢。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5e9d7f452da8464bb35f809701fe8cfc",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d8e8ba1191464e4fa6841072ba366a5b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

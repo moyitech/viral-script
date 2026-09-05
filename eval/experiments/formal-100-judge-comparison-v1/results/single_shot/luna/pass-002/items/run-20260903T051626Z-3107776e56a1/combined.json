@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-28aa5ce4b4a5449abbbe40be4d4327c3",
+  "run_id": "run-20260903T051626Z-3107776e56a1",
+  "trace_sha256": "e1cd4956d430f1df1b0a5bd85205588542fa6ed23137a075281e4eb8e13ac3e0",
+  "created_at": "2026-09-03T12:31:39.695537Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从陌生人求助、网络代付切入，解释风险来源并给出核实、支付和留痕边界，正面回应题设。",
+      "script_spans": [
+        "我的判断很直接：帮陌生人垫付，善意必须带边界，不然容易从救助变成被利用。",
+        "垫付前多问一句官方核实，优先选用带担保或延时的支付渠道，小额救急也留好聊天记录。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕善意垫付的风险边界，兼顾无因管理、诈骗机制与可执行建议，信息推进充分。",
+      "script_spans": [
+        "那种被急促语气裹挟的感觉，让人来不及细想。",
+        "更现实的风险是，电信网络诈骗高发，骗子常制造紧急情境突破信任。",
+        "垫付前多问一句官方核实，优先选用带担保或延时的支付渠道，小额救急也留好聊天记录。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用两种紧急垫付场景设钩子，中段递进到法律、诈骗与应对，结尾收出边界意识，推进完整。",
+      "script_spans": [
+        "在路边有人突然拦下你，说家人急救差几百块挂号费，手机没电求你垫付",
+        "好在你转账时，部分支付平台已上线延时到账和风险提示，发现不对能及时止付。",
+        "帮人别帮成被收割的缺口，这才是善意的可持续方式。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读通，设问和建议有节奏，但法律段落密集拗口，个别表述还需要重断句。",
+      "script_spans": [
+        "发现不对能及时止付",
+        "管理人没有法定或约定义务，且为避免他人利益受损",
+        "虽法律说违法背俗时受益人抗辩排除"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“踩刹车”和“被收割的缺口”把抽象边界说得具体，既有画面感，也留下可复述的收束句。",
+      "script_spans": [
+        "可这份好心，为什么常常需要踩刹车？",
+        "帮人别帮成被收割的缺口，这才是善意的可持续方式。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "场景—判断—风险—建议的主线清楚，但法律段术语密集，‘虽……但……’句因果断裂，‘暗中罪犯’也造成理解卡顿。",
+      "script_spans": [
+        "好在你转账时，部分支付平台已上线延时到账和风险提示，发现不对能及时止付。",
+        "若对方以虚假身份骗付，虽法律说违法背俗时受益人抗辩排除，但暗中罪犯无处追偿，钱款难回。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体以核验和防诈骗为主，价值导向安全；但“能及时止付”“罪犯无处追偿”等表述过于确定，可能造成法律和支付保障误解。",
+      "script_spans": [
+        "垫付前多问一句官方核实，优先选用带担保或延时的支付渠道",
+        "发现不对能及时止付",
+        "暗中罪犯无处追偿，钱款难回"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9e9307935dae4d148c91d83d15bf7879",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

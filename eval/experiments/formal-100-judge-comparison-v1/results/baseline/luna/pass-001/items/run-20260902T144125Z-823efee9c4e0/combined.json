@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-a2ca8745c3074eaeb36458018f8c812e",
+  "run_id": "run-20260902T144125Z-823efee9c4e0",
+  "trace_sha256": "3ba99e7b5c4c1b7cada6ea7125468dde147c1ab4fcb279a5a897d8a107e6eb61",
+  "created_at": "2026-09-03T11:44:26.631584Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答便利与误诊风险，覆盖复诊、首诊和急症场景，结尾给出明确自检动作。",
+      "script_spans": [
+        "互联网问诊一键开药，方便是真，误诊风险也是真。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 473，目标为 450，偏差率为 5.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中，规则、诊疗边界、典型场景与行动建议层层增加信息，避免停留在泛泛提醒。",
+      "script_spans": [
+        "患者得先交明确诊断病历，医师判断合规才能开，处方必须本人开，AI不能代劳。",
+        "要是突然头晕手麻，你当普通不适在线开药，远端医生瞧不见你神情，可能漏掉急症信号。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用治错病制造反差，中段连续补充规则与案例，结尾由风险自然落到自检问题。",
+      "script_spans": [
+        "你点一下手机就拿到药，可这药可能治错病。",
+        "所以点药前，先问自己：这毛病以前确诊过吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感，短句和第二人称有效；但多处抽象搭配与生硬压缩，朗读仍需重断句。",
+      "script_spans": [
+        "你点一下手机就拿到药，可这药可能治错病。",
+        "所以点药前，先问自己：这毛病以前确诊过吗？",
+        "便捷能解慢病复诊的远水，却解不了首诊的面诊缺失。",
+        "可要是嫌挂号烦，把新病说成老病延，医生凭你打字猜症，方子就歪。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一边省了出门，一边丢了当面查体”和“文字代替不了望闻问切”准确易记，修辞没有压过信息。",
+      "script_spans": [
+        "一边省了出门，一边丢了当面查体，这得两头看。",
+        "文字代替不了望闻问切，这是硬伤。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头抛出便利与风险的矛盾，中段解释监管边界和误诊原因，结尾回到下单前自检，推进完整自然。",
+      "script_spans": [
+        "便捷能解慢病复诊的远水，却解不了首诊的面诊缺失。",
+        "所以点药前，先问自己：这毛病以前确诊过吗？别给模糊症状一键下单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调复诊边界与急症风险，方向克制；但“老慢支续方风险小”弱化医疗风险，“只接复诊”也过于绝对，需加条件。",
+      "script_spans": [
+        "可能漏掉急症信号",
+        "别给模糊症状一键下单",
+        "老慢支续方风险小",
+        "只接复诊，严禁先药后方"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ce671be10be8497b94bfcde11a11d352",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-57267bdcee864bf9be1662d0f819fd89",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

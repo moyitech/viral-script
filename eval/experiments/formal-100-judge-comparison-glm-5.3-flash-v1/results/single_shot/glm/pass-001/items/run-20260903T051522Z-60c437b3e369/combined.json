@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-3a44cff3598e4aa6af90aea091bc41d0",
+  "run_id": "run-20260903T051522Z-60c437b3e369",
+  "trace_sha256": "fb8f277e1450b41bc35a811699579ebc4ee7861df116ec54fc5b14102664b857",
+  "created_at": "2026-09-03T14:18:17.915295Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答'是否定的'，利率、流动性、门槛逐层回应'划算与否'，题设两侧与储户人群均覆盖。",
+      "script_spans": [
+        "大额存单利率平平却一单难求，抢着存真更划算吗？答案恐怕是否定的。",
+        "钱要锁几年，先问自己能不能承受流动性打折，再算实际到手收益。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 254，目标为 280，偏差率为 9.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "全程聚焦大额存单，利率对比、倒挂、锁资金动机、流动性成本、五十万保险上限层层推进，论据扎实。",
+      "script_spans": [
+        "再看流动性，提前支取只能拿活期利息，转让虽说允许，真到急用钱时未必能顺利出手，隐性成本不小。",
+        "如果投入超过五十万，记住存款保险只保本息五十万内，别被抢购情绪带着走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头“利率平平却一单难求”反差加悬念即时成立；中段持续兑现锁资金、利率倒挂等转折；结尾自问自然生长，有余味。",
+      "script_spans": [
+        "大额存单利率平平却一单难求，抢着存真更划算吗？",
+        "银行限量发额度更像锁资金的安排，不是送福利",
+        "门槛低了不代表值得抢"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句可读，气口清楚；但中段'优势已很薄''利率倒挂'偏财经书面，真人开口感不足。",
+      "script_spans": [
+        "门槛低了不代表值得抢",
+        "但比起部分中小银行普通定存优势已很薄"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“锁资金的安排，不是送福利”反差精准、单独可复述；“流动性打折”化抽象为具体；全篇克制，无炫技或喧宾夺主。",
+      "script_spans": [
+        "银行限量发额度更像锁资金的安排，不是送福利",
+        "先问自己能不能承受流动性打折"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "收益端与流动性端并列展开，'门槛低了不代表值得抢'承接自然，结尾以决策步骤回扣开头发问。",
+      "script_spans": [
+        "银行限量发额度更像锁资金的安排，不是送福利",
+        "顺便提一句，个人认购起点近期降到了二十万，门槛低了不代表值得抢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论以“恐怕”留余地，限量归因用“更像”限定，并主动提示存款保险上限与流动性代价，无夸大误导。",
+      "script_spans": [
+        "银行限量发额度更像锁资金的安排，不是送福利",
+        "如果投入超过五十万，记住存款保险只保本息五十万内，别被抢购情绪带着走"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-54094e845cc74cd49f1915cff2209c4a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ef0bc7a174bb44f18f00fd874f78fe58",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

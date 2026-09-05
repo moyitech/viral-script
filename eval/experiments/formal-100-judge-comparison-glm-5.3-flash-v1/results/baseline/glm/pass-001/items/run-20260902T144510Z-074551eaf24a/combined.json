@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-8a33489879ca41528b075131f7bba7c0",
+  "run_id": "run-20260902T144510Z-074551eaf24a",
+  "trace_sha256": "c5730afda8fa9e7a9115adcf25ba540964356f069effb3de39c2d0d51756ca67",
+  "created_at": "2026-09-03T13:48:31.762176Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛分配之问，急重优先与非急症出口两策并举，结尾回扣观众自身就医选择，全程正面答题。",
+      "script_spans": [
+        "有限资源该怎么分？医生和床位先给心跳骤停、大出血的急重病人",
+        "同时非急症得有出口，疏导到社区门诊或延时诊所",
+        "下次身体闹脾气，你先想想该去哪吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 678，目标为 700，偏差率为 3.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "分级规则、倒挂成因、收费改革与退款机制逐层推进，关键数据有出处，信息密而有序不空转。",
+      "script_spans": [
+        "国家规定分四级，一二类危急紧急立刻救，三四类次紧急非紧急要等",
+        "香港试过公营医疗收费改革，次紧急和非紧急病人明显回流诊所，数量减约两成",
+        "社区医院晚八点关门，夜里只能奔急诊"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字直点生死资源冲突，中段以“可现实常倒挂”“怎么破”持续兑现，结尾问句由正文自然生长。",
+      "script_spans": [
+        "非急症挤占急诊，危急患者可能错失抢救时机。这不只是排队先后，是生死资源的调配。",
+        "可现实常倒挂。很多患者夜奔急诊只图方便，病却不凶险。",
+        "当急诊不再被小病占满，真正危急的人就多一分生机。下次身体闹脾气，你先想想该去哪吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、问答承接有对话感，但压缩句不止一处需临时换词重断，未到张口即顺的程度。",
+      "script_spans": [
+        "医生和床位先给心跳骤停、大出血的急重病人，不该让感冒发烧者堵门",
+        "收费杠杆能调行为，却替代不了家门口诊所能开门",
+        "资源错配逼垮人手"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“挪用别人的救命分钟”“24小时救急、全天候门诊”两处离开上下文仍可复述，修辞克制不抢戏。",
+      "script_spans": [
+        "你若感冒去急诊，实则挪用了别人的救命分钟。",
+        "急诊科本为24小时救急，却被当作全天候门诊。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问衔接层层递进，倒挂有转折、对策有前提与让步，结尾自然回扣开头之问，主线无断点。",
+      "script_spans": [
+        "可现实常倒挂。很多患者夜奔急诊只图方便",
+        "收费杠杆能调行为，却替代不了家门口诊所能开门",
+        "分诊不是推走病人，是排顺序"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有数据支撑、多用具限定词，兼顾弱者豁免；但「挪用了别人的救命分钟」对个体绝对归责、标签化感冒发烧者，需加边界改写。",
+      "script_spans": [
+        "危机重症豁免收费，才不会误伤穷人。",
+        "同时非急症得有出口，疏导到社区门诊或延时诊所",
+        "你若感冒去急诊，实则挪用了别人的救命分钟。",
+        "不该让感冒发烧者堵门"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-934a246b435848e7a200c3fb58867ed7",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-66007bef70094c7eb5acf1479643b959",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

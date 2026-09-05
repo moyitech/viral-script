@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-07daf7b87b4a470bb5763b3bbbf04e13",
+  "run_id": "run-20260903T051523Z-2f2ca1a078ea",
+  "trace_sha256": "016e3abcc1e765c027307d8ae1731c511818d6d2a6cce64be327f41621ad5a57",
+  "created_at": "2026-09-03T15:26:51.392458Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答难分清，结尾给出看标识的分辨法，普通消费者与养生理财场景均命中题设。",
+      "script_spans": [
+        "单凭眼睛和直觉其实已经很难分清对面是真人主播还是数字人合成形象了",
+        "你下次刷到主播卖力推销，先盯一眼画面边角有没有‘AI生成’标识，尤其涉及养生理财别光凭感觉信"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从判断、规则佐证到仿冒案例再到行动建议，信息单元层层推进，案例与规则均有依据。",
+      "script_spans": [
+        "数字人能二十四小时不间断直播，表情语气都经过算法精细调校，和真人互动的节奏几乎无异",
+        "此前就出现过商家用仿冒老专家或名人的虚拟形象，专挑易信任的群体推销高价产品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "仿冒案例与实用提示成立，但前20字为铺垫长句，钩子延迟，中段说理偏平，难催生转发冲动。",
+      "script_spans": [
+        "此前就出现过商家用仿冒老专家或名人的虚拟形象，专挑易信任的群体推销高价产品",
+        "先盯一眼画面边角有没有‘AI生成’标识",
+        "普通消费者在刷到那些全天不停带货的直播间时",
+        "这从当前要求AI带货必须主动亮明身份的规则就能印证"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "结尾对话感好，但中段多处书面倒装与抽象表述，朗读需临时换词重断句。",
+      "script_spans": [
+        "你下次刷到主播卖力推销，先盯一眼画面边角有没有‘AI生成’标识",
+        "这从当前要求AI带货必须主动亮明身份的规则就能印证",
+        "专挑易信任的群体推销高价产品，说明混淆不只是误认而已"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“卸下防备”“盯一眼”等局部表达，但主体是平实说明，无一句离开上下文仍愿复述的记忆点。",
+      "script_spans": [
+        "全天候值守更容易让人卸下防备",
+        "表情语气都经过算法精细调校，和真人互动的节奏几乎无异"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "因果桥完整，由监管标注反推难分辨，结尾看标识的建议回扣开头的直觉失效，层层递进。",
+      "script_spans": [
+        "正是因为虚拟画面越来越像真人、全天候值守更容易让人卸下防备，监管才强制标注来保障分辨权",
+        "说明混淆不只是误认而已"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "风险提示有据且措辞克制，建议核对AI标识、养生理财别轻信，边界清楚，无夸大承诺或引战误导。",
+      "script_spans": [
+        "此前就出现过商家用仿冒老专家或名人的虚拟形象，专挑易信任的群体推销高价产品",
+        "先盯一眼画面边角有没有‘AI生成’标识，尤其涉及养生理财别光凭感觉信"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-504bac3b874648c08fc3505cdd789c28",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

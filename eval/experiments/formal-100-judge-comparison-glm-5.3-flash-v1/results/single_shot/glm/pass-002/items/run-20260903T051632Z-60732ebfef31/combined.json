@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-6708e7457c7746df9111b85de73e6644",
+  "run_id": "run-20260903T051632Z-60732ebfef31",
+  "trace_sha256": "cd0ad42d872ddd622638417cb988aa59eabb5fe4f5aa6c5f1d66023f796a53fd",
+  "created_at": "2026-09-03T15:27:38.261454Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即入题，企业与求职者两侧动机均正面作答，“红灯”判断切角具体，与求职人群痛点贴合。",
+      "script_spans": [
+        "求职者为什么越来越烦这句老话？",
+        "它早已从中性说明，变成了暗示信息不对称的红灯"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题全程锁定面议，企业动机、求职者算法、监管边界层层推进，研究支撑扎实，无编造，增量明确。",
+      "script_spans": [
+        "通勤成本、社保基数、涨薪预期都要前置评估",
+        "薪酬决策过程若不透明，人的公平感会明显走低，满意度也跟着塌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头同屏反差抓人，三问层层兑现新信息，结尾“省事还是防我”由正文自然生长，无生硬互动。",
+      "script_spans": [
+        "你刷招聘软件，滑过十家八家写着“薪资面议”，可就在同一屏，别的岗位明晃晃标着月薪范围",
+        "企业为什么死抱着面议不放？",
+        "下次刷到面议，先问一句：这公司是省事，还是防我？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口与对话感多处成立，但“若不透明”“压实信息明示责任”等至少两处需临时换词重断，只能评2分。",
+      "script_spans": [
+        "但更常见的心思，是怕亮出底牌就被同行比价，或者想留着面试时看人下菜碟压价",
+        "有学术方向的研究提到，薪酬决策过程若不透明",
+        "压实信息明示责任，资质和内容审核要到位"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“规则不亮，人就不会认账”离文可复述，底牌意象贯穿全文，修辞克制且服务论点，无堆砌。",
+      "script_spans": [
+        "规则不亮，人就不会认账",
+        "敢写清价的公司，往往更敢对人负责"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进层层递进，让步转折因果清楚，结尾以“省事还是防我”回扣开头，整体经得起追问。",
+      "script_spans": [
+        "这情有可原。但更常见的心思，是怕亮出底牌就被同行比价",
+        "下次刷到面议，先问一句：这公司是省事，还是防我？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制，有\"情有可原\"等边界；但\"看人下菜碟压价\"\"多半是懒或防备\"属标签化归因，需改稳。",
+      "script_spans": [
+        "有的岗位浮动大、层级杂，写个范围怕筛掉人，这情有可原",
+        "也不是所有面议都是坑，少数高管岗或弹性项目确实难提前定薪",
+        "但更常见的心思，是怕亮出底牌就被同行比价，或者想留着面试时看人下菜碟压价",
+        "普通岗位再写面议，多半是懒或防备"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-42156f707c304dd887338656d69396d2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

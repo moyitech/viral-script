@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-349ddcb9a6da43959eb9a2af3126edff",
+  "run_id": "run-20260902T143445Z-e760c914562d",
+  "trace_sha256": "39bdb2aa799bbf7d8f2b5a908329d894bdccc0a2417ed2113097795c55d50f19",
+  "created_at": "2026-09-03T14:24:49.975579Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出冲突两侧，全文围绕日常琐事与教育大事的分界回答谁拍板，父母与老人边界清晰，正中目标人群痛点。",
+      "script_spans": [
+        "姥姥追着喂饭，娃妈偏让娃自己吃，这日常谁说了算？",
+        "把老人经验当参谋，父母做最终舵手，娃才能稳稳长大。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法条依据、委托照料与监护之别、琐事与大事边界、调解与指导令层层推进，退学私塾反例具体，无编造，增量扎实。",
+      "script_spans": [
+        "你请老人帮忙带，是委托照料，不是过户监护权。",
+        "老人瞒着爸妈给娃办退学去私塾，这就踩过线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即喂饭冲突画面抓人，中段以设问连环推进，结尾'谁拍板'由正文自然生长，互动不生硬。",
+      "script_spans": [
+        "姥姥追着喂饭，娃妈偏让娃自己吃，这日常谁说了算？",
+        "下次你家为怎么教娃吵起来，先停一秒问自己：这决定到底该谁拍板？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句有节奏、比喻接地气，但'责任主体'连说两次显冗余，法条转述处需临时改词，达3分有差距。",
+      "script_spans": [
+        "平时老人冲在带娃一线，父母却住外头不常来，责任在纸面上，生活在手脚上，两边错位就吵起来",
+        "就像请人看店不能改招牌，老人可以添衣背书，但选校报班这种方向，得爸妈拍板",
+        "它不是抹掉老人功劳，而是让责任主体清晰可查。国家给指导支持，但不替父母做主，责任主体还是清晰",
+        "负责实施，说的是品德、习惯、文化这些培育引导"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'请人看店不能改招牌'类比贴切、离文可复述，'纸面/手脚'对照凝练，全篇修辞克制不喧宾。",
+      "script_spans": [
+        "就像请人看店不能改招牌，老人可以添衣背书，但选校报班这种方向，得爸妈拍板。",
+        "责任在纸面上，生活在手脚上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以错位解释冲突成因，设问推进段落，看店改招牌比喻贴切，结尾自然回扣开头之问，前提到结论层层递进。",
+      "script_spans": [
+        "责任在纸面上，生活在手脚上，两边错位就吵起来。",
+        "下次你家为怎么教娃吵起来，先停一秒问自己：这决定到底该谁拍板？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法律表述有据且留有余地，既明权责又肯定老人付出，无煽动夸大，导向安全。",
+      "script_spans": [
+        "它不是抹掉老人功劳，而是让责任主体清晰可查",
+        "老人带娃是情分也是劳碌，但情分改不了法律上的主次",
+        "指导令是提醒责任归位，不是罚老人"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9c3d577a21af42e6b17e73a5593cb3e5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

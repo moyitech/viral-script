@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-a5d576e2789b473da1302834fbc73079",
+  "run_id": "run-20260903T051555Z-a79b858a219e",
+  "trace_sha256": "a981bb1bfb52e954674252f14a728d1e3f0ca6ad784fde217d7812a4cc5cf610",
+  "created_at": "2026-09-03T14:11:10.704412Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开门见山回答“为何重复花钱”，归因接诊医生裁量，末尾给患者可操作对策，题设两侧与人群全覆盖。",
+      "script_spans": [
+        "根子不在没发文，而在规则把认不认的最终按钮交给了接诊医生",
+        "对普通人，代价是口袋里的钱和排队半天的工夫"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 450，目标为 450，偏差率为 0.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "三成占比、2006试点、双CT案例与“接诊医师判断”条款环环相扣，再分清救命与防御性重检，有依据有增量。",
+      "script_spans": [
+        "检查化验费能占到看病总花费的三成上下",
+        "有的重检真为救命，有的纯属防御性开单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以二十年推不动与照样重检形成反差，中段用占比、案例、规则层层兑现，结尾建议由正文自然长出，余味足。",
+      "script_spans": [
+        "政策推了快二十年，你换家医院看同样的病，医生照样开单让你重新拍片抽血。钱花得冤不冤？",
+        "有患者一周内转院又被要求做两次肺部CT",
+        "互认是患者的权利，不是一张免检证。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口为主，重音停顿清楚，口语表达贯穿全篇，模拟朗读无需临时改词或重断句。",
+      "script_spans": [
+        "钱花得冤不冤？",
+        "医生说病情变了或机器不一样，咱配合重做"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻与对比点到为止，“最终按钮交给接诊医生”与结尾“权利不是免检证”均可独立复述，无炫技堆砌。",
+      "script_spans": [
+        "互认卡壳，根子不在没发文，而在规则把认不认的最终按钮交给了接诊医生",
+        "平台互通了二百多个地级市，但调得出的片子未必抵一句“我看不太准”",
+        "互认是患者的权利，不是一张免检证。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由规则、责任动机到平台局限层层递进，因果桥清晰；结尾对策回扣开头之问，“免检证”收束精准有力。",
+      "script_spans": [
+        "可当医生扛着医疗责任，面对外院数据，宁可重检也不愿冒风险",
+        "互认是患者的权利，不是一张免检证"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述公允，例外边界清楚，维权建议限于该认不认的情形，无绝对化或煽动。",
+      "script_spans": [
+        "医生说病情变了或机器不一样，咱配合重做；若明明该认却不认，你也有理由较较真",
+        "但也得分清，有的重检真为救命，有的纯属防御性开单",
+        "互认是患者的权利，不是一张免检证"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-1796c84df181482183232c137b1c7d04",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-914b73191e7e41e08f569d0dd1fcacbc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

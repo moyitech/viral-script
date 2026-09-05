@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-d499bc102df84947b68eb768948909b7",
+  "run_id": "run-20260902T143245Z-a3816bb1a9e4",
+  "trace_sha256": "875b12e1102f9f537fcf6410bc0a8c4b467c38a2306322bb3c103bec234837e6",
+  "created_at": "2026-09-03T12:18:36.868802Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 2,
+      "reason": "正面呈现云故障冲击并提出用户应对，但没有完整回答厂商、政府与用户各自如何兜底，且企业建议与普通用户边界混杂。",
+      "script_spans": [
+        "云一断千行停摆，你扫码点餐转圈圈，损失到底谁兜？",
+        "别只盯厂商赔钱或政府接管，咱们普通用户自己得留好后路。",
+        "核心业务千万别拴死一家云，平时千万存份本地冷备份才稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕云故障风险，监管边界、事故规模、典型后果和备份建议分别推进，信息密度与可执行性都较好。",
+      "script_spans": [
+        "它只覆盖党政关键设施，普通小商家和民企根本不在里头，没强制保障。",
+        "去年全球前十云厂事故三百多起，累计中断两千八百小时，影响几十亿人呢。",
+        "核心业务千万别拴死一家云，平时千万存份本地冷备份才稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“扫码转圈”和“损失谁兜”制造即时冲突，中段持续补充风险，结尾落到具体避险动作，收束自然。",
+      "script_spans": [
+        "云一断千行停摆，你扫码点餐转圈圈，损失到底谁兜？",
+        "上月一次国际大云崩了整整十五小时，上千企业直接停摆，连支付都废了。",
+        "核心业务千万别拴死一家云，平时千万存份本地冷备份才稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头钩子和结尾建议都很利落，但“云厂商的整个宕机了”“国际大云”两处说法明显卡嘴。",
+      "script_spans": [
+        "云一断千行停摆，你扫码点餐转圈圈，损失到底谁兜？",
+        "刷不出可不是你手机流量少，是千里外云厂商的整个宕机了。",
+        "上月一次国际大云崩了整整十五小时"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“云一断千行停摆”和“别拴死一家云”都短促形象，既帮助理解依赖风险，也留下了可复述的提醒。",
+      "script_spans": [
+        "云一断千行停摆",
+        "核心业务千万别拴死一家云"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头场景和结尾建议形成首尾照应，但从‘谁兜’直接跳到用户自救，监管范围也未能推出责任转移，因果桥不足。",
+      "script_spans": [
+        "云一断千行停摆，你扫码点餐转圈圈，损失到底谁兜？",
+        "别只盯厂商赔钱或政府接管，咱们普通用户自己得留好后路。",
+        "它只覆盖党政关键设施，普通小商家和民企根本不在里头，没强制保障。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体是风险提示并给出备份建议，但“根本不在里头、没强制保障”及“连支付都废了”等说法过满，易造成泛化误导。",
+      "script_spans": [
+        "核心业务千万别拴死一家云",
+        "普通小商家和民企根本不在里头，没强制保障",
+        "连支付都废了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d93ab9c03319470ca97c377002761df8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

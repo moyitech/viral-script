@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-459cfb091f2749afb3e613e6823c1e41",
+  "run_id": "run-20260903T051626Z-fbda1a92da20",
+  "trace_sha256": "997022c5591ec8fefe33e72153e59138c3493d95a397747877eec9a5b688eb6a",
+  "created_at": "2026-09-03T12:01:01.842794Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设置家庭群借钱场景，随后直接回答视频通话不能单独证明身份，准确覆盖题设与核心人群。",
+      "script_spans": [
+        "这画面能证明真是他吗？我的判断很直接：单靠视频通话确认亲人身份，已经不够稳了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 271，目标为 280，偏差率为 3.21%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从伪造能力、人眼误判到暗号和回拨核验，信息逐层推进，既解释风险，也给出可执行办法。",
+      "script_spans": [
+        "深度伪造能把熟人的容貌和嗓音高精度复刻，连细微表情和说话停顿都能仿，像极了真人。",
+        "提前约定个只有彼此懂的暗号，或者挂断后用原先存好的号码回拨，别嫌麻烦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用亲属视频催钱和转账截图制造即时风险，中段升级深伪难辨，结尾给出核验动作，推进完整。",
+      "script_spans": [
+        "家族群突然弹出叔叔的视频通话",
+        "人眼辨别力甚至会跌到接近乱猜的水平",
+        "换条渠道核实才守得住钱包"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体结构清楚，开头设问和防范建议顺口；但“屏幕里是他脸”等措辞略卡，技术解释偏书面，朗读需要重断句。",
+      "script_spans": [
+        "那家里怎么防？提前约定个只有彼此懂的暗号",
+        "屏幕里是他脸",
+        "人眼辨别力甚至会跌到接近乱猜的水平"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“眼见不一定为实”形成可复述的反差提醒，“换条渠道核实”又落到行动，修辞克制且服务理解。",
+      "script_spans": [
+        "眼见不一定为实",
+        "换条渠道核实才守得住钱包"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "场景提问引出判断，技术解释承接风险，最后落到跨渠道核验，前后回扣自然且因果完整。",
+      "script_spans": [
+        "平时从没这么催过，这画面能证明真是他吗？我的判断很直接：单靠视频通话确认亲人身份，已经不够稳了。",
+        "记住，眼见不一定为实，换条渠道核实才守得住钱包，尤其是涉及转账时。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "核验建议具体且不煽动，但“如今在家庭群里格外活跃”缺少范围限定，容易把趋势说成普遍现象。",
+      "script_spans": [
+        "挂断后用原先存好的号码回拨",
+        "这类冒充亲属借钱的骗局，如今在家庭群里格外活跃"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-80cbccfeb33a405a8171b01a62f2315a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ad5375730c114982874f8bd5e5b4fac9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

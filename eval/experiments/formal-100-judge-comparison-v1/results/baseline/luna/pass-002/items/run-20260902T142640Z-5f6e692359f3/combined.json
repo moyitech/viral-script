@@ -1,0 +1,143 @@
+{
+  "evaluation_id": "combined-4d95a8f5fed449ab87c096146e9c307e",
+  "run_id": "run-20260902T142640Z-5f6e692359f3",
+  "trace_sha256": "aeee946fee1e424e5ef8f69c9d24c26e82b27e0a500d97c5f14a188520bfdc67",
+  "created_at": "2026-09-03T12:16:13.677507Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“是否更安全”，兼顾普通用户的防护收益、设备丢失、恢复和会话令牌风险，切题完整。",
+      "script_spans": [
+        "无密码加速普及，账户真就更安全了吗？得看两面。",
+        "所以无密码压住密码盗窃风险，没把账户塞进铁桶。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息单元充足，先讲密钥机制和防钓鱼，再讲恢复、令牌与普及，结尾收束出明确的安全边界。",
+      "script_spans": [
+        "传统密码常一个密码走天下，哪家数据库泄露，复用账户全连坐。",
+        "会话令牌像丢了门禁卡，里面人直接放行进。",
+        "无密码关了前门，后窗得另上锁。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用省事与丢机的反差抓人，中段连续换风险视角，结尾把便利与设备责任拧成余味。",
+      "script_spans": [
+        "指纹登录省了记密码的麻烦，丢手机却像天塌了。",
+        "无密码关了前门，后窗得另上锁。",
+        "你省了记密码的脑容量，却押上设备主权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数句子短促有对话感，但技术解释有压缩表达，个别句子需要重断句或换词。",
+      "script_spans": [
+        "先说它堵住了什么",
+        "钥匙不出门，贼进不来",
+        "通过同步网备份到别设备，能达到二级保证",
+        "里面人直接放行进"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“前门、后窗”把攻防讲得直观，结尾“押上设备主权”有复述价值，整体修辞服务观点。",
+      "script_spans": [
+        "无密码关了前门，后窗得另上锁。",
+        "钥匙不出门，贼进不来。",
+        "你省了记密码的脑容量，却押上设备主权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按防护收益、恢复困境、攻击转移再到结论推进，但私钥不上传与同步备份的关系未交代，个别因果也跳得太快。",
+      "script_spans": [
+        "所以无密码压住密码盗窃风险，没把账户塞进铁桶。",
+        "私钥在你手机里生成，从不上传服务器。",
+        "新版数字身份指南允许把钥匙通过同步网备份到别设备，能达到二级保证。",
+        "攻击产业转方向，说明防护得层层加。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "风险边界交代到位，但“钓鱼邮件点开也不怕”“贼进不来”把防护效果说得过满，可能造成安全误判。",
+      "script_spans": [
+        "设备保管责任还在你，同步不是万能险。",
+        "钓鱼邮件点开也不怕",
+        "钥匙不出门，贼进不来。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d3d40905ff3d435c9083dc6efc3b25a5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

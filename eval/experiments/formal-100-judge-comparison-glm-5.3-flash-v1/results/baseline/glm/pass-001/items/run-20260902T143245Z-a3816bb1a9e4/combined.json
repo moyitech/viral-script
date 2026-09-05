@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-7a562bedcaf14023b3d21664ee10f1b3",
+  "run_id": "run-20260902T143245Z-a3816bb1a9e4",
+  "trace_sha256": "875b12e1102f9f537fcf6410bc0a8c4b467c38a2306322bb3c103bec234837e6",
+  "created_at": "2026-09-03T13:46:21.452523Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛'谁兜'、结尾落到自救建议，全程正面答题；机构与个人两侧都触及，普通用户与小商家均被命中。",
+      "script_spans": [
+        "损失到底谁兜",
+        "咱们普通用户自己得留好后路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 289，目标为 280，偏差率为 3.21%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，政策覆盖范围与故障数据两块论据各自推进，结尾多云加冷备份给出可带走的判断和做法。",
+      "script_spans": [
+        "它只覆盖党政关键设施，普通小商家和民企根本不在里头",
+        "去年全球前十云厂事故三百多起，累计中断两千八百小时"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头扫码转圈加'谁兜'之问钩子具体，中段政策盲区与事故数据层层兑现，结尾备份建议由正文自然生长。",
+      "script_spans": [
+        "云一断千行停摆，你扫码点餐转圈圈，损失到底谁兜？",
+        "刷不出可不是你手机流量少，是千里外云厂商的整个宕机了",
+        "上月一次国际大云崩了整整十五小时，上千企业直接停摆，连支付都废了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主，气口与重音清楚，'谁兜''拴死一家云'等说法自带对话感，朗读无需临时改词。",
+      "script_spans": [
+        "云一断千行停摆，你扫码点餐转圈圈，损失到底谁兜？",
+        "核心业务千万别拴死一家云，平时千万存份本地冷备份才稳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'拴死一家云''扫码点餐转圈圈'形象贴切且离开上下文仍可复述，修辞服务理解，全篇克制不炫技。",
+      "script_spans": [
+        "核心业务千万别拴死一家云",
+        "你扫码点餐转圈圈"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、因果桥清楚；但'厂商赔钱'一侧未给论据即被带过，结尾建议对象也从个人用户跳到企业。",
+      "script_spans": [
+        "刷不出可不是你手机流量少，是千里外云厂商的整个宕机了",
+        "别只盯厂商赔钱或政府接管，咱们普通用户自己得留好后路",
+        "核心业务千万别拴死一家云，平时千万存份本地冷备份才稳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "备份建议实用且无夸大承诺，数据与背景相符；但称评估办法民企根本不在里头属绝对化归因，需补限定措辞才稳妥。",
+      "script_spans": [
+        "核心业务千万别拴死一家云，平时千万存份本地冷备份才稳",
+        "它只覆盖党政关键设施，普通小商家和民企根本不在里头，没强制保障"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-c78aa7a6f3e54ae9a4c0994bc9863c7e",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-82f01d18e9cb442481bc39b8a0ea811e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

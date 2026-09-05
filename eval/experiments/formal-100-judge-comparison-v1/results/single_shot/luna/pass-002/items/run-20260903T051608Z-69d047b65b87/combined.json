@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-40accea6f57146008c3c86c886fd842e",
+  "run_id": "run-20260903T051608Z-69d047b65b87",
+  "trace_sha256": "ab6a235fe6cd2de0a1f6bda30018cc4c1a760164eb956ee9295ff947b757e6cc",
+  "created_at": "2026-09-03T12:31:57.154541Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答标准是否跟得上，兼顾项目扩张、安全事故与监管落地，精准对应普通观众关切。",
+      "script_spans": [
+        "储能电池的安全标准正在补，但明显追不上项目扎堆上马的速度。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕扩张、标准、事故和运维推进，既有增长数据，也给出后评价与检测的具体落点。",
+      "script_spans": [
+        "就在上半年，全国建成投运的新型储能装机相比去年已经涨了六成以上",
+        "项目竣工后的安全后评价与定期检测必须动真格"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出标准滞后冲突，中段以增速和事故递进，结尾判断有余味。",
+      "script_spans": [
+        "储能电池的安全标准正在补，但明显追不上项目扎堆上马的速度。",
+        "与此同时，全球多国近期接连发生储能火灾",
+        "这关不过去产业走不远。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有鲜明对照和明确结论，整体可读；但中段长句、术语和数据堆叠，朗读与当面解释都需调整。",
+      "script_spans": [
+        "一边是新建储能像下饺子，一边是规矩刚起步。",
+        "可就在上半年，全国建成投运的新型储能装机相比去年已经涨了六成以上，里头锂离子电池路线占了绝大部分，扩张斜率很陡。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“像下饺子”和“这关不过去产业走不远”形象克制，既帮助理解，也留下可复述的判断。",
+      "script_spans": [
+        "一边是新建储能像下饺子，一边是规矩刚起步。",
+        "这关不过去产业走不远。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚且有行动落点，但用标准发布时间和事故罗列直接推出“跟不上”，因果桥仍不足。",
+      "script_spans": [
+        "别只盯着装机排名和红利，项目竣工后的安全后评价与定期检测必须动真格",
+        "可就在上半年，全国建成投运的新型储能装机相比去年已经涨了六成以上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "安全提醒和治理建议方向稳妥，但“都没幸免”“明显高于往年”等绝对或比较性表述缺少限定，易造成夸大印象。",
+      "script_spans": [
+        "项目竣工后的安全后评价与定期检测必须动真格",
+        "都没幸免",
+        "事故频率明显高于往年"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6591b69d032141f6a806ac6903e794f8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

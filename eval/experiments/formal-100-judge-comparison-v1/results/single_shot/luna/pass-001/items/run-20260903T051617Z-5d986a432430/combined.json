@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-4f6c48ff395145158c443e1ee2b36f6c",
+  "run_id": "run-20260903T051617Z-5d986a432430",
+  "trace_sha256": "ef2a4f4cfc818a47bd3b1635cf51ee9fc4185ccf36549f7c545697bc180ef7bc",
+  "created_at": "2026-09-03T12:01:39.371054Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答消费者是否承担兼容成本，覆盖全球标准分裂、现实场景、监管边界和应对建议，切合受众。",
+      "script_spans": [
+        "标准各自成阵，消费者一定在分摊兼容成本",
+        "作为买东西的人，挑明标准通用、主动避开专属接口的产品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 763，目标为 700，偏差率为 9.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕兼容成本推进，场景、隐性支出、欧盟政策边界和消费建议形成有效信息链，增量较足。",
+      "script_spans": [
+        "充电口只是最显眼的切口，数据协议、音视频传输同样各搞一套。",
+        "欧盟已经立法，从二〇二四年底起手机平板等小电子设备统一换USB-C，笔记本也给了到二〇二六年的缓冲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用设备失灵制造即时冲突，中段递进到监管与日常场景，结尾的兼容税自然收束并留下行动感。",
+      "script_spans": [
+        "同一款无线耳机，连苹果和连安卓可能得换根线",
+        "政策能圈住一块市场，圈不住全球碎片"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "场景例子和转折承接有口播感，整体可读；但“琐碎罢工”“耐心损耗”等搭配生硬，几处长句需重新断开。",
+      "script_spans": [
+        "有人笑说抽屉里备货足就无所谓，可真到紧急时刻",
+        "这种天天遇见的琐碎罢工",
+        "厂商重排产线的成本，长期看说不定就揉进了零售价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“兼容税”把抽象成本说得具体，“设备溢价和耐心损耗”也便于复述，形象表达适度，没有压过观点。",
+      "script_spans": [
+        "更藏在设备溢价和耐心损耗里",
+        "给自己减掉那笔看不见的兼容税"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，反问、转折和结尾回扣清楚；但兼容摩擦推到生态锁定及更高续购价，关键因果桥仍不足。",
+      "script_spans": [
+        "政策能圈住一块市场，圈不住全球碎片。",
+        "结果要么是反复掏钱买桥接配件，要么是换机时被同生态锁定、接受更高的续购价。",
+        "厂商重排产线的成本，长期看说不定就揉进了零售价，消费者换种方式继续付。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且对政策适用范围有边界说明；但“一定”、利益归因和续购价判断偏绝对，易造成过度概括。",
+      "script_spans": [
+        "可边界清楚地摆着：这只约束欧盟境内",
+        "消费者一定在分摊兼容成本",
+        "被同生态锁定、接受更高的续购价"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4c5ab7de10ab4483a235e109a46f65c7",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-49d7349e36b2401a81ff618c1a81ef17",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

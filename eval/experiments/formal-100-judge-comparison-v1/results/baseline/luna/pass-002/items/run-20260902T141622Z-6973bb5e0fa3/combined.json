@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-1055b5d3676247859643b0a55ff8b011",
+  "run_id": "run-20260902T141622Z-6973bb5e0fa3",
+  "trace_sha256": "4d623c0a1eb98e394b59b868ee7e1191dffe9829c7039b6e6fab323e5ef59b47",
+  "created_at": "2026-09-03T12:15:21.748670Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否让步，覆盖停车与休闲两端，并落到业主共同协商，目标人群和场景都准确。",
+      "script_spans": [
+        "休闲不该白白让步，停车难也得管。",
+        "把停车和休闲需求摆一起谈。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕公共空间取舍集中推进，补充共有决策、需求脱节和业主会协商等具体信息，结论有依据。",
+      "script_spans": [
+        "小区公共空地本属业主共有，改车位这么大事，依法得大伙共同决定",
+        "有研究提到，早前老旧小区改造出过脱离居民需求的情况。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“没处玩”制造冲突，中段从生活影响推进到决策与行动，结尾追问也自然落地。",
+      "script_spans": [
+        "小区空地变车位，老人孩子立刻没处玩。这仗怎么打？",
+        "动手前开业主会，把停车和休闲需求摆一起谈。",
+        "你家小区若遇这事，是先顾车还是先留地？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句与反问交替，气口清楚，连续表达不拖沓，适合自然语速录制。",
+      "script_spans": [
+        "你说这地多余？那片地是邻居聊天晒太阳的地方",
+        "车停不下确实误事，但硬全占，生活就塌了一角"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“熟人变路人”“路修宽了，心可能反而远了”形象克制，能把公共空间的关系价值留下来。",
+      "script_spans": [
+        "铲平了，熟人变路人。",
+        "公共空间本就是大家喘气的地方，不是多余边角。",
+        "若只盯车不盯人，路修宽了，心可能反而远了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有开头、展开、建议和回扣，主线清楚；但“改车位这么大事”“休闲被吃”略拗口，影响口播顺滑。",
+      "script_spans": [
+        "公共空间本就是大家喘气的地方，不是多余边角。",
+        "提醒一句，动手前开业主会，把停车和休闲需求摆一起谈。",
+        "改车位这么大事，依法得大伙共同决定",
+        "不然休闲被吃还不知为啥"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导兼顾停车与休闲，且建议召开业主会；但对共有产权和表决程序的说法过于绝对，可能造成法律误解。",
+      "script_spans": [
+        "动手前开业主会，把停车和休闲需求摆一起谈。",
+        "小区公共空地本属业主共有，改车位这么大事，依法得大伙共同决定，物业不能闷头拍板。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ede01af7eb3446e68fceef5b0904b5c4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-68ee49d47bef4e70b8ae22b7b1304289",
+  "run_id": "run-20260902T142053Z-20ba530b48a0",
+  "trace_sha256": "61ab03941ff0c96a84a4387071291fcfff5a56f30f188b325ae3729fa16598d0",
+  "created_at": "2026-09-03T12:15:37.631100Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即提出秩序与出行的取舍，既讲乱停危害，也讲停车位不足和还车难，回应完整。",
+      "script_spans": [
+        "整治秩序和方便出行，两头得掰平。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕核心矛盾持续推进，既有电子围栏机制、停车场容量等具体信息，也有景区还车难和治理建议，信息增量充分。",
+      "script_spans": [
+        "附近挖了两处停车场，南1在南边拐角，南2在地铁东南，一共能放二百多辆。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出锁不了车还扣钱的冲突，中段持续补充正反案例，结尾由治理原则自然落到观众行动。",
+      "script_spans": [
+        "禁停区扩大，你锁不了车还白扣钱！"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和反问带着节奏，整体能读通；但“糊地铁口”“骑车多步”等表达卡嘴，需重断句改词。",
+      "script_spans": [
+        "禁停区扩大，你锁不了车还白扣钱！",
+        "多走几步是小事，乱停是大患。",
+        "以前单车糊地铁口，路人挤不过去，居民天天投诉。",
+        "一边行人能走，一边骑车多步，利益撞一块，不能只管一边。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“骑车十分钟，还车半小时”直观有力，“不是画个圈就完事”也便于复述，修辞服务观点且未明显堆砌。",
+      "script_spans": [
+        "骑车十分钟，还车半小时，白掏二十块。",
+        "整治秩序不是画个圈就完事，得让人有地方落锁。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线有开头、案例、对策和回扣，整体可跟随；但“电子围栏才堵住源头”因果偏满，“还算划算”权衡铺垫不足。",
+      "script_spans": [
+        "说明光画圈不建场，矛盾转嫁了。",
+        "早高峰路边车堆成山，婴儿车都拐不进来。电子围栏才堵住源头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动或危险导向，但“白扣钱”“才堵住源头”等绝对化表述，可能把收费和治理效果说得过满。",
+      "script_spans": [
+        "整治秩序不是画个圈就完事，得让人有地方落锁。",
+        "你锁不了车还白扣钱！",
+        "电子围栏才堵住源头。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8ef8a6e94f104d83a4c9682c1702211c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

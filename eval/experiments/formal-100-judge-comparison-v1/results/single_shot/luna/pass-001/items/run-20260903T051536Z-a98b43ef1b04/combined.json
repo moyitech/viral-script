@@ -1,0 +1,148 @@
+{
+  "evaluation_id": "combined-012295f45d8e4658a35ac8ed48776e27",
+  "run_id": "run-20260903T051536Z-a98b43ef1b04",
+  "trace_sha256": "48aafd7f9a9455017517ae1febc808d39cc1d8531dc9f06b7c6a5dece6a3a60b",
+  "created_at": "2026-09-03T11:58:22.459862Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直面多数便利能否要求少数让步，同时覆盖高层、低层和协商路径，完整回应题设。",
+      "script_spans": [
+        "多数人方便就能逼少数人让步吗？答案很明确：不能。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 421，目标为 450，偏差率为 6.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦权益平衡，法律判断、案例与双方行动建议持续推进，观众能获得具体判断和做法。",
+      "script_spans": [
+        "法律上的多数同意只是起点，不是终点。",
+        "保留好采光噪音证据、主动参与方案修改，才守得住自己权益。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "冲突与悬问随后到位，案例和建议有推进；但前20字先铺“僵局”，具体反差略晚。",
+      "script_spans": [
+        "多数人方便就能逼少数人让步吗？",
+        "补偿协商才是破解僵局的枢纽。",
+        "老旧小区加装电梯，常出现一种僵局："
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头问答利落，后段多处法律条件和案例并列，连续气口偏长，朗读需重断句。",
+      "script_spans": [
+        "这时候，多数人方便就能逼少数人让步吗？答案很明确：不能。",
+        "即便表决达到法定比例，低层业主若因电梯井占用空间、运行噪音导致居住质量下降或房屋价值受损，依法能主张公平补偿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“垂直交通”与“权责对等”收束准确，既有画面又留下可复述的判断，修辞克制。",
+      "script_spans": [
+        "电梯改善的是垂直交通，但邻里之间权责对等，才是社区长久和睦的底色。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构由冲突提问推进到原则、案例和建议，结尾回到低层损失的承担者，回扣自然。",
+      "script_spans": [
+        "可见，补偿协商才是破解僵局的枢纽。",
+        "下次单元楼酝酿装电梯，先问一句：低层的损失，谁来买单？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调协商、证据和权责平衡，价值导向稳妥；但“依法能主张公平补偿”未交代损害认定与个案条件，容易被听成当然赔偿权。",
+      "script_spans": [
+        "高层别觉得票数够就能硬推",
+        "依法能主张公平补偿"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ef9ad317046641efbf62119676304c10",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a47cc5b0e13c4da88c5b715beeddca0b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

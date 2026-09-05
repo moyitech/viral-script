@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-f9b02479578741bcadfb98cde12bbfd5",
+  "run_id": "run-20260903T051519Z-ab3192466357",
+  "trace_sha256": "9b78cabf684df0e662d5443d4a9bb77d239cc08e630898417a5351c8adcc5570",
+  "created_at": "2026-09-03T12:31:58.018239Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从家庭共享定位的冲突切入，既解释关心为何变压迫，也照顾安全需求并给出边界方案。",
+      "script_spans": [
+        "不是反对关心，是反对没有退路的关心。",
+        "把“一直共享”改成“出门报个备、晚归开共享”，压力立刻减半。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕私人边界与实时定位，多层推进机制、心理压力和替代方案，信息增量充足。",
+      "script_spans": [
+        "为什么明明能关却不敢关？因为共享是默许的双向契约",
+        "紧急时刻它确实能救命，但日常里，把“一直共享”改成“出门报个备、晚归开共享”"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用绕路与定位邀请制造即时两难，中段层层解释“不敢关”的关系成本，结尾落到可执行的留白。",
+      "script_spans": [
+        "你下班想绕路去书店发呆，家人发来实时位置共享邀请，拒了怕被说疏远，接受了就像脖子上挂了监听器。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有画面、问句和清晰停顿，但抽象概念密集，核心中段仍有书面化和拗口搭配。",
+      "script_spans": [
+        "给彼此留白，比实时连线上更像家人。",
+        "功能本中立，是持续在线的用法模糊了边界",
+        "技术让渡的不只是GPS坐标，还有你独处和偶尔脱轨的权利。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“急救绳”和“脚踝上的链”形成准确反差，既解释使用边界，也留下了自然、可复述的核心比喻。",
+      "script_spans": [
+        "定位应该是抽屉里的急救绳，不是脚踝上的链。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构由场景钩子、权限前提、心理机制、现实后果推进到替代方案，结尾回扣自然，主线完整。",
+      "script_spans": [
+        "为什么明明能关却不敢关？因为共享是默许的双向契约",
+        "定位应该是抽屉里的急救绳，不是脚踝上的链。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调授权、边界与协商，价值导向稳妥；但“从未强制”和“压力立刻减半”存在绝对化、夸大风险。",
+      "script_spans": [
+        "不是反对关心，是反对没有退路的关心。",
+        "位置权限其实从未强制",
+        "压力立刻减半"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4b712f9ea2594db897c844ace9156720",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

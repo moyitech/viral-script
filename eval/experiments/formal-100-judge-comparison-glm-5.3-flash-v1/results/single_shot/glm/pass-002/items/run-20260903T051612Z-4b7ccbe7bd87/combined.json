@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-038ffb1d3ca245e886877bcd54d18f4a",
+  "run_id": "run-20260903T051612Z-4b7ccbe7bd87",
+  "trace_sha256": "36f62f01c15e7c3fe27775c6d0038f2c8944972b146d37db7eb88fcdf40202c7",
+  "created_at": "2026-09-03T15:27:57.950648Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛出投资与追涨之问，正文明确回答“形式是投资、姿势是追涨”，兼答两侧，年轻人痛点契合。",
+      "script_spans": [
+        "这时候进场到底是长线投资，还是怕错过上涨的追涨？我的判断很直白：攒金这种形式可以是投资，但很多人正用追涨的姿势做这件事"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中：定投机制、追涨背离、银行提门槛、黄金无息四层信息各自推进，判断方法具体，论证有据。",
+      "script_spans": [
+        "金价越热，越有人改成大额集中申购，这完全背离了机械定投的机制，变成手动追高",
+        "黄金本身不派生利息，长期资本回报并不确定"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中后段判断鲜明、转折与增量信息持续，结尾余味自然；但前20字只铺陈跟风现象，冲突悬念到“可黄金处在多年高位”才出现。",
+      "script_spans": [
+        "可黄金处在多年高位，这时候进场到底是长线投资，还是怕错过上涨的追涨？",
+        "金价从不会只涨不跌，攒金真正的意义是用时间攒下真实资产，而不是在风口上赌一把大小。",
+        "金价一路走高，不少年轻人开始攒金豆、买积存金，社交平台上全是晒收益的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏与对话感在线，但按月自动按日均价格买入连读拗口，加上强迫自己少动前衔接松散，两处需改词或重断句。",
+      "script_spans": [
+        "更好的做法是拿每月工资结余，设个自动扣款，然后关掉软件别天天盯盘",
+        "原本的设计逻辑是按月自动按日均价格买入",
+        "本来是工薪族用零钱分散风险的选择，强迫自己少动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比贯穿全篇且服务论点，“把避险品玩成了投机标的”与结尾金句离开上下文仍可复述，克制不炫技。",
+      "script_spans": [
+        "把避险品玩成了投机标的",
+        "价格高时少积、低时多积",
+        "用时间攒下真实资产，而不是在风口上赌一把大小"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "机制铺垫、转折揭示矛盾、机构佐证、建议落地层层递进，关键因果有桥梁，结尾自然回扣投资与追涨之问。",
+      "script_spans": [
+        "攒金真正的意义是用时间攒下真实资产，而不是在风口上赌一把大小",
+        "它门槛很小，本来是工薪族用零钱分散风险的选择，强迫自己少动。但矛盾在于"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "无诱导与确定性收益承诺，明示不生息、回报不确定，并劝阻动用急用钱，边界清楚。",
+      "script_spans": [
+        "千万别因为群里都在晒黄金收益，就把急用的钱也砸进去",
+        "长期资本回报并不确定"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b94692634ffc44b790ca9958ff8fe3cb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-d0918846b80845a685a4bdf981a9960f",
+  "run_id": "run-20260902T142804Z-f905e2ca0797",
+  "trace_sha256": "50255af991d6bfd75c1cf84182e3f2c2c7e88dd3753e5e3ab6008ab569b25f69",
+  "created_at": "2026-09-03T13:46:13.148322Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇亮出双面答案与判断标准，中段两侧展开，结尾回扣题设，痛点对准求职者。",
+      "script_spans": [
+        "企业缩短招聘流程，既能真提效率，也可能借机压价，得看砍掉的是冗余环节还是谈薪余地",
+        "下次收到极速录用，别忙庆祝，先问清薪资结构，再看流程省在哪"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 722，目标为 700，偏差率为 3.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "空缺成本、砍谈薪环节、市场冷热、薪资拆分等单元递进推进，判断标准具体可带走。",
+      "script_spans": [
+        "可有些企业连用人部门和招聘方商量薪水的时间也砍了，直接按最低预算发录用通知",
+        "经济冷时岗位少人抢，企业缩短流程还能挑便宜的；经济暖时人才抢手，它流程再短报价也得跟大盘"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头“少两千”即立反差钩子，中段以“压价从哪混进来”“市场冷热搅局”层层兑现，结尾余味由建议自然长出。",
+      "script_spans": [
+        "录用快了工资却少两千，这算高效还是压价？",
+        "那压价空间从哪混进来的？",
+        "快本身不坏，坏的是用快遮住砍价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句停顿清楚、有对话感，但“忽略比价认栽”与名词堆叠句需临时改词重断，两处拗口按规封顶2分。",
+      "script_spans": [
+        "岗位空着每天都有成本。项目会放缓，同事要顶班，单子可能接不住。",
+        "就容易忽略比价认栽",
+        "企业预估的招聘速度和实际耗时差距在拉大"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“用快遮住砍价”可离开上下文复述；“混进来”“一口价吞掉”服务理解，结尾金句均承正文观点，无堆砌炫技。",
+      "script_spans": [
+        "比如本来能谈的奖金，被一口价吞掉。",
+        "快本身不坏，坏的是用快遮住砍价。",
+        "企业省下的是自己的钱，你让出的可能是自己的底气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问过渡自然，正反例并举，因果桥完整，结尾回扣开头，层次经得起追问。",
+      "script_spans": [
+        "那压价空间从哪混进来的？",
+        "快本身不坏，坏的是用快遮住砍价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "判断留余地，如'不能一棍子打死''很难一刀切'，不煽动对立、不作无依据承诺，边界清楚。",
+      "script_spans": [
+        "当然也有公司用线上测试代替多轮奔波，薪水按标准给，这对双方都好，不能一棍子打死",
+        "研究样本常有限，很难一刀切说快就是坏。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d229bc04d15c4e2b9dab0d6237786f9a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-51751b3e472f47e99b465cdf0c7e66e4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

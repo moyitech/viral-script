@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-703f3bdeaed4438dad7cbf61323d3923",
+  "run_id": "run-20260902T144303Z-cd53d39bf14f",
+  "trace_sha256": "6e09011906330375786780fc6ca95fbb1092266f2afe0c819f83dc9b99f8d12d",
+  "created_at": "2026-09-03T14:27:04.806531Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直给订单涨与不招人的冲突，数据与原因两侧都答，结尾观察建议与温差之问扣回题设，覆盖完整。",
+      "script_spans": [
+        "你厂里接单多了，老板却死活不肯招人，犯嘀咕不？",
+        "订单的确在回暖，可企业不敢马上招正式工，怕背长债。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "新订单、从业人员、总量三项数据与来源相符且层层递进，社保与辞退成本解释到位，结尾给出可操作判断法，增量扎实。",
+      "script_spans": [
+        "八月新订单指数过了五十，比上月升两点一，需求暖了。",
+        "正式工招进门，合同一签就得管社保，像长期饭票。",
+        "别光看订单，也数数每月招工人数变化。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛出接单多却不招人的反差，中段数据与社保顾虑层层推进，结尾温差之问由正文冷暖对比自然生长，三段均立得住。",
+      "script_spans": [
+        "你厂里接单多了，老板却死活不肯招人，犯嘀咕不？",
+        "订单像早春的风，厂里却还裹着厚棉袄不肯脱。这冷暖温差，到底哪天能扯平？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体对话感强、短句气口清楚，但「整体制造大指数」生硬需换词，「辞退要赔钱走流程也费神」连读易卡，两处拗口故评2分。",
+      "script_spans": [
+        "订单像早春的风，厂里却还裹着厚棉袄不肯脱。",
+        "整体制造大指数四十九点八",
+        "辞退要赔钱走流程也费神"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻少而准，'早春风与厚棉袄'离开正文仍可复述，'长期饭票'点中社保负担，全篇无辞藻堆砌。",
+      "script_spans": [
+        "正式工招进门，合同一签就得管社保，像长期饭票。",
+        "订单像早春的风，厂里却还裹着厚棉袄不肯脱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问'为啥怕背长债'自然引出社保、辞退赔偿的因果链，棉袄之喻回扣开头冷暖，段落功能清楚、层层递进。",
+      "script_spans": [
+        "为啥怕背长债？正式工招进门，合同一签就得管社保，像长期饭票。",
+        "订单像早春的风，厂里却还裹着厚棉袄不肯脱。这冷暖温差，到底哪天能扯平？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键数据与来源一致，且留有余地称回暖不扎实，无夸大、无煽动或误导承诺，导向安全。",
+      "script_spans": [
+        "整体制造大指数四十九点八，还在线下，回暖不扎实",
+        "辞退要赔钱走流程也费神"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1b86260c1f2645809a1fefc6ebb14970",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

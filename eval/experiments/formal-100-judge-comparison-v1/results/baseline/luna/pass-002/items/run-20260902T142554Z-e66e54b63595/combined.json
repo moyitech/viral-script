@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-dc19e158a8964630830b160aa103dd03",
+  "run_id": "run-20260902T142554Z-e66e54b63595",
+  "trace_sha256": "170c308b9c8caa965258f5f76cb826d571f0a1375f3b8aeb31c48d78ecd1003c",
+  "created_at": "2026-09-03T12:15:18.893695Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答反感成因，兼顾企业定薪诉求与求职者的时间、成本和信任痛点。",
+      "script_spans": [
+        "企业图灵活，求职图踏实，面议两头不靠，矛盾就兑现了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕透明度、企业顾虑、求职时间成本与公平信任展开，信息单元多且相互推进。",
+      "script_spans": [
+        "企业想留砍价空间，怕亮底牌被同行比价",
+        "有研究指出，薪酬过程不透明，比给钱少更伤公平感。",
+        "对普通人来说，投简历最贵的是时间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“少两千、白跑”制造即时损失，中段持续补充公平、规则和时间成本，结尾追问自然收束。",
+      "script_spans": [
+        "你点开薪资面议的岗位，聊完才发现月薪少两千，路费全白花。",
+        "下次见面议，你敢信他给得起价，还是先问清区间再动身？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头有画面，结尾有问句；但主体多处压缩成分句，抽象词和病句拖慢自然表达。",
+      "script_spans": [
+        "你点开薪资面议的岗位，聊完才发现月薪少两千，路费全白花。",
+        "因价码藏起",
+        "规则没落实地"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“面议像黑箱”和“信任得靠明示补，不能靠腿磨”形象且可复述，修辞服务于不透明与时间成本。",
+      "script_spans": [
+        "面议像黑箱，你不知按啥定薪，自然觉得会被拿捏。",
+        "信任得靠明示补，不能靠腿磨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线有双方诉求、透明度与成本递进，但个别句子生硬，部分因果和概念衔接不够严密。",
+      "script_spans": [
+        "两边算盘不同，信任就薄了。",
+        "规则没落实地，人就更烦了。",
+        "月底算账，面试花销抹平了录用通知带来的增益。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体聚焦求职信息透明，建议先问区间较稳妥；但研究结论和因果关系表述过满，需限定范围或弱化措辞。",
+      "script_spans": [
+        "先问清区间再动身",
+        "有研究指出，薪酬过程不透明，比给钱少更伤公平感。",
+        "公平感一掉，人对招聘方信任也跟着塌。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-49d55061dfcd4c0d992f62dbb384749e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

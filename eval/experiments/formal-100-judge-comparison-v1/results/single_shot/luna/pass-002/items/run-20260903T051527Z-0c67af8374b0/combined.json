@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-4fbb50ffaf28428682d25c943948f531",
+  "run_id": "run-20260903T051527Z-0c67af8374b0",
+  "trace_sha256": "f36a898278782426c3329562b0c273ad71306a0d94041c4b7b3a4c616b0195a1",
+  "created_at": "2026-09-03T12:31:43.928048Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "全文正面回应“信号还是托市”，既解释注销回购的含义，也给普通投资者提供了明确筛选动作。",
+      "script_spans": [
+        "这轮回购增多，更像是低估值环境下，优质企业用真金白银重构股东信任，而不是短期托市表演。",
+        "对普通人意味着什么？别只盯着“回购”两个字就冲动买入。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据、回购类型、注销机制、监管边界和筛选方法层层推进，信息单元具体，观众能获得可执行的判断方法。",
+      "script_spans": [
+        "过去不少回购用于员工激励，股份未来还会流回市场；今年明显的变化是注销式回购崛起",
+        "先看清公告里是注销还是留着做激励，再看公司账面有没有持续买单的能力。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“扎堆回购”引出托市疑问，中段连续推进，结尾用“注销了吗？”自然促成追问。",
+      "script_spans": [
+        "几十家公司扎堆宣布回购，很多人第一反应是：是不是跌怕了，出来托市？",
+        "关键看钱去了哪。",
+        "下次看到回购公告，先问一句：注销了吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问句、短句和行动建议提升了可读性，但中段仍有多处抽象长句，未达到全篇精心设计的自然口播。",
+      "script_spans": [
+        "关键看钱去了哪。",
+        "下次看到回购公告，先问一句：注销了吗？",
+        "这轮回购增多，更像是低估值环境下，优质企业用真金白银重构股东信任，而不是短期托市表演。",
+        "从学术视角，管理层比外界更懂企业真实价值，回购常被视为释放低估信号的行为。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“托市只是表层噪音，注销才是信心的底稿”形成鲜明对照，形象且准确概括全文判断。",
+      "script_spans": [
+        "回购潮里，托市只是表层噪音，注销才是信心的底稿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整、主线清楚，但把注销带来的每股指标变化直接推成低估判断，结尾对“信号”和“托市”的区分偏满。",
+      "script_spans": [
+        "为什么这么说？关键看钱去了哪。",
+        "回购不是上涨保证，但注销式回购扎堆，至少说明一批公司觉得自家股票够便宜、值得买。",
+        "注销式回购扎堆，至少说明一批公司觉得自家股票够便宜、值得买。",
+        "托市只是表层噪音，注销才是信心的底稿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "明确提示回购不等于上涨，并建议核查公告和公司能力；但将注销直接说成分给全体股东、等同低估信号，仍有金融误导风险。",
+      "script_spans": [
+        "回购不是上涨保证",
+        "每股收益就被垫高，这是实打实分给全体股东的利益"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-120683b972ea4cb683a6083850bbd7ae",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

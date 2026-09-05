@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-11bacb7eb4954858a22e2a2d68a29a19",
+  "run_id": "run-20260902T144553Z-d895cc6def27",
+  "trace_sha256": "10c42a6aabce583f54899151b6c71e589841bc0302e770c36d8b40cf7a4691be",
+  "created_at": "2026-09-03T12:18:59.182964Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕重复检查这一痛点，既解释互认推进慢的原因，也呈现患者承担的费用、时间与辐射代价。",
+      "script_spans": [
+        "互认推得慢，咱们换院照样重复掏钱，为啥？",
+        "省下的钱和时间，本来该是患者的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "个案、政策例外、医生判断和责任顾虑层层推进，信息具体，结尾还给出携带既往片子的实用建议。",
+      "script_spans": [
+        "病情变了、设备参数不同，就可以重查。",
+        "医院怕出医疗纠纷担责任，医生嫌调阅旧数据麻烦，顺手就开新检查。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用重复花钱的冲突迅速抓人，中段连续抛出例外、案例和责任链，结尾互动自然。",
+      "script_spans": [
+        "换医院就得重做检查，刚花的钱又打水漂。",
+        "为什么清单写了互认，却拦不住重做？",
+        "下次跨院前，你会先把之前的片子打印好带着吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句、设问和并列停顿配合自然，全文朗读顺畅，几乎没有需要临时改写的地方。",
+      "script_spans": [
+        "换医院就得重做检查，刚花的钱又打水漂。",
+        "为什么清单写了互认，却拦不住重做？",
+        "下次跨院前，你会先把之前的片子打印好带着吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“钱又打水漂”和“医生那支笔肯认旧结果”形象准确，既有情绪，也留下了可复述的记忆点。",
+      "script_spans": [
+        "刚花的钱又打水漂。",
+        "多请半天假，多受一份辐射，换回一模一样的结论。",
+        "不如医生那支笔肯认旧结果。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以重复花钱设问，经过个案和政策口子递进解释，最后回扣医生是否认可旧结果，因果链条完整。",
+      "script_spans": [
+        "为什么清单写了互认，却拦不住重做？",
+        "更关键的是，接诊医师有权自己判断认不认。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "正文提到重查例外，整体无明显违规；但“换医院就得重做”及揣测医生动机偏绝对，易造成误导。",
+      "script_spans": [
+        "病情变了、设备参数不同，就可以重查",
+        "换医院就得重做检查，刚花的钱又打水漂。",
+        "医生嫌调阅旧数据麻烦，顺手就开新检查。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-13aae2ffa0304622a5a5a5140bb22f4f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

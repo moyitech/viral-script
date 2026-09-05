@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-ecebf5c26950413aa3355d6902738243",
+  "run_id": "run-20260902T144914Z-13e5795b3f52",
+  "trace_sha256": "cbb34ed4fe4ab5941bd77909386dde12a2f6a3c1a824ba42837061fd55f2b3f3",
+  "created_at": "2026-09-03T11:48:06.257059Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "紧扣粮价稳定与餐桌支出增加的矛盾，分别解释原粮占比、菜肉外食和就餐选择，普通家庭痛点明确。",
+      "script_spans": [
+        "两笔账不能混为一谈。",
+        "账单算的是整张餐桌，不是只称米缸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 481，目标为 450，偏差率为 6.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，写清原粮与餐桌成本、外食溢价；但“肉禽都在涨”等泛化削弱准确性，消费结构变化也未充分展开。",
+      "script_spans": [
+        "同样饭菜下馆子可能贵两三倍，蔬菜类溢价更突出。",
+        "米面便宜一块，总账单也省不出几毛。",
+        "鲜菜、肉禽、食用油，还有在外餐饮，价格都在往上走。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用粮价与账单的反差设问，中段持续拆解支出来源，结尾把话题落回个人选择，推进自然。",
+      "script_spans": [
+        "粮价平稳，你家吃饭账单却悄悄涨了，钱漏在哪儿？",
+        "想想看，在家吃还是下馆子，是不是早就标好了价？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏明快、比喻易懂，但两处搭配生硬，朗读时需要临时换词。",
+      "script_spans": [
+        "吃饭从厨房挪到餐厅，账单就厚了。省了做饭时间，却花了更多钞票。",
+        "统计数据里，食品烟酒加在外餐饮，有个月同比涨了百分之一点四。",
+        "因为配件贵了，像调料肉蛋。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“整张餐桌，不是只称米缸”把统计口径转成生活画面，兼有比喻和复述价值，表达克制。",
+      "script_spans": [
+        "账单算的是整张餐桌，不是只称米缸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头区分原粮与整桌成本，随后按外食和家庭场景推进；但结尾偏向归因于就餐选择，在家消费变贵的因果未讲透。",
+      "script_spans": [
+        "钱到底花哪儿了？看更宽口径的餐桌成本。",
+        "省了做饭时间，却花了更多钞票。",
+        "真正拉动花费的，往往是咱们就餐的选择。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "区分原粮与整桌餐费的思路清楚，但“肉禽、食用油都在涨”等泛化表述缺少时间和范围，容易造成价格普涨误导。",
+      "script_spans": [
+        "两笔账不能混为一谈。",
+        "鲜菜、肉禽、食用油，还有在外餐饮，价格都在往上走。",
+        "因为配件贵了，像调料肉蛋。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ab872cf294994b1a9c3f8dab57284b95",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a25edfe96cc14d7fbd22fd2488ca8f2a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

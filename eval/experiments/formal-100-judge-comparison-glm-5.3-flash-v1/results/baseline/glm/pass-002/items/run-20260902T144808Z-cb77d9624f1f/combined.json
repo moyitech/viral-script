@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-4039e86e9422455fbbbed65ea70ea2d8",
+  "run_id": "run-20260902T144808Z-cb77d9624f1f",
+  "trace_sha256": "51031a69f6bd87be20f2b045b66b2ecf8bc84c779484384196d70b5059ac6668",
+  "created_at": "2026-09-03T14:26:57.030132Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问即点题，正文先讲会提升再讲有条件，两侧都覆盖；饭馆老板、隔壁阿姨等例子紧贴普通观众。",
+      "script_spans": [
+        "财政多保民生，你为啥还是攥紧钱包？",
+        "财政多保民生是好事，但让钱变消费，得穿过层层顾虑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，政策事实、学术发现与生活案例层层推进，精准到户才松绑消费等结论有研究支撑，信息增量足。",
+      "script_spans": [
+        "有学术论文跟踪过家庭数据，发现医疗卫生支出减贫效果并不显著",
+        "钱花得精准比单纯加量更解渴"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛攥钱包的反差设问；中段以效率、医疗、总盘逐层转折续力；结尾追问与阀喻由正文自然长出。",
+      "script_spans": [
+        "财政多保民生，你为啥还是攥紧钱包？",
+        "但医疗那块偏偏拖后腿",
+        "消费意愿不是开关，是慢慢拧开的阀"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、例子鲜活，大体顺畅；但“财政也提优化支出结构强化保障”等压缩句需临时重断，不止一处。",
+      "script_spans": [
+        "隔壁阿姨拿育儿补贴，立马给孙子买新鞋",
+        "财政也提优化支出结构强化保障",
+        "会议还充实稳就业政策工具"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，护栏、解渴等比喻贴切；补贴是减项、开关与阀两处记忆点离开正文仍可复述。",
+      "script_spans": [
+        "补贴不是红包是减项",
+        "大人饭碗边有了护栏",
+        "消费意愿不是开关，是慢慢拧开的阀"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先拆矛盾，再证机制，后以医疗和财政总盘两处转折深化，段段有功能；结尾仍攥着钱包回扣开头设问。",
+      "script_spans": [
+        "这矛盾得拆开看",
+        "你仍攥着钱包问明天"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述克制平衡，明确承认民生投入变不出抢购潮，无绝对化承诺、煽动或误导，政策转述与来源相符。",
+      "script_spans": [
+        "民生倾斜托住意愿，变不出月底抢购潮",
+        "财政多保民生是好事，但让钱变消费，得穿过层层顾虑",
+        "消费意愿提升，更看你是否信下月工资有着落"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0c763e08057b4b19b4c0f5e3a08829ec",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

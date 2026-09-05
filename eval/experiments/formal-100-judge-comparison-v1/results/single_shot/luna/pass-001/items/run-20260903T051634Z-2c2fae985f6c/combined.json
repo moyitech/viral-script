@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-eedcbf393e724f37aaa84942b3981113",
+  "run_id": "run-20260903T051634Z-2c2fae985f6c",
+  "trace_sha256": "1e40edbfd98949564661c887d83573314d37b798e41ba6ed0ce004ceb2ca7210",
+  "created_at": "2026-09-03T11:58:04.836902Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答升温如何冲击近海养殖及餐桌价格，兼顾总体趋势与品类、区域分化。",
+      "script_spans": [
+        "海水升温确确实实在蚕食近海养殖的根基，但你我碗里的海鲜不会简单普涨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 717，目标为 700，偏差率为 2.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕价格机制展开，涵盖生物影响、供给替代、保险与能耗，多组信息持续推进结论。",
+      "script_spans": [
+        "它被产量惯性、品类替代和风控手段三股力道拽着走"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用鱼苗翻肚皮与菜价不涨制造反差，中段层层解释，结尾落到具体消费判断，推进和余味都成立。",
+      "script_spans": [
+        "海水悄悄烫得不像话，近海养殖户盯着网箱里翻肚皮的鱼苗直叹气",
+        "当前是结构性紧缺而非全面昂贵",
+        "你真正要做的，是留意常买的那款地标海鲜，会不会悄悄跻身高风险轻奢品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和转折有节奏，也有对话感；但多处抽象搭配和偏长信息串让朗读需要重断句。",
+      "script_spans": [
+        "先看因在哪。",
+        "这怎么讲？",
+        "赤潮和突发死亡频袭。",
+        "还有个不确定边界：若升温推高溶氧设备和冷却能耗，长线成本迟早渗进零售"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和拟人服务于产业链解释，“兜得住散户，兜不住偏好”有复述价值，整体没有明显炫技或油腻感。",
+      "script_spans": [
+        "它被产量惯性、品类替代和风控手段三股力道拽着走",
+        "托底网兜得住散户，兜不住你舌尖上的偏好",
+        "当前是结构性紧缺而非全面昂贵"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "起因—供给—分化—结论链条完整，但“补了七八成”和保险到消费偏好的衔接仍显跳跃。",
+      "script_spans": [
+        "落到真实餐桌，价格会明显分化。",
+        "淡水塘和深远海网箱把缺口补了七八成。",
+        "不过托底网兜得住散户，兜不住你舌尖上的偏好，这怎么讲？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，且区分了结构性紧缺与全面涨价；但“补了七八成”“迟早”等未经限定的量化和确定性判断，可能误导。",
+      "script_spans": [
+        "当前是结构性紧缺而非全面昂贵",
+        "淡水塘和深远海网箱把缺口补了七八成",
+        "若升温推高溶氧设备和冷却能耗，长线成本迟早渗进零售"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-0534212058064ac69ed934cc4ff7d60a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-521190ef0f6345e98ccc42ac4484961b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-fae9a286264c45e4857ec58c5e73e8d1",
+  "run_id": "run-20260902T143349Z-0e905f672d2d",
+  "trace_sha256": "ece34484cacf0a979c2c126191d831cdd6aad962e1971f3cb31f3b8b00f86abe",
+  "created_at": "2026-09-03T13:47:25.129875Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛反差直答题设，结论明确答'不会普遍更贵'，升温冲击与价格两侧齐覆盖，落点对准普通买菜人。",
+      "script_spans": [
+        "海水升温祸害养殖，咱餐桌海鲜却偏偏没更贵",
+        "我直接把结论拍你面前：眼下不会普遍更贵"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 453，目标为 450，偏差率为 0.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "产量、均价、补位机制、北迁与保险信号层层递进，边界条件收束，数据与引用互证，无明显编造。",
+      "script_spans": [
+        "海里热浪灭了部分野生种群，可人工塘口把缺口顶住了",
+        "等温线明显北迁，北方冷水海域也能多养鱼"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差钩子直接立住，中段数据与机制层层兑现，结尾一问从风险分析自然长出，余味足。",
+      "script_spans": [
+        "挑虾见标价没涨反降？海水升温祸害养殖，咱餐桌海鲜却偏偏没更贵",
+        "我们这代人的便宜海鲜，能续到哪年？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口分明，数据均转成口语节拍，对比词重音清楚，朗读无需临时改词。",
+      "script_spans": [
+        "我直接把结论拍你面前：眼下不会普遍更贵。",
+        "养殖户怕存塘风险赶着出塘，市场里货堆得满。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "补位、替补一线贯穿把替代机制讲透，'碗里不会空'与结尾问句皆可离文复述，修辞克制不炫技。",
+      "script_spans": [
+        "海里热浪灭了部分野生种群，可人工塘口把缺口顶住了",
+        "链条通着呢，钱就难涨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问当桥、因果链完整，'链条通着呢，钱就难涨'收拢论据，结尾问句回扣开头反差，结构干净。",
+      "script_spans": [
+        "那菜场为啥没贵？中间有个坎儿要认清",
+        "链条通着呢，钱就难涨",
+        "我们这代人的便宜海鲜，能续到哪年？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论带'眼下''暂时'限定，结尾主动补贝类减产与热浪风险边界，数据与来源一致，无绝对化承诺。",
+      "script_spans": [
+        "我直接把结论拍你面前：眼下不会普遍更贵",
+        "不过得留个边界，升温不是均匀打，局部野生近海贝类若减产，你吃那些小众海鲜可能就贵了",
+        "万一热浪砸进主产区，降价的好日子就得留神"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5b22ed9aad6d4bc786f73a81dec83632",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-949038f92c2d4f9ea4311ebd87d71bf6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

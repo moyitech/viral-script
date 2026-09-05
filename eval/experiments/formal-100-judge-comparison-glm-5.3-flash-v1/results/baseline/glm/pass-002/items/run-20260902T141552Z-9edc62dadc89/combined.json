@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-e591108aca4041d39bd0bbb5d03ea6b1",
+  "run_id": "run-20260902T141552Z-9edc62dadc89",
+  "trace_sha256": "186d83e0c2de94dc01c8a621174482f0523cdbc8e8b8da7d4699952da643fb05",
+  "created_at": "2026-09-03T14:26:03.740198Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点出省与冷落两侧，正文两面的账都算，晚归人群与普通观众痛点契合，结尾回扣题设。",
+      "script_spans": [
+        "夜公交减班，省了钱，却把晚归人留在风里。",
+        "这事儿不选边，既是公司算账后的节省，也是部分人回家路的空缺。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "成本规制、空驶细账、可达性研究、晚归画像逐层推进，与引用背景吻合，信息密度高且集中。",
+      "script_spans": [
+        "夜里人少，空车跑一圈电费人工照掏，坐的人没几个，跑一趟可能就亏一趟。",
+        "学者说时间也是可达性关键，研究点明公交可达性连着生活习惯，晚归作息被班次改写。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即以省钱对立晚归人留风里立冲突，中段政策账与个体难交替推进，结尾一问由正文自然长出，三段均立得住。",
+      "script_spans": [
+        "夜公交减班，省了钱，却把晚归人留在风里。",
+        "省下的成本真实，冷落的人也真实。",
+        "当省下的公家钱变成个人的贵票价，这城市的温度该怎么补？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、画面感强，但“可达性连着生活习惯”“深夜空驰”等两处需换词重断，只能评2。",
+      "script_spans": [
+        "夜里人少，空车跑一圈电费人工照掏，坐的人没几个，跑一趟可能就亏一趟",
+        "线路一稀，他们站台吹冷风，手机刷没电，长等熬不住",
+        "研究点明公交可达性连着生活习惯，晚归作息被班次改写",
+        "白天票款贴不了深夜空驰"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "安全网漏人的比喻贴切助解，省下的成本真实、冷落的人也真实离开上下文仍可复述；修辞克制，无炫技堆叠。",
+      "script_spans": [
+        "夜线像托底安全网，撤密了网眼漏人。",
+        "省下的成本真实，冷落的人也真实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立矛盾再拆两侧，安全网比喻承上启下，因果桥完整，结尾反问自然回扣开头。",
+      "script_spans": [
+        "公交本有公益属性，文件说它是民生工程，得保基本出行。可夜班客流薄，保服务就亏钱，矛盾就摆这儿。",
+        "夜线像托底安全网，撤密了网眼漏人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "开篇即言不选边，企业节支与晚归人困境两侧都有交代；'可能''有的'等限定词到位，无煽动夸大。",
+      "script_spans": [
+        "这事儿不选边，既是公司算账后的节省，也是部分人回家路的空缺。",
+        "跑一趟可能就亏一趟",
+        "或搭不正规便车，安全没底"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a4cd76b8f8d24e788dced2e98f6131e9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

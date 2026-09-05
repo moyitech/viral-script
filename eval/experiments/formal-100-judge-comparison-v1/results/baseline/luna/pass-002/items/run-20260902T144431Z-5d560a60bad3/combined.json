@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-d4d618d2763f4694af5128ed64c0eb00",
+  "run_id": "run-20260902T144431Z-5d560a60bad3",
+  "trace_sha256": "d3dbb88711e1efaa0aa9b1053cca50bc6f4494a27170025e3393390ed3bc8fa1",
+  "created_at": "2026-09-03T12:17:42.068225Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应“循环经济还是质量盲区”，既讲资源与监管，也讲换壳风险和避坑建议，受众对位。",
+      "script_spans": [
+        "这波翻新热，既是循环经济里省钱的路子，也是质量盲区里踩坑的坑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，政策、市场规模、翻新风险和购买建议层层增加信息；“每四部”与案例共同支撑双面判断。",
+      "script_spans": [
+        "现在国家也补了二手买卖和再制造的规矩，要求翻出来的东西质量得摸新机标准。",
+        "全球差不多每四部手机就有一部是翻新的，循环利用真发生了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出黑屏亏损，中段用政策、规模和暗病递进，结尾把省钱与避坑自然扣回。",
+      "script_spans": [
+        "花八百块买翻新平板，用了一个多月就黑屏，维修比买新机还贵一倍。",
+        "省钱和避坑，本就该一起算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有清楚重音，但“踩坑的坑”“摸新机标准”等搭配拗口，朗读时需临时换词。",
+      "script_spans": [
+        "花八百块买翻新平板，用了一个多月就黑屏",
+        "省下的钱才真进自己口袋，不会反手送维修铺",
+        "踩坑的坑",
+        "质量得摸新机标准"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“换身壳”“反手送维修铺”把质量风险说具体，画面感和可复述性都够，未见修辞堆砌。",
+      "script_spans": [
+        "只给旧机换身壳，里头主板电池根本不查，暗病就藏这里。",
+        "省下的钱才真进自己口袋，不会反手送维修铺。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "短句、问答和“所以”推进顺畅，但把个案黑屏直接归因于换壳不查，因果链仍有跳跃。",
+      "script_spans": [
+        "所以咱别只盯低价。挑带检测报告的规矩渠道，省下的钱才真进自己口袋",
+        "你前面黑屏，就这么来的，亏的是你。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，也提示消费避坑；但监管要求、统计比例和黑屏成因表述过于确定，补充限定后更稳妥。",
+      "script_spans": [
+        "省钱和避坑，本就该一起算。",
+        "要求翻出来的东西质量得摸新机标准",
+        "全球差不多每四部手机就有一部是翻新的",
+        "你前面黑屏，就这么来的，亏的是你。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-96b9c4fa831d4ae9834facdf046d2087",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

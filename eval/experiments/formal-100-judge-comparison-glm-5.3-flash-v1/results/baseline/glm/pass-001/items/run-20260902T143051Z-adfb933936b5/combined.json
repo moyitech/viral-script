@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-4ebeceeb7f4c4244b74a4c75c4776f01",
+  "run_id": "run-20260902T143051Z-adfb933936b5",
+  "trace_sha256": "3e611fb1a10c29fbc83ece46413f894043b1f745e55a681b8c713fb3316d9e3c",
+  "created_at": "2026-09-03T13:46:36.427739Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问、结尾回扣，风险与注意事项两侧都答全，对策落到通勤族等普通人，切角具体。",
+      "script_spans": [
+        "花几十块买个充电宝，陌生口尽量绕开。通勤族备个轻便的，比找桩省心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 480，目标为 450，偏差率为 6.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题不漂移，风险实情、作案机制、替代方案层层推进，信息具体有增量，论据与事实相符。",
+      "script_spans": [
+        "USB线里既走电也走数据。恶意端口扮成充电器，手机一连就试着读内容。",
+        "核心结论很清楚：技术上有门路，生活里极少见。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛'洗空银行卡'与'虚惊'反差，中段靠'听着吓人，但'等转折持续兑现，结尾二选一提问从建议自然长出。",
+      "script_spans": [
+        "手机没电借公共充电口，可能被洗空银行卡，也可能虚惊。",
+        "听着吓人，但骗子更爱蹭 wifi 骗密码",
+        "下次电量见底，你插陌生USB还是摸包里宝？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音停顿清楚，'点错就开门，不点多数拦着'等对话式表达贯穿核心展开，朗读无需临时改词。",
+      "script_spans": [
+        "点错就开门，不点多数拦着",
+        "习惯比技术更护身"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'点错就开门'以门喻信任弹窗，服务理解；'习惯比技术更护身'可脱离上下文复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "你屏上若弹信任电脑，点错就开门，不点多数拦着。",
+        "核心结论很清楚：技术上有门路，生活里极少见。",
+        "习惯比技术更护身。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚、结尾能回扣；但充电桩政策与手机窃密对象错位，“别瞌睡时充”缺因果桥。",
+      "script_spans": [
+        "别见口就插，也别年年恐慌。",
+        "国家这几年也要求强化充电信息安全，说明预防不是瞎紧张。",
+        "正规桩虽归物业管，也别瞌睡时充。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "开篇吓点紧接“也可能虚惊”，正文明言案例极少、劝别恐慌；建议均为常规防护，无煽动夸大或不当承诺。",
+      "script_spans": [
+        "可能被洗空银行卡，也可能虚惊",
+        "技术上有门路，生活里极少见",
+        "别见口就插，也别年年恐慌"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-573afc9184c14123b5dbd99dac3d1817",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-3786d4d292a04944a696c7776a63358f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

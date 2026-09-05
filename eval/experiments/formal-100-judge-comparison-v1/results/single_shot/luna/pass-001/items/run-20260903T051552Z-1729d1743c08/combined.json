@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-8d405deb4b464d8980112ae5fade7966",
+  "run_id": "run-20260903T051552Z-1729d1743c08",
+  "trace_sha256": "f8514c8c5dab4f2e7c1b593c23d3d511ad0920d44acca9adec582bccd779cfab",
+  "created_at": "2026-09-03T11:58:13.742710Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应证书能否换工作的核心疑问，既区分硬门槛与普通参考，也给应届生明确求职动作。",
+      "script_spans": [
+        "多数考来的证真换不来",
+        "准入类涉及公共安全、生命健康等公共利益领域，是依法上岗必要条件"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 257，目标为 280，偏差率为 8.21%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦证书的就业价值，政策变化、资格分类、企业评价和避坑建议形成有效信息链。",
+      "script_spans": [
+        "自2020年起，水平评价类技能人员职业资格分批退出国家目录",
+        "目前很多企业通过备案自主评定技能等级，在录用时更看重实操能力而非证书标签"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头以就业疑问和反差抓人，信息推进清楚，但中段偏政策说明，结尾只有劝告，没有自然互动或追问。",
+      "script_spans": [
+        "证书真能换来工作机会？",
+        "自2020年起，水平评价类技能人员职业资格分批退出国家目录"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和建议段有对话感，但中段法律定义与并列信息偏密，长句连续，朗读需重断句。",
+      "script_spans": [
+        "证书真能换来工作机会？",
+        "投简历前先查清目标岗要哪类证",
+        "自2020年起，水平评价类技能人员职业资格分批退出国家目录，不再由政府或授权单位发证，改由用人单位和社会机构认定，在真实招聘中只是选人参考。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“硬门槛”和“就业保险”把证书区别说具体，警示自然，形成可复述的记忆点。",
+      "script_spans": [
+        "准入类才是硬门槛。",
+        "别把考证当成就业保险，更别盲信包过班。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先抛结论，再解释两类证书的差异，最后落到查岗位、重实操和防包过，递进与回扣自然。",
+      "script_spans": [
+        "投简历前先查清目标岗要哪类证，别把考证当成就业保险",
+        "目前很多企业通过备案自主评定技能等级，在录用时更看重实操能力而非证书标签"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有核查目标证书、警惕包过班等稳妥建议，但“唯有”“没证连报名资格都无”过于绝对，可能误导。",
+      "script_spans": [
+        "投简历前先查清目标岗要哪类证，别把考证当成就业保险，更别盲信包过班",
+        "唯有关乎公共安全、人身健康的准入类才是硬门槛",
+        "没证连岗位报名资格都无"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-56f0057f9d97408a9c164793ab81948b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b9ea41c5706a4d97ad3368468373c88e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

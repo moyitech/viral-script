@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-f6c77d886cdb4c2f9729764749cdff88",
+  "run_id": "run-20260902T141708Z-74ad3c650eb9",
+  "trace_sha256": "cbdb61fab85bf2db74c28d3c187943199a7b93414574ec3abb167f17dbf36193",
+  "created_at": "2026-09-03T11:43:51.736270Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答小店是否会被流量绑架，并同时呈现平台引流与依赖风险，落到小店经营判断。",
+      "script_spans": [
+        "街边小店眼下未必会被流量绑死",
+        "别把全部客流押在一个平台，免得被人卡脖子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 283，目标为 280，偏差率为 1.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，也给出多平台和守住招牌的建议；但平台机制与成本只被概括，信息增量有限。",
+      "script_spans": [
+        "小店借这些入口攒老客，不必只靠一家推荐。",
+        "平台正抢着给小店送客人，还给扶持让曝光多了条活路，多了个找客渠道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出利润与客流的两难，中段补充平台机会和依赖风险，结尾问题也自然回到小店判断。",
+      "script_spans": [
+        "你家门口的小店正面临抉择：接超级应用的流量就得让出利润，不接就可能没客人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，但术语叠加、个别句子拗口，朗读时需要重断句或临时调整。",
+      "script_spans": [
+        "为什么这么说？咱先瞅瞅。",
+        "还给扶持让曝光多了条活路，多了个找客渠道。",
+        "开头说的让利润，其实是学费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“把招牌交给别人喂流量”把平台依赖说得具体，收束有记忆点，整体也没有堆砌修辞。",
+      "script_spans": [
+        "把招牌交给别人喂流量，那才真被绑住了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按风险—机会—建议推进，主线可跟；但“让利润是学费”缺少条件和因果解释，结论略显跳跃。",
+      "script_spans": [
+        "不过这里得提醒一句：别把全部客流押在一个平台，免得被人卡脖子。",
+        "开头说的让利润，其实是学费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动或明显违规，但“免费曝光”“让利润只是学费”等说法缺少费用、规则和平台依赖边界，可能让小店误判成本。",
+      "script_spans": [
+        "别把全部客流押在一个平台",
+        "平台正抢着给小店送客人",
+        "能免费用上曝光入口",
+        "开头说的让利润，其实是学费"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f518752f6f0c4650940ec5c562c5f5eb",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ab1e9d289f0a433eb43b738060ae5c4c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

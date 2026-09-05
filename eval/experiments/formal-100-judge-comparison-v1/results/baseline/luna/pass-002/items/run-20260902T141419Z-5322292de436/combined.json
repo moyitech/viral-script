@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-8e03b7a17f7649699ee397954630e76e",
+  "run_id": "run-20260902T141419Z-5322292de436",
+  "trace_sha256": "90d2349c69be07fe64af34ff272192e062b6c503c113a933e6f2c12393b67a1d",
+  "created_at": "2026-09-03T12:16:43.442091Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接回答提前还贷与留现金的取舍，兼顾利息成本、流动性和普通家庭风险。",
+      "script_spans": [
+        "我的看法很直接：先留够保命钱，多余再还贷款。",
+        "工作稳、存款厚可部分提前还；怕失业或开支多，现金留着睡安稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕利差、应急金和部分还款展开，既有算例也有三到六个月现金缓冲建议，信息可执行。",
+      "script_spans": [
+        "提前还掉十万，一年少交三千五利息。",
+        "至少留三到六个月开支的现金，别让房子绑死现金流。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头把收益与流动性的两难直接抛出，中段用数字和分流建议推进，结尾互动也顺着取舍自然落下。",
+      "script_spans": [
+        "手里的闲钱存银行越存越缩水，拿去提前还房贷又怕急用钱借不出。",
+        "提前还掉十万，一年少交三千五利息。",
+        "当省下利息和半夜安心的觉打架，你选哪边？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和案例段有对话感，但中段长句、抽象词和“死墙”等表达拖慢气口，需重断句。",
+      "script_spans": [
+        "这题不能只算利息。我的看法很直接：先留够保命钱，多余再还贷款。",
+        "房贷其实是期限最长的便宜资金，一旦全额还清，家里急用钱再借出来难上加难。",
+        "你看房贷利率减存款收益的差值，差值大就部分还，别全砸进去把活钱变死墙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“先留够保命钱，多余再还贷款”清晰可复述，“漏勺”和“安心的觉”增强画面，整体没有修辞堆砌。",
+      "script_spans": [
+        "先留够保命钱，多余再还贷款。",
+        "钱放在漏勺里。",
+        "当省下利息和半夜安心的觉打架，你选哪边？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，先保流动性再看利差；但月供金额不能直接推出半年现金需求，且实际房贷利率与LPR的关系未交代。",
+      "script_spans": [
+        "房贷利率减存款收益的差值，差值大就部分还",
+        "至少留三到六个月开支的现金，别让房子绑死现金流。",
+        "拿月供五千的家庭说，留三万现金能撑半年",
+        "现在五年期以上房贷LPR是3.5%，存款挂牌价一路往下走，利息早跑不赢这笔房贷。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有应急资金边界，但“只能刷高息卡”过于绝对，提前还贷还需提示合同条款和实际利率差异。",
+      "script_spans": [
+        "至少留三到六个月开支的现金",
+        "工作稳、存款厚可部分提前还",
+        "全还了急用钱只能刷高息卡"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-fc16a866f8f1466d9fa5183f151d3d07",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

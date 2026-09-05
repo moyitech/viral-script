@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-3e01e823a8c04ae583d0ca83003c4a27",
+  "run_id": "run-20260902T142148Z-a3bc93fab8c0",
+  "trace_sha256": "bc6628d961a9d0bfe11f18f817c53eb1594b20d3fe26d5c65526cc02337bc5bf",
+  "created_at": "2026-09-03T11:44:04.696334Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应二元命题，覆盖拍摄者、被拍者与普通观众，监督和伤害两侧均有具体展开。",
+      "script_spans": [
+        "这事儿不能二选一。拍得克制是公共监督，乱传就成二次伤害。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 699，目标为 700，偏差率为 0.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中于上传后的监督与伤害，法律边界、语境误判、算法扩散和现实后果形成有效递进。",
+      "script_spans": [
+        "民法典里讲，肖像权保护早就不看是否赚钱。",
+        "观众看着片段，容易站队误判。",
+        "当事人被认出，工作生活都受影响。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用监督与侵权的冲突入钩，中段连续补充法律、误判和扩散后果，结尾追问自然收束。",
+      "script_spans": [
+        "街拍吵架发上网，说是监督，却可能侵权害人。",
+        "你以为在曝光，其实只给了半截真相。",
+        "这视频发出去，到底帮了谁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句推进有对话感，但法律句语序卡顿，个别词语疑似口误，朗读仍需临时修正。",
+      "script_spans": [
+        "这时候，举手机很容易，收回伤害却难。",
+        "只要没经人同意，你制作公开人家肖像，就可能踩侵权界限。",
+        "比如拍闯红灯，脸虚化或大局景，就没事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“监督变猎巫”“举手机很容易，收回伤害却难”凝练准确，兼顾画面感与警示性，易于复述。",
+      "script_spans": [
+        "监督变猎巫。",
+        "这时候，举手机很容易，收回伤害却难。",
+        "你以为在曝光，其实只给了半截真相。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有明确起承转合，法律、误判、扩散后果能顺接；但合理使用未被正面定义，“就没事”把条件说得过满。",
+      "script_spans": [
+        "除了漏前因，还有人加狠标题，明明小摩擦，写成黑社会欺负人。",
+        "那什么算合理使用？常只拍动手瞬间，漏了谁先骂人。",
+        "比如拍闯红灯，脸虚化或大局景，就没事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体能提示肖像权与二次伤害边界，但“就没事”“一发就上热门”等绝对化表述可能造成法律和平台机制误导。",
+      "script_spans": [
+        "这事儿不能二选一。",
+        "比如拍闯红灯，脸虚化或大局景，就没事。",
+        "平台爱推冲突内容，一发就上热门。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-21d2544cd1c64e3382f9a77a242289b5",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-3de8a021fa5a44b584fc31e48cf96a6a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

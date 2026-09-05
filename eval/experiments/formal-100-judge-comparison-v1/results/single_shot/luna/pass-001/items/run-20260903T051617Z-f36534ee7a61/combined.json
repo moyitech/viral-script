@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-883ab5bc79314148b23c33f76f510ada",
+  "run_id": "run-20260903T051617Z-f36534ee7a61",
+  "trace_sha256": "20d2e3e403ae2521626a07bb79d81d6a21ef99e1e236ee98e57d684e7d583ec9",
+  "created_at": "2026-09-03T11:57:59.463230Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从粮食、加工链到外出就餐，正面解释了粮价平稳与家庭餐桌支出增加的错位，并给出应对方向。",
+      "script_spans": [
+        "粮食价格平稳和家庭餐桌支出其实是两本账。",
+        "所以对普通人来说，盯住米价没意义，该盯的是自己的碗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 427，目标为 450，偏差率为 5.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕餐桌支出，原粮、加工链、外食溢价和数据证据层层补充，观众能获得具体判断与行动线索。",
+      "script_spans": [
+        "原粮出门后，要经过加工、运输、菜场和餐馆，每一环都附上新成本",
+        "外出就餐同类食物溢价能达到两到十三倍，蔬菜最夸张。",
+        "并且，月度数据里食品烟酒及在外餐饮类价格同比也在上涨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用价格没动、支出上涨制造反差，中段持续补充原因和数据，结尾建议也由前文自然落地。",
+      "script_spans": [
+        "超市里米面油价格几乎没动，可一家子每月吃喝花销却悄悄涨了",
+        "粮食价格平稳和家庭餐桌支出其实是两本账",
+        "更关键的是，越来越多人把饭桌搬到了外面"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，主体能听懂，但统计、产业链等句子偏长偏硬，连续朗读需要重断句。",
+      "script_spans": [
+        "你发现没，超市里米面油价格几乎没动，可一家子每月吃喝花销却悄悄涨了。",
+        "统计里的粮食主要指原粮，像小麦稻谷，它在消费指数里权重有限，而且离端上桌还差着好几道工序",
+        "并且，月度数据里食品烟酒及在外餐饮类价格同比也在上涨，证明这不是个别感受。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“两本账”和“该盯的是自己的碗”把统计口径与日常选择说得具体，记忆点清楚且不喧宾夺主。",
+      "script_spans": [
+        "粮食价格平稳和家庭餐桌支出其实是两本账",
+        "所以对普通人来说，盯住米价没意义，该盯的是自己的碗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、分类解释、机制展开和行动结尾完整，但以外食价格上涨推到家庭支出增加，且“支出立马能见好”结论偏满。",
+      "script_spans": [
+        "粮食价格平稳和家庭餐桌支出其实是两本账。",
+        "并且，月度数据里食品烟酒及在外餐饮类价格同比也在上涨，证明这不是个别感受。",
+        "多在家做饭，少点高价溢价菜品，支出立马能见好。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无敏感或煽动内容，解释方向较稳；但“支出立马能见好”等确定性建议和“没意义”绝对表述，仍有误导风险。",
+      "script_spans": [
+        "粮食价格平稳和家庭餐桌支出其实是两本账。",
+        "支出立马能见好"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-90f47456b6a0433d91161653d76e3039",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-07dd6bcc171941f1816aa068273b6344",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

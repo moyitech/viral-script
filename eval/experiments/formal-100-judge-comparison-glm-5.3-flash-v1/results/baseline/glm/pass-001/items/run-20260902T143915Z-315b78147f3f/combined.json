@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-5910d8ef311c4c83a55204b2e988986d",
+  "run_id": "run-20260902T143915Z-315b78147f3f",
+  "trace_sha256": "479fda1d0da1e05c7552aa494bb150207b14a749b5099363b026b7ad6c3ca13b",
+  "created_at": "2026-09-03T13:46:33.790165Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头亮出双方立场，中段自由与疏远两面都答，结尾回扣题设，人群痛点对得准。",
+      "script_spans": [
+        "不是单纯尊重独立，也不是必然疏远",
+        "急用钱对方不帮，算不算疏远？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 702，目标为 700，偏差率为 0.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法条、两项研究、具体场景层层推进，观点有依据；仅收尾几处立场复述略重。",
+      "script_spans": [
+        "民法典里写得明白，男女能书面约定婚后收入归各自所有，但这得签下来",
+        "丈夫多挣也难在家务上少干，经济隔离没制造特权",
+        "夫妻满意度总体在往上走，生活变好家庭变小都在帮忙"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛“各自管仍共有”的法律反差，中段以家务研究、满意度数据持续兑现钩子，结尾两个提问由“写约定”“聊钱”自然长出。",
+      "script_spans": [
+        "婚后各自管薪资，法律可能认定仍共有",
+        "真正冷淡的信号，是不聊钱",
+        "下次工资到账，愿意跟对方说一句怎么花吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数短气口好读，但'留个互助口子不疏远近乎'拗口费解，'不被证明有害的一项'书面绕嘴，两处硬伤只能定2分。",
+      "script_spans": [
+        "聊钱不是查账，是交底。",
+        "留个互助口子不疏远近乎",
+        "财务独立只是其中不被证明有害的一项"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "定时弹、室友、刀等比喻皆服务观点，“聊钱不是查账，是交底”“账清情淡”离开正文仍可复述，金句散布不连续炫技。",
+      "script_spans": [
+        "聊钱不是查账，是交底",
+        "两人更像室友，账清情淡",
+        "财务独立像刀，用得好切菜，用不好伤情"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "各段功能清楚、结尾回扣开头，但满意度证据先下重结论再补救，末句表意含混。",
+      "script_spans": [
+        "真正冷淡的信号，是不聊钱",
+        "取舍不在钱归谁，在肯不肯共担风雨",
+        "说明财务独立不必然戳破关系",
+        "留个互助口子不疏远近乎"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "主动划清“书面约定才作数”的法律边界，研究结论用“不被证明有害”限定，无煽动夸大，导向安全。",
+      "script_spans": [
+        "这层边界得说清：书面约定才作数，不然只是两人习惯。",
+        "夫妻满意度走高是多重因素，财务独立只是其中不被证明有害的一项。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-266d6960f5f442f2acf67e935f213cca",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a8ff3b253d3b49e69e9b8d138e1a7e89",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

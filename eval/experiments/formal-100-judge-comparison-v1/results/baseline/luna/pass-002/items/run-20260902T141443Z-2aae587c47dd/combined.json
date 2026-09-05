@@ -1,0 +1,143 @@
+{
+  "evaluation_id": "combined-2286ba73f208488eaf14c621d33fb480",
+  "run_id": "run-20260902T141443Z-2aae587c47dd",
+  "trace_sha256": "5d8ca18ce7f066d2ec00f387598127ceab2c630950d9067f1343098dce86733d",
+  "created_at": "2026-09-03T12:15:37.911557Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接回答小开发者能否生存，覆盖抽成变化、欧盟与美国规则及普通用户影响，切题完整。",
+      "script_spans": [
+        "小开发者还有空间，甚至比之前安稳。",
+        "不过美国外链免抽只限美国，出了境就失效。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "收入门槛、地区差异和增长风险带来信息增量，但“交得少了”与“十五档没动”相冲，分层费率也缺少计算解释。",
+      "script_spans": [
+        "年收入一百万美元以下，仍能走苹果小企业计划，佣金锁在百分之十五。",
+        "不过边界要明确，欧盟那套计费若用户暴增，成本会跳涨。",
+        "小开发者却交得少了。",
+        "小开发者本来就在十五档没动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“更狠却交得少”的反差抓人，中段不断补充规则与边界，结尾既有余味也自然引出互动。",
+      "script_spans": [
+        "商店抽成更狠，小开发者却交得少了。",
+        "美国外链免抽只限美国，出了境就失效。",
+        "活下去可以，想爆红得先算清账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答和短句支撑，但计费解释数字堆叠，仍需重断句才能顺畅口播。",
+      "script_spans": [
+        "这计划不用改代码，填表就行。",
+        "原先按安装收费取消，改成百分之二加百分之五到十三，再加百分之五。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "反差、分层和“算清账”的表达都服务理解，既有可复述金句，也没有连续堆砌修辞。",
+      "script_spans": [
+        "所谓收紧，是把三成固定拆成浮动",
+        "活下去可以，想爆红得先算清账。",
+        "平台喊收紧，其实给肯算账的小开发者留了门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "有提问、分区说明和风险回扣，主线可跟随；但开头与后文判断冲突，“这计划”指代不清，论证经不起追问。",
+      "script_spans": [
+        "那具体怎么收？",
+        "不过边界要明确，欧盟那套计费若用户暴增，成本会跳涨。",
+        "商店抽成更狠，小开发者却交得少了。",
+        "这计划不用改代码，填表就行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有美国与欧盟适用边界提示，但“比之前安稳”“别怕作者跑路”等推断过满，易造成误导。",
+      "script_spans": [
+        "不过美国外链免抽只限美国，出了境就失效。",
+        "不过边界要明确，欧盟那套计费若用户暴增，成本会跳涨。",
+        "小开发者还有空间，甚至比之前安稳。",
+        "你找小众软件，别怕作者跑路，他们成本相对可控。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-26f2d8ddc39e416a9b4fc02d91ebd2fd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

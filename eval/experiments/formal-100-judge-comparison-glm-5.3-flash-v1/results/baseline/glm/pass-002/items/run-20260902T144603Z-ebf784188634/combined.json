@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-e7e7616aa18945cebc70b6babf247be1",
+  "run_id": "run-20260902T144603Z-ebf784188634",
+  "trace_sha256": "0da191cc6bc872ca5e41d732e309349566a58712802b4e9ccbd2cb8430bc46d7",
+  "created_at": "2026-09-03T14:28:03.481573Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即正面作答不集体涨，电池与光伏两侧齐全，结尾落回普通买家痛点。",
+      "script_spans": [
+        "原料出口受限不会让绿色产业集体涨，但靠受限矿的电池链先动了",
+        "买绿货时，看清含不含受限矿，别听风就是雨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从受限矿、加工集中到购买建议层层推进，稀土占比等事实支撑结论，增量具体。",
+      "script_spans": [
+        "矿要炼成电池材料，得经过采选精炼好多道工序，这环节又集中，像稀土加工咱们占九成以上，别国短期补不上",
+        "其实管制多针对特定两用矿，不是统统堵死"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头电车与光伏反差即钩子，中段“为啥电池先动”自问自答持续兑现，结尾提问由分类逻辑自然生长。",
+      "script_spans": [
+        "你买电车怕涨价？光伏却在跌呢。",
+        "为啥电池先动？它用的钴镍稀土，好些资源国收紧出口。",
+        "下次听说原料受限，先问自己买的是哪类能源品？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句顺口、对话感足，但'采选精炼好多道工序''一刀切齐涨'两处需换词重断，只能给2分。",
+      "script_spans": [
+        "厂子成本悄悄往上走，货架价也就标高了",
+        "得经过采选精炼好多道工序",
+        "所以不是所有绿产品一刀切齐涨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻与俗语点到为止且服务理解，“铁板一块”离开上下文仍可复述，“悄悄往上走”让成本传导可感，无堆砌。",
+      "script_spans": [
+        "厂子成本悄悄往上走，货架价也就标高了",
+        "说白了，绿产业不是铁板一块。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "两条例证因果桥完整，段落功能清晰，结尾反问自然回扣开头反差与题设。",
+      "script_spans": [
+        "任一处限出口，厂子成本悄悄往上走，货架价也就标高了",
+        "光伏靠硅料，咱们自己产得多，货源稳，这头供应没被卡"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有边界意识，不煽动不夸大；但'任一处限出口，货架价也就标高了'因果过于确定，宜补限定词。",
+      "script_spans": [
+        "其实管制多针对特定两用矿，不是统统堵死。",
+        "任一处限出口，厂子成本悄悄往上走，货架价也就标高了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-002c18d4b3a94aafb2d683972b489bd2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

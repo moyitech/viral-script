@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-92f5bf5ba7064818b64516c8def98fdb",
+  "run_id": "run-20260903T051630Z-8b16f81370e0",
+  "trace_sha256": "044d5c1064f742e79f355e1f67a4fb5f5c3ed5570ae13f06bedcf07c36a022a0",
+  "created_at": "2026-09-03T15:26:42.290091Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头到结论紧扣“谁来维护公平”，馆方责任、主管部门与备考学生等人群均被覆盖，切角具体。",
+      "script_spans": [
+        "那维护公平的责任在谁？按照公共图书馆法，这类场馆免费开放、保障公民文化权益",
+        "备考的学生、查资料的打工者，时间被无形挤占，越是需要安静环境的群体越吃亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从法条依据到馆员取舍再到行动建议逐层推进，法律表述与引用一致，信息密度高且无编造。",
+      "script_spans": [
+        "根本原因是场馆的使用规则缺少硬约束，没人愿意当那个坏人",
+        "有的馆曾挂出勿占座的提示，没过多久又被无视"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字内即有反差钩子，中段“责任在谁”“保平静还是动真格”持续推进，结尾“得有人开口要”自然收束有余味。",
+      "script_spans": [
+        "你走进图书馆，一排排桌子摆着书和水杯，人却溜了。",
+        "这就出现现实取舍：保面子上的平静，还是动真格腾座位？",
+        "公平不是靠书本自动让位的，得有人开口要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数短句有对话感，但法律解释句与“公平底线”“无形挤占”等书面表达需改写才能顺口。",
+      "script_spans": [
+        "你走进图书馆，一排排桌子摆着书和水杯，人却溜了。",
+        "实则戳破公共资源分配的公平底线",
+        "保障公民文化权益，日常由县级以上文化主管部门管理"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“没人愿意当那个坏人”“保面子还是动真格”形象贴切，“公平不是靠书本自动让位的”可独立复述，修辞克制不炫技。",
+      "script_spans": [
+        "没人愿意当那个坏人。",
+        "保面子上的平静，还是动真格腾座位？",
+        "公平不是靠书本自动让位的，得有人开口要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "各段功能清晰：提判断、答责任、讲取舍、落到行动，结尾回扣开头场景与题设，因果桥完整。",
+      "script_spans": [
+        "这就出现现实取舍：保面子上的平静，还是动真格腾座位？不少馆默默选了前者。",
+        "公平不是靠书本自动让位的，得有人开口要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点归因克制不激化矛盾，法律表述与条文相符，建议具体可行，无夸大、煽动或误导风险。",
+      "script_spans": [
+        "不能只骂读者自私，根本原因是场馆的使用规则缺少硬约束",
+        "按照公共图书馆法，这类场馆免费开放、保障公民文化权益，日常由县级以上文化主管部门管理",
+        "去服务台提一句，或者看看有没有预约机，把需求亮出来"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d2bc2cd8a60a4a2b8eba6e99f88f6173",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-4f942657930c448786f2a37ab983a613",
+  "run_id": "run-20260902T144346Z-2abc61ffd4fd",
+  "trace_sha256": "578c43f398b35077bcf42b245b0d0727c8fe7158a7bb762521c98dc6aa7fd919",
+  "created_at": "2026-09-03T12:16:52.177041Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从老人的困境、电子化动因，到取报告办法和执行落差，完整回应题设。",
+      "script_spans": [
+        "那老人咋拿报告？本人拿身份证，在院里自助机边刷一下，机器吐张纸出来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，政策依据、办理路径、执行反例和隐私等取舍层层增加有效信息。",
+      "script_spans": [
+        "国家发文要求传统服务与智能创新并行，不能把电子渠道当唯一通道。",
+        "地方试刷脸关联报告，老人怕隐私漏不敢用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“漏看病情”制造冲突，中段给出政策与操作路径，结尾问题也从现实困境自然延伸。",
+      "script_spans": [
+        "医院全面推行电子报告，不会用手机的老人直接漏看病情。",
+        "但现实有反例。有的院门口只认扫码闸机，没手机老人愣在门口",
+        "下次陪爸妈去，你会先问护士有纸吗？还是默默递过自己手机？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数句子短促、有对话感，但“反例”段信息压在一句里，个别表达偏硬，朗读仍需重断句。",
+      "script_spans": [
+        "您说这场景熟不熟？好多老人进医院像进迷宫。",
+        "有的院门口只认扫码闸机，没手机老人愣在门口，这和保留传统方式的要求有出入，只是执行走了样。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“电子是加法，不是减法”“技术快信任慢”短促有力，既概括观点又留下可复述的记忆点。",
+      "script_spans": [
+        "电子是加法，不是减法。",
+        "技术快信任慢。",
+        "自助机变摆设。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由电子化便利切入，转到政策约束、办理路径和执行反例，结尾自然回扣核心矛盾。",
+      "script_spans": [
+        "但现实有反例。有的院门口只认扫码闸机，没手机老人愣在门口",
+        "所以说全面推行不等于全扔纸。电子是加法，不是减法。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有保留传统服务的正确方向，但将政策泛化为“必须留纸”，并把漏看病情、人工核验等说法讲得过满，易造成误导。",
+      "script_spans": [
+        "不能把电子渠道当唯一通道。",
+        "不会用手机的老人直接漏看病情。",
+        "这不是软建议，是硬性要求。医院再智能，也得留那张纸。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-caff4a7393a745e1af6734995205b503",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-2ca74cb6c60640aca7f85c0905f3e6e9",
+  "run_id": "run-20260903T051602Z-b3e5d68396a9",
+  "trace_sha256": "0d0c3a4ab232429eff965e9b711e4b84ce8d827e0a0085da11b0b2b11c640795",
+  "created_at": "2026-09-03T12:31:48.751964Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "全程围绕普通投资者识别AI伪风口展开，既讲风险，也给出核验与避坑动作。",
+      "script_spans": [
+        "避开伪风口，别看概念标签，去查它业务里AI到底占多少、推荐方有没有正规资质。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从造谣机制、AI荐股骗局到官方核验，信息单元层层推进，既有案例也有可执行判断标准。",
+      "script_spans": [
+        "之前有自媒体用AI改写虚假订单文章，被监管罚了款",
+        "你得琢磨，它靠AI省了成本，还是靠AI讲了个新故事？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以追热点入坑制造冲突，中段不断补充骗局与核验方法，结尾用反差比喻留下余味。",
+      "script_spans": [
+        "你以为名字里带AI，股票就能起飞？可不少散户刚追上热点，就掉进编故事的坑里。",
+        "AI风口是真的，但风里混着草屑。用火眼去官方渠道验实质，别用耳朵听故事下单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和建议句较利落，但中段信息密集、书面术语偏多，连续口播会发紧。",
+      "script_spans": [
+        "你以为名字里带AI，股票就能起飞？",
+        "有人觉得文章是AI自动生成的，自己没恶意就不算违规，但处罚里这种借口并不管用，只要传播虚假信息就违法。",
+        "AI本身在财务风险识别上确有价值，可这不代表贴了AI标的的公司就有真技术。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对比都服务于辨别真伪，既有可复述的句子，也没有连续堆砌辞藻或影响理解。",
+      "script_spans": [
+        "标签谁都能贴，真订单不会藏在公众号小作文里。",
+        "你得琢磨，它靠AI省了成本，还是靠AI讲了个新故事？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，随后解释成因、辨析骗局与真实价值，最后落到官网核验，结尾自然回扣题旨。",
+      "script_spans": [
+        "为什么伪风口总跟着AI跑？",
+        "你能做的，是去证监会或交易所官网看公司业务说明",
+        "AI风口是真的，但风里混着草屑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体是风险警示，且明确劝阻付费荐股；但“只要传播虚假信息就违法”未限定证券市场等语境，法律表述过于绝对。",
+      "script_spans": [
+        "凡是要你交费进群领“AI内幕”的，直接划走。",
+        "只要传播虚假信息就违法。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f4d29bb3c3e84534952ccde0063ce512",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-1e06abd296d64fb6802f7c199f9ce3e0",
+  "run_id": "run-20260902T141616Z-a16f7ad83978",
+  "trace_sha256": "b8bad4636d37b0cb0da95ada04b1ed3a4120981d0d072e4b219a1f7c1fe3f1ec",
+  "created_at": "2026-09-03T11:44:48.697315Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应便利与门槛之争，兼顾线上效率、线下缺口及老年人等核心受影响群体。",
+      "script_spans": [
+        "两边都是真的。手机预约让年轻人躲开长队，动动指头就成。可不会用智能机的人，瞬间没了入口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 693，目标为 700，偏差率为 1.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕线上预约的效率、政策边界、数字鸿沟与负担转移展开，信息单元具体且有认知增量。",
+      "script_spans": [
+        "便利没丢，只是从长辈肩上挪到你手机里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“拿号却办不了”制造即时冲突，中段持续切换受益与受损群体，结尾追问自然落地。",
+      "script_spans": [
+        "你拿号单去窗口，却被告知没线上预约办不了。",
+        "当预约成了唯一漏斗，我们是否把同村老人挡在门外了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和对话式转折好读，但“后台一键调”等多处省略过度，朗读需临时重断句。",
+      "script_spans": [
+        "两边都是真的。手机预约让年轻人躲开长队，动动指头就成。",
+        "后台一键调",
+        "补线下的弱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“便利没丢，只是从长辈肩上挪到你手机里”把代价说得具体，“亲情也成客服”也有自然记忆点。",
+      "script_spans": [
+        "便利没丢，只是从长辈肩上挪到你手机里。",
+        "代劳次数多，亲情也成客服。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "先讲两面，再析原因、政策和受影响者，主线完整；但政策例外表述含混，个别收束句逻辑卡顿。",
+      "script_spans": [
+        "为啥全往线上挪？因为大厅里老挤着重复跑腿，纸质表填好几遍。",
+        "线下的门得开着，事项尽量进中心，只有涉秘密等极少例外。",
+        "本就是补线下的弱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动，兼顾线上便利与老年人权益；但把只认线上的窗口一概归为执行走样，政策边界表述也偏绝对。",
+      "script_spans": [
+        "两边都是真的。手机预约让年轻人躲开长队，动动指头就成。可不会用智能机的人，瞬间没了入口。",
+        "线下的门得开着，事项尽量进中心，只有涉秘密等极少例外。有些窗口只认线上，其实是执行走样了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-3eabfbf1914f42eea5d3b7b808f6a768",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-078a1357dbde4021bd149775119708aa",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

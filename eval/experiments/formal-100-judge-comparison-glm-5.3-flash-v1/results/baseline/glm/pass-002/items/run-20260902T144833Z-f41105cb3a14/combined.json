@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-ed806b63225f48868ae4f1017a715005",
+  "run_id": "run-20260902T144833Z-f41105cb3a14",
+  "trace_sha256": "31bf706c2bb5986b62c9732df4955e0d324b0d901eb8d85f87ac1ae0b6d31421",
+  "created_at": "2026-09-03T14:28:50.488106Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接作答会不会变成风险，安心与代价两侧都谈，一家三口备药建议精准贴合普通家庭。",
+      "script_spans": [
+        "你囤的常用药，正变成浪费和误服风险。",
+        "囤药求安心没错，但过了量安心就成包袱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "万吨数据、转卖红线、备量清单各信息单元独立推进，事实与结论相互支撑，无编造痕迹。",
+      "script_spans": [
+        "有白皮书算过，全国一年过期药约一点五万吨。",
+        "个人卖药真的违法。",
+        "退烧止痛止泻，每样一小盒顶够。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直指个人损失，中段以违法转卖、万吨数据、误服风险等新信息持续兑现钩子，结尾提问由安全感主题自然生长。",
+      "script_spans": [
+        "你囤的常用药，正变成浪费和误服风险。",
+        "你也许盘算，剩药卖药店回点血？这念头得掐了，个人卖药真的违法。",
+        "当药箱成了心理安慰，你敢不敢只留必需的？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "通篇短气口、对话感强，“扔了肉疼，不扔碍事”很顺；但“哪种药啥时用写清”等两处需临时改词，按规则封顶2分。",
+      "script_spans": [
+        "你想送人怕嫌弃，扔了肉疼，不扔碍事，这就是真实处境。",
+        "哪种药啥时用写清",
+        "真正的安全感来自清楚家里有什么能用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，“安心就成包袱”“治病的变伤身”贴切自然，“药是救急不是存钱”离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "囤药求安心没错，但过了量安心就成包袱。",
+        "说到底，药是救急不是存钱。",
+        "药不是护身符，堆得多反而遮了眼光。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "恐慌下单推到到期即弃，转卖念头被法律桥接否定，结尾回扣开头浪费与风险，闭环完整。",
+      "script_spans": [
+        "老人眼神花，小孩好奇，容易拿错药。",
+        "你也许盘算，剩药卖药店回点血？这念头得掐了，个人卖药真的违法",
+        "那份虚假的充实感，真抵不过实实在在的浪费和风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "转卖违法与有害垃圾定性讲得准，数据有据可依，慢性病用药提示守住边界，无夸大误导。",
+      "script_spans": [
+        "个人卖药真的违法。法律讲明白，卖药得有经营许可资质，咱没证转卖就踩红线。",
+        "长期慢性病药严格按医生吩咐来。",
+        "温度一高药效说不定打对折。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e159b23153cd495ab0a01491d80336c4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

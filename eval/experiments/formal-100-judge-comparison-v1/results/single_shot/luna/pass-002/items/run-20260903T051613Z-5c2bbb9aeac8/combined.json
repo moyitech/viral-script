@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-ab96e54d7c7f4465b30d1c38fe63f32d",
+  "run_id": "run-20260903T051613Z-5c2bbb9aeac8",
+  "trace_sha256": "b479f720a6a1e01233437d92f7570959507e24f155c5051788e1c5e26a94ca71",
+  "created_at": "2026-09-03T12:33:49.986201Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应员工如何避免掉队，既讲原有技能升级，也辨析转入新兴职业，核心人群与题设冲突覆盖完整。",
+      "script_spans": [
+        "传统行业员工要避免被落下，不是急着跳槽去什么新兴绿色产业，而是把原来的经验往绿色改造上叠一层。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中，技能分类、行业变化、中小微约束与个人行动层层推进，既有事实支撑，也给出可执行判断。",
+      "script_spans": [
+        "有国际研究把绿色职业分成几类，不少原有岗位属于“技能提升型”——工作还在，但内容已经悄悄绿化。",
+        "这些企业吸纳了大部分城镇就业，所以员工的去留直接影响转型公不公平。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接落到老技工的淘汰焦虑，中段连续追问并补上反例，结尾用扳手意象留下余味。",
+      "script_spans": [
+        "厂里的老技工这两天有点慌。",
+        "那普通工人只能坐等厂里开培训班吗？现实没这么省心。",
+        "绿色转型是慢变量，你手里的扳手不会明天就失效"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和问答段较顺，但多处抽象比喻、搭配生硬，朗读时需重断句或换词。",
+      "script_spans": [
+        "那普通工人只能坐等厂里开培训班吗？现实没这么省心。",
+        "突然怕成了被淘汰的那一个",
+        "大量员工所在的中小微企业，本身就在转型压力最前端"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“改造是升级不是关门”等有效对照，但“缠道绿绳”意象突兀，记忆点有了，贴切度和克制感不足。",
+      "script_spans": [
+        "改造是升级不是关门，岗位还在",
+        "但得趁早往上面缠道绿绳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，中段解释技能变化与培训责任，结尾回扣个人行动；因果和转折清楚，结论未脱离题设。",
+      "script_spans": [
+        "这层因果很直接：转型推着岗位技能往高处走，跟不上的人自然悬了空。不过要看清，改造是升级不是关门，岗位还在，只是门槛悄悄起跳了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不含敏感、煽动或危险内容，但“岗位还在”和“半步领先就够你站稳”弱化了行业与个体差异，存在就业预期误导风险。",
+      "script_spans": [
+        "自己主动补点节能常识、学学新设备维护",
+        "岗位还在",
+        "半步领先就够你站稳"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-05a0dfb25a60451694b00dc9972cec67",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

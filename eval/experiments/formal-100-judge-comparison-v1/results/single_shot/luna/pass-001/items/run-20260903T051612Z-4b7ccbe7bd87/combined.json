@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-a6c3630cbb6b4e438c094f3d70a41d63",
+  "run_id": "run-20260903T051612Z-4b7ccbe7bd87",
+  "trace_sha256": "36f62f01c15e7c3fe27775c6d0038f2c8944972b146d37db7eb88fcdf40202c7",
+  "created_at": "2026-09-03T11:57:23.139186Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应投资与追涨的核心冲突，覆盖年轻人、黄金高位和具体应对方式。",
+      "script_spans": [
+        "可黄金处在多年高位，这时候进场到底是长线投资，还是怕错过上涨的追涨？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 444，目标为 450，偏差率为 1.33%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕定投机制、追高风险、黄金属性和操作建议层层推进，信息具体且能形成判断。",
+      "script_spans": [
+        "价格高时少积、低时多积，靠时间把成本摊平，避免人为择时。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用金价上涨和年轻人攒金制造现实感，随后抛出投资还是追涨；中段层层推进，结尾反差收束自然。",
+      "script_spans": [
+        "金价一路走高，不少年轻人开始攒金豆、买积存金",
+        "攒金真正的意义是用时间攒下真实资产，而不是在风口上赌一把大小"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头有对话感，信息组织也清楚；但中段术语密集，多个句子像金融说明，朗读时需要改词和重断句。",
+      "script_spans": [
+        "然后关掉软件别天天盯盘。",
+        "积存金类产品，原本的设计逻辑是按月自动按日均价格买入",
+        "黄金本身不派生利息，长期资本回报并不确定。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“把避险品玩成了投机标的”说透核心矛盾，“在风口上赌一把大小”有画面，修辞克制且服务观点。",
+      "script_spans": [
+        "把避险品玩成了投机标的",
+        "不是在风口上赌一把大小"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由现象引出判断，再解释定投机制与追高偏差，最后落到适合普通年轻人的行动建议，收束自然。",
+      "script_spans": [
+        "攒金这种形式可以是投资，但很多人正用追涨的姿势做这件事"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "强调分散风险、回避急用钱，且承认回报不确定；但“更好的做法”和“从不会只涨不跌”偏绝对，建议补足个体差异与亏损边界。",
+      "script_spans": [
+        "但千万别因为群里都在晒黄金收益，就把急用的钱也砸进去。",
+        "长期资本回报并不确定。",
+        "更好的做法是拿每月工资结余，设个自动扣款，然后关掉软件别天天盯盘。",
+        "金价从不会只涨不跌"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-cddbfa1b2dce45c78734a6f4a59cbfb7",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6b40d2ce908b4ab58d593abb869edeb7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

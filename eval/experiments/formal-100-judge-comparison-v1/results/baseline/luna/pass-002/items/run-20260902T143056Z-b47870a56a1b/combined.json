@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-78a4da7bbe1740f7b45c41174e3e104f",
+  "run_id": "run-20260902T143056Z-b47870a56a1b",
+  "trace_sha256": "1aefcbb9f68e0bb6b95e868c26ad877538406e3b0638ae8e0c4359b919f07b9a",
+  "created_at": "2026-09-03T12:18:29.333172Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面覆盖公共充电窃密风险与出门应对，既讲风险边界，也给出可执行的替代方案。",
+      "script_spans": [
+        "公共充电设备有窃密技术通道，但你出门带个自家充电头，只插墙边插座，风险能压到极低。",
+        "只能借公共USB咋办？先看桩体破不破，旁边谁在晃。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕窃密机制、现实概率、政策背景和避险动作推进，信息单元丰富，观众能带走具体做法。",
+      "script_spans": [
+        "手机这根线，本来既要送电，也要传你照片音乐。",
+        "坏人算账，做这陷阱成本贵得很，不如发短信骗你点开链接。",
+        "自带插头插墙电最稳当。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“零实锤”的反差抓人，中段不断补充风险、证据和应对，结尾问题也自然承接。",
+      "script_spans": [
+        "充电线偷数据？真能，却零实锤。",
+        "下次出门，你会带插头还是赌桩干净？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句切分利于口播，也有“那普通人注意啥？”的对话感；但多处省略成分，朗读时容易卡住。",
+      "script_spans": [
+        "那普通人注意啥？",
+        "要是只能借公共USB，后面说咋办。",
+        "借桩时手捂接口，防人动线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“风险不是零，但概率极低”和“坏人懒得摆摊，爱躺赚”准确易记，修辞不压过信息。",
+      "script_spans": [
+        "风险不是零，但概率极低。",
+        "坏人懒得摆摊，爱躺赚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、机制、风险判断和应对建议主线清楚，但政策段转入车桩网络，未补足与手机窃密的因果。",
+      "script_spans": [
+        "只能借公共USB咋办？先看桩体破不破，旁边谁在晃。",
+        "新建多为车桩，手机桩少提。城市面状网络是给车的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不含明显违规内容，防护建议较稳妥；但“概率极低”“墙插比桩靠谱”等未经充分限定，可能造成过度安心。",
+      "script_spans": [
+        "插上手机弹信任别点，只选仅充电模式",
+        "火车站墙插比桩靠谱，因为只供电"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e0a59d802dfb41a49e91e29878461137",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

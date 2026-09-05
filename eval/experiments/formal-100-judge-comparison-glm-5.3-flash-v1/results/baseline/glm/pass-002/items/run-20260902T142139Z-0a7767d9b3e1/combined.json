@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-9ff2e96842c64b27add093e51ea79668",
+  "run_id": "run-20260902T142139Z-0a7767d9b3e1",
+  "trace_sha256": "c19f9c1f734a54ad9238e4f99e4ee1b6a4210398213cdf0b0057c9c8db7a6e35",
+  "created_at": "2026-09-03T14:25:07.279116Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问即题设之问，中段给出分辨方法，覆盖全天带货与真假辨析两侧，直指普通消费者痛点。",
+      "script_spans": [
+        "半夜刷到主播喊秒杀，你猜他是真人吗？",
+        "咱普通消费者哪看得透代码，只能凭标注避坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，新规依据、仿面孔风险与下单前看标的方法层层推进，观众能带走可操作判断。",
+      "script_spans": [
+        "平台新规说了，AI带货必须亮明身份",
+        "记得瞄一眼角落里“AI生成”的小字"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头悬念直击痛点，中段新规与真假对比持续兑现钩子，结尾提问由找标识自然生长，留有余味。",
+      "script_spans": [
+        "半夜刷到主播喊秒杀，你猜他是真人吗？",
+        "标了，你一眼认出合成；不标，有些商家拿代码仿真人面孔",
+        "你下次看到永不累的主播，会先找那行标识吗？要是全混了，网购信任还剩多少？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，问答与对比承接自然，中段解释也像当面说话，重音停顿清楚，朗读无需临时改词。",
+      "script_spans": [
+        "咱普通消费者哪看得透代码，只能凭标注避坑",
+        "记得瞄一眼角落里“AI生成”的小字，找不到就多留个心眼"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，『技术能仿人，透明得靠规矩』离开上下文仍可复述，无炫技堆叠。",
+      "script_spans": [
+        "技术能仿人，透明得靠规矩。",
+        "想分清真假不能只靠脸，得看画面有没有挂AI标",
+        "数字人能二十四小时不停播，比真人能熬"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "标与不标的对照清楚，找不到标识时以多留心眼兜底，结尾回扣开头设问，因果衔接自然。",
+      "script_spans": [
+        "标了，你一眼认出合成；不标，有些商家拿代码仿真人面孔，忽悠你分不出",
+        "技术能仿人，透明得靠规矩。你下次看到永不累的主播，会先找那行标识吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "提示核查AI标注并多留心眼，以“有些”限定商家行为，有平台新规支撑，公允不夸大。",
+      "script_spans": [
+        "平台新规说了，AI带货必须亮明身份，标识要醒目持续提示，不能一闪而过",
+        "有些商家拿代码仿真人面孔，忽悠你分不出",
+        "找不到就多留个心眼"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c0091ca6759c4e90aa54f4331434c743",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

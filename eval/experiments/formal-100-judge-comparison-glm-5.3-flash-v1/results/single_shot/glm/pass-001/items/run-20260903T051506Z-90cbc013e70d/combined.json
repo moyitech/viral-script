@@ -1,0 +1,169 @@
+{
+  "evaluation_id": "combined-15592500ce7d4db5a064807fc0052aab",
+  "run_id": "run-20260903T051506Z-90cbc013e70d",
+  "trace_sha256": "090e0b6479a60000c52fdbb9d9a8e5c3759e7943cd61c3a505b3f9a310204ad2",
+  "created_at": "2026-09-03T14:08:16.749220Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头发问即摆出两侧，明确给出慰藉可有、伪装不可的立场，结尾落回普通使用者，全程正面答题。",
+      "script_spans": [
+        "它可以是一种情感慰藉，但绝不能伪装成真实的逝者重临",
+        "对普通使用者，关键不是禁不禁止"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 383，目标为 450，偏差率为 14.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移，标识规则、心理两面、自问方法层层推进，规则表述与引用相符，无编造痕迹。",
+      "script_spans": [
+        "合成音频必须在起始或末尾加上可感知的语音提示，标明这是AI生成",
+        "我想留存记忆，还是想逃避告别？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头冷暖反差直接抓住人；中段以算法代言、标识规则、自问层层兑现悬念；结尾告别句自然生长，非硬喊互动。",
+      "script_spans": [
+        "听到已故亲人的声音从手机里传来，你是觉得温暖，还是突然脊背发凉？",
+        "有人获得安慰，也有人因此更难接受死亡本身",
+        "声音可以重放，但告别需要真实完成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句有气口，钩子与结尾上口；但规则转述与“人格形象”等书面堆叠两处拗口，封顶2分。",
+      "script_spans": [
+        "听到已故亲人的声音从手机里传来，你是觉得温暖，还是突然脊背发凉？",
+        "别让机器替你决定悲伤何时结束",
+        "现行人工智能内容标识规则里，合成音频必须在起始或末尾加上可感知的语音提示",
+        "所谓“重逢”就滑向了伦理越界，等于未经许可盗用了逝者的人格形象"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“挤进哀悼空间”“可交互的幻象”等修辞贴切助解，结尾一句离稿仍可复述，克制不炫技，记忆点自然。",
+      "script_spans": [
+        "它正挤进人类最私密的哀悼空间",
+        "把记忆变成了可交互的幻象",
+        "别让机器替你决定悲伤何时结束。声音可以重放，但告别需要真实完成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整、结尾回扣有力；但由缺标识直接断言未经许可盗用人格，跳过许可前提，因果桥不足。",
+      "script_spans": [
+        "那边界到底在哪？",
+        "声音可以重放，但告别需要真实完成",
+        "少了这道标识，所谓“重逢”就滑向了伦理越界，等于未经许可盗用了逝者的人格形象"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "立场克制、双向呈现，建议稳妥；但缺标识被直接等同于盗用逝者人格，归因绝对化，标识位置表述偏窄，需补限定。",
+      "script_spans": [
+        "它可以是一种情感慰藉，但绝不能伪装成真实的逝者重临",
+        "有人获得安慰，也有人因此更难接受死亡本身",
+        "挑选带明确标识的服务，别让机器替你决定悲伤何时结束",
+        "少了这道标识，所谓“重逢”就滑向了伦理越界，等于未经许可盗用了逝者的人格形象。",
+        "合成音频必须在起始或末尾加上可感知的语音提示"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 383,
+        "target": 450,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.14888888888888888
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ef8177bc9641432cbc143c3b4c552dd1",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-3d53ac53cb3a4ba1b7fe345dc357ef5a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-2be29432a86f4834b7fa67d919325f8f",
+  "run_id": "run-20260903T051603Z-f9228fbffb38",
+  "trace_sha256": "6962c87d25e01367bc15e8323ddfbe5f8208c76b36db8adff8b5e6d1b93a1460",
+  "created_at": "2026-09-03T12:03:26.786156Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头明确回答“会更难但不是关门”，并同时覆盖合规压力、扶持机会和小商家应对路径，切合题设。",
+      "script_spans": [
+        "跨境电商规则趋严，小商家出海整体难度在爬坡，但这是优胜劣汰不是关门打狗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 253，目标为 280，偏差率为 9.64%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕规则收紧对小商家的影响展开，既有合规风险和政策支持，也给出经营建议，信息单元具体且有增量。",
+      "script_spans": [
+        "从如实申报、外汇结算到账号环境一致性，要求越来越细，罚则也更明确",
+        "跨关区退货试点铺开，加上多地建起零门槛孵化中心，把退货成本和起步指导摊薄了",
+        "先在一个平台把税务和品类认证弄明白再谈扩张"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出难度与边界，中段用风险、缓冲和建议推进，结尾判断有余味。",
+      "script_spans": [
+        "难度在爬坡，但这是优胜劣汰不是关门打狗",
+        "规则收紧筛掉的是赌徒，留下的是愿意做功课的长期主义者。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有明确转折和行动建议，但中段术语密集、句子偏长，朗读和对话感都未达到精心设计。",
+      "script_spans": [
+        "别迷恋多店铺矩阵铺货",
+        "海关和平台现在都把合规摆前面，从如实申报、外汇结算到账号环境一致性，要求越来越细"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照服务判断，“筛掉的是赌徒”形成可复述记忆点，整体未堆砌。",
+      "script_spans": [
+        "规则收紧筛掉的是赌徒，留下的是愿意做功课的长期主义者。",
+        "新手不至于摸黑过河。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从规则压力转到配套支持、操作建议和流量机会，层次基本清楚；但结尾把复杂结果绝对化，前文支撑不足。",
+      "script_spans": [
+        "海关和平台现在都把合规摆前面",
+        "另一边，跨关区退货试点铺开",
+        "规则收紧筛掉的是赌徒，留下的是愿意做功课的长期主义者。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体导向合规且未作收益承诺；但“任何环节”与“筛掉的是赌徒”过于绝对，可能造成规则后果和群体判断的误导。",
+      "script_spans": [
+        "先在一个平台把税务和品类认证弄明白再谈扩张",
+        "任何环节漏了都可能被扣货冻款",
+        "规则收紧筛掉的是赌徒，留下的是愿意做功课的长期主义者"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-6db8e94200aa49ab9dba699a85023b01",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-78d0c741647a477fbd7c64f78394615a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

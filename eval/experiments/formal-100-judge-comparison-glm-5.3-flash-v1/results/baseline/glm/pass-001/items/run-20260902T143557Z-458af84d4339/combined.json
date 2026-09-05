@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-a9a3c7b8b44e4a578b0c02781b69934f",
+  "run_id": "run-20260902T143557Z-458af84d4339",
+  "trace_sha256": "4a4f0b4e99759ca59e7dd15fc34fe67c17e4494a7990268a2c0925ed4ac3891b",
+  "created_at": "2026-09-03T13:46:13.674420Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即回应门槛之问，便宜与门槛两侧兼谈，落点工薪族算账痛点，切角具体。",
+      "script_spans": [
+        "花260元办卡才能进山姆，可你买的东西未必真便宜。",
+        "要是一年逛不了几回，那张卡反而是笔亏本账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 412，目标为 450，偏差率为 8.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "退卡规则、返利金额、门店数等事实具体且有据，频率算账给出可带走的判断方法。",
+      "script_spans": [
+        "Costco章程写清楚，退费后六个月才能再办卡，退两次就可能被拒。",
+        "山姆近六年门店翻倍到67家，刚因食品安全被约谈"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以260元对未必便宜制造反差，中段用章程、返利、算账持续兑现，结尾提问由正文自然生长。",
+      "script_spans": [
+        "花260元办卡才能进山姆，可你买的东西未必真便宜",
+        "那商家为什么敢这么玩？",
+        "你愿意为了账面低价，先交一笔不确定回本的钱吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口贯穿，动词具体，像“钱回账户逼你再来”直接上口，全篇无需改词即可朗读。",
+      "script_spans": [
+        "低价不是白给，先交钱再谈省，想随时走没那么自由。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“像买张门票”贴切易懂，“先交钱再谈省”可独立复述，修辞克制不堆砌。",
+      "script_spans": [
+        "这笔钱不买东西也得付，像买张门票",
+        "他们用规则把你轻轻绑住",
+        "低价不是白给，先交钱再谈省"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承接商家逻辑再转个人影响，结尾以消费频率回扣开头的办卡之问，层层递进。",
+      "script_spans": [
+        "那商家为什么敢这么玩？",
+        "所以别看排队进店热闹，先想自己消费频率。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体表述克制，但“逼你再来”“容易被忽悠”属争议归因，暗示误导，宜软化措辞。",
+      "script_spans": [
+        "如果你一周只逛一次，省下的差价可能填不满会员费",
+        "钱回账户逼你再来",
+        "咱们工薪族算不清，容易被大包装忽悠"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-a5af8101a02c4d22b6c6b7682fdaddc9",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9e47c630fbbc41d0aa3a3fcfbac88ae8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

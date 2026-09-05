@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-7bd0b37a46384b4eb150fba60693f969",
+  "run_id": "run-20260903T051558Z-09c90fff0ea8",
+  "trace_sha256": "24dd43c0c30d5fba8b423c6b92a113edb9dee9d7ba12cc44a040b6552ac4537c",
+  "created_at": "2026-09-03T12:32:20.829453Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应岗位减少与新工作增长，覆盖企业、工人与转型边界，切角具体。",
+      "script_spans": [
+        "黑灯工厂吞掉了大批拧螺丝、看仪表的普工，可厂门口新贴的招聘启事，写的却是工业机器人运维和数字化系统调试。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕岗位迁移展开，解释替代机制、数字孪生职责、转岗取舍和就业信号，信息推进充分。",
+      "script_spans": [
+        "数字孪生不是魔法，它是物理产线的虚拟映射，参数错了照样出废件，所以得有懂工艺的人持续校准。",
+        "取舍的痛点，是旧技能折旧太快，新技能门槛又不低。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“熄灯却不停”的反差抓人，中段持续推进岗位迁移与转型代价，结尾留下公平转型的余味。",
+      "script_spans": [
+        "车间里的灯越来越多地熄了，流水线却没停下。",
+        "只是转型要给普通工人留学习的窗口，别让中间层变成少数人的高地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头画面和“给产线当医生”很有口播感，但中段多处书面长句与搭配生硬，整体仍需重断句。",
+      "script_spans": [
+        "车间里的灯越来越多地熄了，流水线却没停下。",
+        "这就催生了一批新工种，不是坐在工位上装配，而是给产线当医生、当教练。",
+        "智能工厂减少一线岗位是实打实的发生",
+        "普通工人得放弃熟记多年的手感，去学读数据面板、懂点编程逻辑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“给产线当医生、当教练”和“给虚拟工厂做体检”形象贴切，既帮助理解，也留下了可复述的记忆点。",
+      "script_spans": [
+        "给产线当医生、当教练",
+        "给机器人当保姆、给虚拟工厂做体检"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "按替代机制、岗位职责、利益取舍、就业信号递进，前后有因果桥，结尾也回扣核心问题。",
+      "script_spans": [
+        "为什么会出现这种岗位迁移？因果其实很清楚。",
+        "所以别只盯着少了多少流水线名额。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且主动提示转岗和地区差异；但“吞掉大批”“薪资也向着会调系统的人倾斜”等概括偏满，需补限定。",
+      "script_spans": [
+        "不是所有人都能平滑转岗，地区和产业基础差异很大，别把趋势当成人人自动接住。",
+        "黑灯工厂吞掉了大批拧螺丝、看仪表的普工",
+        "薪资也向着会调系统的人倾斜"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-50db8eeb2f2f43fb84c860a2a285c53a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

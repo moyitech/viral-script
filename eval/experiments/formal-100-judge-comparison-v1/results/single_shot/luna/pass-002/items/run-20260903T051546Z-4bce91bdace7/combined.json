@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-37281682189241edb219e04788c93a01",
+  "run_id": "run-20260903T051546Z-4bce91bdace7",
+  "trace_sha256": "e90ca57de4d2787fdc2065234817b3a774f57a1769509c0f652bb9ff5ab53713",
+  "created_at": "2026-09-03T12:31:33.698334Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕是否上报给出分情境标准，兼顾关心与冒犯，普通同事这一核心人群定位准确。",
+      "script_spans": [
+        "在没有危险信号时，普通同事之间，别急着上报，更别把对方家事当任务处理。",
+        "对方流露轻生或伤人念头，那突破保密是法律例外。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "隐私边界、EAP和危险信号带来具体增量，但将家庭事务整体称为高度敏感个人信息，法律表述过宽。",
+      "script_spans": [
+        "很多企业其实设有员工援助计划，保密且专业",
+        "家庭事务在法律上属于高度敏感的个人信息"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“上报还是装没听见”制造冲突，中段给出边界、替代方案和例外，结尾金句自然收束。",
+      "script_spans": [
+        "第一反应是告诉领导还是装作没听见？",
+        "关心同事的底线，是先守住他的隐私边界，而不是替他做主。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "设问和分条有口语感，但法律、研究术语密集，长句多，朗读气口和真人感都被拖慢。",
+      "script_spans": [
+        "那真想帮忙怎么办？",
+        "对咱们普通人，分寸就两条",
+        "你偶然听到邻座同事在电话里为家里重病老人发愁，第一反应是告诉领导还是装作没听见？",
+        "而且组织行为研究反复提示，职场中感到被窥探、被特殊对待，会迅速转化为排斥感，让人精力内耗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“双重雷区”和“先守住隐私边界”都服务于理解，尤其结尾观点凝练自然，具备独立复述的记忆点。",
+      "script_spans": [
+        "这看似热心，却可能踩中隐私和人际的双重雷区。",
+        "关心同事的底线，是先守住他的隐私边界，而不是替他做主。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "设问、分析、替代方案和结论回扣完整，但以单位收集规则直接推导同事不得传递，关键因果桥不足。",
+      "script_spans": [
+        "对咱们普通人，分寸就两条：对方没开口求你，就不主动深挖；",
+        "用人单位收集都得有合法依据和最小必要原则，何况平级同事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "尊重隐私、避免越级上报的方向稳妥，但将家庭事务一概称为高度敏感信息，并笼统断言危险情形可突破保密，法律边界不够严谨。",
+      "script_spans": [
+        "在没有危险信号时，普通同事之间，别急着上报",
+        "对方没开口求你，就不主动深挖",
+        "家庭事务在法律上属于高度敏感的个人信息",
+        "那突破保密是法律例外"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-840c8d1d8cb843ee88cb7b47bc2d4c94",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

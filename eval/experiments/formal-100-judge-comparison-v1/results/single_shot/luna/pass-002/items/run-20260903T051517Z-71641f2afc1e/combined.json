@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-d0a4029f5bc245979150e58d6de93d63",
+  "run_id": "run-20260903T051517Z-71641f2afc1e",
+  "trace_sha256": "e2e2fff4deafa84eabb440673311e345f1850472d103c6d3fb5600340c656df5",
+  "created_at": "2026-09-03T12:32:04.690663Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应一键开药的便捷与误诊风险，覆盖复诊边界、远程限制及普通用户应对。",
+      "script_spans": [
+        "手指点几下就能收到药，够方便吧。可这便捷背后，误诊的风险常被大家轻轻放过。",
+        "线上续方对长期控病的人确实省力，但快不能替掉该有的谨慎。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕误诊风险持续推进，监管条件、线上诊疗盲区、病情变化信号和行动建议形成有效信息链。",
+      "script_spans": [
+        "没有触诊听诊，也没有化验影像支撑。",
+        "老毛病若悄悄变化，描述几句就被当成老样续药，真问题反而藏住了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用便捷反差迅速设问，中段逐层揭出误诊漏洞，结尾以快与谨慎的对照自然收束。",
+      "script_spans": [
+        "手指点几下就能收到药，够方便吧。",
+        "更现实的漏洞在屏幕这边：没有触诊听诊，也没有化验影像支撑。",
+        "但快不能替掉该有的谨慎。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体句子不长，开头有对话感；但“续方通道”“新生不适”等搭配拗口，连续朗读会卡顿。",
+      "script_spans": [
+        "手指点几下就能收到药，够方便吧。",
+        "一键开药只是稳定慢病复诊的续方通道",
+        "反而冒出新生不适"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“自我诊断的后门”和“快不能替掉谨慎”形象准确，既强化风险，也留下了可复述的判断。",
+      "script_spans": [
+        "它绝不该变成自我诊断、随意吃药的后门。",
+        "老毛病若悄悄变化，描述几句就被当成老样续药，真问题反而藏住了。",
+        "但快不能替掉该有的谨慎。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构由便利切入，先划定复诊边界，再解释误诊机制，最后给出处置建议并回扣谨慎，递进完整。",
+      "script_spans": [
+        "一键开药只是稳定慢病复诊的续方通道，它绝不该变成自我诊断、随意吃药的后门。",
+        "更现实的漏洞在屏幕这边：没有触诊听诊，也没有化验影像支撑。",
+        "给你一个具体提醒：要是吃药后症状没缓，反而冒出新生不适，马上停掉线上续方，去实体机构查清楚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提醒克制，明确区分复诊与首诊；但“只是”“绝不该”过于绝对，症状变化时的处置建议也需更严谨。",
+      "script_spans": [
+        "首诊和病情不明严禁直接给方",
+        "一键开药只是稳定慢病复诊的续方通道",
+        "马上停掉线上续方，去实体机构查清楚"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-52f0a389cd82430a93cac3090fbab1d5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

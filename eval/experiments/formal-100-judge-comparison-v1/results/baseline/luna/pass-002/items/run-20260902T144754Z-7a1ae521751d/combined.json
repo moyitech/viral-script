@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-ac6a025a9b2e4cb0a595f7ac26938587",
+  "run_id": "run-20260902T144754Z-7a1ae521751d",
+  "trace_sha256": "5f7b709f7daed3304162261919bc1c50bccc11cda77e5f9e84976a182c58772a",
+  "created_at": "2026-09-03T12:18:38.623727Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答留城利弊，覆盖租金、机会、政策与不同人群取舍，核心受众明确。",
+      "script_spans": [
+        "房租涨得比工资快，年轻人留城是亏是赚？",
+        "留下来若工资能跳级，成本痛却值当；要是纯拼体力，房租压顶时机会可能不抵代价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕机会—成本持续推进，兼有算账、成因、政策和分化决策，信息增量充足。",
+      "script_spans": [
+        "工资高出的部分，常被房租吃平：你多赚两千，房租多收一千五，净剩不多却换来看见。",
+        "政策缓和局部压力，扭不动整体集聚惯性。",
+        "若你干的活能远程，搬去周边镇街成本更低，机会未必掉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出房租与工资的冲突，中段不断补充机会、政策和选择，结尾追问也由正文自然长出。",
+      "script_spans": [
+        "房租涨得比工资快，年轻人留城是亏是赚？",
+        "难道只能硬扛？外力能托底吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句较多、语义能跟上，但“净剩不多却换来看见”等多处卡嘴，朗读时需要改词或重断句。",
+      "script_spans": [
+        "这账不能只翻一边。",
+        "你发现没，县城招工启事薪资写死，大城市写面议。",
+        "净剩不多却换来看见。",
+        "政策缓和局部压力，扭不动整体集聚惯性。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻准确克制，既解释现实取舍，也留下了便于复述的观点，没有连续堆砌辞藻。",
+      "script_spans": [
+        "成本你摸得着，机会却可能改命",
+        "房租是门票，不是终点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从成因、案例到个体决策层层收束，转折和结尾回扣自然，核心因果链基本完整。",
+      "script_spans": [
+        "人一密，房子不够住，房东当然往上抬价。",
+        "反例也有：有人算完房租就撤，后来发现当地机会更薄。",
+        "留下来若工资能跳级，成本痛却值当；要是纯拼体力，房租压顶时机会可能不抵代价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无明显违规，且说明房源有限、申请有门槛；但“房租跑赢工资，根子在供需错位”等概括性归因缺少限定，易误导。",
+      "script_spans": [
+        "但房源有限，申请有门槛，不敞开给个人。",
+        "房租跑赢工资，根子在这供需错位。",
+        "你月薪八千交完房租剩四千，可离开城市连这八千都没有。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8c9a9e077bec4106a0c5a8e2c76421fd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-bd0e5a9e3ab8407b88e4c4880399b980",
+  "run_id": "run-20260903T051547Z-014632c43ec7",
+  "trace_sha256": "2684cf00a4d17fef2d0cee935cb707ccfb810586df69a464ba36b418ec84b643",
+  "created_at": "2026-09-03T11:58:53.725747Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答免押究竟减负还是转收费，同时呈现前端免押、后端服务费及低预算租客处境，切角明确。",
+      "script_spans": [
+        "免押省下的钱、服务费和实际月租全加起来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 262，目标为 280，偏差率为 6.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "服务费比例、年支出对比、受益范围、押金规则和总账算法均有信息增量，主题集中且能指导决策。",
+      "script_spans": [
+        "每月百分之八到十的服务费，算一年总支出反而可能高于传统押一付三",
+        "再对比普通房源的年总价，别光看零押金三个字就冲动下单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段用服务费、年总支出和适用人群持续推进；但前20字冲突未完全落地，结尾也只是提醒，缺少自然互动余味。",
+      "script_spans": [
+        "算一年总支出反而可能高于传统押一付三",
+        "大家注意，租房免押金现在逐渐普及",
+        "切记算清总账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "信息线索清楚，也有“别光看”等口语提醒，但中段和结尾句链过长，朗读时需要主动拆气口。",
+      "script_spans": [
+        "别光看零押金三个字就冲动下单",
+        "打着零押金月付的招牌，可合同里悄悄收着每月百分之八到十的服务费",
+        "一定把免押省下的钱、服务费和实际月租全加起来，再对比普通房源的年总价，别光看零押金三个字就冲动下单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“天上掉馅饼”和“算清总账”把隐性收费说得直观，表达克制，形成可复述的判断。",
+      "script_spans": [
+        "这基本不是天上掉馅饼，而是把押金成本转移成了别处的收费",
+        "别光看零押金三个字就冲动下单，切记算清总账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "现象、案例和建议的顺序清楚，但“押金上限”并不能直接推出平台把押金从别处收回，关键因果缺少论证。",
+      "script_spans": [
+        "所以你签合同前，一定把免押省下的钱、服务费和实际月租全加起来",
+        "平台只是绕个弯把这笔钱从别的口子拿回来罢了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有核算总账的消费提醒，但将个别平台费用概括为普遍转移收费，且把北京规则说成普遍规定，存在误导风险。",
+      "script_spans": [
+        "签合同前，一定把免押省下的钱、服务费和实际月租全加起来",
+        "合同里悄悄收着每月百分之八到十的服务费",
+        "按规定住房租赁押金一般不能超过一个月租金",
+        "平台只是绕个弯把这笔钱从别的口子拿回来罢了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d63b283aae0a46eab04775b10d6a2ca4",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6a68d6161530444187246f25de4cae19",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

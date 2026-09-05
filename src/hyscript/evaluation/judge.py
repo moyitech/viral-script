@@ -67,8 +67,12 @@ class JudgeConfig:
             "no_think",
             "low",
             "high",
+            "xhigh",
+            "max",
         }:
-            raise ValueError("reasoning_effort must be no_think, low, or high.")
+            raise ValueError(
+                "reasoning_effort must be no_think, low, high, xhigh, or max."
+            )
         for name in (
             "max_format_attempts",
             "max_script_characters",

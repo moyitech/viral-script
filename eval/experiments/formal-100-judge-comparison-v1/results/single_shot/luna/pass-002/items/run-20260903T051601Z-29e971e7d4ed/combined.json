@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-aa521a2f8cf441609928f48bd8092282",
+  "run_id": "run-20260903T051601Z-29e971e7d4ed",
+  "trace_sha256": "c4cf4131072cd436f9c2bb800ddc18054f9d9ec82cf6a439a52258479ec6eaf3",
+  "created_at": "2026-09-03T12:32:33.622732Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答减负与换收费两侧，并落到租客签约决策，核心人群和冲突对象都明确。",
+      "script_spans": [
+        "它缓解的是眼前现金流，不是总支出",
+        "免押金是道选择题，不是免费午餐"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕免押的真实成本展开，既解释普及原因，也提供全周期核算、信用门槛和合同核查等具体信息。",
+      "script_spans": [
+        "把租金、服务费、水电物业、可能的退租违约金全周期加起来，再对比同地段直租价格，才是真实成本。",
+        "信用免押往往看评分门槛，不是人人都能用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用免押反而更贵制造反差，中段持续拆解收费逻辑，结尾自然落到总账判断。",
+      "script_spans": [
+        "你以为租房免押金是平台大发善心，可算完一年总账，有人反而比交押金时掏得更多。",
+        "那是不是只要合同上写了免押，你就真捡到便宜了？",
+        "免押金是道选择题，不是免费午餐；会算总账的人，才不会被表面的零门槛绊倒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏有问答和短句支撑，但中段多处抽象搭配不顺，朗读时需要重新断句或换词。",
+      "script_spans": [
+        "别只盯押金那一栏写没写零。",
+        "年轻人频繁换城，免押降低迁徙成本，平台正好吃下这部分流动需求。",
+        "把租金、服务费、水电物业、可能的退租违约金全周期加起来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对照适度，既帮助理解收费转移，也留下“选择题、免费午餐”等易复述表达。",
+      "script_spans": [
+        "不是费用消失，而是换了个名目，或者拿你的信用分填了坑。",
+        "免押金是道选择题，不是免费午餐"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "顺序完整、结尾回扣题设，但“降低传统押金风险”与免押普及衔接不足，“摊入押金成本”等因果略跳。",
+      "script_spans": [
+        "把租金、服务费、水电物业、可能的退租违约金全周期加起来，再对比同地段直租价格，才是真实成本。",
+        "这本来就在降低传统押金的风险",
+        "这等于把一次性的押金成本，悄悄摊进你每个月的生活费里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，且提醒核算全周期成本较稳妥；但“大多”“永远”等概括，以及把平台动机说成锁定关系，仍有误导风险。",
+      "script_spans": [
+        "把租金、服务费、水电物业、可能的退租违约金全周期加起来，再对比同地段直租价格，才是真实成本。",
+        "免押金大多不是费用消失，而是换了个名目，或者拿你的信用分填了坑。",
+        "租房最大的痛点永远是资金占用"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-eea7875867c64c1e95b237dfe20e7cf0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

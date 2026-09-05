@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-2e90ab6b4868477a855311602d447f6e",
+  "run_id": "run-20260902T142814Z-ed9ff8a620d2",
+  "trace_sha256": "9843c196a18378d68be601d85b730b0d926fbca45073159951862ffbf7dd11ca",
+  "created_at": "2026-09-03T12:15:49.484605Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从稀缺原因讲到收益、流动性和替代方案，最后给出普通储户的决策问题，正面回答是否更划算。",
+      "script_spans": [
+        "那抢到后划不划算？咱们算笔账。",
+        "若答案模糊，排断腿抢来的存单，可能不如安心分散存划算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕是否划算拆出利率、流动性、保障和替代资产，信息点层层增加，能形成可执行判断。",
+      "script_spans": [
+        "二十万起存，中行一年期才百分之一点一。",
+        "存款保险条例写明，五十万内存款保险全保本，超了就得分几家银行存。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“秒没”抛出抢购与收益冲突，中段持续补充利率、流动性和保障，结尾由建议自然收束。",
+      "script_spans": [
+        "你定闹钟抢大额存单秒没，可抢到真比普通定存划算？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答式开头和“咱们算笔账”很利于口播，但多处词组不够顺，临场需改词，难达3分。",
+      "script_spans": [
+        "咱们算笔账。",
+        "抢到手先别乐",
+        "钱能不能锁几年、用不用灵活",
+        "若答案模糊，排断腿抢来的存单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“越难抢越觉得香”把稀缺感说得形象，“排断腿抢来的存单”强化了跟风抢购的反差，易于复述。",
+      "script_spans": [
+        "越难抢越觉得香，背后其实是资产荒，钱找不到好去处。",
+        "排断腿抢来的存单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，展开顺序清楚；但把可转让、提前支取和“腰斩”并置，流动性结论偏绝对，论证仍不够严密。",
+      "script_spans": [
+        "为啥一单难求？",
+        "那抢到后划不划算？咱们算笔账。",
+        "存单能转让，急用可在APP挂单。但提前支取只按活期算。普通定期提前取也是活息，差别其实不大",
+        "你辛苦抢来，若中间用钱提前取，利息直接腰斩，跟普通定存一个样。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规且能提示期限与分散风险，但“利息直接腰斩”和保险表述过于绝对，需补充适用条件。",
+      "script_spans": [
+        "所以抢存钱不是稳赚。",
+        "利息直接腰斩，跟普通定存一个样。",
+        "五十万内存款保险全保本"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-92416762e0a84964bc94557db31ca2db",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

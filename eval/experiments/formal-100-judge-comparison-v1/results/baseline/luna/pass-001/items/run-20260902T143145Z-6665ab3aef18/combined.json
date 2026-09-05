@@ -1,0 +1,157 @@
+{
+  "evaluation_id": "combined-a90e82c2d26540cd9f5c59d4b367d4f8",
+  "run_id": "run-20260902T143145Z-6665ab3aef18",
+  "trace_sha256": "1c5aacc344cd4b792ff2ceac8d2e50c811a543aa77cdd027800a333949d7c2e2",
+  "created_at": "2026-09-03T11:44:11.217848Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应“值不值”，既讲中年转行的动机，也呈现降薪风险并给出储备建议，覆盖题设冲突。",
+      "script_spans": [
+        "降薪转行值不值？中年未必亏但别冲。",
+        "所以动手前，先留足半年开销再迈步，别光看新行当新鲜就上头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 255，目标为 280，偏差率为 8.93%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，包含流动、失业率和现金流风险，也给出半年储备建议；但以总体失业率推断转行动机，论据推进不足。",
+      "script_spans": [
+        "去年就业盘点，你发现三十到五十九岁这拨人，失业比例只有百分之四上下。",
+        "所以动手前，先留足半年开销再迈步，别光看新行当新鲜就上头。",
+        "说明老本行其实挺稳，饭碗端得牢，很多人转行是求变不是逃命。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“值不值”加“别冲”设悬念，中段连续给出数据、风险和建议，结尾追问自然。",
+      "script_spans": [
+        "降薪转行值不值？中年未必亏但别冲。",
+        "但降薪后手头立马变紧，新活儿若没干熟，收入断档，就得天天算着钱花。",
+        "你说，用眼前工资换往后踏实，到底值不值？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏明快，转折和结尾有对话感；但“流动大盘”等数据表述卡顿，核心句仍需重断句。",
+      "script_spans": [
+        "降薪转行值不值？中年未必亏但别冲。",
+        "但降薪后手头立马变紧，新活儿若没干熟",
+        "三十一岁以上熟手占流动大盘一半还多",
+        "去年就业盘点，你发现三十到五十九岁这拨人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“饭碗端得牢”“不是逃命”把稳定与求变的张力说活了，结尾“换往后踏实”也便于复述。",
+      "script_spans": [
+        "老本行其实挺稳，饭碗端得牢",
+        "很多人转行是求变不是逃命",
+        "用眼前工资换往后踏实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，风险到建议的承接顺畅；但“流动大盘”不能直接等同“转行潮”，失业率也难证明主动求变，因果桥不足。",
+      "script_spans": [
+        "但降薪后手头立马变紧，新活儿若没干熟，收入断档，就得天天算着钱花。",
+        "所以动手前，先留足半年开销再迈步",
+        "三十一岁以上熟手占流动大盘一半还多，三十岁出头到四十五岁是换岗主力，转行潮真在升温。",
+        "说明老本行其实挺稳，饭碗端得牢，很多人转行是求变不是逃命。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有预留半年开销的审慎提醒，但将群体动机一概归为主动转行，且“转行潮升温”证据边界不足，存在误导风险。",
+      "script_spans": [
+        "先留足半年开销再迈步",
+        "他们不是被老东家踢走，是主动跳去新行当",
+        "转行潮真在升温"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-82686a5be0c148e9a3cd4cc06ff0e54c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-2940ad9abfe342089ab5a7111529d927",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-e8dd62bfda304fe480adcd3ff92f1936",
+  "run_id": "run-20260903T051556Z-ecfe8e52ac08",
+  "trace_sha256": "2f077b4609d09b0fe414c6c8d6c9955a55bf63fd690ef6d861c0240ba3830042",
+  "created_at": "2026-09-03T12:31:51.036162Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答低成本与低风险的关系，并同时覆盖降费收益、市场波动和普通投资者判断。",
+      "script_spans": [
+        "低成本从来不等于低风险。",
+        "下次看到低费率指数基金，先问自己扛不扛得住它跟踪的那个市场"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "降费、市场风险、被动跟踪、跟踪误差和行动建议层层推进，信息单元充足，核心判断始终集中。",
+      "script_spans": [
+        "降费是监管让利，降的是交易摩擦，不是资产价格的脆弱性。",
+        "极端情绪下，ETF场内价格受供求影响暂时偏离净值"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“便宜不就是安全吗”制造反差，中段层层拆解，结尾以自问形成自然收束。",
+      "script_spans": [
+        "指数基金费率又降了，不少人下意识觉得，便宜不就是安全吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感，短句也有重音，但两处解释句搭配生硬，朗读时需要临时改词。",
+      "script_spans": [
+        "市场大跌时，费率再低也挡不住账户缩水",
+        "比如跟踪股票指数的基金，预期波动和风险就是高于债券型",
+        "运作成本会影响微小偏离"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“便宜买到的，是市场本来的样子”说透低费率与风险的关系，收尾比喻也便于复述。",
+      "script_spans": [
+        "便宜买到的，是市场本来的样子。",
+        "便宜是监管给的糖，风险是指数给的考题。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出判断，中段依次解释成本、指数暴露和跟踪误差，结尾回扣题设，因果与转折衔接自然。",
+      "script_spans": [
+        "这根因果链很清楚：降费是监管让利，降的是交易摩擦，不是资产价格的脆弱性。",
+        "回到咱普通投资者的钱袋子，这次降费当然是实打实的利好"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无承诺收益或煽动交易，风险提示明确；但费用豁免及主动管理保护等表述过于概括，易造成金融误解。",
+      "script_spans": [
+        "低成本从来不等于低风险",
+        "但别因为便宜就放松警惕，低风险错觉才是最贵的手续费。",
+        "持有超过一年还免收销售服务费",
+        "费率低的一部分原因正是你放弃了那层主动保护。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c395c32b5175471c8cba3824a03d74d6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

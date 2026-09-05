@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-de96482fc97c4cabad6a3c9e1588b53b",
+  "run_id": "run-20260902T145050Z-873756d8f6c7",
+  "trace_sha256": "e46ae412471daf026067e0170bb1d817cbc434168b1d4f4d237710d5ef709d23",
+  "created_at": "2026-09-03T11:46:00.816714Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应“多数能否压过少数”，同时写清高低层需求冲突与补偿路径，核心人群对位。",
+      "script_spans": [
+        "楼上老人爬楼喘，要电梯是实打实的需要；低层住户没欠谁的，不该白白吃亏。",
+        "多数便利若连少数损失都不认，那电梯载不动邻里情。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 733，目标为 700，偏差率为 4.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "案例、统计、法律区分与补偿方案相互推进，信息密度高，观众能获得判断标准和落地办法。",
+      "script_spans": [
+        "广州有过判例，一楼因电梯井挨着窗，通风采光打了折，法院判其他业主给补偿。",
+        "上海前两年统计，办成施工的不足申请百分之三。",
+        "高层凑钱是买便利的成本，低层拿填补是填平公道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直抛多数与少数的权利冲突，中段用判例和现实案例持续翻转，结尾追问自然留下代入感。",
+      "script_spans": [
+        "低层被挡光还得让步，多数便利能压过权利吗？",
+        "那给钱就顺了？现实常反过来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和案例承接有对话感，但法律、统计和补偿方案处多次压缩过头，朗读时需要重断句。",
+      "script_spans": [
+        "这事儿不是谁声音大谁赢。",
+        "那给钱就顺了？现实常反过来。",
+        "那案里测了噪声不刺耳，只认采光折损判了三万五",
+        "上海前两年统计，办成施工的不足申请百分之三。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和口语表达克制，既帮助理解利益冲突，也留下“斜不是倒”“电梯载不动邻里情”等可复述句子。",
+      "script_spans": [
+        "天平斜多数，但斜不是倒。",
+        "多数便利若连少数损失都不认，那电梯载不动邻里情。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，能从冲突、判例讲到协商方案；但“边界就这一条”把复杂法律判断压成单一标准，结论略扩大。",
+      "script_spans": [
+        "批准建和逼人签字，可是两码事。",
+        "边界就这一条。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能识别高低层利益并强调补偿，未煽动对立；但“边界就这一条”等法律表述过于绝对，易造成误导。",
+      "script_spans": [
+        "装电梯是好事，但好事不能建在别人吃亏上。",
+        "低层硬要钱法院也不支持，边界就这一条。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4b917e39a65842d9a7b13a7255798d1b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-255a8448b9244064bbd5901ee30e57d3",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

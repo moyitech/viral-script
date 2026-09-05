@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-904ace4983184a5ba9929b86439fff65",
+  "run_id": "run-20260903T051548Z-64709aba4e4e",
+  "trace_sha256": "102aa8523bf26a0ea9a8de54835817ca05654b3de278013b964e56d7d47aeb36",
+  "created_at": "2026-09-03T12:33:31.850998Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应扩张与消费门槛，覆盖会员制商店及普通消费者的省钱痛点。",
+      "script_spans": [
+        "家门口会员制商超一家接一家开，大宗包装看着便宜，可这便宜背后确实横着隐形门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕年费、返利、消费频率和扩张风险层层补充，并给出可执行的办卡判断方法。",
+      "script_spans": [
+        "最直观的门槛就是年费，哪怕只想去买一桶油，也得先办卡，偶尔消费摊下来反而更贵。",
+        "办卡前，务必拿自己半年购物频率对照"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段有年费、返利和扩张隐患的递进，结尾有判断；但前20字只是铺垫，互动和悬念仍不够强。",
+      "script_spans": [
+        "最直观的门槛就是年费，哪怕只想去买一桶油，也得先办卡",
+        "记住，会员价前提是你先成了会员，省不省钱，得看你的购物车够不够重。",
+        "你发现没，家门口会员制商超一家接一家开"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有清晰停顿和对话式承接，但“横着隐形门槛”等搭配拗口，术语与名词堆叠削弱连续口播感。",
+      "script_spans": [
+        "说白了，它先用付费卡把人拦在门口",
+        "大宗包装看着便宜，可这便宜背后确实横着隐形门槛",
+        "所以办卡前，务必拿自己半年购物频率对照"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“会员价前提是你先成了会员”把消费逻辑说透，“购物车够不够重”形成自然记忆点，修辞整体克制。",
+      "script_spans": [
+        "会员价前提是你先成了会员，省不省钱，得看你的购物车够不够重。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，按门槛类型展开；但从扩张投诉直接跳到办卡建议，且返利、专属价与回本关系混杂。",
+      "script_spans": [
+        "说白了，它先用付费卡把人拦在门口",
+        "返利和专属价看似划算，但往往设了消费门槛，买不够数回不了本",
+        "这两年门店扩张明显加快，但急速铺开时品控和履约失误的投诉也没断过",
+        "所以办卡前，务必拿自己半年购物频率对照"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "没有明确违规，但“绑住”“忽悠”带有动机归因和贬义色彩，容易造成不必要的误导，建议改为中性表述。",
+      "script_spans": [
+        "办卡前，务必拿自己半年购物频率对照",
+        "更像绑住老顾客的绳",
+        "别被开业抽奖人潮忽悠着扫码付费"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-192dd8b5a4b74c0cbecbb3b1f892111c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-461d45cabb1f4ed8871dfe3e4bf5cb0e",
+  "run_id": "run-20260903T051607Z-f0ffbd6d2ce2",
+  "trace_sha256": "c8cde5a31b6a09fc1710eb0bd3dd056a84edda6f05226d42ee7265795cf505e4",
+  "created_at": "2026-09-03T12:31:29.955205Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "既解释便利消费的价值，也追问诱导负债的边界，普通消费者的痛点与应对建议都覆盖到位。",
+      "script_spans": [
+        "先用后付本质是个降低决策门槛的便利工具",
+        "当你因为“现在不扣款”就去买本不需要的东西，工具就开始替你做主了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从降低决策门槛、消费意愿到分散账单和自检方法，信息持续推进，机制解释与行动建议相互支撑。",
+      "script_spans": [
+        "它把“想买”和“能付”之间的摩擦力降到最低",
+        "每笔都小、都高频、都分散，单看不起眼，月底凑起来可能吓一跳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“0元下单”制造即时反差，中段连续追问并补充场景，结尾自问自然落地。",
+      "script_spans": [
+        "你点开购物页，发现一件衣服标着“0元下单”",
+        "可方便的另一面，总得有人付代价，那会是谁？",
+        "要是明天就送货上门，你还会买吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和收束有对话感，整体能读通；但中段抽象表达和个别搭配偏拗，仍需重断句或换词。",
+      "script_spans": [
+        "可方便的另一面，总得有人付代价，那会是谁？",
+        "你犹豫质量不敢买",
+        "商家也活了成交量"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“付款的痛感悄悄延后”“把它当试用权而不是信用额”形象又可复述，修辞没有压过信息。",
+      "script_spans": [
+        "平台把付款的痛感悄悄延后了",
+        "所以把它当“试用权”而不是“信用额”。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "场景钩子引出机制，转折展开风险，结尾用“试用权”回扣并落到自检动作，递进完整。",
+      "script_spans": [
+        "可方便的另一面，总得有人付代价，那会是谁？",
+        "所以把它当“试用权”而不是“信用额”。下单前停两秒，问自己：要是明天就送货上门，你还会买吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有风险提示和克制劝导，但金融属性与退货费用表述缺少条件限定，可能造成误解。",
+      "script_spans": [
+        "下单前停两秒，问自己：要是明天就送货上门，你还会买吗？",
+        "不是传统意义上的放贷",
+        "退货全程不扣钱"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6efa6de1815a43d18728b4cdec17faf0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

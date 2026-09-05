@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-74856a0c037b441dad096635025d578d",
+  "run_id": "run-20260902T141354Z-722c605cc04b",
+  "trace_sha256": "fc42fe1801c780551121d05d001868779854b72ccb8cd8dc070baec5171fd160",
+  "created_at": "2026-09-03T14:23:23.762745Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答'低成本不等于低风险'，费与险两侧都讲透，'咱买指数基金'直击普通投资者痛点。",
+      "script_spans": [
+        "低成本不等于低风险",
+        "咱买指数基金，别光看费率低就冲。先问自己扛不扛得住标的波动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕费与险层层推进，五百亿让利、跟踪误差来源均有据可依，还给出查跟踪误差的判断方法。",
+      "script_spans": [
+        "手续费是买进门的成本，风险是里面资产的波动",
+        "跟踪误差来自现金留存、大额申赎，管理费也会影响，但不是风险本身"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句以省钱与风险并存的反差立钩，中段五百亿数据与设问持续兑现，结尾提问由省钱主线自然长出。",
+      "script_spans": [
+        "省下0.3%申购费，亏钱风险却没走。低成本不等于低风险。",
+        "一年能帮投资者省下五百多亿。可基金该涨该跌，还是跟着标的走。",
+        "省的是小钱，波动才是真考验。你会因为手续费便宜，就忽略指数本身的风险吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，'左口袋省钱''不够垫背'等口语表达贯穿中段，朗读无需临时改词，无明显拗口片段。",
+      "script_spans": [
+        "手续费是买进门的成本，风险是里面资产的波动",
+        "咱买指数基金，别光看费率低就冲",
+        "低费率帮你省点钱，但市场跌起来，省的那点费不够垫背"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "口袋比喻厘清成本与风险之别，“省的是小钱，波动才是真考验”“便宜不是护身符”离文可复述，全篇克制不炫技。",
+      "script_spans": [
+        "费率低就像左口袋省钱，右口袋的市场风险并没少。",
+        "别被“降费”二字晃了眼，便宜不是护身符。",
+        "省的是小钱，波动才是真考验。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承转、左口袋右口袋作因果桥，结尾'省的是小钱'回扣开头与题设，逐段功能清晰。",
+      "script_spans": [
+        "费率低就像左口袋省钱，右口袋的市场风险并没少",
+        "下次看到费率再降的广告，先想一层：省的是小钱，波动才是真考验"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体偏风险提示，提醒观众评估承受力，导向安全；但把五百多亿让利归因于0.3%申购费档，口径偏窄，需加限定。",
+      "script_spans": [
+        "咱买指数基金，别光看费率低就冲。先问自己扛不扛得住标的波动。",
+        "现在指数基金申购费最高压到0.3%档，一年能帮投资者省下五百多亿"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3eddbcaa1895474f92d0149bdd4e4f70",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

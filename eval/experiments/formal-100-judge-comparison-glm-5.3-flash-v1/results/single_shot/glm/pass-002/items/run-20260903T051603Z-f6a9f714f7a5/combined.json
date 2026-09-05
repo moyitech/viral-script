@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-d97ef0a5408b46c586547e0e2c567083",
+  "run_id": "run-20260903T051603Z-f6a9f714f7a5",
+  "trace_sha256": "c1b3e045a5339a0e741c9295cdc32b9d9a6bc7fe6f8ec3218fd0d93356476bb0",
+  "created_at": "2026-09-03T15:26:46.785479Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出题设之问，判断正面回应“会不会更难”，恶化与兜底两侧兼顾，落点始终是普通申诉人。",
+      "script_spans": [
+        "我的判断是：不会必然更难过，但接下来几个月，你大概率先经历一段更烦的过渡期",
+        "普通人影响直接：申诉别跟机器人绕圈，直接说“转人工”三个字"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "投诉数据、国标条款、成本合规取舍、留证方法层层推进，无同义复述，观众能带走可执行的判断。",
+      "script_spans": [
+        "上半年AI客服投诉量同比上涨超26%，中消协早已点名转人工机制不畅、循环应答是重灾区",
+        "简单问题机器答，复杂纠纷必须流转人工，切换时同步对话信息"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即有限流申诉与机器客服的具体冲突，中段数据与新国标接连兑现，结尾比喻自然收束，无生硬互动。",
+      "script_spans": [
+        "视频账号突然被限流，你急着申诉，对面却是答非所问的机器客服",
+        "上半年AI客服投诉量同比上涨超26%",
+        "AI客服不是申诉死胡同，而是你该大声要真人的起跑线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与气口设计用心，口语钩子到位；但公文体压缩和别扭语序至少两处，朗读需临时改词。",
+      "script_spans": [
+        "但国标逼出硬杠杠：简单问题机器答，复杂纠纷必须流转人工",
+        "涉人身财产安全优先转真人",
+        "企业不能为AI乱承诺切割责任"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "死胡同与起跑线的收尾、截图是有重量的证据，均离开上下文可复述；修辞点到为止，无堆叠炫技。",
+      "script_spans": [
+        "AI客服不是申诉死胡同，而是你该大声要真人的起跑线",
+        "截图就是有重量的证据",
+        "申诉别跟机器人绕圈，直接说“转人工”三个字"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "问—判—据—策—收尾回环完整，“监管堵死纯AI推诿”承接条款，结尾“起跑线”回扣开头之问。",
+      "script_spans": [
+        "监管堵死纯AI推诿的路，全面接入不等于全面挡事",
+        "AI客服不是申诉死胡同，而是你该大声要真人的起跑线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "判断留有余地，涉安全优先转真人、留存聊天记录等建议均有标准依据，无夸大承诺或误导风险。",
+      "script_spans": [
+        "不会必然更难过，但接下来几个月，你大概率先经历一段更烦的过渡期",
+        "涉人身财产安全优先转真人",
+        "留存AI聊天记录，若它承诺免罚却不认账，企业必须买单"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2b6e013570c8432eb5c50a9d0f3d7272",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

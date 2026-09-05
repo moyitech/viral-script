@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-135cd29a6b4e45709906305499eae545",
+  "run_id": "run-20260902T143313Z-b75580977412",
+  "trace_sha256": "003e762c5d63a240a955ec3fb3089549d2fb33e5d40eb9d68854501552d8e509",
+  "created_at": "2026-09-03T13:47:14.725220Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即立效率与反馈之问，正反两侧都答，结尾替身助手之比直指题设，家长老师都照应。",
+      "script_spans": [
+        "人工智能批作文，效率确实高了，但真实反馈没被带走，只是换了形式。",
+        "你把AI当替身，反馈虚；当助手，反馈实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 689，目标为 700，偏差率为 1.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "调研、批改耗时、身份偏移、十周实验各推一步，与背景相符无编造，听完能带走判断方法。",
+      "script_spans": [
+        "我看过一个调研，跑了三十二个省份，收回两万六千多份问卷。",
+        "机器查漏，人点亮，两边配合才像教书。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头十小时与一句点评形成反差钩子；中段以设问、调研数据与反例持续兑现；结尾问句由省下的八小时自然生长。",
+      "script_spans": [
+        "省下十小时批改，却可能错过孩子需要的那句点评",
+        "为什么老师愿意交给它？手工深批一篇，要十五到二十分钟。",
+        "这句让你想改吗？要是他摇头，效率再高也白搭"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有节奏、对话感足，但数据句多处书面压缩，朗读需临时换词重断，卡在证据段。",
+      "script_spans": [
+        "他们用机器跑量，用人手补温度。比如机器标出三段结构乱，老师再写一句，你这个故事开头其实挺抓人。机器查漏，人点亮，两边配合才像教书。",
+        "发现常态用AI帮批文的老师约两成，学生用AI写作文不到两成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“机器查漏，人点亮”“冷暖机器分不清”贴切好记，金句均服务论点，无堆砌炫技。",
+      "script_spans": [
+        "可孩子写外婆背影，机器也许只判比喻怪，人却懂思念。冷暖机器分不清",
+        "机器查漏，人点亮，两边配合才像教书",
+        "你把AI当替身，反馈虚；当助手，反馈实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚且结尾回扣省时开头，但学校规则与家长顾虑抛出即弃，浅改数据推出人把关因果偏紧。",
+      "script_spans": [
+        "不如坐下来，用省下的八小时，听他讲讲自己写的世界。",
+        "不过学校明确规则的不到一半，家长怕孩子赖工具不动脑。",
+        "这说明效率起来了，反馈深浅仍由人把关。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "调研数据引用克制准确，反例与隐患均带限定词，无绝对化承诺或煽动表述，导向安全。",
+      "script_spans": [
+        "有研究提醒，如果AI知道学生身份特征，反馈可能偏移，这对真实反馈是隐患",
+        "常态用AI帮批文的老师约两成，学生用AI写作文不到两成",
+        "但一个小实验，二十八个学生用智能反馈改了十周议论文，成绩明显好了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5a6e2b5d8d2e420ab7cf46b29e86a71b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-037e696197c5459b9f01e93768d875ca",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

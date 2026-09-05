@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-fd991476ac72403b8e33c7d8c4f3f4ce",
+  "run_id": "run-20260903T051523Z-2f2ca1a078ea",
+  "trace_sha256": "016e3abcc1e765c027307d8ae1731c511818d6d2a6cce64be327f41621ad5a57",
+  "created_at": "2026-09-03T11:57:32.934584Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从消费者的辨认难题切入，解释为何难辨，并给出查看AI标识的应对建议，完整覆盖题设核心。",
+      "script_spans": [
+        "单凭眼睛和直觉其实已经很难分清对面是真人主播还是数字人合成形象了",
+        "先盯一眼画面边角有没有‘AI生成’标识"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 277，目标为 280，偏差率为 1.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕难辨持续推进，从强制标注、技术拟真到仿冒营销风险，再落到可执行提醒，信息单元彼此支撑。",
+      "script_spans": [
+        "数字人能二十四小时不间断直播，表情语气都经过算法精细调校，和真人互动的节奏几乎无异",
+        "此前就出现过商家用仿冒老专家或名人的虚拟形象，专挑易信任的群体推销高价产品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段有规则、风险案例和识别动作，推进完整；但前20字只是场景铺垫，钩子出现偏晚，结尾互动性也一般。",
+      "script_spans": [
+        "此前就出现过商家用仿冒老专家或名人的虚拟形象",
+        "先盯一眼画面边角有没有‘AI生成’标识",
+        "普通消费者在刷到那些全天不停带货的直播间时"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能顺着读完，也有明确提醒；但开头和规则解释句过长，连续出现书面抽象表达，朗读需重断句。",
+      "script_spans": [
+        "你下次刷到主播卖力推销，先盯一眼画面边角有没有‘AI生成’标识",
+        "普通消费者在刷到那些全天不停带货的直播间时，单凭眼睛和直觉其实已经很难分清对面是真人主播还是数字人合成形象了",
+        "这从当前要求AI带货必须主动亮明身份的规则就能印证，正是因为虚拟画面越来越像真人、全天候值守更容易让人卸下防备，监管才强制标注来保障分辨权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制，‘靠观感下结论天然容易出错’表达凝练，‘盯一眼’提供动作记忆点，未见炫技或堆砌。",
+      "script_spans": [
+        "靠观感下结论天然容易出错",
+        "先盯一眼画面边角有没有‘AI生成’标识"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先给出判断，再用监管依据和技术特征解释原因，接着补充典型风险，结尾回到消费者行动，递进清楚。",
+      "script_spans": [
+        "这从当前要求AI带货必须主动亮明身份的规则就能印证",
+        "说明混淆不只是误认而已",
+        "尤其涉及养生理财别光凭感觉信"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题与风险提示基本客观，且提醒核验标识；但“几乎无异”和“盯一眼画面边角”过于绝对，可能让观众误以为看标识即可判断。",
+      "script_spans": [
+        "说明混淆不只是误认而已",
+        "和真人互动的节奏几乎无异",
+        "先盯一眼画面边角有没有‘AI生成’标识"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-cb91944e99864d7291304d46f9dd6aa2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d5aac245729744a186e68922fffa7456",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

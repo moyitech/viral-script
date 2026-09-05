@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-a13c15aee08a48e388b9a5667697005b",
+  "run_id": "run-20260903T051549Z-879ffa479fa7",
+  "trace_sha256": "65483d31289718686c807c42bcfacba7fbd3f212432ab2e938158527cab47a25",
+  "created_at": "2026-09-03T12:33:58.177288Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答能否分清，覆盖真人与合成两侧，并针对普通观众给出辨识和下单建议。",
+      "script_spans": [
+        "普通人靠直觉分清真人和合成，基本不现实。",
+        "那普通观众该怎么办？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕辨识难度展开，写清技术、商家动机、监管标识、风险案例和应对方法，信息推进充分。",
+      "script_spans": [
+        "生成技术把形象、声音和话术磨得越来越像真人，还能调出讨喜的拟人化表情，制造陪伴感",
+        "比如用虚拟老专家形象精准盯住中老年群体，把他们引流去私域买高价保健品。",
+        "去画面角落找“AI生成”或“虚拟主播”的角标。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差立刻抓人，中段从成因、风险推进到识别办法，结尾给出动作和余味，观看路径完整。",
+      "script_spans": [
+        "你以为在和真人砍价，对面可能只是一串代码在循环播放。",
+        "那普通观众该怎么办？刷到不知疲倦、表情标准的主播，先别急着下单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和建议段好读，但中段有抽象搭配与长句，朗读需重断句，未达精心设计的自然。",
+      "script_spans": [
+        "刷到不知疲倦、表情标准的主播，先别急着下单。",
+        "这种悬殊模糊了辨别线索。",
+        "标识成了眼下最靠得住的防线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“放大镜”与“免责牌”形成清晰反差，配合“不睡觉”等拟人化表达，既好记又没有喧宾夺主。",
+      "script_spans": [
+        "标识是普通人的放大镜，不是商家的免责牌。",
+        "别觉得天天守播的真人有多勤奋，可能只是机器不睡觉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由难辨原因转到监管风险，再落到查标识和谨慎下单，段落功能清楚，结论能回扣开头。",
+      "script_spans": [
+        "为什么越来越难分？",
+        "那普通观众该怎么办？",
+        "记住，标识是普通人的放大镜，不是商家的免责牌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有明确的标识提醒和消费建议，但“基本不现实”“最靠得住”及凭自然程度判断风险偏绝对，可能误导。",
+      "script_spans": [
+        "标识是普通人的放大镜，不是商家的免责牌。",
+        "机器主播不是不能买，但得先亮明机器身份。",
+        "普通人靠直觉分清真人和合成，基本不现实",
+        "没标却自然得过分的那类，反而更该警惕"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-97bc8ce729104b90abd47f6da3398faa",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

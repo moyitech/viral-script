@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-ed217454872140e28a1cef2507ff3d7d",
+  "run_id": "run-20260902T141800Z-b3aa0a82ee91",
+  "trace_sha256": "731281a23cafe364bec86fa35a8dc793b665fd1dab91b78062ce21ed42c0ba3e",
+  "created_at": "2026-09-03T14:24:01.425800Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直问公平归属并亮明观点，正文沿法条、馆员、读者层层作答，结尾回扣题设，痛点契合备考人群。",
+      "script_spans": [
+        "这公平谁管？馆方要负主责，占座的人也得收手",
+        "法律把担子搁文化部门肩头，日常却靠馆员提醒加读者自觉"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法条空白、占座细节、预约机失效、地方条例逐一推进，引用可印证法条与条例，信息单元各自承载论证。",
+      "script_spans": [
+        "国家有部公共图书馆法，说县级以上文化部门管图书馆",
+        "有人早上放包去逛街，书在桌上午睡到傍晚",
+        "有些馆装了预约机，刷码才认你坐，但小馆没专人盯屏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句反差加质问即成钩子，中段对话与新场景持续兑现，结尾小动作由正文自然长出，余味足。",
+      "script_spans": [
+        "想看书的人没座，占座的书却堆满桌。这公平谁管？",
+        "馆员过去轻声说借走吧，对方回句打水马上回。",
+        "你若看见便随手扶正一本书，给后来者留个信，公平就从小动作活过来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、气口清楚，开尾节奏好；但'同样难断微小占用''对老读者不住'等书面压缩句需临时换词，封顶2分。",
+      "script_spans": [
+        "想看书的人没座，占座的书却堆满桌。这公平谁管？",
+        "同样难断微小占用",
+        "不理又对老读者不住"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比与拟人皆服务理解，'公平不是帖张条就稳'离文可复述，收句有余味，克制不炫技。",
+      "script_spans": [
+        "有人早上放包去逛街，书在桌上午睡到傍晚。",
+        "所以公平不是帖张条就稳。",
+        "那时满厅书和人，各得其所才叫公共。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承接段段有桥，责任链从法律到现场到个人不跳跃，结尾回扣开头公平之问，闭环自然。",
+      "script_spans": [
+        "你说为啥踢给馆员？原因挺实在",
+        "馆员巡一圈，转头又堆满，清了东桌西桌冒新包"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述克制公允，馆方与占座者责任均有说明，引法条与地方条例有据，无煽动夸大或误导承诺，导向安全。",
+      "script_spans": [
+        "馆方要负主责，占座的人也得收手",
+        "直接收走占物怕引争吵，不理又对老读者不住",
+        "你若看见便随手扶正一本书，给后来者留个信"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d453666036bc40d097e21cb976327c8f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

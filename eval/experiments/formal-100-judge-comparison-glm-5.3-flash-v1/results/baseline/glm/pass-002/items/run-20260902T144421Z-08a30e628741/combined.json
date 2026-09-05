@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-1759bfd5c73845669860ef790fc0bb6f",
+  "run_id": "run-20260902T144421Z-08a30e628741",
+  "trace_sha256": "14fa1795a98a19724611ea184c9efb7f52f4c1bed1ae986db66c9cd1a35979e9",
+  "created_at": "2026-09-03T14:27:47.129576Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出双侧冲突，中段展开抢建与标准缺口，结尾落到普通人关切，全程扣题。",
+      "script_spans": [
+        "标准跟得上吗？新规矩出了，但补上的缺口有限，另一边项目还在疯跑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "装机数据、起火机理、新规盲区、海外火灾层层推进，与引用背景吻合，无编造痕迹。",
+      "script_spans": [
+        "那些已经建好和正赶工期的，用的还是早先规范",
+        "审查员分身乏术，今天验完东边，西边又开工"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头冲突反差抓人，中段以数据、监管缺口与全球火情层层推进，结尾问句从正文自然长出，留有回味。",
+      "script_spans": [
+        "锂电池集装箱刚落地就烧成空壳，可全国储能装机还在同比猛涨六成。标准跟得上吗？",
+        "审查员分身乏术，今天验完东边，西边又开工",
+        "下次看到家门口建储能，先问一句：它经过全程盯防了吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏好，'火就跳着烧'很上口；但政策全称连读拗口，'刚发没经完整周期'需改词重断，两处卡壳限2分。",
+      "script_spans": [
+        "风光电多了得有地方存，储能就是大号充电宝。",
+        "新型储能电站建设工程质量监督大纲",
+        "国内这大纲刚发没经完整周期"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "大号充电宝类比贴切易懂，金句离开正文仍可复述，修辞克制、服务理解，无堆砌炫技。",
+      "script_spans": [
+        "你家楼下放几块充电宝没事，成千上万块挤在舱里",
+        "我们缺的不是标准文本，而是让每块电池被盯紧的耐心",
+        "产业要跑，安全不能跛脚"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "段落承接顺、结尾回扣开头，但\"去年底1.36亿\"紧接\"比去年多六成\"基准漂移，易听成矛盾。",
+      "script_spans": [
+        "那头标准没闲着",
+        "那普通人该信什么？",
+        "去年底全国才有1.36亿千瓦，到今年6月已投运新型储能1.53亿千瓦，比去年多六成"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全篇关键论断均留有余地，如'谁也不敢说绝对防住'，无确定性承诺、煽动对立或夸大误导，审核风险低。",
+      "script_spans": [
+        "谁也不敢说绝对防住",
+        "验收报告不等于永远平安",
+        "这说明标准不是万能钥匙"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-45d7380856d84b878dabb0e2bac1c454",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

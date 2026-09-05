@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-5b2156f5194f43638448040a9dc2d84b",
+  "run_id": "run-20260902T143453Z-8029c4545b8f",
+  "trace_sha256": "1a73b1ff7464c20054d0e348c24fb39e2d2c40dab1442e4e99a445d05aca474c",
+  "created_at": "2026-09-03T14:25:29.136726Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点出门槛，正文兼顾低价与年费、退卡两侧，结尾给办卡判断，正中题设与人群。",
+      "script_spans": [
+        "但便宜背后藏着硬门槛：想进门先交两三百块年费。",
+        "很多人冲着低价去，结果被卡在门口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "年费性质、退卡限制、门店翻倍、算账法层层推进，与背景资料相符，无编造，增量具体。",
+      "script_spans": [
+        "退了会员费半年内不让你再办，轻轻把人拴住。",
+        "先算清每周采购量，全家一周只买百来块东西，那卡就别办，不然反而亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即现被拦下的具体冲突；中段以退卡半年禁办等新转折持续兑现；结尾算账标准自然生长出余味。",
+      "script_spans": [
+        "你拎着购物车到店门口，却被拦下：先付年费才能进",
+        "退了会员费半年内不让你再办，轻轻把人拴住",
+        "先算清每周采购量，全家一周只买百来块东西，那卡就别办"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，'先掏钱才能摸货架''轻轻把人拴住'自然上口，朗读无需临时改词断句。",
+      "script_spans": [
+        "先掏钱才能摸货架，两三百块说多不多说少不少",
+        "退了会员费半年内不让你再办，轻轻把人拴住。你想立马回头？难。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "「不算货款，只是通行证」贴切助解，「轻轻把人拴住」有情绪且可离文复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "这笔钱不算货款，只是通行证",
+        "退了会员费半年内不让你再办，轻轻把人拴住",
+        "先掏钱才能摸货架"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚、结尾回扣开头，但门店翻倍数据插在退卡与建议之间，与结论缺因果桥。",
+      "script_spans": [
+        "先说这笔年费。",
+        "再说退卡。",
+        "这类仓储店从几年前的三十多家开到如今六十多家，五年翻了一倍，扩张真猛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "既承认大包装单价低，又点明年费门槛；退卡规则有店家限定，建议均附条件，无夸大承诺。",
+      "script_spans": [
+        "大包装确实单价低，看起来比普通超市划算不少",
+        "有的店写了规矩，退了会员费半年内不让你再办",
+        "你要是只图偶尔去捡漏，卡费可能比省下的多"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-99e892ddf8b14caf852090b2ea2801a2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

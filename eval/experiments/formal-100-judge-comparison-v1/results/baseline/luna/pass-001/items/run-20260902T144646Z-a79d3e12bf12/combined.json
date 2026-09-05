@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-025007c45a00423a814a750f136c8828",
+  "run_id": "run-20260902T144646Z-a79d3e12bf12",
+  "trace_sha256": "45fbe01e376b09099a59d2307e0182bd1ad56cde73d0741f2345a782ec252973",
+  "created_at": "2026-09-03T11:48:58.246323Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "始终正面回答推进慢与重复花钱的关系，政策边界、医院机制和患者处境都覆盖到位。",
+      "script_spans": [
+        "为啥互认写进文件，咱们还总重复花钱？",
+        "整体慢是因信任没建，接口没接牢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 764，目标为 700，偏差率为 9.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息单元连续推进，拆解临床、信任、激励和技术障碍，最后落到实际损失与行动。",
+      "script_spans": [
+        "第一个拧巴处：互认不是全认。",
+        "医保按项目付费，少查少赚自然缺动力。",
+        "数据接口五花八门，工程师逐个对接。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接落到重复花钱，中段连续拆解为何不认，结尾把问题自然抛回患者。",
+      "script_spans": [
+        "上家医院查的血项，下家不认，你又得掏钱重查。",
+        "那为啥还有不该的重查？",
+        "可要是医生摇头，这钱咱还得认吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句清楚、问答感较强，但多处压缩表达和搭配生硬，朗读时需要重断句或换词。",
+      "script_spans": [
+        "那为啥还有不该的重查？",
+        "文件写接诊医生判断为标准",
+        "除花钱，重复放射检查还吃不必要射线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“医院像隔了堵墙”和“人和系统的缝”把制度与技术障碍说具体，记忆点自然。",
+      "script_spans": [
+        "医院像隔了堵墙，质控没对齐，甲不敢信乙。",
+        "互认蜗牛爬。",
+        "落地难，难在人和系统的缝，不止纸面规定。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以政策边界为起点，依次解释重查原因、系统障碍与实际损失，结尾自然回扣患者行动。",
+      "script_spans": [
+        "先看清政策动没动。",
+        "那为啥还有不该的重查？",
+        "再看实在损失。",
+        "落地难，难在人和系统的缝，不止纸面规定。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有例外边界和安全意识，但对医院、医生动机的概括偏推测，易造成不当归因，需补证据或限定范围。",
+      "script_spans": [
+        "这方向是对的，可执行层面对接还没稳。",
+        "医保按项目付费，少查少赚自然缺动力。",
+        "大医院流水大，重查或许填空档，动机说不清。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-1e580e2c6a6c4caea1cedf4af1acb5d9",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-3c6aba30f8e34371b87a69532b0fe447",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

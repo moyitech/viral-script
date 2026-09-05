@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-d91838395a264fa88394623b90c84f24",
+  "run_id": "run-20260902T142234Z-a33f4bfec098",
+  "trace_sha256": "53e87d7f4a3f79c3aa17f2140ac36a67bf0038c685351b4604b1dd79ca2b3214",
+  "created_at": "2026-09-03T12:15:32.036606Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应公开欠费姓名与隐私冲突，兼顾催缴方、被晒住户和普通邻居的处境。",
+      "script_spans": [
+        "邻里群晒欠费户名，催缴有理也越界侵权。",
+        "催缴可以上门贴条提醒，但群里广播又是另一回事，别把方便当权利。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，给出隐私处理、合法事由、群聊扩散和维权步骤，但法律依据的概括偏窄，关键结论支撑不足。",
+      "script_spans": [
+        "普通人碰上这事，别急着回骂。截好图留底，先找物业私下聊清楚。",
+        "邻里群发名单，两头都不靠，理由再硬也白搭。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出催缴有理也越界的冲突，中段补充边界与做法，结尾自然回到每个人身上。",
+      "script_spans": [
+        "邻里群晒欠费户名，催缴有理也越界侵权。",
+        "那关键在哪？处理别人信息得有合法事由。",
+        "咱们小区群，今天晒他，明天会不会晒我？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感、节奏也清楚，但“民事欠费……”和“正规催缴函”两处搭配生硬，朗读需重断句或换词。",
+      "script_spans": [
+        "欠费该催，但做法得讲分寸，不能拿理由当借口。",
+        "民事欠费是钱的事，没到危害公共安全的地步，这算一条边界。",
+        "物业自身该走正规催缴函，别图省事甩群里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“免责金牌”“泼出去的水”等比喻贴合论点，既把风险说具体，也留下了可复述的判断。",
+      "script_spans": [
+        "催缴物业费不算免责金牌。",
+        "群聊没人把关，发出去像泼出去的水，难收难控。",
+        "别把方便当权利。",
+        "指尖一按，边界就清了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "起承转合完整，能从边界讲到应对；但把“同意或法律要求”近似成全部依据，且“公共安全”与隐私结论衔接不足。",
+      "script_spans": [
+        "催缴可以上门贴条提醒，但群里广播又是另一回事，别把方便当权利。",
+        "民事欠费是钱的事，没到危害公共安全的地步，这算一条边界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导克制维权，但“理由再硬也白搭”等绝对化法律判断，未交代具体情形，易误导。",
+      "script_spans": [
+        "欠费该催，但做法得讲分寸",
+        "邻里群发名单，两头都不靠，理由再硬也白搭"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7fe3a846cfdf436abcc868f5565d10f6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-d37463c770294c3ab6a9c01529dba465",
+  "run_id": "run-20260902T141554Z-544e0d77b75c",
+  "trace_sha256": "2785ea11259105009475df003216ce7689d203ba3c2e829305c9e3e6f5fa9eb3",
+  "created_at": "2026-09-03T12:17:03.523987Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应安全与效率的冲突，覆盖安检方与通勤者，并给出技术、分流等兼顾路径。",
+      "script_spans": [
+        "兼顾安全与效率，不能只堵不疏。",
+        "要，但得让机器替人跑腿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕安全与效率持续推进，兼具现象、原因和落地方案，信息单元不止于口号。",
+      "script_spans": [
+        "规定鼓励安检新技术新产品，推新模式提质量效率。",
+        "高峰多开机器、分时导流才实在。",
+        "老人小孩动作慢，更怕长队挤。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“多花二十分钟”制造立刻可感的代价，中段不断补充冲突与方案，结尾互动也由观点自然推出。",
+      "script_spans": [
+        "多花二十分钟过细安检，安全值这代价吗？",
+        "推新模式不是空话，高峰多开机器、分时导流才实在。",
+        "你说细查要不要？要，但得让机器替人跑腿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，但中段多处压缩表达卡嘴，整体可读却难称朗朗上口。",
+      "script_spans": [
+        "你拎着包在机器前挪",
+        "规定鼓励安检新技术新产品，推新模式提质量效率。",
+        "深圳试点全员过机加身检，却没多开通道才积压。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“只堵不疏”和“让机器替人跑腿”把抽象平衡说具体，结尾“不添人堵门”形成自然反差，便于复述。",
+      "script_spans": [
+        "不能只堵不疏",
+        "要，但得让机器替人跑腿。",
+        "安检细的是清单，不是添人堵门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，先提冲突再给方案，但从“信用分级”跳到“放快守规者”，且“安全反不牢”缺少因果铺垫。",
+      "script_spans": [
+        "推新模式不是空话，高峰多开机器、分时导流才实在。",
+        "靠信用分级，依托违法信息库，严查惯犯、放快守规者。",
+        "操作没跟上理念，细则长了通道没多，安全反不牢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未煽动或承诺绝对安全，安全效率讨论较克制；但信用分级、放快守规者缺少隐私与误判边界，易误导。",
+      "script_spans": [
+        "兼顾安全与效率，不能只堵不疏。",
+        "靠信用分级，依托违法信息库，严查惯犯、放快守规者。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-62d575acabc046f39c37589780f08c24",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

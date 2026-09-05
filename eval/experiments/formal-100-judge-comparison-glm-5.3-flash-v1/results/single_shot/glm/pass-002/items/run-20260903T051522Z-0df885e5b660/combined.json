@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-7ed5b19653d247c19b187a0f6ca58c27",
+  "run_id": "run-20260903T051522Z-0df885e5b660",
+  "trace_sha256": "c62888b2b8ae5daf705904477f7177cd04e5c97c2e2f8af658f0f6a59addac28",
+  "created_at": "2026-09-03T15:26:15.921338Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "设问直指题设两侧，普通家庭与上班族被点明，结论给出还贷与留现金的取舍答案。",
+      "script_spans": [
+        "手里攒点闲钱到底该不该提前还贷",
+        "先留够半年开销的活钱，剩下的如果没稳妥投资渠道，再考虑部分提前还贷"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "利差、合同限制、流动性层层推进，落到留半年活钱的操作方法，论据扎实无编造。",
+      "script_spans": [
+        "房贷利率跟着LPR走，五年期以上目前在三点五附近，这是实打实的成本",
+        "钱还进去容易，再掏出来难。留现金虽然收益低，却是家庭财务的缓冲带"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即用利息降与月供不动的反差抓人，中段以两笔账、流动性逐层兑现钩子，结尾余味由正文自然生长。",
+      "script_spans": [
+        "存款利息一降再降，房贷月供却雷打不动",
+        "更隐蔽的取舍是流动性：钱还进去容易，再掏出来难",
+        "先留够半年开销的活钱，剩下的如果没稳妥投资渠道，再考虑部分提前还贷"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与口语亮点不少，但中段多句书面腔明显，朗读需换词重断，未达精心设计的自然。",
+      "script_spans": [
+        "钱还进去容易，再掏出来难",
+        "而是利率整体走低下的重新定位",
+        "现行房贷管理办法要求银行规范操作"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，'钱还进去容易，再掏出来难'与'是减法，不是胜利'离开上下文仍可复述，无炫技堆叠。",
+      "script_spans": [
+        "钱还进去容易，再掏出来难",
+        "提前还贷是减法，不是胜利",
+        "留现金虽然收益低，却是家庭财务的缓冲带"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "两笔账框架贯穿全文，转折与承接自然，结尾减法与选择权回扣开头，论证闭环。",
+      "script_spans": [
+        "更隐蔽的取舍是流动性：钱还进去容易，再掏出来难",
+        "提前还贷是减法，不是胜利。守住现金流，才守得住选择权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "建议均附条件与前提，无确定性收益承诺；引LPR与还贷规则表述克制，风险提示清楚。",
+      "script_spans": [
+        "表面看提前还款等于赚了利差。但关键要看你有没有其他负债和应急能力",
+        "先留够半年开销的活钱，剩下的如果没稳妥投资渠道，再考虑部分提前还贷"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-dcafbadc6c5448b2b203811475f8b3b6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

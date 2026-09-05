@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-226c81b0d90c4e6fa314cf5928f35ecb",
+  "run_id": "run-20260902T141742Z-6d4a0f37bdf1",
+  "trace_sha256": "b4832dd7901ed45c29eb628f4f751262879e2bf8b9452348a31f50dd3213a1eb",
+  "created_at": "2026-09-03T11:44:06.443265Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否让步，完整呈现停车与休闲的冲突、成因及折中方案，核心人群明确。",
+      "script_spans": [
+        "这事儿不能让休闲直接让步，也没法只顾车不管人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 753，目标为 700，偏差率为 7.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦，兼有法律依据、现实成因、案例参照和错峰等具体方案，信息推进充分。",
+      "script_spans": [
+        "按民法典，共有部分改用途得业主共同决定。",
+        "其实可以错峰用空地：白天停车少，老人带孩子活动；夜里车回巢，人退场。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接摆出车位与休闲的双重损失，中段不断补原因和解法，结尾问题也由全文自然收束。",
+      "script_spans": [
+        "把小区仅有的花园抹平划车位，老人孩子连晒太阳的地方都没了",
+        "车停下了，人还能不能坐下？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、问答和生活化比喻有口播感，但法律与规划表述多处生硬，个别词组卡嘴，尚未做到全篇顺滑。",
+      "script_spans": [
+        "为啥会掐成这样？老小区当年建时车少，没留几个车位。",
+        "按民法典，共有部分改用途得业主共同决定。",
+        "小孩被迫去马路牙子玩，安全冒头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“最省事却最笨”和“车停下了，人还能不能坐下”形象准确，既帮助理解冲突，也留下了自然可复述的记忆点。",
+      "script_spans": [
+        "直接全铺沥青，最省事却最笨",
+        "车停下了，人还能不能坐下？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "冲突、成因、方案、结论链条完整，但从案例推到“不是没地方”偏快，错峰方案的可行性论证不足。",
+      "script_spans": [
+        "为啥会掐成这样？老小区当年建时车少，没留几个车位。",
+        "咱们不是没地方，是没动脑筋。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制且不煽动对立；但“得业主共同决定”简化了法定程序，错峰停车未交代消防与管理边界，建议加限定。",
+      "script_spans": [
+        "这事儿不能让休闲直接让步，也没法只顾车不管人。",
+        "按民法典，共有部分改用途得业主共同决定。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-27002d6b3dd248ae9436fe12a4112da6",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-2de3cb6eefff45d3a74a07476cf85b1d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

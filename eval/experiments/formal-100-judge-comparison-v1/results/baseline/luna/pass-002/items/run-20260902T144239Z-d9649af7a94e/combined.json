@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-2319a4f8d4b04611bcfb662da46a0f58",
+  "run_id": "run-20260902T144239Z-d9649af7a94e",
+  "trace_sha256": "6479025087bdddfc26df5209ee00fc624e87abf317605c049ce51740d19ce63b",
+  "created_at": "2026-09-03T12:16:57.150905Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应“快还是吵”的两难，既讲提速机制，也讲居民噪声代价，目标观众和试点语境匹配。",
+      "script_spans": [
+        "低空物流确实让包裹提速，可城市噪声这道坎也来了。",
+        "快和静不能全拿，看你是收药还是午休。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕提速与噪声权衡，空域、续航、声反射和治理等信息层层补充，既有具体知识也有判断增量。",
+      "script_spans": [
+        "无人机走直线不堵车，地面快递常卡红绿灯。",
+        "老旧小区回声大，新建区稍能喘气。",
+        "社区能反馈航线，不是平台说了算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用快与吵的反差抓人，中段持续补充效率、噪声与治理冲突，结尾把选择抛回观众。",
+      "script_spans": [
+        "快递省下二十分钟，你却可能被头顶嗡嗡声吵得睡不着。",
+        "当包裹从天而降，我们愿用多少安静换那十分钟？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、比喻和问答让整体好读，但“细则还在跟上”等表达拗口，影响连续口播。",
+      "script_spans": [
+        "你想午休，窗外却像有蜜蜂排队过。",
+        "噪声该怎么管，细则还在跟上，投诉常卡在归属。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“效率账算得清，安静账难标价”和“安静税”形成清晰记忆点，修辞服务于噪声代价，不算堆砌。",
+      "script_spans": [
+        "效率账算得清，安静账难标价。",
+        "城市低头接货，抬头得付安静税。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "段落顺序清晰，能从提速原因转到噪声代价再到治理选择；但“怎么选”主要落在口号式二选一，结论与前文证据衔接不足。",
+      "script_spans": [
+        "为啥能快？民航局在搞空域分类试点，能飞的地方变多了。",
+        "怎么选？试点城市在划低空航路，绕开学校医院。",
+        "快和静不能全拿，看你是收药还是午休。",
+        "眼前得在吵与快间，挑个能忍的点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体呈现利弊并提示监管边界，但“救命时间”“手机点一点”等表述过于确定，可能夸大便利性和医疗价值。",
+      "script_spans": [
+        "快和静不能全拿，看你是收药还是午休。",
+        "急用药走空运，能抢出救命时间。",
+        "现在手续短了，手机点一点就能申请起飞。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-77b76e17f80e4a86a4113686113b0ed6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

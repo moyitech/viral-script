@@ -1,0 +1,158 @@
+{
+  "evaluation_id": "combined-0bd5d1aac3c1467b882d23cb5148fc83",
+  "run_id": "run-20260902T144431Z-644af2d006b2",
+  "trace_sha256": "bcd8ca6371e8c75a20a5da08d2728b0dbee579c6e1e4a56ed180ea3061e49bd8",
+  "created_at": "2026-09-03T11:48:03.794119Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接围绕储能扩张与安全标准追问，兼顾建设规则、运行漏洞和居民风险，核心受众与题设均命中。",
+      "script_spans": [
+        "储能项目真在猛建。",
+        "可这规矩只罩住建设段。",
+        "你家附近可能摆集装箱电池房"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 439，目标为 450，偏差率为 2.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "围绕扩张、标准覆盖和居民风险展开，信息单元较多；但开头与主体对标准是否跟得上给出相反判断，削弱主题结论。",
+      "script_spans": [
+        "到6月底，全国新型储能装机一点五三亿千瓦，比去年多六成。",
+        "还出了体系指南，把规划运维等八个领域圈进来，框架算立起了。",
+        "可这规矩只罩住建设段。",
+        "电池标准跟得上扩产，火险却没断过。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用标准与火险的反差抓人，中段层层补证，结尾把公共风险落到楼底下，余味自然。",
+      "script_spans": [
+        "电池标准跟得上扩产，火险却没断过。",
+        "那标准管不管用？",
+        "等标准跑赢事故，才敢把电站建到楼底下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句推进和对话感都成立，但“在别的文件提”与“年深日久老化靠定期查”压缩过度，朗读需补词。",
+      "script_spans": [
+        "储能项目真在猛建。",
+        "安全后评价才刚在别的文件提",
+        "标准替你兜底，但年深日久老化靠定期查，不等于零风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“出生证”“体检手册”让标准缺口具体可感，末句“跑赢事故”形成可复述的收束，修辞不过量。",
+      "script_spans": [
+        "就像给电站办出生证。",
+        "像体检手册没发到手。",
+        "等标准跑赢事故，才敢把电站建到楼底下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 1,
+      "reason": "开头声称“标准跟得上扩产”，后文却说项目跑在规则前头，核心判断自相矛盾，结尾也未能修复。",
+      "script_spans": [
+        "电池标准跟得上扩产，火险却没断过。",
+        "项目跑在规则前头不稀奇。",
+        "等标准跑赢事故，才敢把电站建到楼底下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明确违规，且“不等于零风险”较克制；但将监管概括为只管建设，并用车位几米等场景制造泛化恐慌，边界不足。",
+      "script_spans": [
+        "不等于零风险。",
+        "可这规矩只罩住建设段。",
+        "你家附近可能摆集装箱电池房",
+        "它离你车位没几米。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.7916666666666666,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.375,
+    "weighted_average": 2.375,
+    "normalized_score": 0.7916666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-495954205048497bbcfdbbd3f38b2bee",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d7c577b58f1f46b1962b4a2b0773c259",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-bcffb8007d2f48a190954a6f9cf4a289",
+  "run_id": "run-20260903T051626Z-3107776e56a1",
+  "trace_sha256": "e1cd4956d430f1df1b0a5bd85205588542fa6ed23137a075281e4eb8e13ac3e0",
+  "created_at": "2026-09-03T15:26:51.090916Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问、中段法律与风险并举，结尾建议回扣题设，善意与边界两侧齐备，直指普通人。",
+      "script_spans": [
+        "我的判断很直接：帮陌生人垫付，善意必须带边界，不然容易从救助变成被利用",
+        "对普通人来说，善意可以留三分清醒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "场景、无因管理、诈骗风险、平台止付各单元层层推进，有引用支撑，观众能带走判断与做法。",
+      "script_spans": [
+        "边界在于，你的垫付必须基于真实管理意思，对方事务真实合法",
+        "好在你转账时，部分支付平台已上线延时到账和风险提示，发现不对能及时止付"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开场场景与设问抓人，'三分清醒'收束自然；但法条段术语密集，'违法背俗抗辩排除'处推进趋平。",
+      "script_spans": [
+        "在路边有人突然拦下你，说家人急救差几百块挂号费",
+        "帮人别帮成被收割的缺口",
+        "虽法律说违法背俗时受益人抗辩排除，但暗中罪犯无处追偿"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开尾顺口有对话感，但中段法条句拗口费气，多处需重断句或换词才好念。",
+      "script_spans": [
+        "我的判断很直接：帮陌生人垫付，善意必须带边界，不然容易从救助变成被利用。",
+        "虽法律说违法背俗时受益人抗辩排除，但暗中罪犯无处追偿"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'踩刹车''留三分清醒'比喻克制且助解，记忆点离开上下文可复述，无堆砌炫技。",
+      "script_spans": [
+        "可这份好心，为什么常常需要踩刹车",
+        "善意可以留三分清醒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整可跟随；但'抗辩排除'到'无处追偿'因果桥压缩过狠，'暗中罪犯'表述听感费解。",
+      "script_spans": [
+        "更现实的风险是，电信网络诈骗高发，骗子常制造紧急情境突破信任",
+        "若对方以虚假身份骗付，虽法律说违法背俗时受益人抗辩排除，但暗中罪犯无处追偿，钱款难回"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "风险提示与建议均带限定，无绝对化承诺、煽动或标签化，法律与防骗信息表述公允稳妥。",
+      "script_spans": [
+        "好在你转账时，部分支付平台已上线延时到账和风险提示，发现不对能及时止付。",
+        "垫付前多问一句官方核实，优先选用带担保或延时的支付渠道，小额救急也留好聊天记录。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-857a57ded6e345f993610a25ece8a71b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

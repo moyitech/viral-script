@@ -1,0 +1,148 @@
+{
+  "evaluation_id": "combined-011514ebb6b34595abfca831b180ccb1",
+  "run_id": "run-20260903T051455Z-a117f2876107",
+  "trace_sha256": "4d79630e8ed9ec5bdbddaff521bdead68992c0358e2247bb52b84da3815c5763",
+  "created_at": "2026-09-03T11:56:58.903540Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答小店是否会被流量绑架，兼顾平台机会、商家代价与自救路径，核心人群和冲突两侧齐全。",
+      "script_spans": [
+        "街边小店真会被流量绑架吗？我的判断是：还没到绑架那步"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 410，目标为 450，偏差率为 8.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕平台流量依赖展开，覆盖获客、抽成、算法推荐和老客沉淀，信息单元有明确推进。",
+      "script_spans": [
+        "展示位和抽成规则全由平台定，小店自己的老客沉淀不下来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用早餐店的团购追问制造反差，中段不断补出平台代价，结尾用“门口灯笼”留下余味。",
+      "script_spans": [
+        "一半客人进店先问“有团购吗”",
+        "小店老板若只会接平台单，哪天佣金涨了，要么涨价要么消失。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体口语感较强，观点推进清楚，但中段两处并列信息偏密，朗读时需要重断句。",
+      "script_spans": [
+        "小店老板若只会接平台单，哪天佣金涨了，要么涨价要么消失。",
+        "高德这类地图应用也用免开店费拉小店上榜，抖音有扶持计划给曝光，看似白送流量，实则把经营命脉往线上拽。",
+        "咱们点单是便宜了，但你想过没，当一条街的店都靠同一几个APP派单，哪家口味好全看算法推荐。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“流量寄居者”和“有自己门口灯笼的店”形象且服务观点，既有记忆点，又没有堆砌辞藻。",
+      "script_spans": [
+        "很多店已经成了平台的“流量寄居者”",
+        "流量潮水退去，能活下来的都是有自己门口灯笼的店。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构递进清楚，但“全看算法推荐”“要么涨价要么消失”把复杂风险说成必然，结论略扩大。",
+      "script_spans": [
+        "所以街边店别把生路全押给超级应用",
+        "哪家口味好全看算法推荐。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明确违规，判断有一定克制，但“全看”“要么涨价要么消失”等绝对化表述可能误导，需补充限定。",
+      "script_spans": [
+        "我的判断是：还没到绑架那步",
+        "哪家口味好全看算法推荐"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f3fa96c2a26e433f84fb368a64d2e2c7",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-57ff59539b234a70a8d939ee8a108457",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

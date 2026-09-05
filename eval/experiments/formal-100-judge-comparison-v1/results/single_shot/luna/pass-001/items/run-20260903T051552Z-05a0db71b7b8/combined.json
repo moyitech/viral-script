@@ -1,0 +1,166 @@
+{
+  "evaluation_id": "combined-dd182a0ca1204b8daab5c9923ffdf1f5",
+  "run_id": "run-20260903T051552Z-05a0db71b7b8",
+  "trace_sha256": "25126d4d268bec880cbeade224ad3e78350fb800059bc2fcca602a04f1fa71e5",
+  "created_at": "2026-09-03T12:01:02.761745Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答题设，既承认宠物进入的需求，也提出分区照顾怕动物者，目标人群与冲突两侧齐全。",
+      "script_spans": [
+        "友好空间得给他们留一口透气的地方。",
+        "明确的分区不是歧视，而是让不同需求各得其所"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 585，目标为 450，偏差率为 30.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕共存边界推进，既解释恐惧与规则冲突，也给出禁区、隔离动线等可执行信息。",
+      "script_spans": [
+        "这种恐惧不是矫情，可能是心跳加速、呼吸发紧的真实生理反应",
+        "这里的核心取舍是：公共环境的秩序和多数人的安心，优先级高于商家的宠物流量。",
+        "进门前能看到清晰宠物禁区或隔离动线，才算被照顾到"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用两类人的反差入题，中段不断补充规则、风险与分区方案，结尾回扣核心立场，推进完整。",
+      "script_spans": [
+        "商场大门一边是摇尾巴的宠物，一边是攥紧衣角不敢进的怕狗人。",
+        "照顾怕动物者不是把猫狗拒之门外，而是让害怕的人也能安心推门进来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体气口清楚，也有“喊友好”“别把公共沙发当狗窝”等口语亮点；但规则段句式偏硬，个别转折明显卡嘴。",
+      "script_spans": [
+        "喊“友好”不能只对着猫狗",
+        "别把公共沙发当狗窝",
+        "看规则底层，导盲犬之类工作犬依法能进几乎所有公共场所",
+        "一旦不牵绳、上桌舔餐具的纠纷变多，像上海部分商圈就干脆撤标识回到禁入本态"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“别把公共沙发当狗窝”具体又好记，“孩子能跑，狗能溜”进一步把分区原则说得形象。",
+      "script_spans": [
+        "别把公共沙发当狗窝。",
+        "孩子能跑，狗能溜，谁都不必牺牲基本安全感。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，能从需求冲突推进到规则与分区方案；但“商家自行开口”等表述生硬，规则与禁入结论的因果承接也偏跳。",
+      "script_spans": [
+        "这种对立不是偶然，宠物数量变多让相遇概率陡增，但公共空间的设计却还停在单一假设。",
+        "明确的分区不是歧视，而是让不同需求各得其所，孩子能跑，狗能溜，谁都不必牺牲基本安全感。",
+        "一旦不牵绳、上桌舔餐具的纠纷变多，像上海部分商圈就干脆撤标识回到禁入本态。",
+        "当法规本就禁入而商家自行开口，这种友好天生脆弱，遇到摩擦就只能急刹车。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体兼顾双方权益且无明显违规，但法律表述过宽，需限定地区和适用条件。",
+      "script_spans": [
+        "明确的分区不是歧视，而是让不同需求各得其所",
+        "导盲犬之类工作犬依法能进几乎所有公共场所"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 585,
+        "target": 450,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.3
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-cdbe5c5ac62a4e6e9be794a1b976d2bf",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-dc6d21006f6747dbb92b7126f3477692",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

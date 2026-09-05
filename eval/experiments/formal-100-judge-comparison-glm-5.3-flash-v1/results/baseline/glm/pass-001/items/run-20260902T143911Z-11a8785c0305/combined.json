@@ -1,0 +1,167 @@
+{
+  "evaluation_id": "combined-a51807d0d59f469dbc962522848c5472",
+  "run_id": "run-20260902T143911Z-11a8785c0305",
+  "trace_sha256": "51e160c00beb6eb38abc22538db58258f6636c34d338cd3abe5972d82a1ed442",
+  "created_at": "2026-09-03T13:49:01.032360Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头亮明立场直接回答该不该，不给的理由与取舍方案两侧都覆盖，正中隔代带娃家庭核心痛点。",
+      "script_spans": [
+        "要我说该给，但不是雇保姆那样结账",
+        "那不该给的理由呢？账算太清就伤亲情。直接发工资像雇人，一家人面子挂不住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 830，目标为 700，偏差率为 18.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题全程聚焦劳动回报，调查与研究说法均有资料支撑，从现象到框架再到落地方法层层推进，几乎无注水。",
+      "script_spans": [
+        "有调查提过，超半数老年人在帮子女带娃",
+        "学者整理发现，带娃对祖辈健康影响说法不一",
+        "清晨送幼儿园，中午赶回做饭，晚上哄睡才歇"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头具体冲突抓人，中段以设问与新信息层层推进，结尾由认情话题自然带出提问互动，三段都立得住。",
+      "script_spans": [
+        "带外孙三年没拿报酬，女婿说天经地义不该给。",
+        "你可能会问，为啥他觉着不该给？",
+        "或许该想的不是给不给钱，而是怎么认这份情。你家长辈带娃，开口要过回报没？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "主体短句好读、对话感足，但“身体结果”“学者整理发现”两处书面压缩需换词重断，封顶2分。",
+      "script_spans": [
+        "清晨送幼儿园，中午赶回做饭，晚上哄睡才歇",
+        "有人嘀咕给钱伤感情，不给又憋屈，咋办",
+        "学者整理发现，带娃对祖辈健康影响说法不一",
+        "这说明付出实打实，但身体结果因人而异"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "本分对情分、明给不如暗里分担皆贴切可复述，账与透支的比喻贯穿全文服务观点，无堆砌炫技。",
+      "script_spans": [
+        "他当是本分，老人当是情分，这就拧了。",
+        "明给不如暗里分担。亮出心意比亮出钞票更管用。",
+        "家庭不是公司，可情分也经不住老这么透支。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "自问自答搭桥随处可见，反方到化解的过渡自然，结尾重新定义问题并回扣开头案例，层层递进。",
+      "script_spans": [
+        "你可能会问，为啥他觉着不该给？",
+        "有人嘀咕给钱伤感情，不给又憋屈，咋办？其实报酬可以藏在生活里，不摆上桌面。",
+        "或许该想的不是给不给钱，而是怎么认这份情。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点有取舍不武断，健康影响说因人而异，报酬建议留有弹性，无煽动夸大或误导承诺。",
+      "script_spans": [
+        "学者整理发现，带娃对祖辈健康影响说法不一。有的老人带得更充实，有的确实累出毛病。",
+        "报酬不一定叫工资，是让老人手头宽松点。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 830,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.18571428571428572
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f1bcb173e1e24714a1bb9d8f881344c2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e385d46865ac4a549753c38ad22ef36b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

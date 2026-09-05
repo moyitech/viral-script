@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-e4e2e7ef529f43d59782040e6460db69",
+  "run_id": "run-20260902T142445Z-00cdddf62a2a",
+  "trace_sha256": "52af1633435bb4be8222336dc1941da085afb724e1bd50c0c64108f52a452cd9",
+  "created_at": "2026-09-03T13:44:35.349463Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点出升温与难传导的落差，全篇围绕为何卡住中小企业展开，收尾回扣题设，人群痛点贴合。",
+      "script_spans": [
+        "AI芯片需求在升温，算力总规模也在扩，可中小企业很难分到这杯羹。",
+        "小老板想用AI管仓库，一查算力价就摇头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 443，目标为 450，偏差率为 1.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，价格、架构、计费、政策四层信息逐级推进，学术缺卡与2028节点均有据可查。",
+      "script_spans": [
+        "高端GPU一块就要数千美元，大厂成堆买，小厂连试错资本都没有。",
+        "政策在补位，工信部发文建中小企业专属算力池，也试算力银行存闲卡。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字内即成大小厂反差钩子；中段以三连问层层推进，不断抛出新信息与转折；结尾反问由正文自然长出，留有余味。",
+      "script_spans": [
+        "大厂囤了几千块AI芯片，小公司却连一张卡都租不起",
+        "你要按分钟计费，他给年框合同",
+        "这波芯片热若只暖了大厂，景气的底座还能稳吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句案例讲得像聊天，但'不同厂商架构封闭''也试算力银行存闲卡'等压缩句需换词重断，卡在2分。",
+      "script_spans": [
+        "小老板想用AI管仓库，一查算力价就摇头",
+        "你要按分钟计费，他给年框合同",
+        "不同厂商架构封闭，模型想换平台得重写代码",
+        "也试算力银行存闲卡"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "红利卡在供给端、算力像水电按表取用等比喻贴切克制，服务理解；芯片热只暖大厂一句可独立复述，全篇无堆砌炫技。",
+      "script_spans": [
+        "红利卡在供给端，没淌进小厂手里",
+        "等哪天算力真能像水电按表取用，小厂才有底气翻盘",
+        "这波芯片热若只暖了大厂，景气的底座还能稳吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "问题、机制、影响三段功能清晰，设问过渡自然，结尾水电比喻回扣开头囤卡落差，因果有桥。",
+      "script_spans": [
+        "为啥会这样？先看问题在哪。红利卡在供给端，没淌进小厂手里。",
+        "这波芯片热若只暖了大厂，景气的底座还能稳吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无违规且政策表述有出处；但开头“连一张卡都租不起”与“大厂囤了”属绝对化和标签化归因，宜加限定改写。",
+      "script_spans": [
+        "政策在补位，工信部发文建中小企业专属算力池，也试算力银行存闲卡",
+        "但这体系要到2028年才基本建成，眼前覆盖还没铺开",
+        "大厂囤了几千块AI芯片，小公司却连一张卡都租不起",
+        "小厂连试错资本都没有"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e93156bb7b22485da7caacccb99009d6",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d876efea5c5241199740ee46ac5c4744",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

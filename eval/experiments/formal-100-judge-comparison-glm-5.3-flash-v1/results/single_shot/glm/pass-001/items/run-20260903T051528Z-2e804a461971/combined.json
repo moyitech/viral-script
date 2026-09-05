@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-6daa6c3a4d0d4794a77c0606b38ef7ef",
+  "run_id": "run-20260903T051528Z-2e804a461971",
+  "trace_sha256": "00db048cddd14da6abe6da60aa54e3cc7e30b236b317fd3559e3fde517ea4b80",
+  "created_at": "2026-09-03T14:11:42.984746Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点出便捷与误诊双面，全篇围绕风险作答，结尾落到普通人自检，两侧与人群全覆盖。",
+      "script_spans": [
+        "一键开药最危险的地方，在于把需要当面查体的新病，伪装成了“老毛病续方”",
+        "对普通人来说，真正的便宜是稳定老病的续药省了请假奔波"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 482，目标为 450，偏差率为 7.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从监管规则、先药后方到隔屏机制逐层推进，案例与结论相互支撑，并有依据地给出判断方法。",
+      "script_spans": [
+        "医生看不到你的面色和体征，也没有化验单实时更新，只能依赖你描述的准确性和旧资料",
+        "一旦病情悄悄变化，比如慢病出现新并发症，线上续方就可能沿着旧诊断错下去"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出反差设问，中段以规则、曝光、机理层层兑现钩子，结尾提问自正文自然生长，三段无短板。",
+      "script_spans": [
+        "你以为点几下手机就能送药上门，是互联网医疗的福利？有时候，它也可能是误诊的起点。",
+        "下次想点开药前，先问自己：这真是同一个老问题吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体可读、中段有对话式承接，但书面压缩句多处需临时重断换词，顺畅度止步2分。",
+      "script_spans": [
+        "一旦病情悄悄变化，比如慢病出现新并发症，线上续方就可能沿着旧诊断错下去",
+        "更曾被曝光过平台先选药再配方的操作"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对仗句与快捷键、绿灯之喻贴切服务理解，克制不炫技，均可在离开上下文后独立复述。",
+      "script_spans": [
+        "药能快递，病不隔屏而愈。",
+        "一键开药是给已知答案的人用的快捷键，不是给未知症状开的绿灯。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "规则、现实、机制、案例层层递进，设问引出因果，结尾自然回扣开头，观众无需自行补逻辑。",
+      "script_spans": [
+        "规则要求此时必须终止线上并引导线下，但“一键”的便利常让人选择忽略信号",
+        "一键开药是给已知答案的人用的快捷键，不是给未知症状开的绿灯",
+        "下次想点开药前，先问自己：这真是同一个老问题吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "监管边界与适用范围讲清，肯定稳定慢病续药便利，风险多用“可能”“曾被曝光”等限定词，不夸大不误导，无违规表述。",
+      "script_spans": [
+        "监管早就明确，线上诊疗只适合常见病、慢性病的复诊",
+        "真正的便宜是稳定老病的续药省了请假奔波",
+        "更曾被曝光过平台先选药再配方的操作"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8c2d4e37220a40f38ed4de5cc336f4f9",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-7a4a9e23304c4ee79f764a683b753b51",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

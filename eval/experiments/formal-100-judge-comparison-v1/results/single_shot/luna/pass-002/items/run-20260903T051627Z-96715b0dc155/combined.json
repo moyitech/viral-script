@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-45db4edd1a4b4b78a6ed9a3f6a72bcb8",
+  "run_id": "run-20260903T051627Z-96715b0dc155",
+  "trace_sha256": "7ec7bb9c21d43fb5badca255e3b960b89da7063d6c5a5b391517b35091e8a021",
+  "created_at": "2026-09-03T12:32:18.853850Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答申诉是否更难，覆盖用户痛点、平台责任与人工出口，并给出留证和转人工建议。",
+      "script_spans": [
+        "智能客服全面化不必然让申诉更难，真正的分水岭在于平台是否诚实保留人工活口"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，既讲申诉痛点也给出标准、平台博弈和留证建议；但把推测与规范要求说得过于绝对。",
+      "script_spans": [
+        "国家层面的人工智能与智能客服协同标准落地，填了协同空白",
+        "这背后不是技术做不到，是产品设计故意制造摩擦",
+        "这标准不是建议，是强制协同要求"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用限流和佣金冻结制造即时损失，中段持续推进到新规与现实博弈，结尾给出动作建议并留下判断余味。",
+      "script_spans": [
+        "你刷短视频突然账号被限流，或者带货佣金被冻结",
+        "恰恰相反，近期有个关键进展改变天平。",
+        "智能客服该是筛掉垃圾咨询的漏斗，不是堵死真人申诉的墙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有具体画面和对话式推进，但中段抽象术语密集，且多处句子需重断句，整体未达到朗读顺滑。",
+      "script_spans": [
+        "你发十句它回一句无关，这就是现状。",
+        "国家层面的人工智能与智能客服协同标准落地，填了协同空白"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“捉迷藏”“消耗耐心”“漏斗和墙”等比喻具体好懂，结尾对照鲜明，形成了自然且便于复述的记忆点。",
+      "script_spans": [
+        "再找人工入口像捉迷藏。",
+        "用机器消耗你的耐心。",
+        "智能客服该是筛掉垃圾咨询的漏斗，不是堵死真人申诉的墙。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "起因—标准—现实—建议的链条完整，转折清楚；但标准效力和平台动机的判断过满，关键因果桥不足。",
+      "script_spans": [
+        "为什么这种恐惧有道理？",
+        "但白纸黑字和指尖体验中间，还隔着现实博弈。",
+        "这标准不是建议，是强制协同要求。",
+        "这背后不是技术做不到，是产品设计故意制造摩擦"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有区分技术效率与申诉公平的意识，但把平台动机和标准效力说得过满，易造成责任边界误导。",
+      "script_spans": [
+        "智能客服全面化不必然让申诉更难",
+        "这背后不是技术做不到，是产品设计故意制造摩擦，用机器消耗你的耐心。",
+        "这标准不是建议，是强制协同要求。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4fbccfdcdca6435c91ae77070d2eb5e9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

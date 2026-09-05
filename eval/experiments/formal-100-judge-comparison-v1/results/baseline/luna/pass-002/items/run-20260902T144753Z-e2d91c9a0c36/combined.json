@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-79012eb35e664657b6df4084bb8e19d6",
+  "run_id": "run-20260902T144753Z-e2d91c9a0c36",
+  "trace_sha256": "8224e825b49bd39551d3db37dedc7d2845c4889599f22e1d58c55ecc3af22bc3",
+  "created_at": "2026-09-03T12:15:58.578305Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应进出受限的安全与效率冲突，给出停靠、步行配送和集中交接三种具体平衡方案。",
+      "script_spans": [
+        "其实两头能顾：别只拦不放，给步行通道，小区门口划个临时停靠区。",
+        "还有招，复杂楼栋让固定人员集中接手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦“禁而有疏”，从停靠区、步行配送到登记和固定交接，提供了可执行的信息增量。",
+      "script_spans": [
+        "一些小区已这么试，管理变顺，生人登记更清楚。",
+        "大门外划出整齐停靠位，骑手停好电动车，走路送进单元。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“饿着”等待和“拦小区外”制造冲突，中段连续补充方案，结尾自然落到共情。",
+      "script_spans": [
+        "你饿着等开门，骑手却被拦小区外，这禁入保安全还是误事？",
+        "还有招，复杂楼栋让固定人员集中接手。",
+        "下次见门口停靠点，不妨理解下，多些包容"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和承接词让整体易读，但“给步行通道”“骑手派单赶时间”均需改词，影响顺口度。",
+      "script_spans": [
+        "其实两头能顾：别只拦不放",
+        "给步行通道",
+        "骑手派单赶时间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“别只拦不放”和“光禁不疏反而堆矛盾”简洁有力，能概括方案并留下可复述的判断。",
+      "script_spans": [
+        "别只拦不放",
+        "光禁不疏反而堆矛盾，划区加指引才管用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、方案、例证、补充措施到结尾回扣完整；但部分结果缺少因果解释，个别表达压缩生硬。",
+      "script_spans": [
+        "为啥这样可行？一些小区已这么试，管理变顺，生人登记更清楚。",
+        "住户不见外来车穿行，餐食也没凉。",
+        "交接点取餐快，不堵门省心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "议题聚焦，提出禁行与配送并行的折中方案；但“准时到”“餐食也没凉”等把可能效果说成确定结果，边界不足。",
+      "script_spans": [
+        "别只拦不放，给步行通道",
+        "餐食也没凉"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a69f77b7a7f647e7a9c1b7e049e22d54",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

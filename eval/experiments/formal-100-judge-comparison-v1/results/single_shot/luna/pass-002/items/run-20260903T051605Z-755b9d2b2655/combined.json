@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-a8114d9812aa43cda68c94a825bb01e5",
+  "run_id": "run-20260903T051605Z-755b9d2b2655",
+  "trace_sha256": "0c733fc371cbfd70780b0c03caeb26b1ab7ad96424ffffa5a4472a9033bf2a38",
+  "created_at": "2026-09-03T12:31:38.882304Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答厂商是否担责，并覆盖默认设置、入侵机制和消费者防护，切角明确。",
+      "script_spans": [
+        "该负主要责任。",
+        "你新购智能设备，第一件事就是改掉默认密码，关闭用不上的远程控制功能。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中且信息单元较多，默认凭证、批量扫描和整改建议有增量；但“留了后门”把推断说成了事实。",
+      "script_spans": [
+        "入侵者批量扫描就能轻松登入",
+        "却为了所谓开箱即用留了后门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出责任冲突，中段从默认凭证推进到技术责任与行业标准，结尾落到用户行动，钩子兑现完整。",
+      "script_spans": [
+        "智能家居频遭远程入侵，厂商该为出厂默认设置负责吗？",
+        "从技术角度看，厂商在设备首次联网激活时强制用户创建独立密码并不复杂",
+        "责任认定不能苦等标准生效"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "比喻和建议都清楚，整体能读通；但技术解释句偏长偏书面，几处需要重断句。",
+      "script_spans": [
+        "这无异于把家门钥匙藏在门口地毯下",
+        "你新购智能设备，第一件事就是改掉默认密码",
+        "许多智能摄像头、门锁和网关出厂就预置了通用管理员密码，或者默认打开远程访问端口",
+        "厂商在设备首次联网激活时强制用户创建独立密码并不复杂，芯片也支持随机生成，却为了所谓开箱即用留了后门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“把家门钥匙藏在门口地毯下”把抽象的默认安全风险变成具体画面，既准确又有复述价值，修辞克制。",
+      "script_spans": [
+        "把家门钥匙藏在门口地毯下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头先给结论，随后按风险机制、技术替代和现实建议展开，主线可跟；但从“支持随机生成”直接跳到“留了后门”，因果未证明。",
+      "script_spans": [
+        "从技术角度看，厂商在设备首次联网激活时强制用户创建独立密码并不复杂",
+        "芯片也支持随机生成，却为了所谓开箱即用留了后门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题聚焦且给出改密、关闭远程功能的安全建议；但将厂商一概认定为主要责任方并称其“留了后门”，归因过满，容易误导。",
+      "script_spans": [
+        "你新购智能设备，第一件事就是改掉默认密码，关闭用不上的远程控制功能。",
+        "该负主要责任。",
+        "却为了所谓开箱即用留了后门。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-cb7f4d74127c4c988cf266cc11833772",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

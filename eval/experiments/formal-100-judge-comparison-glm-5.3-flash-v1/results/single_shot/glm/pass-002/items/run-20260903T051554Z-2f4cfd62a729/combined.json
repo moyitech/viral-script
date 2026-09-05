@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-133877bd41ad4358ad965647db0c187c",
+  "run_id": "run-20260903T051554Z-2f4cfd62a729",
+  "trace_sha256": "e16af9698b271fbac8aa1f687fb67ade06c280a6617827e1db29b4a0e1e7e260",
+  "created_at": "2026-09-03T15:27:22.667593Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即抛出老用户更贵的矛盾，逐层解释平台定价逻辑与人群差异，末尾落到普通人对策，全程紧扣题设。",
+      "script_spans": [
+        "老用户因为依赖平台、比价意愿弱，自然被划进高单价区"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息单元层层推进：定价空间、画像机制、新老用户区隔与自保方法相互支撑，几乎无同义复述。",
+      "script_spans": [
+        "它盯着你的打开习惯、常去地点和付款记录，悄悄算出你对涨价的忍受度"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字点出越用越贵的反差，中段追问与拆解持续兑现钩子，结尾建议加余味，互动由正文自然生长。",
+      "script_spans": [
+        "你叫车越频繁，平台弹出的动态会员价反而越贵",
+        "那系统凭什么认定你该多付？它盯着你的打开习惯、常去地点和付款记录，悄悄算出你对涨价的忍受度",
+        "留好订单截图，至少不当沉默的韭菜，该问就问"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口顺、朗读不卡嘴，但核心解释多处书面腔，按子分低值定2分。",
+      "script_spans": [
+        "那系统凭什么认定你该多付？它盯着你的打开习惯、常去地点和付款记录",
+        "而是网约车在市场化定价允许的范围内，把老用户的忠诚度直接折算成了溢价系数"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制贴切、服务理解，忠诚度折算成溢价系数一句离开语境仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "把老用户的忠诚度直接折算成了溢价系数",
+        "动态会员价表面是回馈，实际按支付意愿切分人群",
+        "让画像模糊一点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "两处设问过渡自然，因果交代清楚，从现象到机制再到对策递进，结尾回扣开头的不满情绪。",
+      "script_spans": [
+        "落到咱们普通人头上，怎么办？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有边界意识，'监管没叫停''可能踩线'留了余地；但'真相是''悄悄算出忍受度'等归因绝对化，需加限定才稳妥。",
+      "script_spans": [
+        "监管没叫停动态定价，可一旦同样路程老客明显贵出一截，就可能踩到不正当价格行为的线",
+        "真相是，这不是后台抽风，而是网约车在市场化定价允许的范围内，把老用户的忠诚度直接折算成了溢价系数",
+        "它盯着你的打开习惯、常去地点和付款记录，悄悄算出你对涨价的忍受度"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4a0aefcf44944db9be3cc29b5e9b6a66",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

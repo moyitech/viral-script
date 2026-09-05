@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-1b2190950da84f8195262dd4227d8f2b",
+  "run_id": "run-20260902T142640Z-5f6e692359f3",
+  "trace_sha256": "aeee946fee1e424e5ef8f69c9d24c26e82b27e0a500d97c5f14a188520bfdc67",
+  "created_at": "2026-09-03T13:56:09.874758Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问并立“看两面”框架，收益与短板两侧都落到具体场景，结尾直接作答，贴合普通观众。",
+      "script_spans": [
+        "无密码加速普及，账户真就更安全了吗？得看两面。",
+        "所以无密码压住密码盗窃风险，没把账户塞进铁桶。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 681，目标为 700，偏差率为 2.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从私钥机制、同步边界到令牌失窃与采纳数据，信息单元层层推进，关键数字与背景资料吻合，无编造。",
+      "script_spans": [
+        "现在多了偷登录后的会话令牌，那是进门后的通行条。",
+        "企业把开通提示弹在指纹成功后，采纳率翻一倍多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即现反差钩子，中段接连抛出找回难题与令牌偷窃等新冲突，结尾余味自然生长，未硬喊互动。",
+      "script_spans": [
+        "指纹登录省了记密码的麻烦，丢手机却像天塌了",
+        "可攻击者也不傻，他们绕后门了",
+        "技术替你扛了脏活，但主宰权没离手心"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句有节奏、比喻生动，但'下次指尖按别忘手机''放行进'等处需临时换词重断，卡在2分。",
+      "script_spans": [
+        "钥匙不出门，贼进不来。",
+        "下次指尖按别忘手机才是真钥匙",
+        "会话令牌像丢了门禁卡，里面人直接放行进。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "门禁卡、钥匙不出门等类比贴切且好记，但结尾金句三连排，安全红利就反噬等说法略显刻意。",
+      "script_spans": [
+        "钥匙不出门，贼进不来",
+        "会话令牌像丢了门禁卡，里面人直接放行进",
+        "下次指尖按别忘手机才是真钥匙，丢了它安全红利就反噬"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线可跟随、结尾回扣题设，但“兜底还认老法子”混进二级保证定义，概念范围漂移，企业一句承接也突兀。",
+      "script_spans": [
+        "可攻击者也不傻，他们绕后门了。",
+        "二级保证就是日常难破解，但兜底还认老法子。",
+        "要是企业把开通藏在设置深处，用户不碰，好处也落不到头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体边界清楚，明示同步非万能、风险未全消；但“点开也不怕”过于绝对，与后文邮件窃密激增相抵，宜加限定。",
+      "script_spans": [
+        "设备保管责任还在你，同步不是万能险",
+        "钓鱼邮件点开也不怕"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-df7abe0a30034fa38a3e71a4ad0021aa",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9d8878ebced94deb851acf471e8431db",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

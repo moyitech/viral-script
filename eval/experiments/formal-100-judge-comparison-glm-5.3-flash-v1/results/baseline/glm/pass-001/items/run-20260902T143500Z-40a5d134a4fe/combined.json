@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-ee3f67733014453cbbbc75a52b938ae5",
+  "run_id": "run-20260902T143500Z-40a5d134a4fe",
+  "trace_sha256": "9d6d635c7791273a0d76f2653c311b44fe48cf13e5ecc91331ed55632061c59e",
+  "created_at": "2026-09-03T13:46:16.334337Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛题，正文与结尾均正面回答能否缓解，政策与家庭压力两侧覆盖，家长人群精准。",
+      "script_spans": [
+        "直接说：单藏名次缓解不了焦虑。",
+        "规定只压住红榜压不住心思，这才是该接住的焦虑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 265，目标为 280，偏差率为 5.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，政策、数据、家长群压力层层推进，17%到32%有据可查，结尾给可操作建议。",
+      "script_spans": [
+        "但收走名次表，考试诊断还在，家长私下比还在，分数照样发",
+        "孩子从比名次变成猜自己够不够好，更耗神"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以17%跳到32%的反差数据直切冲突，中段用跟踪数据与私下比分层层兑现，结尾建议由正文自然长出，留有余味。",
+      "script_spans": [
+        "成绩排名不公开，你孩子少了对标，可考前焦虑却从17%跳到32%，真护住心吗？",
+        "考试诊断还在，家长私下比还在，分数照样发",
+        "下次接孩子放学，别问第几名，问问今天哪道题卡住了，听他慢慢讲讲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音停顿清楚，'别问第几名，问问哪道题卡住了'等段朗读顺口，无需改词即可录音。",
+      "script_spans": [
+        "别问第几名，问问今天哪道题卡住了，听他慢慢讲讲",
+        "悄悄把压力递回孩子手中"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“压住红榜压不住心思”凝练且离开上下文仍可复述，“压力递回孩子手中”形象贴切，修辞克制服务观点，无堆砌炫技。",
+      "script_spans": [
+        "悄悄把压力递回孩子手中",
+        "孩子从比名次变成猜自己够不够好，更耗神",
+        "规定只压住红榜压不住心思，这才是该接住的焦虑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、结尾回扣题设；但由考前焦虑升推不出与排名无关，高二数据套义务教育也越界。",
+      "script_spans": [
+        "所以光藏数字，不减考试频次和家庭压力，孩子从比名次变成猜自己够不够好，更耗神",
+        "说明紧绷感来自考试节点本身，不关排名显不显"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "政策与数据引用基本准确，给家长的建议温和无风险；但把焦虑变化归因为不关排名显不显，超出研究范围，宜补限定。",
+      "script_spans": [
+        "按规定义务教育不排名，本是护自尊",
+        "说明紧绷感来自考试节点本身，不关排名显不显"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f680b041572e4b01be4a7b5c9f90b719",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a027d4e5c1d94cef99219c835f6465e1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

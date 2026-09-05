@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-bad2c26276db4fb4a3d3499ebf5220cd",
+  "run_id": "run-20260903T051616Z-039723d36417",
+  "trace_sha256": "5e332c17973feb6bda96200caea274c5a2ec5e9ea08fe91cf3baaf30728cfd0c",
+  "created_at": "2026-09-03T12:06:56.071371Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答消费意愿是否提升，既解释托底机制，也交代效率、兑现和风险条件，普通家庭痛点明确。",
+      "script_spans": [
+        "民生财政支出对消费意愿是托底，不是猛药。",
+        "落到普通人身上，社保和助学政策若兑现，才敢挪出存款去消费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 447，目标为 450，偏差率为 0.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，研究结论、作用通道、项目差异和执行体感层层增加信息，既有判断也有可带走的观察标准。",
+      "script_spans": [
+        "民生支出总量增加和效率提升都能明显降低居民主观贫困感，而且效率带来的改变比规模更大。",
+        "医疗卫生支出在减贫上效果并不显著，说明贴上民生标签的钱效用参差。",
+        "所以别只盯报告里民生占比数字，看那笔钱是否填了你的预期风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段有反常识、研究和落地条件，结尾也自然收束；但前20字仍是会议与政策铺垫，核心冲突出现偏晚。",
+      "script_spans": [
+        "财政钱流向民生，并不自动变成消费欲望",
+        "保障越具体，花钱越自然",
+        "财政工作会议连年强调民生保障，从育儿补贴到免费学前班都在铺开"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有短句和清晰转折，但长句、抽象并列及生硬搭配造成多处临时重断句。",
+      "script_spans": [
+        "单纯扩规模，不如提效率。",
+        "若资金在层层流转中没了体感，钱包依然紧闭",
+        "真正起作用的是这笔钱能不能替你扛住未来的不确定性，而不是账面多了多少亿。",
+        "它主要走三条通道：充实收入、延长教育、改善健康。",
+        "看那笔钱是否填了你的预期风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“托底，不是猛药”和“保障越具体，花钱越自然”克制有力，既便于理解，也形成了可复述的记忆点。",
+      "script_spans": [
+        "民生财政支出对消费意愿是托底，不是猛药",
+        "保障越具体，花钱越自然"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，“托底而非猛药”能回扣题目；但研究测量的是主观贫困，结尾直接推到消费意愿，关键因果桥仍不足。",
+      "script_spans": [
+        "我的判断是，民生财政支出对消费意愿是托底，不是猛药。",
+        "有学术研究跟踪多年数据发现，民生支出总量增加和效率提升都能明显降低居民主观贫困感",
+        "保障越具体，花钱越自然，这才是消费意愿真实的开关"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "没有明显违规，且承认民生支出不必然转化为消费；但“敢生敢养”“真实的开关”因果说得过满，需加条件。",
+      "script_spans": [
+        "并不自动变成消费欲望",
+        "让年轻人敢生敢养",
+        "这才是消费意愿真实的开关"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-280ab2055825457685e8fc1fe59a6b80",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-8470d84df05d4d3380328969117a9d14",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

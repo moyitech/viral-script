@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-b85a37e02bf144e9a9e0ecb3364a35c2",
+  "run_id": "run-20260903T051532Z-7ea5286770bf",
+  "trace_sha256": "f7bcf785b56945f54a8c52e139f18ba140e8241f1d797e3dc8893fbcae7d8aef",
+  "created_at": "2026-09-03T11:57:35.708540Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答维护公平的责任归属，也交代了普通读者遇到占座时的稳妥做法。",
+      "script_spans": [
+        "答案很直接：馆方和主管部门必须扛起责任，不能把难题甩给读者互相监督。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 257，目标为 280，偏差率为 8.21%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，法律定位、占座造成的公平损害和反馈路径彼此推进，信息增量具体。",
+      "script_spans": [
+        "法律明确公共图书馆是向社会免费开放、保障公众基本文化权益的公共文化设施",
+        "碰到长期占座，普通读者最稳妥的做法是第一时间向服务台或值班馆员反馈"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出占座与公平冲突，中段补上责任、法律和应对，结尾也留下了座位轮转的余味。",
+      "script_spans": [
+        "公共图书馆座位被长期占用，公平谁来维护？",
+        "碰到长期占座，普通读者最稳妥的做法是第一时间向服务台或值班馆员反馈"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有“别自己拔书硬刚”的口语表达，但法律说明和结尾隐喻偏书面、拗口，整体还需重断句。",
+      "script_spans": [
+        "别自己拔书硬刚。",
+        "法律明确公共图书馆是向社会免费开放、保障公众基本文化权益的公共文化设施",
+        "图书馆的安静里该有人守住那把椅子的轮转。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“免费不等于无序”利落好记，“私人领地”也有画面；但结尾“椅子的轮转”搭配生硬，削弱了自然感。",
+      "script_spans": [
+        "免费不等于无序",
+        "把公共空间变成了私人领地",
+        "图书馆的安静里该有人守住那把椅子的轮转"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头定责、法律依据与反馈建议能连成主线，但“资源紧张更显公平重要”生硬，尾句“椅子的轮转”略显牵强。",
+      "script_spans": [
+        "碰到长期占座，普通读者最稳妥的做法是第一时间向服务台或值班馆员反馈",
+        "资源紧张更显公平重要",
+        "图书馆的安静里该有人守住那把椅子的轮转"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导有序反馈且不鼓励冲突，但“必须扛起责任”和“私人领地”等表述偏绝对，法律责任边界需更严谨。",
+      "script_spans": [
+        "碰到长期占座，普通读者最稳妥的做法是第一时间向服务台或值班馆员反馈，别自己拔书硬刚。",
+        "法律明确公共图书馆是向社会免费开放、保障公众基本文化权益的公共文化设施，其日常运行管理由属地主管部门负责。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e4b6aecc357642c0b3daa303931a5a1a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b930dabf983347cc862dde5109c70b1f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

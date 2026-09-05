@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-149d483004354e06b42b3b11a9785cee",
+  "run_id": "run-20260903T051532Z-7ea5286770bf",
+  "trace_sha256": "f7bcf785b56945f54a8c52e139f18ba140e8241f1d797e3dc8893fbcae7d8aef",
+  "created_at": "2026-09-03T14:08:42.621568Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即正面回答'谁来维护'，馆方担责与读者反馈两侧均覆盖，切角对准普通读者痛点。",
+      "script_spans": [
+        "答案很直接：馆方和主管部门必须扛起责任，不能把难题甩给读者互相监督",
+        "碰到长期占座，普通读者最稳妥的做法是第一时间向服务台或值班馆员反馈"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 257，目标为 280，偏差率为 8.21%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "责任答案、法律依据、占座定性与应对方法层层推进，法律说法与所引法条相符，无编造。",
+      "script_spans": [
+        "占座看似小事，实则是少数人把公共空间变成了私人领地，挤掉了别人本该享有的阅读权利",
+        "法律明确公共图书馆是向社会免费开放、保障公众基本文化权益的公共文化设施，其日常运行管理由属地主管部门负责"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开篇冲突设问有钩子，但答案立刻给出泄了劲；法律依据段如通稿陈述致推进趋平，结尾收束有余味却难催转发。",
+      "script_spans": [
+        "公共图书馆座位被长期占用，公平谁来维护？",
+        "法律明确公共图书馆是向社会免费开放、保障公众基本文化权益的公共文化设施，其日常运行管理由属地主管部门负责。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读通，'别自己拔书硬刚'有对话感，但法条句拗口、结尾'椅子的轮转'抽象费解，需改稿。",
+      "script_spans": [
+        "别自己拔书硬刚",
+        "法律明确公共图书馆是向社会免费开放、保障公众基本文化权益的公共文化设施，其日常运行管理由属地主管部门负责。",
+        "图书馆的安静里该有人守住那把椅子的轮转"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞点到为止且服务理解，私人领地、拔书硬刚贴切传神，免费不等于无序离开正文也能复述，无堆砌炫技。",
+      "script_spans": [
+        "占座看似小事，实则是少数人把公共空间变成了私人领地",
+        "免费不等于无序"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "背景、法律、定性、行动各段功能清晰，读者反馈呼应'不甩锅读者'，结尾回扣设问自然。",
+      "script_spans": [
+        "碰到长期占座，普通读者最稳妥的做法是第一时间向服务台或值班馆员反馈，别自己拔书硬刚",
+        "免费不等于无序，图书馆的安静里该有人守住那把椅子的轮转"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法律表述与公共图书馆法相符，建议克制并明确边界，劝导读者勿硬刚，无煽动夸大或误导承诺，导向安全。",
+      "script_spans": [
+        "第一时间向服务台或值班馆员反馈，别自己拔书硬刚",
+        "法律明确公共图书馆是向社会免费开放、保障公众基本文化权益的公共文化设施"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-024fe940c38445c2b7d9cfdca74aacd9",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a27e91e1ba4c4648b6caf33e996dd8e5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

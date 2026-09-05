@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-1147f2c0da9e405689f33eaf16ef8979",
+  "run_id": "run-20260902T141419Z-5322292de436",
+  "trace_sha256": "90d2349c69be07fe64af34ff272192e062b6c503c113a933e6f2c12393b67a1d",
+  "created_at": "2026-09-03T14:25:19.247638Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛两难并直接给结论，还贷省息与留现应急两侧都展开，月供家庭和失业担忧正中核心人群。",
+      "script_spans": [
+        "先留够保命钱，多余再还贷款",
+        "工作稳、存款厚可部分提前还；怕失业或开支多，现金留着睡安稳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "利差测算、新规佐证、三至六月现金流底线层层推进，事实与建议互相支撑，观众能带走可用的判断方法。",
+      "script_spans": [
+        "提前还掉十万，一年少交三千五利息",
+        "你看房贷利率减存款收益的差值，差值大就部分还",
+        "至少留三到六个月开支的现金，别让房子绑死现金流"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头20字即抛存钱缩水与急用钱的两难，中段以算账、举例、设问层层兑现，结尾问句由取舍自然生长。",
+      "script_spans": [
+        "手里的闲钱存银行越存越缩水，拿去提前还房贷又怕急用钱借不出。",
+        "有人问，直接全还了不行吗？",
+        "当省下利息和半夜安心的觉打架，你选哪边？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和对话式表达撑起顺滑底子，但“表面看提前还掉省利息”“半夜安心的觉”等处拗口，需临场换词，封顶2分。",
+      "script_spans": [
+        "有人问，直接全还了不行吗？银行不替你留缓冲，全还了急用钱只能刷高息卡",
+        "你存款收益若不到3%，表面看提前还掉省利息",
+        "当省下利息和半夜安心的觉打架"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "漏勺、跑不赢等比喻点到即止、服务理解，结尾省利息与安稳觉打架一句离开原文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "那感觉像钱放在漏勺里",
+        "别全砸进去把活钱变死墙",
+        "当省下利息和半夜安心的觉打架，你选哪边？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线与过渡基本顺、结尾能回扣，但月供五千被当作月度总开支推算'三万撑半年'，概念偷换经不起追问。",
+      "script_spans": [
+        "当省下利息和半夜安心的觉打架，你选哪边？",
+        "拿月供五千的家庭说，留三万现金能撑半年"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "按收入与开支分层给建议，无收益承诺和诱导；但“只能刷高息卡”属绝对化，忽略其他应急借贷渠道，宜补边界再稳妥。",
+      "script_spans": [
+        "工作稳、存款厚可部分提前还；怕失业或开支多，现金留着睡安稳",
+        "全还了急用钱只能刷高息卡"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e46d54c8075746a9845fc2986457f7dd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

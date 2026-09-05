@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-e90d67cc9fcb42adb03da6ce56c1bba1",
+  "run_id": "run-20260902T143013Z-dc04c7f32b57",
+  "trace_sha256": "f6c0ae1379e334795ea96b22f8bcb8a206dcf4884ce9912d7eaf87d4afb99b5e",
+  "created_at": "2026-09-03T13:45:42.686782Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答“还能证明身份但单看脸不可靠”，骗局与验真两侧齐备，切中家庭群人群。",
+      "script_spans": [
+        "视频通话还能证明身份，但单看脸不可靠",
+        "骗局专盯家庭群"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 281，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从仿声叠脸机制到暗号回拨层层推进，信息具体无复述，末句给出情绪增量。",
+      "script_spans": [
+        "骗子拿你语音几秒仿声叠脸",
+        "事前跟爹妈约个暗号，说句只有自家人懂的土话",
+        "回拨能验真，骗子通常控不住原号"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头十余字即抛真假悬念，中段仿声叠脸、抛硬币层层兑现，结尾停三秒由暗号建议自然长出，余味稳。",
+      "script_spans": [
+        "家庭群视频接起喊妈，真是她？",
+        "骗子拿你语音几秒仿声叠脸，视频里人就像在眼前晃",
+        "先停三秒，对上暗号再心乱。这一停，可能保住养老钱，也保住亲情。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句顺口、对话感强，但'或挂断后''私密确认路'两处书面压缩需换词重断，封顶2分。",
+      "script_spans": [
+        "事前跟爹妈约个暗号，说句只有自家人懂的土话",
+        "或挂断后，用本机存的号打回去",
+        "给家里铺条私密确认路"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不如抛硬币”“别把眼睛当法官”两处贴切好记，离开正文仍可复述，修辞克制不抢观点。",
+      "script_spans": [
+        "你睁眼瞧画面，分真假本领不如抛硬币",
+        "别把眼睛当法官"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承转自然，暗号回拨各有因果桥，结尾回扣视频借钱场景，主线完整。",
+      "script_spans": [
+        "为啥会这样？AI造假跑得太快。这矛盾怎么解？别把眼睛当法官",
+        "这一停，可能保住养老钱，也保住亲情"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "无煽动夸大，“通常控不住”“可能保住”限定到位，暗号与回拨属稳妥防骗建议，价值导向安全。",
+      "script_spans": [
+        "回拨能验真，骗子通常控不住原号",
+        "这一停，可能保住养老钱，也保住亲情"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-0403846568b84e10bfc1ca737dd7d91c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-11f436fdf1de4234b62dc74f4ba7af23",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

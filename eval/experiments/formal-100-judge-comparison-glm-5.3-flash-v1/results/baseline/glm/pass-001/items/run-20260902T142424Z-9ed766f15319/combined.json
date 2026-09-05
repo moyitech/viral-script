@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-d1ee94811d52478c80461d9327e7f32e",
+  "run_id": "run-20260902T142424Z-9ed766f15319",
+  "trace_sha256": "6d8f371a6401342de16165269016feb3e154bcd7b7dc1c587ef63f1905ebb2ea",
+  "created_at": "2026-09-03T13:44:36.174495Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直点需求暴涨与中小企业抢不到卡的反差，归因与对策全程扣题，结尾回扣传导难题，正面回答完整。",
+      "script_spans": [
+        "中小企业眼看着AI芯片需求暴涨，自己却连一块高端GPU都难抢到",
+        "等小厂真能像买电一样用算力，这波繁荣才算落了地"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 282，目标为 280，偏差率为 0.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，价格、孤岛、总量充足三单元层层推进，EFLOPS有解释，并落到按卡时或Token付费的可操作增量。",
+      "script_spans": [
+        "一块好用的AI训练芯片价格达数千美元，大公司能囤几千块，中小企业连几块都凑不齐",
+        "全国算力总规模已破千 EFLOPS，这是每秒百亿亿次计算的能力，硬件不少，但小企碰不到"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛抢卡反差，中段连给价格对比、排队痛点与总量反转，结尾用买电类比自然收出余味，三段独立成立。",
+      "script_spans": [
+        "中小企业眼看着AI芯片需求暴涨，自己却连一块高端GPU都难抢到。这反差够狠。",
+        "算力多锁在封闭集群，没有统一入口，像孤岛，小厂想按需取用？难，常要排队等上好多天。",
+        "其实全国算力总规模已破千 EFLOPS，这是每秒百亿亿次计算的能力，硬件不少，但小企碰不到。",
+        "等小厂真能像买电一样用算力，这波繁荣才算落了地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏好读，“凑不齐”“跑不动”上口；但“达数千美元”“小额算力试点”处需临时换词，英文缩写直读卡嘴。",
+      "script_spans": [
+        "大公司能囤几千块，中小企业连几块都凑不齐，根本跑不动大模型",
+        "留意本地按需计费的小额算力试点",
+        "其实全国算力总规模已破千 EFLOPS"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "孤岛喻解困局，买电类比贴切自然且可独立复述，全篇修辞克制不堆砌，恰在服务理解与情绪。",
+      "script_spans": [
+        "算力多锁在封闭集群，没有统一入口，像孤岛",
+        "等小厂真能像买电一样用算力，这波繁荣才算落了地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "总起两因、分述加“其实”转折递进，结尾以“像买电”回扣开头的传导之问，前提与结论衔接顺畅。",
+      "script_spans": [
+        "说白了，算力繁荣难传导，就卡在芯片太贵、资源太散",
+        "等小厂真能像买电一样用算力，这波繁荣才算落了地"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "无敏感夸大内容，建议均留有余地，如小额试点、按需计费均有范围限定，数据表述有依据，平台审核风险低。",
+      "script_spans": [
+        "留意本地按需计费的小额算力试点，比如问问园区有没有就近算力池",
+        "算力多锁在封闭集群"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-cfe963a72e9a4c55aa3d145b46f0fa94",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-aeb664e9611642c792d924cd8877016b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

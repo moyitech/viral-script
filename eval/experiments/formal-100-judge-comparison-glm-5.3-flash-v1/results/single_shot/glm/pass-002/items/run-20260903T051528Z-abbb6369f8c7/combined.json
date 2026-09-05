@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-d9c71939c3df438f9c7068cb2de90eb7",
+  "run_id": "run-20260903T051528Z-abbb6369f8c7",
+  "trace_sha256": "8413e494f491967798eea10a7346fba471f5bf7d9978bb77b45e1f8eb0ca0b00",
+  "created_at": "2026-09-03T15:27:58.425559Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直答“不该”，从政策依据到患者操作正面回应怎么办，电子化趋势与不会用手机人群两侧均覆盖。",
+      "script_spans": [
+        "答案明确：不该。电子报告普及绝不意味纸质通道全堵死，传统服务保留是底线。",
+        "遇到只亮二维码的科室，患者完全有权要求人工协助或纸质凭条"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策方案、病历规范、维权与陪诊提示层层推进，无重复堆砌，与引用资料相符，信息扎实可带走。",
+      "script_spans": [
+        "国办应对老年人运用智能困难方案写明白，就医这类高频场景，智能化创新不能掐断熟悉的人工方式",
+        "家属陪诊前可先电话问窗口，目前不少医院大厅仍安排导医帮老人打印"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字直抛不会用手机被挡在结果外的冲突并自答；中段以政策依据、可操作做法持续兑现；结尾金句由正文自然生长，余味足。",
+      "script_spans": [
+        "医院全面推行电子报告，不会用手机的患者岂不被挡在结果外？答案明确：不该。",
+        "所以遇到只亮二维码的科室，患者完全有权要求人工协助或纸质凭条。",
+        "多问一句，出路就在嘴边。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "结尾顺口有力，但“国办应对老年人运用智能困难方案写明白”等名词堆叠拗口，朗读需临时换词重断句。",
+      "script_spans": [
+        "技术可以飞奔，但服务不能甩下走得慢的人。",
+        "国办应对老年人运用智能困难方案写明白",
+        "岂不被挡在结果外"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“技术飞奔、服务甩下走得慢的人”形象准确，离开正文仍可复述；拦路虎、二维码等表达点到为止，无堆砌喧宾。",
+      "script_spans": [
+        "技术可以飞奔，但服务不能甩下走得慢的人。",
+        "别让数字鸿沟变成看病的新拦路虎。多问一句，出路就在嘴边。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问—立场—依据—行动—回扣，因果桥清楚，结尾以“出路就在嘴边”呼应开头“被挡”之问。",
+      "script_spans": [
+        "电子只是病历记录形式之一，保障医患权益就得留替代路径",
+        "技术可以飞奔，但服务不能甩下走得慢的人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "无敏感违规，权利主张有政策依据，建议具体可行且措辞留余地，导向安全。",
+      "script_spans": [
+        "电子报告普及绝不意味纸质通道全堵死，传统服务保留是底线",
+        "患者完全有权要求人工协助或纸质凭条。家属陪诊前可先电话问窗口"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-cb2801e6d68144b1adf560f21fc12994",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-ab092862d4b84852a895db564b491fb5",
+  "run_id": "run-20260903T051601Z-afea6aa26831",
+  "trace_sha256": "9f0146aea69327cabe1e5ee8b4bf204ff6163be144b2750e2c84f69c2c110f49",
+  "created_at": "2026-09-03T15:26:46.201994Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即亮判断，法律、平台、现实三层均服务题设，催缴正当性与隐私底线两侧齐备，结尾回扣到位。",
+      "script_spans": [
+        "催缴有理并不代表能放弃隐私",
+        "催缴有理是债权逻辑，隐私保护是基本权利逻辑，前者不能吞掉后者"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "个人信息认定、立法审慎态度、平台规则与现实后果层层给增量，无同义注水，也无编造迹象。",
+      "script_spans": [
+        "姓名加上小区楼号，就是能锁定真人的个人信息",
+        "立法对个人信息流动本身持审慎态度，强调保护优先于自由流转",
+        "用书面通知、私下沟通能解决的事，别用公开羞辱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字“便民变曝光台”即立反差，中段连续设问并以“邻居成仇”反转兑现，结尾金句由论证自然收束。",
+      "script_spans": [
+        "小区业主群本来是便民，却成了曝光台",
+        "费没催回来，邻居先成了仇人，被点名的一方反而有了主张侵权的底气",
+        "名字不是催缴的筹码，关起门来的边界感，才真正省麻烦"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和排比多见功力，读来上口；但立法目的、平台规则两段书面腔重，需临时换气改词。",
+      "script_spans": [
+        "一旦把名字丢进几百人的群聊，信息传播就脱离了你的控制，被截图、被转发，后果远超催缴本意",
+        "费没催回来，邻居先成了仇人",
+        "立法对个人信息流动本身持审慎态度，强调保护优先于自由流转",
+        "微信等服务协议把保障用户信息安全与合法权益写进规则，群聊虽是私密空间但受平台规范约束"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻点到为止且服务说理，“名字不是催缴的筹码”“前者不能吞掉后者”离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "催缴有理是债权逻辑，隐私保护是基本权利逻辑，前者不能吞掉后者",
+        "名字不是催缴的筹码"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承接、让步转折清晰，先法律后平台再现实，结论回扣开头判断，因果桥完整经得起追问。",
+      "script_spans": [
+        "你可能会问，那欠费的人就不需要承担公开压力吗？",
+        "名字不是催缴的筹码，关起门来的边界感，才真正省麻烦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "既承认催缴正当诉求又给出例外与替代手段，法律表述留有余地，不煽动不夸大，价值导向安全。",
+      "script_spans": [
+        "理由正当不能自动豁免侵权",
+        "催缴本身是正当诉求，物业或业主有实现债权的需要",
+        "用书面通知、私下沟通能解决的事，别用公开羞辱"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4da583b431a24643bcb298aa48ba15e1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-9b787f04d2e14ccba04a4165e46527d5",
+  "run_id": "run-20260902T144401Z-4abc8c50e845",
+  "trace_sha256": "dcb7d025b33c6bd5551158358c58ec57ff0ba7eabf1639aef8625f01a47dbe82",
+  "created_at": "2026-09-03T13:47:58.441285Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即正面作答并保留个别品类有压力的另一面，结尾建议与反问均扣题，人群命中。",
+      "script_spans": [
+        "低价竞争未必就更激烈，但个别品类有压力",
+        "你逛外贸专区别只盯低价，看清售后再出手"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 286，目标为 280，偏差率为 2.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "退税机制、回填动机、市场分流与短长期区分层层推进，与引用背景相符，信息密度高。",
+      "script_spans": [
+        "早些年国家有出口退税，厂子卖去国外能拿回税钱。觉得往外划算，懒得搭理国内柜台。",
+        "是想填自家短缺的坑，不是把便宜货往死里砸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛出'涌进国内却没更凶'的反差，中段以退税原因、渠道现状连续兑现悬念，结尾一问由正文自然长出。",
+      "script_spans": [
+        "外贸货涌进国内，价格战却没更凶",
+        "你也许纳闷，为啥不是更卷？",
+        "等外贸厂真在国内扎了根，便宜还能算唯一招牌吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句、口语化好读，但“买家人分两头走”“外贸专区别只盯低价”两处易误读，需临时重断句，封顶2分。",
+      "script_spans": [
+        "觉得往外划算，懒得搭理国内柜台",
+        "是想填自家短缺的坑，不是把便宜货往死里砸",
+        "买家人分两头走",
+        "你逛外贸专区别只盯低价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'内销渠道一直饿着'贴切形象，'便宜还能算唯一招牌吗'离开上下文仍可复述，修辞克制无堆砌。",
+      "script_spans": [
+        "其实内销渠道一直饿着",
+        "是想填自家短缺的坑，不是把便宜货往死里砸",
+        "便宜还能算唯一招牌吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "退税致轻内销的因果有桥，短期清库存呼应开头品类压力，结尾反问回扣论点与题设。",
+      "script_spans": [
+        "早些年国家有出口退税，厂子卖去国外能拿回税钱。觉得往外划算，懒得搭理国内柜台。其实内销渠道一直饿着。",
+        "短期清库存，价钱可能便宜点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论用'未必''可能''个别品类'限定，不夸大；消费建议提醒看清售后，价值导向稳妥，无煽动与误导风险。",
+      "script_spans": [
+        "低价竞争未必就更激烈，但个别品类有压力",
+        "短期清库存，价钱可能便宜点",
+        "你逛外贸专区别只盯低价，看清售后再出手"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-1d5dc0f802df4feda30f7d751f6ccea6",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-34a001a823c8493195e36e011dbcd651",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-c336338d7d94493089923e7796f471f9",
+  "run_id": "run-20260903T051547Z-ff872623ba3e",
+  "trace_sha256": "7c445413c7299029851068cf5553f664d2d234887d0ecf877ec931c29b5f08cb",
+  "created_at": "2026-09-03T12:31:42.859968Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕禁停与出行两端展开，明确提出“禁区加车位”的平衡条件，并给出用户应对办法。",
+      "script_spans": [
+        "关键看有没有同步留停放点",
+        "禁停不是目的，让车有处可去才是平衡之道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "条件、正反案例、治理必要性和出行建议层层补充，信息集中，既解释机制也提供可执行判断。",
+      "script_spans": [
+        "用电子围栏技术引导车辆入栏结算",
+        "有的地方热门地段只扩禁停不补车位",
+        "出门前先点开地图看电子围栏边界，顺路找好还车点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头抛出出行冲突，中段用还车难和调度费推进，结尾由论点自然收束，留有判断余味。",
+      "script_spans": [
+        "禁停范围扩大会不会伤及出行？关键看有没有同步留停放点。",
+        "骑十分钟还车半小时，被迫缴高价调度费",
+        "禁停不是目的，让车有处可去才是平衡之道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "信息清楚、语气自然，但技术说明和出行建议都串联过长，朗读需重断句。",
+      "script_spans": [
+        "只画禁区不补车位，那才真添乱",
+        "有些城市试点在禁停区旁划就近还车区，用电子围栏技术引导车辆入栏结算，用户多走几十米就能稳妥锁车",
+        "出门前先点开地图看电子围栏边界，顺路找好还车点，别到了跟前才发现锁不了车"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“只画禁区不补车位”把治理矛盾说具体，“禁停不是目的”收成可复述的判断，修辞克制且服务观点。",
+      "script_spans": [
+        "只画禁区不补车位，那才真添乱",
+        "禁停不是目的，让车有处可去才是平衡之道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提判断标准，再用正反情形展开，最后回到治理边界和用户行动，因果与结论衔接自然。",
+      "script_spans": [
+        "只画禁区不补车位，那才真添乱",
+        "但有的地方热门地段只扩禁停不补车位",
+        "禁停不是目的，让车有处可去才是平衡之道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反兼顾，建议具体且无绝对承诺；以配套停车和出行体验为边界，未见违规或明显误导风险。",
+      "script_spans": [
+        "关键看有没有同步留停放点",
+        "禁停不是目的，让车有处可去才是平衡之道。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2a0cee8f019a42c28748caae33d06c84",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

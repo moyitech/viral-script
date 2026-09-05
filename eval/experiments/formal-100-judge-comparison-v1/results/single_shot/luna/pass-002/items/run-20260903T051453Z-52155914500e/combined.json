@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-9d93a3b0ef4743a4ba8281c71839f1aa",
+  "run_id": "run-20260903T051453Z-52155914500e",
+  "trace_sha256": "a7470aa78f352300021b82e0214cb4493ab69534bd90dcb11e6e9f9cbf8b7c02",
+  "created_at": "2026-09-03T12:32:08.289153Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从学校仪容管理、学生个性表达和家长应对三面展开，明确回答统一发型不应替代合理纪律教育。",
+      "script_spans": [
+        "学校抓仪容整洁本不出格，但一刀切强制统一发型",
+        "碰到“一律寸头”这种硬杠，你不必盲目服从，也不要正面硬抗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "事件、规范边界、权利冲突和协商建议层层推进，信息单元具体，结论不是单纯口号。",
+      "script_spans": [
+        "教育部的中学生日常规范只划了底线：不烫、不染、不怪异，从没下达过统一长度标准。",
+        "清楚底线之后，完全能跟老师理性协商，让管理回归育人本质。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用拒绝入校的具体冲突抓人，中段推进到权限与家长应对，结尾以信任受损自然收束。",
+      "script_spans": [
+        "银川有男生因为头发没剃成寸头，直接被拦在校门口进不去",
+        "头发会再长，信任一旦剪坏却难复原"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句清楚、反问有力，也有直接建议；但两处搭配拗口，中段法理表达偏抽象，尚未达到朗朗上口。",
+      "script_spans": [
+        "纪律教育，什么时候成了专盯头顶的精细活？",
+        "碰到“一律寸头”这种硬杠，你不必盲目服从，也不要正面硬抗。",
+        "是把管理懒政包装成纪律",
+        "也踩到了法律红线边缘"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“头发会再长，信任一旦剪坏却难复原”形象且可复述，配合“专盯头顶”“发梢上较劲”形成克制记忆点。",
+      "script_spans": [
+        "纪律教育，什么时候成了专盯头顶的精细活？",
+        "头发会再长，信任一旦剪坏却难复原"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开篇设问，继而提出判断、解释权限边界、给出应对，结尾回扣信任与育人，论证链条完整。",
+      "script_spans": [
+        "先看问题本身。",
+        "关键机制在权限边界。",
+        "对普通家长和学生来说，影响很实在：碰到“一律寸头”这种硬杠，你不必盲目服从，也不要正面硬抗。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "包含理性协商、避免对抗的建议，但“懒政”“法律上站不住脚”等定性过满，可能造成误导。",
+      "script_spans": [
+        "不要正面硬抗。清楚底线之后，完全能跟老师理性协商",
+        "是把管理懒政包装成纪律",
+        "拿部队标准硬套校园，在法律上站不住脚"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1f560ef3c47f4b8aa81aeab962361852",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

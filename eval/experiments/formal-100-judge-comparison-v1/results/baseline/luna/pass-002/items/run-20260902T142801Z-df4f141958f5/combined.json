@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-b20e98e06f274d1182473f3468f12a00",
+  "run_id": "run-20260902T142801Z-df4f141958f5",
+  "trace_sha256": "d9bf73cf2ec9e9e81397ce6a6da74a4ec34a356af0e2a10e1f7035c262e9169e",
+  "created_at": "2026-09-03T12:15:14.848756Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解效率与压价两面，并给出求职者核验重点，完整回应题设。",
+      "script_spans": [
+        "企业缩短招聘流程，既提效率，也常变相压价。",
+        "你拿到极速录用，先问清底薪、绩效和奖金怎么算，社保怎么交"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "空岗成本、议价空间、招聘周期和核验清单层层推进，信息具体且有行动价值。",
+      "script_spans": [
+        "岗位空着一天，团队就得扛额外活，项目进度也易拖。",
+        "流程一砍，薪资面谈和对比环节常被省掉。",
+        "你拿到极速录用，先问清底薪、绩效和奖金怎么算，社保怎么交"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用具体损失制造悬念，中段以场景和数据推进，结尾把“快”翻成压价风险，收束有余味。",
+      "script_spans": [
+        "你三天拿到offer，可能少挣两千块薪水。",
+        "昨儿面完今儿逼你签，你怕错失没空还价",
+        "可薪资不透明时，快常常成了企业捡便宜的机会。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句推进清楚，也有直接对话感；但中段长句和“敢慢比薪资”明显卡顿，连续朗读不够顺。",
+      "script_spans": [
+        "你三天拿到offer，可能少挣两千块薪水。",
+        "流程拉长时你等得起，多家录用摆着敢慢比薪资",
+        "流程极短，昨儿面完今儿逼你签，你怕错失没空还价，公司单方按最低预算就定了，这是压价一面"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“填坑”“昨儿面完今儿逼你签”和“捡便宜”具体有画面，反差服务观点，表达克制且便于复述。",
+      "script_spans": [
+        "企业想快点填坑，省下真金白银，这面是效率。",
+        "昨儿面完今儿逼你签，你怕错失没空还价",
+        "快常常成了企业捡便宜的机会。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整且结论能回扣，但“敢慢比薪资”“压价一面”等表达生硬，部分因果仍靠观众补齐。",
+      "script_spans": [
+        "流程快慢本无错。可薪资不透明时，快常常成了企业捡便宜的机会。",
+        "流程拉长时你等得起，多家录用摆着敢慢比薪资；",
+        "这是压价一面。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体是在提醒求职者核实薪酬，风险提示明确；但“少挣两千”与“常变相压价”把个别情形说得过于确定，容易造成误导。",
+      "script_spans": [
+        "你拿到极速录用，先问清底薪、绩效和奖金怎么算，社保怎么交，别光高兴来得快。",
+        "你三天拿到offer，可能少挣两千块薪水。",
+        "企业缩短招聘流程，既提效率，也常变相压价。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e8f259258e11403d8479740c80657dad",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

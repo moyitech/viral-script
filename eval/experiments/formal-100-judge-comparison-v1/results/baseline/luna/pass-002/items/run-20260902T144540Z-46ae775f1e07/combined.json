@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-3fa96fa8ae0e448db4076a5b29f48dee",
+  "run_id": "run-20260902T144540Z-46ae775f1e07",
+  "trace_sha256": "66549e4891d20a13bf7d33e1dd227992d22a59ff80f02862f83d317ac259e986",
+  "created_at": "2026-09-03T12:17:58.817357Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正文正面回应循环经济与质量盲区的冲突，兼顾行业收益、质量风险与普通买家决策。",
+      "script_spans": [
+        "它算循环经济还是质量盲区？",
+        "不是二选一，它两头都占着。",
+        "没报告，再便宜也犯不上赌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策、环保收益、翻新陷阱、市场规模和避坑建议均有具体展开，信息单元连续推进。",
+      "script_spans": [
+        "文件说要畅通回收循环网络，规范二手商品交易和废旧设备再制造。",
+        "小作坊换块屏冒充原厂，电池暗病测不出。",
+        "没报告，再便宜也犯不上赌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用黑屏冲突抓人，中段从政策、收益转到风险，结尾追问自然留下余味。",
+      "script_spans": [
+        "你刚买的翻新机突然黑屏，它算循环经济还是质量盲区？",
+        "若只谈环保不谈质量，循环就转成糊涂账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和具体表达较多，整体能顺读；但术语与句式搭配有卡顿，朗读时需临时换词，未达到精心设计的自然。",
+      "script_spans": [
+        "你以为捡漏，其实踩坑。",
+        "质量和安全环保性能不能低于原型新品",
+        "翻新的主板修过几次，普通软件查不出"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“捡漏”与“踩坑”的反差直观好记，“糊涂账”也准确收束主题，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "你以为捡漏，其实踩坑。",
+        "若只谈环保不谈质量，循环就转成糊涂账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整、转折清楚，结尾也回扣题设；但“再制造”与商业翻新衔接偏快，“案例跟着涨”缺少因果桥。",
+      "script_spans": [
+        "不是二选一，它两头都占着。",
+        "那咱们普通人咋办？认准带评估鉴定的正规渠道，别光贪便宜。",
+        "再制造产品，质量和安全环保性能不能低于原型新品。",
+        "造新机要挖矿耗电，翻新就省下这些。",
+        "但肉眼可见，坑人案例跟着涨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，能同时呈现循环价值与质量风险；但“花半价拿到更高配”等表述概括过满，易造成消费预期误导。",
+      "script_spans": [
+        "不是二选一，它两头都占着。",
+        "买家花半价，拿到更高配的功能。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3d04d047358a4959838882c5dc5563c6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

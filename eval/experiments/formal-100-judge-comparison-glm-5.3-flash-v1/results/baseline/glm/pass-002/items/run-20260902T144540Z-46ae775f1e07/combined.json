@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-ba78c2c33e3e424b805aa835fadad386",
+  "run_id": "run-20260902T144540Z-46ae775f1e07",
+  "trace_sha256": "66549e4891d20a13bf7d33e1dd227992d22a59ff80f02862f83d317ac259e986",
+  "created_at": "2026-09-03T14:29:00.711563Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头设问点题，中段正反两侧都答，结尾回扣二元题，普通人视角贯穿全程。",
+      "script_spans": [
+        "不是二选一，它两头都占着。",
+        "若只谈环保不谈质量，循环就转成糊涂账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策、收益、风险、数据、对策各成单元层层推进，无编造，观众能带走挑机方法。",
+      "script_spans": [
+        "造新机要挖矿耗电，翻新就省下这些。",
+        "去年国内二手手机交易近三亿部。",
+        "没统一检测标准，质量盲区就不是吓唬。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头黑屏冲突直给，中段以捡漏踩坑、浊水混入持续转折兑现，结尾糊涂账留余味，三段皆立。",
+      "script_spans": [
+        "你刚买的翻新机突然黑屏，它算循环经济还是质量盲区？",
+        "你以为捡漏，其实踩坑。",
+        "当循环成了生意，能不能既救地球又不坑人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句顺口、有对话感，但政策段照读文件语，如'质量和安全环保性能不能低于原型新品'需临时改写，卡在书面与口语之间。",
+      "script_spans": [
+        "小作坊换块屏冒充原厂，电池暗病测不出",
+        "文件说要畅通回收循环网络，规范二手商品交易和废旧设备再制造",
+        "质量和安全环保性能不能低于原型新品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "流水浊水、正规军杂牌军皆贴切助解，捡漏踩坑与糊涂账离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "流水不小，浊水也混进来。",
+        "国家想让旧物活过来，别直接填埋。",
+        "若只谈环保不谈质量，循环就转成糊涂账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段落功能清晰，'说白了'补足因果桥，'不能光看颜值'回扣暗病伏笔，收尾扣题。",
+      "script_spans": [
+        "说白了，国家想让旧物活过来，别直接填埋。",
+        "你刚买的翻新机突然黑屏，它算循环经济还是质量盲区？",
+        "主板暗病全藏进靓丽外壳里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "对不确定数据主动留余地，'两头都占着'框架公允，建议限于提醒留心眼，无夸大承诺、无引战歧视，导向安全。",
+      "script_spans": [
+        "全球一年翻新手机超三亿部，这数可能有水分",
+        "不是二选一，它两头都占着",
+        "认准带评估鉴定的正规渠道，别光贪便宜"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-dcb9b423b12c496a924e3fd0c36a160f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

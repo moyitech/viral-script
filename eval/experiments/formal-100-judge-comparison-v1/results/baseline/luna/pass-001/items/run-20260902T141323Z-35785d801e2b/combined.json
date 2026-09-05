@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-a88d9255b88f473f95bf53e2d3315e7b",
+  "run_id": "run-20260902T141323Z-35785d801e2b",
+  "trace_sha256": "24c3474f34c64faba654b1eb5f8eb78e793276d940c54d569477e26022118130",
+  "created_at": "2026-09-03T11:44:29.806214Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应便利与门槛的两面，且聚焦老人等最易受影响的人群。",
+      "script_spans": [
+        "这对熟手机的人是少跑腿，对另一群人成了新门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 439，目标为 450，偏差率为 2.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕线上预约的利弊层层补充政策、执行偏差与老年人困境，信息增量充足。",
+      "script_spans": [
+        "国家其实有要求，线下的门不能关，除特殊情形外事项应进政务中心办。",
+        "政策留了特殊情形可线下办，落地却常模糊，没人细说啥算特殊。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用老人办事被拒制造冲突，中段连续追问成因并补充影响，结尾追问自然生长。",
+      "script_spans": [
+        "不会用智能手机的老人，跑大厅办社保却被拒，只因没线上约。",
+        "当便利变成唯一选项，它就成了门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、对比和反问增强了对话感；但政策表述与压缩句较拗口，朗读时至少有两处需要重断句。",
+      "script_spans": [
+        "一边省力一边设卡，现状就这么拧巴。",
+        "除特殊情形外事项应进政务中心办。",
+        "规范政务APP本为防形式主义、给基层减负"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“被挡在屏幕外”和“便利变成唯一选项”形象准确，既强化数字门槛，也留下了可复述的判断。",
+      "script_spans": [
+        "可办事的人没消失，只是被挡在屏幕外。",
+        "当便利变成唯一选项，它就成了门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由个案切入，先辨析线上线下关系，再解释执行偏差并回到人工窗口，论证闭环清楚。",
+      "script_spans": [
+        "问题在哪？政务服务把线下窗口收了，只留一个线上入口。",
+        "当便利变成唯一选项，它就成了门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体关注适老化且不煽动，但“图省事”等动机归因和“线下的门不能关”表述偏满，需补限定。",
+      "script_spans": [
+        "政策留了特殊情形可线下办",
+        "有些地方图省事，把号源全推网上。",
+        "国家其实有要求，线下的门不能关"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-06ae7fd80e8545c597ce2f282f8c20c0",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a4d9429de7b148eca46887d2a75cbf62",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

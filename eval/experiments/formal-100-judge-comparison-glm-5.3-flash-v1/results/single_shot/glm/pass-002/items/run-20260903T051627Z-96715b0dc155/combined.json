@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-d70306bce52b4c798cab4fb5930a6eb5",
+  "run_id": "run-20260903T051627Z-96715b0dc155",
+  "trace_sha256": "7ec7bb9c21d43fb5badca255e3b960b89da7063d6c5a5b391517b35091e8a021",
+  "created_at": "2026-09-03T15:27:48.457193Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即用限流与佣金冻结场景锁定人群，随后正面给出分水岭判断，题设两侧与普通用户痛点全程对位。",
+      "script_spans": [
+        "你刷短视频突然账号被限流，或者带货佣金被冻结",
+        "智能客服全面化不必然让申诉更难，真正的分水岭在于平台是否诚实保留人工活口"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "全程紧扣申诉难易一问，投诉数据、协同标准、行业案例层层推进，结尾落成可执行动作，增量实在。",
+      "script_spans": [
+        "监管上半年的投诉分析就点名过转人工机制不畅，多层菜单跳转让消费者维权成本畸形攀升",
+        "尤其涉及财产、人身安全场景，用户明确要人工，系统必须优先派真人",
+        "智能客服该是筛掉垃圾咨询的漏斗，不是堵死真人申诉的墙"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句限流冻结加死循环，冲突具体；中段判断、新规、博弈层层转折；漏斗与墙收尾有余味。",
+      "script_spans": [
+        "你刷短视频突然账号被限流，或者带货佣金被冻结，急着申诉却卡在AI客服的死循环里",
+        "那是不是全面接智能就没救了？恰恰相反，近期有个关键进展改变天平",
+        "智能客服该是筛掉垃圾咨询的漏斗，不是堵死真人申诉的墙"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有节拍、比喻接地气，但标准名与监管句等书面块需临时换词重断，流畅受限。",
+      "script_spans": [
+        "打字数它回“已读”，点按钮跳回首页，再找人工入口像捉迷藏。",
+        "智能客服该是筛掉垃圾咨询的漏斗，不是堵死真人申诉的墙。",
+        "国家层面的人工智能与智能客服协同标准落地，填了协同空白，这标准不是建议，是强制协同要求。",
+        "监管上半年的投诉分析就点名过转人工机制不畅，多层菜单跳转让消费者维权成本畸形攀升。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "捉迷藏、人工活口等比喻贴切不堆砌；漏斗与墙离开上下文仍可复述，记忆点自然。",
+      "script_spans": [
+        "打字数它回“已读”，点按钮跳回首页，再找人工入口像捉迷藏",
+        "这背后不是技术做不到，是产品设计故意制造摩擦，用机器消耗你的耐心",
+        "智能客服该是筛掉垃圾咨询的漏斗，不是堵死真人申诉的墙"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问衔接段落层层递进，白纸黑字与指尖体验一转承认局限，因果有桥，结尾漏斗之喻回扣开题。",
+      "script_spans": [
+        "但白纸黑字和指尖体验中间，还隔着现实博弈",
+        "这背后不是技术做不到，是产品设计故意制造摩擦"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "观点留有余地并提醒留证，整体克制；但称标准“不是建议，是强制”、断言设计故意设障，有夸大与误导风险。",
+      "script_spans": [
+        "智能客服全面化不必然让申诉更难",
+        "但自己也截图留证，别空口争辩",
+        "这标准不是建议，是强制协同要求",
+        "是产品设计故意制造摩擦，用机器消耗你的耐心"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a337b3f6b7384007a2b1703caff11a20",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

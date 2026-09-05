@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-ba3e238856344c6496e4422d8bf33324",
+  "run_id": "run-20260903T051601Z-29e971e7d4ed",
+  "trace_sha256": "c4cf4131072cd436f9c2bb800ddc18054f9d9ec82cf6a439a52258479ec6eaf3",
+  "created_at": "2026-09-03T14:11:27.433313Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即亮'换名目'判断，公寓收费与直租真省两侧都答到，结尾回扣二选一，正中租客痛点。",
+      "script_spans": [
+        "免押金大多不是费用消失，而是换了个名目",
+        "免押金是道选择题，不是免费午餐"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 759，目标为 700，偏差率为 8.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "押一付三痛点、托管政策、服务费摊进月供、全周期算账法层层推进，无同义灌水，与引用背景相符。",
+      "script_spans": [
+        "把租金、服务费、水电物业、可能的退租违约金全周期加起来，再对比同地段直租价格",
+        "关键看中间环节有没有抽成"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即设反差钩，中段政策、案例、反例层层兑现，结尾余味由分析自然长出，无硬拉互动。",
+      "script_spans": [
+        "你以为租房免押金是平台大发善心，可算完一年总账，有人反而比交押金时掏得更多",
+        "这等于把一次性的押金成本，悄悄摊进你每个月的生活费里",
+        "免押金是道选择题，不是免费午餐"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句顺口、有对话感，但“缓解眼前现金流”“迁徙成本”“不确定性”等书面词需临时换词，超过两处。",
+      "script_spans": [
+        "押一付三、押一付六能把刚毕业的人掏空。",
+        "免押降低迁徙成本，平台正好吃下这部分流动需求。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“摊进每月生活费”“不是免费午餐”等类比贴题、点到为止，金句离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "免押金大多不是费用消失，而是换了个名目",
+        "把一次性的押金成本，悄悄摊进你每个月的生活费里",
+        "免押金是道选择题，不是免费午餐"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "两次设问推进段落，'押金摊进月供'因果有桥，结尾回扣开头零门槛提醒，经得起追问。",
+      "script_spans": [
+        "这等于把一次性的押金成本，悄悄摊进你每个月的生活费里",
+        "会算总账的人，才不会被表面的零门槛绊倒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反两面都呈现，判断有铺垫，建议具体且未越界，无绝对化承诺、煽动或误导销售风险。",
+      "script_spans": [
+        "反过来也有真省的情况：个人直租平台不抽中介费，房东若信任你免了押，那确实是实打实减负",
+        "还有个不确定性得提醒：信用免押往往看评分门槛，不是人人都能用"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-6cab5ba038f848cebfa09e9396969a66",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-05289531adbf46e0a9469b8ae8416876",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

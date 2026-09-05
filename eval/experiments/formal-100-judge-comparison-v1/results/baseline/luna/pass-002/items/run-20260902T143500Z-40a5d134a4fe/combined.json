@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-37cebb01a4c24c1bb5cceaa3118713f4",
+  "run_id": "run-20260902T143500Z-40a5d134a4fe",
+  "trace_sha256": "9d6d635c7791273a0d76f2653c311b44fe48cf13e5ecc91331ed55632061c59e",
+  "created_at": "2026-09-03T12:15:23.146691Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答能否缓解，同时覆盖学校不公开、家庭比较与孩子焦虑，并给出家长替代问法。",
+      "script_spans": [
+        "直接说：单藏名次缓解不了焦虑。",
+        "下次接孩子放学，别问第几名，问问今天哪道题卡住了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，既有政策背景、焦虑比例和家庭比较，也给出替代问法；但用单项数据推得排名无关，证据支撑不足。",
+      "script_spans": [
+        "平时焦虑约17%，临考升到32%",
+        "别问第几名，问问今天哪道题卡住了",
+        "说明紧绷感来自考试节点本身，不关排名显不显。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用17%到32%的反差追问，随后拆解排名之外的压力来源，结尾给出可执行提问，推进和余味完整。",
+      "script_spans": [
+        "成绩排名不公开，你孩子少了对标，可考前焦虑却从17%跳到32%，真护住心吗？",
+        "一项跟踪看高二学生，平时焦虑约17%，临考升到32%，说明紧绷感来自考试节点本身，不关排名显不显。",
+        "下次接孩子放学，别问第几名，问问今天哪道题卡住了，听他慢慢讲讲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有提问、建议和短句，能顺着读完；但“跟踪看”“不关排名显不显”等处卡顿，未达到精心设计的自然口播。",
+      "script_spans": [
+        "下次接孩子放学，别问第几名，问问今天哪道题卡住了",
+        "一项跟踪看高二学生",
+        "不关排名显不显"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“压住红榜，压不住心思”形成清晰反差，“从比名次变成猜自己够不够好”具体有画面，记忆点自然。",
+      "script_spans": [
+        "规定只压住红榜压不住心思",
+        "孩子从比名次变成猜自己够不够好，更耗神。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "起承转合清楚，政策、数据、家庭压力到建议的顺序可跟随；但焦虑升高不能直接证明排名公开与否无关，关键因果缺桥。",
+      "script_spans": [
+        "班里家长群常私下聊分数，悄悄把压力递回孩子手中。",
+        "说明紧绷感来自考试节点本身，不关排名显不显。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "政策与建议方向稳妥，但“缓解不了”过于绝对，考前焦虑样本也不能推出其与排名公开无关。",
+      "script_spans": [
+        "按规定义务教育不排名，本是护自尊",
+        "单藏名次缓解不了焦虑",
+        "说明紧绷感来自考试节点本身，不关排名显不显"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1b331c553101496ca33ebfd72b85500a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

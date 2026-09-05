@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-db270357a6da42258191320367daee53",
+  "run_id": "run-20260902T141348Z-424e8b16a2a2",
+  "trace_sha256": "d303f63f8feee447b605858f2515b339c7131e1bf6bdfe6b7b5e09d3231758e4",
+  "created_at": "2026-09-03T12:21:20.351131Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答稳健投资是否会接盘，解释拥挤风险，也覆盖红利基本面与普通投资者的应对方法。",
+      "script_spans": [
+        "会，但也看你怎么买",
+        "拥挤让稳健变接盘风险变大，但不是必死局"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕拥挤交易持续推进，既解释集体离场机制，又给出看成交、分批买入和留现金等具体判断与行动。",
+      "script_spans": [
+        "稍微有点坏消息，所有人就想同时跳船",
+        "先小笔试水温，分几笔留现金更踏实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出“稳健变接盘”，中段用踩踏和跳船推进，结尾落到可执行追问，观看与互动动力自然。",
+      "script_spans": [
+        "红利越买越稳？拥挤反而高危。",
+        "稍微有点坏消息，所有人就想同时跳船。",
+        "你买前多问一句，这资产为啥涨？是人多还是业绩实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和比喻带来节奏，整体能读懂；但多处断裂、搭配生硬，仍需改写后才能顺畅口播。",
+      "script_spans": [
+        "大家都挤同一条船。",
+        "稳健变接盘会不会？",
+        "前头一退后面踩踏。",
+        "是人多还是业绩实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“窄桥塞满人”和“价格掉得比公司挣钱快”形象好复述，类比服务风险解释，记忆点明确且不过度堆砌。",
+      "script_spans": [
+        "像窄桥塞满人，前头一退后面踩踏。",
+        "这时候价格掉得比公司挣钱快",
+        "是人多还是业绩实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、解释、反转和建议完整，主线清楚；但把放巨量直接等同于拥挤，关键判断缺少限定。",
+      "script_spans": [
+        "所以核心判断：拥挤让稳健变接盘风险变大，但不是必死局",
+        "看成交是不是突然放巨量，那就是人在挤门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体有风险提示且未承诺收益，但“每年有分红”“业绩实打实”过于笼统，分批买入建议也需补充边界。",
+      "script_spans": [
+        "拥挤让稳健变接盘风险变大，但不是必死局",
+        "红利每年有分红托着，业绩实打实",
+        "先小笔试水温，分几笔留现金更踏实"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3f4edd5fc4604654af900e0668e20d83",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

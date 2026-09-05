@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-13d1ff45722e4b0f834b9591824a0abb",
+  "run_id": "run-20260902T144303Z-cd53d39bf14f",
+  "trace_sha256": "6e09011906330375786780fc6ca95fbb1092266f2afe0c819f83dc9b99f8d12d",
+  "created_at": "2026-09-03T11:46:15.872857Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从订单回暖、恢复不均到正式工成本，完整回答企业不敢扩招的原因。",
+      "script_spans": [
+        "订单的确在回暖，可企业不敢马上招正式工，怕背长债。",
+        "正式工招进门，合同一签就得管社保"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 293，目标为 280，偏差率为 4.64%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据呈现需求回暖、总体未过线与用工收缩，进一步解释正式工成本，信息推进充分。",
+      "script_spans": [
+        "新订单指数过了五十，比上月升两点一，需求暖了。",
+        "整体制造大指数四十九点八，还在线下，回暖不扎实。",
+        "订单若再缩水，辞退要赔钱走流程也费神。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出订单与招工的反差，中段用数据和分化持续推进，结尾自然留下观察问题。",
+      "script_spans": [
+        "你厂里接单多了，老板却死活不肯招人，犯嘀咕不？",
+        "这冷暖温差，到底哪天能扯平？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感和节奏，数据与解释也能读通；但“整体制造大指数”“合同一签就得管社保”两处需换词或重断句。",
+      "script_spans": [
+        "你厂里接单多了，老板却死活不肯招人，犯嘀咕不？",
+        "整体制造大指数",
+        "合同一签就得管社保"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“背长债”和“早春的风、厚棉袄”把企业顾虑与复苏不稳讲得形象，表达克制且有复述价值。",
+      "script_spans": [
+        "订单像早春的风，厂里却还裹着厚棉袄不肯脱。",
+        "正式工招进门，合同一签就得管社保，像长期饭票。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头抛出矛盾，随后按数据、结构差异、用工机制和应对方式递进，结尾回扣观察方法。",
+      "script_spans": [
+        "你厂里接单多了，老板却死活不肯招人，犯嘀咕不？",
+        "而且回暖不均匀，大厂和高技术行业单子明显涨，小厂多数还没回血。",
+        "老板宁可老班底加班，或雇临时工顶一阵，灵活些。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "数据引用较清楚，但“合同一签就得管社保”“辞退要赔钱”过于绝对，易造成法律误解。",
+      "script_spans": [
+        "新订单指数过了五十，比上月升两点一",
+        "整体制造大指数四十九点八，还在线下",
+        "正式工招进门，合同一签就得管社保",
+        "订单若再缩水，辞退要赔钱走流程也费神"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-7babdcf2408e4efbabdab31bca0ece58",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1aa33243b56b4b48931afd0d4a4e5fa6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

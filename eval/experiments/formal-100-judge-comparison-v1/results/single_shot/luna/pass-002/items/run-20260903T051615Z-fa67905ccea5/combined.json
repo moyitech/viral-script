@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-8e11a372007049399c371233e1c273ab",
+  "run_id": "run-20260903T051615Z-fa67905ccea5",
+  "trace_sha256": "d6c832ff38e69f724a3deadb468d3c2de01d92fbe76ee45f3ef58ecb9737285d",
+  "created_at": "2026-09-03T12:31:38.078564Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕生成式搜索与网站受影响展开，既回应“搬走”疑问，也覆盖读者和内容创作者。",
+      "script_spans": [
+        "我的判断是：生成式搜索确实无偿用了全网文字，但说整站被搬走不准确",
+        "对普通读者，秒出答案很省事，但想深挖时原站可能沉底，浅层信息唱主角。对做内容的人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中，机制、流量影响、读者与创作者后果及应对均有推进，信息增量充足。",
+      "script_spans": [
+        "AI摘要会把多个页面的信息揉成一段，用户还没点链接就满足了",
+        "有出版商观察到某些查询的来访断崖式减少，学术测算也显示百科类页面被摘取后访问明显变薄。",
+        "所以，文字没被搬家，注意力却被虹吸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“被白嫖”制造冲突，中段推进到流量与生态，结尾“注意力被虹吸”形成自然余味。",
+      "script_spans": [
+        "那些辛苦写文章的网站，是不是就被白嫖了？",
+        "文字没被搬家，注意力却被虹吸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有提问、比喻和明确停顿，能顺读；但中段信息串联偏长，抽象表达使气口和对话感打折。",
+      "script_spans": [
+        "它更像在路口截流，而不是把店铺连根拔走",
+        "有出版商观察到某些查询的来访断崖式减少，学术测算也显示百科类页面被摘取后访问明显变薄",
+        "单纯靠搜索引擎带客的老办法正在失效，流量红利退潮，内容生态长远会受影响，小站生存更逼仄"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“路口截流”“注意力被虹吸”把内容与流量的区别说得形象，记忆点集中且不油腻。",
+      "script_spans": [
+        "它更像在路口截流，而不是把店铺连根拔走。",
+        "文字没被搬家，注意力却被虹吸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "分段顺序清楚，先讲机制再讲影响；但“无偿用了全网文字”与“文字没被搬家”概念边界冲突，收束略跳。",
+      "script_spans": [
+        "内容和流量其实是两件事，它更像在路口截流，而不是把店铺连根拔走。",
+        "对普通读者，秒出答案很省事，但想深挖时原站可能沉底",
+        "生成式搜索确实无偿用了全网文字",
+        "所以，文字没被搬家，注意力却被虹吸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见明显违规，但“用了全网文字”等绝对化表述缺少范围和条件，容易造成泛化误导。",
+      "script_spans": [
+        "不过平台保留了出处链接，声称两者互补，争议就卡在这里：摘录算不算挪用？",
+        "生成式搜索确实无偿用了全网文字"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5de3119bb8ee4149bd12ffd24fa618d5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

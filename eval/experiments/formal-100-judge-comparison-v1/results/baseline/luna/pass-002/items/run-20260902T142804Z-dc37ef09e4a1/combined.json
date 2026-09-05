@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-e7ff75fba560414e98828fb7cda71fa6",
+  "run_id": "run-20260902T142804Z-dc37ef09e4a1",
+  "trace_sha256": "23ab274ac899896634b57adaa67d5427ae6b2ba210a5afbfbfada6b3961b1528",
+  "created_at": "2026-09-03T12:16:54.261746Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即回应安静管理与作业挤占，覆盖学生、学校和家长三方的现实冲突。",
+      "script_spans": [
+        "课间被作业挤掉，安静管理反让孩子吃亏。",
+        "家长如果看见孩子课间被留，可以拿出规定平和沟通，帮孩子把休息权利要回来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "有政策依据、利益权衡、风险解释和行动建议，信息单元层层推进，观众能获得明确判断与应对办法。",
+      "script_spans": [
+        "教育部早有明文。中小学校必须保障学生课间正常活动。",
+        "安静只堵小磕碰，却丢了大收益。",
+        "家长如果看见孩子课间被留，可以拿出规定平和沟通，帮孩子把休息权利要回来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出作业与课间的冲突，中段持续补充规则和后果，结尾的家长提问也由正文自然生长。",
+      "script_spans": [
+        "课间被作业挤掉，安静管理反让孩子吃亏。",
+        "安静只堵小磕碰，却丢了大收益。",
+        "您会替他要吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 1,
+      "reason": "多处句式和搭配生硬，朗读需频繁重断，整体难称自然流畅。",
+      "script_spans": [
+        "课间休息十分重要必要，能调情绪、放松身、防近视",
+        "不能对出教室玩要设不必要约束",
+        "每天专门排了三十分钟大课间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“堵小磕碰、丢大收益”形成鲜明对比，“孩子不是蓄电池”形象易懂，修辞克制且便于复述。",
+      "script_spans": [
+        "安静只堵小磕碰，却丢了大收益。",
+        "孩子不是蓄电池，充会儿电才跑得动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，但把学校动机归为“怕担责”，又以“安静只堵小磕碰”简化安全与活动的关系，且有缺词句式。",
+      "script_spans": [
+        "作业硬挤掉休息，看似多写几题，实则效率更低。",
+        "家长如果看见孩子课间被留，可以拿出规定平和沟通，帮孩子把休息权利要回来。",
+        "安静只堵小磕碰，却丢了大收益。",
+        "不能对出教室玩要设不必要约束"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有明确政策依据，也给出平和沟通建议；但将学校动机概括为怕担责，并把安全风险说成“小磕碰”，存在标签化和误导风险。",
+      "script_spans": [
+        "家长如果看见孩子课间被留，可以拿出规定平和沟通",
+        "主要是怕走廊磕碰担责任",
+        "安静只堵小磕碰，却丢了大收益"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6438bf64d90c47e687e56e40a9e9ea5d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

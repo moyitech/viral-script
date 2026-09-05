@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-9e8b0f4841ea4b3b8fa8f7e26a706c8a",
+  "run_id": "run-20260902T141810Z-7f05dae50307",
+  "trace_sha256": "cf53b1a96e97a20be4690dc80a977992c305943b5636ed3429552e086d566501",
+  "created_at": "2026-09-03T12:16:23.501174Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解信心与托市两种可能，并给出普通观众可执行的辨别入口，核心人群和题设两侧均命中。",
+      "script_spans": [
+        "这事儿真不能二选一。回购增多既是企业真看好未来，也常被用来短期撑住股价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕回购动因、公告反应、注销影响展开，研究、规则与比喻共同提供了具体判断增量。",
+      "script_spans": [
+        "有论文拿声誉好的公司做样本观察，发现回购公告后市场反应更正面。",
+        "公司利润没变，分母小了每份就多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“抄底还是托市”的反差抓人，中段持续补充判断线索，结尾追问自然引导继续思考。",
+      "script_spans": [
+        "回购扎堆你以为能抄底？其实可能只是托市。",
+        "那咱们怎么分辨信号还是托市？",
+        "下次再刷到回购新闻，你不妨先问一句：这股票最后注销了吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感、比喻也好读，但中段两处句式偏硬，朗读时需要临时重断句。",
+      "script_spans": [
+        "这事儿真不能二选一。",
+        "短期托市像给花儿喷水，叶子挺久点根没壮。",
+        "原因一端是规则鼓励这么做，另一端是有些企业股价跌得不舒服，想托一托。",
+        "这里头不确定性在于，口号容易股价难稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“蛋糕少切几块”和“喷水但根没壮”把注销与托市讲得直观，结尾金句也有自然记忆点。",
+      "script_spans": [
+        "就像蛋糕少切几块，每股收益实打实厚了。",
+        "短期托市像给花儿喷水，叶子挺久点根没壮。",
+        "真金白银注销的，才算真信心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按动因、证据、辨别、落地推进，但把不注销直接等同托市，结尾又把注销偷换成真信心，结论过宽。",
+      "script_spans": [
+        "但反例也有，个别公司回购额度小，只喊不做，可能是短期护盘。",
+        "真金白银注销的，才算真信心。否则热闹散了，只剩一地鸡毛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "没有直接荐股或收益承诺，且多处使用限定词；但“注销的才算真信心”把复杂判断绝对化，易误导投资决策。",
+      "script_spans": [
+        "这事儿真不能二选一。",
+        "研究样本有局限，只覆盖一段时期，别把结论当万能钥匙。",
+        "真金白银注销的，才算真信心。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4356799deca24b5599c10875d2c23369",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

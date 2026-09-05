@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-eff478bc7b264672a74e356d9fb27720",
+  "run_id": "run-20260902T143813Z-9076883442ea",
+  "trace_sha256": "58d3c2f0c2e863f1e73fca6f91caea117e522782be2650ade85379c35fe6aa1f",
+  "created_at": "2026-09-03T13:47:01.348609Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛二元之问，防诈与丢权两侧各有正答与案例支撑，落点面向普通家庭。",
+      "script_spans": [
+        "这事不能偏着讲。老人自己能作主时，养老金归自己花，这是法律底线",
+        "您说儿女本意防诈，看见骗子新闻干脆收了卡"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 446，目标为 450，偏差率为 0.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "案例、数据、监护程序与落地清单层层推进，14%与最高法案例均有出处，无编造。",
+      "script_spans": [
+        "最高法出过案例，子女没理由扣着父母存折不让用，法院直接令退卡",
+        "有调查说约14%的老人有认知障碍，这部分人确可能需要帮手"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出护钱与丢权的反差，中段案例、数据与转折层层兑现钩子，结尾提问从正文自然长出，余味足。",
+      "script_spans": [
+        "您把养老金交儿女代管，是护钱还是丢权？",
+        "可老人要买菜看病，掏卡发现不在手，好心若过了线，反成了侵权",
+        "您下次见儿女伸手管爸妈养老金，先轻声问：这卡是爸妈递您的吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句短气口为主，'掏卡发现不在手''算哪门子代管'等口语句贯穿，朗读无需临时改词。",
+      "script_spans": [
+        "可老人要买菜看病，掏卡发现不在手，好心若过了线，反成了侵权。",
+        "您想，钱是老人名下的，单方接管算哪门子代管？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“护钱还是丢权”“代管人不是自家钱柜”贴切且可独立复述，修辞克制服务理解，结尾意象略雕琢但不喧宾夺主。",
+      "script_spans": [
+        "是护钱还是丢权",
+        "代管人不是自家钱柜",
+        "不是递的，防诈的布也成绳锁"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "各段功能清晰，过渡问句承接自然，结尾递卡之问自然回扣开篇二元之问。",
+      "script_spans": [
+        "那老人真容易受骗怎么办？有调查说约14%的老人有认知障碍",
+        "您下次见儿女伸手管爸妈养老金，先轻声问：这卡是爸妈递您的吗？不是递的，防诈的布也成绳锁"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述公允有据：既承认儿女防诈好意，也限定14%数据为调查口径，建议走公证程序，无煽动夸大与绝对承诺。",
+      "script_spans": [
+        "这事不能偏着讲。老人自己能作主时，养老金归自己花，这是法律底线。",
+        "有调查说约14%的老人有认知障碍，这部分人确可能需要帮手",
+        "要是功能退化了，去公证处走程序，别桌底收卡"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-51fef2f6fce94cfda38f8a33d820f35f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-dbb76c41c0bc4dee99fa34ef1d6ddb34",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

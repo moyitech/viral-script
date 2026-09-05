@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-454be4f9456c4010bb17aa5ac42ae44f",
+  "run_id": "run-20260902T142252Z-1ce7d98b57a0",
+  "trace_sha256": "b7f085ffa8a9653b0ae24aac5cc7bcba11ef8b745c2026528136e4329d2229dd",
+  "created_at": "2026-09-03T14:24:02.623664Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "全文正面回答如何避开伪风口，点名普通投资者，识假与查证双侧覆盖，人群痛点契合。",
+      "script_spans": [
+        "咱们普通投资者避开伪风口，得翻财报看真收入",
+        "买前去官网查机构资质，先搜名字看处罚记录"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "财报识真、假订单被罚、无资质卖软件、三步查证各自推进，案例有监管处罚佐证，无编造。",
+      "script_spans": [
+        "有人编假AI订单文章乱传，前阵子被监管罚了款",
+        "别光听直播间故事，标签谁都能贴，钱进没进账一看便知",
+        "买前去官网查机构资质，先搜名字看处罚记录"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直点追高亏损的冲突，中段罚单、无资质卖软件、查资质三步推进，结尾缓三秒之问由内容自然长出。",
+      "script_spans": [
+        "你刚追进AI概念股，本金可能就亏掉一大截",
+        "下次你看到AI爆款文，愿先缓三秒保本金吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇短气口为主，'热闹是别人的，本金是你的'节奏明快，朗读无需临时改词。",
+      "script_spans": [
+        "别光听直播间故事，标签谁都能贴，钱进没进账一看便知。",
+        "热闹是别人的，本金是你的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "烫手山芋、标签谁都能贴均服务理解，热闹是别人的本金是你的离开上下文仍可复述，全篇无炫技堆叠。",
+      "script_spans": [
+        "你以为捡便宜，其实接了烫手山芋",
+        "热闹是别人的，本金是你的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承上启下，两案例与行动清单层层递进，结尾爆款文缓三秒自然回扣开头与题设。",
+      "script_spans": [
+        "那怎么动手查？买前去官网查机构资质",
+        "你以为捡便宜，其实接了烫手山芋",
+        "下次你看到AI爆款文，愿先缓三秒保本金吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "风险表述带“可能”“很可能”等限定；查资质、拒私人转账与监管提示一致；案例表述克制，无确定收益承诺或煽动。",
+      "script_spans": [
+        "有人编假AI订单文章乱传，前阵子被监管罚了款",
+        "买前去官网查机构资质，先搜名字看处罚记录，别扫私人码转钱就当投资",
+        "没资质很可能是地下生意，出事难维权"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d285d54a80f943e8aa2ccf8b18e12b9f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

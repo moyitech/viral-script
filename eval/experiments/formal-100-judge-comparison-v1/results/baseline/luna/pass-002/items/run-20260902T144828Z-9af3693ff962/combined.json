@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-84aaa194c12a4367b5fea0245aae382e",
+  "run_id": "run-20260902T144828Z-9af3693ff962",
+  "trace_sha256": "61dd66027f944ade4f6b2d389f6eb3489356bb8e8c4f148cc3f161f76352a71a",
+  "created_at": "2026-09-03T12:16:04.590058Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从安心与过度囤积切入，覆盖浪费、风险及家庭备药建议，始终正面回应题目。",
+      "script_spans": [
+        "家里备点常用药是能换份安心，但囤过头就会变成浪费和风险。",
+        "下次买药只留三四样常用的，少囤些。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，依次给出过期浪费、转卖限制、分类投放和少量备药建议，信息有推进。",
+      "script_spans": [
+        "过阵子保质期过了，只能扔掉。",
+        "个人卖药不合法，算违法的。",
+        "过期药得专门按有害垃圾处理，随手丢可是隐患。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“没拆封就扔”制造损失悬念，中段从浪费推进到违法与处置风险，结尾建议自然收束。",
+      "script_spans": [
+        "你家囤的退烧药，可能没拆封就扔了。",
+        "所以别信囤着才保险，那多余药是包袱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答节奏清楚，整体能顺着读完；但两处措辞卡顿，朗读时需临时改词。",
+      "script_spans": [
+        "你想转卖给药店？那不行",
+        "家里备点常用药是能换份安心",
+        "个人卖药不合法，算违法的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“没拆封就扔”“多余药是包袱”把浪费和风险说得具体，修辞克制，结尾也有自然余味。",
+      "script_spans": [
+        "没拆封就扔了",
+        "那多余药是包袱",
+        "家净了，人也就踏实了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整且因果顺序清楚，但“三四样”缺少依据，且未交代无回收箱时的处理办法。",
+      "script_spans": [
+        "买回来往柜里一放，没生病根本想不起用。过阵子保质期过了，只能扔掉。",
+        "下次买药只留三四样常用的，少囤些。",
+        "清掉那些用不上的，家净了，人也就踏实了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题明确，能提示囤药浪费和安全风险；但“算违法的”及统一处理建议过于绝对，需补充适用边界。",
+      "script_spans": [
+        "囤过头就会变成浪费和风险",
+        "个人卖药不合法，算违法的"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-90448d70154e4113b721bf67bc5d1c7c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-6688e11b376d4db7be588746f333f96c",
+  "run_id": "run-20260902T143714Z-d8c891b7b846",
+  "trace_sha256": "81a6fc0aa01d018f2bba3452f7875c32ce4936d43d45ded9bbd44c10b4b95dbb",
+  "created_at": "2026-09-03T11:46:09.016588Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答污染风险与治理路径，也覆盖退役增长、回收处理和普通观众的处置建议。",
+      "script_spans": [
+        "得看板子怎么退场，咱们不能光看发电时干净。",
+        "你见旧板别混建筑垃圾，直接送正规回收点处理才稳妥，别省事烧掉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 275，目标为 280，偏差率为 1.79%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从污染风险、标准要求、材料回收、退役增长到个人行动，信息单元连续推进，结论有支撑。",
+      "script_spans": [
+        "这标准盯紧拆卸、收集、运输、贮存，要求厂房防渗漏，培训人员操作。",
+        "工人按步骤收材料，不让碎玻璃金属乱跑，还能把有用东西回炉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出污染风险，中段持续补充标准、后果与退役压力，结尾用实用建议自然收束。",
+      "script_spans": [
+        "旧光伏板扔错地方，可能污染水土，但规矩回收能救回材料",
+        "不然干净电藏脏土"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "反问与短句有清晰节奏，但多处搭配和省略生硬，朗读时需要临时重断句或补词。",
+      "script_spans": [
+        "得看板子怎么退场",
+        "正规拆运拦下大部分污染",
+        "一年比年多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“干净电藏脏土”把末端治理的反差说透，“从生产到埋单都得管”也有复述价值，修辞克制。",
+      "script_spans": [
+        "不然干净电藏脏土",
+        "从生产到埋单都得管"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问到结论回扣完整，标准—风险—处置链条可跟随，但部分表述主语不清且有明显卡顿。",
+      "script_spans": [
+        "所以光伏叫绿色，也得有人善后，从生产到埋单都得管",
+        "正规拆运拦下大部分污染",
+        "鱼和庄稼喝水糟了",
+        "退役量一年比年多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有明确的正规回收建议，也提醒勿焚烧；但“大部分污染”“鱼和庄稼喝水糟了”因果和危害表述过满，需加条件限定。",
+      "script_spans": [
+        "你见旧板别混建筑垃圾，直接送正规回收点处理才稳妥，别省事烧掉。",
+        "正规拆运拦下大部分污染",
+        "附近水源被沾污，鱼和庄稼喝水糟了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-fe5d75c0ba7147a9bb28910e85a97c27",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ada62e58b4b74b28b6c7b9e1ba2861c8",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-c598ec9f5222418dade7b447de6cd8f8",
+  "run_id": "run-20260902T142442Z-d276961fce8f",
+  "trace_sha256": "2bece0d36430615f47d619ebdd495595c21aa228fe664128dc78420fa5c6ce23",
+  "created_at": "2026-09-03T11:52:16.476163Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应情感慰藉与伦理越界两面，覆盖逝者家属、平台和商家等关键对象，结论也回到逝者意愿。",
+      "script_spans": [
+        "这事儿不是单选，慰藉是真需求，越界也是真风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 709，目标为 700，偏差率为 1.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕慰藉需求、知情同意、数据挪用、商业滥用和内容标识展开，信息单元彼此推进，判断标准具体。",
+      "script_spans": [
+        "若训练数据来自公开视频，逝者从没点过同意，那复原就不是纪念，是挪用。",
+        "隐式标识埋进数据，显式让你先听见提醒。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头把宽慰与越界并置，中段从真实需求推进到同意、标识和商业化风险，结尾追问自然生长。",
+      "script_spans": [
+        "用AI复原逝者声音，你得到宽慰，却可能踩了伦理线。",
+        "办法不禁技术，只禁偷偷摸摸。",
+        "当音箱飘出“我爱你”，你听的是他，还是自己的投影？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体画面感和对话感较强，但术语与信息链叠在一起，技术段朗读略卡。",
+      "script_spans": [
+        "你以为在跟逝者聊，其实在跟算法聊。",
+        "有论文盯住癌症家属的接受度，但样本窄，别当通用答案。",
+        "国家网信办等四部门发了标识办法，要求合成音频在起头、末尾或中间加语音提示，说清是AI造的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“声音像根拐杖，虽假却有用”和“商家能卖拐杖，不能卖复活”形象克制，观点清晰且易复述。",
+      "script_spans": [
+        "声音像根拐杖，虽假却有用。",
+        "商家能卖拐杖，不能卖复活。",
+        "思念需要出口，但出口不能开在别人的身份上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先呈现慰藉需求，再转向伦理风险和治理办法，最后以逝者意愿收束，段落功能清楚，结论能回扣题目。",
+      "script_spans": [
+        "现实里怎么管？现在工具模拟逝者说话，早不是科幻。",
+        "技术能重录声线，重录不了那人留下的意愿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体呈现双重风险，未煽动或承诺；但“办法不禁技术，只禁偷偷摸摸”把规则概括过满，可能造成法律误解。",
+      "script_spans": [
+        "慰藉是真需求，越界也是真风险。",
+        "样本窄，别当通用答案。",
+        "办法不禁技术，只禁偷偷摸摸。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-475462925f2a40588015dc6b2477c5b2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9a23820c80a849b6a6c411e2ad481237",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

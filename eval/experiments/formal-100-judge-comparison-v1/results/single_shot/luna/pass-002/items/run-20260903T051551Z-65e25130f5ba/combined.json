@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-29df9557ef1d4dcaba680509524b5ed0",
+  "run_id": "run-20260903T051551Z-65e25130f5ba",
+  "trace_sha256": "fc52821dc49fb1587302c58734ffc22953ff0a67ceb2f961c008be06fce570aa",
+  "created_at": "2026-09-03T12:31:40.504086Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应算力需求升温与中小企业受益不足的矛盾，覆盖供给、服务和企业需求两侧。",
+      "script_spans": [
+        "大城市里的算力盛宴，为什么小公司连碗汤都喝不上？",
+        "中小企业根本不需要从头训模型，他们要的是现成接口、稳定延迟。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦交付层，分别拆解生态、区域、计费和服务模式，信息单元持续推进结论。",
+      "script_spans": [
+        "算力总量在膨胀，但红利卡在了“交付层”",
+        "他们真正渴望的是按调用量计费、随用随取的弹性"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头迅速抛出繁荣与小老板叹气的反差，中段以两次追问推进，结尾用“真传导”收束，余味自然。",
+      "script_spans": [
+        "AI芯片订单排到明年，新建算力中心天天见报，可我身边几个做智能应用的小老板都在叹气",
+        "别光数芯片销量，瞧谁把算力包成按次买单的便利服务，那才叫真传导。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有提问、转折和比喻，听感不差；但技术术语与并列解释偏密，几处长句需要重断，未到顺滑程度。",
+      "script_spans": [
+        "大城市里的算力盛宴，为什么小公司连碗汤都喝不上？",
+        "有人问，国家不是发文要普惠算力吗，专属算力池、算力银行都写进通知了，咋还没水到渠成？",
+        "但当下算力市场供给分散，不同芯片生态各自为政，模型想跨平台跑，迁移成本能吓退技术菜鸟。",
+        "他们真正渴望的是按调用量计费、随用随取的弹性，而不是囤一批用不着的卡时。",
+        "看看学术圈就明白，连科研院所的科学家都常抱怨摸不到高端芯片，产业界巨头和草根之间的落差只会更大。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“翻译层”“接水盆”等可复述画面，但“池在半空”等比喻连续叠加，个别搭配生硬，记忆点略显用力。",
+      "script_spans": [
+        "有芯片不代表有生产力，中间缺了翻译层。",
+        "算力繁荣是天上的云，中小企业需要的是屋檐下的接水盆。",
+        "资源就池在半空，漏不到地下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由现象提出问题，再解释需求错配、生态壁垒和服务不足，结尾自然回扣算力传导。",
+      "script_spans": [
+        "所以有芯片不代表有生产力，中间缺了翻译层。",
+        "供需两头都在犹豫，资源就池在半空，漏不到地下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，并有边界意识；但“根本不需要”等概括过满，易将复杂情况说成普遍结论。",
+      "script_spans": [
+        "效果不能打包票",
+        "中小企业根本不需要从头训模型"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-00763452cf714db592a9e7e87f02ed01",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-a2f91b21ee8947b987665eab8217d196",
+  "run_id": "run-20260903T051607Z-e5b78ef9f8e5",
+  "trace_sha256": "19f146ed9da9333289abd455f28546dd26ff6305172ae2ca36e6717d5e398943",
+  "created_at": "2026-09-03T14:08:18.138463Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即入题，判断句正面回应'更安全吗'，收益与风险两端并陈，结尾落到普通用户可执行动作。",
+      "script_spans": [
+        "无密码登录确实掐断了最泛滥的口令泄露和钓鱼陷阱，但账户安全只是换了战场，远不是终点",
+        "对个人来说，最直观是登录变轻、密码健忘"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 716，目标为 700，偏差率为 2.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从机制讲到风险挪移再到落地建议，信息单元各自推进，事实与类比相互支撑，无同义空转。",
+      "script_spans": [
+        "它靠设备内私钥完成签名，服务端只认签字不碰秘密",
+        "这种取舍像把家门锁换成指纹，却把备用钥匙藏回脚垫下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以悄悄接管账号制造悬念，中段连环设问与反转兑现钩子，结尾建议自然收束，无喊互动痕迹。",
+      "script_spans": [
+        "刷脸、指纹一键登录正悄悄接管你的账号",
+        "不过，这套机制就毫无缝隙？得看看风险被挪去了哪里。",
+        "别让最弱一环退回旧漏洞"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体可读，比喻生动；但'在你不觉中''推高使用'等处需临时换词，中段仍有书面压缩。",
+      "script_spans": [
+        "他们只是把工具箱换了个夹层",
+        "这种取舍像把家门锁换成指纹，却把备用钥匙藏回脚垫下",
+        "此外，设备若被恶意软件潜伏，也可能在你不觉中完成授权。",
+        "不少公司还把passkey摆成登录第一选项来推高使用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "工具箱换夹层、备用钥匙藏脚垫下等比喻准确服务理解，记忆点离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "他们只是把工具箱换了个夹层",
+        "这种取舍像把家门锁换成指纹，却把备用钥匙藏回脚垫下",
+        "服务端只认签字不碰秘密"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "两个设问完成段落过渡，关键因果均有解释桥，结尾自然回扣开头与题设，层层递进。",
+      "script_spans": [
+        "不过，这套机制就毫无缝隙？得看看风险被挪去了哪里。",
+        "无密码是扎实进步，但只是新跑道的发令枪，后续养护才是日常"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "判断克制、边界清楚：肯定进步同时点明恢复与同步风险，无绝对化安全承诺，建议稳妥可行。",
+      "script_spans": [
+        "无密码登录确实掐断了最泛滥的口令泄露和钓鱼陷阱，但账户安全只是换了战场，远不是终点",
+        "无密码是扎实进步，但只是新跑道的发令枪，后续养护才是日常"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-df13aee84e7144368baf8834934ef404",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-501c3ef4cf0e4cfd9746db65b19d84de",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

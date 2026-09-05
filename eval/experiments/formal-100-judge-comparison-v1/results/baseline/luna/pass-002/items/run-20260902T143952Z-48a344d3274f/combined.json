@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-b91fa121e63f4811a6437902e023d0a6",
+  "run_id": "run-20260902T143952Z-48a344d3274f",
+  "trace_sha256": "e1fe339d38893e8d345364a2c953c857ada0a0c798eb8e0768c386449a7200a0",
+  "created_at": "2026-09-03T12:18:35.004450Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正文既解释干旱如何抬高水电成本，也回应清洁、稳定与保供的冲突，落到多能互补、储能和现货市场。",
+      "script_spans": [
+        "能源转型正用多能互补加现货市场，学着不靠天吃饭。",
+        "清洁和稳定，两头要顾。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“看天吃饭”逐层解释水电减产、风光波动、煤电兜底及市场储能方案，信息单元丰富且持续推进。",
+      "script_spans": [
+        "先搞清干旱怎么抬成本。",
+        "把电源电网负荷储能捆一起。",
+        "市场把稀缺标价，逼系统灵活。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用水电减半与电价下跌制造反差，中段层层推进，结尾自然收束并留下余味。",
+      "script_spans": [
+        "西南干旱水电减半，多地电价却跌两成？",
+        "系统多几条腿，总比赌老天稳当。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答带来一定节奏，但多处搭配生硬、句尾悬空，朗读时需重断句或临时换词。",
+      "script_spans": [
+        "那是不是该关煤电，全换风光？不行，这步跨不得。",
+        "水汽不够，大坝没水落差，水轮转不动。",
+        "用户侧响应慢，习惯还没养成就。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“看天吃饭”和“系统多几条腿”把能源韧性说得具体，修辞适量，记忆点清楚。",
+      "script_spans": [
+        "老天不靠谱，系统得自己长骨头。",
+        "系统多几条腿，总比赌老天稳当。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "先拆解水电受旱减产，再比较风光与煤电，最后给出系统方案，主线完整；但关键调节机制表述不清，且有残句。",
+      "script_spans": [
+        "先搞清干旱怎么抬成本。",
+        "那有什么招缓一缓？国家推源网荷储，多能互补政策。",
+        "缺水时段电价贵，就压火电压新能源填。",
+        "用户侧响应慢，习惯还没养成就。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见煽动或危险建议，且承认转型需兼顾稳定；但“多地电价却跌两成”等具体结论缺少范围、时点和口径，易造成误导。",
+      "script_spans": [
+        "清洁和稳定，两头要顾。",
+        "西南干旱水电减半，多地电价却跌两成？"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e59e53e2d501470297fbee461cee0f6a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

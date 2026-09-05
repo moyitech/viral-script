@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-a1066de4d02e427aafb744643a2c5624",
+  "run_id": "run-20260902T142813Z-606980e4ac1e",
+  "trace_sha256": "a00c37bb4fdb4edae717bdc9415a3810923447db3917409cf9d1733cfaf6afc2",
+  "created_at": "2026-09-03T13:45:27.490628Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即正面回答二元题，纪律与个性两侧均覆盖，结尾回扣题设，人群对准家长与学生。",
+      "script_spans": [
+        "学校若要求统一发型，纪律教育不能忽视个性表达。",
+        "整齐和个性本来不必打架。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 302，目标为 280，偏差率为 7.86%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，底线规定、变相停课等事实逐层推进，观众能带走具体判断依据。",
+      "script_spans": [
+        "教育部规范只划了不烫不染不怪异的底线。",
+        "这种不让进其实算变相停课。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛强制剪发与进不了校门的冲突，中段以规范底线、变相停课持续兑现，结尾余味自然生长。",
+      "script_spans": [
+        "强制剪发进不了校门，纪律就能压过孩子自我吗？",
+        "之前有学校因发型不符把学生挡在校门外，这种不让进其实算变相停课",
+        "下回碰上硬性统一的要求，不妨想想，整齐和个性本来不必打架"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句例证好读上口，但“成长自然需要”“因发型不符”等压缩过紧，朗读至少两处需临时补词。",
+      "script_spans": [
+        "就好比有人爱留刘海有人习惯露额头，都是自主的小事",
+        "这是成长自然需要"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "刘海与露额头类比贴切易懂，管纪律不管脑袋、整齐个性不打架均可独立复述，修辞克制不炫技。",
+      "script_spans": [
+        "就好比有人爱留刘海有人习惯露额头，都是自主的小事",
+        "管纪律不等于管脑袋里的想法",
+        "整齐和个性本来不必打架"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线由规范推到权利较清晰；但“规矩反而更立得住”缺因果桥，“管脑袋里的想法”概念也有跳跃。",
+      "script_spans": [
+        "学校能提整洁要求，但没理由强制一模一样。",
+        "留些自我空间给孩子，班级的规矩反而更立得住。",
+        "咱们家长得看清，管纪律不等于管脑袋里的想法。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "承认学校可提整洁要求并援引规范底线，变相停课说法有据，未煽动对立、无夸大承诺，导向安全。",
+      "script_spans": [
+        "学校能提整洁要求，但没理由强制一模一样",
+        "教育部规范只划了不烫不染不怪异的底线",
+        "下回碰上硬性统一的要求，不妨想想，整齐和个性本来不必打架"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-dbec892b7b8e4ed9a38e7335d167bc91",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d8b7de5c794f4069a2bf3dda4daed26b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

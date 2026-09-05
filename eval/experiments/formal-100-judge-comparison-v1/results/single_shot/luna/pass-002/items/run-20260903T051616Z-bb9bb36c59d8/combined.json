@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-c7e7346315a342b3844556487dd90b7a",
+  "run_id": "run-20260903T051616Z-bb9bb36c59d8",
+  "trace_sha256": "603d9812ff19cc155f4d0c6dbe75bb5d8aa6cae81e9022515b0cc80a0defc2d7",
+  "created_at": "2026-09-03T12:33:55.598816Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应因材施教与拉大差距两端，兼顾学校、教师和家长，且给出明确判断抓手。",
+      "script_spans": [
+        "班里多了个AI助教，老师说是给每个孩子开小灶，家长群却炸了：我家娃会不会被算法越甩越远？",
+        "AI助教不是因材施教或放大差距的开关，而是考验学校底气的试纸"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕教育公平推进，设备、数据偏差、教师设计和家长观察均形成有效信息增量。",
+      "script_spans": [
+        "技术中性，但落地有偏向。",
+        "有的校把AI当电子黑板报摆着，有的拿它做动态分层作业，学生体验完全不同。",
+        "训练数据若多来自优势群体，推荐路径反而会带偏见"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用家长群炸锅制造冲突，中段持续推进因果与取舍，结尾自然落到孩子是否被接住。",
+      "script_spans": [
+        "班里多了个AI助教，老师说是给每个孩子开小灶，家长群却炸了",
+        "与其焦虑，不如多看孩子有没有被接住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答推进和短句停顿清楚，但“人才核心”“照丑”两处明显卡嘴，成稿仍需改词。",
+      "script_spans": [
+        "其实这种担心不多余，但也别急着站队",
+        "忘了分层教学的人才核心",
+        "用不好，它照丑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“放大镜”“望远镜”“试纸”都服务于观点，形象且克制；“用得好，它托底；用不好，它照丑”具备复述性。",
+      "script_spans": [
+        "它更像一面放大镜——能把好的教学支持放大，也能把原有的资源鸿沟放大。",
+        "AI助教不是因材施教或放大差距的开关，而是考验学校底气的试纸"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由冲突切入，先解释风险，再回应是否停用，随后落到实施方法与家长判断，结尾自然回扣题设。",
+      "script_spans": [
+        "为什么这么说？先看因果。",
+        "那是不是就该把AI请出教室？",
+        "当然不是，这里有个关键取舍。",
+        "所以，AI助教不是因材施教或放大差距的开关"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "整体采用条件化分析，兼顾技术收益与公平风险，无煽动、歧视或确定性承诺，价值导向稳妥。",
+      "script_spans": [
+        "其实这种担心不多余，但也别急着站队。",
+        "AI助教不是因材施教或放大差距的开关"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e419f494e7564a95896670285be6ee39",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

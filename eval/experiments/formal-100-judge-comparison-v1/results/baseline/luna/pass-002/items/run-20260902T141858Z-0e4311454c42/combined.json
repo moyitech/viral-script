@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-aa4e1167835547cfacc63a767f85b049",
+  "run_id": "run-20260902T141858Z-0e4311454c42",
+  "trace_sha256": "9fa68a49f3686f969d688064fc8605b4881ed4b593d7f9ee862737c5758463e4",
+  "created_at": "2026-09-03T12:15:55.647591Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答算法能否识别潜力，兼顾企业效率与求职者风险，核心冲突和人群均覆盖。",
+      "script_spans": [
+        "算法读不懂潜力全貌，先帮公司筛一遍。",
+        "企业为什么用？因为它快，还显得挺客观。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中推进，既交代算法的评估方式和企业动机，也提供求职者应对方法，信息增量较充分。",
+      "script_spans": [
+        "它听你说话，只抓词和语气。",
+        "弗吉尼亚理工的研究提到，AI帮人事先筛人能省下沟通成本。",
+        "平时多攒些实在案例，机器才认你的价值。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“秒删潜力”制造利益冲突，中段持续补充算法局限与企业动机，结尾追问也自然承接。",
+      "script_spans": [
+        "AI面试官秒删你的潜力，企业省了钱却错失人才。",
+        "你要效率，就可能牺牲掉识人的深度。",
+        "下次面对屏幕，你是在展示自己，还是猜它要啥？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和设问带来节奏感，但“练就对着机器”等句式明显失稳，整体仍需重写两处。",
+      "script_spans": [
+        "问题出在哪儿？它听你说话，只抓词和语气。",
+        "你得练就对着机器，也能讲清自己的真本事。",
+        "算法读不懂潜力全貌，先帮公司筛一遍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“潜力不是面试几分钟的表演”和“技术跑得快，用人却变简单粗暴”准确凝练，画面清楚且便于复述。",
+      "script_spans": [
+        "潜力不是面试几分钟的表演。",
+        "技术跑得快，用人却变简单粗暴。",
+        "招聘成了人和模型的暗暗较量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从评估方式到企业取舍再到求职应对，段落递进清楚，结尾回扣效率与识人冲突。",
+      "script_spans": [
+        "可它把潜力压成评分，容易漏掉慢热的人。",
+        "你要效率，就可能牺牲掉识人的深度。",
+        "我们省了见面时间，却可能丢了识人的耐心和眼光。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "没有明显违规或煽动内容，但“秒删”“只抓”等绝对化表述和单一归因，可能误导观众理解AI面试。",
+      "script_spans": [
+        "机器用老数据猜你未来，这本身就是一个取舍。",
+        "AI面试官秒删你的潜力，企业省了钱却错失人才。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-33747a01bbd64caf9b3d6afa0d84b643",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

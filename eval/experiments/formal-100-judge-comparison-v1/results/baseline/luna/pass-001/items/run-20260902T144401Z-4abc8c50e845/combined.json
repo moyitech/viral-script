@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-37892843c22f4ebca0658b3a5a8d81e9",
+  "run_id": "run-20260902T144401Z-4abc8c50e845",
+  "trace_sha256": "dcb7d025b33c6bd5551158358c58ec57ff0ba7eabf1639aef8625f01a47dbe82",
+  "created_at": "2026-09-03T11:44:54.405003Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答竞争是否加剧，覆盖企业、市场、品类差异，并兼顾短期与长期。",
+      "script_spans": [
+        "出口企业转内销，低价竞争未必就更激烈，但个别品类有压力。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 286，目标为 280，偏差率为 2.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，提供退税、渠道、品质和清库存等信息，但核心判断仍多靠推断，缺少对竞争强弱的进一步论证。",
+      "script_spans": [
+        "建渠道、做品质，花心思留住人，不止比谁标价低。",
+        "是想填自家短缺的坑，不是把便宜货往死里砸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用价格反差抛题，中段持续补充原因与转向逻辑，结尾给出消费提醒并自然追问，留有余味。",
+      "script_spans": [
+        "外贸货涌进国内，价格战却没更凶。",
+        "你逛外贸专区别只盯低价，看清售后再出手。",
+        "等外贸厂真在国内扎了根，便宜还能算唯一招牌吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、语气活，朗读节奏不差；但“买家人分两头走”等措辞不顺，至少两处需要换词。",
+      "script_spans": [
+        "你也许纳闷，为啥不是更卷？",
+        "回头铺内销",
+        "买家人分两头走"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“内销渠道一直饿着”等比喻把渠道缺口说活，配合对照表达，既帮助理解，也留下了可复述的判断。",
+      "script_spans": [
+        "其实内销渠道一直饿着。",
+        "是想填自家短缺的坑，不是把便宜货往死里砸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构有钩子、解释、例外、建议和回扣，但从回流动机直接推出价格战不加剧，因果桥不足。",
+      "script_spans": [
+        "短期清库存，价钱可能便宜点。",
+        "如今外面风浪大，他们回头铺内销。是想填自家短缺的坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有“未必”和“个别品类”作边界，也提醒核查看售后；但“价格战却没更凶”等判断过于笼统，容易弱化不同品类的竞争风险。",
+      "script_spans": [
+        "低价竞争未必就更激烈，但个别品类有压力",
+        "价格战却没更凶"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-1926f722571a4f5786a82f903f64f831",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-5f2c1967cefb4aa38273c7d70fb57e4e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

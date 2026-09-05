@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-1043dcdacf3841a8b7463abfea6ae5e2",
+  "run_id": "run-20260903T051542Z-8f9654328e9b",
+  "trace_sha256": "83e82b6a66e9a98aaea70226c59628c3b301cbce6d9a47ccbfd9383b12030e43",
+  "created_at": "2026-09-03T12:32:09.916737Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应安全与效率冲突，覆盖居民、骑手和物业，并给出兼顾方案。",
+      "script_spans": [
+        "居民图个安静安全怕生人乱窜，骑手愁超时罚钱白跑腿",
+        "别用一刀切禁止，用边界停靠加内部指引就能两头顾"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，围绕停靠、指引和休息点层层补充，既有可执行做法，也有明确行动建议。",
+      "script_spans": [
+        "不少小区在大门外划出专属停靠区，骑手停好车步行进楼",
+        "还有些社区把楼栋标号做得醒目，配上遮阴休息点，让骑手熟悉内部路线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出门禁与超时的双重冲突，中段给出具体方案，结尾落到可执行倡议，推进和收束自然。",
+      "script_spans": [
+        "小区门禁把骑手电动车挡在外头，居民图个安静安全怕生人乱窜，骑手愁超时罚钱白跑腿，这矛盾真没解？",
+        "提醒一句，如果你家小区正为此吵，先推动画好外接停靠线和指路牌，比单纯拦人更聪明。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有问答钩子和生活化表达，整体可读；但多处长句、治理化词组及“推动画好”这类搭配，离顺口口播还有距离。",
+      "script_spans": [
+        "这矛盾真没解？错，两套需求能兼顾。",
+        "边界停靠加内部指引",
+        "先推动画好外接停靠线和指路牌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一刀切”与“两头顾”形成鲜明对照，“最后一百米从慌乱变有序”具体又好复述，修辞克制。",
+      "script_spans": [
+        "别用一刀切禁止，用边界停靠加内部指引就能两头顾。",
+        "最后一百米从慌乱变有序。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、方案、举措和落点完整，主线清楚；但步行进楼直接推出路径更短，因果桥不足。",
+      "script_spans": [
+        "核心结论是：别用一刀切禁止，用边界停靠加内部指引就能两头顾",
+        "骑手停好车步行进楼，里面少了随意穿行风险，老人孩子散步也安心，取餐路径反而更短"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未涉及敏感、煽动或危险内容，但“就能两头顾”“路径反而更短”把个别做法说成普遍效果，需加条件限定。",
+      "script_spans": [
+        "别用一刀切禁止",
+        "就能两头顾",
+        "取餐路径反而更短"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d47c29c1a4e8421da7100f566d49ca5a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

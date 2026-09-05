@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-a0536b59be1949d18c60f7021172a63c",
+  "run_id": "run-20260902T142205Z-a22930c7d55b",
+  "trace_sha256": "211a46ded163fae410c06a0d0e2f8a1b65f2857b030f367de0d7603155c874c3",
+  "created_at": "2026-09-03T13:45:22.536414Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答吞不吞，两侧都覆盖，价差与持有期汇率双机制齐备，普通人痛点落在验算与试水。",
+      "script_spans": [
+        "汇率波动到底吞不吞收益？答案不单边。可能吞，也可能吐出来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 438，目标为 450，偏差率为 2.67%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题不漂移，行情数据、双向情景、价差验算、小额试水各推进一步，数据与背景证据相符。",
+      "script_spans": [
+        "8月报价摸到6.7480，是2023年来高位",
+        "先问银行现汇买卖价多少，减掉点差才是真钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即点出利息被汇率吞掉的具体冲突，中段用数据与两重转折兑现钩子，结尾余味由正文自然生长，无生硬互动。",
+      "script_spans": [
+        "你拿人民币买境外理财的利息，可能喂了汇率",
+        "可能吞，也可能吐出来",
+        "那点利差，经不起来回换洗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句利落、对话感强，唯价差句与数据句需临时断句换词，未到脱口而出。",
+      "script_spans": [
+        "可能吞，也可能吐出来。",
+        "银行换汇买入价卖出价有距离",
+        "近期离岸人民币兑美元在6.75附近走升"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "喂汇率、削一层毛等比喻服务理解且点到为止，给面子、经不起换洗离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "先琢磨钱回来那天汇率给不给面子",
+        "银行现汇买卖价差，有时候比宣传利息还阔，悄无声息磨掉利润",
+        "那点利差，经不起来回换洗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "问题—机制—行情—情景—操作—结论环环相扣，因果桥齐全，结尾回扣开头与题设。",
+      "script_spans": [
+        "可如果持有期人民币继续走强，同样美元结汇成人民币就变少，利息可能被吃光。",
+        "所以挑跨境理财，别只盯境外年化。先琢磨钱回来那天汇率给不给面子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "收益影响留双边可能，明示没人保稳赚并建议闲钱小额试水，无夸大、无承诺，汇率数据有据，审核安全。",
+      "script_spans": [
+        "可能吞，也可能吐出来",
+        "普通人哪能天天盯盘踩点，市场波动没人保你稳赚",
+        "用闲钱小额度试水更稳"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-0f010035291e451cb3c0a8af0b112c3a",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-0dc6d2e8a6424bcc846917a23cd67af7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

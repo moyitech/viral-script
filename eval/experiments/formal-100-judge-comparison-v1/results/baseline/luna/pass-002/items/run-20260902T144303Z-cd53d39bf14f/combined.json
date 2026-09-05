@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-c3181573380f4f0fae205566c302af30",
+  "run_id": "run-20260902T144303Z-cd53d39bf14f",
+  "trace_sha256": "6e09011906330375786780fc6ca95fbb1092266f2afe0c819f83dc9b99f8d12d",
+  "created_at": "2026-09-03T12:17:47.973264Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇提出订单回暖与不招人的矛盾，后文同时解释需求不稳和用工风险，回答完整。",
+      "script_spans": [
+        "订单的确在回暖，可企业不敢马上招正式工，怕背长债。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "指标反差、行业分化、用工成本和替代方案层层推进，信息密度足且提供了判断方法。",
+      "script_spans": [
+        "看数据，八月新订单指数过了五十，比上月升两点一，需求暖了。",
+        "老板宁可老班底加班，或雇临时工顶一阵，灵活些。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直抛订单回暖与不招人的反差，中段用数据和用工逻辑推进，结尾以冷暖温差自然留下追问。",
+      "script_spans": [
+        "你厂里接单多了，老板却死活不肯招人",
+        "订单像早春的风，厂里却还裹着厚棉袄不肯脱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问句较多，整体有交流感；但“制造大指数”“数数……变化”搭配拗口，需临时改词。",
+      "script_spans": [
+        "你厂里接单多了，老板却死活不肯招人，犯嘀咕不？",
+        "整体制造大指数四十九点八，还在线下",
+        "也数数每月招工人数变化"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“怕背长债”和“早春的风、厚棉袄”形成易复述的形象对照，修辞服务解释，没有连续堆砌。",
+      "script_spans": [
+        "怕背长债",
+        "订单像早春的风，厂里却还裹着厚棉袄不肯脱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先用数据制造反差，再解释用工风险，最后回到观察指标，因果与结尾回扣自然。",
+      "script_spans": [
+        "为啥怕背长债？正式工招进门，合同一签就得管社保，像长期饭票。",
+        "订单若再缩水，辞退要赔钱走流程也费神。老板宁可老班底加班，或雇临时工顶一阵，灵活些。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体引用指标较克制，但将社保、辞退成本和企业选择说得过于绝对，可能造成劳动法与因果判断误导。",
+      "script_spans": [
+        "整体制造大指数四十九点八，还在线下，回暖不扎实",
+        "正式工招进门，合同一签就得管社保，像长期饭票。",
+        "订单若再缩水，辞退要赔钱走流程也费神。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1ff2f9748e384700b3ef846fcfead02b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

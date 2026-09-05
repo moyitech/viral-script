@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-37f1e81603f244358d256bfb114a0109",
+  "run_id": "run-20260902T142516Z-48d670671e0e",
+  "trace_sha256": "cbc43fa3b12971ab627fe508416b92c7bbb6f6e808375fdb53f5c74bf42f7dd9",
+  "created_at": "2026-09-03T11:45:10.434535Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直答安静管理是否有利，正文同时覆盖作业挤占、课间活动价值及家长关注方式，核心对象与冲突均命中。",
+      "script_spans": [
+        "这种安静管理真不利于学生。",
+        "如果学校拿练习填掉十分钟，回家不妨问孩子今天动没动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 298，目标为 280，偏差率为 6.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策要求、活动收益、被挤占后的身心感受和家长行动建议层层补充，主题集中，信息单元较完整。",
+      "script_spans": [
+        "按规定课间休息不能占用，学生正当游戏出教室不该被约束",
+        "它能帮孩子调情绪、放松眼睛，也能增强体质防控近视。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“被迫坐着写作业”制造冲突，中段补充规定、影响与严查信息，结尾落到跑跳并留下余味。",
+      "script_spans": [
+        "下课铃响了，孩子却被迫坐着写作业？",
+        "其实这类占用课间行为正被严查。",
+        "咱们当年的跑跳，不该成稀罕事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和动作表达较多，整体能读通；但“憋座位上”等表达让朗读需要临时补词，末段气口也偏长。",
+      "script_spans": [
+        "每节课间去外面走几步伸伸腿",
+        "作业一挤占娃只能憋座位上",
+        "回家不妨问孩子今天动没动，看看他能不能出去喘口气，也许比多写两页题更养住精气神"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“视线发木”“脑子发紧”把不适感说得具体，“跑跳不该成稀罕事”自然收束，形象且便于复述。",
+      "script_spans": [
+        "坐一上午脑子本就发紧",
+        "视线发木心里烦",
+        "咱们当年的跑跳，不该成稀罕事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头立论后依次展开规则、益处、负面后果和行动建议，整体顺畅；但“换不来更好成绩”把课间占用与成绩直接相连，因果桥不足。",
+      "script_spans": [
+        "按规定课间休息不能占用，学生正当游戏出教室不该被约束，每天还有统一大课间让娃动一动。",
+        "换不来更好成绩。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导正常课间活动，未见明显违规；但把安静管理笼统判定为不利，称课间绝不能占用，边界略显绝对。",
+      "script_spans": [
+        "回家不妨问孩子今天动没动，看看他能不能出去喘口气",
+        "这种安静管理真不利于学生。",
+        "按规定课间休息不能占用"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8fb15241861d4e0f8807749c0b071a78",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-88cf8df0bcf74bf0b262df5a4fc78852",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

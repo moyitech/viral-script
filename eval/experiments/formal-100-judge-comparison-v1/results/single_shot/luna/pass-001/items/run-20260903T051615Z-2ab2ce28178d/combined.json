@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-083a093aa17b408d8435d7faf69a06b6",
+  "run_id": "run-20260903T051615Z-2ab2ce28178d",
+  "trace_sha256": "d2cf25c706353ae6e5cee51cffc6127ff4bed94736e7cf7da9956e876598b13e",
+  "created_at": "2026-09-03T11:57:17.396210Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇提出供需反差，主体解释传导受阻原因，结尾落到中小企业用算建议，完整回应题设。",
+      "script_spans": [
+        "算力繁荣还停留在“堆硬件”的阶段，没真正流到中小企业手里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 455，目标为 450，偏差率为 1.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息单元推进清楚：架构、供给、服务模式和政策节点相互支撑，既解释原因，也给出可执行判断。",
+      "script_spans": [
+        "一边是不同厂商的芯片架构封闭，模型搬个家成本高得吓人",
+        "竞争焦点正转向谁能把卡变成便宜稳定的服务，说明规模不等于可得性。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“暴涨却排队”制造反差，中段层层解释卡点，结尾落到创业者行动，推进和收束都自然。",
+      "script_spans": [
+        "芯片订单暴涨，算力中心遍地开花，可不少小老板想跑个AI模型，照样得排队等卡。",
+        "当算力像水电一样随手可得，小公司才能真正赶上红利。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答和对比，基本能读通；但两处短语不自然，朗读时需要临时改词。",
+      "script_spans": [
+        "为什么卡在半路？",
+        "别盲目自购设备，先摸清按需取用的渠道",
+        "需求热和获得感冷形成了反差",
+        "对普通人里的创业者来说"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“缺了一座桥”把供需断点说具体，“像水电一样”形成清晰愿景，修辞克制且有可复述记忆点。",
+      "script_spans": [
+        "算力供给和中小企业需求之间缺了一座桥",
+        "当算力像水电一样随手可得，小公司才能真正赶上红利。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先用反差设问，再拆解供需两端障碍，最后转向创业者行动建议，结论能回扣可得性主题。",
+      "script_spans": [
+        "为什么卡在半路？最核心的症结是算力供给和中小企业需求之间缺了一座桥。",
+        "当算力像水电一样随手可得，小公司才能真正赶上红利。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不涉及违规，且给出理性用算建议；但“就得重来”、2028年建成等表述过于绝对，可能造成事实和预期误导。",
+      "script_spans": [
+        "别盲目自购设备，先摸清按需取用的渠道。",
+        "训练好的东西换环境就得重来",
+        "这套普惠体系要到2028年底才基本建成"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b0975d6071ef49b89bcf812899ea5bce",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6e72ddd0e2504243ac16d6d3d740af62",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

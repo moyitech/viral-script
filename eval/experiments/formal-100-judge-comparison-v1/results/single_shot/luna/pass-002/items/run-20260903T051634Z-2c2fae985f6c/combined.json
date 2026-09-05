@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-fb9b5786b2cd4f128fa63a65b73ab48c",
+  "run_id": "run-20260903T051634Z-2c2fae985f6c",
+  "trace_sha256": "1e40edbfd98949564661c887d83573314d37b798e41ba6ed0ce004ceb2ca7210",
+  "created_at": "2026-09-03T12:32:01.933258Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答海水升温与餐桌价格的关系，并区分短期总价与品类、区域分化，核心人群对号。",
+      "script_spans": [
+        "海水升温确确实实在蚕食近海养殖的根基，但你我碗里的海鲜不会简单普涨"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕升温如何传导到价格，涵盖供给替代、提前出塘、保险、品类分化和能耗等多层信息，结论有增量。",
+      "script_spans": [
+        "它被产量惯性、品类替代和风控手段三股力道拽着走，短期甚至可能出现跌价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用海水升温与鱼苗翻肚皮制造冲突，中段持续追问和转折，结尾落到具体消费选择，推进完整。",
+      "script_spans": [
+        "海水悄悄烫得不像话，近海养殖户盯着网箱里翻肚皮的鱼苗直叹气",
+        "既然天时不帮忙，为什么终端没传出慌张的涨价声？",
+        "你真正要做的，是留意常买的那款地标海鲜，会不会悄悄跻身高风险轻奢品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "转折和设问有对话感，但长句与抽象词堆叠，朗读仍需重断句。",
+      "script_spans": [
+        "不过托底网兜得住散户，兜不住你舌尖上的偏好，这怎么讲？",
+        "若升温推高溶氧设备和冷却能耗，长线成本迟早渗进零售"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“托底网兜得住散户，兜不住偏好”形象解释分化，结尾“高风险轻奢品”留下清晰且可复述的记忆点。",
+      "script_spans": [
+        "托底网兜得住散户，兜不住你舌尖上的偏好，这怎么讲？",
+        "会不会悄悄跻身高风险轻奢品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，但提前出塘解释年度跌价、保险影响终端价格等因果桥接不足，个别比喻也使转折略显生硬。",
+      "script_spans": [
+        "落到真实餐桌，价格会明显分化",
+        "去年海水产品批发均价反而小幅下滑，因为养殖户怕热浪封路，提前出塘抛售，短期供给不降反增"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，且用条件句区分价格分化；但保险保障、补足缺口和局部断供等表述偏满，需补充限定。",
+      "script_spans": [
+        "海鲜不会简单普涨",
+        "当前是结构性紧缺而非全面昂贵",
+        "淡水塘和深远海网箱把缺口补了七八成",
+        "虾蟹户交很少保费就能锁住部分损失"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c632574c0e65439a989065428801a6d9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-3c7aebf1707c4379b0571c93472c6319",
+  "run_id": "run-20260902T144431Z-644af2d006b2",
+  "trace_sha256": "bcd8ca6371e8c75a20a5da08d2728b0dbee579c6e1e4a56ed180ea3061e49bd8",
+  "created_at": "2026-09-03T14:26:07.230266Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇抛题后，正文以增速数据与标准缺口正面作答，跟进与滞后两侧兼顾，“你家附近”落到普通观众。",
+      "script_spans": [
+        "那标准管不管用？",
+        "可这规矩只罩住建设段。",
+        "等标准跑赢事故，才敢把电站建到楼底下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移，装机、政策、缺口、个人风险逐层推进，数据与引用背景相符，无编造，增量具体。",
+      "script_spans": [
+        "到6月底，全国新型储能装机一点五三亿千瓦，比去年多六成。",
+        "安全评价导则还在编写，投运后定期检查没全铺开，像体检手册没发到手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差抓人，中段数据、设问与转折持续兑现钩子，结尾条件句自然留余味。",
+      "script_spans": [
+        "电池标准跟得上扩产，火险却没断过",
+        "那标准管不管用？",
+        "你家附近可能摆集装箱电池房，平时嗡嗡响别当没听见，它离你车位没几米",
+        "等标准跑赢事故，才敢把电站建到楼底下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口密集，无超长停顿单元，数据已转口播读法，比喻承接自然，全篇无需改词即可照读。",
+      "script_spans": [
+        "储能项目真在猛建。",
+        "新项目按月往外冒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "出生证、体检手册两个比喻贴切助解，结尾金句离文可复述，无堆砌炫技。",
+      "script_spans": [
+        "就像给电站办出生证",
+        "但安全评价导则还在编写，投运后定期检查没全铺开，像体检手册没发到手",
+        "等标准跑赢事故，才敢把电站建到楼底下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承上、转折递进、落点回个人，每段功能清晰，结尾“跑赢事故”呼应开头火险悬念，因果桥完整。",
+      "script_spans": [
+        "项目跑在规则前头不稀奇。",
+        "纸面标准从发文到现场执行要熬时间，建设方赶着交差。",
+        "等标准跑赢事故，才敢把电站建到楼底下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "风险提示带限定词，政策进展与缺口并陈，无夸大承诺或煽动对立，边界清楚，导向安全。",
+      "script_spans": [
+        "你家附近可能摆集装箱电池房",
+        "标准替你兜底，但年深日久老化靠定期查，不等于零风险。",
+        "安全评价导则还在编写，投运后定期检查没全铺开"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-02687a0b47a94fd588af9b4b66dad132",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

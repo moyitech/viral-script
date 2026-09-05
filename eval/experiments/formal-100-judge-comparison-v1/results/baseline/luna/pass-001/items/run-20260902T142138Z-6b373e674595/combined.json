@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-36efea2363ce4646916909e5f3cfafc4",
+  "run_id": "run-20260902T142138Z-6b373e674595",
+  "trace_sha256": "8ffbeb6d735b938dd33d4a101112a10964583bce5023a2247c7cf4e75bd2d1b5",
+  "created_at": "2026-09-03T11:43:56.268789Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答汇率与点差如何侵蚀收益，并覆盖购汇、结汇和普通人决策建议，切题完整。",
+      "script_spans": [
+        "汇率波动会不会吞掉收益？可能会，但普通人常先被点差啃掉一层。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 303，目标为 280，偏差率为 8.21%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从买入卖出价、往返点差到人民币走强，层层解释成本来源，并给出核算落袋收益的判断方法。",
+      "script_spans": [
+        "银行挂出卖出价，一般比你搜的中间价高些。这多付的部分，就是换汇点差的硬成本。",
+        "把这笔摩擦扣掉，看真实能落袋多少利润。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出收益被差价吞掉的冲突，中段递进解释，结尾追问自然收束并留有余味。",
+      "script_spans": [
+        "你换汇买境外理财，赚的息可能不够填换汇差价。",
+        "如果回头钱没多几块，这趟忙活图什么？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚、可直接朗读，但“近期它显示偏强走势”等处不够自然，临场会想换词。",
+      "script_spans": [
+        "咱们拿人民币去买外币理财，得先购汇。",
+        "近期它显示偏强走势。",
+        "把这笔摩擦扣掉，看真实能落袋多少利润。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“点差啃掉一层”“看真实能落袋多少利润”形象又实用，修辞克制，能留下复述点。",
+      "script_spans": [
+        "普通人常先被点差啃掉一层。",
+        "把这笔摩擦扣掉，看真实能落袋多少利润。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "购汇、持有、结汇到建议的顺序清楚，但个别句式生硬，结尾“更保底”与前文的因果衔接也不够严密。",
+      "script_spans": [
+        "等产品到期赚到息，你再把外币结汇回。银行买入价又压低，一进一出差掉一块。",
+        "近期它显示偏强走势。",
+        "看清来回成本，比光瞄宣传数字更保底。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能提醒观众关注换汇成本，但“更保底”“明显少一截”等表述偏绝对，未限定币种、期限和行情，可能造成金融判断误导。",
+      "script_spans": [
+        "汇率波动会不会吞掉收益？可能会",
+        "先问经理换汇价差多少",
+        "结汇价跟着往下滑，同样美元本金，换回本币明显少一截",
+        "看清来回成本，比光瞄宣传数字更保底"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-74f7c4da6a1b469a93b3e76cc8e58b3e",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f80c416ea7b844ab895c90060e48fecf",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

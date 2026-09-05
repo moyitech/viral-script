@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-67b5e0eec15046389b768f3c8a4d2f9d",
+  "run_id": "run-20260902T141939Z-9f4fcc285933",
+  "trace_sha256": "04e935d1bd5675d340431f78aa4a394490fea8aa2994b0ed1f31ef92cf26377a",
+  "created_at": "2026-09-03T12:15:17.285750Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答现在锁定是否靠谱，并明确区分合同确定收益与浮动分红，命中普通观众的决策痛点。",
+      "script_spans": [
+        "现在锁定长期回报靠谱，但只限合同里写死收益的普通固收产品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕确定收益与分红风险，既给出实现率和演示上限变化，也提供查现金价值、算回本期的方法。",
+      "script_spans": [
+        "过去行业平均实现率曾掉到55%，保险公司投资差时红利可能说没就没",
+        "你买前慢些翻翻现金价值页，拿笔算算回本年第几年",
+        "今年分红演示天花板也降了，高预期更薄"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出收益下行与锁定回报的冲突，中段用实现率和购买动作推进，结尾回到合同核验，收束自然。",
+      "script_spans": [
+        "收益往下掉，现在锁死长期回报靠谱吗？",
+        "可分红险那边呢？过去行业平均实现率曾掉到55%"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答和比喻，能顺着听懂，但多处词序生硬，需重断句或临时改词。",
+      "script_spans": [
+        "就像欠条到期得认账",
+        "到期一天不少确定给",
+        "拿笔算算回本年第几年",
+        "合同里那行写死的数额，才知你这波锁得稳不稳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“就像欠条到期得认账”把合同确定性讲得直观；“漂亮演示利益”与“确定数字”形成可复述对照，克制不油。",
+      "script_spans": [
+        "就像欠条到期得认账",
+        "眼睛盯着那串确定数字而非漂亮演示利益"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，结论、对比和建议顺序合理；但长句偏密，“到期一天不少确定给”过满，“才知锁得稳不稳”也简化了判断。",
+      "script_spans": [
+        "可分红险那边呢？过去行业平均实现率曾掉到55%",
+        "你买前慢些翻翻现金价值页，拿笔算算回本年第几年",
+        "到期一天不少确定给",
+        "才知你这波锁得稳不稳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能提醒看现金价值、区分保证与演示利益；但“最稳”“到期一天不少”等绝对表述，仍有金融误导风险。",
+      "script_spans": [
+        "你买前慢些翻翻现金价值页，拿笔算算回本年第几年",
+        "到期一天不少确定给",
+        "这是眼下最稳的选法"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-42725879db4941a794d5c0f706852109",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

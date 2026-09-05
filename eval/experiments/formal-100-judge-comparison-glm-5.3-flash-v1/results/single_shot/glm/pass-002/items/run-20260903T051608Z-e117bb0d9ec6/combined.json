@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-1eb5a3b239c54f538fef086e276b4590",
+  "run_id": "run-20260903T051608Z-e117bb0d9ec6",
+  "trace_sha256": "34a7a2697f1a82de9cb1622808ac36b14925264fac6563383539cf82f3f97d56",
+  "created_at": "2026-09-03T15:27:45.169794Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即回应“免费搬走”疑问，兼顾“非盗窃”与“被截流”两侧，落点对准内容站点人群。",
+      "script_spans": [
+        "你怕生成式搜索把网站内容白嫖走？不至于，但原站的用户访问正被结果页提前截走。这是截流，不是盗窃。",
+        "让自己成为AI答案里被标注引用的信源，比死磕点击率更能守住流量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中在截流与盗窃之辨，重组附链接、习惯迁移、做被引信源层层推进，与外部证据相符。",
+      "script_spans": [
+        "生成式摘要会拆开多个网页的信息，重组成综合回答，通常仍附上来源链接",
+        "这不是一次算法波动，而是习惯迁移"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字内以疑问加反转立住冲突，中段用“截流不是盗窃”“习惯迁移”层层兑现钩子，结尾建议由正文自然长出，无硬喊互动。",
+      "script_spans": [
+        "你怕生成式搜索把网站内容白嫖走？不至于，但原站的用户访问正被结果页提前截走。",
+        "真正的冲突在于：当用户查定义、比产品、看步骤时，答案已经摆在搜索框下方",
+        "这不是一次算法波动，而是习惯迁移。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音停顿清楚，'白嫖''死磕'等词接地气，全篇按稿录制基本无需临时改词。",
+      "script_spans": [
+        "你怕生成式搜索把网站内容白嫖走？不至于",
+        "当用户查定义、比产品、看步骤时，答案已经摆在搜索框下方，他很可能不再点开你的页面"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "白嫖、截流贴切服务论点，“这是截流，不是盗窃”与“不是一次算法波动，而是习惯迁移”均可复述，修辞克制。",
+      "script_spans": [
+        "这是截流，不是盗窃。",
+        "不是一次算法波动，而是习惯迁移。",
+        "比死磕点击率更能守住流量。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从设疑到区分、再析冲突、后给对策，因果桥清晰，结尾回扣开头设问，概念范围一致。",
+      "script_spans": [
+        "真正的冲突在于：当用户查定义、比产品、看步骤时，答案已经摆在搜索框下方，他很可能不再点开你的页面。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "用“截流不是盗窃”区分概念，避免煽动对立；“通常”“很可能”等限定留有余地，建议属策略探讨而非夸大承诺，无法律误导风险。",
+      "script_spans": [
+        "这是截流，不是盗窃。",
+        "通常仍附上来源链接，谈不上是无声无息的剽窃",
+        "不少内容站点发现搜索来的访客持续变少"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c9ba4892491d4ea2a346d23a58be0205",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

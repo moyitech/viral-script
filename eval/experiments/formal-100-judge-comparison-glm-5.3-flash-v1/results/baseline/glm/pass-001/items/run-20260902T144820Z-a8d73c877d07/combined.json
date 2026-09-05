@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-be31d33747f84764a4a7b581de03bce3",
+  "run_id": "run-20260902T144820Z-a8d73c877d07",
+  "trace_sha256": "5dbd55ef50301a6fa769dcc395c764426e93eef098ee4fdbbea25eeec84e919b",
+  "created_at": "2026-09-03T13:48:23.374882Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点明电与地为何成筹码，两侧并重展开，结尾落到普通用户，核心人群与题设均命中。",
+      "script_spans": [
+        "建数据中心现在拼的不是芯片，是电和地。",
+        "落到普通人身上会怎样？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 759，目标为 700，偏差率为 8.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，建楼快接电慢、指标是门票等单元层层推进，关键事实与引用背景相符，无编造。",
+      "script_spans": [
+        "机房大楼差不多一年就能盖好，电要接进电网却得熬更久。",
+        "能耗指标像一张门票，普通机房拿不到就接不住AI需求。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句直给反差钩子，中段电与地层层抛新信息并转折，结尾提问从农田电站落点自然长出，三段均不弱。",
+      "script_spans": [
+        "建数据中心现在拼的不是芯片，是电和地。",
+        "早些年大家愁买不到GPU，如今愁的是变电站接不上、地块批不下。",
+        "下次看到算力中心，你会先问它耗了哪的电、占了哪的地吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句与设问撑起节奏，中段口语贯穿，重音停顿清楚，照读无需改词。",
+      "script_spans": [
+        "没有指标，空地白给也没用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻贴切克制，吃电像小城镇、指标像门票都服务理解，云建在农田电站一句离开原文仍可复述。",
+      "script_spans": [
+        "可它吃电像个小城镇。",
+        "我们用的云，多半建在别人的农田和电站上。",
+        "电可以离网自建，地却得落地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "电与地两段各有因果桥，反差句推进有力，结尾问句自然回扣开头与题设，主线清晰。",
+      "script_spans": [
+        "那地呢？也不是随便租个仓库就能塞进服务器。",
+        "电不够，大厂还能自己盖电厂救急。地不让用，却很难绕开。",
+        "下次看到算力中心，你会先问它耗了哪的电、占了哪的地吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制无违规，多用“可能”“常常”留余地；但“根本拿不到”“多半建在农田”属绝对化归因，缺边界易误导，改写后更稳妥。",
+      "script_spans": [
+        "早些年大家愁买不到GPU，如今愁的是变电站接不上、地块批不下。",
+        "以后算力成本里，电费和地价占比可能会悄悄爬升。",
+        "中小玩家根本拿不到配套指标",
+        "我们用的云，多半建在别人的农田和电站上"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-50445d16e159491d9f6b9b64b856f064",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b44e3dde03494c40b844a5b2c48e8218",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

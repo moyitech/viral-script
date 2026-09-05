@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-6610c465d7b54965a318e2648cdf1d8c",
+  "run_id": "run-20260902T144735Z-605f3b41eb90",
+  "trace_sha256": "98f4d03671001d57a803285d0b30b2b1a02d6219dc613077b98d7f5f9d6678d9",
+  "created_at": "2026-09-03T13:50:13.005528Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即并置安心与浪费风险两侧，结尾以少而精正面作答，孩子发烧场景贴合囤药家庭。",
+      "script_spans": [
+        "囤药给了安心，却也真变成浪费和风险",
+        "真到孩子半夜发烧，手边有盒没过期的就能救急"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 483，目标为 450，偏差率为 7.33%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "万吨数据、转卖违法、有害垃圾分类依次支撑浪费与风险论证，落点少而精可带走。",
+      "script_spans": [
+        "一年过期药的数量，能以万吨算",
+        "个人手里剩的药不能转卖给药店，法律不允许",
+        "药卡在家里，既不能卖钱也不能随手丢，它算有害垃圾"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头扔药画面即成反差钩子，中段万吨数字、禁转卖、有害垃圾持续给出新信息，结尾提问由囤药主题自然长出。",
+      "script_spans": [
+        "你囤的退烧药，最后全扔垃圾桶了。",
+        "一年过期药的数量，能以万吨算。",
+        "下次看到抢药，你会先翻翻自家抽屉吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有对话感，读来顺；但两处需临时补字重断：'却也真变成'缺'了'，'不会等你用就变废'绕口费解。",
+      "script_spans": [
+        "很多人一慌就买一大包，结果烧退了药没碰",
+        "囤药给了安心，却也真变成浪费和风险",
+        "可药不会等你用就变废"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比具体且克制，如花销对废塑料；花冤枉钱买焦虑、少而精不是堆满均可离开上下文复述，无炫技堆砌。",
+      "script_spans": [
+        "你仔细想，这难道不是花冤枉钱买焦虑？",
+        "药箱里的踏实，其实来自少而精，不是堆满。",
+        "买药的花销够吃顿好的，堆着却是废塑料。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "现象、危害、建议层层递进，求稳但别超量转折自然，结尾反问回扣囤药主题。",
+      "script_spans": [
+        "备药求稳没错，但别超量",
+        "药箱里的踏实，其实来自少而精，不是堆满",
+        "下次看到抢药，你会先翻翻自家抽屉吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "备药建议给出求稳但不超量的边界，禁止个人转卖、过期药属有害垃圾均有依据，风险用可能限定，无夸大误导。",
+      "script_spans": [
+        "备药求稳没错，但别超量。",
+        "更麻烦的是，个人手里剩的药不能转卖给药店，法律不允许。",
+        "过期药药效掉了，吃下去不顶事还可能添乱。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-e1edd0678dbc46cd940a7e1268e1eded",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-402777394b124906aa67679012a42a70",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

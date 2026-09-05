@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-14c54a7d6d1840b6a3d4ae56486febe2",
+  "run_id": "run-20260902T143905Z-d3e14b7c1834",
+  "trace_sha256": "67a47e403b072d260554a29ca5020bd40e1c8ddd84f39b04ea42ab062c686c25",
+  "created_at": "2026-09-03T13:55:56.882489Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛出题设矛盾，中段用数据和消费结构作答，结尾回扣并给方法，冲突两侧与普通家庭人群全覆盖。",
+      "script_spans": [
+        "物价只升1%，你家咋还紧巴巴？",
+        "下次别盯CPI，算算固定开销占收入几成，比看平均数更踏实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 280，目标为 280，偏差率为 0.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "CPI与消费结构数据均能落地，链条层层推进；但“学费没进去”与统计口径相悖，核心论据有硬伤。",
+      "script_spans": [
+        "三月全国CPI同比才涨1.0%，其中食品只涨0.3%，非食品涨1.2%",
+        "上半年居民人均消费里，吃住占一半多，教育还在涨",
+        "房租权重轻，学费没进去"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即以1%对紧巴巴立反差，中段篮子、数据、消费结构层层兑现，结尾翻账单动作由正文自然生长。",
+      "script_spans": [
+        "物价只升1%，你家咋还紧巴巴？",
+        "钱不够花，不是手松，是指数没罩住刚性支出。",
+        "今晚翻账单，圈出房租补课费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏与对话承接立住了，但“花项钉刚需”“刚性支出”等压缩术语两处拗口，真人口播需临时改词，两个子分取低定2分。",
+      "script_spans": [
+        "你想啊，可你真金白银花的大头，是住和学",
+        "花项钉刚需",
+        "盯油盐衣裳日常品"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "篮子比喻讲透抽象指数，“不是手松，是指数没罩住刚性支出”离稿可复述，修辞克制。",
+      "script_spans": [
+        "统计那篮商品，漏了你的房租和补习班。",
+        "明明通胀低，钱包却瘪了。",
+        "钱不够花，不是手松，是指数没罩住刚性支出。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "钩子到回扣主线完整；但“工资跑得慢”缺桥接入，开头“漏了”与后文“权重轻”口径滑动。",
+      "script_spans": [
+        "钱不够花，不是手松，是指数没罩住刚性支出",
+        "统计那篮商品，漏了你的房租和补习班",
+        "工资跑得慢，花项钉刚需"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无违规诱导，建议温和可执行；但“漏了”“学费没进去”等绝对化说法未经限定，易误导观众理解统计口径，宜改写。",
+      "script_spans": [
+        "整体挺温和，统计取全国平均",
+        "统计那篮商品，漏了你的房租和补习班",
+        "房租权重轻，学费没进去"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-93a76c362f9147d5a883a8a18e26fbaf",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f59d7b6a2ae846fc86280e10a406ee97",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

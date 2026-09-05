@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-fb465483c4fc4f53a3a5aa0800d3b333",
+  "run_id": "run-20260902T143920Z-f50984648c6e",
+  "trace_sha256": "0d74a0618b426dd537bfb2227e5eeae3e075047e4b25584fc8a8628b4cfa3ad7",
+  "created_at": "2026-09-03T12:18:12.705592Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否应保留准时承诺，覆盖消费者、骑手与平台，并提出极端天气停表豁免。",
+      "script_spans": [
+        "这承诺该留，但遇极端天气得停表豁免。",
+        "咱付配送费自然想准点，可费用里没含天气险，不能让骑手单扛风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦风险分配，算法机制、治理案例、高温数据和用户行动共同提供了有效增量。",
+      "script_spans": [
+        "系统派单只看距离，不看积水深度，骑手怕罚钱常会猛蹬车闯红绿灯。",
+        "北京推动美团等试了“红灯停表”。",
+        "清华跟踪百城数据发现，40℃午高峰订单涨超两成，骑手多接单冒健康险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出骑手与消费者的两难，中段连续补充算法、政策和数据，结尾互动也由风险讨论自然引出。",
+      "script_spans": [
+        "暴雨天你饿肚子，骑手摔伤，准时承诺保谁？",
+        "你准时收到饭，可能是别人拿命换的。",
+        "下次见暴雨红色预警，你愿意多等十分钟换骑手平安到家吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句设问让推进清楚，也有具体对比；但“冒健康险”“该朝人倾斜”等搭配不顺，录制时需换词。",
+      "script_spans": [
+        "雨天迟到平台赔几块，骑手却扣几十",
+        "骑手多接单冒健康险",
+        "现在效率和安全取舍，该朝人倾斜"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“别拿命填表”和“避了自个儿的热，别转成别人的险”把抽象的安全代价说得具体，表达有力度且便于复述。",
+      "script_spans": [
+        "别拿命填表。",
+        "避了自个儿的热，别转成别人的险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从风险冲突推进到停表方案，结构清楚；但把勾选“不怕晚”直接推成少闯红灯，因果略显过度。",
+      "script_spans": [
+        "等红灯和恶劣天气，考核时长顺延。",
+        "你下单时勾个不怕晚，骑手就能少闯一个红灯。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导停表和安全，价值导向稳妥；但“只看距离”“常会闯红灯”属绝对化归因，“勾个不怕晚”承诺因果过满，需加限定。",
+      "script_spans": [
+        "承诺本身没错，难在它不分天气一刀切",
+        "等红灯和恶劣天气，考核时长顺延",
+        "系统派单只看距离，不看积水深度",
+        "骑手怕罚钱常会猛蹬车闯红绿灯",
+        "你下单时勾个不怕晚，骑手就能少闯一个红灯"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e31e10324e434d6682a2eca5c69f59d1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

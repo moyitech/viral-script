@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-9ac73e59880b4d999b68d85f55641421",
+  "run_id": "run-20260902T142423Z-8a884910c8e9",
+  "trace_sha256": "9007e02cdd2d47ce96ead3a56b58a8242d93d84ccfd9236e7ead4f186616db69",
+  "created_at": "2026-09-03T12:15:57.813676Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否值得抢购，并覆盖收益、流动性和安全性，贴合普通储户决策。",
+      "script_spans": [
+        "抢着存不一定更划算。但求本金安全的人，能适量配一点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "利率、提前支取、存款保险和认购门槛形成连续信息增量，结论也能落到分散与期限判断。",
+      "script_spans": [
+        "大行五年期存单最高约1.6%。可一些小银行三年定存能到1.9%，利息反而可能更高些。",
+        "存款保险目前只对单家机构五十万以内本息全额保，钱多就得分散几家。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“告急”与“更划算”的冲突抓人，中段接连比较利率、流动性和保障，结尾落到可执行的自我判断。",
+      "script_spans": [
+        "你刷手机抢大额存单告急，真比慢慢存别处划算？",
+        "可一些小银行三年定存能到1.9%，利息反而可能更高些。",
+        "下次再遇抢购风，先琢磨自个这笔钱能不能踏实躺几年不动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数句子短促，重音较清楚；但开头和“用钱灵活度”等处需临时重断句或换词。",
+      "script_spans": [
+        "手慢的人说不定省了心。",
+        "再看用钱灵活度。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“手慢的人说不定省了心”把抢购反转成记忆点，“钱能踏实躺几年不动”也让期限风险变得可感。",
+      "script_spans": [
+        "手慢的人说不定省了心。",
+        "下次再遇抢购风，先琢磨自个这笔钱能不能踏实躺几年不动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "利息、流动性、保险依次推进清楚，但开头语法残缺，转让与提前支取的关系也未交代，口播需修整。",
+      "script_spans": [
+        "再看用钱灵活度。存单能转让变现快",
+        "你刷手机抢大额存单告急，真比慢慢存别处划算？",
+        "存单能转让变现快，可一旦提前支取，那部分只能按当天活期利率算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见煽动或收益承诺，但“变现快”和“今年起”把流动性、监管进展说得过于确定，易造成金融误导。",
+      "script_spans": [
+        "钱多就得分散几家。",
+        "存单能转让变现快",
+        "今年起认购起点降到二十万"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-09a94eaa517c40eb8412918f269933c4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

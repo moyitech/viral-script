@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-e174b262fe83425dbf01e495fbd49213",
+  "run_id": "run-20260902T143250Z-e17d5f3e0c1f",
+  "trace_sha256": "9ac7194795700cd6d337eb6172faa988641fce5618ee3946b132d6817185a185",
+  "created_at": "2026-09-03T11:44:44.439377Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正文同时追问厂商、政府与用户责任，并给出多云和灾备路径，正面回应谁来兜底。",
+      "script_spans": [
+        "这锅不能只甩厂商，也不能全靠政府，用户自己得留后路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 729，目标为 700，偏差率为 4.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦云故障责任与基础设施韧性，事故数据、监管边界、容灾方案和小户困境形成有效信息推进。",
+      "script_spans": [
+        "你看去年全球前十云厂商，出了327次严重事故。",
+        "小公司选两家云，大厂做两地三中心。多云不是完美，但少让一家咳嗽拖垮你。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用扫码卡住和千亿损失制造冲突，中段层层追问并给出方案，结尾问题也自然收回风险。",
+      "script_spans": [
+        "你扫码骑车突然卡住，一次云故障卷走千亿，损失谁担？",
+        "把鸡蛋分开放。用多云加灾备，一个云停了另一个接上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答和生活类比，但多处句子搭配生硬，朗读仍需临时改词。",
+      "script_spans": [
+        "用多云加灾备，一个云停了另一个接上。",
+        "像电力金融核心系统会过审，普通外卖打车软件不在里面。",
+        "当地铁般频繁的云中断来了，你的系统能自己撑几分钟吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“命脉交出去，却没谈好后事”和“不是当保险箱”形象准确，既有记忆点，也没有堆砌修辞。",
+      "script_spans": [
+        "我们习惯把命脉交出去，却没谈好后事。",
+        "政府做的是立规矩，不是当保险箱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "分段清楚，先讲责任再讲监管与容灾；但承认小户无力承担后，结尾仍把韧性主要推给用户，责任落点没有闭合。",
+      "script_spans": [
+        "那咱们怎么办？把鸡蛋分开放。用多云加灾备，一个云停了另一个接上。",
+        "大公司能养专人盯云，小户没这力。没人保哪种方案完美，但韧性要自己建。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未煽动对立，也承认多云有成本；但“卷走千亿”“云比从前更容易累坏”等夸张、无充分限定的表述，存在误导风险。",
+      "script_spans": [
+        "这锅不能只甩厂商，也不能全靠政府",
+        "一次云故障卷走千亿，损失谁担？",
+        "AI训练日夜吃光带宽，云比从前更容易累坏。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-929793aec730481b8d28318eeb5fe771",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6c29858e1bb44804a2ac3fba0f1cea2d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

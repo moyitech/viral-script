@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-4c420bb0202747f7a05cce76e2096050",
+  "run_id": "run-20260902T144239Z-d9649af7a94e",
+  "trace_sha256": "6479025087bdddfc26df5209ee00fc624e87abf317605c049ce51740d19ce63b",
+  "created_at": "2026-09-03T11:44:47.028353Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面覆盖提速与噪声两端，并落到居民、收药和午休等具体场景，题设冲突回答完整。",
+      "script_spans": [
+        "低空物流确实让包裹提速，可城市噪声这道坎也来了。",
+        "快和静不能全拿，看你是收药还是午休。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 636，目标为 700，偏差率为 9.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦快与静，空域、路线、续航、回声和治理等信息层层补充，兼顾效率与代价。",
+      "script_spans": [
+        "无人机走直线不堵车，地面快递常卡红绿灯。",
+        "老旧小区回声大，新建区稍能喘气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用提速与噪声的反差抓人，中段持续补充效率和扰民代价，结尾把选择自然抛回观众。",
+      "script_spans": [
+        "快递省下二十分钟，你却可能被头顶嗡嗡声吵得睡不着。",
+        "怎么选？试点城市在划低空航路，绕开学校医院。",
+        "我们愿用多少安静换那十分钟？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答让主体易听，但“细则还在跟上”等多处搭配生硬，影响连续朗读。",
+      "script_spans": [
+        "为啥能快？",
+        "你想午休，窗外却像有蜜蜂排队过。",
+        "手续短了",
+        "细则还在跟上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“效率账”与“安静账”的对照准确好记，结尾“安静税”强化代价，修辞服务于核心冲突而未喧宾夺主。",
+      "script_spans": [
+        "效率账算得清，安静账难标价。",
+        "城市低头接货，抬头得付安静税。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、快慢、噪声、选择和结尾主线完整，但中段多处并列罗列，部分因果与治理结论衔接不足。",
+      "script_spans": [
+        "为啥能快？民航局在搞空域分类试点，能飞的地方变多了。",
+        "那吵不吵？无人机比直升机轻巧，声音低一截。",
+        "噪声该怎么管，细则还在跟上，投诉常卡在归属。",
+        "试点期本就是试错，吵架也是数据。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未见明显违规，但“能抢出救命时间”等确定性表述和“快和静不能全拿”的绝对化判断，可能造成误导。",
+      "script_spans": [
+        "社区能反馈航线，不是平台说了算。",
+        "急用药走空运，能抢出救命时间。",
+        "快和静不能全拿"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-eb4fbf7de3954796b348043ad22e6c37",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-95b731f147334fa09f1c39728ec5f1d7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

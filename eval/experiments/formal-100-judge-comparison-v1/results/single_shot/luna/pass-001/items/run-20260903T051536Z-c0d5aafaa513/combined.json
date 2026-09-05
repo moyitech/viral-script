@@ -1,0 +1,166 @@
+{
+  "evaluation_id": "combined-6a3d05bc36ec4191bf97f572e08bd1ae",
+  "run_id": "run-20260903T051536Z-c0d5aafaa513",
+  "trace_sha256": "ca9a0678af9b90b3250f25f6a16bc0b872484121aa5b9f352147fdb7c1c3bb56",
+  "created_at": "2026-09-03T11:57:53.066385Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "紧扣订单回暖与招聘收缩的矛盾，解释企业顾虑，并落到普通求职者的判断上。",
+      "script_spans": [
+        "订单变多了，工厂却还在缩招。",
+        "潮水上来时，先看谁真在扩编，别被账面订单晃了眼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 784，目标为 700，偏差率为 12.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "数据对比、企业成本、行业分化和个人判断层层推进，信息增量充分且主题集中。",
+      "script_spans": [
+        "制造业新订单指数重新站上扩张线，可用工景气度偏偏往下掉。",
+        "企业签一份正式合同，后面跟着社保、培训、还有万一要分手的解雇补偿，全是刚性支出。",
+        "当然有反例，像电气机械、高技术制造那块确实在扩招，但那是少数尖子生，不能代表广大中游车间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用订单回暖与缩招的反差抓人，中段层层追问原因，结尾把判断落到用工与个人选择。",
+      "script_spans": [
+        "订单变多了，工厂却还在缩招。",
+        "那有人问了，既然活儿多起来，为啥不算算账，把临时工转成正式军？",
+        "潮水上来时，先看谁真在扩编，别被账面订单晃了眼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和收束有口语节奏，但“剥人的成本”“正式军”等词语明显卡顿，抽象表达也拖慢气口。",
+      "script_spans": [
+        "订单变多了，工厂却还在缩招。",
+        "剥人的成本比接单的利润还烫手。",
+        "临时工转成正式军？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“活儿在账上，人却在门外”把供需错位说得具体；“真温度计”形成可复述的收束，整体不过度炫技。",
+      "script_spans": [
+        "活儿在账上，人却在门外。",
+        "用工数才是真温度计。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、转折清楚，但回暖来源和招聘意愿之间多靠推断，部分结论存在扩大，论证桥梁仍不够扎实。",
+      "script_spans": [
+        "先看这波回暖是怎么来的。",
+        "这种行业分化提醒我们，全面招工信心远没回来。",
+        "新订单好转，更多是赶工和补库存带来的脉冲，不是趋势性反转。",
+        "从业人员指数连续下滑就说明，宁可让人累着，也不松招聘的口子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，且主动提示数据边界；但“岗位释放是虚的”等绝对化判断，可能把指数下滑夸成普遍无岗位，需收窄表述。",
+      "script_spans": [
+        "另外得说清边界：订单回暖能不能延续，现在谁也不敢打包票，别拿一个月数据当拐点。",
+        "意味着岗位释放是虚的，大家找不到实在机会。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 784,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.12
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-788c9f44c94b4788acc3d41cce8e9195",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f375701826c047458fef0695ed58b307",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

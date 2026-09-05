@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-5beb479cc5a440ea82a182334c9dbe4e",
+  "run_id": "run-20260903T051503Z-9ec328399090",
+  "trace_sha256": "4c920eaa17bca0df5e86a4d737ce8678ac8719a7e535e8ea1993d5509293f966",
+  "created_at": "2026-09-03T12:32:06.310930Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答提前还贷与留现金的取舍，兼顾利差、应急金和合同约束，核心人群明确。",
+      "script_spans": [
+        "关键看你房贷利率和闲钱收益的利差，以及家里周转够不够。",
+        "家庭必须留足三到六个月开支的应急现金。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕利差决策持续推进，补充应急现金、低利率预期和合同成本，信息单元具体且互相支撑。",
+      "script_spans": [
+        "目前五年期以上房贷利率参考LPR大概在百分之三点五，而普通存款收益已经很难超过它。",
+        "操作前先翻贷款合同，确认提前还款有没有预约要求或违约金。",
+        "还贷是手段，保住现金流才是底线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用利息与月供的反差设问，中段逐层补充判断条件，结尾以现金流底线自然收束。",
+      "script_spans": [
+        "存款利息眼看越来越薄，房贷月供却一分不少",
+        "还贷是手段，保住现金流才是底线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "长短句交替自然，核心解释有对话感，停顿和重音清楚，基本可直接录制。",
+      "script_spans": [
+        "别只看利率跌了就着急还",
+        "钱还进房贷，再想灵活取出来可不容易"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“利息越来越薄”形象易懂，“还贷是手段，保住现金流才是底线”凝练有力，修辞克制且便于复述。",
+      "script_spans": [
+        "存款利息眼看越来越薄",
+        "还贷是手段，保住现金流才是底线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出判断，中段按利差、流动性、环境和合同层层补充，结尾回扣现金流底线，衔接自然。",
+      "script_spans": [
+        "我的判断很明确：别只看利率跌了就着急还，关键看你房贷利率和闲钱收益的利差，以及家里周转够不够。",
+        "最后提醒一句：操作前先翻贷款合同，确认提前还款有没有预约要求或违约金。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "采用条件化判断，并提示应急现金和合同条款，未作收益承诺或煽动性结论，风险边界较清楚。",
+      "script_spans": [
+        "关键看你房贷利率和闲钱收益的利差，以及家里周转够不够",
+        "操作前先翻贷款合同，确认提前还款有没有预约要求或违约金"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-eeb22776fa9c43b7a740183534fbc491",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

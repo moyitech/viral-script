@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-f858384346ad4a5d93444e6e49fc8859",
+  "run_id": "run-20260902T144827Z-6427006d7c16",
+  "trace_sha256": "e700976e1e8d1abfed8f5087c9a89ef523d00a05f44775e0d36e5c4e5b170abe",
+  "created_at": "2026-09-03T12:21:48.627251Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正文直答电力与土地为何成为筹码，并落到项目考察方法，覆盖题设两侧与普通观众需求。",
+      "script_spans": [
+        "电力和土地成了准入筹码。",
+        "先问当地电网容量、变电站审批节奏和用地红线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕电力、土地及配套约束连续推进，既解释稀缺原因，也给出可执行的判断指标。",
+      "script_spans": [
+        "能耗审批叠双碳限值，变电站增容慢，电网排队成常态。",
+        "普通郊区机房难拿绿电配套，受功率密度和延迟限制，慢慢没了竞争力"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“电和地比芯片贵”制造反差，中段从电转地并给出核查清单，结尾设问自然。",
+      "script_spans": [
+        "电和地比芯片贵",
+        "先问当地电网容量、变电站审批节奏和用地红线",
+        "算力地图怕是要按电厂和农田重写了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和“先说电、再看地”有节奏，开头也抓人；但中段术语密集，列举过长，朗读仍需重断句。",
+      "script_spans": [
+        "先说电。一线接电更久。",
+        "再看地。",
+        "普通郊区机房难拿绿电配套，受功率密度和延迟限制，慢慢没了竞争力，空有硬件也白搭。",
+        "所以考察项目别光看砸钱，先问当地电网容量、变电站审批节奏和用地红线，不然交付遥遥无期。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“电和地比芯片贵”与“算力地图按电厂和农田重写”形成清晰记忆点，修辞克制且服务观点。",
+      "script_spans": [
+        "电和地比芯片贵",
+        "算力地图怕是要按电厂和农田重写了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线按电、地、建议递进，但“叠双碳限值”过度压缩，土地段从用地跳到能耗与配套，因果桥略不足。",
+      "script_spans": [
+        "答案：算力扩张卡在物理资源，电力和土地成了准入筹码。",
+        "所以考察项目别光看砸钱，先问当地电网容量、变电站审批节奏和用地红线",
+        "能耗审批叠双碳限值，变电站增容慢，电网排队成常态。",
+        "核心枢纽的能耗指标高度集中，高等级机房供不应求。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规或煽动，但“直接暂停审批”“打水漂”“遥遥无期”等绝对化表述缺少范围和条件，容易放大项目风险。",
+      "script_spans": [
+        "先问当地电网容量、变电站审批节奏和用地红线",
+        "电和地比芯片贵",
+        "多地直接暂停审批，真金白银打水漂",
+        "不然交付遥遥无期"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7b682607a0d64256ad6c6e21cb4e262a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

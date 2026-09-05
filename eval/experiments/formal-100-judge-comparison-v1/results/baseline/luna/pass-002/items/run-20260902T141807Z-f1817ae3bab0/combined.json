@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-25cf946d2125460d972bd8203dbd94bc",
+  "run_id": "run-20260902T141807Z-f1817ae3bab0",
+  "trace_sha256": "81962fa3dbd6f959a303e80bb7a6cbc9ecc93de4747e2eeb0f8b0fcf5473cc93",
+  "created_at": "2026-09-03T12:15:49.892873Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从筛选机制、效率收益讲到潜力识别局限，并落到人机分工，正面回答题目。",
+      "script_spans": [
+        "机器猜的多是镜头前的你，不是工位上的你",
+        "真潜力，留给人来拍板才稳妥。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机制、效率、代理特征风险与人类复核层层推进，信息密度足，结论有依据。",
+      "script_spans": [
+        "用程序扫表情和语调，把说话快慢变成分数。",
+        "这些往往和干活好坏没必然联系的特征",
+        "潜力藏在深层经历和应变里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用简历与算法的反差抓人，中段持续补充机制、收益与局限，结尾问题也由正文自然推出。",
+      "script_spans": [
+        "你简历没到人手，算法先判你潜力。",
+        "这法子让海量申请变得可处理",
+        "机器猜的多是镜头前的你，不是工位上的你"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头有钩子，整体能读通；但中段出现长修饰和偏书面搭配，部分句子需要重断句。",
+      "script_spans": [
+        "算法拿一套同样问题问所有人，录下回答，用程序扫表情和语调，把说话快慢变成分数。",
+        "微表情、声线这些往往和干活好坏没必然联系的特征",
+        "海量申请变得可处理"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“镜头前的你，不是工位上的你”形成准确对照，既解释算法局限，也留下了易复述的记忆点，整体没有修辞堆砌。",
+      "script_spans": [
+        "机器猜的多是镜头前的你，不是工位上的你"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，但“可它另一边”过渡生硬，多个长串分句叠加，口播需重断句。",
+      "script_spans": [
+        "潜力藏在深层经历和应变里，机器猜的多是镜头前的你，不是工位上的你",
+        "算法拿一套同样问题问所有人，录下回答，用程序扫表情和语调，把说话快慢变成分数。",
+        "可它另一边，常盯你的微表情、声线这些往往和干活好坏没必然联系的特征，去猜你行不行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "整体客观克制，既说明AI初筛效率，也明确其局限并保留人工决策边界，没有绝对承诺或煽动表达。",
+      "script_spans": [
+        "这只是辅助工具。真潜力，留给人来拍板才稳妥。",
+        "往往和干活好坏没必然联系的特征"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a66ed999302143c4a635c0e5926c86da",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

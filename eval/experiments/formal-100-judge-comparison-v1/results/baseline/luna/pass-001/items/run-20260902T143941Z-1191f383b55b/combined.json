@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-92c228ce88584fb7a861b67f6dfeead8",
+  "run_id": "run-20260902T143941Z-1191f383b55b",
+  "trace_sha256": "971e6c0721275e42f1784f59f6e315447b572db9319e9dd182730109b73cc922",
+  "created_at": "2026-09-03T11:49:07.468097Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "完整覆盖水电受旱、煤电补位、转型方案与普通人场景，也明确提示极端干旱下仍有供电边界。",
+      "script_spans": [
+        "那不能全押新能源，得靠多能互补加现货市场。",
+        "放到普通人身上，这法子有边界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 455，目标为 450，偏差率为 1.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦“看天吃饭”，既解释水电减产后的煤电补位，也展开储能、现货和需求侧响应，信息增量充足。",
+      "script_spans": [
+        "水电本是最便宜的电，它一少，贵煤顶上补缺口，煤价高，成本悄悄摊进账单。",
+        "现货市场像实时菜场：缺电时价涨，闲时便宜，逼大家省着用。",
+        "国家推源网荷储，把发电用电储能拼一块"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用水电变贵、电价反降制造反差，中段层层落到应对，结尾追问也保留了现实悬念。",
+      "script_spans": [
+        "干旱烧贵了水电，可不少地方电价反倒在降。",
+        "那不能全押新能源，得靠多能互补加现货市场。",
+        "只是你充电那晚，老天肯否合作？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头、结尾和部分比喻有对话感，但中段术语串联、个别生硬搭配频发，整体只能顺读。",
+      "script_spans": [
+        "转型咋接这看天吃饭？",
+        "缺电时价涨，闲时便宜，逼大家省着用。",
+        "国家推源网荷储，把发电用电储能拼一块，南方虚拟电厂聚合屋顶光伏进场调峰，电动车也能反送电力帮扛疼。",
+        "极端天充电排队的苦或减轻，因多能互补填谷。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "“实时菜场”把现货市场讲得形象，但“保底肚量”“帮扛疼”等比喻偏生硬，记忆点过密而削弱准确感。",
+      "script_spans": [
+        "现货市场像实时菜场",
+        "电动车也能反送电力帮扛疼",
+        "煤电眼下仍发过半电，是保底肚量"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，能从水电受旱转到补位方案和用户场景；但电价下行到家庭账单的推导跳步，个别因果解释偏薄。",
+      "script_spans": [
+        "水电本是最便宜的电，它一少，贵煤顶上补缺口，煤价高，成本悄悄摊进账单。",
+        "那不能全押新能源，得靠多能互补加现货市场。",
+        "平时代理购电价格下行，厂子电费省了，你我账单也轻。",
+        "极端天充电排队的苦或减轻，因多能互补填谷。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "没有明显违规，但将现货价格机制外推到居民充电和账单，易让观众误以为可直接享受低价。",
+      "script_spans": [
+        "这法子有边界。真旱急了西南仍会限电，空调得省着用。",
+        "你在家充电挑中午，小铺子灯开久点，或许就蹭到便宜电。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9643d5f1adb34baaa13543943e1f65c9",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-53f559fa6a304003bfbc2b40175e53e7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

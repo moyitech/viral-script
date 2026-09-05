@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-15091dbbaa9e49a387d5c8790342e09a",
+  "run_id": "run-20260903T051501Z-b5b5092331e6",
+  "trace_sha256": "2a75ec52ac37069ba8bbc5b2df15c0169a322317558b2627140f5a8aa7b81c24",
+  "created_at": "2026-09-03T11:58:49.523911Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应“会不会被绑架”，同时覆盖平台依赖、多平台竞争和小店这一核心人群。",
+      "script_spans": [
+        "说被绑架太绝对，说不受影响又天真。",
+        "小店最好的姿态，是把平台当引流渠道，别当成唯一命脉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 274，目标为 280，偏差率为 2.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕流量依赖推进，既解释平台规则与竞争，也给出私域留客的具体应对。",
+      "script_spans": [
+        "一方面，大平台做本地生活不再绕弯子，而是直接给低价入口和套餐",
+        "另一方面，多个超级应用正互相抢线下商户，纷纷免开店费、给流量扶持",
+        "自家建的微信群和回头客，才是抗风险的底牌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头先抛出小店被平台裹挟的压力，中段连续给出利弊转折，结尾以行动建议收束，余味自然。",
+      "script_spans": [
+        "你家门口的小面馆，生意好不好，现在半只脚已踩进超级应用的流量池"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏利落，判断与收束有重音；但“低价入口”“多选一”等搭配生硬，未达全程自然。",
+      "script_spans": [
+        "说被绑架太绝对，说不受影响又天真。",
+        "小店反而能多选一"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“半只脚踩进流量池”和“寄生却已开始”形象又克制，结尾“别当成唯一命脉”也形成可复述的判断。",
+      "script_spans": [
+        "半只脚已踩进超级应用的流量池",
+        "所以，绑架谈不上，寄生却已开始。",
+        "把平台当引流渠道，别当成唯一命脉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先界定“绑架”的程度，再用正反两面展开，最后落到私域建议，结论自然回扣题设。",
+      "script_spans": [
+        "说被绑架太绝对，说不受影响又天真。",
+        "所以，绑架谈不上，寄生却已开始。",
+        "小店最好的姿态，是把平台当引流渠道，别当成唯一命脉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体表达克制并给出分散风险建议，但“命脉确实交出去了”“由不得自己”仍显绝对，可能误导。",
+      "script_spans": [
+        "把平台当引流渠道，别当成唯一命脉",
+        "命脉确实交出去了",
+        "流量怎么分由不得自己"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2f68ff264b7c4b1aaad814ee7a829750",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6bb4a264363e40a6b205d724f84bd93b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

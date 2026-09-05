@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-fbd6773ac94742758790826d82a023bd",
+  "run_id": "run-20260903T051518Z-d914f70bf512",
+  "trace_sha256": "1a1abbce36941130aa7dd32a9d922dd832069e9700a2dcd3b5de242bd4b5807f",
+  "created_at": "2026-09-03T12:32:13.814616Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从囤药的安全感切入，同时回答浪费与过期用药风险，并给出普通家庭的备药边界，贴合题设。",
+      "script_spans": [
+        "我直接给判断：普通家庭过度囤常用药，那种安全感基本是自我安慰，最后大多走向浪费和处理风险。",
+        "合理边界很简单：药箱做流动补给，少量、常用、近效期优先，别当仓库。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕安全感、保质期、转卖与回收、误用旧药和备药边界层层推进，信息单元具体，结论有实用增量。",
+      "script_spans": [
+        "根本机制在药品生命周期。药有保质期，囤得越多，过期概率越高。",
+        "更隐蔽的风险是，真不舒服时翻出旧药，以为有效却早已失效，可能耽误事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用家庭场景制造代入，中段连续推进浪费、处置和延误风险，结尾给出边界，收束自然有余味。",
+      "script_spans": [
+        "你家药箱最深处，是不是躺着几盒没拆封的退烧药？",
+        "下次想囤，先看现有量，够两周就停手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，短句也利落；但中段抽象术语连用，朗读时需要重断句和换词。",
+      "script_spans": [
+        "下次想囤，先看现有量，够两周就停手。",
+        "恐慌性囤积把短期波动放大成长期冗余",
+        "根本机制在药品生命周期。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务观点，“药箱不是情绪垃圾桶”形象准确，能把囤药焦虑与环境负担联系起来。",
+      "script_spans": [
+        "药箱不是情绪垃圾桶，塞进去的焦虑最后变成环境的负担。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整、主线清楚，但“只能堆着等废”把处理选项说绝，结尾“够两周就停手”也缺少依据。",
+      "script_spans": [
+        "为什么说这是虚假安全感？常用药需求其实很平顺，感冒发烧按需购买就能解决。",
+        "落到普通人身上，非理性备药先吃掉钱包，再占满抽屉。",
+        "一边用不掉，一边退不出，只能堆着等废。",
+        "下次想囤，先看现有量，够两周就停手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提醒理性备药，方向安全；但“想扔也不行”“够两周就停手”过于绝对，未交代按当地规定和个体需求调整。",
+      "script_spans": [
+        "下次想囤，先看现有量",
+        "想扔也不行，家庭废弃药被划入有害垃圾，得专门回收。",
+        "够两周就停手。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-13d203813a7e488296b37280fab9916f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

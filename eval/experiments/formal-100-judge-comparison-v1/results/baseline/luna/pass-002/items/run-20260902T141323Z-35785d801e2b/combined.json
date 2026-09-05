@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-e01547d6cde3494abac8f884cbabb316",
+  "run_id": "run-20260902T141323Z-35785d801e2b",
+  "trace_sha256": "24c3474f34c64faba654b1eb5f8eb78e793276d940c54d569477e26022118130",
+  "created_at": "2026-09-03T12:15:36.320167Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从线上预约的便利切入，完整呈现效率提升与老年人受阻两面，并落到线下兜底，精准回应题设。",
+      "script_spans": [
+        "这对熟手机的人是少跑腿，对另一群人成了新门槛。",
+        "意思是融合兜底，不是二选一。升级不该把人甩下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕线上单通道的利弊，案例、政策依据、成因和老年人处境层层补充，信息增量充足。",
+      "script_spans": [
+        "国家其实有要求，线下的门不能关，除特殊情形外事项应进政务中心办。",
+        "有些地方图省事，把号源全推网上。",
+        "很多老人没碰过智能机，孩子不在旁就约不了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用老人被拒制造冲突，中段追问政策与执行偏差，结尾由“便利成门槛”自然抛出问题，推进完整。",
+      "script_spans": [
+        "不会用智能手机的老人，跑大厅办社保却被拒，只因没线上约。",
+        "一边省力一边设卡，现状就这么拧巴。",
+        "当便利变成唯一选项，它就成了门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感和节奏，但“熟手机”等多处压缩表达卡嘴，朗读需重断句。",
+      "script_spans": [
+        "大厅排队是少了，可办事的人没消失，只是被挡在屏幕外。",
+        "熟手机的人",
+        "规范政务APP本为防形式主义、给基层减负，初衷好，执行却变单通道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一边省力一边设卡”“当便利变成唯一选项，它就成了门槛”形成清晰反差，既好复述又服务观点，没有修辞堆砌。",
+      "script_spans": [
+        "一边省力一边设卡，现状就这么拧巴。",
+        "你三秒提交，他连门朝哪开都不知道。",
+        "当便利变成唯一选项，它就成了门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由个案提出矛盾，继而解释政策与执行偏差，再落到老人困境和人工窗口建议，转折回扣自然。",
+      "script_spans": [
+        "问题在哪？政务服务把线下窗口收了，只留一个线上入口。",
+        "那为啥走偏？有些地方图省事，把号源全推网上。",
+        "当便利变成唯一选项，它就成了门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体批评克制，也承认“特殊情形”边界；但“线下的门不能关”和归因“图省事”略显绝对，容易造成泛化误导。",
+      "script_spans": [
+        "政策留了特殊情形可线下办",
+        "线下的门不能关",
+        "有些地方图省事"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-19a6fc1bc5c046f99928cacbe6078150",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-7c9565224bff487085344fa1daf6f1e5",
+  "run_id": "run-20260902T144617Z-cebf4988bbb5",
+  "trace_sha256": "c25ad17e09100a0d318aa9b95117ea98dc4039a960cf99b563b1089fd410ef6e",
+  "created_at": "2026-09-03T12:16:19.768521Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应补缺口与制造依赖两面，明确核心人群是子女，并落到家庭不能缺席的选择。",
+      "script_spans": [
+        "陪诊一边补上照护缺口，一边也让人担心养出依赖。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕照护缺口与依赖风险展开，既交代服务内容、监管和价格，也给出家庭参与的具体判断。",
+      "script_spans": [
+        "他帮取号、代排队，替老人说清哪里不舒服，药取好递到手。",
+        "花钱补的是流程缺口，不是亲情缺口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用尽孝与甩锅制造冲突，中段不断补充场景、风险和边界，结尾追问自然承接。",
+      "script_spans": [
+        "雇人陪爸妈看病，是尽孝还是甩锅？",
+        "电话里你说别怕，转头却点单。",
+        "下次复诊，你出现还是点个单？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句密集、画面感强，核心口吻自然；但“关键家庭不缺席”和调查句都明显卡顿。",
+      "script_spans": [
+        "电话里你说别怕，转头却点单。",
+        "关键家庭不缺席。",
+        "有调查里老人说舒心不少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻具体，金句服务观点；“流程缺口”和“亲情缺口”的对照清楚，既有记忆点又不过度煽情。",
+      "script_spans": [
+        "独自进医院，像闯陌生迷宫",
+        "花钱补的是流程缺口，不是亲情缺口。",
+        "走廊站会儿，比转账强。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线按缺口、收益、依赖风险再到结论推进，但由服务边界直接推出风险低，关键因果仍不够稳。",
+      "script_spans": [
+        "陪诊一边补上照护缺口，一边也让人担心养出依赖。",
+        "陪诊通常只陪走流程，不碰打针输液，风险低。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无明显违规，且有家庭参与和监管提示；但“甩锅”“亲情也容易淡”偏道德化，“风险低”属于未限定的安全判断。",
+      "script_spans": [
+        "关键家庭不缺席。",
+        "现在监管在划线，上海要求机构备案、陪诊师持证上岗。",
+        "雇人陪爸妈看病，是尽孝还是甩锅？",
+        "家里责任滑给陌生人，亲情也容易淡。",
+        "陪诊通常只陪走流程，不碰打针输液，风险低。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e09280d4d87e4edfb6f80e4c1b2c4081",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-dcee9bdd9c0f4648a0dc329076dceadd",
+  "run_id": "run-20260902T142026Z-8fddb48d843b",
+  "trace_sha256": "9eeda93fbbc34f31a335118ea28a5f727a8e17050a228302046f4d6700d7e8b5",
+  "created_at": "2026-09-03T11:44:01.896853Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应公共监督与二次伤害，并给出拍摄、打码和发布建议；但将题目核心过度收束为是否拍清正脸。",
+      "script_spans": [
+        "这既是公共监督，也可能成二次伤害。",
+        "关键看你拍没拍清对方正脸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 277，目标为 280，偏差率为 1.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕肖像公开、获利门槛、合理使用和打码建议层层推进，观众能带走明确判断与操作方法。",
+      "script_spans": [
+        "法律早去掉赚钱门槛，哪怕没获利也照样可能算。",
+        "碰到真干坏事的，法律又开了后门，让你能拍了曝光，或许算合理用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出监督与毁人的两难，中段用露脸、获利和打码层层推进，结尾追问有余味。",
+      "script_spans": [
+        "你举手机拍路人吵架传上网，算监督还是毁人？",
+        "先给脸打码再发最稳，别嫌麻烦。",
+        "你举起的手机，到底是公道还是枷锁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头提问和打码建议有对话感，但中段法律说明出现多处搭配生硬，整体只能算能读通。",
+      "script_spans": [
+        "你举手机拍路人吵架传上网，算监督还是毁人？",
+        "让你能拍了曝光，或许算合理用",
+        "给全脸就从监督滑向伤人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“从监督滑向伤人”和“公道还是枷锁”把抽象边界变成可视画面，表达克制，也便于复述。",
+      "script_spans": [
+        "给全脸就从监督滑向伤人。",
+        "你举起的手机，到底是公道还是枷锁？",
+        "把脸遮了，两头都顾住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从设问、法律依据、例外延伸到行动建议，基本顺畅；但把监督与伤害简化为脸是否清晰，‘两头都顾住’结论过满。",
+      "script_spans": [
+        "所以真撞见欺负人，先给脸打码再发最稳，别嫌麻烦。",
+        "把脸遮了，两头都顾住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "兼顾监督与隐私保护，方向稳妥；但把侵权判断简化为正脸清晰度，并笼统称曝光可合理使用，容易误导。",
+      "script_spans": [
+        "这既是公共监督，也可能成二次伤害。",
+        "关键看你拍没拍清对方正脸。",
+        "法律又开了后门，让你能拍了曝光，或许算合理用。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-35ac2ef4b86b4d25bdcae3a30bb14f9f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-24d7d74ad32d4e5683a28c69e6954ab5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

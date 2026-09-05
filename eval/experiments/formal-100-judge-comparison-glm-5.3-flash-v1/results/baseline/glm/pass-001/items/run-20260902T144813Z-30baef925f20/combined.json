@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-6f4b607a12ca4c859f8056bc5f2166d0",
+  "run_id": "run-20260902T144813Z-30baef925f20",
+  "trace_sha256": "eabec21b575b4c5e8e133ac57f62fe38af8b5588d7f312d2225bc9b3cd515ed1",
+  "created_at": "2026-09-03T13:49:21.180233Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头点出两边困境，结论与错峰方案全程扣题，怕动物者与牵绳养宠人均有着落。",
+      "script_spans": [
+        "宠物友好商场也该照顾怕动物的人，但不能把牵绳合规狗全关门外，两边都要顾",
+        "那怎么两头顾？留个错峰时段或独立电梯就成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 269，目标为 280，偏差率为 3.93%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法规边界、摘牌现象、心慌皮疹等事实层层推进，并落到可操作建议，无注水重复。",
+      "script_spans": [
+        "白纸黑字只硬放行导盲犬这类工作犬进公共场所。说明普通宠物本来就不是无条件能进",
+        "有人一见狗就心慌，甚至起皮疹。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛双面冲突，中段以法规事实与撤标牌转折持续兑现，结尾余味由正文自然生长。",
+      "script_spans": [
+        "带狗进商场被拦，怕动物的人也没全安心",
+        "近期不少商场默默摘了宠物友好标牌，改回禁宠，养宠人也困惑",
+        "当商场学会留一扇怕动物者的门，而不是只贴禁入告示，那时宠物友好才真叫友好"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，问句自然承接，中段解释多用具体动词，朗读无需临时改词，整体流畅。",
+      "script_spans": [
+        "有人一见狗就心慌，甚至起皮疹。",
+        "那怎么两头顾？留个错峰时段或独立电梯就成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻点到为止且服务观点，'留一扇门''才真叫友好'离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "当商场学会留一扇怕动物者的门，而不是只贴禁入告示，那时宠物友好才真叫友好",
+        "有人一见狗就心慌，甚至起皮疹"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "你想啊、再看法规等承接自然，投诉收紧与法规定位因果清楚，结尾留一扇门回扣开头。",
+      "script_spans": [
+        "商场接到投诉，常把规则往回收。",
+        "那怎么两头顾？留个错峰时段或独立电梯就成。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "两边立场都顾到，无煽动与绝对承诺；建议具体并留有看标识的边界提示，整体稳妥。",
+      "script_spans": [
+        "但不能把牵绳合规狗全关门外，两边都要顾",
+        "你若怕动物，逛街前先抬头看门口标识，找无障碍通道，或挑工作日早场错峰走最稳"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-4e893c730a294a4ba5de173f13eead30",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-a88476768df1411693cc542cce708a1c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

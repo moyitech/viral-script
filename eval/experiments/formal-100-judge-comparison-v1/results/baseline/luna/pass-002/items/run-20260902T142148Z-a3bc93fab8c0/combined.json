@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-ba318ab95189435588ec8f3458ddea97",
+  "run_id": "run-20260902T142148Z-a3bc93fab8c0",
+  "trace_sha256": "bc6628d961a9d0bfe11f18f817c53eb1594b20d3fe26d5c65526cc02337bc5bf",
+  "created_at": "2026-09-03T12:15:25.681925Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应监督与二次伤害的两面，覆盖拍摄、上传、法律边界和扩散后果，并落到普通人的选择。",
+      "script_spans": [
+        "街拍吵架发上网，说是监督，却可能侵权害人。这事儿不能二选一。",
+        "下次看见路边吵起来，你先拍还是先想：这视频发出去，到底帮了谁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，法律边界、断章取义、标题诱导和平台扩散层层补充，既有判断依据，也有现实后果。",
+      "script_spans": [
+        "法律先划了线。民法典里讲，肖像权保护早就不看是否赚钱。",
+        "观众看着片段，容易站队误判。你以为在曝光，其实只给了半截真相。",
+        "平台爱推冲突内容，一发就上热门。机器不理谁对谁错，只认停留时长。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用监督与侵权的反差入题，中段从法律边界推进到断章取义和平台扩散，结尾追问自然落回观众选择。",
+      "script_spans": [
+        "说是监督，却可能侵权害人",
+        "这视频发出去，到底帮了谁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾利落，主体有对话感，但法律段落多处搭配生硬，朗读需临时重断句。",
+      "script_spans": [
+        "这事儿不能二选一。",
+        "你制作公开人家肖像",
+        "纠纷多私事，双方认出就麻烦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“你手机一举，两边就悬着”和“半截真相”便于复述，修辞克制，把抽象风险转成了具体画面。",
+      "script_spans": [
+        "你手机一举，两边就悬着",
+        "你以为在曝光，其实只给了半截真相。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "先讲法律、再讲片段与扩散后果的推进清楚，但将复杂的合理使用边界压成“就没事”，结论过于绝对。",
+      "script_spans": [
+        "为啥一条视频两面性这么强？法律先划了线。",
+        "那什么算合理使用？常只拍动手瞬间，漏了谁先骂人。",
+        "更麻烦的是现实扩散。平台爱推冲突内容，一发就上热门。",
+        "比如拍闯红灯，脸虚化或大局景，就没事。",
+        "对方若较真，发的人得删视频赔礼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体提醒克制、未煽动网暴，但“脸虚化或大局景，就没事”等把复杂法律判断说成确定结论，易造成误导。",
+      "script_spans": [
+        "这事儿不能二选一",
+        "观众先入为主，监督变猎巫",
+        "比如拍闯红灯，脸虚化或大局景，就没事。",
+        "对方若较真，发的人得删视频赔礼。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4727bae9f35c44fa8c448f584797c1e9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

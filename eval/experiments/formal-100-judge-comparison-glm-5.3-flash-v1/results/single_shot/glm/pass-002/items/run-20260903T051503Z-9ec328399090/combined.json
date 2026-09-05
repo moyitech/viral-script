@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-6ed09f968cd144e3a02588546dfeb405",
+  "run_id": "run-20260903T051503Z-9ec328399090",
+  "trace_sha256": "4c920eaa17bca0df5e86a4d737ce8678ac8719a7e535e8ea1993d5509293f966",
+  "created_at": "2026-09-03T15:29:09.666012Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇设问直指题设，利差与周转两侧并答，正对有房贷又持币的普通观众。",
+      "script_spans": [
+        "别只看利率跌了就着急还，关键看你房贷利率和闲钱收益的利差，以及家里周转够不够",
+        "还贷是手段，保住现金流才是底线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "LPR对比、利差标准、应急现金与合同提醒层层推进，数据有据，可带走判断方法。",
+      "script_spans": [
+        "家庭必须留足三到六个月开支的应急现金",
+        "操作前先翻贷款合同，确认提前还款有没有预约要求或违约金"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以利薄与月供不减的反差加追问立钩，中段利差、应急现金、合同提醒层层兑现，结尾底线句自然收束。",
+      "script_spans": [
+        "存款利息眼看越来越薄，房贷月供却一分不少，是不是该马上攒钱提前还贷？",
+        "但有个前提，家庭必须留足三到六个月开支的应急现金。",
+        "还贷是手段，保住现金流才是底线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句有对话感、气口清楚；但『而』『且』等书面连词与LPR插句需临时换词重断，封顶2分。",
+      "script_spans": [
+        "存款利息眼看越来越薄，房贷月供却一分不少，是不是该马上攒钱提前还贷？",
+        "目前五年期以上房贷利率参考LPR大概在百分之三点五",
+        "且房贷利率偏高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'利息越来越薄''实打实'点到即止，'还贷是手段，保住现金流才是底线'离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "存款利息眼看越来越薄",
+        "还贷是手段，保住现金流才是底线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问、标准、前提、提醒逐段递进，还进房贷难取现补足因果，结尾回扣现金流。",
+      "script_spans": [
+        "但有个前提，家庭必须留足三到六个月开支的应急现金",
+        "钱还进房贷，再想灵活取出来可不容易"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "利差判断有前提，提示留足应急现金并核对合同违约金，措辞留有余地，无夸大承诺或误导。",
+      "script_spans": [
+        "关键看你房贷利率和闲钱收益的利差，以及家里周转够不够",
+        "但有个前提，家庭必须留足三到六个月开支的应急现金",
+        "操作前先翻贷款合同，确认提前还款有没有预约要求或违约金",
+        "低利率环境很可能长期持续，不必恐慌式操作"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-deca284bdc8d48e78054c93aa84c2b35",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

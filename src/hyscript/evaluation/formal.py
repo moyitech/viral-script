@@ -1061,6 +1061,9 @@ def export_report(experiment_dir: Path) -> dict[str, Any]:
         stability_overall = judge_stability["overall"]
         lines.extend(
             [
+                "以下仅为三候选主编基线 300 条的分组诊断；跨流程主结果应将基线与端到端"
+                "直接生成合并后统一计算。",
+                "",
                 f"- 重复评价轨迹：{judge_stability['record_count']}",
                 f"- 逐维完全一致率：{stability_overall['dimension_exact_agreement_rate']:.4f}",
                 f"- 七维全部一致率：{stability_overall['all_dimensions_exact_rate']:.4f}",

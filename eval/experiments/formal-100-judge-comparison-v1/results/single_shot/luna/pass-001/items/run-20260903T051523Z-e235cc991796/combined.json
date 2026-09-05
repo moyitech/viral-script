@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-85ca1c86990949c08056cca16b93884f",
+  "run_id": "run-20260903T051523Z-e235cc991796",
+  "trace_sha256": "ce83c9ad6a76746441e9ea98516913afc1fa65434081ae40cc93cd58938ec04a",
+  "created_at": "2026-09-03T11:57:56.876892Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应因材施教与拉大差距两种可能，并落到学校、老师、家长和学生的具体处境，切角明确。",
+      "script_spans": [
+        "都说AI能因材施教，可它有时候像一面放大镜，把原本就有的差距照得更清楚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 476，目标为 450，偏差率为 5.78%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕算法偏见、教师把关和实际后果逐层推进，既解释差距如何被放大，也给出可执行的使用判断。",
+      "script_spans": [
+        "弱势群体的学习轨迹样本少，系统就越容易误判他们能力不行。",
+        "反过来，老师用AI生成练习、自己再做针对性讲解，弱势学生反而能获得过去得不到的关注。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出分化冲突，中段连续推进到算法偏见与使用边界，结尾用比喻自然落到行动提醒。",
+      "script_spans": [
+        "教室后排的学生刚打开AI助教，系统却总推给他更简单的题。",
+        "咱们得盯紧学校怎么用，别让算法悄悄替孩子写定未来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "画面感和停顿都不错，但中段长句与抽象术语叠加，口播需要重断句。",
+      "script_spans": [
+        "前排的孩子却在啃拓展内容。",
+        "把学校和家庭背后的资源差，用算法的速度重跑了一遍。",
+        "教育里的算法偏见常常不是技术故障，而是把数据采集、模型训练里的结构性不平等给复现了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“放大镜”和“握笔的手”两处比喻贴切，把抽象的公平问题转成可复述的判断。",
+      "script_spans": [
+        "把原本就有的差距照得更清楚。",
+        "它是一支笔，画圆还是画偏，握笔的手才是关键。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问，随后解释成因，再转入治理和具体场景，最后回扣学校如何使用，推进顺畅且因果基本闭合。",
+      "script_spans": [
+        "如果学校把AI打分当唯一标准，家里没条件补位的孩子就会被越甩越远。",
+        "所以别神话AI助教。它是一支笔，画圆还是画偏，握笔的手才是关键。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体讨论克制且无明显违规，但“只是”与“就越容易”把复杂因果说得过满，建议补充条件和个体差异边界。",
+      "script_spans": [
+        "AI该用来帮老师发现盲区，而不是替代老师做最终判断。",
+        "AI助教进学校，本身不制造公平也不制造不公平，它只是把学校和家庭背后的资源差，用算法的速度重跑了一遍。",
+        "弱势群体的学习轨迹样本少，系统就越容易误判他们能力不行。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-f2d82631c4214d3c83191a5104207ff3",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ca219c71bc114a76bdbcebddf348caba",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

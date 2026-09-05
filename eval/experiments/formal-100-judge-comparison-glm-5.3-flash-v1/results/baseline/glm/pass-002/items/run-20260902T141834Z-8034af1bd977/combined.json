@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-3b2c20a15b644eb4a276ebda9aefbcad",
+  "run_id": "run-20260902T141834Z-8034af1bd977",
+  "trace_sha256": "ba9508212615bb6b7ae3e75679dd155e1bf331691ea0ccc790c1955acb3fa417",
+  "created_at": "2026-09-03T14:25:27.593389Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从开头抛问到结尾反问紧扣算法能否读懂潜力，企业效率与求职者被误读两侧并重，普通求职人群痛点贴合，切角具体。",
+      "script_spans": [
+        "算法到底能不能读懂人的潜力？它能盯住你的微表情和说话关键词，却读不出你压力下沉默后冒出的真本事。",
+        "企业用AI面试官省了钱，求职者却丢了被看懂的机会。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "打分机制、研究证据、偏见证因、监管边界层层推进，信息单元各异且相互支撑，引用核对无编造，增量扎实。",
+      "script_spans": [
+        "弗吉尼亚理工的研究提到，自动视频面试能帮着缩小候选人池子，也缩短招人周期、少花成本。",
+        "因为模型常拿过往白领数据练手，慢热者天然吃亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛省钱与被看懂的冲突，中段连环追问与转折兑现钩子，结尾两问由潜力主题自然长出，余味足。",
+      "script_spans": [
+        "企业用AI面试官省了钱，求职者却丢了被看懂的机会。",
+        "下次见AI面试官，你会藏起紧张，还是赌它读得懂你？",
+        "省了钱就一定公平吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口与对话感整体在线，但“企业侧”“性别群体有偏”“慢热者”等书面词至少两处需临时换口，卡在2分。",
+      "script_spans": [
+        "你看招聘现场，摄像头架着，算法实时出分。",
+        "企业侧确实省力",
+        "发现有些算法对年龄、性别群体有偏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "算得出与算不出的对举、看人像看标本等修辞服务理解，金句离开原文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "它读的是概率，不是人。",
+        "错判一个人，公司丢的是钱，人丢的是时机。",
+        "它算得出你说了几个专业词，算不出你临场悟性。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "五段各司其职，设问过渡自然，拿过往白领数据练手补足偏见因果，结尾赌它读得懂你回扣开头与题设。",
+      "script_spans": [
+        "那它怎么给人打分？镜头对着你，先抓眼神、语速、用词，再和岗位模型比对。",
+        "当面试变成算法打分，我们图了效率，是不是也该给潜力留个活口？下次见AI面试官，你会藏起紧张，还是赌它读得懂你？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无硬违规，双面陈述且政策引述准确；但“读的是概率，不是人”“拿谁当小白鼠”等句偏绝对化、带焦虑引导，宜软化措辞补边界。",
+      "script_spans": [
+        "意思是允许用，但不能乱用。",
+        "分数高，不等于以后工作就干得好。",
+        "它读的是概率，不是人。",
+        "可如果算法自己都没被验证透，拿谁当小白鼠？"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7d511545fd6248f2a84ba08ed4692337",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

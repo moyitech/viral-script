@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-bc37acb35b0e44e69f1019cda4ff3192",
+  "run_id": "run-20260902T144755Z-ada9a4e4d372",
+  "trace_sha256": "ead01721e79da9803a2d54ac14089d79d7a72694bebb74ba4a7493b8a19db6af",
+  "created_at": "2026-09-03T14:27:11.626913Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛出题设矛盾，减轻与承压两侧都答，结尾落在小老板的订单判断上，人群痛点贴合。",
+      "script_spans": [
+        "利息降了，厂子却更难干。负担轻了，压力没小。",
+        "小老板算笔账：省下的利，难填亏空。别光看利率低，先数数手头订单稳不稳？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "机制、成本、订单、回款各占一环，逐层推进不跑题，结尾给出可操作的判断方法，增量足。",
+      "script_spans": [
+        "现在融资协调推开，线上点一点对接银行。信用好更容易贷，利息往下走。",
+        "刚省出点息，转头贴进料里。",
+        "有的厂收入平了，利润反降，机器空转也费钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差直接立住悬念，中段从省钱、涨价到订单、回款层层给新信息，结尾提问由算账结论自然长出。",
+      "script_spans": [
+        "利息降了，厂子却更难干。负担轻了，压力没小。你说这事怪不怪？",
+        "刚省出点息，转头贴进料里。",
+        "别光看利率低，先数数手头订单稳不稳？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句口语底子好，节奏清楚；但连词重复、悬空收尾两处需改词，封顶2分。",
+      "script_spans": [
+        "刚省出点息，转头贴进料里",
+        "但借来干嘛？但原料人工一直贵"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比与口语比喻均服务理解，“省下的利，难填亏空”离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "小老板算笔账：省下的利，难填亏空。",
+        "借钱不再跑断腿，成本实实在在减。",
+        "刚省出点息，转头贴进料里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "省息被料钱吃掉、货压库回款慢，因果桥清楚，结尾以省与亏对照回扣开头，层层递进。",
+      "script_spans": [
+        "货堆库里卖不出，厂里转着没钱进。回款慢半天，日子就熬不住。",
+        "别光看利率低，先数数手头订单稳不稳？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述公允克制，'有的厂'留有余地，结尾只提示风险不作承诺，政策效果描述与背景相符，无夸大误导。",
+      "script_spans": [
+        "有的厂收入平了，利润反降",
+        "别光看利率低，先数数手头订单稳不稳？"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-39cdfce4aa364b1fb1105d86fdf62002",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

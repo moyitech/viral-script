@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-cc9837523d0642148c43570df368641a",
+  "run_id": "run-20260902T143013Z-dc04c7f32b57",
+  "trace_sha256": "f6c0ae1379e334795ea96b22f8bcb8a206dcf4884ce9912d7eaf87d4afb99b5e",
+  "created_at": "2026-09-03T12:15:36.328001Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答视频通话核验的限度，并覆盖家庭群受骗场景与暗号、回拨两种应对。",
+      "script_spans": [
+        "视频通话还能证明身份，但单看脸不可靠。",
+        "或挂断后，用本机存的号打回去。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕别只信脸推进，从仿声叠脸机制到暗号、回拨和停顿核验，信息具体且能落地。",
+      "script_spans": [
+        "骗子拿你语音几秒仿声叠脸，视频里人就像在眼前晃。",
+        "事前跟爹妈约个暗号，说句只有自家人懂的土话。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用家庭群认亲冲突抓人，中段从仿声叠脸推进到暗号、回拨，结尾落到停三秒，余味自然。",
+      "script_spans": [
+        "家庭群视频接起喊妈，真是她？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句、画面感强，但“仿声叠脸”“再心乱”等表达生硬，朗读时需临时重断句或改词。",
+      "script_spans": [
+        "别把眼睛当法官。",
+        "骗子拿你语音几秒仿声叠脸",
+        "对上暗号再心乱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“别把眼睛当法官”“保住养老钱，也保住亲情”形象易复述，修辞克制，没有连续堆砌。",
+      "script_spans": [
+        "别把眼睛当法官",
+        "这一停，可能保住养老钱，也保住亲情"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从风险机制过渡到核验办法，基本清楚；但因果偏跳，结尾“对上暗号再心乱”语义反转。",
+      "script_spans": [
+        "给家里铺条私密确认路，比盯屏幕牢靠，骗子再像也接不上话。",
+        "AI造假跑得太快。",
+        "对上暗号再心乱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "防骗建议整体安全，约定暗号与多渠道核验清晰；但“回拨能验真”过于绝对，未说明号码被控制等例外，可能造成误判。",
+      "script_spans": [
+        "事前跟爹妈约个暗号，说句只有自家人懂的土话。",
+        "回拨能验真，骗子通常控不住原号。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-ae754edcd29645a696d9701177a762ba",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

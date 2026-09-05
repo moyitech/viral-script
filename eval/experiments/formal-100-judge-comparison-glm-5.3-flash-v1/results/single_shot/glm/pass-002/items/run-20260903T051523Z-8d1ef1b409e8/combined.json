@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-891fa3b4c3cd4f979939a8e2f2fa9eef",
+  "run_id": "run-20260903T051523Z-8d1ef1b409e8",
+  "trace_sha256": "a2252aad638aa4711a879f325f9ab97de27d22c0a45d02b3cf2e0bb6e389ba4c",
+  "created_at": "2026-09-03T15:28:01.321197Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即扣题，从求职者视角答'为何反感'，末段兼顾应对策略与招聘方建议，普通求职人群命中精准。",
+      "script_spans": [
+        "你刷到写着‘薪资面议’的岗位，是不是下意识想划走？",
+        "下次再看到面议，要么开场就问清范围，要么直接绕行"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "论点始终集中，成本转嫁、透明度机制、时间沉没层层推进，政策与学术依据相互支撑，信息增量具体可带走。",
+      "script_spans": [
+        "薪资面议在今天的招聘里，已经从中性表述变成了信任减分项",
+        "求职者对新薪酬的满意感，更依赖过程透明而不是数额本身合理"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以划走本能设钩并反转矫情，中段用合规趋势、透明研究、时间沉没层层推进，结尾建议自然收束有回味。",
+      "script_spans": [
+        "是不是下意识想划走？这不只是矫情。",
+        "五部门最近也要求招聘平台做到信息明示到位，这种模糊写法本身就站在了合规趋势的对立面。",
+        "下次再看到面议，要么开场就问清范围，要么直接绕行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "钩子与中后段多处口语鲜活，但“博弈弱势方的消耗”等书面压缩句需临场改写，半文半白拉低顺滑度。",
+      "script_spans": [
+        "当公司连个范围都不给，你根本没法判断自己是不是被当成冤大头",
+        "更依赖过程透明而不是数额本身合理",
+        "这时候模糊薪资更像是对博弈弱势方的消耗",
+        "这种模糊写法本身就站在了合规趋势的对立面"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务观点，冤大头、先亏了心态、底线数字亮出来均可独立复述，无炫技堆叠。",
+      "script_spans": [
+        "当公司连个范围都不给，你根本没法判断自己是不是被当成冤大头。",
+        "面议切断了预期管理，让人还没面试就先亏了心态。",
+        "招聘方若真想招人，不妨把底线数字亮出来，省下彼此试探的力气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "三段分别立论、释因、给行动，'为什么'与'对普通人来说'承接自然，结尾'绕行'回扣开头'划走'，因果桥完整。",
+      "script_spans": [
+        "为什么一句‘面议’这么招人烦？",
+        "对普通人来说，这种岗位最贵的不是工资未知，而是时间沉没"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "表述克制、监管信息有据；但由“信息明示到位”推出面议站到合规对立面，属争议性引申，需补边界。",
+      "script_spans": [
+        "往往不是公司想灵活谈，而是把本该明示的信息成本推给求职者",
+        "求职者对新薪酬的满意感，更依赖过程透明而不是数额本身合理",
+        "这种模糊写法本身就站在了合规趋势的对立面"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b82e48f1d5644bbaaa270aae0402d4e9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-e8f93fdfd5b74311b8f9ada7278a7bbb",
+  "run_id": "run-20260902T145122Z-d39fc9acbdbb",
+  "trace_sha256": "463fb8c842b92d019db2771112ae9a6a85b3a240f8677f53b2cfa97a1015fccc",
+  "created_at": "2026-09-03T14:27:22.366123Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇设问即作答，高层刚需与低层损失两侧并陈，结论回扣题设，人群痛点精准。",
+      "script_spans": [
+        "多数人的便利能硬挤他们让步吗？答案是否定的。法律不讲谁人多谁有理。",
+        "没电梯真把行动不便老人困家里，装梯是实需"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "受害机理、判例补偿、协商方法、签约建议环环推进，与公开判例相符，无编造，增量具体。",
+      "script_spans": [
+        "法院审理时依公平原则，认低层受损，判获数万元补偿。",
+        "得面对面聊，给受影响邻居合理赔偿，矛盾才化得开。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛具体冲突与悬念问句，中段以实需、损失、判赔层层兑现，结尾余味自然生长，三段无代偿。",
+      "script_spans": [
+        "低层住户因装电梯房子贬值、采光变差、还怕噪音，多数人的便利能硬挤他们让步吗？",
+        "好多老楼六七层，没电梯真把行动不便老人困家里，装梯是实需。",
+        "只讲便利不讲公道，电梯通了邻里情也断了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句多、够具体，如“掉一截，不好出手”好读；但“认低层受损，判获数万元补偿”等通稿腔与“硬挤他们让步”拗口，需临时换词。",
+      "script_spans": [
+        "等卖房时一楼二楼市价常掉一截，不好出手",
+        "法院审理时依公平原则，认低层受损，判获数万元补偿"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "白描具体不堆砌，'平衡账不是票数账'与'电梯通了邻里情也断了'离文可复述，克制适度。",
+      "script_spans": [
+        "所以老楼加电梯算平衡账，不是票数账。",
+        "低层屋里变暗，白天也得开灯，还有嗡嗡声。",
+        "记住先签白纸黑字补偿协议再开工最稳当。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先答后证再给方案，因果桥完整，'律师也讲'衔接自然，结尾回扣开头设问，层层递进。",
+      "script_spans": [
+        "表决规则虽认可加装，但不能拿多数同意硬压少数户。",
+        "所以老楼加电梯算平衡账，不是票数账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "既认可表决加装又强调补偿低层，建议有边界，无夸大承诺与煽动，价值导向安全。",
+      "script_spans": [
+        "表决规则虽认可加装，但不能拿多数同意硬压少数户",
+        "得面对面聊，给受影响邻居合理赔偿，矛盾才化得开",
+        "法院审理时依公平原则，认低层受损，判获数万元补偿"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9b7d5a93fe49493a90bff1e6883cf6ba",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,163 @@
+{
+  "evaluation_id": "combined-fc533488fae5445b932cd85c2a353dce",
+  "run_id": "run-20260903T051545Z-903da7bee13a",
+  "trace_sha256": "96771f389519ba6a2f7870e5f1912c45919ebd43366c4aaec718abdbd1b200fb",
+  "created_at": "2026-09-03T14:08:40.451157Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即以月入三千零工的纠结切入，结论回到现金流取舍，正面回答交得起与否，政策与负担两侧及核心人群全覆盖。",
+      "script_spans": [
+        "月入三千的零工，听说能在就业地交社保了，反而更纠结",
+        "交不交得起本质不是资格问题，而是现金流怎么排优先级的问题"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 771，目标为 700，偏差率为 10.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "负担成因、费率下调、补贴试点到节奏策略层层推进，断保调研与补贴细节均有据可依，信息密度扎实，无编造痕迹。",
+      "script_spans": [
+        "理性取舍是优先选低档保不断缴，而不是硬冲高基数换未来高待遇",
+        "补贴和试点常有地域或群体门槛，不是人人自动享受"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字以具体收入与反差纠结钩人，中段设问连环兑现新信息，结尾余味自然生长，不硬凑互动。",
+      "script_spans": [
+        "月入三千的零工，听说能在就业地交社保了，反而更纠结",
+        "能不能交得起，取决于你敢不敢把缴费方式拆细，顺着自己的钱流走，而不是逆着它硬扛"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚、比喻接地气，但'扛下本来由''低档保不断缴'等书面压缩需现场改词，朗读顺畅度受限。",
+      "script_spans": [
+        "政策扩围让更多人拿了进场券，但门票钱得自己筹",
+        "灵活就业参保得个人扛下本来由企业加个人两边出的钱",
+        "理性取舍是优先选低档保不断缴"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "进场券、托底网、栏杆等比喻贴切且分布克制，服务理解，金句离开上下文仍可复述，无堆砌。",
+      "script_spans": [
+        "政策扩围让更多人拿了进场券，但门票钱得自己筹",
+        "给不定收入者一根可抓的栏杆"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进、两次转折衔接自然，缴费重与收入不足的前提支撑结论，结尾栏杆比喻自然回扣开头的纠结，论证链完整。",
+      "script_spans": [
+        "那政策就不管这笔账了吗？其实变化已经在发生。",
+        "能不能交得起，取决于你敢不敢把缴费方式拆细，顺着自己的钱流走"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全文不作确定性承诺，多处主动设限，如点明补贴有门槛、批驳两头焦虑，客观且导向安全。",
+      "script_spans": [
+        "但你要清楚，补贴和试点常有地域或群体门槛，不是人人自动享受",
+        "别被“不交就亏”的焦虑带偏，也别信“交了就高枕无忧”",
+        "社保扩围是托底网，不是替你盈利的机器"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 771,
+        "target": 700,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.10142857142857142
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b2b30d6612d746dfbbad03964a0ff4af",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-79b3a90a833f4a848c2011554ea0da10",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

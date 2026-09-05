@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-c5837c01fd174335ac28395ea0b5288e",
+  "run_id": "run-20260903T051541Z-e5da464a387a",
+  "trace_sha256": "9d0ce39636a86a31ae281f14ee04c2fb9e851b55a2e1d53b7c70ff45a207ebfd",
+  "created_at": "2026-09-03T15:30:22.486383Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头亮判断直答会否成争端，兼顾必然争端与眼下非对抗两侧，落点回到普通用户。",
+      "script_spans": [
+        "卫星互联网大扩张，必然带来轨道资源争端，但眼下更像规则滞后的赛跑，而非直接对抗",
+        "普通用户也该有点备份连接的意识"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "判断、机制、风险、建议四个信息单元环环推进，先占先得与规则滞后有据可依，无编造。",
+      "script_spans": [
+        "国际频谱与轨道分配长期遵循先申报先占用，谁先部署大批卫星，谁就握紧了话语权",
+        "依赖越深，断供风险越敏感"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇停车场比喻即抛出反差悬念，中段用先占规则与断供风险层层加码，结尾抬头看天的余味由正文自然长出，无喊互动痕迹。",
+      "script_spans": [
+        "太空轨道正变成看不见的拥挤停车场，抢位子的游戏已经悄然开局",
+        "更麻烦的是，卫星网络早已绑住民用和应急通信，依赖越深，断供风险越敏感",
+        "早占坑的国家正悄悄重写连接世界的规则"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有“这逼着各方拼命发射”等顺口好句，但“长期遵循先申报先占用”“断供风险越敏感”两处需换词重断，书面感未消。",
+      "script_spans": [
+        "这逼着各方拼命发射，近地空间迅速变挤",
+        "国际频谱与轨道分配长期遵循先申报先占用",
+        "依赖越深，断供风险越敏感"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻点到为止且服务理解，“规则滞后的赛跑”“悄悄重写规则”离开上下文仍可复述，全篇无堆砌炫技。",
+      "script_spans": [
+        "但眼下更像规则滞后的赛跑，而非直接对抗",
+        "谁先部署大批卫星，谁就握紧了话语权",
+        "抬头看看天，轨道不是无限免费的公地"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问引出机制、更麻烦的是加码风险、所以收束回扣抬头看天，因果桥齐全，层层递进。",
+      "script_spans": [
+        "为什么这么说？",
+        "更麻烦的是，卫星网络早已绑住民用和应急通信",
+        "所以别只盯着网速快慢。抬头看看天"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "判断句自带边界，明确为规则赛跑而非对抗；风险提示克制有据，无煽动夸大与误导承诺。",
+      "script_spans": [
+        "但眼下更像规则滞后的赛跑，而非直接对抗",
+        "普通用户也该有点备份连接的意识"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1e3184262f9245c5b9fd67f060f7d710",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,163 @@
+{
+  "evaluation_id": "combined-da9c530e82df43b28951172f621dc359",
+  "run_id": "run-20260903T051519Z-ab3192466357",
+  "trace_sha256": "9b78cabf684df0e662d5443d4a9bb77d239cc08e630898417a5351c8adcc5570",
+  "created_at": "2026-09-03T12:06:36.041739Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从成年人的真实处境切入，同时回应家人的关心与个人的边界压力，结论也给出可执行的相处方式。",
+      "script_spans": [
+        "不是反对关心，是反对没有退路的关心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 2,
+      "reason": "实际非空白字符数为 509，目标为 450，偏差率为 13.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“授权—不敢退出—日常自我审查—替代方案”逐步推进，既有规则依据，也有具体判断和行动建议。",
+      "script_spans": [
+        "位置权限其实从未强制。苹果和微信的隐私说明都指出，共享要你明确授权，想关随时进设置停用。",
+        "把“一直共享”改成“出门报个备、晚归开共享”，压力立刻减半。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出私人自由与家庭安心的冲突，中段递进到默许契约，结尾用留白自然收束。",
+      "script_spans": [
+        "你下班想绕路去书店发呆，家人发来实时位置共享邀请",
+        "为什么明明能关却不敢关？",
+        "给彼此留白，比实时连线上更像家人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "设问、短句和比喻有口播感，但中段抽象词偏密，个别搭配拗口，整体仍需改词。",
+      "script_spans": [
+        "不是反对关心，是反对没有退路的关心。",
+        "共享是默许的双向契约",
+        "技术让渡的不只是GPS坐标，还有你独处和偶尔脱轨的权利。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“急救绳”和“脚踝上的链”形成准确反差，既解释使用边界，也留下可复述的收束句。",
+      "script_spans": [
+        "当权限变成义务，爱就带了重量。",
+        "定位应该是抽屉里的急救绳，不是脚踝上的链。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "场景提出冲突，随后解释为何“能关却不敢关”，再落到日常后果与替代做法，结尾自然回扣主题。",
+      "script_spans": [
+        "为什么明明能关却不敢关？因为共享是默许的双向契约",
+        "定位应该是抽屉里的急救绳，不是脚踝上的链。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体未煽动对立，且强调授权与边界；但“位置权限其实从未强制”“压力立刻减半”表述过满，易造成误导。",
+      "script_spans": [
+        "不是反对关心，是反对没有退路的关心。",
+        "位置权限其实从未强制",
+        "压力立刻减半"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [
+    {
+      "code": "length_out_of_range",
+      "severity": "warning",
+      "message": "Script length is outside the configured target range.",
+      "details": {
+        "actual": 509,
+        "target": 450,
+        "tolerance_ratio": 0.1,
+        "deviation_ratio": 0.13111111111111112
+      }
+    }
+  ],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-6b05f04c66b94ab381aa50da7366603b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-7068315de24f4e79afee1f4343571142",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

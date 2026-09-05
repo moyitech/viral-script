@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-b124ba1642304ecfb6557df9e44ca972",
+  "run_id": "run-20260903T051534Z-8900bb895320",
+  "trace_sha256": "1948f37510c80ce427a92c9a6ae5efe5317307b40455f21764a695cde3916a2c",
+  "created_at": "2026-09-03T12:42:46.488492Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接给出判断，围绕企业、碳信用与真实减排展开，并落到采购核验建议，题设两面均有回应。",
+      "script_spans": [
+        "企业争购碳信用，眼下更像财务合规游戏，真实减排成色明显不足。",
+        "所以您单位采购前，务必调取第三方的额外性核查报告与公开登记状态"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从额外性定义、项目情形到监管与采购核验，信息单元持续推进，兼有解释与可执行建议。",
+      "script_spans": [
+        "碳信用机制的核心前提是论证“额外性”",
+        "交叉验证项目是否真多减了，别光比谁家吨数标价低"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出“合规游戏”与“真实减排”的冲突，中段连续补充机制、监管和采购建议，结尾落到可执行提醒。",
+      "script_spans": [
+        "企业争购碳信用，眼下更像财务合规游戏",
+        "更暴露短板的是，监管最近才紧急给碳市场叠上信用惩戒",
+        "别光比谁家吨数标价低"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有明确判断、形象收束和可执行建议，但长句叠加术语，连续朗读时气口不够轻快。",
+      "script_spans": [
+        "企业买来只是在账面抵消自家排放，地球并没少热。",
+        "碳信用机制的核心前提是论证“额外性”，也就是项目减排必须依赖出售信用获得的资金，缺了这笔钱就不会发生",
+        "所以您单位采购前，务必调取第三方的额外性核查报告与公开登记状态，交叉验证项目是否真多减了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“账面抵消自家排放，地球并没少热”把抽象风险说具体，“别光比谁家吨数标价低”也便于观众复述。",
+      "script_spans": [
+        "账面抵消自家排放，地球并没少热",
+        "别光比谁家吨数标价低"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整且结论有回扣，但将监管惩戒直接解释为交易双方游戏空间过大，缺少中间证据，因果略跳。",
+      "script_spans": [
+        "可现实中不少森林保护或可再生能源项目本身就有其他推力",
+        "恰恰因为过去买卖双方游戏空间太大"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "指出额外性核查和采购验证方向较稳妥，但“明显不足”“紧急”“恰恰因为”等概括与因果过满，易把复杂监管与市场问题说成定论。",
+      "script_spans": [
+        "务必调取第三方的额外性核查报告与公开登记状态",
+        "监管最近才紧急给碳市场叠上信用惩戒，把虚假核销与漂绿行为纳入黑名单"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a770c1b7a9fd42028c80fc85b8ea361d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-de097359d6034419ad7a59386c1c484c",
+  "run_id": "run-20260902T141858Z-0e4311454c42",
+  "trace_sha256": "9fa68a49f3686f969d688064fc8605b4881ed4b593d7f9ee862737c5758463e4",
+  "created_at": "2026-09-03T14:25:00.063505Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给出'读不懂潜力全貌'的正面回答，企业动因与求职者应对两侧齐备，结尾回扣题设。",
+      "script_spans": [
+        "算法读不懂潜力全貌，先帮公司筛一遍。",
+        "对咱们来说，面试先过算法这关。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "机制、研究、政策与建议层层推进，信息扎实；但'潜力不是面试几分钟的表演'与前句同义，密度受损。",
+      "script_spans": [
+        "弗吉尼亚理工的研究提到，AI帮人事先筛人能省下沟通成本。",
+        "它听你说话，只抓词和语气。",
+        "潜力不是面试几分钟的表演。",
+        "别指望它懂你简历外的闪光点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头秒删潜力直给冲突，中段以机制、动因、取舍层层推进，结尾一问由较量自然长出，余味足。",
+      "script_spans": [
+        "AI面试官秒删你的潜力，企业省了钱却错失人才。",
+        "下次面对屏幕，你是在展示自己，还是猜它要啥？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "全篇短句、气口清楚，问题出在哪儿一句很顺；但帮人事先筛人与练就对着机器两处需改词重断，封顶2分。",
+      "script_spans": [
+        "问题出在哪儿？它听你说话，只抓词和语气。",
+        "AI帮人事先筛人能省下沟通成本",
+        "你得练就对着机器，也能讲清自己的真本事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "压成分数、老数据猜未来皆准确克制，省了时间丢了眼光可离开语境复述，无堆砌。",
+      "script_spans": [
+        "我们省了见面时间，却可能丢了识人的耐心和眼光。",
+        "机器用老数据猜你未来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "问答式过渡与结尾回扣都清楚，主线可跟随；但'标准像是被锁死'缺铺垫解释，承接偏跳。",
+      "script_spans": [
+        "问题出在哪儿？它听你说话，只抓词和语气。",
+        "我们省了见面时间，却可能丢了识人的耐心和眼光。",
+        "表面公平背后，标准像是被锁死。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "利弊两面兼顾，用'容易漏掉''可能牺牲'等限定词避免绝对化，引研究与政策背景，无煽动夸大承诺。",
+      "script_spans": [
+        "可它把潜力压成评分，容易漏掉慢热的人。",
+        "你要效率，就可能牺牲掉识人的深度。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9209013e7e1a46d4be12e9af3a8e64cb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

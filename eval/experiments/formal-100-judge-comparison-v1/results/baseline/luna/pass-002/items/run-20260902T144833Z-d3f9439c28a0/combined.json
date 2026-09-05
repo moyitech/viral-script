@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-6e776a6a07f048948153b885528bcd8c",
+  "run_id": "run-20260902T144833Z-d3f9439c28a0",
+  "trace_sha256": "243ae0250cf79605f4ac96b2d41acfbef3bc84c174321f14230df79ff11b9f16",
+  "created_at": "2026-09-03T12:16:16.011789Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接回答规则趋严下小商家是否更难，兼顾风险与退货政策两侧，也给出目标人群的应对判断。",
+      "script_spans": [
+        "小商家出海整体更难，可路没封死。",
+        "肯做合规的，退货成本大降；只想铺货赚快钱的，门槛抬高了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕规则收紧、合规风险、退货政策和经营应对层层推进，信息单元具体，结论有现实抓手。",
+      "script_spans": [
+        "小额B2C订单恰恰是风险高发区。",
+        "企业得开数据接口，有独立作业区，规范成本上来了。",
+        "小商家出海比的不是胆子，是谁先把账做平。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用难度与回血形成反差，中段不断补充风险和政策转折，结尾自然落到赛道与经营选择。",
+      "script_spans": [
+        "小商家出海难了，但退货新政能回血。",
+        "其实政策一边收绳子一边铺桥。",
+        "所以规则趋严不是赶人，是换赛道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答承接较清楚，但“漏洞容易碎”等表达生硬，核心段落仍像压缩说明稿。",
+      "script_spans": [
+        "小商家出海整体更难，可路没封死。",
+        "规则严在通关和税务两头查，小商家资源少，漏洞容易碎。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "收绳子一边铺桥与换赛道的比喻形象贴题，既解释政策张力，也留下了观众容易复述的观点。",
+      "script_spans": [
+        "其实政策一边收绳子一边铺桥。",
+        "所以规则趋严不是赶人，是换赛道。",
+        "小商家出海比的不是胆子，是谁先把账做平。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从变难到政策缓冲再到应对建议，基本清楚；但“漏洞容易碎”拗口，“懂了反而能捡漏”缺少因果说明。",
+      "script_spans": [
+        "先说问题在哪。",
+        "那机制上有松有紧。",
+        "小商家资源少，漏洞容易碎。",
+        "懂了反而能捡漏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能看到政策有松有紧，但“全面”“零门槛”及“能回血”缺少适用范围和结果边界，容易让观众误判。",
+      "script_spans": [
+        "可路没封死",
+        "小商家出海难了，但退货新政能回血",
+        "海关全面推跨关区退货",
+        "各地建了孵化基地，零门槛教开店"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-88b6f9bd902e4afbac3a31de06eba1e5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

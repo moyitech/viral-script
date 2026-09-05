@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-f5291c0e54664cc68ee25d89e4362d51",
+  "run_id": "run-20260903T051549Z-879ffa479fa7",
+  "trace_sha256": "65483d31289718686c807c42bcfacba7fbd3f212432ab2e938158527cab47a25",
+  "created_at": "2026-09-03T15:27:38.258400Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即答'难分'，中段补原因与规则，结尾落到观众可操作核验，题设两侧与普通观众均覆盖。",
+      "script_spans": [
+        "普通人靠直觉分清真人和合成，基本不现实。别信什么眼力见，标识成了眼下最靠得住的防线。",
+        "那普通观众该怎么办？刷到不知疲倦、表情标准的主播，先别急着下单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从难分原因、标注新规到老专家引流案例层层推进，事实与建议相互支撑，观众能带走具体判断方法。",
+      "script_spans": [
+        "但监管早就划了线：带货短视频用AI辅助，创作者必须主动添加标注，没标平台就限制分发。",
+        "去画面角落找“AI生成”或“虚拟主播”的角标。没标却自然得过分的那类，反而更该警惕。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首二十字即设反差悬念，中段靠监管划线与老专家案例持续制造转折，结尾余味由正文自然生长。",
+      "script_spans": [
+        "你以为在和真人砍价，对面可能只是一串代码在循环播放。",
+        "可利益面前总有人绕开规则，比如用虚拟老专家形象精准盯住中老年群体，把他们引流去私域买高价保健品。",
+        "进直播间先扫一眼角标，再决定信不信那张不知疲倦的脸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音停顿清楚，核心解释用口语词序，基本无需改词即可录音。",
+      "script_spans": [
+        "商家图它不休息、不闹绯闻，全天候守店铺。",
+        "记住，标识是普通人的放大镜，不是商家的免责牌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“放大镜不是免责牌”贴切准确，离开上下文仍可复述；机器不睡觉的反转加分，全程无堆砌炫技。",
+      "script_spans": [
+        "记住，标识是普通人的放大镜，不是商家的免责牌。",
+        "别觉得天天守播的真人有多勤奋，可能只是机器不睡觉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "两处设问自然承接，因果清楚，结尾放大镜之喻回扣开头防线说与题设，结构闭环。",
+      "script_spans": [
+        "为什么越来越难分？真人主播受限于体力和成本，数字人却能一直在线",
+        "记住，标识是普通人的放大镜，不是商家的免责牌。进直播间先扫一眼角标，再决定信不信那张不知疲倦的脸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "监管表述与风险案例均有依据，措辞留有余地，不否定机器购物，提醒观众核对标识，无夸大或误导风险。",
+      "script_spans": [
+        "带货短视频用AI辅助，创作者必须主动添加标注，没标平台就限制分发",
+        "机器主播不是不能买，但得先亮明机器身份"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-330006c66b10492e9e3ad630702e3fc7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

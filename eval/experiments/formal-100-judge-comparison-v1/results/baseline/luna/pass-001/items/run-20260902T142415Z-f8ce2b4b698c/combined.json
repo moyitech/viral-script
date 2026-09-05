@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-8379433be5ce4a1587ff47c99581da31",
+  "run_id": "run-20260902T142415Z-f8ce2b4b698c",
+  "trace_sha256": "42f1acf7c91e16beaa01eb95836eb78e159a3c698fa10679cca9ee47a689c9fd",
+  "created_at": "2026-09-03T11:44:49.026819Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头明确回答“不必然”，同时覆盖企业防泄密诉求、员工隐私风险及可行边界。",
+      "script_spans": [
+        "答案其实是，效率提升不必然牺牲员工隐私，但乱用照样可能侵权。",
+        "企业想省人力，员工要尊严，这取舍不是零和。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 766，目标为 700，偏差率为 9.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，既解释LoRA与匿名化，也给出法律边界、告知和分账号等具体应对。",
+      "script_spans": [
+        "有些企业会在邮件进模型前，先过匿名化。",
+        "不过这类结论多来自训练实验，邮件实操还缺独立评估。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以效率与隐私冲突抓人，中段有研究反转和法律边界，结尾以具体问题自然引发互动。",
+      "script_spans": [
+        "企业用大模型筛邮件，效率拉满却未必偷隐私。",
+        "这个发现反转了常识。",
+        "下次签入职同意书，你会翻邮件条款吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答式推进和短句较顺，但技术、法律表述有明显卡口，个别词组需临场换词。",
+      "script_spans": [
+        "为啥这么说？最近有研究盯着模型微调看。",
+        "企业碰员工邮件得走最小必要。",
+        "用认名字找地址的法子把敏感词换掉。",
+        "邮件出处被遮。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“省人力与要尊严”形成清晰对照，“规矩和知情权”收束有力，修辞克制且便于复述。",
+      "script_spans": [
+        "企业想省人力，员工要尊严，这取舍不是零和。",
+        "真正护住你的，还是规矩和知情权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整、问题推进清楚，但将微调隐私风险直接外推到邮件筛查，关键因果桥仍不足。",
+      "script_spans": [
+        "那公司能随便扫邮箱吗？不行。法律边界卡在这。",
+        "可真正护住你的，还是规矩和知情权。",
+        "企业若用本地小模型加这道锁，筛查更快还少泄露。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调最小必要、告知和匿名化，风险意识清楚；但把邮件审查的法律边界说得过于绝对，缺少适用法域与具体条件。",
+      "script_spans": [
+        "你有权知道谁看、看多久。",
+        "法律不禁止查工作邮，但要求事先说清。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2f51554480e74f1695ba14b80f510942",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e972aff1d49d4eb1867cacc9f68ffeaa",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

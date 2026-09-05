@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-d04100b62d464ac0b1fad32035b73cfb",
+  "run_id": "run-20260903T051522Z-9f796c842d2b",
+  "trace_sha256": "7cac8c830d31f4ff35e280fa9334c4cbf87bf5e2e4abdaac3dadc7f4b4df4191",
+  "created_at": "2026-09-03T12:31:25.709610Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "同时写清试用便利与冲动负债风险，结尾给出面向普通消费者的核查建议，正面回应二元题。",
+      "script_spans": [
+        "不是坑人陷阱，但确实在悄悄弱化你花钱的即时痛感",
+        "把它当临时试用通道可以，但每笔收货后立刻核一眼待付清单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕付款痛感展开，依次解释试用便利、决策门槛下降、冲动消费和待付负担，信息推进清楚。",
+      "script_spans": [
+        "它让消费者先拿实物再结账，试错成本几乎为零",
+        "当付款痛感被延后，决策门槛一降再降",
+        "月结时累积的待付额就成了不易察觉的隐形负担"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“0元下单”制造反差，中段解释付款痛感延后如何放大冲动，结尾建议也由风险自然落地。",
+      "script_spans": [
+        "钱仿佛暂时隐身，下单像在玩不用币的游戏",
+        "可当付款痛感被延后，决策门槛一降再降",
+        "别让后付悄悄变成负债"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读通，开头和结尾较顺，但中段长句、抽象词和“核一眼”造成明显卡顿，未达到自然口播。",
+      "script_spans": [
+        "把它当临时试用通道可以",
+        "可当付款痛感被延后，决策门槛一降再降，那些原本会被拦下的冲动订单成倍冒出来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“钱仿佛暂时隐身”和“隐形负担”形象地解释了延迟付款的风险，修辞克制，也留下了可复述的提醒。",
+      "script_spans": [
+        "钱仿佛暂时隐身",
+        "月结时累积的待付额就成了不易察觉的隐形负担",
+        "别让后付悄悄变成负债"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先定性，再解释便利与风险机制，最后给出使用边界，转折和结论回扣自然，因果链基本完整。",
+      "script_spans": [
+        "我认为先用后付不是坑人陷阱，但确实在悄悄弱化你花钱的即时痛感",
+        "可当付款痛感被延后，决策门槛一降再降",
+        "把它当临时试用通道可以，但每笔收货后立刻核一眼待付清单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有风险提示和核账建议，但“试错成本几乎为零”“无处不在”等表述绝对化，易放大因果和覆盖范围。",
+      "script_spans": [
+        "我认为先用后付不是坑人陷阱",
+        "每笔收货后立刻核一眼待付清单",
+        "试错成本几乎为零",
+        "那些原本会被拦下的冲动订单成倍冒出来",
+        "无处不在"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6123e86282fb435595bb9830ec604dcf",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

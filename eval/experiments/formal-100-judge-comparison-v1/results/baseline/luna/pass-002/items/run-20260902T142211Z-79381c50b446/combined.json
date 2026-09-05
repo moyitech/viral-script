@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-753bf1386ce44e26840f056abea6cef7",
+  "run_id": "run-20260902T142211Z-79381c50b446",
+  "trace_sha256": "3f8da6150009664a6dd7f8606ec52fdb414741b7633b8a60b7a3e7360d5480cf",
+  "created_at": "2026-09-03T12:15:22.187303Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应两种结果，覆盖学校、普通家庭与农村儿童，核心矛盾和受影响人群均有落点。",
+      "script_spans": [
+        "它确实能因材施教，也藏着放大差距风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题始终围绕个性化与公平风险，机制和家庭影响较具体，但研究结论笼统，部分判断只是重复风险而未继续推进。",
+      "script_spans": [
+        "过去得分高的多给拓展题，以为因材施教，实则在复制老分层。",
+        "算法偏见在数据和训练里滚雪球，不是单纯技术故障，而是把过去不平等又学一遍。",
+        "研究综合发现公平获取本是难题，风险真存在。",
+        "家里能课外补位，差距被填平；没条件的孩子更靠学校机器。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“喂饱”和“甩下”制造反差，中段持续推进，结尾追问也由风险自然生长。",
+      "script_spans": [
+        "AI助教进教室，有的娃被喂饱，有的娃被甩下。",
+        "当算法比老师更会讲题，谁来接住分心的小孩？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 1,
+      "reason": "多处省略和生硬搭配贯穿核心展开，朗读时频繁需要补词、重断句，整体不像可直接录制的口播稿。",
+      "script_spans": [
+        "学校引系统用算法分注意力，给每个娃排不同练习",
+        "政策要求普惠和个性培养统一，取舍是机器给效率人补温度。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“有的娃被喂饱，有的娃被甩下”形象准确，把抽象的教育公平风险说得可感、可记。",
+      "script_spans": [
+        "AI助教进教室，有的娃被喂饱，有的娃被甩下。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构有先抛问题、再讲机制、后落到家庭的递进，但关键转折和结论桥接不足，压缩句也影响清晰度。",
+      "script_spans": [
+        "那它怎么放大差距？算法偏见在数据和训练里滚雪球",
+        "老师想拉平差距，结果可能会反过来。",
+        "政策要求普惠和个性培养统一，取舍是机器给效率人补温度。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体讨论平衡，未见煽动或危险建议；但“差生”“鸿沟定型”等标签和确定性表述可能造成误导，需加限定。",
+      "script_spans": [
+        "它确实能因材施教，也藏着放大差距风险。",
+        "好比优等生教优等生，差生错被忽略。",
+        "全扔屏幕鸿沟定型。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 16.0,
+    "partial_weighted_average": 2.2857142857142856,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-837ade7f8b5b4e8a8cd52c421c7e41f7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

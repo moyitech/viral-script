@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-fbb0c4636a2244328fe01a63515422be",
+  "run_id": "run-20260903T051542Z-2daef86f5830",
+  "trace_sha256": "6981f82cb35704e2323c70ae18057d8cd5194bc83b2dd4e85780e078edfb8b4e",
+  "created_at": "2026-09-03T15:29:59.085658Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点破责任调包，中段给出两层走样原因，结尾以“谁的功课”回扣题设，冲突两侧与家长人群全覆盖。",
+      "script_spans": [
+        "根子不在孩子懒，而是家校两边的责任被悄悄调了包",
+        "因为作业评价常常只看成品漂不漂亮，不看过程怎么吵过来的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移，责任转嫁、政策依据、倒U研究、评价导向各自推进，与外部资料互证，无编造。",
+      "script_spans": [
+        "教师转嫁了准备成本，家长替代了学习主体，同伴合作退化为家庭资源秀",
+        "家长可以当脚手架，不能当施工队"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即立住反差钩子，中段以责任调包、研究边界、评价错位层层兑现，结尾“谁的功课”由正文自然长出余味。",
+      "script_spans": [
+        "小组作业本来是让孩子学着一起做事，现在倒好，班里微信群里比的是谁的爸妈PPT更炫，谁家打印了铜版纸手册。",
+        "那是不是家长彻底别管就对了？也不一定。",
+        "下次看到家长在群里发精修手册，不妨想想，这到底是谁的功课。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，自问自答带对话感，重音停顿清楚，通读无需临时改词。",
+      "script_spans": [
+        "可有些老师图省事，也怕家长抱怨难度低，就把设计、打印、甚至批改的活儿直接塞给家长。",
+        "让他们自己吵、自己分活、自己承担粗糙的后果，家长退后一步只做安全网。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "脚手架与施工队之喻精准贴题，离开上下文仍可复述；军备竞赛、模拟演练点到即止，形象始终服务观点，无堆砌炫技。",
+      "script_spans": [
+        "家长可以当脚手架，不能当施工队。",
+        "合作学习不是家长朋友圈的军备竞赛，而是孩子在社会化之前，最便宜的一次模拟演练。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "现象、归因、边界、再归因、对策层层递进，转折自然，结尾回扣开头提问，因果桥完整。",
+      "script_spans": [
+        "那是不是家长彻底别管就对了？也不一定",
+        "下次看到家长在群里发精修手册，不妨想想，这到底是谁的功课"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "归因限定“有些老师”，引政策与研究均留余地，“脚手架不当施工队”边界清楚，无煽动夸大。",
+      "script_spans": [
+        "政策其实早有说法，严禁给家长布置或批改作业，但小组作业这类“软任务”在执行层成了漏洞。",
+        "这里的边界只有一条：家长可以当脚手架，不能当施工队。",
+        "有研究看到，小学生阶段家长适度搭把手，比如问问进度、鼓励表达，和孩子成绩之间有正向关联"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e07eb67d44964785919aa144f1c3ed31",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

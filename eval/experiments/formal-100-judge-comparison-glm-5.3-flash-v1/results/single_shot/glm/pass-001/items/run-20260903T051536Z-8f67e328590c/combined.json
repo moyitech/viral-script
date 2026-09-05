@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-09a3288570044efd88dcf92b26693842",
+  "run_id": "run-20260903T051536Z-8f67e328590c",
+  "trace_sha256": "948c8c511d04e293ba291ec1ad755a2363e4968082eea9b296ec0f0559a6ac27",
+  "created_at": "2026-09-03T14:09:42.563276Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头摆出老板与员工两侧冲突，结论直接回答不必然牺牲隐私，切角落在员工真实痛点上，全程未跑题。",
+      "script_spans": [
+        "老板觉得效率起飞，员工却后背发凉：我的私人家事、求职聊天岂不全被看光？",
+        "效率提升本身不必然等于侵犯隐私，真正决定走向的是数据怎么进模型、有没有守住法律底线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 749，目标为 700，偏差率为 7.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "最小必要红线、泄露案例、反直觉研究、匿名化落地、监管边界逐层推进，均有引用背景支撑，无编造痕迹。",
+      "script_spans": [
+        "某些高效方法反而能像专业隐私手段那样压住数据记忆风险",
+        "过度脱敏可能让模型漏掉真实违规线索"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头20字即抛出监控场景与老板员工对立，中段反直觉发现与监管关卡层层推进，结尾金句自然收束留余味。",
+      "script_spans": [
+        "老板觉得效率起飞，员工却后背发凉：我的私人家事、求职聊天岂不全被看光？",
+        "技术上有条反直觉的路子。",
+        "大模型筛查邮件，省的是人力，不该省的是分寸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数短句好读、对话感强，但“专业隐私手段压住数据记忆风险”“最小必要处理”两处名词堆叠、文件腔，需临时改词。",
+      "script_spans": [
+        "很多系统直接把原始邮件喂给模型，里面混着身份证号、病史闲聊",
+        "只图快不嵌规则，轻则员工信任崩塌，重则吃罚单",
+        "某些高效方法反而能像专业隐私手段那样压住数据记忆风险",
+        "基于明确目的做最小必要处理"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比与比喻点到为止，「省的是人力，不该省的是分寸」离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "省的是人力，不该省的是分寸",
+        "取舍不是零和，工具用法才是杠杆。",
+        "把隐私当成本而不是障碍，企业才不会被自己的效率反噬。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由直觉成因转入反直觉路子，再补监管约束与脱敏局限，过渡自然，结尾省人力不省分寸回扣开头。",
+      "script_spans": [
+        "那是不是只要上AI筛查，就注定和员工隐私你死我活？倒也不是。",
+        "大模型筛查邮件，省的是人力，不该省的是分寸"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "明示最小必要与留人把关等法律边界，研究结论有\"某些\"限定，老板与员工双方视角均呈现，无煽动、夸大或无依据承诺。",
+      "script_spans": [
+        "边界是：基于明确目的做最小必要处理，并且留人把关",
+        "用人单位处理员工通信得有合法基础，不能拿效率当万能借口",
+        "某些高效方法反而能像专业隐私手段那样压住数据记忆风险"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-2aa2c9320b214ea4bf11640deb7b16f8",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-5ad620f4ed864fa5b8905cd353922b9f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

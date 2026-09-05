@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-ff23c6f67ead410a9dbee2f3f67284eb",
+  "run_id": "run-20260903T051702Z-63aeb5270c7a",
+  "trace_sha256": "c78fca45a81a3e67aa6ccbbf5272255744bee3f1af9aa5d7a1c860037725322e",
+  "created_at": "2026-09-03T12:32:07.686268Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解“能参保”与“付得起”的差异，覆盖灵活就业者痛点并给出针对性回答。",
+      "script_spans": [
+        "扩围解的是“谁能进门”，不是“谁付得起”。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕缴费负担，先讲承担机制，再落到收入波动、平台补贴与现金流应对，信息单元有推进。",
+      "script_spans": [
+        "缴费比例近年虽调低，基数却钉着社会平均工资走。",
+        "先算自己的现金流。收入不稳时，选最低缴费档、保住连续记录比追高档次聪明。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "主题明确，机制、试点和建议层层推进；但前20字先讲政策变化，核心冲突稍后出现，开场钩子不够猛。",
+      "script_spans": [
+        "扩围解的是“谁能进门”，不是“谁付得起”",
+        "社保扩围让送外卖、开网约车的散活儿人能在就业地交职工保险了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "设问、短句和结尾收束有节奏，整体能读通；但两处句式生硬，朗读时需要临时换词。",
+      "script_spans": [
+        "收入忽高忽低的人，真能按月掏出这笔钱吗？",
+        "像部分城市骑手养老费由平台补一半",
+        "对普通人，取舍得现实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“谁能进门”与“谁付得起”对照直观好记，结尾再次用锁与结回扣主题，修辞克制且服务理解。",
+      "script_spans": [
+        "扩围解的是“谁能进门”，不是“谁付得起”",
+        "社保扩围解了“能不能参”的锁，却解不开“收得稳不稳”的结。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出门槛与负担的区分，中段解释缴费机制及后果，结尾回到不断供建议，递进和回扣都完整。",
+      "script_spans": [
+        "参保的门槛降了，但缴费的担子并没轻到人人交得起。",
+        "这等于让收入波动的人，在淡季也得凑出固定开支。",
+        "社保扩围解了“能不能参”的锁，却解不开“收得稳不稳”的结。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动或承诺，但地区政策和参保策略说得过满，缺少条件限定，可能误导观众。",
+      "script_spans": [
+        "扩围解的是“谁能进门”，不是“谁付得起”。",
+        "多地已允许困难者按更低基数交，去社区问问就能少踩坑。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d1f28e798a394483b6d21f3f3aaba417",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

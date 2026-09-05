@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-28001e0da8f841afbada5f04b8cc44b6",
+  "run_id": "run-20260902T145145Z-55c8c3d658fa",
+  "trace_sha256": "c11a22d73d7393d46f731f150b0e852b97834be26a671806c6c5c3f319e6476b",
+  "created_at": "2026-09-03T13:49:46.104961Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头点题、结尾回扣，通网与圈地两侧并重，普通人视角贯穿始终。",
+      "script_spans": [
+        "轨道会成为新争端，但争夺不从飞船对撞开始，而从文件桌和频谱占坑算起。",
+        "你刷视频时，外交官正为那频段红脸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 701，目标为 700，偏差率为 0.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "占坑规则、断服施压、框架迟滞层层推进，事实解释与结论相互支撑。",
+      "script_spans": [
+        "谁先把计划交了，谁就圈走一片轨道空域。",
+        "有公开分析提过，某国曾拿切断星链服务当谈判条件，换对方资源。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句二十字内抛出通网与抢地反差，中段以规则、筹码、拥堵逐层兑现钩子，结尾之问由星图债单自然长出。",
+      "script_spans": [
+        "卫星互联网让上网更快，却可能引爆太空抢地盘。",
+        "有公开分析提过，某国曾拿切断星链服务当谈判条件，换对方资源。",
+        "要是轨道被分完了，下一代抬头还能看见多少自由星空？这问题比网速更该被记住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、意象好读，但\"反例是治理并非失效只是迟钝\"等处需临时重断改词，未达自然级。",
+      "script_spans": [
+        "低轨离地近，网速快延迟低，所以家家都想铺天花板。",
+        "有研究也提醒，密集星群还添了太空碎片新麻烦，反例是治理并非失效只是迟钝。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "占坑、早高峰地铁、慢灯控快路等比喻准确助解；天上没星纸上已分地盘离文可复述，修辞克制不喧宾。",
+      "script_spans": [
+        "天上没星，纸上已分地盘。",
+        "老框架像慢灯控快路，车翻倍灯没换"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "段落功能清晰，结尾回扣自然；但“反例是治理并非失效只是迟钝”承接错位，需观众自行理顺。",
+      "script_spans": [
+        "回到开头那抢地盘之忧，它真不是科幻。",
+        "反例是治理并非失效只是迟钝"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键论断有'公开分析''公开资料'限定，敏感事件匿名化，判断多用'可能''要是'设界，客观不夸大。",
+      "script_spans": [
+        "有公开分析提过，某国曾拿切断星链服务当谈判条件，换对方资源",
+        "不是立刻宇宙开战，但卫星背后常连着国家账本",
+        "反例是治理并非失效只是迟钝"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-6fe7c98449d64142b4790dcdd4058348",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-fa8ffb3b90c643d486a686ce44f3977a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

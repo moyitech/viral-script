@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-7183a3027d2a4f19affb69485027ae18",
+  "run_id": "run-20260903T051606Z-b4203b2362da",
+  "trace_sha256": "0ba4aef3aeddc7c589e6f687226c9d8a48118085562cdf80db562ebc51893f73",
+  "created_at": "2026-09-03T14:11:11.005054Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给出“不集体涨但局部涨”的回答，覆盖题设两侧，结尾落到普通人选购建议，人群精准。",
+      "script_spans": [
+        "关键原料出口受限，不会让全球绿色产业集体涨价，但供应链高度集中的那几种材料，价格底线已经被政策重新钉死。",
+        "普通人盯价格不如盯型号，优先选供应链透明的牌子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 425，目标为 450，偏差率为 5.56%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "管制边界、加工集中、库存调配、长期溢价逐层推进，事实与解释互撑，结尾可执行，无空转。",
+      "script_spans": [
+        "现在的出口管控大多对准战略矿产和两用物项，不是所有绿色原料都受限。",
+        "终端产品不会明天就统一调价，因为巨头会调配库存、切换采购地。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即立反差钩子，中段连环设问并兑现新信息，结尾建议由正文自然长出，留有行动余味。",
+      "script_spans": [
+        "买太阳能板和电动车的人盼着降价，但矿端的风向却反着吹",
+        "为什么不是一刀切暴涨？看清管制的边界就知道",
+        "别只看能效标签，看看它肚子里的矿从哪来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句断句清楚，钉死、掐脖子有画面感；但含受限材料、本土化替代强等压缩说法需临时改口，只能定2分。",
+      "script_spans": [
+        "哪怕小幅限制，也直接掐住下游电池和磁材的脖子",
+        "别只看能效标签，看看它肚子里的矿从哪来",
+        "含受限材料的电机、储能单元可能悄悄溢价",
+        "本土化替代强的品类会更吃香"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“掐住脖子”“肚子里的矿”等比喻服务理解，收尾句离开上下文仍可复述，用度克制不喧宾夺主。",
+      "script_spans": [
+        "哪怕小幅限制，也直接掐住下游电池和磁材的脖子",
+        "别只看能效标签，看看它肚子里的矿从哪来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "两处设问作段落桥，“这种格局下”承接集中前提，结尾回扣开头买家视角，递进完整。",
+      "script_spans": [
+        "为什么不是一刀切暴涨？看清管制的边界就知道。",
+        "这种格局下，哪怕小幅限制，也直接掐住下游电池和磁材的脖子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "多处有对冲限定，判断负责；但'价格底线已被钉死''直接掐住脖子'属绝对化断言，补充边界更稳妥。",
+      "script_spans": [
+        "现在的出口管控大多对准战略矿产和两用物项，不是所有绿色原料都受限",
+        "终端产品不会明天就统一调价，因为巨头会调配库存、切换采购地",
+        "价格底线已经被政策重新钉死",
+        "哪怕小幅限制，也直接掐住下游电池和磁材的脖子"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-61c61106da5b45aab30c065a5bf215b9",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-b0919e2c1cf44a4fb65dc5d79201193e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-5dcf76185fad47b297beb704487b4c10",
+  "run_id": "run-20260902T141941Z-7a95b9c25ae3",
+  "trace_sha256": "d6fb2e5b161526ea9f0aaa0bbdee8d98d992f10d93940e4fa3deb0e023610564",
+  "created_at": "2026-09-03T12:15:44.643261Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解“搬走”与“截流”的区别，也覆盖了网站流量受损和应对方向。",
+      "script_spans": [
+        "网站内容不会被免费搬走，但原站流量正被入口吃掉",
+        "别死磕旧排名，学着想被AI引一句"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，机制、用户行为、研究数据和应对建议层层增加认知，信息增量较足。",
+      "script_spans": [
+        "把几页内容揉一块，问题立刻被接住",
+        "有研究看到百科页点击降约一成多"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“搬走”与“截胡”制造反差，中段层层解释流量为何被截，结尾追问自然留下余味。",
+      "script_spans": [
+        "内容没被搬走，访客却先截胡。",
+        "省下的步骤，就是原站丢掉的脚步。",
+        "当答案替你读完网页，谁还愿做那个翻原稿的人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句、有对话感，“你说白嫖吗”易读；但“约一成多”和“小站得想法”明显拗口，需改词。",
+      "script_spans": [
+        "你说白嫖吗？不算搬走，算截流。",
+        "有研究看到百科页点击降约一成多。",
+        "小站得想法在答案里被提到，不然更难被看见。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“截胡”“退到后台”等表达把抽象的流量变化说具体，且有可复述的对照句，修辞没有压过信息。",
+      "script_spans": [
+        "不算搬走，算截流。",
+        "省下的步骤，就是原站丢掉的脚步。",
+        "内容没消失，只是退到后台。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、机制、边界和结论衔接清楚，但“小站得想法”明显失语，建议转折也略显跳跃。",
+      "script_spans": [
+        "原文其实还挂在链接里，只是缩在下方，被点中的机会薄了。",
+        "小站得想法",
+        "学着想被AI引一句"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，且引用研究时有范围意识；但“不会”“正被吃掉”等表述过于绝对，易把个案影响说成普遍结论。",
+      "script_spans": [
+        "有研究看到百科页点击降约一成多。不是全没，是变少。",
+        "内容不会被免费搬走，但原站流量正被入口吃掉。",
+        "你不用进网站就能看明白。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d2958ac0dec54049863a399831a6b1a5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

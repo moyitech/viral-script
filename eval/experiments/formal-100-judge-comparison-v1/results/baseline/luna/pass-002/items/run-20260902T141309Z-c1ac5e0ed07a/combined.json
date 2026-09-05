@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-471d306563f6443d8f1cfc2967b2fb09",
+  "run_id": "run-20260902T141309Z-c1ac5e0ed07a",
+  "trace_sha256": "1ae6ac8e24abc530189f447e09ed9a61c7309793095c55ada2ad7044cbfaf34d",
+  "created_at": "2026-09-03T12:15:40.675437Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解试错便利与无感负债风险，并给出关闭功能的控费建议，完整回应题设。",
+      "script_spans": [
+        "先用后付既方便试错，也悄悄抬升负债可能，不是单方好事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕便利、冲动下单、账单变厚和关闭功能推进，既有机制解释，也有明确行动建议。",
+      "script_spans": [
+        "本来一件顺手拿三件，留下的变多，账单就厚了。",
+        "你想可控，就打开支付设置关掉这功能，少点冲动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“0元下单”制造反差，中段递进风险，结尾用停两秒自然收束并促成互动。",
+      "script_spans": [
+        "你点0元下单，多拿三件衣服试尺码，真方便？",
+        "下次划到0元下单，你先停两秒？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾节奏清楚，但“抬升负债可能”“外卖充电宝”等表达卡嘴，需重断句。",
+      "script_spans": [
+        "你点0元下单，多拿三件衣服试尺码，真方便？",
+        "先用后付既方便试错，也悄悄抬升负债可能，不是单方好事。",
+        "小额几块无感累积，攒起容易成负担。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“像店里试衣间”把机制讲清，“无感消费常是负债起点”简洁有记忆点，修辞整体克制。",
+      "script_spans": [
+        "就像店里试衣间但不押钱",
+        "方便是真方便，可无感消费常是负债起点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，便利、风险、建议与回扣均清楚；但开头措辞生硬，付款条件交代不足，因果略显跳跃。",
+      "script_spans": [
+        "方便是真方便，可无感消费常是负债起点。",
+        "可收货后得付没计划的钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体较克制，但个别绝对化表述可能误导，需补充具体规则边界。",
+      "script_spans": [
+        "先用后付既方便试错，也悄悄抬升负债可能，不是单方好事。",
+        "不合身退掉不花",
+        "方便是真方便，可无感消费常是负债起点。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e1fa66ec487e469e8d13d6d853fd083e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

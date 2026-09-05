@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-2da444f8d5bd404697fbcc0eb04a5fe5",
+  "run_id": "run-20260902T143045Z-c9621ab64d14",
+  "trace_sha256": "8b92fb85aa8399394d1ca4917ee04ca717775a49ff460c93c008fc872911f839",
+  "created_at": "2026-09-03T12:15:26.924394Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕效率与真实反馈的张力展开，兼顾教师、机器和家长，并给出可执行的判断标准。",
+      "script_spans": [
+        "效率提升不必然削弱真实反馈，关键看谁来用、怎么用。",
+        "如果只给分数，那是假快；如果能圈出哪句弱、建议换角度，就是真帮。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "观点集中，时间成本、协同机制、实验结果和家长边界层层补充，观众能获得具体判断依据。",
+      "script_spans": [
+        "老师得花十五到二十分钟，全班连起来要八到十小时。",
+        "可低阶改得多、高阶改得少，说明反馈引了路，思考还得自己补。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用效率与空洞的反差设问，中段持续补充证据和边界，结尾自然落到改后稿。",
+      "script_spans": [
+        "用AI改作文快了十倍多，孩子却越写越空？",
+        "下次看批改，先翻改后稿。孩子自己多写的那几行，才是真实反馈没被削弱的证据。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、对照句和比喻让整体能读通；但“调研里……”句意粘连，“你看反馈……”还需重断句。",
+      "script_spans": [
+        "你想想，一篇作文想改得深，老师得花十五到二十分钟",
+        "如果只给分数，那是假快；如果能圈出哪句弱、建议换角度，就是真帮。",
+        "调研里家长最怕工具依赖影响思维，也发现不足一半学校定清了使用边界。",
+        "你看反馈能不能触发孩子动手改。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且帮助理解，“工具省时间，人才说人话”等句子准确、自然，具备复述价值。",
+      "script_spans": [
+        "好比机器先捡碎玻璃，老师腾出手写真人评语。",
+        "工具省时间，人才说人话。",
+        "如果只给分数，那是假快；如果能圈出哪句弱、建议换角度，就是真帮。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，先讲分工再讲风险，最后落到改后稿；但把多写几行直接定为充分证据，结论略显绝对。",
+      "script_spans": [
+        "人机协同不是偷懒，是分工。",
+        "可低阶改得多、高阶改得少，说明反馈引了路，思考还得自己补。",
+        "孩子自己多写的那几行，才是真实反馈没被削弱的证据。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制，强调人机协同与复核；但“快了十倍多”和“才是真实反馈没被削弱的证据”缺少限定，易误导。",
+      "script_spans": [
+        "关键看谁来用、怎么用。",
+        "但只甩给机器就悬",
+        "用AI改作文快了十倍多",
+        "才是真实反馈没被削弱的证据"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-9d85284b76864f749e89efa913e34a87",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-31dbb6ed8bd441d39717271c129e414c",
+  "run_id": "run-20260902T142037Z-2ce128ec900d",
+  "trace_sha256": "d3223e837415106f5bd73e0bc4b1554a9dda7a37640533082ff79e19196d8280",
+  "created_at": "2026-09-03T12:15:57.495100Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答已购房家庭能否受益，兼顾降息收益、月供滞后及不同贷款类型。",
+      "script_spans": [
+        "已购房家庭能真正受益，但每个人月供不会自动大降，得靠规则一步步兑现。",
+        "所以别看新闻标题说降息，就以为明天少还钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕存量房贷受益机制展开，公式、加点、重定价日、固定转浮动和防骗提示均提供了具体信息。",
+      "script_spans": [
+        "咱们存量房贷利率公式，一直是LPR加上早年约定的加点。",
+        "剩下的LPR部分，得看合同重定价日。",
+        "当初选固定利率的，得先手机申请转浮动才能进这波调整。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用利率下降与月供不降制造冲突，中段连续拆解规则，结尾落到查合同，推进和行动都自然。",
+      "script_spans": [
+        "你房贷利率降了，但银行没扣你更少月供。",
+        "翻开合同，看清重定价日写在哪天。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "核心信息能听懂，承接也有口语感，但开头和中段多处搭配生硬，尚未达到自然口播。",
+      "script_spans": [
+        "所以别看新闻标题说降息，就以为明天少还钱。",
+        "你房贷利率降了，但银行没扣你更少月供。",
+        "咱们存量房贷利率公式，一直是LPR加上早年约定的加点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "利率降了但月供不降形成鲜明反差，结尾提醒也便于复述，修辞克制并服务信息理解。",
+      "script_spans": [
+        "别看新闻标题说降息，就以为明天少还钱。",
+        "这是第一笔落地省钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从利率构成讲到重定价日，基本可跟随；但批量调整句主语混乱，“第一笔落地省钱”生硬，因果桥略弱。",
+      "script_spans": [
+        "翻开合同，看清重定价日写在哪天。",
+        "大部分浮动利率银行批量调整，不用申请，直接把合同里虚高加点压到新发放低利率附近，这是第一笔落地省钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提醒核对重定价日、反对收费代办，方向稳妥；但“全是骗子”“手机银行自己就能办”过于绝对，可能误导不同银行用户。",
+      "script_spans": [
+        "剩下的LPR部分，得看合同重定价日。",
+        "收费代办降息全是骗子，手机银行自己就能办。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-b181b8f54c324efa955d233c2268b519",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

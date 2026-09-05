@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-9f888958167b476db9dfc321406b1d12",
+  "run_id": "run-20260903T051621Z-b73ce8f24821",
+  "trace_sha256": "9718b2e0932284b211419b4664358b313dcb62063bf5a79a485a7f663a3460c9",
+  "created_at": "2026-09-03T12:32:47.181354Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应传统行业员工的核心困境，既写出岗位变化，也给出技能更新和寻找培训入口的具体路径。",
+      "script_spans": [
+        "传统行业员工想不被绿色转型落下，靠死守工位没用，得主动给自己的技能包换血"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕技能更新展开，政策范围、培训方向、就业结构和个人行动彼此推进，信息增量充足。",
+      "script_spans": [
+        "眼下政策已经把九个高耗能行业拎出来，要求三年内做完节能降碳改造",
+        "工人选进修时，要挑直接嵌进新生产线的那类"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "具体行业切入，但前20字仍以场景铺垫为主，真正冲突略后置；中段递进和结尾有力。",
+      "script_spans": [
+        "眼下政策已经把九个高耗能行业拎出来，要求三年内做完节能降碳改造，钢铁、电解铝、平板玻璃、煤电都跑不掉。",
+        "转型洗掉的是旧手艺，不是老工人。",
+        "钢铁、水泥、煤电这些老牌行业的车间里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口和对话感基本成立，但“建筑工培训加节能材料”等表达卡顿，影响连续朗读。",
+      "script_spans": [
+        "别等车间主任排名单，先对照行业清单摸准对口课",
+        "建筑工培训加节能材料",
+        "直接嵌进新生产线的那类"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“转型洗掉的是旧手艺，不是老工人”重构有力，“技能包换血”等表达具体，记忆点清楚且未喧宾夺主。",
+      "script_spans": [
+        "转型洗掉的是旧手艺，不是老工人。",
+        "得主动给自己的技能包换血"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "有清晰的“背景—判断—建议—收束”链条，但把行业改造直接推成技能贬值和饭碗流失，因果桥不够。",
+      "script_spans": [
+        "先对照行业清单摸准对口课，哪怕先从线上公开课补基础。",
+        "这套改造直接让老工艺知识贬值，不更新就等于把饭碗递出去。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题和建议总体安全，但“饭碗递出去”“只能边缘化”等说法过于绝对，可能制造职业焦虑，需补充转岗培训与保障边界。",
+      "script_spans": [
+        "哪怕先从线上公开课补基础",
+        "不更新就等于把饭碗递出去",
+        "生疏者只能边缘化"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8fd5fe18f9ae48fdb7b0aac334a2571c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

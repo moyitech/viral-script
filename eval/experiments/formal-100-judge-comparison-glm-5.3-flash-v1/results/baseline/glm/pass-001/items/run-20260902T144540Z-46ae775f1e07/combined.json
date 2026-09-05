@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-438710bccf9c450da6b603a9ba9dc1ac",
+  "run_id": "run-20260902T144540Z-46ae775f1e07",
+  "trace_sha256": "66549e4891d20a13bf7d33e1dd227992d22a59ff80f02862f83d317ac259e986",
+  "created_at": "2026-09-03T13:49:37.159405Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即给二元答案，政策实惠与质量坑点两侧都展开，结尾落到买家可执行动作，全程扣题。",
+      "script_spans": [
+        "不是二选一，它两头都占着。",
+        "认准带评估鉴定的正规渠道，别光贪便宜。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 733，目标为 700，偏差率为 4.71%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策、实惠、坑点、行情、对策五块信息层层推进，数据与结论互证，观众能带走判断方法。",
+      "script_spans": [
+        "去年国内二手手机交易近三亿部。",
+        "小作坊换块屏冒充原厂，电池暗病测不出。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出翻新机黑屏的具体冲突；中段政策、实惠、坑点层层转折持续兑现钩子；结尾之问由正文自然长出，留有余味。",
+      "script_spans": [
+        "你刚买的翻新机突然黑屏，它算循环经济还是质量盲区？",
+        "你以为捡漏，其实踩坑。",
+        "当循环成了生意，能不能既救地球又不坑人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "通篇短气口为主，对仗与反问落点清楚，朗读无需临时改词。",
+      "script_spans": [
+        "你以为捡漏，其实踩坑。",
+        "造新机要挖矿耗电，翻新就省下这些。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "你以为捡漏其实踩坑、循环转成糊涂账等句均可独立复述；浊水、杂牌军等比喻服务理解，克制不堆砌，无炫技喧宾。",
+      "script_spans": [
+        "你以为捡漏，其实踩坑。",
+        "流水不小，浊水也混进来。",
+        "若只谈环保不谈质量，循环就转成糊涂账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、结尾有回扣，但可字转折后紧接但问题来了，两句同义重复，过渡生硬经不起追问。",
+      "script_spans": [
+        "若只谈环保不谈质量，循环就转成糊涂账。",
+        "可小卖家一混进来，监管就费劲。但问题来了，不是所有摊子都守规矩。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "两面并陈不偏袒，数据自留余地，'有的''常常'限定到位，购机建议稳妥，无煽动夸大与不当承诺。",
+      "script_spans": [
+        "不是二选一，它两头都占着。",
+        "全球一年翻新手机超三亿部，这数可能有水分。",
+        "有的写准新机，其实磕碰不少；有的电池循环次数藏起来。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-0e6ca5b480d3417292e368cded5c7d94",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1e93110011e64caca6a081f7a6451061",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

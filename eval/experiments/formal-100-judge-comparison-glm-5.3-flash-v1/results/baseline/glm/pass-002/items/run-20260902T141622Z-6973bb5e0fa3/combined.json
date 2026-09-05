@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-e54913dc35a8493f9c78a5cb1639a181",
+  "run_id": "run-20260902T141622Z-6973bb5e0fa3",
+  "trace_sha256": "4d623c0a1eb98e394b59b868ee7e1191dffe9829c7039b6e6fab323e5ef59b47",
+  "created_at": "2026-09-03T14:23:29.937107Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给出完整立场，停车难一侧也有让步，老人孩子与业主人群均覆盖，结尾回扣题设。",
+      "script_spans": [
+        "我的回答是，休闲不该白白让步，停车难也得管",
+        "车停不下确实误事，但硬全占，生活就塌了一角",
+        "两边都要顾，才像过日子的样"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中：社会价值、业主共有须共同决定、研究佐证、开会协商层层推进，观众能带走法律常识与协商方法。",
+      "script_spans": [
+        "小区公共空地本属业主共有，改车位这么大事，依法得大伙共同决定，物业不能闷头拍板",
+        "有研究提到，早前老旧小区改造出过脱离居民需求的情况。说明拍板前得听两边",
+        "动手前开业主会，把停车和休闲需求摆一起谈"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即给出车位挤压玩耍地的具体冲突，中段以共同决定权、研究提醒层层兑现，结尾提问自然生长。",
+      "script_spans": [
+        "小区空地变车位，老人孩子立刻没处玩",
+        "依法得大伙共同决定，物业不能闷头拍板",
+        "你家小区若遇这事，是先顾车还是先留地？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "主体短句口语顺、有停顿设计，但研究句与“休闲被吃”两处拗口需换词，流畅度止于此档。",
+      "script_spans": [
+        "车停不下确实误事，但硬全占，生活就塌了一角。",
+        "早前老旧小区改造出过脱离居民需求的情况",
+        "不然休闲被吃还不知为啥"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“熟人变路人”“心反而远了”贴切克制，离开正文仍可复述，无堆砌炫技，服务理解与情绪。",
+      "script_spans": [
+        "铲平了，熟人变路人",
+        "路修宽了，心可能反而远了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由价值论证转入法律依据，再让步停车难，研究作桥推出先听两边，结尾回扣开头，因果桥梁齐备。",
+      "script_spans": [
+        "你说这地多余？那片地是邻居聊天晒太阳的地方，老人小孩都爱去，铲平了，熟人变路人",
+        "有研究提到，早前老旧小区改造出过脱离居民需求的情况。说明拍板前得听两边",
+        "两边都要顾，才像过日子的样"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "立场平衡，'休闲不该白白让步，停车难也得管'不站队不煽动；依法共同决定的表述有依据有分寸，无夸大误导。",
+      "script_spans": [
+        "休闲不该白白让步，停车难也得管",
+        "小区公共空地本属业主共有，改车位这么大事，依法得大伙共同决定",
+        "两边都要顾，才像过日子的样"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-13ebdf83d4594aa3bf239a5e7526c048",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-45b7b280f8df471d8739a9625c66b469",
+  "run_id": "run-20260902T141529Z-8b7d14a3d37e",
+  "trace_sha256": "bf4f88e29b9e75a9f6af2c1b2bfd8bc2c2d72ed945fe674765468950a5545716",
+  "created_at": "2026-09-03T14:27:33.760054Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答'谁来管'，末尾回扣馆方劝、读者让，占座与用座两侧及普通读者痛点均覆盖。",
+      "script_spans": [
+        "这公平得靠文化部门定规矩，也靠图书馆日常劝。",
+        "你想踏实看书，得天没亮赶早抢座。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从法条授权缺口讲到预约两难、抢座实景，信息单元层层推进，法条表述与依据相符，无编造。",
+      "script_spans": [
+        "公共图书馆法写明了，县级以上文化部门统管本地馆。",
+        "有些馆试着座位预约，严了怕读者不舒服，松了公平就没了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头“书包赶不走”即立冲突，中段以法条纠偏、僵持场景、预约两难层层推进，结尾冻座意象自然留味。",
+      "script_spans": [
+        "占座的书包赶不走，馆员恐怕没处罚权",
+        "真碰上有人书本占整天，馆员弯下腰说两句，对方瞥一眼不动，就僵住",
+        "有人干脆坐地上，也有人默默站旁边。空着的椅子反而成了摆设",
+        "要是谁都不退，空座也像被冻住了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句节奏与画面感是强项，但“试着座位预约”缺动词、“愿让，让座位”让字相叠，两处需临场改口，只能封顶2分。",
+      "script_spans": [
+        "真碰上有人书本占整天，馆员弯下腰说两句，对方瞥一眼不动，就僵住",
+        "有些馆试着座位预约",
+        "读者愿让，让座位慢慢流转起来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻稀疏而贴切，“空座也像被冻住了”离开上下文仍可复述；僵持以动作写人，无堆砌感。",
+      "script_spans": [
+        "但占座一久，说好的公平就悬在空中",
+        "规则写着公平，落下来却靠彼此体谅",
+        "要是谁都不退，空座也像被冻住了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "法条—缺口—实景—两难层层递进，因果有桥梁，结尾以馆方劝、读者让自然回扣开头之问。",
+      "script_spans": [
+        "法律把管理归到文化部门，却似乎没授权馆员清场。因为图书馆是服务地方，不是执法机构。",
+        "规则写着公平，落下来却靠彼此体谅。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法律引述与公开条文一致，说法留有余地，不煽动对立，引导互相体谅，无夸大误导。",
+      "script_spans": [
+        "公共图书馆法写明了，县级以上文化部门统管本地馆",
+        "馆员只能过去劝，没法罚钱，也难动手清走"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-19f4cd47d4d146bb94b7e71ff4dd041e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

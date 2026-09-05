@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-bf4f2bca49ac4cc1b632a1de6563751d",
+  "run_id": "run-20260902T142948Z-c72033d36a54",
+  "trace_sha256": "ac711242eb5bee71c0e64f82a56fbbd885476d95478a5262dd4c7b5f58f0827a",
+  "created_at": "2026-09-03T11:44:12.987306Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直击收入不稳者的缴费冲突，后文覆盖减负、补贴、缴费周期与断缴风险，回答完整。",
+      "script_spans": [
+        "收入不稳的人交得起吗？能交，但得用新政策减负，硬交立马断粮。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 269，目标为 280，偏差率为 3.93%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“交得起吗”持续推进，负担来源、低基数、缴费周期、补贴和断缴应对均形成有效信息增量。",
+      "script_spans": [
+        "多地允许低收入者，按一半基数交养老保险。待遇不打折，每月能省下将近两成钱",
+        "补贴也扩到新业态，像骑手快递这类，最高能补八成费用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用收入与社保支出的硬冲突抓人，中段连续给出减负、补贴和缴费方式，结尾回到现实选择。",
+      "script_spans": [
+        "月入三千的零工，刨去房租吃饭，要硬拿八百交社保",
+        "多地允许低收入者，按一半基数交养老保险。",
+        "所以交不起时先别硬撑，看清当地门槛再保年限，老来的底才能留牢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答开场和短句推进有对话感，但首句气口偏长，“再保年限”搭配生硬，整体仍需微调。",
+      "script_spans": [
+        "收入不稳的人交得起吗？能交，但得用新政策减负，硬交立马断粮。",
+        "月入三千的零工，刨去房租吃饭，要硬拿八百交社保，今天活下去和明天养老直接打架。",
+        "看清当地门槛再保年限，老来的底才能留牢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“今天活下去和明天养老直接打架”把矛盾说得具体，搭配“喘口气”“老来的底”等表达，记忆点自然。",
+      "script_spans": [
+        "今天活下去和明天养老直接打架",
+        "紧日子能喘口气。",
+        "老来的底才能留牢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "痛点、政策、提醒、结论的顺序清楚，但“按年交费能锁住参保资格”把地区差异说成普遍规则，因果桥不够严密。",
+      "script_spans": [
+        "所以交不起时先别硬撑，看清当地门槛再保年限，老来的底才能留牢。",
+        "按年交费能锁住参保资格，少跑腿"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "主题聚焦缴费减负，提醒查看当地门槛；但把地方性政策说成普遍适用，“按年交费能锁住参保资格”易造成误导。",
+      "script_spans": [
+        "看清当地门槛",
+        "按年交费能锁住参保资格"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-dea6a18fe5714faf83db40c1005eef98",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-98e86b992e424d40a851284c2359b0c1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

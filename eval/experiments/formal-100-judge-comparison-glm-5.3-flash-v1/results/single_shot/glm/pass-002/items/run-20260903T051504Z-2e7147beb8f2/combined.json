@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-f8714555c31d477b8e7b52bf766e1470",
+  "run_id": "run-20260903T051504Z-2e7147beb8f2",
+  "trace_sha256": "fa2d2e32ae4455978793db9c38615b6b9d624e932d748d409b60fa984b60a13c",
+  "created_at": "2026-09-03T15:27:48.662253Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛冲突与决定权之问，全文正面回答，祖辈父母两侧与核心人群均覆盖，切角具体。",
+      "script_spans": [
+        "隔代育儿里最锋利的矛盾，往往不是爱不爱，而是谁有日常教育的决定权",
+        "谁生养谁负责，谁负责谁拍板"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦决定权归属，法律依据、成因、大小事划分、指导令与例外层层推进，无编造。",
+      "script_spans": [
+        "责任写在父母名下，劳作落在祖辈肩上，这种错位不放平，冲突就不断",
+        "碰到升学取向、品德塑造、医疗选择这些大事，核心决定权必须留在父母手里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字立起穿衣之争的具体冲突，中段连环设问与取舍转折持续兑现钩子，结尾余味由论点自然长出。",
+      "script_spans": [
+        "家里带娃的爷爷奶奶坚持孩子得穿厚点，父母却要科学穿衣，谁说了算？",
+        "那为什么天天出力的人，法律上却像局外人？",
+        "带娃流汗多，不等于握紧方向盘；真正掌盘的，是那个法律上得为孩子一生兜底的人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句金句有节奏，但责任主体、升学取向等法律书面段需临时换词重断，流畅度受限。",
+      "script_spans": [
+        "谁生养谁负责，谁负责谁拍板",
+        "责任写在父母名下，劳作落在祖辈肩上，这种错位不放平，冲突就不断",
+        "未成年人的父母或者其他监护人是实施家庭教育的责任主体",
+        "升学取向、品德塑造、医疗选择这些大事"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'谁生养谁负责，谁负责谁拍板'离开上下文仍可复述，名下肩上对仗与方向盘之喻服务论点，无堆叠炫技。",
+      "script_spans": [
+        "谁生养谁负责，谁负责谁拍板",
+        "责任写在父母名下，劳作落在祖辈肩上",
+        "两代人一碰头就火星四溅"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立判断再析因果，设问引出取舍与例外，段段功能清晰，结尾回扣谁负责谁拍板。",
+      "script_spans": [
+        "那为什么天天出力的人，法律上却像局外人？这得看因果",
+        "说到底，决定权绑的是责任，不是辛苦量"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "立论基于法定责任主体，保留祖辈价值与例外情形，无煽动夸大或误导承诺。",
+      "script_spans": [
+        "祖父母积累的生活智慧有价值，但不能替代父母做主",
+        "法院能依情况下发家庭教育指导令，把失责家长请回教育现场",
+        "如果父母因故失去监护能力，祖辈依法接替成监护人，决定权才随之转移"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-de55e7cd6a224f2eb4016cb577fab9a7",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

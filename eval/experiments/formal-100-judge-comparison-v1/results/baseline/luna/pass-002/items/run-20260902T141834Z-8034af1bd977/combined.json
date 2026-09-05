@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-70f5ba6881d9481e9d6a7d10a7bec823",
+  "run_id": "run-20260902T141834Z-8034af1bd977",
+  "trace_sha256": "ba9508212615bb6b7ae3e75679dd155e1bf331691ea0ccc790c1955acb3fa417",
+  "created_at": "2026-09-03T12:15:25.917235Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从算法测评、求职者处境到公平与监管，正面回答能否读懂潜力，核心人群与冲突两侧都覆盖。",
+      "script_spans": [
+        "算法到底能不能读懂人的潜力？",
+        "当面试变成算法打分，我们图了效率，是不是也该给潜力留个活口？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕效率与识人边界，机制、偏差、监管和责任层层补充，信息单元多且有明确增量。",
+      "script_spans": [
+        "企业侧确实省力，弗吉尼亚理工的研究提到，自动视频面试能帮着缩小候选人池子，也缩短招人周期、少花成本。",
+        "不少独立审计翻过车，发现有些算法对年龄、性别群体有偏。",
+        "到2027年想普及一批大模型场景，可边界划在可信上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“省钱”与“被看懂”形成冲突，中段不断推进公平与责任问题，结尾追问自然留出讨论空间。",
+      "script_spans": [
+        "企业用AI面试官省了钱，求职者却丢了被看懂的机会。",
+        "省了钱就一定公平吗？",
+        "下次见AI面试官，你会藏起紧张，还是赌它读得懂你？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有问答推进和短句优势，但多处压缩表达生硬，连续朗读时需重断句。",
+      "script_spans": [
+        "那它怎么给人打分？",
+        "它能盯住你的微表情和说话关键词，却读不出你压力下沉默后冒出的真本事。",
+        "到2027年想普及一批大模型场景，可边界划在可信上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“它读的是概率，不是人”把算法局限说透，“给潜力留个活口”收束有余味，修辞没有压过信息。",
+      "script_spans": [
+        "它读的是概率，不是人。",
+        "给潜力留个活口"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "现场切入并按机制、偏差、监管推进，主线清楚；但“读不懂”与“藏不住”并置，潜力概念和因果承接不够稳。",
+      "script_spans": [
+        "先抓眼神、语速、用词，再和岗位模型比对。",
+        "它能盯住你的微表情和说话关键词，却读不出你压力下沉默后冒出的真本事。",
+        "潜力是熬出来的真本事，镜头前装不出，也藏不住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体讨论算法偏差与监管边界，方向克制；但“微表情”“天然吃亏”等表述偏绝对，易把复杂风险说成确定结论。",
+      "script_spans": [
+        "分数高，不等于以后工作就干得好。",
+        "它能盯住你的微表情和说话关键词",
+        "慢热者天然吃亏"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-0c1167ee28484c7e89c4774b5eb10d59",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

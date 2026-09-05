@@ -1,0 +1,156 @@
+{
+  "evaluation_id": "combined-330b964c79e84bf18f45280c60aeacbd",
+  "run_id": "run-20260902T144032Z-4c55ca48821c",
+  "trace_sha256": "57c6451e3bdc42a4bde33c2d9e8f27444f676c7bee62981ea0091dba5f9d8fed",
+  "created_at": "2026-09-03T11:45:01.084434Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解一键开药的误诊来源，并兼顾稳定慢病续方与异常就医提醒，核心人群和题设两侧都覆盖。",
+      "script_spans": [
+        "一键开药图快捷，但误诊风险藏在没见着你人。",
+        "拿药前你琢磨下：最近身体有啥新苗头没？比如突然发烧或起疹子？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 275，目标为 280，偏差率为 1.79%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从复诊材料、检查缺口到病情变化续方，信息单元逐层推进，并给出发烧起疹子的自查提醒，增量具体。",
+      "script_spans": [
+        "按规定，线上得先有明确诊断的复诊材料，像门诊病历或出院小结，医师得判断是否符合复诊。",
+        "正确诊断离不开必要检查，线上可做不了抽血拍片。",
+        "拿药前你琢磨下：最近身体有啥新苗头没？比如突然发烧或起疹子？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用便捷与对症风险形成冲突，中段层层补充误诊成因，结尾追问和提醒都由前文自然生长。",
+      "script_spans": [
+        "你手指一点药就送到家，可这药真对症吗？",
+        "系统却可能照旧给续方，错药就吃进肚子里。",
+        "拿药前你琢磨下：最近身体有啥新苗头没？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、追问和具体动作增强了对话感，但“按规定”一段信息堆叠，“图快捷”也略显卡口。",
+      "script_spans": [
+        "你手指一点药就送到家，可这药真对症吗？",
+        "一键开药图快捷",
+        "按规定，线上得先有明确诊断的复诊材料，像门诊病历或出院小结，医师得判断是否符合复诊。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和对比克制有效，既把线上诊疗局限说具体，也留下了便于复述的风险提醒。",
+      "script_spans": [
+        "医生瞅不着你舌头，也摸不到脉，只能凭字猜。",
+        "医生不是敷衍，是隔着屏幕真没法听诊触诊。",
+        "别让手指的方便，替你瞒住了该报警的信号。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、风险展开和结尾提醒完整，主线可跟随；但“只能凭字猜”“系统却可能照旧给续方”过于绝对，关键机制交代不足。",
+      "script_spans": [
+        "一键开药图快捷，但误诊风险藏在没见着你人。",
+        "病情要是悄悄变了，本该马上停掉去实体医院。",
+        "医生瞅不着你舌头，也摸不到脉，只能凭字猜。",
+        "系统却可能照旧给续方，错药就吃进肚子里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "复诊边界和就医提醒较稳妥；但“只能凭字猜”“线上可做不了抽血拍片”过于绝对，容易把线上能力说窄。",
+      "script_spans": [
+        "病情要是悄悄变了，本该马上停掉去实体医院。",
+        "只能凭字猜。",
+        "线上可做不了抽血拍片。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-9c53c92aebf84ceba43663ea125ebef9",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-003db52db0d74363936d9b4b6749e298",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

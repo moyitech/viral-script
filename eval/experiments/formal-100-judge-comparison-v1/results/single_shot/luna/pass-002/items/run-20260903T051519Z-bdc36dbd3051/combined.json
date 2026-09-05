@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-13e4b09b6b40426e89f4b240ff9e8cf2",
+  "run_id": "run-20260903T051519Z-bdc36dbd3051",
+  "trace_sha256": "fa174712a44507aabc91e201ca00a867eb922007bff86311287b6d229086bc1e",
+  "created_at": "2026-09-03T12:32:41.018480Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应传统行业员工的生存焦虑，既交代转型压力，也给出技能提升和培训路径，核心人群与题设吻合。",
+      "script_spans": [
+        "答案很直接：别等岗位自然淘汰，得主动把绿色技能炼成自己的防身术。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策覆盖、培训变化和能耗实操建议层层推进，既有行业与课程例子，也给出可执行起点，信息增量充足。",
+      "script_spans": [
+        "钢铁、电解铝、水泥、平板玻璃、炼油、煤电等九大重点行业已经铺开三年节能降碳改造",
+        "先抓企业内部的节能降碳实操课，哪怕从读熟一张能耗表开始，也比干瞪眼强。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出岗位淘汰风险，中段用政策、培训和具体行动层层推进，结尾留下“早学早主动”的提醒。",
+      "script_spans": [
+        "别等岗位自然淘汰，得主动把绿色技能炼成自己的防身术。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有口语提醒和清晰推进，但中段两处长串并列、术语压气，朗读时需要主动重断句，尚未达到精心设计的自然。",
+      "script_spans": [
+        "哪怕从读熟一张能耗表开始，也比干瞪眼强。",
+        "钢铁、电解铝、水泥、平板玻璃、炼油、煤电等九大重点行业已经铺开三年节能降碳改造",
+        "职业教育正把绿色内容塞进课程，像汽车维修加电动车技能，建筑工种学节能材料"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“绿色技能炼成防身术”把抽象转型压力说具体，配合“读熟一张能耗表”，有记忆点且不过度堆砌。",
+      "script_spans": [
+        "得主动把绿色技能炼成自己的防身术。",
+        "哪怕从读熟一张能耗表开始，也比干瞪眼强。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "“先看—再看—具体提醒”结构清楚，主线可跟随；但政策要求直接跳到工人被挤到边角，且成本承担主体表述有偷换。",
+      "script_spans": [
+        "先看政策现实",
+        "再看培训供给",
+        "具体提醒一句",
+        "不懂节能优化的工人会先被挤到边角。",
+        "转型成本真金白银压在人身上的时候，早学早主动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "信息方向基本安全，给出培训建议；但把技能不足与“被挤到边角”直接绑定，且对转型成本归因过满，容易制造就业焦虑。",
+      "script_spans": [
+        "先抓企业内部的节能降碳实操课",
+        "不懂节能优化的工人会先被挤到边角"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1345a9c4b78c4949a06779a9e6a064df",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

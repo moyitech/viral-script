@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-75480d1389cd439baa785fa69f7648f7",
+  "run_id": "run-20260902T141946Z-21b981b3d666",
+  "trace_sha256": "f9e1d7fba5ebc5ca8111f9f149aa17c7a7e9e3ea11768c2034ec0a3ba9254a86",
+  "created_at": "2026-09-03T12:15:59.081362Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "围绕低风险债基为何亏损展开，利率、信用、流动性与购买建议均回应题设。",
+      "script_spans": [
+        "低风险这标签，意思是比股票稳，不是写包票。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息单元充足，依次解释利率、久期、信用、股票仓位和流动性，观众能带走判断指标。",
+      "script_spans": [
+        "市场利率一涨，旧债就不香，价格往下走。",
+        "下次买前，先盯久期和持仓股票多少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用亏损反差立刻抓人，中段层层拆解，结尾以建议和提问自然收束。",
+      "script_spans": [
+        "你账户里那只低风险债基，前天一天亏掉三百块，销售页却写着R1低风险。",
+        "下次买前，先盯久期和持仓股票多少。",
+        "绿几天不是天塌，是债基在呼吸。你愿意用这点波动，换比活期高些收益吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感、气口也不长，但“债价差价”“躲开利率跳”等压缩表达让朗读需要临时修正。",
+      "script_spans": [
+        "你别急着骂经理，先弄明白咋回事。",
+        "主要靠利息和债价差价",
+        "经理调仓也难完全躲开利率跳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "类比和拟人都服务于解释，既把利率风险讲清，也留下了自然可复述的收尾金句。",
+      "script_spans": [
+        "你借给同学钱，说好年息五块，后来银行息涨到八块，旧借条没人按面额买。",
+        "久期越长，波动越放大，像放大镜照亏损",
+        "绿几天不是天塌，是债基在呼吸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "风险链条基本顺畅，但“份额缩水”混淆净值与份额，“只能存款货基”又把结论说绝。",
+      "script_spans": [
+        "市场利率一涨，旧债就不香，价格往下走。",
+        "债价跌，你份额缩水。",
+        "你只想不亏，只能存款货基但利息薄。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体明确提示债基不保本，但“只能存款货基”把货币基金与不亏绑定，且部分配置表述过于绝对，需补充限定。",
+      "script_spans": [
+        "低风险这标签，意思是比股票稳，不是写包票。",
+        "你只想不亏，只能存款货基但利息薄。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-172dac0471ac477ea9274b7caf74fe30",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

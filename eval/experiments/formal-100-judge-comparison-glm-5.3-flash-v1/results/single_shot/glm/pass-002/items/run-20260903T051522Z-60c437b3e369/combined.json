@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-ecadbd5ad7a94706adb0f032744ce019",
+  "run_id": "run-20260903T051522Z-60c437b3e369",
+  "trace_sha256": "fb8f277e1450b41bc35a811699579ebc4ee7861df116ec54fc5b14102664b857",
+  "created_at": "2026-09-03T15:26:01.440973Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答“是否定的”，从利率、流动性到保险上限覆盖正反两侧，直击犹豫是否抢购的普通储户。",
+      "script_spans": [
+        "抢着存真更划算吗？答案恐怕是否定的。",
+        "别被抢购情绪带着走"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "利率水平、期限倒挂、隐性成本、五十万保额等单元层层推进，与背景资料互证，结论给出可用的判断方法。",
+      "script_spans": [
+        "提前支取只能拿活期利息，转让虽说允许，真到急用钱时未必能顺利出手，隐性成本不小",
+        "个别期限甚至利率倒挂"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以利率平平却一单难求直接立反差设问，中段利率倒挂、锁资金、门槛下调层层递进，结尾自问式收束自然生长，无硬喊互动。",
+      "script_spans": [
+        "大额存单利率平平却一单难求，抢着存真更划算吗？",
+        "个别期限甚至利率倒挂",
+        "先问自己能不能承受流动性打折，再算实际到手收益"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句好读、有对话感，但“优势已很薄”“转让虽说允许”等处需现场换词，流畅被卡住。",
+      "script_spans": [
+        "钱要锁几年，先问自己能不能承受流动性打折，再算实际到手收益",
+        "但比起部分中小银行普通定存优势已很薄",
+        "转让虽说允许"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "锁资金的安排不是送福利、门槛低了不代表值得抢两处凝练可脱离上下文复述，修辞轻但服务观点，全篇不干瘪也无堆砌。",
+      "script_spans": [
+        "银行限量发额度更像锁资金的安排，不是送福利",
+        "门槛低了不代表值得抢"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由利率对比到流动性再落到决策框架，段落各司其职，转折与因果有桥，结尾自然回扣抢购之问。",
+      "script_spans": [
+        "钱要锁几年，先问自己能不能承受流动性打折，再算实际到手收益。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论用'恐怕'留余地，限量归因有'更像'限定，并主动交代活期计息与存款保险上限，无夸大或诱导。",
+      "script_spans": [
+        "答案恐怕是否定的",
+        "提前支取只能拿活期利息",
+        "记住存款保险只保本息五十万内，别被抢购情绪带着走"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f546f1d10af04d7497980e7b3d6a062b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

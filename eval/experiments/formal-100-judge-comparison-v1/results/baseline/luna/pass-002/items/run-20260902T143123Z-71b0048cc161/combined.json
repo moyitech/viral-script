@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-61fd3fc58a964443af919d4f19076be9",
+  "run_id": "run-20260902T143123Z-71b0048cc161",
+  "trace_sha256": "84f67522ec965dea2c5dce2eccc698e2fe972ad6a2c09fec22273d8d181a52c3",
+  "created_at": "2026-09-03T12:15:46.600576Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答证书能否换工作，区分硬门槛与市场参考，并给出应届生核验路径。",
+      "script_spans": [
+        "能换工作的证主要是一类硬门槛，另一类可能只是墙上的奖状。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "类别区分、政策变化、避坑方法和录用判断层层推进，信息增量充足。",
+      "script_spans": [
+        "准入类像焊工、消防，法律强制，没证不能上岗，这是真门槛。",
+        "别跟着室友盲目报班，花几百块未必对求职有用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以求职冲突设问，中段用证书分类推进，结尾回扣“钥匙与奖状”，观看动机和互动都自然。",
+      "script_spans": [
+        "你熬夜刷课考下的证，招聘官会多看一眼吗？",
+        "下次报名前，问自己：这证是饭碗的钥匙，还是墙上的奖状？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问句带来停顿，但“主要是一类”“活化就业”等处需要换词，存在明显卡嘴。",
+      "script_spans": [
+        "那普通人怎么避坑？",
+        "别信广告说包过，那只是培训课。",
+        "能换工作的证主要是一类硬门槛，另一类可能只是墙上的奖状。",
+        "退出是为让企业自己挑人，活化就业。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“饭碗的钥匙”和“墙上的奖状”形成清晰对照，结尾再用踏板与经历收束，短而准，便于复述。",
+      "script_spans": [
+        "不是铁饭碗",
+        "这证是饭碗的钥匙，还是墙上的奖状？",
+        "考对了是踏板，考错了只是经历。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头设问后依次完成分类、解释改革、给出行动建议，结尾回扣，主线完整。",
+      "script_spans": [
+        "为什么这么改？准入类关系公共安全，必须卡死；水平评价类偏通用技术，退出是为让企业自己挑人，活化就业。",
+        "下次报名前，问自己：这证是饭碗的钥匙，还是墙上的奖状？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "分清准入与评价类，给出查证建议，方向稳妥；但个别表述范围过宽，易造成观众误读。",
+      "script_spans": [
+        "想进特定行业，先查它要哪种证。",
+        "没证不能上岗",
+        "研究也发现，学历和实习实操比一堆纸证更影响录用。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-97b40d8f52ff4094b96bb1c85bd0aacd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

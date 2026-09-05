@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-6a023528a6a047288c0c378ece4a6f3d",
+  "run_id": "run-20260902T142741Z-cdc71d64c682",
+  "trace_sha256": "11337416448434605df19d03f7f4e1d8018f8d2573df2fa1b74b48ea18474c48",
+  "created_at": "2026-09-03T12:16:11.080724Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答统一与否，并兼顾平台、受泄露用户和赔偿规则两侧，后文给出折中方案。",
+      "script_spans": [
+        "赔偿标准该统一，但不能抹掉合理差别",
+        "统一不是平均，是托底，让小用户不空手"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕赔偿标准推进，依次解释法律空白、举证困境、两种极端及风险分档基线，信息增量充分。",
+      "script_spans": [
+        "折中是定最低赔偿基线，像交通罚则，泄露就先赔底数，大损失再走法院补差",
+        "基线按风险分档，普通号泄先赔基础数，敏感信息翻倍，平台算得出账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出只提醒不赔的不公平，中段从法律空白推进到分档托底，结尾也自然落到制度后果。",
+      "script_spans": [
+        "泄露后平台只发提醒不赔",
+        "统一不是平均，是托底，让小用户不空手"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有“没给价目表”“跑断腿”等口语抓手，但中段压缩偏狠，多个位置需补停顿或改词才能顺读。",
+      "script_spans": [
+        "民法只立规矩，没给价目表，平台往往挑便宜的做。",
+        "这空白让法院酌情判，你遇泄露，平台发短信提醒就称尽责"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“统一不是平均，是托底”准确压缩核心主张，通知变成补偿起点也有画面感，表达克制且便于复述。",
+      "script_spans": [
+        "统一不是平均，是托底，让小用户不空手",
+        "让那句“隐私已泄露”的通知，变成补偿的起点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从现实痛点切入，按法律缺口、方案权衡、案例验证到价值回扣递进，转折与结论衔接自然。",
+      "script_spans": [
+        "若全国硬给固定金额，小漏洞也赔巨款，创业平台可能垮；若全靠用户举证，又回无底洞扯皮",
+        "统一赔偿不是捆死平台，是让那句“隐私已泄露”的通知，变成补偿的起点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体讨论克制，但“个保法是民法典特别法”和“泄露就先赔”表述偏满，可能误导为现行确定规则。",
+      "script_spans": [
+        "统一不是平均，是托底，让小用户不空手。",
+        "个保法是民法典特别法",
+        "泄露就先赔底数"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-53addc2f982146b6ba7483356a6ab7ba",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

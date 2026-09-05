@@ -1,0 +1,134 @@
+{
+  "evaluation_id": "combined-5d7a02cdbf9941b38c375f8b09fe56eb",
+  "run_id": "run-20260902T142830Z-68e2a5f577b1",
+  "trace_sha256": "5571bdbab9f415ff68d6f387cc5e44d06b834691d803492bf1cc6aef62f617ab",
+  "created_at": "2026-09-03T12:15:14.595857Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即回答是否统一，并同时讨论统一定额与最低兜底，直指受损用户。",
+      "script_spans": [
+        "看似该统一赔，其实硬统一定死可能让你更亏。别搞一刀切定额，但得设个最低兜底。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕赔偿标准推进责任、法律弹性、执法现状、统一标准风险及维权行动，信息单元完整。",
+      "script_spans": [
+        "平台作为信息处理者，本就有责任采取必要措施保安全，不能只发提醒就完事。",
+        "若现在搞统一标准，门槛定低了，平台拿低额赔偿顶锅，你反而难多要；门槛定高了，小创业者可能赔穿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“提醒不赔”对撞“统一赔”，中段递进到法律与现实风险，结尾追问也由正文自然推出。",
+      "script_spans": [
+        "数据泄露后平台只发提醒不赔，看似该统一赔，其实硬统一定死可能让你更亏。",
+        "要是平台只发提醒不赔，你会自己较真还是等统一？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体结构清楚、短句较多；但法律解释偏书面，个别搭配朗读时需要重新断句。",
+      "script_spans": [
+        "别搞一刀切定额，但得设个最低兜底。",
+        "平台作为信息处理者，本就有责任采取必要措施保安全"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一刀切定额”“最低兜底”“赔穿”形成清晰记忆点，反差和口语词都服务于解释，没有堆砌。",
+      "script_spans": [
+        "别搞一刀切定额，但得设个最低兜底。",
+        "平台拿低额赔偿顶锅，你反而难多要；门槛定高了，小创业者可能赔穿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提出不一刀切但设底线的主张，再以责任、法律和现实风险递进，结尾落到行动。",
+      "script_spans": [
+        "法院还能按损害酌情判，可见法律故意留了弹性。",
+        "真泄露了主动主张，比盼统一标准更实在。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动，留证和主动主张建议稳妥；但将法律意图及裁判规则说得过于确定，易造成法律判断误导。",
+      "script_spans": [
+        "自己留好账号异常证据",
+        "可见法律故意留了弹性"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2e73fb9b8b1c4ecd9f2da80f5b414a24",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

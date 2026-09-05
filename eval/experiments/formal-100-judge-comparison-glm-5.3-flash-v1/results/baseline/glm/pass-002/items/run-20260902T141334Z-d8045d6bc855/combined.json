@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-1c69f663465147fcbb8f3b047600355b",
+  "run_id": "run-20260902T141334Z-d8045d6bc855",
+  "trace_sha256": "b254fed343fd19d8d792eeb8a946f4037b2fd84593b6fcbb2f493427a7a88e5b",
+  "created_at": "2026-09-03T14:22:54.960386Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛题，中段将投资与追涨两面对照拆解，结尾回扣，年轻人群痛点覆盖到位。",
+      "script_spans": [
+        "年轻人攒金到底算投资还是追涨？答案就在你怎么做。",
+        "攒金不玄学，是当存钱罐还是接飞刀，看你守不守得住节奏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "积存机制、投机对照、银行提级三个单元层层推进，事实解释结论互证，无编造，增量具体。",
+      "script_spans": [
+        "价高那天少买几毫克，价低多买几毫克，久了平均成本压平",
+        "银行最近把积存金风险等级往上提，得测评过关才能买"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头二十字即抛亏工资的具体风险，中段以机制、反例、银行新规层层兑现，结尾追问由正文自然生长。",
+      "script_spans": [
+        "金价连涨你跟着攒，小心高点接盘亏掉好几个月工资",
+        "反过来看，你要是刷到金价破纪录，脑子一热把年终奖全换金豆",
+        "是当存钱罐还是接飞刀，看你守不守得住节奏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口密集，停顿重音清楚，无超长换气段与拗口片段，真人录音基本无需改词。",
+      "script_spans": [
+        "你跟银行签个积存协议，每月固定扣笔小钱，系统拆成每天去买金。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "少买几毫克多买几毫克把定投讲得具体可感，结尾存钱罐对接飞刀自然贴切，可脱离原文复述，无堆砌感。",
+      "script_spans": [
+        "价高那天少买几毫克，价低多买几毫克",
+        "攒金不玄学，是当存钱罐还是接飞刀"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "投资与投机对照清晰，由银行提级推出高位风险有因果桥，结尾自然回扣开头与题设。",
+      "script_spans": [
+        "反过来看，你要是刷到金价破纪录，脑子一热把年终奖全换金豆",
+        "提醒一句，金价低迷别断供，也别一把梭哈去赌翻倍。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有风险提示、无收益承诺，且引用银行调级属实；但“短期上蹿下跳不慌”“别断供”无限定边界，易让观众低估波动风险。",
+      "script_spans": [
+        "银行最近把积存金风险等级往上提，得测评过关才能买",
+        "也别一把梭哈去赌翻倍",
+        "久了平均成本压平，短期上蹿下跳不慌",
+        "金价低迷别断供"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-68514ff968d24d97a3b74d9741804f08",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

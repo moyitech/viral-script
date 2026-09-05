@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-0d68224ea57945e899da994b5fa1e101",
+  "run_id": "run-20260902T144529Z-9ea0e10260ea",
+  "trace_sha256": "47b9795f2ec1d335cf43a590c8d77e69df5939498eb155bdbb7274a97e453b28",
+  "created_at": "2026-09-03T11:44:41.380866Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答资源优先级，兼顾危重患者与非急症分流，核心人群和冲突两侧明确。",
+      "script_spans": [
+        "有限资源先给最急的，你感冒别直冲急诊去门诊，两边不能都占着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 252，目标为 280，偏差率为 10.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕急诊分流展开，交代分诊机制、拥挤后果和收费杠杆，观众能获得明确判断方法。",
+      "script_spans": [
+        "医院有分诊台，护士按急重优先问症状摸体征分轻重。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用感冒与心梗的冲突抓人，中段递进解释分诊、后果和收费案例，结尾追问也由主题自然长出。",
+      "script_spans": [
+        "你发烧流鼻涕挤急诊，那边心梗老人等不及，这真亏。",
+        "可轻病占着急诊，抢救床被占，急救医生应付感冒，心梗老人被拖住干等。",
+        "有些城市用收费杠杆引开非紧急的，这类病人明显少了，急诊腾位给真救命的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和对照句有冲击力，但“收费杠杆引开非紧急的”等表达卡顿，至少两处需要重断句或换词。",
+      "script_spans": [
+        "不是谁吵谁先，是病重先走。",
+        "你感冒别直冲急诊去门诊，两边不能都占着。",
+        "有些城市用收费杠杆引开非紧急的"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不是谁吵谁先，是病重先走”对比鲜明、易复述；“小病占床堵别人生路”也让资源冲突具象化。",
+      "script_spans": [
+        "不是谁吵谁先，是病重先走。",
+        "小病占床堵别人生路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构按冲突、分诊、后果、政策与倡议推进，但把轻症拥挤直接等同于抢救床被占，因果略跳。",
+      "script_spans": [
+        "医院有分诊台，护士按急重优先问症状摸体征分轻重。",
+        "可轻病占着急诊，抢救床被占，急救医生应付感冒，心梗老人被拖住干等。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "分诊优先原则表达清楚，但把发烧流涕、腹泻概括为应去基层，缺少病情加重和高风险人群的就医边界，可能误导。",
+      "script_spans": [
+        "医院有分诊台，护士按急重优先问症状摸体征分轻重。",
+        "流涕拉肚去基层门诊。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ccc4a1f9e9f24c0ba27b9c5cf7ede517",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-42a9214e0d244ffc87248a71280eb85c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-38367a8da51943488b8656c6df16bd3b",
+  "run_id": "run-20260902T141850Z-a4b3dec2b8f7",
+  "trace_sha256": "051a4789ca2170339ae128f5e8e3c6c1b7d74a13c45dab2c639f4368f575413b",
+  "created_at": "2026-09-03T14:26:17.538675Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直击“老用户更贵”之问，机制与动机两侧都有回答，通勤加班等例子紧贴普通打车人群痛点。",
+      "script_spans": [
+        "老用户绑定平台更久，打车却更贵，合理吗？",
+        "你通勤定点，系统料你离不开。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，从行为定价、画像标签到动机与合规层层推进，含“敏感者反得低价”等增量，看完带走判断与对策。",
+      "script_spans": [
+        "你加班雨天叫车急，取消又重叫，它记你认价。",
+        "并非所有老用户都更贵，敏感者反得低价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头反差设问即入冲突，中段以两问层层推进兑现钩子，结尾建议加反问自然收束，留有余味。",
+      "script_spans": [
+        "老用户绑定平台更久，打车却更贵，合理吗？",
+        "那它具体怎么定价的？看行为不看脸。",
+        "当系统比你还懂钱包，便宜剩几分真？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句气口整体清晰、有对话感，但'新客留券引''同一边界'等多处生硬，朗读需临时换词，决定性卡在二档。",
+      "script_spans": [
+        "你加班雨天叫车急，取消又重叫，它记你认价。",
+        "系统给你贴标签：这人贵点也肯上车。",
+        "老用户补贴退坡，新客留券引。",
+        "同一边界我只说一回：不能明着欺诈是底线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，看行为不看脸、这人贵点也肯上车均可复述，结尾一问自然留记忆点。",
+      "script_spans": [
+        "看行为不看脸。",
+        "系统给你贴标签：这人贵点也肯上车。",
+        "它怕你走，又馋毛利，走模糊路线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、设问过渡自然，但第四段舆论、监管、研究等论点一句一条堆叠，缺承接，追问时衔接偏弱。",
+      "script_spans": [
+        "那它具体怎么定价的？看行为不看脸。",
+        "同车不同价，舆论压力让平台收敛。监管近年着手管这类差别定价。研究也认算法有盲区，你若连退几单，标签就变。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有边界提示与底线声明，整体克制；但“真不是给你省钱”“被数据算计了”属绝对断言，需加限定更稳妥。",
+      "script_spans": [
+        "并非所有老用户都更贵，敏感者反得低价",
+        "但监管画了线，不能明着杀熟割韭菜",
+        "平台试行动态会员价，真不是给你省钱。",
+        "老用户想靠会员省，结果被数据算计了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4deb94bce2f24e09be4dab127c03ba72",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

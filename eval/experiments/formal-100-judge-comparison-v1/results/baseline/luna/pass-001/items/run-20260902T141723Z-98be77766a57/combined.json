@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-7882282f52f648ef87968a4a3747a029",
+  "run_id": "run-20260902T141723Z-98be77766a57",
+  "trace_sha256": "1ba864b76fe6c0d66499b32ab82fcefbdbf4a86ea07d6a798dd4ffc39b2136a2",
+  "created_at": "2026-09-03T11:44:24.891935Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应两种可能，并把普通投资者的判断落到注销与激励用途，切角具体且贴近散户。",
+      "script_spans": [
+        "这波回购潮，既是信心信号，也是短期托市。",
+        "咱们散户看到公告，别急着开心跟车。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 451，目标为 450，偏差率为 0.22%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线围绕回购信号推进，规模、主体、用途和核查方法层层增加信息，既有事实也有可执行判断。",
+      "script_spans": [
+        "今年超800家上市公司披露回购方案，数目创近年新高，连国企也进场了，说明不是单边戏。",
+        "先翻明细，看它是不是注销式回购。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用股价下跌制造反差，中段持续拆解回购去向，结尾追问也由分析自然推出。",
+      "script_spans": [
+        "回购越多股价越跌？你以为的利好或许是托市陷阱。",
+        "先翻明细，看它是不是注销式回购。",
+        "潮水退去谁留真价值？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "比喻和承接有对话感，但中段存在长句与“被信为真”等明显拗口表达。",
+      "script_spans": [
+        "回购像创可贴，止血但治不了内伤。",
+        "研究也发现，口碑好的企业回购更被信为真，公告本身传递内部看好信号。",
+        "要是拿去发激励，更像给市场打麻醉剂，把股票送高管，过阵子还可能抛出来，短期撑住盘但钱未必进你口袋。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“创可贴”和“蛋糕”比喻具体好懂，既解释机制又方便复述，整体没有连续炫技。",
+      "script_spans": [
+        "回购像创可贴，止血但治不了内伤。",
+        "好比蛋糕不变，分的人少了，你那块就大。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构由总判断推进到用途辨别和核查方法，主线清楚；但把每股利润的机械变厚直接等同于真实信心，因果跳步。",
+      "script_spans": [
+        "看股份去向。直接注销，股本少了，等于把股票烧掉，市场上筹码变少。",
+        "每股利润自然厚了，这是实打实信心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有提醒核查回购用途、避免盲目跟车的边界意识，但“托市陷阱”“实打实信心”等把复杂动机和效果说得过满，易误导投资判断。",
+      "script_spans": [
+        "咱们散户看到公告，别急着开心跟车。",
+        "每股利润自然厚了，这是实打实信心。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5c9150f2d4fb4b86ac1dd583fa651b24",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-054acf44297b439c8bbe7d90aaf8c6db",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

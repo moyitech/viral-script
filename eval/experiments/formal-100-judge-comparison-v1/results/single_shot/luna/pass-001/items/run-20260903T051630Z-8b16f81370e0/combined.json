@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-5c73de8e7e06445dbc589952ab5fa719",
+  "run_id": "run-20260903T051630Z-8b16f81370e0",
+  "trace_sha256": "044d5c1064f742e79f355e1f67a4fb5f5c3ed5570ae13f06bedcf07c36a022a0",
+  "created_at": "2026-09-03T11:57:37.233538Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从占座现象追问维护责任，覆盖馆方、管理部门与普通使用者，既回应公平冲突也给出行动出口。",
+      "script_spans": [
+        "那维护公平的责任在谁？",
+        "馆方本该维护秩序"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 421，目标为 450，偏差率为 6.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕占座公平持续推进，解释规则缺位、管理取舍、群体受损和应对方式，信息单元彼此有推进。",
+      "script_spans": [
+        "场馆的使用规则缺少硬约束",
+        "时间被无形挤占",
+        "去服务台提一句，或者看看有没有预约机，把需求亮出来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“人却溜了”制造座位空占的反差，中段转向责任，结尾把行动建议自然落到“开口要”。",
+      "script_spans": [
+        "一排排桌子摆着书和水杯，人却溜了",
+        "公平不是靠书本自动让位的，得有人开口要"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "场景切入和行动建议顺口，但责任分析、法律说明多为长句，朗读需重断句，主体口语感也不够稳定。",
+      "script_spans": [
+        "那维护公平的责任在谁？",
+        "我的判断很直接：长期占座能存在，不能只骂读者自私，根本原因是场馆的使用规则缺少硬约束，没人愿意当那个坏人。",
+        "按照公共图书馆法，这类场馆免费开放、保障公民文化权益，日常由县级以上文化主管部门管理。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“人却溜了”把占座现场说活；“公平不是靠书本自动让位的”兼具画面和观点，结尾易于复述。",
+      "script_spans": [
+        "一排排桌子摆着书和水杯，人却溜了",
+        "公平不是靠书本自动让位的，得有人开口要"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "场景、责任、后果、行动顺序清楚，但法律管理主体跳到馆方执行责任，且“根本原因”判断铺垫不足。",
+      "script_spans": [
+        "这就出现现实取舍：保面子上的平静，还是动真格腾座位？",
+        "日常由县级以上文化主管部门管理。馆方本该维护秩序",
+        "根本原因是场馆的使用规则缺少硬约束，没人愿意当那个坏人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "建议服务台反馈，未煽动冲突，法律表述有依据；但“根本原因”“不少馆”等概括过满，易造成误导。",
+      "script_spans": [
+        "去服务台提一句，或者看看有没有预约机",
+        "根本原因是场馆的使用规则缺少硬约束",
+        "不少馆默默选了前者"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d253b244f93b41e7828eb514989f620b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-0bd87216188443f1971c47e5ff78a5eb",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

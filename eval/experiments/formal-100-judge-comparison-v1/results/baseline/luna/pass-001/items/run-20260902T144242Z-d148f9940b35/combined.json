@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-e433285a998548e1919c71422dd6b715",
+  "run_id": "run-20260902T144242Z-d148f9940b35",
+  "trace_sha256": "f5d2934a02dcb13a5ca9400ab252cf7f6d93db0d87b65f2ebca4d8e86a76445a",
+  "created_at": "2026-09-03T11:46:34.265602Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应不会用手机怎么办，覆盖患者、医院和家属，既讲纸质兜底，也给出窗口、导诊和提前咨询路径。",
+      "script_spans": [
+        "独自去的老人咋办？直接找导诊说清情况，报上姓名，报告立刻就能印，别怕麻烦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 436，目标为 450，偏差率为 3.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，既解释数字门槛，也提供多条办理路径；但把保留传统服务直接等同于纸质报告“硬要求”，关键结论过于绝对。",
+      "script_spans": [
+        "各院执行有粗有细，去前打总机问一句更稳。",
+        "医院上电子报告，纸质出口不能关，这是硬要求。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用电子化与纸质报告的反差设问，中段连续给出政策与操作路径，结尾自然落到便民判断。",
+      "script_spans": [
+        "不会用手机的人反能取纸质",
+        "技术往前跑，愿意等老人的窗口才算真便民"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有问答、短句和具体动作，整体好读；但开头与“有粗有细”两处措辞不顺，需重断句或换词。",
+      "script_spans": [
+        "推行电子是趋势，留纸质是底线，医院两边得做齐。",
+        "不会用手机的人反能取纸质",
+        "各院执行有粗有细"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“电子是趋势，纸质是底线”形成清晰对照，“像看天书”等表达具体好记，修辞没有压过信息。",
+      "script_spans": [
+        "推行电子是趋势，留纸质是底线",
+        "像看天书",
+        "医院本就不是手机培训班"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构清楚，从冲突、政策到办理建议递进；但“传统服务并行”推不出纸质报告必然保留，个别结果也说得过满。",
+      "script_spans": [
+        "为啥反而有保障？国家早定调，智能化要与传统并行。",
+        "医院上电子报告，纸质出口不能关，这是硬要求。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "关注老年人需求且给出可行路径，但将纸质报告和刷身份证服务说得过于绝对，易造成误解。",
+      "script_spans": [
+        "各院执行有粗有细，去前打总机问一句更稳。",
+        "医院上电子报告，纸质出口不能关，这是硬要求。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-6d77139a0a8e46b080607de66739c4b4",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-625c6e887bd045279a72631f859c455c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

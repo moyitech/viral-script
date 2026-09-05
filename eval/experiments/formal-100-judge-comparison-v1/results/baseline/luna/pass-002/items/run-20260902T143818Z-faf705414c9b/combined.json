@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-d5ab15cf4c1646ccb38160cefb288bd0",
+  "run_id": "run-20260902T143818Z-faf705414c9b",
+  "trace_sha256": "5e73aecaacc1f5c74ddfea06506840a93ef6c22311f6568dcd6f654164f34388",
+  "created_at": "2026-09-03T12:16:11.069123Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应题设，兼顾用户、骑手与平台，明确提出弹性承诺方案，切角具体。",
+      "script_spans": [
+        "这天死守准时承诺，对用户骑手都不公道。但也不能取消承诺"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕极端天气下的承诺调整持续推进，数据、风险、规则试点和研究边界都带来有效增量。",
+      "script_spans": [
+        "清华团队分析过百城数据，气温三十五度，单量比二十度时涨约百分之七。",
+        "不过这类研究多盯高温，暴雨大风下的实证还少，这点得说实话。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头冲突立刻入场，中段用数据、场景和规则转折持续推进，结尾从秒数落到平安，余味自然。",
+      "script_spans": [
+        "暴雨天你饿慌，骑手迟到反被罚哭。",
+        "天气一坏，想点外卖的人反而多。",
+        "我们点的不是秒数，是有人平安递来的热饭。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句推进，画面感足；但“这天死守”“他摔了疼身”等搭配生硬，朗读需临时换词。",
+      "script_spans": [
+        "你在家刷新地图，小蓝点挪不动",
+        "这天死守准时承诺",
+        "他摔了疼身"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“承诺像绳子”把规则冲突说具体，结尾用热饭落地，记忆点清晰，修辞克制且服务观点。",
+      "script_spans": [
+        "这时候承诺像绳子，勒住两边。",
+        "算法比快，但人命比点击率重要",
+        "我们点的不是秒数，是有人平安递来的热饭。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "冲突、机制、规则与结论清楚，但高温证据外推到所有恶劣天气，“要么…要么…”也把选择说满，论证略跳。",
+      "script_spans": [
+        "现实里规则已在转。北京试了红灯停表，等红灯时间不计入考核",
+        "天气一坏，想点外卖的人反而多。",
+        "要么闯红灯赌安全，要么低头认罚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调安全并承认试点局限，但“分扣完白干”“片区停送吃不上”等绝对化表述，仍可能放大误导。",
+      "script_spans": [
+        "当然这还只是部分城市尝试，没全覆盖",
+        "投诉键一按，骑手分扣完白干"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a382fdbb223a46bf83bdfd0662506654",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

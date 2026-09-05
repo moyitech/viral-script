@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-69666a4035da42a5a202acfa2963f4e5",
+  "run_id": "run-20260902T142423Z-8a884910c8e9",
+  "trace_sha256": "9007e02cdd2d47ce96ead3a56b58a8242d93d84ccfd9236e7ead4f186616db69",
+  "created_at": "2026-09-03T14:28:15.666693Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出题设并给出两面答案，利息、灵活度、保险逐层服务普通人决策，结尾回扣抢购。",
+      "script_spans": [
+        "抢着存不一定更划算。但求本金安全的人，能适量配一点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "利率对比、支取规则、五十万保障线各有增量，数字具体，论据推进扎实，无同义复读。",
+      "script_spans": [
+        "大行五年期存单最高约1.6%。可一些小银行三年定存能到1.9%",
+        "一旦提前支取，那部分只能按当天活期利率算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头抛抢购与划算的冲突设问，中段利差、提前支取、存款保险层层推进，结尾自问自然收束。",
+      "script_spans": [
+        "你刷手机抢大额存单告急，真比慢慢存别处划算？",
+        "可一些小银行三年定存能到1.9%，利息反而可能更高些",
+        "先琢磨自个这笔钱能不能踏实躺几年不动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口为主，'手慢的人说不定省了心'等句重音停顿清楚，中段自然对话感贯穿，朗读无需临时改词。",
+      "script_spans": [
+        "不是抢不到就亏了，手慢的人说不定省了心",
+        "真碰上急事用钱，利差就吃不到了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，'踏实躺几年不动'把流动性要求说得形象、离开上下文仍可复述，'手慢省了心'添小反差，无堆砌炫技。",
+      "script_spans": [
+        "先琢磨自个这笔钱能不能踏实躺几年不动",
+        "手慢的人说不定省了心"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "‘先说利息’‘再看灵活度’路标清晰，急用钱到利差损失的因果完整，结尾自然回扣抢购与题设。",
+      "script_spans": [
+        "再看用钱灵活度",
+        "真碰上急事用钱，利差就吃不到了。时间越长，提前取的损失越大。",
+        "下次再遇抢购风，先琢磨自个这笔钱能不能踏实躺几年不动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论留余地，利率带'约'限定，讲清存款保险五十万与提前支取损失边界，无夸大承诺或诱导，导向稳健。",
+      "script_spans": [
+        "抢着存不一定更划算",
+        "存款保险目前只对单家机构五十万以内本息全额保，钱多就得分散几家",
+        "但求本金安全的人，能适量配一点"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c426665efb2947d6baf4b2b069e4191a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

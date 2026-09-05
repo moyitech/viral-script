@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-fcc759fcdcb14299acac789a6f3d8f28",
+  "run_id": "run-20260902T142106Z-90743609f511",
+  "trace_sha256": "ca0da31c33513405234c264994b30957acbbd7401bc890240e4197c125e40b5a",
+  "created_at": "2026-09-03T12:16:10.622672Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答了真人与合成的辨别问题，解释全天带货缘由，并给普通观众明确的识别动作。",
+      "script_spans": [
+        "商家发现数字人能全天值守，成本极低。",
+        "分清真假不靠肉眼较劲，看平台亮明身份。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕身份标识和消费风险，兼有行业原因、典型骗局与操作建议，信息单元推进充分。",
+      "script_spans": [
+        "还有商家克隆老专家模样，骗老人买高价保健品。",
+        "先盯画面角落有没有“虚拟主播”提示。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“真人讲解”制造反差，中段持续补充乱象与规则，结尾落到可执行提醒并留下追问。",
+      "script_spans": [
+        "你付钱买的“真人讲解”，可能只是段代码在念稿。",
+        "下次进直播间，先找标识再听讲解，别等钱包空了才琢磨：对面到底是不是人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句较多，行动建议也好读，但“标得持续显示”等多处搭配生硬，尚未达到自然顺滑。",
+      "script_spans": [
+        "刷直播间别光听嘴甜",
+        "标得持续显示",
+        "平台对没标注的账号限制过视频分发"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“其实后台根本没真人”“先找标识再听讲解”具体好复述，反差和拟人点到为止，没有堆砌辞藻。",
+      "script_spans": [
+        "你以为在跟人聊天，其实后台根本没真人。",
+        "数字人永远顺溜对齐，缺那点人味。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "风险—规则—应对的主线基本清楚，但“落地后开播要交资质”突然出现，前后责任关系交代不完整。",
+      "script_spans": [
+        "那规则怎么管？今年监管办法要求AI内容显著标识。",
+        "落地后开播要交资质，全程标才合规。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提醒标识和虚假营销风险较到位，但“根本没真人”“永远顺溜”等绝对表述容易误导观众。",
+      "script_spans": [
+        "标得持续显示，不能播一半偷偷消失",
+        "先盯画面角落有没有“虚拟主播”提示",
+        "看到标你就知道不是真人",
+        "其实后台根本没真人",
+        "数字人永远顺溜对齐"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-387d3cc842ce4380b865af3f3b5da948",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

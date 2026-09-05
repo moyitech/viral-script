@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-5ef540c07dea454ea886b1cf8e545d0d",
+  "run_id": "run-20260902T142415Z-f8ce2b4b698c",
+  "trace_sha256": "42f1acf7c91e16beaa01eb95836eb78e159a3c698fa10679cca9ee47a689c9fd",
+  "created_at": "2026-09-03T14:24:55.713871Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给结论，效率与隐私两侧都有落点，普通人受影响一段直击员工视角，结尾回扣题设。",
+      "script_spans": [
+        "效率提升不必然牺牲员工隐私，但乱用照样可能侵权",
+        "普通人怎么受影响？",
+        "下次签入职同意书，你会翻邮件条款吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "结论、研究、法律、案例、实操逐层推进，还标注实验局限，信息单元各自增量，非同义堆砌。",
+      "script_spans": [
+        "像LoRA，就是改一小部分参数来省钱。它反而跟加噪音的隐私训练一样，能压住数据被记牢的风险",
+        "按个人信息保护思路，企业碰员工邮件得走最小必要",
+        "不过这类结论多来自训练实验，邮件实操还缺独立评估"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字直抛效率与隐私的冲突反转，中段以研究反转、法律红线、反例层层推进，结尾问题由正文自然长出，互动不生硬。",
+      "script_spans": [
+        "企业用大模型筛邮件，效率拉满却未必偷隐私",
+        "下次签入职同意书，你会翻邮件条款吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和具体例子让全篇大体好读，但'不必然牺牲''得看明示'等书面压缩处需临时换词，超两处拗口，封顶两分。",
+      "script_spans": [
+        "你跟医生聊病情，跟律师谈离婚，这些全进缓存，谁也不想被看光。",
+        "效率提升不必然牺牲员工隐私",
+        "纯工作账号且你知情才算例外",
+        "得看明示"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，「模型记不住，隐私才保住」与「机器读懂内容，却认不出是谁」均可独立复述，无堆砌。",
+      "script_spans": [
+        "模型记不住，隐私才保住",
+        "机器读懂内容，却认不出是谁"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "三个设问衔接各段，证据、法律、实操层层递进，结尾自然回扣开头与题设，因果桥清楚。",
+      "script_spans": [
+        "那公司能随便扫邮箱吗？不行。法律边界卡在这。",
+        "这么看，技术能把效率和隐私拉到同侧。可真正护住你的，还是规矩和知情权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论带限定词，主动提示实验与实操差距，法律边界审慎交代，无敏感夸大或误导风险。",
+      "script_spans": [
+        "答案其实是，效率提升不必然牺牲员工隐私，但乱用照样可能侵权。",
+        "不过这类结论多来自训练实验，邮件实操还缺独立评估。",
+        "法律不禁止查工作邮，但要求事先说清。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-631fb0e7951b4f289af4ca0dc6bff134",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

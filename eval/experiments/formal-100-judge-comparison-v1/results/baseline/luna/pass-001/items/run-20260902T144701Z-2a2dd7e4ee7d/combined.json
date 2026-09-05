@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-cf01e37bcdea466883ca09451fdbbca6",
+  "run_id": "run-20260902T144701Z-2a2dd7e4ee7d",
+  "trace_sha256": "7640e6efb60e4a2cdea76602c72bed3dba1134e964cdc92c7c5c260f767a552c",
+  "created_at": "2026-09-03T11:45:07.483273Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答消费意愿是否提升，并解释支出落点、传导机制和落地条件。",
+      "script_spans": [
+        "财政更侧民生，消费意愿会跟涨，但只看钱落哪，不是所有民生都灵。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 261，目标为 280，偏差率为 6.79%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中，政策背景、减负机制、分项差异和落地约束层层增加有效信息。",
+      "script_spans": [
+        "一是育儿补贴、免费学前直接减你家务开销，不是搞大项目，是进你家账本。",
+        "医疗卫生那块效果还偏弱，钱没花到痛处。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用工资没涨却敢逛母婴店制造反差，中段两条路径和医疗反例持续推进，结尾问题自然收束。",
+      "script_spans": [
+        "工资没涨，你咋敢去母婴店了？",
+        "下次听见民生投入，先想谁替你扛风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和提醒式承接较利落，但“财政更侧民生”“手头活一分”等多处搭配生硬，朗读需临时改词。",
+      "script_spans": [
+        "促消费主要靠两点。",
+        "财政更侧民生，消费意愿会跟涨",
+        "肩头轻一分手头活一分"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不是搞大项目，是进你家账本”和“钱进日常缝里”把政策落点说具体，修辞克制且有复述价值。",
+      "script_spans": [
+        "不是搞大项目，是进你家账本。",
+        "钱进日常缝里才行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先给判断，再讲两条传导路径，随后补上效果差异与落地条件，结尾回扣自然。",
+      "script_spans": [
+        "促消费主要靠两点。",
+        "政策方向对，落地慢半拍，得实打实兜住失业和养娃，钱进日常缝里才行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动、歧视或危险承诺，且强调落地条件；但“消费意愿会跟涨”“钱没花到痛处”因果和概括偏满，需补边界。",
+      "script_spans": [
+        "政策方向对，落地慢半拍",
+        "消费意愿会跟涨",
+        "钱没花到痛处"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-89cb9beaa3aa4d8d9e54d61bad469b53",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-32242a20d3264a129c87d080070ba402",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

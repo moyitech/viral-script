@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-8734a274a9d44188b745e56ddc8e8055",
+  "run_id": "run-20260903T051546Z-65399ccbbba6",
+  "trace_sha256": "4369b3ad90384e955b80170fbe40903fb229baa089fe64d85afee8e8887199a2",
+  "created_at": "2026-09-03T11:57:21.721962Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直面AI概念热度与普通投资者痛点，给出识别主营和核查披露的具体办法，题意覆盖完整。",
+      "script_spans": [
+        "普通投资者想避开伪风口，核心就一句话：认主营收入，不认概念包装。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 275，目标为 280，偏差率为 1.79%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕识别伪风口，覆盖造谣、荐股骗局、监管处置和公告核验，信息推进具体有效。",
+      "script_spans": [
+        "不少账号拿AI批量编造假订单、假政策",
+        "真要验货，直接去交易所和上市公司公告查原始披露文件"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“牛股”可能靠假稿支撑制造反差，中段用多种骗局和核验动作持续推进，结尾警句收得有余味。",
+      "script_spans": [
+        "也许只靠一篇机器写的假稿子撑着",
+        "真要验货，直接去交易所和上市公司公告查原始披露文件"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有清晰的口播骨架和自然表达，但两处句式卡顿、书面术语偏密，尚未达到无需改词的顺滑程度。",
+      "script_spans": [
+        "核心就一句话：认主营收入，不认概念包装。",
+        "这类编造传播虚假信息的行为",
+        "直接去交易所和上市公司公告查原始披露文件"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“认主营收入，不认概念包装”简洁对仗；结尾把AI与冲票区分开，观点清楚，适合复述，修辞没有堆砌。",
+      "script_spans": [
+        "认主营收入，不认概念包装",
+        "AI是生产力工具，不是你闭眼冲票的暗号。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从风险钩子到识别标准，再到骗局依据、监管后果和公告核验，层层推进，结尾自然回扣投资判断。",
+      "script_spans": [
+        "核心就一句话：认主营收入，不认概念包装。",
+        "AI是生产力工具，不是你闭眼冲票的暗号。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提醒查公告、警惕非法荐股，整体无明确违规；但“股价被带起来他们早撤了”属无依据的泛化归因，“认主营收入”也偏绝对。",
+      "script_spans": [
+        "直接去交易所和上市公司公告查原始披露文件",
+        "股价被带起来他们早撤了",
+        "认主营收入，不认概念包装"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8b9884a4ad5c4486ac74c2fb6b092d27",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-c8137d9c797e43fe98068d0e20ade81c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

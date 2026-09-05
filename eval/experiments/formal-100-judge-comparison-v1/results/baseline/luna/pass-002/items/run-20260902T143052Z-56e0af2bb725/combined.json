@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-c331179c93f54ca3a9be568ecc1a7452",
+  "run_id": "run-20260902T143052Z-56e0af2bb725",
+  "trace_sha256": "31cdb9ec65dbe6cb5ee4fc91e59bd9cfa6604b53aafc624b26a74c6b61ff0856",
+  "created_at": "2026-09-03T12:15:44.379121Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释收费与家庭负担的双重来源，既写成本，也写班级压力和家长处境，命中普通家长。",
+      "script_spans": [
+        "可压垮钱包，是自愿项目被班里推着必须交。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕“贵从何来、为何难拒”，成本、政策、攀比压力和替代方案形成有效信息链，增量较足。",
+      "script_spans": [
+        "做手册画图片都要钱，租小车订吃住更省不下。",
+        "家长怕娃没去集体活动被同学疏远。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“五千”和“家庭债”制造强冲突，中段补充成本与社交压力，结尾建议自然落地。",
+      "script_spans": [
+        "交五千研学，课堂外教育咋变家庭债？",
+        "别的娃回来聊见闻，自己娃插不上话。",
+        "下次班里发单，先跟孩子商量值不值再掏钱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、问答和家庭场景有口播感，但“因真有”“算完成本报的”等多处搭配生硬，朗读需临时改词。",
+      "script_spans": [
+        "别的娃回来聊见闻，自己娃插不上话。",
+        "因真有老师设计和出门花销",
+        "机构算完成本报的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“家庭债”“压垮钱包”“生怕落了单”把经济压力和群体焦虑说得具体，点到为止且便于复述。",
+      "script_spans": [
+        "课堂外教育咋变家庭债？",
+        "可压垮钱包，是自愿项目被班里推着必须交。",
+        "生怕落了单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按成本、压力、建议推进，主线可跟随；但“机构算完成本报的”语义残缺，自愿与被迫之间也缺少解释。",
+      "script_spans": [
+        "研发人力和材料开销都不小，机构成本堆起价低不了。",
+        "机构算完成本报的。",
+        "政策说公益自愿，但好课程要人熬好些天写方案。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有商量费用、选择替代项目的稳妥建议，但“必须交”和“家庭债”概括偏满，易造成误导。",
+      "script_spans": [
+        "下次班里发单，先跟孩子商量值不值再掏钱。",
+        "自愿项目被班里推着必须交",
+        "课堂外教育咋变家庭债？"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c1ff3d9add3e4830816ab39fc1ec0a7e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-db424e55c67648fc8a93cf2b3c44de40",
+  "run_id": "run-20260902T143818Z-faf705414c9b",
+  "trace_sha256": "5e73aecaacc1f5c74ddfea06506840a93ef6c22311f6568dcd6f654164f34388",
+  "created_at": "2026-09-03T13:47:53.668554Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“还合理吗”：既批死守之弊也驳取消之险，结尾直接改写准时定义，全程扣题。",
+      "script_spans": [
+        "这天死守准时承诺，对用户骑手都不公道。但也不能取消承诺，不然你白等没交代",
+        "当天气成了第三方，准时的定义该重新写。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 693，目标为 700，偏差率为 1.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "百城数据、高温增收研究、北京新政、证据局限层层递进，无编造，信息密度高且都服务论点。",
+      "script_spans": [
+        "气温三十五度，单量比二十度时涨约百分之七。四十度中午能多两成。",
+        "北京试了红灯停表，等红灯时间不计入考核",
+        "不过这类研究多盯高温，暴雨大风下的实证还少，这点得说实话。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句即抛出饿与罚的反差冲突，中段以数据、追问和反方观点层层推进，结尾余味由正文自然生长。",
+      "script_spans": [
+        "暴雨天你饿慌，骑手迟到反被罚哭",
+        "那硬卡那几分钟会怎样？",
+        "我们点的不是秒数，是有人平安递来的热饭"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与画面感是亮点，但“恶劣路况天气”“单价摊薄”“延后免责”等处需临时换词重断句，只能封顶两分。",
+      "script_spans": [
+        "车轮转得再快也追不上倒计时",
+        "碰上恶劣路况天气还加配送时长",
+        "可骑手单价摊薄没人接单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，'承诺像绳子''点的不是秒数'等句离开上下文仍可复述，无炫技堆砌。",
+      "script_spans": [
+        "这时候承诺像绳子，勒住两边",
+        "车轮转得再快也追不上倒计时",
+        "我们点的不是秒数，是有人平安递来的热饭"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进段落，反方意见均给回应，还主动交代证据边界，结尾自然回扣开头与题设。",
+      "script_spans": [
+        "那硬卡那几分钟会怎样？",
+        "也有人咬定承诺不能松，怕平台偷懒，这担心不无道理，但暴雨里物理极限摆在那。",
+        "所以下回气象台发蓝警，那个准时的小红点该换成延后免责的提醒。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "数据引用有据，政策表述限定清楚，主动说明未全覆盖与实证不足；闯红灯是反思算法压力而非鼓动，无误导、煽动或违规承诺。",
+      "script_spans": [
+        "当然这还只是部分城市尝试，没全覆盖，许多小城骑手仍在淋着赚那几块",
+        "不过这类研究多盯高温，暴雨大风下的实证还少，这点得说实话",
+        "要么闯红灯赌安全，要么低头认罚"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-32945e079fd24d2ab0b3f97738493624",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1ebd9cd2df764ae4a4ac24a96429c132",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

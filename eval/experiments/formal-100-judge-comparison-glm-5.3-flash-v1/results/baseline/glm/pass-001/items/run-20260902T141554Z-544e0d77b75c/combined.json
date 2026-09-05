@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-b13c10178148406eb6ad93bc354c0569",
+  "run_id": "run-20260902T141554Z-544e0d77b75c",
+  "trace_sha256": "2785ea11259105009475df003216ce7689d203ba3c2e829305c9e3e6f5fa9eb3",
+  "created_at": "2026-09-03T13:46:08.756474Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直问安全值不值代价，中段给机器识图、信用分级等兼顾路径，结尾回扣题设，通勤人群痛点命中。",
+      "script_spans": [
+        "兼顾安全与效率，不能只堵不疏",
+        "你说细查要不要？要，但得让机器替人跑腿"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 479，目标为 450，偏差率为 6.44%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦安全与通勤之争，事实、机理与对策逐层推进，引用佐证扎实，观众能带走具体判断。",
+      "script_spans": [
+        "机器识图几秒过包，比人工翻查快得多",
+        "靠信用分级，依托违法信息库，严查惯犯、放快守规者"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即抛二十分钟与安全的价值冲突，中段用堵车厢、信用分级持续兑现，结尾二选一自然生长。",
+      "script_spans": [
+        "多花二十分钟过细安检，安全值这代价吗？",
+        "不是把包翻三遍，而是让机器认得更快",
+        "你愿早出门还是盼分流真正落地？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数短句上口，“让机器替人跑腿”很自然；但“推新模式提质量效率”“过机加身检”等压缩公文句需临时改词。",
+      "script_spans": [
+        "机器识图几秒过包，比人工翻查快得多。",
+        "规定鼓励安检新技术新产品，推新模式提质量效率。",
+        "深圳试点全员过机加身检，却没多开通道才积压。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“让机器替人跑腿”“细的是清单，不是添人堵门”凝练可复述；对照式表达服务论点，密度高但未妨碍理解，无堆砌炫技。",
+      "script_spans": [
+        "进站堵了车厢空，城市运转反变脆",
+        "要，但得让机器替人跑腿",
+        "安检细的是清单，不是添人堵门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从堵疏之争到机器替人再到人群落差，层层递进；因果桥清楚，结尾回扣开头的代价之问。",
+      "script_spans": [
+        "若只加人查，进站堵了车厢空，城市运转反变脆",
+        "安检细的是清单，不是添人堵门"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "立场平衡不煽动，预判用或字限定，批评有事实依托且克制，导向安全。",
+      "script_spans": [
+        "你说细查要不要？要，但得让机器替人跑腿",
+        "未来信用通道或省下不少时间"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-8f1a8fbfc480435a85466fcf2b607362",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-f60efca73fe74da38b313d5c689add2b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

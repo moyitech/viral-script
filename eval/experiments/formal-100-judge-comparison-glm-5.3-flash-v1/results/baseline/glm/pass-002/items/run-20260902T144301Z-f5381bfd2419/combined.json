@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-ebfaa3807fbc496e8011fd96c895be47",
+  "run_id": "run-20260902T144301Z-f5381bfd2419",
+  "trace_sha256": "f16724b5c189a5179b0ec67f0791f0f89399c0720b6149100e84148c21bcd09d",
+  "created_at": "2026-09-03T14:26:32.682744Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇点出居民担忧，两看框架正面回答题设，利好与风险两侧及买菜送娃人群均覆盖。",
+      "script_spans": [
+        "盘得好能补足短板，盘歪了才伤质量",
+        "买菜送娃场地就少了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策、案例、基金与风险层层推进，数据可核，结尾留下可操作的判断方法。",
+      "script_spans": [
+        "像陕西长安汇通，盘了十八户企业超四十亿资产",
+        "老旧厂房改托育中心，公房激活做社区养老点"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头20字内立起盘活与居民担忧的冲突，中段连环设问持续供新料，结尾由正文长出行动提示，余味自然。",
+      "script_spans": [
+        "地方盘活闲置资产，居民却怕公共服务变差",
+        "所以下次见大楼动工，别先骂卖地，看它招牌写啥"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句能读通，但'柔性用''解资金难'等压缩表达至少两处需临时换词，定档2分。",
+      "script_spans": [
+        "街坊走几步能办成事，比锁着长草强太多。",
+        "改给创业团队柔性用",
+        "这基金由国资运营公司设，帮企业解资金难"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞点到为止，'锁着长草''招牌写啥'具象贴切，结尾金句脱离上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "比锁着长草强太多",
+        "空间重新待人，才算没白盘"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问式过渡串联各段，因果桥完整，结尾回扣开头与题设，主线层层递进。",
+      "script_spans": [
+        "那空房怎么就变服务？",
+        "如果只盯着还债压力，把临街公房整层租公司，买菜送娃场地就少了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反两面并陈，风险处加了'不是普遍'等限定，无煽动夸大，导向稳妥。",
+      "script_spans": [
+        "不是啥闲置都乱动，保基本服务是前提。",
+        "这类情况不是普遍，但把关松了就会出现。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-441f975e79194039be2e8b7a476d79a9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

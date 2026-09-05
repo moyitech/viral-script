@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-f98c8566cc67443baa22348fd778e277",
+  "run_id": "run-20260902T143610Z-18cdebbfc8db",
+  "trace_sha256": "37f431813c1f71145e063aba783c82b901ff56faceeddceb60a185785e9816e3",
+  "created_at": "2026-09-03T12:17:51.837947Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头回应“怕品质差”，中段解释低价来源，后段给出挑选和加热方法，完整覆盖省钱与品质两端。",
+      "script_spans": [
+        "图便宜买预制菜，怕品质差咋办？能兼得，会挑就行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕省钱与品质并行推进，既解释规模化降价，也给出标签、储存和加热的具体做法，信息增量充分。",
+      "script_spans": [
+        "厂里大批量做，菜洗好切好腌制，统一炒炸烤煮蒸，分装后你加热就吃。",
+        "先看包装标识，买时翻到背面看贮存温度。",
+        "冷藏的别放久，按说明加热，保质期短，别贪便宜去囤货。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出“便宜但怕差”的冲突，中段给出成本与挑选方法，结尾互动也由建议自然生长。",
+      "script_spans": [
+        "图便宜买预制菜，怕品质差咋办？",
+        "那怎么挑？先看包装标识，买时翻到背面看贮存温度。",
+        "下次推车拿盒菜，你愿先看标签再省钱吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和动作指令让整体好读，但“省了厨师站灶前”等两处搭配生硬，需临时换词。",
+      "script_spans": [
+        "冷藏的别放久，按说明加热，保质期短，别贪便宜去囤货。",
+        "省了厨师站灶前",
+        "咱照贮运要求办就稳妥"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“低一大截”“吃得踏实”等表达把利益点和安心感说具体，整体口语化，记忆点自然不油。",
+      "script_spans": [
+        "价格才比堂食低一大截。",
+        "省钱也能吃得踏实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "价格机制、挑选步骤和食用提醒顺次展开，主线清楚；但“品质有底线”把不加防腐剂直接推成品质保证，因果略显跳跃。",
+      "script_spans": [
+        "便宜来自效率，不是偷工减料。",
+        "那怎么挑？先看包装标识，买时翻到背面看贮存温度。",
+        "正在征求意见的国标写清，预制菜不添防腐剂，品质有底线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明显违规，且标注“正在征求意见”；但“全砍掉”“稳妥”及否定微波炉的说法过满，易造成误导。",
+      "script_spans": [
+        "正在征求意见的国标",
+        "门店房租水电全砍掉",
+        "咱照贮运要求办就稳妥",
+        "别图快用微波炉随便叮两下"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5ae594ed41bc4c53956620a1fb391f92",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

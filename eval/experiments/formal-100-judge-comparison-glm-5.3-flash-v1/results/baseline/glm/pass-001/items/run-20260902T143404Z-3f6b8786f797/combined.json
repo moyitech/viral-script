@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-cf7504d7d4bb4d56aad6105b0972e25b",
+  "run_id": "run-20260902T143404Z-3f6b8786f797",
+  "trace_sha256": "4dd1faf7e6200ed84c24079fea2ef075cd6bc42f2452a5350081e7b41f4148a9",
+  "created_at": "2026-09-03T13:46:52.748856Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即立起人流旺与纯利变薄的冲突，直接作答未必，成本与客流两侧齐全，人群切中。",
+      "script_spans": [
+        "人流旺了，纯利却可能变薄",
+        "延时营业的热闹，能带真实增长吗？未必。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 270，目标为 280，偏差率为 3.57%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "成本、转化、特例与常态各成信息单元，层层推进，账本判断法是观众可带走的增量。",
+      "script_spans": [
+        "客流变不成交易笔数就不算真增量",
+        "像世界杯那样特定赛事",
+        "别光数人头，得看延时那小时净赚回多少"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛人流旺与纯利薄的反差，中段成本、客流、特例层层推进兑现钩子，结尾账本落点自然有余味。",
+      "script_spans": [
+        "商场再多开两小时，人流旺了，纯利却可能变薄",
+        "客流变不成交易笔数就不算真增量",
+        "如果只填满场地不填满钱袋，这份热闹终归是负担"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句气口干净，问答推进有对话感；“月底翻账本”“别光数人头”等表达上口，仅“多开几点钟”稍生涩，不影响整体朗读。",
+      "script_spans": [
+        "夜里进场的人常只看氛围，不一定掏钱买单。",
+        "所以你月底翻账本，别光数人头，得看延时那小时净赚回多少。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "填场地与填钱袋对仗自然，离开上下文仍可复述；成本细节具体可感，修辞克制，服务理解不喧宾夺主。",
+      "script_spans": [
+        "灯得亮空调不能关",
+        "别光数人头，得看延时那小时净赚回多少",
+        "如果只填满场地不填满钱袋，这份热闹终归是负担"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先算钱再看人，特例与常态辨析后再给判断标准，热闹是负担自然回扣开头设问。",
+      "script_spans": [
+        "平日没赛事，晚八点后客流就稀，硬撑开店夜班人力电费涨",
+        "如果只填满场地不填满钱袋，这份热闹终归是负担"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "通篇用“可能”“未必”“不一定”作限定，还承认特例能带短期夜流量，分析不夸大、不作确定性承诺，导向安全。",
+      "script_spans": [
+        "人流旺了，纯利却可能变薄",
+        "能带短期夜流量，但日常延时难复制",
+        "夜里进场的人常只看氛围，不一定掏钱买单"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-6a0afa80ef814c44b4ba16eb6fa98547",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-4280f0a131674bb9a7661d17fd42e6d0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

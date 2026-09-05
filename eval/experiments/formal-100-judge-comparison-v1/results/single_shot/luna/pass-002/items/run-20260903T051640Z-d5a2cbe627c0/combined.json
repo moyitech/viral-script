@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-c3ebc2f4345241378a5ada1a7c8bd595",
+  "run_id": "run-20260903T051640Z-d5a2cbe627c0",
+  "trace_sha256": "3be5c428ddfc1ed1a75d8f02f9f76cb713c8986f89e6319c4b8d4c0e937c6510",
+  "created_at": "2026-09-03T12:32:21.700676Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接区分全面与局部竞争，既回答是否加剧，也落到外贸企业转内销的实际门槛。",
+      "script_spans": [
+        "不会全面恶化成价格混战，但局部品类的价格博弈肯定加码。",
+        "补齐内销渠道与品类适配才是真门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕价格竞争给出分层判断，并用消费取向、标准品涌入和渠道适配持续推进论证。",
+      "script_spans": [
+        "当下国内消费明显偏向理性和高性价比需求，大众消费品类本身价格竞争氛围就浓厚",
+        "外贸产能集中涌入会令部分标准品赛道更卷。",
+        "若只靠简单降价清库存，难有持续空间"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出低价竞争冲突，中段分层解释，结尾落到内销门槛，推进完整。",
+      "script_spans": [
+        "国内低价竞争会更激烈吗？",
+        "不会全面恶化成价格混战，但局部品类的价格博弈肯定加码。",
+        "补齐内销渠道与品类适配才是真门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结论清楚，局部有对话感；但中段长句、抽象词和“绝对绝非”叠加，朗读需重断句。",
+      "script_spans": [
+        "直接给核心结论：不会全面恶化成价格混战",
+        "国内超大规模消费与市场空间有底气逐步消纳外贸回流产能",
+        "这绝对绝非短期权宜或临时清仓甩货"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "价格混战与真门槛形成清晰记忆点，表达克制，修辞服务于判断，没有明显堆砌。",
+      "script_spans": [
+        "不会全面恶化成价格混战，但局部品类的价格博弈肯定加码。",
+        "补齐内销渠道与品类适配才是真门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先给核心结论，再展开宏观承接、局部竞争和企业转型门槛，结尾自然回扣主题。",
+      "script_spans": [
+        "直接给核心结论：不会全面恶化成价格混战，但局部品类的价格博弈肯定加码。",
+        "微观端，当下国内消费明显偏向理性和高性价比需求，大众消费品类本身价格竞争氛围就浓厚，外贸产能集中涌入会令部分标准品赛道更卷。",
+        "若只靠简单降价清库存，难有持续空间，补齐内销渠道与品类适配才是真门槛。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "结论区分全面与局部，方向较稳；但“绝对绝非”等绝对化表述缺少边界，可能让观众误解为所有企业都非短期清库存。",
+      "script_spans": [
+        "若只靠简单降价清库存，难有持续空间，补齐内销渠道与品类适配才是真门槛。",
+        "这绝对绝非短期权宜或临时清仓甩货。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-07c37ad1550d465f911e56c6bccd725f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

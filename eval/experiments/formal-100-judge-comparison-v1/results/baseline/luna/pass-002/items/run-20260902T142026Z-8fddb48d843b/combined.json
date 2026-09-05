@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-344728d0cf7148b3aabc857b14f86b24",
+  "run_id": "run-20260902T142026Z-8fddb48d843b",
+  "trace_sha256": "9eeda93fbbc34f31a335118ea28a5f727a8e17050a228302046f4d6700d7e8b5",
+  "created_at": "2026-09-03T12:16:12.582664Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接围绕街头拍摄上传展开，兼顾公共监督与二次伤害，并给出普通观众可执行的处理建议。",
+      "script_spans": [
+        "这既是公共监督，也可能成二次伤害。",
+        "所以真撞见欺负人，先给脸打码再发最稳"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，补充未获利也可能侵权及合理使用例外；但露脸、打码反复收束，复杂判断被压成单一标准。",
+      "script_spans": [
+        "法律早去掉赚钱门槛，哪怕没获利也照样可能算。",
+        "关键看你拍没拍清对方正脸。",
+        "把脸遮了，两头都顾住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“监督还是毁人”制造冲突，中段持续补充法律与行动建议，结尾追问也由主题自然生长。",
+      "script_spans": [
+        "你举手机拍路人吵架传上网，算监督还是毁人？",
+        "你举起的手机，到底是公道还是枷锁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有对话感，具体动作也好懂；但“赚钱门槛”和“拍了曝光、合理用”都需换词，影响连贯朗读。",
+      "script_spans": [
+        "关键看你拍没拍清对方正脸。",
+        "所以真撞见欺负人，先给脸打码再发最稳，别嫌麻烦。",
+        "法律早去掉赚钱门槛",
+        "让你能拍了曝光，或许算合理用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“从监督滑向伤人”和“公道还是枷锁”简洁有画面，既概括冲突，也留下了可复述的记忆点。",
+      "script_spans": [
+        "给全脸就从监督滑向伤人。",
+        "你举起的手机，到底是公道还是枷锁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头设问、规则、例外与建议顺序清楚；但例外到打码的因果桥不足，“两头都顾住”又把结论说满。",
+      "script_spans": [
+        "民法典写得很直白：没经人家点头，你就把可认出的脸传出去，可能踩侵权线。",
+        "但碰到真干坏事的，法律又开了后门，让你能拍了曝光，或许算合理用。",
+        "把脸遮了，两头都顾住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有公共监督与二次伤害意识，但把风险简化为正脸和打码，对曝光例外说得过宽，仍可能造成法律误导。",
+      "script_spans": [
+        "这既是公共监督，也可能成二次伤害。",
+        "关键看你拍没拍清对方正脸。",
+        "法律又开了后门，让你能拍了曝光，或许算合理用。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a79f4a23d79045d78151d3ccfec1ce8a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-908fa5ef6dfa44818421c73c20739ac0",
+  "run_id": "run-20260903T051617Z-5d986a432430",
+  "trace_sha256": "ef2a4f4cfc818a47bd3b1635cf51ee9fc4185ccf36549f7c545697bc180ef7bc",
+  "created_at": "2026-09-03T15:30:06.082840Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“会买单”并给出明确判断，监管与未来两种反向可能均有交代，切角具体贴合普通观众。",
+      "script_spans": [
+        "我的判断很直接：标准各自成阵，消费者一定在分摊兼容成本，但这笔账不全写在转接头发票上，更藏在设备溢价和耐心损耗里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦兼容成本，从机制、监管边界到日常场景层层推进，欧盟立法与家庭设备量均有据可查。",
+      "script_spans": [
+        "欧盟已经立法，从二〇二四年底起手机平板等小电子设备统一换USB-C，笔记本也给了到二〇二六年的缓冲",
+        "结果要么是反复掏钱买桥接配件，要么是换机时被同生态锁定、接受更高的续购价"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即以换线反差入题，中段借监管设问持续翻新信息，结尾圈与碎片的余味由正文自然长出，三段独立成立。",
+      "script_spans": [
+        "同一款无线耳机，连苹果和连安卓可能得换根线",
+        "那监管出手统一不就完了？",
+        "政策能圈住一块市场，圈不住全球碎片。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句好读、场景具体，但'因私有协议孤立而''或自然消融'等书面句式朗读需临时换词，卡嘴处不止两处。",
+      "script_spans": [
+        "家里设备一多，你想让新买的平板接旧显示器，可能得专门淘个转换头",
+        "就连车载音响和小音箱，也常因私有协议孤立而没法直连。",
+        "若将来无线充电和通用协议彻底成熟，这类摩擦或自然消融"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻服务说理不炫技，账与发票、隐性税的说法准确贴切，圈不住全球碎片离开上下文仍可复述。",
+      "script_spans": [
+        "这笔账不全写在转接头发票上，更藏在设备溢价和耐心损耗里",
+        "试错那十几分钟就是隐性税",
+        "政策能圈住一块市场，圈不住全球碎片。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先答判断再拆机制，设问引监管、转折入日常，结尾回扣兼容税并落到行动建议，段落功能清晰。",
+      "script_spans": [
+        "那监管出手统一不就完了？",
+        "政策能圈住一块市场，圈不住全球碎片。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "欧盟立法表述准确且边界清楚，无违规；但『一定在分摊兼容成本』与『被利益方划了界』属绝对化和争议归因，软化措辞后才稳妥。",
+      "script_spans": [
+        "这只约束欧盟境内，美国、亚洲大片市场并没同步立法",
+        "长期看说不定就揉进了零售价",
+        "标准各自成阵，消费者一定在分摊兼容成本",
+        "不是你不会用，是接口规则被利益方划了界"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-94cf5b7b40624158ae16978db13732a2",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

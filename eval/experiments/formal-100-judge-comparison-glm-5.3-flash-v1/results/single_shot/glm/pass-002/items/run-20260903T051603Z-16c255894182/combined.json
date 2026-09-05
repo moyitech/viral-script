@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-5242e6a22b514242921e3575c9d25632",
+  "run_id": "run-20260903T051603Z-16c255894182",
+  "trace_sha256": "a6e4543fa012aa2e5ac894c28d3a677649d42a063ddf832864dcfabce1dc9e52",
+  "created_at": "2026-09-03T15:27:22.648163Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即作答并给出前提，师生与制度两侧都覆盖，结尾回扣题设，切角具体。",
+      "script_spans": [
+        "效率提升本身不削弱真实反馈，前提是人工把关不掉线",
+        "千万别把整篇批改都交给模型，涉及论点展开和个人表达，一定留给人来判断"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "分工批改、改对率对比、规则滞后三层信息推进论证，与调研证据相符，增量具体。",
+      "script_spans": [
+        "不少老师实际是机器先筛掉错别字和格式问题，自己再把省下的精力放在内容逻辑和思维深度上",
+        "自主改对的概率不如顺着机器指出的问题改，说明人机衔接才好用"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头快与虚的反差直接立住争议，中段靠自主修改成功率的转折持续供新，结尾余味自然生长；仅学校规则一段推进略平。",
+      "script_spans": [
+        "AI批改作文跑得更快，不等于给学生的真实反馈就变虚了",
+        "但自主改对的概率不如顺着机器指出的问题改",
+        "技术省掉的是重复劳动，省不掉的那部分，才是写作里真实生长的地方",
+        "目前很多学校对这类工具态度开放，但明确管理规则还没跟上"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读通，收尾有节奏；但中段“自主改对的概率不如顺着机器指出的问题改”拗口，需临时换词重断。",
+      "script_spans": [
+        "技术省掉的是重复劳动，省不掉的那部分，才是写作里真实生长的地方。",
+        "但自主改对的概率不如顺着机器指出的问题改"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“人工把关不掉线”贴切好记，结尾“省不掉的才是真实生长的地方”离开正文仍可复述，修辞克制未喧宾夺主。",
+      "script_spans": [
+        "前提是人工把关不掉线",
+        "技术省掉的是重复劳动，省不掉的那部分，才是写作里真实生长的地方"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立前提再依次给出师生证据与制度缺口，建议顺势落地，结尾回扣开头真实反馈。",
+      "script_spans": [
+        "目前很多学校对这类工具态度开放，但明确管理规则还没跟上",
+        "技术省掉的是重复劳动，省不掉的那部分，才是写作里真实生长的地方"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "论断均带限定，如'前提是人工把关不掉线'边界清楚，观点平衡不作无依据承诺，导向安全。",
+      "script_spans": [
+        "效率提升本身不削弱真实反馈，前提是人工把关不掉线",
+        "不少老师实际是机器先筛掉错别字和格式问题，自己再把省下的精力放在内容逻辑和思维深度上",
+        "目前很多学校对这类工具态度开放，但明确管理规则还没跟上"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-66ff62b2b460412ea0878735e817951b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

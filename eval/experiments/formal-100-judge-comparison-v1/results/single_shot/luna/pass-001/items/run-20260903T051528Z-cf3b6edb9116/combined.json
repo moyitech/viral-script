@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-dd531f42a2fc4590aeaee8187eb1d684",
+  "run_id": "run-20260903T051528Z-cf3b6edb9116",
+  "trace_sha256": "22014584998fc5eb5aaa348c509d971d4966a1cbe5a407b0af32a667f07c9b16",
+  "created_at": "2026-09-03T11:57:43.687488Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直答不敢扩招的原因，覆盖正式工、用工成本、临时工等关键对象，紧扣订单回暖与招聘之间的矛盾。",
+      "script_spans": [
+        "订单回暖了，工厂为什么还是不敢大规模招人？",
+        "真要补人，多半也是临时工先顶上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 275，目标为 280，偏差率为 1.79%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，数据与固定用工成本解释相互支撑，并落到临时工先顶上的具体判断，信息增量充分。",
+      "script_spans": [
+        "制造业新订单虽回到了扩张区间，但整体景气指数依然趴在荣枯线以下",
+        "正式员工身后连着社保缴纳和辞退补偿",
+        "制造业从业人数指数还在往下走"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用订单回暖与不敢招人的反差设问，中段持续补充成本和指数信息，结尾自然落到临时工。",
+      "script_spans": [
+        "订单回暖了，工厂为什么还是不敢大规模招人？",
+        "企业宁愿让现有产线加班顶着，也不轻易扩编",
+        "真要补人，多半也是临时工先顶上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头提问和结尾收束有对话感，整体能读通；但中段统计术语和抽象搭配较密，朗读重音不够自然。",
+      "script_spans": [
+        "订单回暖了，工厂为什么还是不敢大规模招人？",
+        "从近期信号看，制造业新订单虽回到了扩张区间，但整体景气指数依然趴在荣枯线以下，回暖根基并不扎实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和反差都服务于解释，既有“景气反转”的视觉画面，也有“裁人代价”的可复述判断。",
+      "script_spans": [
+        "裁人的代价比接单还高",
+        "别看到车间灯火通明就以为景气全面反转",
+        "真要补人，多半也是临时工先顶上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，原因、数据与结论顺序清楚；但“裁人的代价比接单还高”比较对象不明，从业人数下降推到“观望”也缺少因果桥。",
+      "script_spans": [
+        "直接说原因：大家怕这波好转是短期波动",
+        "从近期信号看，制造业新订单虽回到了扩张区间",
+        "裁人的代价比接单还高",
+        "制造业从业人数指数还在往下走，说明观望不是个例"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "订单、景气和用工指数表述较克制；但将企业普遍归因为规避用工风险，并称裁人成本高于接单，存在过度概括和夸张。",
+      "script_spans": [
+        "制造业新订单虽回到了扩张区间，但整体景气指数依然趴在荣枯线以下",
+        "本质是在规避刚性用工风险",
+        "裁人的代价比接单还高"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-cdb021f4ec4947b480379bca9be595da",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-418d3c45ce024d349e0ab0f63fc7bf53",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

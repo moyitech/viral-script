@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-e62865520a694f6485f39d7327fdf7e8",
+  "run_id": "run-20260902T143025Z-e086c1c9a65c",
+  "trace_sha256": "993baaed8ff61b74e752e29022309c0bd221e884a7af973f8a576060c457100a",
+  "created_at": "2026-09-03T12:16:57.234435Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答统一发型与个性表达的冲突，也覆盖学校管理、学生权利和家庭应对。",
+      "script_spans": [
+        "纪律教育不能忽视个性表达，孩子尊严得留着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "观点集中，并依次提供规范边界、权利分析、反例辨析和家长应对，信息推进充分。",
+      "script_spans": [
+        "全国没强制统一长度标准。",
+        "孩子因发型不合被挡在校门外，这像变相停课，罚得偏重。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头冲突具体，中段用规范、权利和处置建议持续推进，结尾追问自然回扣主题。",
+      "script_spans": [
+        "你刚给孩子扎好马尾，老师却说这发型不让进校？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和家长建议段较顺，但法律论证处有长串抽象表达，“纪律为习惯”等句子卡顿，需重写。",
+      "script_spans": [
+        "家长先平和问老师：整洁就行吧？",
+        "可军人发型是法律强制的公务需要，校园管理是教育，没这权力，两件事不能混为一谈。",
+        "纪律为习惯，不是复制外表。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“纪律为习惯，不是复制外表”与结尾追问形成清晰记忆点，修辞克制且服务观点。",
+      "script_spans": [
+        "纪律为习惯，不是复制外表。",
+        "纪律的尺子，该由法律还是眉毛量？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从越界原因过渡到现实后果和应对，段落功能清楚，结尾追问也能回扣主题。",
+      "script_spans": [
+        "那为什么这会越界？头发长在自己头上，连着身体自主权，法律保护人格尊严。",
+        "普通家庭怎么受影响？孩子因发型不合被挡在校门外，这像变相停课，罚得偏重。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体立场克制，承认合理管理空间；但多处把复杂的法律边界说成确定结论，易造成误导。",
+      "script_spans": [
+        "学校抓纪律没错，但拿统一发型硬刚个性，可能就越界了。",
+        "有些学校强制寸头，其实过了底线。",
+        "军人发型是法律强制的公务需要，校园管理是教育，没这权力"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c557a611e94d44aa97025b76708c4f79",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-5c8e1cea53274cf0985f430d71f369f4",
+  "run_id": "run-20260902T142240Z-040c182d63d1",
+  "trace_sha256": "8b348a585bcb0b59960f1d26caaedb8d4e933508f5dc8a6f4a7dd3294d196f2d",
+  "created_at": "2026-09-03T14:25:29.430092Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接作答“不能”，催缴正当与隐私底线两侧都覆盖，末尾给双方台阶，全程紧扣题设。",
+      "script_spans": [
+        "答案很直接：不能。催缴再正当，也不能让住户丢掉姓名保密的底线。",
+        "邻居欠费该催，但写法有讲究，不能硬来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "法律框架、平台规则、例外情形层层给出信息，并落到私信收账的可行做法，无明显编造，增量扎实。",
+      "script_spans": [
+        "个人信息保护法立了保护框架，处理得有合法事由，催缴欠款并不在免责里头。",
+        "要是欠费户提前同意，或只发隐去门牌的匿名清单，那另说。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出催缴与隐私的具体冲突；中段以“那在微信群里发总可以吧”等追问层层兑现；结尾余味自然。",
+      "script_spans": [
+        "邻里群贴欠费住户姓名，催缴有理就能放弃隐私？",
+        "那在微信群里发总可以吧？",
+        "脸面这东西，碎了难粘回原样，留一线收钱反更顺。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口为主、问答承接自然，但“合法事由”“关联了具体个人”等处偏法条腔，朗读需临时换词。",
+      "script_spans": [
+        "你想啊，欠费是钱的事，姓名是脸的事，不能拿正当理由当借口混成一团。",
+        "处理得有合法事由，催缴欠款并不在免责里头",
+        "在法律上关联了具体个人"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“欠费是钱的事，姓名是脸的事”贯穿全篇形成主线，“脸面碎了难粘回原样”离开上下文仍可复述，修辞服务说理不喧宾夺主。",
+      "script_spans": [
+        "欠费是钱的事，姓名是脸的事",
+        "别把方便当法权",
+        "脸面这东西，碎了难粘回原样"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "“为啥这么说”起因果桥清晰，反问过渡衔接各层，结尾回扣开头与题设，无跳跃或偷换。",
+      "script_spans": [
+        "为啥这么说？姓名加上欠费状态，在法律上关联了具体个人。",
+        "体面收账比曝光更长久。下次想收钱，先私信一声更稳当，也留邻居体面。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "立场公允，“常被认定”“可能”等措辞留有余地，并给出法院程序、事先同意、匿名清单等例外，无煽动夸大风险。",
+      "script_spans": [
+        "司法实践里，类似群里曝光名字，常被认定踩了侵权线。",
+        "真需公示，得由法院或授权机构走程序；要是欠费户提前同意，或只发隐去门牌的匿名清单，那另说。",
+        "乱发别人姓名欠款，可能被投诉违规，轻则删消息，重则功能受限。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a5789acc8a0244e88826d78879f0c0c1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

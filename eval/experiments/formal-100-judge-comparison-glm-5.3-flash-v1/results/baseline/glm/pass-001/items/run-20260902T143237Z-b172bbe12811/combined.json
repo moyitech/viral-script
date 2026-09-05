@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-3b4f2d4950514fd8a0ed4f777b78fd31",
+  "run_id": "run-20260902T143237Z-b172bbe12811",
+  "trace_sha256": "45731369860e108bb1b0309922c052d18bb837812c11af7db971627d96b335d4",
+  "created_at": "2026-09-03T13:45:17.141890Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答'谁来兜底'：拆监管空白、责任分层，落点回到普通人自保，题设两侧与核心人群全覆盖。",
+      "script_spans": [
+        "说到底，政府管关键设施，厂商练容灾，用户自留后路。",
+        "落到你身上。扫码点餐挂号存照片，全挂同一朵云。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 472，目标为 450，偏差率为 4.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "故障数据、评估办法边界、容灾成本层层推进，'备份同命'解释有认知增量，观众能带走具体做法。",
+      "script_spans": [
+        "去年十大云厂崩了327次，中断两千八百小时，波及四十三亿人次。",
+        "别以为备份在云就安全，其实和源数据同命。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句反常识直击利益点，中段用数据、追责、个人风险层层兑现，结尾留退路收出余味，不喊互动。",
+      "script_spans": [
+        "云一断，停工损失咋就用户吞了？这反常识吧。",
+        "钱到底谁付？你可能会问，厂商那么富，不该全赔吗？",
+        "自己留条退路比等兜底实在。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句问答、节奏和对话感都不错，但“连坐瘫痪”“业务连续”等书面词需临时换词重读，决定性拉低顺口度。",
+      "script_spans": [
+        "别以为备份在云就安全，其实和源数据同命",
+        "单靠厂商自营保障根本撑不住，连坐瘫痪谁也没法独善其身",
+        "只盯政务和关键设施的业务连续"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "悬云线、同命等比喻贴切克制，三句分工与云成空气均可脱离语境复述，无堆砌炫技。",
+      "script_spans": [
+        "政府管关键设施，厂商练容灾，用户自留后路",
+        "当云成了空气，停风时呛到的总是普通人",
+        "别以为备份在云就安全，其实和源数据同命"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进，'可国家评估办法'衔接问答形成因果桥，各段功能清晰，结尾回扣兜底之问。",
+      "script_spans": [
+        "你可能会问，厂商那么富，不该全赔吗？可国家云计算安全评估办法，只盯政务和关键设施的业务连续。",
+        "自己留条退路比等兜底实在。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "归因克制、结论平衡，但“和源数据同命”属未限定绝对化建议，“股价当天还逆势涨”作事实断言无出处，易误导，改写后才稳妥。",
+      "script_spans": [
+        "说到底，政府管关键设施，厂商练容灾，用户自留后路",
+        "别以为备份在云就安全，其实和源数据同命",
+        "之前亚马逊云断网，股价当天还逆势涨"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-862af7dc6dff48bcbdff10da3fad6476",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e8c9f323201148e19405bbced2578391",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

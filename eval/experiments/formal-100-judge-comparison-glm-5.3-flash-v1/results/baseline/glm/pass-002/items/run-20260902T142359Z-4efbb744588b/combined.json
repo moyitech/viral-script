@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-5f7d49981f2747eea5c2e80daddbdd7f",
+  "run_id": "run-20260902T142359Z-4efbb744588b",
+  "trace_sha256": "3fe32f5ac4e54c8cf65dcdbbdf049818dee2cf941871f013bac49bb07d4256ef",
+  "created_at": "2026-09-03T14:25:08.800480Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给出答案，全程围绕散户辨真伪与自查动作展开，人群与题设两侧均覆盖。",
+      "script_spans": [
+        "普通投资者想避开伪风口，别直接划掉整个AI板块，得看它营收里AI占多少",
+        "落到咱们口袋，该怎么动手避坑？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "罚单、封号、荐股骗局等事实环环支撑“看钱从哪来”，给出查附注、问董秘、搜问询函等可带走的方法。",
+      "script_spans": [
+        "北京监管局对编假芯片订单的人处25万罚款，没收违法收入",
+        "正规机构名单在证监会网站挂着，名字搜得到才放心"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即成反差钩子，中段连用追问与新案例层层兑现，结尾停三秒由正文自然长出，三段皆不弱。",
+      "script_spans": [
+        "越喊AI转型的公司，越可能根本没有AI收入",
+        "为什么假风口能浑水摸鱼？因为有人编造上市公司假订单",
+        "下次看到AI爆款文，先停三秒，想想它靠AI赚到钱没？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、对话感强，节奏用心；但两处压缩句缺停顿，冷读需重新断句。",
+      "script_spans": [
+        "谣言跑得比真相快，跟风容易站岗。",
+        "真有业务财报写明白。",
+        "财报读不懂搜问询函回复。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，“看钱从哪来，别看词多漂亮”离稿可复述，无堆砌炫技或喧宾夺主。",
+      "script_spans": [
+        "看钱从哪来，别看词多漂亮",
+        "伪风口最怕你慢半拍，它耗不起时间",
+        "谣言跑得比真相快，跟风容易站岗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以设问推进“伪—真—动手”三段，段段有功能，结尾“算法写的稿子”回扣开头与题设，因果完整。",
+      "script_spans": [
+        "那真AI公司没法认吗？当然不是。",
+        "风口常在那儿，但钱包是自己的，别让算法写的稿子替你决定。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键处有边界，明确“不意味股票必涨”；防骗指引与监管通报一致，无夸大承诺，导向安全。",
+      "script_spans": [
+        "但这只是经营手段不意味股票必涨，别把学术话当买进号角",
+        "花钱买工具前，先查对方有没有从业资质，正规机构名单在证监会网站挂着"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a6ec4f86dd2c46faa7554921e70fdd6d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

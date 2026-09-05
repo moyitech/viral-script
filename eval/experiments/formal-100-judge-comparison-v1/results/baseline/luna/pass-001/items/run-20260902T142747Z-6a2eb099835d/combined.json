@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-74e812b219774c718828281cf095aee2",
+  "run_id": "run-20260902T142747Z-6a2eb099835d",
+  "trace_sha256": "cb4675d2964c4af1e1e4c98d79a216327461dd949380648938bd7cf2e7c348c7",
+  "created_at": "2026-09-03T11:44:04.323153Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答提效与压价两种可能，兼顾企业与求职者，并落到普通人的判断方法。",
+      "script_spans": [
+        "缩短招聘流程，既可能提效，也可能变相压价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 428，目标为 450，偏差率为 4.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕流程缩短的两面推进，数据、机制和应对建议都带来明确增量。",
+      "script_spans": [
+        "岗位空着，项目进度放缓，同事得顶班，天天都在烧钱。",
+        "下次听到流程缩短，先问薪水怎么定，自己摸清市场价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“薪资被砍”制造冲突，中段推进到谈薪风险，结尾追问自然收住。",
+      "script_spans": [
+        "简历秒过却薪资被砍，企业说是效率",
+        "关键在怎么砍。少安排几轮面试，你省奔波，这是真效率。",
+        "流程短了，钱谁说了算？你得多留个心眼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、问句和转折都有节奏，整体好读；但“薪酬商量”和“招人速度跟实际耗时差距”两处需换词。",
+      "script_spans": [
+        "关键在怎么砍。少安排几轮面试，你省奔波，这是真效率。",
+        "薪酬商量",
+        "招人速度跟实际耗时差距"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“省下奔波，却要看钱给得够不够”把效率与代价说得具体，结尾追问也便于复述。",
+      "script_spans": [
+        "这事儿两头堵：缩短招聘流程，既可能提效，也可能变相压价。",
+        "你省下奔波，却要看钱给得够不够。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "按效率与压价两种路径展开并给出建议，但审批变短直接推出低价，关键因果仍显跳跃。",
+      "script_spans": [
+        "关键在怎么砍。少安排几轮面试，你省奔波，这是真效率。但另一种快，是把薪酬商量也压缩了。",
+        "原本面试从五轮变两轮，考官没见你真人，就靠后台薪级表圈最低档。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体区分提效与压价，未见明确违规；但将低价决策归因于经理随手定价、圈最低档，容易造成过度概括。",
+      "script_spans": [
+        "既可能提效，也可能变相压价",
+        "用人经理随手写个低价",
+        "就靠后台薪级表圈最低档"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-1cf1e116311848619c80874f40b04816",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9ab9900a79aa4c81bbe9f3fc0f6f38ab",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

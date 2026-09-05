@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-39f45a263e33470aa1e853a6938c69db",
+  "run_id": "run-20260903T051555Z-ac76dd5162d5",
+  "trace_sha256": "9485850bc22fc2a81c2cc5fd83de0312558fbeb30051a66a0dd9d70fb8d1597d",
+  "created_at": "2026-09-03T11:58:13.686928Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“谁来兜底”，同时呈现云厂商与用户的责任对照，并覆盖普通商户、学校和关键业务系统。",
+      "script_spans": [
+        "用户自己才是最后一道防线",
+        "海量普通商户、学校并不在强制兜底的覆盖圈里"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 254，目标为 280，偏差率为 9.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕单云故障的责任与防护，依次提供影响场景、监管边界、故障机制和跨云容灾建议，信息单元有推进。",
+      "script_spans": [
+        "千行百业仿佛瞬间被拔了插头",
+        "一次基础解析出错或电力抖动",
+        "提前做跨云备份和容灾切换演练"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "一分钟故障牵出具体生活场景，中段补充风险机制，结尾用保险比喻自然落到行动建议。",
+      "script_spans": [
+        "外卖就下不了单，超市扫不了码，航班值不了机",
+        "别等断网才想起没买保险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和结尾有对话感，但中段两句长句信息堆叠，需重断句，整体未达到自然顺滑。",
+      "script_spans": [
+        "这种连带损失到底该谁兜底？",
+        "现行安全评估办法重点关注的其实是关键信息基础设施，海量普通商户、学校并不在强制兜底的覆盖圈里，风险明显多自行承担。",
+        "而云平台底层一次基础解析出错或电力抖动，就可能在几小时内连锁拖垮上千家把业务全押在同一朵云上的企业，波及面极广。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“被拔了插头”和“没买保险”都形象易懂，修辞适度，能留下可复述的风险提醒。",
+      "script_spans": [
+        "千行百业仿佛瞬间被拔了插头",
+        "别等断网才想起没买保险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整，因果链条清楚；但“风险明显多自行承担”“上千家把业务全押在同一朵云上的企业”偏拗口，影响口播顺听。",
+      "script_spans": [
+        "所以关键业务系统务必提前做跨云备份和容灾切换演练",
+        "风险明显多自行承担",
+        "上千家把业务全押在同一朵云上的企业"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无明显违规，但“用户自己才是最后一道防线”存在单向归责；“现行”“上千家”等表述缺少限定，可能造成误导。",
+      "script_spans": [
+        "所以关键业务系统务必提前做跨云备份和容灾切换演练",
+        "用户自己才是最后一道防线",
+        "海量普通商户、学校并不在强制兜底的覆盖圈里",
+        "就可能在几小时内连锁拖垮上千家把业务全押在同一朵云上的企业"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-85a249579d6749b0bdce3c412a82137b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-3b50163f80ed49a192fd30a75e9a74d1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

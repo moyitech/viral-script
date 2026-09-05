@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-2c3f9787ff324219afe62e2412ea4974",
+  "run_id": "run-20260903T051537Z-632b02f844c5",
+  "trace_sha256": "1943b5a161d98004f67848d0ad009ad86240bb2566a656472eff9be4714e8713",
+  "created_at": "2026-09-03T11:59:10.036043Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答能否分清，并覆盖技术原因、监管标识与消费者应对，核心人群和冲突两侧均到位。",
+      "script_spans": [
+        "普通消费者单靠眼睛，已经很难稳稳分清真人和合成主播了",
+        "下次刷到主播永远不累、永远微笑，先别急着下单。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 691，目标为 700，偏差率为 1.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕难辨、成因、标识局限和自保方法递进，技术、监管、风险与行动建议均带来有效增量。",
+      "script_spans": [
+        "生成式技术让数字人有了稳定人设和实时回弹的对话",
+        "标注只是给了你追问的权利，不是免骗金牌。",
+        "划拉一下画面角落，找找“AI”小字"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出“没有活人”的反差，中段依次解释技术、监管与标签局限，结尾给出可执行提醒，推进完整。",
+      "script_spans": [
+        "背后可能连个活人都没有。",
+        "标注只是给了你追问的权利，不是免骗金牌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头设问和结尾收束顺口，但“实时回弹的对话”“行业突破瓶颈的解法”等表述拗口，朗读需换词。",
+      "script_spans": [
+        "下次刷到主播永远不累、永远微笑，先别急着下单。",
+        "生成式技术让数字人有了稳定人设和实时回弹的对话",
+        "这种效率原本是行业突破瓶颈的解法"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“标注只是给了你追问的权利，不是免骗金牌”准确收束观点，形象但不油，另有“浑水摸鱼”等自然记忆点。",
+      "script_spans": [
+        "标注只是给了你追问的权利，不是免骗金牌。",
+        "这种认知错位，正是合成主播能浑水摸鱼的原因。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头先给判断，中段解释技术与认知机制，再转入监管边界和标签局限，结尾回到下单提醒，回扣完整自然。",
+      "script_spans": [
+        "为什么这么容易看走眼？",
+        "可既然能以假乱真，为什么近来各大平台纷纷要求挂上“AI”标签？",
+        "标识不是万能护身符。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动且给出识别建议；但“各大平台”“不标就可能封号”等范围和后果未限定，易造成泛化误读。",
+      "script_spans": [
+        "标注只是给了你追问的权利，不是免骗金牌",
+        "不标就可能被限流甚至封号"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-389e2ed29c574be888be18830a88ed53",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ff3696f63129402d84dcd7706c282c0a",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

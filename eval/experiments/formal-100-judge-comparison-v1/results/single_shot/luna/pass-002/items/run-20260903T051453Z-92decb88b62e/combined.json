@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-c541167842734979bb95a4bbd6388774",
+  "run_id": "run-20260903T051453Z-92decb88b62e",
+  "trace_sha256": "3ef69aef8d6a2800e06da637f9a7d8d04ca3be72c92cf039de878fd085159d8f",
+  "created_at": "2026-09-03T12:45:11.103861Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答“低成本不等于低风险”，同时覆盖市场波动、跟踪误差与普通投资者的选基动作。",
+      "script_spans": [
+        "买指数基金是不是就等于闭眼入的低风险了？当然不是。",
+        "真正该做的，是打开页面先看跟踪标的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，分别解释市场风险、跟踪误差和改革后的选基方法，信息单元有明确推进。",
+      "script_spans": [
+        "低成本只代表你少付了渠道的“过路费”，市场本身的波动风险一点没少。",
+        "调仓冲击、现金头寸管理，都会让净值和指数走势微微错位",
+        "宽基还是赛道，年化震幅你能否承受。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“闭眼入”设问制造反差，中段递进拆解两类风险，结尾用芝麻西瓜自然收束。",
+      "script_spans": [
+        "费率一降再降，几乎贴着成本线，买指数基金是不是就等于闭眼入的低风险了？",
+        "除了大盘起落，便宜基金同样存在跟踪误差。",
+        "省下的手续费是芝麻，标的崩了才是西瓜。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "反问、短句和比喻让整体可读，但两处技术表达与书面问法拖慢气口，主体尚未达到无需改写的自然口播。",
+      "script_spans": [
+        "当然不是。低成本只代表你少付了渠道的“过路费”",
+        "调仓冲击、现金头寸管理，都会让净值和指数走势微微错位",
+        "宽基还是赛道，年化震幅你能否承受。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“过路费”和“芝麻、西瓜”把成本与风险讲得直观，修辞集中服务观点，记忆点清楚。",
+      "script_spans": [
+        "少付了渠道的“过路费”",
+        "别让“免费午餐”的错觉迷了眼。",
+        "省下的手续费是芝麻，标的崩了才是西瓜。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，先区分市场风险与跟踪误差，再落到选基动作；但“亏钱的根源”过于绝对，因果边界不够严密。",
+      "script_spans": [
+        "除了大盘起落，便宜基金同样存在跟踪误差。",
+        "基金亏钱的根源，在于它被动跟踪的那个标的指数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体明确揭示费率不等于低风险，也未作收益承诺；但“波动风险一点没少”“亏钱的根源”等表述过于绝对，容易把复杂风险说满。",
+      "script_spans": [
+        "真正该做的，是打开页面先看跟踪标的。",
+        "费率一降再降，几乎贴着成本线",
+        "基金亏钱的根源，在于它被动跟踪的那个标的指数。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-80df84672d5946c986ec63dd36a08001",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-e4ab86d3fa19449483084c6746d606b0",
+  "run_id": "run-20260902T142910Z-e0d85a4f7f32",
+  "trace_sha256": "93dabad35ef355fb0ab08342d7760c9a6bae7e314e365042514ad00815dc6f96",
+  "created_at": "2026-09-03T12:21:24.122507Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应“增收还是交学费”，同时覆盖广告乱象、真实增收与年轻人避坑判断。",
+      "script_spans": [
+        "真有人靠副业增收，但很多年轻人净亏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦副业培训风险，既有平台规则和投诉数据，也给出贷款识别与理性决策方法。",
+      "script_spans": [
+        "培训服务投诉量排服务类前三，踩坑的不是个例。",
+        "它表面分期缴费，实质常是贷款，课一缩水退费无门。",
+        "下次刷到副业课，先问自己：这钱交了，我能换来什么真本事？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“月入过万”与“交学费”制造反差，中段连续推进风险与出路，结尾追问自然落到自检。",
+      "script_spans": [
+        "半夜刷到配音课说月入过万，你怕是去交学费。",
+        "钱交出去后发生了什么？",
+        "你算过每小时学费成本吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚、互动感足，但中段有多处压缩式书面表达，朗读时需要临时重断句或换词。",
+      "script_spans": [
+        "你以为标了AI就能信？不对，标注只讲来源，不保结果。",
+        "中消协一季度数据点了技能培训这片重灾区",
+        "但这类人先有执行时间，后有不盲从的清醒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“广告里的太阳照在别人庄稼上”把收益幻觉说得具体，“刷视频开心，掏钱要醒”短而好记，修辞没有压过信息。",
+      "script_spans": [
+        "广告里的太阳照在别人庄稼上，你的地还得自己浇。",
+        "刷视频开心，掏钱要醒。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、风险、真实机会到建议的顺序清楚，但“禁写必赚”推出“没稳赚”属逻辑跳跃，个别判断也过满。",
+      "script_spans": [
+        "钱交出去后发生了什么？",
+        "下次刷到副业课，先问自己：这钱交了，我能换来什么真本事？",
+        "广告里保证的“必赚”已被平台禁写，本身就说明没稳赚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体以风险提示为主，未作收益承诺；但“实质常是贷款”“大概率凑业绩”等泛化判断，需补充限定。",
+      "script_spans": [
+        "没算清前，先别点支付",
+        "实质常是贷款",
+        "大概率是给老师凑业绩"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2276d3b655774e0080e61e34123e7a3b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

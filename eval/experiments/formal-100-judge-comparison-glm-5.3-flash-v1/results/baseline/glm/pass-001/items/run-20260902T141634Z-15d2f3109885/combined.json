@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-94cd6caf59244b20b037378a17a5d3a5",
+  "run_id": "run-20260902T141634Z-15d2f3109885",
+  "trace_sha256": "991d28f05a2bdb930681281c86eb45da2522dfb33817f390d5490a913d4c705b",
+  "created_at": "2026-09-03T13:49:24.049617Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直答信心与托市之问，两侧都覆盖，落点回到散户敢不敢跟，切角具体。",
+      "script_spans": [
+        "回购增多你敢跟吗？多是信心信号非短期托市。",
+        "从前不少人认定回购只是大资金短期托市的老套路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 279，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信号逻辑、注销抬升收益、查公告方法层层推进，无同义注水，能带走判断方法。",
+      "script_spans": [
+        "钱没多赚，但股数少了，注销后每股收益就被抬高。",
+        "你翻公告别光兴奋，先弄清回购用途是注销还是激励。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头敢问敢亮立场，中段以注销机制和用途提醒层层推进，结尾金句由正文自然长出。",
+      "script_spans": [
+        "回购增多你敢跟吗？多是信心信号非短期托市。",
+        "你翻公告别光兴奋，先弄清回购用途是注销还是激励。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "中段短气口清楚、对话感强，但钩子及“价被低估”“低估值时”等压缩表述朗读需临时换词。",
+      "script_spans": [
+        "钱没多赚，但股数少了，注销后每股收益就被抬高。",
+        "多是信心信号非短期托市。",
+        "常是觉得价被低估了。",
+        "如今低估值时"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "热冷对照、信任投票贴切不堆砌，“钱没多赚但股数少了”与“找注销二字”均可独立复述。",
+      "script_spans": [
+        "市场越热越要冷别把托市误会成信心。",
+        "如今低估值时，注销回购才更像咱老百姓说的信任投票。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "毕竟补因果，从前如今设转折，结尾回扣开头之问，全链条经得起追问。",
+      "script_spans": [
+        "毕竟他们比外界更懂账面，敢买回就是态度的表达。",
+        "市场越热越要冷别把托市误会成信心。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "多有限定词并提醒查回购用途，但开头“你敢跟吗”近似跟投暗示，“实打实分钱”偏绝对，宜补不构成投资建议边界。",
+      "script_spans": [
+        "先弄清回购用途是注销还是激励",
+        "市场越热越要冷别把托市误会成信心",
+        "回购增多你敢跟吗？",
+        "这是实打实分钱给全体股东"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-7292f0f014184c1789a73da8496c0c2f",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-400eb282a0934a19b8845368b4f33bce",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

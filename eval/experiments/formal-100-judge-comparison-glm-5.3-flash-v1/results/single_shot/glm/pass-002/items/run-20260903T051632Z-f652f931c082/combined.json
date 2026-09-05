@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-05fed92681244055954a1b1109a40b9e",
+  "run_id": "run-20260903T051632Z-f652f931c082",
+  "trace_sha256": "465387eaaf6cc9bee9df25564e6c5384f7aa52b1e4f80b706ceb01f3d4a99d69",
+  "created_at": "2026-09-03T15:28:23.036192Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从开头场景到结尾提问始终围绕“如何算公平”，钱与陪两侧均覆盖，正中兄弟姐妹冲突核心。",
+      "script_spans": [
+        "真正的公平，是看每个人实际能挤出的资源，和老人最缺的那块有没有被补上。",
+        "先问一句：爸妈此刻最怕什么？答案往往比工时表更公道"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从资源匹配到法律、长护险、性别分工，信息单元层层推进论证，观众能带走判断方法。",
+      "script_spans": [
+        "贴身照料者耗掉的是无法回补的健康和社交，出钱的人减轻的是物质压力却补不上深夜陪护",
+        "这两年长期护理保险正从试点走向全国，专业机构接手洗澡喂药",
+        "赡养行为常带着性别分工惯性，女儿多管照料、儿子多管出钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前二十字即呈现转钱与辞职陪护的反差冲突，中段以误区、长护险、性别惯性层层兑现，结尾一问自然收束留余味。",
+      "script_spans": [
+        "大哥每月转钱却半年没踏进家门，小妹辞职贴身伺候连轴转，到了春节算总账，到底谁亏了？",
+        "下次再为轮班红了眼，先问一句：爸妈此刻最怕什么？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾口语利落、气口短；但'物理付出折算成社会支持'等处拗口，朗读需临时改词。",
+      "script_spans": [
+        "可失能老人夜里要翻身、要有人说话，这些都不是手机汇款能替代的",
+        "等于把某个子女的物理付出折算成社会支持",
+        "法律确实要求子女履行经济供养和生活照料义务"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务理解，如床前成了谈判桌；偷偷比较、家却冷了等句离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "怨气往往来自偷偷比较，而不是谁真的想甩手",
+        "别让账目清晰了，家却冷了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "各段功能清晰：提问、拆解、纠误区、摆后果，因果衔接紧，结尾回扣开头场景与题设。",
+      "script_spans": [
+        "那既然法律不强制平分，家里该怎么取舍？",
+        "所以回头看，算公平的那把尺，量的不是谁伺候了几百小时，而是谁在关键环节没掉链子。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法律义务表述准确，长护险进展有据；风险说法多以可能、往往限定，无煽动夸大或误导承诺。",
+      "script_spans": [
+        "法律确实要求子女履行经济供养和生活照料义务，但条文并没有把照顾时长切成均等份额",
+        "若硬逼平分，本就艰难的照护者可能崩溃，老人反被推来推去",
+        "这两年长期护理保险正从试点走向全国"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-dbd49cc3a6e74eb297dce7dee6811b33",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-95d7711bda3748cc9036fec0af723477",
+  "run_id": "run-20260903T051547Z-ff872623ba3e",
+  "trace_sha256": "7c445413c7299029851068cf5553f664d2d234887d0ecf877ec931c29b5f08cb",
+  "created_at": "2026-09-03T14:08:18.230748Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给判断标准，正反两侧均落到骑车人体验，结尾回扣题设，回答完整。",
+      "script_spans": [
+        "禁停范围扩大会不会伤及出行？关键看有没有同步留停放点。",
+        "禁停不是目的，让车有处可去才是平衡之道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 268，目标为 280，偏差率为 4.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "判断标准、正反案例与出行建议层层推进，事实与引用背景相符，无明显编造。",
+      "script_spans": [
+        "有些城市试点在禁停区旁划就近还车区，用电子围栏技术引导车辆入栏结算",
+        "骑十分钟还车半小时，被迫缴高价调度费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直抛冲突之问，中段正反案例与转折层层兑现，结尾金句自然生长，三段各有钩子。",
+      "script_spans": [
+        "禁停范围扩大会不会伤及出行？",
+        "但有的地方热门地段只扩禁停不补车位，骑十分钟还车半小时，被迫缴高价调度费",
+        "禁停不是目的，让车有处可去才是平衡之道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇以短气口推进，重音落在对比处，如'骑十分钟还车半小时'顺口有画面，无需改词即可朗读。",
+      "script_spans": [
+        "骑十分钟还车半小时，被迫缴高价调度费，这就实实在在伤了日常出行体验",
+        "出门前先点开地图看电子围栏边界，顺路找好还车点，别到了跟前才发现锁不了车，白白损耗时间和钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比与具体数字服务说理，“骑十分钟还车半小时”与结尾句离开上下文仍可复述，修辞克制不炫技。",
+      "script_spans": [
+        "骑十分钟还车半小时",
+        "只画禁区不补车位，那才真添乱",
+        "禁停不是目的，让车有处可去才是平衡之道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以有无停放点立论，转折引反例，让步后给建议，结尾回扣开头，因果有桥梁。",
+      "script_spans": [
+        "但有的地方热门地段只扩禁停不补车位，骑十分钟还车半小时，被迫缴高价调度费，这就实实在在伤了日常出行体验",
+        "禁停不是目的，让车有处可去才是平衡之道。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "正反两面兼顾，批评限定在\"有的地方\"，不点名不夸大；建议具体可行，无误导或煽动风险。",
+      "script_spans": [
+        "乱停乱放曾经堵住人行道是事实，整治有必要",
+        "但有的地方热门地段只扩禁停不补车位",
+        "出门前先点开地图看电子围栏边界，顺路找好还车点"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 1.0,
+    "weighted_total": 24.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-7e34c6e9015049bbbaebd60254a5a0e9",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-635b60ecc6744824a00dc1a304f2fcb5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

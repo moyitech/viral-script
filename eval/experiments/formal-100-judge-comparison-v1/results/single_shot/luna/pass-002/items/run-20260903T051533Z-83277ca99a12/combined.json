@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-f3099161efed4270be7060c61bde06f1",
+  "run_id": "run-20260903T051533Z-83277ca99a12",
+  "trace_sha256": "60a39f1d2502f4034558a831df20b9007a6d4289116703a446a31b2362c307de",
+  "created_at": "2026-09-03T12:32:05.270592Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释关心为何因实时定位变成压力，并覆盖父母、伴侣、被定位者和关系边界。",
+      "script_spans": [
+        "父母或伴侣要求你开启实时共享定位",
+        "症结在于它把自愿的信任扭成了强制的透明"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，依次写出强制透明、掌控感流失、尊重边界和权限处理，信息有递进。",
+      "script_spans": [
+        "那种被无声注视的感觉会悄悄磨掉你对生活的掌控感",
+        "安全感应该生于彼此尊重各自空间",
+        "关心从来不需要用直播坐标来证明"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出关心与压迫的冲突，中段层层推进，结尾自然落到边界与关系的余味。",
+      "script_spans": [
+        "原本出自关心却让人感到压迫",
+        "留一点看不见的余地，才是家人能走得更远的底气"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体能读通，也有操作建议，但多处抽象长句堆叠，气口偏长，核心段落不像自然对话。",
+      "script_spans": [
+        "要是真的透不过气，去手机设置里把位置权限关掉就行",
+        "健康亲密的关系里，安全感应该生于彼此尊重各自空间，而不是靠屏幕上的坐标每秒钟去确认一次存在"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“自愿的信任扭成强制的透明”形象准确，结尾的“看不见的余地”也有自然的复述价值。",
+      "script_spans": [
+        "把自愿的信任扭成了强制的透明",
+        "留一点看不见的余地"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从关心到压迫再到边界建议基本完整，但长句和抽象表达偏多，研究概括与“关掉就行”使论证略显简化。",
+      "script_spans": [
+        "当你的位置随时能被刷新，那种被无声注视的感觉会悄悄磨掉你对生活的掌控感",
+        "健康亲密的关系里，安全感应该生于彼此尊重各自空间",
+        "不少家庭研究都指出，情感支持固然重要，但边界模糊的渗透反而会累积心理负担。",
+        "去手机设置里把位置权限关掉就行"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体讨论隐私与边界，未煽动对立；但“关掉就行”把复杂关系简化为单一操作，缺少沟通及安全情境边界。",
+      "script_spans": [
+        "健康亲密的关系里，安全感应该生于彼此尊重各自空间",
+        "去手机设置里把位置权限关掉就行"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-dd82524754a04c9aa1afc8d1b1b81827",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

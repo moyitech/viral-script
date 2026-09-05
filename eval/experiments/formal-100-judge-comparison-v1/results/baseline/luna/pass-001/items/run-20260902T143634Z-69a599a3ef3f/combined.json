@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-3098ebf005f94183805736ff57a393d8",
+  "run_id": "run-20260902T143634Z-69a599a3ef3f",
+  "trace_sha256": "141c3956405339b15a9f9d1d0c7f25171f0c640bd9f4dd17412ef753b70e9e4f",
+  "created_at": "2026-09-03T11:46:18.527336Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答是否应给回报，兼顾法律边界、老人付出与家庭关系，且给出贴近现实的回报方式。",
+      "script_spans": [
+        "该给，但不能当雇保姆算钟点，也别当免费老好人。",
+        "明确回报不必写工资条，可以是每月贴补，或帮缴保险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 468，目标为 450，偏差率为 4.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕回报的法律、现实和家庭影响层层推进，有调查数据、研究结论及可执行建议，信息增量充分。",
+      "script_spans": [
+        "调查显示，超半数老人正帮子女带娃或做家务。",
+        "有研究跟踪家庭发现，祖辈如果高质量参与，孩子社交能力反而更好。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“发工资”与“没义务”制造冲突，中段从法理转现实再落到边界，结尾追问自然收住。",
+      "script_spans": [
+        "老人带娃发工资，听着生分，法律却没义务给",
+        "那边界在哪？明确回报不必写工资条，可以是每月贴补，或帮缴保险",
+        "别等身体垮了，才在饭桌上算总账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体气口清楚、对话感尚可，但“不能当雇保姆算钟点”和“退掉自己的旅游线”均需临时换词。",
+      "script_spans": [
+        "你想过没，你下班进门饭已做好，娃作业有人盯",
+        "不能当雇保姆算钟点",
+        "退掉自己的旅游线"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“不能当雇保姆”与“免费老好人”形成易复述的对照，末尾“饭桌上算总账”有余味，修辞不过量。",
+      "script_spans": [
+        "不能当雇保姆算钟点，也别当免费老好人",
+        "老人不图等价交换，但怕被当成理所当然",
+        "别等身体垮了，才在饭桌上算总账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立场，再讲法理与现实，随后落到家庭影响和行动建议，转折自然，结尾也有效回扣核心观点。",
+      "script_spans": [
+        "咱们先捋捋法理。",
+        "可转头看现实，帮忙的老人实在太多。",
+        "别等身体垮了，才在饭桌上算总账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动、不作收益承诺；但调查口径和研究结论未充分限定，易把相关性听成因果，法律表述也略绝对。",
+      "script_spans": [
+        "明确回报不必写工资条，可以是每月贴补，或帮缴保险。",
+        "有研究跟踪家庭发现，祖辈如果高质量参与，孩子社交能力反而更好。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-91488e5528fe4902a670f44eebf835c4",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-fed9b2ae789c4b79a125c749f8bce3fc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

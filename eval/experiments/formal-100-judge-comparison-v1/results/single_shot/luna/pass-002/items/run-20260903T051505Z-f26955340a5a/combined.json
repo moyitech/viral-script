@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-f497d71bdee043abb60e9cb96db64ffd",
+  "run_id": "run-20260903T051505Z-f26955340a5a",
+  "trace_sha256": "d70fee4cbd915563a492652c3c9dc1bb39bd194d8364ec3e73707e3a0104ee45",
+  "created_at": "2026-09-03T12:32:34.403729Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "既解释现金管理产品为何缩水，又按资金使用期限给出现金与国债的去向建议，命中普通家庭。",
+      "script_spans": [
+        "普通家庭得换换思路。如果钱三五年内不动，储蓄国债三年期利率一点六三、五年一点七",
+        "日常周转金留点现金类，国债虽不能随时取，但比追着缩水的灵活账户更稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "收益下行的监管与利率原因交代清楚，数据、底层解释和期限分层建议层层推进，信息增量充足。",
+      "script_spans": [
+        "这真不是银行在偷工减料，而是现金管理产品天生的赚钱门路被监管办法堵窄了。",
+        "二季度货币政策报告显示隔夜利率均值就在百分之一点三附近。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直击收益缩水痛点，中段连续解释监管与利率变化，结尾自然落到家庭配置和时间价值。",
+      "script_spans": [
+        "零钱理财的利息，已经薄到让人懒得看账单。",
+        "流动性溢价正在消失，时间才是闲钱真正的利息。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和问答式承接较自然，但多处金融术语与数字并列拉长气口，朗读时需重断句。",
+      "script_spans": [
+        "那货币市场本身的回报为什么也软？",
+        "如果钱三五年内不动，储蓄国债三年期利率一点六三、五年一点七，记账式十年票面一点七二",
+        "底层资产和规则是双双降温"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“水池水位下降”和“时间才是闲钱真正的利息”兼顾解释与余味，修辞适量且便于复述。",
+      "script_spans": [
+        "整个水池水位下降，现金类产品的收益自然跟着缩水",
+        "流动性溢价正在消失，时间才是闲钱真正的利息。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头先抛出收益变薄，再解释监管和利率，随后转入期限分配，结尾自然回扣，链条完整。",
+      "script_spans": [
+        "那货币市场本身的回报为什么也软？因为货币政策保持适度宽松，银行体系流动性充裕",
+        "闲钱安排的核心，是先圈出每笔钱大概多久不动再谈收益。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体解释有条件、有数据，未见明确违规；但“根本走不通”“真正的利息”偏绝对，国债建议的适用与流动性边界仍不够清楚。",
+      "script_spans": [
+        "二季度货币政策报告显示隔夜利率均值就在百分之一点三附近。",
+        "信用下沉或拉久期根本走不通",
+        "国债虽不能随时取，但比追着缩水的灵活账户更稳",
+        "时间才是闲钱真正的利息"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d2d95d3bdc4c468fbf28f19562fa74f1",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

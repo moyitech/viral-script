@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-f9a92727014d450bafca321149b2b071",
+  "run_id": "run-20260902T141348Z-424e8b16a2a2",
+  "trace_sha256": "d303f63f8feee447b605858f2515b339c7131e1bf6bdfe6b7b5e09d3231758e4",
+  "created_at": "2026-09-03T14:23:45.500701Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答'会，但也看你怎么买'，风险与转机两侧覆盖，全程对准普通投资者的避坑需求。",
+      "script_spans": [
+        "稳健变接盘会不会？会，但也看你怎么买。",
+        "所以核心判断：拥挤让稳健变接盘风险变大，但不是必死局。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题紧盯拥挤风险，踩踏机制、分红托底、放量信号层层推进，比喻与判断均有支撑，无空转。",
+      "script_spans": [
+        "像窄桥塞满人，前头一退后面踩踏。稍微有点坏消息，所有人就想同时跳船。",
+        "看成交是不是突然放巨量，那就是人在挤门。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即有反差悬念，中段以踩踏原理、分红托底、放巨量信号层层推进，结尾之问自然生长留余味。",
+      "script_spans": [
+        "红利越买越稳？拥挤反而高危。",
+        "为啥没那么绝对？红利每年有分红托着，业绩实打实。",
+        "你买前多问一句，这资产为啥涨？是人多还是业绩实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇短气口推进，问答设重音，比喻具体，通篇可照读，无明显拗口片段。",
+      "script_spans": [
+        "像窄桥塞满人，前头一退后面踩踏。稍微有点坏消息，所有人就想同时跳船。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "窄桥踩踏贴切解释拥挤风险，'价格掉得比公司挣钱快'与'是人多还是业绩实'离开正文仍可复述，修辞克制不喧宾。",
+      "script_spans": [
+        "像窄桥塞满人，前头一退后面踩踏。",
+        "价格掉得比公司挣钱快",
+        "是人多还是业绩实"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "问答式承接搭起因果桥，'为啥没那么绝对'转折自然，判断留有分寸，结尾追问回扣开头与题设。",
+      "script_spans": [
+        "为啥没那么绝对？红利每年有分红托着，业绩实打实。",
+        "你买前多问一句，这资产为啥涨？是人多还是业绩实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有风险提示且建议克制，但“红利每年有分红托着，业绩实打实”未加限定，分红与业绩并非必然，易误导观众。",
+      "script_spans": [
+        "拥挤让稳健变接盘风险变大，但不是必死局",
+        "先小笔试水温，分几笔留现金更踏实",
+        "红利每年有分红托着，业绩实打实"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3c254b60e6ac454bba9e30289c78e839",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

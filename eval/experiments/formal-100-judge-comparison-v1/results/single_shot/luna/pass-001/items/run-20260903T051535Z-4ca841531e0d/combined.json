@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-60f24442b08a4992be7d5a9a3fbe8b16",
+  "run_id": "run-20260903T051535Z-4ca841531e0d",
+  "trace_sha256": "65783f84c4dd75688f3c4e819b3bff34cdfe875018f7b6bd91fb86117d89ae61",
+  "created_at": "2026-09-03T11:58:24.153816Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答花费是否增加，并覆盖规则退潮、消费风险和普通人的实际选择。",
+      "script_spans": [
+        "强制低价消失，不会直接让你的总支出抬升，但消费环境变得更考眼力。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 433，目标为 450，偏差率为 3.78%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "规则变化、低价竞争后果、直播冲动机制和消费者应对均有具体展开。",
+      "script_spans": [
+        "平台被禁止强制要求商家降价或承诺全网最低，连借流量惩罚高价的隐性手段也要纠偏。",
+        "研究显示直播情境让决策更即时情绪化。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“招牌撤下”制造变化，中段持续推进利弊与冲动下单，结尾以钱包和理性收束，余味自然。",
+      "script_spans": [
+        "直播间“全网最低价”的招牌正在撤下",
+        "低价承诺走了，购物车里的理性得留下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问句和消费场景表达有对话感，但中段术语偏密，数处长句与抽象表述拖慢节奏。",
+      "script_spans": [
+        "那为什么少了低价承诺，反而可能少踩坑？",
+        "近期新规施行，平台被禁止强制要求商家降价或承诺全网最低，连借流量惩罚高价的隐性手段也要纠偏。",
+        "但另一面，直播间的实时互动和情绪烘托，依旧容易让人冲动下单，这是行为上的真诱惑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“低价成了劣质的遮羞布”和“购物车里的理性得留下”形象准确，强化判断且不过度堆砌。",
+      "script_spans": [
+        "低价成了劣质的遮羞布",
+        "购物车里的理性得留下"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，规则、价格与消费行为依次展开；但责任与“买贵了有处说理”之间存在概念跳跃。",
+      "script_spans": [
+        "落到普通人身上，好处是比价焦虑能松口气，不必为了凑最低价囤一堆用不上的货；坏处是得自己把关需求。",
+        "主播和机构不能再甩锅，买贵了至少有处说理"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不涉敏感违规，且提醒理性消费；但个别因果归因泛化，维权效果也表述得过于确定。",
+      "script_spans": [
+        "坏处是得自己把关需求",
+        "常逼着商家在用料和售后上偷工减料，低价成了劣质的遮羞布",
+        "买贵了至少有处说理"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-d0a5f94c9d144572935bb8f6b910f922",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-416b0bccbdf942c4bac0680f2f61c780",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

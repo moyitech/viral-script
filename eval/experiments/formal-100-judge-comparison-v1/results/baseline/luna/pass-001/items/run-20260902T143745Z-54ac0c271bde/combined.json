@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-0a3d4739222943e6a09772512327ebf3",
+  "run_id": "run-20260902T143745Z-54ac0c271bde",
+  "trace_sha256": "a212a159ac2304ececce12d0f5c0cd49474876db58e10202dc72c4faa8e2d8e6",
+  "created_at": "2026-09-03T11:44:20.322429Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即回答减负与隐性收费两面，并落到租客签约前的核算行动，核心人群和问题都对位。",
+      "script_spans": [
+        "它既是真减负，也是换法收费，你别单看押金。",
+        "你签之前，先把押金月租服务费加总比一比，别被零押金晃眼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 277，目标为 280，偏差率为 1.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕现金流、租金溢价、服务费和全年总成本层层补充，并给出核算方法，信息增量明确。",
+      "script_spans": [
+        "月租比直租贵出一成多。一年差价不小，慢慢把押金钱抵掉",
+        "你签之前，先把押金月租服务费加总比一比，别被零押金晃眼。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用减负与收费反差抓人，中段用月租差价和服务费推进，结尾追问自然收束。",
+      "script_spans": [
+        "免押金少交一月钱，可房租服务费常补回。",
+        "一年差价不小，慢慢把押金钱抵掉，其实没真省，只是晚点交。",
+        "免押不是免费，你愿用每月多交换押金吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句与转折让整体能读通，但“少交一月钱”等多处搭配生硬，需临时换词。",
+      "script_spans": [
+        "你别单看押金。",
+        "免押金少交一月钱，可房租服务费常补回。",
+        "你愿用每月多交换押金吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“这头少压钱那头多流水”形成对照，“免押不是免费”简短有力，既好记又服务算账主题。",
+      "script_spans": [
+        "这头少压钱那头多流水，只是时间错开。",
+        "免押不是免费，你愿用每月多交换押金吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体按减轻现金流、隐性加价、签前核算推进，但结尾问句语法不顺，收束表达不够准确。",
+      "script_spans": [
+        "你签之前，先把押金月租服务费加总比一比，别被零押金晃眼。",
+        "免押不是免费，你愿用每月多交换押金吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有违规或煽动，且提醒核算总成本；但“月租比直租贵出一成多”“其实没真省”把个别模式概括得过满，需限定范围。",
+      "script_spans": [
+        "你签之前，先把押金月租服务费加总比一比，别被零押金晃眼。",
+        "但月租比直租贵出一成多。",
+        "其实没真省，只是晚点交。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-aea08202cc2b457fb6b153e22e06b303",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-5fb7b51e48b9456ba30736177d262b4d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

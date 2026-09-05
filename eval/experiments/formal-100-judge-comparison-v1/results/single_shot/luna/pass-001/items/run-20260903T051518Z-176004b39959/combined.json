@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-4203a98e06bb43ac88dfb6b784b16b32",
+  "run_id": "run-20260903T051518Z-176004b39959",
+  "trace_sha256": "fcb107656a0d00f7ed18d771b57f4e968d515b8f4b4d5c4e633cceb1d0e38330",
+  "created_at": "2026-09-03T11:57:11.037817Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面拆解效率与反馈的关系，并覆盖教师、学生和家庭处境，完整回应题设两面。",
+      "script_spans": [
+        "效率提升本身不背削弱真实反馈的锅，真正决定反馈真不真实的，是人有没有留在闭环里。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 474，目标为 450，偏差率为 5.33%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "调研、实验发现、机制解释和行动建议层层推进，既说明效率收益，也指出真实反馈可能缺失的环节。",
+      "script_spans": [
+        "实验跟踪发现，学生根据智能反馈修改时，多是增删词句这类低阶动作，少有重构论证的高阶改动。",
+        "机器擅长标出病句，却很难说出“你这个论点凭什么成立”。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用效率与冷反馈的冲突入题，中段层层推进，结尾金句和追问都从论证自然生长。",
+      "script_spans": [
+        "一方面老师改一篇作文得花十几分钟，全班堆起来几天都改不完；另一方面，AI秒批秒改",
+        "工具快不是原罪，把判断权交给快捷键才是。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句推进自然，动作表达和反问收束都便于停顿重音，整体适合直接口播。",
+      "script_spans": [
+        "机器擅长标出病句，却很难说出“你这个论点凭什么成立”",
+        "否则效率越高，离真反馈越远。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制，“从纠错变成对话”与“把判断权交给快捷键”都把抽象判断变成可复述的记忆点。",
+      "script_spans": [
+        "反馈就从纠错变成对话。",
+        "工具快不是原罪，把判断权交给快捷键才是。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出两难，中段以调研和实验递进，结尾回到判断与行动，因果链和段落功能清楚。",
+      "script_spans": [
+        "一方面老师改一篇作文得花十几分钟，全班堆起来几天都改不完；另一方面，AI秒批秒改，家长却怕孩子拿到冷冰冰的套话。",
+        "关键在反馈的层次。实验跟踪发现，学生根据智能反馈修改时，多是增删词句这类低阶动作，少有重构论证的高阶改动。",
+        "工具快不是原罪，把判断权交给快捷键才是。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体无明确违规，建议与论据方向一致；但“真正决定”“效率越高”等表述过于绝对，需补充适用边界。",
+      "script_spans": [
+        "对教师，用工具可以，但务必亲手补一句针对个人的话。",
+        "真正决定反馈真不真实的，是人有没有留在闭环里。",
+        "否则效率越高，离真反馈越远。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-cf34a90519cd4658aa4e676906ee615b",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e95609e6eeaf4e6ca3c8461ac7ef8237",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-5c9a9a2f55e84671aedeb0bf80c4fb9a",
+  "run_id": "run-20260902T145050Z-873756d8f6c7",
+  "trace_sha256": "e46ae412471daf026067e0170bb1d817cbc434168b1d4f4d237710d5ef709d23",
+  "created_at": "2026-09-03T12:16:59.522929Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应多数与少数的权利冲突，并给出补偿和协商的落地方案。",
+      "script_spans": [
+        "多数便利能压过权利吗？\n直接说，不行。",
+        "所以真要落地，得把补偿摆前头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，法律边界、典型案例、现实阻力和补偿方案层层推进，信息增量充足。",
+      "script_spans": [
+        "批准建和逼人签字，可是两码事。",
+        "那案里测了噪声不刺耳，只认采光折损判了三万五。",
+        "楼层高的多掏，低的少出，补偿池先列明再动土。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出权利冲突，中段用判例和现实阻力递进，结尾追问也从论证自然生长。",
+      "script_spans": [
+        "低层被挡光还得让步，多数便利能压过权利吗？",
+        "这事儿不是谁声音大谁赢。",
+        "换你住一楼，白吃亏你干吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句密集、对话感足，但“天平斜多数”和“办成施工的不足申请百分之三”均需临时重断句或换词。",
+      "script_spans": [
+        "直接说，不行。楼上老人爬楼喘，要电梯是实打实的需要；低层住户没欠谁的，不该白白吃亏。",
+        "老人出行难，政策想松绑，天平斜多数，但斜不是倒。",
+        "上海前两年统计，办成施工的不足申请百分之三。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“天平斜多数，但斜不是倒”准确压缩核心立场，末尾“电梯载不动邻里情”也有余味。",
+      "script_spans": [
+        "天平斜多数，但斜不是倒。",
+        "高层凑钱是买便利的成本，低层拿填补是填平公道。",
+        "多数便利若连少数损失都不认，那电梯载不动邻里情。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整，案例能支撑观点；但“边界就这一条”把复杂裁判标准说窄，结论略显绝对。",
+      "script_spans": [
+        "这说明法认损失，不认“少数该忍”。",
+        "边界就这一条。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调兼顾高低层利益，但“边界就这一条”等法律判断过于绝对，易把复杂裁量说成单一规则。",
+      "script_spans": [
+        "装电梯是好事，但好事不能建在别人吃亏上。",
+        "低层硬要钱法院也不支持，边界就这一条。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-42995ca606c44da085bf5d691ed554b9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-d62b1dd7390e41c484a533747fff5251",
+  "run_id": "run-20260902T144646Z-a79d3e12bf12",
+  "trace_sha256": "45fbe01e376b09099a59d2307e0182bd1ad56cde73d0741f2345a782ec252973",
+  "created_at": "2026-09-03T12:16:07.363669Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应互认推进慢与重复花钱的关系，既讲合理重查，也拆解不必要重查，覆盖患者核心痛点。",
+      "script_spans": [
+        "为啥互认写进文件，咱们还总重复花钱？",
+        "你下次换医院，包里装旧报告开口问认不认。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，政策目标、互认例外、医院激励、系统障碍和患者损失逐层补充，信息单元充足。",
+      "script_spans": [
+        "第一个拧巴处：互认不是全认。",
+        "基层机器旧，三甲不敢认它的图，怕误判。",
+        "整体慢是因信任没建，接口没接牢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出重复花钱的冲突，中段层层拆解原因，结尾追问也由正文自然生长。",
+      "script_spans": [
+        "上家医院查的血项，下家不认，你又得掏钱重查。",
+        "那为啥还有不该的重查？医院像隔了堵墙，质控没对齐，甲不敢信乙。",
+        "可要是医生摇头，这钱咱还得认吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数句子短促，问答承接自然；但“平台虽说在接”“纯互相不认”等表达卡嘴，朗读需临时修整。",
+      "script_spans": [
+        "医院像隔了堵墙，质控没对齐，甲不敢信乙。",
+        "平台虽说在接，很多地方没通顺，调图靠拷U盘。",
+        "片子几乎一样，纯互相不认，费钱费辐射。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和短句都服务于理解，既有“医院像隔了堵墙”的画面，也有“互认蜗牛爬”的鲜明记忆点。",
+      "script_spans": [
+        "医院像隔了堵墙，质控没对齐，甲不敢信乙。",
+        "互认蜗牛爬。",
+        "落地难，难在人和系统的缝，不止纸面规定。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线按政策、例外、机制、损失和应对展开，但“填空档”等表述含混，末尾把复杂原因压成两点，论证略有跳跃。",
+      "script_spans": [
+        "先看清政策动没动。",
+        "再看实在损失。",
+        "大医院流水大，重查或许填空档，动机说不清。",
+        "整体慢是因信任没建，接口没接牢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能交代互认例外和安全边界，但“每个院长”等绝对化归因，容易放大对医院和医生的不信任。",
+      "script_spans": [
+        "文件把这些列为例外，底色是保安全，不是懒政。",
+        "每个院长护自家科室，标准各定各的。",
+        "医保按项目付费，少查少赚自然缺动力。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-764efe367e5348289db70a77a4cebafc",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

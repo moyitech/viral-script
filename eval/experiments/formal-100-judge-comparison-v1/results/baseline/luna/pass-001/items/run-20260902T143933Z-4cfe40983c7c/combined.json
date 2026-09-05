@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-60bb085843774ad3837cab68279b6259",
+  "run_id": "run-20260902T143933Z-4cfe40983c7c",
+  "trace_sha256": "005013d0fdf58ba5f6eae9735b8b1cf95d9b4c4dca05ecc36a3e41828c544f2e",
+  "created_at": "2026-09-03T11:44:48.758490Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答了照护与出钱如何互补，覆盖距离、能力、法律和家庭协商，核心人群明确。",
+      "script_spans": [
+        "公平不是机械平分，得按每家承受力调担子。",
+        "家里早开会，拿张纸写清周一到周日谁陪床、出多少钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 294，目标为 280，偏差率为 5.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中，法律边界、距离影响、冲突后果和落地分工方案都在推进判断。",
+      "script_spans": [
+        "有研究就发现，居住距离和经济状况明显拉着分工走。",
+        "家里早开会，拿张纸写清周一到周日谁陪床、出多少钱"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出照护与出钱的冲突，中段给出法律、分工和落地做法，结尾价值判断自然收住。",
+      "script_spans": [
+        "大哥全天陪护，小妹只给五百，这账怎么平？",
+        "家里早开会，拿张纸写清周一到周日谁陪床、出多少钱",
+        "真公平是老人始终有人疼，不是兄弟算净账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和反问让整体节奏明快，开头与建议段都好读；但两处搭配生硬，录音时容易在词组处停顿。",
+      "script_spans": [
+        "付出不同就得互补，别比数字。",
+        "你想想，要是硬掐表平分，就近那位反吃亏",
+        "法律写子女都有赡养义务",
+        "时日和钱互相折一折"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“调担子”“算净账”等表达具体好懂，结尾形成自然有力的判断，既有画面也便于观众复述。",
+      "script_spans": [
+        "每家日子不同，担子自当不同。",
+        "就近那位反吃亏",
+        "真公平是老人始终有人疼，不是兄弟算净账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有原则、依据、方案和回扣，主线清晰；但“时日和钱互相折一折”说法含混，研究到具体出钱比例的桥接也不足。",
+      "script_spans": [
+        "你想想，要是硬掐表平分，就近那位反吃亏，老人看着儿女红脸也难受。",
+        "住远的出钱多、陪床少，这很自然",
+        "时日和钱互相折一折"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动、不歧视，也没有危险承诺；但“法不反对”过于绝对，未提示协商不能免除应尽义务。",
+      "script_spans": [
+        "付出不同就得互补，别比数字。",
+        "法不反对"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-512207fe21bc4af69724d086afce11c2",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-0b3f9e98c12c430191f74dbbafcddb81",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

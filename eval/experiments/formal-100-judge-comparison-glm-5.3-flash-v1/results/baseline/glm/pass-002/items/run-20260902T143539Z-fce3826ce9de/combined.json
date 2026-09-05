@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-48d600f1ec944719b87612d1e6965a0d",
+  "run_id": "run-20260902T143539Z-fce3826ce9de",
+  "trace_sha256": "24ca75a70377d57126ebbdca47b5d8767b4ca15c6cda9c2671d6eac6b3fffa2a",
+  "created_at": "2026-09-03T14:25:17.673911Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即冲突设问，结论正面回答合理性，消费与骑手两侧及普通观众均覆盖。",
+      "script_spans": [
+        "这死卡时间的准时承诺，在极端天气里真不合理",
+        "你想按时吃上热饭，骑手只想平安送完这趟单"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "单量数据、红灯停表与延时建议层层推进，主题集中无编造，信息增量具体。",
+      "script_spans": [
+        "有研究跟踪过，四十度那会儿，午高峰单量能多两成",
+        "遇到恶劣天，配送考核时间会顺延，连等红灯都停表了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头暴雨催单与骑手蹚水形成即时反差；中段以订单反涨、红灯停表等新信息持续推进；结尾问句由正文自然生长，留有余味。",
+      "script_spans": [
+        "外面下暴雨，你催着外卖准时到，骑手却在蹚水？",
+        "天太热时，大家躲空调房不想出门，订单反倒涨。",
+        "当老天不配合，死磕那几分钟到底累了谁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，问句与对比做出重音停顿；'那会儿''反倒涨''闷声偷偷改'像真人说话，朗读无需改词。",
+      "script_spans": [
+        "有研究跟踪过，四十度那会儿，午高峰单量能多两成。",
+        "天太热时，大家躲空调房不想出门，订单反倒涨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "对比与口语化表达均服务理解和情绪，'别逼活人去冒险''死磕那几分钟到底累了谁'离开上下文仍可复述，克制不炫技。",
+      "script_spans": [
+        "你想按时吃上热饭，骑手只想平安送完这趟单。",
+        "承诺不是全删，但极端天得免罚延时，别逼活人去冒险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整且首尾呼应，但「路又滑」接在高温论证后，因果桥缺失，概念混用生硬。",
+      "script_spans": [
+        "承诺不是全删，但极端天得免罚延时",
+        "单子一多路又滑，准时就难了，人也危险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "立场克制有边界，关键数据有研究支撑且留有余地，倡导体谅等待，无夸大、煽动或不当承诺，平台审核安全。",
+      "script_spans": [
+        "承诺不是全删，但极端天得免罚延时，别逼活人去冒险。",
+        "有研究跟踪过，四十度那会儿，午高峰单量能多两成。",
+        "遇台风大雪，咱们不妨多等那几分钟缓一缓。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4e8c806449ff41259a99ce618fd8b2bd",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

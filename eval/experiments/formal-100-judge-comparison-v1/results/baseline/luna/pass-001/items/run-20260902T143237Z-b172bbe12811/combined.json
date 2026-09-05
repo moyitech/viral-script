@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-a8ac36d684324f008e909c22c6c232d1",
+  "run_id": "run-20260902T143237Z-b172bbe12811",
+  "trace_sha256": "45731369860e108bb1b0309922c052d18bb837812c11af7db971627d96b335d4",
+  "created_at": "2026-09-03T11:45:42.281179Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直指谁为云故障买单，兼顾政府、厂商与普通用户，并给出个人应对建议。",
+      "script_spans": [
+        "千行百业悬一根云线，谁为停顿买单？",
+        "政府管关键设施，厂商练容灾，用户自留后路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 472，目标为 450，偏差率为 4.89%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕云故障责任集中展开，既有事故规模、责任分工，也有多云和本地备份等可执行信息，推进较完整。",
+      "script_spans": [
+        "去年十大云厂崩了327次，中断两千八百小时，波及四十三亿人次。",
+        "想韧性强就得做多云容灾，但小公司砸不起钱。",
+        "重要资料本地存一份，选服务看跨区备份。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出损失归属冲突，中段转向责任与自救，结尾由云依赖自然落到普通人退路。",
+      "script_spans": [
+        "云一断，停工损失咋就用户吞了？这反常识吧。",
+        "政府管关键设施，厂商练容灾，用户自留后路。",
+        "自己留条退路比等兜底实在。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "提问和短句带着节奏，但“连坐瘫痪”“折返服务费”等表述明显卡嘴，朗读时需要临时换词。",
+      "script_spans": [
+        "咱先把问题看明白。",
+        "钱到底谁付？",
+        "连坐瘫痪谁也没法独善其身",
+        "厂商按停机时长折返服务费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“悬一根云线”“停风时呛到”把依赖风险具体化，记忆点自然，未靠堆砌辞藻。",
+      "script_spans": [
+        "千行百业悬一根云线，谁为停顿买单？",
+        "当云成了空气，停风时呛到的总是普通人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构按风险、责任、个人应对递进，开合清楚；但从评估范围直接推到责任空白，结尾也没有充分回答赔付兜底。",
+      "script_spans": [
+        "钱到底谁付？你可能会问，厂商那么富，不该全赔吗？",
+        "政府评估不管普通商业软件，空白得自己补。",
+        "说到底，政府管关键设施，厂商练容灾，用户自留后路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "没有明显违规，但责任归因和数据安全表述过于绝对，可能误导用户，需补充适用边界。",
+      "script_spans": [
+        "政府管关键设施，厂商练容灾，用户自留后路。",
+        "个人数据丢了自己认。",
+        "其实和源数据同命。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-1f52e3e6240346b4a07c6e7c43586313",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-e85f5790233741cc9f1555858437e9df",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

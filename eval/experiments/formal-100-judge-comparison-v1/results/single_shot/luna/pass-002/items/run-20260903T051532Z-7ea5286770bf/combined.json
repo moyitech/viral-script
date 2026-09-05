@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-5f7ae6cf739e4fcabb4e733dcecff1ef",
+  "run_id": "run-20260903T051532Z-7ea5286770bf",
+  "trace_sha256": "f7bcf785b56945f54a8c52e139f18ba140e8241f1d797e3dc8893fbcae7d8aef",
+  "created_at": "2026-09-03T12:32:21.951238Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即回答责任归属，既点明馆方与主管部门，也给普通读者可执行的反馈路径，紧扣长期占座与公平。",
+      "script_spans": [
+        "馆方和主管部门必须扛起责任，不能把难题甩给读者互相监督",
+        "碰到长期占座，普通读者最稳妥的做法是第一时间向服务台或值班馆员反馈"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕责任、公平、法律依据和读者应对层层推进，信息单元各有功能，观众能获得明确的处理建议。",
+      "script_spans": [
+        "法律明确公共图书馆是向社会免费开放、保障公众基本文化权益的公共文化设施",
+        "别自己拔书硬刚"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直击座位冲突，中段补上责任与行动，结尾以椅子轮转留下余味。",
+      "script_spans": [
+        "公共图书馆座位被长期占用，公平谁来维护？",
+        "碰到长期占座，普通读者最稳妥的做法是第一时间向服务台或值班馆员反馈"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和建议段有口语劲，但法律说明与责任表述偏长，连续朗读时需要重断句，整体不够顺滑。",
+      "script_spans": [
+        "答案很直接：馆方和主管部门必须扛起责任",
+        "法律明确公共图书馆是向社会免费开放、保障公众基本文化权益的公共文化设施，其日常运行管理由属地主管部门负责。",
+        "碰到长期占座，普通读者最稳妥的做法是第一时间向服务台或值班馆员反馈，别自己拔书硬刚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“免费不等于无序”简洁有力，“私人领地”和“椅子的轮转”形成清晰记忆点。",
+      "script_spans": [
+        "免费不等于无序",
+        "少数人把公共空间变成了私人领地",
+        "图书馆的安静里该有人守住那把椅子的轮转"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从责任归属推进到法律依据和读者行动，基本清楚；但管理责任边界略笼统，结尾“椅子的轮转”表达偏虚。",
+      "script_spans": [
+        "占座看似小事，实则是少数人把公共空间变成了私人领地，挤掉了别人本该享有的阅读权利",
+        "其日常运行管理由属地主管部门负责",
+        "图书馆的安静里该有人守住那把椅子的轮转"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体倡导向馆方反馈、避免冲突，方向稳妥；但将日常运行管理一概归于主管部门，法律表述偏绝对，易造成误导。",
+      "script_spans": [
+        "别自己拔书硬刚",
+        "其日常运行管理由属地主管部门负责"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1ecb67202fc3496dbd0c140506f4dda0",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

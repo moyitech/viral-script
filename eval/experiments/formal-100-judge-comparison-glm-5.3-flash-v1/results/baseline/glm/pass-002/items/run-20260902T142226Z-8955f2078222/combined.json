@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-e1816a282f9c4d059e729253fe11ac3d",
+  "run_id": "run-20260902T142226Z-8955f2078222",
+  "trace_sha256": "6bfbc618ae9fad9ebe74eebb28a602ff9bf32d2c0a18a2ccc0a8f9730fa84926",
+  "created_at": "2026-09-03T14:26:41.666088Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇垫付失联直击场景与人群，法律与风险两翼正面回答为何需边界，建议段回扣题设。",
+      "script_spans": [
+        "你替陌生旅客垫了酒店费，对方领完就失联。好心帮陌生人垫付费用，善意真的需要边界。",
+        "帮之前，先让对方自走官方支付渠道，或者你用延时转账试付留个缓冲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "无因管理要件、诈骗心理、案件数据与核验方法层层推进，信息单元互不重复，论证有资料支撑。",
+      "script_spans": [
+        "管理人得有为避免别人损失的意思，你那笔钱难靠必要费用偿还拿回。",
+        "骗子爱装弱求援，用互惠和紧迫感催你转账。网络虚拟藏了真面目，高信任倾向的人往往更容易中招。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字垫钱失联冲突具体，中段以法律反转、骗术心理与数据层层兑现钩子，结尾余味自然生长，无硬拉互动。",
+      "script_spans": [
+        "你替陌生旅客垫了酒店费，对方领完就失联。",
+        "民法典保的是真替人着想的管事人，不是给骗子送钱的善良人。",
+        "帮前停三秒。善良不带锁，就容易帮了恶。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚、比喻有记忆点，但法律段术语连读拗口，需临时改词重断。",
+      "script_spans": [
+        "民法典保的是真替人着想的管事人，不是给骗子送钱的善良人。",
+        "你想啊，这钱不是救灾，是对方自己的事。",
+        "管理人得有为避免别人损失的意思，你那笔钱难靠必要费用偿还拿回。",
+        "先让对方自走官方支付渠道，或者你用延时转账试付留个缓冲，别怕尴尬核验真需求。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "算账、设局等比喻服务理解，善良不带锁与帮前停三秒离开正文仍可复述，修辞克制无堆叠炫技。",
+      "script_spans": [
+        "善良不带锁，就容易帮了恶。",
+        "民法典保的是真替人着想的管事人，不是给骗子送钱的善良人。",
+        "咱们把账算清楚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "把账算清楚、先说法律、再看风险两翼递进清楚，结尾金句自然回扣开头与善意边界题设。",
+      "script_spans": [
+        "咱们把账算清楚。先说法律",
+        "再看风险那头",
+        "善良不带锁，就容易帮了恶"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无违禁与危险内容，应对方法务实；但“陌生求助常是精心设的局”属未限定归因，数据源为“侦办”非“立案”，需补边界。",
+      "script_spans": [
+        "先让对方自走官方支付渠道，或者你用延时转账试付留个缓冲",
+        "高信任倾向的人往往更容易中招",
+        "陌生求助常是精心设的局",
+        "全国立了68.9万件电诈案"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-bd95f19f1d25468cb7565cc7258c444b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

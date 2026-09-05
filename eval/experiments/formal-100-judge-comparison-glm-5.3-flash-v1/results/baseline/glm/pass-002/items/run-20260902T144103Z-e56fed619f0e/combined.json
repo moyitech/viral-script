@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-a503fab848a74fc29c829e11d2605400",
+  "run_id": "run-20260902T144103Z-e56fed619f0e",
+  "trace_sha256": "cfe19ee7e82e64afa0672e0d615b35abb7ceaf00430a96b9383a8962e4d35465",
+  "created_at": "2026-09-03T14:26:52.176408Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即立防诈与自主两侧，法律、案例、实操均扣题设，结尾问句直指子女人群，全程正面回应。",
+      "script_spans": [
+        "你要防诈，也得保他自主，两头都得顾",
+        "下次见父母差点上当，你是抢卡还是坐下来教他认骗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题全程集中，法条、判例、调查、意定监护依次推进，知识与方法双增量，未见编造。",
+      "script_spans": [
+        "最高法有案例，儿子收走老妈存折被诉，法院说子女无理阻碍不行",
+        "大型调查跟过上万老人，认知出状况的不少",
+        "老人清醒时，自己选监护人，去公证处写清权限，这叫意定监护"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头20字内点出防诈与夺权的反差；中段以案例、场景、数据层层兑现；结尾提问由正文自然生长，留有余味。",
+      "script_spans": [
+        "子女代管养老金，防诈却可能夺了自主权",
+        "下次见父母差点上当，你是抢卡还是坐下来教他认骗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "全篇短气口、对话感强，但“私下了代管”“若只防诈”等处需换词重断，拖住上限。",
+      "script_spans": [
+        "可你妈手机弹出中奖信息，你顺手把卡收走，以为挡了诈骗，她却觉得没了底气",
+        "正规监护尚且漏多，私下了代管更没刹车"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "钱牢、软夺权等比喻贴切，服务理解与情绪；情与越界的对句离开上下文仍可复述，金句密而不堆、不喧宾夺主。",
+      "script_spans": [
+        "代管若只防诈不汇报，老人像被关进钱牢",
+        "这不叫防诈，叫软夺权"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段段功能清晰，连环设问当过渡，先立底线再谈边界，结尾回扣开篇并落可执行建议。",
+      "script_spans": [
+        "法律底线在哪？",
+        "那老人真糊涂了怎么办？",
+        "所以代管不是孝顺免死牌"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "防诈与自主两侧风险都讲清，'通常''不少'等限定到位，涉法说法与最高法案例相符，无煽动夸大或确定性承诺，导向安全。",
+      "script_spans": [
+        "老人自己的退休金，签字权在他手",
+        "你帮他是情，替他决是越界"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f87d59546dac45cfa5468c8d04b76333",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

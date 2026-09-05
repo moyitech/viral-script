@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-2e9136624e0544d0ae4cb598681db5b8",
+  "run_id": "run-20260902T141708Z-74ad3c650eb9",
+  "trace_sha256": "cbdb61fab85bf2db74c28d3c187943199a7b93414574ec3abb167f17dbf36193",
+  "created_at": "2026-09-03T14:24:05.442261Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇摆出接与不接的两难，正文直接答未必绑死并给判据，结尾问向小店老板，全程扣题。",
+      "script_spans": [
+        "接超级应用的流量就得让出利润，不接就可能没客人",
+        "街边小店眼下未必会被流量绑死",
+        "小店老板不妨想想，客人到底奔谁而来"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从平台抢客、攒老客到学费重构层层推进，结尾给出工具与招牌的判断方法，增量具体。",
+      "script_spans": [
+        "小店突然成了香饽饽，能免费用上曝光入口，不用费劲拍视频做网红",
+        "小店借这些入口攒老客，不必只靠一家推荐",
+        "把招牌交给别人喂流量，那才真被绑住了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛接与不接的抉择，中段用市场逻辑、双利好和提醒持续兑现，结尾提问自然生长。",
+      "script_spans": [
+        "你家门口的小店正面临抉择：接超级应用的流量就得让出利润，不接就可能没客人",
+        "开头说的让利润，其实是学费",
+        "小店老板不妨想想，客人到底奔谁而来？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句短气口为主，重音停顿清楚，'咱先瞅瞅''卡脖子'等口语贯穿，朗读无需改词。",
+      "script_spans": [
+        "为什么这么说？咱先瞅瞅",
+        "把招牌交给别人喂流量，那才真被绑住了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "香饽饽、卡脖子点到为止，学费翻转与结尾问句离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "开头说的让利润，其实是学费",
+        "把招牌交给别人喂流量，那才真被绑住了",
+        "客人到底奔谁而来？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问、转折、提醒承接清楚，让利润与学费首尾呼应，结论自然回扣开头与题设。",
+      "script_spans": [
+        "为什么这么说？咱先瞅瞅",
+        "不过这里得提醒一句：别把全部客流押在一个平台",
+        "开头说的让利润，其实是学费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论用未必、眼下限定，主动提醒别押单平台，开头让利说法后被纠偏，不夸大不煽动，导向安全。",
+      "script_spans": [
+        "街边小店眼下未必会被流量绑死",
+        "不过这里得提醒一句：别把全部客流押在一个平台，免得被人卡脖子。",
+        "开头说的让利润，其实是学费。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-5d701d19ebef46488c02788779c96d21",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

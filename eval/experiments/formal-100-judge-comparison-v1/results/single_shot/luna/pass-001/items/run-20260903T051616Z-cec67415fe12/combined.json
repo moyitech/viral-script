@@ -1,0 +1,155 @@
+{
+  "evaluation_id": "combined-6e67be33b91a41c2ab8d4022cfa15080",
+  "run_id": "run-20260903T051616Z-cec67415fe12",
+  "trace_sha256": "3e8777f7c24b7a0517fb4c02552242574ea19ae0518ed96c498f1f26926742f2",
+  "created_at": "2026-09-03T11:57:12.918892Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接解释老用户更贵的机制，并覆盖平台定价、算法画像、监管边界与应对建议。",
+      "script_spans": [
+        "老用户反而更贵，因为试行的动态会员价根本不是给老客的优惠",
+        "从技术上看，后台算法会抓取打车频率、常走路线、付款习惯"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 280，目标为 280，偏差率为 0.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "主题集中，既解释定价逻辑又补充规则、算法与自测方法；但把平台动机和具体抓取行为说成既定事实，论据支撑偏薄。",
+      "script_spans": [
+        "现行规定里网约车运价实行市场调节价",
+        "故意推的高价",
+        "能合法设置差异化的会员计价模型"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出反常利益点，中段按规则、技术和应对层层推进，结尾留下监管疑问。",
+      "script_spans": [
+        "老用户反而更贵",
+        "从技术上看，后台算法会抓取打车频率、常走路线、付款习惯",
+        "这类做法游走在不正当价格行为的监管边缘，尚待细化规则。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头判断利落，结尾提醒具体；但中段术语并列、长句集中，朗读时需要多次重断句。",
+      "script_spans": [
+        "老用户反而更贵",
+        "但别在陌生页面泄露验证码",
+        "网约车动态会员价本质是平台借运价市场调节的空间，对高频老用户实行个性化定价",
+        "从规则上说，现行规定里网约车运价实行市场调节价，平台有自主定价权，能合法设置差异化的会员计价模型。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“你越离不开它，单价越容易被动态调高”形成清晰记忆点，口语表达适量，没有炫技堆砌。",
+      "script_spans": [
+        "你越离不开它，单价越容易被动态调高"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构有清晰的结论、机制、规则、技术和建议递进，但“市场调节价”直接推出合法性，且注销重装对比缺少因果桥。",
+      "script_spans": [
+        "从规则上说，现行规定里网约车运价实行市场调节价",
+        "能合法设置差异化的会员计价模型",
+        "所以如果你发现常叫的车总比朋友贵一截，可以注销重装对比"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "提醒勿泄露验证码较稳妥，但将平台动机、数据抓取和合法性说成确定事实，缺少证据与边界，易造成误导。",
+      "script_spans": [
+        "但别在陌生页面泄露验证码",
+        "动态会员价根本不是给老客的优惠",
+        "能合法设置差异化的会员计价模型",
+        "后台算法会抓取打车频率、常走路线、付款习惯"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5cf1d028529b49608188bfc89998e91c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-d2c16b93f5c3447a91efc71dd2b0ec2c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

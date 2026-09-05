@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-7fe025b7d1d043d194e5c0bea806c034",
+  "run_id": "run-20260903T051534Z-ac76ec96c342",
+  "trace_sha256": "c657a0443dce770ad638097f7ca52f40257af238d0d4b2f314f312f74e476497",
+  "created_at": "2026-09-03T12:06:34.322587Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释制造企业为何畏惧换系统，并给出分步替代建议，覆盖替代压力与企业顾虑两侧。",
+      "script_spans": [
+        "可很多制造企业听到要更换原有系统依然心里打鼓",
+        "真要换，千万别全厂一把推平，先选一条边缘产线做试点运行"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 281，目标为 280，偏差率为 0.36%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕系统迁移风险持续推进，依次解释数据、经验、兼容性与停机成本，最终落到可执行的试点方法。",
+      "script_spans": [
+        "老系统里压着十几年产线工艺数据和操作习惯，贸然切换怕直接导致停工",
+        "迁移不等于装个新程序，等于把老师傅脑子里的经验重新梳理一遍"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头先铺陈技术进步，前20字缺少冲突；中段有推进，结尾建议自然但余味和互动偏弱。",
+      "script_spans": [
+        "先选一条边缘产线做试点运行，验证了再逐步扩面",
+        "国产工业软件在近年的技术追赶中进步飞快"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有明显对话感和具体比喻，整体可读；但“推加速替代”“兼容性出纰漏”搭配不顺，拖低朗读流畅度。",
+      "script_spans": [
+        "说白了，恐惧的不是国产软件本身",
+        "政策也在推加速替代",
+        "兼容性出纰漏"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“迁移不等于装个新程序”把抽象风险讲具体，“一把推平”也形成可复述的行动记忆，修辞克制。",
+      "script_spans": [
+        "迁移不等于装个新程序，等于把老师傅脑子里的经验重新梳理一遍",
+        "千万别全厂一把推平"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出顾虑，中段拆解系统迁移的本质与风险，结尾以试点方案收束，因果和转折均能自然承接。",
+      "script_spans": [
+        "恐惧的不是国产软件本身，而是老系统里压着十几年产线工艺数据和操作习惯",
+        "先选一条边缘产线做试点运行，验证了再逐步扩面"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体解释克制且给出试点建议，但“2027年前完成全面替代”和停机损失判断缺少限定，易造成政策与风险误读。",
+      "script_spans": [
+        "先选一条边缘产线做试点运行，验证了再逐步扩面",
+        "现行政策要求重点国企2027年前完成全面替代"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-ec72187424854cbdb73139e20f3d62bc",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6d02c1b7a88740098206d0f05f6b07fa",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

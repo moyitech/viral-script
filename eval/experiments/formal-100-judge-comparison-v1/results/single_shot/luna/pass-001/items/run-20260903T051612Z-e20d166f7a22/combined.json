@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-cecbcae7765b47e1a55d421457707fd6",
+  "run_id": "run-20260903T051612Z-e20d166f7a22",
+  "trace_sha256": "085e21982f6765d59956053a8d9a30d39c65368b81b793e368b3f8dca08bf48c",
+  "created_at": "2026-09-03T11:57:39.566956Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回答已购房家庭能否受益，并区分商贷、公积金和固定利率，覆盖减负与兑现条件。",
+      "script_spans": [
+        "已购房家庭确实能省钱，但降息不是一键到账的福利。",
+        "固定利率得先转浮动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 253，目标为 280，偏差率为 9.64%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕受益条件拆解重定价日、贷款类型、加点协商和防骗操作，信息密度高且结论集中。",
+      "script_spans": [
+        "利息按合同重定价日重算LPR",
+        "凡要钱代办降息的全是骗术"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“省钱”与“非一键到账”形成反差，中段持续给出规则和操作信息，结尾以防骗与转浮动收住。",
+      "script_spans": [
+        "已购房家庭确实能省钱，但降息不是一键到账的福利。",
+        "调整不收费，公积金自动降，商贷手机银行就能申请"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体有明确重音和提醒感，但中段长句、术语密集，朗读时需要重断句。",
+      "script_spans": [
+        "已购房家庭确实能省钱，但降息不是一键到账的福利。",
+        "商贷若浮动利率，利息按合同重定价日重算LPR，多数人约定每年1月1日或放款日",
+        "2024年11月后还能跟银行协商周期和加点，把高加点降到新发放平均附近，早几年高位办贷的正符合条件。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一键到账的福利”和“被合同与规则卡着”把复杂规则说得形象，记忆点自然且没有过度堆砌。",
+      "script_spans": [
+        "降息不是一键到账的福利",
+        "只是受益时间和方式被合同与规则卡着"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头给出判断，随后分商贷、公积金展开，主线清楚；但表述生硬，结尾把申请条件说得过满。",
+      "script_spans": [
+        "已购房家庭确实能省钱，但降息不是一键到账的福利。",
+        "公积金贷款和重定价日在年初的商贷，2026年1月已自动调低",
+        "早几年高位办贷的正符合条件。",
+        "商贷手机银行就能申请"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "能提示合同与重定价差异，方向较稳；但“公积金自动降”“全是骗术”等绝对化表述扩大适用范围，需补充条件。",
+      "script_spans": [
+        "降息不是一键到账的福利",
+        "公积金贷款和重定价日在年初的商贷，2026年1月已自动调低，月供直接少了",
+        "凡要钱代办降息的全是骗术"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-185825239aef448187cc57003ec4b23c",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-062d0364737c482e90ca179fbab6f733",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

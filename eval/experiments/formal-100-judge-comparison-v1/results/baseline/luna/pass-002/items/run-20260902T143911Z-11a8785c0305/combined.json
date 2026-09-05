@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-867bb59682cc458ca6943ea59b7018b5",
+  "run_id": "run-20260902T143911Z-11a8785c0305",
+  "trace_sha256": "51e160c00beb6eb38abc22538db58258f6636c34d338cd3abe5972d82a1ed442",
+  "created_at": "2026-09-03T12:15:46.415198Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即表态“该给”，并同时回应老人、子女和亲情体面的冲突，补偿方式也给出具体落点。",
+      "script_spans": [
+        "要我说该给，但不是雇保姆那样结账。",
+        "报酬不一定叫工资，是让老人手头宽松点。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终围绕隔代照料的付出与回报，既有具体劳动场景，也补充健康影响、亲情顾虑和替代方案，信息推进充分。",
+      "script_spans": [
+        "清晨送幼儿园，中午赶回做饭，晚上哄睡才歇。",
+        "学者整理发现，带娃对祖辈健康影响说法不一。",
+        "比如水电费你交了，老人的退休金就自由了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出家庭冲突，中段持续补充付出、反方顾虑和替代方案，结尾互动也由论点自然生长。",
+      "script_spans": [
+        "带外孙三年没拿报酬，女婿说天经地义不该给。",
+        "那不该给的理由呢？账算太清就伤亲情。",
+        "你家长辈带娃，开口要过回报没？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、问句和生活化场景便于换气，但“护体面”等词不够顺，局部仍需重断句。",
+      "script_spans": [
+        "那不该给的理由呢？账算太清就伤亲情。",
+        "带他去吃顿好的，比说不给更护体面。",
+        "孩子看长辈默默干活没人认，可能学马虎。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“本分—情分”的对照把矛盾说透，“情分也经不住透支”形成自然、可复述的记忆点，修辞不过量。",
+      "script_spans": [
+        "他当是本分，老人当是情分，这就拧了。",
+        "家庭不是公司，可情分也经不住老这么透支。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线有“冲突—理由—方案—后果”的顺序，但从“应回报”直接跳到“暗里分担”，缺少判断标准，结尾也弱化了“明确回报”。",
+      "script_spans": [
+        "你可能会问，为啥他觉着不该给？",
+        "那不该给的理由呢？账算太清就伤亲情。",
+        "明给不如暗里分担。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动对立，回报建议较温和；但法律义务、调查比例和亲情后果的表述边界不足，容易被当成普遍结论。",
+      "script_spans": [
+        "明给不如暗里分担",
+        "报酬不一定叫工资，是让老人手头宽松点",
+        "法律好像也没把日常帮带娃写成硬义务",
+        "有调查提过，超半数老年人在帮子女带娃"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-50532af076394b18aba5809eb71e8b5f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

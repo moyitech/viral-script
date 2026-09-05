@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-f131f0ba6d5e4f8ba7878230b97012b5",
+  "run_id": "run-20260903T051616Z-039723d36417",
+  "trace_sha256": "5e332c17973feb6bda96200caea274c5a2ec5e9ea08fe91cf3baaf30728cfd0c",
+  "created_at": "2026-09-03T12:32:07.727844Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应财政加大民生支出是否带动消费，覆盖政策、机制与普通人感受，切入具体。",
+      "script_spans": [
+        "我的判断是，民生财政支出对消费意愿是托底，不是猛药。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中，研究结论、作用通道、政策案例和个人判断层层补充，信息增量较足。",
+      "script_spans": [
+        "有学术研究跟踪多年数据发现，民生支出总量增加和效率提升都能明显降低居民主观贫困感",
+        "所以别只盯报告里民生占比数字，看那笔钱是否填了你的预期风险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "反常识冲突和结尾判断都成立，但前20字仍是会议背景铺垫，中段虽有信息推进，互动与追看动力偏弱。",
+      "script_spans": [
+        "这里有个反常识：财政钱流向民生，并不自动变成消费欲望",
+        "保障越具体，花钱越自然，这才是消费意愿真实的开关",
+        "财政工作会议连年强调民生保障"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和转折有对话感，但研究结论与政策解释偏书面，且“钱效用参差”明显卡口。",
+      "script_spans": [
+        "可不少人还是攥着钱不敢花",
+        "民生支出总量增加和效率提升都能明显降低居民主观贫困感，而且效率带来的改变比规模更大"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“托底，不是猛药”和“花对地方比花大钱更要紧”把抽象判断说得具体，克制而有复述价值。",
+      "script_spans": [
+        "民生财政支出对消费意愿是托底，不是猛药",
+        "花对地方比花大钱更要紧"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、转折清楚；但核心研究测的是主观贫困，后文直接推到消费意愿，缺少中间机制验证，且“才敢”略显绝对。",
+      "script_spans": [
+        "这里有个反常识：财政钱流向民生，并不自动变成消费欲望",
+        "所以别只盯报告里民生占比数字，看那笔钱是否填了你的预期风险。",
+        "民生支出总量增加和效率提升都能明显降低居民主观贫困感",
+        "社保和助学政策若兑现，才敢挪出存款去消费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有煽动或违法内容，也有“并不自动”这类边界；但“让年轻人敢生敢养”“才敢消费”把复杂因果说得过满。",
+      "script_spans": [
+        "财政钱流向民生，并不自动变成消费欲望",
+        "正好戳中家庭现金流出痛点，让年轻人敢生敢养",
+        "社保和助学政策若兑现，才敢挪出存款去消费"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 17.0,
+    "partial_weighted_average": 2.4285714285714284,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-579f647908d245b797309ed697d4301c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

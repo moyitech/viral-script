@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-0896e580a6f44eb5be5c4bd9ccd13efb",
+  "run_id": "run-20260903T051517Z-71641f2afc1e",
+  "trace_sha256": "e2e2fff4deafa84eabb440673311e345f1850472d103c6d3fb5600340c656df5",
+  "created_at": "2026-09-03T12:00:56.921779Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应便捷与误诊风险，覆盖稳定复诊、首诊限制和普通用户的避险需求。",
+      "script_spans": [
+        "一键开药只是稳定慢病复诊的续方通道，它绝不该变成自我诊断、随意吃药的后门。",
+        "线上续方对长期控病的人确实省力，但快不能替掉该有的谨慎。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 263，目标为 280，偏差率为 6.07%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "信息从适用边界、线上诊疗局限推进到具体警示，既解释风险来源，也给出可执行的就医判断。",
+      "script_spans": [
+        "没有触诊听诊，也没有化验影像支撑。",
+        "老毛病若悄悄变化，描述几句就被当成老样续药，真问题反而藏住了。",
+        "要是吃药后症状没缓，反而冒出新生不适，马上停掉线上续方，去实体机构查清楚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“方便”立刻引出误诊反差，中段递进给出规则与漏洞，结尾收回到谨慎，推进和余味都成立。",
+      "script_spans": [
+        "手指点几下就能收到药，够方便吧。可这便捷背后，误诊的风险常被大家轻轻放过。",
+        "更现实的漏洞在屏幕这边：没有触诊听诊，也没有化验影像支撑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头和提醒句有节奏，整体能读通；但政策长句、术语并列和“新生不适”等处需要重断句或换词。",
+      "script_spans": [
+        "手指点几下就能收到药，够方便吧。",
+        "监管态度很明确，线上问诊必须拿着以往明确诊断资料，确认是复诊才许开药，首诊和病情不明严禁直接给方。",
+        "要是吃药后症状没缓，反而冒出新生不适，马上停掉线上续方，去实体机构查清楚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“自我诊断的后门”把风险说得具体，“快不能替掉该有的谨慎”简洁收束，修辞克制且便于复述。",
+      "script_spans": [
+        "它绝不该变成自我诊断、随意吃药的后门。",
+        "但快不能替掉该有的谨慎。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先提出便利与风险冲突，再交代边界、解释误诊机制，最后落到行动提醒，首尾回扣自然。",
+      "script_spans": [
+        "可这便捷背后，误诊的风险常被大家轻轻放过。",
+        "更现实的漏洞在屏幕这边：没有触诊听诊，也没有化验影像支撑。",
+        "给你一个具体提醒：要是吃药后症状没缓，反而冒出新生不适，马上停掉线上续方，去实体机构查清楚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "明确区分稳定慢病复诊与首诊、自诊，并提示症状变化应转线下核查，未作治愈或用药承诺。",
+      "script_spans": [
+        "一键开药只是稳定慢病复诊的续方通道",
+        "去实体机构查清楚"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-b2314f18498f4df3b370bb34c60b40d6",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-38428fa7306c47aaab9672f4601ea1d6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

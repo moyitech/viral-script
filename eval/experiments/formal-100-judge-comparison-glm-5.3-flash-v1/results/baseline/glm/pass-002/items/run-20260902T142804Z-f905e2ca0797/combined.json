@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-1c17fe4ef0f6448e95ebc67d59c767c4",
+  "run_id": "run-20260902T142804Z-f905e2ca0797",
+  "trace_sha256": "50255af991d6bfd75c1cf84182e3f2c2c7e88dd3753e5e3ab6008ab569b25f69",
+  "created_at": "2026-09-03T14:25:08.582539Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛出二元之问，效率与压价两侧均正面展开，结论落到求职者可操作判断，人群与题设全程贴合。",
+      "script_spans": [
+        "录用快了工资却少两千，这算高效还是压价？",
+        "所以你判断一家企业，先看它省掉的是哪一步。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移，空缺成本、砍薪环节、市场冷热、拆薪判断等单元层层推进，观众能带走具体辨别方法。",
+      "script_spans": [
+        "可有些企业连用人部门和招聘方商量薪水的时间也砍了，直接按最低预算发录用通知",
+        "经济冷时岗位少人抢，企业缩短流程还能挑便宜的；经济暖时人才抢手，它流程再短报价也得跟大盘"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以少两千的落差直击矛盾；三段各抛新问题层层推进；结尾追问由正文自然生长，收得住也留得住。",
+      "script_spans": [
+        "录用快了工资却少两千，这算高效还是压价？",
+        "那压价空间从哪混进来的？",
+        "下次收到极速录用，别忙庆祝，先问清薪资结构"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音停顿清楚，'顶班''吞掉'等口语词支撑对话感；仅'冗余环节'等个别书面词，不构成明显拗口。",
+      "script_spans": [
+        "咱先看企业为啥急。",
+        "更关键的是市场冷热在背后搅局。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻点到为止且服务理解，如用快遮住砍价；快本身不坏等金句离开上下文仍可复述，全篇克制不炫技。",
+      "script_spans": [
+        "快本身不坏，坏的是用快遮住砍价。",
+        "同样叫提速，砝码完全不同。",
+        "企业省下的是自己的钱，你让出的可能是自己的底气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "各段功能清晰，为何急、砍什么、市场变量与辨别标准递进展开，结尾自然回扣开头之问，因果桥梁完整。",
+      "script_spans": [
+        "怎么分辨真高效还是软压价？看它敢不敢把薪资拆分讲清楚",
+        "快本身不坏，坏的是用快遮住砍价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述客观公允，明确'不能一棍子打死''很难一刀切说快就是坏'，对企业归因均有限定词，无夸大承诺或煽动对立，导向安全。",
+      "script_spans": [
+        "当然也有公司用线上测试代替多轮奔波，薪水按标准给，这对双方都好，不能一棍子打死",
+        "研究样本常有限，很难一刀切说快就是坏"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-fe0481f070da40fa8e49112b2ab48c01",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

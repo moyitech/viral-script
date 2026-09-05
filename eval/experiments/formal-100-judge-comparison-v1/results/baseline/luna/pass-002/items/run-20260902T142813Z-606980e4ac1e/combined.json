@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-ac8194d2828849369e33cfe98b2d82f6",
+  "run_id": "run-20260902T142813Z-606980e4ac1e",
+  "trace_sha256": "a00c37bb4fdb4edae717bdc9415a3810923447db3917409cf9d1733cfaf6afc2",
+  "created_at": "2026-09-03T12:15:42.660949Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "始终围绕统一发型与个性表达的冲突，兼顾学校纪律、学生自主和家长判断，回应明确。",
+      "script_spans": [
+        "学校若要求统一发型，纪律教育不能忽视个性表达。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主线集中，给出规范底线、学校要求边界、拒绝入校后果与家长判断，信息推进较完整。",
+      "script_spans": [
+        "教育部规范只划了不烫不染不怪异的底线。",
+        "学校能提整洁要求，但没理由强制一模一样。",
+        "这种不让进其实算变相停课。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以拒绝入校的冲突设问，中段补充规则、权利与案例，结尾用整齐与个性收出余味。",
+      "script_spans": [
+        "强制剪发进不了校门，纪律就能压过孩子自我吗？",
+        "下回碰上硬性统一的要求，不妨想想，整齐和个性本来不必打架。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和对话式承接较多，但“身体自主”“成长自然需要”等表达拖慢口播。",
+      "script_spans": [
+        "学校能提整洁要求，但没理由强制一模一样。",
+        "头发长在各自头上，连着人的尊严和身体自主。",
+        "孩子也想得体，这是成长自然需要。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“管纪律不等于管脑袋里的想法”和“整齐和个性本来不必打架”具体克制，既能复述也服务观点。",
+      "script_spans": [
+        "管纪律不等于管脑袋里的想法",
+        "整齐和个性本来不必打架"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头立意、规范边界、案例到结论的顺序清楚，但法律判断与规矩更稳之间缺少充分过渡。",
+      "script_spans": [
+        "学校能提整洁要求，但没理由强制一模一样。",
+        "这种不让进其实算变相停课。",
+        "留些自我空间给孩子，班级的规矩反而更立得住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体反对一刀切且未煽动对立，但“算变相停课”“没权”等法律判断过于绝对，需补充条件和边界。",
+      "script_spans": [
+        "学校能提整洁要求，但没理由强制一模一样。",
+        "这种不让进其实算变相停课。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-fb7a527cafb44c409065cd25cb1de285",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

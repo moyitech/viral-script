@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-782a52663c444808a7c13407856900d2",
+  "run_id": "run-20260903T051547Z-014632c43ec7",
+  "trace_sha256": "2684cf00a4d17fef2d0cee935cb707ccfb810586df69a464ba36b418ec84b643",
+  "created_at": "2026-09-03T15:30:35.101249Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 2,
+      "reason": "开头即正面作答并落到租客算账行动，但“基本不是天上掉馅饼”一锤定音，减负一侧未被真正权衡，回答偏单边。",
+      "script_spans": [
+        "所以你签合同前，一定把免押省下的钱、服务费和实际月租全加起来，再对比普通房源的年总价",
+        "但这基本不是天上掉馅饼，而是把押金成本转移成了别处的收费"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中不漂移，服务费数据、免押门槛与押金上限各推进一层，观众能带走具体数字与算总账的判断方法。",
+      "script_spans": [
+        "可合同里悄悄收着每月百分之八到十的服务费，算一年总支出反而可能高于传统押一付三",
+        "按规定住房租赁押金一般不能超过一个月租金"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即立反差钩子，中段以服务费数据持续兑现悬念，结尾算清总账由正文自然生长，三段均有推进。",
+      "script_spans": [
+        "但这基本不是天上掉馅饼，而是把押金成本转移成了别处的收费",
+        "可合同里悄悄收着每月百分之八到十的服务费，算一年总支出反而可能高于传统押一付三"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，'打招牌''绕个弯'等口语词与对话式承接自然，全篇无需改词即可照稿直录。",
+      "script_spans": [
+        "可合同里悄悄收着每月百分之八到十的服务费",
+        "平台只是绕个弯把这笔钱从别的口子拿回来罢了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "绕个弯从别的口子拿回来说法贴切且可复述，别光看零押金三个字就冲动下单留有记忆点，修辞克制不堆砌。",
+      "script_spans": [
+        "平台只是绕个弯把这笔钱从别的口子拿回来罢了",
+        "别光看零押金三个字就冲动下单，切记算清总账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "论点、例证、政策到行动层层递进，年服务费与押金上限互为因果衔接顺畅，结尾回扣“换种收费”题眼干净利落。",
+      "script_spans": [
+        "押金一般不能超过一个月租金，平台只是绕个弯把这笔钱从别的口子拿回来罢了",
+        "别光看零押金三个字就冲动下单，切记算清总账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "表述总体克制，“一般”“可能”限定到位；但“悄悄收着”“绕个弯拿回来”属未限定的动机归因，以偏概全，需补边界。",
+      "script_spans": [
+        "按规定住房租赁押金一般不能超过一个月租金",
+        "算一年总支出反而可能高于传统押一付三",
+        "可合同里悄悄收着每月百分之八到十的服务费",
+        "平台只是绕个弯把这笔钱从别的口子拿回来罢了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-a39fbb8e7ee441b6adc9c04227a0ea01",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

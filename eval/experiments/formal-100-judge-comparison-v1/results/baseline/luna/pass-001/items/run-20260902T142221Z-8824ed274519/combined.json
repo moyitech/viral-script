@@ -1,0 +1,158 @@
+{
+  "evaluation_id": "combined-49a32228c2cf4241aedc13ab59420e96",
+  "run_id": "run-20260902T142221Z-8824ed274519",
+  "trace_sha256": "0bd6e92c0423740805f51bcc637b91c5b5c9e864b394faed5c7e02fbf61f684e",
+  "created_at": "2026-09-03T11:44:36.463140Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接区分合同固收与浮动分红，并给出长期闲钱和短期用钱两类人的判断。",
+      "script_spans": [
+        "靠谱，但只认合同写固收那侧。",
+        "锁定适合闲钱放长期。",
+        "你若三五年内买房结婚，这钱不能动。锁了反成包袱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 715，目标为 700，偏差率为 2.14%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕确定性、流动性、分红波动和行业经营补充多个信息单元，结论也转成了可执行的选择标准。",
+      "script_spans": [
+        "预定利率签完就冻在合同里。",
+        "头几年想取出来，现金价值还低于保费。",
+        "分红不保证，可能落空。",
+        "有研究看了62家寿险公司，2022年保单价值释放是负数。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“高预期”与“2%保底”制造冲突，中段有对照和代价，结尾问题自然收束。",
+      "script_spans": [
+        "盯着分红险高预期的人，正错过合同里写死2%保底。",
+        "你愿拿确定薄利还是等风来？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和比喻有利于停顿，但“合同写固收那侧”“这来对抗钱变薄”两处明显卡嘴。",
+      "script_spans": [
+        "你等于把今天利率装进罐头。",
+        "靠谱，但只认合同写固收那侧。",
+        "这来对抗钱变薄。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 2,
+      "reason": "有“装进罐头”“商场海报”这样的画面，但比喻铺得偏密，“浮动红包”“保底挨饿”略显用力，记忆点不够克制。",
+      "script_spans": [
+        "你等于把今天利率装进罐头。",
+        "演示漂亮像商场海报。实际到账像打折季实付。",
+        "一边是写进合同的慢涨零花钱。一边是看天吃饭的浮动红包。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线清楚，先讲固收、再讲分红并落到人群判断；但数据口径混杂，个别因果和表述不够严密。",
+      "script_spans": [
+        "先说为啥利率往下走反倒该锁。",
+        "不是说所有人都该锁。",
+        "2026年分红演示上限压到3.5%。这是监管收紧的天花板。可实际兑现曾滑到55%。",
+        "这来对抗钱变薄。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "已提示分红不保证，也提醒短期用钱者别锁定；但“2%保底”“活到老领到老”等表述未限定具体条款，易误导。",
+      "script_spans": [
+        "分红不保证，可能落空。",
+        "你若三五年内买房结婚，这钱不能动。",
+        "盯着分红险高预期的人，正错过合同里写死2%保底。",
+        "活到老领到老。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-a4858d037f25421790280d0c34fe41cb",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-6ee1d47d6c4540bbb3a68d1d4b215dd5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

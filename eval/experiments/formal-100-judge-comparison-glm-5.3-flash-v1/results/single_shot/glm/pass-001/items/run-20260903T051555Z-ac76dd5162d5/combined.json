@@ -1,0 +1,153 @@
+{
+  "evaluation_id": "combined-a295fd7068cd470882eb44b2c48b8f9d",
+  "run_id": "run-20260903T051555Z-ac76dd5162d5",
+  "trace_sha256": "9485850bc22fc2a81c2cc5fd83de0312558fbeb30051a66a0dd9d70fb8d1597d",
+  "created_at": "2026-09-03T14:11:51.550630Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头抛出兜底之问，结论正面作答，牵连场景与自担风险两侧、普通观众与商户人群均覆盖。",
+      "script_spans": [
+        "直接给结论：数字基础设施的韧性不能全赖云厂商，用户自己才是最后一道防线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 254，目标为 280，偏差率为 9.29%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "覆盖缺口、连锁机理、容灾动作三个信息单元层层推进，与引用背景相符，无编造。",
+      "script_spans": [
+        "海量普通商户、学校并不在强制兜底的覆盖圈里，风险明显多自行承担",
+        "云平台底层一次基础解析出错或电力抖动，就可能在几小时内连锁拖垮上千家把业务全押在同一朵云上的企业"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以故障一分钟串起外卖扫码值机，钩子具体；中段监管缺口、连锁拖垮层层推进；结尾没买保险自然收出余味。",
+      "script_spans": [
+        "哪怕只是短暂故障一分钟，外卖就下不了单，超市扫不了码，航班值不了机",
+        "海量普通商户、学校并不在强制兜底的覆盖圈里",
+        "别等断网才想起没买保险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头排比与结尾金句顺口，但中段政策术语堆叠、长嵌套句拗口，朗读需临时换词重断句。",
+      "script_spans": [
+        "外卖就下不了单，超市扫不了码，航班值不了机，千行百业仿佛瞬间被拔了插头",
+        "别等断网才想起没买保险",
+        "现行安全评估办法重点关注的其实是关键信息基础设施，海量普通商户、学校并不在强制兜底的覆盖圈里，风险明显多自行承担",
+        "就可能在几小时内连锁拖垮上千家把业务全押在同一朵云上的企业，波及面极广",
+        "所以关键业务系统务必提前做跨云备份和容灾切换演练"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "拔插头、押在同一朵云、没买保险，比喻贴切且服务理解，无堆砌炫技，末句离开上下文仍可复述，记忆点自然。",
+      "script_spans": [
+        "千行百业仿佛瞬间被拔了插头",
+        "把业务全押在同一朵云上的企业",
+        "别等断网才想起没买保险"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结论先行，缺口与机理两论据各司其职，因果桥清楚，结尾以断网回扣开头拔插头意象。",
+      "script_spans": [
+        "所以关键业务系统务必提前做跨云备份和容灾切换演练，别等断网才想起没买保险。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "结论用“不能全赖”“可能”留边界，建议限定关键业务系统，归因公允无夸大承诺，无违规风险。",
+      "script_spans": [
+        "数字基础设施的韧性不能全赖云厂商，用户自己才是最后一道防线",
+        "就可能在几小时内连锁拖垮上千家把业务全押在同一朵云上的企业",
+        "关键业务系统务必提前做跨云备份和容灾切换演练"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-0bf54609a575467db132123beb60251d",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-4e684b92a05d4dbd84d9731928a33f77",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

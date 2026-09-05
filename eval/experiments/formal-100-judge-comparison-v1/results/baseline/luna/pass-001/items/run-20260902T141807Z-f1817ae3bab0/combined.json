@@ -1,0 +1,148 @@
+{
+  "evaluation_id": "combined-86d8e43e298c487bbed0b1eee4f0d51b",
+  "run_id": "run-20260902T141807Z-f1817ae3bab0",
+  "trace_sha256": "81962fa3dbd6f959a303e80bb7a6cbc9ecc93de4747e2eeb0f8b0fcf5473cc93",
+  "created_at": "2026-09-03T11:44:17.361954Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从筛选效率到识别局限，直接回答算法能否读懂潜力，并覆盖招聘双方。",
+      "script_spans": [
+        "它能帮着先筛掉不合适的，却读不透你真正的后劲。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 266，目标为 280，偏差率为 5.00%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "具体交代统一提问、表情语调分析、提效机制及特征失真的风险，信息推进充分。",
+      "script_spans": [
+        "算法拿一套同样问题问所有人，录下回答，用程序扫表情和语调，把说话快慢变成分数。",
+        "机器猜的多是镜头前的你，不是工位上的你，预测的把握本身就有限。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出人机判断冲突，中段补足机制与风险，结尾追问也由论述自然推出。",
+      "script_spans": [
+        "你简历没到人手，算法先判你潜力。",
+        "机器给你打分时，你敢把前途交它手里吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体节奏清楚、观点也好懂，但“海量申请变得可处理”等句式偏书面，长串修饰影响顺口度。",
+      "script_spans": [
+        "它能帮着先筛掉不合适的，却读不透你真正的后劲。",
+        "这法子让海量申请变得可处理",
+        "常盯你的微表情、声线这些往往和干活好坏没必然联系的特征，去猜你行不行"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“镜头前”与“工位上”的对照准确易懂，既解释了算法局限，也留下了自然可复述的记忆点。",
+      "script_spans": [
+        "机器猜的多是镜头前的你，不是工位上的你"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先讲筛选机制与效率，再转入指标局限，最后以人机分工收束，因果和结论连贯。",
+      "script_spans": [
+        "这法子让海量申请变得可处理，招聘方不用自己看完每支视频，省了初筛力气，流程快起来。",
+        "可它另一边，常盯你的微表情、声线这些往往和干活好坏没必然联系的特征，去猜你行不行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "使用“部分”“往往”“有限”等限定，并明确AI只是辅助工具，未作确定性承诺。",
+      "script_spans": [
+        "预测的把握本身就有限。",
+        "这只是辅助工具。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-5965a0d339d548c8a45cfbd29f67e455",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-ba015ff25fed4eff94fd36d893c7feda",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

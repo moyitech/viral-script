@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-417309fa0d444822a51288e9bdb19aed",
+  "run_id": "run-20260903T051705Z-c16aab62deca",
+  "trace_sha256": "f52031af9fedfe11da3a6083e9d6ac8d3ea2307cf4fea706bcf1498ae413e5c5",
+  "created_at": "2026-09-03T12:32:19.871501Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应照护分工与公平问题，覆盖不同能力、距离和资源条件，并给出家庭及社会层面的解决路径。",
+      "script_spans": [
+        "真实公平需考量能力与距离，而不是账单上的等额。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕不等量付出如何实现公平层层推进，结合法律、调查、补偿机制和长期护理保险，信息增量充分。",
+      "script_spans": [
+        "家里先把金钱、看护、跑腿拆项算清，明确补偿陪护者；"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用照护失衡制造冲突，中段给出公平标准与破局方案，结尾余味自然。",
+      "script_spans": [
+        "老父亲中风失能，三兄妹当初拍板轮流照护，可十个月下来，住隔壁的二姐辞职全天陪护，外地打工的哥哥仅偶尔转账，小妹每周末露个面。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有画面和直接判断，整体能读通；但多处并列偏密，且中段书面术语拖慢口播。",
+      "script_spans": [
+        "家庭群弹出一句“公平呢”，瞬间冷场。",
+        "我的判断很直接：强制每人平分照料，是对公平的误解。",
+        "二姐辞职全天陪护，外地打工的哥哥仅偶尔转账，小妹每周末露个面",
+        "学术调查也发现，赡养里女儿和就近居住者常承担更重照料",
+        "社会面长期护理保险已结束试点迈向全国"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻克制且服务观点，“公平是让每分力被看见”清晰可复述，结尾意象也有余味。",
+      "script_spans": [
+        "家庭本就不是流水线。",
+        "公平是让每分力被看见，而非每人做同样多。",
+        "别让账本折断血缘，也别让一人熬干灯火。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由家庭冲突引出判断，再以法律和调查支撑，转入家庭协商与社会保障方案，结尾自然回扣公平主题。",
+      "script_spans": [
+        "破局靠内外两手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体不煽动对立，建议较克制；但“已结束试点迈向全国”“接手喂药洗澡”未限定地区、资格和服务范围，存在误导风险。",
+      "script_spans": [
+        "公平是让每分力被看见，而非每人做同样多。",
+        "社会面长期护理保险已结束试点迈向全国，专业机构接手喂药洗澡"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6c246aa1e0b7463399081cc38aa3e306",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

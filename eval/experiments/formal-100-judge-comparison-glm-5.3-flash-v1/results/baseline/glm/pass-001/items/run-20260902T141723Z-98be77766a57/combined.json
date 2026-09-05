@@ -1,0 +1,154 @@
+{
+  "evaluation_id": "combined-01b65aac0a8345b7ae92cf0840c4d224",
+  "run_id": "run-20260902T141723Z-98be77766a57",
+  "trace_sha256": "1ba864b76fe6c0d66499b32ab82fcefbdbf4a86ea07d6a798dd4ffc39b2136a2",
+  "created_at": "2026-09-03T13:47:59.677765Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直抛两边冲突，正文两侧都给论据，结尾落到散户查公告动作，正面覆盖题设与人群。",
+      "script_spans": [
+        "这波回购潮，既是信心信号，也是短期托市。",
+        "先翻明细，看它是不是注销式回购。真注销，才可能是公司钱袋子的底气。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 451，目标为 450，偏差率为 0.22%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终集中，注销机制、声誉研究、分红规则等单元层层推进，观众能带走判断方法。",
+      "script_spans": [
+        "直接注销，股本少了，等于把股票烧掉，市场上筹码变少。",
+        "研究也发现，口碑好的企业回购更被信为真，公告本身传递内部看好信号。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字反差加悬念抓人，中段数据、动机、辨伪层层推进，结尾之问自然长出。",
+      "script_spans": [
+        "回购越多股价越跌？你以为的利好或许是托市陷阱",
+        "公司也有难处，股价崩了融资就僵住，所以回购像创可贴，止血但治不了内伤",
+        "当回购变成例行公事，你看股份消失，还是只看热闹？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "比喻与短句节奏好，但“更被信为真”“托住跌破线”两处拗口需换词，按规则封顶2分。",
+      "script_spans": [
+        "好比蛋糕不变，分的人少了，你那块就大。",
+        "所以回购像创可贴，止血但治不了内伤。",
+        "口碑好的企业回购更被信为真",
+        "但部分钱只为托住跌破线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "创可贴、蛋糕、麻醉剂等比喻贴切服务理解，金句可独立复述，密度克制不炫技。",
+      "script_spans": [
+        "回购像创可贴，止血但治不了内伤",
+        "好比蛋糕不变，分的人少了，你那块就大",
+        "要是拿去发激励，更像给市场打麻醉剂"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "因果桥清楚，比喻与结论衔接，注销与激励对照推进，结尾回扣开头疑问。",
+      "script_spans": [
+        "股价崩了融资就僵住，所以回购像创可贴，止血但治不了内伤。",
+        "好比蛋糕不变，分的人少了，你那块就大。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点多带限定词，劝散户查明细而非荐股，托市判断两面兼顾，无夸大承诺或煽动对立。",
+      "script_spans": [
+        "托市不是错，但别当成长线药方。",
+        "咱们散户看到公告，别急着开心跟车。",
+        "部分钱只为托住跌破线"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-73aeecc396ea4660b4151e3c79580b66",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-1dcde7dc428a44a9bc4543434b9edab6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

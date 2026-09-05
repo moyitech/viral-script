@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-588aa48a55b74221bf2e63d6186cb734",
+  "run_id": "run-20260902T142144Z-122072c80c8a",
+  "trace_sha256": "6b3df161ef3446810b94993a195f15f6739ab9ea6ec4b167b3ff2b29d6b67521",
+  "created_at": "2026-09-03T14:33:57.718328Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即答“能受益但看合同与动作”，固定与浮动、受益与吃亏两侧全覆盖，高位接盘人群命中精准。",
+      "script_spans": [
+        "答案很直接：能受益，但得看合同和你的动作。",
+        "高位接盘的那批人当初普遍加点高，现在基本够条件申请，能省真金白银。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "聚焦月供为何没降、如何受益，加点门槛、重定价日、改周期各成信息单元层层推进，落点可操作。",
+      "script_spans": [
+        "机制上卡在两点，一个是加点，一个是重定价日。",
+        "加点高过新发平均三十个基点才能申请下调，银行批量动的是加点下限，不是拉平到新发水平。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "首句'月供没降'直击反差成钩，中段机制、省钱账持续兑现，结尾窗户比喻自然留余味，三段无代偿。",
+      "script_spans": [
+        "利率降了，你的月供却没降，已购房家庭真吃亏？",
+        "好在你可跟银行商量改短周期，三月或半年一调更快吃低利率。",
+        "房贷降息像给老客户开扇窗，但窗户得自己伸手推。否则风吹不到你脸上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句有对话感，但“但多覆盖浮动”“批量动的是加点下限”等压缩句朗读需临时换词，超两处拗口，封顶2分。",
+      "script_spans": [
+        "老合同里写死的加点，不会因新闻降息就自己掉",
+        "惠及五千万户但多覆盖浮动",
+        "银行批量动的是加点下限，不是拉平到新发水平"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "'开扇窗、自己伸手推'贴切且可独立复述，'躺平等通知''落袋为安'点缀适度，无炫技堆砌。",
+      "script_spans": [
+        "房贷降息像给老客户开扇窗，但窗户得自己伸手推。否则风吹不到你脸上。",
+        "可别躺平等通知，自己开手机银行操作。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "现象、机制、人群、动作四段功能分明，“机制上卡在两点”承接自然，结尾窗喻回扣开篇设问。",
+      "script_spans": [
+        "机制上卡在两点，一个是加点，一个是重定价日。",
+        "房贷降息像给老客户开扇窗，但窗户得自己伸手推。否则风吹不到你脸上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体克制，多处主动设限；但推荐改短重定价周期只讲降息好处，未提示利率上行时短周期反吃亏，需补边界。",
+      "script_spans": [
+        "不是所有老房贷都自动变便宜",
+        "三月或半年一调更快吃低利率"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-bc610175020a4b81a390a3dfe7c41afe",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

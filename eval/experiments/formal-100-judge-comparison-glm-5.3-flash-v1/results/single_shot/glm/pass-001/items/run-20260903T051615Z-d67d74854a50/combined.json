@@ -1,0 +1,150 @@
+{
+  "evaluation_id": "combined-292b9fb65c5a4a63b5d06ffedb3351b6",
+  "run_id": "run-20260903T051615Z-d67d74854a50",
+  "trace_sha256": "21fcbb472c29100443aa0157a8cebc1494695ae971b2529d25d82bf60a7eccc5",
+  "created_at": "2026-09-03T14:11:13.611448Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "全程直答“标准跟得上吗”，扩张与监管两侧并重，且专段回应普通观众，切角贴合题设。",
+      "script_spans": [
+        "我的判断：框架刚搭起来，监管落地却慢了半拍。",
+        "这对普通人什么影响？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 418，目标为 450，偏差率为 7.11%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策时间线、装机增速、导则缺位层层推进，事实与解释互证，无编造，信息密度足。",
+      "script_spans": [
+        "已发布五十多项国标多是推荐性质，对飞速扩张的独立储能，强制约束不够硬。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "中段设问层层推进，结尾余味自然；但前20字为形象铺垫，起火反转落在20字后，首钩慢半拍。",
+      "script_spans": [
+        "为什么补不齐？",
+        "风险不是远方新闻，而是家门口的未知数。",
+        "储能电站像超大充电宝一样在身边遍地开花"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "问答钩子与比喻带出短气口，但长串政策名词和'从纸面到全链条管住'需临时换气重断句，流畅打折。",
+      "script_spans": [
+        "风险不是远方新闻，而是家门口的未知数。",
+        "今年4月国家能源局才印发新型储能电站质量监督大纲",
+        "标准从纸面到全链条管住，重心还在建设端。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "充电宝、护身符等比喻贴切克制，家门口未知数一句可独立复述，无炫技堆砌。",
+      "script_spans": [
+        "储能电站像超大充电宝一样在身边遍地开花",
+        "风险不是远方新闻，而是家门口的未知数。",
+        "标准不是护身符"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问承接自然，“为什么补不齐”引出多层原因，结尾回扣开头之问，因果链完整。",
+      "script_spans": [
+        "为什么补不齐？标准从纸面到全链条管住，重心还在建设端。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "观点均以“我的判断”标明，风险表述留有余地；事故与数据说法有据可查，无煽动、夸大或不当承诺，导向安全。",
+      "script_spans": [
+        "我的判断：框架刚搭起来，监管落地却慢了半拍",
+        "风险不是远方新闻，而是家门口的未知数"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-03098dac7a6c4806bf347701d12df145",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-40d7479a46d8430d809f2bb05fa38ba9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

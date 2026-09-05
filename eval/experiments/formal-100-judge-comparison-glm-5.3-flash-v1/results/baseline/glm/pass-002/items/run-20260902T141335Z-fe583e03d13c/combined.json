@@ -1,0 +1,142 @@
+{
+  "evaluation_id": "combined-aee05fefa61c4dc8b64ce4e477f97e68",
+  "run_id": "run-20260902T141335Z-fe583e03d13c",
+  "trace_sha256": "d76124588072e6946f5cc5d102c4f8e4986ae692a42dcc8bf5039c4a85072429",
+  "created_at": "2026-09-03T14:25:43.209642Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头夜班场景直指晚归人，省成本与冷落两侧都正面接住，结尾给出兼顾办法，切角具体、人群命中。",
+      "script_spans": [
+        "这取舍不能只盯一边：省成本是实情，冷落晚归人也是实情",
+        "先吃亏的是加班族、夜班师傅"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 2,
+      "reason": "成本规制与替代出行建议都有实料；但“这说明减班省力”缺推导，不推开、别空着等立场多次同义复述。",
+      "script_spans": [
+        "成本规制下财政会补上部分亏空",
+        "出门前看清末班时间，或备好替代出行，别赌运气",
+        "你看，这说明减班省力，不是把人推开不管"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头错过末班冲突抓人，结尾“末班后的空白谁填”余味自然；但“这说明减班省力”承接含混，中段推进趋平。",
+      "script_spans": [
+        "你刚下夜班拖着累身到站台，末班车却半小时前开走了",
+        "账面好看了，末班后的空白谁填",
+        "你看，这说明减班省力，不是把人推开不管",
+        "公交可达性讲究时间维度"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句能读通，但“拖着累身”“可达性讲究时间维度”等处拗口，需临时换词重断。",
+      "script_spans": [
+        "夜公交一减班，你得多等半小时，公司却省了油钱。",
+        "你刚下夜班拖着累身到站台",
+        "公交可达性讲究时间维度，车少了，夜归等待直接翻倍拉长。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“客流稀不等于不该被接住”自然贴切、可独立复述；“别让夜路空着”以具象收尾，修辞克制且服务情绪。",
+      "script_spans": [
+        "夜间客流本来就稀，但稀不等于不该被接住",
+        "省钱没错，但别让夜路空着"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线可跟随，结尾回扣末班与油钱；但“这说明减班省力”因果桥不足，“先吃亏…所以减班能理解”承接错位。",
+      "script_spans": [
+        "账面好看了，末班后的空白谁填？省钱没错，但别让夜路空着",
+        "你看，这说明减班省力，不是把人推开不管",
+        "先吃亏的是加班族、夜班师傅。所以减班能理解"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "立场平衡、出行提醒实用，无敏感违规；但「直接翻倍拉长」「财政会补上」均为未经限定的绝对化断言，补边界后更稳妥。",
+      "script_spans": [
+        "省成本是实情，冷落晚归人也是实情",
+        "出门前看清末班时间，或备好替代出行，别赌运气",
+        "夜归等待直接翻倍拉长",
+        "成本规制下财政会补上部分亏空"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 16.0,
+    "partial_weighted_average": 2.2857142857142856,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.2857142857142856,
+    "judge_normalized_score": 0.7619047619047619
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-899d2c818c0d489db1bc94fa7d1d8721",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

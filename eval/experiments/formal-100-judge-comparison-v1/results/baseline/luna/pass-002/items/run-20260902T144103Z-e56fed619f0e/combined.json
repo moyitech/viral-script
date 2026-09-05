@@ -1,0 +1,141 @@
+{
+  "evaluation_id": "combined-bdd22c735031481492d5fb111cb849e8",
+  "run_id": "run-20260902T144103Z-e56fed619f0e",
+  "trace_sha256": "cfe19ee7e82e64afa0672e0d615b35abb7ceaf00430a96b9383a8962e4d35465",
+  "created_at": "2026-09-03T12:16:25.353872Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面回应防诈骗与自主权的两难，覆盖子女、老人和代管边界，并给出留权、提醒等具体做法。",
+      "script_spans": [
+        "子女代管养老金，防诈却可能夺了自主权。",
+        "防诈用提醒，自主用留权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕代管边界持续推进，法律底线、认知风险、意定监护困境和操作建议彼此支撑，信息增量充分。",
+      "script_spans": [
+        "法律底线在哪？老人自己的退休金，签字权在他手。",
+        "专家提到选人难、协议模糊、监督弱。",
+        "哪怕只留个小额卡他自花。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出防诈与自主权冲突，中段递进到法律、风险和做法，结尾互动自然。",
+      "script_spans": [
+        "子女代管养老金，防诈却可能夺了自主权。",
+        "那老人真糊涂了怎么办？",
+        "下次见父母差点上当，你是抢卡还是坐下来教他认骗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句、设问和生活场景有口播感，但多处句式生硬、信息压缩过度，连续朗读仍需重断句。",
+      "script_spans": [
+        "这不叫防诈，叫软夺权。",
+        "法院说子女无理阻碍不行。",
+        "正规监护尚且漏多，私下了代管更没刹车。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“这不叫防诈，叫软夺权”和“防诈用提醒，自主用留权”对照鲜明，准确收束核心边界，易复述。",
+      "script_spans": [
+        "这不叫防诈，叫软夺权。",
+        "防诈用提醒，自主用留权。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "整体有“底线—风险—方案—结论”主线，但意定监护与日常代管衔接不足，监督机制和部分判断推进不充分。",
+      "script_spans": [
+        "但悄悄拿走存折就变味。",
+        "所以代管不是孝顺免死牌。你替他守钱，也得让他握决定权。",
+        "老人清醒时，自己选监护人，去公证处写清权限，这叫意定监护。",
+        "正规监护尚且漏多，私下了代管更没刹车。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体强调防诈与自主并重，但“去公证处写清权限”及“监护人乱花还得被查”表述过满，易造成法律程序误解。",
+      "script_spans": [
+        "防诈用提醒，自主用留权。",
+        "去公证处写清权限，这叫意定监护。",
+        "监护人乱花还得被查。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-981824aa1d50400691f0929adfc5e1e9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

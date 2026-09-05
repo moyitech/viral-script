@@ -1,0 +1,152 @@
+{
+  "evaluation_id": "combined-1b8355c7d22946a79df3305bc1d4ae99",
+  "run_id": "run-20260902T144107Z-582ee7f45bc7",
+  "trace_sha256": "e367a70c61528cf21504d0675c7c2ed953f6b8c7555e51dc0ace9eb4f4809ca4",
+  "created_at": "2026-09-03T13:46:56.750593Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛减员之问，正文列举运维、数据分析等新岗，末尾直指产线工人转岗，题设两侧与核心人群均覆盖。",
+      "script_spans": [
+        "智能工厂砍掉一线普工，却新招运维和数据分析岗",
+        "要是你正站产线，有空就戳戳设备监控的软件界面，肯学就能转新岗"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 289，目标为 280，偏差率为 3.21%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "大典新职业、用工结构研究、技能要求与上手路径逐层推进，各有增量，引用资料可佐证，未见编造。",
+      "script_spans": [
+        "上次修职业大典，直接把工业机器人运维员写成新职业",
+        "有研究跟了制造企业，发现机器换人后用工结构真变了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头“活儿谁干”直给冲突；中段新职业、真实场景、研究发现层层兑现钩子；结尾“握开关”之问由正文自然长出余味与讨论欲。",
+      "script_spans": [
+        "走进工厂没人站产线，活儿谁干？",
+        "智能工厂砍掉一线普工，却新招运维和数据分析岗。",
+        "哪天厂子关灯自己跑，你琢磨谁在云服务端握开关？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，砍掉、盯屏幕、戳戳等动词落点重音清楚，问答收尾有对话感，朗读无需改词。",
+      "script_spans": [
+        "这帮人不用搬料，坐着盯屏幕看机械臂健不健康，活儿干净还缺人",
+        "一边减操作工，一边增技术岗，这就是升级的路。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“看机械臂健不健康”“关灯自己跑、握开关”贴切易懂，离开上下文仍可复述；“一边减一边增”对仗利落，无堆砌炫技，克制得当。",
+      "script_spans": [
+        "坐着盯屏幕看机械臂健不健康，活儿干净还缺人",
+        "一边减操作工，一边增技术岗，这就是升级的路。",
+        "哪天厂子关灯自己跑，你琢磨谁在云服务端握开关？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问开篇、证据承接、双边收束，结尾谁握开关回扣开篇活儿谁干，概念一致，桥接完整。",
+      "script_spans": [
+        "一边减操作工，一边增技术岗，这就是升级的路",
+        "哪天厂子关灯自己跑，你琢磨谁在云服务端握开关？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体表述客观，大典与研究均有依据；但\"学俩月就能上手\"\"肯学就能转新岗\"属未经限定的就业承诺，宜补边界。",
+      "script_spans": [
+        "有研究跟了制造企业，发现机器换人后用工结构真变了",
+        "年轻人学俩月就能上手",
+        "肯学就能转新岗"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9583333333333334,
+    "weighted_total": 23.0,
+    "partial_weighted_average": 2.875,
+    "weighted_average": 2.875,
+    "normalized_score": 0.9583333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-78b30891d4984b7e9f30c0faf349abcf",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-78ed189579ed40bea24f06adcfc9d97c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

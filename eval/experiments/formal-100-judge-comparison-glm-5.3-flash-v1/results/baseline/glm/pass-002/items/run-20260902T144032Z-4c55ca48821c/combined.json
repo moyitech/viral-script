@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-e098180a55194bec8b50394007dd4276",
+  "run_id": "run-20260902T144032Z-4c55ca48821c",
+  "trace_sha256": "57c6451e3bdc42a4bde33c2d9e8f27444f676c7bee62981ea0091dba5f9d8fed",
+  "created_at": "2026-09-03T14:27:57.989505Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头一句就摆出便捷与风险两侧，随后把误诊风险拆成查不了、材料缺、病情变三条，全程扣题命中用药人群。",
+      "script_spans": [
+        "一键开药图快捷，但误诊风险藏在没见着你人。",
+        "拿药前你琢磨下：最近身体有啥新苗头没？比如突然发烧或起疹子？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "复诊材料规则、线上检查局限、一键省材料、病情变化续方各成信息单元，层层推进无同义复读，建议可操作。",
+      "script_spans": [
+        "按规定，线上得先有明确诊断的复诊材料，像门诊病历或出院小结",
+        "医生不是敷衍，是隔着屏幕真没法听诊触诊。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字场景加疑问直给钩子；中段材料被省、系统照旧续方层层转折；结尾自检提问自然生长，余味足。",
+      "script_spans": [
+        "你手指一点药就送到家，可这药真对症吗？",
+        "最近身体有啥新苗头没？比如突然发烧或起疹子？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、口语扎实，但开头易误断为'一点药'，复诊材料句修饰堆叠，需临场重断句。",
+      "script_spans": [
+        "医生瞅不着你舌头，也摸不到脉，只能凭字猜",
+        "你手指一点药就送到家",
+        "线上得先有明确诊断的复诊材料"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "瞅不着舌头、摸不到脉具体可感又解释成因；收尾比喻贴合主题，离文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "医生瞅不着你舌头，也摸不到脉，只能凭字猜。",
+        "别让手指的方便，替你瞒住了该报警的信号。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "规则讲完接机理再接流程漏洞，转折承接清楚，结尾回扣开头手指意象，闭环完整经得起追问。",
+      "script_spans": [
+        "病情要是悄悄变了，本该马上停掉去实体医院。",
+        "别让手指的方便，替你瞒住了该报警的信号。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "复诊材料与病情变化转实体医院的提醒符合监管要求，还主动澄清医生非敷衍，表述克制无夸大误导。",
+      "script_spans": [
+        "按规定，线上得先有明确诊断的复诊材料，像门诊病历或出院小结",
+        "医生不是敷衍，是隔着屏幕真没法听诊触诊。",
+        "病情要是悄悄变了，本该马上停掉去实体医院。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-84ae1fc99e2a4a5eacaae47a256c92ae",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,151 @@
+{
+  "evaluation_id": "combined-b47f597df0c548ac9deb17db436a14d2",
+  "run_id": "run-20260902T142630Z-9997a87115f4",
+  "trace_sha256": "a058b3dbcc8b824bd8fe0bf210c444754e97f0fac562dc92918605ee1176220c",
+  "created_at": "2026-09-03T11:44:06.023204Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接回答厂商是否应为默认设置担责，也保留用户自护责任，覆盖题设两侧和普通家庭人群。",
+      "script_spans": [
+        "厂商得担出厂安全责，用户也不能全甩手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 284，目标为 280，偏差率为 1.43%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题始终聚焦默认安全责任，依次给出风险机制、规范背景和用户动作，信息单元能推动结论。",
+      "script_spans": [
+        "许多普通家庭用的智能设备出厂就写好统一弱密码",
+        "顺便在设置里关掉外部远程访问权限"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直接抛出隐私暴露与责任冲突，中段连续补充成因、规范和建议，结尾追问也由前文自然生长。",
+      "script_spans": [
+        "智能摄像头被黑拍下你在家走动甚至私密画面，厂商却推说怪你懒得改密码？",
+        "这隐患的根子就在出厂初始设置不合理",
+        "当自家客厅变成公开直播现场的时候，我们到底该选省事还是选安心？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "画面化比喻和行动提醒增强可听性，但长串并列、缩写式表达让多处朗读需要重断句。",
+      "script_spans": [
+        "像进自己家一样容易",
+        "先改掉初始密码",
+        "厂商得担出厂安全责",
+        "许多普通家庭用的智能设备出厂就写好统一弱密码，很多智能家居产品的远程访问开关默认处于打开状态"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“像进自己家一样容易”和“公开直播现场”把入侵风险具体化，形象但不喧宾夺主，具备自然复述的记忆点。",
+      "script_spans": [
+        "像进自己家一样容易",
+        "当自家客厅变成公开直播现场的时候"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头提出责任冲突，中段解释默认设置如何导致风险，再落到厂商与用户行动，结尾回扣安全选择。",
+      "script_spans": [
+        "这隐患的根子就在出厂初始设置不合理，厂商把责任全推给普通顾客并不公平。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "责任共担的立场较稳妥，但“简单工具就能闯入”明显夸张，关闭远程访问的建议也缺少设备和功能边界，易误导。",
+      "script_spans": [
+        "厂商得担出厂安全责，用户也不能全甩手。",
+        "黑客拿简单工具扫一段就能闯进你家网络，像进自己家一样容易。",
+        "你新买智能设备第一件事，先改掉初始密码，顺便在设置里关掉外部远程访问权限。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.9166666666666666,
+    "weighted_total": 22.0,
+    "partial_weighted_average": 2.75,
+    "weighted_average": 2.75,
+    "normalized_score": 0.9166666666666666,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-968345d69bd64ae38f1d4491db51a7bf",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-bf4723da4707490ba526d6461225fd85",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

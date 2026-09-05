@@ -1,0 +1,143 @@
+{
+  "evaluation_id": "combined-6bae758666cb4fa38f32f372f6213e77",
+  "run_id": "run-20260902T141941Z-7a95b9c25ae3",
+  "trace_sha256": "d6fb2e5b161526ea9f0aaa0bbdee8d98d992f10d93940e4fa3deb0e023610564",
+  "created_at": "2026-09-03T14:23:06.462802Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即给出搬走与否的正面回答，再落到截流与流量损失，两侧都接住，末尾给小站建议贴合相关人群。",
+      "script_spans": [
+        "网站内容不会被免费搬走，但原站流量正被入口吃掉",
+        "不算搬走，算截流",
+        "别死磕旧排名，学着想被AI引一句"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题紧扣截流不搬走，机制、研究与数据、应对建议层层推进，有研究佐证流量降幅，观众能带走判断与方法。",
+      "script_spans": [
+        "他搜完，页面顶部直接给段总结，把几页内容揉一块，问题立刻被接住",
+        "有研究看到百科页点击降约一成多",
+        "小站得想法在答案里被提到"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头'没搬走却截胡'反差抓人；中段白嫖之问与降一成数据持续兑现；结尾问句由正文自然长出。",
+      "script_spans": [
+        "内容没被搬走，访客却先截胡",
+        "用户为啥不点原站了？",
+        "有研究看到百科页点击降约一成多",
+        "当答案替你读完网页，谁还愿做那个翻原稿的人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、对话感强，但“有研究看到……降约一成多”“得想法在答案里”两处需临时换词重断，最高只能2分。",
+      "script_spans": [
+        "他搜完，页面顶部直接给段总结，把几页内容揉一块",
+        "你说白嫖吗？不算搬走，算截流。",
+        "有研究看到百科页点击降约一成多",
+        "小站得想法在答案里被提到"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "截流与搬走之辨助理解；'省下的步骤就是丢掉的脚步'与结尾问句可独立复述，修辞未喧宾夺主。",
+      "script_spans": [
+        "你说白嫖吗？不算搬走，算截流",
+        "省下的步骤，就是原站丢掉的脚步",
+        "内容没消失，只是退到后台"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进、因果有桥，边界一段收束不夸大，结尾反问自然回扣开头与题设，各段功能清楚。",
+      "script_spans": [
+        "用户为啥不点原站了？",
+        "省下的步骤，就是原站丢掉的脚步",
+        "当答案替你读完网页，谁还愿做那个翻原稿的人？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "关键数据以“有研究”“约一成多”限定，并主动澄清“不算搬走，算截流”，表述客观克制，无煽动、夸大或无依据承诺。",
+      "script_spans": [
+        "有研究看到百科页点击降约一成多。不是全没，是变少",
+        "不算搬走，算截流"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-d55920a28f5a4c5cac96c49bc78b5a2f",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "combined-119e91118c0d4b228233aedaa7dba3aa",
+  "run_id": "run-20260902T142554Z-e66e54b63595",
+  "trace_sha256": "170c308b9c8caa965258f5f76cb826d571f0a1375f3b8aeb31c48d78ecd1003c",
+  "created_at": "2026-09-03T11:44:22.101208Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "正面解释企业与求职者的利益冲突，并落到时间、路费和信任成本，完整回应反感来源。",
+      "script_spans": [
+        "企业想留砍价空间，怕亮底牌被同行比价，这没错，可求职者怕踩坑，面谈才知薪资偏低白跑一趟。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 465，目标为 450，偏差率为 3.33%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕不透明带来的公平感、时间成本和信任损耗展开，既有机制解释，也给出可执行的筛选判断。",
+      "script_spans": [
+        "有研究指出，薪酬过程不透明，比给钱少更伤公平感。",
+        "你刷十分钟能筛十个明薪岗，何必盯一个面议岗耗神？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用“少两千、路费白花”制造具体损失，中段持续补充双方动机与信任后果，结尾追问自然落到行动选择。",
+      "script_spans": [
+        "你点开薪资面议的岗位，聊完才发现月薪少两千，路费全白花。",
+        "下次见面议，你敢信他给得起价，还是先问清区间再动身？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 1,
+      "reason": "多处压缩句和抽象说法卡嘴，核心展开需重断句、换词后才能自然朗读。",
+      "script_spans": [
+        "招聘写面议，求职者反感，因价码藏起，企业留余地，先跑腿的人吃亏。",
+        "另一边，监管部门曾要求平台信息明示到位，可不少岗位依旧写面议，规则没落实地，人就更烦了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“面议像黑箱”和“不能靠腿磨”把抽象的不透明与时间成本说得具体，短句有余味，也便于观众复述。",
+      "script_spans": [
+        "面议像黑箱，你不知按啥定薪，自然觉得会被拿捏。",
+        "信任得靠明示补，不能靠腿磨。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线从利益冲突推进到公平、监管和时间成本，基本可跟；但开头压缩成因果短句，个别表述生硬，部分结论过渡不足。",
+      "script_spans": [
+        "两边算盘不同，信任就薄了。",
+        "因价码藏起，企业留余地，先跑腿的人吃亏。",
+        "规则没落实地，人就更烦了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体没有明显违规，且能呈现双方顾虑；但“比给钱少更伤”等比较性结论缺少限定，易造成过度归因。",
+      "script_spans": [
+        "企业想留砍价空间，怕亮底牌被同行比价，这没错",
+        "有研究指出，薪酬过程不透明，比给钱少更伤公平感。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.8333333333333334,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.5,
+    "weighted_average": 2.5,
+    "normalized_score": 0.8333333333333334,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.4285714285714284,
+    "judge_normalized_score": 0.8095238095238094
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-cc36eb4b30fc47a2ae1c3b64356ddf95",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-9246b9bf44fb435bb2637918b7885741",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

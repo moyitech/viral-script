@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-b81261ee4ce241bab5d6e65d82dc603c",
+  "run_id": "run-20260903T051547Z-980337e64241",
+  "trace_sha256": "a54e9ca93100d646af625a515089fb4b2ce84dc291ddf00c5473a61f3ac95fb1",
+  "created_at": "2026-09-03T15:28:37.719567Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即摆出温和回升与钱不够花的矛盾，随后从指数与收入两侧正面解题，普通家庭人群痛点命中。",
+      "script_spans": [
+        "物价只是温和回升，许多家庭却直喊钱不够花，根本原因是官方物价指数和自家开支结构错位了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕指数与开支错位层层推进，从篮子权重到收入增速再到固定项自查法，各信息单元独立且互相支撑。",
+      "script_spans": [
+        "像居住、教育这些避不开的花费在里头权重有限，可它们实打实吃掉了你月薪的大块头",
+        "把房租、学费、医保这些固定项单独铺开，你才发现钱早被悄悄分完了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即以温和回升与钱不够花的反差抓人；中段用权重、进账、收入增速等新信息持续兑现；结尾余味由正文自然生长，三段无代偿。",
+      "script_spans": [
+        "物价只是温和回升，许多家庭却直喊钱不够花",
+        "别光看菜价跌了就宽心，把房租、学费、医保这些固定项单独铺开，你才发现钱早被悄悄分完了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多句短促、口语生动，但“错位了”“涨势更靠前”等书面句读来拗口需换词，按两子分取低。",
+      "script_spans": [
+        "可它们实打实吃掉了你月薪的大块头，稍一动弹就放大痛感",
+        "根本原因是官方物价指数和自家开支结构错位了"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "吃掉月薪的大块头、填了这两坑等表达形象且服务理解；钱早被悄悄分完了离开上下文仍可复述，修辞克制不喧宾夺主。",
+      "script_spans": [
+        "可它们实打实吃掉了你月薪的大块头，稍一动弹就放大痛感",
+        "不少家庭一半以上的进账直接填了这两坑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "一方面另一方面双线分工清晰，权重有限到放大痛感有因果桥，结尾建议自然回扣开头矛盾。",
+      "script_spans": [
+        "一方面，物价指数只统计一篮子代表商品",
+        "另一方面，上半年居民实际收入增速并不突出",
+        "别光看菜价跌了就宽心"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体表述克制、建议无风险；但“一半以上的进账”未经限定，易被当作普遍事实，补边界或改写后才稳妥。",
+      "script_spans": [
+        "物价只是温和回升",
+        "别光看菜价跌了就宽心，把房租、学费、医保这些固定项单独铺开",
+        "不少家庭一半以上的进账直接填了这两坑"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c3d23ed5764e4b118f34ff197dcabb60",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-43e8ffad159c4605876915103fd0f176",
+  "run_id": "run-20260902T142026Z-8fddb48d843b",
+  "trace_sha256": "9eeda93fbbc34f31a335118ea28a5f727a8e17050a228302046f4d6700d7e8b5",
+  "created_at": "2026-09-03T14:23:32.605384Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即抛二元之问，正文以拍脸与否作答，监督与伤害两侧都覆盖，结尾再回扣，全程扣题。",
+      "script_spans": [
+        "这既是公共监督，也可能成二次伤害。关键看你拍没拍清对方正脸。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "围绕“拍脸”层层推进：法条、去盈利门槛、合理使用、打码建议各有增量，与引证相符，无编造注水。",
+      "script_spans": [
+        "民法典写得很直白：没经人家点头，你就把可认出的脸传出去，可能踩侵权线。",
+        "法律早去掉赚钱门槛，哪怕没获利也照样可能算。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头即抛监督与毁人之问，中段以取消获利门槛、坏事例外持续兑现钩子，结尾诘问由正文自然生长。",
+      "script_spans": [
+        "你举手机拍路人吵架传上网，算监督还是毁人？",
+        "但碰到真干坏事的，法律又开了后门",
+        "你是要大家评理，还是让别人社死？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句多、气口顺，对话感也够；但“合理用”“拍了曝光”等压缩说法需临时换词重断，两处卡点封顶2分。",
+      "script_spans": [
+        "所以真撞见欺负人，先给脸打码再发最稳，别嫌麻烦",
+        "让你能拍了曝光，或许算合理用",
+        "哪怕没获利也照样可能算"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“开后门”“滑向”等比喻服务理解，“给全脸就从监督滑向伤人”离文可复述，修辞克制未喧宾夺主。",
+      "script_spans": [
+        "给全脸就从监督滑向伤人",
+        "把脸遮了，两头都顾住"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "由法条到立法意图再转折例外，“或许算”与“最稳”承接自然，结尾问句回扣开头，逻辑闭环。",
+      "script_spans": [
+        "它想护住平常人，别莫名其妙被挂网上指指点点，生活突然被打乱。但碰到真干坏事的，法律又开了后门",
+        "把脸遮了，两头都顾住。你举起的手机，到底是公道还是枷锁？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体持衡、多用“可能”“或许”留有余地；但“给全脸就从监督滑向伤人”绝对化，与前述合理使用相抵，宜加限定。",
+      "script_spans": [
+        "这既是公共监督，也可能成二次伤害",
+        "先给脸打码再发最稳",
+        "给全脸就从监督滑向伤人"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4db3765e2c3a4e489bd08d61618e00b9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

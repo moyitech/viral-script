@@ -1,0 +1,157 @@
+{
+  "evaluation_id": "combined-fca4330798e24214a580493014fa4fc3",
+  "run_id": "run-20260903T051626Z-3107776e56a1",
+  "trace_sha256": "e1cd4956d430f1df1b0a5bd85205588542fa6ed23137a075281e4eb8e13ac3e0",
+  "created_at": "2026-09-03T14:09:34.932826Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "两个垫付场景开篇即入题，“善意必须带边界”正面作答，风险与对策覆盖冲突两侧，落点对准普通人。",
+      "script_spans": [
+        "帮陌生人垫付，善意必须带边界，不然容易从救助变成被利用",
+        "对普通人来说，善意可以留三分清醒"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "length_compliance",
+      "name": "字数符合度",
+      "score": 3,
+      "reason": "实际非空白字符数为 426，目标为 450，偏差率为 5.33%。",
+      "script_spans": [],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题全程聚焦垫付设界，法律要件、诈骗手法、平台止付与实操建议层层推进，信息具体且多有依据。",
+      "script_spans": [
+        "边界在于，你的垫付必须基于真实管理意思，对方事务真实合法",
+        "骗子常制造紧急情境突破信任",
+        "垫付前多问一句官方核实，优先选用带担保或延时的支付渠道，小额救急也留好聊天记录"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 2,
+      "reason": "开头二十字内即有借钱冲突场景，结尾留有余味；但无因管理与抗辩排除一段术语密集，推进明显趋平。",
+      "script_spans": [
+        "在路边有人突然拦下你，说家人急救差几百块挂号费",
+        "善意可以留三分清醒",
+        "虽法律说违法背俗时受益人抗辩排除，但暗中罪犯无处追偿，钱款难回"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "开头结尾对话感自然，但中段'违法背俗时受益人抗辩排除'等句书面费气，朗读需临时改词。",
+      "script_spans": [
+        "你出于善意转了钱，可这份好心，为什么常常需要踩刹车？",
+        "对普通人来说，善意可以留三分清醒。",
+        "法律上，无因管理允许请求必要费用，但前提是管理人没有法定或约定义务，且为避免他人利益受损。",
+        "若对方以虚假身份骗付，虽法律说违法背俗时受益人抗辩排除，但暗中罪犯无处追偿，钱款难回。",
+        "法律设计本为鼓励见义勇为，但陌生人场景信息不对称。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "踩刹车、带边界等比喻克制且服务理解，善意可以留三分清醒脱离上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "可这份好心，为什么常常需要踩刹车",
+        "善意可以留三分清醒",
+        "帮人别帮成被收割的缺口"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "主线完整、结尾回扣“被利用”，但法律段从“受益人抗辩排除”跳到“暗中罪犯无处追偿”，概念跳接、因果桥不足。",
+      "script_spans": [
+        "更现实的风险是，电信网络诈骗高发，骗子常制造紧急情境突破信任",
+        "帮人别帮成被收割的缺口，这才是善意的可持续方式",
+        "虽法律说违法背俗时受益人抗辩排除，但暗中罪犯无处追偿，钱款难回",
+        "但陌生人场景信息不对称"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "法律与防骗表述均有边界，'部分平台'等限定词到位，无夸大承诺、无煽动歧视。",
+      "script_spans": [
+        "部分支付平台已上线延时到账和风险提示",
+        "垫付前多问一句官方核实，优先选用带担保或延时的支付渠道，小额救急也留好聊天记录"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": true,
+    "final_score": 0.875,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 2.625,
+    "weighted_average": 2.625,
+    "normalized_score": 0.875,
+    "evaluable_dimension_count": 8,
+    "score_coverage": 1.0,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "rules-285eefb50d12470186c93ee22e3e4bfe",
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0"
+      },
+      {
+        "evaluation_id": "judge-70a762644aa34528bd4f2aabda13a32d",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

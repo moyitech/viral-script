@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-6bc55cd98252461b99dbf1ec548a3744",
+  "run_id": "run-20260902T142518Z-5dc677f4f52e",
+  "trace_sha256": "8d4d46e38799f64a509f9b0de47f190e65d352e16b6afa9c03701f0cd7a6581c",
+  "created_at": "2026-09-03T12:15:52.646744Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "直接回答是否上报，并用私下关心和避免扩散回应了关心与冒犯的区分。",
+      "script_spans": [
+        "先说答案：一般别上报，私下关心通常不算冒犯。",
+        "关心怎么做？午休轻声问句“需要陪你聊聊吗”，给他倒杯水"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，隐私原则、援助渠道和具体做法形成多个有效信息单元。",
+      "script_spans": [
+        "家庭困难算敏感个人信息，法律明文保护隐私，处理要合法正当必要",
+        "不少企业有保密员工援助计划，那是公司买的保密服务",
+        "午休轻声问句“需要陪你聊聊吗”，给他倒杯水"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头立刻抛出具体场景与两难，中段连续补充边界和做法，结尾提问自然，不是硬喊互动。",
+      "script_spans": [
+        "你看到同事在工位偷偷抹泪，要不要马上告诉领导他家出事了？",
+        "关心怎么做？午休轻声问句“需要陪你聊聊吗”"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "有对话感和具体动作，但“又疑你多事”不自然，法律段落术语密集，朗读需重断句。",
+      "script_spans": [
+        "午休轻声问句“需要陪你聊聊吗”，给他倒杯水",
+        "他可能丢尽面子又疑你多事",
+        "家庭困难算敏感个人信息，法律明文保护隐私，处理要合法正当必要，你不是合规处理者"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“关心是陪着不是举报”与“先闭嘴再伸手”简洁可复述，修辞服务边界判断；但“疑你多事”略拗口。",
+      "script_spans": [
+        "关心是陪着不是举报，别把私事散给全员。",
+        "下次遇到，先闭嘴再伸手，你觉得同事真盼你上报吗？",
+        "他可能丢尽面子又疑你多事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "开头、理由、做法和结尾顺序清楚，但法律段落概念堆叠，且“不是举报”把例外边界说窄了。",
+      "script_spans": [
+        "先说答案：一般别上报，私下关心通常不算冒犯。",
+        "关心怎么做？午休轻声问句“需要陪你聊聊吗”，给他倒杯水，这比打小报告暖得多。",
+        "家庭困难算敏感个人信息，法律明文保护隐私，处理要合法正当必要，你不是合规处理者，擅自传话可能侵权。",
+        "关心是陪着不是举报，别把私事散给全员。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "有隐私意识，也给出私下关心和专业渠道；但法律定性过于绝对，且未提示紧急风险例外，仍可能误导观众。",
+      "script_spans": [
+        "真想帮，悄悄提醒他找专业渠道",
+        "家庭困难算敏感个人信息，法律明文保护隐私"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 18.0,
+    "partial_weighted_average": 2.5714285714285716,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.5714285714285716,
+    "judge_normalized_score": 0.8571428571428572
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-7dcb40a92e77448faea6cd13e0c844e9",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}
