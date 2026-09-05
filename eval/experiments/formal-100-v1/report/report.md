@@ -27,7 +27,9 @@
 
 两名评审者独立完成相同 50 条基线文案的盲评。考虑到评审者量尺可能不同，本报告以相对排序
 为主：两位人工按维度转秩后合成的尺度归一化 Spearman 为 0.395。原始评分表已经过样本、
-正文、`run_id` 与 trace SHA-256 一致性校验，尚待匿名化并写入版本化人工结果目录。
+正文、`run_id` 与 trace SHA-256 一致性校验，已按原样写入版本化人工结果目录：
+[moyi 原始评分](../validation/human_review/human_review_evaluated_moyi.csv)、
+[haoran 原始评分](../validation/human_review/human_review_haoran.csv)。
 
 | Judge | 七个主观维度均分 | 相对人工均分差 | 七维总分 Spearman | 含长度八维总分 Spearman |
 | --- | ---: | ---: | ---: | ---: |

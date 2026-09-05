@@ -477,7 +477,7 @@ Hy3 查询规划或 Tavily 请求。
 2. 将严重长度偏差升级为关键约束门控，避免目标 700 字、实际 442 字仍获得 0.9167。
 3. 收紧金融、医疗、政策和安全话题中的绝对化措辞约束，并对合规分歧自动进入复核。
 4. 增加自然低分、跨模型生成和边界样本，重新校准 Rubric，降低满分比例。
-5. 将两份 50 项人工盲评匿名化并版本化保存，补充端到端直接生成组的配对盲评；继续报告
+5. 两份 50 项人工盲评原始 CSV 已版本化保存；补充端到端直接生成组的配对盲评，继续报告
    Judge—人工相对排序相关，不以评审者量尺差异强制制造单一绝对共识分。
 
 ## 11. 数据与复核入口
@@ -501,6 +501,8 @@ Hy3 查询规划或 Tavily 请求。
 - [Hy3 与 GPT-5.6-Luna 双 Judge 对照报告](../eval/experiments/formal-100-judge-comparison-v1/report/comparison.md)
 - [Hy3 与 GLM-5.3-Flash 双 Judge 对照报告](../eval/experiments/formal-100-judge-comparison-glm-5.3-flash-v1/report/comparison.md)
 - [50 项人工盲评模板](../eval/experiments/formal-100-v1/validation/human_review_template.csv)
+- [moyi 人工盲评原始评分](../eval/experiments/formal-100-v1/validation/human_review/human_review_evaluated_moyi.csv)
+- [haoran 人工盲评原始评分](../eval/experiments/formal-100-v1/validation/human_review/human_review_haoran.csv)
 - [单次生成 300 条完整结果表](../eval/experiments/formal-100-e2e-single-shot-v1/results/full_results.csv)
 - [端到端直接生成配对对比报告](../eval/experiments/formal-100-e2e-single-shot-v1/report/comparison.md)
 - [端到端直接生成 300 条配对表](../eval/experiments/formal-100-e2e-single-shot-v1/report/paired_results.csv)
