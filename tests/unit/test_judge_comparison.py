@@ -56,6 +56,28 @@ def _judge_record(run_id: str, trace_sha256: str, scores: tuple[int, int], model
 
 
 class JudgeComparisonTests(unittest.TestCase):
+    def test_gate_blocked_pairs_have_no_score_or_dimension_delta(self) -> None:
+        baseline, single = _workflow_rows(1.0), _workflow_rows(0.9)
+        blocked = single["T001-L280"]
+        blocked.update(gate_failed=True, final_score=None)
+        blocked.update({dimension: None for dimension in DIMENSIONS})
+        summary, rows = comparison._paired_workflows(baseline, single, DIMENSIONS)
+        self.assertEqual(summary["evaluable_pair_count"], 299)
+        self.assertEqual(summary["losses"], 299)
+        self.assertEqual(summary["single_shot_quality"]["gate_failed"], 1)
+        self.assertIsNone(rows[0]["delta_topic_alignment"])
+        self.assertEqual(summary["dimensions"]["topic_alignment"]["declined"], 299)
+
+        from hyscript.evaluation import end_to_end_formal as e2e
+        normalized = [
+            {**row, "paired_result": "unavailable" if row["final_score_delta"] is None else "loss",
+             **{f"delta_{dimension}": row["delta_topic_alignment"] for dimension in e2e._DIMENSIONS}}
+            for row in rows
+        ]
+        e2e_summary = e2e._paired_summary(normalized)
+        self.assertEqual(e2e_summary["evaluable_pair_count"], 299)
+        self.assertEqual(e2e_summary["dimensions"]["topic_alignment"]["declined"], 299)
+
     def test_workflow_comparison_requires_and_scores_300_pairs(self) -> None:
         baseline = _workflow_rows(1.0)
         single_shot = _workflow_rows(0.9)

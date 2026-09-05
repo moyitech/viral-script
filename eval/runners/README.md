@@ -5,11 +5,13 @@ separable phases:
 
 1. read the existing-topic dataset, invoke the shared generation workflow in
    batches, and freeze all intermediate artifacts;
-2. read those frozen artifacts, run rule/Judge/human evaluation, and write
+2. read those frozen artifacts, run reward-hacking and citation gates before
+   rule/Judge quality evaluation, and write
    results linked by `run_id` without modifying generation files.
 
-Command-line wrappers belong in `scripts/`. The Web and API applications must
-not import or invoke these runners.
+Command-line wrappers belong in `scripts/`. Applications may invoke the shared
+formal evaluator only after an explicit creator action against a frozen trace;
+generation never scores automatically. Human review remains a separate diagnostic.
 
 The scoring phase is implemented. Run deterministic rules without loading
 `.env` or calling an external service:
@@ -21,7 +23,7 @@ uv run --no-sync python scripts/run_evaluation.py score \
   --output-dir /tmp/hyscript-eval
 ```
 
-Add the Hy3 Judge explicitly when API-backed evaluation is intended:
+Full evaluation defaults to both gates followed by rules and the Hy3 Judge:
 
 ```bash
 uv run --no-sync python scripts/run_evaluation.py score \
@@ -31,7 +33,10 @@ uv run --no-sync python scripts/run_evaluation.py score \
   --concurrency 2
 ```
 
-Judge requests consume API quota. The shared existing-topic generation workflow
+Both gates use Hy3; citation verification can also use Tavily. A blocked trace
+gets reasons and no quality score. Provider errors remain incomplete and resumable.
+Rules-only and Judge-only runs are component diagnostics, without a final eight-dimensional score.
+The shared existing-topic generation workflow
 is available through `run_live_batch.py`; the formal runner composes its
 research-only mode with frozen-background length replay.
 
@@ -44,3 +49,9 @@ Results resume only under the same input hashes and full evaluation
 fingerprint. Rule-only runs never load `.env`; selecting `judge` loads Hy3
 settings, records every format-repair attempt and accumulates usage across all
 requests.
+
+Existing completed detector records can be supplied with `--reward-gate-cache`
+and `--citation-gate-cache`; missing or mismatched records fail without live fallback.
+`--reuse-results-dir` reuses matching historical rule/Judge records only after both
+gates pass. Formal experiments write `results-gated-v1/` separately from historical
+results. The existing 600 outputs need no new generation, detection, or Judge calls.

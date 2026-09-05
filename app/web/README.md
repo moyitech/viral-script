@@ -6,3 +6,5 @@ the generated script, evidence mapping, and application run trace. A future Web
 UI may expose the same explicit, post-generation quality report as the desktop
 application, but it must score only an already-frozen trace and keep evaluation
 outputs separate from generation artifacts.
+That action must use the shared reward-hacking and citation gates before any
+eight-dimensional score, matching the desktop and formal CLI protocol.

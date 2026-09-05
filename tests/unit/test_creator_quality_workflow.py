@@ -20,6 +20,7 @@ from hyscript.evaluation.models import (
     utc_now_iso,
 )
 from hyscript.workflows import CreatorEvaluationWorkflow
+from test_evaluation_gates import fake_gates
 
 
 class _FakeJudge:
@@ -136,6 +137,7 @@ class CreatorQualityWorkflowTests(unittest.IsolatedAsyncioTestCase):
             workflow = CreatorEvaluationWorkflow(
                 _settings(directory),
                 judge_evaluator=judge,
+                gate_evaluator=fake_gates(),
             )
 
             first = await workflow.score_trace(trace_path)
@@ -145,6 +147,7 @@ class CreatorQualityWorkflowTests(unittest.IsolatedAsyncioTestCase):
             self.assertFalse(first.cached)
             self.assertTrue(second.cached)
             self.assertEqual(len(first.dimensions), 8)
+            self.assertTrue(all(check["passed"] for check in first.gate_checks.values()))
             self.assertIn("朗读顺口度", first.oral_subscores)
             self.assertEqual(first.judge_groups[0]["summary"], "内容主线基本成立。")
             self.assertNotIn("request_ids", first.judge_groups[0])
@@ -155,3 +158,23 @@ class CreatorQualityWorkflowTests(unittest.IsolatedAsyncioTestCase):
                     for path in _settings(directory).runtime.evaluation_dir.rglob("*.json")
                 )
             )
+
+    async def test_blocked_report_needs_no_judge_record_and_is_cached(self) -> None:
+        with TemporaryDirectory() as directory_name:
+            directory = Path(directory_name)
+            trace_path = PROJECT_ROOT / "eval/traces/example_trace.json"
+            judge = _FakeJudge()
+            workflow = CreatorEvaluationWorkflow(
+                _settings(directory), judge_evaluator=judge,
+                gate_evaluator=fake_gates(citation=True),
+            )
+            first = await workflow.score_trace(trace_path)
+            second = await workflow.score_trace(trace_path)
+            self.assertEqual(judge.calls, 0)
+            self.assertTrue(first.gate_failed)
+            self.assertIsNone(first.score_percent)
+            self.assertIsNone(first.judge_model)
+            self.assertEqual(first.dimensions, ())
+            self.assertIn("未进行八维评分", first.summary)
+            self.assertFalse(first.gate_checks["citation"]["passed"])
+            self.assertTrue(second.cached)

@@ -1,0 +1,310 @@
+{
+  "schema_version": "1.0",
+  "evaluation_id": "eval-20260905T123407.123518Z-7f77988d",
+  "started_at": "2026-09-05T12:34:07.123518Z",
+  "last_started_at": "2026-09-05T12:34:07.123518Z",
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "evaluators": [
+    "rules",
+    "judge"
+  ],
+  "fingerprint": {
+    "schema_version": "1.0",
+    "rubric_sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab",
+    "evaluators": [
+      {
+        "kind": "gates",
+        "name": "reward-hacking-and-citation-gates",
+        "version": "1.0.0",
+        "model": null,
+        "prompt_version": null,
+        "config": {
+          "reward_hacking": {
+            "name": "hy3-reward-hacking-detector",
+            "version": "1.0.0",
+            "model": "hy3",
+            "prompt_version": "short-video-reward-hacking-v1",
+            "prompt_sha256": "4639868e249d728aeec72da5a9c994265663d32a8ebb04f104221ba23c75a3fd",
+            "reference_implementation_sha256": "b0e32b1b86bce7f84d8678c652ba1cfafb038e17bfd3db204c21ffda8d8caab9",
+            "config": {
+              "repeated_character_threshold": 10,
+              "max_format_attempts": 2,
+              "max_script_characters": 30000,
+              "reasoning_effort": "no_think"
+            },
+            "sampling_parameters": {
+              "temperature": 0.0,
+              "top_p": 1.0
+            },
+            "sha256": "9a1cb5a8dad3a9e2d7d2bd054f1ad01bf118d787a4953ec508d13b2bdbb36adc"
+          },
+          "citation": {
+            "name": "hy3-tavily-explicit-citation-verifier",
+            "version": "1.1.0",
+            "model": "hy3",
+            "prompt_version": "explicit-citation-verification-v1.1",
+            "prompt_sha256": "c727071cb767495774dce2ab0528f573711628c34c5e7651867c75a81c1bf144",
+            "citation_signal_sha256": "16dcfe49a59053f08f9df036ca5785c2660a28c012e6ffa444f4f38cbcbce609",
+            "config": {
+              "max_candidates": 3,
+              "search_results_per_query": 5,
+              "max_format_attempts": 2,
+              "max_evidence_characters": 3000,
+              "max_script_characters": 30000,
+              "reasoning_effort": "no_think"
+            },
+            "sampling_parameters": {
+              "temperature": 0.0,
+              "top_p": 1.0
+            },
+            "search_parameters": {
+              "provider": "tavily",
+              "search_depth": "basic",
+              "topic": "general",
+              "max_results": 20,
+              "base_url_sha256": "088debf43e9156779928af390825f9e74a539b024e331eebe3b957dd4399067f"
+            },
+            "search_concurrency": 8,
+            "sha256": "2715514fba11467351498952a07e059e128f84edd3b1584d6246237dbb5f99f7"
+          }
+        },
+        "sha256": "bed1d578520d3044118826e771980c83e00f3596f38f5b05bcdb1ba67f3ee16e"
+      },
+      {
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0",
+        "model": "hy3",
+        "prompt_version": "script-quality-grounded-groups-v3.3",
+        "config": {
+          "request": {
+            "reasoning_effort": "high",
+            "max_format_attempts": 2,
+            "max_script_characters": 30000,
+            "max_context_string_characters": 4000,
+            "max_context_list_items": 50,
+            "max_prompt_characters": 60000
+          },
+          "sampling_parameters": {
+            "temperature": 0.0,
+            "top_p": 1.0
+          }
+        },
+        "sha256": "781b2b335b54222a72d5c7d40dc776a8f2d76ebea76d565cd375053880a7b812"
+      },
+      {
+        "kind": "rules",
+        "name": "deterministic-script-rules",
+        "version": "1.6.0",
+        "model": null,
+        "prompt_version": null,
+        "config": {
+          "length_tolerance_ratio": 0.1,
+          "repeated_character_threshold": 10,
+          "repeated_sentence_threshold": 3
+        },
+        "sha256": "1b1ce33da1d42ad106dba6cb54307c58e2801dbb8776a0d997ff8a5a466d2c95"
+      }
+    ],
+    "aggregator": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {
+        "gates": {
+          "kind": "gates",
+          "name": "reward-hacking-and-citation-gates",
+          "version": "1.0.0",
+          "model": null,
+          "prompt_version": null,
+          "config": {
+            "reward_hacking": {
+              "name": "hy3-reward-hacking-detector",
+              "version": "1.0.0",
+              "model": "hy3",
+              "prompt_version": "short-video-reward-hacking-v1",
+              "prompt_sha256": "4639868e249d728aeec72da5a9c994265663d32a8ebb04f104221ba23c75a3fd",
+              "reference_implementation_sha256": "b0e32b1b86bce7f84d8678c652ba1cfafb038e17bfd3db204c21ffda8d8caab9",
+              "config": {
+                "repeated_character_threshold": 10,
+                "max_format_attempts": 2,
+                "max_script_characters": 30000,
+                "reasoning_effort": "no_think"
+              },
+              "sampling_parameters": {
+                "temperature": 0.0,
+                "top_p": 1.0
+              },
+              "sha256": "9a1cb5a8dad3a9e2d7d2bd054f1ad01bf118d787a4953ec508d13b2bdbb36adc"
+            },
+            "citation": {
+              "name": "hy3-tavily-explicit-citation-verifier",
+              "version": "1.1.0",
+              "model": "hy3",
+              "prompt_version": "explicit-citation-verification-v1.1",
+              "prompt_sha256": "c727071cb767495774dce2ab0528f573711628c34c5e7651867c75a81c1bf144",
+              "citation_signal_sha256": "16dcfe49a59053f08f9df036ca5785c2660a28c012e6ffa444f4f38cbcbce609",
+              "config": {
+                "max_candidates": 3,
+                "search_results_per_query": 5,
+                "max_format_attempts": 2,
+                "max_evidence_characters": 3000,
+                "max_script_characters": 30000,
+                "reasoning_effort": "no_think"
+              },
+              "sampling_parameters": {
+                "temperature": 0.0,
+                "top_p": 1.0
+              },
+              "search_parameters": {
+                "provider": "tavily",
+                "search_depth": "basic",
+                "topic": "general",
+                "max_results": 20,
+                "base_url_sha256": "088debf43e9156779928af390825f9e74a539b024e331eebe3b957dd4399067f"
+              },
+              "search_concurrency": 8,
+              "sha256": "2715514fba11467351498952a07e059e128f84edd3b1584d6246237dbb5f99f7"
+            }
+          },
+          "sha256": "bed1d578520d3044118826e771980c83e00f3596f38f5b05bcdb1ba67f3ee16e"
+        }
+      },
+      "sha256": "184f6c833dcc1522052317ddcedba555e7d24016972b6d69ed7879a80598930e"
+    },
+    "sha256": "b6228e72d806c849ae44a0c94be274bbbfdcabd180f0d6fceeef03f0f7ed5441"
+  },
+  "concurrency": 8,
+  "trace_files": [
+    "D01-004.json",
+    "D02-008.json",
+    "D03-012.json",
+    "D04-016.json",
+    "D05-020.json",
+    "D06-024.json",
+    "D07-028.json",
+    "D08-032.json",
+    "D09-036.json",
+    "D10-040.json",
+    "D11-044.json",
+    "D12-048.json",
+    "D13-052.json",
+    "D14-056.json",
+    "D15-060.json",
+    "D16-064.json",
+    "D17-068.json",
+    "D18-072.json",
+    "D19-076.json",
+    "D20-080.json"
+  ],
+  "completed_at": "2026-09-05T12:34:07.176910Z",
+  "inputs": [
+    {
+      "source": "D01-004.json",
+      "run_id": "validation-D01-004",
+      "trace_sha256": "5c1f2caa3797e2a95d115d41d0d2c63a025fe4a501b6cc85c867c6354080b065"
+    },
+    {
+      "source": "D02-008.json",
+      "run_id": "validation-D02-008",
+      "trace_sha256": "7c8d8961afac050d2e1fe59e03f332fcd74c2fb2d4a2f341efb39342139b7e93"
+    },
+    {
+      "source": "D03-012.json",
+      "run_id": "validation-D03-012",
+      "trace_sha256": "bacec5183bbb09bf12215160d1f06e6a63a95df57dbfeb3310270a53c8a280e2"
+    },
+    {
+      "source": "D04-016.json",
+      "run_id": "validation-D04-016",
+      "trace_sha256": "066921547472cfd339c9c87e9b83f2d04e506f5cb715e269087662526c0cc1de"
+    },
+    {
+      "source": "D05-020.json",
+      "run_id": "validation-D05-020",
+      "trace_sha256": "f543db136a26841a4b09b69afd67529c7c19c69e304b939279d39b19026578a7"
+    },
+    {
+      "source": "D06-024.json",
+      "run_id": "validation-D06-024",
+      "trace_sha256": "4dde4237451b2f01c3049a5cbd658a5584d898f1e88ebdba2fa8155012568abc"
+    },
+    {
+      "source": "D07-028.json",
+      "run_id": "validation-D07-028",
+      "trace_sha256": "1316ddd523afcbafd9fee9b9d9dfb926ded7c19093ae4e1b0fe3c67081292305"
+    },
+    {
+      "source": "D08-032.json",
+      "run_id": "validation-D08-032",
+      "trace_sha256": "d2173d5cd76d75b1d22ccb5599f43283539979cc88abc2d2b9a34dd8a499e7c5"
+    },
+    {
+      "source": "D09-036.json",
+      "run_id": "validation-D09-036",
+      "trace_sha256": "5dee16d47d47672192992c38822d5a574ec684bb9bf9181c44f4548dbed55b39"
+    },
+    {
+      "source": "D10-040.json",
+      "run_id": "validation-D10-040",
+      "trace_sha256": "1f1704e903fda2a2b338aa2007e5a3d50702d3a0ac8eb5506116737829aab0ee"
+    },
+    {
+      "source": "D11-044.json",
+      "run_id": "validation-D11-044",
+      "trace_sha256": "a8d6981c611d3a0a95080d543f1d3e7485aa39ae7020b6018aeea32e47dd6362"
+    },
+    {
+      "source": "D12-048.json",
+      "run_id": "validation-D12-048",
+      "trace_sha256": "ea91d4a7af19e9c6a852b69f23ac27bde7c69c7670a0ece98a8f0cb7dd3067be"
+    },
+    {
+      "source": "D13-052.json",
+      "run_id": "validation-D13-052",
+      "trace_sha256": "3fccceb780ca0334d21d87a0a478493a6b32318cec6f34f964558b1891b30597"
+    },
+    {
+      "source": "D14-056.json",
+      "run_id": "validation-D14-056",
+      "trace_sha256": "bc31c6af27bf05a16da00a5497065694f01974bbf84fb2abfeea5b9a5203debe"
+    },
+    {
+      "source": "D15-060.json",
+      "run_id": "validation-D15-060",
+      "trace_sha256": "da88cc69d18ea974d0a6fe587149730cb75d2f83ae93b8d8d3fa57073b6ab5b6"
+    },
+    {
+      "source": "D16-064.json",
+      "run_id": "validation-D16-064",
+      "trace_sha256": "4a3fef99cd2d8f4862454aa6cfbd095131a46599fcbd0a0f4355ea43cf18dcf3"
+    },
+    {
+      "source": "D17-068.json",
+      "run_id": "validation-D17-068",
+      "trace_sha256": "d3953957d12646fc912ee08e5ff8454dbb4bee3e80ca0448d15d0b58d8f68091"
+    },
+    {
+      "source": "D18-072.json",
+      "run_id": "validation-D18-072",
+      "trace_sha256": "0d94e323d3a4fb9524aca134d656a5508bcb6de033f193b63de9fed90f643d35"
+    },
+    {
+      "source": "D19-076.json",
+      "run_id": "validation-D19-076",
+      "trace_sha256": "406d7716dda3050064c324500238518c962e02c504f23aaf430922c6d4708ced"
+    },
+    {
+      "source": "D20-080.json",
+      "run_id": "validation-D20-080",
+      "trace_sha256": "9aae87bf245d90fe8e360047b7967d891a895ecb365eefb1c3a6e70ebf80cdcc"
+    }
+  ],
+  "status": "completed"
+}

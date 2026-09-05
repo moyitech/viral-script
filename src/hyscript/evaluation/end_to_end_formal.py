@@ -673,6 +673,7 @@ def score_e2e_experiment(
     if selection["selected_count"] != EXPECTED_TRACE_COUNT:
         raise ValueError("All 300 end-to-end traces must be frozen before scoring.")
     rubric = (experiment_dir / config["rubric"]).resolve()
+    from .gates import current_results, gated_scoring_options
     return_code = _run_command(
         [
             sys.executable,
@@ -684,8 +685,7 @@ def score_e2e_experiment(
             str(rubric),
             "--evaluators",
             "rules,judge",
-            "--output-dir",
-            str(experiment_dir / "results"),
+            *gated_scoring_options(experiment_dir / "results", experiment_dir),
             "--concurrency",
             str(judge_concurrency),
             "--reasoning-effort",
@@ -694,9 +694,9 @@ def score_e2e_experiment(
     )
     if return_code:
         raise RuntimeError("End-to-end scoring is incomplete; rerun score to resume it.")
-    _assert_result_coverage(experiment_dir / "results", EXPECTED_TRACE_COUNT, "combined.json")
-    baseline_fingerprints = _judge_fingerprints(baseline_dir.resolve() / "results")
-    candidate_fingerprints = _judge_fingerprints(experiment_dir / "results")
+    _assert_result_coverage(current_results(experiment_dir / "results"), EXPECTED_TRACE_COUNT, "combined.json")
+    baseline_fingerprints = _judge_fingerprints(current_results(baseline_dir.resolve() / "results"))
+    candidate_fingerprints = _judge_fingerprints(current_results(experiment_dir / "results"))
     if len(baseline_fingerprints) != 1 or candidate_fingerprints != baseline_fingerprints:
         raise RuntimeError("Candidate Judge fingerprint differs from the baseline.")
 
@@ -714,17 +714,24 @@ def repeat_e2e_judge(
     selection = select_e2e_traces(experiment_dir)
     if selection["selected_count"] != EXPECTED_TRACE_COUNT:
         raise ValueError("All 300 end-to-end traces must be frozen before Judge repeat.")
-    _assert_result_coverage(experiment_dir / "results", EXPECTED_TRACE_COUNT, "hy3_judge.json")
+    from .gates import current_results, passed_trace_manifest
+    first_results = current_results(experiment_dir / "results")
+    _assert_result_coverage(first_results, EXPECTED_TRACE_COUNT, "combined.json")
     rubric = (experiment_dir / config["rubric"]).resolve()
-    output = experiment_dir / "validation/stability/repeat-001"
+    output = experiment_dir / "validation/stability/repeat-gated-v1"
     results = output / "results"
+    selected_manifest = passed_trace_manifest(
+        experiment_dir / "generation/trace_manifest.json", first_results,
+        output / "trace_manifest.json",
+    )
+    selected_count = len(load_json(selected_manifest)["tasks"])
     return_code = _run_command(
         [
             sys.executable,
             str(PROJECT_ROOT / "scripts/run_evaluation.py"),
             "score",
             "--trace-manifest",
-            str(experiment_dir / "generation/trace_manifest.json"),
+            str(selected_manifest),
             "--rubric",
             str(rubric),
             "--evaluators",
@@ -739,12 +746,12 @@ def repeat_e2e_judge(
     )
     if return_code:
         raise RuntimeError("End-to-end Judge repeat is incomplete; rerun repeat to resume it.")
-    _assert_result_coverage(results, EXPECTED_TRACE_COUNT, "hy3_judge.json")
+    _assert_result_coverage(results, selected_count, "hy3_judge.json")
     return export_judge_stability(
-        experiment_dir / "results",
+        first_results,
         results,
         output,
-        trace_manifest=experiment_dir / "generation/trace_manifest.json",
+        trace_manifest=selected_manifest,
     )
 
 
@@ -771,7 +778,8 @@ def _usage_by_stage(trace: dict[str, Any], prefix: str) -> int:
 
 def _candidate_rows(experiment_dir: Path) -> list[dict[str, Any]]:
     manifest = load_json(experiment_dir / "generation/trace_manifest.json")
-    records = _combined_records(experiment_dir / "results")
+    from .gates import current_results
+    records = _combined_records(current_results(experiment_dir / "results"))
     rows: list[dict[str, Any]] = []
     for task in manifest.get("tasks", []):
         record = records.get(task["run_id"])
@@ -1007,13 +1015,21 @@ def _attempt_summary(manifest: dict[str, Any]) -> dict[str, Any]:
 
 
 def _baseline_rows(baseline_dir: Path) -> list[dict[str, Any]]:
+    from .gates import current_results
     manifest = load_json(baseline_dir / "generation/trace_manifest.json")
     tasks = {item["task_id"]: item for item in manifest.get("tasks", [])}
     if len(tasks) != EXPECTED_TRACE_COUNT:
         raise ValueError("Baseline trace manifest must contain exactly 300 tasks.")
     rows: list[dict[str, Any]] = []
+    gated = _combined_records(current_results(baseline_dir / "results"))
     for raw in _read_csv(baseline_dir / "results/full_results.csv"):
         row: dict[str, Any] = dict(raw)
+        record = gated.get(raw["run_id"])
+        if record and "attack_gates" in record.get("metadata", {}):
+            scores = {item["dimension_id"]: item["score"] for item in record["dimension_scores"]}
+            row.update({dimension: scores.get(dimension) for dimension in _DIMENSIONS})
+            row["final_score"] = record["metrics"]["final_score"]
+            row["gate_failed"] = record["gate_failed"]
         for key in ("target_length", *_DIMENSIONS):
             if row.get(key) not in (None, ""):
                 row[key] = int(row[key])
@@ -1171,11 +1187,11 @@ def _paired_summary(rows: Sequence[dict[str, Any]]) -> dict[str, Any]:
         "dimensions": {
             dimension: {
                 "mean_delta": _mean(
-                    [float(row[f"delta_{dimension}"]) for row in rows]
+                    [float(row[f"delta_{dimension}"]) for row in rows if row[f"delta_{dimension}"] is not None]
                 ),
-                "improved": sum(row[f"delta_{dimension}"] > 0 for row in rows),
+                "improved": sum(row[f"delta_{dimension}"] > 0 for row in rows if row[f"delta_{dimension}"] is not None),
                 "unchanged": sum(row[f"delta_{dimension}"] == 0 for row in rows),
-                "declined": sum(row[f"delta_{dimension}"] < 0 for row in rows),
+                "declined": sum(row[f"delta_{dimension}"] < 0 for row in rows if row[f"delta_{dimension}"] is not None),
             }
             for dimension in _DIMENSIONS
         },
@@ -1238,8 +1254,13 @@ def export_e2e_report(
     manifest = select_e2e_traces(experiment_dir)
     if manifest["selected_count"] != EXPECTED_TRACE_COUNT:
         raise ValueError("Report requires 300 selected end-to-end traces.")
-    _assert_result_coverage(experiment_dir / "results", EXPECTED_TRACE_COUNT, "combined.json")
-    stability_path = experiment_dir / "validation/stability/repeat-001/summary.json"
+    from .gates import current_results
+    active_results = current_results(experiment_dir / "results")
+    _assert_result_coverage(active_results, EXPECTED_TRACE_COUNT, "combined.json")
+    stability_dir = experiment_dir / "validation/stability/repeat-gated-v1"
+    if not (stability_dir / "summary.json").is_file():
+        stability_dir = experiment_dir / "validation/stability/repeat-001"
+    stability_path = stability_dir / "summary.json"
     if not stability_path.is_file():
         raise ValueError("Report requires a completed Judge repeat summary.")
 
@@ -1249,14 +1270,17 @@ def export_e2e_report(
     paired = _paired_summary(paired_rows)
     candidate_quality = _quality_summary(candidate_rows)
     baseline_quality = _quality_summary(baseline_rows)
-    first_judge = _judge_usage(experiment_dir / "results")
+    # Reused scores retain the historical cost of all original requests,
+    # including outputs now rejected by the prerequisite gates.
+    usage_results = experiment_dir / "results" if (active_results / "replay_sources.json").is_file() else active_results
+    first_judge = _judge_usage(usage_results)
     first_judge["resume"] = _evaluation_resume_summary(
-        experiment_dir / "results", EXPECTED_TRACE_COUNT
+        usage_results, len(list(usage_results.glob("items/*/hy3_judge.json")))
     )
-    repeat_results = experiment_dir / "validation/stability/repeat-001/results"
+    repeat_results = stability_dir / "results"
     repeat_judge = _judge_usage(repeat_results)
     repeat_judge["resume"] = _evaluation_resume_summary(
-        repeat_results, EXPECTED_TRACE_COUNT
+        repeat_results, len(list(repeat_results.glob("items/*/hy3_judge.json")))
     )
     candidate_resources = {
         "selected_research_hy3_tokens": sum(
@@ -1322,7 +1346,7 @@ def export_e2e_report(
     report_dir = experiment_dir / "report"
     write_json(report_dir / "comparison_summary.json", summary)
     atomic_write_text(
-        experiment_dir / "results/full_results.csv",
+        active_results / "full_results.csv",
         _csv_text(candidate_rows),
     )
     atomic_write_text(report_dir / "paired_results.csv", _csv_text(paired_rows))
@@ -1336,7 +1360,7 @@ def export_e2e_report(
         "",
         "## 完整性与配置",
         "",
-        f"- 配对样本：{paired['evaluable_pair_count']}/{paired['pair_count']}",
+        f"- 双方通过门控的配对样本：{paired['evaluable_pair_count']}/{paired['pair_count']}",
         "- 生成方式：复用基线 100 份冻结研究快照，每个 topic/length 只执行一次内容生成；"
         "仅 JSON 格式错误允许无上限、内容保持不变的格式修复。",
         "- 来源研究目标字数为 450；生成目标字数为 280/450/700。",
@@ -1345,7 +1369,10 @@ def export_e2e_report(
         "",
         "## 质量对比",
         "",
-        "| 指标 | 三候选主编基线 | 端到端直接生成 | 差值 |",
+        "所有成稿均先经过 Reward-hacking 与引用风险门控；通过者才计入八维评分。"
+        "组均值分别统计各组通过者，配对差值仅统计双方通过的样本。",
+        "",
+        "| 指标 | 三候选主编基线 | 端到端直接生成 | 配对差值 |",
         "| --- | ---: | ---: | ---: |",
         f"| 平均最终分 | {baseline_mean:.6f} | {candidate_mean:.6f} | {paired['mean_delta']:+.6f} |",
         f"| 门控失败 | {baseline_quality['gate_failed']} | {candidate_quality['gate_failed']} | "
@@ -1356,7 +1383,7 @@ def export_e2e_report(
         "",
         "### 分维度",
         "",
-        "| 维度 | 基线均分 | 单次生成均分 | 平均差值 | 改善/不变/下降 |",
+        "| 维度 | 基线通过者均分 | 单次生成通过者均分 | 配对平均差值 | 配对改善/不变/下降 |",
         "| --- | ---: | ---: | ---: | ---: |",
     ]
     for dimension in _DIMENSIONS:
@@ -1435,8 +1462,8 @@ def export_e2e_report(
             "",
             "## Judge 内部一致性",
             "",
-            "以下按生成流程拆分的结果仅作分组诊断；正式主结果应将两组 600 条冻结输出"
-            "合并后统一计算。",
+            "以下为已完成的 Judge 组件重复评分诊断，不作为双门控后的质量均值或合格率。"
+            "各组记录数量以对应稳定性汇总为准。",
             "",
         ]
     )

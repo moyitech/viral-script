@@ -180,10 +180,20 @@ def _validate_result_set(
     require_combined: bool,
     expected_model: str | None = None,
     expected_effort: str | None = None,
+    allowed_missing: set[str] | None = None,
 ) -> dict[str, Any]:
     records = _judge_records(results_dir)
     expected_by_run = {item["run_id"]: item for item in items.values()}
-    if set(records) != set(expected_by_run):
+    gated_runs = set(allowed_missing or ())
+    if require_combined:
+        for path in results_dir.glob("items/*/combined.json"):
+            record = load_json(path)
+            if record.get("gate_failed") and record.get("metadata", {}).get("attack_gates"):
+                expected = expected_by_run.get(record["run_id"])
+                if expected is None or record.get("trace_sha256") != expected["trace_sha256"]:
+                    raise ValueError("Gate result does not match the comparison trace manifest.")
+                gated_runs.add(record["run_id"])
+    if not set(records) <= set(expected_by_run) or not (set(expected_by_run) - gated_runs) <= set(records):
         raise ValueError(
             f"Judge coverage differs from the frozen manifest in {results_dir}: "
             f"expected={len(expected_by_run)} actual={len(records)}"
@@ -221,6 +231,7 @@ def _validate_result_set(
         raise ValueError(f"Evaluation manifest or summary is missing: {results_dir}")
     return {
         "record_count": len(records),
+        "gated_run_ids": sorted(gated_runs),
         "judge_fingerprint": fingerprint,
         "manifest_sha256": sha256_file(manifest),
         "summary_sha256": sha256_file(summary),
@@ -269,6 +280,10 @@ def _source_descriptor(
         != repeat["judge_fingerprint"]["sha256"]
     ):
         raise ValueError(f"Hy3 first and repeat Judge fingerprints differ: {source_experiment}")
+    # Keep legacy source locks byte-compatible when there were no attack gates.
+    for result in (first, repeat):
+        if not result.get("gated_run_ids"):
+            result.pop("gated_run_ids", None)
     return {
         "experiment_dir": _relative(source_experiment, experiment_dir),
         "experiment_sha256": sha256_file(experiment_config),
@@ -444,7 +459,8 @@ def _candidate_results(
     pass_number: int,
     candidate: CandidateJudgeSpec,
 ) -> Path:
-    return (
+    from .gates import current_results
+    return current_results(
         experiment_dir
         / "results"
         / source_name
@@ -463,18 +479,30 @@ def _score_source(
     source = config["sources"][source_name]
     candidate = _candidate_spec(config)
     evaluators = "rules,judge" if pass_number == 1 else "judge"
+    from .gates import gated_scoring_options, passed_trace_manifest
+    source_manifest = _resolve(experiment_dir, source["trace_manifest"])
+    legacy = experiment_dir / "results" / source_name / candidate.key / f"pass-{pass_number:03d}"
+    if pass_number == 1:
+        output_options = gated_scoring_options(legacy, source_manifest.parent.parent)
+    else:
+        selected = experiment_dir / "results" / source_name / candidate.key / "passed_trace_manifest.json"
+        source_manifest = passed_trace_manifest(
+            source_manifest, _candidate_results(experiment_dir, source_name, 1, candidate), selected,
+        )
+        output_options = ["--output-dir", str(legacy.with_name(legacy.name + "-gated-v1"))]
+        if (legacy / "manifest.json").is_file():
+            output_options.extend(["--reuse-results-dir", str(legacy)])
     arguments = [
         sys.executable,
         str(PROJECT_ROOT / "scripts/run_evaluation.py"),
         "score",
         "--trace-manifest",
-        str(_resolve(experiment_dir, source["trace_manifest"])),
+        str(source_manifest),
         "--rubric",
         str(_resolve(experiment_dir, config["rubric"])),
         "--evaluators",
         evaluators,
-        "--output-dir",
-        str(_candidate_results(experiment_dir, source_name, pass_number, candidate)),
+        *output_options,
         "--concurrency",
         str(JUDGE_CONCURRENCY),
         "--judge-model-id",
@@ -527,6 +555,7 @@ def repeat_comparison(experiment_dir: Path) -> None:
             require_combined=False,
             expected_model=candidate.model_id,
             expected_effort=candidate.reasoning_effort,
+            allowed_missing=set(first["gated_run_ids"]),
         )
         if (
             first["judge_fingerprint"]["sha256"]
@@ -553,6 +582,7 @@ def _combined_rows(
     results_dir: Path,
     manifest: dict[str, dict[str, Any]],
     dimensions: tuple[str, ...],
+    gate_results_dir: Path | None = None,
 ) -> dict[str, dict[str, Any]]:
     records: dict[str, dict[str, Any]] = {}
     for path in results_dir.glob("items/*/combined.json"):
@@ -565,8 +595,15 @@ def _combined_rows(
         record = records.get(task["run_id"])
         if record is None or record.get("trace_sha256") != task["trace_sha256"]:
             raise ValueError(f"Missing or mismatched combined result for {task_id}")
+        if gate_results_dir is not None:
+            gate_result = load_json(gate_results_dir / "items" / task["run_id"] / "combined.json")
+            if gate_result.get("trace_sha256") != task["trace_sha256"]:
+                raise ValueError(f"Shared gate trace hash differs for {task_id}")
+            if gate_result.get("gate_failed"):
+                record = {**record, "gate_failed": True, "dimension_scores": [],
+                          "metrics": {**record.get("metrics", {}), "final_score": None}}
         scores = _scores(record)
-        if set(scores) != set(dimensions):
+        if set(scores) != set(dimensions) and not record.get("gate_failed"):
             raise ValueError(f"Combined dimension coverage differs for {task_id}")
         rows[task_id] = {
             "task_id": task_id,
@@ -578,7 +615,7 @@ def _combined_rows(
             "trace_sha256": task["trace_sha256"],
             "gate_failed": bool(record.get("gate_failed")),
             "final_score": record.get("metrics", {}).get("final_score"),
-            **scores,
+            **{dimension: scores.get(dimension) for dimension in dimensions},
         }
     return rows
 
@@ -602,7 +639,7 @@ def _quality_summary(
         "gate_failed": sum(bool(row["gate_failed"]) for row in rows.values()),
         "final_score_mean": _mean(final_scores),
         "dimensions": {
-            dimension: _mean([float(row[dimension]) for row in rows.values()])
+            dimension: _mean([float(row[dimension]) for row in rows.values() if row[dimension] is not None])
             for dimension in dimensions
         },
     }
@@ -644,7 +681,10 @@ def _paired_workflows(
         for dimension in dimensions:
             row[f"baseline_{dimension}"] = first[dimension]
             row[f"single_shot_{dimension}"] = second[dimension]
-            row[f"delta_{dimension}"] = second[dimension] - first[dimension]
+            row[f"delta_{dimension}"] = (
+                second[dimension] - first[dimension]
+                if first[dimension] is not None and second[dimension] is not None else None
+            )
         rows.append(row)
     evaluable_rows = [row for row in rows if row["final_score_delta"] is not None]
     deltas = [float(row["final_score_delta"]) for row in evaluable_rows]
@@ -667,11 +707,11 @@ def _paired_workflows(
         "dimensions": {
             dimension: {
                 "mean_delta": _mean(
-                    [float(row[f"delta_{dimension}"]) for row in rows]
+                    [float(row[f"delta_{dimension}"]) for row in rows if row[f"delta_{dimension}"] is not None]
                 ),
-                "improved": sum(row[f"delta_{dimension}"] > 0 for row in rows),
+                "improved": sum(row[f"delta_{dimension}"] > 0 for row in rows if row[f"delta_{dimension}"] is not None),
                 "unchanged": sum(row[f"delta_{dimension}"] == 0 for row in rows),
-                "declined": sum(row[f"delta_{dimension}"] < 0 for row in rows),
+                "declined": sum(row[f"delta_{dimension}"] < 0 for row in rows if row[f"delta_{dimension}"] is not None),
             }
             for dimension in dimensions
         },
@@ -690,8 +730,15 @@ def _cross_judge(
     hy3 = _judge_records(hy3_dir)
     candidate = _judge_records(candidate_dir)
     expected_runs = {item["run_id"] for item in manifest.values()}
-    if set(hy3) != expected_runs or set(candidate) != expected_runs:
+    blocked = set()
+    for directory in (hy3_dir, candidate_dir):
+        for path in directory.glob("items/*/combined.json"):
+            record = load_json(path)
+            if record.get("gate_failed"):
+                blocked.add(record["run_id"])
+    if (expected_runs - blocked) - set(hy3) or (expected_runs - blocked) - set(candidate):
         raise ValueError("Cross-Judge comparison does not cover the same frozen traces.")
+    manifest = {key: item for key, item in manifest.items() if item["run_id"] not in blocked}
     rows: list[dict[str, Any]] = []
     hy3_totals: list[float] = []
     candidate_totals: list[float] = []
@@ -838,6 +885,7 @@ def _main_shortfalls(
 def export_comparison_report(experiment_dir: Path) -> dict[str, Any]:
     """Export canonical workflow, cross-Judge, and repeatability comparisons."""
 
+    from .gates import current_results, passed_trace_manifest
     experiment_dir = experiment_dir.resolve()
     config, manifests = _load_experiment(experiment_dir, validate_endpoint=False)
     candidate = _candidate_spec(config)
@@ -863,7 +911,7 @@ def export_comparison_report(experiment_dir: Path) -> dict[str, Any]:
         candidate_second_dir = _candidate_results(
             experiment_dir, source_name, 2, candidate
         )
-        _validate_result_set(
+        first_validation = _validate_result_set(
             candidate_first_dir,
             manifests[source_name],
             require_combined=True,
@@ -876,9 +924,14 @@ def export_comparison_report(experiment_dir: Path) -> dict[str, Any]:
             require_combined=False,
             expected_model=candidate.model_id,
             expected_effort=candidate.reasoning_effort,
+            allowed_missing=set(first_validation["gated_run_ids"]),
         )
-        hy3_first_dir = _resolve(experiment_dir, source["hy3_first_results"])
+        hy3_first_dir = current_results(_resolve(experiment_dir, source["hy3_first_results"]))
         hy3_repeat_dir = _resolve(experiment_dir, source["hy3_repeat_results"])
+        selected_manifest = passed_trace_manifest(
+            _resolve(experiment_dir, source["trace_manifest"]), hy3_first_dir,
+            report_dir / f"passed-{source_name}.json",
+        )
         cross_summaries[source_name], cross_rows[source_name] = _cross_judge(
             hy3_first_dir,
             candidate_first_dir,
@@ -889,7 +942,7 @@ def export_comparison_report(experiment_dir: Path) -> dict[str, Any]:
         hy3_stability, hy3_stability_rows = compare_judge_runs(
             hy3_first_dir,
             hy3_repeat_dir,
-            trace_manifest=_resolve(experiment_dir, source["trace_manifest"]),
+            trace_manifest=selected_manifest,
         )
         stability["hy3"][source_name] = hy3_stability
         stability_inputs["hy3"][source_name] = (
@@ -899,7 +952,7 @@ def export_comparison_report(experiment_dir: Path) -> dict[str, Any]:
         candidate_stability, candidate_stability_rows = compare_judge_runs(
             candidate_first_dir,
             candidate_second_dir,
-            trace_manifest=_resolve(experiment_dir, source["trace_manifest"]),
+            trace_manifest=selected_manifest,
         )
         stability[candidate.key][source_name] = candidate_stability
         stability_inputs[candidate.key][source_name] = (
@@ -910,7 +963,7 @@ def export_comparison_report(experiment_dir: Path) -> dict[str, Any]:
             candidate_first_dir,
             candidate_second_dir,
             report_dir / "stability" / f"{candidate.key}-{source_name}",
-            trace_manifest=_resolve(experiment_dir, source["trace_manifest"]),
+            trace_manifest=selected_manifest,
         )
 
     for judge_name, comparisons in stability_inputs.items():
@@ -939,10 +992,12 @@ def export_comparison_report(experiment_dir: Path) -> dict[str, Any]:
                 experiment_dir, "single_shot", 1, candidate
             )
         baseline_rows = _combined_rows(
-            baseline_dir, manifests["baseline"], dimensions
+            current_results(baseline_dir), manifests["baseline"], dimensions,
+            gate_results_dir=current_results(_resolve(experiment_dir, config["sources"]["baseline"]["hy3_first_results"])),
         )
         single_rows = _combined_rows(
-            single_dir, manifests["single_shot"], dimensions
+            current_results(single_dir), manifests["single_shot"], dimensions,
+            gate_results_dir=current_results(_resolve(experiment_dir, config["sources"]["single_shot"]["hy3_first_results"])),
         )
         workflow_summaries[judge_name], workflow_rows[judge_name] = _paired_workflows(
             baseline_rows, single_rows, dimensions
@@ -1027,15 +1082,16 @@ def export_comparison_report(experiment_dir: Path) -> dict[str, Any]:
         f"- {candidate_label}：model_id=`{candidate.model_id}`，"
         f"推理强度=`{candidate.reasoning_effort}`"
         "（该模型最高档）。",
-        f"- {candidate_label} 新增评分：2 组 × 2 轮 × "
-        f"{EXPECTED_TRACE_COUNT} = 1,200 条；"
-        f"Judge 并发 {JUDGE_CONCURRENCY}。",
+        f"- Judge 并发 {JUDGE_CONCURRENCY}；复用已完成的同指纹记录，复评只覆盖门控通过者。",
         "- 两个模型使用相同冻结输入、Rubric、Judge Prompt 与采样参数；"
         "推理强度按各模型最高支持档匹配，不解释为同名档位。",
         "",
-        "## 首轮流程质量结论",
+        "## 双门控后的首轮流程质量结论",
         "",
-        "| Judge | 基线均分 | 单次生成均分 | 平均差 | 胜/平/负 | 门控失败（基线/单次） |",
+        "各 Judge 共用 Reward-hacking 与引用风险门控。组均值统计各组通过者，"
+        "配对差值和胜负仅统计双方通过者。以下一致性统计为通过者的 Judge 组件诊断。",
+        "",
+        "| Judge | 基线通过者均分 | 单次生成通过者均分 | 配对平均差 | 配对胜/平/负 | 门控失败（基线/单次） |",
         "| --- | ---: | ---: | ---: | ---: | ---: |",
     ]
     for name, display in (

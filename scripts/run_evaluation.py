@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+from contextlib import AsyncExitStack
 from dataclasses import replace
 from datetime import datetime, timezone
 import json
@@ -20,6 +21,7 @@ from hyscript.evaluation import (
     load_rubric,
 )
 from hyscript.llm import AsyncHy3Client
+from hyscript.evaluation.gates import live_attack_gates, recorded_gates
 
 
 MAX_JUDGE_CONCURRENCY = 512
@@ -44,8 +46,8 @@ def _default_output_dir() -> Path:
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description=(
-            "Evaluate already-frozen generation traces. The generation phase is "
-            "not available until the existing-topic Agent workflow is implemented."
+            "Evaluate frozen traces with reward-hacking and citation gates before "
+            "eight-dimension scoring. Single-evaluator runs are component diagnostics."
         )
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -77,10 +79,13 @@ def build_parser() -> argparse.ArgumentParser:
     score.add_argument(
         "--evaluators",
         type=_evaluator_names,
-        default=("rules",),
-        help="Comma-separated evaluators. Default: rules. Judge calls consume API quota.",
+        default=("rules", "judge"),
+        help="Default: rules,judge with both gates (Hy3 and Tavily). Select rules alone for offline diagnostics.",
     )
     score.add_argument("--output-dir", type=Path, default=None)
+    score.add_argument("--reuse-results-dir", type=Path, help="Reuse hash- and fingerprint-matched component scores.")
+    score.add_argument("--reward-gate-cache", type=Path, help="Replay a completed reward-hacking detector directory.")
+    score.add_argument("--citation-gate-cache", type=Path, help="Replay a completed citation detector directory; required with reward cache.")
     score.add_argument(
         "--concurrency",
         type=int,
@@ -187,20 +192,32 @@ async def _run(args: argparse.Namespace) -> int:
         evaluators=args.evaluators,
         concurrency=args.concurrency,
         overwrite=args.overwrite,
+        reuse_results_dir=args.reuse_results_dir,
     )
+    if bool(args.reward_gate_cache) != bool(args.citation_gate_cache):
+        raise ValueError("Both gate cache directories must be supplied together.")
 
     if "judge" not in args.evaluators:
         result = await BatchEvaluationRunner(rubric, config).run(paths)
     else:
         # Judge sampling is isolated from the generation model defaults.
-        configured_hy3 = get_settings().hy3
+        settings = get_settings()
+        configured_hy3 = settings.hy3
         hy3 = replace(
             configured_hy3,
             model=args.judge_model_id or configured_hy3.model,
             temperature=0.0,
             top_p=1.0,
         )
-        async with AsyncHy3Client(hy3) as client:
+        async with AsyncExitStack() as stack:
+            client = await stack.enter_async_context(AsyncHy3Client(hy3))
+            gates = None
+            if config.requires_gates:
+                gates = (
+                    recorded_gates(args.reward_gate_cache, args.citation_gate_cache)
+                    if args.reward_gate_cache
+                    else await stack.enter_async_context(live_attack_gates(settings))
+                )
             judge = Hy3JudgeEvaluator(
                 client,
                 model_name=hy3.model,
@@ -216,6 +233,7 @@ async def _run(args: argparse.Namespace) -> int:
                 rubric,
                 config,
                 judge_evaluator=judge,
+                gate_evaluator=gates,
             ).run(paths)
 
     completed = sum(outcome.status == "completed" for outcome in result.outcomes)

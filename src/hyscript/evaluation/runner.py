@@ -37,6 +37,7 @@ from .models import (
 )
 from .rubric import Rubric
 from .rules import RULE_EVALUATOR_NAME, RULE_EVALUATOR_VERSION, RuleEvaluator
+from .gates import AttackGateEvaluator, GateConflictError, GateEvaluationError
 
 EvaluatorName = Literal["rules", "judge"]
 
@@ -53,6 +54,12 @@ class BatchEvaluationConfig:
     evaluators: tuple[EvaluatorName, ...] = ("rules",)
     concurrency: int = 2
     overwrite: bool = False
+    reuse_results_dir: Path | None = None
+
+    @property
+    def requires_gates(self) -> bool:
+        """Full scoring always gates; single-evaluator runs are component diagnostics."""
+        return set(self.evaluators) == {"rules", "judge"}
 
     def __post_init__(self) -> None:
         if not self.evaluators:
@@ -169,15 +176,22 @@ class BatchEvaluationRunner:
         *,
         rule_evaluator: RuleEvaluator | None = None,
         judge_evaluator: Hy3JudgeEvaluator | None = None,
+        gate_evaluator: AttackGateEvaluator | None = None,
     ) -> None:
         if "judge" in config.evaluators and judge_evaluator is None:
             raise ValueError("judge_evaluator is required when judge is selected.")
+        if config.requires_gates and gate_evaluator is None:
+            raise ValueError("Both attack gates are required for full quality scoring.")
         self.rubric = rubric
         self.config = config
         self.rule_evaluator = rule_evaluator or RuleEvaluator()
         self.judge_evaluator = judge_evaluator
+        self.gate_evaluator = gate_evaluator
         self._judge_semaphore = asyncio.Semaphore(config.concurrency)
+        self._gate_semaphore = asyncio.Semaphore(config.concurrency)
         evaluator_fingerprints: list[EvaluatorFingerprint] = []
+        if config.requires_gates:
+            evaluator_fingerprints.append(gate_evaluator.fingerprint)
         if "rules" in config.evaluators:
             evaluator_fingerprints.append(
                 EvaluatorFingerprint(
@@ -210,6 +224,8 @@ class BatchEvaluationRunner:
             kind="aggregate",
             name=AGGREGATOR_NAME,
             version=AGGREGATOR_VERSION,
+            config={"gates": gate_evaluator.fingerprint.to_dict()}
+            if config.requires_gates else {},
         )
         self.fingerprint = EvaluationFingerprint(
             rubric_sha256=rubric.sha256,
@@ -234,9 +250,32 @@ class BatchEvaluationRunner:
         records: list[EvaluationRecord] = []
         all_resumed = True
 
+        if self.config.requires_gates:
+            gate_fingerprint = self._fingerprints["gates"]
+            gate_path = item_dir / "gates.json"
+            if gate_path.exists() and not self.config.overwrite:
+                gate_record = _resume_record(
+                    gate_path, trace=trace, rubric=self.rubric, expected=gate_fingerprint,
+                )
+            else:
+                async with self._gate_semaphore:
+                    gate_record = _with_fingerprint(
+                        await self.gate_evaluator.evaluate(
+                            trace, self.rubric, item_dir=item_dir,
+                            overwrite=self.config.overwrite,
+                        ),
+                        gate_fingerprint,
+                    )
+                write_evaluation_record(gate_path, gate_record, overwrite=self.config.overwrite)
+                all_resumed = False
+            records.append(gate_record)
+            if gate_record.gate_failed:
+                return self._combine(trace, records, all_resumed)
+
         if "rules" in self.config.evaluators:
             rules_fingerprint = self._fingerprints["rules"]
             rules_path = item_dir / "rules.json"
+            self._reuse_component(rules_path, trace, rules_fingerprint)
             if rules_path.exists() and not self.config.overwrite:
                 rule_record = _resume_record(
                     rules_path,
@@ -260,6 +299,7 @@ class BatchEvaluationRunner:
         if "judge" in self.config.evaluators:
             judge_fingerprint = self._fingerprints["judge"]
             judge_path = item_dir / "hy3_judge.json"
+            self._reuse_component(judge_path, trace, judge_fingerprint)
             if judge_path.exists() and not self.config.overwrite:
                 judge_record = _resume_record(
                     judge_path,
@@ -280,7 +320,24 @@ class BatchEvaluationRunner:
                 all_resumed = False
             records.append(judge_record)
 
-        combined_path = item_dir / "combined.json"
+        return self._combine(trace, records, all_resumed)
+
+    def _reuse_component(
+        self, destination: Path, trace: FrozenTrace, expected: EvaluatorFingerprint,
+    ) -> None:
+        source_root = self.config.reuse_results_dir
+        if source_root is None or destination.exists() or self.config.overwrite:
+            return
+        source = source_root / "items" / trace.run_id / destination.name
+        if not source.exists():
+            return
+        record = _resume_record(source, trace=trace, rubric=self.rubric, expected=expected)
+        write_evaluation_record(destination, record, overwrite=False)
+
+    def _combine(
+        self, trace: FrozenTrace, records: list[EvaluationRecord], all_resumed: bool,
+    ) -> tuple[EvaluationRecord, bool]:
+        combined_path = self.config.output_dir / "items" / trace.run_id / "combined.json"
         expected_sources = [
             (record.evaluator.kind, record.evaluation_id) for record in records
         ]
@@ -472,6 +529,17 @@ class BatchEvaluationRunner:
                         run_id=trace.run_id,
                         status="failed",
                         error_code="resume_conflict",
+                        message=str(exc),
+                    ),
+                    None,
+                )
+            except GateEvaluationError as exc:
+                return (
+                    TraceOutcome(
+                        trace_path=str(trace.source_path), run_id=trace.run_id,
+                        status="failed",
+                        error_code="resume_conflict" if isinstance(exc, GateConflictError)
+                        else "gate_check_failed",
                         message=str(exc),
                     ),
                     None,

@@ -63,19 +63,23 @@ def compare_judge_runs(
 
     baseline = _judge_records(baseline_dir)
     repeat = _judge_records(repeat_dir)
-    if set(baseline) != set(repeat):
-        missing = sorted(set(baseline) - set(repeat))
-        extra = sorted(set(repeat) - set(baseline))
-        raise ValueError(
-            f"Judge run_id sets differ: missing={len(missing)}, extra={len(extra)}"
-        )
-
     metadata: dict[str, dict[str, Any]] = {}
     if trace_manifest is not None:
         manifest = load_json(trace_manifest)
         for item in manifest.get("tasks", []):
             if isinstance(item, dict) and isinstance(item.get("run_id"), str):
                 metadata[item["run_id"]] = item
+        selected = set(metadata)
+        if not selected <= set(baseline) or not selected <= set(repeat):
+            raise ValueError("Judge records do not cover the selected trace manifest.")
+        baseline = {key: baseline[key] for key in selected}
+        repeat = {key: repeat[key] for key in selected}
+    if set(baseline) != set(repeat):
+        missing = sorted(set(baseline) - set(repeat))
+        extra = sorted(set(repeat) - set(baseline))
+        raise ValueError(
+            f"Judge run_id sets differ: missing={len(missing)}, extra={len(extra)}"
+        )
 
     run_ids = sorted(baseline)
     first_fingerprints = {_fingerprint_sha(baseline[run_id]) for run_id in run_ids}

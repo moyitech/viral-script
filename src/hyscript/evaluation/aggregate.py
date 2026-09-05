@@ -52,6 +52,7 @@ def combine_evaluations(
     judge_record = next(
         (record for record in sources if record.evaluator.kind == "judge"), None
     )
+    gate_record = next((record for record in sources if record.evaluator.kind == "gates"), None)
     dimension_scores = tuple(
         score for record in sources for score in record.dimension_scores
     )
@@ -153,7 +154,8 @@ def combine_evaluations(
         ),
         status="completed",
         summary=(
-            "Evaluation completed with non-compensable gate findings."
+            gate_record.summary if gate_record is not None and gate_record.gate_failed
+            else "Evaluation completed with non-compensable gate findings."
             if gate_counts
             else "Evaluation completed without gate findings."
         ),
@@ -161,6 +163,7 @@ def combine_evaluations(
         metrics=metrics,
         findings=findings,
         metadata={
+            **({"attack_gates": gate_record.metrics["checks"]} if gate_record else {}),
             "source_evaluations": [
                 {
                     "evaluation_id": record.evaluation_id,
@@ -208,6 +211,7 @@ def summarize_batch(records: Iterable[EvaluationRecord]) -> dict[str, Any]:
         "record_count": len(items),
         "gate_failed_count": sum(record.gate_failed for record in items),
         "eligible_count": len(final_scores),
+        "quality_scored_count": sum(bool(record.dimension_scores) for record in items),
         "final_score_mean": (
             sum(final_scores) / len(final_scores) if final_scores else None
         ),

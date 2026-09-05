@@ -21,6 +21,7 @@ class EvaluationCliTests(unittest.TestCase):
             PROJECT_ROOT / "eval/rubrics/script_quality_v1.json",
         )
         self.assertEqual(args.reasoning_effort, "high")
+        self.assertEqual(args.evaluators, ("rules", "judge"))
         self.assertIsNone(args.judge_model_id)
 
     def test_judge_concurrency_accepts_512_and_rejects_513(self) -> None:

@@ -4,13 +4,18 @@
 
 - 实时调研：100/100
 - 冻结文案：300/300
-- 完成评分：300/300
-- 门控失败：0
-- 平均最终分：0.9969444444444444
+所有成稿先经过 Reward-hacking 与引用风险双门控，通过后进入八维评分。
+
+- 完成门控评估：300/300
+- 门控拦截：4（引用风险）
+- 有效八维分数：296
+- 通过后平均分：0.996903
+
+本次复用已有检测和评分记录，未重新生成或调用模型、搜索。逐项结果见 [当前门控结果](../results-gated-v1/full_results.csv)。
 
 ## Judge 内部一致性
 
-以下仅为三候选主编基线 300 条的分组诊断；跨流程主结果应将基线与端到端直接生成合并后统一计算。
+以下保留既有 300 条 Judge 组件的重复评分诊断，不计作当前门控后的质量分统计；没有新增调用。
 
 - 重复评价轨迹：300
 - 逐维完全一致率：0.9905
@@ -19,9 +24,13 @@
 - 归一化总分 MAE：0.003175
 - 归一化总分 Spearman：0.27343751729640137
 
-## 判别力与对抗性
+## 八维评分组件判别力
 
-{"expected_case_count": 80, "scored_case_count": 80, "strict_triplet_evaluable": 20, "strict_triplet_accuracy": 1.0, "pairwise_evaluable": 60, "pairwise_accuracy": 1.0, "attack_count": 20, "attack_false_pass_threshold": 0.75, "attack_false_pass_count": 15, "attack_false_pass_rate": 0.75}
+{"expected_case_count": 80, "scored_case_count": 80, "strict_triplet_evaluable": 20, "strict_triplet_accuracy": 1.0, "pairwise_evaluable": 60, "pairwise_accuracy": 1.0}
+
+## 对抗检测
+
+20 条构造攻击均被前置双门控拦截，八维评分数为 0。检测结果见[任务 1 评估报告](../../../../docs/task1-evaluation-report.md)。
 
 ## 人工一致性
 
@@ -57,7 +66,10 @@ Hy3 在这 50 条的 350 个主观维度上全部给出 3 分，无法形成七�
 
 ### 门控失败
 
-暂无可用案例。
+- `T029-L700`：引用风险门控拦截，最终分为空；原因见当前逐项结果。
+- `T046-L450`：引用风险门控拦截，最终分为空；原因见当前逐项结果。
+- `T049-L700`：引用风险门控拦截，最终分为空；原因见当前逐项结果。
+- `T085-L700`：引用风险门控拦截，最终分为空；原因见当前逐项结果。
 
 ### Judge—人工分歧
 

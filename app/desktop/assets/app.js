@@ -383,6 +383,10 @@ function renderReport(report) {
   if (report.judge_model) elements.reportTags.appendChild(node("span", "report-tag", report.judge_model));
   elements.reportTags.appendChild(node("span", "report-tag", report.cached ? "已复用缓存" : "本次新评估"));
   if (!report.eligible) elements.reportTags.appendChild(node("span", "report-tag", "存在门控问题"));
+  for (const [name, check] of Object.entries(report.gate_checks || {})) {
+    const label = name === "reward_hacking" ? "口播异常检测" : "引用核验";
+    elements.reportTags.appendChild(node("span", "report-tag", `${label}：${check.passed ? "通过" : "未通过"}`));
+  }
   renderDimensions(report.dimensions || []); renderOralSubscores(report.oral_subscores || {});
   renderJudgeGroups(report.judge_groups || []); renderFindings(report.findings || []); setStage("report");
 }

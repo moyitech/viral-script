@@ -17,7 +17,14 @@ Prepare deterministic inputs without network access:
 uv run --no-sync python scripts/run_formal_experiment.py prepare
 ```
 
-The following commands make explicit live API calls. Each command is resumable;
+The experiment is already complete; its 300 outputs do not need to be rerun.
+Current quality results are in `results-gated-v1/`: both reward-hacking and citation
+gates run before rules/Judge scoring. Gate rejection leaves the score empty.
+This directory reuses existing detector and scoring records; the original `results/`
+and generation traces remain unchanged. The paired experiment follows the same protocol.
+
+For a new experiment, `generate` and `score` may make live API calls; `report` only
+reads stored records. Each command is resumable;
 completed immutable artifacts are selected into top-level manifests and are never
 overwritten:
 
@@ -35,11 +42,11 @@ Raw research snapshots, generation traces, and item-level evaluator records are
 tracked by Git LFS. Manifests, hashes, full CSV tables, summaries, and reports use
 ordinary Git so reviewers can inspect them without downloading every LFS object.
 
-After full scoring, 20 distinct ungated topics are selected across domain and length
+After full scoring, 20 distinct gate-passing topics are selected across domain and length
 strata. Each yields blinded good/medium/bad/adversarial cases; the answer key records
-the exact edit recipe separately. Attack false-pass is pre-registered as an ungated
-score of at least 0.75. The report includes strict triplet ordering, pairwise ordering,
-and attack false-pass rates.
+the exact edit recipe separately. The report includes strict triplet and pairwise
+ordering. The two prerequisite gates and their attack results are documented in
+the [task report](../../../docs/task1-evaluation-report.md).
 
 After report export, give two reviewers separate copies of
 `validation/human_review_template.csv`. Import the completed files with:
@@ -57,17 +64,15 @@ Reviewers must use the 1–3 behavioral anchors in
 importer rejects duplicate rows, out-of-range scores, changed hashes, mismatched
 batches, non-overlapping 50-item sets, and arbitration by either original reviewer.
 
-Repeat the Hy3 Judge pass without changing or rescoring the frozen generation traces:
+The existing Judge repeats need no new API calls. Export component stability for
+already-passed traces from stored results:
 
 ```bash
-uv run --no-sync python scripts/run_evaluation.py score \
-  --trace-manifest eval/experiments/formal-100-v1/generation/trace_manifest.json \
-  --rubric eval/rubrics/script_quality_v1.json \
-  --evaluators judge --concurrency 64 --reasoning-effort high \
-  --output-dir eval/experiments/formal-100-v1/validation/stability/repeat-001/results
 uv run --no-sync python scripts/report_judge_stability.py
 ```
 
+The default output is `validation/stability/report-gated-v1/`, including the selected
+trace manifest. Explicit manifests remain available for historical component diagnostics.
 The repeat pass is compared only with the original Hy3 Judge records. Deterministic
 rules and derived combined scores are not treated as independent repeat judgments.
 The stability report exports per-dimension exact agreement, quadratic weighted Kappa,

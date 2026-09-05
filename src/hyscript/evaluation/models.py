@@ -9,7 +9,7 @@ import json
 from typing import Any, Literal
 from uuid import uuid4
 
-EvaluationKind = Literal["rules", "judge", "human", "aggregate"]
+EvaluationKind = Literal["rules", "judge", "human", "aggregate", "gates"]
 EvaluationStatus = Literal["completed", "failed"]
 FindingSeverity = Literal["info", "warning", "gate"]
 
@@ -42,7 +42,7 @@ class EvaluatorFingerprint:
     prompt_version: str | None = None
 
     def __post_init__(self) -> None:
-        if self.kind not in {"rules", "judge", "human", "aggregate"}:
+        if self.kind not in {"rules", "judge", "human", "aggregate", "gates"}:
             raise ValueError("fingerprint evaluator kind is unsupported.")
         if not isinstance(self.name, str) or not self.name.strip():
             raise ValueError("fingerprint evaluator name must not be empty.")
@@ -265,7 +265,7 @@ class EvaluatorInfo:
     model: str | None = None
 
     def __post_init__(self) -> None:
-        if self.kind not in {"rules", "judge", "human", "aggregate"}:
+        if self.kind not in {"rules", "judge", "human", "aggregate", "gates"}:
             raise ValueError("evaluator kind is unsupported.")
         if not isinstance(self.name, str) or not self.name.strip():
             raise ValueError("evaluator name must not be empty.")

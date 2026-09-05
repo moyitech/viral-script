@@ -569,11 +569,22 @@ def _stratified_sample(
 def build_discrimination_traces(experiment_dir: Path) -> dict[str, Any]:
     """Build 20 blinded good/medium/bad/adversarial trace quartets."""
 
+    frozen_manifest = experiment_dir / "validation/discrimination/trace_manifest.json"
+    if frozen_manifest.is_file():
+        manifest = load_json(frozen_manifest)
+        if manifest.get("case_count") != 80:
+            raise ValueError("Frozen discrimination manifest is incomplete.")
+        for item in manifest["tasks"]:
+            if not (frozen_manifest.parent / item["trace"]).is_file():
+                raise ValueError("A frozen discrimination trace is missing.")
+        return manifest
+
     trace_manifest = load_json(experiment_dir / "generation/trace_manifest.json")
     tasks = trace_manifest.get("tasks", [])
     if len(tasks) != EXPECTED_TOPIC_COUNT * len(DEFAULT_LENGTHS):
         raise ValueError("Discrimination material requires all 300 formal traces.")
-    main_records = _combined_records(experiment_dir / "results")
+    from .gates import current_results
+    main_records = _combined_records(current_results(experiment_dir / "results"))
     candidates: list[dict[str, Any]] = []
     for task in tasks:
         record = main_records.get(task["run_id"])
@@ -692,6 +703,7 @@ def score_experiment(
     rubric = (experiment_dir / config["rubric"]).resolve()
     if sha256_file(rubric) != config["rubric_sha256"]:
         raise ValueError("Formal rubric hash changed; create a new experiment version.")
+    from .gates import gated_scoring_options
     main_args = [
         sys.executable,
         str(PROJECT_ROOT / "scripts/run_evaluation.py"),
@@ -699,7 +711,7 @@ def score_experiment(
         "--trace-manifest", str(experiment_dir / "generation/trace_manifest.json"),
         "--rubric", str(rubric),
         "--evaluators", "rules,judge",
-        "--output-dir", str(experiment_dir / "results"),
+        *gated_scoring_options(experiment_dir / "results", experiment_dir),
         "--concurrency", str(judge_concurrency),
         "--reasoning-effort", "high",
     ]
@@ -715,7 +727,10 @@ def score_experiment(
         "--trace-manifest", str(experiment_dir / "validation/discrimination/trace_manifest.json"),
         "--rubric", str(rubric),
         "--evaluators", "rules,judge",
-        "--output-dir", str(experiment_dir / "validation/discrimination/results"),
+        *gated_scoring_options(
+            experiment_dir / "validation/discrimination/results",
+            experiment_dir / "validation/discrimination",
+        ),
         "--concurrency", str(judge_concurrency),
         "--reasoning-effort", "high",
     ]
@@ -739,7 +754,8 @@ def discrimination_summary(experiment_dir: Path) -> dict[str, Any] | None:
     if not key_path.exists():
         return None
     answer_key = load_json(key_path)
-    records = _combined_records(experiment_dir / "validation/discrimination/results")
+    from .gates import current_results
+    records = _combined_records(current_results(experiment_dir / "validation/discrimination/results"))
     keyed: dict[str, dict[str, Any]] = {}
     for item in answer_key:
         record = records.get(f"validation-{item['blind_case_id']}")
@@ -896,7 +912,9 @@ def export_report(experiment_dir: Path) -> dict[str, Any]:
     experiment_dir = experiment_dir.resolve()
     trace_manifest = load_json(experiment_dir / "generation/trace_manifest.json")
     tasks = trace_manifest.get("tasks", [])
-    records = _combined_records(experiment_dir / "results")
+    from .gates import current_results
+    results_dir = current_results(experiment_dir / "results")
+    records = _combined_records(results_dir)
     research_selection = load_json(experiment_dir / "generation/research_manifest.json")
     research_usage_by_task = {
         task["task_id"]: task.get("usage", {})
@@ -1013,7 +1031,7 @@ def export_report(experiment_dir: Path) -> dict[str, Any]:
     # report-specific cross-stage summary separate so reporting never rewrites a
     # scoring artifact.
     write_json(experiment_dir / "report/analysis_summary.json", summary)
-    atomic_write_text(experiment_dir / "results/full_results.csv", _csv_text(rows))
+    atomic_write_text(results_dir / "full_results.csv", _csv_text(rows))
     write_json(experiment_dir / "report/failure_attempts.json", failure_rows)
     failure_csv = _csv_text(failure_rows)
     if not failure_csv:
@@ -1048,8 +1066,10 @@ def export_report(experiment_dir: Path) -> dict[str, Any]:
         "",
         f"- 实时调研：{summary['selected_research']}/{summary['expected_research']}",
         f"- 冻结文案：{summary['selected_traces']}/{summary['expected_traces']}",
-        f"- 完成评分：{summary['scored_records']}/{summary['expected_traces']}",
+        "所有成稿先经过 Reward-hacking 与引用风险双门控，通过后计算八维分数。",
+        f"- 完成评估：{summary['scored_records']}/{summary['expected_traces']}",
         f"- 门控失败：{summary['gate_failed_count']}",
+        f"- 有效八维分数：{len(scored)}",
         f"- 平均最终分：{summary['final_score_mean']}",
         "",
         "## Judge 内部一致性",
@@ -1061,8 +1081,7 @@ def export_report(experiment_dir: Path) -> dict[str, Any]:
         stability_overall = judge_stability["overall"]
         lines.extend(
             [
-                "以下仅为三候选主编基线 300 条的分组诊断；跨流程主结果应将基线与端到端"
-                "直接生成合并后统一计算。",
+                "以下为已完成的 Judge 组件重复评分诊断，不作为双门控后的质量均值或合格率。",
                 "",
                 f"- 重复评价轨迹：{judge_stability['record_count']}",
                 f"- 逐维完全一致率：{stability_overall['dimension_exact_agreement_rate']:.4f}",
@@ -1074,10 +1093,25 @@ def export_report(experiment_dir: Path) -> dict[str, Any]:
                 "",
             ]
         )
+    discrimination = summary["discrimination"]
+    report_discrimination = (
+        {
+            key: value
+            for key, value in discrimination.items()
+            if not key.startswith("attack_")
+        }
+        if discrimination is not None
+        else None
+    )
     lines.extend([
-        "## 判别力与对抗性",
+        "## 判别力",
         "",
-        json.dumps(summary["discrimination"], ensure_ascii=False),
+        json.dumps(report_discrimination, ensure_ascii=False),
+        "",
+        "## 对抗检测",
+        "",
+        "Reward-hacking 与引用核验的检测结果见"
+        "[任务 1 评估报告](../../../../docs/task1-evaluation-report.md)。",
         "",
         "## 人工一致性",
         "",

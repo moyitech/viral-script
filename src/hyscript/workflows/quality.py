@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass, replace
+from contextlib import AsyncExitStack
+from dataclasses import asdict, dataclass, field, replace
 import logging
 from pathlib import Path
 from typing import Any, Mapping
@@ -19,6 +20,7 @@ from hyscript.evaluation import (
 )
 from hyscript.evaluation.io import load_json_object
 from hyscript.evaluation.models import evaluation_record_from_dict
+from hyscript.evaluation.gates import AttackGateEvaluator, live_attack_gates
 from hyscript.llm import AsyncHy3Client
 
 
@@ -59,6 +61,7 @@ class QualityReport:
     judge_groups: tuple[dict[str, Any], ...]
     oral_subscores: dict[str, dict[str, Any]]
     cached: bool
+    gate_checks: dict[str, dict[str, Any]] = field(default_factory=dict)
 
     def to_dict(self) -> dict[str, Any]:
         """Return a JSON-safe bridge payload without provider request metadata."""
@@ -111,11 +114,11 @@ def _oral_subscores(judge: EvaluationRecord) -> dict[str, dict[str, Any]]:
 def _quality_report(
     *,
     combined: EvaluationRecord,
-    judge: EvaluationRecord,
+    judge: EvaluationRecord | None,
     score_max: int,
     cached: bool,
 ) -> QualityReport:
-    span_evidence = judge.metadata.get("span_evidence", {})
+    span_evidence = judge.metadata.get("span_evidence", {}) if judge else {}
     if not isinstance(span_evidence, Mapping):
         span_evidence = {}
     dimensions = tuple(
@@ -138,7 +141,7 @@ def _quality_report(
         )
         for score in combined.dimension_scores
     )
-    raw_groups = judge.metadata.get("judge_groups", [])
+    raw_groups = judge.metadata.get("judge_groups", []) if judge else []
     judge_groups = tuple(
         {
             "name": group.get("name", ""),
@@ -158,17 +161,21 @@ def _quality_report(
     return QualityReport(
         evaluation_id=combined.evaluation_id,
         run_id=combined.run_id,
-        summary=judge.summary or combined.summary,
+        summary=(judge.summary or combined.summary) if judge else combined.summary,
         score_percent=score_percent,
         eligible=eligible,
         gate_failed=combined.gate_failed,
         rubric_version=combined.rubric.version,
-        judge_model=judge.evaluator.model,
+        judge_model=judge.evaluator.model if judge else None,
         dimensions=dimensions,
         findings=tuple(asdict(finding) for finding in combined.findings),
         judge_groups=judge_groups,
-        oral_subscores=_oral_subscores(judge),
+        oral_subscores=_oral_subscores(judge) if judge else {},
         cached=cached,
+        gate_checks={
+            name: {"passed": check["passed"], "reason": check["reason"]}
+            for name, check in combined.metadata.get("attack_gates", {}).items()
+        },
     )
 
 
@@ -181,42 +188,42 @@ class CreatorEvaluationWorkflow:
         *,
         rubric_path: Path | None = None,
         judge_evaluator: Hy3JudgeEvaluator | None = None,
+        gate_evaluator: AttackGateEvaluator | None = None,
     ) -> None:
         self.settings = settings
         self.rubric_path = rubric_path or (
             settings.project_root / "eval/rubrics/script_quality_v1.json"
         )
         self._judge_evaluator = judge_evaluator
+        self._gate_evaluator = gate_evaluator
 
     async def score_trace(self, trace_path: Path) -> QualityReport:
         """Score one immutable trace and return a cached-or-fresh quality report."""
 
         trace = load_frozen_trace(trace_path)
         rubric = load_rubric(self.rubric_path)
-        if self._judge_evaluator is not None:
-            return await self._run(
-                trace_path,
-                trace.run_id,
-                rubric,
-                self._judge_evaluator,
-            )
-
         judge_settings = replace(
             self.settings.hy3,
             temperature=0.0,
             top_p=1.0,
         )
-        async with AsyncHy3Client(judge_settings) as client:
-            judge = Hy3JudgeEvaluator(
-                client,
-                model_name=judge_settings.model,
-                config=JudgeConfig(reasoning_effort="high"),
-                sampling_parameters={
-                    "temperature": judge_settings.temperature,
-                    "top_p": judge_settings.top_p,
-                },
+        async with AsyncExitStack() as stack:
+            gates = self._gate_evaluator or await stack.enter_async_context(
+                live_attack_gates(self.settings)
             )
-            return await self._run(trace_path, trace.run_id, rubric, judge)
+            judge = self._judge_evaluator
+            if judge is None:
+                client = await stack.enter_async_context(AsyncHy3Client(judge_settings))
+                judge = Hy3JudgeEvaluator(
+                    client,
+                    model_name=judge_settings.model,
+                    config=JudgeConfig(reasoning_effort="high"),
+                    sampling_parameters={
+                        "temperature": judge_settings.temperature,
+                        "top_p": judge_settings.top_p,
+                    },
+                )
+            return await self._run(trace_path, trace.run_id, rubric, judge, gates)
 
     async def _run(
         self,
@@ -224,6 +231,7 @@ class CreatorEvaluationWorkflow:
         run_id: str,
         rubric: Any,
         judge: Hy3JudgeEvaluator,
+        gates: AttackGateEvaluator,
     ) -> QualityReport:
         logger.info("正在准备正式文案评分")
         probe = BatchEvaluationRunner(
@@ -234,6 +242,7 @@ class CreatorEvaluationWorkflow:
                 concurrency=2,
             ),
             judge_evaluator=judge,
+            gate_evaluator=gates,
         )
         output_dir = (
             self.settings.runtime.evaluation_dir
@@ -244,8 +253,9 @@ class CreatorEvaluationWorkflow:
             rubric,
             replace(probe.config, output_dir=output_dir),
             judge_evaluator=judge,
+            gate_evaluator=gates,
         )
-        logger.info("正在运行长度规则与 Hy3 七维 Judge")
+        logger.info("正在执行 Reward-hacking 与引用门控；通过后运行八维评分")
         result = await runner.run((trace_path,))
         if len(result.outcomes) != 1 or result.outcomes[0].status == "failed":
             outcome = result.outcomes[0] if result.outcomes else None
@@ -254,7 +264,8 @@ class CreatorEvaluationWorkflow:
 
         item_dir = output_dir / "items" / run_id
         combined = _record(item_dir / "combined.json")
-        judge_record = _record(item_dir / "hy3_judge.json")
+        judge_path = item_dir / "hy3_judge.json"
+        judge_record = _record(judge_path) if combined.dimension_scores else None
         cached = result.outcomes[0].status == "skipped"
         logger.info("评分完成%s", "（已复用缓存）" if cached else "")
         return _quality_report(

@@ -18,6 +18,7 @@ from hyscript.evaluation import (
     load_rubric,
 )
 from hyscript.llm import ChatResponse
+from test_evaluation_gates import fake_gates
 
 
 RUBRIC = load_rubric(PROJECT_ROOT / "eval/rubrics/script_quality_v2.json")
@@ -208,6 +209,7 @@ class BatchEvaluationRunnerTests(unittest.IsolatedAsyncioTestCase):
                     evaluators=("rules", "judge"),
                 ),
                 judge_evaluator=judge(),
+                gate_evaluator=fake_gates(),
             ).run([trace_path])
             old_combined = (output_dir / "items/run-set/combined.json").read_bytes()
 
