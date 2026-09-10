@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-6e8d191467f2430db331b7f53e9a200b",
+  "run_id": "run-20260902T144242Z-d148f9940b35",
+  "trace_sha256": "f5d2934a02dcb13a5ca9400ab252cf7f6d93db0d87b65f2ebca4d8e86a76445a",
+  "created_at": "2026-09-10T15:06:48.098865Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇点明不会用手机者可取纸质，随后给出人工窗口、刷身份证、导诊打印等具体路径，全程紧扣题设与老年群体痛点。",
+      "script_spans": [
+        "不会用手机的人反能取纸质",
+        "直接找导诊说清情况，报上姓名，报告立刻就能印"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "政策事实与借手机尴尬等情绪解释相互支撑，给出导诊打印、家属绑卡等具体方法，观众能带走明确行动知识。",
+      "script_spans": [
+        "2020年国办方案写明白，必须保留老人熟悉的传统服务。",
+        "直接找导诊说清情况，报上姓名，报告立刻就能印",
+        "查个血项还得借孙子手机，多尴尬，所以法规写明白，传统方式必须保底。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头“不会用手机的人反能取纸质”设反差悬念，中段政策与实操递进，结尾“愿意等老人的窗口”自然收束，吸引力强。",
+      "script_spans": [
+        "不会用手机的人反能取纸质。",
+        "愿意等老人的窗口才算真便民。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇短气口为主，中段用‘您想’‘别怕麻烦’等自然口语解释政策与操作，朗读无需改词，流畅度高。",
+      "script_spans": [
+        "您想，查个血项还得借孙子手机，多尴尬，所以法规写明白，传统方式必须保底。",
+        "直接找导诊说清情况，报上姓名，报告立刻就能印，别怕麻烦。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“像看天书”等比喻贴切服务理解，“医院本就不是手机培训班”自然准确，是可脱离上下文复述的记忆点。",
+      "script_spans": [
+        "戳不准触屏，像看天书。",
+        "医院本就不是手机培训班。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以‘为啥有保障’‘独自去咋办’等问句自然推进，政策因果与具体路径层层递进，结尾回扣电子与纸质并行，逻辑闭环。",
+      "script_spans": [
+        "为啥反而有保障？国家早定调，智能化要与传统并行。",
+        "那独自去的老人咋办？直接找导诊说清情况，报上姓名，报告立刻就能印",
+        "技术往前跑，愿意等老人的窗口才算真便民。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "引用2020年国办方案佐证保留传统服务，且提示各院执行有差异需提前确认，边界清晰，不作无依据承诺，合规安全。",
+      "script_spans": [
+        "2020年国办方案写明白，必须保留老人熟悉的传统服务。",
+        "各院执行有粗有细，去前打总机问一句更稳。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-6e6388753338475aa9fd4197cb64da7e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-ddfdda70d74c4a01913f57527febcfbf",
+  "run_id": "run-20260902T142821Z-98746840764a",
+  "trace_sha256": "f37a83cc63230908353cd986ff46871edaacec2c06eefa173ce232ed74b95f2a",
+  "created_at": "2026-09-10T15:06:45.728585Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从开头到结论正面回答算力繁荣为何难惠及中小企业，覆盖供需两侧与核心人群，切中门槛痛点。",
+      "script_spans": [
+        "为啥繁荣传不到你这？芯片需求是真升温，总算力也在扩，但大厂囤卡如山，中小企业连门都摸不着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，芯片成本、云服务、政策与供应链多单元递进，事实与解释支撑结论，信息扎实。",
+      "script_spans": [
+        "信通院提到供给区域割裂，推理需求爆发却对不上，传统机柜租赁通常跟不上精细化用算。",
+        "你买几块GPU，价钱顶小厂半年利润。一块高端训练卡售价够买辆小车，对小厂是天文数字。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以缺货与摸不到门的冲突抓人，中段层层拆解传导链漏缝，结尾以电网未通、何时拧开龙头自然收束，余味强。",
+      "script_spans": [
+        "AI芯片火到缺货，你小厂想用时却连门都摸不到。",
+        "算力像电，可电网还没通到厂门口。咱们这行啥时候能拧开龙头接上这波算力？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇短气口为主，重音停顿清楚；中段用奶茶冰库等口语比喻，朗读无需改词，自然流畅。",
+      "script_spans": [
+        "好比想买杯奶茶的冰，却逼你包下整个冰库。",
+        "西部卡闲着东部厂急等。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "奶茶冰与冰库类比精准鲜活，算力如电的隐喻贯穿首尾，修辞克制且服务理解，留下多个可脱离上下文复述的记忆点。",
+      "script_spans": [
+        "好比想买杯奶茶的冰，却逼你包下整个冰库。",
+        "算力像电，可电网还没通到厂门口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段落功能清晰，从买卡、租云到政策与转机层层递进，因果桥完整，结尾以电网隐喻回扣题设。",
+      "script_spans": [
+        "那云上租不行吗？云服务这块，模式太粗放。",
+        "算力像电，可电网还没通到厂门口。咱们这行啥时候能拧开龙头接上这波算力？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "“通常”等限定词体现客观公允；但“连个…都租不到”绝对化，“大厂囤卡如山”属标签化归因，易误导观众，需改写。",
+      "script_spans": [
+        "传统机柜租赁通常跟不上精细化用算",
+        "连个合适的按量算力都租不到",
+        "大厂囤卡如山"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4e4321dc3ee041bdbd3c14b133d2f2ee",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

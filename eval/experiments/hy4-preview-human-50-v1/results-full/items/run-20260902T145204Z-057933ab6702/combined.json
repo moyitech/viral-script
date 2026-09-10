@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-2eb661bb06a74d4ea6216880313c2042",
+  "run_id": "run-20260902T145204Z-057933ab6702",
+  "trace_sha256": "f47f9bd3cf06ae53be018ac7bba488ee4ddf26d5a8b63d9190b1afee83cad626",
+  "created_at": "2026-09-10T14:55:39.804613Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从开头到结论正面回答题设，覆盖政策、员工与具体行动，切角精准契合传统行业人群痛点。",
+      "script_spans": [
+        "你想不落下，得主动去社区职介问培训。比如电工去学光伏运维。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，政策、报告与就业数据等多信息单元层层推进，事实与结论相互支撑，增量明确。",
+      "script_spans": [
+        "钢铁、电解铝、水泥、平板玻璃、炼油、乙烯、合成氨、甲醇、煤电，这九个行业要搞节能降碳改造。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以反常识设问制造强钩子，中段用政策与报告持续推进，结尾以筛子隐喻和自然提问收束，余味足。",
+      "script_spans": [
+        "煤电工人没被丢下，反要企业掏钱培训他？这说法像反常识。",
+        "转型像筛子，漏掉的常是等靠要的人。你这周会去打听学啥新本事吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "多数句子短顺、有对话感，如‘早学一天多一条路’；但‘学新保碗’‘政策给窗台’两处明显拗口需换词，故止步2分。",
+      "script_spans": [
+        "早学一天多一条路。",
+        "你要么学新保碗，要么不动被换。",
+        "政策给窗台，你不动腿容易掉。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "筛子隐喻自然准确，生动总结转型淘汰逻辑，易复述且无炫技，其余表达平实服务理解。",
+      "script_spans": [
+        "转型像筛子，漏掉的常是等靠要的人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段落功能清晰，从政策背景到员工抉择因果桥完整，结尾自然回扣开头与题设，逻辑层层递进。",
+      "script_spans": [
+        "企业算账：改机器花钱，不改受约束。你要么学新保碗，要么不动被换。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "依据政策无违规；但“要么学新保碗，要么不动被换”绝对化，“等靠要的人”标签化，易误导需改。",
+      "script_spans": [
+        "带老员工学新操作的可能性更大，而不是硬推走。",
+        "老手艺可能不够用。",
+        "你要么学新保碗，要么不动被换。",
+        "漏掉的常是等靠要的人。",
+        "只懂旧技术得出去找活。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-598adc8708bb4fb1bde9346bd268ce96",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

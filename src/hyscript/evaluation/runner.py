@@ -214,6 +214,11 @@ class BatchEvaluationRunner:
                     config={
                         "request": asdict(self.judge_evaluator.config),
                         "sampling_parameters": self.judge_evaluator.sampling_parameters,
+                        **(
+                            {"transport": transport}
+                            if (transport := getattr(self.judge_evaluator, "transport_parameters", {}))
+                            else {}
+                        ),
                     },
                 )
             )

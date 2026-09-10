@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-1483fbfd39034ff6a13bfc55a42e5e1e",
+  "run_id": "run-20260902T142526Z-2c040d06ec4f",
+  "trace_sha256": "e430896fc12fa5381bc6bac5b187ea4f605b27cc76192ef44760cb64c0dd8902",
+  "created_at": "2026-09-10T14:48:45.171937Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头点明慰藉与越界两侧，两道坎覆盖核心人群与冲突，结尾回扣题设，切角具体。",
+      "script_spans": [
+        "它确实能陪你聊两句解思念，可没标清就容易踩过那条伦理边界线。",
+        "不少失去至亲的人只是想再听句叮嘱，才碰这技术。",
+        "我是在纪念回忆，还是在假装他还在人世呢？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，标识规定与同意侵权两个信息单元推进论证，结尾给出判断方法，增量明确。",
+      "script_spans": [
+        "按规定，这类AI合成的音频必须在开头或结尾加清晰语音提示",
+        "如果亲人从没同意留声样，你私下拿旧录音去训练模型复原，那份声音一旦公开传播，就变成对他声音权益的冒犯",
+        "想转发先说清这是AI声，别让对方误以为人回来了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字以‘求安慰却可能侵权’制造强冲突，中段用‘两道坎’持续推进，结尾以自我追问自然收束，余味足。",
+      "script_spans": [
+        "用AI复原逝者声音，你花几百块求安慰却可能侵权。",
+        "咱们得看清两道坎。",
+        "我是在纪念回忆，还是在假装他还在人世呢？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主，气口均短且重音清楚；中段两处解释用自然口语，无需改写。",
+      "script_spans": [
+        "别把合成声当遗言信了，那不是真人回来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "‘两道坎’‘伦理边界线’等比喻克制且服务理解，结尾‘纪念还是假装’的追问自然深刻，是离开上下文仍可复述的记忆点。",
+      "script_spans": [
+        "咱们得看清两道坎。",
+        "可没标清就容易踩过那条伦理边界线。",
+        "我是在纪念回忆，还是在假装他还在人世呢？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段落功能清晰，两道坎过渡自然，因果桥完整，结尾回扣开头与题设，无逻辑跳跃。",
+      "script_spans": [
+        "咱们得看清两道坎。",
+        "另一道坎在同意。",
+        "想转发先说清这是AI声，别让对方误以为人回来了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全文客观提示AI合成声需标识与同意，边界清晰，无煽动夸大，价值导向安全。",
+      "script_spans": [
+        "按规定，这类AI合成的音频必须在开头或结尾加清晰语音提示，让人一听知是机器造的",
+        "想转发先说清这是AI声，别让对方误以为人回来了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-4a42df42b6b54eb9b22eb5c8bc541dec",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -112,7 +112,19 @@ class AsyncHy3Client:
             "top_p": self.settings.top_p,
             "stream": False,
         }
-        if reasoning_effort in {"xhigh", "max"}:
+        if self.settings.request_protocol == "openrouter":
+            # OpenRouter's Hy4 route does not advertise top_p. Omit its neutral
+            # default; non-default values remain explicit and require support.
+            if self.settings.top_p == 1.0:
+                request.pop("top_p")
+            request["extra_body"] = {
+                "reasoning": {
+                    "effort": "none" if reasoning_effort == "no_think" else reasoning_effort,
+                    "exclude": True,
+                },
+                "provider": {"require_parameters": True},
+            }
+        elif reasoning_effort in {"xhigh", "max"}:
             # Candidate Judge endpoints use the top-level Chat Completions
             # parameter. Keep the established Hy3 chat-template shape
             # unchanged for existing effort levels.

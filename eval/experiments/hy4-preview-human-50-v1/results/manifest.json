@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "evaluation_id": "eval-20260910T142018.371994Z-d31c787f",
+  "started_at": "2026-09-10T14:20:18.371994Z",
+  "last_started_at": "2026-09-10T14:20:18.371994Z",
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "evaluators": [
+    "judge"
+  ],
+  "fingerprint": {
+    "schema_version": "1.0",
+    "rubric_sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab",
+    "evaluators": [
+      {
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0",
+        "model": "hy4-preview",
+        "prompt_version": "script-quality-grounded-groups-v3.3",
+        "config": {
+          "request": {
+            "reasoning_effort": "high",
+            "max_format_attempts": 2,
+            "max_script_characters": 30000,
+            "max_context_string_characters": 4000,
+            "max_context_list_items": 50,
+            "max_prompt_characters": 60000
+          },
+          "sampling_parameters": {
+            "temperature": 0.0,
+            "top_p": 1.0
+          }
+        },
+        "sha256": "51a64021e077c9a2188741d44b6d5ec749ce549d63f19bb9b67724ed4562d401"
+      }
+    ],
+    "aggregator": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    },
+    "sha256": "6223e91aa93cebc731c497e4ef2d2471fa13daa014ca0f58dcb2cb4e529f3d99"
+  },
+  "concurrency": 1,
+  "trace_files": [
+    "T001-L700-run-20260902T141350Z-e365c0da19f7.json"
+  ],
+  "inputs": [
+    {
+      "source": "T001-L700-run-20260902T141350Z-e365c0da19f7.json",
+      "run_id": "run-20260902T141350Z-e365c0da19f7",
+      "trace_sha256": "816e5fb2efcdefb7af2e6460e4d451c0643640418c99bbc7fc7d4b66cfb0764e"
+    }
+  ],
+  "status": "running"
+}

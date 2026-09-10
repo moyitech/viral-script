@@ -1,0 +1,448 @@
+{
+  "evaluation_id": "judge-6c10be917aec400da095518b14dd60d1",
+  "run_id": "run-20260902T144510Z-074551eaf24a",
+  "trace_sha256": "c5730afda8fa9e7a9115adcf25ba540964356f069effb3de39c2d0d51756ca67",
+  "created_at": "2026-09-10T15:06:49.806756Z",
+  "evaluator": {
+    "kind": "judge",
+    "name": "hy3-script-quality-judge",
+    "version": "3.3.0",
+    "model": "tencent/hy4-preview"
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "主要短板：合规性",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即正面回答资源分配问题，急重优先与非急症疏导两侧全覆盖，切中普通患者痛点。",
+      "script_spans": [
+        "医生和床位先给心跳骤停、大出血的急重病人，不该让感冒发烧者堵门；同时非急症得有出口，疏导到社区门诊或延时诊所"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，预检分级、香港数据与收费改革等多信息单元层层推进，事实与结论相互支撑，增量扎实。",
+      "script_spans": [
+        "像香港曾统计，九成以上急诊求诊者并非危急。这造成什么后果？紧急病人候诊被拉长，真正心梗老人可能等不到床。",
+        "香港试过公营医疗收费改革，次紧急和非紧急病人明显回流诊所，数量减约两成，急诊更聚焦救急。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即抛出生死冲突，中段以现实倒挂和解决方案持续推进，结尾提问自然生长，互动感强。",
+      "script_spans": [
+        "非急症挤占急诊，危急患者可能错失抢救时机。",
+        "可现实常倒挂。很多患者夜奔急诊只图方便，病却不凶险。",
+        "下次身体闹脾气，你先想想该去哪吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇以短气口为主，重音停顿清楚；中段如‘分诊不是推走病人，是排顺序’等句口语自然，无需改写即可朗读。",
+      "script_spans": [
+        "分诊不是推走病人，是排顺序。",
+        "为啥挤？社区医院晚八点关门，夜里只能奔急诊。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "挪用救命分钟等表达自然准确，对比急诊与门诊定位，记忆点突出且无辞藻堆砌。",
+      "script_spans": [
+        "你若感冒去急诊，实则挪用了别人的救命分钟。",
+        "急诊科本为24小时救急，却被当作全天候门诊。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段落功能清晰，规则、现实倒挂与对策层层递进，因果桥完整，结尾自然回扣开头与题设。",
+      "script_spans": [
+        "可现实常倒挂。很多患者夜奔急诊只图方便，病却不凶险。为啥挤？社区医院晚八点关门，夜里只能奔急诊。",
+        "当急诊不再被小病占满，真正危急的人就多一分生机。下次身体闹脾气，你先想想该去哪吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "分诊非推诿且分级清晰，合规基础成立；但‘挪用救命分钟’将系统问题归咎个人，绝对化且缺限定，需补边界。",
+      "script_spans": [
+        "分诊不是推走病人，是排顺序。",
+        "你若感冒去急诊，实则挪用了别人的救命分钟。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": 2.857142857142857,
+    "normalized_score": 0.9523809523809524,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 1.0,
+    "context_complete": true
+  },
+  "findings": [],
+  "metadata": {
+    "prompt_version": "script-quality-grounded-groups-v3.3",
+    "request_id": "gen-1789052582-FQ6ymUIYBw16Ht7ZQlSE",
+    "request_ids": [
+      "gen-1789052584-twqWeRQIs4SzHIVcJ6YZ",
+      "gen-1789052582-QYiJawOTaQkTiHEoKBTL",
+      "gen-1789052580-z0xlFmF9qTiIxkJCCsm4",
+      "gen-1789052582-FQ6ymUIYBw16Ht7ZQlSE"
+    ],
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 51137,
+      "prompt_tokens": 19351,
+      "total_tokens": 70488,
+      "completion_tokens_details": {
+        "audio_tokens": 0,
+        "reasoning_tokens": 49996,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 2752,
+        "video_tokens": 0
+      },
+      "cost": 0.14185278699999998,
+      "cost_details": {
+        "upstream_inference_cost": 0.14185278699999998,
+        "upstream_inference_prompt_cost": 0.01395915,
+        "upstream_inference_completions_cost": 0.127893637
+      }
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "request_id": "gen-1789052584-twqWeRQIs4SzHIVcJ6YZ",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 16249,
+          "prompt_tokens": 5037,
+          "total_tokens": 21286,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 15837,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 128,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.044738231,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.044738231,
+            "upstream_inference_prompt_cost": 0.004099482,
+            "upstream_inference_completions_cost": 0.040638749
+          }
+        }
+      },
+      {
+        "attempt": 2,
+        "request_id": "gen-1789052582-QYiJawOTaQkTiHEoKBTL",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 10953,
+          "prompt_tokens": 4868,
+          "total_tokens": 15821,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 10702,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1280,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.030439605,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.030439605,
+            "upstream_inference_prompt_cost": 0.003046152,
+            "upstream_inference_completions_cost": 0.027393453
+          }
+        }
+      },
+      {
+        "attempt": 3,
+        "request_id": "gen-1789052580-z0xlFmF9qTiIxkJCCsm4",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 12156,
+          "prompt_tokens": 4802,
+          "total_tokens": 16958,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 11811,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1216,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.033443952,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.033443952,
+            "upstream_inference_prompt_cost": 0.003041796,
+            "upstream_inference_completions_cost": 0.030402156
+          }
+        }
+      },
+      {
+        "attempt": 4,
+        "request_id": "gen-1789052582-FQ6ymUIYBw16Ht7ZQlSE",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 11779,
+          "prompt_tokens": 4644,
+          "total_tokens": 16423,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 11646,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 128,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.033230999,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.033230999,
+            "upstream_inference_prompt_cost": 0.00377172,
+            "upstream_inference_completions_cost": 0.029459279
+          }
+        }
+      }
+    ],
+    "format_attempts": 4,
+    "judge_groups": [
+      {
+        "name": "content",
+        "dimension_ids": [
+          "topic_alignment",
+          "theme_information",
+          "logic_structure"
+        ],
+        "summary": "全面命中题设，论证扎实流畅",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052584-twqWeRQIs4SzHIVcJ6YZ"
+        ]
+      },
+      {
+        "name": "传播",
+        "dimension_ids": [
+          "engagement",
+          "rhetoric_memorability"
+        ],
+        "summary": "冲突开局，金句自然，余味足",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052582-QYiJawOTaQkTiHEoKBTL"
+        ]
+      },
+      {
+        "name": "口播",
+        "dimension_ids": [
+          "oral_fluency"
+        ],
+        "summary": "短句顺口，口语自然贯穿全篇",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052580-z0xlFmF9qTiIxkJCCsm4"
+        ]
+      },
+      {
+        "name": "安全",
+        "dimension_ids": [
+          "safety_compliance"
+        ],
+        "summary": "无明确违规，个别绝对化表述需补边界",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052582-FQ6ymUIYBw16Ht7ZQlSE"
+        ]
+      }
+    ],
+    "span_evidence": {
+      "topic_alignment": {
+        "positive_spans": [
+          "医生和床位先给心跳骤停、大出血的急重病人，不该让感冒发烧者堵门；同时非急症得有出口，疏导到社区门诊或延时诊所"
+        ],
+        "problem_spans": []
+      },
+      "theme_information": {
+        "positive_spans": [
+          "像香港曾统计，九成以上急诊求诊者并非危急。这造成什么后果？紧急病人候诊被拉长，真正心梗老人可能等不到床。",
+          "香港试过公营医疗收费改革，次紧急和非紧急病人明显回流诊所，数量减约两成，急诊更聚焦救急。"
+        ],
+        "problem_spans": []
+      },
+      "logic_structure": {
+        "positive_spans": [
+          "可现实常倒挂。很多患者夜奔急诊只图方便，病却不凶险。为啥挤？社区医院晚八点关门，夜里只能奔急诊。",
+          "当急诊不再被小病占满，真正危急的人就多一分生机。下次身体闹脾气，你先想想该去哪吗？"
+        ],
+        "problem_spans": []
+      },
+      "engagement": {
+        "positive_spans": [
+          "非急症挤占急诊，危急患者可能错失抢救时机。",
+          "可现实常倒挂。很多患者夜奔急诊只图方便，病却不凶险。",
+          "下次身体闹脾气，你先想想该去哪吗？"
+        ],
+        "problem_spans": []
+      },
+      "rhetoric_memorability": {
+        "positive_spans": [
+          "你若感冒去急诊，实则挪用了别人的救命分钟。",
+          "急诊科本为24小时救急，却被当作全天候门诊。"
+        ],
+        "problem_spans": []
+      },
+      "oral_fluency": {
+        "positive_spans": [
+          "分诊不是推走病人，是排顺序。",
+          "为啥挤？社区医院晚八点关门，夜里只能奔急诊。"
+        ],
+        "problem_spans": []
+      },
+      "safety_compliance": {
+        "positive_spans": [
+          "分诊不是推走病人，是排顺序。"
+        ],
+        "problem_spans": [
+          "你若感冒去急诊，实则挪用了别人的救命分钟。"
+        ]
+      }
+    },
+    "judge_diagnostics": {
+      "口播": {
+        "oral_subscores": {
+          "朗读顺口度": {
+            "score": 3,
+            "comment": "气口短且停顿清楚，无长难句或拗口堆叠；‘分诊不是推走病人，是排顺序’等句朗读无需换词重断。",
+            "positive_spans": [
+              "分诊不是推走病人，是排顺序。"
+            ],
+            "problem_spans": []
+          },
+          "口语自然度": {
+            "score": 3,
+            "comment": "第二段‘分诊不是推走病人，是排顺序’与第三段‘为啥挤？社区医院晚八点关门’均为自然口语，核心展开无需改写。",
+            "positive_spans": [
+              "分诊不是推走病人，是排顺序。",
+              "为啥挤？社区医院晚八点关门，夜里只能奔急诊。"
+            ],
+            "problem_spans": []
+          }
+        }
+      }
+    },
+    "context_truncated": false,
+    "context_fields_filtered": true,
+    "sent_evidence_ids": [
+      "E001",
+      "E003",
+      "E006"
+    ],
+    "prompt_characters": 32160,
+    "reasoning_effort": "high",
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "evaluator_fingerprint": {
+      "kind": "judge",
+      "name": "hy3-script-quality-judge",
+      "version": "3.3.0",
+      "model": "tencent/hy4-preview",
+      "prompt_version": "script-quality-grounded-groups-v3.3",
+      "config": {
+        "request": {
+          "reasoning_effort": "high",
+          "max_format_attempts": 2,
+          "max_script_characters": 30000,
+          "max_context_string_characters": 4000,
+          "max_context_list_items": 50,
+          "max_prompt_characters": 60000
+        },
+        "sampling_parameters": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "transport": {
+          "protocol": "openrouter",
+          "endpoint_sha256": "76ef4ad6f0c8a4ae66efb13875c107cee40c78997a212353d379acfbb2f45591",
+          "reasoning_exclude": true,
+          "require_parameters": true,
+          "top_p_omitted_at_default": true
+        }
+      },
+      "sha256": "426eb58c9d520a3299f83aef02cd3f617db8e2fef3229339b0a6e9f06f93a893"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

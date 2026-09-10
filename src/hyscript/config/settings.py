@@ -60,13 +60,14 @@ DEFAULT_ENV_FILE: Final[Path] = PROJECT_ROOT / ".env"
 
 @dataclass(frozen=True, slots=True)
 class Hy3Config:
-    """Hy3 endpoint, credentials, and sampling defaults."""
+    """OpenAI-compatible endpoint, credentials, and request protocol."""
 
     base_url: str
     api_key: str = field(repr=False)
     model: str = "hy3"
     temperature: float = 0.9
     top_p: float = 1.0
+    request_protocol: Literal["hy3", "openrouter"] = "hy3"
 
     @property
     def openai_base_url(self) -> str:
@@ -202,6 +203,7 @@ class Settings:
     hotlist_provider: HotlistProviderName = "newsnow"
     project_root: Path = PROJECT_ROOT
     env_file: Path | None = None
+    open_router: Hy3Config | None = None
 
 
 def _text(values: Mapping[str, str], name: str, default: str = "") -> str:
@@ -492,7 +494,19 @@ def load_settings(
     if not evaluation_dir.is_absolute():
         evaluation_dir = PROJECT_ROOT / evaluation_dir
 
+    open_router = None
+    if _text(values, "OPEN_ROUTER_KEY") or _text(values, "OPEN_ROUTER_URL"):
+        _required(values, "OPEN_ROUTER_KEY", "OPEN_ROUTER_URL")
+        open_router = Hy3Config(
+            base_url=_http_url(values, "OPEN_ROUTER_URL"),
+            api_key=_text(values, "OPEN_ROUTER_KEY"),
+            model="tencent/hy4-preview",
+            temperature=0.0,
+            request_protocol="openrouter",
+        )
+
     return Settings(
+        open_router=open_router,
         hy3=Hy3Config(
             base_url=_http_url(values, "HY3_BASE_URL"),
             api_key=_text(values, "HY3_API_KEY"),

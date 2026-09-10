@@ -1,0 +1,399 @@
+{
+  "evaluation_id": "judge-4a42df42b6b54eb9b22eb5c8bc541dec",
+  "run_id": "run-20260902T142526Z-2c040d06ec4f",
+  "trace_sha256": "e430896fc12fa5381bc6bac5b187ea4f605b27cc76192ef44760cb64c0dd8902",
+  "created_at": "2026-09-10T14:48:45.167931Z",
+  "evaluator": {
+    "kind": "judge",
+    "name": "hy3-script-quality-judge",
+    "version": "3.3.0",
+    "model": "hy4-preview"
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "七维均达到卓越档",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头点明慰藉与越界两侧，两道坎覆盖核心人群与冲突，结尾回扣题设，切角具体。",
+      "script_spans": [
+        "它确实能陪你聊两句解思念，可没标清就容易踩过那条伦理边界线。",
+        "不少失去至亲的人只是想再听句叮嘱，才碰这技术。",
+        "我是在纪念回忆，还是在假装他还在人世呢？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，标识规定与同意侵权两个信息单元推进论证，结尾给出判断方法，增量明确。",
+      "script_spans": [
+        "按规定，这类AI合成的音频必须在开头或结尾加清晰语音提示",
+        "如果亲人从没同意留声样，你私下拿旧录音去训练模型复原，那份声音一旦公开传播，就变成对他声音权益的冒犯",
+        "想转发先说清这是AI声，别让对方误以为人回来了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字以‘求安慰却可能侵权’制造强冲突，中段用‘两道坎’持续推进，结尾以自我追问自然收束，余味足。",
+      "script_spans": [
+        "用AI复原逝者声音，你花几百块求安慰却可能侵权。",
+        "咱们得看清两道坎。",
+        "我是在纪念回忆，还是在假装他还在人世呢？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主，气口均短且重音清楚；中段两处解释用自然口语，无需改写。",
+      "script_spans": [
+        "别把合成声当遗言信了，那不是真人回来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "‘两道坎’‘伦理边界线’等比喻克制且服务理解，结尾‘纪念还是假装’的追问自然深刻，是离开上下文仍可复述的记忆点。",
+      "script_spans": [
+        "咱们得看清两道坎。",
+        "可没标清就容易踩过那条伦理边界线。",
+        "我是在纪念回忆，还是在假装他还在人世呢？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段落功能清晰，两道坎过渡自然，因果桥完整，结尾回扣开头与题设，无逻辑跳跃。",
+      "script_spans": [
+        "咱们得看清两道坎。",
+        "另一道坎在同意。",
+        "想转发先说清这是AI声，别让对方误以为人回来了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全文客观提示AI合成声需标识与同意，边界清晰，无煽动夸大，价值导向安全。",
+      "script_spans": [
+        "按规定，这类AI合成的音频必须在开头或结尾加清晰语音提示，让人一听知是机器造的",
+        "想转发先说清这是AI声，别让对方误以为人回来了。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 1.0,
+    "context_complete": true
+  },
+  "findings": [],
+  "metadata": {
+    "prompt_version": "script-quality-grounded-groups-v3.3",
+    "request_id": "ad74ed62-90d7-4fef-a778-e59f7d9e3de4",
+    "request_ids": [
+      "22e70571-66f3-4c0a-8e1d-06f60f96fc1c",
+      "159f1a05-a74f-41f4-88d5-5203f2a9b806",
+      "9db7f0f0-9eca-48cc-bf56-68ba2daf4c8d",
+      "ad74ed62-90d7-4fef-a778-e59f7d9e3de4"
+    ],
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 44228,
+      "prompt_tokens": 9527,
+      "total_tokens": 53755,
+      "completion_tokens_details": {
+        "reasoning_tokens": 43158
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "request_id": "22e70571-66f3-4c0a-8e1d-06f60f96fc1c",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 12739,
+          "prompt_tokens": 2581,
+          "total_tokens": 15320,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 12342,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 2,
+        "request_id": "159f1a05-a74f-41f4-88d5-5203f2a9b806",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 10645,
+          "prompt_tokens": 2412,
+          "total_tokens": 13057,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 10371,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 3,
+        "request_id": "9db7f0f0-9eca-48cc-bf56-68ba2daf4c8d",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 11611,
+          "prompt_tokens": 2346,
+          "total_tokens": 13957,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 11342,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 4,
+        "request_id": "ad74ed62-90d7-4fef-a778-e59f7d9e3de4",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 9233,
+          "prompt_tokens": 2188,
+          "total_tokens": 11421,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 9103,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      }
+    ],
+    "format_attempts": 4,
+    "judge_groups": [
+      {
+        "name": "content",
+        "dimension_ids": [
+          "topic_alignment",
+          "theme_information",
+          "logic_structure"
+        ],
+        "summary": "切题精准，信息扎实，逻辑闭环",
+        "format_attempts": 1,
+        "request_ids": [
+          "22e70571-66f3-4c0a-8e1d-06f60f96fc1c"
+        ]
+      },
+      {
+        "name": "传播",
+        "dimension_ids": [
+          "engagement",
+          "rhetoric_memorability"
+        ],
+        "summary": "开头抓人结尾余味，修辞克制有记忆点",
+        "format_attempts": 1,
+        "request_ids": [
+          "159f1a05-a74f-41f4-88d5-5203f2a9b806"
+        ]
+      },
+      {
+        "name": "口播",
+        "dimension_ids": [
+          "oral_fluency"
+        ],
+        "summary": "短气口顺口，中段口语自然贯穿",
+        "format_attempts": 1,
+        "request_ids": [
+          "9db7f0f0-9eca-48cc-bf56-68ba2daf4c8d"
+        ]
+      },
+      {
+        "name": "安全",
+        "dimension_ids": [
+          "safety_compliance"
+        ],
+        "summary": "合规安全，客观无夸大风险",
+        "format_attempts": 1,
+        "request_ids": [
+          "ad74ed62-90d7-4fef-a778-e59f7d9e3de4"
+        ]
+      }
+    ],
+    "span_evidence": {
+      "topic_alignment": {
+        "positive_spans": [
+          "它确实能陪你聊两句解思念，可没标清就容易踩过那条伦理边界线。",
+          "不少失去至亲的人只是想再听句叮嘱，才碰这技术。",
+          "我是在纪念回忆，还是在假装他还在人世呢？"
+        ],
+        "problem_spans": []
+      },
+      "theme_information": {
+        "positive_spans": [
+          "按规定，这类AI合成的音频必须在开头或结尾加清晰语音提示",
+          "如果亲人从没同意留声样，你私下拿旧录音去训练模型复原，那份声音一旦公开传播，就变成对他声音权益的冒犯",
+          "想转发先说清这是AI声，别让对方误以为人回来了。"
+        ],
+        "problem_spans": []
+      },
+      "logic_structure": {
+        "positive_spans": [
+          "咱们得看清两道坎。",
+          "另一道坎在同意。",
+          "想转发先说清这是AI声，别让对方误以为人回来了。"
+        ],
+        "problem_spans": []
+      },
+      "engagement": {
+        "positive_spans": [
+          "用AI复原逝者声音，你花几百块求安慰却可能侵权。",
+          "咱们得看清两道坎。",
+          "我是在纪念回忆，还是在假装他还在人世呢？"
+        ],
+        "problem_spans": []
+      },
+      "rhetoric_memorability": {
+        "positive_spans": [
+          "咱们得看清两道坎。",
+          "可没标清就容易踩过那条伦理边界线。",
+          "我是在纪念回忆，还是在假装他还在人世呢？"
+        ],
+        "problem_spans": []
+      },
+      "oral_fluency": {
+        "positive_spans": [
+          "别把合成声当遗言信了，那不是真人回来。"
+        ],
+        "problem_spans": []
+      },
+      "safety_compliance": {
+        "positive_spans": [
+          "按规定，这类AI合成的音频必须在开头或结尾加清晰语音提示，让人一听知是机器造的",
+          "想转发先说清这是AI声，别让对方误以为人回来了。"
+        ],
+        "problem_spans": []
+      }
+    },
+    "judge_diagnostics": {
+      "口播": {
+        "oral_subscores": {
+          "朗读顺口度": {
+            "score": 3,
+            "comment": "气口均短于35字，停顿重音清楚，无卡嘴或临时换词。",
+            "positive_spans": [
+              "咱们得看清两道坎。"
+            ],
+            "problem_spans": []
+          },
+          "口语自然度": {
+            "score": 3,
+            "comment": "中段两处解释用口语词序与具体动词，转录音稿无需改写。",
+            "positive_spans": [
+              "别把合成声当遗言信了，那不是真人回来。",
+              "你私下拿旧录音去训练模型复原"
+            ],
+            "problem_spans": []
+          }
+        }
+      }
+    },
+    "context_truncated": false,
+    "context_fields_filtered": true,
+    "sent_evidence_ids": [
+      "E001"
+    ],
+    "prompt_characters": 17392,
+    "reasoning_effort": "high",
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "evaluator_fingerprint": {
+      "kind": "judge",
+      "name": "hy3-script-quality-judge",
+      "version": "3.3.0",
+      "model": "hy4-preview",
+      "prompt_version": "script-quality-grounded-groups-v3.3",
+      "config": {
+        "request": {
+          "reasoning_effort": "high",
+          "max_format_attempts": 2,
+          "max_script_characters": 30000,
+          "max_context_string_characters": 4000,
+          "max_context_list_items": 50,
+          "max_prompt_characters": 60000
+        },
+        "sampling_parameters": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        }
+      },
+      "sha256": "51a64021e077c9a2188741d44b6d5ec749ce549d63f19bb9b67724ed4562d401"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

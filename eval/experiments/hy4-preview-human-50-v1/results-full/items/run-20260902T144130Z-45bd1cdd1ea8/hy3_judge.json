@@ -1,0 +1,408 @@
+{
+  "evaluation_id": "judge-25129c48f4b34cf9bcd829052af0445a",
+  "run_id": "run-20260902T144130Z-45bd1cdd1ea8",
+  "trace_sha256": "5ab9dfec5dcbbcd279fc79c6e09baf0f715951961561f1852248dfcbd22e7738",
+  "created_at": "2026-09-10T14:55:10.837770Z",
+  "evaluator": {
+    "kind": "judge",
+    "name": "hy3-script-quality-judge",
+    "version": "3.3.0",
+    "model": "hy4-preview"
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "主要短板：口播流畅度",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头至结尾紧扣‘更快’与‘更吵’两侧，覆盖试点时效、噪声密度及居民痛点，切角精准契合普通家庭。",
+      "script_spans": [
+        "快递省下十五分钟，你却要多忍上空嗡嗡声。",
+        "若你家不在航线底，好处沾不上却先听响，这才是不公平处。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "引用数据准确，从时效、成本到噪声分贝层层推进，密度抵消降噪的论证扎实，带给观众明确认知增量。",
+      "script_spans": [
+        "无人机噪声比直升机低十五分贝，但直升机就因吵被限飞，这差距不算真解噪。",
+        "单台声频柔和点，航路划到楼顶百台齐飞就烦，技术降噪被密度抵消。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头用省时与噪音反差设钩，中段以试点局限和密度抵消持续转折，结尾查包裹还是塞耳塞自然生长，互动余味强。",
+      "script_spans": [
+        "快递省下十五分钟，你却要多忍上空嗡嗡声。",
+        "技术降噪被密度抵消。",
+        "下次头顶嗡嗡响，你先查包裹到哪，还是先塞耳塞？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句多、气口清晰，对话感不错；但中段仍有官方堆叠与书面被动句，需改词才顺。",
+      "script_spans": [
+        "要时效得放飞机，要安静得收空域。",
+        "民航局正推低空空域改革试点",
+        "这差距不算真解噪"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制精准，“要时效得放飞机，要安静得收空域”等对仗与“技术降噪被密度抵消”凝练准确，自然易复述，无炫技。",
+      "script_spans": [
+        "要时效得放飞机，要安静得收空域。",
+        "技术降噪被密度抵消。",
+        "好处沾不上却先听响"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开篇立冲突，中段析时效与噪声因果，结尾以‘查包裹还是塞耳塞’精准回扣题设，逻辑闭环严密。",
+      "script_spans": [
+        "要时效得放飞机，要安静得收空域。",
+        "下次头顶嗡嗡响，你先查包裹到哪，还是先塞耳塞？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体客观平衡，点明试点边界与成本；但“老人对高音调更敏感”为绝对化标签化归因，易误导，需补充限定。",
+      "script_spans": [
+        "可快集中在试点片区，大量快递仍走地面三轮。",
+        "老人对高音调更敏感。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": 2.7142857142857144,
+    "normalized_score": 0.9047619047619048,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 1.0,
+    "context_complete": true
+  },
+  "findings": [],
+  "metadata": {
+    "prompt_version": "script-quality-grounded-groups-v3.3",
+    "request_id": "af61ba1d-ae6e-4d5a-a10e-e2d2e934b2bf",
+    "request_ids": [
+      "239dc9f0-5665-4692-9dfc-97d72a93fb7a",
+      "3a9a22fa-08b2-4190-80b9-431ae875f5ce",
+      "b95c0ee3-99eb-4a4b-9db6-a4704dfa7f27",
+      "af61ba1d-ae6e-4d5a-a10e-e2d2e934b2bf"
+    ],
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 46687,
+      "prompt_tokens": 16627,
+      "total_tokens": 63314,
+      "completion_tokens_details": {
+        "reasoning_tokens": 45511
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "request_id": "239dc9f0-5665-4692-9dfc-97d72a93fb7a",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 12143,
+          "prompt_tokens": 4356,
+          "total_tokens": 16499,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 11768,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 2,
+        "request_id": "3a9a22fa-08b2-4190-80b9-431ae875f5ce",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 10957,
+          "prompt_tokens": 4187,
+          "total_tokens": 15144,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 10681,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 3,
+        "request_id": "b95c0ee3-99eb-4a4b-9db6-a4704dfa7f27",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 12118,
+          "prompt_tokens": 4121,
+          "total_tokens": 16239,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 11716,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 4,
+        "request_id": "af61ba1d-ae6e-4d5a-a10e-e2d2e934b2bf",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 11469,
+          "prompt_tokens": 3963,
+          "total_tokens": 15432,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 11346,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      }
+    ],
+    "format_attempts": 4,
+    "judge_groups": [
+      {
+        "name": "content",
+        "dimension_ids": [
+          "topic_alignment",
+          "theme_information",
+          "logic_structure"
+        ],
+        "summary": "双侧覆盖，信息扎实，逻辑自洽",
+        "format_attempts": 1,
+        "request_ids": [
+          "239dc9f0-5665-4692-9dfc-97d72a93fb7a"
+        ]
+      },
+      {
+        "name": "传播",
+        "dimension_ids": [
+          "engagement",
+          "rhetoric_memorability"
+        ],
+        "summary": "反差抓人，推进密，金句凝练",
+        "format_attempts": 1,
+        "request_ids": [
+          "3a9a22fa-08b2-4190-80b9-431ae875f5ce"
+        ]
+      },
+      {
+        "name": "口播",
+        "dimension_ids": [
+          "oral_fluency"
+        ],
+        "summary": "短句顺口，中段书面语待改",
+        "format_attempts": 1,
+        "request_ids": [
+          "b95c0ee3-99eb-4a4b-9db6-a4704dfa7f27"
+        ]
+      },
+      {
+        "name": "安全",
+        "dimension_ids": [
+          "safety_compliance"
+        ],
+        "summary": "合规整体稳妥，个别表述需限定",
+        "format_attempts": 1,
+        "request_ids": [
+          "af61ba1d-ae6e-4d5a-a10e-e2d2e934b2bf"
+        ]
+      }
+    ],
+    "span_evidence": {
+      "topic_alignment": {
+        "positive_spans": [
+          "快递省下十五分钟，你却要多忍上空嗡嗡声。",
+          "若你家不在航线底，好处沾不上却先听响，这才是不公平处。"
+        ],
+        "problem_spans": []
+      },
+      "theme_information": {
+        "positive_spans": [
+          "无人机噪声比直升机低十五分贝，但直升机就因吵被限飞，这差距不算真解噪。",
+          "单台声频柔和点，航路划到楼顶百台齐飞就烦，技术降噪被密度抵消。"
+        ],
+        "problem_spans": []
+      },
+      "logic_structure": {
+        "positive_spans": [
+          "要时效得放飞机，要安静得收空域。",
+          "下次头顶嗡嗡响，你先查包裹到哪，还是先塞耳塞？"
+        ],
+        "problem_spans": []
+      },
+      "engagement": {
+        "positive_spans": [
+          "快递省下十五分钟，你却要多忍上空嗡嗡声。",
+          "技术降噪被密度抵消。",
+          "下次头顶嗡嗡响，你先查包裹到哪，还是先塞耳塞？"
+        ],
+        "problem_spans": []
+      },
+      "rhetoric_memorability": {
+        "positive_spans": [
+          "要时效得放飞机，要安静得收空域。",
+          "技术降噪被密度抵消。",
+          "好处沾不上却先听响"
+        ],
+        "problem_spans": []
+      },
+      "oral_fluency": {
+        "positive_spans": [
+          "要时效得放飞机，要安静得收空域。"
+        ],
+        "problem_spans": [
+          "民航局正推低空空域改革试点",
+          "这差距不算真解噪"
+        ]
+      },
+      "safety_compliance": {
+        "positive_spans": [
+          "可快集中在试点片区，大量快递仍走地面三轮。"
+        ],
+        "problem_spans": [
+          "老人对高音调更敏感。"
+        ]
+      }
+    },
+    "judge_diagnostics": {
+      "口播": {
+        "oral_subscores": {
+          "朗读顺口度": {
+            "score": 2,
+            "comment": "整体短气口为主，但‘低空空域改革试点’等堆叠与‘真解噪’生造，朗读需重断或换词。",
+            "positive_spans": [
+              "要时效得放飞机，要安静得收空域。"
+            ],
+            "problem_spans": [
+              "民航局正推低空空域改革试点",
+              "这差距不算真解噪"
+            ]
+          },
+          "口语自然度": {
+            "score": 2,
+            "comment": "多处像当面聊天，如点生鲜、走三轮；但‘声频’‘技术降噪被密度抵消’偏书面，录音前需改写。",
+            "positive_spans": [
+              "可快集中在试点片区，大量快递仍走地面三轮。",
+              "你点生鲜二十分钟上门，但傍晚窗外低频嗡鸣，孩子写作业分神。"
+            ],
+            "problem_spans": [
+              "单台声频柔和点",
+              "技术降噪被密度抵消",
+              "民航局正推低空空域改革试点"
+            ]
+          }
+        }
+      }
+    },
+    "context_truncated": false,
+    "context_fields_filtered": true,
+    "sent_evidence_ids": [
+      "E002",
+      "E004",
+      "E006"
+    ],
+    "prompt_characters": 29364,
+    "reasoning_effort": "high",
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "evaluator_fingerprint": {
+      "kind": "judge",
+      "name": "hy3-script-quality-judge",
+      "version": "3.3.0",
+      "model": "hy4-preview",
+      "prompt_version": "script-quality-grounded-groups-v3.3",
+      "config": {
+        "request": {
+          "reasoning_effort": "high",
+          "max_format_attempts": 2,
+          "max_script_characters": 30000,
+          "max_context_string_characters": 4000,
+          "max_context_list_items": 50,
+          "max_prompt_characters": 60000
+        },
+        "sampling_parameters": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        }
+      },
+      "sha256": "51a64021e077c9a2188741d44b6d5ec749ce549d63f19bb9b67724ed4562d401"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

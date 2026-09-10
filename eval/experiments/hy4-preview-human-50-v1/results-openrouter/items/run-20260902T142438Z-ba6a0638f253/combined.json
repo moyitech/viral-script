@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-56e9999700e249319f59d9546d4bc31e",
+  "run_id": "run-20260902T142438Z-ba6a0638f253",
+  "trace_sha256": "82a31ca845a73664f9f77d4f08854c2f2a80eb6464d307c356478ff7971fa25e",
+  "created_at": "2026-09-10T15:07:10.288559Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即问安慰还是冒犯，正文明确区分私人怀念与商用越界，覆盖冲突两侧与普通人群痛点，切角具体。",
+      "script_spans": [
+        "亲人出于怀念小范围听听，是温柔补位；拿去编遗言商用，可能踩伦理线。",
+        "想再听句“吃饭没”或“生日快乐”，这种心情我懂。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题聚焦AI复原逝者声音，技术原理、标识新规、研究证据与哲学结论层层递进，信息扎实且有情绪增量。",
+      "script_spans": [
+        "国家网信办等四个部门专门发了标识办法。这类合成音频必须加显式标识，在声音开头、末尾或中间，加一句“此为AI生成”的提示音。",
+        "有研究跟踪丧亲家庭，发现有人觉语调熟心里松些，也有专家担心太像会拖慢痊愈。",
+        "技术能模仿声调，模仿不了脾气。你听到的，只是你想要的她。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以逝去妈妈的声音制造强冲突，中段从技术原理到法规研究持续推进，结尾以孤独与失去的追问自然收束，余味悠长。",
+      "script_spans": [
+        "你听见逝去妈妈的声音在笑，这到底是安慰还是冒犯？",
+        "当机器替逝者说话，我们听的到底是牵挂，还是自己的孤独？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "口语自然、短句好读，技术原理句像真人说话；但“切菜还是伤人看人”需重断句，“常不强标”生硬，两处拗口限流畅度2分。",
+      "script_spans": [
+        "传段录音，算法一遍遍学她怎么换气怎么停顿，再按你写的词，合成没说过的话。",
+        "切菜还是伤人看人",
+        "私家人拿录音建模自己听，常不强标"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，如“切菜还是伤人”喻技术中性；“模仿不了脾气”等金句自然准确，直击AI局限，记忆点深刻无炫技。",
+      "script_spans": [
+        "技术能模仿声调，模仿不了脾气。",
+        "你听到的，只是你想要的她。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "每段功能清晰，从场景、技术、监管到研究逐层递进，因果桥完整，结尾以牵挂与孤独之问自然回扣开头。",
+      "script_spans": [
+        "技术本身中性，切菜还是伤人看人。亲人出于怀念小范围听听，是温柔补位；拿去编遗言商用，可能踩伦理线。",
+        "当机器替逝者说话，我们听的到底是牵挂，还是自己的孤独？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全文客观平衡，明确提示合成音频需加显式标识、商用编遗言可能踩伦理线，并强调家属同意，无绝对化承诺，合规安全。",
+      "script_spans": [
+        "这类合成音频必须加显式标识，在声音开头、末尾或中间，加一句“此为AI生成”的提示音。",
+        "亲人出于怀念小范围听听，是温柔补位；拿去编遗言商用，可能踩伦理线。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-90ef3786d84e42ec8f1033e76d9908f6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

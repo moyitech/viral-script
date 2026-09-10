@@ -1,0 +1,457 @@
+{
+  "evaluation_id": "judge-14172bd1204b4e689ad1661131365662",
+  "run_id": "run-20260902T144017Z-ee52770d87c0",
+  "trace_sha256": "436b77f139c86ae1fc13f012a5aac2726e5ec6bb5843cea2697a6f5d36f21566",
+  "created_at": "2026-09-10T15:06:46.497765Z",
+  "evaluator": {
+    "kind": "judge",
+    "name": "hy3-script-quality-judge",
+    "version": "3.3.0",
+    "model": "tencent/hy4-preview"
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "主要短板：口播流畅度",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即点明省钱与怕差的冲突，全文围绕普通人如何挑对预制菜兼顾两者，完全切题。",
+      "script_spans": [
+        "你花八块吃预制菜，比堂食省二十，却怕它差？别急，想省钱又保品质，挑对了就能兼顾。",
+        "咱们普通人咋办？买正规厂牌，看包装贮运方式，冷冻冷藏分清楚。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从成本成因、国标定义到挑选方法，信息单元层层递进，事实与建议扎实，观众能带走判断方法。",
+      "script_spans": [
+        "为啥它便宜？工厂把同种菜集中做，大批量进货压低单价。切配用机器搞，厨师人力省掉。",
+        "今年征求意见的国标写明了，预制菜不添防腐剂。它是预加工熟制、加热就吃的预包装菜。",
+        "回家热透，顺手焯把青菜拌进去。配料表写“熟制后食用”的才正宗，表上生僻字少更稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以省钱与怕差的冲突设问抓人，中段用国标与锅气取舍持续推进，结尾以半小时自由换踏实饭自然收束，余味足。",
+      "script_spans": [
+        "你花八块吃预制菜，比堂食省二十，却怕它差？",
+        "你赚工业效率的钱，让出的是堂食锅气。",
+        "当标价更低时，你愿用半小时自由换这顿踏实饭吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句多、气口顺，朗读不卡嘴；但核心解释仍带书面术语，口语自然度不足，故取2分。",
+      "script_spans": [
+        "回家热透，顺手焯把青菜拌进去。",
+        "它经工业化预加工，炒炸烤煮提前完成，配料包回家只加热。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，'赚工业效率的钱，让出的是堂食锅气'自然准确，提炼核心取舍，离开上下文仍易复述，无炫技堆砌。",
+      "script_spans": [
+        "你赚工业效率的钱，让出的是堂食锅气。",
+        "你花三分钟加热，换来半小时自由，口感补上钱包没瘪。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以三个设问推进，因果桥清晰，结尾用自由换踏实饭回扣开头，结构层层递进且逻辑自洽。",
+      "script_spans": [
+        "你赚工业效率的钱，让出的是堂食锅气。这规矩划清界限，你买得明白不怕糊弄。",
+        "咱们普通人咋办？买正规厂牌，看包装贮运方式，冷冻冷藏分清楚。",
+        "当标价更低时，你愿用半小时自由换这顿踏实饭吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "国标引用注明了征求意见稿，边界清晰；但“省二十”“才正宗”等绝对化、未限定表述易误导观众，需补充限定。",
+      "script_spans": [
+        "今年征求意见的国标写明了，预制菜不添防腐剂。",
+        "你花八块吃预制菜，比堂食省二十",
+        "配料表写“熟制后食用”的才正宗"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": 2.7142857142857144,
+    "normalized_score": 0.9047619047619048,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 1.0,
+    "context_complete": true
+  },
+  "findings": [],
+  "metadata": {
+    "prompt_version": "script-quality-grounded-groups-v3.3",
+    "request_id": "gen-1789052579-dAtpR8BcmFvvd6oYC1ns",
+    "request_ids": [
+      "gen-1789052581-5KGPtv7SMVFrj1Xca7Vb",
+      "gen-1789052580-3p0JGiWXvg1oZBVm4yYU",
+      "gen-1789052579-sJ1xlfJjkgGjSXThSGuQ",
+      "gen-1789052579-dAtpR8BcmFvvd6oYC1ns"
+    ],
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 55298,
+      "prompt_tokens": 13991,
+      "total_tokens": 69289,
+      "completion_tokens_details": {
+        "audio_tokens": 0,
+        "reasoning_tokens": 54096,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 2560,
+        "video_tokens": 0
+      },
+      "cost": 0.147941272,
+      "cost_details": {
+        "upstream_inference_cost": 0.147941272,
+        "upstream_inference_prompt_cost": 0.009640974,
+        "upstream_inference_completions_cost": 0.13830029800000002
+      }
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "request_id": "gen-1789052581-5KGPtv7SMVFrj1Xca7Vb",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 15817,
+          "prompt_tokens": 3697,
+          "total_tokens": 19514,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 15354,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1472,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.041475791,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.041475791,
+            "upstream_inference_prompt_cost": 0.001917474,
+            "upstream_inference_completions_cost": 0.039558317
+          }
+        }
+      },
+      {
+        "attempt": 2,
+        "request_id": "gen-1789052580-3p0JGiWXvg1oZBVm4yYU",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 10828,
+          "prompt_tokens": 3528,
+          "total_tokens": 14356,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 10550,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.03002318,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.03002318,
+            "upstream_inference_prompt_cost": 0.002942352,
+            "upstream_inference_completions_cost": 0.027080828
+          }
+        }
+      },
+      {
+        "attempt": 3,
+        "request_id": "gen-1789052579-sJ1xlfJjkgGjSXThSGuQ",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 14750,
+          "prompt_tokens": 3462,
+          "total_tokens": 18212,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 14437,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.039777058,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.039777058,
+            "upstream_inference_prompt_cost": 0.002887308,
+            "upstream_inference_completions_cost": 0.03688975
+          }
+        }
+      },
+      {
+        "attempt": 4,
+        "request_id": "gen-1789052579-dAtpR8BcmFvvd6oYC1ns",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 13903,
+          "prompt_tokens": 3304,
+          "total_tokens": 17207,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 13755,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1088,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.036665243,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.036665243,
+            "upstream_inference_prompt_cost": 0.00189384,
+            "upstream_inference_completions_cost": 0.034771403
+          }
+        }
+      }
+    ],
+    "format_attempts": 4,
+    "judge_groups": [
+      {
+        "name": "content",
+        "dimension_ids": [
+          "topic_alignment",
+          "theme_information",
+          "logic_structure"
+        ],
+        "summary": "切题精准，信息扎实，逻辑顺滑",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052581-5KGPtv7SMVFrj1Xca7Vb"
+        ]
+      },
+      {
+        "name": "传播",
+        "dimension_ids": [
+          "engagement",
+          "rhetoric_memorability"
+        ],
+        "summary": "冲突开篇，取舍清晰，记忆点自然",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052580-3p0JGiWXvg1oZBVm4yYU"
+        ]
+      },
+      {
+        "name": "口播",
+        "dimension_ids": [
+          "oral_fluency"
+        ],
+        "summary": "朗读顺口但核心偏书面，评2分",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052579-sJ1xlfJjkgGjSXThSGuQ"
+        ]
+      },
+      {
+        "name": "安全",
+        "dimension_ids": [
+          "safety_compliance"
+        ],
+        "summary": "合规整体安全，个别绝对化表述待改",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052579-dAtpR8BcmFvvd6oYC1ns"
+        ]
+      }
+    ],
+    "span_evidence": {
+      "topic_alignment": {
+        "positive_spans": [
+          "你花八块吃预制菜，比堂食省二十，却怕它差？别急，想省钱又保品质，挑对了就能兼顾。",
+          "咱们普通人咋办？买正规厂牌，看包装贮运方式，冷冻冷藏分清楚。"
+        ],
+        "problem_spans": []
+      },
+      "theme_information": {
+        "positive_spans": [
+          "为啥它便宜？工厂把同种菜集中做，大批量进货压低单价。切配用机器搞，厨师人力省掉。",
+          "今年征求意见的国标写明了，预制菜不添防腐剂。它是预加工熟制、加热就吃的预包装菜。",
+          "回家热透，顺手焯把青菜拌进去。配料表写“熟制后食用”的才正宗，表上生僻字少更稳。"
+        ],
+        "problem_spans": []
+      },
+      "logic_structure": {
+        "positive_spans": [
+          "你赚工业效率的钱，让出的是堂食锅气。这规矩划清界限，你买得明白不怕糊弄。",
+          "咱们普通人咋办？买正规厂牌，看包装贮运方式，冷冻冷藏分清楚。",
+          "当标价更低时，你愿用半小时自由换这顿踏实饭吗？"
+        ],
+        "problem_spans": []
+      },
+      "engagement": {
+        "positive_spans": [
+          "你花八块吃预制菜，比堂食省二十，却怕它差？",
+          "你赚工业效率的钱，让出的是堂食锅气。",
+          "当标价更低时，你愿用半小时自由换这顿踏实饭吗？"
+        ],
+        "problem_spans": []
+      },
+      "rhetoric_memorability": {
+        "positive_spans": [
+          "你赚工业效率的钱，让出的是堂食锅气。",
+          "你花三分钟加热，换来半小时自由，口感补上钱包没瘪。"
+        ],
+        "problem_spans": []
+      },
+      "oral_fluency": {
+        "positive_spans": [
+          "回家热透，顺手焯把青菜拌进去。"
+        ],
+        "problem_spans": [
+          "它经工业化预加工，炒炸烤煮提前完成，配料包回家只加热。"
+        ]
+      },
+      "safety_compliance": {
+        "positive_spans": [
+          "今年征求意见的国标写明了，预制菜不添防腐剂。"
+        ],
+        "problem_spans": [
+          "你花八块吃预制菜，比堂食省二十",
+          "配料表写“熟制后食用”的才正宗"
+        ]
+      }
+    },
+    "judge_diagnostics": {
+      "口播": {
+        "oral_subscores": {
+          "朗读顺口度": {
+            "score": 3,
+            "comment": "气口短、停顿清楚，无两处卡嘴，朗读无需临时改词，顺口度达标。",
+            "positive_spans": [
+              "风味稳，出餐快，价就低。"
+            ],
+            "problem_spans": []
+          },
+          "口语自然度": {
+            "score": 2,
+            "comment": "有“回家热透”等口语片段，但核心解释多用“工业化预加工”等书面词，主体仍偏讲解。",
+            "positive_spans": [
+              "回家热透，顺手焯把青菜拌进去。"
+            ],
+            "problem_spans": [
+              "它经工业化预加工，炒炸烤煮提前完成，配料包回家只加热。"
+            ]
+          }
+        }
+      }
+    },
+    "context_truncated": false,
+    "context_fields_filtered": true,
+    "sent_evidence_ids": [
+      "E001",
+      "E002"
+    ],
+    "prompt_characters": 24412,
+    "reasoning_effort": "high",
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "evaluator_fingerprint": {
+      "kind": "judge",
+      "name": "hy3-script-quality-judge",
+      "version": "3.3.0",
+      "model": "tencent/hy4-preview",
+      "prompt_version": "script-quality-grounded-groups-v3.3",
+      "config": {
+        "request": {
+          "reasoning_effort": "high",
+          "max_format_attempts": 2,
+          "max_script_characters": 30000,
+          "max_context_string_characters": 4000,
+          "max_context_list_items": 50,
+          "max_prompt_characters": 60000
+        },
+        "sampling_parameters": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "transport": {
+          "protocol": "openrouter",
+          "endpoint_sha256": "76ef4ad6f0c8a4ae66efb13875c107cee40c78997a212353d379acfbb2f45591",
+          "reasoning_exclude": true,
+          "require_parameters": true,
+          "top_p_omitted_at_default": true
+        }
+      },
+      "sha256": "426eb58c9d520a3299f83aef02cd3f617db8e2fef3229339b0a6e9f06f93a893"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

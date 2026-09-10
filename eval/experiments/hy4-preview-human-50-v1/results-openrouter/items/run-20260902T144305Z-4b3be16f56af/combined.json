@@ -1,0 +1,134 @@
+{
+  "evaluation_id": "combined-dd420845e03d439d87c6ab98ce623d54",
+  "run_id": "run-20260902T144305Z-4b3be16f56af",
+  "trace_sha256": "d2707e525cdf9b782a2e1da546cf2966b1d7fbf1ff3204494eb0f8d92b7be096",
+  "created_at": "2026-09-10T15:06:10.682498Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即点题，明确回应补缺口与制造依赖两侧，并以家人配合为分寸，精准切中独居老人与子女痛点。",
+      "script_spans": [
+        "它既补了照护缺口，也藏着制造依赖的风险，分寸就在家人配不配合。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，从补缺口与致依赖两侧展开，并给出时薪与查培训等具体信息，事实与建议相互支撑，信息增量明确。",
+      "script_spans": [
+        "现在陪诊时薪大概五十到一百块，花钱前得想清。",
+        "找陪诊前，您得先问清他受过基础培训没，这步省不得。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字以具体就医冲突和两难提问设钩，中段转折揭示依赖风险，结尾用家人责任建议自然收束，余味足。",
+      "script_spans": [
+        "你妈一个人去医院迷路，花钱请人陪算补缺口还是养依赖？",
+        "但反过来看，如果子女周末明明有空，却次次点个陪诊单了事。",
+        "别把看病沟通全甩给陌生人，家人该出的力还是得自己出。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，停顿清楚；中段用生活场景与具体动词，像当面聊天，朗读无需改词。",
+      "script_spans": [
+        "陪诊师搀着走完流程，帮着问医生、拿药、取报告"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制，类比服务情绪，‘补缺口还是养依赖’等记忆点自然准确易复述，无炫技。",
+      "script_spans": [
+        "补缺口还是养依赖",
+        "像有了自家人陪着",
+        "家人该出的力还是得自己出"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构清晰，以提问开篇、亮明双侧观点，用‘但反过来看’自然转折，因果链条完整，结尾回扣家人配合的分寸。",
+      "script_spans": [
+        "但反过来看，如果子女周末明明有空，却次次点个陪诊单了事。老人习惯了外人陪，跟儿女聊病情的话越来越少，日常照顾也被挪走，这就成了依赖。",
+        "别把看病沟通全甩给陌生人，家人该出的力还是得自己出。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "客观指出陪诊既补缺口也有依赖风险，以家人配合为边界，无绝对化断言或违规承诺，价值导向安全稳妥。",
+      "script_spans": [
+        "它既补了照护缺口，也藏着制造依赖的风险，分寸就在家人配不配合。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3336bf8ce9ee47b6a6458ac0f5d06172",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

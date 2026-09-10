@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-22a06dfa6ab2459cb0fc8ba48615ad9f",
+  "run_id": "run-20260902T143313Z-b75580977412",
+  "trace_sha256": "003e762c5d63a240a955ec3fb3089549d2fb33e5d40eb9d68854501552d8e509",
+  "created_at": "2026-09-10T15:06:35.075232Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇点明效率与真实反馈的冲突，全文围绕‘当助手则实、当替身则虚’正面回答题设，覆盖师生家长痛点，切角具体。",
+      "script_spans": [
+        "人工智能批作文，效率确实高了，但真实反馈没被带走，只是换了形式。",
+        "你把AI当替身，反馈虚；当助手，反馈实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，调研、实验与案例等多信息单元层层推进，事实解释结论相互支撑，无编造，观众可带走判断方法与知识。",
+      "script_spans": [
+        "真实反馈不是只说哪句不通，而是点出他哪儿想透了、哪儿绕了弯。",
+        "二十八个学生用智能反馈改了十周议论文，成绩明显好了。可动手多是加词换句，深层论证去改的比例不高。",
+        "我看过一个调研，跑了三十二个省份，收回两万六千多份问卷。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以省时与错失点评的反差抓人，中段用调研与实验持续推进，结尾自然引出互动与余味。",
+      "script_spans": [
+        "省下十小时批改，却可能错过孩子需要的那句点评。",
+        "下次娃作文秒出评语，别光看分数，翻翻问他，这句让你想改吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇短气口为主，重音停顿清楚；中段用生活化例子和对话式承接，转录音稿基本无需改写。",
+      "script_spans": [
+        "这些时间耗在圈错字上，老师没空看学生想说啥。",
+        "他们用机器跑量，用人手补温度。",
+        "机器查漏，人点亮，两边配合才像教书。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务观点，“机器查漏，人点亮”等对比自然准确，留下多个可脱离上下文复述的记忆点。",
+      "script_spans": [
+        "机器查漏，人点亮，两边配合才像教书。",
+        "你把AI当替身，反馈虚；当助手，反馈实。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段落功能清晰，因果桥完整，反例与实验推进结论，结尾用‘省下的八小时’自然回扣开头，逻辑层层递进。",
+      "script_spans": [
+        "为什么老师愿意交给它？手工深批一篇，要十五到二十分钟。全班一次，得花八到十小时。这些时间耗在圈错字上，老师没空看学生想说啥。",
+        "可动手多是加词换句，深层论证去改的比例不高。这说明效率起来了，反馈深浅仍由人把关。",
+        "不如坐下来，用省下的八小时，听他讲讲自己写的世界。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "整体客观平衡，倡导人机协同且无违规；但“难免带偏见”绝对化归因，缺边界易误导，需改为“可能”。",
+      "script_spans": [
+        "你把AI当替身，反馈虚；当助手，反馈实。",
+        "算法不是活人，学的是过往数据，难免带偏见。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-278cb682f5324b78b57def4d0257b86e",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

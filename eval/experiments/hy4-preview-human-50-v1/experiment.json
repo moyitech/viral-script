@@ -1,0 +1,69 @@
+{
+  "experiment_id": "hy4-preview-human-50-v1",
+  "model": "hy4-preview",
+  "reasoning_effort": "high",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "scope": "50 frozen baseline traces; 7 subjective dimensions; judge-only diagnostic; no generation or live retrieval",
+  "comparison": "first-pass historical judges vs arithmetic mean of two human reviewers; Spearman on seven-dimension totals",
+  "git_revision": "7d9c7d83f2b48c5dba4b5feba80badb112b5b6b3",
+  "endpoint_sha256": "2226bbd5fbd2dcdb264389aed040c211322a1f1dbb8ea60d395cd01a3b73a68d",
+  "source_sha256": {
+    "eval/rubrics/script_quality_v1.json": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab",
+    "src/hyscript/evaluation/judge.py": "bfe612fcef64da752ee8c3d8d8b28f513425d445716eee217b541f4a366626ce",
+    "src/hyscript/llm/async_client.py": "795e12f676d39a717a1fa4d0d295355740b6b9fe41154a9b7673e413124941be",
+    "eval/experiments/hy4-preview-human-50-v1/trace_manifest.json": "c60a15ffb6ad652ab53e3c5f0e88bfdf3562325d4c9805cd1bebb74604b9bff6"
+  },
+  "execution": {
+    "final_results": "results-full",
+    "request_concurrency": 200,
+    "reused_completed_records": 2,
+    "interrupted_attempts": [
+      "results",
+      "results-remaining"
+    ],
+    "interruption_reason": "Restarted at higher concurrency after observing 44k-49k completion tokens per scored trace; completed records reused without rescore.",
+    "additional_diagnostics": "Model listing; one tiny no_think completion (4.8s); one 16-token high-effort admission probe (3.4s, finish_reason=length), excluded from scores.",
+    "unit_tests": "295 passed"
+  },
+  "continuation": {
+    "provider": "openrouter",
+    "model": "tencent/hy4-preview",
+    "cached_count": 25,
+    "new_count": 25,
+    "authorization": "User explicitly approved reuse of completed prior-channel scores.",
+    "manifest": "openrouter_manifest.json",
+    "results": "results-openrouter",
+    "request_concurrency": 100,
+    "reasoning_effort": "high",
+    "temperature": 0,
+    "top_p": "Omitted at neutral default because route does not advertise support",
+    "unit_tests": "300 passed",
+    "retry": {
+      "completed_reused": 22,
+      "failed_retried": 3,
+      "errors": {
+        "invalid_structured_output": 1,
+        "provider_request_failed": 2
+      },
+      "concurrency": 12,
+      "policy": "One targeted resume of missing results with unchanged model, prompt and validators."
+    },
+    "final_status": {
+      "cached": 25,
+      "new_completed": 25,
+      "failed": 0,
+      "retry_completed": 3,
+      "retry_skipped": 22
+    }
+  },
+  "source_sha256_at_continuation": {
+    "src/hyscript/llm/async_client.py": "d4adcbebe1fc2205d53016cc52b7c88000d9b1dd92ec6838fb28291268c31c20",
+    "src/hyscript/config/settings.py": "e1ff65e7ecb46f066dc6e20386296310f9de71f19a5a17c91c7439377e27cae6",
+    "scripts/run_evaluation.py": "33bc6b024f076cc49480919551740b12c324bfc9248f258ef3e80abc43a183b8",
+    "eval/experiments/hy4-preview-human-50-v1/cache_reuse.json": "9e13ec860f22ea950209d615a6f33c613dd410f874e0e0b2c127e09474e8213b",
+    "eval/experiments/hy4-preview-human-50-v1/openrouter_manifest.json": "ace3934e96a6e83c5a0f0c5b1fbe609e0e094202014055adc00acad26ba15149"
+  },
+  "status": "completed",
+  "final_report": "report.md"
+}

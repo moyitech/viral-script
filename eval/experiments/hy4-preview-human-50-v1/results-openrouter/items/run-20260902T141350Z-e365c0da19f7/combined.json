@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-ec71e62e20d740f59691faab50f13d74",
+  "run_id": "run-20260902T141350Z-e365c0da19f7",
+  "trace_sha256": "816e5fb2efcdefb7af2e6460e4d451c0643640418c99bbc7fc7d4b66cfb0764e",
+  "created_at": "2026-09-10T15:06:33.208052Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从开头到结论正面回答二元选择，覆盖利率比较与备用金冲突，给出折中方案，精准契合普通家庭痛点。",
+      "script_spans": [
+        "这事儿不能一刀切，得看你的房贷利率和手头备用金谁更紧迫。",
+        "折中办法：留半年开支，余钱部分还。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，利率计算、还款新规与流动性风险层层递进，提供留半年开支的具体判断方法，信息增量扎实。",
+      "script_spans": [
+        "算下来，提前还十万，若利率差两点，年省两千。连续省十年就两万。",
+        "折中办法：留半年开支，余钱部分还。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以留现金与还贷的两难冲突抓人，中段用利率账、新规与流动性风险持续推进，结尾以取舍提问自然互动，余味足。",
+      "script_spans": [
+        "留现金吃息越来越少，提前还贷又怕将来缺钱。",
+        "你愿不愿为随时取钱，放弃那点还贷省下的利？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇短气口为主，重音停顿清楚；中段用提问和口语化算账，像真人当面解释，无需改词。",
+      "script_spans": [
+        "你知道自己合同上的房贷利率怎么定吗？它常在那报价上加几十个点。",
+        "若工作收入波动大，留笔撑半年的钱比省息更要紧。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，'弹药''锁死''抓瞎'等表达生动自然，'现金也是抓住新机会的弹药'准确易记，无炫技堆砌。",
+      "script_spans": [
+        "现金也是抓住新机会的弹药。",
+        "闲钱躺账户确实亏，但全砸房贷遇看病失业就抓瞎。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "结构完整且转折清晰，但‘全还清’后仍称‘月供扛不住’属概念偷换，例证因果断裂，经不起追问。",
+      "script_spans": [
+        "先算最直观的利率账。",
+        "但别急着冲去还款。",
+        "我见过有人全还清图安心，结果收入一断，没现金月供都扛不住，本金套牢。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "多数建议附有条件且提示查合同，较稳妥；但‘全还清’后仍称‘月供扛不住’存在矛盾，易误导，需改写。",
+      "script_spans": [
+        "若收入稳、备用金足，房贷利率又高，部分提前还挺实在。",
+        "全还清图安心，结果收入一断，没现金月供都扛不住"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-2a26f4f3b5f641c09e99a6498ec9cb10",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

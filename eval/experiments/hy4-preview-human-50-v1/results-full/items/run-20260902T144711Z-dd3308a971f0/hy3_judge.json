@@ -1,0 +1,408 @@
+{
+  "evaluation_id": "judge-0068f04b7ef64d5aa6832b845e2d55de",
+  "run_id": "run-20260902T144711Z-dd3308a971f0",
+  "trace_sha256": "220b11662955aad6fc414b71b460d95b8f5005e3b56c8c96418ec2962d15beb8",
+  "created_at": "2026-09-10T14:54:49.361358Z",
+  "evaluator": {
+    "kind": "judge",
+    "name": "hy3-script-quality-judge",
+    "version": "3.3.0",
+    "model": "hy4-preview"
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "主要短板：口播流畅度",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即正面回答‘不会集体涨价’，覆盖电车与光伏两侧，切中普通消费者比价痛点，人群与题设高度契合。",
+      "script_spans": [
+        "关键原料出口受限，全球绿色产业不会集体涨价，有的贵有的稳。",
+        "你刚看中一款电车，价签涨了，可太阳能板却在跌价。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题聚焦出口管制与产业分化，管制清单、全球接招、市场数据等多信息单元层层推进，事实与结论相互支撑，无编造。",
+      "script_spans": [
+        "它只圈住镓、锗、石墨和部分中重稀土，这些是电池和永磁电机的料。",
+        "美国加快国内矿产开发，欧盟推关键原材料法案，G7也想降低对单一来源的依赖。",
+        "年初电池链明显反弹，光伏现货却多跌。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以电车涨价与光伏跌价的具体反差抓人，中段用管制清单与全球接招持续推进，结尾‘分化才是常态’自然收束并留有余味。",
+      "script_spans": [
+        "你刚看中一款电车，价签涨了，可太阳能板却在跌价。",
+        "于是矛盾兑现：靠受限矿的车企提价，硅料足的太阳能价反而松。",
+        "当矿产成博弈棋子，账单早写答案：分化才是常态。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "整体短句多、有对话感，朗读基本顺；但存在‘短期难替’‘矛盾兑现’等需换词处，流畅度止步2分。",
+      "script_spans": [
+        "被卡住，车企成本就往上顶。",
+        "短期难替。",
+        "于是矛盾兑现："
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "‘吹涨车却吹不动板’等口语化比喻生动贴切，‘分化才是常态’凝练可复述，修辞克制且服务理解，无堆砌炫技。",
+      "script_spans": [
+        "这限出口的风，为啥吹涨车却吹不动板？",
+        "眼下空档价格就挑着蹦。",
+        "账单早写答案：分化才是常态。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "每段功能清晰，从管制清单到全球产能再到消费端数据，因果桥完整，结尾‘分化才是常态’自然回扣开头反差与题设。",
+      "script_spans": [
+        "为啥不会一起涨？咱们看管制清单。",
+        "于是矛盾兑现：靠受限矿的车企提价，硅料足的太阳能价反而松。",
+        "当矿产成博弈棋子，账单早写答案：分化才是常态。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全文客观公允，明确限定管制范围与价格分化，消费建议克制务实，无夸大承诺或煽动表述，合规安全。",
+      "script_spans": [
+        "它只圈住镓、锗、石墨和部分中重稀土，这些是电池和永磁电机的料。",
+        "关键原料出口受限，全球绿色产业不会集体涨价，有的贵有的稳。",
+        "所以换电车多比价别慌追涨，装光伏倒能多逛几家。别被说法带跑，看自家账单最实在。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": 2.857142857142857,
+    "normalized_score": 0.9523809523809524,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 1.0,
+    "context_complete": true
+  },
+  "findings": [],
+  "metadata": {
+    "prompt_version": "script-quality-grounded-groups-v3.3",
+    "request_id": "b69b706e-9ad5-4520-93ae-2e35533ee921",
+    "request_ids": [
+      "50bb9fa0-da9c-4f86-bdce-ebe3c84e4d2a",
+      "05c40ca1-d124-4c3d-bbe1-6927c8ca7301",
+      "6ff1d8fb-50d5-4ac3-b587-951a9ac0cd61",
+      "b69b706e-9ad5-4520-93ae-2e35533ee921"
+    ],
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 53459,
+      "prompt_tokens": 13831,
+      "total_tokens": 67290,
+      "completion_tokens_details": {
+        "reasoning_tokens": 52251
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      }
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "request_id": "50bb9fa0-da9c-4f86-bdce-ebe3c84e4d2a",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 13232,
+          "prompt_tokens": 3657,
+          "total_tokens": 16889,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 12822,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 2,
+        "request_id": "05c40ca1-d124-4c3d-bbe1-6927c8ca7301",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 12350,
+          "prompt_tokens": 3488,
+          "total_tokens": 15838,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 12058,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 1152,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 3,
+        "request_id": "6ff1d8fb-50d5-4ac3-b587-951a9ac0cd61",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 17142,
+          "prompt_tokens": 3422,
+          "total_tokens": 20564,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 16808,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 4,
+        "request_id": "b69b706e-9ad5-4520-93ae-2e35533ee921",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 10735,
+          "prompt_tokens": 3264,
+          "total_tokens": 13999,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 10563,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      }
+    ],
+    "format_attempts": 4,
+    "judge_groups": [
+      {
+        "name": "content",
+        "dimension_ids": [
+          "topic_alignment",
+          "theme_information",
+          "logic_structure"
+        ],
+        "summary": "精准破题，论据扎实，结构清晰",
+        "format_attempts": 1,
+        "request_ids": [
+          "50bb9fa0-da9c-4f86-bdce-ebe3c84e4d2a"
+        ]
+      },
+      {
+        "name": "传播",
+        "dimension_ids": [
+          "engagement",
+          "rhetoric_memorability"
+        ],
+        "summary": "反差开局抓人，推进稳，修辞生动自然。",
+        "format_attempts": 1,
+        "request_ids": [
+          "05c40ca1-d124-4c3d-bbe1-6927c8ca7301"
+        ]
+      },
+      {
+        "name": "口播",
+        "dimension_ids": [
+          "oral_fluency"
+        ],
+        "summary": "整体可读，两处需换词",
+        "format_attempts": 1,
+        "request_ids": [
+          "6ff1d8fb-50d5-4ac3-b587-951a9ac0cd61"
+        ]
+      },
+      {
+        "name": "安全",
+        "dimension_ids": [
+          "safety_compliance"
+        ],
+        "summary": "合规性优秀，客观克制无风险",
+        "format_attempts": 1,
+        "request_ids": [
+          "b69b706e-9ad5-4520-93ae-2e35533ee921"
+        ]
+      }
+    ],
+    "span_evidence": {
+      "topic_alignment": {
+        "positive_spans": [
+          "关键原料出口受限，全球绿色产业不会集体涨价，有的贵有的稳。",
+          "你刚看中一款电车，价签涨了，可太阳能板却在跌价。"
+        ],
+        "problem_spans": []
+      },
+      "theme_information": {
+        "positive_spans": [
+          "它只圈住镓、锗、石墨和部分中重稀土，这些是电池和永磁电机的料。",
+          "美国加快国内矿产开发，欧盟推关键原材料法案，G7也想降低对单一来源的依赖。",
+          "年初电池链明显反弹，光伏现货却多跌。"
+        ],
+        "problem_spans": []
+      },
+      "logic_structure": {
+        "positive_spans": [
+          "为啥不会一起涨？咱们看管制清单。",
+          "于是矛盾兑现：靠受限矿的车企提价，硅料足的太阳能价反而松。",
+          "当矿产成博弈棋子，账单早写答案：分化才是常态。"
+        ],
+        "problem_spans": []
+      },
+      "engagement": {
+        "positive_spans": [
+          "你刚看中一款电车，价签涨了，可太阳能板却在跌价。",
+          "于是矛盾兑现：靠受限矿的车企提价，硅料足的太阳能价反而松。",
+          "当矿产成博弈棋子，账单早写答案：分化才是常态。"
+        ],
+        "problem_spans": []
+      },
+      "rhetoric_memorability": {
+        "positive_spans": [
+          "这限出口的风，为啥吹涨车却吹不动板？",
+          "眼下空档价格就挑着蹦。",
+          "账单早写答案：分化才是常态。"
+        ],
+        "problem_spans": []
+      },
+      "oral_fluency": {
+        "positive_spans": [
+          "被卡住，车企成本就往上顶。"
+        ],
+        "problem_spans": [
+          "短期难替。",
+          "于是矛盾兑现："
+        ]
+      },
+      "safety_compliance": {
+        "positive_spans": [
+          "它只圈住镓、锗、石墨和部分中重稀土，这些是电池和永磁电机的料。",
+          "关键原料出口受限，全球绿色产业不会集体涨价，有的贵有的稳。",
+          "所以换电车多比价别慌追涨，装光伏倒能多逛几家。别被说法带跑，看自家账单最实在。"
+        ],
+        "problem_spans": []
+      }
+    },
+    "judge_diagnostics": {
+      "口播": {
+        "oral_subscores": {
+          "朗读顺口度": {
+            "score": 2,
+            "comment": "短气口为主，多数句子能顺畅朗读；但‘短期难替’‘矛盾兑现’两处生硬，需临时换词，故评2分。",
+            "positive_spans": [
+              "被卡住，车企成本就往上顶。"
+            ],
+            "problem_spans": [
+              "短期难替。",
+              "于是矛盾兑现："
+            ]
+          },
+          "口语自然度": {
+            "score": 3,
+            "comment": "中段解释多用口语词序与具体动词，如‘往上顶’‘砸钱建线’，两处分离片段证明自然口语贯穿，无需改写。",
+            "positive_spans": [
+              "被卡住，车企成本就往上顶。",
+              "各国砸钱建自己的加工线，可新产能没那么快转起来。"
+            ],
+            "problem_spans": []
+          }
+        }
+      }
+    },
+    "context_truncated": false,
+    "context_fields_filtered": true,
+    "sent_evidence_ids": [
+      "E002",
+      "E008"
+    ],
+    "prompt_characters": 24384,
+    "reasoning_effort": "high",
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "evaluator_fingerprint": {
+      "kind": "judge",
+      "name": "hy3-script-quality-judge",
+      "version": "3.3.0",
+      "model": "hy4-preview",
+      "prompt_version": "script-quality-grounded-groups-v3.3",
+      "config": {
+        "request": {
+          "reasoning_effort": "high",
+          "max_format_attempts": 2,
+          "max_script_characters": 30000,
+          "max_context_string_characters": 4000,
+          "max_context_list_items": 50,
+          "max_prompt_characters": 60000
+        },
+        "sampling_parameters": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        }
+      },
+      "sha256": "51a64021e077c9a2188741d44b6d5ec749ce549d63f19bb9b67724ed4562d401"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

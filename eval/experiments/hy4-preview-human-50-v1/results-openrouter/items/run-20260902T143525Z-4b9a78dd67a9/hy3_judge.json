@@ -1,0 +1,442 @@
+{
+  "evaluation_id": "judge-e58fe179c12f4091a7353a5b01f68afe",
+  "run_id": "run-20260902T143525Z-4b9a78dd67a9",
+  "trace_sha256": "037a11b026599817cf5985d562af4c157f31e0b806c984d15faf3df2de73d37a",
+  "created_at": "2026-09-10T15:06:34.359293Z",
+  "evaluator": {
+    "kind": "judge",
+    "name": "hy3-script-quality-judge",
+    "version": "3.3.0",
+    "model": "tencent/hy4-preview"
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "七维均达到卓越档",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头点明退役潮与污染取决于回收，结尾回扣随意丢才污染、规范收是资源，完整覆盖题设两侧与普通观众痛点。",
+      "script_spans": [
+        "退役潮真来了，留不留污看回收怎么做。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "从退役规模、污染机理、政策缺口到回收价值层层递进，事实与解释相互支撑，观众能带走找正规渠道的具体判断。",
+      "script_spans": [
+        "小厂常抡锤先砸碎玻璃抽走铝条，剩下整堆烧掉省事。烧完重金属进了飞灰"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以“绿电尾巴未必绿”制造反差，中段用焚烧乱象与产能缺口持续推进，结尾“接不住尾巴，绿电就打折”自然收束并留余味。",
+      "script_spans": [
+        "别以为太阳干净到底。绿电尾巴未必绿：",
+        "那为啥不直接吞掉它？眼下许多厂只拆外框和玻璃。电池片连着塑料层，常被一并送进炉子烧。",
+        "我们享了太阳的便宜，也该接住三十年后的尾巴。接不住尾巴，绿电就打折。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇短句与逗号切分清晰，气口短、重音明，无超长句或卡嘴，朗读无需改词。",
+      "script_spans": [
+        "别以为太阳干净到底。",
+        "把板子当矿挖，比当垃圾埋划算得多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“一块板子两种命”“把板子当矿挖”等比喻自然贴切，将回收逻辑讲得生动易懂，记忆点突出且不喧宾夺主。",
+      "script_spans": [
+        "一块板子两种命，全看末端怎么接。",
+        "把板子当矿挖，比当垃圾埋划算得多。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "每段功能清晰，从污染成因到政策缺口再到回收价值层层递进，结尾回扣绿电尾巴与末端处理，逻辑闭环。",
+      "script_spans": [
+        "那认真收能扳回一城吗？能。玻璃和金属提纯，又能回炉做新板。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "片段客观给出填埋条件，明确‘随意丢才污染，规范收是资源’，边界清晰，无绝对化或违规风险。",
+      "script_spans": [
+        "填埋不是不行，得做防渗处理。这风险只说一回：随意丢才污染，规范收是资源。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 1.0,
+    "context_complete": true
+  },
+  "findings": [],
+  "metadata": {
+    "prompt_version": "script-quality-grounded-groups-v3.3",
+    "request_id": "gen-1789052581-hwSgld1LWUlAIy18QhEz",
+    "request_ids": [
+      "gen-1789052580-idf0fpqWMh3JhYpEOoEr",
+      "gen-1789052579-tnzqRDfBcJP8am9mGa6z",
+      "gen-1789052580-nSkeQB8Y6wPgBVx2V8jB",
+      "gen-1789052581-hwSgld1LWUlAIy18QhEz"
+    ],
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 52723,
+      "prompt_tokens": 15783,
+      "total_tokens": 68506,
+      "completion_tokens_details": {
+        "audio_tokens": 0,
+        "reasoning_tokens": 51665,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 1728,
+        "video_tokens": 0
+      },
+      "cost": 0.143654669,
+      "cost_details": {
+        "upstream_inference_cost": 0.143654669,
+        "upstream_inference_prompt_cost": 0.011794446,
+        "upstream_inference_completions_cost": 0.131860223
+      }
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "request_id": "gen-1789052580-idf0fpqWMh3JhYpEOoEr",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 15476,
+          "prompt_tokens": 4145,
+          "total_tokens": 19621,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 15173,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1472,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.040996582,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.040996582,
+            "upstream_inference_prompt_cost": 0.002291106,
+            "upstream_inference_completions_cost": 0.038705476
+          }
+        }
+      },
+      {
+        "attempt": 2,
+        "request_id": "gen-1789052579-tnzqRDfBcJP8am9mGa6z",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 12311,
+          "prompt_tokens": 3976,
+          "total_tokens": 16287,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 12015,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 128,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.034004419,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.034004419,
+            "upstream_inference_prompt_cost": 0.003214608,
+            "upstream_inference_completions_cost": 0.030789811
+          }
+        }
+      },
+      {
+        "attempt": 3,
+        "request_id": "gen-1789052580-nSkeQB8Y6wPgBVx2V8jB",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 12289,
+          "prompt_tokens": 3910,
+          "total_tokens": 16199,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 11949,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 128,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.033894353,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.033894353,
+            "upstream_inference_prompt_cost": 0.003159564,
+            "upstream_inference_completions_cost": 0.030734789
+          }
+        }
+      },
+      {
+        "attempt": 4,
+        "request_id": "gen-1789052581-hwSgld1LWUlAIy18QhEz",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 12647,
+          "prompt_tokens": 3752,
+          "total_tokens": 16399,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 12528,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.034759315,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.034759315,
+            "upstream_inference_prompt_cost": 0.003129168,
+            "upstream_inference_completions_cost": 0.031630147
+          }
+        }
+      }
+    ],
+    "format_attempts": 4,
+    "judge_groups": [
+      {
+        "name": "content",
+        "dimension_ids": [
+          "topic_alignment",
+          "theme_information",
+          "logic_structure"
+        ],
+        "summary": "选题精准，信息扎实，逻辑闭环",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052580-idf0fpqWMh3JhYpEOoEr"
+        ]
+      },
+      {
+        "name": "传播",
+        "dimension_ids": [
+          "engagement",
+          "rhetoric_memorability"
+        ],
+        "summary": "双维均优：钩子强且金句自然",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052579-tnzqRDfBcJP8am9mGa6z"
+        ]
+      },
+      {
+        "name": "口播",
+        "dimension_ids": [
+          "oral_fluency"
+        ],
+        "summary": "短句为主，口语自然，朗读顺口",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052580-nSkeQB8Y6wPgBVx2V8jB"
+        ]
+      },
+      {
+        "name": "安全",
+        "dimension_ids": [
+          "safety_compliance"
+        ],
+        "summary": "合规安全，表述客观公允",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052581-hwSgld1LWUlAIy18QhEz"
+        ]
+      }
+    ],
+    "span_evidence": {
+      "topic_alignment": {
+        "positive_spans": [
+          "退役潮真来了，留不留污看回收怎么做。"
+        ],
+        "problem_spans": []
+      },
+      "theme_information": {
+        "positive_spans": [
+          "小厂常抡锤先砸碎玻璃抽走铝条，剩下整堆烧掉省事。烧完重金属进了飞灰"
+        ],
+        "problem_spans": []
+      },
+      "logic_structure": {
+        "positive_spans": [
+          "那认真收能扳回一城吗？能。玻璃和金属提纯，又能回炉做新板。"
+        ],
+        "problem_spans": []
+      },
+      "engagement": {
+        "positive_spans": [
+          "别以为太阳干净到底。绿电尾巴未必绿：",
+          "那为啥不直接吞掉它？眼下许多厂只拆外框和玻璃。电池片连着塑料层，常被一并送进炉子烧。",
+          "我们享了太阳的便宜，也该接住三十年后的尾巴。接不住尾巴，绿电就打折。"
+        ],
+        "problem_spans": []
+      },
+      "rhetoric_memorability": {
+        "positive_spans": [
+          "一块板子两种命，全看末端怎么接。",
+          "把板子当矿挖，比当垃圾埋划算得多。"
+        ],
+        "problem_spans": []
+      },
+      "oral_fluency": {
+        "positive_spans": [
+          "别以为太阳干净到底。",
+          "把板子当矿挖，比当垃圾埋划算得多。"
+        ],
+        "problem_spans": []
+      },
+      "safety_compliance": {
+        "positive_spans": [
+          "填埋不是不行，得做防渗处理。这风险只说一回：随意丢才污染，规范收是资源。"
+        ],
+        "problem_spans": []
+      }
+    },
+    "judge_diagnostics": {
+      "口播": {
+        "oral_subscores": {
+          "朗读顺口度": {
+            "score": 3,
+            "comment": "气口均在三十五字内，停顿清楚，无长难句或碎嘴，朗读顺口无需临时改词。",
+            "positive_spans": [
+              "别以为太阳干净到底。",
+              "把板子当矿挖，比当垃圾埋划算得多。"
+            ],
+            "problem_spans": []
+          },
+          "口语自然度": {
+            "score": 3,
+            "comment": "中段解释多用口语词序与具体动词，问答承接自然，转录音稿基本无需改写。",
+            "positive_spans": [
+              "小厂常抡锤先砸碎玻璃抽走铝条，剩下整堆烧掉省事。",
+              "玻璃和金属提纯，又能回炉做新板。提纯后的银和硅，够做不少新板。"
+            ],
+            "problem_spans": []
+          }
+        }
+      }
+    },
+    "context_truncated": false,
+    "context_fields_filtered": true,
+    "sent_evidence_ids": [
+      "E001",
+      "E003",
+      "E004"
+    ],
+    "prompt_characters": 30496,
+    "reasoning_effort": "high",
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "evaluator_fingerprint": {
+      "kind": "judge",
+      "name": "hy3-script-quality-judge",
+      "version": "3.3.0",
+      "model": "tencent/hy4-preview",
+      "prompt_version": "script-quality-grounded-groups-v3.3",
+      "config": {
+        "request": {
+          "reasoning_effort": "high",
+          "max_format_attempts": 2,
+          "max_script_characters": 30000,
+          "max_context_string_characters": 4000,
+          "max_context_list_items": 50,
+          "max_prompt_characters": 60000
+        },
+        "sampling_parameters": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "transport": {
+          "protocol": "openrouter",
+          "endpoint_sha256": "76ef4ad6f0c8a4ae66efb13875c107cee40c78997a212353d379acfbb2f45591",
+          "reasoning_exclude": true,
+          "require_parameters": true,
+          "top_p_omitted_at_default": true
+        }
+      },
+      "sha256": "426eb58c9d520a3299f83aef02cd3f617db8e2fef3229339b0a6e9f06f93a893"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

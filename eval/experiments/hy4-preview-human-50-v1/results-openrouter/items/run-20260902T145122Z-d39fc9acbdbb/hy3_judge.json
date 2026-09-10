@@ -1,0 +1,445 @@
+{
+  "evaluation_id": "judge-2fb4262fd0094bcc891b8bee60d0f521",
+  "run_id": "run-20260902T145122Z-d39fc9acbdbb",
+  "trace_sha256": "463fb8c842b92d019db2771112ae9a6a85b3a240f8677f53b2cfa97a1015fccc",
+  "created_at": "2026-09-10T15:06:35.758185Z",
+  "evaluator": {
+    "kind": "judge",
+    "name": "hy3-script-quality-judge",
+    "version": "3.3.0",
+    "model": "tencent/hy4-preview"
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "七维均达到卓越档",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即复述题设并明确回答‘不能硬挤让步’，完整覆盖低层损失与高层需求，核心人群与冲突两侧均无遗漏，切角精准。",
+      "script_spans": [
+        "低层住户因装电梯房子贬值、采光变差、还怕噪音，多数人的便利能硬挤他们让步吗？答案是否定的。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题聚焦加装电梯的利益平衡，事实解释与法律裁判层层递进，法院公平补偿等单元扎实推进，观众可带走签协议等具体方法。",
+      "script_spans": [
+        "但装电梯常在外墙架井道，低层屋里变暗，白天也得开灯，还有嗡嗡声。等卖房时一楼二楼市价常掉一截，不好出手。",
+        "法院审理时依公平原则，认低层受损，判获数万元补偿。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以低层损失与多数便利的冲突设问，钩子强；中段用实需、法院观点、律师观点持续推进；结尾以邻里情断裂收束，余味自然。",
+      "script_spans": [
+        "低层住户因装电梯房子贬值、采光变差、还怕噪音，多数人的便利能硬挤他们让步吗？",
+        "只讲便利不讲公道，电梯通了邻里情也断了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇以短气口为主，重音停顿清楚；中段用‘困家里’‘掉一截’等口语化表达，像真人当面说，无需改写。",
+      "script_spans": [
+        "低层屋里变暗，白天也得开灯，还有嗡嗡声。",
+        "得面对面聊，给受影响邻居合理赔偿，矛盾才化得开。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制自然，“算平衡账，不是票数账”等记忆点准确且脱离上下文仍可复述，无堆砌炫技，服务理解与情绪。",
+      "script_spans": [
+        "法律不讲谁人多谁有理。",
+        "所以老楼加电梯算平衡账，不是票数账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以‘但’自然转入低层受损因果，用‘所以’收束为平衡账结论，结尾回扣开头反对硬挤让步，段落功能清晰且逻辑闭环。",
+      "script_spans": [
+        "但装电梯常在外墙架井道，低层屋里变暗，白天也得开灯，还有嗡嗡声。",
+        "所以老楼加电梯算平衡账，不是票数账。记住先签白纸黑字补偿协议再开工最稳当。只讲便利不讲公道，电梯通了邻里情也断了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述客观公允，厘清加装电梯中多数决与少数权益边界，倡导面对面协商与签补偿协议，不煽动不夸大，无违规风险。",
+      "script_spans": [
+        "表决规则虽认可加装，但不能拿多数同意硬压少数户。",
+        "得面对面聊，给受影响邻居合理赔偿，矛盾才化得开。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "partial_weighted_average": 3.0,
+    "weighted_average": 3.0,
+    "normalized_score": 1.0,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 1.0,
+    "context_complete": true
+  },
+  "findings": [],
+  "metadata": {
+    "prompt_version": "script-quality-grounded-groups-v3.3",
+    "request_id": "gen-1789052581-FP4KHQckrROhSGh9qHD7",
+    "request_ids": [
+      "gen-1789052581-VJYf8F4K6bVZdCJWnjIX",
+      "gen-1789052581-J88fL5Bh7Peyj0CAPKSk",
+      "gen-1789052581-d7dB6rulI7WKIZ5wOico",
+      "gen-1789052581-FP4KHQckrROhSGh9qHD7"
+    ],
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 45975,
+      "prompt_tokens": 13283,
+      "total_tokens": 59258,
+      "completion_tokens_details": {
+        "audio_tokens": 0,
+        "reasoning_tokens": 44775,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 5056,
+        "video_tokens": 0
+      },
+      "cost": 0.122057145,
+      "cost_details": {
+        "upstream_inference_cost": 0.122057145,
+        "upstream_inference_prompt_cost": 0.007073670000000001,
+        "upstream_inference_completions_cost": 0.114983475
+      }
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "request_id": "gen-1789052581-VJYf8F4K6bVZdCJWnjIX",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 15418,
+          "prompt_tokens": 3520,
+          "total_tokens": 18938,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 14995,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1472,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.040330274,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.040330274,
+            "upstream_inference_prompt_cost": 0.001769856,
+            "upstream_inference_completions_cost": 0.038560418
+          }
+        }
+      },
+      {
+        "attempt": 2,
+        "request_id": "gen-1789052581-J88fL5Bh7Peyj0CAPKSk",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 13088,
+          "prompt_tokens": 3351,
+          "total_tokens": 16439,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 12833,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1280,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.034514062,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.034514062,
+            "upstream_inference_prompt_cost": 0.001780974,
+            "upstream_inference_completions_cost": 0.032733088
+          }
+        }
+      },
+      {
+        "attempt": 3,
+        "request_id": "gen-1789052581-d7dB6rulI7WKIZ5wOico",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 9738,
+          "prompt_tokens": 3285,
+          "total_tokens": 13023,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 9350,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1216,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.026131356,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.026131356,
+            "upstream_inference_prompt_cost": 0.001776618,
+            "upstream_inference_completions_cost": 0.024354738
+          }
+        }
+      },
+      {
+        "attempt": 4,
+        "request_id": "gen-1789052581-FP4KHQckrROhSGh9qHD7",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 7731,
+          "prompt_tokens": 3127,
+          "total_tokens": 10858,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 7597,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1088,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.021081453,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.021081453,
+            "upstream_inference_prompt_cost": 0.001746222,
+            "upstream_inference_completions_cost": 0.019335231
+          }
+        }
+      }
+    ],
+    "format_attempts": 4,
+    "judge_groups": [
+      {
+        "name": "content",
+        "dimension_ids": [
+          "topic_alignment",
+          "theme_information",
+          "logic_structure"
+        ],
+        "summary": "切题精准，信息扎实，逻辑闭环",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052581-VJYf8F4K6bVZdCJWnjIX"
+        ]
+      },
+      {
+        "name": "传播",
+        "dimension_ids": [
+          "engagement",
+          "rhetoric_memorability"
+        ],
+        "summary": "钩子扎实，记忆点自然，双维均达3分",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052581-J88fL5Bh7Peyj0CAPKSk"
+        ]
+      },
+      {
+        "name": "口播",
+        "dimension_ids": [
+          "oral_fluency"
+        ],
+        "summary": "短句顺口，口语自然贯穿全篇",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052581-d7dB6rulI7WKIZ5wOico"
+        ]
+      },
+      {
+        "name": "安全",
+        "dimension_ids": [
+          "safety_compliance"
+        ],
+        "summary": "合规客观公允，无违规风险",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052581-FP4KHQckrROhSGh9qHD7"
+        ]
+      }
+    ],
+    "span_evidence": {
+      "topic_alignment": {
+        "positive_spans": [
+          "低层住户因装电梯房子贬值、采光变差、还怕噪音，多数人的便利能硬挤他们让步吗？答案是否定的。"
+        ],
+        "problem_spans": []
+      },
+      "theme_information": {
+        "positive_spans": [
+          "但装电梯常在外墙架井道，低层屋里变暗，白天也得开灯，还有嗡嗡声。等卖房时一楼二楼市价常掉一截，不好出手。",
+          "法院审理时依公平原则，认低层受损，判获数万元补偿。"
+        ],
+        "problem_spans": []
+      },
+      "logic_structure": {
+        "positive_spans": [
+          "但装电梯常在外墙架井道，低层屋里变暗，白天也得开灯，还有嗡嗡声。",
+          "所以老楼加电梯算平衡账，不是票数账。记住先签白纸黑字补偿协议再开工最稳当。只讲便利不讲公道，电梯通了邻里情也断了。"
+        ],
+        "problem_spans": []
+      },
+      "engagement": {
+        "positive_spans": [
+          "低层住户因装电梯房子贬值、采光变差、还怕噪音，多数人的便利能硬挤他们让步吗？",
+          "只讲便利不讲公道，电梯通了邻里情也断了。"
+        ],
+        "problem_spans": []
+      },
+      "rhetoric_memorability": {
+        "positive_spans": [
+          "法律不讲谁人多谁有理。",
+          "所以老楼加电梯算平衡账，不是票数账。"
+        ],
+        "problem_spans": []
+      },
+      "oral_fluency": {
+        "positive_spans": [
+          "低层屋里变暗，白天也得开灯，还有嗡嗡声。",
+          "得面对面聊，给受影响邻居合理赔偿，矛盾才化得开。"
+        ],
+        "problem_spans": []
+      },
+      "safety_compliance": {
+        "positive_spans": [
+          "表决规则虽认可加装，但不能拿多数同意硬压少数户。",
+          "得面对面聊，给受影响邻居合理赔偿，矛盾才化得开。"
+        ],
+        "problem_spans": []
+      }
+    },
+    "judge_diagnostics": {
+      "口播": {
+        "oral_subscores": {
+          "朗读顺口度": {
+            "score": 3,
+            "comment": "气口短、停顿清楚，无超长句或拗口堆叠；‘低层屋里变暗…’等句朗读顺，不需临时换词重断。",
+            "positive_spans": [
+              "低层屋里变暗，白天也得开灯，还有嗡嗡声。",
+              "得面对面聊，给受影响邻居合理赔偿，矛盾才化得开。"
+            ],
+            "problem_spans": []
+          },
+          "口语自然度": {
+            "score": 3,
+            "comment": "核心展开多用自然口语词序与具体动词，如‘真把…困家里’‘掉一截，不好出手’，两处中段均像当面聊天，无需改写。",
+            "positive_spans": [
+              "好多老楼六七层，没电梯真把行动不便老人困家里，装梯是实需。",
+              "得面对面聊，给受影响邻居合理赔偿，矛盾才化得开。"
+            ],
+            "problem_spans": []
+          }
+        }
+      }
+    },
+    "context_truncated": false,
+    "context_fields_filtered": true,
+    "sent_evidence_ids": [
+      "E002",
+      "E008"
+    ],
+    "prompt_characters": 23828,
+    "reasoning_effort": "high",
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "evaluator_fingerprint": {
+      "kind": "judge",
+      "name": "hy3-script-quality-judge",
+      "version": "3.3.0",
+      "model": "tencent/hy4-preview",
+      "prompt_version": "script-quality-grounded-groups-v3.3",
+      "config": {
+        "request": {
+          "reasoning_effort": "high",
+          "max_format_attempts": 2,
+          "max_script_characters": 30000,
+          "max_context_string_characters": 4000,
+          "max_context_list_items": 50,
+          "max_prompt_characters": 60000
+        },
+        "sampling_parameters": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "transport": {
+          "protocol": "openrouter",
+          "endpoint_sha256": "76ef4ad6f0c8a4ae66efb13875c107cee40c78997a212353d379acfbb2f45591",
+          "reasoning_exclude": true,
+          "require_parameters": true,
+          "top_p_omitted_at_default": true
+        }
+      },
+      "sha256": "426eb58c9d520a3299f83aef02cd3f617db8e2fef3229339b0a6e9f06f93a893"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

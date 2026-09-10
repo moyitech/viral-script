@@ -1,0 +1,453 @@
+{
+  "evaluation_id": "judge-aee3abe0b278435c9977fd3f4f359227",
+  "run_id": "run-20260902T143234Z-615a2988da7f",
+  "trace_sha256": "5a8899e74d84151c37111c3c20e6b941e4763d27dc57791fc239da720021a9b8",
+  "created_at": "2026-09-10T15:20:36.342763Z",
+  "evaluator": {
+    "kind": "judge",
+    "name": "hy3-script-quality-judge",
+    "version": "3.3.0",
+    "model": "tencent/hy4-preview"
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "主要短板：口播流畅度",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇直接否定‘不公开能缓解焦虑’，点明焦虑转移；全文覆盖政策、机制与家长行动，切中家长痛点。",
+      "script_spans": [
+        "禁公开排名没卸下负担，焦虑换地方冒。",
+        "它挡得住明面上的比较，却挡不住孩子对自己的猜疑。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "引用政策与研究数据并标注局限，机制解释与家庭建议层层推进，事实与结论相互支撑，信息增量扎实。",
+      "script_spans": [
+        "一项研究跟了高二学生，平时焦虑检出约百分之十七，期中前升到百分之三十二。",
+        "排名不公开，分数和分班还在透信号。孩子从作业难度、老师眼神自己排座次。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以反差冲突切入，中段用政策、研究和数据持续推进，结尾以自然提问引发反思，余味足。",
+      "script_spans": [
+        "禁公开排名没卸下负担，焦虑换地方冒。",
+        "你家娃昨天作业，你真知道他卡哪吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短气口为主，局部如‘藏起尺子’自然顺口；但‘高中阶’‘透信号’两处需换词，且研究数据段仍偏书面讲解。",
+      "script_spans": [
+        "你想啊，藏起尺子，他反而更怕量自己，就像蒙眼走楼梯，步子更乱。",
+        "可高中阶虽没全强制",
+        "分数和分班还在透信号",
+        "说明考试本身就在制造紧张，不止排名的事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻取自日常且服务说理，蒙眼走楼梯等记忆点自然准确，无堆砌炫技，观点清晰。",
+      "script_spans": [
+        "藏起尺子，他反而更怕量自己，就像蒙眼走楼梯，步子更乱。",
+        "靠隐藏维持安心，就像捂住温度计看不出烧。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段落功能清晰，‘先看问题’‘关键机制’等过渡自然；机制解释搭建因果桥，结尾回扣开头定位焦虑，逻辑层层递进。",
+      "script_spans": [
+        "关键机制是这样。排名不公开，分数和分班还在透信号。",
+        "也许我们该想的，不是要不要藏排名，而是怎么让孩子不怕看自己位置。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "引用研究后明确限定范围，结论不推太满，表述客观公允，无夸大或违规风险。",
+      "script_spans": [
+        "不过这研究只限上海一所中学，范围不算大，结论别推太满。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": 2.857142857142857,
+    "normalized_score": 0.9523809523809524,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 1.0,
+    "context_complete": true
+  },
+  "findings": [],
+  "metadata": {
+    "prompt_version": "script-quality-grounded-groups-v3.3",
+    "request_id": "gen-1789053345-myV8MurWNMPV7wv4Skx0",
+    "request_ids": [
+      "gen-1789053345-IgH2EbPBFWGhcmmxpgSR",
+      "gen-1789053345-TwyqMtfy4TsbMonMbwii",
+      "gen-1789053345-4FOeOVYoxkEwl0e0xA8N",
+      "gen-1789053345-myV8MurWNMPV7wv4Skx0"
+    ],
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 56285,
+      "prompt_tokens": 12867,
+      "total_tokens": 69152,
+      "completion_tokens_details": {
+        "audio_tokens": 0,
+        "reasoning_tokens": 55174,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 12480,
+        "video_tokens": 0
+      },
+      "cost": 0.141615703,
+      "cost_details": {
+        "upstream_inference_cost": 0.141615703,
+        "upstream_inference_prompt_cost": 0.000846918,
+        "upstream_inference_completions_cost": 0.140768785
+      }
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "request_id": "gen-1789053345-IgH2EbPBFWGhcmmxpgSR",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 14225,
+          "prompt_tokens": 3416,
+          "total_tokens": 17641,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 13863,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 3328,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.035789893,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.035789893,
+            "upstream_inference_prompt_cost": 0.000213168,
+            "upstream_inference_completions_cost": 0.035576725
+          }
+        }
+      },
+      {
+        "attempt": 2,
+        "request_id": "gen-1789053345-TwyqMtfy4TsbMonMbwii",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 11952,
+          "prompt_tokens": 3247,
+          "total_tokens": 15199,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 11716,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 3136,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.030116238,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.030116238,
+            "upstream_inference_prompt_cost": 0.000224286,
+            "upstream_inference_completions_cost": 0.029891952
+          }
+        }
+      },
+      {
+        "attempt": 3,
+        "request_id": "gen-1789053345-4FOeOVYoxkEwl0e0xA8N",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 20994,
+          "prompt_tokens": 3181,
+          "total_tokens": 24175,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 20590,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 3072,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.052725924,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.052725924,
+            "upstream_inference_prompt_cost": 0.00021993,
+            "upstream_inference_completions_cost": 0.052505994
+          }
+        }
+      },
+      {
+        "attempt": 4,
+        "request_id": "gen-1789053345-myV8MurWNMPV7wv4Skx0",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 9114,
+          "prompt_tokens": 3023,
+          "total_tokens": 12137,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 9005,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 2944,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.022983648,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.022983648,
+            "upstream_inference_prompt_cost": 0.000189534,
+            "upstream_inference_completions_cost": 0.022794114
+          }
+        }
+      }
+    ],
+    "format_attempts": 4,
+    "judge_groups": [
+      {
+        "name": "content",
+        "dimension_ids": [
+          "topic_alignment",
+          "theme_information",
+          "logic_structure"
+        ],
+        "summary": "本组文案选题精准、信息扎实、逻辑严密",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789053345-IgH2EbPBFWGhcmmxpgSR"
+        ]
+      },
+      {
+        "name": "传播",
+        "dimension_ids": [
+          "engagement",
+          "rhetoric_memorability"
+        ],
+        "summary": "反差开篇，比喻精当，引人反思",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789053345-TwyqMtfy4TsbMonMbwii"
+        ]
+      },
+      {
+        "name": "口播",
+        "dimension_ids": [
+          "oral_fluency"
+        ],
+        "summary": "短句顺口但两处需换词，中段偏书面",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789053345-4FOeOVYoxkEwl0e0xA8N"
+        ]
+      },
+      {
+        "name": "安全",
+        "dimension_ids": [
+          "safety_compliance"
+        ],
+        "summary": "合规客观公允，边界清楚无风险",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789053345-myV8MurWNMPV7wv4Skx0"
+        ]
+      }
+    ],
+    "span_evidence": {
+      "topic_alignment": {
+        "positive_spans": [
+          "禁公开排名没卸下负担，焦虑换地方冒。",
+          "它挡得住明面上的比较，却挡不住孩子对自己的猜疑。"
+        ],
+        "problem_spans": []
+      },
+      "theme_information": {
+        "positive_spans": [
+          "一项研究跟了高二学生，平时焦虑检出约百分之十七，期中前升到百分之三十二。",
+          "排名不公开，分数和分班还在透信号。孩子从作业难度、老师眼神自己排座次。"
+        ],
+        "problem_spans": []
+      },
+      "logic_structure": {
+        "positive_spans": [
+          "关键机制是这样。排名不公开，分数和分班还在透信号。",
+          "也许我们该想的，不是要不要藏排名，而是怎么让孩子不怕看自己位置。"
+        ],
+        "problem_spans": []
+      },
+      "engagement": {
+        "positive_spans": [
+          "禁公开排名没卸下负担，焦虑换地方冒。",
+          "你家娃昨天作业，你真知道他卡哪吗？"
+        ],
+        "problem_spans": []
+      },
+      "rhetoric_memorability": {
+        "positive_spans": [
+          "藏起尺子，他反而更怕量自己，就像蒙眼走楼梯，步子更乱。",
+          "靠隐藏维持安心，就像捂住温度计看不出烧。"
+        ],
+        "problem_spans": []
+      },
+      "oral_fluency": {
+        "positive_spans": [
+          "你想啊，藏起尺子，他反而更怕量自己，就像蒙眼走楼梯，步子更乱。"
+        ],
+        "problem_spans": [
+          "可高中阶虽没全强制",
+          "分数和分班还在透信号",
+          "说明考试本身就在制造紧张，不止排名的事。"
+        ]
+      },
+      "safety_compliance": {
+        "positive_spans": [
+          "不过这研究只限上海一所中学，范围不算大，结论别推太满。"
+        ],
+        "problem_spans": []
+      }
+    },
+    "judge_diagnostics": {
+      "口播": {
+        "oral_subscores": {
+          "朗读顺口度": {
+            "score": 2,
+            "comment": "多数短句气口清晰，如‘藏起尺子’一段顺口；但‘高中阶’‘透信号’两处需临时换词，节奏受损。",
+            "positive_spans": [
+              "你想啊，藏起尺子，他反而更怕量自己，就像蒙眼走楼梯，步子更乱。"
+            ],
+            "problem_spans": [
+              "可高中阶虽没全强制",
+              "分数和分班还在透信号"
+            ]
+          },
+          "口语自然度": {
+            "score": 2,
+            "comment": "有‘你想啊’‘看不出烧’等自然口语，局部生动；但研究数据段与‘保护自尊是一面，失去定位是另一面’仍像书面讲解。",
+            "positive_spans": [
+              "靠隐藏维持安心，就像捂住温度计看不出烧。"
+            ],
+            "problem_spans": [
+              "保护自尊是一面，失去定位是另一面。"
+            ]
+          }
+        }
+      }
+    },
+    "context_truncated": false,
+    "context_fields_filtered": true,
+    "sent_evidence_ids": [
+      "E001",
+      "E002"
+    ],
+    "prompt_characters": 24184,
+    "reasoning_effort": "high",
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "evaluator_fingerprint": {
+      "kind": "judge",
+      "name": "hy3-script-quality-judge",
+      "version": "3.3.0",
+      "model": "tencent/hy4-preview",
+      "prompt_version": "script-quality-grounded-groups-v3.3",
+      "config": {
+        "request": {
+          "reasoning_effort": "high",
+          "max_format_attempts": 2,
+          "max_script_characters": 30000,
+          "max_context_string_characters": 4000,
+          "max_context_list_items": 50,
+          "max_prompt_characters": 60000
+        },
+        "sampling_parameters": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "transport": {
+          "protocol": "openrouter",
+          "endpoint_sha256": "76ef4ad6f0c8a4ae66efb13875c107cee40c78997a212353d379acfbb2f45591",
+          "reasoning_exclude": true,
+          "require_parameters": true,
+          "top_p_omitted_at_default": true
+        }
+      },
+      "sha256": "426eb58c9d520a3299f83aef02cd3f617db8e2fef3229339b0a6e9f06f93a893"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

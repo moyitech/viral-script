@@ -7,7 +7,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
-from hyscript.config import PROJECT_ROOT
+from hyscript.config import PROJECT_ROOT, Hy3Config
 from hyscript.evaluation import (
     BatchEvaluationConfig,
     BatchEvaluationRunner,
@@ -77,6 +77,22 @@ def judge(config: JudgeConfig | None = None, *, model: str = "hy3-test"):
 
 
 class BatchEvaluationRunnerTests(unittest.IsolatedAsyncioTestCase):
+    async def test_openrouter_transport_cannot_resume_other_endpoint(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            trace = root / "trace.json"
+            write_trace(trace, "run-transport")
+            config = BatchEvaluationConfig(output_dir=root / "results", evaluators=("judge",))
+            for index, url in enumerate(("https://first.example/v1", "https://second.example/v1")):
+                client = StaticJudgeClient()
+                client.settings = Hy3Config(base_url=url, api_key="secret", request_protocol="openrouter")
+                evaluator = Hy3JudgeEvaluator(client, model_name="same-model")
+                result = await BatchEvaluationRunner(RUBRIC, config, judge_evaluator=evaluator).run([trace])
+                if index == 0:
+                    self.assertEqual(result.outcomes[0].status, "completed")
+                else:
+                    self.assertEqual(result.outcomes[0].error_code, "resume_conflict")
+
     async def test_writes_separate_records_summary_and_manifest(self) -> None:
         with TemporaryDirectory() as directory:
             root = Path(directory)

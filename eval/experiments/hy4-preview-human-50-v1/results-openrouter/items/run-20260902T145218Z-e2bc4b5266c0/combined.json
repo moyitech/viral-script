@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-69c1e33739e946aaa01e74651706a6e3",
+  "run_id": "run-20260902T145218Z-e2bc4b5266c0",
+  "trace_sha256": "287c5451e3a7e916eca4043d97924eb0f7f1b0d75910c934df6003cf892f35a3",
+  "created_at": "2026-09-10T15:06:50.068152Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头至结论正面回答题设，覆盖标准分裂与消费者买单两侧，切角具体，精准命中普通消费者痛点。",
+      "script_spans": [
+        "标准各自成阵，兼容难题正让老百姓自己买单。但部分地区立法强推统一接口，这负担慢慢在减轻。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，多个信息单元推进，从事实到建议相互支撑，观众能带走盯紧接口的具体省钱方法。",
+      "script_spans": [
+        "挑货时盯紧接口类型。只要标准还分裂，多瞧一眼能替你省下这笔重复花的钱。",
+        "海外新规让小设备先统一口，商店分开卖充电头。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以耳机充不进电的具体冲突和提问抓人，中段用实例与立法转折持续推进，结尾以墙拆账单轻自然收束，余味足。",
+      "script_spans": [
+        "你刚拆的耳机充不进电，这钱你掏吗？",
+        "但部分地区立法强推统一接口，这负担慢慢在减轻。",
+        "墙在拆，账单虽薄得慢，但真在变轻。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇短句为主，气口清晰，无拗口长句；中段用生活场景自然解释，像当面提醒，朗读无需改词。",
+      "script_spans": [
+        "你刚拆的耳机充不进电，这钱你掏吗？",
+        "线头对不上就得额外添转接件。",
+        "客厅音箱和老手机连不上，你只好再添一根线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "填坑、漏走等口语化比喻贴切服务理解，结尾墙拆账单变轻自然准确，离开上下文仍可复述，无炫技堆砌。",
+      "script_spans": [
+        "阵营不通就得消费者填坑",
+        "墙在拆，账单虽薄得慢，但真在变轻。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段落功能清晰，前提、转折与结论层层递进，因果有桥梁，结尾自然回扣开头与题设。",
+      "script_spans": [
+        "说白了，阵营不通就得消费者填坑。标准各自成阵，兼容难题正让老百姓自己买单。但部分地区立法强推统一接口，这负担慢慢在减轻。",
+        "墙在拆，账单虽薄得慢，但真在变轻。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述客观公允，以“部分地区”“只要标准还分裂”明确边界，无绝对化承诺或夸大，价值导向安全。",
+      "script_spans": [
+        "但部分地区立法强推统一接口，这负担慢慢在减轻。",
+        "只要标准还分裂，多瞧一眼能替你省下这笔重复花的钱。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-8efc1dfe638c40968a4a39982bddb297",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

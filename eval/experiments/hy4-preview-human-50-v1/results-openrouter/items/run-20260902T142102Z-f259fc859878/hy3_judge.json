@@ -1,0 +1,450 @@
+{
+  "evaluation_id": "judge-32c0b19a041d4b95a195a93f7ffbdb8c",
+  "run_id": "run-20260902T142102Z-f259fc859878",
+  "trace_sha256": "233701c4b77e54eaf7522e2100b246cd021b933b8b63512b9c999b0dc4258df3",
+  "created_at": "2026-09-10T15:06:57.904894Z",
+  "evaluator": {
+    "kind": "judge",
+    "name": "hy3-script-quality-judge",
+    "version": "3.3.0",
+    "model": "tencent/hy4-preview"
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "主要短板：合规性",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即拆分固收与分红两侧，明确靠谱与不靠谱依据，并给出按资金期限选择的结论，完全切中题设。",
+      "script_spans": [
+        "说靠谱，是增额寿合同写死2.0%预定利率，现金价值百分百确定；说不靠谱，是分红险去年行业平均实现率仅55%，演示再美也难兑现。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题聚焦锁定回报是否靠谱，用预定利率、实现率、IRR等多组数据层层推进，事实与结论相互支撑，信息增量扎实。",
+      "script_spans": [
+        "再看普通型预定利率研究值止跌回升到1.93%，说明如今锁的利率不高，未来若反弹，早锁死反成机会成本。",
+        "对普通人，现在锁固收增额寿，合同长期内部回报约1.99%，比三年前3.5%产品少拿几十万。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以固收与分红反差切入，中段用利差、监管、数据持续兑现，结尾以‘先问十年不动’自然收束并引发思考，全程留客。",
+      "script_spans": [
+        "现在锁寿险长期回报，固收确定但收益砍半，分红却可能落空。",
+        "所以别问锁不锁长期回报，先问这笔钱能否十年不动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "气口短、重音清，中段用“你选…等于…”和“别问…先问…”等对话式承接，朗读无需改词。",
+      "script_spans": [
+        "你选固收增额寿，等于把降息风险全转给保险公司；选分红险，则和它共担冷暖，实现率看天吃饭。",
+        "所以别问锁不锁长期回报，先问这笔钱能否十年不动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "‘共担冷暖’‘看天吃饭’等比喻自然贴切，‘睡得着’与‘先问十年不动’精准传达情绪与决策点，记忆点突出且不炫技。",
+      "script_spans": [
+        "选分红险，则和它共担冷暖，实现率看天吃饭。",
+        "确实低，但任市场降息合同数字不变，睡得着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从现象到原因、数据、影响再到建议，段落功能清晰，因果桥完整，结尾以期限选择回扣题设，逻辑层层递进。",
+      "script_spans": [
+        "为什么这么分裂？你想，保险公司利润过去主要靠利差，低利率下投资端承压。但监管规定普通型人身保险签发时利益就定死，公司必须自扛。",
+        "所以别问锁不锁长期回报，先问这笔钱能否十年不动。能接受低息但确定，就挑写进合同的；想要高点预期，得看清分红实现率波动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "成立：提示短期硬锁吃亏及回本时间，有边界。不足：“收益砍半”“百分百确定”绝对化夸大，“少拿几十万”未限定本金，易误导。",
+      "script_spans": [
+        "钱短期要用的，硬锁反吃亏，趸交最快四年才回本。",
+        "收益砍半",
+        "百分百确定",
+        "少拿几十万"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": 2.857142857142857,
+    "normalized_score": 0.9523809523809524,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 1.0,
+    "context_complete": true
+  },
+  "findings": [],
+  "metadata": {
+    "prompt_version": "script-quality-grounded-groups-v3.3",
+    "request_id": "gen-1789052580-wjWvdFVNlmOPmOjcsmlE",
+    "request_ids": [
+      "gen-1789052579-L9tlQ6gUiTtb0qqzqWfK",
+      "gen-1789052582-fYiPSw2APLrVBbSRT8RN",
+      "gen-1789052581-l7OLgsALUysZN28mDYb7",
+      "gen-1789052580-wjWvdFVNlmOPmOjcsmlE"
+    ],
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 53684,
+      "prompt_tokens": 16839,
+      "total_tokens": 70523,
+      "completion_tokens_details": {
+        "audio_tokens": 0,
+        "reasoning_tokens": 52445,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 2624,
+        "video_tokens": 0
+      },
+      "cost": 0.146229202,
+      "cost_details": {
+        "upstream_inference_cost": 0.146229202,
+        "upstream_inference_prompt_cost": 0.011965518,
+        "upstream_inference_completions_cost": 0.134263684
+      }
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "request_id": "gen-1789052579-L9tlQ6gUiTtb0qqzqWfK",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 16018,
+          "prompt_tokens": 4409,
+          "total_tokens": 20427,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 15569,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 128,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.043636748,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.043636748,
+            "upstream_inference_prompt_cost": 0.00357573,
+            "upstream_inference_completions_cost": 0.040061018
+          }
+        }
+      },
+      {
+        "attempt": 2,
+        "request_id": "gen-1789052582-fYiPSw2APLrVBbSRT8RN",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 11003,
+          "prompt_tokens": 4240,
+          "total_tokens": 15243,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 10733,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1280,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.030040903,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.030040903,
+            "upstream_inference_prompt_cost": 0.0025224,
+            "upstream_inference_completions_cost": 0.027518503
+          }
+        }
+      },
+      {
+        "attempt": 3,
+        "request_id": "gen-1789052581-l7OLgsALUysZN28mDYb7",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 16192,
+          "prompt_tokens": 4174,
+          "total_tokens": 20366,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 15812,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 128,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.043875932,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.043875932,
+            "upstream_inference_prompt_cost": 0.00337974,
+            "upstream_inference_completions_cost": 0.040496192
+          }
+        }
+      },
+      {
+        "attempt": 4,
+        "request_id": "gen-1789052580-wjWvdFVNlmOPmOjcsmlE",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 10471,
+          "prompt_tokens": 4016,
+          "total_tokens": 14487,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 10331,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1088,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.028675619,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.028675619,
+            "upstream_inference_prompt_cost": 0.002487648,
+            "upstream_inference_completions_cost": 0.026187971
+          }
+        }
+      }
+    ],
+    "format_attempts": 4,
+    "judge_groups": [
+      {
+        "name": "content",
+        "dimension_ids": [
+          "topic_alignment",
+          "theme_information",
+          "logic_structure"
+        ],
+        "summary": "切题精准，信息扎实，逻辑清晰",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052579-L9tlQ6gUiTtb0qqzqWfK"
+        ]
+      },
+      {
+        "name": "传播",
+        "dimension_ids": [
+          "engagement",
+          "rhetoric_memorability"
+        ],
+        "summary": "钩子精准，推进扎实，金句自然",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052582-fYiPSw2APLrVBbSRT8RN"
+        ]
+      },
+      {
+        "name": "口播",
+        "dimension_ids": [
+          "oral_fluency"
+        ],
+        "summary": "朗读顺口，中段对话感自然",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052581-l7OLgsALUysZN28mDYb7"
+        ]
+      },
+      {
+        "name": "安全",
+        "dimension_ids": [
+          "safety_compliance"
+        ],
+        "summary": "合规存瑕疵，绝对化夸大表述需改写",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052580-wjWvdFVNlmOPmOjcsmlE"
+        ]
+      }
+    ],
+    "span_evidence": {
+      "topic_alignment": {
+        "positive_spans": [
+          "说靠谱，是增额寿合同写死2.0%预定利率，现金价值百分百确定；说不靠谱，是分红险去年行业平均实现率仅55%，演示再美也难兑现。"
+        ],
+        "problem_spans": []
+      },
+      "theme_information": {
+        "positive_spans": [
+          "再看普通型预定利率研究值止跌回升到1.93%，说明如今锁的利率不高，未来若反弹，早锁死反成机会成本。",
+          "对普通人，现在锁固收增额寿，合同长期内部回报约1.99%，比三年前3.5%产品少拿几十万。"
+        ],
+        "problem_spans": []
+      },
+      "logic_structure": {
+        "positive_spans": [
+          "为什么这么分裂？你想，保险公司利润过去主要靠利差，低利率下投资端承压。但监管规定普通型人身保险签发时利益就定死，公司必须自扛。",
+          "所以别问锁不锁长期回报，先问这笔钱能否十年不动。能接受低息但确定，就挑写进合同的；想要高点预期，得看清分红实现率波动。"
+        ],
+        "problem_spans": []
+      },
+      "engagement": {
+        "positive_spans": [
+          "现在锁寿险长期回报，固收确定但收益砍半，分红却可能落空。",
+          "所以别问锁不锁长期回报，先问这笔钱能否十年不动。"
+        ],
+        "problem_spans": []
+      },
+      "rhetoric_memorability": {
+        "positive_spans": [
+          "选分红险，则和它共担冷暖，实现率看天吃饭。",
+          "确实低，但任市场降息合同数字不变，睡得着。"
+        ],
+        "problem_spans": []
+      },
+      "oral_fluency": {
+        "positive_spans": [
+          "你选固收增额寿，等于把降息风险全转给保险公司；选分红险，则和它共担冷暖，实现率看天吃饭。",
+          "所以别问锁不锁长期回报，先问这笔钱能否十年不动。"
+        ],
+        "problem_spans": []
+      },
+      "safety_compliance": {
+        "positive_spans": [
+          "钱短期要用的，硬锁反吃亏，趸交最快四年才回本。"
+        ],
+        "problem_spans": [
+          "收益砍半",
+          "百分百确定",
+          "少拿几十万"
+        ]
+      }
+    },
+    "judge_diagnostics": {
+      "口播": {
+        "oral_subscores": {
+          "朗读顺口度": {
+            "score": 3,
+            "comment": "气口均在35字内，无长难句或堆砌卡嘴，停顿重音清楚，朗读顺畅。",
+            "positive_spans": [
+              "钱短期要用的，硬锁反吃亏，趸交最快四年才回本。"
+            ],
+            "problem_spans": []
+          },
+          "口语自然度": {
+            "score": 3,
+            "comment": "中段“你选…等于…”与“别问…先问…”均为自然口语词序，对话感贯穿，无需改写。",
+            "positive_spans": [
+              "你选固收增额寿，等于把降息风险全转给保险公司；选分红险，则和它共担冷暖，实现率看天吃饭。",
+              "所以别问锁不锁长期回报，先问这笔钱能否十年不动。"
+            ],
+            "problem_spans": []
+          }
+        }
+      }
+    },
+    "context_truncated": false,
+    "context_fields_filtered": true,
+    "sent_evidence_ids": [
+      "E001",
+      "E002",
+      "E003"
+    ],
+    "prompt_characters": 30672,
+    "reasoning_effort": "high",
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "evaluator_fingerprint": {
+      "kind": "judge",
+      "name": "hy3-script-quality-judge",
+      "version": "3.3.0",
+      "model": "tencent/hy4-preview",
+      "prompt_version": "script-quality-grounded-groups-v3.3",
+      "config": {
+        "request": {
+          "reasoning_effort": "high",
+          "max_format_attempts": 2,
+          "max_script_characters": 30000,
+          "max_context_string_characters": 4000,
+          "max_context_list_items": 50,
+          "max_prompt_characters": 60000
+        },
+        "sampling_parameters": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "transport": {
+          "protocol": "openrouter",
+          "endpoint_sha256": "76ef4ad6f0c8a4ae66efb13875c107cee40c78997a212353d379acfbb2f45591",
+          "reasoning_exclude": true,
+          "require_parameters": true,
+          "top_p_omitted_at_default": true
+        }
+      },
+      "sha256": "426eb58c9d520a3299f83aef02cd3f617db8e2fef3229339b0a6e9f06f93a893"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

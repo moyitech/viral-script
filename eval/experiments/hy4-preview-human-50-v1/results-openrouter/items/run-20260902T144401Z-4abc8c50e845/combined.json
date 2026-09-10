@@ -1,0 +1,137 @@
+{
+  "evaluation_id": "combined-e7628751e7154d1689f031db8d2d177b",
+  "run_id": "run-20260902T144401Z-4abc8c50e845",
+  "trace_sha256": "dcb7d025b33c6bd5551158358c58ec57ff0ba7eabf1639aef8625f01a47dbe82",
+  "created_at": "2026-09-10T15:20:24.988500Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答“未必更激烈”，覆盖出口企业、国内市场与消费者，冲突两侧与核心人群均到位。",
+      "script_spans": [
+        "出口企业转内销，低价竞争未必就更激烈，但个别品类有压力。",
+        "你逛外贸专区别只盯低价，看清售后再出手。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "以出口退税与渠道饥饿解释转内销动机，市场分层与建渠道层层推进，信息扎实有增量。",
+      "script_spans": [
+        "早些年国家有出口退税，厂子卖去国外能拿回税钱。觉得往外划算，懒得搭理国内柜台。",
+        "是想填自家短缺的坑，不是把便宜货往死里砸。",
+        "买家人分两头走，有人图便宜有人认品质。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字用反差抛出悬念，中段持续用退税、渠道等新信息兑现，结尾反问自然生长，吸引力强。",
+      "script_spans": [
+        "外贸货涌进国内，价格战却没更凶。",
+        "等外贸厂真在国内扎了根，便宜还能算唯一招牌吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主且口语自然，但“买家人分两头走”“回头铺内销”需换词或重断句，流畅度判2分。",
+      "script_spans": [
+        "懒得搭理国内柜台。",
+        "买家人分两头走",
+        "他们回头铺内销"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“饿着”“招牌”等比喻点到为止，服务理解，留下可复述记忆点，表达克制自然。",
+      "script_spans": [
+        "其实内销渠道一直饿着。",
+        "不是把便宜货往死里砸。",
+        "便宜还能算唯一招牌吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从历史成因到当前动机、市场分层与消费建议层层递进，结尾反问自然回扣开头题设。",
+      "script_spans": [
+        "觉得往外划算，懒得搭理国内柜台。其实内销渠道一直饿着。",
+        "等外贸厂真在国内扎了根，便宜还能算唯一招牌吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "核心判断用“未必”“个别品类”限定，边界清晰；消费提示理性，无夸大或误导销售风险，合规安全。",
+      "script_spans": [
+        "出口企业转内销，低价竞争未必就更激烈，但个别品类有压力。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-77de2cf1c1644e60ba9be1df7fc3da60",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

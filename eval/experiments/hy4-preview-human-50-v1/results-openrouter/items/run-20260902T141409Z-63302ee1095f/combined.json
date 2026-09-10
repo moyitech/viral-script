@@ -1,0 +1,138 @@
+{
+  "evaluation_id": "combined-1bfc17d581fd4e8a896236fb9f4adfec",
+  "run_id": "run-20260902T141409Z-63302ee1095f",
+  "trace_sha256": "1c432336ab54468b6ec3d5e26e72249c8957608e05a0f7401501525f35775c4c",
+  "created_at": "2026-09-10T15:06:49.250012Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即点明省成本与冷落晚归人并存，全文覆盖双方并聚焦环卫工、护士等核心人群，切角具体。",
+      "script_spans": [
+        "这事儿既在省成本，也冷落了晚归人，账得掰开看。",
+        "环卫工凌晨收工，护士半夜交班，都指望着车。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，成本项、人群影响与成本转嫁层层推进，引用可达性与成本规制，信息增量扎实。",
+      "script_spans": [
+        "司机大半夜熬着，工资还得加倍给，车辆老化半夜进场维修更贵。",
+        "企业成本肉眼可见降了，但晚归人的时间变成等车焦灼，金钱变成打车费悄悄转嫁出去。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字以‘账本轻了’与‘晚归人悬了’形成强反差，中段层层追问成本转嫁，结尾以问句自然收束，余味足。",
+      "script_spans": [
+        "夜公交班次砍了，公司账本轻了，晚归人却悬了。",
+        "省下的钱真没了吗？企业成本肉眼可见降了，但晚归人的时间变成等车焦灼，金钱变成打车费悄悄转嫁出去。",
+        "末班车早了，夜归人脚下的路，谁再来照亮一程？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、朗读顺口，但中段‘成本规制里的节支空间’等书面术语频出，口语自然不足，故为2分。",
+      "script_spans": [
+        "车少了，他们要么多掏钱打车，要么骑电动车黑天赶路。",
+        "这也符合成本规制里的节支空间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "‘账本轻了’‘悬了’等口语化比喻精准，结尾‘照亮一程’自然升华，记忆点鲜明且无辞藻堆砌。",
+      "script_spans": [
+        "夜公交班次砍了，公司账本轻了，晚归人却悬了。",
+        "企业轻松了，个人沉重了，这账本得摊在阳光下。",
+        "末班车早了，夜归人脚下的路，谁再来照亮一程？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "设问过渡自然且结尾回扣，但末段‘冷线缩间隔’与低客流前提矛盾，因果桥不足，建议经不起追问。",
+      "script_spans": [
+        "你可能会问，为啥先拿夜线动刀？",
+        "末班车早了，夜归人脚下的路，谁再来照亮一程？",
+        "把时段客流画出来冷线缩间隔，或许更稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全文客观公允，既讲企业成本压力，也讲晚归人负担，并用‘不是所有地方都一刀切’等表述划清边界，无煽动夸大，价值导向安全。",
+      "script_spans": [
+        "不是所有地方都一刀切，有些城市用补贴保住重点夜线。",
+        "按规定线网优化要听大家说，减频次要透明，补好缺口再动手。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c248b958c0d84490869b9bc38053054b",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

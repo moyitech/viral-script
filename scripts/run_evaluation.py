@@ -1,4 +1,4 @@
-"""Score frozen generation traces with rules and an optional Hy3 Judge."""
+"""Score frozen generation traces with rules and an optional model Judge."""
 
 from __future__ import annotations
 
@@ -101,10 +101,16 @@ def build_parser() -> argparse.ArgumentParser:
         help="Judge reasoning effort. Default: high.",
     )
     score.add_argument(
+        "--judge-provider",
+        choices=("hy3", "openrouter"),
+        default="hy3",
+        help="Judge endpoint configuration. OpenRouter uses OPEN_ROUTER_KEY/URL.",
+    )
+    score.add_argument(
         "--judge-model-id",
         default=None,
         help=(
-            "Override the configured HY3_MODEL for Judge requests. The exact API "
+            "Override the selected provider's default model for Judge requests. The exact API "
             "model id is recorded in the evaluator fingerprint."
         ),
     )
@@ -202,7 +208,13 @@ async def _run(args: argparse.Namespace) -> int:
     else:
         # Judge sampling is isolated from the generation model defaults.
         settings = get_settings()
-        configured_hy3 = settings.hy3
+        configured_hy3 = (
+            settings.open_router
+            if args.judge_provider == "openrouter"
+            else settings.hy3
+        )
+        if configured_hy3 is None:
+            raise SettingsError("OpenRouter requires OPEN_ROUTER_KEY and OPEN_ROUTER_URL.")
         hy3 = replace(
             configured_hy3,
             model=args.judge_model_id or configured_hy3.model,

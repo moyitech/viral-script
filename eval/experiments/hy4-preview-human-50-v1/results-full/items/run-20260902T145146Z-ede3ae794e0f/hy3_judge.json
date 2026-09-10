@@ -1,0 +1,426 @@
+{
+  "evaluation_id": "judge-d45078f0bcbe471ea33f25e54c89b7d7",
+  "run_id": "run-20260902T145146Z-ede3ae794e0f",
+  "trace_sha256": "a7057bd352a392a87351d170c9c34e7c01ef876b1cab08beeffe891260fcdaab",
+  "created_at": "2026-09-10T14:51:01.930284Z",
+  "evaluator": {
+    "kind": "judge",
+    "name": "hy3-script-quality-judge",
+    "version": "3.3.0",
+    "model": "hy4-preview"
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "主要短板：口播流畅度",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即正面回答消费者买单，并覆盖标准分裂与欧盟统一两侧，精准切中普通消费者痛点。",
+      "script_spans": [
+        "换手机线又对不上，标准分裂正收你隐形税。消费者确实在买单，但欧盟立规矩统一接口，能省下这块花销。",
+        "可其他大市场没全跟进，标准阵营还是各立山头，自愿合作常卡壳，你等不及只能自己掏。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "欧盟USB-C新规日期等事实具体，成本解释与购买建议层层推进，信息扎实且有情绪增量。",
+      "script_spans": [
+        "欧盟走硬碰硬的路，从2024年底开始，小设备必须用USB-C口，笔记本慢一点，2026年才跟上。",
+        "买设备时多问一句，比事后补线强。别替别人的标准战争续费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以换线冲突和隐形税切入，中段用欧盟新规及全球未跟进的转折持续推进，结尾以盯接口的提问自然互动，三段均达标。",
+      "script_spans": [
+        "换手机线又对不上，标准分裂正收你隐形税。",
+        "可其他大市场没全跟进，标准阵营还是各立山头，自愿合作常卡壳，你等不及只能自己掏。",
+        "下次挑新品，你会先盯接口吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、口语感较强，但‘觉’缺‘得’、‘流动难一直躲’等处需换词或重断句，朗读不够顺。",
+      "script_spans": [
+        "出国带错线就抓瞎，家里旧头子退不掉。",
+        "你也许觉一个头不贵",
+        "但世界在流动难一直躲"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "隐形税、藏进设备价格等比喻克制且服务理解，标准战争续费等金句自然准确，离开上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "标准分裂正收你隐形税。",
+        "这笔钱直接花在转接头，也可能悄悄藏进设备价格。",
+        "别替别人的标准战争续费。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段落功能清晰，从问题、干预到影响逐层递进，结尾回扣隐形税与接口，逻辑闭环完整。",
+      "script_spans": [
+        "强制统一是种取舍：厂商少点自由，你少花钱。强制统一让买这类货不用另购线。可其他大市场没全跟进，标准阵营还是各立山头，自愿合作常卡壳，你等不及只能自己掏。",
+        "当标准变成阵营游戏，每根线都在悄悄扣钱，下次挑新品，你会先盯接口吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "表述客观公允，指出强制统一是取舍且其他市场未全跟进，边界清楚，无夸大误导风险。",
+      "script_spans": [
+        "强制统一是种取舍：厂商少点自由，你少花钱。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": 2.857142857142857,
+    "normalized_score": 0.9523809523809524,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 1.0,
+    "context_complete": true
+  },
+  "findings": [],
+  "metadata": {
+    "prompt_version": "script-quality-grounded-groups-v3.3",
+    "request_id": "1de1bef7-f18f-4790-a8bb-5836eefa07ea",
+    "request_ids": [
+      "573e7d86-fe2f-4f4a-99cc-13fc6c6fb720",
+      "89b0eac3-475f-4b47-a4db-cad258b8330b",
+      "2ecb5045-44c2-4260-a3c0-50840c2d7f35",
+      "e00515bf-45c1-4bb2-a482-90530cc04d3d",
+      "1de1bef7-f18f-4790-a8bb-5836eefa07ea"
+    ],
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 64617,
+      "prompt_tokens": 10898,
+      "total_tokens": 75515,
+      "completion_tokens_details": {
+        "reasoning_tokens": 63088
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 1792
+      }
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "request_id": "573e7d86-fe2f-4f4a-99cc-13fc6c6fb720",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 12767,
+          "prompt_tokens": 2346,
+          "total_tokens": 15113,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 12333,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 2,
+        "request_id": "89b0eac3-475f-4b47-a4db-cad258b8330b",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 14921,
+          "prompt_tokens": 2177,
+          "total_tokens": 17098,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 14633,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 3,
+        "request_id": "2ecb5045-44c2-4260-a3c0-50840c2d7f35",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 13008,
+          "prompt_tokens": 2111,
+          "total_tokens": 15119,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 12635,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 4,
+        "request_id": "e00515bf-45c1-4bb2-a482-90530cc04d3d",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 16069,
+          "prompt_tokens": 1953,
+          "total_tokens": 18022,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 15737,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 5,
+        "request_id": "1de1bef7-f18f-4790-a8bb-5836eefa07ea",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 7852,
+          "prompt_tokens": 2311,
+          "total_tokens": 10163,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 7750,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 1792,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      }
+    ],
+    "format_attempts": 5,
+    "judge_groups": [
+      {
+        "name": "content",
+        "dimension_ids": [
+          "topic_alignment",
+          "theme_information",
+          "logic_structure"
+        ],
+        "summary": "选题、信息与逻辑均达3分，表现优异",
+        "format_attempts": 1,
+        "request_ids": [
+          "573e7d86-fe2f-4f4a-99cc-13fc6c6fb720"
+        ]
+      },
+      {
+        "name": "传播",
+        "dimension_ids": [
+          "engagement",
+          "rhetoric_memorability"
+        ],
+        "summary": "冲突开局转折持续，金句自然余味足。",
+        "format_attempts": 1,
+        "request_ids": [
+          "89b0eac3-475f-4b47-a4db-cad258b8330b"
+        ]
+      },
+      {
+        "name": "口播",
+        "dimension_ids": [
+          "oral_fluency"
+        ],
+        "summary": "整体可读，两处需重断换词",
+        "format_attempts": 1,
+        "request_ids": [
+          "2ecb5045-44c2-4260-a3c0-50840c2d7f35"
+        ]
+      },
+      {
+        "name": "安全",
+        "dimension_ids": [
+          "safety_compliance"
+        ],
+        "summary": "合规客观公允，无夸大误导风险",
+        "format_attempts": 2,
+        "request_ids": [
+          "e00515bf-45c1-4bb2-a482-90530cc04d3d",
+          "1de1bef7-f18f-4790-a8bb-5836eefa07ea"
+        ]
+      }
+    ],
+    "span_evidence": {
+      "topic_alignment": {
+        "positive_spans": [
+          "换手机线又对不上，标准分裂正收你隐形税。消费者确实在买单，但欧盟立规矩统一接口，能省下这块花销。",
+          "可其他大市场没全跟进，标准阵营还是各立山头，自愿合作常卡壳，你等不及只能自己掏。"
+        ],
+        "problem_spans": []
+      },
+      "theme_information": {
+        "positive_spans": [
+          "欧盟走硬碰硬的路，从2024年底开始，小设备必须用USB-C口，笔记本慢一点，2026年才跟上。",
+          "买设备时多问一句，比事后补线强。别替别人的标准战争续费。"
+        ],
+        "problem_spans": []
+      },
+      "logic_structure": {
+        "positive_spans": [
+          "强制统一是种取舍：厂商少点自由，你少花钱。强制统一让买这类货不用另购线。可其他大市场没全跟进，标准阵营还是各立山头，自愿合作常卡壳，你等不及只能自己掏。",
+          "当标准变成阵营游戏，每根线都在悄悄扣钱，下次挑新品，你会先盯接口吗？"
+        ],
+        "problem_spans": []
+      },
+      "engagement": {
+        "positive_spans": [
+          "换手机线又对不上，标准分裂正收你隐形税。",
+          "可其他大市场没全跟进，标准阵营还是各立山头，自愿合作常卡壳，你等不及只能自己掏。",
+          "下次挑新品，你会先盯接口吗？"
+        ],
+        "problem_spans": []
+      },
+      "rhetoric_memorability": {
+        "positive_spans": [
+          "标准分裂正收你隐形税。",
+          "这笔钱直接花在转接头，也可能悄悄藏进设备价格。",
+          "别替别人的标准战争续费。"
+        ],
+        "problem_spans": []
+      },
+      "oral_fluency": {
+        "positive_spans": [
+          "出国带错线就抓瞎，家里旧头子退不掉。"
+        ],
+        "problem_spans": [
+          "你也许觉一个头不贵",
+          "但世界在流动难一直躲"
+        ]
+      },
+      "safety_compliance": {
+        "positive_spans": [
+          "强制统一是种取舍：厂商少点自由，你少花钱。"
+        ],
+        "problem_spans": []
+      }
+    },
+    "judge_diagnostics": {
+      "口播": {
+        "oral_subscores": {
+          "朗读顺口度": {
+            "score": 2,
+            "comment": "多数句子短气口、能读通，但‘你也许觉一个头不贵’需换词，‘但世界在流动难一直躲’需重断句。",
+            "positive_spans": [
+              "出国带错线就抓瞎，家里旧头子退不掉。"
+            ],
+            "problem_spans": [
+              "你也许觉一个头不贵",
+              "但世界在流动难一直躲"
+            ]
+          },
+          "口语自然度": {
+            "score": 3,
+            "comment": "中段解释多用口语词序与具体动词，如‘抽屉里塞满’‘店家还能分开卖’，像当面说话无需大改。",
+            "positive_spans": [
+              "抽屉里塞满各种线，这笔钱直接花在转接头，也可能悄悄藏进设备价格。",
+              "店家还能分开卖充电器，强制统一是种取舍：厂商少点自由，你少花钱。"
+            ],
+            "problem_spans": []
+          }
+        }
+      }
+    },
+    "context_truncated": false,
+    "context_fields_filtered": true,
+    "sent_evidence_ids": [
+      "E001"
+    ],
+    "prompt_characters": 18340,
+    "reasoning_effort": "high",
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "evaluator_fingerprint": {
+      "kind": "judge",
+      "name": "hy3-script-quality-judge",
+      "version": "3.3.0",
+      "model": "hy4-preview",
+      "prompt_version": "script-quality-grounded-groups-v3.3",
+      "config": {
+        "request": {
+          "reasoning_effort": "high",
+          "max_format_attempts": 2,
+          "max_script_characters": 30000,
+          "max_context_string_characters": 4000,
+          "max_context_list_items": 50,
+          "max_prompt_characters": 60000
+        },
+        "sampling_parameters": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        }
+      },
+      "sha256": "51a64021e077c9a2188741d44b6d5ec749ce549d63f19bb9b67724ed4562d401"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

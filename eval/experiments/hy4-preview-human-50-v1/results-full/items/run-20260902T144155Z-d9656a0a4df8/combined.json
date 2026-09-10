@@ -1,0 +1,134 @@
+{
+  "evaluation_id": "combined-e826f5dea8394dc59d0999e359e2c1e5",
+  "run_id": "run-20260902T144155Z-d9656a0a4df8",
+  "trace_sha256": "f58935fdb864d7ae5f050e6480a61e6f538cb9fe2e4156fce6b8d396834f884f",
+  "created_at": "2026-09-10T14:54:04.709463Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即正面回答取单问题，覆盖电子化与人工纸质两侧，精准锁定不会用手机的患者与老人。",
+      "script_spans": [
+        "医院全推电子报告，没手机老人咋取单？别急，医院搞电子化，不会用手机患者能找人工窗口拿纸质。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "以政策为依据，结合导诊员与护士等具体方法，信息单元相互支撑，观众能带走明确行动指南。",
+      "script_spans": [
+        "国家发文说过，智能服务和老人熟悉的办法要一块走，不能光给屏幕看。",
+        "像门诊大厅还留着导诊员，你报个名字，他就能帮打印。",
+        "挂号时直接跟护士说要纸质报告，省得后面跑空。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以具体冲突提问抓人，中段持续给出政策与实操新信息，结尾互动与情感余味自然生长，留住观众。",
+      "script_spans": [
+        "医院全推电子报告，没手机老人咋取单？",
+        "下次陪老人去，先问一句有纸质吗？别让屏幕隔开两代人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短句为主气口清晰，中段‘你想啊’‘像门诊大厅’等对话式表达自然，朗读无需改词，流畅度高。",
+      "script_spans": [
+        "你想啊，医院不能因为上了电子系统，就把不看屏幕的人推开。",
+        "像门诊大厅还留着导诊员，你报个名字，他就能帮打印。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制，'底线''后路'等比喻准确服务情绪与理解，结尾金句自然可复述，无堆砌炫技。",
+      "script_spans": [
+        "这是底线，也是给老人的后路",
+        "就把不看屏幕的人推开"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "因果桥清晰，如‘你想啊’解释不能推开不看屏幕的人；结尾回扣开头，重申找人工窗口拿纸质。",
+      "script_spans": [
+        "你想啊，医院不能因为上了电子系统，就把不看屏幕的人推开。",
+        "你开口找人工窗口，通常能拿到纸质。下次陪老人去，先问一句有纸质吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "脚本引用政策说明传统服务须保留，并用‘通常’限定纸质报告获取，无绝对承诺，客观安全，符合平台审核要求。",
+      "script_spans": [
+        "你开口找人工窗口，通常能拿到纸质。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-e06b59eedcc042eeb0f9a19df27fa29c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-7cd45ced768d4b84b98814b2b5c57d94",
+  "run_id": "run-20260902T143718Z-62d478bd04e2",
+  "trace_sha256": "3608160c31c547cb7b4cdd3a55d8290f4ade2d8544eed43983ae02f32a59c7f0",
+  "created_at": "2026-09-10T15:08:36.027152Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即回应二元冲突，指出防骗与夺权不冲突，关键在老人自愿；全文紧扣代管场景，给出兼顾方案，完全切中题设与人群。",
+      "script_spans": [
+        "真要防诈又不夺权，关键得父母自己点头。",
+        "这就叫防诈保自主。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题聚焦代管与自主权，从概念、正反案例到法律依据层层推进，并给出写代管条等对账方法，信息扎实且有增量。",
+      "script_spans": [
+        "老人清醒时说“你帮我管”，骗子来电你替他挂断，买药取钱你跑腿，花多少仍由他主意",
+        "法律不许子女无理拦着父母管自己的钱",
+        "坐下来写张代管条，权限写清，花销怎么批写明白，每月对次账"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以‘防骗还是夺权’制造强冲突，中段用‘藏卡改密’等反面案例持续转折，结尾给出‘写代管条’方案，余味自然。",
+      "script_spans": [
+        "子女没收爸妈养老金卡，是防骗还是夺权？",
+        "可你若直接藏卡改密，买棵葱都要跟你报批",
+        "坐下来写张代管条，权限写清，花销怎么批写明白，每月对次账，比硬抢长久。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和口语承接好读，但‘由他主意’需换词、‘批写明白’需断句，两处拗口。",
+      "script_spans": [
+        "骗子来电你替他挂断，买药取钱你跑腿",
+        "花多少仍由他主意",
+        "花销怎么批写明白"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "‘像请个跑腿’类比贴切，‘买棵葱都要跟你报批’细节生动，‘关进钱笼子’隐喻精准易复述，修辞克制不炫技。",
+      "script_spans": [
+        "像请个跑腿，能护钱也能伤自尊",
+        "买棵葱都要跟你报批",
+        "把爸妈关进钱笼子"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "结构完整，从提问立论到正反论证，再以法律依据和代管条建议收尾；转折清晰，因果有桥，结尾回扣开头，逻辑层层递进。",
+      "script_spans": [
+        "这俩不冲突，但得看是不是老人自愿。",
+        "可你若直接藏卡改密，买棵葱都要跟你报批，想给孙辈红包都够不着，自主没了。",
+        "真怕被骗，别急收卡。坐下来写张代管条，权限写清，花销怎么批写明白，每月对次账，比硬抢长久。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "明确法律禁止子女无理阻碍老人管钱，代管须自愿，表述客观无夸大，合规安全。",
+      "script_spans": [
+        "法律不许子女无理拦着父母管自己的钱"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1e8ca6f8e7944062a192d8a37da4e50c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

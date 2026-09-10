@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import asyncio
+import hashlib
 from dataclasses import dataclass
 import json
 import math
@@ -1068,6 +1069,18 @@ class Hy3JudgeEvaluator:
         ):
             raise ValueError("sampling_parameters must contain finite numeric values.")
         self.sampling_parameters = dict(sorted(sampling_parameters.items()))
+        client_settings = getattr(client, "settings", None)
+        self.transport_parameters = {}
+        if getattr(client_settings, "request_protocol", "hy3") == "openrouter":
+            self.transport_parameters = {
+                "protocol": "openrouter",
+                "endpoint_sha256": hashlib.sha256(
+                    client_settings.openai_base_url.encode("utf-8")
+                ).hexdigest(),
+                "reasoning_exclude": True,
+                "require_parameters": True,
+                "top_p_omitted_at_default": client_settings.top_p == 1.0,
+            }
 
     async def _evaluate_prompt(
         self,

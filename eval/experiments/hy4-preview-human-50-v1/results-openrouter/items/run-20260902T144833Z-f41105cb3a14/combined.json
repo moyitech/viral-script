@@ -1,0 +1,136 @@
+{
+  "evaluation_id": "combined-bfff5d32ad1243e6b288481862cf806e",
+  "run_id": "run-20260902T144833Z-f41105cb3a14",
+  "trace_sha256": "31bf706c2bb5986b62c9732df4955e0d324b0d901eb8d85f87ac1ae0b6d31421",
+  "created_at": "2026-09-10T15:06:26.110066Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即正面回答题设，安全感与浪费风险两侧及家庭人群全覆盖，切角具体，痛点契合。",
+      "script_spans": [
+        "你囤的常用药，正变成浪费和误服风险。",
+        "囤药求安心没错，但过了量安心就成包袱。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，事实、法律与储存风险等多信息单元推进，引用与建议扎实，观众可带走具体备药与处理方法。",
+      "script_spans": [
+        "有白皮书算过，全国一年过期药约一点五万吨。",
+        "个人卖药真的违法。法律讲明白，卖药得有经营许可资质，咱没证转卖就踩红线。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头直击囤药变风险，中段用数据与违法等新信息持续推进，结尾提问自然生长，吸引力强。",
+      "script_spans": [
+        "你囤的常用药，正变成浪费和误服风险。",
+        "当药箱成了心理安慰，你敢不敢只留必需的？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音停顿清楚；中段‘睡大觉’‘肉疼’等表达像当面聊天，朗读无需临时改词。",
+      "script_spans": [
+        "邻居囤你也囤，药箱眨眼塞满。",
+        "等高峰过去，药在柜子里睡大觉，过期前没动几回。",
+        "你想送人怕嫌弃，扔了肉疼，不扔碍事，这就是真实处境。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "比喻和口语化排比自然贴切，如“药是救急不是存钱”等金句准确好记，无堆砌炫技。",
+      "script_spans": [
+        "药是救急不是存钱。",
+        "送人怕嫌弃，扔了肉疼，不扔碍事"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开头亮明观点，展开分述浪费与法律风险、储存误服风险，‘那怎么办’转解决方案，结尾回扣题设，逻辑递进清晰。",
+      "script_spans": [
+        "那怎么办？药毕竟特殊，算有害生活垃圾，随便丢会污染水土。",
+        "说到底，药是救急不是存钱。真正的安全感来自清楚家里有什么能用。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "文案客观提示囤药浪费与误服风险，明确个人卖药违法及遵医嘱等边界，无夸大或危险建议，导向安全稳妥。",
+      "script_spans": [
+        "长期慢性病药严格按医生吩咐来。",
+        "个人卖药真的违法。法律讲明白，卖药得有经营许可资质，咱没证转卖就踩红线。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-c82f7269a0574b5180cbd99686e3bda4",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

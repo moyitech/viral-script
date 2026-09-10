@@ -1,0 +1,140 @@
+{
+  "evaluation_id": "combined-6b8f9112609144dcaf05ca3e872050d6",
+  "run_id": "run-20260902T142909Z-a8f55972fcda",
+  "trace_sha256": "bc9b33a2f2c486641821951079787b2790dac8039c46979a13b550ec3d470400",
+  "created_at": "2026-09-10T15:08:11.301926Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即正面回答视频通话能否证身份，覆盖深伪诈骗、家庭群与老人痛点，暗号切角具体，完全契合题设。",
+      "script_spans": [
+        "单看画面，如今很难作数。",
+        "但它也不是彻底没用，得配上只有你们懂的暗号。",
+        "视频通话没失去全部意义，它成了疑点不是证据。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题聚焦深伪与身份核验，技术原理、检测局限与暗号自保层层递进，信息扎实且可操作，观众能带走具体防御方法。",
+      "script_spans": [
+        "拿几秒录音就能克隆声线，几张照片重塑性情。",
+        "可研究说人眼辨高质量深伪，准头可能不比瞎猜强。",
+        "提前说好的暗号最管用。",
+        "或者挂了视频，换个短信、电话再核一次。",
+        "这叫带外确认，多一步就破掉假画面。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头‘对面未必是真人’设强悬念，中段从技术到平台局限层层递进，结尾‘问个只有亲姐知道的宠物名’自然生长出行动指引。",
+      "script_spans": [
+        "家人视频喊转账，对面未必是真人。",
+        "问个只有亲姐知道的宠物名。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，停顿重音清楚，中段解释像当面聊天，朗读无需临时改词，流畅自然。",
+      "script_spans": [
+        "老人家最信亲眼见的画面，听见声儿就心软。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "‘脸不再是钥匙’‘信任得更笨才安全’等比喻与悖论自然贴切，将技术风险转为可复述的生活警句，无堆砌炫技。",
+      "script_spans": [
+        "脸不再是钥匙，让记忆来验人。",
+        "当技术让脸变廉价，信任得更笨才安全。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以问答推进，从威胁成因、平台局限到暗号自保，因果桥清晰，结尾回扣视频通话成疑点，结构严密且自然。",
+      "script_spans": [
+        "脸能造假，可陈年小事代码织不出来。",
+        "那平台没在管吗？",
+        "视频通话没失去全部意义，它成了疑点不是证据。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "反诈导向安全，带外确认建议稳妥；但“老人家最信”标签化老人，“重塑性情”夸大深伪能力，需补边界。",
+      "script_spans": [
+        "或者挂了视频，换个短信、电话再核一次。",
+        "老人家最信亲眼见的画面，听见声儿就心软。",
+        "拿几秒录音就能克隆声线，几张照片重塑性情。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-bfb5bdb4d7854f9ca6b027a2c99b51ea",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

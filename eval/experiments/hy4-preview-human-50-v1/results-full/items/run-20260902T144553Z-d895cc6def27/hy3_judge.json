@@ -1,0 +1,408 @@
+{
+  "evaluation_id": "judge-f9e603e1d0d647ed9925e8047d35203f",
+  "run_id": "run-20260902T144553Z-d895cc6def27",
+  "trace_sha256": "10c42a6aabce583f54899151b6c71e589841bc0302e770c36d8b40cf7a4691be",
+  "created_at": "2026-09-10T14:56:10.162747Z",
+  "evaluator": {
+    "kind": "judge",
+    "name": "hy3-script-quality-judge",
+    "version": "3.3.0",
+    "model": "hy4-preview"
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "主要短板：口播流畅度",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即点明政策例外与医生否决权，结合患者案例与痛点，完整回答为何重复花钱，人群与冲突覆盖精准。",
+      "script_spans": [
+        "为啥？政策留了例外，医生手握否决权。",
+        "重复检查就是多请半天假，多受一份辐射，换回一模一样的结论。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "以陆先生案例、2006年与2024年政策事实推进，解释医生否决权与医院动机，结论落到医生那支笔，信息扎实且增量明确。",
+      "script_spans": [
+        "可文件也留了口子：病情变了、设备参数不同，就可以重查。",
+        "医院怕出医疗纠纷担责任，医生嫌调阅旧数据麻烦，顺手就开新检查。",
+        "所以互认清单列得再长，不如医生那支笔肯认旧结果。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头重做检查钱打水漂点出痛点，中段医院怕纠纷医生嫌麻烦持续推进，结尾医生那支笔总结与带片提问自然互动。",
+      "script_spans": [
+        "换医院就得重做检查，刚花的钱又打水漂。",
+        "医院怕出医疗纠纷担责任，医生嫌调阅旧数据麻烦，顺手就开新检查。",
+        "所以互认清单列得再长，不如医生那支笔肯认旧结果。下次跨院前，你会先把之前的片子打印好带着吗？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "朗读与口语均达2分：整体可读且有口语味，但两处需换词重断句，明显拗口，故流畅度为2分。",
+      "script_spans": [
+        "医生二话不说，又开单子做CT和血常规。",
+        "转到呼吸科强的三甲。",
+        "诊断细菌病毒合并感染。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“打水漂”比喻贴切，结尾“不如医生那支笔肯认旧结果”自然准确，是可脱离上下文复述的记忆点。",
+      "script_spans": [
+        "刚花的钱又打水漂",
+        "互认清单列得再长，不如医生那支笔肯认旧结果。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "开篇设问亮明观点，案例后追问政策与医生权责，因果桥清晰，结尾以医生那支笔回扣否决权，结构层层递进。",
+      "script_spans": [
+        "为啥？政策留了例外，医生手握否决权。",
+        "更关键的是，接诊医师有权自己判断认不认。",
+        "所以互认清单列得再长，不如医生那支笔肯认旧结果。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "成立处：点明政策留病情变化等例外，有依据；不足：将重查归因于医院怕担责、医生嫌麻烦，绝对化标签化，易引对立，需限定。",
+      "script_spans": [
+        "可文件也留了口子：病情变了、设备参数不同，就可以重查",
+        "医院怕出医疗纠纷担责任，医生嫌调阅旧数据麻烦，顺手就开新检查。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": 2.7142857142857144,
+    "normalized_score": 0.9047619047619048,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 1.0,
+    "context_complete": true
+  },
+  "findings": [],
+  "metadata": {
+    "prompt_version": "script-quality-grounded-groups-v3.3",
+    "request_id": "8f94b736-94a9-4e64-a042-23956026e676",
+    "request_ids": [
+      "fb7e40e5-c0ac-46d7-855f-9da79e776665",
+      "5c711c07-0b51-45e9-87ae-e7601642337f",
+      "fef79baf-1047-46a4-8e87-c13e0df4a75f",
+      "8f94b736-94a9-4e64-a042-23956026e676"
+    ],
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 49779,
+      "prompt_tokens": 13551,
+      "total_tokens": 63330,
+      "completion_tokens_details": {
+        "reasoning_tokens": 48546
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      }
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "request_id": "fb7e40e5-c0ac-46d7-855f-9da79e776665",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 11417,
+          "prompt_tokens": 3587,
+          "total_tokens": 15004,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 11004,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 2,
+        "request_id": "5c711c07-0b51-45e9-87ae-e7601642337f",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 12476,
+          "prompt_tokens": 3418,
+          "total_tokens": 15894,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 12193,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 1152,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 3,
+        "request_id": "fef79baf-1047-46a4-8e87-c13e0df4a75f",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 13329,
+          "prompt_tokens": 3352,
+          "total_tokens": 16681,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 12948,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 4,
+        "request_id": "8f94b736-94a9-4e64-a042-23956026e676",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 12557,
+          "prompt_tokens": 3194,
+          "total_tokens": 15751,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 12401,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      }
+    ],
+    "format_attempts": 4,
+    "judge_groups": [
+      {
+        "name": "content",
+        "dimension_ids": [
+          "topic_alignment",
+          "theme_information",
+          "logic_structure"
+        ],
+        "summary": "切题精准，信息扎实，逻辑严密",
+        "format_attempts": 1,
+        "request_ids": [
+          "fb7e40e5-c0ac-46d7-855f-9da79e776665"
+        ]
+      },
+      {
+        "name": "传播",
+        "dimension_ids": [
+          "engagement",
+          "rhetoric_memorability"
+        ],
+        "summary": "痛点切入，推进扎实，金句自然",
+        "format_attempts": 1,
+        "request_ids": [
+          "5c711c07-0b51-45e9-87ae-e7601642337f"
+        ]
+      },
+      {
+        "name": "口播",
+        "dimension_ids": [
+          "oral_fluency"
+        ],
+        "summary": "整体可读，两处拗口，评2分",
+        "format_attempts": 1,
+        "request_ids": [
+          "fef79baf-1047-46a4-8e87-c13e0df4a75f"
+        ]
+      },
+      {
+        "name": "安全",
+        "dimension_ids": [
+          "safety_compliance"
+        ],
+        "summary": "基本合规，但医生归因标签化存风险",
+        "format_attempts": 1,
+        "request_ids": [
+          "8f94b736-94a9-4e64-a042-23956026e676"
+        ]
+      }
+    ],
+    "span_evidence": {
+      "topic_alignment": {
+        "positive_spans": [
+          "为啥？政策留了例外，医生手握否决权。",
+          "重复检查就是多请半天假，多受一份辐射，换回一模一样的结论。"
+        ],
+        "problem_spans": []
+      },
+      "theme_information": {
+        "positive_spans": [
+          "可文件也留了口子：病情变了、设备参数不同，就可以重查。",
+          "医院怕出医疗纠纷担责任，医生嫌调阅旧数据麻烦，顺手就开新检查。",
+          "所以互认清单列得再长，不如医生那支笔肯认旧结果。"
+        ],
+        "problem_spans": []
+      },
+      "logic_structure": {
+        "positive_spans": [
+          "为啥？政策留了例外，医生手握否决权。",
+          "更关键的是，接诊医师有权自己判断认不认。",
+          "所以互认清单列得再长，不如医生那支笔肯认旧结果。"
+        ],
+        "problem_spans": []
+      },
+      "engagement": {
+        "positive_spans": [
+          "换医院就得重做检查，刚花的钱又打水漂。",
+          "医院怕出医疗纠纷担责任，医生嫌调阅旧数据麻烦，顺手就开新检查。",
+          "所以互认清单列得再长，不如医生那支笔肯认旧结果。下次跨院前，你会先把之前的片子打印好带着吗？"
+        ],
+        "problem_spans": []
+      },
+      "rhetoric_memorability": {
+        "positive_spans": [
+          "刚花的钱又打水漂",
+          "互认清单列得再长，不如医生那支笔肯认旧结果。"
+        ],
+        "problem_spans": []
+      },
+      "oral_fluency": {
+        "positive_spans": [
+          "医生二话不说，又开单子做CT和血常规。"
+        ],
+        "problem_spans": [
+          "转到呼吸科强的三甲。",
+          "诊断细菌病毒合并感染。"
+        ]
+      },
+      "safety_compliance": {
+        "positive_spans": [
+          "可文件也留了口子：病情变了、设备参数不同，就可以重查"
+        ],
+        "problem_spans": [
+          "医院怕出医疗纠纷担责任，医生嫌调阅旧数据麻烦，顺手就开新检查。"
+        ]
+      }
+    },
+    "judge_diagnostics": {
+      "口播": {
+        "oral_subscores": {
+          "朗读顺口度": {
+            "score": 2,
+            "comment": "整体可读，短句为主；但“转到呼吸科强的三甲”“诊断细菌病毒合并感染”两处需换词重断句，明显拗口，故2分。",
+            "positive_spans": [
+              "医生二话不说，又开单子做CT和血常规。"
+            ],
+            "problem_spans": [
+              "转到呼吸科强的三甲。",
+              "诊断细菌病毒合并感染。"
+            ]
+          },
+          "口语自然度": {
+            "score": 2,
+            "comment": "有“医生二话不说”“留了口子”等口语表达；但“转到呼吸科强的三甲”等说法不够自然精炼，核心展开未完全口语化，故2分。",
+            "positive_spans": [
+              "医生二话不说，又开单子做CT和血常规。",
+              "可文件也留了口子：病情变了、设备参数不同，就可以重查。"
+            ],
+            "problem_spans": [
+              "转到呼吸科强的三甲。",
+              "诊断细菌病毒合并感染。"
+            ]
+          }
+        }
+      }
+    },
+    "context_truncated": false,
+    "context_fields_filtered": true,
+    "sent_evidence_ids": [
+      "E001",
+      "E002"
+    ],
+    "prompt_characters": 24220,
+    "reasoning_effort": "high",
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "evaluator_fingerprint": {
+      "kind": "judge",
+      "name": "hy3-script-quality-judge",
+      "version": "3.3.0",
+      "model": "hy4-preview",
+      "prompt_version": "script-quality-grounded-groups-v3.3",
+      "config": {
+        "request": {
+          "reasoning_effort": "high",
+          "max_format_attempts": 2,
+          "max_script_characters": 30000,
+          "max_context_string_characters": 4000,
+          "max_context_list_items": 50,
+          "max_prompt_characters": 60000
+        },
+        "sampling_parameters": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        }
+      },
+      "sha256": "51a64021e077c9a2188741d44b6d5ec749ce549d63f19bb9b67724ed4562d401"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

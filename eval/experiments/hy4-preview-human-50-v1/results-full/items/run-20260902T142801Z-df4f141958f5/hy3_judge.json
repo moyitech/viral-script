@@ -1,0 +1,414 @@
+{
+  "evaluation_id": "judge-2195baf523984d28b7a23660eb23a06a",
+  "run_id": "run-20260902T142801Z-df4f141958f5",
+  "trace_sha256": "d9bf73cf2ec9e9e81397ce6a6da74a4ec34a356af0e2a10e1f7035c262e9169e",
+  "created_at": "2026-09-10T14:48:44.446396Z",
+  "evaluator": {
+    "kind": "judge",
+    "name": "hy3-script-quality-judge",
+    "version": "3.3.0",
+    "model": "hy4-preview"
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "主要短板：口播流畅度",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇点明既提效率也常压价，完整覆盖二元题设两侧，并针对求职者给出具体建议，人群与痛点契合。",
+      "script_spans": [
+        "企业缩短招聘流程，既提效率，也常变相压价。",
+        "你拿到极速录用，先问清底薪、绩效和奖金怎么算，社保怎么交，别光高兴来得快。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "以调研数据对比招聘周期，解释效率与压价成因，并给出问薪建议，信息层层推进，结论有依据。",
+      "script_spans": [
+        "行业调研说过，不少企业核心岗原本要招45天甚至更久，中高级更长的也有。如今缩到一周，速度确实猛。",
+        "你拿到极速录用，先问清底薪、绩效和奖金怎么算，社保怎么交，别光高兴来得快。",
+        "可薪资不透明时，快常常成了企业捡便宜的机会。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字以‘少挣两千’制造具体利益冲突，中段用长短流程对比持续推进，结尾‘捡便宜’自然收束出余味，全程无断档。",
+      "script_spans": [
+        "你三天拿到offer，可能少挣两千块薪水。",
+        "流程极短，昨儿面完今儿逼你签，你怕错失没空还价，公司单方按最低预算就定了，这是压价一面。",
+        "流程快慢本无错。可薪资不透明时，快常常成了企业捡便宜的机会。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、口语生动，如‘昨儿面完今儿逼你签’顺口；但‘这面是效率’‘这是压价一面’需补字，两处拗口。",
+      "script_spans": [
+        "昨儿面完今儿逼你签",
+        "这面是效率",
+        "这是压价一面"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "‘填坑’‘真金白银’等比喻克制且服务理解，‘少挣两千’与‘捡便宜’自然准确，离开上下文仍易复述，无炫技堆砌。",
+      "script_spans": [
+        "你三天拿到offer，可能少挣两千块薪水。",
+        "企业想快点填坑，省下真金白银，这面是效率。",
+        "可薪资不透明时，快常常成了企业捡便宜的机会。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "以‘但’转折分层论证效率与压价，长短流程对比搭建因果桥，结尾回扣开头并深化题设，逻辑递进清晰。",
+      "script_spans": [
+        "岗位空着一天，团队就得扛额外活，项目进度也易拖。企业想快点填坑，省下真金白银，这面是效率。",
+        "但流程一砍，薪资面谈和对比环节常被省掉。",
+        "流程极短，昨儿面完今儿逼你签，你怕错失没空还价，公司单方按最低预算就定了，这是压价一面。",
+        "流程快慢本无错。可薪资不透明时，快常常成了企业捡便宜的机会。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "无明确违规，承认流程快慢本无错且建议问薪；但“如今缩到一周”绝对化，“变相压价”“单方按最低预算就定了”缺边界，误导。",
+      "script_spans": [
+        "流程快慢本无错。",
+        "你拿到极速录用，先问清底薪、绩效和奖金怎么算，社保怎么交，别光高兴来得快。",
+        "如今缩到一周，速度确实猛。",
+        "变相压价",
+        "公司单方按最低预算就定了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": 2.7142857142857144,
+    "normalized_score": 0.9047619047619048,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 1.0,
+    "context_complete": true
+  },
+  "findings": [],
+  "metadata": {
+    "prompt_version": "script-quality-grounded-groups-v3.3",
+    "request_id": "02567315-bdf9-4f67-b10d-1cd158d7c338",
+    "request_ids": [
+      "dd8f9e74-bc49-49a7-847d-8ab4b8f8cb2a",
+      "6ecb02f1-ae2a-4f4a-b548-d08eef1d267e",
+      "0b332f83-b339-41e1-a454-42ff81163120",
+      "02567315-bdf9-4f67-b10d-1cd158d7c338"
+    ],
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 51212,
+      "prompt_tokens": 7175,
+      "total_tokens": 58387,
+      "completion_tokens_details": {
+        "reasoning_tokens": 49870
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "request_id": "dd8f9e74-bc49-49a7-847d-8ab4b8f8cb2a",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 12721,
+          "prompt_tokens": 1993,
+          "total_tokens": 14714,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 12235,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 2,
+        "request_id": "6ecb02f1-ae2a-4f4a-b548-d08eef1d267e",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 11157,
+          "prompt_tokens": 1824,
+          "total_tokens": 12981,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 10840,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 3,
+        "request_id": "0b332f83-b339-41e1-a454-42ff81163120",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 12755,
+          "prompt_tokens": 1758,
+          "total_tokens": 14513,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 12395,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      },
+      {
+        "attempt": 4,
+        "request_id": "02567315-bdf9-4f67-b10d-1cd158d7c338",
+        "model": "hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 14579,
+          "prompt_tokens": 1600,
+          "total_tokens": 16179,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 14400,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        }
+      }
+    ],
+    "format_attempts": 4,
+    "judge_groups": [
+      {
+        "name": "content",
+        "dimension_ids": [
+          "topic_alignment",
+          "theme_information",
+          "logic_structure"
+        ],
+        "summary": "切中题设，论证扎实，结构清晰",
+        "format_attempts": 1,
+        "request_ids": [
+          "dd8f9e74-bc49-49a7-847d-8ab4b8f8cb2a"
+        ]
+      },
+      {
+        "name": "传播",
+        "dimension_ids": [
+          "engagement",
+          "rhetoric_memorability"
+        ],
+        "summary": "钩子精准推进稳，修辞克制记忆深",
+        "format_attempts": 1,
+        "request_ids": [
+          "6ecb02f1-ae2a-4f4a-b548-d08eef1d267e"
+        ]
+      },
+      {
+        "name": "口播",
+        "dimension_ids": [
+          "oral_fluency"
+        ],
+        "summary": "口语自然佳，两处短语稍拗口",
+        "format_attempts": 1,
+        "request_ids": [
+          "0b332f83-b339-41e1-a454-42ff81163120"
+        ]
+      },
+      {
+        "name": "安全",
+        "dimension_ids": [
+          "safety_compliance"
+        ],
+        "summary": "无明确违规，但绝对化标签化缺边界",
+        "format_attempts": 1,
+        "request_ids": [
+          "02567315-bdf9-4f67-b10d-1cd158d7c338"
+        ]
+      }
+    ],
+    "span_evidence": {
+      "topic_alignment": {
+        "positive_spans": [
+          "企业缩短招聘流程，既提效率，也常变相压价。",
+          "你拿到极速录用，先问清底薪、绩效和奖金怎么算，社保怎么交，别光高兴来得快。"
+        ],
+        "problem_spans": []
+      },
+      "theme_information": {
+        "positive_spans": [
+          "行业调研说过，不少企业核心岗原本要招45天甚至更久，中高级更长的也有。如今缩到一周，速度确实猛。",
+          "你拿到极速录用，先问清底薪、绩效和奖金怎么算，社保怎么交，别光高兴来得快。",
+          "可薪资不透明时，快常常成了企业捡便宜的机会。"
+        ],
+        "problem_spans": []
+      },
+      "logic_structure": {
+        "positive_spans": [
+          "岗位空着一天，团队就得扛额外活，项目进度也易拖。企业想快点填坑，省下真金白银，这面是效率。",
+          "但流程一砍，薪资面谈和对比环节常被省掉。",
+          "流程极短，昨儿面完今儿逼你签，你怕错失没空还价，公司单方按最低预算就定了，这是压价一面。",
+          "流程快慢本无错。可薪资不透明时，快常常成了企业捡便宜的机会。"
+        ],
+        "problem_spans": []
+      },
+      "engagement": {
+        "positive_spans": [
+          "你三天拿到offer，可能少挣两千块薪水。",
+          "流程极短，昨儿面完今儿逼你签，你怕错失没空还价，公司单方按最低预算就定了，这是压价一面。",
+          "流程快慢本无错。可薪资不透明时，快常常成了企业捡便宜的机会。"
+        ],
+        "problem_spans": []
+      },
+      "rhetoric_memorability": {
+        "positive_spans": [
+          "你三天拿到offer，可能少挣两千块薪水。",
+          "企业想快点填坑，省下真金白银，这面是效率。",
+          "可薪资不透明时，快常常成了企业捡便宜的机会。"
+        ],
+        "problem_spans": []
+      },
+      "oral_fluency": {
+        "positive_spans": [
+          "昨儿面完今儿逼你签"
+        ],
+        "problem_spans": [
+          "这面是效率",
+          "这是压价一面"
+        ]
+      },
+      "safety_compliance": {
+        "positive_spans": [
+          "流程快慢本无错。",
+          "你拿到极速录用，先问清底薪、绩效和奖金怎么算，社保怎么交，别光高兴来得快。"
+        ],
+        "problem_spans": [
+          "如今缩到一周，速度确实猛。",
+          "变相压价",
+          "公司单方按最低预算就定了"
+        ]
+      }
+    },
+    "judge_diagnostics": {
+      "口播": {
+        "oral_subscores": {
+          "朗读顺口度": {
+            "score": 2,
+            "comment": "气口短、停顿清，多数句子无需改词；但‘这面是效率’与‘这是压价一面’两处读时需补‘的’或换说，属明显拗口。",
+            "positive_spans": [
+              "昨儿面完今儿逼你签"
+            ],
+            "problem_spans": [
+              "这面是效率",
+              "这是压价一面"
+            ]
+          },
+          "口语自然度": {
+            "score": 3,
+            "comment": "中段解释多用口语词序与具体动词，如‘填坑’‘扛额外活’及‘昨儿面完今儿逼你签’，像真人当面说，无需改写。",
+            "positive_spans": [
+              "企业想快点填坑，省下真金白银",
+              "昨儿面完今儿逼你签，你怕错失没空还价"
+            ],
+            "problem_spans": []
+          }
+        }
+      }
+    },
+    "context_truncated": false,
+    "context_fields_filtered": true,
+    "sent_evidence_ids": [
+      "E005"
+    ],
+    "prompt_characters": 12696,
+    "reasoning_effort": "high",
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "evaluator_fingerprint": {
+      "kind": "judge",
+      "name": "hy3-script-quality-judge",
+      "version": "3.3.0",
+      "model": "hy4-preview",
+      "prompt_version": "script-quality-grounded-groups-v3.3",
+      "config": {
+        "request": {
+          "reasoning_effort": "high",
+          "max_format_attempts": 2,
+          "max_script_characters": 30000,
+          "max_context_string_characters": 4000,
+          "max_context_list_items": 50,
+          "max_prompt_characters": 60000
+        },
+        "sampling_parameters": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        }
+      },
+      "sha256": "51a64021e077c9a2188741d44b6d5ec749ce549d63f19bb9b67724ed4562d401"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

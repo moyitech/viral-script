@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-d31bd29f9b5d42a9aecb73aa47823209",
+  "run_id": "run-20260902T142226Z-8955f2078222",
+  "trace_sha256": "6bfbc618ae9fad9ebe74eebb28a602ff9bf32d2c0a18a2ccc0a8f9730fa84926",
+  "created_at": "2026-09-10T14:56:07.860739Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "以垫付失联场景切入，正面回答善意为何需边界，法律与风险两侧完整覆盖，精准命中普通观众防骗痛点。",
+      "script_spans": [
+        "好心帮陌生人垫付费用，善意真的需要边界。",
+        "再看风险那头。骗子爱装弱求援，用互惠和紧迫感催你转账。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题聚焦善意边界，法律无因管理与电诈数据等单元层层推进，事实解释结论互证，观众可带走防骗与维权知识。",
+      "script_spans": [
+        "先说法律，你没法定或约定义务代付，要是错信了骗子，这不构成无因管理。",
+        "2023年前三季度全国立了68.9万件电诈案，陌生求助常是精心设的局。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字即现垫付失联冲突，中段法律与风险持续兑现，结尾金句自然收束，吸引力强。",
+      "script_spans": [
+        "你替陌生旅客垫了酒店费，对方领完就失联。",
+        "民法典保的是真替人着想的管事人，不是给骗子送钱的善良人。",
+        "帮前停三秒。善良不带锁，就容易帮了恶。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句和口语承接让整体能读通，但“自走”“难靠必要费用偿还拿回”等处需临时换词，节奏不够顺。",
+      "script_spans": [
+        "咱们把账算清楚。",
+        "民法典保的是真替人着想的管事人，不是给骗子送钱的善良人。",
+        "先让对方自走官方支付渠道",
+        "你那笔钱难靠必要费用偿还拿回"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "“善良不带锁”等比喻自然贴切，民法典对比句精准有力，记忆点突出且无炫技，修辞服务理解。",
+      "script_spans": [
+        "善良不带锁，就容易帮了恶。",
+        "民法典保的是真替人着想的管事人，不是给骗子送钱的善良人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "场景导入后先法律后风险，过渡清晰，因果桥完整，方法承接风险，结尾回扣边界主题，结构层层递进。",
+      "script_spans": [
+        "先说法律，你没法定或约定义务代付，要是错信了骗子，这不构成无因管理。",
+        "帮前停三秒。善良不带锁，就容易帮了恶。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以‘要是错信了骗子’限定法律结论，用‘难靠’‘往往’等词留边界，防骗建议具体稳妥，无夸大或违规风险。",
+      "script_spans": [
+        "要是错信了骗子，这不构成无因管理",
+        "你那笔钱难靠必要费用偿还拿回",
+        "高信任倾向的人往往更容易中招"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 20.0,
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.857142857142857,
+    "judge_normalized_score": 0.9523809523809524
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-3919a6b6c5a24cf79bd6b4575c773e16",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

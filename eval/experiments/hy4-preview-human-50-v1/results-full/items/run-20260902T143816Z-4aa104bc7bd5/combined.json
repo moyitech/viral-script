@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-057017d416784dc6804ed83e6f707e23",
+  "run_id": "run-20260902T143816Z-4aa104bc7bd5",
+  "trace_sha256": "b39c7c245e4468cf2cb5aa28d17f6619801ace40ed8d89f61ba62cfd3d945113",
+  "created_at": "2026-09-10T14:55:55.886048Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头至结论均正面回应题设，覆盖干旱成本与转型应对两侧，并明确指向普通人的节电痛点。",
+      "script_spans": [
+        "干旱推高成本，能源转型靠多能互补和灵活电力市场来应对看天吃饭。",
+        "咱们普通人记住看分时电价，高峰少开大功率电器就行。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，从水电原理、风光储互补到现货市场层层推进，事实与解释相互支撑，无编造。",
+      "script_spans": [
+        "储能把多余电存住，缺时放出来补位。",
+        "现货市场像实时菜价，把贵时段标出来，大家看见贵就错峰，整体成本就被摊薄了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以干旱推高成本与转型未被掐住形成反差，中段用多能互补和实时菜价持续推进，结尾自然升华至系统调度，余味足。",
+      "script_spans": [
+        "干旱让水电变贵，转型却没被天气掐住。",
+        "那价格怎么稳？现货市场像实时菜价，把贵时段标出来，大家看见贵就错峰，整体成本就被摊薄了。",
+        "未来看天吃饭，慢慢变成看系统怎么聪明调度了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "短气口为主，重音停顿清楚，中段解释口语自然，无两处拗口，朗读无需改词。",
+      "script_spans": [
+        "你想啊，水电少了，风光顶上，系统就不至于抓瞎。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "现货市场如实时菜价的比喻贴切易懂，搭伙、抓瞎等口语化表达生动自然，修辞克制且服务理解，留下可复述的记忆点。",
+      "script_spans": [
+        "现货市场像实时菜价",
+        "系统就不至于抓瞎",
+        "多能互补让各类电源搭伙调度扛波动"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段落功能清晰，以提问和转折自然过渡，因果桥完整，结尾聪明调度巧妙回扣开头与题设。",
+      "script_spans": [
+        "那价格怎么稳？现货市场像实时菜价，把贵时段标出来，大家看见贵就错峰，整体成本就被摊薄了。",
+        "未来看天吃饭，慢慢变成看系统怎么聪明调度了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全文客观陈述干旱对水电影响及应对，承认极端旱情仍局部偏紧，无夸大承诺，导向安全。",
+      "script_spans": [
+        "不过极端旱情局部还是会紧，像西南前几年大旱，水电曾掉大半，那时还得别的电源顶上。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f3b6c381d0324c5f945ffc2ecb791a7c",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

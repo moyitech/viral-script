@@ -1,0 +1,352 @@
+{
+  "schema_version": "1.0",
+  "evaluation_id": "eval-20260910T142655.363029Z-d77caf38",
+  "started_at": "2026-09-10T14:26:55.363029Z",
+  "last_started_at": "2026-09-10T14:26:55.363029Z",
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "evaluators": [
+    "judge"
+  ],
+  "fingerprint": {
+    "schema_version": "1.0",
+    "rubric_sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab",
+    "evaluators": [
+      {
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0",
+        "model": "hy4-preview",
+        "prompt_version": "script-quality-grounded-groups-v3.3",
+        "config": {
+          "request": {
+            "reasoning_effort": "high",
+            "max_format_attempts": 2,
+            "max_script_characters": 30000,
+            "max_context_string_characters": 4000,
+            "max_context_list_items": 50,
+            "max_prompt_characters": 60000
+          },
+          "sampling_parameters": {
+            "temperature": 0.0,
+            "top_p": 1.0
+          }
+        },
+        "sha256": "51a64021e077c9a2188741d44b6d5ec749ce549d63f19bb9b67724ed4562d401"
+      }
+    ],
+    "aggregator": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    },
+    "sha256": "6223e91aa93cebc731c497e4ef2d2471fa13daa014ca0f58dcb2cb4e529f3d99"
+  },
+  "concurrency": 12,
+  "trace_files": [
+    "T002-L700-run-20260902T141409Z-63302ee1095f.json",
+    "T004-L700-run-20260902T141445Z-e44ceddc577e.json",
+    "T008-L450-run-20260902T141529Z-8b7d14a3d37e.json",
+    "T009-L280-run-20260902T141414Z-754043ebe856.json",
+    "T011-L700-run-20260902T141700Z-fc2049ccdece.json",
+    "T013-L280-run-20260902T141634Z-15d2f3109885.json",
+    "T014-L280-run-20260902T141622Z-6973bb5e0fa3.json",
+    "T022-L450-run-20260902T142102Z-f259fc859878.json",
+    "T027-L700-run-20260902T142412Z-9ac699ec904a.json",
+    "T028-L280-run-20260902T142252Z-1ce7d98b57a0.json",
+    "T029-L280-run-20260902T142226Z-8955f2078222.json",
+    "T032-L280-run-20260902T142526Z-2c040d06ec4f.json",
+    "T032-L450-run-20260902T142438Z-ba6a0638f253.json",
+    "T033-L700-run-20260902T142821Z-98746840764a.json",
+    "T038-L280-run-20260902T142516Z-48d670671e0e.json",
+    "T039-L700-run-20260902T142801Z-f25e407b41a9.json",
+    "T040-L280-run-20260902T142801Z-df4f141958f5.json",
+    "T042-L450-run-20260902T142741Z-cdc71d64c682.json",
+    "T044-L280-run-20260902T142813Z-606980e4ac1e.json",
+    "T044-L450-run-20260902T143025Z-e086c1c9a65c.json",
+    "T045-L700-run-20260902T142909Z-a8f55972fcda.json",
+    "T047-L280-run-20260902T143134Z-86884945a6dc.json",
+    "T047-L700-run-20260902T143313Z-b75580977412.json",
+    "T052-L700-run-20260902T143440Z-3a9f5ed5985b.json",
+    "T053-L450-run-20260902T143234Z-615a2988da7f.json",
+    "T054-L700-run-20260902T143314Z-1baeb2f32368.json",
+    "T060-L700-run-20260902T143525Z-4b9a78dd67a9.json",
+    "T064-L450-run-20260902T144017Z-ee52770d87c0.json",
+    "T066-L450-run-20260902T143958Z-8b87fb3b6e38.json",
+    "T068-L280-run-20260902T143718Z-62d478bd04e2.json",
+    "T069-L280-run-20260902T143816Z-4aa104bc7bd5.json",
+    "T072-L450-run-20260902T144130Z-45bd1cdd1ea8.json",
+    "T076-L450-run-20260902T144323Z-91ac800e5d87.json",
+    "T077-L280-run-20260902T144155Z-d9656a0a4df8.json",
+    "T077-L450-run-20260902T144242Z-d148f9940b35.json",
+    "T080-L280-run-20260902T144305Z-4b3be16f56af.json",
+    "T081-L280-run-20260902T144555Z-a7216a3bbb2c.json",
+    "T081-L450-run-20260902T144431Z-644af2d006b2.json",
+    "T082-L280-run-20260902T144401Z-4abc8c50e845.json",
+    "T083-L700-run-20260902T144510Z-074551eaf24a.json",
+    "T086-L450-run-20260902T144553Z-d895cc6def27.json",
+    "T087-L450-run-20260902T144711Z-dd3308a971f0.json",
+    "T089-L700-run-20260902T144833Z-f41105cb3a14.json",
+    "T095-L700-run-20260902T144958Z-16ce8b2b4bcd.json",
+    "T098-L280-run-20260902T145122Z-d39fc9acbdbb.json",
+    "T099-L280-run-20260902T145218Z-e2bc4b5266c0.json",
+    "T099-L450-run-20260902T145146Z-ede3ae794e0f.json",
+    "T100-L450-run-20260902T145204Z-057933ab6702.json",
+    "T100-L700-run-20260902T145202Z-448e2a005be5.json"
+  ],
+  "inputs": [
+    {
+      "source": "T002-L700-run-20260902T141409Z-63302ee1095f.json",
+      "run_id": "run-20260902T141409Z-63302ee1095f",
+      "trace_sha256": "1c432336ab54468b6ec3d5e26e72249c8957608e05a0f7401501525f35775c4c"
+    },
+    {
+      "source": "T004-L700-run-20260902T141445Z-e44ceddc577e.json",
+      "run_id": "run-20260902T141445Z-e44ceddc577e",
+      "trace_sha256": "845d5298e4c43444b5355c2d266b19df335a19ff64bdc9cd0745ab3757c6989b"
+    },
+    {
+      "source": "T008-L450-run-20260902T141529Z-8b7d14a3d37e.json",
+      "run_id": "run-20260902T141529Z-8b7d14a3d37e",
+      "trace_sha256": "bf4f88e29b9e75a9f6af2c1b2bfd8bc2c2d72ed945fe674765468950a5545716"
+    },
+    {
+      "source": "T009-L280-run-20260902T141414Z-754043ebe856.json",
+      "run_id": "run-20260902T141414Z-754043ebe856",
+      "trace_sha256": "9a77c7b06d365c778734130ecd714fbfcc77c94ccc6388a5878d119e4b787a8c"
+    },
+    {
+      "source": "T011-L700-run-20260902T141700Z-fc2049ccdece.json",
+      "run_id": "run-20260902T141700Z-fc2049ccdece",
+      "trace_sha256": "4e47d39d33a394d5f5d567d3066b12b6f295c85f0d9da9dda6bac23d0923d943"
+    },
+    {
+      "source": "T013-L280-run-20260902T141634Z-15d2f3109885.json",
+      "run_id": "run-20260902T141634Z-15d2f3109885",
+      "trace_sha256": "991d28f05a2bdb930681281c86eb45da2522dfb33817f390d5490a913d4c705b"
+    },
+    {
+      "source": "T014-L280-run-20260902T141622Z-6973bb5e0fa3.json",
+      "run_id": "run-20260902T141622Z-6973bb5e0fa3",
+      "trace_sha256": "4d623c0a1eb98e394b59b868ee7e1191dffe9829c7039b6e6fab323e5ef59b47"
+    },
+    {
+      "source": "T022-L450-run-20260902T142102Z-f259fc859878.json",
+      "run_id": "run-20260902T142102Z-f259fc859878",
+      "trace_sha256": "233701c4b77e54eaf7522e2100b246cd021b933b8b63512b9c999b0dc4258df3"
+    },
+    {
+      "source": "T027-L700-run-20260902T142412Z-9ac699ec904a.json",
+      "run_id": "run-20260902T142412Z-9ac699ec904a",
+      "trace_sha256": "bf27e12702c45d09fe7989f48a23a802dd5e5f733b708bfd31c54a9db0bf1fb9"
+    },
+    {
+      "source": "T028-L280-run-20260902T142252Z-1ce7d98b57a0.json",
+      "run_id": "run-20260902T142252Z-1ce7d98b57a0",
+      "trace_sha256": "b7f085ffa8a9653b0ae24aac5cc7bcba11ef8b745c2026528136e4329d2229dd"
+    },
+    {
+      "source": "T029-L280-run-20260902T142226Z-8955f2078222.json",
+      "run_id": "run-20260902T142226Z-8955f2078222",
+      "trace_sha256": "6bfbc618ae9fad9ebe74eebb28a602ff9bf32d2c0a18a2ccc0a8f9730fa84926"
+    },
+    {
+      "source": "T032-L280-run-20260902T142526Z-2c040d06ec4f.json",
+      "run_id": "run-20260902T142526Z-2c040d06ec4f",
+      "trace_sha256": "e430896fc12fa5381bc6bac5b187ea4f605b27cc76192ef44760cb64c0dd8902"
+    },
+    {
+      "source": "T032-L450-run-20260902T142438Z-ba6a0638f253.json",
+      "run_id": "run-20260902T142438Z-ba6a0638f253",
+      "trace_sha256": "82a31ca845a73664f9f77d4f08854c2f2a80eb6464d307c356478ff7971fa25e"
+    },
+    {
+      "source": "T033-L700-run-20260902T142821Z-98746840764a.json",
+      "run_id": "run-20260902T142821Z-98746840764a",
+      "trace_sha256": "f37a83cc63230908353cd986ff46871edaacec2c06eefa173ce232ed74b95f2a"
+    },
+    {
+      "source": "T038-L280-run-20260902T142516Z-48d670671e0e.json",
+      "run_id": "run-20260902T142516Z-48d670671e0e",
+      "trace_sha256": "cbc43fa3b12971ab627fe508416b92c7bbb6f6e808375fdb53f5c74bf42f7dd9"
+    },
+    {
+      "source": "T039-L700-run-20260902T142801Z-f25e407b41a9.json",
+      "run_id": "run-20260902T142801Z-f25e407b41a9",
+      "trace_sha256": "8e54a0a7da8a6738556a6e5cd9d05631fb7c116e966b82457999176c54938974"
+    },
+    {
+      "source": "T040-L280-run-20260902T142801Z-df4f141958f5.json",
+      "run_id": "run-20260902T142801Z-df4f141958f5",
+      "trace_sha256": "d9bf73cf2ec9e9e81397ce6a6da74a4ec34a356af0e2a10e1f7035c262e9169e"
+    },
+    {
+      "source": "T042-L450-run-20260902T142741Z-cdc71d64c682.json",
+      "run_id": "run-20260902T142741Z-cdc71d64c682",
+      "trace_sha256": "11337416448434605df19d03f7f4e1d8018f8d2573df2fa1b74b48ea18474c48"
+    },
+    {
+      "source": "T044-L280-run-20260902T142813Z-606980e4ac1e.json",
+      "run_id": "run-20260902T142813Z-606980e4ac1e",
+      "trace_sha256": "a00c37bb4fdb4edae717bdc9415a3810923447db3917409cf9d1733cfaf6afc2"
+    },
+    {
+      "source": "T044-L450-run-20260902T143025Z-e086c1c9a65c.json",
+      "run_id": "run-20260902T143025Z-e086c1c9a65c",
+      "trace_sha256": "993baaed8ff61b74e752e29022309c0bd221e884a7af973f8a576060c457100a"
+    },
+    {
+      "source": "T045-L700-run-20260902T142909Z-a8f55972fcda.json",
+      "run_id": "run-20260902T142909Z-a8f55972fcda",
+      "trace_sha256": "bc9b33a2f2c486641821951079787b2790dac8039c46979a13b550ec3d470400"
+    },
+    {
+      "source": "T047-L280-run-20260902T143134Z-86884945a6dc.json",
+      "run_id": "run-20260902T143134Z-86884945a6dc",
+      "trace_sha256": "f12e98bff0ef11beaa3b39b9c3f97984c261249fed8d338e4762b8443bc9edaa"
+    },
+    {
+      "source": "T047-L700-run-20260902T143313Z-b75580977412.json",
+      "run_id": "run-20260902T143313Z-b75580977412",
+      "trace_sha256": "003e762c5d63a240a955ec3fb3089549d2fb33e5d40eb9d68854501552d8e509"
+    },
+    {
+      "source": "T052-L700-run-20260902T143440Z-3a9f5ed5985b.json",
+      "run_id": "run-20260902T143440Z-3a9f5ed5985b",
+      "trace_sha256": "0d56f96733bb9ed2ace063cc443bced1329e1fab2689cc817bdf8fd7f0d593b3"
+    },
+    {
+      "source": "T053-L450-run-20260902T143234Z-615a2988da7f.json",
+      "run_id": "run-20260902T143234Z-615a2988da7f",
+      "trace_sha256": "5a8899e74d84151c37111c3c20e6b941e4763d27dc57791fc239da720021a9b8"
+    },
+    {
+      "source": "T054-L700-run-20260902T143314Z-1baeb2f32368.json",
+      "run_id": "run-20260902T143314Z-1baeb2f32368",
+      "trace_sha256": "770d1ab9d4401fddd78ab3cc16a9d4353f8323b000727f946023cee3d66eea72"
+    },
+    {
+      "source": "T060-L700-run-20260902T143525Z-4b9a78dd67a9.json",
+      "run_id": "run-20260902T143525Z-4b9a78dd67a9",
+      "trace_sha256": "037a11b026599817cf5985d562af4c157f31e0b806c984d15faf3df2de73d37a"
+    },
+    {
+      "source": "T064-L450-run-20260902T144017Z-ee52770d87c0.json",
+      "run_id": "run-20260902T144017Z-ee52770d87c0",
+      "trace_sha256": "436b77f139c86ae1fc13f012a5aac2726e5ec6bb5843cea2697a6f5d36f21566"
+    },
+    {
+      "source": "T066-L450-run-20260902T143958Z-8b87fb3b6e38.json",
+      "run_id": "run-20260902T143958Z-8b87fb3b6e38",
+      "trace_sha256": "acccfd24be3aceee1ce03cb0f0dea4555d95eef792275e14a341bb3baf863356"
+    },
+    {
+      "source": "T068-L280-run-20260902T143718Z-62d478bd04e2.json",
+      "run_id": "run-20260902T143718Z-62d478bd04e2",
+      "trace_sha256": "3608160c31c547cb7b4cdd3a55d8290f4ade2d8544eed43983ae02f32a59c7f0"
+    },
+    {
+      "source": "T069-L280-run-20260902T143816Z-4aa104bc7bd5.json",
+      "run_id": "run-20260902T143816Z-4aa104bc7bd5",
+      "trace_sha256": "b39c7c245e4468cf2cb5aa28d17f6619801ace40ed8d89f61ba62cfd3d945113"
+    },
+    {
+      "source": "T072-L450-run-20260902T144130Z-45bd1cdd1ea8.json",
+      "run_id": "run-20260902T144130Z-45bd1cdd1ea8",
+      "trace_sha256": "5ab9dfec5dcbbcd279fc79c6e09baf0f715951961561f1852248dfcbd22e7738"
+    },
+    {
+      "source": "T076-L450-run-20260902T144323Z-91ac800e5d87.json",
+      "run_id": "run-20260902T144323Z-91ac800e5d87",
+      "trace_sha256": "af8ed7cb48f95f141711e5b68f90514f99d84b49a6bef26c54161e3c0aae14eb"
+    },
+    {
+      "source": "T077-L280-run-20260902T144155Z-d9656a0a4df8.json",
+      "run_id": "run-20260902T144155Z-d9656a0a4df8",
+      "trace_sha256": "f58935fdb864d7ae5f050e6480a61e6f538cb9fe2e4156fce6b8d396834f884f"
+    },
+    {
+      "source": "T077-L450-run-20260902T144242Z-d148f9940b35.json",
+      "run_id": "run-20260902T144242Z-d148f9940b35",
+      "trace_sha256": "f5d2934a02dcb13a5ca9400ab252cf7f6d93db0d87b65f2ebca4d8e86a76445a"
+    },
+    {
+      "source": "T080-L280-run-20260902T144305Z-4b3be16f56af.json",
+      "run_id": "run-20260902T144305Z-4b3be16f56af",
+      "trace_sha256": "d2707e525cdf9b782a2e1da546cf2966b1d7fbf1ff3204494eb0f8d92b7be096"
+    },
+    {
+      "source": "T081-L280-run-20260902T144555Z-a7216a3bbb2c.json",
+      "run_id": "run-20260902T144555Z-a7216a3bbb2c",
+      "trace_sha256": "7c8ef6bee094a5bd8a0c9b813a4b9b9870609628a1e365aa95db1c1f3c0f7011"
+    },
+    {
+      "source": "T081-L450-run-20260902T144431Z-644af2d006b2.json",
+      "run_id": "run-20260902T144431Z-644af2d006b2",
+      "trace_sha256": "bcd8ca6371e8c75a20a5da08d2728b0dbee579c6e1e4a56ed180ea3061e49bd8"
+    },
+    {
+      "source": "T082-L280-run-20260902T144401Z-4abc8c50e845.json",
+      "run_id": "run-20260902T144401Z-4abc8c50e845",
+      "trace_sha256": "dcb7d025b33c6bd5551158358c58ec57ff0ba7eabf1639aef8625f01a47dbe82"
+    },
+    {
+      "source": "T083-L700-run-20260902T144510Z-074551eaf24a.json",
+      "run_id": "run-20260902T144510Z-074551eaf24a",
+      "trace_sha256": "c5730afda8fa9e7a9115adcf25ba540964356f069effb3de39c2d0d51756ca67"
+    },
+    {
+      "source": "T086-L450-run-20260902T144553Z-d895cc6def27.json",
+      "run_id": "run-20260902T144553Z-d895cc6def27",
+      "trace_sha256": "10c42a6aabce583f54899151b6c71e589841bc0302e770c36d8b40cf7a4691be"
+    },
+    {
+      "source": "T087-L450-run-20260902T144711Z-dd3308a971f0.json",
+      "run_id": "run-20260902T144711Z-dd3308a971f0",
+      "trace_sha256": "220b11662955aad6fc414b71b460d95b8f5005e3b56c8c96418ec2962d15beb8"
+    },
+    {
+      "source": "T089-L700-run-20260902T144833Z-f41105cb3a14.json",
+      "run_id": "run-20260902T144833Z-f41105cb3a14",
+      "trace_sha256": "31bf706c2bb5986b62c9732df4955e0d324b0d901eb8d85f87ac1ae0b6d31421"
+    },
+    {
+      "source": "T095-L700-run-20260902T144958Z-16ce8b2b4bcd.json",
+      "run_id": "run-20260902T144958Z-16ce8b2b4bcd",
+      "trace_sha256": "996670ce87547fd34429cd6ceddd3d29322d1ce26e828cb189ebe09e3bb00ca1"
+    },
+    {
+      "source": "T098-L280-run-20260902T145122Z-d39fc9acbdbb.json",
+      "run_id": "run-20260902T145122Z-d39fc9acbdbb",
+      "trace_sha256": "463fb8c842b92d019db2771112ae9a6a85b3a240f8677f53b2cfa97a1015fccc"
+    },
+    {
+      "source": "T099-L280-run-20260902T145218Z-e2bc4b5266c0.json",
+      "run_id": "run-20260902T145218Z-e2bc4b5266c0",
+      "trace_sha256": "287c5451e3a7e916eca4043d97924eb0f7f1b0d75910c934df6003cf892f35a3"
+    },
+    {
+      "source": "T099-L450-run-20260902T145146Z-ede3ae794e0f.json",
+      "run_id": "run-20260902T145146Z-ede3ae794e0f",
+      "trace_sha256": "a7057bd352a392a87351d170c9c34e7c01ef876b1cab08beeffe891260fcdaab"
+    },
+    {
+      "source": "T100-L450-run-20260902T145204Z-057933ab6702.json",
+      "run_id": "run-20260902T145204Z-057933ab6702",
+      "trace_sha256": "f47f9bd3cf06ae53be018ac7bba488ee4ddf26d5a8b63d9190b1afee83cad626"
+    },
+    {
+      "source": "T100-L700-run-20260902T145202Z-448e2a005be5.json",
+      "run_id": "run-20260902T145202Z-448e2a005be5",
+      "trace_sha256": "208d3cb3cd16dbcbcc57243c9ea63b83e65ec90b98c22af8840aa4caf05c5cb2"
+    }
+  ],
+  "status": "running"
+}

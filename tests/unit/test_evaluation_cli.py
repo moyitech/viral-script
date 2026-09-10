@@ -13,6 +13,14 @@ from scripts.run_evaluation import _trace_paths, build_parser
 
 
 class EvaluationCliTests(unittest.TestCase):
+    def test_openrouter_provider_is_explicit(self) -> None:
+        args = build_parser().parse_args([
+            "score", "--trace", "trace.json", "--judge-provider", "openrouter",
+            "--judge-model-id", "tencent/hy4-preview",
+        ])
+        self.assertEqual(args.judge_provider, "openrouter")
+        self.assertEqual(args.judge_model_id, "tencent/hy4-preview")
+
     def test_default_rubric_is_original_v1(self) -> None:
         args = build_parser().parse_args(["score", "--trace", "trace.json"])
 

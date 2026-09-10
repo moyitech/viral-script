@@ -1,0 +1,135 @@
+{
+  "evaluation_id": "combined-a21753de9cbd4809b4bbdb567198dc6c",
+  "run_id": "run-20260902T142516Z-48d670671e0e",
+  "trace_sha256": "cbc43fa3b12971ab627fe508416b92c7bbb6f6e808375fdb53f5c74bf42f7dd9",
+  "created_at": "2026-09-10T14:51:03.502352Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头即否定安静管理，覆盖纪律与放松社交两侧，结合作业挤占痛点，精准回应题设。",
+      "script_spans": [
+        "这种安静管理真不利于学生。看似安静守纪律，却丢了放松和社交。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "引用规定与大课间事实，结合情绪、视力、体质等益处推进论证，信息扎实且有行动建议。",
+      "script_spans": [
+        "按规定课间休息不能占用，学生正当游戏出教室不该被约束，每天还有统一大课间让娃动一动。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇‘下课铃响却被逼写作业’冲突强，中段新信息持续推进，结尾问孩子与‘咱们当年的跑跳，不该成稀罕事’自然生长，余味足。",
+      "script_spans": [
+        "下课铃响了，孩子却被迫坐着写作业？",
+        "你小时候听见铃就往外冲，现在孩子连伸懒腰都怕吵秩序。",
+        "咱们当年的跑跳，不该成稀罕事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主且有‘让娃动一动’等口语，但‘怕吵秩序’等需换词，政策句仍偏书面，故为2分。",
+      "script_spans": [
+        "每节课间去外面走几步伸伸腿，让身体缓过来才算真休息。",
+        "学生正当游戏出教室不该被约束，",
+        "现在孩子连伸懒腰都怕吵秩序。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制，用‘听见铃就往外冲’与‘怕吵秩序’对比服务情绪，‘跑跳不该成稀罕事’自然准确，是可复述的记忆点。",
+      "script_spans": [
+        "你小时候听见铃就往外冲，现在孩子连伸懒腰都怕吵秩序。",
+        "咱们当年的跑跳，不该成稀罕事。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "先立观点再让步转折，规则、益处与危害层层递进，结尾回扣跑跳不该成稀罕事，逻辑闭环。",
+      "script_spans": [
+        "老憋着反而不清爽，坐一上午脑子本就发紧，作业一挤占娃只能憋座位上，视线发木心里烦，换不来更好成绩。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "成立：依规指出课间不该被约束。不足：'真不利于学生'与'换不来更好成绩'表述绝对化，属争议性归因，易误导需补边界。",
+      "script_spans": [
+        "按规定课间休息不能占用，学生正当游戏出教室不该被约束",
+        "这种安静管理真不利于学生",
+        "换不来更好成绩"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 19.0,
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 2.7142857142857144,
+    "judge_normalized_score": 0.9047619047619048
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-63bb852623e8424c88340cf6f739ccd6",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

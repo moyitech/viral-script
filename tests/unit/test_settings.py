@@ -34,6 +34,23 @@ def valid_environment(**overrides: str) -> dict[str, str]:
 
 
 class SettingsTests(unittest.TestCase):
+    def test_optional_openrouter_credentials_are_isolated_and_secret_safe(self) -> None:
+        loaded = load_settings(env_file=None, environ=valid_environment(
+            OPEN_ROUTER_KEY="router-test-secret",
+            OPEN_ROUTER_URL="https://openrouter.ai/api/v1/chat/completions",
+        ))
+        self.assertEqual(loaded.open_router.openai_base_url, "https://openrouter.ai/api/v1")
+        self.assertEqual(loaded.open_router.model, "tencent/hy4-preview")
+        self.assertEqual(loaded.open_router.request_protocol, "openrouter")
+        self.assertEqual(loaded.hy3.model, "hy3")
+        self.assertNotIn("router-test-secret", repr(loaded))
+        self.assertIsNone(load_settings(env_file=None, environ=valid_environment()).open_router)
+
+    def test_openrouter_requires_both_values_when_enabled(self) -> None:
+        for values in ({"OPEN_ROUTER_KEY": "secret"}, {"OPEN_ROUTER_URL": "https://example.com/v1"}):
+            with self.subTest(values=list(values)), self.assertRaises(SettingsError):
+                load_settings(env_file=None, environ=valid_environment(**values))
+
     def test_loads_explicit_mapping_with_safe_defaults(self) -> None:
         loaded = load_settings(env_file=None, environ=valid_environment())
 

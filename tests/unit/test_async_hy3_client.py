@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from types import SimpleNamespace
+from dataclasses import replace
 import unittest
 from unittest.mock import patch
 
@@ -102,6 +103,23 @@ class FakeAsyncOpenAI:
 
 
 class AsyncHy3ClientTests(unittest.IsolatedAsyncioTestCase):
+    async def test_openrouter_uses_native_reasoning_and_requires_support(self) -> None:
+        for effort, expected in (("high", "high"), ("no_think", "none")):
+            completions = RecordingCompletions()
+            client = AsyncHy3Client(
+                replace(self.settings, request_protocol="openrouter", model="tencent/hy4-preview"),
+                client=FakeAsyncOpenAI(completions),
+            )
+            await client.complete([ChatMessage(role="user", content="test")], reasoning_effort=effort)
+            request = completions.calls[0]
+            self.assertEqual(request["model"], "tencent/hy4-preview")
+            self.assertEqual(request["extra_body"], {
+                "reasoning": {"effort": expected, "exclude": True},
+                "provider": {"require_parameters": True},
+            })
+            self.assertNotIn("reasoning_effort", request)
+            self.assertNotIn("top_p", request)
+
     def setUp(self) -> None:
         self.settings = Hy3Config(
             base_url="https://example.com/v1/chat/completions",

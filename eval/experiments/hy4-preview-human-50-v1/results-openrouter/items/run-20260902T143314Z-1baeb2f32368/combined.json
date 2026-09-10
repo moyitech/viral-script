@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-4613cadd1c2e41358647bc27170c4c45",
+  "run_id": "run-20260902T143314Z-1baeb2f32368",
+  "trace_sha256": "770d1ab9d4401fddd78ab3cc16a9d4353f8323b000727f946023cee3d66eea72",
+  "created_at": "2026-09-10T15:08:07.654428Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开头直接回答会更贵吗，覆盖养殖冲击与消费价格两侧，切中普通消费者买海鲜的痛点，结论回扣题设。",
+      "script_spans": [
+        "会更贵吗？眼下没有，反而便宜了。",
+        "所以啊，餐桌上海鲜现在没更贵，是产量和出塘撑住了。\n可长期看，升温在改海洋的牌局。今天便宜不代表明天稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，用升温数据、产量与价格数据、长期物候影响等多个信息单元层层推进，事实与结论相互支撑，无编造。",
+      "script_spans": [
+        "东中国海升温最明显，几十年升了快一度半。渤海黄海也暖，研究说六十年升了一度多。",
+        "海水养殖产量还增了五个多点。\n光前十一月就超两千三百万吨，比前年多了些。",
+        "近海变暖让鱼群往北迁。生长季节也乱了。\n春天来得早，秋天拖得晚，鱼不长在正点上。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以养殖户赔钱与海鲜跌价形成强反差，中段用产量数据和长远风险持续推进，结尾问产地自然生长，全程留住观众。",
+      "script_spans": [
+        "海水升温让近海养殖户赔钱，菜场海鲜价却跌了。",
+        "那为什么我们买海鲜没觉得贵？",
+        "你挑鱼时，或许得问问是哪里养的了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "朗读顺口且口语自然：短气口为主，中段‘水一坏就全完’等表达像当面聊天，无拗口。",
+      "script_spans": [
+        "水一坏就全完",
+        "远海也在喂我们"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制且服务理解，如海面像熬汤；升温在改海洋的牌局等记忆点自然准确，脱离上下文仍可复述，无堆砌炫技。",
+      "script_spans": [
+        "夏天海面像熬汤。",
+        "升温在改海洋的牌局。",
+        "价格连着千里外的海。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段落功能清晰，用两个问句自然过渡，供给链与物候变化因果桥完整，结尾回扣开头悖论与题设，逻辑层层递进。",
+      "script_spans": [
+        "那为什么我们买海鲜没觉得贵？",
+        "这平稳能一直持续吗？再看远一点。",
+        "淡水塘也产得多，调运顶上。近海不是唯一货源，远海也在喂我们。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全文客观公允，对未来价格走势使用“万一”“可能”等限定词，不作绝对承诺，无夸大或煽动，合规安全。",
+      "script_spans": [
+        "万一哪年热浪特别猛，局部减产会推高某些品种价。",
+        "便宜鱼可能突然缺。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-f14731a8185a4abe8e3d620a7f254687",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

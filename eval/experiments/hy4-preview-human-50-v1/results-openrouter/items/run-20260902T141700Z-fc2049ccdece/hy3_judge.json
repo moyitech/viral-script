@@ -1,0 +1,462 @@
+{
+  "evaluation_id": "judge-9e5b2d410ffc4cc88550d2b157c8d479",
+  "run_id": "run-20260902T141700Z-fc2049ccdece",
+  "trace_sha256": "4e47d39d33a394d5f5d567d3066b12b6f295c85f0d9da9dda6bac23d0923d943",
+  "created_at": "2026-09-10T15:06:55.178924Z",
+  "evaluator": {
+    "kind": "judge",
+    "name": "hy3-script-quality-judge",
+    "version": "3.3.0",
+    "model": "tencent/hy4-preview"
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "主要短板：口播流畅度",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇点出通勤族耗时痛点，结尾给出智能安检方案，完整覆盖安全与效率两侧，正面回答兼顾之问。",
+      "script_spans": [
+        "要兼顾安全和效率，不能只把关口加严，得让安检更聪明，用新技术把时间抢回来。",
+        "通勤族被迫提前半小时出门，暴雨里也挤着排。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "以新规事实、管理规定与实证研究多层推进，揭示细查反增漏检风险，并给出智能安检方案，信息扎实且增量明确。",
+      "script_spans": [
+        "运营规定里其实鼓励新设备新模式提效率，写的是质量效率并重，不是只顾严。",
+        "有实证研究跟踪地铁岗，发现用透明挡板隔开路人交谈干扰，绩效会变好，工位微气候差人也稳不住。",
+        "是把身份识别、智能判图悄悄嵌进人流。技术替人盯包，人才有空帮真需要的人。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开篇以20分钟与安全的冲突设问，中段用规定与现实反差、安检员视角等持续推进，结尾自然抛出兼顾之问，钩子贯穿始终。",
+      "script_spans": [
+        "早高峰多耗20分钟安检，安全就真能兜住吗？",
+        "你越想抠细，现场越噪，漏检风险反被悄悄抬高。",
+        "下次你遇长队，该问的不是要不要防护，而是为何不能既稳当又顺畅。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主且有‘舞两下棒子’等口语，整体可读；但‘工位微气候差人也稳不住’需重断句，‘自动留疑’等需换词，中段仍偏书面。",
+      "script_spans": [
+        "只堵门口不增机，车厢空着人挤外面。",
+        "工位微气候差人也稳不住",
+        "自动留疑"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "吃掉容错、吃光省下时间等表达形象贴切，\"当机器认得包\"一句自然凝练，离开上下文仍可复述，修辞克制服务理解。",
+      "script_spans": [
+        "当机器认得包，人就不必拦所有人。",
+        "轨道本为缩短空间距离，别让安检把省下的吃光。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "设问推进层层递进，细查致噪反增漏检的因果桥清晰，结尾以稳当又顺畅回扣安全与效率兼顾。",
+      "script_spans": [
+        "为啥越细查，危险反倒可能从指缝溜走？",
+        "你越想抠细，现场越噪，漏检风险反被悄悄抬高。",
+        "下次你遇长队，该问的不是要不要防护，而是为何不能既稳当又顺畅。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "基于规定与实证研究，仅批评执行方式，未否定安检必要性；用‘可能’限定风险，导向兼顾安全效率，合规安全。",
+      "script_spans": [
+        "下次你遇长队，该问的不是要不要防护，而是为何不能既稳当又顺畅。",
+        "运营规定里其实鼓励新设备新模式提效率，写的是质量效率并重，不是只顾严。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": 2.857142857142857,
+    "normalized_score": 0.9523809523809524,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 1.0,
+    "context_complete": true
+  },
+  "findings": [],
+  "metadata": {
+    "prompt_version": "script-quality-grounded-groups-v3.3",
+    "request_id": "gen-1789052581-HXPqSjfBKLi4XeoAZolj",
+    "request_ids": [
+      "gen-1789052581-LHFhk9TkgRIWFPGfxm94",
+      "gen-1789052582-2vqJJaElqYsFrebDq0iW",
+      "gen-1789052581-X81g4UphiEhxhb28ADxW",
+      "gen-1789052581-HXPqSjfBKLi4XeoAZolj"
+    ],
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 56605,
+      "prompt_tokens": 15059,
+      "total_tokens": 71664,
+      "completion_tokens_details": {
+        "audio_tokens": 0,
+        "reasoning_tokens": 55369,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 3968,
+        "video_tokens": 0
+      },
+      "cost": 0.150985655,
+      "cost_details": {
+        "upstream_inference_cost": 0.150985655,
+        "upstream_inference_prompt_cost": 0.00941655,
+        "upstream_inference_completions_cost": 0.141569105
+      }
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "request_id": "gen-1789052581-LHFhk9TkgRIWFPGfxm94",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 15139,
+          "prompt_tokens": 3964,
+          "total_tokens": 19103,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 14704,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1472,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.040002791,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.040002791,
+            "upstream_inference_prompt_cost": 0.002140152,
+            "upstream_inference_completions_cost": 0.037862639
+          }
+        }
+      },
+      {
+        "attempt": 2,
+        "request_id": "gen-1789052582-2vqJJaElqYsFrebDq0iW",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 13349,
+          "prompt_tokens": 3795,
+          "total_tokens": 17144,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 13074,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1280,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.035537119,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.035537119,
+            "upstream_inference_prompt_cost": 0.00215127,
+            "upstream_inference_completions_cost": 0.033385849
+          }
+        }
+      },
+      {
+        "attempt": 3,
+        "request_id": "gen-1789052581-X81g4UphiEhxhb28ADxW",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 16574,
+          "prompt_tokens": 3729,
+          "total_tokens": 20303,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 16191,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 128,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.044460184,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.044460184,
+            "upstream_inference_prompt_cost": 0.00300861,
+            "upstream_inference_completions_cost": 0.041451574
+          }
+        }
+      },
+      {
+        "attempt": 4,
+        "request_id": "gen-1789052581-HXPqSjfBKLi4XeoAZolj",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 11543,
+          "prompt_tokens": 3571,
+          "total_tokens": 15114,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 11400,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1088,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.030985561,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.030985561,
+            "upstream_inference_prompt_cost": 0.002116518,
+            "upstream_inference_completions_cost": 0.028869043
+          }
+        }
+      }
+    ],
+    "format_attempts": 4,
+    "judge_groups": [
+      {
+        "name": "content",
+        "dimension_ids": [
+          "topic_alignment",
+          "theme_information",
+          "logic_structure"
+        ],
+        "summary": "紧扣兼顾之问，信息扎实且逻辑清晰。",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052581-LHFhk9TkgRIWFPGfxm94"
+        ]
+      },
+      {
+        "name": "传播",
+        "dimension_ids": [
+          "engagement",
+          "rhetoric_memorability"
+        ],
+        "summary": "钩子连贯且修辞克制，记忆点自然",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052582-2vqJJaElqYsFrebDq0iW"
+        ]
+      },
+      {
+        "name": "口播",
+        "dimension_ids": [
+          "oral_fluency"
+        ],
+        "summary": "可读但有拗口，口语未贯穿",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052581-X81g4UphiEhxhb28ADxW"
+        ]
+      },
+      {
+        "name": "安全",
+        "dimension_ids": [
+          "safety_compliance"
+        ],
+        "summary": "合规无风险，导向兼顾安全效率",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052581-HXPqSjfBKLi4XeoAZolj"
+        ]
+      }
+    ],
+    "span_evidence": {
+      "topic_alignment": {
+        "positive_spans": [
+          "要兼顾安全和效率，不能只把关口加严，得让安检更聪明，用新技术把时间抢回来。",
+          "通勤族被迫提前半小时出门，暴雨里也挤着排。"
+        ],
+        "problem_spans": []
+      },
+      "theme_information": {
+        "positive_spans": [
+          "运营规定里其实鼓励新设备新模式提效率，写的是质量效率并重，不是只顾严。",
+          "有实证研究跟踪地铁岗，发现用透明挡板隔开路人交谈干扰，绩效会变好，工位微气候差人也稳不住。",
+          "是把身份识别、智能判图悄悄嵌进人流。技术替人盯包，人才有空帮真需要的人。"
+        ],
+        "problem_spans": []
+      },
+      "logic_structure": {
+        "positive_spans": [
+          "为啥越细查，危险反倒可能从指缝溜走？",
+          "你越想抠细，现场越噪，漏检风险反被悄悄抬高。",
+          "下次你遇长队，该问的不是要不要防护，而是为何不能既稳当又顺畅。"
+        ],
+        "problem_spans": []
+      },
+      "engagement": {
+        "positive_spans": [
+          "早高峰多耗20分钟安检，安全就真能兜住吗？",
+          "你越想抠细，现场越噪，漏检风险反被悄悄抬高。",
+          "下次你遇长队，该问的不是要不要防护，而是为何不能既稳当又顺畅。"
+        ],
+        "problem_spans": []
+      },
+      "rhetoric_memorability": {
+        "positive_spans": [
+          "当机器认得包，人就不必拦所有人。",
+          "轨道本为缩短空间距离，别让安检把省下的吃光。"
+        ],
+        "problem_spans": []
+      },
+      "oral_fluency": {
+        "positive_spans": [
+          "只堵门口不增机，车厢空着人挤外面。"
+        ],
+        "problem_spans": [
+          "工位微气候差人也稳不住",
+          "自动留疑"
+        ]
+      },
+      "safety_compliance": {
+        "positive_spans": [
+          "下次你遇长队，该问的不是要不要防护，而是为何不能既稳当又顺畅。",
+          "运营规定里其实鼓励新设备新模式提效率，写的是质量效率并重，不是只顾严。"
+        ],
+        "problem_spans": []
+      }
+    },
+    "judge_diagnostics": {
+      "口播": {
+        "oral_subscores": {
+          "朗读顺口度": {
+            "score": 2,
+            "comment": "多数气口短、停顿清楚；但‘工位微气候差人也稳不住’缺逗号需重断，‘自动留疑’搭配生硬需换词，共两处。",
+            "positive_spans": [
+              "站里车厢空荡，站外长队拐进人行道。"
+            ],
+            "problem_spans": [
+              "工位微气候差人也稳不住",
+              "自动留疑"
+            ]
+          },
+          "口语自然度": {
+            "score": 2,
+            "comment": "有‘舞两下棒子’‘全搅一块’等口语，局部像当面说；但核心解释如‘实证研究’‘质量效率并重’仍像书面讲解，未贯穿。",
+            "positive_spans": [
+              "真轮到自己就舞两下棒子",
+              "只堵门口不增机，车厢空着人挤外面。"
+            ],
+            "problem_spans": [
+              "写的是质量效率并重，不是只顾严。",
+              "漏检风险反被悄悄抬高"
+            ]
+          }
+        }
+      }
+    },
+    "context_truncated": false,
+    "context_fields_filtered": true,
+    "sent_evidence_ids": [
+      "E001",
+      "E002",
+      "E005"
+    ],
+    "prompt_characters": 27152,
+    "reasoning_effort": "high",
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "evaluator_fingerprint": {
+      "kind": "judge",
+      "name": "hy3-script-quality-judge",
+      "version": "3.3.0",
+      "model": "tencent/hy4-preview",
+      "prompt_version": "script-quality-grounded-groups-v3.3",
+      "config": {
+        "request": {
+          "reasoning_effort": "high",
+          "max_format_attempts": 2,
+          "max_script_characters": 30000,
+          "max_context_string_characters": 4000,
+          "max_context_list_items": 50,
+          "max_prompt_characters": 60000
+        },
+        "sampling_parameters": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "transport": {
+          "protocol": "openrouter",
+          "endpoint_sha256": "76ef4ad6f0c8a4ae66efb13875c107cee40c78997a212353d379acfbb2f45591",
+          "reasoning_exclude": true,
+          "require_parameters": true,
+          "top_p_omitted_at_default": true
+        }
+      },
+      "sha256": "426eb58c9d520a3299f83aef02cd3f617db8e2fef3229339b0a6e9f06f93a893"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

@@ -1,0 +1,449 @@
+{
+  "evaluation_id": "judge-4e4321dc3ee041bdbd3c14b133d2f2ee",
+  "run_id": "run-20260902T142821Z-98746840764a",
+  "trace_sha256": "f37a83cc63230908353cd986ff46871edaacec2c06eefa173ce232ed74b95f2a",
+  "created_at": "2026-09-10T15:06:45.726026Z",
+  "evaluator": {
+    "kind": "judge",
+    "name": "hy3-script-quality-judge",
+    "version": "3.3.0",
+    "model": "tencent/hy4-preview"
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "主要短板：合规性",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "从开头到结论正面回答算力繁荣为何难惠及中小企业，覆盖供需两侧与核心人群，切中门槛痛点。",
+      "script_spans": [
+        "为啥繁荣传不到你这？芯片需求是真升温，总算力也在扩，但大厂囤卡如山，中小企业连门都摸不着。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，芯片成本、云服务、政策与供应链多单元递进，事实与解释支撑结论，信息扎实。",
+      "script_spans": [
+        "信通院提到供给区域割裂，推理需求爆发却对不上，传统机柜租赁通常跟不上精细化用算。",
+        "你买几块GPU，价钱顶小厂半年利润。一块高端训练卡售价够买辆小车，对小厂是天文数字。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以缺货与摸不到门的冲突抓人，中段层层拆解传导链漏缝，结尾以电网未通、何时拧开龙头自然收束，余味强。",
+      "script_spans": [
+        "AI芯片火到缺货，你小厂想用时却连门都摸不到。",
+        "算力像电，可电网还没通到厂门口。咱们这行啥时候能拧开龙头接上这波算力？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇短气口为主，重音停顿清楚；中段用奶茶冰库等口语比喻，朗读无需改词，自然流畅。",
+      "script_spans": [
+        "好比想买杯奶茶的冰，却逼你包下整个冰库。",
+        "西部卡闲着东部厂急等。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "奶茶冰与冰库类比精准鲜活，算力如电的隐喻贯穿首尾，修辞克制且服务理解，留下多个可脱离上下文复述的记忆点。",
+      "script_spans": [
+        "好比想买杯奶茶的冰，却逼你包下整个冰库。",
+        "算力像电，可电网还没通到厂门口。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "段落功能清晰，从买卡、租云到政策与转机层层递进，因果桥完整，结尾以电网隐喻回扣题设。",
+      "script_spans": [
+        "那云上租不行吗？云服务这块，模式太粗放。",
+        "算力像电，可电网还没通到厂门口。咱们这行啥时候能拧开龙头接上这波算力？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 2,
+      "reason": "“通常”等限定词体现客观公允；但“连个…都租不到”绝对化，“大厂囤卡如山”属标签化归因，易误导观众，需改写。",
+      "script_spans": [
+        "传统机柜租赁通常跟不上精细化用算",
+        "连个合适的按量算力都租不到",
+        "大厂囤卡如山"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "partial_weighted_average": 2.857142857142857,
+    "weighted_average": 2.857142857142857,
+    "normalized_score": 0.9523809523809524,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 1.0,
+    "context_complete": true
+  },
+  "findings": [],
+  "metadata": {
+    "prompt_version": "script-quality-grounded-groups-v3.3",
+    "request_id": "gen-1789052581-HL1GwZa64YgeEDVQ1EB7",
+    "request_ids": [
+      "gen-1789052582-LEr8Tz0ZiP3DESvX6gfa",
+      "gen-1789052579-m0GBKmmB1Oaju5R4yRj4",
+      "gen-1789052581-YDSYApSyc6COMPV7QoPz",
+      "gen-1789052581-HL1GwZa64YgeEDVQ1EB7"
+    ],
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 56115,
+      "prompt_tokens": 20943,
+      "total_tokens": 77058,
+      "completion_tokens_details": {
+        "audio_tokens": 0,
+        "reasoning_tokens": 55008,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 3776,
+        "video_tokens": 0
+      },
+      "cost": 0.154819485,
+      "cost_details": {
+        "upstream_inference_cost": 0.154819485,
+        "upstream_inference_prompt_cost": 0.014475869999999998,
+        "upstream_inference_completions_cost": 0.140343615
+      }
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "request_id": "gen-1789052582-LEr8Tz0ZiP3DESvX6gfa",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 14194,
+          "prompt_tokens": 5435,
+          "total_tokens": 19629,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 13822,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1472,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.03886616,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.03886616,
+            "upstream_inference_prompt_cost": 0.003366966,
+            "upstream_inference_completions_cost": 0.035499194
+          }
+        }
+      },
+      {
+        "attempt": 2,
+        "request_id": "gen-1789052579-m0GBKmmB1Oaju5R4yRj4",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 11216,
+          "prompt_tokens": 5266,
+          "total_tokens": 16482,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 10953,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.03244306,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.03244306,
+            "upstream_inference_prompt_cost": 0.004391844,
+            "upstream_inference_completions_cost": 0.028051216
+          }
+        }
+      },
+      {
+        "attempt": 3,
+        "request_id": "gen-1789052581-YDSYApSyc6COMPV7QoPz",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 14178,
+          "prompt_tokens": 5200,
+          "total_tokens": 19378,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 13848,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1216,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.038832906,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.038832906,
+            "upstream_inference_prompt_cost": 0.003373728,
+            "upstream_inference_completions_cost": 0.035459178
+          }
+        }
+      },
+      {
+        "attempt": 4,
+        "request_id": "gen-1789052581-HL1GwZa64YgeEDVQ1EB7",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 16527,
+          "prompt_tokens": 5042,
+          "total_tokens": 21569,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 16385,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 1088,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.044677359,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.044677359,
+            "upstream_inference_prompt_cost": 0.003343332,
+            "upstream_inference_completions_cost": 0.041334027
+          }
+        }
+      }
+    ],
+    "format_attempts": 4,
+    "judge_groups": [
+      {
+        "name": "content",
+        "dimension_ids": [
+          "topic_alignment",
+          "theme_information",
+          "logic_structure"
+        ],
+        "summary": "精准切题，论证扎实，结构完整",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052582-LEr8Tz0ZiP3DESvX6gfa"
+        ]
+      },
+      {
+        "name": "传播",
+        "dimension_ids": [
+          "engagement",
+          "rhetoric_memorability"
+        ],
+        "summary": "冲突开局，类比精妙，余味自然",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052579-m0GBKmmB1Oaju5R4yRj4"
+        ]
+      },
+      {
+        "name": "口播",
+        "dimension_ids": [
+          "oral_fluency"
+        ],
+        "summary": "短句为主，口语自然流畅好读",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052581-YDSYApSyc6COMPV7QoPz"
+        ]
+      },
+      {
+        "name": "安全",
+        "dimension_ids": [
+          "safety_compliance"
+        ],
+        "summary": "合规无明确违规但绝对化表述需改",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052581-HL1GwZa64YgeEDVQ1EB7"
+        ]
+      }
+    ],
+    "span_evidence": {
+      "topic_alignment": {
+        "positive_spans": [
+          "为啥繁荣传不到你这？芯片需求是真升温，总算力也在扩，但大厂囤卡如山，中小企业连门都摸不着。"
+        ],
+        "problem_spans": []
+      },
+      "theme_information": {
+        "positive_spans": [
+          "信通院提到供给区域割裂，推理需求爆发却对不上，传统机柜租赁通常跟不上精细化用算。",
+          "你买几块GPU，价钱顶小厂半年利润。一块高端训练卡售价够买辆小车，对小厂是天文数字。"
+        ],
+        "problem_spans": []
+      },
+      "logic_structure": {
+        "positive_spans": [
+          "那云上租不行吗？云服务这块，模式太粗放。",
+          "算力像电，可电网还没通到厂门口。咱们这行啥时候能拧开龙头接上这波算力？"
+        ],
+        "problem_spans": []
+      },
+      "engagement": {
+        "positive_spans": [
+          "AI芯片火到缺货，你小厂想用时却连门都摸不到。",
+          "算力像电，可电网还没通到厂门口。咱们这行啥时候能拧开龙头接上这波算力？"
+        ],
+        "problem_spans": []
+      },
+      "rhetoric_memorability": {
+        "positive_spans": [
+          "好比想买杯奶茶的冰，却逼你包下整个冰库。",
+          "算力像电，可电网还没通到厂门口。"
+        ],
+        "problem_spans": []
+      },
+      "oral_fluency": {
+        "positive_spans": [
+          "好比想买杯奶茶的冰，却逼你包下整个冰库。",
+          "西部卡闲着东部厂急等。"
+        ],
+        "problem_spans": []
+      },
+      "safety_compliance": {
+        "positive_spans": [
+          "传统机柜租赁通常跟不上精细化用算"
+        ],
+        "problem_spans": [
+          "连个合适的按量算力都租不到",
+          "大厂囤卡如山"
+        ]
+      }
+    },
+    "judge_diagnostics": {
+      "口播": {
+        "oral_subscores": {
+          "朗读顺口度": {
+            "score": 3,
+            "comment": "气口短、停顿清楚，无超长句或拗口堆叠；如云上租问句接短评，读起来不卡嘴。",
+            "positive_spans": [
+              "那云上租不行吗？云服务这块，模式太粗放。"
+            ],
+            "problem_spans": []
+          },
+          "口语自然度": {
+            "score": 3,
+            "comment": "核心展开多用你、好比等对话口吻，具体动词和比喻贯穿芯片与云服务中段，转录音稿基本无需改写。",
+            "positive_spans": [
+              "你买几块GPU，价钱顶小厂半年利润。",
+              "好比想买杯奶茶的冰，却逼你包下整个冰库。"
+            ],
+            "problem_spans": []
+          }
+        }
+      }
+    },
+    "context_truncated": false,
+    "context_fields_filtered": true,
+    "sent_evidence_ids": [
+      "E001",
+      "E002",
+      "E003",
+      "E006"
+    ],
+    "prompt_characters": 38036,
+    "reasoning_effort": "high",
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "evaluator_fingerprint": {
+      "kind": "judge",
+      "name": "hy3-script-quality-judge",
+      "version": "3.3.0",
+      "model": "tencent/hy4-preview",
+      "prompt_version": "script-quality-grounded-groups-v3.3",
+      "config": {
+        "request": {
+          "reasoning_effort": "high",
+          "max_format_attempts": 2,
+          "max_script_characters": 30000,
+          "max_context_string_characters": 4000,
+          "max_context_list_items": 50,
+          "max_prompt_characters": 60000
+        },
+        "sampling_parameters": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "transport": {
+          "protocol": "openrouter",
+          "endpoint_sha256": "76ef4ad6f0c8a4ae66efb13875c107cee40c78997a212353d379acfbb2f45591",
+          "reasoning_exclude": true,
+          "require_parameters": true,
+          "top_p_omitted_at_default": true
+        }
+      },
+      "sha256": "426eb58c9d520a3299f83aef02cd3f617db8e2fef3229339b0a6e9f06f93a893"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

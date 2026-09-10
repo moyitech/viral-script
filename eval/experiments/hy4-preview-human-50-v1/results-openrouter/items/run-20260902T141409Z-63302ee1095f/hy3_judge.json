@@ -1,0 +1,455 @@
+{
+  "evaluation_id": "judge-c248b958c0d84490869b9bc38053054b",
+  "run_id": "run-20260902T141409Z-63302ee1095f",
+  "trace_sha256": "1c432336ab54468b6ec3d5e26e72249c8957608e05a0f7401501525f35775c4c",
+  "created_at": "2026-09-10T15:06:49.248124Z",
+  "evaluator": {
+    "kind": "judge",
+    "name": "hy3-script-quality-judge",
+    "version": "3.3.0",
+    "model": "tencent/hy4-preview"
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "主要短板：口播流畅度",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇即点明省成本与冷落晚归人并存，全文覆盖双方并聚焦环卫工、护士等核心人群，切角具体。",
+      "script_spans": [
+        "这事儿既在省成本，也冷落了晚归人，账得掰开看。",
+        "环卫工凌晨收工，护士半夜交班，都指望着车。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "主题集中，成本项、人群影响与成本转嫁层层推进，引用可达性与成本规制，信息增量扎实。",
+      "script_spans": [
+        "司机大半夜熬着，工资还得加倍给，车辆老化半夜进场维修更贵。",
+        "企业成本肉眼可见降了，但晚归人的时间变成等车焦灼，金钱变成打车费悄悄转嫁出去。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "前20字以‘账本轻了’与‘晚归人悬了’形成强反差，中段层层追问成本转嫁，结尾以问句自然收束，余味足。",
+      "script_spans": [
+        "夜公交班次砍了，公司账本轻了，晚归人却悬了。",
+        "省下的钱真没了吗？企业成本肉眼可见降了，但晚归人的时间变成等车焦灼，金钱变成打车费悄悄转嫁出去。",
+        "末班车早了，夜归人脚下的路，谁再来照亮一程？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 2,
+      "reason": "短句为主、朗读顺口，但中段‘成本规制里的节支空间’等书面术语频出，口语自然不足，故为2分。",
+      "script_spans": [
+        "车少了，他们要么多掏钱打车，要么骑电动车黑天赶路。",
+        "这也符合成本规制里的节支空间。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "‘账本轻了’‘悬了’等口语化比喻精准，结尾‘照亮一程’自然升华，记忆点鲜明且无辞藻堆砌。",
+      "script_spans": [
+        "夜公交班次砍了，公司账本轻了，晚归人却悬了。",
+        "企业轻松了，个人沉重了，这账本得摊在阳光下。",
+        "末班车早了，夜归人脚下的路，谁再来照亮一程？"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 2,
+      "reason": "设问过渡自然且结尾回扣，但末段‘冷线缩间隔’与低客流前提矛盾，因果桥不足，建议经不起追问。",
+      "script_spans": [
+        "你可能会问，为啥先拿夜线动刀？",
+        "末班车早了，夜归人脚下的路，谁再来照亮一程？",
+        "把时段客流画出来冷线缩间隔，或许更稳。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "全文客观公允，既讲企业成本压力，也讲晚归人负担，并用‘不是所有地方都一刀切’等表述划清边界，无煽动夸大，价值导向安全。",
+      "script_spans": [
+        "不是所有地方都一刀切，有些城市用补贴保住重点夜线。",
+        "按规定线网优化要听大家说，减频次要透明，补好缺口再动手。"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "partial_weighted_average": 2.7142857142857144,
+    "weighted_average": 2.7142857142857144,
+    "normalized_score": 0.9047619047619048,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 1.0,
+    "context_complete": true
+  },
+  "findings": [],
+  "metadata": {
+    "prompt_version": "script-quality-grounded-groups-v3.3",
+    "request_id": "gen-1789052579-XrTICRkf3ky5bg4laMf3",
+    "request_ids": [
+      "gen-1789052581-Up3fR8HArgUYRJyY6s1t",
+      "gen-1789052581-IWpyoegk07EQjrNS1h4d",
+      "gen-1789052580-mkMFuS0kTmiyHDL8mYxh",
+      "gen-1789052579-XrTICRkf3ky5bg4laMf3"
+    ],
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 54447,
+      "prompt_tokens": 13431,
+      "total_tokens": 67878,
+      "completion_tokens_details": {
+        "audio_tokens": 0,
+        "reasoning_tokens": 53270,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 384,
+        "video_tokens": 0
+      },
+      "cost": 0.147069273,
+      "cost_details": {
+        "upstream_inference_cost": 0.147069273,
+        "upstream_inference_prompt_cost": 0.010897325999999999,
+        "upstream_inference_completions_cost": 0.13617194700000002
+      }
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "request_id": "gen-1789052581-Up3fR8HArgUYRJyY6s1t",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 15864,
+          "prompt_tokens": 3557,
+          "total_tokens": 19421,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 15478,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 128,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.042541026,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.042541026,
+            "upstream_inference_prompt_cost": 0.002865162,
+            "upstream_inference_completions_cost": 0.039675864
+          }
+        }
+      },
+      {
+        "attempt": 2,
+        "request_id": "gen-1789052581-IWpyoegk07EQjrNS1h4d",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 12537,
+          "prompt_tokens": 3388,
+          "total_tokens": 15925,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 12209,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 128,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.034079253,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.034079253,
+            "upstream_inference_prompt_cost": 0.002724216,
+            "upstream_inference_completions_cost": 0.031355037
+          }
+        }
+      },
+      {
+        "attempt": 3,
+        "request_id": "gen-1789052580-mkMFuS0kTmiyHDL8mYxh",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 14417,
+          "prompt_tokens": 3322,
+          "total_tokens": 17739,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 14101,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 128,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.038726089,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.038726089,
+            "upstream_inference_prompt_cost": 0.002669172,
+            "upstream_inference_completions_cost": 0.036056917
+          }
+        }
+      },
+      {
+        "attempt": 4,
+        "request_id": "gen-1789052579-XrTICRkf3ky5bg4laMf3",
+        "model": "tencent/hy4-preview",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 11629,
+          "prompt_tokens": 3164,
+          "total_tokens": 14793,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 11482,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.031722905,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.031722905,
+            "upstream_inference_prompt_cost": 0.002638776,
+            "upstream_inference_completions_cost": 0.029084129
+          }
+        }
+      }
+    ],
+    "format_attempts": 4,
+    "judge_groups": [
+      {
+        "name": "content",
+        "dimension_ids": [
+          "topic_alignment",
+          "theme_information",
+          "logic_structure"
+        ],
+        "summary": "选题精准信息实，末段逻辑稍欠",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052581-Up3fR8HArgUYRJyY6s1t"
+        ]
+      },
+      {
+        "name": "传播",
+        "dimension_ids": [
+          "engagement",
+          "rhetoric_memorability"
+        ],
+        "summary": "冲突开局层层递进，修辞克制记忆点足",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052581-IWpyoegk07EQjrNS1h4d"
+        ]
+      },
+      {
+        "name": "口播",
+        "dimension_ids": [
+          "oral_fluency"
+        ],
+        "summary": "朗读顺口，中段术语偏书面",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052580-mkMFuS0kTmiyHDL8mYxh"
+        ]
+      },
+      {
+        "name": "安全",
+        "dimension_ids": [
+          "safety_compliance"
+        ],
+        "summary": "合规达标，论述客观有边界",
+        "format_attempts": 1,
+        "request_ids": [
+          "gen-1789052579-XrTICRkf3ky5bg4laMf3"
+        ]
+      }
+    ],
+    "span_evidence": {
+      "topic_alignment": {
+        "positive_spans": [
+          "这事儿既在省成本，也冷落了晚归人，账得掰开看。",
+          "环卫工凌晨收工，护士半夜交班，都指望着车。"
+        ],
+        "problem_spans": []
+      },
+      "theme_information": {
+        "positive_spans": [
+          "司机大半夜熬着，工资还得加倍给，车辆老化半夜进场维修更贵。",
+          "企业成本肉眼可见降了，但晚归人的时间变成等车焦灼，金钱变成打车费悄悄转嫁出去。"
+        ],
+        "problem_spans": []
+      },
+      "logic_structure": {
+        "positive_spans": [
+          "你可能会问，为啥先拿夜线动刀？",
+          "末班车早了，夜归人脚下的路，谁再来照亮一程？"
+        ],
+        "problem_spans": [
+          "把时段客流画出来冷线缩间隔，或许更稳。"
+        ]
+      },
+      "engagement": {
+        "positive_spans": [
+          "夜公交班次砍了，公司账本轻了，晚归人却悬了。",
+          "省下的钱真没了吗？企业成本肉眼可见降了，但晚归人的时间变成等车焦灼，金钱变成打车费悄悄转嫁出去。",
+          "末班车早了，夜归人脚下的路，谁再来照亮一程？"
+        ],
+        "problem_spans": []
+      },
+      "rhetoric_memorability": {
+        "positive_spans": [
+          "夜公交班次砍了，公司账本轻了，晚归人却悬了。",
+          "企业轻松了，个人沉重了，这账本得摊在阳光下。",
+          "末班车早了，夜归人脚下的路，谁再来照亮一程？"
+        ],
+        "problem_spans": []
+      },
+      "oral_fluency": {
+        "positive_spans": [
+          "车少了，他们要么多掏钱打车，要么骑电动车黑天赶路。"
+        ],
+        "problem_spans": [
+          "这也符合成本规制里的节支空间。"
+        ]
+      },
+      "safety_compliance": {
+        "positive_spans": [
+          "不是所有地方都一刀切，有些城市用补贴保住重点夜线。",
+          "按规定线网优化要听大家说，减频次要透明，补好缺口再动手。"
+        ],
+        "problem_spans": []
+      }
+    },
+    "judge_diagnostics": {
+      "口播": {
+        "oral_subscores": {
+          "朗读顺口度": {
+            "score": 3,
+            "comment": "全篇以短气口为主，逗号停顿清晰，最长意群仅十余字，朗读顺口无需临时改词。",
+            "positive_spans": [
+              "夜间车上人少，空跑一趟烧油又耗人。"
+            ],
+            "problem_spans": []
+          },
+          "口语自然度": {
+            "score": 2,
+            "comment": "局部如‘要么多掏钱打车’很口语，但中段‘成本规制’‘可达性’等术语频出，核心展开仍偏书面讲解。",
+            "positive_spans": [
+              "环卫工凌晨收工，护士半夜交班，都指望着车。"
+            ],
+            "problem_spans": [
+              "把时段客流画出来冷线缩间隔"
+            ]
+          }
+        }
+      }
+    },
+    "context_truncated": false,
+    "context_fields_filtered": true,
+    "sent_evidence_ids": [
+      "E001",
+      "E002"
+    ],
+    "prompt_characters": 24924,
+    "reasoning_effort": "high",
+    "sampling_parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "evaluator_fingerprint": {
+      "kind": "judge",
+      "name": "hy3-script-quality-judge",
+      "version": "3.3.0",
+      "model": "tencent/hy4-preview",
+      "prompt_version": "script-quality-grounded-groups-v3.3",
+      "config": {
+        "request": {
+          "reasoning_effort": "high",
+          "max_format_attempts": 2,
+          "max_script_characters": 30000,
+          "max_context_string_characters": 4000,
+          "max_context_list_items": 50,
+          "max_prompt_characters": 60000
+        },
+        "sampling_parameters": {
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "transport": {
+          "protocol": "openrouter",
+          "endpoint_sha256": "76ef4ad6f0c8a4ae66efb13875c107cee40c78997a212353d379acfbb2f45591",
+          "reasoning_exclude": true,
+          "require_parameters": true,
+          "top_p_omitted_at_default": true
+        }
+      },
+      "sha256": "426eb58c9d520a3299f83aef02cd3f617db8e2fef3229339b0a6e9f06f93a893"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}

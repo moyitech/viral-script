@@ -1,0 +1,139 @@
+{
+  "evaluation_id": "combined-9069cbc9826e40a78941bbc17a6a6848",
+  "run_id": "run-20260902T141529Z-8b7d14a3d37e",
+  "trace_sha256": "bf4f88e29b9e75a9f6af2c1b2bfd8bc2c2d72ed945fe674765468950a5545716",
+  "created_at": "2026-09-10T14:39:10.435150Z",
+  "evaluator": {
+    "kind": "aggregate",
+    "name": "gate-aware-combiner",
+    "version": "1.2.0",
+    "model": null
+  },
+  "rubric": {
+    "rubric_id": "script_quality",
+    "version": "1.1.0",
+    "sha256": "87297b18d3ee076311a3046a8dfb58f645bccac48903896abebbdd68e795a9ab"
+  },
+  "status": "completed",
+  "summary": "Evaluation completed without gate findings.",
+  "dimension_scores": [
+    {
+      "dimension_id": "topic_alignment",
+      "name": "选题匹配度",
+      "score": 3,
+      "reason": "开篇点明占座问题，明确回答公平靠文化部门定规与图书馆劝导，并覆盖普通读者抢座痛点，完全切题。",
+      "script_spans": [
+        "这公平得靠文化部门定规矩，也靠图书馆日常劝。",
+        "你想踏实看书，得天没亮赶早抢座。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "theme_information",
+      "name": "主题明确与信息量",
+      "score": 3,
+      "reason": "以公共图书馆法为事实基础，解释馆员无执法权的原因，推进至多方共治结论，信息层层递进，增量扎实。",
+      "script_spans": [
+        "公共图书馆法写明了，县级以上文化部门统管本地馆。",
+        "法律把管理归到文化部门，却似乎没授权馆员清场。因为图书馆是服务地方，不是执法机构。",
+        "或许答案不在某方狠管，而在馆方可以劝、读者愿让，让座位慢慢流转起来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "engagement",
+      "name": "吸引力",
+      "score": 3,
+      "reason": "开头以占座冲突切入，中段层层递进揭示管理困境，结尾以空座冻住收束，余味自然。",
+      "script_spans": [
+        "占座的书包赶不走，馆员恐怕没处罚权。",
+        "大伙以为馆员能直接赶人，可法里没细说座位怎么分，也没提占座算违规。",
+        "要是谁都不退，空座也像被冻住了。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "oral_fluency",
+      "name": "口播流畅度",
+      "score": 3,
+      "reason": "全篇短句为主，气口清晰，中段用生活化场景和对话式承接解释，朗读无需改词，流畅自然。",
+      "script_spans": [
+        "馆员只能过去劝，没法罚钱，也难动手清走。",
+        "真碰上有人书本占整天，馆员弯下腰说两句，对方瞥一眼不动，就僵住。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "rhetoric_memorability",
+      "name": "修辞与记忆点",
+      "score": 3,
+      "reason": "修辞克制精准，公平悬空、空座冻住等意象生动，规则与体谅一句自然深刻，易复述。",
+      "script_spans": [
+        "规则写着公平，落下来却靠彼此体谅。",
+        "说好的公平就悬在空中。",
+        "空着的椅子反而成了摆设。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "logic_structure",
+      "name": "语言逻辑与结构",
+      "score": 3,
+      "reason": "从法律依据到现实僵局层层递进，因果桥清晰，结尾以设问回扣题设并给出共治答案，结构严谨。",
+      "script_spans": [
+        "法律把管理归到文化部门，却似乎没授权馆员清场。因为图书馆是服务地方，不是执法机构。",
+        "那对普通读者意味什么？你想踏实看书，得天没亮赶早抢座。",
+        "当公共空间遇上长久占用，谁来维护公平？或许答案不在某方狠管，而在馆方可以劝、读者愿让，让座位慢慢流转起来。"
+      ],
+      "evidence_refs": []
+    },
+    {
+      "dimension_id": "safety_compliance",
+      "name": "合规性",
+      "score": 3,
+      "reason": "以“恐怕”“似乎”限定馆员权限，避免绝对断言；用“严了怕…松了…”呈现管理两难，导向客观公允且安全。",
+      "script_spans": [
+        "馆员恐怕没处罚权",
+        "严了怕读者不舒服，松了公平就没了"
+      ],
+      "evidence_refs": []
+    }
+  ],
+  "metrics": {
+    "gate_count": 0,
+    "gate_codes": {},
+    "eligible": false,
+    "final_score": null,
+    "weighted_total": 21.0,
+    "partial_weighted_average": 3.0,
+    "weighted_average": null,
+    "normalized_score": null,
+    "evaluable_dimension_count": 7,
+    "score_coverage": 0.875,
+    "judge_weighted_average": 3.0,
+    "judge_normalized_score": 1.0
+  },
+  "findings": [],
+  "metadata": {
+    "source_evaluations": [
+      {
+        "evaluation_id": "judge-1e615f7c2cca4b8aaac4dba8a78e27f5",
+        "kind": "judge",
+        "name": "hy3-script-quality-judge",
+        "version": "3.3.0"
+      }
+    ],
+    "evaluator_fingerprint": {
+      "kind": "aggregate",
+      "name": "gate-aware-combiner",
+      "version": "1.2.0",
+      "model": null,
+      "prompt_version": null,
+      "config": {},
+      "sha256": "fe077b24d3a728c47beb26629cf780dd86fee79392d936f70cba9f8171331cb0"
+    }
+  },
+  "errors": [],
+  "schema_version": "1.0",
+  "gate_failed": false
+}
