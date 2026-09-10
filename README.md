@@ -155,6 +155,13 @@ Hy3、GLM 的平均差偏向主编，Luna 则偏向直接生成。裁判方向�
 评审者在采用偏好和直接可用性上均更认可主编稿。这是单人评审，不能外推为专家共识、
 整体事实准确性或真实传播效果。详见[人工偏好测评记录与来源](docs/paired-expert-review-2026-09-06.md)。
 
+[原始评审表、CSV、解盲表与统计结果](eval/experiments/formal-100-e2e-single-shot-v1/validation/human_preference/README.md)
+已归档，可离线复算：
+
+```bash
+uv run --no-sync python scripts/report_human_preference.py --check
+```
+
 ### Judge 重复评分稳定性
 
 对两组共 **600 篇**相同冻结稿件各评分两轮，比较七个主观维度，不含确定性长度规则。

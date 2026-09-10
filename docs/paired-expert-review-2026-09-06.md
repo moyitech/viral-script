@@ -30,7 +30,7 @@ A/B 来源隐藏，主编稿放在 A、B 各 150 对，题目顺序随机固定�
 
 按 100 个选题聚类的百分位 bootstrap，主编偏好率 95% 区间约为 83.3%–90.3%。
 每次有放回抽取 100 个选题，保留每题三档稿件，重复 20,000 次，
-NumPy default_rng 种子为 20260909。该区间固定评审者，仅反映题目抽样不确定性，
+归档复算使用 Python 标准库 random.Random(20260909).choices。该区间固定评审者，仅反映题目抽样不确定性，
 不包含评审者之间的差异，不能外推所有创作者。
 
 ## 可用性
@@ -55,16 +55,19 @@ NumPy default_rng 种子为 20260909。该区间固定评审者，仅反映题�
 
 ## 来源
 
-原始工作簿：`/Users/moyi/Downloads/配对盲评评分模板_ops.xlsx`，
+原始工作簿：[human_review.xlsx](../eval/experiments/formal-100-e2e-single-shot-v1/validation/human_preference/human_review.xlsx)，
 工作表“采用偏好”A1:G301。
 SHA-256：`7f7393a5c31f01fbec3dbe95dd7bc40ee01b1d187c8ae51dd0694d2fdee3bc60`。
 
 按样本编号连接
-`outputs/01a071fd-1603-7572-a3d7-ee9f660d2bd3/组织者专用_来源对应表.csv`，
+[来源对应表](../eval/experiments/formal-100-e2e-single-shot-v1/validation/human_preference/source_mapping.csv)，
 由 A_source / B_source 解盲。
 门控子集取
 `eval/experiments/formal-100-e2e-single-shot-v1/report/paired_results.csv`
 中双方 gate_failed 均为 False 的 task_id。
-原始工作簿与解盲表目前为本地文件，未随本记录版本化归档。
+原始工作簿、模板、评分 CSV、解盲表、组织说明、输入哈希和统计结果均已归档到
+[人工偏好测评材料目录](../eval/experiments/formal-100-e2e-single-shot-v1/validation/human_preference/README.md)。
+从仓库根目录运行 `uv run --no-sync python scripts/report_human_preference.py --check`
+即可离线核验并复算，不依赖本地 Downloads 目录。
 
 参见[评估主报告](task1-evaluation-report.md)。

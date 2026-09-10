@@ -1,0 +1,78 @@
+{
+  "pairs": 300,
+  "counts": {
+    "editorial_candidates": 261,
+    "single_shot": 39
+  },
+  "preference_denominator": 300,
+  "editorial_preference_rate": 0.87,
+  "by_target_length": {
+    "280": {
+      "editorial_candidates": 93,
+      "single_shot": 7
+    },
+    "450": {
+      "editorial_candidates": 87,
+      "single_shot": 13
+    },
+    "700": {
+      "editorial_candidates": 81,
+      "single_shot": 19
+    }
+  },
+  "usability": {
+    "editorial_candidates": {
+      "可直接采用": 176,
+      "小改可用": 124
+    },
+    "single_shot": {
+      "小改可用": 227,
+      "可直接采用": 57,
+      "需大改": 16
+    }
+  },
+  "bootstrap": {
+    "method": "Python random.Random.choices; topic cluster percentile bootstrap",
+    "seed": 20260909,
+    "repeats": 20000,
+    "topic_count": 100,
+    "editorial_rate_ci95": [
+      0.8333333333333334,
+      0.9033333333333333
+    ]
+  },
+  "both_gates_pass": {
+    "pairs": 293,
+    "counts": {
+      "editorial_candidates": 255,
+      "single_shot": 38
+    },
+    "preference_denominator": 293,
+    "editorial_preference_rate": 0.8703071672354948,
+    "by_target_length": {
+      "280": {
+        "editorial_candidates": 91,
+        "single_shot": 7
+      },
+      "450": {
+        "editorial_candidates": 86,
+        "single_shot": 13
+      },
+      "700": {
+        "editorial_candidates": 78,
+        "single_shot": 18
+      }
+    },
+    "usability": {
+      "editorial_candidates": {
+        "可直接采用": 171,
+        "小改可用": 122
+      },
+      "single_shot": {
+        "可直接采用": 54,
+        "需大改": 16,
+        "小改可用": 223
+      }
+    }
+  }
+}
