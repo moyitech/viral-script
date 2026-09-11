@@ -1,13 +1,10 @@
-"""Temporary project entry point.
+"""Launch the HyScript desktop application from the project root."""
 
-The production API and Web entry points will live under ``app/``. Developer
-examples belong under ``examples/``.
-"""
+import logging
 
-
-def main() -> None:
-    print("HyScript scaffold is ready. See README.md and examples/.")
+from app.desktop.__main__ import main
 
 
 if __name__ == "__main__":
-    main()
+    logging.basicConfig(level=logging.WARNING)
+    raise SystemExit(main())

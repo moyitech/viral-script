@@ -51,8 +51,10 @@ TAVILY_API_KEY=your-tavily-key
 完成 `.env` 配置和 `uv sync` 后，在 Windows、macOS 或带图形会话的 Linux 桌面运行：
 
 ```bash
-uv run --no-sync python -m app.desktop
+uv run --no-sync python main.py
 ```
+
+也可以使用等价的模块入口：`uv run --no-sync python -m app.desktop`。
 
 ## 正式评估：双门控后进行八维评分
 

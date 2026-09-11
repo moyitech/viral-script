@@ -1,6 +1,8 @@
 # Desktop application
 
-The desktop entry point is `python -m app.desktop`. It loads static assets from
+Launch from the project root with `uv run --no-sync python main.py` or
+`uv run --no-sync python -m app.desktop`. Both use the same desktop entry point.
+It loads static assets from
 `assets/`, exposes the narrow JSON API in `controller.py`, and runs all HyScript
 I/O on a dedicated asyncio thread so the native webview remains responsive.
 
