@@ -99,15 +99,9 @@ def recompute(archive: Path, paired_results: Path) -> dict:
             raise ValueError(f"Archive hash mismatch: {name}")
     if hashlib.sha256(paired_results.read_bytes()).hexdigest() != manifest["paired_results_sha256"]:
         raise ValueError("Paired-results hash mismatch")
-    reviews = read_rows(archive / "ratings.csv")
     mapping = read_rows(archive / "source_mapping.csv")
-    result = summarize_preferences(reviews, mapping)
-    clusters = result.pop("clusters")
-    result["bootstrap"] = {
-        "method": "Python random.Random.choices; topic cluster percentile bootstrap",
-        "seed": 20260909, "repeats": 20000, "topic_count": len(clusters),
-        "editorial_rate_ci95": bootstrap_interval(clusters, seed=20260909, repeats=20000),
-    }
+    if len(mapping) != manifest["pair_count"]:
+        raise ValueError("Manifest pair count mismatch")
     pairs = keyed(read_rows(paired_results), "task_id")
     eligible = set()
     for row in mapping:
@@ -118,10 +112,52 @@ def recompute(archive: Path, paired_results: Path) -> dict:
                 raise ValueError("Mapping run ID does not match paired results")
         if pair["baseline_gate_failed"] == pair["candidate_gate_failed"] == "False":
             eligible.add(row["blind_id"])
-    gated = summarize_preferences(
-        [r for r in reviews if r["blind_id"] in eligible],
+    reviewer_specs = manifest["reviewers"]
+    if len(reviewer_specs) != manifest["reviewer_count"]:
+        raise ValueError("Manifest reviewer count mismatch")
+    keyed(reviewer_specs, "reviewer_id")
+    if len({s["ratings"] for s in reviewer_specs}) != len(reviewer_specs):
+        raise ValueError("Reviewers must have distinct ratings files")
+    all_reviews = {}
+    for spec in reviewer_specs:
+        for field in ("ratings", "workbook"):
+            if spec[field] not in manifest["sha256"]:
+                raise ValueError(f"Unhashed reviewer input: {spec[field]}")
+        all_reviews[spec["reviewer_id"]] = read_rows(archive / spec["ratings"])
+    result = summarize_reviewers(all_reviews, mapping)
+    result["both_gates_pass"] = summarize_reviewers(
+        {k: [r for r in rows if r["blind_id"] in eligible] for k, rows in all_reviews.items()},
         [r for r in mapping if r["blind_id"] in eligible],
     )
-    gated.pop("clusters")
-    result["both_gates_pass"] = gated
     return result
+
+
+def summarize_reviewers(reviews: dict[str, list[dict[str, str]]], mapping: list[dict[str, str]]) -> dict:
+    """Overall preference counts only; repeated ratings are not independent pairs."""
+    if not reviews:
+        raise ValueError("At least one reviewer is required")
+    summaries = {}
+    combined = Counter()
+    categories = ("editorial_candidates", "single_shot", "tie", "unable", "missing")
+    for reviewer_id, rows in reviews.items():
+        summary = summarize_preferences(rows, mapping)
+        counts = {key: summary["counts"].get(key, 0) for key in categories}
+        summaries[reviewer_id] = {
+            "judgments": summary["pairs"], "counts": counts,
+            "preference_denominator": summary["preference_denominator"],
+            "editorial_preference_rate": summary["editorial_preference_rate"],
+        }
+        combined.update(counts)
+    denominator = sum(combined[k] for k in categories[:3])
+    rates = [s["editorial_preference_rate"] for s in summaries.values()]
+    return {
+        "reviewer_count": len(reviews), "unique_pairs": len(mapping),
+        "topic_count": len({r["topic_cluster_id"] for r in mapping}),
+        "reviewers": summaries,
+        "combined": {
+            "judgments": sum(combined.values()), "counts": dict(combined),
+            "preference_denominator": denominator,
+            "editorial_preference_rate": combined["editorial_candidates"] / denominator if denominator else None,
+            "equal_reviewer_editorial_rate": sum(rates) / len(rates) if all(r is not None for r in rates) else None,
+        },
+    }

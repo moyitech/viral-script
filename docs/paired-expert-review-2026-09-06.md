@@ -47,14 +47,15 @@ Agent 选题、检索与研究环节的价值。
 | 评审者 | 原始文件 | SHA-256 |
 | --- | --- | --- |
 | 第一位 | [已归档工作簿](../eval/experiments/formal-100-e2e-single-shot-v1/validation/human_preference/human_review.xlsx) | `7f7393a5c31f01fbec3dbe95dd7bc40ee01b1d187c8ae51dd0694d2fdee3bc60` |
-| 第二位 | `/Users/moyi/Downloads/配对盲评评分模板_dsf.xlsx` | `ed4f7b5acfb03160f9426b02405b52dcffd6897ff119ef4a4da812e3da850ed0` |
+| 第二位 | [已归档工作簿](../eval/experiments/formal-100-e2e-single-shot-v1/validation/human_preference/human_review_02.xlsx) | `ed4f7b5acfb03160f9426b02405b52dcffd6897ff119ef4a4da812e3da850ed0` |
 
 两份均按同一[来源对应表](../eval/experiments/formal-100-e2e-single-shot-v1/validation/human_preference/source_mapping.csv)
 的 blind_id 与 A_source / B_source 解盲。原始评分不修改。
 
-第一位的原始材料、CSV、哈希与统计已归档，执行
-`uv run --no-sync python scripts/report_human_preference.py --check` 可离线复算。
-第二位文件目前仍在本地 Downloads，尚未纳入仓库归档及该脚本；上述命令仅复算第一位，
-不验证本版两人合计。两人整体计数已由原始工作簿核对。
+两位评审的原始工作簿、CSV、输入哈希与统计均已归档。执行
+`uv run --no-sync python scripts/report_human_preference.py --check` 可离线核验输入并复算
+两位各自及合计的整体偏好。第一位对应 human_review.xlsx / ratings.csv，第二位对应
+human_review_02.xlsx / ratings_02.csv，映射关系保存在 manifest.json。
+summary.json 记录 300 个独立配对编号与 600 次判断，避免将重复评审计为新增稿件。
 
 参见[评估主报告](task1-evaluation-report.md)。

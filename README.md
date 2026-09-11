@@ -156,8 +156,8 @@ Hy3、GLM 的平均差偏向主编，Luna 则偏向直接生成。裁判方向�
 该结论指“更愿意采用”，不代表事实准确性、生成成本或实际传播效果均更好，也不外推所有创作者。
 详见[人工偏好测评记录与来源](docs/paired-expert-review-2026-09-06.md)。
 
-[第一位评审的归档材料与离线复算](eval/experiments/formal-100-e2e-single-shot-v1/validation/human_preference/README.md)
-保持可用；现有命令仅复算第一位的结果，尚不包含第二位及两人合计：
+[两位评审的原始材料与离线复算](eval/experiments/formal-100-e2e-single-shot-v1/validation/human_preference/README.md)
+均已归档；以下命令核验两份原始表与 CSV 的哈希，复算每位评审及两人合计：
 
 ```bash
 uv run --no-sync python scripts/report_human_preference.py --check

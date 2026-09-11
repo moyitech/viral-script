@@ -1,6 +1,6 @@
 import unittest
 
-from hyscript.preference_evaluation import bootstrap_interval, summarize_preferences
+from hyscript.preference_evaluation import bootstrap_interval, summarize_preferences, summarize_reviewers
 
 
 class PreferenceTests(unittest.TestCase):
@@ -34,3 +34,25 @@ class PreferenceTests(unittest.TestCase):
 
     def test_bootstrap_preserves_topic_group(self):
         self.assertEqual(bootstrap_interval({"T1": [1, 0, 1]}, seed=1, repeats=20), [2/3, 2/3])
+
+    def test_two_reviewers_preserve_pairs_and_count_judgments(self):
+        second = [dict(r) for r in self.rows]
+        second[1]["preference"] = "B"
+        result = summarize_reviewers({"r1": self.rows, "r2": second}, self.mapping)
+        self.assertEqual(result["unique_pairs"], 2)
+        self.assertEqual(result["topic_count"], 1)
+        self.assertEqual(result["combined"]["judgments"], 4)
+        self.assertEqual(result["combined"]["counts"]["editorial_candidates"], 3)
+        self.assertEqual(result["combined"]["editorial_preference_rate"], .75)
+        self.assertEqual(result["combined"]["equal_reviewer_editorial_rate"], .75)
+
+    def test_missing_reviewer_response_rejected(self):
+        with self.assertRaises(ValueError):
+            summarize_reviewers({"r1": self.rows, "r2": self.rows[:1]}, self.mapping)
+
+    def test_pooled_and_equal_reviewer_rates_are_distinct(self):
+        second = [dict(r) for r in self.rows]
+        second[1]["preference"] = "无法判断"
+        result = summarize_reviewers({"r1": self.rows, "r2": second}, self.mapping)
+        self.assertEqual(result["combined"]["editorial_preference_rate"], 2/3)
+        self.assertEqual(result["combined"]["equal_reviewer_editorial_rate"], .75)
