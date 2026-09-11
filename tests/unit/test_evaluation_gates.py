@@ -86,7 +86,7 @@ class EvaluationGateTests(unittest.IsolatedAsyncioTestCase):
                 result = await runner.run([self.trace_path])
                 self.assertEqual(result.failed_count, 0)
                 self.assertEqual(judge.calls, 0)
-                combined = json.loads((self.item(name) / "combined.json").read_text())
+                combined = json.loads((self.item(name) / "combined.json").read_text(encoding="utf-8"))
                 self.assertTrue(combined["gate_failed"])
                 self.assertIsNone(combined["metrics"]["final_score"])
                 self.assertFalse(combined["metrics"]["eligible"])
@@ -104,7 +104,7 @@ class EvaluationGateTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(second.outcomes[0].status, "skipped")
         self.assertEqual(judge.calls, 1)
         self.assertEqual([d.calls for d in gates.detectors.values()], [1, 1])
-        combined = json.loads((self.item() / "combined.json").read_text())
+        combined = json.loads((self.item() / "combined.json").read_text(encoding="utf-8"))
         self.assertEqual(len(combined["dimension_scores"]), 8)
         self.assertEqual(set(combined["metadata"]["attack_gates"]), {"reward_hacking", "citation"})
 
@@ -177,7 +177,7 @@ class EvaluationGateTests(unittest.IsolatedAsyncioTestCase):
             payload = json.loads(self.original)
             payload["run_id"] = f"concurrency-{index}"
             path = self.root / f"{index}.json"
-            path.write_text(json.dumps(payload))
+            path.write_text(json.dumps(payload), encoding="utf-8")
             paths.append(path)
         runner, _ = self.runner(gates)
         self.assertEqual((await runner.run(paths)).failed_count, 0)
@@ -187,12 +187,12 @@ class EvaluationGateTests(unittest.IsolatedAsyncioTestCase):
         root = self.root / name
         root.mkdir()
         payload = await detector.evaluate(self.trace)
-        (root / "check.json").write_text(json.dumps(payload))
-        (root / "summary.json").write_text(json.dumps({"detector": detector.fingerprint}))
+        (root / "check.json").write_text(json.dumps(payload), encoding="utf-8")
+        (root / "summary.json").write_text(json.dumps({"detector": detector.fingerprint}), encoding="utf-8")
         (root / "manifest.json").write_text(json.dumps({
             "detector": detector.fingerprint,
             "items": [{"run_id": self.trace.run_id, "result": "check.json"}],
-        }))
+        }), encoding="utf-8")
         return root
 
     async def test_recorded_checks_replay_without_live_detectors(self):
@@ -210,9 +210,9 @@ class EvaluationGateTests(unittest.IsolatedAsyncioTestCase):
 
     async def test_recorded_check_fingerprint_mismatch_is_rejected(self):
         root = await self.detector_cache("cache", FakeDetector("reward_hacking"))
-        payload = json.loads((root / "check.json").read_text())
+        payload = json.loads((root / "check.json").read_text(encoding="utf-8"))
         payload["detector"]["version"] = "changed"
-        (root / "check.json").write_text(json.dumps(payload))
+        (root / "check.json").write_text(json.dumps(payload), encoding="utf-8")
         with self.assertRaises(GateConflictError):
             await RecordedDetector(root, "reward_hacking").evaluate(self.trace)
 
@@ -222,17 +222,17 @@ class EvaluationGateTests(unittest.IsolatedAsyncioTestCase):
         manifest = self.root / "traces.json"
         manifest.write_text(json.dumps({"tasks": [{
             "task_id": "test", "trace": "trace.json", "trace_sha256": self.trace.trace_sha256,
-        }]}))
+        }]}), encoding="utf-8")
         selected = self.root / "repeat/traces.json"
         passed_trace_manifest(manifest, self.root / "results", selected)
-        self.assertEqual(len(json.loads(selected.read_text())["tasks"]), 1)
+        self.assertEqual(len(json.loads(selected.read_text(encoding="utf-8"))["tasks"]), 1)
         path = self.item() / "combined.json"
-        payload = json.loads(path.read_text())
+        payload = json.loads(path.read_text(encoding="utf-8"))
         payload["metadata"]["attack_gates"]["citation"]["passed"] = False
-        path.write_text(json.dumps(payload))
+        path.write_text(json.dumps(payload), encoding="utf-8")
         with self.assertRaises(GateEvaluationError):
             passed_trace_manifest(manifest, self.root / "results", selected)
         payload["gate_failed"] = True
-        path.write_text(json.dumps(payload))
+        path.write_text(json.dumps(payload), encoding="utf-8")
         with self.assertRaisesRegex(GateEvaluationError, "No gate-passing"):
             passed_trace_manifest(manifest, self.root / "results", selected)

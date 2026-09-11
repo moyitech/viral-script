@@ -254,7 +254,9 @@ class JudgeComparisonTests(unittest.TestCase):
                 comparison.GLM_MODEL_ID,
             )
             self.assertEqual(command[command.index("--reasoning-effort") + 1], "max")
-            self.assertIn("/glm/pass-001", command[command.index("--output-dir") + 1])
+            output_dir = Path(command[command.index("--output-dir") + 1])
+            self.assertEqual(output_dir.parent.name, "glm")
+            self.assertTrue(output_dir.name.startswith("pass-001"))
 
     def test_prepare_records_alias_endpoint_hash_and_exclusions(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
