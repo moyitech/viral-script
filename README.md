@@ -56,6 +56,8 @@ uv run --no-sync python main.py
 
 也可以使用等价的模块入口：`uv run --no-sync python -m app.desktop`。
 
+![](./docs/assets/demo.gif)
+
 ## 正式评估：双门控后进行八维评分
 
 当前正式评估和桌面“开始质量评分”统一采用：
