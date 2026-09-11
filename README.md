@@ -8,6 +8,10 @@
 面向知识型短视频创作者的实时调研与口播文案生成 Agent。系统从当前公开热榜发现候选选题，
 使用 Hy3 生成检索计划，通过 Tavily 执行实时搜索，将结果作为写作背景生成可直接口播的短视频文案。引用信息作为正文外元数据供离线评分使用；项目不建立或维护创作者画像。
 
+## 功能演示
+
+![HyScript 桌面端操作演示](docs/assets/demo.gif)
+
 ## 核心流程
 
 ![HyScript 核心流程：推荐选题、已有选题、正文外元数据与离线质量评测](docs/assets/hyscript-core-workflow.svg)
@@ -55,8 +59,6 @@ uv run --no-sync python main.py
 ```
 
 也可以使用等价的模块入口：`uv run --no-sync python -m app.desktop`。
-
-![](./docs/assets/demo.gif)
 
 ## 正式评估：双门控后进行八维评分
 
